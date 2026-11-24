@@ -442,7 +442,7 @@
       "stage": "tarkista",
       "type": "explain",
       "title": "3. Explain: the broken straw",
-      "prompt": "Use refraction to explain why a straw in a glass of water seems to break at the surface of the water when the glass is looked at from the side, obliquely from above.",
+      "prompt": "Use refraction to explain why a straw in a glass of water seems to break at the surface of the water when the glass is looked at obliquely from above through the surface of the water.",
       "model": "The rays from the part of the straw that is in the water travel from water into air. Air is optically less dense, so the rays are refracted away from the normal at the surface of the water. The eye and the brain assume that the light has travelled in a straight line, so they extend the rays that reach the eye backwards along straight lines. The extensions meet at a point that is higher than the real point of the straw. Therefore the part of the straw that is in the water seems to be raised and shifted, while the part above the surface of the water is seen in its right place. The straw seems to break exactly at the surface of the water, because that is where the light changes material.",
       "criteria": [
         "I say that the light from the part of the straw that is in the water passes from water into air and is refracted at the surface of the water.",

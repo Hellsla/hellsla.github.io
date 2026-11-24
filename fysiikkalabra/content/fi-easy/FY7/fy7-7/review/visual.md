@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: b13dfacc85c8f72c
+CONTENT-HASH: db20b0cd98688b14
 
 ## Blocking
 (none)
@@ -8,4 +8,12 @@ CONTENT-HASH: b13dfacc85c8f72c
 (none)
 
 ## Checked
-- batch delta review (round 2): fy7-7 (fi-easy) built page, every "Pysähdy ja mieti" block rendered with the answer open and photographed at 360 px (examined for the long chains) and measured at 360 and 1280 px: label, question, Vastaus summary, KaTeX (no red source, no clipped formula, no overflow), decimal comma, units, answer chains laid out as rows; check_layout.py clean at 360/390/1280. The round 1 clip in fy7-1 block 3 is fixed by the shared component. Listed older captures not reopened (unchanged old content). Vanhan sisällön löydökset: none.
+- delta round 1 (sim.js label "Animaation nopeus" -> "Nopeus"; four teacher-approved pictures; lesson.md figures approved).
+- fy7-7-sim-390 and sim-1280: speed select label "Nopeus" fits beside the frequency slider at 390 px and in the 1280 px control row; labels LaTeX, no clipping, canvas, graphs and readout intact.
+- fy7-7-intro-1280: the hero picture (wind farm) is clear, flat style, the phenomenon in the middle third.
+- fy7-7-theory-1280-1: generator figure and the bicycle dynamo picture beside their paragraphs, readable, caption and credit present.
+- fy7-7-fig-4-390: derivation figure legible, v sin theta label and vectors in blue, layout intact.
+- Other captures not reopened (unchanged content).
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

@@ -36,7 +36,6 @@ new p5((p) => {
     selM.option(__('magneetti_a'), 'A'); selM.option(__('magneetti_b'), 'B'); selM.selected('A');
     const l4 = p.createElement('label').parent(controls); p.createSpan(__('pituus')).parent(l4); selL = p.createSelect().parent(l4);
     selL.option(__('pituus_lyhyt'), '2.5'); selL.option(__('pituus_pitka'), '5'); selL.selected('5');
-    p.createP(__('selite')).parent('sim-root').class('note');
     p.textFont('Arial');
     for (const e of [slI.elt, slA.elt, selM.elt, selL.elt]) { e.addEventListener('input', () => p.redraw()); e.addEventListener('change', () => p.redraw()); }
     // adapter for guided investigations (sim-embed.js): the page may set, lock and reset these parameters

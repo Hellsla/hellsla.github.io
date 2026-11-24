@@ -1,9 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 81feb70459f703c1
+CONTENT-HASH: d848741bf171d6aa
+
 ## Blocking
 
 ## Polish
-
+- [Minor] stage Testaa ja arvioi, task 4 "Katkeava pilli" — the optional box is closed in every capture, so the changed prompt was judged from the source line, not rendered. The new wording ("kun lasia katsotaan vinosti ylhäältä veden pinnan läpi") is fluent and clearer than before; no formula or unit in it.
 
 ## Checked
-batch delta review, round 2: rendered the lesson at 390 px, opened every Pysähdy ja mieti answer and looked at the captures (label, question, answer, chain rows inside the aside, no katex-error, no horizontal overflow, aside width 358 px); ran check_layout.py at 360 px (fi, en, fi-easy) and fy7-1 also at 390 px: OK; read the diff for notation (decimal comma, units upright, `\cdot`, colon division) and Finnish wording. Old content not judged (scope note 2026-11-20); no Vanhan sisällön löydökset.
+- Delta: inquiry.json, tarkistus-3 prompt wording only. Opened fy7-10-stage-tarkista-390-2 (optional task 4 box closed, layout intact, self-assessment rows fine), open-tarkista-1280-2 and -3 (neighbouring task and the closed box at 1280: no clipping or overflow).
+- Also opened stage-selita-390-5 and -6 (theory page around it): intact.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5
