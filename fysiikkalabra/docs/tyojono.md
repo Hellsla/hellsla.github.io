@@ -116,7 +116,7 @@ PR 4 tehty (#830): uudet käyttöliittymätekstit, tietosuojalause, kuvat ja laa
 PR 4b (seuraavaksi, ennen PR 5:tä): tavoite L–E / M–C / B–A ja käydyt kurssit, suunnitelman P13 ja PR 4b; **opettaja 2026-11-23 ("yes, go with the recommendations")**; uudet tekstit hyväksytään tekijäsessioon.
 Varattu: claude/11b-pr4b-tavoite (PR 4b tavoite L–E / M–C / B–A ja käydyt kurssit, P13; #834)
 PR 4b (#834): uudet käyttöliittymätekstit ja kuvat hyväksytty: opettaja 2026-11-23 tekijäsessioon ("hyväksyn tekstit ja kuvat").
-Varattu: claude/11b-pr5-vaikea-vaihe (PR 5 vaikea ratkaisuvaihe ja toistuvat virheet)
+PR 5 (#836, vaikea ratkaisuvaihe ja toistuvat virheet): uudet käyttöliittymätekstit ja kuvat hyväksytty: opettaja 2026-11-24 tekijäsessioon ("Hyväksyn tekstit ja kuvat"). Jäljellä: PR 6–8.
 
 ## 17. Kehitys ilman kirjautumista (opettaja 2026-11-15)
 17a PR 1 (#720) ja PR 2 (#741, manifesti ja pysyvä tallennus) sekä 17b PR 1 (#818, koko työ yhteen tiedostoon; tekstit opettaja 2026-11-23) tehty; webkit.org sallittu ympäristöön 2026-11-19, opettajan luvalla.
