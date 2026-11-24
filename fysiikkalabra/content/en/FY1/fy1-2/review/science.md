@@ -1,22 +1,23 @@
-VERDICT: FAIL
-CONTENT-HASH: c60d30a7c0a9a6ea
+VERDICT: PASS
+CONTENT-HASH: b31745d2f8a9936d
 
 ## Blocking
-- lesson.md:147 — (B) "In the tasks of this book a value given as a whole number ending in zeros, such as $10\,\text{min}$, is exact unless stated otherwise." This makes every such value exact. The house rule (P7, guardrails "Values and significant figures") says only a time span or count that the task sets is exact; a rated or measured value's trailing zeros are significant (480 kW: three, 230 V: three). Later chapters follow P7, so students would get a rule that contradicts them. The same paragraph also calls 384 400 km ambiguous. — Fix: limit the sentence to set quantities, for example "In the tasks of this book a time span or number that the task sets, such as $10\,\text{min}$, is exact; a measured or rated value's trailing zeros are significant unless stated otherwise."
 
 ## Polish
-- lesson.md:14 (figure "quantity", aria-label) — the label says "horizontally 1 cm is 40 units", but in the embedded SVG the tick labels are $77.4$ units per 2 cm, so 1 cm is $38.7$ units (figures.py draws 40, and the image was rescaled when it was embedded). The figure is still to scale. Fix the stated number, or drop it.
-- inquiry.json:177 (voyager-malli) and sim.js D0_AU — the model uses $119.0\,\text{AU}$ (Burlaga et al. 2019, a correct value), but the teacher's brief gives 119,7 AU and "about 143 AU for February 2026". The lesson explains the 142.5 vs 143.05 AU difference correctly (heliocentric vs geocentric, within 1 AU). Flag the departure from the brief to the teacher; this is not an error.
-- lesson.md "A unit for every scale" — "defined in metres" fits the AU (exact since IAU 2012). For the light-year, "defined through $c$ and the year" would be more exact. This simplification is level C and acceptable.
+- assets/sims/fy1/fy1-2/sim.js (readout, `tx`/`sci`/`num3`) — the English page shows the readout with decimal commas: "$v = 15{,}341\,\text{km/s}$", "$3{,}47\cdot10^{5}\,\text{km}$", "$10^{6{,}00}$". An English reader can take 15,341 km/s as fifteen thousand km/s, and inquiry.json writes $15.341\,\text{km/s}$. Fix: use the page's decimal separator in the shared number formatter. This is a localisation issue for the visual reviewer, but it changes how a magnitude reads.
+- lesson.md:14 (figure "quantity", aria-label) — this carries over from round 1. The label says "1 cm is 40 units", but the embedded figure has 38.7 units per cm. The figure is still to scale. Fix the number or drop it.
+- inquiry.json:177 and sim.js `D0_AU` — the model uses $119.0\,\text{AU}$ (Burlaga et al. 2019, the published value), but the teacher's brief says 119,7 AU. The lesson treats the model value of 142.5 AU and JPL's 143.05 AU from Earth correctly. Raise this with the teacher as a departure from the brief. It is not an error.
+- inquiry.json:116 (sim `model`) — "15.341 km/s ... the value at the crossing": JPL's mission-status speed is a recent value, not the 2018 one. The difference is under 0.1 km/s and level C. Fix: "speed relative to the Sun (NASA/JPL)".
 
 ## Checked
-- One script recomputed every number from the task data: Voyager model table (119.0/131.9/144.9/157.8 AU; 16.5/18.3/20.1/21.9 h), 1 Jan 2026 142.2 AU / 19.7 h (ratio 142), Feb 2026 about 142.5 AU. All match.
-- Light times: 1 AU 499 s = 8.32 min; $10^{7,8,9}$ km gives 33.4/334/3340 s; 1 h is about 7.2 AU, 1 week about 1212 AU, 1 ly about 63 200 AU. All match.
-- Worked example (4.50e9 km, 1.502e4 s, 4.17 h): solved symbolically first, three significant figures justified, reasonableness check real.
-- siirto 3.236 AU/a (4 s.f. justified); mistakes 4.84e8 and 3236 correct. Mercury 3.22 min with mistakes 193 and 0.0536 correct. Saturn 79 min with distractor 0.87 correct.
-- Every choice item has exactly one correct option, and each distractor's feedback is right (kertaus, both predictions, koe-1 question, voyager-malli, virhe, merkitsevat, both checks).
-- Experiments: koe-1 varies n with pvm locked, and simState gives dAU and tLight exactly at $10^n$ km. koe-2 varies pvm, and simState gives vAU and vTh.
-- sim.js implements $d = d_0 + v(t - t_0)$, $t = d/c$ and the Moon = 1 px scale (Sun 401 px, Earth 3.7 px, Moon 110 px from Earth, ruler 28.8 px per $10^5$ km). The pace setting does not change the elapsed time.
-- Model box: the Sun's slowing of about 0.1 km/s (computed 0.09) and the signal-time difference to Earth of at most about 8 min are both correct.
-- SI table, Kibble balance and Planck constant caption, prefixes, hydrogen atom 0.11 nm, proton 1.7 fm, light-year 9.46e12 km: all correct.
-- Scope: stays within FY1 (s = ct as a given model; no forces or energy).
+- The round-1 blocking item is fixed. lesson.md:233 now follows P7: a set time span or count is exact, and the trailing zeros of a measured or rated value are significant (230 V: three).
+- One script recomputed the Voyager model: the table (119.0/131.9/144.9/157.8 AU; 1.78/1.97/2.17/2.36·10^10 km; 16.5/18.3/20.1/21.9 h), 2026-01-01 (142.2 AU, 19.7 h, ratio 142) and Feb 2026 (about 142.5 AU). All match.
+- Light times match: 1 AU 499 s = 8.32 min; 10^7, 10^8, 10^9 km give 33.4/334/3340 s; 1 h is 7.2 AU, 1 week 1212 AU, 1 ly 63 200 AU and 9.46·10^12 km.
+- Worked example: 4.50·10^9 km, 1.502·10^4 s, 4.17 h. It is solved symbolically first, three significant figures are justified and the reasonableness check is real.
+- siirto: 3.236 AU/a; mistakes 4.84·10^8 and 3236 are right. Mercury: 3.22 min; mistakes 193 s and 0.0536 h are right. Saturn: 79 min with distractor 0.87 right. Exit ticket: 500 µm. 1.85·0.92 rounds to 1.7 m².
+- Every choice item has exactly one correct option, and the distractors' feedback is right (kertaus, both predictions, koe-1, voyager-malli, virhe, merkitsevat, both checks).
+- Playwright on preview/en: at n = 7, 8, 9, simState gives dAU 0.0668/0.668/6.68 and tLight 33.4/334/3336 s. pvm 2026-01-01 gives vAU 142.16 and vTh 19.71. Both experiments isolate the parameter they vary.
+- sim.js diff since round 1: only the layout changed (three control rows, legend line removed). The physics is unchanged: $d = d_0 + v(t-t_0)$, $t = d/c$; the Sun is 401 px, the Earth 3.7 px, the Moon 110 px from the Earth, the light pulse moves 86.3 px/s, and the pace setting does not change the elapsed time.
+- Model box: the slowing of about 0.1 km/s (computed 0.095) and the difference of at most about 8 min in the signal time to Earth are correct.
+- SI table, Kibble balance caption, prefixes, scale table (H atom 0.11 nm, proton 1.7 fm): all correct.
+- Scope: FY1 (s = ct is a given model; no forces or energy).
