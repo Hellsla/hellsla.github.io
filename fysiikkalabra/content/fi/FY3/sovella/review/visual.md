@@ -1,20 +1,20 @@
-VERDICT: PASS
-CONTENT-HASH: 833c303876aa162b
+VERDICT: FAIL
+CONTENT-HASH: 2bcc336fe1b09523
 
 ## Blocking
-(none)
+- [Major] tasks.json fy3-s3 b, c; solutions.md fy3-s3 Annettu/Sijoitus (pages 390-24, 1280-17; earlier shots) — the litre is written \text{l}, which renders like the digit 1: "6,0 l" reads "6,01", "20 l/min" reads "201/min", "725 l" reads "7251" — ambiguous quantities in a gas-law task, and NOTES §1 makes \text{l} a lint error — write \textsf{l} everywhere (about 10 places in tasks.json and solutions.md; same in the en and fi-easy copies).
 
 ## Polish
-- [Minor] solutions.md fy3-s1 a) Kuvaaja — "Jokainen rivi on yksi erillinen piste." reads oddly (which "rivi"?) — write "Jokainen taulukon rivi on yksi erillinen piste."
-- [Minor] fig fy3-s1-graph — y axis starts at 10 and "0" is shown only on the x axis; the axis break is not stated in the figure; at 390 px the labels are small though legible — mention the truncated y axis in the aria-label (the text already says it); optionally larger labels.
-- [Minor] fig-2-390 capture is a 28x28 empty image (a stray figure element or an empty capture target); check that no empty SVG or placeholder sits in "Mallivastaus".
-- [Minor] fy3-s1 b) Sijoitus — the first row ends in `\text{K/s}` and the answer row `= 237 W` is aligned correctly; the "ja" between two Sijoitus blocks in d) leaves a lone word; join the two chains in one block or end it with a full sentence.
+- [Minor] solutions.md fy3-s1 a) — "Jokainen rivi on yksi erillinen piste." — "Jokainen taulukon rivi on yksi erillinen piste."
+- [Minor] fig fy3-s1-graph — y axis starts at 10 with no "0" and no stated axis break — mention the truncated axis in the aria-label.
+- [Minor] fy3-s1 d) / fy3-s3 a) Sijoitus — a lone "ja" between two display blocks — join the chains or end with a full sentence.
+- [Minor] fy3-s3 c) Kaava — eight rows, centred short rows (V =, t =) make the column look ragged — acceptable, optionally group the symbolic steps.
 
 ## Checked
-- Read the packet, tasks.json and solutions.md text (all three tasks).
-- Opened: contact-1 (captures #1–#12), top-1280, page-1280-2, page-1280-5, fig-1-390 (graph), fig-2-390 (empty).
-- Not opened at full size: the other contact sheets, the s2 and s3 stage captures and the rest of the 390 px and 1280 px page parts; the s2 and s3 judgements rest on the source text and the layout of s1 and s2 in contact-1 (same components).
-- Hash 833c303876aa162b matches the capture stamp at start and end.
+- Hash changed twice during the review (263ecc82… → fd9c3eea… → 2bcc336f…, concurrent edits); redone on the stable hash 2bcc336fe1b09523 with fresh captures.
+- Opened: page-390-9 (s1 criteria), page-390-24 (s3 c Kaava/Muunnokset/Sijoitus/Vastaus, new 8-row block), fig-1-390 (graph); earlier on the fd9c hash: page-390-6 (s1 d Kaava, aligned rows), page-390-12, page-390-20, page-390-25, page-1280-17 (s3 a Kaava, Muunnokset, Sijoitus).
+- The changed Kaava aligned blocks render with = in one column, fractions and subscripts legible, nothing clipped at 390 or 1280 px.
+- Not opened: the other contact sheets and s2 pages individually.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 4 · typography 3 · Finnish 4 · accessibility 4
