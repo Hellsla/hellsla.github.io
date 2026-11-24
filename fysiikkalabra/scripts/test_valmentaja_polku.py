@@ -130,6 +130,8 @@ with sync_playwright() as pw:
     r = plan(P(mins=40, per=7, days=28), "2026-11-24")
     first = [it["task"]["id"] for it in r["days"][0]["items"]]
     expect("with nothing done the first day starts with the diagnostic, and the diagnostic is at most 30 minutes in all", first and all(i.startswith("fy9-koe#") for i in first[:12]) and sum(it["task"]["min"] for d in r["days"] for it in d["items"] if "task" in it and it["task"]["id"].startswith("fy9-koe#")) <= 30, first)
+    fill = [(d["date"], d["minutes"]) for d in r["days"] if not d["last"] and d["minutes"] < 40 - 5]
+    expect("a day is never left half empty for one task that does not fit: with 40 minutes every day before the last week holds at least 35 (the index has tasks of 2 to 5 minutes to fill with)", not fill, fill[:4])
     expect("with nothing done the chapters follow the order of the course", units_in_order(r) == U, units_in_order(r))
     expect("the last week holds revisions and minikokeet only, and that is the last seven days of the path", [d["date"] for d in r["days"] if d["last"]][0] >= "2026-12-15" and all(d["last"] == (d["date"] >= "2026-12-15") for d in r["days"]))
     # the diagnostic with different results (done the day before)
@@ -190,6 +192,7 @@ with sync_playwright() as pw:
             idx = p.evaluate("() => JSON.parse(document.getElementById('fy9-index').textContent)")
             expect(f"{lang} {w}px: the revision path is there, closed, with the three choices and no path yet (nothing saved)", p.locator("#coach-path").is_visible() and not p.locator("#coach-path").evaluate("e => e.open") and p.locator("#coach-path > summary").inner_text() == T["path_h"] and p.evaluate("(k) => localStorage.getItem(k)", PKEY) is None)
             p.locator("#coach-path > summary").click()
+            expect(f"{lang} {w}px: the date of the exam is hidden until the exam day is the choice, then it is there", not p.locator("#coach-path input[type=date]").is_visible() and (p.locator("#coach-path input[name=path-len][value=exam]").check() or True) and p.locator("#coach-path input[type=date]").is_visible() and (p.locator("#coach-path input[name=path-len][value='14']").check() or True) and not p.locator("#coach-path input[type=date]").is_visible())
             expect(f"{lang} {w}px: the choices: 14, 28 days or an exam day; 3 to 7 days a week; 20, 40 or 60 minutes; one save button, no delete button before a path", p.locator("#coach-path input[name=path-len]").count() == 3 and p.locator("#coach-path input[name=path-per]").count() == 5 and p.locator("#coach-path input[name=path-min]").count() == 3 and p.locator(".coach-save").count() == 1 and p.locator(".coach-pathdel").count() == 0 and p.locator(".coach-pathdays").count() == 0)
             small = p.evaluate("() => [...document.querySelectorAll('#coach-path label, #coach-path button, #coach-path input[type=date], #coach-path summary')].filter((e) => e.checkVisibility() && e.getBoundingClientRect().height < 40).length")
             expect(f"{lang} {w}px: every control of the path is 40 px or higher", small == 0, small)

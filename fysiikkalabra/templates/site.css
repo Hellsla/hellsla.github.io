@@ -2472,6 +2472,7 @@ details .fig-row.side>.fig svg{max-width:min(100%,32rem)}
 .kt-page .kt-task-start{margin-right:0}
 .coach-optrow{display:flex;flex-wrap:wrap;gap:0 1.2rem}
 .coach-date{display:block;margin:.2rem 0 0}
+.coach-date[hidden]{display:none}
 .coach-date input{min-height:44px;max-width:12rem;font-size:var(--fs-ui)}
 .coach-pathform{margin:.4rem 0 0}
 .coach-pathacts{display:flex;flex-wrap:wrap;gap:.6rem;margin:1rem 0 0}

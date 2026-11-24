@@ -442,13 +442,15 @@
         lastIdx++;
         left = review(n, left, items);
       } else {
-        while (queue.length && queue[0].diag && queue[0].task.min <= left) { const q = queue.shift(); items.push(q); left -= q.task.min; mark(n, q.task); }   // the diagnostic first, as many of its tasks as the day holds
-        if (!queue.length || !queue[0].diag) {
+        // the first task that still fits the minutes left, the diagnostic's first; a task that does not fit waits for a longer day (the day is never left half empty for it)
+        const takeFrom = (diag) => { for (let i = queue.findIndex((q) => !!q.diag === diag && q.task.min <= left); i >= 0; i = queue.findIndex((q) => !!q.diag === diag && q.task.min <= left)) { const q = queue.splice(i, 1)[0]; if (synth.some((r) => r[1] === q.task.id)) continue; items.push(q); left -= q.task.min; mark(n, q.task); } };
+        takeFrom(true);
+        if (!queue.some((q) => q.diag)) {
           const due = recommend(idx, { log: synth, cells: d.cells }, str(n), { goal, courses: [], budget: Math.floor(left / 2) }).recs.find((r) => r.reason.key === 'stale');   // a revisit that has come due goes first
           if (due && due.task.min <= left) { items.push({ task: due.task, why: 'stale' }); left -= due.task.min; mark(n, due.task); }
-          while (queue.length && queue[0].task.min <= left) { const q = queue.shift(); if (!synth.some((r) => r[1] === q.task.id)) { items.push(q); left -= q.task.min; mark(n, q.task); } }
+          takeFrom(false);
         }
-        if (!queue.length) left = review(n, left, items);   // the lessons are through: the rest of the days is revision
+        if (left >= 2 && !queue.some((q) => q.task.min <= left)) left = review(n, left, items);   // the lessons are through, or what is left is longer than the day has minutes left: revisions fill it
       }
       out.push({ date: str(n), n, items, minutes: B - left, last: n >= lastWeek });
     }
@@ -596,12 +598,15 @@
       const dl = el('label', 'coach-date'), date = el('input'); date.type = 'date'; date.value = cur.exam || '';
       date.min = str(num(t0) + EXAM_MIN); date.max = str(num(t0) + EXAM_MAX); date.setAttribute('aria-label', T.path_exam);
       dl.append(date); len.append(dl);
+      const showDate = () => { dl.hidden = (form.querySelector('input[name="path-len"]:checked') || {}).value !== 'exam'; };   // the date of the exam is asked only when the exam day is the choice
+      len.addEventListener('change', showDate);
       const per = radios('path-per', T.path_per, PER.map((n) => [n, String(n)]), cur.per), min = radios('path-min', T.path_min, MINS.map((n) => [n, fmt(T.path_mins, { n })]), cur.min);
       const save = el('button', 'coach-save', T.path_save); save.type = 'submit';
       const warn = el('p', 'notice', T.nostore); warn.hidden = true;
       const acts = el('div', 'coach-pathacts', null); acts.append(save);
       if (p) { const del = el('button', 'coach-pathdel', T.path_del); del.type = 'button'; del.addEventListener('click', () => { writePath(null); showPath(); }); acts.append(del); }
       form.append(len, per, min, acts, warn);
+      showDate();
       form.addEventListener('submit', (e) => {
         e.preventDefault();
         const v = (n) => (form.querySelector('input[name="' + n + '"]:checked') || {}).value, mode = v('path-len');
