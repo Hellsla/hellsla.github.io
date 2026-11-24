@@ -141,9 +141,11 @@ Arvio: höyrystämiseen tarvitaan pienelläkin massalla paljon, koska $r$ on suu
 **Kaava:** $$\begin{aligned} Q_\text{luovutettu} &= Q_\text{vastaanotettu} \\
 Q_\text{luovutettu} &= cm_1(T_1 - T) \\
 Q_\text{vastaanotettu} &= sm_2 + cm_2(T - T_0) \\
-cm_1(T_1 - T) &= sm_2 + cm_2(T - T_0) \\
-cm_1T_1 + cm_2T_0 - sm_2 &= c(m_1 + m_2)T \\
-T &= \dfrac{cm_1T_1 + cm_2T_0 - sm_2}{c(m_1 + m_2)}
+cm_1(T_1 - T) &= sm_2 \\
+&\quad + cm_2(T - T_0) \\
+c(m_1 + m_2)T &= cm_1T_1 \\
+&\quad + cm_2T_0 - sm_2 \\
+T &= \dfrac{\begin{array}{c} cm_1T_1 \\ + cm_2T_0 - sm_2 \end{array}}{c(m_1 + m_2)}
 \end{aligned}
 $$
 **Muunnokset:** $m_2 = 60\,\text{g} = 0{,}060\,\text{kg}$ ja $s = 334\,000\,\tfrac{\text{J}}{\text{kg}}$. Koska $T_0 = 0\,{}^\circ\text{C}$, termi $cm_2T_0$ on nolla, ja lämpötilat voi sijoittaa celsiusasteina, koska kaava sisältää lämpötilaeroja.
@@ -343,8 +345,10 @@ s &= \dfrac{19\,910\,\text{J}}{0{,}100\,\text{kg}} \\
 **Periaate:** Energia säilyy, kun häviöitä ei ole: maidon vastaanottama energia on yhtä suuri kuin höyryn luovuttama. Höyry luovuttaa energiaa kahdessa vaiheessa: tiivistyessään $100\,{}^\circ\text{C}$:n vedeksi ($Q = rm_\text{h}$) ja sitten tiivistynyt vesi jäähtyessään $100\,{}^\circ\text{C}$:sta loppulämpötilaan ($Q = cm_\text{h}\Delta T$).
 **Kaava:** $$\begin{aligned} Q_\text{luovutettu} &= Q_\text{vastaanotettu} \\
 Q_\text{vastaanotettu} &= cM(T - T_0) \\
-Q_\text{luovutettu} &= rm_\text{h} + c\,m_\text{h}(100\,{}^\circ\text{C} - T) \\
-cM(T - T_0) &= rm_\text{h} + c\,m_\text{h}(100\,{}^\circ\text{C} - T) \\
+Q_\text{luovutettu} &= rm_\text{h} \\
+&\quad + c\,m_\text{h}(100\,{}^\circ\text{C} - T) \\
+cM(T - T_0) &= rm_\text{h} \\
+&\quad + c\,m_\text{h}(100\,{}^\circ\text{C} - T) \\
 cM(T - T_0) &= m_\text{h}\,(r + c\,(100\,{}^\circ\text{C} - T)) \\
 m_\text{h} &= \dfrac{cM(T - T_0)}{r + c\,(100\,{}^\circ\text{C} - T)}
 \end{aligned}

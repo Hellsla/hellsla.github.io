@@ -141,9 +141,11 @@ Estimate: vaporisation needs a lot even for a small mass because $r$ is large, a
 **Formula:** $$\begin{aligned} Q_\text{out} &= Q_\text{received} \\
 Q_\text{out} &= cm_1(T_1 - T) \\
 Q_\text{received} &= sm_2 + cm_2(T - T_0) \\
-cm_1(T_1 - T) &= sm_2 + cm_2(T - T_0) \\
-cm_1T_1 + cm_2T_0 - sm_2 &= c(m_1 + m_2)T \\
-T &= \dfrac{cm_1T_1 + cm_2T_0 - sm_2}{c(m_1 + m_2)}
+cm_1(T_1 - T) &= sm_2 \\
+&\quad + cm_2(T - T_0) \\
+c(m_1 + m_2)T &= cm_1T_1 \\
+&\quad + cm_2T_0 - sm_2 \\
+T &= \dfrac{\begin{array}{c} cm_1T_1 \\ + cm_2T_0 - sm_2 \end{array}}{c(m_1 + m_2)}
 \end{aligned}
 $$
 **Conversions:** $m_2 = 60\,\text{g} = 0.060\,\text{kg}$ and $s = 334\,000\,\tfrac{\text{J}}{\text{kg}}$. Since $T_0 = 0\,{}^\circ\text{C}$, the term $cm_2T_0$ is zero, and the temperatures can be substituted in degrees Celsius because the formula contains temperature differences.
@@ -350,8 +352,10 @@ Comparison: if the same energy $19.9\,\text{kJ}$ cooled the liquid, the temperat
 **Principle:** Energy is conserved when there are no losses: the energy absorbed by the milk equals the energy given out by the steam. The steam gives out energy in two stages: as it condenses into water at $100\,{}^\circ\text{C}$ ($Q = rm_\text{s}$) and then as the condensed water cools from $100\,{}^\circ\text{C}$ to the final temperature ($Q = cm_\text{s}\Delta T$).
 **Formula:** $$\begin{aligned} Q_\text{out} &= Q_\text{received} \\
 Q_\text{received} &= cM(T - T_0) \\
-Q_\text{out} &= rm_\text{s} + c\,m_\text{s}(100\,{}^\circ\text{C} - T) \\
-cM(T - T_0) &= rm_\text{s} + c\,m_\text{s}(100\,{}^\circ\text{C} - T) \\
+Q_\text{out} &= rm_\text{s} \\
+&\quad + c\,m_\text{s}(100\,{}^\circ\text{C} - T) \\
+cM(T - T_0) &= rm_\text{s} \\
+&\quad + c\,m_\text{s}(100\,{}^\circ\text{C} - T) \\
 cM(T - T_0) &= m_\text{s}\,(r + c\,(100\,{}^\circ\text{C} - T)) \\
 m_\text{s} &= \dfrac{cM(T - T_0)}{r + c\,(100\,{}^\circ\text{C} - T)}
 \end{aligned}

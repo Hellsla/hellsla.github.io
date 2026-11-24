@@ -81,11 +81,13 @@ $$
 **Kysytty:** tasapainolämpötila $T$
 **Periaate:** Energia säilyy. Lämpöä ei siirry mukiin eikä ilmaan. Silloin kuuman veden luovuttama lämpömäärä on yhtä suuri kuin kylmän veden vastaanottama. Lopussa molemmilla on sama lämpötila $T$.
 **Kaava:** $$\begin{aligned} Q_\text{luov} &= Q_\text{vast} \\
-c m_1 (T_1 - T) &= c m_2 (T - T_2) \qquad (Q = c m \Delta T) \\
+Q &= c m \Delta T \\
+c m_1 (T_1 - T) &= c m_2 (T - T_2) \\
 m_1 (T_1 - T) &= m_2 (T - T_2) \\
-m_1 T_1 - m_1 T &= m_2 T - m_2 T_2 \\
+m_1 T_1 - m_1 T &= m_2 T \\
+&\quad - m_2 T_2 \\
 m_1 T_1 + m_2 T_2 &= (m_1 + m_2) T \\
-T &= \dfrac{m_1 T_1 + m_2 T_2}{m_1 + m_2}
+T &= \dfrac{\begin{array}{c} m_1 T_1 \\ + m_2 T_2 \end{array}}{m_1 + m_2}
 \end{aligned}
 $$
 **Muunnokset:** Grammoja ei tarvitse muuntaa kilogrammoiksi. Massa on sekä osoittajassa että nimittäjässä, joten yksikkö supistuu. Lämpötilat voi sijoittaa celsiusasteina. Tasapainoyhtälössä on vain lämpötilaeroja. Ratkaistussa kaavassa painojen summa on nimittäjässä. Siksi asteikon siirto siirtää myös tulosta saman verran.
@@ -130,10 +132,12 @@ $$
 **Kysytty:** yhteinen loppulämpötila $T$
 **Periaate:** Energia säilyy. Kauhan luovuttama lämpömäärä on yhtä suuri kuin veden vastaanottama. Lopussa molemmilla on sama lämpötila. Aineet ovat eri, joten ominaislämpökapasiteetit eivät supistu.
 **Kaava:** $$\begin{aligned} Q_\text{luov} &= Q_\text{vast} \\
-c_1 m_1 (T_1 - T) &= c_2 m_2 (T - T_2) \qquad (Q = c m \Delta T) \\
-c_1 m_1 T_1 - c_1 m_1 T &= c_2 m_2 T - c_2 m_2 T_2 \\
+Q &= c m \Delta T \\
+c_1 m_1 (T_1 - T) &= c_2 m_2 (T - T_2) \\
+c_1 m_1 T_1 - c_1 m_1 T &= c_2 m_2 T \\
+&\quad - c_2 m_2 T_2 \\
 c_1 m_1 T_1 + c_2 m_2 T_2 &= (c_1 m_1 + c_2 m_2) T \\
-T &= \dfrac{c_1 m_1 T_1 + c_2 m_2 T_2}{c_1 m_1 + c_2 m_2}
+T &= \dfrac{\begin{array}{c} c_1 m_1 T_1 \\ + c_2 m_2 T_2 \end{array}}{c_1 m_1 + c_2 m_2}
 \end{aligned}
 $$
 **Muunnokset:** Massat ovat jo kilogrammoina. Lämpötilat voi sijoittaa celsiusasteina. Tasapainoyhtälössä on vain lämpötilaeroja. Ratkaistussa kaavassa painojen summa on nimittäjässä. Siksi asteikon siirto siirtää myös tulosta saman verran.
@@ -169,7 +173,8 @@ c) Lämpöhäviöitä voi pienentää kalorimetrin eristyksellä ja kannella. Si
 **Periaate:** Sama teho samassa ajassa antaa kummallekin nesteelle saman lämpömäärän $Q$. Massat ovat samat. Koska $Q = c m \Delta T$, tulo $c\,\Delta T$ on kummallakin sama. Siksi suuremman $c$:n neste lämpenee vähemmän.
 **Kuvaajan lukeminen:** Taulukon lämpötilat nousevat tasaisesti. Neste A lämpenee noin $4{,}5\,\text{K}$ ja neste B noin $2{,}3\,\text{K}$ jokaisessa $30\,\text{s}$:n välissä. Siksi koko ajan $120\,\text{s}$ muutokset ovat $\Delta T_\text{A} = 38{,}1\,{}^\circ\text{C} - 20{,}0\,{}^\circ\text{C} = 18{,}1\,\text{K}$ ja $\Delta T_\text{B} = 29{,}0\,{}^\circ\text{C} - 20{,}0\,{}^\circ\text{C} = 9{,}0\,\text{K}$. Neste B lämpenee hitaammin. Siksi B on vettä ja A öljyä.
 **Kaava:** $$\begin{aligned} Q_\text{ö} &= Q_\text{v} \\
-c_\text{ö} m \Delta T_\text{A} &= c_\text{v} m \Delta T_\text{B} \qquad (Q = c m \Delta T) \\
+Q &= c m \Delta T \\
+c_\text{ö} m \Delta T_\text{A} &= c_\text{v} m \Delta T_\text{B} \\
 c_\text{ö} &= c_\text{v} \cdot \dfrac{\Delta T_\text{B}}{\Delta T_\text{A}}
 \end{aligned}
 $$
@@ -183,10 +188,12 @@ $$
 **Kysytty:** a) oppilaan virhe; b) tasapainolämpötila $T$
 **Periaate:** Eristetyssä astiassa kuparin luovuttama lämpömäärä on yhtä suuri kuin veden vastaanottama. Oppilaan keskiarvo olisi oikein vain, jos kappaleiden lämpökapasiteetit $c m$ olisivat yhtä suuret. Nyt veden lämpökapasiteetti on moninkertainen kuparin kapasiteettiin verrattuna. Siksi tasapainolämpötila on lähellä veden alkulämpötilaa, ei puolivälissä.
 **Kaava:** $$\begin{aligned} Q_\text{luov} &= Q_\text{vast} \\
-c_\text{k} m_\text{k} (T_\text{k} - T) &= c_\text{v} m_\text{v} (T - T_\text{v}) \qquad (Q = c m \Delta T) \\
-c_\text{k} m_\text{k} T_\text{k} - c_\text{k} m_\text{k} T &= c_\text{v} m_\text{v} T - c_\text{v} m_\text{v} T_\text{v} \\
+Q &= c m \Delta T \\
+c_\text{k} m_\text{k} (T_\text{k} - T) &= c_\text{v} m_\text{v} (T - T_\text{v}) \\
+c_\text{k} m_\text{k} T_\text{k} - c_\text{k} m_\text{k} T &= c_\text{v} m_\text{v} T \\
+&\quad - c_\text{v} m_\text{v} T_\text{v} \\
 c_\text{k} m_\text{k} T_\text{k} + c_\text{v} m_\text{v} T_\text{v} &= (c_\text{k} m_\text{k} + c_\text{v} m_\text{v}) T \\
-T &= \dfrac{c_\text{k} m_\text{k} T_\text{k} + c_\text{v} m_\text{v} T_\text{v}}{c_\text{k} m_\text{k} + c_\text{v} m_\text{v}}
+T &= \dfrac{\begin{array}{c} c_\text{k} m_\text{k} T_\text{k} \\ + c_\text{v} m_\text{v} T_\text{v} \end{array}}{c_\text{k} m_\text{k} + c_\text{v} m_\text{v}}
 \end{aligned}
 $$
 **Muunnokset:** Lämpökapasiteetit ovat $c_\text{k} m_\text{k} = 385\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0{,}20\,\text{kg} = 77\,\tfrac{\text{J}}{\text{K}}$ ja $c_\text{v} m_\text{v} = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0{,}50\,\text{kg} = 2095\,\tfrac{\text{J}}{\text{K}}$. Lämpötilat voi sijoittaa celsiusasteina, koska tulos on keskiarvo, jossa suuremman lämpökapasiteetin kappaleen lämpötila painaa enemmän.
@@ -214,7 +221,8 @@ Tarkistus: levy jäähtyy, joten sen sisäenergia pienenee. Levy ei voi samalla 
 **Kysytty:** kivien massa $m_\text{k}$
 **Periaate:** Energia säilyy. Kivien luovuttama lämpömäärä on yhtä suuri kuin veden vastaanottama. Tasapainossa kivet ja vesi ovat samassa lämpötilassa. Siksi kivet jäähtyvät $40\,{}^\circ\text{C}$:seen asti, eivät $0\,{}^\circ\text{C}$:seen.
 **Kaava:** $$\begin{aligned} Q_\text{luov} &= Q_\text{vast} \\
-c_\text{k} m_\text{k} (T_\text{k} - T) &= c_\text{v} m_\text{v} (T - T_\text{v}) \qquad (Q = c m \Delta T) \\
+Q &= c m \Delta T \\
+c_\text{k} m_\text{k} (T_\text{k} - T) &= c_\text{v} m_\text{v} (T - T_\text{v}) \\
 m_\text{k} &= \dfrac{c_\text{v} m_\text{v} (T - T_\text{v})}{c_\text{k} (T_\text{k} - T)}
 \end{aligned}
 $$

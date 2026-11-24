@@ -81,11 +81,13 @@ $$
 **Find:** the equilibrium temperature $T$
 **Principle:** Energy is conserved: when no heat is transferred to the mug or the air, the heat given out by the hot water is equal to the heat received by the cold water. At the end both have the same temperature $T$.
 **Formula:** $$\begin{aligned} Q_\text{out} &= Q_\text{in} \\
-c m_1 (T_1 - T) &= c m_2 (T - T_2) \qquad (Q = c m \Delta T) \\
+Q &= c m \Delta T \\
+c m_1 (T_1 - T) &= c m_2 (T - T_2) \\
 m_1 (T_1 - T) &= m_2 (T - T_2) \\
-m_1 T_1 - m_1 T &= m_2 T - m_2 T_2 \\
+m_1 T_1 - m_1 T &= m_2 T \\
+&\quad - m_2 T_2 \\
 m_1 T_1 + m_2 T_2 &= (m_1 + m_2) T \\
-T &= \dfrac{m_1 T_1 + m_2 T_2}{m_1 + m_2}
+T &= \dfrac{\begin{array}{c} m_1 T_1 \\ + m_2 T_2 \end{array}}{m_1 + m_2}
 \end{aligned}
 $$
 **Conversions:** The grams do not need to be converted to kilograms, because the mass is in both the numerator and the denominator and the unit cancels. The temperatures can be substituted in degrees Celsius: the equilibrium equation contains only temperature differences, and in the solved formula the sum of the weights is in the denominator, so shifting the scale shifts the result by the same amount.
@@ -130,10 +132,12 @@ $$
 **Find:** the common final temperature $T$
 **Principle:** Energy is conserved: the heat given out by the ladle is equal to the heat received by the water, and at the end both have the same temperature. The substances are different, so the specific heat capacities do not cancel.
 **Formula:** $$\begin{aligned} Q_\text{out} &= Q_\text{in} \\
-c_1 m_1 (T_1 - T) &= c_2 m_2 (T - T_2) \qquad (Q = c m \Delta T) \\
-c_1 m_1 T_1 - c_1 m_1 T &= c_2 m_2 T - c_2 m_2 T_2 \\
+Q &= c m \Delta T \\
+c_1 m_1 (T_1 - T) &= c_2 m_2 (T - T_2) \\
+c_1 m_1 T_1 - c_1 m_1 T &= c_2 m_2 T \\
+&\quad - c_2 m_2 T_2 \\
 c_1 m_1 T_1 + c_2 m_2 T_2 &= (c_1 m_1 + c_2 m_2) T \\
-T &= \dfrac{c_1 m_1 T_1 + c_2 m_2 T_2}{c_1 m_1 + c_2 m_2}
+T &= \dfrac{\begin{array}{c} c_1 m_1 T_1 \\ + c_2 m_2 T_2 \end{array}}{c_1 m_1 + c_2 m_2}
 \end{aligned}
 $$
 **Conversions:** The masses are already in kilograms. The temperatures can be substituted in degrees Celsius: the equilibrium equation contains only temperature differences, and in the solved formula the sum of the weights is in the denominator, so shifting the scale shifts the result by the same amount.
@@ -170,7 +174,8 @@ c) Heat losses can be reduced with insulation and a lid on the calorimeter: then
 **Principle:** The same power in the same time gives both liquids the same quantity of heat $Q$, and the masses are the same. Since $Q = c m \Delta T$, the product $c\,\Delta T$ is the same for both, so the liquid with the greater $c$ warms less.
 **Reading the graph:** The temperatures in the table rise steadily: liquid A warms by about $4.5\,\text{K}$ and liquid B by about $2.3\,\text{K}$ in each $30\,\text{s}$ interval. So in the whole $120\,\text{s}$ the changes are $\Delta T_\text{A} = 38.1\,{}^\circ\text{C} - 20.0\,{}^\circ\text{C} = 18.1\,\text{K}$ and $\Delta T_\text{B} = 29.0\,{}^\circ\text{C} - 20.0\,{}^\circ\text{C} = 9.0\,\text{K}$. Liquid B warms more slowly, so B is water and A is oil.
 **Formula:** $$\begin{aligned} Q_\text{oil} &= Q_\text{w} \\
-c_\text{oil} m \Delta T_\text{A} &= c_\text{w} m \Delta T_\text{B} \qquad (Q = c m \Delta T) \\
+Q &= c m \Delta T \\
+c_\text{oil} m \Delta T_\text{A} &= c_\text{w} m \Delta T_\text{B} \\
 c_\text{oil} &= c_\text{w} \cdot \dfrac{\Delta T_\text{B}}{\Delta T_\text{A}}
 \end{aligned}
 $$
@@ -184,10 +189,12 @@ $$
 **Find:** a) the error of the student; b) the equilibrium temperature $T$
 **Principle:** In an insulated vessel the heat given out by the copper is equal to the heat received by the water. The student's mean would be correct only if the heat capacities $c m$ of the objects were equal. Here the heat capacity of the water is many times that of the copper, so the equilibrium temperature is close to the initial temperature of the water, not halfway.
 **Formula:** $$\begin{aligned} Q_\text{out} &= Q_\text{in} \\
-c_\text{c} m_\text{c} (T_\text{c} - T) &= c_\text{w} m_\text{w} (T - T_\text{w}) \qquad (Q = c m \Delta T) \\
-c_\text{c} m_\text{c} T_\text{c} - c_\text{c} m_\text{c} T &= c_\text{w} m_\text{w} T - c_\text{w} m_\text{w} T_\text{w} \\
+Q &= c m \Delta T \\
+c_\text{c} m_\text{c} (T_\text{c} - T) &= c_\text{w} m_\text{w} (T - T_\text{w}) \\
+c_\text{c} m_\text{c} T_\text{c} - c_\text{c} m_\text{c} T &= c_\text{w} m_\text{w} T \\
+&\quad - c_\text{w} m_\text{w} T_\text{w} \\
 c_\text{c} m_\text{c} T_\text{c} + c_\text{w} m_\text{w} T_\text{w} &= (c_\text{c} m_\text{c} + c_\text{w} m_\text{w}) T \\
-T &= \dfrac{c_\text{c} m_\text{c} T_\text{c} + c_\text{w} m_\text{w} T_\text{w}}{c_\text{c} m_\text{c} + c_\text{w} m_\text{w}}
+T &= \dfrac{\begin{array}{c} c_\text{c} m_\text{c} T_\text{c} \\ + c_\text{w} m_\text{w} T_\text{w} \end{array}}{c_\text{c} m_\text{c} + c_\text{w} m_\text{w}}
 \end{aligned}
 $$
 **Conversions:** The heat capacities are $c_\text{c} m_\text{c} = 385\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0.20\,\text{kg} = 77\,\tfrac{\text{J}}{\text{K}}$ and $c_\text{w} m_\text{w} = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0.50\,\text{kg} = 2095\,\tfrac{\text{J}}{\text{K}}$. The temperatures can be substituted in degrees Celsius, because the result is a weighted mean.
@@ -215,7 +222,8 @@ Check: the plate cools, so its internal energy decreases and it cannot receive e
 **Find:** the mass of the stones $m_\text{s}$
 **Principle:** Energy is conserved: the heat given out by the stones is equal to the heat received by the water. In equilibrium the stones and the water are at the same temperature, so the stones cool down to $40\,{}^\circ\text{C}$, not to $0\,{}^\circ\text{C}$.
 **Formula:** $$\begin{aligned} Q_\text{out} &= Q_\text{in} \\
-c_\text{s} m_\text{s} (T_\text{s} - T) &= c_\text{w} m_\text{w} (T - T_\text{w}) \qquad (Q = c m \Delta T) \\
+Q &= c m \Delta T \\
+c_\text{s} m_\text{s} (T_\text{s} - T) &= c_\text{w} m_\text{w} (T - T_\text{w}) \\
 m_\text{s} &= \dfrac{c_\text{w} m_\text{w} (T - T_\text{w})}{c_\text{s} (T_\text{s} - T)}
 \end{aligned}
 $$
