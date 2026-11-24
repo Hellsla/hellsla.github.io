@@ -20,6 +20,12 @@ Read the data critically:
 - One machine can have two records. COMPASS ran first at Culham in the United Kingdom and later in Prague, so it has a record for each place.
 - Results of private companies are usually **company-reported**, and every date of a planned machine is a **plan**.
 
+```pysahdy
+A private company reports a record result from its machine. Why does the explorer label it company-reported and not simply as a result?
+---
+Only the company has checked the number so far. Until independent experts have examined the data, it is a claim, not a confirmed result.
+```
+
 ## From competition to collaboration {Story}
 
 In the early 1950s, fusion research was **secret**. The United States, the Soviet Union and the United Kingdom each hoped that controlled fusion would give them an advantage, and each worked alone. In September 1958, at the second United Nations conference on the peaceful uses of atomic energy in Geneva, the three countries **declassified** their fusion research. They found that all of them had the same unstable, leaky plasmas. In the explorer's data, the machines that started before 1970 stand in exactly these three countries (the selection leaves out, for example, West Germany's first Wendelstein stellarators of 1960); in 1958 the year filter shows six of them.

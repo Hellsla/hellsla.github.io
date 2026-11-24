@@ -20,6 +20,12 @@ An atom has a tiny **nucleus** with **electrons** around it (Rutherford, 1911). 
 
 Here $e = 1.602 \cdot 10^{-19}\ \text{C}$ is the elementary charge and $1\ \text{u} = 1.661 \cdot 10^{-27}\ \text{kg}$ the **atomic mass unit**. A proton is $1836$ times as heavy as an electron, so almost all the mass of an atom is in the nucleus, although its diameter is only $1/60\,000$ (hydrogen) to $1/27\,000$ (uranium) of the atom's.
 
+```pysahdy
+Why is almost all the mass of an atom in the nucleus, although the nucleus is tiny?
+---
+Protons and neutrons are about $1836$ times as heavy as electrons, so the electrons add very little mass.
+```
+
 ## Key idea
 
 The number of protons is the **atomic number** $Z$. It decides the element: every carbon nucleus has $Z = 6$, every uranium nucleus $Z = 92$. The number of neutrons is the **neutron number** $N$. Nuclei of one element with different numbers of neutrons are **isotopes** of the element, from the Greek for "same place": they share a place in the periodic table. The Scottish doctor Margaret Todd suggested the word to the chemist Frederick Soddy in 1913.
@@ -54,6 +60,12 @@ Isotopes have practically the same chemistry but different masses. Some are **st
 </svg>
 
 About one hydrogen atom in $6400$ on Earth is deuterium, so every litre of water contains some. Tritium is radioactive, with a **half-life** of $12.3$ years, so there is almost none in nature.
+
+```pysahdy
+Why is there almost no tritium in nature?
+---
+Tritium is radioactive with a half-life of $12.3$ years, so the tritium that formed earlier has decayed.
+```
 
 ## Formula: Mass number and nuclear notation
 
@@ -90,6 +102,12 @@ The mass number is a count, not a mass, although it is close to the mass in $\te
 Inside a nucleus, protons are only about $1\text{–}2\ \text{fm}$ apart ($1\ \text{fm} = 10^{-15}\ \text{m}$). There the electric repulsion of two protons is huge, about $58\ \text{N}$ at $2\ \text{fm}$. Gravity between them is about $10^{36}$ times weaker.
 
 The nucleus is held by a different force, the **strong nuclear force**. It attracts any two nucleons, protons and neutrons alike, and it beats the electric repulsion when they nearly touch. But it has a very **short range**: it fades out by about $2.5\ \text{fm}$. Below about $0.7\ \text{fm}$ it repels, so nucleons cannot be squeezed together.
+
+```pysahdy
+What does the strong force do to two nucleons that are closer than about $0.7\,\text{fm}$?
+---
+It repels them, so nucleons cannot be squeezed together.
+```
 
 <svg data-fig="ranges" viewBox="0 0 600 350" role="img" aria-label="Schematic bar diagram along an axis of distance r between the centres of two nucleons, from 0 to 10 femtometres. Top bar, green: the strong nuclear force attracts from about 0.7 fm and fades out by about 2.5 fm; below 0.7 fm it repels (a hatched grey part). Middle bar, red: the electric repulsion between two protons acts at every distance and continues past the end of the axis, getting weaker with distance. Bottom: a bracket shows the diameter of an iron-56 nucleus, about 9.2 fm, much wider than the reach of the strong force." style="max-width:100%;font-size:26px">
   <defs><linearGradient id="fy14nu-r-g" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#2b8a3e"/><stop offset="0.6" stop-color="#2b8a3e"/><stop offset="1" stop-color="#2b8a3e" stop-opacity="0.05"/></linearGradient><pattern id="fy14nu-r-h" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="10" height="10" fill="#e3dccb"/><line x1="0" y1="0" x2="0" y2="10" stroke="#6b7480" stroke-width="3"/></pattern><linearGradient id="fy14nu-r-e" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#c92a2a"/><stop offset="0.65" stop-color="#c92a2a"/><stop offset="1" stop-color="#c92a2a" stop-opacity="0.25"/></linearGradient></defs>

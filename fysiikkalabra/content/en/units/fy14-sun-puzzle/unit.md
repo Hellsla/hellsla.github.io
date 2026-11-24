@@ -16,6 +16,12 @@ In 1854 Hermann von Helmholtz proposed **gravitational contraction**. If the Sun
 
 This was a real conflict. Geologists, who studied how slowly rocks form, and biologists, who followed Darwin's theory of evolution, needed hundreds of millions of years. Kelvin's physics was correct; what he did not know was that a new form of energy existed. In 1903 Pierre Curie and Albert Laborde found that radium gives off heat without any chemical reaction, over its whole decay about $200\,000$ times as much as the same mass of burning coal. Energy was hidden inside atoms.
 
+```pysahdy
+Why did Kelvin's limit of about $20$ million years conflict with the findings of geologists and biologists?
+---
+They needed hundreds of millions of years for rocks to form and species to evolve. Kelvin's energy sources could not keep the Sun shining that long.
+```
+
 ## Key idea
 
 The answer came in 1920. On 24 August, the astronomer **Arthur Eddington** spoke to the British Association for the Advancement of Science in Cardiff. He used a new measurement by the chemist Francis Aston: a helium atom has less mass than the four hydrogen atoms it could be made of. With today's AME2020 masses:
@@ -27,6 +33,12 @@ m(^{4}\text{He}) &= 4.002603\ \text{u}
 \end{aligned}
 ```
 About $0.71\ \%$ of the mass disappears, and by $E = \Delta m \cdot c^2$ it must leave as energy. Eddington argued that a star is "drawing on some vast reservoir of energy", which "can scarcely be other than the sub-atomic energy". Turning hydrogen into helium, he showed, would easily keep the Sun shining for billions of years.
+
+```pysahdy
+Four hydrogen atoms have more mass than one helium atom. Where does the missing mass go?
+---
+It leaves as energy. By $E = \Delta m \cdot c^2$ even a small mass difference means a large amount of energy.
+```
 
 <figure class="unit-photo"><img src="units/fy14/pics/aston.jpg" alt="Black-and-white portrait photograph of Francis William Aston, a man with a moustache wearing a suit." width="1164" height="1600" loading="lazy"><figcaption>Francis Aston (1877–1945) built the mass spectrograph and measured that a helium atom is slightly lighter than four hydrogen atoms, the clue to fusion energy. <span class="photo-credit">Photo: Bain News Service, publisher, public domain, via Wikimedia Commons</span></figcaption></figure>
 

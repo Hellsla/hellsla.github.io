@@ -29,6 +29,12 @@ Good readers of a foreign language use five strategies:
    the *<span lang="fr">aimants</span>* hold a hot gas, so they must be **magnets**.
 5. **Skip what you do not need.** You rarely need every word to get the message.
 
+```pysahdy
+You see the word <span lang="fr">réacteur</span> in a news text. Which strategy gives you its meaning, and what does it mean?
+---
+The word ending: French <span lang="fr">‑eur</span> has the regular English partner <em>‑or</em>, so <span lang="fr">réacteur</span> means <em>reactor</em>.
+```
+
 ## False friends
 
 Some French words look like English words but mean something else. They are called **false friends**:

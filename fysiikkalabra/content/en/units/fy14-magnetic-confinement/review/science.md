@@ -1,16 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: c14fd77f3c588c7d
+CONTENT-HASH: 0fb5ed28dd755d9a
+SCOPE: delta (Stop and think boxes only, git diff origin/main)
 
-Re-review of commit cf5a329b and of the simulation commits 7561f2b5, 3735b0fa and 4ec672e4 (the last two only place canvas label cards and the $\overline{B}$ tag; physics unchanged). The previous Polish 1–3 are fixed: the alpha task shows $mv^2/2 = 1.67 \cdot 10^{-15}\ \text{J} \approx 10\ \text{keV}$, the sim model says the fastest speed is 3.3 % of c, and the howto names the sideways drift with $\overline{E}$.
-
-## Blocking
-None.
-
-## Polish
-None.
-
-## Checked
-- New check-2: an electron moves up the page with $\overline{B}$ ⊙. $\overline{v} \times \overline{B} = \hat{y} \times \hat{z} = +\hat{x}$, and the charge is negative, so the force points to the **left**. Only that option is marked correct, and every distractor's feedback is correct.
-- Rebalanced options (review, exp-particles, find-error, check-1) were re-read. The physics and the correct answers are unchanged ("1836 times smaller, not larger" is correct).
-- The experiment `values` now name the particles and show trapped / escapes. The sim strings no longer state the mirror condition or verdict, so the prediction is not answered before the experiment. The readout still gives $\sin^2\theta$ and $B_0/B_{\max}$, which is correct. `simState.trapped` comes from the model, unchanged. `node tests/models/magnetic.test.js` runs 708 checks, all OK. The model and physics in `sim.js` are unchanged: only the font size and the readout strings changed.
-- The worked example (4.17 mm, 26.2 ns), the alpha task (5.08 cm) and the model values in the feedback (20.9 / 10.4 mm, 65.6 / 32.8 ns, loss cone 30°) are unchanged and correct.
+1. Blocking: none
+2. Checked: Box 1 (after the direction figure): proton along a field line, F = |q|vB sin(alpha) with alpha = 0 gives zero; formula and alpha defined in the Lorentz section above, which also states 'a charge that moves along the field feels no force'. Box 2 (after the mirror figure): v_parallel shrinks because the magnetic force does no work (stated in the Lorentz section, line 17), so kinetic energy is constant and the growing circling part leaves less for v_parallel; matches the mirror paragraph, correct at this level, one answer. The added blank line before the latex fence is harmless. Fences well formed. Polish: none.

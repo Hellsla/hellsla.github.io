@@ -12,6 +12,12 @@ Coils around a ring make a **toroidal** magnetic field, which runs the long way 
 
 The cure is a **poloidal** field, which runs the short way round the plasma's cross-section. Together the two make **helical** field lines that wind around the ring like the stripes on a candy cane. A particle on such a line visits the inside and the outside, the top and the bottom, so the separated charges can flow back along the lines and the outward drift does not build up.
 
+```pysahdy
+Why does adding a poloidal field stop the outward drift of the plasma?
+---
+The field lines become helical, so a particle visits both the inside and the outside of the ring. The separated charges can then flow back along the lines and no electric field builds up to push the plasma outward.
+```
+
 ## Formula: The toroidal field
 
 Ampère's law gives the field of $N$ turns carrying a current $I$, at a distance $R$ from the central axis of the ring:
@@ -47,6 +53,12 @@ Early stellarators confined plasma worse than tokamaks. Modern ones are **optimi
 ## Pulsed or steady? {Operation}
 
 A transformer works only while the current in its primary coil keeps *changing*, and that cannot go on for ever. So **inductive** current drive alone gives **pulses**: ITER's solenoid can drive $15\ \text{MA}$ for about $300$ to $500\ \text{s}$.
+
+```pysahdy
+Why does inductive current drive alone give only pulses?
+---
+A transformer induces a current only while the current in its primary coil, the central solenoid, keeps changing. The solenoid current cannot change for ever, so the pulse ends.
+```
 
 But a tokamak current can also be driven **without induction**:
 
