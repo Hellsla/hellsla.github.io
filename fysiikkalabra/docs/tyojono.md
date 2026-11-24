@@ -94,6 +94,7 @@ Pohdinnan järjestys ilmiö → kertaustehtävä → pohdintakysymys (`inquiry.p
 ## 8l-b. "Esimerkkiaineisto" pois otsikoista (opettaja 2026-11-16)
 `caption-label` tunnistaa kaikki muodot (#658); poistettu FY1, FY2, FY4, FY6, FY7, FY8 (fy8-2, fi, fi-easy, en; 0f-PR claude/fy8-0f). FY5 tehty (0f-PR #671). FY3: tehtävien text-kentät tehty (PR #742). Jäljellä muut kurssit:
 otsikot `reviews.caption_label_free`-funktiolla ja `reviews.py carry <id> --exercises [--lang]`; tehdään kurssin muiden töiden mukana (0f).
+Varattu: claude/8lb-esimerkkiaineisto (FY1, FY2, FY4, FY5, FY6, FY8: jäljellä vain tehtävätekstien ja tutkimusvaiheiden alkuetuliite; FY3 jää #849:n yhteyteen)
 
 ## 10. Simulaatioiden käyttöliittymä (opettaja 2026-11-14)
 Mittaus ja päätökset `docs/audits/2026-11-14-simulaatioiden-kayttoliittyma.md`. PR 1–4b tehty (#563, #588, #591, #648, #652), PR 5 tehty (#711: canvasin nimi ja kuvaus, 40 px:n valintaruudut, näkyvä kohdistus). Myöhemmin kurssi kerrallaan luvun seuraavan
