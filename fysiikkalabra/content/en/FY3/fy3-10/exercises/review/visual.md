@@ -1,18 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 00e765f40c13f50c
+CONTENT-HASH: d779c3fd22d3a1e2
 
 ## Blocking
-None.
+- none
 
 ## Polish
-- [Minor] Formula blocks (all chapters) — the aligned Formula rows put the left sides right-aligned at "=", so short and long left sides sit in a stepped column; this is readable and consistent with the other aligned blocks, no action needed.
+- none
 
 ## Checked
-- Delta: only the Formula step of the model solutions changed to aligned multi-row blocks (solutions.md).
-- 1280 px, solutions open: fy3-10-open-exercises-L2-1280-4 (five-row pV = nRT block with graph above).
-- Rows align at "=", fractions are in display style, subscripts and units upright, nothing clipped or overflowing, order principle then symbolic steps then asked quantity is kept, spacing to the Conversions block intact.
-- No 360/390 px capture of an opened solution; judged from 1280 px captures.
-- Hash run at start and end: unchanged.
+- Delta: one symbol rename in the Formula block of fy3-10-L3-04 (the balloon subscript p became b, so it now matches the Conversions and Substitution blocks). Captures current for this hash (stamp.txt).
+- 1280 px, level 3, every solution open: fy3-10-open-exercises-L3-1280-5 (the neighbouring task's solution) and -7 (the changed Formula, Conversions and the start of Substitution).
+- The six-row aligned Formula block reads cleanly. Equals signs sit in one column, fractions are in display style, the subscripts match the later rows, and nothing is clipped.
+- Not opened: 390 px solution captures. None exist, and the 360/390 layout check is covered by the packet's deterministic scope.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

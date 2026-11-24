@@ -1,18 +1,16 @@
-VERDICT: PASS
-CONTENT-HASH: 561d3e679af9f6d9
+VERDICT: FAIL
+CONTENT-HASH: 7e6d204e0c7b09d6
 
 ## Blocking
+- exercises.json:359–361 (fy3-8-L3-04) — **7, assessment.** The solution's answer a) is now "$13.2\,\text{mm}$, in practice at least $14\,\text{mm}$". That is the right safe-side rounding of an "at least" value to the two figures of $\alpha$. But the check has `answer` 13.2 and `tolerance` 0.03, so it accepts only $12.8$–$13.6\,\text{mm}$. A student who rounds to two figures as the solution and the house rule say, and enters $14$, is marked wrong ($+6\,\%$), while a student who rounds the wrong way and enters $13$ is marked right. — Fix: let the check accept $14$, for example `tolerance` 0.065 around 13.2. Alternatively, have the task ask for the computed value only (part a "to three figures") and keep $14\,\text{mm}$ as the practical remark.
 
 ## Polish
-- solutions.md (fy3-8-L3-03, Formula): the block stops at $\Delta V_\text{over} = \Delta V_\text{petrol} - \Delta V_\text{can}$. A last row $= (\gamma_\text{petrol} - 3\alpha_\text{steel})V_0\Delta T$ would simplify it to the end, as L3-02 does.
+- solutions.md (fy3-8-L3-04, Answer): "the results are acceptable rounded to two figures" sits next to the three-figure $13.2\,\text{mm}$. Saying that $13.2$ is the computed value and $14\,\text{mm}$ the two-figure safe-side value would make it consistent.
+- solutions.md (fy3-8-L3-03, Formula): as before, a last row $= (\gamma_\text{petrol} - 3\alpha_\text{steel})V_0\Delta T$ would simplify it to the end.
 
 ## Checked
-- The diff changes only the Formula steps. Its added lines ("Here $\Delta d = d - d_0$", "Here $\Delta T = T - T_0$", "$g_\text{limit}$ is…", "The area $A$ cancels") define the symbols those steps use.
-- Each block starts from $\Delta l = \alpha l_0\Delta T$ or $\Delta V = \gamma V_0\Delta T$ and solves for the unknown in symbols. Checked: L2-01, L2-03, L2-04, L2-05, L2-06, L2-07 c), L3-01, L3-02 ($(\alpha_\text{Cu} - \alpha_\text{Fe})l_0\Delta T$) and L2-09.
-- In L2-02, L3-03 and L3-05, $\gamma \approx 3\alpha$ is labelled as an approximation.
-- L3-01: the hole widens like a linear dimension of the steel, which is correct.
-- L3-04: the gap rules are right. The gap must be at least the summer extension, and the gap plus the winter contraction must not exceed $g_\text{limit}$.
-- L3-05: $h = (\Delta V_\text{ethanol} - \Delta V_\text{bulb})/(\pi r^2)$ is correct, with the bulb's volume equal to $V_0$.
-- L2-10 c): the column model $V_0 = Ah_0$, $\Delta V = A\Delta h$ gives $\Delta h = \gamma h_0\Delta T$. This is correct for a constant cross-section, which the task states.
-- Recomputed: L3-03 $457\,\text{cm}^3$, L3-04 $18\,\text{mm}$, L3-05 $75.9\,\text{mm}$, L2-10 $60\,\text{mm}$. Each matches.
+- The diff is one line, L3-04 answer a). The direction of the rounding is now physically right: the gap must not close, so the minimum is rounded up.
+- Recomputed: $g_\text{min} = 12\cdot10^{-6}\,\tfrac{1}{\text{K}} \cdot 25.0\,\text{m} \cdot 44\,\text{K} = 13.2\,\text{mm}$ and $g_\text{max} = 30 - 12.0 = 18\,\text{mm}$. answers.py gives 13.2.
+- Model answer c) is consistent: $15\,\text{mm}$ lies in both $13.2$–$18$ and $14$–$18\,\text{mm}$, and the summer margin is $1.8\,\text{mm}$, the winter gap $27\,\text{mm}$.
+- Nothing else changed since the PASS of the previous round.
 - The hash was the same at the start and the end.

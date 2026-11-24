@@ -1,20 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: dcf9a25f9b327a71
-Round: 2
-Mode: delta
+CONTENT-HASH: fac43d3c5888a291
 
 ## Blocking
 
 ## Polish
-- exercises/solutions.md (L2-04, L3-03, L3-04, L3-05, Kaava) — rows are broken by hand (`&\quad +`, a numerator split inside `\begin{array}`, in L2-04 and L3-04 even inside the bracket "(T_v \\ − T)"); the house rule leaves wrapping to the page — keep each equation on one row.
+- solutions.md:111–116 (fy3-14-L2-04): the Kaava block now names the expression $K$, but the Sijoitus still calls it "Hakasulkeiden lauseke", and there are no brackets any more. Write "$K$ on" so the substitution points at the row it fills.
+- solutions.md:158–160 (fy3-14-L3-03): $N$ is introduced as the left side and then set equal to $c_\text{j}(m_\text{j}+m_\text{v})T$. There is no row where the two $Q$ expressions are equated and rearranged, so the step from the balance to $N = \ldots T$ is left to the reader. A row such as "$c_\text{v} m_\text{v}\Delta T_\text{v} + s m_\text{v} - c_\text{j} m_\text{v} T = c_\text{j} m_\text{j} T - c_\text{j} m_\text{j} T_\text{j}$" before $N$ would make it explicit. The algebra is right as it stands. In the same solution, "Osoittajan termit" could be written "$N$:n termit".
 
 ## Checked
-- Every changed Kaava starts from Q_luovutettu = Q_vastaanotettu (or E = Pt = Q) and then Q = cmΔT, Q = sm, and solves the asked quantity symbolically; every row algebraically right.
-- L2-01: c_v m_v ΔT_v = s m_j + c_v(m_v + m_j)T is the correct balance with 0 °C as reference; recomputed 13.94 °C.
-- L3-01 boundary case (exactly melted, final 0 °C) m_j = c_v m_v ΔT_v/(c_j ΔT_j + s) right, 234 g.
-- L3-02, L2-06, L1-03: ice warmed first, m_s = (Q_v − c_j m_j ΔT_j)/s right; boundary comparison stated.
-- L3-03 all water freezes: released c_v m_v ΔT_v + s m_v − c_j m_v T, received c_j m_j(T − T_j); T = −3.5 °C recomputed, matches answers.py.
-- L2-04, L3-04: s = [c_v m_v(T_v − T) − c_v m_j T (− c_j m_j ΔT_j)]/m_j right; recomputed 335 kJ/kg.
-- L3-05: Q_j from the balance, then ΔT_j and the minimum water temperature Q_j/(c_v m_v) right.
-- L2-05: s = Pt/m = P/k with k the (t, m) slope right.
-- Sijoitus and answers unchanged; hash identical at start and end.
+- I read all three re-laid-out Kaava blocks on disk as aligned blocks. No `array` numerators remain. $K$ and $N$ are defined in their own rows before they are used, and each block ends in the form the Sijoitus uses.
+- L2-04: from $s m_\text{j} = c_\text{v} m_\text{v}(T_\text{v}-T) - c_\text{v} m_\text{j} T$ with $K = m_\text{v}(T_\text{v}-T) - m_\text{j}T$, we get $s = c_\text{v}K/m_\text{j}$. The factoring is right. Recomputed: $4190 \cdot 3{,}975/0{,}0500 = 333\,105\,\text{J/kg}$, so $333\,\text{kJ/kg}$.
+- L3-03: $Q_\text{luovutettu} = c_\text{v} m_\text{v}\Delta T_\text{v} + s m_\text{v} + c_\text{j} m_\text{v}(0-T)$ and $Q_\text{vastaanotettu} = c_\text{j} m_\text{j}(T-T_\text{j})$. Equating them gives exactly $N = c_\text{j}(m_\text{j}+m_\text{v})T$. Recomputed: $(4190 + 33\,400 - 42\,000)/1260 = -3{,}5\,{}^\circ\text{C}$. The boundary test that all the water freezes ($37\,590\,\text{J} < 42\,000\,\text{J}$) is stated before the formula is used.
+- L3-04: $N = c_\text{v}K - c_\text{j} m_\text{j}\Delta T_\text{j}$ and $s = N/m_\text{j}$ are correct. Part a) sets $\Delta T_\text{j} = 0$, as the task asks. Recomputed: $s_1 = 331\,\text{kJ/kg}$, $s_2 = 373\,\text{kJ/kg}$ and the corrected $s_2' = (18\,645{,}5 - 1890)/0{,}0500 = 335\,\text{kJ/kg}$.
+- No answer, unit or tolerance changed. My previous checks (L2-01, L3-01, L3-02, L3-05, L2-05) still hold.
+- The hash was the same at the start and the end.
