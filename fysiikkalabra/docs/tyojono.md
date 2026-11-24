@@ -99,7 +99,7 @@ otsikot `reviews.caption_label_free`-funktiolla ja `reviews.py carry <id> --exer
 Mittaus ja päätökset `docs/audits/2026-11-14-simulaatioiden-kayttoliittyma.md`. PR 1–4b tehty (#563, #588, #591, #648, #652), PR 5 tehty (#711: canvasin nimi ja kuvaus, 40 px:n valintaruudut, näkyvä kohdistus). Myöhemmin kurssi kerrallaan luvun seuraavan
 sisältömuutoksen yhteydessä: tyyppi D (fy6-5, fy6-6, fy6-9, fy6-12, fy6-13, fy6-14), fy1-2:n säätimien ryhmittely, näppäinvaihtoehto raahaukselle,
 nimien yhtenäistäminen (Toisto / Tauko / Alusta), toistuvien seliterivien poisto. 1366×650:n lisähuomiot: loki §10.
-Varattu: claude/10-fy1-sim (FY1:n simulaatiot: fy1-2:n säätimien ryhmittely, näppäinvaihtoehto, nimet, seliterivit; opettaja 2026-11-24)
+FY1 tehty (#842): fy1-2:n säätimet kolmelle riville, toistuvat seliterivit pois fy1-1…fy1-6:sta, nopeusvalinnan nimi "Nopeus" fy1-1:ssä ja fy1-3:ssa; näppäinvaihtoehto raahaukselle jo olemassa (fy1-1, fy1-2). Opettajalle: "Käynnistä" → "Toisto" (uusi teksti) ja fy1-5:n ("Toistonopeus") ja fy1-6:n ("Nopeus (toisto)") toistovalinnan nimi, koska kuvassa on jo "nopeus v".
 **Opettaja 2026-11-24 klo 00.4x (koordinaattorin chatissa, "I agree on 1-4")**: (1) jatkotyöt aloitetaan nyt erillisinä PR:inä kursseille FY1, FY4 ja FY7 (kurssi kerrallaan; jaettu simulaatiokoodi yksin; uudet painikenimet opettajan hyväksyttäviksi tekijäsessioon); (2) Pysähdy ja mieti laajennetaan FY14:ään (ei FY10:een: tutkimuksissa omat pohdintavaiheet); (3) FY7:n 8g-polish tehdään (kohta 15); (4) FY9 tasavirta s7/s8 (16 p ja 18 p) skaalataan 15 pisteeseen.
 
 ## 11. Tehtävänäkymä ja teorian taitto (opettaja 2026-11-14, UI/UX-auditointi)
