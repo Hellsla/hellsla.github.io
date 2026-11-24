@@ -179,9 +179,10 @@ Q_\text{absorbed} &= m\,(c_\text{ice}\,\Delta T_\text{ice} + s) \\
 P &= U A\,\Delta T \\
 E &= P\,t \\
 Q_\text{released} &= E + c\,m_\text{j}\,\Delta T_\text{j} \\
-m\,(c_\text{ice}\,\Delta T_\text{ice} + s) &= U A\,\Delta T\,t \\
+E_\text{tot} &= U A\,\Delta T\,t \\
 &\quad + c\,m_\text{j}\,\Delta T_\text{j} \\
-m &= \dfrac{U A\,\Delta T\,t + c\,m_\text{j}\,\Delta T_\text{j}}{c_\text{ice}\,\Delta T_\text{ice} + s}
+m\,(c_\text{ice}\,\Delta T_\text{ice} + s) &= E_\text{tot} \\
+m &= \dfrac{E_\text{tot}}{c_\text{ice}\,\Delta T_\text{ice} + s}
 \end{aligned}
 $$
 **Conversions:** $t = 6.0\,\text{h} = 21\,600\,\text{s}$ and $s = 334\,000\,\tfrac{\text{J}}{\text{kg}}$. The change in the temperature of the ice is $\Delta T_\text{ice} = 0\,{}^\circ\text{C} - (-10\,{}^\circ\text{C}) = 10\,\text{K}$, the same in kelvins.

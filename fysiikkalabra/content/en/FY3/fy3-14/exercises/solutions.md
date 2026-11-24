@@ -108,8 +108,8 @@ c_\text{w} m_\text{w} (T_\text{w} - T) &= s m_\text{i} \\
 &\quad + c_\text{w} m_\text{i} T \\
 s m_\text{i} &= c_\text{w} m_\text{w} (T_\text{w} - T) \\
 &\quad - c_\text{w} m_\text{i} T \\
-s m_\text{i} &= c_\text{w} \left[ m_\text{w} (T_\text{w} - T) - m_\text{i} T \right] \\
-s &= \dfrac{c_\text{w} \left[ m_\text{w} (T_\text{w} - T) - m_\text{i} T \right]}{m_\text{i}}
+s m_\text{i} &= c_\text{w} [ m_\text{w} (T_\text{w} - T) - m_\text{i} T ] \\
+s &= \dfrac{c_\text{w} [ m_\text{w} (T_\text{w} - T) - m_\text{i} T ]}{m_\text{i}}
 \end{aligned}$$
 **Conversions:** The temperature differences are the same in kelvins: $T_\text{w} - T = 30.0 - 8.1 = 21.9\,\text{K}$ and $T - 0 = 8.1\,\text{K}$. Finally $1\,\text{kJ} = 1000\,\text{J}$.
 **Substitution:** The expression in the square brackets is $$\begin{aligned} &0.200\,\text{kg} \cdot 21.9\,\text{K} - 0.0500\,\text{kg} \cdot 8.1\,\text{K} \\ &= 4.380\,\text{kg}\cdot\text{K} - 0.405\,\text{kg}\cdot\text{K} \\ &= 3.975\,\text{kg}\cdot\text{K} \end{aligned}$$, so
@@ -165,7 +165,7 @@ Q_\text{absorbed} &= c_\text{i} m_\text{i} (T - T_\text{i}) \\
 N &= c_\text{w} m_\text{w} \Delta T_\text{w} \\
 &\quad + s m_\text{w} + c_\text{i} m_\text{i} T_\text{i} \\
 N &= c_\text{i} (m_\text{i} + m_\text{w}) T \\
-T &= \dfrac{c_\text{w} m_\text{w} \Delta T_\text{w} + s m_\text{w} + c_\text{i} m_\text{i} T_\text{i}}{c_\text{i} (m_\text{i} + m_\text{w})}
+T &= \dfrac{N}{c_\text{i} (m_\text{i} + m_\text{w})}
 \end{aligned}$$. The water gives out the heat $c_\text{w} m_\text{w} \Delta T_\text{w}$ when it cools to $0\,{}^\circ\text{C}$, $s m_\text{w}$ when it freezes and $c_\text{i} m_\text{w} (0 - T)$ when the ice formed cools to the temperature $T$. The original ice takes the heat $c_\text{i} m_\text{i} (T - T_\text{i})$ when it warms from $T_\text{i}$ to $T$
 **Conversions:** The temperature differences are the same in kelvins: the water falls by $10\,\text{K}$ and the ice rises by $0 - (-40) = 40\,\text{K}$. The latent heat of fusion is $334\,\tfrac{\text{kJ}}{\text{kg}} = 334\,000\,\tfrac{\text{J}}{\text{kg}}$.
 **Substitution:** The water can give out at most $$\begin{aligned} &4190 \cdot 0.100 \cdot 10.0\,\text{J} \\ &+ 334\,000 \cdot 0.100\,\text{J} \\ &= 37\,590\,\text{J} \end{aligned}$$, but warming the ice to $0\,{}^\circ\text{C}$ needs $$\begin{aligned} &2100 \cdot 0.500 \cdot 40.0\,\text{J} \\ &= 42\,000\,\text{J} \end{aligned}$$, so all the water freezes.
@@ -276,9 +276,10 @@ c_\text{w} m_\text{w} (T_\text{w} - T) &= c_\text{i} m_\text{i} \Delta T_\text{i
 &\quad + s m_\text{i} + c_\text{w} m_\text{i} T \\
 s m_\text{i} &= c_\text{w} m_\text{w} (T_\text{w} - T) \\
 &\quad - c_\text{w} m_\text{i} T - c_\text{i} m_\text{i} \Delta T_\text{i} \\
-s m_\text{i} &= c_\text{w} \left[ m_\text{w} (T_\text{w} - T) - m_\text{i} T \right] \\
+N &= c_\text{w} [ m_\text{w} (T_\text{w} - T) - m_\text{i} T ] \\
 &\quad - c_\text{i} m_\text{i} \Delta T_\text{i} \\
-s &= \dfrac{c_\text{w} \left[ m_\text{w} (T_\text{w} - T) - m_\text{i} T \right] - c_\text{i} m_\text{i} \Delta T_\text{i}}{m_\text{i}}
+s m_\text{i} &= N \\
+s &= \dfrac{N}{m_\text{i}}
 \end{aligned}$$. In part a) $\Delta T_\text{i} = 0$.
 **Conversions:** The changes in temperature are the same in degrees Celsius and in kelvins: $T_\text{w} - T_1 = 21.8\,\text{K}$ and $T_\text{w} - T_2 = 23.8\,\text{K}$, and for the ice of measurement 2 $\Delta T_\text{i} = 0\,{}^\circ\text{C} - (-18.0\,{}^\circ\text{C}) = 18.0\,\text{K}$. Finally $1\,\text{kJ} = 1000\,\text{J}$.
 **Substitution:** a) Measurement 1: 

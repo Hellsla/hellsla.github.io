@@ -108,8 +108,8 @@ c_\text{v} m_\text{v} (T_\text{v} - T) &= s m_\text{j} \\
 &\quad + c_\text{v} m_\text{j} T \\
 s m_\text{j} &= c_\text{v} m_\text{v} (T_\text{v} - T) \\
 &\quad - c_\text{v} m_\text{j} T \\
-s m_\text{j} &= c_\text{v} \left[ m_\text{v} (T_\text{v} - T) - m_\text{j} T \right] \\
-s &= \dfrac{c_\text{v} \left[ m_\text{v} (T_\text{v} - T) - m_\text{j} T \right]}{m_\text{j}}
+s m_\text{j} &= c_\text{v} [ m_\text{v} (T_\text{v} - T) - m_\text{j} T ] \\
+s &= \dfrac{c_\text{v} [ m_\text{v} (T_\text{v} - T) - m_\text{j} T ]}{m_\text{j}}
 \end{aligned}$$
 **Muunnokset:** Lämpötilaerot ovat samat kelvineinä: $T_\text{v} - T = 30{,}0 - 8{,}1 = 21{,}9\,\text{K}$ ja $T - 0 = 8{,}1\,\text{K}$. Lopuksi $1\,\text{kJ} = 1000\,\text{J}$.
 **Sijoitus:** Hakasulkeiden lauseke on $$\begin{aligned} &0{,}200\,\text{kg} \cdot 21{,}9\,\text{K} - 0{,}0500\,\text{kg} \cdot 8{,}1\,\text{K} \\ &= 4{,}380\,\text{kg}\cdot\text{K} - 0{,}405\,\text{kg}\cdot\text{K} \\ &= 3{,}975\,\text{kg}\cdot\text{K} \end{aligned}$$. Siis
@@ -157,7 +157,7 @@ Q_\text{vastaanotettu} &= c_\text{j} m_\text{j} (T - T_\text{j}) \\
 N &= c_\text{v} m_\text{v} \Delta T_\text{v} \\
 &\quad + s m_\text{v} + c_\text{j} m_\text{j} T_\text{j} \\
 N &= c_\text{j} (m_\text{j} + m_\text{v}) T \\
-T &= \dfrac{c_\text{v} m_\text{v} \Delta T_\text{v} + s m_\text{v} + c_\text{j} m_\text{j} T_\text{j}}{c_\text{j} (m_\text{j} + m_\text{v})}
+T &= \dfrac{N}{c_\text{j} (m_\text{j} + m_\text{v})}
 \end{aligned}$$. Vesi luovuttaa jäähtyessään $0\,{}^\circ\text{C}$:seen lämpömäärän $c_\text{v} m_\text{v} \Delta T_\text{v}$, jäätyessään $s m_\text{v}$ ja syntyneen jään jäähtyessä lämpötilaan $T$ lämpömäärän $c_\text{j} m_\text{v} (0 - T)$. Alkuperäinen jää ottaa lämmetessään lämpötilasta $T_\text{j}$ lämpötilaan $T$ lämpömäärän $c_\text{j} m_\text{j} (T - T_\text{j})$
 **Muunnokset:** Lämpötilaerot ovat samat kelvineinä: veden lasku on $10\,\text{K}$ ja jään nousu on $0 - (-40) = 40\,\text{K}$. Sulamislämpö on $334\,\tfrac{\text{kJ}}{\text{kg}} = 334\,000\,\tfrac{\text{J}}{\text{kg}}$.
 **Sijoitus:** Vesi luovuttaa enintään $$\begin{aligned} &4190 \cdot 0{,}100 \cdot 10{,}0\,\text{J} \\ &+ 334\,000 \cdot 0{,}100\,\text{J} \\ &= 37\,590\,\text{J} \end{aligned}$$. Jään lämmittäminen $0\,{}^\circ\text{C}$:seen vaatii kuitenkin $$\begin{aligned} &2100 \cdot 0{,}500 \cdot 40{,}0\,\text{J} \\ &= 42\,000\,\text{J} \end{aligned}$$. Siksi kaikki vesi jäätyy.
@@ -262,9 +262,10 @@ c_\text{v} m_\text{v} (T_\text{v} - T) &= c_\text{j} m_\text{j} \Delta T_\text{j
 &\quad + s m_\text{j} + c_\text{v} m_\text{j} T \\
 s m_\text{j} &= c_\text{v} m_\text{v} (T_\text{v} - T) \\
 &\quad - c_\text{v} m_\text{j} T - c_\text{j} m_\text{j} \Delta T_\text{j} \\
-s m_\text{j} &= c_\text{v} \left[ m_\text{v} (T_\text{v} - T) - m_\text{j} T \right] \\
+N &= c_\text{v} [ m_\text{v} (T_\text{v} - T) - m_\text{j} T ] \\
 &\quad - c_\text{j} m_\text{j} \Delta T_\text{j} \\
-s &= \dfrac{c_\text{v} \left[ m_\text{v} (T_\text{v} - T) - m_\text{j} T \right] - c_\text{j} m_\text{j} \Delta T_\text{j}}{m_\text{j}}
+s m_\text{j} &= N \\
+s &= \dfrac{N}{m_\text{j}}
 \end{aligned}$$. Kohdassa a) on $\Delta T_\text{j} = 0$.
 **Muunnokset:** Lämpötilan muutokset ovat samat celsiusasteina ja kelvineinä: $T_\text{v} - T_1 = 21{,}8\,\text{K}$ ja $T_\text{v} - T_2 = 23{,}8\,\text{K}$. Mittauksen 2 jäälle $\Delta T_\text{j} = 0\,{}^\circ\text{C} - (-18{,}0\,{}^\circ\text{C}) = 18{,}0\,\text{K}$. Lopuksi $1\,\text{kJ} = 1000\,\text{J}$.
 **Sijoitus:** a) Mittaus 1: 

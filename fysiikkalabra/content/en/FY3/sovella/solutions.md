@@ -178,7 +178,7 @@ Energy is conserved: the energy needed for the vaporisation comes from the cooli
 **Conversions:** $\Delta T = 117\,{}^\circ\text{C} - 100\,{}^\circ\text{C} = 17\,\text{K}$ and $r = 2.26 \cdot 10^6\,\text{J/kg}$
 **Substitution:** $\dfrac{m_\text{v}}{m} = \dfrac{4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 17\,\text{K}}{2.26 \cdot 10^6\,\text{J/kg}} = 0.031$
 **Answer:** about $3\,\%$ of the water vaporises in an instant. One significant figure is enough, because the heat of the potatoes and the cooker was left out of the calculation. They also cool down and vaporise more water, so the real fraction is slightly larger.
-**Reasonableness:** After part c there is about $1.4\,\text{kg}$ of water, and about $40\,\text{g}$ of it vaporises. That is about $2.4\,\text{mol}$, and as an ideal gas at $100\,{}^\circ\text{C}$ and a pressure of $101\,\text{kPa}$ it takes up a volume of $V = \dfrac{nRT}{p} \approx 70\,\text{l}$.
+**Reasonableness:** After part c there is about $1.4\,\text{kg}$ of water, and about $40\,\text{g}$ of it vaporises. That is about $2.4\,\text{mol}$, and as an ideal gas at $100\,{}^\circ\text{C}$ and a pressure of $101\,\text{kPa}$ it takes up a volume of $V = \dfrac{nRT}{p} \approx 70\,\textsf{l}$.
 
 Tens of litres of hot steam and boiling splashes are released at once, and steam burns worse as it condenses than water at the same temperature. So a pressure cooker may be opened only after the pressure has dropped.
 
@@ -209,27 +209,27 @@ The volume can stay in cubic centimetres, because the equation has a ratio of vo
 **Reasonableness:** The pressure falls by a factor of about $2.5$ as the bubble rises, so the volume grows to about $2.5$ times, and the warming increases it by about $5\,\%$ more. The growth of bubbles as they rise can also be seen in diving videos.
 
 ### b)
-**Given:** lungs full of air, $V_1 = 6.0\,\text{l}$, at pressure $p_1 = 248\,\text{kPa}$ and pressure at the surface $p_2 = 101\,\text{kPa}$
+**Given:** lungs full of air, $V_1 = 6.0\,\textsf{l}$, at pressure $p_1 = 248\,\text{kPa}$ and pressure at the surface $p_2 = 101\,\text{kPa}$
 **Find:** the volume of the air at the surface and why rising while holding your breath is dangerous
 **Principle:** The amount of air stays the same when you hold your breath. The air in the lungs is at body temperature, about $37\,{}^\circ\text{C}$, regardless of depth and the temperature of the water. So the temperature stays constant, and the volume changes according to Boyle's law.
 **Formula:** $p_1 V_1 = p_2 V_2$, so $V_2 = V_1 \cdot \dfrac{p_1}{p_2}$
 **Conversions:** Not needed, the units cancel in the ratio of the pressures.
-**Substitution:** $V_2 = 6.0\,\text{l} \cdot \dfrac{248\,\text{kPa}}{101\,\text{kPa}} = 14.7\,\text{l}$
-**Answer:** The air would expand to about $15\,\text{l}$ (two significant figures as in $6.0\,\text{l}$). The lungs can hold only the $6.0\,\text{l}$ given in the problem, so the trapped air would stretch them and could tear the lung tissue.
+**Substitution:** $V_2 = 6.0\,\textsf{l} \cdot \dfrac{248\,\text{kPa}}{101\,\text{kPa}} = 14.7\,\textsf{l}$
+**Answer:** The air would expand to about $15\,\textsf{l}$ (two significant figures as in $6.0\,\textsf{l}$). The lungs can hold only the $6.0\,\textsf{l}$ given in the problem, so the trapped air would stretch them and could tear the lung tissue.
 
 While rising, you must never hold your breath: you breathe normally throughout the ascent, so that the expanding air can escape from the lungs.
 **Reasonableness:** The volume grows in the same ratio as the bubble in part a, except for the share due to warming: the temperature of the lungs does not change.
 
 ### c)
-**Given:** volume of the tank $V_\text{tank} = 12.0\,\text{l}$, gauge readings $200\,\text{bar}$ and $50\,\text{bar}$ of gauge pressure, consumption $q = 20\,\text{l/min}$ at the pressure of the depth $p = 248\,\text{kPa}$
+**Given:** volume of the tank $V_\text{tank} = 12.0\,\textsf{l}$, gauge readings $200\,\text{bar}$ and $50\,\text{bar}$ of gauge pressure, consumption $q = 20\,\text{l/min}$ at the pressure of the depth $p = 248\,\text{kPa}$
 **Find:** the time $t$ the diver can stay at a depth of $15.0\,\text{m}$
 **Principle:** According to the problem, the temperature of the air is the same in the tank and in the lungs (part d) estimates the effect of warming), so the amount of air is proportional to the product of pressure and volume (Boyle's law).
 
 The air used from the tank takes up, at the pressure of the depth, the volume that is breathed. The gauge shows gauge pressure. However, the difference of the total pressures is the same as the difference of the gauge pressures, because the atmospheric pressure cancels.
 
-**Formula:** $$\begin{aligned} \Delta p_\text{tank} V_\text{tank} &= nRT \\ pV &= nRT \\ \Delta p_\text{tank} V_\text{tank} &= pV \\ V &= \dfrac{\Delta p_\text{tank} V_\text{tank}}{p} \\ t &= \dfrac{V}{q} \end{aligned}$$
+**Formula:** $$\begin{aligned} p_1 V_\text{tank} &= n_1 RT \\ p_2 V_\text{tank} &= n_2 RT \\ \Delta p_\text{tank} &= p_1 - p_2 \\ \Delta n &= n_1 - n_2 \\ \Delta p_\text{tank} V_\text{tank} &= \Delta n\,RT \\ pV &= \Delta n\,RT \\ V &= \dfrac{\Delta p_\text{tank} V_\text{tank}}{p} \\ t &= \dfrac{V}{q} \end{aligned}$$
 **Conversions:** $\Delta p_\text{tank} = 200\,\text{bar} - 50\,\text{bar} = 150\,\text{bar} = 150 \cdot 100\,\text{kPa} = 15\,000\,\text{kPa}$. The volumes can stay in litres.
-**Substitution:** $V = \dfrac{15\,000\,\text{kPa} \cdot 12.0\,\text{l}}{248\,\text{kPa}} = 725\,\text{l}$ and $t = \dfrac{725\,\text{l}}{20\,\text{l/min}} = 36\,\text{min}$
+**Substitution:** $V = \dfrac{15\,000\,\text{kPa} \cdot 12.0\,\textsf{l}}{248\,\text{kPa}} = 725\,\textsf{l}$ and $t = \dfrac{725\,\textsf{l}}{20\,\text{l/min}} = 36\,\text{min}$
 **Answer:** $t \approx 36\,\text{min}$, two significant figures as in the consumption $20\,\text{l/min}$.
 **Reasonableness:** At the surface the same air would last $2.5$ times longer, about $89\,\text{min}$, because each breath takes $2.5$ times the amount of air at depth. A dive of about half an hour matches ordinary recreational dives.
 

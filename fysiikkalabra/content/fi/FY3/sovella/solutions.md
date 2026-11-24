@@ -156,7 +156,7 @@ Ruoka kypsyy, kun sen sisäosat lämpenevät riittävästi. Koska vesi on $17\,{
 **Muunnokset:** $\Delta T = 117\,{}^\circ\text{C} - 100\,{}^\circ\text{C} = 17\,\text{K}$ ja $r = 2{,}26 \cdot 10^6\,\text{J/kg}$
 **Sijoitus:** $\dfrac{m_\text{h}}{m} = \dfrac{4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 17\,\text{K}}{2{,}26 \cdot 10^6\,\text{J/kg}} = 0{,}031$
 **Vastaus:** noin $3\,\%$ vedestä höyrystyy hetkessä. Yksi merkitsevä numero riittää, koska laskussa jätettiin perunoiden ja kattilan lämpö pois. Ne jäähtyvät myös ja höyrystävät lisää vettä, joten todellinen osuus on hieman suurempi.
-**Järkevyys:** c-kohdan jälkeen vettä on noin $1{,}4\,\text{kg}$, ja siitä höyrystyy noin $40\,\text{g}$. Se on noin $2{,}4\,\text{mol}$, ja ideaalikaasuna $100\,{}^\circ\text{C}$:ssa ja paineessa $101\,\text{kPa}$ se vie tilaa $V = \dfrac{nRT}{p} \approx 70\,\text{l}$. Kymmeniä litroja kuumaa höyryä ja kiehuvaa roisketta purkautuu kerralla, ja höyry polttaa tiivistyessään pahemmin kuin yhtä kuuma vesi. Siksi painekattilan saa avata vasta, kun paine on laskenut.
+**Järkevyys:** c-kohdan jälkeen vettä on noin $1{,}4\,\text{kg}$, ja siitä höyrystyy noin $40\,\text{g}$. Se on noin $2{,}4\,\text{mol}$, ja ideaalikaasuna $100\,{}^\circ\text{C}$:ssa ja paineessa $101\,\text{kPa}$ se vie tilaa $V = \dfrac{nRT}{p} \approx 70\,\textsf{l}$. Kymmeniä litroja kuumaa höyryä ja kiehuvaa roisketta purkautuu kerralla, ja höyry polttaa tiivistyessään pahemmin kuin yhtä kuuma vesi. Siksi painekattilan saa avata vasta, kun paine on laskenut.
 
 ### Hyväksytään myös
 - c- ja d-kohdassa voi käyttää $117\,{}^\circ\text{C}$:n arvoa $r \approx 2{,}21 \cdot 10^6\,\text{J/kg}$; tulokset eivät muutu.
@@ -181,22 +181,22 @@ Ruoka kypsyy, kun sen sisäosat lämpenevät riittävästi. Koska vesi on $17\,{
 **Järkevyys:** Paine pienenee noustessa noin $2{,}5$-osaan, joten tilavuus kasvaa noin $2{,}5$-kertaiseksi, ja lämpeneminen kasvattaa sitä vielä noin $5\,\%$. Kuplien kasvu noustessa näkyy myös sukellusvideoissa.
 
 ### b)
-**Annettu:** keuhkot täynnä ilmaa, $V_1 = 6{,}0\,\text{l}$, paineessa $p_1 = 248\,\text{kPa}$ ja pinnan paine $p_2 = 101\,\text{kPa}$
+**Annettu:** keuhkot täynnä ilmaa, $V_1 = 6{,}0\,\textsf{l}$, paineessa $p_1 = 248\,\text{kPa}$ ja pinnan paine $p_2 = 101\,\text{kPa}$
 **Kysytty:** ilman tilavuus pinnalla ja miksi nousu hengitystä pidättäen on vaarallista
 **Periaate:** Ilmamäärä pysyy samana, kun hengitystä pidätetään. Keuhkoissa ilma on ruumiinlämpöistä, noin $37\,{}^\circ\text{C}$, syvyydestä ja veden lämpötilasta riippumatta. Siksi lämpötila pysyy vakiona, ja tilavuus muuttuu Boylen lain mukaan.
 **Kaava:** $p_1 V_1 = p_2 V_2$, josta $V_2 = V_1 \cdot \dfrac{p_1}{p_2}$
 **Muunnokset:** Ei tarvita, paineiden suhteessa yksiköt supistuvat.
-**Sijoitus:** $V_2 = 6{,}0\,\text{l} \cdot \dfrac{248\,\text{kPa}}{101\,\text{kPa}} = 14{,}7\,\text{l}$
-**Vastaus:** Ilma laajenisi noin $15\,\text{l}$:aan (kaksi merkitsevää numeroa kuten $6{,}0\,\text{l}$). Keuhkoihin mahtuu vain tehtävässä annettu $6{,}0\,\text{l}$, joten pidätetty ilma venyttäisi niitä ja voisi repiä keuhkokudoksen. Noustessa ei saa koskaan pidättää hengitystä: hengitetään normaalisti koko nousun ajan, jolloin laajeneva ilma pääsee ulos keuhkoista.
+**Sijoitus:** $V_2 = 6{,}0\,\textsf{l} \cdot \dfrac{248\,\text{kPa}}{101\,\text{kPa}} = 14{,}7\,\textsf{l}$
+**Vastaus:** Ilma laajenisi noin $15\,\textsf{l}$:aan (kaksi merkitsevää numeroa kuten $6{,}0\,\textsf{l}$). Keuhkoihin mahtuu vain tehtävässä annettu $6{,}0\,\textsf{l}$, joten pidätetty ilma venyttäisi niitä ja voisi repiä keuhkokudoksen. Noustessa ei saa koskaan pidättää hengitystä: hengitetään normaalisti koko nousun ajan, jolloin laajeneva ilma pääsee ulos keuhkoista.
 **Järkevyys:** Tilavuus kasvaa samassa suhteessa kuin a-kohdan kupla, paitsi lämpenemisen osuutta: keuhkojen lämpötila ei muutu.
 
 ### c)
-**Annettu:** säiliön tilavuus $V_\text{s} = 12{,}0\,\text{l}$, mittarin lukemat $200\,\text{bar}$ ja $50\,\text{bar}$ ylipainetta, kulutus $q = 20\,\text{l/min}$ syvyyden paineessa $p = 248\,\text{kPa}$
+**Annettu:** säiliön tilavuus $V_\text{s} = 12{,}0\,\textsf{l}$, mittarin lukemat $200\,\text{bar}$ ja $50\,\text{bar}$ ylipainetta, kulutus $q = 20\,\text{l/min}$ syvyyden paineessa $p = 248\,\text{kPa}$
 **Kysytty:** aika $t$, jonka sukeltaja voi olla $15{,}0\,\text{m}$:n syvyydessä
 **Periaate:** Tehtävän mukaan ilman lämpötila on sama säiliössä ja keuhkoissa (d-kohdassa arvioidaan lämpenemisen vaikutus), joten ilmamäärä on verrannollinen paineen ja tilavuuden tuloon (Boylen laki). Säiliöstä käytetty ilma vie syvyyden paineessa tilavuuden, joka hengitetään. Mittari näyttää ylipainetta. Kokonaispaineiden erotus on kuitenkin sama kuin ylipaineiden erotus, koska ilmanpaine kumoutuu.
-**Kaava:** $$\begin{aligned} \Delta p_\text{s} V_\text{s} &= nRT \\ pV &= nRT \\ \Delta p_\text{s} V_\text{s} &= pV \\ V &= \dfrac{\Delta p_\text{s} V_\text{s}}{p} \\ t &= \dfrac{V}{q} \end{aligned}$$
+**Kaava:** $$\begin{aligned} p_1 V_\text{s} &= n_1 RT \\ p_2 V_\text{s} &= n_2 RT \\ \Delta p_\text{s} &= p_1 - p_2 \\ \Delta n &= n_1 - n_2 \\ \Delta p_\text{s} V_\text{s} &= \Delta n\,RT \\ pV &= \Delta n\,RT \\ V &= \dfrac{\Delta p_\text{s} V_\text{s}}{p} \\ t &= \dfrac{V}{q} \end{aligned}$$
 **Muunnokset:** $\Delta p_\text{s} = 200\,\text{bar} - 50\,\text{bar} = 150\,\text{bar} = 150 \cdot 100\,\text{kPa} = 15\,000\,\text{kPa}$. Tilavuudet voivat jäädä litroiksi.
-**Sijoitus:** $V = \dfrac{15\,000\,\text{kPa} \cdot 12{,}0\,\text{l}}{248\,\text{kPa}} = 725\,\text{l}$ ja $t = \dfrac{725\,\text{l}}{20\,\text{l/min}} = 36\,\text{min}$
+**Sijoitus:** $V = \dfrac{15\,000\,\text{kPa} \cdot 12{,}0\,\textsf{l}}{248\,\text{kPa}} = 725\,\textsf{l}$ ja $t = \dfrac{725\,\textsf{l}}{20\,\text{l/min}} = 36\,\text{min}$
 **Vastaus:** $t \approx 36\,\text{min}$, kaksi merkitsevää numeroa kuten kulutuksessa $20\,\text{l/min}$.
 **Järkevyys:** Pinnalla sama ilma riittäisi $2{,}5$ kertaa pidempään, noin $89\,\text{min}$, koska jokainen hengenveto vie syvyydessä $2{,}5$-kertaisen ilmamäärän. Noin puolen tunnin sukellus vastaa tavallisia harrastajien sukelluksia.
 

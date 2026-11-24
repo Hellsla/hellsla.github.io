@@ -165,9 +165,10 @@ Q_\text{vastaanotettu} &= m\,(c_\text{jää}\,\Delta T_\text{jää} + s) \\
 P &= U A\,\Delta T \\
 E &= P\,t \\
 Q_\text{luovutettu} &= E + c\,m_\text{j}\,\Delta T_\text{j} \\
-m\,(c_\text{jää}\,\Delta T_\text{jää} + s) &= U A\,\Delta T\,t \\
+E_\text{yht} &= U A\,\Delta T\,t \\
 &\quad + c\,m_\text{j}\,\Delta T_\text{j} \\
-m &= \dfrac{U A\,\Delta T\,t + c\,m_\text{j}\,\Delta T_\text{j}}{c_\text{jää}\,\Delta T_\text{jää} + s}
+m\,(c_\text{jää}\,\Delta T_\text{jää} + s) &= E_\text{yht} \\
+m &= \dfrac{E_\text{yht}}{c_\text{jää}\,\Delta T_\text{jää} + s}
 \end{aligned}
 $$
 **Muunnokset:** $t = 6{,}0\,\text{h} = 21\,600\,\text{s}$ ja $s = 334\,000\,\tfrac{\text{J}}{\text{kg}}$. Jään lämpötilan muutos on $\Delta T_\text{jää} = 0\,{}^\circ\text{C} - (-10\,{}^\circ\text{C}) = 10\,\text{K}$, sama kelvineinä.

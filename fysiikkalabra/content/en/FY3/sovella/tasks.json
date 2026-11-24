@@ -324,7 +324,7 @@
           "id": "b",
           "kind": "calc",
           "points": 3,
-          "text": "At a depth of $15.0\\,\\text{m}$ the diver fills their lungs with $6.0\\,\\text{l}$ of air. Why is it dangerous to rise to the surface holding your breath? Justify with a calculation.",
+          "text": "At a depth of $15.0\\,\\text{m}$ the diver fills their lungs with $6.0\\,\\textsf{l}$ of air. Why is it dangerous to rise to the surface holding your breath? Justify with a calculation.",
           "answer": {
             "value": 14.7,
             "unit": "l",
@@ -339,7 +339,7 @@
             {
               "key": "calculation",
               "points": 1,
-              "detail": "$V_2 = 6.0\\,\\text{l} \\cdot \\dfrac{248\\,\\text{kPa}}{101\\,\\text{kPa}} \\approx 15\\,\\text{l}$"
+              "detail": "$V_2 = 6.0\\,\\textsf{l} \\cdot \\dfrac{248\\,\\text{kPa}}{101\\,\\text{kPa}} \\approx 15\\,\\textsf{l}$"
             },
             {
               "text": "Explains the danger: the lungs cannot expand this much, so the air damages them; while rising you breathe normally and never hold your breath, so that the expanding air can escape from the lungs.",
@@ -352,7 +352,7 @@
           "id": "c",
           "kind": "calc",
           "points": 5,
-          "text": "The volume of the diver's tank is $12.0\\,\\text{l}$, and its pressure gauge shows a gauge pressure of $200\\,\\text{bar}$, where $1\\,\\text{bar} = 100\\,\\text{kPa}$. At a depth of $15.0\\,\\text{m}$ the diver uses $20\\,\\text{l}$ of air per minute at the pressure of that depth. The ascent is started when the gauge shows $50\\,\\text{bar}$. Assume that the air is equally warm in the tank and in the lungs. How long can the diver stay at this depth?",
+          "text": "The volume of the diver's tank is $12.0\\,\\textsf{l}$, and its pressure gauge shows a gauge pressure of $200\\,\\text{bar}$, where $1\\,\\text{bar} = 100\\,\\text{kPa}$. At a depth of $15.0\\,\\text{m}$ the diver uses $20\\,\\textsf{l}$ of air per minute at the pressure of that depth. The ascent is started when the gauge shows $50\\,\\text{bar}$. Assume that the air is equally warm in the tank and in the lungs. How long can the diver stay at this depth?",
           "answer": {
             "value": 36,
             "unit": "min",
@@ -370,7 +370,7 @@
               "points": 1
             },
             {
-              "text": "Calculates the volume of usable air at the pressure of the depth, about $725\\,\\text{l}$.",
+              "text": "Calculates the volume of usable air at the pressure of the depth, about $725\\,\\textsf{l}$.",
               "tag": "math",
               "points": 1
             },
