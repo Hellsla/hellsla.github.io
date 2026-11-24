@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 312ac1feb6f82c78
+CONTENT-HASH: 1132258e3f06ce35
 
 ## Blocking
 None.
 
 ## Polish
-- [Minor] open-exercises-L2-1280-4 (14-13) — the Principle paragraph is long (four sentences); a break before "The water only warms up" would help. Optional.
+- [Minor] Formula blocks (all chapters) — the aligned Formula rows put the left sides right-aligned at "=", so short and long left sides sit in a stepped column; this is readable and consistent with the other aligned blocks, no action needed.
 
 ## Checked
-- Delta (md-paragraphs: solutions.md, words unchanged). There are no 360 px captures; the 390 px ones were used.
-- 1280 px with solutions open: fy3-15-open-exercises-L2-1280-4.png (14-12 Answer and Reasonableness, 14-13 Given, Find, Principle, Formula; separate paragraphs, even spacing, nothing clipped); fy3-15-open-tarkista-1280-2.png (feedback, hints open).
-- 390 px: fy3-15-stage-tarkista-390-2.png (long options wrap without overflow); fy3-15-stage-sovella-390-2.png (worked-example stages 5-7: chains and paragraphs separate and readable).
+- Delta: only the Formula step of the model solutions changed to aligned multi-row blocks (solutions.md).
+- 1280 px, solutions open: fy3-15-open-exercises-L2-1280-4 (cooling-water block).
+- Rows align at "=", fractions are in display style, subscripts and units upright, nothing clipped or overflowing, order principle then symbolic steps then asked quantity is kept, spacing to the Conversions block intact.
+- No 360/390 px capture of an opened solution; judged from 1280 px captures.
 - Hash run at start and end: unchanged.
 
 ## Scores

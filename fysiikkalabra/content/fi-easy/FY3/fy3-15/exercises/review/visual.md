@@ -1,17 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 1e38ee2436397cdd
+CONTENT-HASH: b7d7e4725f7e9cf3
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] fy3-15-L3-05 Järkevyys — the new paragraph "Sen energiasta noin 38 %…" has an ambiguous "Sen"; write "Polttoaineen energiasta noin $38\,\%$…".
+- none
 
 ## Checked
-- Delta (paragraph breaks in solutions, words unchanged). No 360 px captures exist; 390 px used.
-- fy3-15-open-exercises-L3-1280-5.png: opened solution, givens and sanity check as separate paragraphs, no clipping.
-- fy3-15-open-tarkista-1280-2.png: task card with opened hints, reading column held.
-- fy3-15-example-390-2.png and fy3-15-stage-selita-390-3.png: phone layout of split paragraphs intact.
+- Delta: only the Kaava step of the solutions changed to aligned multi-row blocks. Opened fy3-15-open-exercises-1280-1.png (level 1, solution open, Kaava with a fraction) from the lesson's review/shots.
+- No 360/390 px capture of an open multi-row Kaava block was available; judged at 1280 px.
+- No clipping or overflow, block order and layout intact.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 4 · accessibility 4

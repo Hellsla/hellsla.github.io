@@ -1,13 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 2463f282c511689b
-
+CONTENT-HASH: dcf9a25f9b327a71
 ## Blocking
-None.
-
+(none)
 ## Polish
-1. L2-09: 'Kaikki jää ei sula.' states the outcome the student could find by comparison; acceptable, but could be left for the solution.
-
+- Polish: solutions.md L2/L3 calometer rows, where a long numerator is broken inside a bracket (`(T_\text{v} \\ - T)` in a `\begin{array}`); break between terms, not inside a bracket.
 ## Checked
-- Round 2 delta judged in context (round-1 findings addressed).
-- L1-09 new situation (ice block on a windowsill, heat taken from surroundings) differs from the drink context of the worked example and L1-01; MAFY lookup still required. L2-09 asks the extra heat to melt the rest: three bar values, two subtractions, answer 40 kJ; the explanation that the water cannot supply it (already at 0 °C) is sound; 2/3 check is correct. Reading level of the fi-easy wording is fine.
-- Both solutions staged, principle explained; 4 % tolerance on L1-09 covers 333 vs 334 kJ/kg.
+- Delta: Kaava rows start from Q_luovutettu = Q_vastaanotettu and the basic laws, then solve for the unknown; staged one step per row.
+- Long model answers split into short paragraphs; contents unchanged.
+- Sulamislämpö solutions keep the lesson's terms.
+- Finnish unchanged in the diff apart from sentence splits; short sentences, fits a phone.

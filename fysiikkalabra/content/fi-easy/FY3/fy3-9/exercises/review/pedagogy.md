@@ -1,13 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: dac5583058c958e9
+CONTENT-HASH: e77e39f9be6d4a2e
 ## Blocking
 (none)
 ## Polish
-- Polish: L2-10 model answer d) says temperature measures the mean kinetic energy; FY3 scope leaves E_k to FY4, so say 'the particles move faster on average' unless the lesson teaches this.
-- Polish: model answer b) calls the first point (51 kPa off) 'one reading of a fluctuating gauge', but the stated fluctuation is ±30 kPa; say the fluctuation is larger at low pressure or estimate it more generously. (Finnish: keskimääräinen liike-energia / 51 kPa vs ±30 kPa, mallivastaus d) ja b))
-- Finnish checked: short sentences, steps one per sentence, glossary words explained (heilahtelee eli muuttuu).
+- Polish: L2-10 model answer d) says temperature measures the mean kinetic energy; FY3 scope leaves E_k to FY4, so say 'the particles move faster on average' (unchanged from last report).
+- Polish: L2-10 b) calls the 51 kPa deviation 'one reading of a fluctuating gauge' although the stated fluctuation is ±30 kPa (unchanged).
 ## Checked
-- Level 2 source task L2-10 fits the slot: data/graph/model, situation first, parts a–d rising in demand, answer field names its part.
-- Solution follows step by step (principle, conversions, substitution, reasonableness); model answers for open parts are observable.
-- Rows re-broken in calculation chains keep numbers and units; readable.
-- Level counts and goals unchanged; no repeat of the lesson example.
+- Delta: Kaava rows stacked in aligned blocks, one equation per row, symbols first, then solved form; the long paragraphs split into shorter ones with the same text.
+- L3 V_h and the zero-pressure rows now derive the formula step by step before substitution.
+- Numbers, units and answers unchanged; no `$$` left open.
+- Finnish unchanged in the diff apart from sentence splits; short sentences, fits a phone.

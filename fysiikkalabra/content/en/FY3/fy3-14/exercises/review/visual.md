@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: cf0f987eb42ff6fc
+CONTENT-HASH: c181f69fde99c348
 
 ## Blocking
 None.
 
 ## Polish
-- [Minor] fy3-14-stage-sovella-390-2 (worked-example step 6) — the inequality chain Q_w > Q_i = 17 540 J is stacked in rows that can be read as a single equation; consider two separate lines (shared component, not this set).
+- [Minor] Formula blocks (all chapters) — the aligned Formula rows put the left sides right-aligned at "=", so short and long left sides sit in a stepped column; this is readable and consistent with the other aligned blocks, no action needed.
 
 ## Checked
-- Delta (md-paragraphs: solutions.md, words unchanged). There are no 360 px captures; the 390 px ones were used.
-- 1280 px with solutions open: fy3-14-open-exercises-L2-1280-4.png (Given, Find, Principle, Formula, Conversions, Substitution, Answer, Reasonableness as separate paragraphs; formulas aligned, nothing clipped); fy3-14-open-tarkista-1280-2.png (feedback correct and incorrect, hints).
-- 390 px: fy3-14-stage-tarkista-390-2.png (task cards, no overflow); fy3-14-stage-sovella-390-2.png (stages 4-5, aligned rows fit the phone).
+- Delta: only the Formula step of the model solutions changed to aligned multi-row blocks (solutions.md).
+- 1280 px, solutions open: fy3-14-open-exercises-L3-1280-5 (rewritten ice-water balance chain and substitution rows; energy-bars figure not re-judged).
+- Rows align at "=", fractions are in display style, subscripts and units upright, nothing clipped or overflowing, order principle then symbolic steps then asked quantity is kept, spacing to the Conversions block intact.
+- No 360/390 px capture of an opened solution; judged from 1280 px captures.
 - Hash run at start and end: unchanged.
 
 ## Scores

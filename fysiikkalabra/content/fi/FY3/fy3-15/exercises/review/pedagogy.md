@@ -1,10 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 3982956434865159
+CONTENT-HASH: b5a901260dcdfe41
+SCOPE: delta Kaava step of model solutions (basic equations first, derived formula, symbolic simplification to the end)
+
 ## Blocking
-(none)
+None.
+
 ## Polish
-(none)
+None.
+
 ## Checked
-- Delta: L3-05 d now says the condenser heat cannot "in practice" (käytännössä) be used for electricity; the solution adds that with an ~11 K difference the largest possible efficiency is only a few per cent. Correct (about 11/300) and a fair hedge, replacing an absolute claim.
-- Reasoning in the solution is brief but understandable at this level; the colon plus "but" sentence is slightly run-on (Polish only).
-- Judged from the diff and the previous PASS; captures not opened.
+- Each Kaava step now starts from the basic equation(s) or law and reaches the solved symbolic form that Sijoitus uses; no combined formula opens a derivation.
+- The derivation steps are consistent with the quantities named in Sijoitus; answers, units and Sijoitus unchanged.
+- Added paragraph breaks and moved remarks in long model answers help reading and change no content.
+- Aligned blocks are short enough for a phone.

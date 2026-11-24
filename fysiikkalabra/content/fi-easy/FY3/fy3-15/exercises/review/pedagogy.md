@@ -1,10 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: a86d3985160cc30e
+CONTENT-HASH: b7d7e4725f7e9cf3
 ## Blocking
 (none)
 ## Polish
 (none)
 ## Checked
-- Delta: L3-05 d now says the condenser heat cannot "in practice" (käytännössä) be used for electricity; the solution adds that with an ~11 K difference the largest possible efficiency is only a few per cent. Correct (about 11/300) and a fair hedge, replacing an absolute claim.
-- Reasoning in the solution is brief but understandable at this level; the colon plus "but" sentence is slightly run-on (Polish only).
-- Judged from the diff and the previous PASS; captures not opened.
+- Delta: Kaava rows start from the basic efficiency definition (eta = P_s/P_o, P1 = eta1 P_o ...) and simplify before substituting.
+- Järkevyys blocks split into two short paragraphs; no content lost.
+- Finnish unchanged in the diff apart from sentence splits; short sentences, fits a phone.

@@ -1,11 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 1203ef63fbdd9fa6
-SCOPE: delta caption-label,md-paragraphs,reflow,wording from f34c27af88a25519 base ac369417c8610d798a13d1be354cfa6dc1e8dce8
+CONTENT-HASH: 0153dce31f9e43a0
+SCOPE: delta Kaava step of model solutions (basic equations first, derived formula, symbolic simplification to the end)
+
 ## Blocking
-(none)
+None.
+
 ## Polish
-(none)
+None.
+
 ## Checked
-- Delta judged in context: the prefix "Esimerkkiaineisto:" removed from task texts; no numbers, symbols, data or questions changed.
-- Each task now opens with the situation (e.g. a sentence starting with the subject in Finnish nominative/partitive), grammatical without the prefix; the question still comes last.
-- Solutions.md changes are presentation only (reflow / paragraphs); levels, figures and answer fields untouched.
+- Each Kaava step now starts from the basic equation(s) or law and reaches the solved symbolic form that Sijoitus uses; no combined formula opens a derivation.
+- The derivation steps are consistent with the quantities named in Sijoitus; answers, units and Sijoitus unchanged.
+- Added paragraph breaks and moved remarks in long model answers help reading and change no content.
+- Aligned blocks are short enough for a phone.

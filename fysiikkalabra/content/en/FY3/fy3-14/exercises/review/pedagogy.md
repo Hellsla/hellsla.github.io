@@ -1,13 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 9745f4b7769d51ad
-
+CONTENT-HASH: c181f69fde99c348
 ## Blocking
-None.
-
+(none)
 ## Polish
-1. L2-09: 'Kaikki jää ei sula.' states the outcome the student could find by comparison; acceptable, but could be left for the solution.
-
+- exercises/solutions.md:111, 167, 278 (Formula steps of the latent-heat-of-fusion and ice-and-water tasks) — the numerator of the last row is put in `\begin{array}{c}` and broken by hand inside a bracket, "(T_w" on one row and "- T)" on the next. A student reads a broken bracket as an error. Fix: keep the numerator on one row (the page wraps it on a phone) or break it only before a sign outside brackets.
+- exercises/solutions.md:270–280 — two Formula steps carry `\quad +` continuation rows; a short plain-text clause "(the same terms moved to the other side)" would explain the move for a weaker student.
 ## Checked
-- Round 2 delta judged in context (round-1 findings addressed).
-- L1-09 new situation (ice block on a windowsill, heat taken from surroundings) differs from the drink context of the worked example and L1-01; MAFY lookup still required. L2-09 asks the extra heat to melt the rest: three bar values, two subtractions, answer 40 kJ; the explanation that the water cannot supply it (already at 0 °C) is sound; 2/3 check is correct.
-- Both solutions staged, principle explained; 4 % tolerance on L1-09 covers 333 vs 334 kJ/kg.
+- All Formula steps (about 20) now start from the basic balance ($Q_\text{released} = Q_\text{absorbed}$, $E = Pt$, $Q = sm$), then the terms, then the solved unknown; symbolic to the end before substitution, as the house rule asks.
+- The partial-melting condition ($Q_\text{w} > s m_\text{i}$) and the frozen-water case are stated beside the chain, not hidden in it.
+- Split paragraphs (energy-balance checks, comparison of reasons, corrected value of $s$) keep each reasoning step; none over about 120 words.
+- Symbols match Given and Substitution; no number, unit or data changed; levels and counts unchanged.

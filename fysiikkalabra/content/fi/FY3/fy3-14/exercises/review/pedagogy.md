@@ -1,9 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: c68c01272657f7a2
+CONTENT-HASH: 374766fe1b22fc4c
+SCOPE: delta Kaava step of model solutions (basic equations first, derived formula, symbolic simplification to the end)
+
 ## Blocking
-(none)
+None.
+
 ## Polish
-(none)
+None.
+
 ## Checked
-- Delta: 'rajatapaus' spelling fix only.
-- Judged from the diff text; captures not opened.
+- Each Kaava step now starts from the basic equation(s) or law and reaches the solved symbolic form that Sijoitus uses; no combined formula opens a derivation.
+- The derivation steps are consistent with the quantities named in Sijoitus; answers, units and Sijoitus unchanged.
+- Added paragraph breaks and moved remarks in long model answers help reading and change no content.
+- Aligned blocks are short enough for a phone.
