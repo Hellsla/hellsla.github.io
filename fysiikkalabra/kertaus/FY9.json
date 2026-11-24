@@ -252,5 +252,14 @@
   "4": {
    "days": 28
   }
+ },
+ "koetila": {
+  "fy9-harjoituskoe": {
+   "minutes": 360,
+   "choose": {
+    "II": 4,
+    "III": 2
+   }
+  }
  }
 }
