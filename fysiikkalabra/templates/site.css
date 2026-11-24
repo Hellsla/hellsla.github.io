@@ -2439,3 +2439,36 @@ details.theory-box{}details.theory-box>.box-body{padding:.9rem .2rem .6rem}detai
 details .fig-row.side{display:block;max-width:var(--measure);margin:0 0 .5rem}
 details .fig-row.side>.fig{margin:1.25rem 0 1.75rem}
 details .fig-row.side>.fig svg{max-width:min(100%,32rem)}
+/* FY9 exam mode (work queue 11b PR 6, templates/koetila.js): the bar with the clock under the thumb at the bottom of the window, the row of a task, the
+   result. The clock is plain text (no animation, no live region); a task that is not chosen is dimmed and cannot be answered, never hidden. */
+.koetila-panel{margin:1rem 0;padding:.8rem 1rem;border:1px solid var(--line);border-radius:var(--card-radius);background:var(--surface);max-width:calc(var(--measure) + 3rem)}
+.koetila .kt-lead{margin:0 0 .6rem}
+.kt-go,.kt-end,.kt-pause,.kt-pick,.kt-task-start,.kt-again{min-height:44px;padding:0 1.1rem;border-radius:999px;border:2px solid var(--accent-deep);background:var(--accent-deep);color:#fff;font:700 var(--fs-ui) var(--sans);cursor:pointer}
+.kt-pause,.kt-pick,.kt-task-start,.kt-again{background:transparent;color:var(--accent-deep)}
+.kt-pick[aria-pressed="true"],.kt-task-start[aria-pressed="true"]{background:var(--accent-soft)}
+.kt-pick[aria-pressed="true"]::before,.kt-task-start[aria-pressed="true"]::before{content:"\2713\00a0"}
+.koetila button:disabled{opacity:.55;cursor:default}
+.koetila button:focus-visible,.kt-bar button:focus-visible{outline:3px solid var(--accent-deep);outline-offset:2px}
+.kt-bar{position:fixed;left:0;right:0;bottom:0;z-index:40;display:flex;flex-wrap:wrap;align-items:center;gap:.5rem .8rem;padding:.55rem max(1rem,env(safe-area-inset-left));padding-bottom:max(.55rem,env(safe-area-inset-bottom));background:var(--surface);border-top:2px solid var(--accent-deep)}
+.kt-time{margin-right:auto;font:700 1.15rem var(--sans);font-variant-numeric:tabular-nums}
+.kt-on body{padding-bottom:5.5rem}
+.kt-nostore{margin:1rem 0}
+.kt-row{display:flex;flex-wrap:wrap;gap:.5rem;margin:.3rem 0 .8rem}
+.kt-current{outline:2px solid var(--accent-deep);outline-offset:3px}
+.kt-off{opacity:.7}
+.kt-tag{margin-left:.4rem;padding:.1rem .5rem;border:1px solid var(--ink-2);border-radius:999px;font:600 var(--fs-small) var(--sans);color:var(--ink-2);white-space:nowrap}
+.kt-num{display:flex;align-items:center;gap:.5rem;margin:.6rem 0}
+.kt-num input{min-height:44px;max-width:12rem}
+.kt-rules{margin:.4rem 0 0;padding-left:1.2rem}
+.kt-result{margin:1rem 0;padding:1rem 1.1rem;border:1px solid var(--line);border-radius:var(--card-radius);background:var(--surface);max-width:calc(var(--measure) + 3rem)}
+.kt-result h2{margin:0 0 .4rem;font-size:1.25rem}
+.kt-points{font-weight:700;margin:.2rem 0 .8rem}
+.kt-table{width:100%;border-collapse:collapse;margin:.4rem 0 1rem;font-size:var(--fs-ui)}
+.kt-table th,.kt-table td{padding:.4rem .5rem;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+.kt-table td{white-space:nowrap}.kt-table th a{overflow-wrap:anywhere}.kt-c-task{width:60%}
+.kt-table .kt-skip{color:var(--ink-2)}
+.kt-sub{color:var(--ink-2);font-weight:400}
+.kt-page .kt-task-start{margin-right:0}
+.coach-minilist{list-style:none;margin:.6rem 0 0;padding:0;display:grid;gap:.5rem}
+.coach-mini-item{display:grid;gap:.1rem}
+@media print{.kt-bar,.kt-row,.koetila-panel{display:none!important}}

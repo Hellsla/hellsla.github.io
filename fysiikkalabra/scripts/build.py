@@ -28,7 +28,7 @@ stay in their lesson folders and keep their <id>-sim.js URLs.
 """
 import hashlib, json, os, sys, re, shutil, pathlib, atexit, html as _h, markdown
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent)); from reviews import status as review_status, published_exercises, WorkTree
-import media_tips, ahjo, answers_shown, figsize, jaksot, kaavat, kilparobo, lumatutor, assigned, booklets, cardgrid, concept_cards, courses, fbdspec, figcat, guides, i18n, inquiry, investigations, local_courses, mathlayout, mixer, module_icons, practice, reading_tips, stopthink, svgids, units, tablefit, valmentaja
+import koetila, media_tips, ahjo, answers_shown, figsize, jaksot, kaavat, kilparobo, lumatutor, assigned, booklets, cardgrid, concept_cards, courses, fbdspec, figcat, guides, i18n, inquiry, investigations, local_courses, mathlayout, mixer, module_icons, practice, reading_tips, stopthink, svgids, units, tablefit, valmentaja
 from i18n import t as T
 
 ROOT = pathlib.Path(os.environ.get("FYSIIKKALABRA_ROOT") or pathlib.Path(__file__).resolve().parents[1])   # tests build a copy
@@ -47,7 +47,7 @@ if SITE.name == "site.tmp":
 else:
     SITE.mkdir(exist_ok=True)                         # preview/ is shared by agents building at the same time, so it is never wiped
 TPL = ROOT / "templates"
-for f in ("site.css", "lesson.js", "sim-embed.js", "inquiry.js", "selfassess.js", "investigation.js", "invfilter.js", "padstore.js", "palautus.js", "readaloud.js", "kortit.js", "tehty.js", "omaarvio.js", "valmentaja.js", "jatka.js", "mediafilter.js", "ahjo.js", "lumatutor.js", "offline.js", "kaikki.js"): shutil.copy(TPL / f, SITE / f)
+for f in ("site.css", "lesson.js", "sim-embed.js", "inquiry.js", "selfassess.js", "investigation.js", "invfilter.js", "padstore.js", "palautus.js", "readaloud.js", "kortit.js", "tehty.js", "omaarvio.js", "valmentaja.js", "koetila.js", "jatka.js", "mediafilter.js", "ahjo.js", "lumatutor.js", "offline.js", "kaikki.js"): shutil.copy(TPL / f, SITE / f)
 card_files = concept_cards.publish(SITE)   # site/kortit/<module>.json, read by Käsitetakomo (scripts/concept_cards.py)
 # p5 + KaTeX, no CDN needed. The read-aloud model and onnxruntime-web are not part of the site (teacher 2026-11-04,
 # UI fix 3): they are in the repository Hellsla/ruukkilabra-models, copied into the published site's models/ folder
@@ -886,6 +886,7 @@ def copy_pics(who, texts):
     for ref in courses.pic_refs_in(texts):
         if not courses.pic_source(ref).is_file(): sys.exit(f"{who}: picture {ref} not found (expected assets/{ref})")
         (SITE / ref).parent.mkdir(parents=True, exist_ok=True); shutil.copy(courses.pic_source(ref), SITE / ref); assets.append(ref)
+UNIT_PAGES = {}  # {(language, unit id): the unit page's html before rebase()}, for the minikoe pages (scripts/koetila.py)
 expected = []  # pages every language must have written
 removed = []   # lessons on the live site that this build leaves out
 
@@ -1167,6 +1168,8 @@ def build_units(lang, out, unit_pub):
         if not tasks_html:
             for key in ("check_practice", "further_practice"):   # a unit without tasks has no exercises section: point to the theory summary only
                 body = body.replace(T(f"inquiry.{key}"), re.sub(r'(,| and)[^<]*<a href="#exercises">[^<]*</a>', "", T(f"inquiry.{key}")))
+        kspec = koetila.exam_spec(valmentaja.build(lang, unit_pub)) if uid == koetila.EXAM_UNIT else None   # the practice exam's optional exam mode (11b PR 6)
+        if kspec: body = body.replace('<section class="stage"', koetila.start_panel(T, kspec) + '<section class="stage"', 1)
         tail = units.tail_html(uid, lang, T, md, teacher=bool(only or build_all))   # sources and teacher notes: previews only
         if "id=\"sources\"" in tail: toc += f'<a href="#sources" class="toc-end"><span class="toc-label">{T("units.sources")}</span></a>'
         cdir = ROOT / "assets" / "units" / code.lower()
@@ -1186,12 +1189,13 @@ def build_units(lang, out, unit_pub):
         html = (texts(tpl).replace("{{title}}", esc(d["title"])).replace("{{course}}", code).replace("{{notice}}", notice_html)
                 .replace("{{strings}}", block + head).replace("{{back_to_course}}", esc(T("site.back_to_course", course=code)))
                 .replace("{{toc}}", toc).replace("{{main}}", f'<article id="teoria" class="inquiry unit unit-{d["kind"]}" data-course="{code.lower()}">{body}{units.course_nav(uid, lang, T, published)}{tail}</article>' + embedded)   # Previous / Next before the credits (teacher 2026-11-06)
-                .replace("{{scripts}}", f'<script src="inquiry.js"></script>' + ('<script src="selfassess.js"></script>' if tasks_html else "")
+                .replace("{{scripts}}", f'<script src="inquiry.js"></script>' + ('<script src="selfassess.js"></script>' if tasks_html else "") + ('<script src="koetila.js"></script>' if kspec else "")
                          + (f'<script src="units/{code.lower()}/units.js"></script>' if cdir.is_dir() else "")
                          + (f'<script src="valmentaja.js" data-t="{valmentaja.unit_json(T)}"></script>' if code == "FY9" else "")   # the evidence log of the FY9 coach (work queue 11b PR 3; invisible)
                          + (submission_script(lang, uid) if tasks_html else ""))
                 .replace("{{description}}", esc(d["description"])).replace("{{url}}", URL + f"{uid}.html")
                 .replace("{{languages}}", languages_nav(f"{uid}.html") if len(unit_pub[uid]) > 1 else ""))   # a unit in one language has none
+        UNIT_PAGES[(lang, uid)] = html                   # before rebase: the minikoe pages cut their cards out of it (scripts/koetila.py)
         (out / f"{uid}.html").write_text(rebase(html))
         print("built", uid, f"({st['state']})")
 
@@ -1569,9 +1573,25 @@ def build_language(lang):
         cindex = valmentaja.build(lang, unit_pub)
         if cindex["units"]:
             crumb = f' › <a href="{mcode}.html">{mcode}</a>' if mcode in local else ""
-            (out / valmentaja.PAGE).write_text(page(T("coach.title"), valmentaja.page_body(T, cindex, f"{mcode}.html", lang),
+            chapters = {n: c["title"] for n, c in enumerate((local.get(mcode) or local_courses.load()[mcode])["chapters"], 1)}
+            (out / valmentaja.PAGE).write_text(page(T("coach.title"), valmentaja.page_body(T, cindex, f"{mcode}.html", lang, koetila.mini_titles(T, cindex, chapters)),
                                                     f'<a href="index.html">{T("site.name")}</a>{crumb} › {T("coach.title")}', valmentaja.PAGE, T("coach.description"), main_class="reading coach-page"))
             mixer_built.append(valmentaja.PAGE)
+            by_id = {t["id"]: t for t in cindex["tasks"]}
+            pages = {u: UNIT_PAGES[(lang, u)] for u in {x["id"] for x in cindex["units"]} if (lang, u) in UNIT_PAGES}
+            for m in cindex["minikokeet"]:           # the minikoe pages (scripts/koetila.py, 11b PR 6): the fixed sets, cut out of the unit pages above
+                made = koetila.page_body(T, m, by_id, pages, chapters)
+                if not made: continue
+                kname, ktitle = koetila.page_name(m["id"]), koetila.title_of(T, m, chapters)
+                crumb = f' › <a href="{mcode}.html">{mcode}</a>' if mcode in local else ""
+                (out / kname).write_text(rebase(texts(tpl).replace("{{title}}", esc(ktitle)).replace("{{course}}", mcode).replace("{{notice}}", "")
+                    .replace("{{strings}}", strings_block(None)).replace("{{back_to_course}}", esc(T("site.back_to_course", course=mcode)))
+                    .replace("{{toc}}", made[1]).replace("{{main}}", f'<article id="teoria" class="inquiry practice exam kt-page">{made[0]}</article>')
+                    .replace("{{scripts}}", '<script src="inquiry.js"></script><script src="selfassess.js"></script><script src="koetila.js"></script>'
+                             f'<script src="valmentaja.js" data-t="{valmentaja.unit_json(T)}"></script>')
+                    .replace("{{description}}", esc(T("koetila.mini_lead", minutes=m["minutes"], points=m["points"]))).replace("{{url}}", URL + kname)
+                    .replace("{{languages}}", "")))
+                mixer_built.append(kname)
     if lang in valmentaja.languages():           # the FY9 task index (scripts/valmentaja.py, work queue 11b PR 2): data for a later page, no page of its own
         vf = valmentaja.write(lang, out, unit_pub)
         if vf: expected.append((out.relative_to(SITE) / vf).as_posix())
@@ -1743,7 +1763,7 @@ link_languages()
 i18n.set_lang(i18n.SOURCE)
 # Cache busting (teacher 2026-11-03: a page fetched just after a deploy showed new HTML with yesterday's cached site.css):
 # every link to a shared stylesheet or script carries ?v=<first 8 hex of its SHA-256>, so a changed file is a new URL.
-SHARED = ("site.css", "lesson.js", "sim-embed.js", "inquiry.js", "selfassess.js", "investigation.js", "invfilter.js", "padstore.js", "palautus.js", "readaloud.js", "kortit.js", "tehty.js", "omaarvio.js", "valmentaja.js", "jatka.js", "ahjo.js", "lumatutor.js", "offline.js", "kaikki.js")
+SHARED = ("site.css", "lesson.js", "sim-embed.js", "inquiry.js", "selfassess.js", "investigation.js", "invfilter.js", "padstore.js", "palautus.js", "readaloud.js", "kortit.js", "tehty.js", "omaarvio.js", "valmentaja.js", "koetila.js", "jatka.js", "ahjo.js", "lumatutor.js", "offline.js", "kaikki.js")
 _ver = {f: hashlib.sha256((SITE / f).read_bytes()).hexdigest()[:8] for f in SHARED if (SITE / f).is_file()}
 # Service worker (work queue 17a PR 1): site/sw.js at the root covers the language folders too. Its text carries the hash of the shared
 # files, so a new release is a new worker. FL_SW_KILL=1 publishes the self-removing worker instead (docs/audits/2026-11-15-kehitys-ilman-kirjautumista.md).
@@ -1760,7 +1780,7 @@ for _page in SITE.rglob("*.html"):
     if 'class="kc-item"' in _new: _new = tablefit.kc_items(_new, re.search(r'<html[^>]*\blang="fi\b', _new[:400]) is not None)   # the card list without scripts (work queue 8d)
     if _new != _old: _page.write_text(_new)
 if SITE.name == "site.tmp":                      # check the render, then swap it in; the old site comes back if the swap fails
-    expected += ["site.css", "lesson.js", "sim-embed.js", "inquiry.js", "selfassess.js", "investigation.js", "invfilter.js", "padstore.js", "palautus.js", "readaloud.js", "kortit.js", "tehty.js", "omaarvio.js", "valmentaja.js", "jatka.js", "ahjo.js", "lumatutor.js", "offline.js", "kaikki.js", "sw.js"] + [("" if l == i18n.SOURCE else l + "/") + "manifest.webmanifest" for l in LANGS] + card_files + assets
+    expected += ["site.css", "lesson.js", "sim-embed.js", "inquiry.js", "selfassess.js", "investigation.js", "invfilter.js", "padstore.js", "palautus.js", "readaloud.js", "kortit.js", "tehty.js", "omaarvio.js", "valmentaja.js", "koetila.js", "jatka.js", "ahjo.js", "lumatutor.js", "offline.js", "kaikki.js", "sw.js"] + [("" if l == i18n.SOURCE else l + "/") + "manifest.webmanifest" for l in LANGS] + card_files + assets
     broken = [n for n in expected if not (SITE / n).is_file() or (SITE / n).stat().st_size == 0]
     if broken or not (SITE / "vendor").is_dir(): sys.exit(f"build check failed, site/ left unchanged: missing or empty {broken or ['vendor/']}")
     old = ROOT / "site.old"
