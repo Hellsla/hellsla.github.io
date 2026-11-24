@@ -1,22 +1,24 @@
 VERDICT: PASS
-CONTENT-HASH: 97e76b1902e96d98
+CONTENT-HASH: 6b5fc5bd9373a765
 
 ## Blocking
+(none)
 
 ## Polish
-- inquiry.json `johtopaatos` — `after` lists exp-1 and exp-2 only, but its prompt and criterion 3 need the thermometer data (`data`) — add `data` to `after`, or drop the thermometer from the prompt.
-- inquiry.json `simulaatio` `text` — the visible lead is about 48 words; the page rule is at most 30 — cut it to the picture and the sliders ("The ball rolls down the ramp and the hand stopwatch gives a reading each time. Choose the number of repeats and the two errors."); the rest is already in the closed boxes.
-- inquiry.json `check-c2` — four checks (concept, resolution, calculation, explain) against the form's three, and the core path keeps 1-2 — mark `check-c2` `optional`, or merge its point (resolution is not uncertainty) into `check-1`. Its correct option is also the longest, a length cue; `karkea` has the same.
-- inquiry.json `karkea` — the six readings are the worked example's with 3.31 changed to 4.31, so the student recognises the data rather than reasoning from fresh data — use a different series (a gross error such as 3.52 for 3.25, as in the lesson text, works).
-- inquiry.json `siirto` — answer 5.44 g, tolerance 0.02 g: a student who rounds to two figures (5.4 g) falls outside it, against the rule that rounding to the stated figures stays inside — widen to 0.05 or state the figures in the prompt. Also "accuracy" and "resolution" are used as terms but are not in glossary.json; add them with the three terms already pending.
+- lesson.md:146 (Formula section, "In this course the scatter…") — one paragraph of about 140 words carries five ideas: half of the range, uncertainty versus error, the "rough, not a strict limit" caveat, the uncertainty of the mean, and a note on method. It is over the 120-word rule. Fix: split it into "Half of the range", "How to read the error estimate" and a short note about the mean. The Key idea paragraph (line 99) is also about 130 words; split it after "…the measurement error."
+- inquiry.json `pr-numerot` — the feedback on the wrong options ("the precision of the reading is not a hundredth when the time is taken by hand") gives away the hand-timing point that the lesson is about to investigate. Fix: keep the feedback on significant figures only, and leave the hand-timing point to the hook and experiment 1.
+- inquiry.json `exp-2` question — after prediction 2 the student already knows the answer is 0.30 s, so the task is only a subtraction. Fix: ask for the mean at n = 10 as well and whether the gap to T changes, or ask which number in the table would show a systematic error if T were unknown.
+- inquiry.json Tarkista has four checks (concept, resolution, calculation, explain), where the house form has three. The resolution check is good, because it repairs the "display digits equal uncertainty" misconception, but it adds workload. Fix: mark `check-c2` optional, or fold it into `check-1`.
+- inquiry.json `siirto` — the third hint gives the whole method, including the formula. This is acceptable as the last hint, but state the zero-correction step as a question in hint 2 so the student still has to choose it.
 
 ## Checked
-- Quoted numbers recomputed from sim.js's fixed series: exp-1 (n=1: 2.18 s, -0.22 s; n=40: mean 2.40 s, half-range 0.26 s; n=5 and 10: 0.25 s), exp-2 (n=40: 2.70 s, +0.30 s), exp-3 (0.0850 s and 0.525 s, ratio 6.2), and the hook's five readings, all match.
-- Worked example, gross-error item, coin task, check-2 and exit-ticket arithmetic and rounding are correct (19.09 s; 3.18 ± 0.12 s; 3.8 %; 5.44 g; 2 %).
-- Order is hook, retrieval in the same stopwatch situation, two committed predictions with reveal after the experiments (min 3), sim, experiments, data, conclusion, theory, reflect, example, error-spotting, transfer, exercises, checks, exit; no answer is disclosed before commitment.
-- Both predictions have wrong options that map to real misconceptions, with feedback that repairs them and cites the experiment; the experiments lock the controlled parameters and vary one.
-- The simulation emerges from random readings (not a formula check); model values are labelled as such, and the true time is called known only to the model.
-- Scope: relative uncertainty, rounding of the estimate and the reading uncertainty fit "assess reliability" for FY1; workload is one lesson with exp-3 optional.
-- Theory: no paragraph over about 120 words, figures follow the paragraphs they explain, and the stages in the worked example are one step each.
-- Opening question is answered (mean for random error, reference comparison for systematic error) and the reflect returns to it.
-- Exercises were not judged (reviewed apart).
+- Learning path: it follows the slot goals (error kinds, repeatability, mean and half of the range) and ends with a systematic-error correction that uses a reference value. It does not go past FY1 scope.
+- The opening question is answered only after commitment. The hook gets back to the class in `reflect`.
+- pred-1 and pred-2 target real misconceptions: "repeats remove all error" and "the mean grows away". Experiments 1 and 2 can refute them, since the mean, range and difference columns are measured per n with the errors locked.
+- The simulation is justified: the mean settling emerges from a fixed noisy series, and the numbers are called model values. The lead text is short, and the three closed boxes are present (captures #2, #40).
+- Worked example: seven stages, one step each. I checked the numbers (mean 3.18 s, ±0.12 s, 3.8 %, five of six in the interval). Rounding is justified and the reasonableness stage is honest about the 3.31 s result.
+- The gross-error task: the feedback figures (0.19 s shift, 0.09 s to 0.62 s) are correct, and it does not teach "drop outliers".
+- Figures in captures #3–#6 are legible and sit next to the text they explain. The theory figure `error-types` shows the contrast without an answer attached to any task.
+- The explain criteria are observable and match the prompts. The exit ticket tests the core idea (zero correction, mean versus systematic error, relative uncertainty).
+- Phone captures at 390 px: no clipping, controls understandable. 1280 px: the simulation sits beside the experiments.
+- Not judged: the exercise set (reviewed apart). The packet reported that `check_lesson.py` had not been run. The hash at the start and the end was 6b5fc5bd9373a765.

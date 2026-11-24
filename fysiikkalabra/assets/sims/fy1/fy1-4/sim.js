@@ -50,7 +50,6 @@ new p5((p) => {
     const lb = p.createElement('label').parent(controls); sB = p.createSpan('').parent(lb); slB = p.createSlider(0, 1, 0, 0.01).parent(lb);
     chkBest = p.createCheckbox(__('nayta_laskettu_paras_suora'), false).parent(controls);
     for (const e of [selData.elt]) { const f = () => setRanges(DS[selData.value()]); e.addEventListener('input', f); e.addEventListener('change', f); }
-    p.createP(__('pisteet_ovat_esimerkkiaineistoa')).parent('sim-root').class('note');
     p.textFont('Arial');
     setRanges(DS['1']);
     // adapter for guided investigations (sim-embed.js): the page may set, lock and reset these parameters
