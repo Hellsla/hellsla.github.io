@@ -64,7 +64,7 @@ def longitudinal():
         xm = xc + m * lam
         if xm < x1 - 20: f.tex(xm, yc - hh - 22, r"\text{tihentymä}", "middle")
     xr = xc + lam / 2
-    f.tex(xr, yc + hh + 22, r"\text{harvennus}", "middle")
+    f.tex(xr, yc + hh + 22, r"\text{harventuma}", "middle")
     # particle oscillation and propagation
     f.arrow(xr + lam / 2 + 6, yc + hh + 22, xr + lam / 2 - 22, yc + hh + 22, INK, 2, 10)
     f.arrow(xr + lam / 2 - 16, yc + hh + 22, xr + lam / 2 + 12, yc + hh + 22, INK, 2, 10)

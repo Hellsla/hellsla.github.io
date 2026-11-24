@@ -18,3 +18,7 @@ Kuvat (390 px): `*-ennen.png` = nykyinen (alt-tekstit vaihdettu, nimiö piirroks
 - fy5-10/types: kaksi nimiötä "harvennus" (`lessons/FY5/fy5-10/figures.py` rivit 87–88; fi, fi-easy ja en käyttävät samaa piirrosta, `figures.json` kääntää nimiön).
 - fy5-14/pitkittainen: yksi nimiö "harvennus" (`lessons/FY5/fy5-14/figures.py` rivi 67).
 - `figures.json`-avain `"harvennus"` (fi-easy, en) on piirroksen nimiön käännösavain; vaihtuu piirroksen mukana.
+
+
+## Päätös
+Opettaja hyväksyi 2026-11-24 suoraan tähän sessioon myös nimiöt ("Hyväksyn myös nimiöt"): `\text{harvennus}` → `\text{harventuma}` figures.py:ssä (fy5-10/types, fy5-14/pitkittainen), käännösavaimet ja uudelleengeneroidut kuvat sovellettu PR:ään; `*-jalkeen-nimio.png` on hyväksytty ulkoasu. `nimio-vaihtoehto.patch` on nyt vain historiaa.

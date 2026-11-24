@@ -220,7 +220,7 @@ Kaiuttimen kalvo tai kitaran kieli värähtelee. Se työntää ilman hiukkasia v
   <foreignObject x="73" y="33.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{tihentymä}$</div></foreignObject>
   <foreignObject x="261" y="33.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{tihentymä}$</div></foreignObject>
   <foreignObject x="449" y="33.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{tihentymä}$</div></foreignObject>
-  <foreignObject x="167" y="145.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{harvennus}$</div></foreignObject>
+  <foreignObject x="160.5" y="145.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{harventuma}$</div></foreignObject>
   <line x1="327" y1="160" x2="308" y2="160" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>
   <path d="M299,160 L309,155.5 L309,164.5 Z" fill="#1f2933" stroke-linejoin="round"/>
   <line x1="305" y1="160" x2="324" y2="160" stroke="#1f2933" stroke-width="2" stroke-linecap="butt"/>

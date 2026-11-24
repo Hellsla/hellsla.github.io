@@ -84,8 +84,8 @@ def types():
     f.motion([(0, 0, 0, 0, 0), (1, 0, 0, 0, 0)], P)                    # the labels name places of the still: gone while the crowding travels
     f.tex(160, 354, r"\text{tihentymä}", "middle")
     f.tex(360, 354, r"\text{tihentymä}", "middle")
-    f.tex(260, 384, r"\text{harvennus}", "middle")
-    f.tex(460, 384, r"\text{harvennus}", "middle")
+    f.tex(260, 384, r"\text{harventuma}", "middle")
+    f.tex(460, 384, r"\text{harventuma}", "middle")
     f.end()
     return f.svg()
 
