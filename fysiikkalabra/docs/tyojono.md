@@ -123,6 +123,7 @@ PR 4b (#834): uudet käyttöliittymätekstit ja kuvat hyväksytty: opettaja 2026
 PR 5 (#836, vaikea ratkaisuvaihe ja toistuvat virheet): uudet käyttöliittymätekstit ja kuvat hyväksytty: opettaja 2026-11-24 tekijäsessioon ("Hyväksyn tekstit ja kuvat"). Jäljellä: PR 6–8.
 Varattu: claude/11b-pr6-koetila (PR 6 koetila ja minikokeet 30/60 min, harjoituskokeen koetila)
 PR 6 (#847, koetila ja minikokeet): uudet käyttöliittymätekstit ja kuvat hyväksytty: opettaja 2026-11-24 tekijäsessioon ("Hyväksyn tekstit ja kuvat").
+Varattu: claude/11b-pr7-kertauspolku (PR 7 kertauspolku 2/4 viikkoa, 14/28 vrk, 3–7 pv/vko, 20/40/60 min)
 
 ## 17. Kehitys ilman kirjautumista (opettaja 2026-11-15)
 17a PR 1 (#720) ja PR 2 (#741, manifesti ja pysyvä tallennus) sekä 17b PR 1 (#818, koko työ yhteen tiedostoon; tekstit opettaja 2026-11-23) tehty; webkit.org sallittu ympäristöön 2026-11-19, opettajan luvalla.
