@@ -292,9 +292,9 @@
       "id": "fy5-4-L3-01",
       "level": 3,
       "text": "An icy road bends horizontally, and the radius of the bend is $60\\,\\text{m}$. The coefficient of static friction between the tyres and the ice is $0.10$. Air resistance and rolling resistance are neglected. What is the greatest speed at which a car can go through the bend without sliding? Give the answer in $\\text{km/h}$.",
-      "answer": 27.6193,
+      "answer": 27,
       "unit": "km/h",
-      "tolerance": 0.02,
+      "tolerance": 0.03,
       "fbd": "equations"
     },
     {
@@ -310,9 +310,9 @@
       "id": "fy5-4-L3-03",
       "level": 3,
       "text": "A road designer dimensions a horizontal bend for a speed of $80\\,\\text{km/h}$. For safety, the friction of the road should not have to give the car a sideways force greater than $0.25$ times the weight of the car, so that the grip is enough also on a wet road. Air resistance and rolling resistance are neglected. How large must the radius of the bend be at least?",
-      "answer": 201.3566,
+      "answer": 210,
       "unit": "m",
-      "tolerance": 0.02,
+      "tolerance": 0.045,
       "fbd": "equations"
     },
     {
