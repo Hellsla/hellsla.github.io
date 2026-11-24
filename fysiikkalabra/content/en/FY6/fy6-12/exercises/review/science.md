@@ -1,18 +1,26 @@
 VERDICT: PASS
-CONTENT-HASH: e1cbdbd39a48e885
-SCOPE: delta added-exercise from 24851d9dbd27e2fd base 8f23aa7ae3bd
+CONTENT-HASH: 4661288f1dcc7a5b
+SCOPE: delta caption-label,md-paragraphs,numbers,reflow,typography,wording from e1cbdbd39a48e885 base b5600a6
+Delta from the version I passed (e1cbdbd39a48e885): I judged only the diff in the packet. The packet shows the aligned blocks flattened, so I read the Formula steps for their row order.
 
 ## Blocking
 (none)
 
 ## Polish
-- content/en/FY6/fy6-12/exercises/exercises.json (fy6-12-L2-09) — the task text does not say where the positive plate is; a sighted student infers it from where the line ends (5.0 cm, axis running to 5.5 cm), only the alt text states it — add "the positive plate is where the line ends" or give x = 5.0 cm (same note as on the Finnish set).
+- exercises.json:304 (fy6-12-L2-09): still open from before. The task text does not say where the positive plate is, and only the alt text states it. Add "the positive plate is at $x = 5.0\,\text{cm}$".
 
 ## Checked
-- Delta: only the added exercise fy6-12-L2-09 judged; the rest unchanged per `reviews.py added_exercises`.
-- Figure ex-vgraph (figures.py): straight line from (0; 0 V) to (5.0 cm; 250 V) on a 1 cm / 50 V grid; V(1.0 cm) = 50 V and V(5.0 cm) = 250 V lie on grid lines as the solution reads them; nothing marked gives the answer.
-- Physics: an electron released from rest moves toward higher potential (to the + plate); only the electric force works, so energy conservation gives ½mv² = eU with U = 200 V; the principle states the sign reasoning correctly.
-- Recomputed: v = √(2 · 1.602·10⁻¹⁹ C · 200 V : 9.109·10⁻³¹ kg) = 8.387·10⁶ m/s; answers.py 8.387e6; json 8.39e6; 8.4·10⁶ is 0.15 % off, inside 2 %.
-- Non-relativistic model valid: v/c = 2.8 %, stated in the check; the 3.0 kV comparison (3.2·10⁷ m/s) recomputes correctly.
-- Solution complete: graph reading, v = √(2eU/m) before numbers, unit check √(C·V/kg) = m/s, rounding reason, reasonableness.
-- Matches the revised Finnish task (same data, answer, tolerance and figure).
+- Proton task (L1): the Formula step is $\Delta E_\text{k} + \Delta E_\text{p} = 0$, then $\Delta E_\text{p} = e\Delta V = e(V_2 - V_1)$, then $\Delta E_\text{k} = e(V_1 - V_2)$. The signs are right, and the result fits the unchanged $150\,\text{eV}$.
+- $\Delta V = -Es$, then $\Delta E_\text{p} = e\Delta V = -eEs$: the potential falls along the field, which is correct for a proton.
+- Electron at point P: $E = U/d$ and $V_P = Ex$ give $E_\text{p} = -eUx/d$. The negative sign for the electron is right.
+- Energy tasks (alpha particle, accelerating voltage, the speed ratio in L3-02, the ion mass in L2-07): each now starts from $E_\text{k} = W = qU$ before $\tfrac{1}{2}mv^2 = qU$. The work is the field's, which matches each Principle. Each solves to the same symbolic form as before:
+  - $\sqrt{4eU/m}$
+  - $mv^2/(2e)$
+  - $\sqrt{m_\text{p}/m_\text{e}}$
+  - $2eU/v^2$
+- Electron from A to B: the step starts from energy conservation $E_{\text{k},A} + E_{\text{p},A} = E_{\text{k},B} + E_{\text{p},B}$ with $E_\text{p} = -eV$, so $E_{\text{k},B} = \tfrac12 mv_A^2 + e(V_B - V_A)$. This is correct.
+- Turning point of the proton: $V = Ex = Ux/d$ and $E_{\text{k},0} = eV$ give $x = E_{\text{k},0}d/(eU)$, measured from the negative plate. The asked distance is $d - x$. This is correct.
+- L3-04: the derivation chains $v^2 = 2eU_\text{a}/m$, $a = eU_\text{d}/(md)$ and $t = L/v$. That gives $y = \tfrac12 \cdot \tfrac{eU_\text{d}}{md} \cdot \tfrac{mL^2}{2eU_\text{a}} = \tfrac{U_\text{d}L^2}{4dU_\text{a}}$. I checked the algebra and the mass cancels correctly.
+- The hunks that only split paragraphs (L1 option tasks, L2-05, L2-06, L2-07, L2-08, L3-04 parts a–c, L3-05) keep every number, sign, unit and causal step, so nothing was lost.
+- The changed captions only drop the esimerkkiaineisto marker, which the teacher approved.
+- No Substitution, Answer or answers.py value changed, so the recomputations from my earlier reviews still hold.

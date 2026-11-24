@@ -1,5 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 68521ca9717732dd
+CONTENT-HASH: 05a351bf9e86775d
+SCOPE: delta answers,numbers from 0531a6d54a3e8f40 base 48ff417
 
 ## Blocking
 (none)
@@ -8,7 +9,9 @@ CONTENT-HASH: 68521ca9717732dd
 (none)
 
 ## Checked
-- Delta (Principle, Force diagram, Model answer, Reading the graph splits). Opened fy5-4 open-exercises-1280-3, -5, -7, L2-1280-1 (dip force diagram: text paragraphs then figure, figure intact), L3-1280-2: paragraphs and figures survive, no clipping.
+- Delta: L3-01 and L3-03 (4-20) limit values rounded to the safe side (27 km/h, 210 m).
+- Opened open-exercises-L3-1280-1, -2 (4-18 question, Sijoitus, Vastaus 27 km/h, Järkevyys) and -4, -5 (4-20 question, Kaava, Sijoitus, Vastaus 210 m) for this language.
+- KaTeX clean, rows aligned at =, units upright with thin space, no clipping or overflow; the answer box, the exact value and the rounding-direction sentence read in logical order; force diagrams unchanged.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 4

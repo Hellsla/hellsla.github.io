@@ -12,7 +12,7 @@
 **Annettu:** vastuksen resistanssi $R = 220\,\Omega$ ja virta $I = 15\,\text{mA}$
 **Kysytty:** vastuksen jännite $U$ voltteina
 **Periaate:** Vastus noudattaa Ohmin lakia, joten jännite on resistanssin ja virran tulo. Saman yhtälön saa resistanssin määritelmästä $R = U : I$, kun kertoo molemmat puolet virralla.
-**Kaava:** $R = \dfrac{U}{I}$, josta $U = R I$
+**Kaava:** $$\begin{aligned} R &= \dfrac{U}{I} \\ U &= R I \end{aligned}$$
 **Muunnokset:** $I = 15\,\text{mA} = 15 \cdot 10^{-3}\,\text{A} = 0{,}015\,\text{A}$
 **Sijoitus:** $U = 220\,\Omega \cdot 0{,}015\,\text{A} = 3{,}3\,\text{V}$
 **Vastaus:** $3{,}3\,\text{V}$, kaksi merkitsevää numeroa kuten virrassa $15\,\text{mA}$.
@@ -22,7 +22,7 @@
 **Annettu:** lämmityslankojen resistanssi $R = 1{,}2\,\Omega$ ja jännite $U = 12\,\text{V}$
 **Kysytty:** lankojen läpi kulkeva virta $I$ ampeereina
 **Periaate:** Lämmityslangan virran saa resistanssin määritelmästä, kun jännite ja resistanssi tunnetaan. Annettu resistanssi koskee lankoja käytössä.
-**Kaava:** $R = \dfrac{U}{I}$, josta $I = \dfrac{U}{R}$
+**Kaava:** $$\begin{aligned} R &= \dfrac{U}{I} \\ I &= \dfrac{U}{R} \end{aligned}$$
 **Muunnokset:** Ei tarvita. Jännite on voltteina ja resistanssi ohmeina, ja $1\,\text{V}/\Omega = 1\,\text{A}$.
 **Sijoitus:** $I = \dfrac{12\,\text{V}}{1{,}2\,\Omega} = 10\,\text{A}$
 **Vastaus:** $10\,\text{A}$, kaksi merkitsevää numeroa kuten jännitteessä ja resistanssissa.
@@ -52,7 +52,7 @@
 **Annettu:** alussa $U_1 = 6{,}0\,\text{V}$ ja $I_1 = 0{,}25\,\text{A}$; lopussa $U_2 = 9{,}0\,\text{V}$; lämpötila pysyy samana
 **Kysytty:** virta $I_2$ jännitteellä $9{,}0\,\text{V}$
 **Periaate:** Vastuksen lämpötila pysyy samana, joten vastus noudattaa Ohmin lakia. Sen resistanssi on sama molemmilla jännitteillä. Resistanssi lasketaan ensimmäisestä mittauksesta ja käytetään toisessa.
-**Kaava:** $R = \dfrac{U_1}{I_1}$ ja $I_2 = \dfrac{U_2}{R}$
+**Kaava:** $$\begin{aligned} R &= \dfrac{U_1}{I_1} \\ I_2 &= \dfrac{U_2}{R} \end{aligned}$$
 **Muunnokset:** Ei tarvita. Jännitteet ovat voltteina ja virta ampeereina.
 **Sijoitus:** $R = \dfrac{6{,}0\,\text{V}}{0{,}25\,\text{A}} = 24\,\Omega$ ja $I_2 = \dfrac{9{,}0\,\text{V}}{24\,\Omega} = 0{,}375\,\text{A}$
 **Vastaus:** $0{,}38\,\text{A}$, kaksi merkitsevää numeroa kuten jännitteissä ja virrassa $0{,}25\,\text{A}$.
@@ -73,7 +73,7 @@
 **Annettu:** kuparijohdin, $l = 50\,\text{m}$, $\rho = 1{,}7 \cdot 10^{-8}\,\Omega\cdot\text{m}$; resistanssi enintään $R = 0{,}50\,\Omega$
 **Kysytty:** pienin poikkipinta-ala $A$ neliömillimetreinä
 **Periaate:** Tasapaksun johtimen resistanssi on kääntäen verrannollinen poikkipinta-alaan. Suurin sallittu resistanssi antaa siis pienimmän sallitun poikkipinta-alan.
-**Kaava:** $R = \rho \dfrac{l}{A}$, josta $A = \dfrac{\rho l}{R}$
+**Kaava:** $$\begin{aligned} R &= \rho \dfrac{l}{A} \\ A &= \dfrac{\rho l}{R} \end{aligned}$$
 **Muunnokset:** Tulos saadaan neliömetreinä, ja $1\,\text{m}^2 = (10^3\,\text{mm})^2 = 10^6\,\text{mm}^2$.
 **Sijoitus:** $A = \dfrac{1{,}7 \cdot 10^{-8}\,\Omega\cdot\text{m} \cdot 50\,\text{m}}{0{,}50\,\Omega} = 1{,}7 \cdot 10^{-6}\,\text{m}^2 = 1{,}7 \cdot 10^{-6} \cdot 10^6\,\text{mm}^2 = 1{,}7\,\text{mm}^2$
 **Vastaus:** $1{,}7\,\text{mm}^2$, kaksi merkitsevää numeroa kuten lähtötiedoissa.
@@ -83,7 +83,7 @@
 **Annettu:** konstantaanilanka, halkaisija $d = 0{,}40\,\text{mm}$, pituus $l = 2{,}0\,\text{m}$, $\rho = 5{,}0 \cdot 10^{-7}\,\Omega\cdot\text{m}$
 **Kysytty:** langan resistanssi $R$ ohmeina
 **Periaate:** Lanka on tasapaksu, joten $R = \rho l : A$. Poikkileikkaus on ympyrä. Poikkipinta-ala lasketaan säteestä, joka on puolet halkaisijasta.
-**Kaava:** $A = \pi r^2 = \pi \left(\dfrac{d}{2}\right)^2$ ja $R = \dfrac{\rho l}{A}$
+**Kaava:** $$\begin{aligned} r &= \dfrac{d}{2} \\ A &= \pi r^2 \\ R &= \dfrac{\rho l}{A} \end{aligned}$$
 **Muunnokset:** $d = 0{,}40\,\text{mm} = 0{,}40 \cdot 10^{-3}\,\text{m}$, joten $r = 0{,}20 \cdot 10^{-3}\,\text{m}$.
 **Sijoitus:** $A = \pi \cdot (0{,}20 \cdot 10^{-3}\,\text{m})^2 = 1{,}257 \cdot 10^{-7}\,\text{m}^2$ ja $R = \dfrac{5{,}0 \cdot 10^{-7}\,\Omega\cdot\text{m} \cdot 2{,}0\,\text{m}}{1{,}257 \cdot 10^{-7}\,\text{m}^2} = 7{,}96\,\Omega$
 **Vastaus:** $8{,}0\,\Omega$, kaksi merkitsevää numeroa kuten halkaisijassa, pituudessa ja resistiivisyydessä.
@@ -93,7 +93,7 @@
 **Annettu:** alkuperäinen resistanssi $R_1 = 0{,}80\,\Omega$; pituus kaksinkertaistuu, $l_2 = 2 l_1$; tilavuus säilyy
 **Kysytty:** venytetyn langan resistanssi $R_2$
 **Periaate:** Lanka on samaa ainetta ja tasapaksu, joten $R = \rho l : A$. Tilavuus $V = A l$ pysyy samana. Kun pituus kaksinkertaistuu, poikkipinta-ala puolittuu. Molemmat muutokset kasvattavat resistanssia. Pituus kaksinkertaistaa sen, ja puolet pienempi poikkipinta-ala kaksinkertaistaa sen uudelleen. Siksi resistanssi muuttuu enemmän kuin pituus.
-**Kaava:** $R_1 = \rho \dfrac{l_1}{A_1}$ ja $R_2 = \rho \dfrac{l_2}{A_2}$, missä $l_2 = 2 l_1$ ja $A_2 = \dfrac{A_1}{2}$, josta $R_2 = \rho \dfrac{2 l_1}{A_1 / 2} = 4 R_1$
+**Kaava:** $$\begin{aligned} R_1 &= \rho \dfrac{l_1}{A_1} \\ R_2 &= \rho \dfrac{l_2}{A_2} \\ l_2 &= 2 l_1, \quad A_2 = \dfrac{A_1}{2} \\ R_2 &= \rho \dfrac{2 l_1}{A_1 / 2} \\ &= 4 \rho \dfrac{l_1}{A_1} = 4 R_1 \end{aligned}$$
 **Muunnokset:** Ei tarvita. Resistanssit ovat ohmeina, ja vertailu tehdään suhteina.
 **Sijoitus:** $R_2 = 4 \cdot 0{,}80\,\Omega = 3{,}2\,\Omega$
 **Vastaus:** $3{,}2\,\Omega$, kaksi merkitsevää numeroa kuten alkuperäisessä resistanssissa.
@@ -103,7 +103,7 @@
 **Annettu:** kromnikkelilanka, $A = 0{,}20\,\text{mm}^2$, $U = 2{,}00\,\text{V}$; mittaukset $l$ ja $I$: $0{,}40\,\text{m}$ ja $0{,}91\,\text{A}$, $0{,}80\,\text{m}$ ja $0{,}46\,\text{A}$, $1{,}20\,\text{m}$ ja $0{,}30\,\text{A}$, $1{,}60\,\text{m}$ ja $0{,}23\,\text{A}$
 **Kysytty:** kromnikkelin resistiivisyys $\rho$ yksikössä $\mu\Omega\cdot\text{m}$
 **Periaate:** Jokaisen pituuden resistanssi on $R = U : I$. Tasapaksun langan resistanssi on $R = \rho l : A$. Siksi $R$ on suoraan verrannollinen pituuteen, ja suhde $R : l$ on vakio $\rho : A$. Oikeissa mittaussarjoissa pisteet eivät yleensä ole täsmälleen samalla suoralla, koska mittauksissa on epävarmuutta. Siksi käytetään kaikkia mittauksia.
-**Kaava:** $R = \dfrac{U}{I}$ ja $R = \rho \dfrac{l}{A}$, josta $\rho = \dfrac{R}{l} \cdot A$
+**Kaava:** $$\begin{aligned} R &= \dfrac{U}{I} \\ R &= \rho \dfrac{l}{A} \\ \rho &= \dfrac{R}{l} \cdot A \end{aligned}$$
 **Muunnokset:** $A = 0{,}20\,\text{mm}^2 = 0{,}20 \cdot 10^{-6}\,\text{m}^2$. Lopuksi $10^{-6}\,\Omega\cdot\text{m} = 1\,\mu\Omega\cdot\text{m}$.
 **Sijoitus:** Resistanssit ovat $2{,}00\,\text{V} : 0{,}91\,\text{A} = 2{,}20\,\Omega$, $4{,}35\,\Omega$, $6{,}67\,\Omega$ ja $8{,}70\,\Omega$. Suhteet $R : l$ ovat $5{,}49$, $5{,}43$, $5{,}56$ ja $5{,}43\,\Omega/\text{m}$. Origon kautta sovitetun suoran kulmakerroin on $5{,}47\,\Omega/\text{m}$, joten $\rho = 5{,}47\,\tfrac{\Omega}{\text{m}} \cdot 0{,}20 \cdot 10^{-6}\,\text{m}^2 = 1{,}09 \cdot 10^{-6}\,\Omega\cdot\text{m}$
 **Vastaus:** $1{,}1\,\mu\Omega\cdot\text{m}$, kaksi merkitsevää numeroa kuten poikkipinta-alassa ja virroissa $0{,}30\,\text{A}$ ja $0{,}23\,\text{A}$.
@@ -113,7 +113,7 @@
 **Annettu:** kylmän lampun resistanssi $R_\text{k} = 1{,}0\,\Omega$; käytössä $U = 3{,}0\,\text{V}$ ja $I = 0{,}25\,\text{A}$
 **Kysytty:** virta $I_\text{k}$ kytkentähetkellä jännitteellä $3{,}0\,\text{V}$
 **Periaate:** Kytkentähetkellä lanka on vielä huoneenlämpöinen, joten sen resistanssi on kylmän lampun arvo. Lanka kuumenee vasta, kun virta on kulkenut sen läpi hetken. Virran saa resistanssin määritelmästä.
-**Kaava:** $R_\text{k} = \dfrac{U}{I_\text{k}}$, josta $I_\text{k} = \dfrac{U}{R_\text{k}}$
+**Kaava:** $$\begin{aligned} R_\text{k} &= \dfrac{U}{I_\text{k}} \\ I_\text{k} &= \dfrac{U}{R_\text{k}} \end{aligned}$$
 **Muunnokset:** Ei tarvita. Jännite on voltteina ja resistanssi ohmeina.
 **Sijoitus:** $I_\text{k} = \dfrac{3{,}0\,\text{V}}{1{,}0\,\Omega} = 3{,}0\,\text{A}$
 **Vastaus:** $3{,}0\,\text{A}$, kaksi merkitsevää numeroa kuten jännitteessä ja resistanssissa.
@@ -135,7 +135,7 @@ Pidempi lanka ei tarjoa virralle enemmän tilaa. Virran kulkutilaa kuvaa poikkip
 **Annettu:** alussa $U = 4{,}5\,\text{V}$ ja $I_1 = 0{,}60\,\text{A}$; uusi lanka on samaa kuparia, yhtä paksu ja kaksi kertaa pidempi; jännite ja lämpötila pysyvät samoina
 **Kysytty:** virta $I_2$ pidemmän langan läpi
 **Periaate:** Lanka on samaa ainetta ja yhtä paksua, joten $R = \rho l : A$ on suoraan verrannollinen pituuteen. Kaksi kertaa pidemmän langan resistanssi on kaksinkertainen. Jännite pysyy samana. Silloin virta on resistanssin määritelmän mukaan kääntäen verrannollinen resistanssiin.
-**Kaava:** $R = \dfrac{U}{I}$, jolloin $R_1 = \dfrac{U}{I_1}$, $R_2 = 2 R_1$ ja $I_2 = \dfrac{U}{R_2}$
+**Kaava:** $$\begin{aligned} R &= \dfrac{U}{I} \\ R_1 &= \dfrac{U}{I_1} \\ R_2 &= 2 R_1 \\ I_2 &= \dfrac{U}{R_2} \end{aligned}$$
 **Muunnokset:** Ei tarvita. Jännite on voltteina, virta ampeereina ja resistanssi ohmeina.
 **Sijoitus:** $R_1 = \dfrac{4{,}5\,\text{V}}{0{,}60\,\text{A}} = 7{,}5\,\Omega$, $R_2 = 2 \cdot 7{,}5\,\Omega = 15\,\Omega$ ja $I_2 = \dfrac{4{,}5\,\text{V}}{15\,\Omega} = 0{,}30\,\text{A}$
 **Vastaus:** $0{,}30\,\text{A}$, kaksi merkitsevää numeroa kuten jännitteessä ja virrassa.
@@ -239,7 +239,7 @@ Suora kulkee origon kautta, koska ilman jännitettä vastuksen läpi ei kulje vi
 **Kuvaajan lukeminen:** Jännite $U$ on vaaka-akselilla ja virta $I$ pystyakselilla. Taulukon viisi pistettä ovat samalla suoralla, ja suora kulkee origon kautta. Suoralta luetaan piste, joka on kaukana origosta. Silloin lukuvirheen osuus on pieni. Kun $U = 15{,}0\,\text{V}$, suora on kohdassa $I = 0{,}375\,\text{A}$.
 
 Tämän kuvaajan kulmakerroin on $\dfrac{\Delta I}{\Delta U}$. Se on resistanssin käänteisluku $\dfrac{1}{R}$. Luvun ominaiskäyrässä akselit ovat toisin päin (virta on vaaka-akselilla). Silloin kulmakerroin on suoraan $R$.
-**Kaava:** Kohta b): resistanssin määritelmästä $R = \dfrac{U}{I}$ saadaan $I = \dfrac{1}{R} \cdot U$. Suoran kulmakerroin on siis $\dfrac{\Delta I}{\Delta U} = \dfrac{1}{R}$, ja $R = \dfrac{\Delta U}{\Delta I}$. Kohta c): $P = UI$
+**Kaava:** Kohta b): $$\begin{aligned} R &= \dfrac{U}{I} \\ I &= \dfrac{1}{R} \cdot U \\ \dfrac{\Delta I}{\Delta U} &= \dfrac{1}{R} \\ R &= \dfrac{\Delta U}{\Delta I} \end{aligned}$$ Kohta c): $P = UI$
 **Muunnokset:** Ei tarvita. Jännite on voltteina ja virta ampeereina. Siksi resistanssi saadaan ohmeina ($1\,\Omega = 1\,\text{V/A}$) ja teho watteina ($1\,\text{W} = 1\,\text{V} \cdot 1\,\text{A}$).
 **Sijoitus:** Kohta b): $R = \dfrac{15{,}0\,\text{V} - 0\,\text{V}}{0{,}375\,\text{A} - 0\,\text{A}} = 40{,}0\,\Omega$. Kohta c): jännitteellä $6{,}0\,\text{V}$ teho on $P_1 = U_1 I_1 = 6{,}0\,\text{V} \cdot 0{,}150\,\text{A} = 0{,}90\,\text{W}$. Jännitteellä $12{,}0\,\text{V}$ teho on $P_2 = U_2 I_2 = 12{,}0\,\text{V} \cdot 0{,}300\,\text{A} = 3{,}60\,\text{W}$
 **Kohta b):** Pisteet ovat suoralla, joka kulkee origon kautta. Virta on siis suoraan verrannollinen jännitteeseen, ja resistanssi on vakio. Vastus noudattaa Ohmin lakia. Omassa simulaatiomittauksessa johtopäätös on sama, vaikka resistanssin arvo on toinen. Todellisissa mittaussarjoissa mittauspisteet eivät yleensä sijaitse täsmälleen samalla suoralla mittausepävarmuuden vuoksi. Silloin suora sovitetaan pisteiden joukon keskelle.

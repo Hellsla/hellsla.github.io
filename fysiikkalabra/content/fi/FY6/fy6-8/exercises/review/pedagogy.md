@@ -1,18 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: af384e5fbc815b56
-SCOPE: delta added-exercise from fe154ae5f2ac3508 base 8f23aa7ae3bd
+CONTENT-HASH: dd7347ac758b942f
+SCOPE: delta caption-label,md-paragraphs,numbers,reflow,typography from af384e5fbc815b56 base b5600a63ddae
 
 ## Blocking
+- none
 
 ## Polish
-- L2-09 repeats the method of L1-05 and L2-05/L2-08 (internal resistance from an (I, U) graph or data); new is the car-battery scale and reading two far-apart points alone. Accepted.
-- Solution, Kaava: the display formula inside the bold line breaks the one-step-per-line pattern; put it on its own line.
+- solutions.md L3-05 Sijoitus a): `1{,}10\,\Omega E = 5{,}56...` has two results in one line with no separator or break; put the E calculation on its own row (as the reflowed chains elsewhere).
+- solutions.md L3-04 Kaava is a 14-step chain mixing three sub-tasks (R_s, E, power share, power); a blank line or "a)" "b)" "c)" labels between them would help a phone reader.
 
 ## Checked
-- L2-09: situation, then the question as its own sentence; a starter battery is a recognisable context.
-- Figure and description give the same five points; neither gives slope, intercept or the answer; the grid makes reading unambiguous.
-- Level 2 fits: two distant points, subtracting equations, slope as R_s; no new theory.
-- Solution correct and complete: 4 V : 200 A = 0,020 Ω; warns against U : I of one point; third-point and 12 V checks right.
-- Answer 0,02 Ω with tolerance 0.04 matches the reading.
-- Level 2 mix (graph, data, experiment, error) stays varied.
-- Finnish and units correct.
+- Kaava now starts from U = E − R_s I or the loop law E − R_s I − RI = 0 in every task, then solves: the Kirchhoff basis is visible each time.
+- Parallel batteries: 1/R_s = 1/R_s1 + … = n/R_s1 explains the "divide by n" rule that was only asserted before.
+- Reversed-battery and series-battery tasks derive E and R_s as sums in steps; the sign logic is explicit.
+- Short-circuit tasks: 0 = E − R_s I_k makes clear why U = 0; the graph task states it from the graph.
+- Two-battery crossing (L3-03): U_A = U_B condition then the subtraction; clear.
+- The earlier polish (display formula inside the bold line, L2-09) is fixed: the chain is one step per line.
+- Split Vastaus, Mallivastaus and Järkevyys blocks are easier to follow; no number or answer changed.
+- Caption marker removal leaves plain data; no answer disclosed. Finnish correct.

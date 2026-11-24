@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 1c1990d17d51a610
+CONTENT-HASH: 97cb48e5f93cd565
 
 ## Blocking
 (none)
@@ -8,10 +8,8 @@ CONTENT-HASH: 1c1990d17d51a610
 (none)
 
 ## Checked
-- Round 1, delta: solutions.md only; long solution paragraphs split in two, words unchanged. Hash re-run at the end: unchanged.
-- Captures (review/shots): fy5-5-open-exercises-1280-6 (L1-06 split), fy5-5-open-exercises-L3-1280-5 (L3-04, the 'Kohta c' split), fy5-5-open-exercises-L2-1280-12 (L2-08 asteroids split).
-- Layout survived at 1280 px: reading column, solution panels, formula boxes, spacing between the new paragraphs even; no clipping. Units upright, decimal commas, LaTeX intact.
-- Finnish: the splits fall at sentence boundaries, the second paragraph reads on from the first without a connective being lost.
+- Captures (content/fi/FY5/fy5-5/review/shots, current for this hash): open-exercises-L3-1280-3 (5-20/5-21 start), L3-1280-4 (5-21 Kaava end with stacked fractions and squared bracket, Sijoitus), L3-1280-6 (5-22/5-23), L3-1280-8 (5-23 end).
+- Multi-row Kaava rows align at `=`, KaTeX clean, no clipping or overflow; Sijoitus and answers unchanged. Picture planeetat (teacher-approved, carried) not opened; the long 5-row blocks at the top of 5-21 and others only partly seen.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 4 · accessibility 4

@@ -1,17 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: 22633f9efb51607f
-Round: 2 (commit 57a66480d changed only the new task fy6-5-L2-08: two wrong-choice feedbacks, the correct reason's wording, and the current-law sentence in solutions.md).
+CONTENT-HASH: 33b9c3bf1b8baf23
+SCOPE: delta caption-label,md-paragraphs,numbers,reflow,teacher-figure,typography,wording from 22633f9efb51607f base a5182aa
 
 ## Blocking
 
 ## Polish
-- content/fi/FY6/fy6-5/exercises/exercises.json:261 (carried over from round 1, optional) — no distractor carries this chapter's own warned mistakes (a resistor uses up current; the source voltage used for a branch); the task is mostly fy6-4 parallel-circuit physics. Keep, or make a later task carry the source-voltage mistake.
+- content/fi/FY6/fy6-5/exercises/solutions.md:5 — L1-01 still writes $\Sigma I_\text{tulo} = \Sigma I_\text{lähtö}$, but the lesson writes $\sum I_\text{tulevat} = \sum I_\text{lähtevät}$. Use the lesson's subscripts.
+- content/fi/FY6/fy6-5/exercises/solutions.md:184 — no full stop after "$630\,\text{V}\,\Omega$" before "Nimittäjä on".
+- content/fi/FY6/fy6-5/exercises/solutions.md:182 — L3-04 loop rows are the rearranged $U_1 - R_1 I_1 - R_2 I_2 = 0$. The Periaate names $\sum \Delta V = 0$, so the form is correct (C). One opening $\sum \Delta V = 0$ row would match L1-02.
 
 ## Checked
-- Hash 22633f9efb51607f at start and end.
-- answers.py run against exercises.json: all 18 numeric answers agree within tolerance (one python call).
-- Physics unchanged and recomputed: R_k = 10 Ω, U = 3,0 V, I = 0,15 / 0,10 / 0,050 A, sum 0,30 A.
-- New correct reason "Haaroilla on sama jännite, joten pienemmän resistanssin haaran kautta kulkee suurempi virta" is true and rules out every wrong choice (equal split, largest current to largest R, full current in each branch); the solution's "kääntäen verrannollinen" is consistent with it and gives the value.
-- New wrong-choice feedbacks are correct and no longer state the reason (same voltage, I = U/R): 0,10 A "ei jaa virtaa tasan, kun resistanssit ovat erisuuret"; 0,15 A "suurempi resistanssi vastustaa virtaa enemmän". "erisuuret" matches house usage (fy4-12, fy3-6).
-- Reasons are 88–92 characters, similar in form; none alone hedged; the correct choice's feedback still only asks for the reason.
-- Inline formula widths measured (KaTeX render at 17 px, 1.21 em, own script): widest 216 px; the split current-law sum 215 px (was 292 px). Page not rendered; the rest from text.
+- Hash 33b9c3bf1b8baf23 at the start and at the end.
+- The previous blocking item is fixed. L1-02 now opens with $\sum \Delta V = 0$, then $U - U_1 - U_2 = 0$, as the lesson writes the law.
+- L3-04 Kaava: the node law, both loop equations ($R_1 I_1 + R_2 I_2 = U_1$, $R_3 I_3 + R_2 I_2 = U_2$) and the substitution $R_1R_3I_2 = R_3(U_1 - R_2I_2) + R_1(U_2 - R_2I_2)$ are correct. So are $D = R_1R_3 + R_2R_3 + R_1R_2$ and $I_2 = (U_1R_3 + U_2R_1) : D$.
+- Every new Kaava block starts from a basic law ($U_{AB} = V_A - V_B$, the loop law, the node law, Ohm's law) and solves symbolically to the last form. The Sijoitus rows substitute into that form.
+- Recomputed in one script with my own formulas, all matching answers.py:
+  - 1,2 A; 7,5 V; 3,5 V; 8,0 V; 0,50 A; 60 Ω; −9,0 V; 30 Ω; 1,8 V; 3,0 V; 0,59 A; 40 Ω; −3,0 V
+  - L3-04: $I_2 = 0{,}30$ A, $I_1 = 0{,}20$ A, $I_3 = 0{,}10$ A; energy balance 3,3 W = 3,3 W
+  - L3-05: $R_\text{k} = 250\,\Omega$; with a 100 Ω load, $V_P = 4{,}0$ V
+- The re-cut paragraphs (L3-04, L3-05, L2-08) change no physics. The approved figures ex-branch and ex-branch2 give the values their tasks need.

@@ -1,15 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 72d92aa74fd113f6
+CONTENT-HASH: 1d250e8158d4a046
+SCOPE: delta wording from f57c156658def7ed base 0e8231e
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] solutions, Sijoitus step with a bare "c)" (fy6-2 L2) / "b)" (fy6-4 L2) label alone on its line above a calculation box: the part letter reads orphaned; give it a short lead-in ("c) Virheraja on") as in the neighbouring parts.
+- [Minor] voltmeter-load task 2-22, Kaava block — the stacked-fraction rows sit close together vertically (last rows nearly touch) — shared aligned-block spacing, not per lesson; legible as is.
 
 ## Checked
-- Delta (md-paragraphs): the diff of solutions.md; every added one-line paragraph checked (no one-word or mid-thought orphans).
-- Opened open-exercises captures at 1280 px (lesson review/shots, stamp matches this exercises hash): fy6-1 L1-5 and L2-8, fy6-2 L2-8, fy6-3 L2-9, fy6-4 L2-9. Paragraph spacing inside solution cards is even, nothing clipped. No 390 px exercise captures exist; the 360 px layout check is green.
+- Opened fy6-2-open-exercises-L3-1280-5, -6 (voltmeter-load Kaava and Sijoitus), -7, -8, L2-1280-1..5, 7..10, 1280-1..6 and stage-exercises-390-2 for the surrounding layout.
+- Both changed Kaava blocks lost the "Sigma U = 0" and "(Sigma U/Sigma I)" annotations; remaining rows keep one "=" column, every row starts with its quantity, no clipping at 1280 px.
+- The lamp-in-series task (2-12, core card) has no open-solution capture; its four-row block uses the same component and was judged from source.
 
 ## Scores
 illustrations 5 · typography 4 · Finnish 4 · accessibility 4

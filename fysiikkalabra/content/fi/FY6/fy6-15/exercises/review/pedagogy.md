@@ -1,16 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 46bbe628c686170c
+CONTENT-HASH: a80bd7242720ff5e
+SCOPE: delta md-paragraphs,numbers,typography from 46bbe628c686170c base 5b3ca4f
 
 ## Blocking
 (none)
 
 ## Polish
-- fy6-15-L2-09 — part c names both dangers, which makes the first question of a ('mitä vaaroja se nimeää') partly redundant; the electric-shock explanation (live plug pins) goes a little beyond the chapter's physics.
-- Part c's 19.5 A answer depends on the panel socket sitting between fuse and loads; the task says so only in the solution. State the assumption in the task.
-- Tukes page not opened; a depends on the student reading it.
+- Earlier polish items stand unchanged (not touched by this diff).
+- Kaava-lohkon rivit ovat lyhyitä, mahtuvat 360 px:n näyttöön eikä mitään leikkaudu.
 
 ## Checked
-- New task: critical-reading item with real engineering sense; 4 parts rising: interpret, P = UI, fuse and heating argument, evaluate consumer claim (d answered by title and situation).
-- Distinguishes safe versus allowed in d; CE note is accurate.
-- Solution clear; answer 3.48 A matches.
-- Set 9 level-2 tasks, mix and order intact.
+- Diff is the queue 8g change: the Kaava/Formula step now starts from basic-principle equations (P_k = UI_k, I = sum of I_k, Ohm's law per part, U = sum of parts, P = RI^2) and ends in the working formula; the order is principle, then derivation, then result, which a student who could not solve the task can follow.
+- Prose changes in solutions are reflow only (one sentence per paragraph); I compared the words removed and added and found no change in meaning, numbers or answers.
+- Series-resistance derivation (U_body + U_k) and the step-voltage lines are consistent with the chapter and with the previous chapter's Ohm's law; no step skipped.
+- Task texts, levels, counts and answers untouched; level mix as passed earlier.
+- Disk check: the aligned blocks render as separate lines in solutions.md (the packet diff shows them collapsed, a display artefact).
+- Hash unchanged at start and end.

@@ -2,7 +2,7 @@
 **Given:** travel time of the echo $t = 91.0\,\mu\text{s}$, speed of sound in tissue $v = 1540\,\text{m/s}$
 **Find:** the depth $d$ of the surface of the fetus's head in centimetres
 **Principle:** The pulse travels from the skin to the surface of the fetus's head and back as an echo, so during the travel time it covers twice the depth. The speed is assumed to be the same all the way, as the machine assumes.
-**Formula:** $2d = v t$, so $d = \dfrac{v t}{2}$
+**Formula:** $$\begin{aligned} v &= \dfrac{s}{t} \\ s &= vt \\ s &= 2d \\ d &= \dfrac{s}{2} \\ &= \dfrac{vt}{2} \end{aligned}$$
 **Conversions:** $91.0\,\mu\text{s} = 91.0 \cdot 10^{-6}\,\text{s}$; finally $1\,\text{m} = 100\,\text{cm}$.
 **Substitution:** $d = \dfrac{1540\,\text{m/s} \cdot 91.0 \cdot 10^{-6}\,\text{s}}{2} = 0.070\,07\,\text{m} = 7.007\,\text{cm}$
 **Answer:** $7.01\,\text{cm}$, three significant figures like the travel time $91.0\,\mu\text{s}$.
@@ -12,7 +12,7 @@
 **Given:** frequency $f = 7.50\,\text{MHz}$, speed of sound in tissue $v = 1540\,\text{m/s}$
 **Find:** the wavelength $\lambda$ in millimetres
 **Principle:** The speed of a wave is the product of the frequency and the wavelength. The frequency is determined by the probe, and the speed by the tissue.
-**Formula:** $v = f\lambda$, so $\lambda = \dfrac{v}{f}$
+**Formula:** $$\begin{aligned} v &= f\lambda \\ \lambda &= \dfrac{v}{f} \end{aligned}$$
 **Conversions:** $7.50\,\text{MHz} = 7.50 \cdot 10^{6}\,\text{Hz}$; finally $1\,\text{m} = 1000\,\text{mm}$.
 **Substitution:** $\lambda = \dfrac{1540\,\text{m/s}}{7.50 \cdot 10^{6}\,\text{Hz}} = 2.053 \cdot 10^{-4}\,\text{m} = 0.2053\,\text{mm}$
 **Answer:** $0.205\,\text{mm}$, three significant figures like the frequency $7.50\,\text{MHz}$.
@@ -22,7 +22,7 @@
 **Given:** travel time of the echo $t = 32.0\,\text{ms}$, speed of sound in water $v = 1480\,\text{m/s}$
 **Find:** the depth of the lake $d$ in metres
 **Principle:** The pulse travels from the sonar attached near the surface to the bottom and back as an echo, so during the travel time it covers twice the depth. The speed of sound is assumed to be the same in the whole column of water.
-**Formula:** $2d = v t$, so $d = \dfrac{v t}{2}$
+**Formula:** $$\begin{aligned} v &= \dfrac{s}{t} \\ s &= vt \\ s &= 2d \\ d &= \dfrac{s}{2} \\ &= \dfrac{vt}{2} \end{aligned}$$
 **Conversions:** $32.0\,\text{ms} = 32.0 \cdot 10^{-3}\,\text{s} = 0.0320\,\text{s}$
 **Substitution:** $d = \dfrac{1480\,\text{m/s} \cdot 0.0320\,\text{s}}{2} = 23.68\,\text{m}$
 **Answer:** $23.7\,\text{m}$, three significant figures like the travel time $32.0\,\text{ms}$.
@@ -32,7 +32,7 @@
 **Given:** travel time of the echo $t = 15\,\text{ms}$, speed of sound in air $v = 343\,\text{m/s}$; the bat and the moth stationary
 **Find:** the distance $d$ to the moth in metres
 **Principle:** The call travels from the bat to the moth and back as an echo, so during the travel time the sound covers twice the distance. Because neither of them moves, the distance is the same in both directions.
-**Formula:** $2d = v t$, so $d = \dfrac{v t}{2}$
+**Formula:** $$\begin{aligned} v &= \dfrac{s}{t} \\ s &= vt \\ s &= 2d \\ d &= \dfrac{s}{2} \\ &= \dfrac{vt}{2} \end{aligned}$$
 **Conversions:** $15\,\text{ms} = 15 \cdot 10^{-3}\,\text{s} = 0.015\,\text{s}$
 **Substitution:** $d = \dfrac{343\,\text{m/s} \cdot 0.015\,\text{s}}{2} = 2.5725\,\text{m}$
 **Answer:** $2.6\,\text{m}$, two significant figures like the travel time $15\,\text{ms}$.
@@ -53,7 +53,7 @@
 **Find:** the distance $d$ of the station from the point where the earthquake started, in kilometres
 **Principle:** Each wave covers the same distance at a constant speed, so the difference in arrival times is the difference of the travel times of the S wave and the P wave. The moment of the earthquake is not needed, because the time difference does not depend on the moment from which time is counted.
 **Reading the graph:** The small oscillation, the P wave, starts on the grid line $12\,\text{s}$ and the larger oscillation, the S wave, on the grid line $30\,\text{s}$. The time difference is $\Delta t = 30\,\text{s} - 12\,\text{s} = 18\,\text{s}$.
-**Formula:** $\Delta t = \dfrac{d}{v_\text{S}} - \dfrac{d}{v_\text{P}}$, so $d = \dfrac{v_\text{P} v_\text{S}}{v_\text{P} - v_\text{S}}\,\Delta t$
+**Formula:** $$\begin{aligned} t_\text{P} &= \dfrac{d}{v_\text{P}} \\ t_\text{S} &= \dfrac{d}{v_\text{S}} \\ \Delta t &= t_\text{S} - t_\text{P} \\ &= \dfrac{d}{v_\text{S}} - \dfrac{d}{v_\text{P}} \\ &= d\,\dfrac{v_\text{P} - v_\text{S}}{v_\text{P} v_\text{S}} \\ d &= \dfrac{v_\text{P} v_\text{S}}{v_\text{P} - v_\text{S}}\,\Delta t \end{aligned}$$
 **Conversions:** The speeds are in km/s and the time in seconds, so the distance comes out in kilometres.
 **Substitution:** $d = \dfrac{7.0\,\text{km/s} \cdot 4.0\,\text{km/s}}{7.0\,\text{km/s} - 4.0\,\text{km/s}} \cdot 18\,\text{s} = 9.33\,\text{km/s} \cdot 18\,\text{s} = 168\,\text{km}$
 **Answer:** $168\,\text{km}$ (the precision of the speeds $7.0$ and $4.0$ would limit the answer to two significant figures, $170\,\text{km}$; $168\,\text{km}$ is given with the intermediate result).
@@ -65,7 +65,7 @@
 **Principle:** As the exercise says, assume that the structures can be distinguished when the distance between them is at least two wavelengths (the text of the chapter says more loosely "a few wavelengths"), that is, the wavelength is at most half of the distance between them.
 
 The wavelength shortens as the frequency grows, so the lowest acceptable frequency corresponds to the greatest acceptable wavelength. First solve for the wavelength, then for the frequency.
-**Formula:** $2\lambda = 0.300\,\text{mm}$, so $\lambda = \dfrac{0.300\,\text{mm}}{2}$; $v = f\lambda$, so $f = \dfrac{v}{\lambda}$
+**Formula:** $$\begin{aligned} 2\lambda &= 0.300\,\text{mm} \\ \lambda &= \dfrac{0.300\,\text{mm}}{2} \\ v &= f\lambda \\ f &= \dfrac{v}{\lambda} \end{aligned}$$
 **Conversions:** $\lambda = 0.150\,\text{mm} = 0.150 \cdot 10^{-3}\,\text{m}$; finally $1\,\text{MHz} = 10^{6}\,\text{Hz}$.
 **Substitution:** $f = \dfrac{1540\,\text{m/s}}{0.150 \cdot 10^{-3}\,\text{m}} = 1.027 \cdot 10^{7}\,\text{Hz} = 10.27\,\text{MHz}$
 **Answer:** $10.3\,\text{MHz}$, three significant figures like the distance $0.300\,\text{mm}$.
@@ -75,7 +75,7 @@ The wavelength shortens as the frequency grows, so the lowest acceptable frequen
 **Given:** greatest imaging depth $d = 20\,\text{cm}$, speed of sound $v = 1540\,\text{m/s}$
 **Find:** the highest rate $n$ at which pulses are sent, in kilohertz
 **Principle:** A new pulse is not sent until the echo from the deepest point has returned. First calculate how long the echo takes to travel to a depth of $20\,\text{cm}$ and back; the number of pulses that fit into one second is at most one second divided by this time.
-**Formula:** $t = \dfrac{2d}{v}$ and $n = \dfrac{1}{t}$, so $n = \dfrac{v}{2d}$
+**Formula:** $$\begin{aligned} v &= \dfrac{s}{t} \\ s &= 2d \\ t &= \dfrac{s}{v} = \dfrac{2d}{v} \\ n &= \dfrac{1}{t} = \dfrac{v}{2d} \end{aligned}$$
 **Conversions:** $d = 20\,\text{cm} = 0.20\,\text{m}$; finally $1\,\text{kHz} = 1000\,\text{s}^{-1}$.
 **Substitution:** $t = \dfrac{2 \cdot 0.20\,\text{m}}{1540\,\text{m/s}} = 2.597 \cdot 10^{-4}\,\text{s}$ and $n = \dfrac{1}{2.597 \cdot 10^{-4}\,\text{s}} = 3850\,\text{s}^{-1} = 3.85\,\text{kHz}$
 **Answer:** $3.9\,\text{kHz}$, that is, about $3900$ pulses per second, two significant figures like the depth $20\,\text{cm}$.
@@ -85,7 +85,7 @@ The wavelength shortens as the frequency grows, so the lowest acceptable frequen
 **Given:** difference in arrival times $\Delta t = 14.0\,\text{s}$, $v_\text{P} = 6.0\,\text{km/s}$, $v_\text{S} = 3.5\,\text{km/s}$
 **Find:** the travel time $t_\text{P}$ of the P wave in seconds, that is, the time from the earthquake to the arrival of the P wave
 **Principle:** From the time difference we first get the distance of the station, because the time difference is the difference of the travel times of the S wave and the P wave. The travel time of the P wave is then the distance divided by the speed of the P wave.
-**Formula:** $d = \dfrac{v_\text{P} v_\text{S}}{v_\text{P} - v_\text{S}}\,\Delta t$ and $t_\text{P} = \dfrac{d}{v_\text{P}}$
+**Formula:** $$\begin{aligned} t_\text{P} &= \dfrac{d}{v_\text{P}} \\ t_\text{S} &= \dfrac{d}{v_\text{S}} \\ \Delta t &= t_\text{S} - t_\text{P} \\ &= \dfrac{d}{v_\text{S}} - \dfrac{d}{v_\text{P}} \\ &= d\,\dfrac{v_\text{P} - v_\text{S}}{v_\text{P} v_\text{S}} \\ d &= \dfrac{v_\text{P} v_\text{S}}{v_\text{P} - v_\text{S}}\,\Delta t \end{aligned}$$
 **Conversions:** The speeds are in km/s and the time in seconds, so the distance comes out in kilometres and the travel time in seconds.
 **Substitution:** $d = \dfrac{6.0\,\text{km/s} \cdot 3.5\,\text{km/s}}{2.5\,\text{km/s}} \cdot 14.0\,\text{s} = 117.6\,\text{km}$ and $t_\text{P} = \dfrac{117.6\,\text{km}}{6.0\,\text{km/s}} = 19.6\,\text{s}$
 **Answer:** about $20\,\text{s}$, two significant figures like the speeds $6.0\,\text{km/s}$ and $3.5\,\text{km/s}$.
@@ -122,7 +122,7 @@ That the P wave arrives first is true, but it does not tell the ratio of the dis
 **Given:** speed of the bat $v_\text{bat} = 10\,\text{m/s}$ towards the wall, delay of the echo $t = 40\,\text{ms}$, speed of sound $v = 343\,\text{m/s}$
 **Find:** the distance $d$ to the wall at the moment of the call, in metres
 **Principle:** The sound travels to the wall a distance $d$ and returns to the bat. During the echo the bat has flown a distance $v_\text{bat} t$ towards the wall, so the return trip is $d - v_\text{bat} t$. The total distance covered by the sound is the speed of sound times the delay.
-**Formula:** $d + (d - v_\text{bat} t) = v t$, so $2d = (v + v_\text{bat})\,t$ and $d = \dfrac{(v + v_\text{bat})\,t}{2}$
+**Formula:** $$\begin{aligned} v &= \dfrac{s}{t} \\ s &= vt \\ s &= d + (d - v_\text{bat} t) \\ &= 2d - v_\text{bat} t \\ d &= \dfrac{vt + v_\text{bat} t}{2} \\ &= \dfrac{(v + v_\text{bat})\,t}{2} \end{aligned}$$
 **Conversions:** $40\,\text{ms} = 40 \cdot 10^{-3}\,\text{s} = 0.040\,\text{s}$
 **Substitution:** $d = \dfrac{(343\,\text{m/s} + 10\,\text{m/s}) \cdot 0.040\,\text{s}}{2} = \dfrac{14.12\,\text{m}}{2} = 7.06\,\text{m}$
 **Answer:** $7.06\,\text{m}$ (data with two significant figures would give $7.1\,\text{m}$; the third figure is shown so that the difference from the result for a stationary bat, $6.86\,\text{m}$, can be seen).
@@ -132,7 +132,7 @@ That the P wave arrives first is true, but it does not tell the ratio of the dis
 **Given:** thickness of the fat $d_\text{fat} = 4.0\,\text{cm}$, $v_\text{fat} = 1450\,\text{m/s}$, for muscle $v_\text{mus} = 1580\,\text{m/s}$, travel time of the echo $t = 80.0\,\mu\text{s}$ from the lower surface of the muscle layer
 **Find:** the true depth $d$ of the boundary from the surface of the skin, in centimetres
 **Principle:** The pulse first travels through the fat there and back and uses part of the travel time for it. The rest of the time is spent in the muscle there and back. In each layer the speed is constant, so the thickness of a layer is the speed times the time spent in the layer divided by two.
-**Formula:** $t_\text{fat} = \dfrac{2 d_\text{fat}}{v_\text{fat}}$ and $d_\text{mus} = \dfrac{v_\text{mus}\,(t - t_\text{fat})}{2}$, so $d = d_\text{fat} + d_\text{mus} = d_\text{fat} + \dfrac{v_\text{mus}}{2}\left(t - \dfrac{2 d_\text{fat}}{v_\text{fat}}\right)$
+**Formula:** $$\begin{aligned} v &= \dfrac{s}{t} \\ t_\text{fat} &= \dfrac{2 d_\text{fat}}{v_\text{fat}} \\ d_\text{mus} &= \dfrac{v_\text{mus}\,(t - t_\text{fat})}{2} \\ d &= d_\text{fat} + d_\text{mus} \\ &= d_\text{fat} + \dfrac{v_\text{mus}}{2}\left(t - \dfrac{2 d_\text{fat}}{v_\text{fat}}\right) \end{aligned}$$
 **Conversions:** $d_\text{fat} = 4.0\,\text{cm} = 0.040\,\text{m}$, $t = 80.0 \cdot 10^{-6}\,\text{s}$; finally $1\,\text{m} = 100\,\text{cm}$.
 **Substitution:** $t_\text{fat} = \dfrac{2 \cdot 0.040\,\text{m}}{1450\,\text{m/s}} = 55.17 \cdot 10^{-6}\,\text{s}$, $d_\text{mus} = \dfrac{1580\,\text{m/s} \cdot 24.83 \cdot 10^{-6}\,\text{s}}{2} = 0.019\,62\,\text{m}$ and $d = 0.040\,\text{m} + 0.019\,62\,\text{m} = 0.059\,62\,\text{m} = 5.96\,\text{cm}$
 **Answer:** $5.96\,\text{cm}$ (the thickness of the fat $4.0\,\text{cm}$ would limit the answer to two significant figures, $6.0\,\text{cm}$; three figures are shown so that the difference from the result with a single speed can be seen).
@@ -144,7 +144,7 @@ The difference is still only a few per cent, so a single assumed speed is enough
 **Given:** depths $h_1 = 4000\,\text{m}$ and $h_2 = 10\,\text{m}$, wavelength $\lambda_1 = 200\,\text{km}$; period $T$ the same
 **Find:** the wavelength $\lambda_2$ in the shallow water in kilometres
 **Principle:** In both places the wavelength is much greater than the depth, so the speed is $v = \sqrt{gh}$. In one period the wave advances one wavelength, so $\lambda = vT$. When the period is the same, the wavelength changes in the same proportion as the speed, and $g$ cancels out.
-**Formula:** $\dfrac{\lambda_2}{\lambda_1} = \dfrac{v_2 T}{v_1 T} = \dfrac{\sqrt{g h_2}}{\sqrt{g h_1}}$, so $\lambda_2 = \lambda_1 \sqrt{\dfrac{h_2}{h_1}}$
+**Formula:** $$\begin{aligned} \lambda_1 &= v_1 T \\ \lambda_2 &= v_2 T \\ v &= \sqrt{g h} \\ \dfrac{\lambda_2}{\lambda_1} &= \dfrac{v_2}{v_1} = \sqrt{\dfrac{h_2}{h_1}} \\ \lambda_2 &= \lambda_1 \sqrt{\dfrac{h_2}{h_1}} \end{aligned}$$
 **Conversions:** The depths are in the same unit, so their ratio is dimensionless; the wavelength can be kept in kilometres.
 **Substitution:** $\lambda_2 = 200\,\text{km} \cdot \sqrt{\dfrac{10\,\text{m}}{4000\,\text{m}}} = 200\,\text{km} \cdot 0.050 = 10.0\,\text{km}$
 **Answer:** $10\,\text{km}$, two significant figures like the depth $10\,\text{m}$.
@@ -178,7 +178,7 @@ The frequency does not change the speed of sound in tissue, and a high frequency
 
 The thickness of the layer is the difference of two depths, so it is also obtained from the difference of the moments of the peaks.
 **Reading the table:** The moments of the peaks in the table are the time from the sending of the pulse. The echo from the upper surface of the layer is peak 2 and the echo from the lower surface is peak 3, so the time spent in the layer is $$\begin{aligned} t_3 - t_2 &= 109.2\,\mu\text{s} - 58.9\,\mu\text{s} \\ &= 50.3\,\mu\text{s} \end{aligned}$$.
-**Formula:** $d = \dfrac{v t}{2}$ and $\Delta d = d_3 - d_2 = \dfrac{v\,(t_3 - t_2)}{2}$
+**Formula:** $$\begin{aligned} v &= \dfrac{s}{t} \\ s &= 2d \\ d &= \dfrac{vt}{2} \\ \Delta d &= d_3 - d_2 \\ &= \dfrac{v\,(t_3 - t_2)}{2} \end{aligned}$$
 **Conversions:** $50.3\,\mu\text{s} = 50.3 \cdot 10^{-6}\,\text{s}$; finally $1\,\text{m} = 100\,\text{cm}$.
 **Substitution:** a) $d_1 = 1540\,\text{m/s} \cdot 21.4 \cdot 10^{-6}\,\text{s} : 2 = 1.65\,\text{cm}$, $d_2 = 4.54\,\text{cm}$ and $d_3 = 8.41\,\text{cm}$. b) $\Delta d = \dfrac{1540\,\text{m/s} \cdot 50.3 \cdot 10^{-6}\,\text{s}}{2} = 0.038\,73\,\text{m} = 3.873\,\text{cm}$
 **Answer:** $3.87\,\text{cm}$, three significant figures like the moments of the peaks.
@@ -188,7 +188,7 @@ The thickness of the layer is the difference of two depths, so it is also obtain
 **Given:** distances $L = 20.0$; $30.0$; $40.0$ and $50.0\,\text{cm}$ and return times of the echo $t = 270$; $407$; $540$ and $677\,\mu\text{s}$
 **Find:** the mean of the speed of sound $v_\text{mean}$ in water in metres per second
 **Principle:** The pulse travels from the probe to the plate and back, so during the travel time it covers a distance $2L$ at a constant speed. Each measurement gives its own speed, and the random variation of the measurements is evened out by taking their mean.
-**Formula:** $2L = v t$, so $v = \dfrac{2L}{t}$ and $v_\text{mean} = \dfrac{v_1 + v_2 + v_3 + v_4}{4}$
+**Formula:** $$\begin{aligned} v &= \dfrac{s}{t} \\ s &= 2L \\ v_i &= \dfrac{2L_i}{t_i} \\ v_\text{mean} &= \dfrac{v_1 + v_2 + v_3 + v_4}{4} \end{aligned}$$
 **Conversions:** $L = 0.200$; $0.300$; $0.400$ and $0.500\,\text{m}$; $t = 270 \cdot 10^{-6}\,\text{s}$ etc.
 **Substitution:** $v_1 = \dfrac{2 \cdot 0.200\,\text{m}}{270 \cdot 10^{-6}\,\text{s}} = 1481\,\text{m/s}$, $v_2 = 1474\,\text{m/s}$, $v_3 = 1481\,\text{m/s}$ and $v_4 = 1477\,\text{m/s}$. The sum is $5914\,\text{m/s}$, so $v_\text{mean} = 5914\,\text{m/s} : 4 = 1478.6\,\text{m/s}$.
 **Answer:** $1480\,\text{m/s}$, three significant figures like the travel times. The individual speeds differ from the mean by at most $0.5\,\%$.
@@ -216,7 +216,7 @@ Dividing by two would belong to an echo and not to a one-way wave, using the spe
 **Given:** stations A$(0, 0)$, B$(120, 0)$ and C$(60, 90)$ in kilometres; $\Delta t_\text{A} = 10.0\,\text{s}$, $\Delta t_\text{B} = 7.5\,\text{s}$, $\Delta t_\text{C} = 5.9\,\text{s}$; $v_\text{P} = 6.0\,\text{km/s}$, $v_\text{S} = 3.5\,\text{km/s}$
 **Find:** the $y$-coordinate of the earthquake in kilometres
 **Principle:** The time difference at each station gives the distance to the earthquake, so the earthquake is on a circle centred at the station. Two circles have two points of intersection, and the circle of the third station chooses the correct one of them.
-**Formula:** $d = \dfrac{v_\text{P} v_\text{S}}{v_\text{P} - v_\text{S}}\,\Delta t$. The equations of the circles of stations A and B are $x^2 + y^2 = d_\text{A}^2$ and $(x - 120)^2 + y^2 = d_\text{B}^2$. Expand the second equation: $$(x - 120)^2 = x^2 - 240x + 14\,400$$. When the first equation is subtracted from the second, $x^2$ and $y^2$ cancel and what remains is $240x = d_\text{A}^2 - d_\text{B}^2 + 120^2$, so $x = \dfrac{d_\text{A}^2 - d_\text{B}^2 + 120^2}{240}$ and $y = \pm\sqrt{d_\text{A}^2 - x^2}$.
+**Formula:** $$\begin{aligned} t_\text{P} &= \dfrac{d}{v_\text{P}} \\ t_\text{S} &= \dfrac{d}{v_\text{S}} \\ \Delta t &= t_\text{S} - t_\text{P} \\ &= \dfrac{d}{v_\text{S}} - \dfrac{d}{v_\text{P}} \\ &= d\,\dfrac{v_\text{P} - v_\text{S}}{v_\text{P} v_\text{S}} \\ d &= \dfrac{v_\text{P} v_\text{S}}{v_\text{P} - v_\text{S}}\,\Delta t \\ d_\text{A}^2 &= x^2 + y^2 \\ d_\text{B}^2 &= (x - 120)^2 + y^2 \\ &= d_\text{A}^2 - 240x + 14\,400 \\ x &= \dfrac{d_\text{A}^2 - d_\text{B}^2 + 120^2}{240} \\ y &= \pm\sqrt{d_\text{A}^2 - x^2} \end{aligned}$$
 **Conversions:** The speeds are in km/s and the times in seconds, so the distances come out in kilometres. The factor is $\dfrac{6.0 \cdot 3.5}{2.5}\,\text{km/s} = 8.4\,\text{km/s}$.
 **Substitution:** a) $d_\text{A} = 8.4\,\text{km/s} \cdot 10.0\,\text{s} = 84.0\,\text{km}$, $d_\text{B} = 8.4\,\text{km/s} \cdot 7.5\,\text{s} = 63.0\,\text{km}$ and $d_\text{C} = 8.4\,\text{km/s} \cdot 5.9\,\text{s} = 49.6\,\text{km}$. b) $x = \dfrac{7056 - 3969 + 14\,400}{240}\,\text{km} = 72.9\,\text{km}$ and $y = \pm\sqrt{7056 - 5309}\,\text{km} = \pm 41.8\,\text{km}$. The possible locations are $(72.9;\ 41.8)$ and $(72.9;\ -41.8)$. The distance to station C from the first is $$\begin{aligned} &\sqrt{(72.9 - 60)^2 + (41.8 - 90)^2}\,\text{km} \\ &= 49.9\,\text{km} \end{aligned}$$ and from the second $$\sqrt{12.9^2 + 131.8^2}\,\text{km} = 132.4\,\text{km}$$. The measured $49.6\,\text{km}$ fits the first.
 **Answer:** $y = 42\,\text{km}$ (north of stations A and B), two significant figures like the speeds $6.0\,\text{km/s}$ and $3.5\,\text{km/s}$. The earthquake is at the point $(73;\ 42)\,\text{km}$.
@@ -232,7 +232,7 @@ The circle of the third station passes through only one of the points, so three 
 **Find:** the travel time $t$ over the whole distance in minutes
 **Principle:** The depth is constant in each section and the wavelength is much greater than the depth, so the speed is constant in the section and $v = \sqrt{g h}$. The travel time is the length of the section divided by its speed, and the time over the whole distance is the sum of the times of the sections.
 **Reading the table:** From the table we read the length $s$ and the depth $h$ of each section; the depth determines the speed and the length the travel time.
-**Formula:** $v = \sqrt{g h}$, $t_i = \dfrac{s_i}{v_i}$ and $t = t_1 + t_2 + t_3$
+**Formula:** $$\begin{aligned} v_i &= \sqrt{g h_i} \\ t_i &= \dfrac{s_i}{v_i} \\ t &= t_1 + t_2 + t_3 \end{aligned}$$
 **Conversions:** $s_1 = 300\,000\,\text{m}$, $s_2 = 100\,000\,\text{m}$ and $s_3 = 20\,000\,\text{m}$; finally $1\,\text{min} = 60\,\text{s}$.
 **Substitution:** The speeds are $v_1 = \sqrt{9.81 \cdot 4000}\,\text{m/s} = 198.1\,\text{m/s}$, $v_2 = 99.05\,\text{m/s}$ and $v_3 = 22.15\,\text{m/s}$. The travel times are $t_1 = 300\,000\,\text{m} : 198.1\,\text{m/s} = 1514\,\text{s}$, $t_2 = 1010\,\text{s}$ and $t_3 = 903\,\text{s}$. The sum is $3427\,\text{s}$, so $t = 3427\,\text{s} : 60\,\text{s/min} = 57.1\,\text{min}$.
 **Answer:** $57\,\text{min}$, two significant figures like the depths and the lengths of the sections.
@@ -245,7 +245,7 @@ The formula applies in the last section, because the wavelength is over $10\,\te
 **Given:** from the table (MAFY table, Aaltoliike, Äänen nopeuksia eri väliaineissa, liquids, water $0\,{}^\circ\text{C}$) the speed of sound in water $v = 1402.4\,\text{m/s}$; the echo's travel time $t = 20\,\text{ms}$
 **Asked:** the depth of the water $d$ in metres
 **Principle:** The pulse travels to the bottom and back along the same path at a constant speed, so the distance to the bottom is half the length of the path the echo travelled. The water is at $0\,{}^\circ\text{C}$, so the table value for water is used, not the tissue value $1540\,\text{m/s}$.
-**Formula:** $d = \dfrac{v t}{2}$
+**Formula:** $$\begin{aligned} v &= \dfrac{s}{t} \\ s &= vt \\ s &= 2d \\ d &= \dfrac{s}{2} \\ &= \dfrac{vt}{2} \end{aligned}$$
 **Conversions:** $20\,\text{ms} = 20 \cdot 10^{-3}\,\text{s} = 0.020\,\text{s}$.
 **Substitution:** $d = \dfrac{1402.4\,\text{m/s} \cdot 0.020\,\text{s}}{2} = 14.024\,\text{m}$
 **Answer:** $14\,\text{m}$, more precisely $14.0\,\text{m}$. The time $20\,\text{ms}$ is taken as exact and the table value gives three significant figures; values from different tables differ slightly, and an answer within about $\pm 4\,\%$ is accepted.
@@ -256,7 +256,7 @@ The formula applies in the last section, because the wavelength is over $10\,\te
 **Asked:** the depth $d$ of the bone surface below the skin, in centimetres
 **Principle:** The pulse travels from the probe on the skin to the boundary and back, so the distance travelled in the echo time is twice the depth.
 **Reading the graph:** Echo C is the tall peak at $t = 90\,\mu\text{s}$ on the time axis; it is read at the peak against the grid lines.
-**Formula:** $d = \dfrac{v t}{2}$
+**Formula:** $$\begin{aligned} v &= \dfrac{s}{t} \\ s &= vt \\ s &= 2d \\ d &= \dfrac{s}{2} \\ &= \dfrac{vt}{2} \end{aligned}$$
 **Conversions:** $90\,\mu\text{s} = 90 \cdot 10^{-6}\,\text{s}$; finally $1\,\text{m} = 100\,\text{cm}$.
 **Substitution:** $d = \dfrac{1540\,\text{m/s} \cdot 90 \cdot 10^{-6}\,\text{s}}{2} = 0.0693\,\text{m} = 6.93\,\text{cm}$
 **Answer:** $6.93\,\text{cm}$, three significant figures as in the speed $1540\,\text{m/s}$.
@@ -282,7 +282,7 @@ The heading of the 2026 table has an asterisk: results that are not yet in the N
 The P wave is faster, so it arrives at the station first and the S wave after it. The P wave travels both in a solid and in a liquid.
 
 The S wave travels only in a solid, because in a liquid neighbouring layers slide past each other and no force restores them.
-**Formula:** Part c): in uniform motion $v = \dfrac{d}{t}$, so the travel times are $t_\text{P} = \dfrac{d}{v_\text{P}}$ and $t_\text{S} = \dfrac{d}{v_\text{S}}$. The difference in arrival times is the difference of the travel times: $\Delta t = t_\text{S} - t_\text{P} = \dfrac{d}{v_\text{S}} - \dfrac{d}{v_\text{P}}$
+**Formula:** $$\begin{aligned} t_\text{P} &= \dfrac{d}{v_\text{P}} \\ t_\text{S} &= \dfrac{d}{v_\text{S}} \\ \Delta t &= t_\text{S} - t_\text{P} \\ &= \dfrac{d}{v_\text{S}} - \dfrac{d}{v_\text{P}} \end{aligned}$$
 **Conversions:** The distance is in kilometres and the speeds in km/s, so the kilometres cancel and the time comes out directly in seconds. No conversions are needed.
 **Substitution:** $\Delta t = \dfrac{100\,\text{km}}{3.5\,\text{km/s}} - \dfrac{100\,\text{km}}{6.0\,\text{km/s}} = 28.571\,\text{s} - 16.667\,\text{s} = 11.905\,\text{s}$
 **Answer:** $\Delta t \approx 12\,\text{s}$. One second of S–P time difference corresponds to a distance of $100\,\text{km} / 11.905\,\text{s} \approx 8.4\,\text{km}$. The result is given to two significant figures, because the speeds $6.0\,\text{km/s}$ and $3.5\,\text{km/s}$ have two significant figures; the distance $100\,\text{km}$ of the exercise has three, so it does not limit the precision.

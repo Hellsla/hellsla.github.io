@@ -12,7 +12,7 @@
 **Given:** frequency $f = 196\,\text{Hz}$
 **Find:** the period $T$ in milliseconds
 **Principle:** The period is the duration of one oscillation, and the frequency is the number of oscillations per second. They are reciprocals of each other, so the period is obtained by solving it from the formula of the frequency.
-**Formula:** $f = \dfrac{1}{T}$, from which $T = \dfrac{1}{f}$
+**Formula:** $$\begin{aligned} f &= \dfrac{1}{T} \\ T &= \dfrac{1}{f} \end{aligned}$$
 **Conversions:** $1\,\text{Hz} = 1\,\tfrac{1}{\text{s}}$, so the period comes out in seconds; finally $1\,\text{s} = 1000\,\text{ms}$.
 **Substitution:** $T = \dfrac{1}{196\,\tfrac{1}{\text{s}}} = 0.005102\,\text{s} = 0.005102 \cdot 1000\,\text{ms} = 5.102\,\text{ms}$
 **Answer:** $5.10\,\text{ms}$, three significant figures as in the frequency $196\,\text{Hz}$.
@@ -60,7 +60,7 @@ Comparing the numerical values directly ($3.0$ is greater than $0.25$) is a mist
 **Given:** frequency $f = 1.6\,\text{Hz}$, number of oscillations $n = 40$
 **Find:** the time $t$ taken by $40$ full oscillations in seconds
 **Principle:** One oscillation lasts the period $T = \tfrac{1}{f}$. The oscillations are identical, so $n$ oscillations last $n$ times the period.
-**Formula:** $t = n T$, and since $T = \tfrac{1}{f}$, $t = \dfrac{n}{f}$
+**Formula:** $$\begin{aligned} T &= \dfrac{1}{f} \\ t &= nT \\ t &= \dfrac{n}{f} \end{aligned}$$
 **Conversions:** None needed: $1\,\text{Hz} = 1\,\tfrac{1}{\text{s}}$, so the time is obtained in seconds.
 **Substitution:** $t = \dfrac{40}{1.6\,\tfrac{1}{\text{s}}} = 25\,\text{s}$
 **Answer:** $25\,\text{s}$, two significant figures as in the frequency $1.6\,\text{Hz}$; the number of oscillations $40$ is counted exactly.
@@ -90,7 +90,7 @@ The value at the time $0.10\,\text{s}$ cannot be read accurately from the graph,
 **Given:** coefficient of the sine fit $B = 12.6\,\tfrac{1}{\text{s}}$
 **Find:** the frequency $f$ of the oscillation in hertz
 **Principle:** In the fit model $y = A \sin(Bt + C) + D$ the coefficient $B$ corresponds to the expression $\tfrac{2\pi}{T}$ of the sine model, because during one period the argument of the sine grows by $2\pi$. The frequency is obtained from the period as its reciprocal.
-**Formula:** $B = \dfrac{2\pi}{T}$, from which $T = \dfrac{2\pi}{B}$, and $f = \dfrac{1}{T}$, so $f = \dfrac{B}{2\pi}$
+**Formula:** $$\begin{aligned} B &= \dfrac{2\pi}{T} \\ T &= \dfrac{2\pi}{B} \\ f &= \dfrac{1}{T} \\ f &= \dfrac{B}{2\pi} \end{aligned}$$
 **Conversions:** None needed: the coefficient $B$ is in the unit $\tfrac{1}{\text{s}}$, so the frequency comes out in the unit $\tfrac{1}{\text{s}} = \text{Hz}$.
 **Substitution:** $f = \dfrac{12.6\,\tfrac{1}{\text{s}}}{2\pi} = \dfrac{12.6\,\tfrac{1}{\text{s}}}{6.283} = 2.005\,\text{Hz}$
 **Answer:** $2.01\,\text{Hz}$, three significant figures as in the coefficient $12.6\,\tfrac{1}{\text{s}}$.
@@ -100,7 +100,7 @@ The value at the time $0.10\,\text{s}$ cannot be read accurately from the graph,
 **Given:** the needle moves up and down $900$ times a minute
 **Find:** the period $T$ of the motion of the needle in milliseconds
 **Principle:** One up-and-down motion is one full oscillation, so the number of motions per unit time is the frequency. The period is the reciprocal of the frequency. The frequency is first converted to oscillations per second.
-**Formula:** $f = \dfrac{1}{T}$, from which $T = \dfrac{1}{f}$
+**Formula:** $$\begin{aligned} f &= \dfrac{1}{T} \\ T &= \dfrac{1}{f} \end{aligned}$$
 **Conversions:** $f = 900\,\tfrac{1}{\text{min}} = \dfrac{900}{60\,\text{s}} = 15\,\text{Hz}$; finally $1\,\text{s} = 1000\,\text{ms}$.
 **Substitution:** $T = \dfrac{1}{15\,\tfrac{1}{\text{s}}} = 0.06667\,\text{s} = 0.06667 \cdot 1000\,\text{ms} = 66.67\,\text{ms}$
 **Answer:** $66.7\,\text{ms}$. The count of $900$ a minute is exact, so the result is rounded to the usual three significant figures.
@@ -110,7 +110,7 @@ The value at the time $0.10\,\text{s}$ cannot be read accurately from the graph,
 **Given:** smallest distance from the sensor $d_\text{min} = 32.0\,\text{cm}$, greatest $d_\text{max} = 47.0\,\text{cm}$
 **Find:** the amplitude $A$ of the oscillation in centimetres
 **Principle:** The smallest and the greatest distance are the extreme positions of the weight. The distance between them is twice the amplitude, because the equilibrium position is halfway between the extreme positions and the amplitude is measured from the equilibrium position to an extreme position.
-**Formula:** $d_\text{max} - d_\text{min} = 2A$, from which $A = \dfrac{d_\text{max} - d_\text{min}}{2}$
+**Formula:** $$\begin{aligned} d_\text{max} - d_\text{min} &= 2A \\ A &= \dfrac{d_\text{max} - d_\text{min}}{2} \end{aligned}$$
 **Conversions:** None needed: both distances are in centimetres.
 **Substitution:** $A = \dfrac{47.0\,\text{cm} - 32.0\,\text{cm}}{2} = \dfrac{15.0\,\text{cm}}{2} = 7.50\,\text{cm}$
 **Answer:** $7.50\,\text{cm}$, three significant figures as in the difference of the distances $15.0\,\text{cm}$.
@@ -123,7 +123,7 @@ The value at the time $0.10\,\text{s}$ cannot be read accurately from the graph,
 
 Between the first and the sixth peak there are five periods, not six. Using the whole measurement series spreads the reading uncertainty over several periods, and the frequency is obtained as the reciprocal of the period.
 **Reading the table:** The time of the first peak $0.42\,\text{s}$ and the time of the sixth peak $3.47\,\text{s}$ are read from the table; between them there are five intervals between peaks.
-**Formula:** $T = \dfrac{t_6 - t_1}{5}$ and $f = \dfrac{1}{T}$
+**Formula:** $$\begin{aligned} t_6 - t_1 &= 5T \\ T &= \dfrac{t_6 - t_1}{5} \\ f &= \dfrac{1}{T} \end{aligned}$$
 **Conversions:** None needed: the times are in seconds, so the frequency is obtained in hertz.
 **Substitution:** $T = \dfrac{3.47\,\text{s} - 0.42\,\text{s}}{5} = \dfrac{3.05\,\text{s}}{5} = 0.61\,\text{s}$, so $f = \dfrac{1}{0.61\,\text{s}} = 1.639\,\text{Hz}$
 **Answer:** $1.64\,\text{Hz}$, three significant figures as in the times of the table.
@@ -133,7 +133,7 @@ Between the first and the sixth peak there are five periods, not six. Using the 
 **Given:** five measurements for the time of $10$ swings: $15.2\,\text{s}$, $14.8\,\text{s}$, $15.4\,\text{s}$, $15.0\,\text{s}$ and $15.1\,\text{s}$
 **Find:** the period $T$ of the pendulum in seconds (part a); in addition the estimate of the uncertainty and the explanation (part b)
 **Principle:** The measurement results vary randomly, so their mean $t_{\text{avg}}$ is calculated. It is the time of ten swings, and the period is the duration of one swing, that is, a tenth of it.
-**Formula:** $t_{\text{avg}} = \dfrac{\text{sum of the times}}{5}$ and $T = \dfrac{t_{\text{avg}}}{10}$
+**Formula:** $$\begin{aligned} t_{\text{avg}} &= \dfrac{\text{sum of the times}}{5} \\ t_{\text{avg}} &= 10T \\ T &= \dfrac{t_{\text{avg}}}{10} \end{aligned}$$
 **Conversions:** None needed: all times are in seconds.
 **Substitution:** The sum of the times is $75.5\,\text{s}$, so $t_{\text{avg}} = \dfrac{75.5\,\text{s}}{5} = 15.1\,\text{s}$ and $T = \dfrac{15.1\,\text{s}}{10} = 1.51\,\text{s}$
 **Answer:** a) $1.51\,\text{s}$, three significant figures as in the measured times. Part b): the range of the measurements is $15.4\,\text{s} - 14.8\,\text{s} = 0.6\,\text{s}$, so the estimate of the uncertainty is half of it, $0.3\,\text{s}$ for ten swings. For the period it is $\tfrac{0.3\,\text{s}}{10} = 0.03\,\text{s}$, that is, $T \approx 1.51\,\text{s} \pm 0.03\,\text{s}$.
@@ -146,7 +146,7 @@ In timing by hand the error is of the same order of magnitude regardless of the 
 **Find:** the student’s mistake and the correct frequency $f$ in hertz
 **Principle:** The period is the time after which the object is at the same position and moving in the same direction. In successive passes the direction changes (in the table alternately up and down), so the interval between them is only half a period. A full period is measured between passes in the same direction.
 **Reading the table:** Only the passes going up are chosen from the table, at the moments $0.00\,\text{s}$, $0.75\,\text{s}$ and $1.49\,\text{s}$; between the first and the last there are two full periods.
-**Formula:** $T = \dfrac{t_5 - t_1}{2}$ and $f = \dfrac{1}{T}$
+**Formula:** $$\begin{aligned} t_5 - t_1 &= 2T \\ T &= \dfrac{t_5 - t_1}{2} \\ f &= \dfrac{1}{T} \end{aligned}$$
 **Conversions:** None needed: the times are in seconds.
 **Substitution:** The passes going up are at the moments $t_1 = 0.00\,\text{s}$, $t_3 = 0.75\,\text{s}$ and $t_5 = 1.49\,\text{s}$, and between them there are two periods. $T = \dfrac{1.49\,\text{s} - 0.00\,\text{s}}{2} = 0.745\,\text{s}$ and $f = \dfrac{1}{0.745\,\text{s}} = 1.342\,\text{Hz}$
 **Answer:** $1.34\,\text{Hz}$, three significant figures as in the times of the table. The student used half a period as the period, so the student’s frequency was double.
@@ -158,7 +158,7 @@ In timing by hand the error is of the same order of magnitude regardless of the 
 **Principle:** The oscillation is sinusoidal, and timing starts at a pass through the equilibrium position in the positive direction, so $x = A \sin\left(\tfrac{2\pi t}{T}\right)$. When $x = \tfrac{A}{2}$, the value of the sine is $\tfrac{1}{2}$. The first time corresponds to the smallest positive angle for which the sine is $\tfrac{1}{2}$.
 
 In a right triangle with an angle of $30^\circ$ the opposite leg is half of the hypotenuse, so $\sin 30^\circ = \tfrac{1}{2}$, and because $180^\circ = \pi$, the angle is $30^\circ = \tfrac{\pi}{6}$. The next angle, $150^\circ$, would fall only in the downward phase. The amplitude cancels, so it is not needed.
-**Formula:** $\dfrac{A}{2} = A \sin\left(\dfrac{2\pi t}{T}\right)$, from which $\dfrac{2\pi t}{T} = \dfrac{\pi}{6}$, so $t = \dfrac{T}{12}$
+**Formula:** $$\begin{aligned} x &= A \sin\left(\dfrac{2\pi t}{T}\right) \\ x = \dfrac{A}{2} &\Rightarrow \sin\left(\dfrac{2\pi t}{T}\right) = \dfrac{1}{2} \\ \dfrac{2\pi t}{T} &= \dfrac{\pi}{6} \\ t &= \dfrac{T}{12} \end{aligned}$$
 **Conversions:** None needed: the period is in seconds, and the angle is in radians.
 **Substitution:** $t = \dfrac{1.2\,\text{s}}{12} = 0.10\,\text{s}$
 **Answer:** $0.10\,\text{s}$, two significant figures as in the period $1.2\,\text{s}$.
@@ -170,7 +170,7 @@ In a right triangle with an angle of $30^\circ$ the opposite leg is half of the 
 **Principle:** The button is in uniform circular motion, and the horizontal light casts on the wall its height above the level of the axis. The height of a point in circular motion oscillates sinusoidally: the amplitude is the radius of the circle and the frequency is the rotation frequency.
 
 The light comes from far away and is parallel, so the shadow is as large as the height of the button above the level of the axis. The time is counted from the pass through the middle going up, so the sine model is used.
-**Formula:** $x = A \sin(2\pi f t)$, where $A = r$, that is, $x = r \sin(2\pi f t)$
+**Formula:** $$\begin{aligned} x &= A \sin(2\pi f t) \\ A &= r \\ x &= r \sin(2\pi f t) \end{aligned}$$
 **Conversions:** $f = 45\,\tfrac{1}{\text{min}} = \dfrac{45}{60\,\text{s}} = 0.75\,\text{Hz}$
 **Substitution:** $x = 15\,\text{cm} \cdot \sin(2\pi \cdot 0.75\,\text{Hz} \cdot 0.20\,\text{s}) = 15\,\text{cm} \cdot \sin 0.9425 = 15\,\text{cm} \cdot 0.8090 = 12.14\,\text{cm}$
 **Answer:** $12\,\text{cm}$ above the middle, two significant figures as in the distance $15\,\text{cm}$ and the rate $45\,\tfrac{1}{\text{min}}$.
@@ -180,7 +180,7 @@ The light comes from far away and is parallel, so the shadow is as large as the 
 **Given:** periods $T_1 = 0.60\,\text{s}$ and $T_2 = 0.90\,\text{s}$, both pass the equilibrium position going up at the time $0$
 **Find:** the shortest time $t$ after which they again pass the equilibrium position going up at the same time
 **Principle:** The first weight passes the equilibrium position going up at intervals of a full period, at the times $0.60\,\text{s}$, $1.20\,\text{s}$, $1.80\,\text{s}$, … and the second at the times $0.90\,\text{s}$, $1.80\,\text{s}$, … We look for the shortest time that is a whole multiple of both periods: integers $k$ and $m$ for which $k T_1 = m T_2$.
-**Formula:** $k T_1 = m T_2$, from which $\dfrac{k}{m} = \dfrac{T_2}{T_1}$, and $t = k T_1$ with the smallest integer $k$
+**Formula:** $$\begin{aligned} k T_1 &= m T_2 \\ \dfrac{k}{m} &= \dfrac{T_2}{T_1} \\ t &= k T_1 \quad (\text{smallest integer }k) \end{aligned}$$
 **Conversions:** None needed: both periods are in seconds.
 **Substitution:** $\dfrac{k}{m} = \dfrac{0.90\,\text{s}}{0.60\,\text{s}} = 1.5 = \dfrac{3}{2}$, so $k = 3$ and $t = 3 \cdot 0.60\,\text{s} = 1.80\,\text{s}$
 **Answer:** $1.8\,\text{s}$, two significant figures as in the periods $0.60\,\text{s}$ and $0.90\,\text{s}$.
@@ -192,7 +192,7 @@ The light comes from far away and is parallel, so the shadow is as large as the 
 **Principle:** The beats repeat approximately evenly, so they are treated as periodic motion: the beat interval is the period $T$ and the pulse is the frequency $f = \tfrac{1}{T}$ in beats per unit of time.
 
 The period is determined from all six intervals, because then the variation of single intervals averages out. The increase of the pulse is the difference of the frequencies relative to the frequency at rest.
-**Formula:** $T = \dfrac{t_6}{6}$, $f = \dfrac{1}{T}$ and $p = \dfrac{f_{\text{exercise}} - f_{\text{rest}}}{f_{\text{rest}}} \cdot 100\,\%$
+**Formula:** $$\begin{aligned} t_6 &= 6T \\ T &= \dfrac{t_6}{6} \\ f &= \dfrac{1}{T} \\ p &= \dfrac{f_{\text{exercise}} - f_{\text{rest}}}{f_{\text{rest}}} \cdot 100\,\% \end{aligned}$$
 **Conversions:** Pulse per minute: $1\,\text{Hz} = 60\,\tfrac{1}{\text{min}}$. In the calculation of the percentage the units cancel.
 **Substitution:** At rest $T_{\text{rest}} = \dfrac{4.96\,\text{s}}{6} = 0.8267\,\text{s}$ and $f_{\text{rest}} = \dfrac{1}{0.8267\,\text{s}} = 1.210\,\text{Hz} = 72.6\,\tfrac{1}{\text{min}}$. After exercise $T_{\text{exercise}} = \dfrac{2.77\,\text{s}}{6} = 0.4617\,\text{s}$ and $f_{\text{exercise}} = \dfrac{1}{0.4617\,\text{s}} = 2.166\,\text{Hz} = 130\,\tfrac{1}{\text{min}}$. The increase is $p = \dfrac{2.166\,\text{Hz} - 1.210\,\text{Hz}}{1.210\,\text{Hz}} \cdot 100\,\% = 79.06\,\%$.
 **Answer:** $79.1\,\%$, three significant figures like the times $4.96\,\text{s}$ and $2.77\,\text{s}$. The explanation for part c): a single interval varies ($0.81\,\text{s}$ … $0.85\,\text{s}$ at rest), but the total time of six intervals divided by six evens out the variation, and the timing error is shared among six intervals.
@@ -203,7 +203,7 @@ The period is determined from all six intervals, because then the variation of s
 **Find:** the distance $d$ at the time $5.0\,\text{s}$ in centimetres
 **Principle:** The oscillation is assumed sinusoidal and undamped, and the measurement starts at a pass of the equilibrium position as the distance increases, so the model is $d = D + A \sin\left(\tfrac{2\pi t}{T}\right)$ without a phase term. The parameters are read from the table, and the model predicts a future value.
 **Reading the table:** The distance returns to its initial value $40.1\,\text{cm}$ and starts to increase again at the time $1.6\,\text{s}$, so one oscillation lasts $T = 1.6\,\text{s}$.
-**Formula:** $D = \dfrac{d_{\max} + d_{\min}}{2}$, $A = \dfrac{d_{\max} - d_{\min}}{2}$ and $d = D + A \sin\left(\dfrac{2\pi t}{T}\right)$
+**Formula:** $$\begin{aligned} d_{\max} &= D + A \\ d_{\min} &= D - A \\ D &= \dfrac{d_{\max} + d_{\min}}{2} \\ A &= \dfrac{d_{\max} - d_{\min}}{2} \\ d &= D + A \sin\left(\dfrac{2\pi t}{T}\right) \end{aligned}$$
 **Conversions:** None needed: the distances are in centimetres and the times in seconds. The calculator is in radian mode.
 **Substitution:** $D = \dfrac{46.0\,\text{cm} + 34.0\,\text{cm}}{2} = 40.0\,\text{cm}$ and $A = \dfrac{46.0\,\text{cm} - 34.0\,\text{cm}}{2} = 6.0\,\text{cm}$. At the time $5.0\,\text{s}$ the argument of the sine is $19.63$, and $d = 40.0\,\text{cm} + 6.0\,\text{cm} \cdot \sin 19.63 = 40.0\,\text{cm} + 6.0\,\text{cm} \cdot 0.7071 = 44.24\,\text{cm}$
 **Answer:** $44\,\text{cm}$, two significant figures, because the period $1.6\,\text{s}$ was read from the table at $0.2\,\text{s}$ intervals and the prediction is extrapolation. For $D$ both $40.0\,\text{cm}$ and $40.1\,\text{cm}$ are acceptable.

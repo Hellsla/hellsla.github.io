@@ -1,15 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 92108ccdde3e0001
+CONTENT-HASH: 7bf074f5d538ca25
+SCOPE: delta wording from 017653cf72f2fca8 base 0e8231e
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none new
+- [Minor] voltmeter-load task 2-22, Kaava block — the stacked-fraction rows sit close together vertically (last rows nearly touch) — shared aligned-block spacing, not per lesson; legible as is.
 
 ## Checked
-- Delta (solutions.md paragraph breaks only, round 2). Opened 1280 px capture: open-exercises-L3-1280-5 (2-22 task and start of its solution); diff read: a)-d) and a)-c) now each start their own paragraph, round-1 Minor resolved.
-- Breaks now stand before part labels or at sentence boundaries; no one-word paragraph, no formula or label clipped, solution-card spacing even.
+- Opened en fy6-2-open-exercises-L3-1280-5, -6 (2-22 Formula block, ten rows aligned, Conversions, Substitution).
+- Both changed Kaava blocks lost the "Sigma U = 0" and "(Sigma U/Sigma I)" annotations; remaining rows keep one "=" column, every row starts with its quantity, no clipping at 1280 px.
+- The lamp-in-series task (2-12, core card) has no open-solution capture; its four-row block uses the same component and was judged from source.
 
 ## Scores
-illustrations n/a · typography 5 · Finnish 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

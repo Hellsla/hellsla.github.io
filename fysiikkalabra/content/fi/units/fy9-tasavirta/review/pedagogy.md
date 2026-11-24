@@ -1,9 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 6a47f8641d672edf
-SCOPE: delta (old-content fixes, git diff origin/main)
+CONTENT-HASH: 5aa0d3f2a0381b2a
+SCOPE: delta (rubric points rescaled, git diff origin/main)
 
 Blocking: none.
 
-1. Teacher.md points (20 + five 15 + 16 + 18 = 129) match tasks.json; consistent in all three languages.
-2. Earlier delta lines re-read briefly: the changes touch only counts, points and notation; no misconception feedback, hint ladder or rubric criterion was weakened, and no answer is disclosed early.
-3. Polish: none.
+1. Checked: s7 a-d (3,3,5,4) and s8 a-d (4,4,3,4) sum to 15 each; the part points equal the sum of the remaining criteria in tasks.json. Effort matches points (multi-step parts 4-5, single-step 3).
+2. Checked: no criterion left that a student cannot score; the removed units_precision lines were only the sig-fig/unit restatement, and the other criteria (formula, substitution with units, result, reasonableness) still cover units. Other tasks keep their units_precision (14 remain).
+3. Checked: teacher.md (5aa0d3f2a0381b2a0 + seven x 15 = 125) reads clearly and matches the points; the old "16 and 18 points" sentence is gone. Precision is still named as a criterion, which holds for the other tasks.
+4. Polish: none.

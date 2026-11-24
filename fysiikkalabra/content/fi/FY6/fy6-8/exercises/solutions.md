@@ -12,7 +12,7 @@
 **Annettu:** lähdejännite $E = 1{,}30\,\text{V}$, sisäinen resistanssi $R_\text{s} = 0{,}040\,\Omega$; oikosulkujohtimen resistanssi jätetään huomiotta
 **Kysytty:** oikosulkuvirta $I_\text{k}$ ampeereina
 **Periaate:** Oikosulussa ulkoisen piirin resistanssi on nolla, joten Kirchhoffin jännitelain mukaan koko lähdejännite jää kennon sisäiselle resistanssille. Virtaa rajoittaa vain sisäinen resistanssi.
-**Kaava:** $E - R_\text{s} I_\text{k} = 0$, josta $I_\text{k} = \dfrac{E}{R_\text{s}}$
+**Kaava:** $$\begin{aligned} U &= E - R_\text{s} I \\ 0 &= E - R_\text{s} I_\text{k} \\ I_\text{k} &= \dfrac{E}{R_\text{s}} \end{aligned}$$
 **Muunnokset:** Ei tarvita: $1\,\text{V} : 1\,\Omega = 1\,\text{A}$.
 **Sijoitus:** $I_\text{k} = \dfrac{1{,}30\,\text{V}}{0{,}040\,\Omega} = 32{,}5\,\text{A}$
 **Vastaus:** $33\,\text{A}$, kaksi merkitsevää numeroa kuten sisäisessä resistanssissa $0{,}040\,\Omega$.
@@ -32,7 +32,7 @@
 **Annettu:** kolme samanlaista paristoa rinnan, kunkin sisäinen resistanssi $R_{\text{s}1} = 0{,}45\,\Omega$
 **Kysytty:** paristoryhmän sisäinen resistanssi $R_\text{s}$ ohmeina
 **Periaate:** Rinnan kytkettyjen paristojen sisäiset resistanssit ovat rinnakkaisia haaroja samojen kahden kohdan välissä. Paristot ovat samanlaisia, joten virta jakautuu niille tasan, ja ryhmän sisäinen resistanssi on yhden pariston sisäinen resistanssi jaettuna paristojen määrällä.
-**Kaava:** $R_\text{s} = \dfrac{R_{\text{s}1}}{n}$
+**Kaava:** $$\begin{aligned} \dfrac{1}{R_\text{s}} &= \dfrac{1}{R_{\text{s}1}} + \dots + \dfrac{1}{R_{\text{s}1}} \\ &= \dfrac{n}{R_{\text{s}1}} \\ R_\text{s} &= \dfrac{R_{\text{s}1}}{n} \end{aligned}$$
 **Muunnokset:** Ei tarvita: resistanssi on ohmeina.
 **Sijoitus:** $R_\text{s} = \dfrac{0{,}45\,\Omega}{3} = 0{,}15\,\Omega$
 **Vastaus:** $0{,}15\,\Omega$, kaksi merkitsevää numeroa kuten sisäisessä resistanssissa $0{,}45\,\Omega$; paristojen määrä $3$ on tarkka luku.
@@ -43,7 +43,7 @@
 **Kysytty:** oikosulkuvirta $I_\text{k}$ ampeereina
 **Periaate:** Oikosulussa napajännite on nolla. Pariston $(I, U)$-kuvaaja on suora $U = E - R_\text{s} I$, joten oikosulkuvirta on se virta, jolla suora leikkaa vaaka-akselin. Oikosulkuvirtaa ei mitattu, vaan se saadaan jatkamalla pisteiden kautta piirrettyä suoraa.
 **Kuvaajan lukeminen:** Katkoviivaksi jatkettu suora kohtaa vaaka-akselin $U = 0$ ruudukkoviivalla $3{,}0\,\text{A}$. Pystyakselin se kohtaa kohdassa $4{,}5\,\text{V}$, joka on lähdejännite.
-**Kaava:** $U = E - R_\text{s} I_\text{k} = 0$, josta $I_\text{k} = \dfrac{E}{R_\text{s}}$; arvo luetaan suoran ja vaaka-akselin leikkauskohdasta.
+**Kaava:** $$\begin{aligned} U &= E - R_\text{s} I \\ 0 &= E - R_\text{s} I_\text{k} \\ I_\text{k} &= \dfrac{E}{R_\text{s}} \end{aligned}$$
 **Muunnokset:** Ei tarvita: virta luetaan ampeereina.
 **Sijoitus:** Kuvaajasta $I_\text{k} = 3{,}0\,\text{A}$.
 **Vastaus:** $3{,}0\,\text{A}$, kahden merkitsevän numeron tarkkuudella, koska arvo luetaan $0{,}5\,\text{A}$:n ruudukolta.
@@ -53,7 +53,7 @@
 **Annettu:** ensimmäinen kuorma: $I_1 = 0{,}20\,\text{A}$, $U_1 = 4{,}30\,\text{V}$; toinen kuorma: $I_2 = 0{,}80\,\text{A}$, $U_2 = 3{,}70\,\text{V}$
 **Kysytty:** sisäinen resistanssi $R_\text{s}$ ohmeina
 **Periaate:** Sama paristo on molemmissa mittauksissa, joten sen lähdejännite ja sisäinen resistanssi ovat samat. Napajännite $U = E - R_\text{s} I$ pienenee virran kasvaessa $R_\text{s}$:n verran ampeeria kohti, joten kahden mittauksen erotuksesta lähdejännite häviää.
-**Kaava:** $U_1 = E - R_\text{s} I_1$ ja $U_2 = E - R_\text{s} I_2$; vähentämällä $U_1 - U_2 = R_\text{s}(I_2 - I_1)$, josta $R_\text{s} = \dfrac{U_1 - U_2}{I_2 - I_1}$
+**Kaava:** $$\begin{aligned} U_1 &= E - R_\text{s} I_1 \\ U_2 &= E - R_\text{s} I_2 \\ U_1 - U_2 &= R_\text{s}(I_2 - I_1) \\ R_\text{s} &= \dfrac{U_1 - U_2}{I_2 - I_1} \end{aligned}$$
 **Muunnokset:** Ei tarvita: $1\,\text{V} : 1\,\text{A} = 1\,\Omega$.
 **Sijoitus:** $R_\text{s} = \dfrac{4{,}30\,\text{V} - 3{,}70\,\text{V}}{0{,}80\,\text{A} - 0{,}20\,\text{A}} = \dfrac{0{,}60\,\text{V}}{0{,}60\,\text{A}} = 1{,}0\,\Omega$
 **Vastaus:** $1{,}0\,\Omega$, kaksi merkitsevää numeroa kuten erotuksissa $0{,}60\,\text{V}$ ja $0{,}60\,\text{A}$.
@@ -63,7 +63,7 @@
 **Annettu:** lähdejännite $E = 6{,}0\,\text{V}$, sisäinen resistanssi $R_\text{s} = 0{,}50\,\Omega$, kuormitusvastus $R = 5{,}5\,\Omega$
 **Kysytty:** napajännite $U$ voltteina
 **Periaate:** Sisäinen resistanssi ja kuormitusvastus ovat samassa silmukassa sarjassa, joten Kirchhoffin jännitelaki $E - R_\text{s} I - RI = 0$ antaa virran. Napajännite on kuormitusvastuksen jännite, koska vastus on kytketty suoraan lähteen napoihin.
-**Kaava:** $I = \dfrac{E}{R + R_\text{s}}$ ja $U = RI$, joten $U = \dfrac{R E}{R + R_\text{s}}$
+**Kaava:** $$\begin{aligned} E - R_\text{s} I - RI &= 0 \\ I &= \dfrac{E}{R + R_\text{s}} \\ U &= RI \\ &= \dfrac{RE}{R + R_\text{s}} \end{aligned}$$
 **Muunnokset:** Ei tarvita: kaikki suureet ovat perusyksiköissä.
 **Sijoitus:** $I = \dfrac{6{,}0\,\text{V}}{5{,}5\,\Omega + 0{,}50\,\Omega} = 1{,}0\,\text{A}$ ja $U = 5{,}5\,\Omega \cdot 1{,}0\,\text{A} = 5{,}5\,\text{V}$
 **Vastaus:** $5{,}5\,\text{V}$, kaksi merkitsevää numeroa kuten lähtötiedoissa.
@@ -73,7 +73,7 @@
 **Annettu:** lampun resistanssi $R = 3{,}0\,\Omega$, lähdejännite $E = 4{,}5\,\text{V}$, sisäinen resistanssi $R_\text{s} = 1{,}5\,\Omega$
 **Kysytty:** lampun teho $P$ watteina
 **Periaate:** Lamppu ja pariston sisäinen resistanssi ovat samassa silmukassa sarjassa, joten jännitelaki antaa virran. Lampun jännite on pariston napajännite, ja sähköteho on jännitteen ja virran tulo (luku *Sähköteho ja vastuksen lämpeneminen*).
-**Kaava:** $I = \dfrac{E}{R + R_\text{s}}$, $U = E - R_\text{s} I$ ja $P = UI$
+**Kaava:** $$\begin{aligned} E - R_\text{s} I - RI &= 0 \\ I &= \dfrac{E}{R + R_\text{s}} \\ U &= E - R_\text{s} I \\ P &= UI \end{aligned}$$
 **Muunnokset:** Ei tarvita: $1\,\text{V} \cdot 1\,\text{A} = 1\,\text{W}$.
 **Sijoitus:** $I = \dfrac{4{,}5\,\text{V}}{3{,}0\,\Omega + 1{,}5\,\Omega} = 1{,}0\,\text{A}$, $U = 4{,}5\,\text{V} - 1{,}5\,\Omega \cdot 1{,}0\,\text{A} = 3{,}0\,\text{V}$ ja $P = 3{,}0\,\text{V} \cdot 1{,}0\,\text{A} = 3{,}0\,\text{W}$
 **Vastaus:** $3{,}0\,\text{W}$, kaksi merkitsevää numeroa kuten resistansseissa.
@@ -83,7 +83,7 @@
 **Annettu:** kaksi paristoa sarjassa, kummankin $E_1 = 1{,}5\,\text{V}$ ja $R_{\text{s}1} = 0{,}30\,\Omega$; kuormitusvastus $R = 2{,}4\,\Omega$
 **Kysytty:** virta $I$ ampeereina
 **Periaate:** Sarjaan kytkettyjen paristojen lähdejännitteet summautuvat, ja niiden sisäiset resistanssit ovat kuorman kanssa samassa silmukassa peräkkäin. Kirchhoffin jännitelaki antaa silmukan virran.
-**Kaava:** $E = 2E_1$ ja $R_\text{s} = 2R_{\text{s}1}$, joten $I = \dfrac{E}{R + R_\text{s}} = \dfrac{2E_1}{R + 2R_{\text{s}1}}$
+**Kaava:** $$\begin{aligned} E &= E_1 + E_1 = 2E_1 \\ R_\text{s} &= R_{\text{s}1} + R_{\text{s}1} = 2R_{\text{s}1} \\ E - R_\text{s} I - RI &= 0 \\ I &= \dfrac{E}{R + R_\text{s}} \\ &= \dfrac{2E_1}{R + 2R_{\text{s}1}} \end{aligned}$$
 **Muunnokset:** Ei tarvita: $1\,\text{V} : 1\,\Omega = 1\,\text{A}$.
 **Sijoitus:** $I = \dfrac{2 \cdot 1{,}5\,\text{V}}{2{,}4\,\Omega + 2 \cdot 0{,}30\,\Omega} = \dfrac{3{,}0\,\text{V}}{3{,}0\,\Omega} = 1{,}0\,\text{A}$
 **Vastaus:** $1{,}0\,\text{A}$, kaksi merkitsevää numeroa kuten lähtötiedoissa.
@@ -93,7 +93,7 @@
 **Annettu:** kaksi samanlaista paristoa rinnan, kummankin $E_1 = 1{,}5\,\text{V}$ ja $R_{\text{s}1} = 0{,}40\,\Omega$; lampun resistanssi $R = 0{,}80\,\Omega$
 **Kysytty:** kunkin pariston läpi kulkeva virta $I_1$ ampeereina
 **Periaate:** Rinnan kytkettyjen samanlaisten paristojen lähdejännite on sama kuin yhden, ja sisäiset resistanssit ovat rinnakkaisia haaroja, joten ryhmän sisäinen resistanssi on puolet yhden pariston sisäisestä resistanssista. Ryhmä ja lamppu muodostavat silmukan, jonka virta saadaan jännitelaista. Paristot ovat samanlaisia, joten virtalain mukaan kokonaisvirta jakautuu niille tasan.
-**Kaava:** $R_\text{s} = \dfrac{R_{\text{s}1}}{2}$, $I = \dfrac{E_1}{R + R_\text{s}}$ ja $I_1 = \dfrac{I}{2}$
+**Kaava:** $$\begin{aligned} \dfrac{1}{R_\text{s}} &= \dfrac{1}{R_{\text{s}1}} + \dfrac{1}{R_{\text{s}1}} \\ R_\text{s} &= \dfrac{R_{\text{s}1}}{2} \\ E_1 - R_\text{s} I - RI &= 0 \\ I &= \dfrac{E_1}{R + R_\text{s}} \\ I &= I_1 + I_1 \\ I_1 &= \dfrac{I}{2} \end{aligned}$$
 **Muunnokset:** Ei tarvita: kaikki suureet ovat perusyksiköissä.
 **Sijoitus:** $R_\text{s} = \dfrac{0{,}40\,\Omega}{2} = 0{,}20\,\Omega$, $I = \dfrac{1{,}5\,\text{V}}{0{,}80\,\Omega + 0{,}20\,\Omega} = 1{,}5\,\text{A}$ ja $I_1 = \dfrac{1{,}5\,\text{A}}{2} = 0{,}75\,\text{A}$
 **Vastaus:** $0{,}75\,\text{A}$, kaksi merkitsevää numeroa kuten lähtötiedoissa.
@@ -103,7 +103,7 @@
 **Annettu:** kolme paristoa sarjassa, yksi väärin päin; kunkin $E_1 = 1{,}5\,\text{V}$ ja $R_{\text{s}1} = 0{,}25\,\Omega$; lampun resistanssi $R = 4{,}0\,\Omega$
 **Kysytty:** lampun läpi kulkeva virta $I$ ampeereina
 **Periaate:** Sarjaankytkennässä potentiaalin muutokset summautuvat. Oikein päin olevissa paristoissa potentiaali nousee $E_1$:n verran, mutta väärin päin olevassa se laskee saman verran, joten ryhmän lähdejännite on $E_1 + E_1 - E_1$. Kaikkien kolmen sisäinen resistanssi on silti samassa silmukassa peräkkäin.
-**Kaava:** $E = E_1 + E_1 - E_1 = E_1$, $R_\text{s} = 3R_{\text{s}1}$ ja $I = \dfrac{E}{R + R_\text{s}} = \dfrac{E_1}{R + 3R_{\text{s}1}}$
+**Kaava:** $$\begin{aligned} E &= E_1 + E_1 - E_1 = E_1 \\ R_\text{s} &= 3R_{\text{s}1} \\ E - R_\text{s} I - RI &= 0 \\ I &= \dfrac{E}{R + R_\text{s}} \\ &= \dfrac{E_1}{R + 3R_{\text{s}1}} \end{aligned}$$
 **Muunnokset:** Ei tarvita: $1\,\text{V} : 1\,\Omega = 1\,\text{A}$.
 **Sijoitus:** $I = \dfrac{1{,}5\,\text{V}}{4{,}0\,\Omega + 3 \cdot 0{,}25\,\Omega} = \dfrac{1{,}5\,\text{V}}{4{,}75\,\Omega} = 0{,}3158\,\text{A}$
 **Vastaus:** $0{,}32\,\text{A}$, kaksi merkitsevää numeroa kuten lähtötiedoissa.
@@ -113,7 +113,7 @@
 **Annettu:** kuorma $R_1 = 2{,}0\,\Omega$, napajännite $U_1 = 1{,}20\,\text{V}$; kuorma $R_2 = 6{,}0\,\Omega$, napajännite $U_2 = 1{,}44\,\text{V}$
 **Kysytty:** lähdejännite $E$ voltteina
 **Periaate:** Napajännite on kuormitusvastuksen jännite, joten Ohmin laki antaa kummankin mittauksen virran. Sama paristo on molemmissa mittauksissa, joten $U = E - R_\text{s} I$ pätee samoilla $E$:llä ja $R_\text{s}$:llä. Kahdesta yhtälöstä ratkaistaan ensin sisäinen resistanssi ja sitten lähdejännite.
-**Kaava:** $I_1 = \dfrac{U_1}{R_1}$ ja $I_2 = \dfrac{U_2}{R_2}$; $U_1 = E - R_\text{s} I_1$ ja $U_2 = E - R_\text{s} I_2$, joten $R_\text{s} = \dfrac{U_2 - U_1}{I_1 - I_2}$ ja $E = U_1 + R_\text{s} I_1$
+**Kaava:** $$\begin{aligned} I_1 &= \dfrac{U_1}{R_1} \\ I_2 &= \dfrac{U_2}{R_2} \\ U_1 &= E - R_\text{s} I_1 \\ U_2 &= E - R_\text{s} I_2 \\ U_2 - U_1 &= R_\text{s}(I_1 - I_2) \\ R_\text{s} &= \dfrac{U_2 - U_1}{I_1 - I_2} \\ E &= U_1 + R_\text{s} I_1 \end{aligned}$$
 **Muunnokset:** Ei tarvita: kaikki suureet ovat perusyksiköissä.
 **Sijoitus:** $I_1 = \dfrac{1{,}20\,\text{V}}{2{,}0\,\Omega} = 0{,}60\,\text{A}$, $I_2 = \dfrac{1{,}44\,\text{V}}{6{,}0\,\Omega} = 0{,}24\,\text{A}$, $R_\text{s} = \dfrac{1{,}44\,\text{V} - 1{,}20\,\text{V}}{0{,}60\,\text{A} - 0{,}24\,\text{A}} = 0{,}667\,\Omega$ ja $E = 1{,}20\,\text{V} + 0{,}667\,\Omega \cdot 0{,}60\,\text{A} = 1{,}60\,\text{V}$
 **Vastaus:** $1{,}60\,\text{V}$, sadasosavoltin tarkkuudella kuten mitatut napajännitteet.
@@ -139,7 +139,7 @@ Väite, jonka mukaan jännitteet ovat aina yhtä suuret, ei pidä: lähdejännit
 **Annettu:** lähdejännite $E = 1{,}50\,\text{V}$, napajännite $U = 1{,}31\,\text{V}$, virta $I = 0{,}50\,\text{A}$
 **Kysytty:** sisäinen resistanssi $R_\text{s}$ ohmeina
 **Periaate:** Napajännite on lähdejännitettä pienempi sisäisen resistanssin jännitehäviön $R_\text{s} I$ verran. Kun lähdejännite, napajännite ja virta tunnetaan, yhtälöstä voidaan ratkaista $R_\text{s}$.
-**Kaava:** $U = E - R_\text{s} I$, josta $R_\text{s} = \dfrac{E - U}{I}$
+**Kaava:** $$\begin{aligned} U &= E - R_\text{s} I \\ R_\text{s} I &= E - U \\ R_\text{s} &= \dfrac{E - U}{I} \end{aligned}$$
 **Muunnokset:** Ei tarvita: $1\,\text{V} : 1\,\text{A} = 1\,\Omega$.
 **Sijoitus:** $R_\text{s} = \dfrac{1{,}50\,\text{V} - 1{,}31\,\text{V}}{0{,}50\,\text{A}} = \dfrac{0{,}19\,\text{V}}{0{,}50\,\text{A}} = 0{,}38\,\Omega$
 **Vastaus:** $0{,}38\,\Omega$, kaksi merkitsevää numeroa kuten virrassa $0{,}50\,\text{A}$.
@@ -150,7 +150,7 @@ Väite, jonka mukaan jännitteet ovat aina yhtä suuret, ei pidä: lähdejännit
 **Kysytty:** a) lähdejännite $E$ suoralta luettuna, b) sisäinen resistanssi $R_\text{s}$ ohmeina
 **Periaate:** Pariston napajännite on $U = E - R_\text{s} I$, joten $(I, U)$-pisteet asettuvat laskevalle suoralle. Suora leikkaa pystyakselin kohdassa $U = E$, ja sen kulmakerroin on $-R_\text{s}$. Mittauspisteissä on pientä hajontaa, joten suora piirretään pisteiden joukon keskeltä eikä sitä sidota yksittäisiin pisteisiin.
 **Kuvaajan lukeminen:** Sovitettu suora leikkaa pystyakselin kohdassa $1{,}54\,\text{V}$ ja kulkee likimain pisteen $(1{,}20\,\text{A};\ 0{,}87\,\text{V})$ kautta. Pisteet jäävät suoran molemmille puolille; jos suora käännetään pisteiden rajoissa toisenlaiseksi, kulmakerroin muuttuu noin $\pm 0{,}03\,\Omega$. Kaksi suoralta luettua pistettä ovat kaukana toisistaan: $(0\,\text{A};\ 1{,}54\,\text{V})$ ja $(1{,}20\,\text{A};\ 0{,}87\,\text{V})$.
-**Kaava:** $R_\text{s} = -\dfrac{\Delta U}{\Delta I} = \dfrac{U_1 - U_2}{I_2 - I_1}$
+**Kaava:** $$\begin{aligned} U &= E - R_\text{s} I \\ \Delta U &= -R_\text{s} \Delta I \\ R_\text{s} &= -\dfrac{\Delta U}{\Delta I} \\ &= \dfrac{U_1 - U_2}{I_2 - I_1} \end{aligned}$$
 **Muunnokset:** Ei tarvita: $1\,\text{V} : 1\,\text{A} = 1\,\Omega$.
 **Sijoitus:** $R_\text{s} = \dfrac{1{,}54\,\text{V} - 0{,}87\,\text{V}}{1{,}20\,\text{A} - 0\,\text{A}} = \dfrac{0{,}67\,\text{V}}{1{,}20\,\text{A}} = 0{,}558\,\Omega$
 **Vastaus:** a) $E \approx 1{,}54\,\text{V}$; b) $R_\text{s} \approx 0{,}56\,\Omega$, kaksi merkitsevää numeroa, koska suora sovitetaan silmämääräisesti. Silmämääräinen sovitus vaihtelee: kulmakerroin voi muuttua noin $\pm 0{,}03\,\Omega$, joten arvo väliltä $0{,}53\text{–}0{,}59\,\Omega$ on hyvä vastaus.
@@ -161,7 +161,7 @@ Väite, jonka mukaan jännitteet ovat aina yhtä suuret, ei pidä: lähdejännit
 **Kysytty:** a) virta $I$, jolla napajännitteet ovat yhtä suuret; b) kumpi paristo on parempi suurella virralla ja miksi
 **Periaate:** Kumpikin paristo noudattaa mallia $U = E - R_\text{s} I$, joten kummankin pisteet sopivat omalle laskevalle suoralle. Suorien leikkauskohdassa napajännitteet ovat yhtä suuret. Suoran kulmakerroin on $-R_\text{s}$, joten loivempi suora tarkoittaa pienempää sisäistä resistanssia.
 **Kuvaajan lukeminen:** A-pariston suora kulkee pisteiden $(0\,\text{A};\ 1{,}60\,\text{V})$ ja $(1{,}00\,\text{A};\ 1{,}10\,\text{V})$ kautta, joten $E_\text{A} = 1{,}60\,\text{V}$ ja $R_\text{A} = 0{,}50\,\Omega$. B-pariston suora kulkee pisteiden $(0\,\text{A};\ 1{,}49\,\text{V})$ ja $(1{,}00\,\text{A};\ 1{,}27\,\text{V})$ kautta, joten $E_\text{B} = 1{,}49\,\text{V}$ ja $R_\text{B} = 0{,}22\,\Omega$. Suorat leikkaavat kuvaajassa noin virralla $0{,}4\,\text{A}$, taulukon rivien $0{,}30\,\text{A}$ ja $0{,}50\,\text{A}$ välissä: ensin A:n napajännite on suurempi ($1{,}45\,\text{V}$ ja $1{,}42\,\text{V}$), sitten B:n ($1{,}35\,\text{V}$ ja $1{,}38\,\text{V}$).
-**Kaava:** $E_\text{A} - R_\text{A} I = E_\text{B} - R_\text{B} I$, josta $I = \dfrac{E_\text{A} - E_\text{B}}{R_\text{A} - R_\text{B}}$
+**Kaava:** $$\begin{aligned} U_\text{A} &= E_\text{A} - R_\text{A} I \\ U_\text{B} &= E_\text{B} - R_\text{B} I \\ U_\text{A} &= U_\text{B} \\ E_\text{A} - R_\text{A} I &= E_\text{B} - R_\text{B} I \\ (R_\text{A} - R_\text{B}) I &= E_\text{A} - E_\text{B} \\ I &= \dfrac{E_\text{A} - E_\text{B}}{R_\text{A} - R_\text{B}} \end{aligned}$$
 **Muunnokset:** Ei tarvita: $1\,\text{V} : 1\,\Omega = 1\,\text{A}$.
 **Sijoitus:** $I = \dfrac{1{,}60\,\text{V} - 1{,}49\,\text{V}}{0{,}50\,\Omega - 0{,}22\,\Omega} = \dfrac{0{,}11\,\text{V}}{0{,}28\,\Omega} = 0{,}39\,\text{A}$
 **Vastaus:** a) noin $0{,}40\,\text{A}$; graafinen lukema ja laskenta antavat arvon väliltä $0{,}35\text{–}0{,}45\,\text{A}$, koska suorien sovitus vaihtelee.
@@ -189,9 +189,9 @@ Sisäinen resistanssi saadaan mittaamalla napajännite ja virta kuormitettuna, m
 **Kysytty:** a) kummankin pariston $E$ ja $R_\text{s}$; b) osuus ikääntyneen pariston kehittämästä sähkötehosta, joka muuttuu pariston sisäenergiaksi, prosentteina; c) vastukseen siirtyvä teho vastuksilla $0{,}55\,\Omega$, $1{,}1\,\Omega$, $2{,}2\,\Omega$ ja $4{,}4\,\Omega$ sekä suurimman tehon kuorma
 **Periaate:** Kummankin pariston napajännite noudattaa mallia $U = E - R_\text{s} I$, joten sovitetun suoran leikkaus pystyakselilla on $E$ ja kulmakerroin on $-R_\text{s}$. Kuormitettuna virta on $I = E : (R + R_\text{s})$. Pariston kehittämä teho on $P = EI$, sisäiseen resistanssiin muuttuu teho $R_\text{s} I^2$ ja kuormaan teho $RI^2$. Tehon lauseke saadaan sähkötehon kaavasta (luku *Sähköteho ja vastuksen lämpeneminen*).
 **Kuvaajan lukeminen:** Uuden pariston suora kulkee pisteiden $(0{,}10\,\text{A};\ 1{,}56\,\text{V})$ ja $(0{,}50\,\text{A};\ 1{,}46\,\text{V})$ kautta ja ikääntyneen pisteiden $(0{,}10\,\text{A};\ 1{,}41\,\text{V})$ ja $(0{,}50\,\text{A};\ 0{,}97\,\text{V})$ kautta. Kummankin pisteet jäävät suoran molemmille puolille.
-**Kaava:** $R_\text{s} = \dfrac{U_1 - U_2}{I_2 - I_1}$ ja $E = U_1 + R_\text{s} I_1$
+**Kaava:** $$\begin{aligned} U_1 &= E - R_\text{s} I_1 \\ U_2 &= E - R_\text{s} I_2 \\ U_1 - U_2 &= R_\text{s}(I_2 - I_1) \\ R_\text{s} &= \dfrac{U_1 - U_2}{I_2 - I_1} \\ E &= U_1 + R_\text{s} I_1 \end{aligned}$$
 
-$I = \dfrac{E}{R + R_\text{s}}$
+$$\begin{aligned} E - R_\text{s} I - RI &= 0 \\ I &= \dfrac{E}{R + R_\text{s}} \end{aligned}$$
 
 $\text{osuus} = \dfrac{R_\text{s} I^2}{EI} = \dfrac{R_\text{s}}{R + R_\text{s}}$
 
@@ -216,7 +216,7 @@ Tehon maksimi on loiva, kuten arvot $0{,}47\,\text{W}$, $0{,}53\,\text{W}$ ja $0
 **Kysytty:** a) lähdejännite $E$; b) oppilaan virhe ja paristoryhmän oikea sisäinen resistanssi; c) paristoryhmän oikea oikosulkuvirta $I_\text{k}$ ampeereina
 **Periaate:** Jännitemittari on kuormitusvastuksen napoissa, joten se näyttää paristoryhmän napajännitteestä vielä johtimien jännitehäviön $R_\text{j} I$ verran pienemmän jännitteen: $$\begin{aligned} U &= E - R_\text{s} I - R_\text{j} I \\ &= E - (R_\text{s} + R_\text{j}) I \end{aligned}$$. Kuvaajan kulmakerroin on siis $-(R_\text{s} + R_\text{j})$, ja oppilaan luku sisältää johtimien resistanssin. Paristoryhmän oma sisäinen resistanssi saadaan vähentämällä $R_\text{j}$, ja oikosulkuvirta lasketaan siitä.
 **Kuvaajan lukeminen:** Sovitettu suora kulkee pisteiden $(0{,}50\,\text{A};\ 5{,}56\,\text{V})$ ja $(3{,}00\,\text{A};\ 2{,}80\,\text{V})$ kautta. Pisteet jäävät suoran molemmille puolille. Suora leikkaa pystyakselin kohdassa $6{,}11\,\text{V}$, joka on lähdejännite, koska virran ollessa nolla johtimissa ei ole jännitehäviötä.
-**Kaava:** $E = U_1 + (R_\text{s} + R_\text{j}) I_1$; $R_\text{s} + R_\text{j} = \dfrac{U_1 - U_2}{I_2 - I_1}$; $R_\text{s} = (R_\text{s} + R_\text{j}) - R_\text{j}$; $I_\text{k} = \dfrac{E}{R_\text{s}}$
+**Kaava:** $$\begin{aligned} U &= E - (R_\text{s} + R_\text{j}) I \\ U_1 - U_2 &= (R_\text{s} + R_\text{j})(I_2 - I_1) \\ R_\text{s} + R_\text{j} &= \dfrac{U_1 - U_2}{I_2 - I_1} \\ E &= U_1 + (R_\text{s} + R_\text{j}) I_1 \\ R_\text{s} &= (R_\text{s} + R_\text{j}) - R_\text{j} \\ 0 &= E - R_\text{s} I_\text{k} \\ I_\text{k} &= \dfrac{E}{R_\text{s}} \end{aligned}$$
 **Muunnokset:** Ei tarvita: $1\,\text{V} : 1\,\text{A} = 1\,\Omega$.
 **Sijoitus:** a) $R_\text{s} + R_\text{j} = \dfrac{5{,}56\,\text{V} - 2{,}80\,\text{V}}{3{,}00\,\text{A} - 0{,}50\,\text{A}} = \dfrac{2{,}76\,\text{V}}{2{,}50\,\text{A}} = 1{,}10\,\Omega$
 
@@ -259,8 +259,7 @@ Epävarmuus vaikuttaa myös tulokseen: jos ääripisteiden lukemat ovat $0{,}01\
 **Kysytty:** akun sisäinen resistanssi $R_\text{s}$ ohmeina
 **Periaate:** Napajännite on $U = E - R_\text{s} I$, joten $(I, U)$-kuvaaja on laskeva suora, jonka kulmakerroin on $-R_\text{s}$. Sisäinen resistanssi saadaan kulmakertoimesta, ei yhdestä pisteestä: yhden pisteen $U : I$ olisi ulkoisen kuorman resistanssi.
 **Kuvaajan lukeminen:** Luetaan suoralta kaksi kaukana toisistaan olevaa ruudukkopistettä. Virralla $I_1 = 50\,\text{A}$ napajännite on $U_1 = 11\,\text{V}$ ja virralla $I_2 = 250\,\text{A}$ se on $U_2 = 7\,\text{V}$.
-**Kaava:** Kahdelle suoran pisteelle $U_1 = E - R_\text{s} I_1$ ja $U_2 = E - R_\text{s} I_2$. Vähennetään yhtälöt: $U_1 - U_2 = R_\text{s}(I_2 - I_1)$, josta
-$$R_\text{s} = \frac{U_1 - U_2}{I_2 - I_1}$$
+**Kaava:** $$\begin{aligned} U_1 &= E - R_\text{s} I_1 \\ U_2 &= E - R_\text{s} I_2 \\ U_1 - U_2 &= R_\text{s}(I_2 - I_1) \\ R_\text{s} &= \dfrac{U_1 - U_2}{I_2 - I_1} \end{aligned}$$
 **Muunnokset:** Ei tarvita: jännite on voltteina ja virta ampeereina.
 **Sijoitus:** $R_\text{s} = \dfrac{11\,\text{V} - 7\,\text{V}}{250\,\text{A} - 50\,\text{A}} = \dfrac{4\,\text{V}}{200\,\text{A}} = 0{,}020\,\Omega$
 **Vastaus:** $0{,}020\,\Omega$ eli $20\,\text{m}\Omega$. Vastauksessa on kaksi merkitsevää numeroa, koska arvot luetaan ruudukolta.

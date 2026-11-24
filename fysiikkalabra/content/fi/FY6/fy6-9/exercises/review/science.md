@@ -1,15 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 7a6a4a96cc364108
+CONTENT-HASH: f4c96813537f2d5f
+SCOPE: delta caption-label,md-paragraphs,numbers,typography from 7a6a4a96cc364108 base 5b3ca4f
 
 ## Blocking
+- none
 
 ## Polish
+- content/fi/FY6/fy6-9/exercises/solutions.md (L3-03, Kaava) — $U = R_\text{s} I$ reuses $U$, which in this chapter is the terminal voltage ($U = E + R_\text{s}I$) — write $U_\text{s} = R_\text{s} I$.
 
 ## Checked
-- Round-1 Blocking (fy6-9-L2-09 d) is fixed. The two instructions are now the student's own choice. The examples are presented as "tyypillisiä latausohjeita" with "tarkista sanamuoto aineistosta", and each reason is marked as the solution's own physics, not the source's. The cold-battery reason is no longer attributed to the source and is left outside the chapter's physics. Nothing specific is now said to be on the Tukes page.
-- The physics in d) is unchanged and correct. I = (U_lat − E)/(R + R_s) with a small R_s gives a large I. R_sI² quadruples when I doubles. An internal short turns the stored 1,8 MJ quickly into internal energy. The safety wording is not unsafe.
-- Round-1 Polish (c) is fixed. The 120 W is now named as the power into the battery, and the loss is R_sI² with only EI stored. The charger's own losses are a separate remark about the energy taken from the socket. The falling current through the rising E and the Li-ion charger's taper match the brief.
-- Answer recomputed: W = UQ = 504 Wh = 1,81 MJ and t = UQ/P = 4,2 h, matching answers.py and exercises.json (tolerance 0,02). The cross-check I = P/U → 4,2 h is a real check.
-- Annettu now names the source only as the place the student reads the instructions; no claims are attributed to it.
-- Reflowed chains in the older tasks: same numbers, signs and units in the same order.
-- Hash read at start and end: unchanged.
+- Hash f4c96813537f2d5f at start and end. Round-1 blocker fixed: all five voltage-law Kaava blocks (L2-01, L2-02, L2-07, L3-02, L3-05) now open with $\sum \Delta V = 0$, the lesson's Kirchhoff notation; no $\Sigma U = 0$ is left in fi, en or fi-easy.
+- The signed row after it, $U_\text{lat} - RI - R_\text{s}I - E = 0$, has the right signs for charging (the current crosses the battery from + to −), and every rearrangement to $I$, $R_\text{s}$, $R_\text{kok}$ and $I_k$ is algebraically correct.
+- The other new Kaava blocks start from $Q = It$, $W = UQ$, $W = Pt$, $P = UI$ and $\eta = W_\text{akku}/W_\text{lat}$, as the lesson writes them, and end in the symbolic form that is substituted.
+- L3-04: $E = U_\text{ka} + R_\text{s}I$ matches the lesson's discharge relation $U = E - R_\text{s}I$; it gives $0{,}10\,\Omega$ and $E = 3{,}75\,\text{V}$ for both currents.
+- Recomputed every answer in one script with my own formulas: 16 h, 4,0 Ah, 5,2 h, 5,0 A, 0,20 Ω, 97,5 min, 84 %, 9,3225 Wh, 1,5 Wh, 0,40 Ω, 61,05 Wh, 4,2 h, 1,28, 33,3 %, 3,24 kJ, 77,45 %, 7,125 h (and 6,0 h). All agree with answers.py.
+- The split paragraphs (L1-06, L3-01 c–d, L3-04) keep the same claims and the safety wording; the energy wording follows the guardrail (sisäenergiaksi, joka siirtyy lämpönä).
+- Captions: only the marker esimerkkiaineisto was removed; the data are unchanged.

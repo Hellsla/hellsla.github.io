@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: fb8bc2ae3ac4c6db
-SCOPE: delta numbers,typography from 9f84f4124a537fa5 base 36194da
+CONTENT-HASH: 870b888366bc5011
+SCOPE: delta caption-label,md-paragraphs,numbers,reflow,typography from fb8bc2ae3ac4c6db base b5600a6
 
 ## Blocking
+(none)
 
 ## Polish
-- solutions.md fy6-12-L2-09 Järkevyys: the "3,0 kV antaisi nopeuden 3,2·10^7 m/s ... pienempi jännite antaa pienemmän nopeuden" comparison is arbitrary and trivial; the earlier polish remains (replace by the 200 eV / 2,8 % of c line alone).
-- exercises.json fy6-12-L2-09: the question is not the last sentence; carried over from the previous report.
+(none)
 
 ## Checked
-- The diff changes only \frac to \tfrac and \dfrac in the Kaava and Sijoitus lines of fy6-12-L2-09; numbers and meaning unchanged.
-- Inline fraction in Kaava (\tfrac) and the display fraction under the root (\dfrac) read well; no clipping risk added.
-- 8,387 · 10^6 m/s still follows from 2 · 1,602 · 10^-19 · 200 : 9,109 · 10^-31.
-- Nothing else of the set touched since the version passed.
+- The Kaava/Formula step of the model solutions now starts from the basic principle equation (F = qE, W = qU, energy conservation, Newton's laws, Coulomb) and derives the result row by row; each row follows from the previous one.
+- The derivations match the Principle step above them; no step is skipped and no new symbol appears without explanation.
+- Re-broken aligned rows keep numbers, signs and units unchanged; no task, data, level or answer changed.
+- Split solution and model-answer paragraphs read more easily, text unchanged in substance.
+- Rows are short, so they stay readable at 360 px.

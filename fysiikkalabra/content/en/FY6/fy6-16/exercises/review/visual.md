@@ -1,15 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 67b7360bddcf5fd7
+CONTENT-HASH: a18be3521b5b027b
+SCOPE: delta numbers from 67b7360bddcf5fd7 base 3076572
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] solutions.md, the cable-current task Answer (untouched by the diff): the paragraph ends with the run-on label "a)" ("...rounded down. a) The current of the house..."); break before "a)".
+- [Minor] solutions.md Formula blocks — subscripts `\text{k}` (kenkä/body) and `\text{p}` (pääsulake) are Finnish initials; no Finnish words remain in the English maths (grep and captures checked), but `\text{shoe}`/`\text{main}` would read better when next edited.
 
 ## Checked
-- delta (solutions.md paragraph breaks): read the diff; breaks now sit right before the part labels, round-1 findings resolved, no word changes.
-- Opened sample captures at 1280 px (fy6-11 L3-7, fy6-16 L3-5 and L3-8): paragraph spacing even, nothing clipped.
+- Delta (solutions.md): the new Kaava/Formula blocks that start from basic-principle equations, as aligned multi-row display maths. Captures opened (1280 px, every solution open): L3-7, L3-8 (house current + cable, 6 rows, Formula/Substitution).
+- Blocks render without red KaTeX, equals signs aligned, fractions and subscripts legible, nothing clipped at 664 px column; the following Muunnokset/Sijoitus blocks survived. English: no Finnish words in the maths of the captured blocks (text-subscript grep over every Formula line too).
+- Not opened: 390 px solution captures (none made for open solutions; check_layout 360 px passes).
 
 ## Scores
-illustrations n/a · typography 5 · Finnish 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

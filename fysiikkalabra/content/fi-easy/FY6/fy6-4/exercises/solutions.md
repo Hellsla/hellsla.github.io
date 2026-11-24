@@ -12,7 +12,7 @@
 **Annettu:** rinnan kytketyt vastukset $R_1 = 40\,\Omega$ ja $R_2 = 60\,\Omega$
 **Kysytty:** kokonaisresistanssi $R$ ohmeina
 **Periaate:** Rinnankytkennässä kummankin vastuksen yli on sama jännite. Haaravirrat lasketaan yhteen. Siksi kokonaisresistanssin käänteisluku on haarojen resistanssien käänteislukujen summa.
-**Kaava:** $\dfrac{1}{R} = \dfrac{1}{R_1} + \dfrac{1}{R_2}$, josta $R = \dfrac{R_1 R_2}{R_1 + R_2}$
+**Kaava:** $$\begin{aligned} I &= I_1 + I_2 \\ U &= RI \Rightarrow \dfrac{U}{R} = \dfrac{U}{R_1} + \dfrac{U}{R_2} \\ \dfrac{1}{R} &= \dfrac{1}{R_1} + \dfrac{1}{R_2} \\ R &= \dfrac{R_1 R_2}{R_1 + R_2} \end{aligned}$$
 **Muunnokset:** Ei tarvita, molemmat resistanssit ovat ohmeina.
 **Sijoitus:** $R = \dfrac{40\,\Omega \cdot 60\,\Omega}{40\,\Omega + 60\,\Omega} = \dfrac{2400\,\Omega^2}{100\,\Omega} = 24\,\Omega$
 **Vastaus:** $24\,\Omega$, kaksi merkitsevää numeroa kuten vastusten arvoissa.
@@ -42,7 +42,7 @@
 **Annettu:** kolme rinnan kytkettyä vastusta, kukin $R_1 = 330\,\Omega$
 **Kysytty:** kokonaisresistanssi $R$ ohmeina
 **Periaate:** Rinnankytkennässä jokaisen vastuksen yli on sama jännite. Haaravirrat lasketaan yhteen, joten kokonaisresistanssin käänteisluku on haarojen käänteislukujen summa. Kun vastukset ovat yhtä suuret, summa on kolme kertaa yksi käänteisluku.
-**Kaava:** $\dfrac{1}{R} = \dfrac{1}{R_1} + \dfrac{1}{R_1} + \dfrac{1}{R_1} = \dfrac{3}{R_1}$, josta $R = \dfrac{R_1}{3}$
+**Kaava:** $$\begin{aligned} I &= 3I_1 \\ U &= RI \Rightarrow \dfrac{U}{R} = 3\cdot\dfrac{U}{R_1} \\ \dfrac{1}{R} &= \dfrac{3}{R_1} \\ R &= \dfrac{R_1}{3} \end{aligned}$$
 **Muunnokset:** Ei tarvita, resistanssi on ohmeina.
 **Sijoitus:** $R = \dfrac{330\,\Omega}{3} = 110\,\Omega$
 **Vastaus:** $110\,\Omega$, kolme merkitsevää numeroa kuten resistanssissa $330\,\Omega$.
@@ -52,7 +52,7 @@
 **Annettu:** sarjaan kytketyt vastukset $R_1 = 1{,}2\,\text{k}\Omega$ ja $R_2 = 680\,\Omega$, pariston jännite $U = 9{,}0\,\text{V}$
 **Kysytty:** piirin virta $I$ milliampeereina
 **Periaate:** Sarjaankytkennässä on vain yksi reitti, joten sama virta kulkee kummankin vastuksen läpi. Kytkennän voi korvata kokonaisresistanssilla, joka on resistanssien summa. Virta saadaan Ohmin laista.
-**Kaava:** $R = R_1 + R_2$ ja $U = RI$, josta $I = \dfrac{U}{R_1 + R_2}$
+**Kaava:** $$\begin{aligned} U &= U_1 + U_2 \\ U_1 &= R_1 I, \; U_2 = R_2 I \\ U &= (R_1 + R_2) I \\ I &= \dfrac{U}{R_1 + R_2} \end{aligned}$$
 **Muunnokset:** $R_1 = 1{,}2\,\text{k}\Omega = 1{,}2 \cdot 1000\,\Omega = 1200\,\Omega$. Lopuksi $1\,\text{A} = 1000\,\text{mA}$.
 **Sijoitus:** $I = \dfrac{9{,}0\,\text{V}}{1200\,\Omega + 680\,\Omega} = \dfrac{9{,}0\,\text{V}}{1880\,\Omega} = 0{,}004\,787\,\text{A} = 4{,}787\,\text{mA}$
 **Vastaus:** $4{,}8\,\text{mA}$, kaksi merkitsevää numeroa kuten jännitteessä $9{,}0\,\text{V}$ ja resistanssissa $1{,}2\,\text{k}\Omega$.
@@ -62,7 +62,7 @@
 **Annettu:** lampun jännite $U_\text{L} = 2{,}5\,\text{V}$ ja virta $I = 0{,}10\,\text{A}$, pariston jännite $U = 6{,}0\,\text{V}$
 **Kysytty:** sarjavastuksen resistanssi $R_\text{s}$
 **Periaate:** Lamppu ja vastus ovat sarjassa, joten sama virta $I$ kulkee kummankin läpi. Pariston jännite jakautuu niiden kesken. Vastuksen yli on se osa jännitteestä, joka ei jää lampulle. Vastuksen resistanssi saadaan Ohmin laista.
-**Kaava:** $U = U_\text{L} + U_\text{s}$ ja $U_\text{s} = R_\text{s} I$, josta $R_\text{s} = \dfrac{U - U_\text{L}}{I}$
+**Kaava:** $$\begin{aligned} U &= U_\text{L} + U_\text{s} \\ U_\text{s} &= U - U_\text{L} \\ U_\text{s} &= R_\text{s} I \\ R_\text{s} &= \dfrac{U_\text{s}}{I} = \dfrac{U - U_\text{L}}{I} \end{aligned}$$
 **Muunnokset:** Ei tarvita: jännitteet ovat voltteina ja virta ampeereina, ja $\tfrac{\text{V}}{\text{A}} = \Omega$.
 **Sijoitus:** $R_\text{s} = \dfrac{6{,}0\,\text{V} - 2{,}5\,\text{V}}{0{,}10\,\text{A}} = \dfrac{3{,}5\,\text{V}}{0{,}10\,\text{A}} = 35\,\Omega$
 **Vastaus:** $35\,\Omega$, kaksi merkitsevää numeroa kuten virrassa $0{,}10\,\text{A}$.
@@ -72,7 +72,7 @@
 **Annettu:** rinnan kytketyt vastukset $R_1 = 30\,\Omega$ ja tuntematon $R_2$, pariston jännite $U = 6{,}0\,\text{V}$, paristosta lähtevä virta $I = 0{,}50\,\text{A}$
 **Kysytty:** tuntemattoman vastuksen resistanssi $R_2$
 **Periaate:** Rinnankytkennässä kummankin vastuksen yli on pariston jännite. Paristosta lähtevä virta on haaravirtojen summa. Tunnetun vastuksen virta saadaan Ohmin laista, ja loppu virrasta kulkee tuntemattoman vastuksen kautta.
-**Kaava:** $I = I_1 + I_2$, $I_1 = \dfrac{U}{R_1}$ ja $I_2 = \dfrac{U}{R_2}$, josta $R_2 = \dfrac{U}{I - \dfrac{U}{R_1}}$
+**Kaava:** $$\begin{aligned} I &= I_1 + I_2 \\ I_1 &= \dfrac{U}{R_1} \\ I_2 &= I - I_1 = I - \dfrac{U}{R_1} \\ U &= R_2 I_2 \Rightarrow R_2 = \dfrac{U}{I_2} = \dfrac{U}{I - \dfrac{U}{R_1}} \end{aligned}$$
 **Muunnokset:** Ei tarvita: jännite on voltteina, virta ampeereina ja resistanssi ohmeina.
 **Sijoitus:** $I_1 = \dfrac{6{,}0\,\text{V}}{30\,\Omega} = 0{,}20\,\text{A}$ ja $R_2 = \dfrac{6{,}0\,\text{V}}{0{,}50\,\text{A} - 0{,}20\,\text{A}} = \dfrac{6{,}0\,\text{V}}{0{,}30\,\text{A}} = 20\,\Omega$
 **Vastaus:** $20\,\Omega$, kaksi merkitsevää numeroa kuten annetuissa arvoissa.
@@ -82,7 +82,7 @@
 **Annettu:** rinnan kytketyt vastukset $R_1 = 2{,}2\,\text{k}\Omega$ ja $R_2 = 3{,}3\,\text{k}\Omega$
 **Kysytty:** kokonaisresistanssi $R$ kilo-ohmeina
 **Periaate:** Rinnankytkennässä kummankin vastuksen yli on sama jännite. Haaravirrat lasketaan yhteen, joten kokonaisresistanssin käänteisluku on käänteislukujen summa. Kahdelle vastukselle sen voi ratkaista valmiiksi.
-**Kaava:** $\dfrac{1}{R} = \dfrac{1}{R_1} + \dfrac{1}{R_2}$, josta $R = \dfrac{R_1 R_2}{R_1 + R_2}$
+**Kaava:** $$\begin{aligned} I &= I_1 + I_2 \\ U &= RI \Rightarrow \dfrac{U}{R} = \dfrac{U}{R_1} + \dfrac{U}{R_2} \\ \dfrac{1}{R} &= \dfrac{1}{R_1} + \dfrac{1}{R_2} \\ R &= \dfrac{R_1 R_2}{R_1 + R_2} \end{aligned}$$
 **Muunnokset:** $R_1 = 2{,}2 \cdot 1000\,\Omega = 2200\,\Omega$ ja $R_2 = 3{,}3 \cdot 1000\,\Omega = 3300\,\Omega$. Lopuksi $1\,\text{k}\Omega = 1000\,\Omega$.
 **Sijoitus:** $R = \dfrac{2200\,\Omega \cdot 3300\,\Omega}{2200\,\Omega + 3300\,\Omega} = \dfrac{7\,260\,000\,\Omega^2}{5500\,\Omega} = 1320\,\Omega = 1{,}32\,\text{k}\Omega$
 **Vastaus:** $1{,}3\,\text{k}\Omega$, kaksi merkitsevää numeroa kuten vastusten arvoissa.
@@ -93,7 +93,7 @@
 **Kysytty:** vastuksen $R_3$ virta $I_3$ milliampeereina
 **Periaate:** Rinnakkaiset vastukset $R_2$ ja $R_3$ korvataan yhdellä vastuksella $R_{23}$, joka on sarjassa $R_1$:n kanssa. Paristosta lähtevä virta kulkee $R_1$:n ja koko rinnakkaisosan läpi. Rinnakkaisosan jännite on sama kummankin haaran yli. Vastuksen $R_3$ virta saadaan siitä Ohmin laista.
 **Kuvan lukeminen:** Kuvasta luetaan arvot $12\,\text{V}$, $R_1 = 40\,\Omega$, $R_2 = 60\,\Omega$ ja $R_3 = 120\,\Omega$. Vastukset $R_2$ ja $R_3$ ovat samojen kahden haarautumispisteen välissä eli rinnan. Koko paristosta lähtevä virta kulkee $R_1$:n läpi ja sitten rinnakkaisosaan. Vastus $R_1$ ja rinnakkaisosa ovat siis peräkkäin eli sarjassa.
-**Kaava:** $R_{23} = \dfrac{R_2 R_3}{R_2 + R_3}$, $I = \dfrac{U}{R_1 + R_{23}}$, $U_{23} = R_{23} I$, josta $I_3 = \dfrac{U_{23}}{R_3}$
+**Kaava:** $$\begin{aligned} \dfrac{U_{23}}{R_{23}} &= \dfrac{U_{23}}{R_2} + \dfrac{U_{23}}{R_3} \\ R_{23} &= \dfrac{R_2 R_3}{R_2 + R_3} \\ U &= R_1 I + R_{23} I \\ I &= \dfrac{U}{R_1 + R_{23}} \\ U_{23} &= R_{23} I \\ I_3 &= \dfrac{U_{23}}{R_3} = \dfrac{R_{23} U}{R_3 (R_1 + R_{23})} \end{aligned}$$
 **Muunnokset:** Ei tarvita laskun aikana. Lopuksi $1\,\text{A} = 1000\,\text{mA}$.
 **Sijoitus:** $R_{23} = \dfrac{60\,\Omega \cdot 120\,\Omega}{180\,\Omega} = 40\,\Omega$, $I = \dfrac{12\,\text{V}}{40\,\Omega + 40\,\Omega} = 0{,}15\,\text{A}$, $U_{23} = 40\,\Omega \cdot 0{,}15\,\text{A} = 6{,}0\,\text{V}$ ja $I_3 = \dfrac{6{,}0\,\text{V}}{120\,\Omega} = 0{,}050\,\text{A} = 50\,\text{mA}$
 **Vastaus:** $50\,\text{mA}$, kaksi merkitsevää numeroa kuten jännitteessä $12\,\text{V}$.
@@ -103,7 +103,7 @@
 **Annettu:** kaksi lämmitysvastusta, kumpikin $R_1 = 46\,\Omega$, verkkojännite $U = 230\,\text{V}$; resistanssi ei muutu
 **Kysytty:** kuinka moninkertainen virta $I_\text{rinnan}$ on virtaan $I_\text{sarja}$ verrattuna
 **Periaate:** Molemmissa kytkennöissä lämmittimen napojen välillä on sama verkkojännite. Ohmin lain mukaan lämmittimen virta riippuu siis vain kokonaisresistanssista. Sarjaan kytkettyjen yhtä suurten vastusten kokonaisresistanssi on kaksi kertaa yhden resistanssi. Rinnan kytkettyjen se on puolet siitä.
-**Kaava:** $R_\text{sarja} = 2R_1$ ja $R_\text{rinnan} = \dfrac{R_1}{2}$, joten $\dfrac{I_\text{rinnan}}{I_\text{sarja}} = \dfrac{U : R_\text{rinnan}}{U : R_\text{sarja}} = \dfrac{R_\text{sarja}}{R_\text{rinnan}} = \dfrac{2R_1}{R_1 : 2} = 4$
+**Kaava:** $$\begin{aligned} R_\text{sarja} &= R_1 + R_1 = 2R_1 \\ \dfrac{1}{R_\text{rinnan}} &= \dfrac{2}{R_1} \\ R_\text{rinnan} &= \dfrac{R_1}{2} \\ I &= \dfrac{U}{R} \\ \dfrac{I_\text{rinnan}}{I_\text{sarja}} &= \dfrac{R_\text{sarja}}{R_\text{rinnan}} \\ &= \dfrac{2R_1}{R_1 / 2} = 4 \end{aligned}$$
 **Muunnokset:** Ei tarvita: jännite ja resistanssi supistuvat suhteesta pois.
 **Sijoitus:** Lukuarvoilla $I_\text{sarja} = \dfrac{230\,\text{V}}{92\,\Omega} = 2{,}5\,\text{A}$ ja $I_\text{rinnan} = \dfrac{230\,\text{V}}{23\,\Omega} = 10\,\text{A}$, joten $\dfrac{I_\text{rinnan}}{I_\text{sarja}} = \dfrac{10\,\text{A}}{2{,}5\,\text{A}} = 4{,}0$
 **Vastaus:** $4$ kertaa. Suhde on tarkka, koska se ei riipu resistanssin eikä jännitteen arvosta, kun vastukset ovat yhtä suuret.
@@ -113,7 +113,7 @@
 **Annettu:** sarjaankytkennän kokonaisresistanssi $R_\text{s} = 250\,\Omega$, rinnankytkennän $R_\text{r} = 60\,\Omega$
 **Kysytty:** suuremman vastuksen resistanssi
 **Periaate:** Sarjaankytkennässä resistanssit lasketaan yhteen. Rinnankytkennän kokonaisresistanssi on resistanssien tulo jaettuna niiden summalla. Kahdesta yhtälöstä saadaan vastusten summa ja tulo, ja ne määräävät vastukset.
-**Kaava:** $R_1 + R_2 = R_\text{s}$ ja $R_1 R_2 = R_\text{r} R_\text{s}$ (rinnankytkennän kaavasta). Sijoitetaan $R_2 = R_\text{s} - R_1$, jolloin $R_1^2 - R_\text{s} R_1 + R_\text{r} R_\text{s} = 0$, josta $R_1 = \dfrac{R_\text{s} \pm \sqrt{R_\text{s}^2 - 4 R_\text{r} R_\text{s}}}{2}$
+**Kaava:** $$\begin{aligned} R_\text{s} &= R_1 + R_2 \\ \dfrac{1}{R_\text{r}} &= \dfrac{R_1 + R_2}{R_1 R_2} \\ R_1 R_2 &= R_\text{r} R_\text{s} \\ R_1 (R_\text{s} - R_1) &= R_\text{r} R_\text{s} \\ R_1^2 - R_\text{s} R_1 &= -R_\text{r} R_\text{s} \\ R_1 &= \dfrac{R_\text{s} \pm \sqrt{R_\text{s}^2 - 4 R_\text{r} R_\text{s}}}{2} \end{aligned}$$
 **Muunnokset:** Ei tarvita, molemmat resistanssit ovat ohmeina.
 **Sijoitus:** $R_\text{r} R_\text{s} = 60\,\Omega \cdot 250\,\Omega = 15\,000\,\Omega^2$ ja $$\begin{aligned} &R_\text{s}^2 - 4 R_\text{r} R_\text{s} \\ &= 62\,500\,\Omega^2 - 60\,000\,\Omega^2 \\ &= 2500\,\Omega^2 \end{aligned}$$, jonka neliöjuuri on $50\,\Omega$. Siis $R_1 = \dfrac{250\,\Omega \pm 50\,\Omega}{2}$, joten $R_1 = 150\,\Omega$ tai $R_1 = 100\,\Omega$
 **Vastaus:** $150\,\Omega$; toinen vastus on $100\,\Omega$. Kaksi merkitsevää numeroa kuten arvossa $60\,\Omega$; data otetaan tarkkoina, sillä juuren alla oleva ero $62\,500 - 60\,000$ on pieni ja tulos herkkä datan viimeiselle numerolle.
@@ -133,7 +133,7 @@
 **Annettu:** rinnan kytketyt vastukset $R_1 = 90\,\Omega$ ja tuntematon $R_x$, kokonaisresistanssi $R = 36\,\Omega$
 **Kysytty:** tuntemattoman vastuksen resistanssi $R_x$
 **Periaate:** Rinnankytkennässä kokonaisresistanssin käänteisluku on haarojen käänteislukujen summa. Kokonaisresistanssi ja toinen haara tunnetaan. Silloin tuntemattoman haaran käänteisluku saadaan vähennyslaskulla. Lopuksi se käännetään.
-**Kaava:** $\dfrac{1}{R} = \dfrac{1}{R_1} + \dfrac{1}{R_x}$, josta $\dfrac{1}{R_x} = \dfrac{1}{R} - \dfrac{1}{R_1}$
+**Kaava:** $$\begin{aligned} I &= I_1 + I_x \\ U &= RI \Rightarrow \dfrac{U}{R} = \dfrac{U}{R_1} + \dfrac{U}{R_x} \\ \dfrac{1}{R} &= \dfrac{1}{R_1} + \dfrac{1}{R_x} \\ \dfrac{1}{R_x} &= \dfrac{1}{R} - \dfrac{1}{R_1} \end{aligned}$$
 **Muunnokset:** Ei tarvita, kaikki resistanssit ovat ohmeina.
 **Sijoitus:** $\dfrac{1}{R_x} = \dfrac{1}{36\,\Omega} - \dfrac{1}{90\,\Omega} = \dfrac{5 - 2}{180\,\Omega} = \dfrac{1}{60\,\Omega}$, joten $R_x = 60\,\Omega$
 **Vastaus:** $60\,\Omega$, kaksi merkitsevää numeroa kuten annetuissa arvoissa.
@@ -144,7 +144,7 @@
 **Kysytty:** rinnankytkennän laskettu kokonaisresistanssi $R_\text{rinnan}$ ja onko ero mitattuun virherajan sisällä
 **Periaate:** Kytkentöjen kaavat ennustavat kokonaisresistanssin yksittäisistä resistansseista. Sarjaankytkennässä resistanssit lasketaan yhteen. Rinnankytkennässä yhteen lasketaan käänteisluvut. Lasketun ja mitatun arvon eroa verrataan niin, että ero suhteutetaan mitattuun arvoon. Sitten tulosta verrataan virherajaan.
 **Kuvaajan lukeminen:** Ei kuvaajaa; arvot luetaan taulukosta.
-**Kaava:** $R_\text{sarja} = R_1 + R_2 + R_3$ ja $\dfrac{1}{R_\text{rinnan}} = \dfrac{1}{R_1} + \dfrac{1}{R_2} + \dfrac{1}{R_3}$
+**Kaava:** $$\begin{aligned} U &= U_1 + U_2 + U_3 \\ R_\text{sarja} &= R_1 + R_2 + R_3 \\ I &= I_1 + I_2 + I_3 \\ \dfrac{1}{R_\text{rinnan}} &= \dfrac{1}{R_1} + \dfrac{1}{R_2} + \dfrac{1}{R_3} \end{aligned}$$
 **Muunnokset:** Ei tarvita, kaikki resistanssit ovat ohmeina.
 **Sijoitus:** a) $R_\text{sarja} = 217\,\Omega + 328\,\Omega + 468\,\Omega = 1013\,\Omega$. Ero mitattuun on $1013\,\Omega - 1009\,\Omega = 4\,\Omega$ eli $\dfrac{4\,\Omega}{1009\,\Omega} \approx 0{,}4\,\%$. Se on pienempi kuin $1{,}5\,\%$. b) $\dfrac{1}{R_\text{rinnan}} = \dfrac{1}{217\,\Omega} + \dfrac{1}{328\,\Omega} + \dfrac{1}{468\,\Omega} = 0{,}009\,794\,\dfrac{1}{\Omega}$, joten $R_\text{rinnan} = 102{,}1\,\Omega$. Ero mitattuun on $102{,}1\,\Omega - 101{,}4\,\Omega = 0{,}7\,\Omega$ eli $\dfrac{0{,}7\,\Omega}{101{,}4\,\Omega} \approx 0{,}7\,\%$.
 **Vastaus:** $102\,\Omega$, kolme merkitsevää numeroa kuten mittaustuloksissa. Sarjaankytkennän ero on noin $0{,}4\,\%$ ja rinnankytkennän noin $0{,}7\,\%$. Kumpikin on virherajan $1{,}5\,\%$ sisällä, joten mittaus tukee kytkentöjen kaavoja.
@@ -155,7 +155,7 @@
 **Kysytty:** rinnakkaisosan resistanssi $R_{23}$ mittarilukemista ja kytkentävirheen syy
 **Periaate:** Rinnakkaisosa on sarjassa vastuksen $R_1$ kanssa. Siksi paristosta lähtevä virta $I$ kulkee sen läpi. Ohmin lain mukaan rinnakkaisosan resistanssi on sen jännite jaettuna virralla. Tulosta verrataan arvoon, jonka rinnankytkennän kaava antaa vastuksille $200\,\Omega$ ja $200\,\Omega$.
 **Kuvaajan lukeminen:** Ei kuvaajaa; arvot luetaan taulukosta.
-**Kaava:** $R_{23} = \dfrac{U_{23}}{I}$ ja oikealla kytkennällä $R_{23} = \dfrac{R_2 R_3}{R_2 + R_3}$
+**Kaava:** $$\begin{aligned} U_{23} &= R_{23} I \Rightarrow R_{23} = \dfrac{U_{23}}{I} \\ \dfrac{U_{23}}{R_{23}} &= \dfrac{U_{23}}{R_2} + \dfrac{U_{23}}{R_3} \\ R_{23} &= \dfrac{R_2 R_3}{R_2 + R_3} \;\text{(oikea kytkentä)} \end{aligned}$$
 **Muunnokset:** $I = 30{,}2\,\text{mA} = 30{,}2 \cdot 0{,}001\,\text{A} = 0{,}0302\,\text{A}$.
 **Sijoitus:** $R_{23} = \dfrac{5{,}98\,\text{V}}{0{,}0302\,\text{A}} = 198\,\Omega$. Oikein kytketyllä piirillä $R_{23} = \dfrac{200\,\Omega \cdot 200\,\Omega}{400\,\Omega} = 100\,\Omega$. Vastuksen $R_1$ resistanssi mittarilukemista on $\dfrac{3{,}02\,\text{V}}{0{,}0302\,\text{A}} = 100\,\Omega$, joten $R_1$ on kunnossa.
 **Vastaus:** a) $198\,\Omega$, kolme merkitsevää numeroa kuten lukemissa. Oikein kytketyssä piirissä sen pitäisi olla $100\,\Omega$. b) Mitattu arvo on likimain yhden $200\,\Omega$:n vastuksen resistanssi. Toinen rinnakkaisista vastuksista ei siis ole mukana piirissä: sen johdin on irti tai haara on poikki. Virta kulkee vain yhden vastuksen kautta.
@@ -166,7 +166,7 @@
 **Kysytty:** tuntemattoman vastuksen resistanssi $R_x$
 **Periaate:** Jännitelähteen kannalta rinnankytkentä on kuin yksi vastus. Sen resistanssi saadaan Ohmin laista $R = U : I$. Mittaussarjan keskiarvo vähentää yksittäisen mittauksen hajontaa. Kokonaisresistanssi ja toinen haara tunnetaan. Silloin tuntematon haara saadaan rinnankytkennän kaavasta.
 **Kuvaajan lukeminen:** Ei kuvaajaa; arvot luetaan taulukosta. Jos pisteet piirrettäisiin $(I;\ U)$-koordinaatistoon, ne olisivat suoralla, joka kulkee origon kautta. Suoran kulmakerroin on kokonaisresistanssi.
-**Kaava:** $R = \dfrac{U}{I}$, $\dfrac{1}{R} = \dfrac{1}{R_1} + \dfrac{1}{R_x}$, josta $\dfrac{1}{R_x} = \dfrac{1}{R} - \dfrac{1}{R_1}$
+**Kaava:** $$\begin{aligned} U &= RI \Rightarrow R = \dfrac{U}{I} \\ \dfrac{U}{R} &= \dfrac{U}{R_1} + \dfrac{U}{R_x} \\ \dfrac{1}{R} &= \dfrac{1}{R_1} + \dfrac{1}{R_x} \\ \dfrac{1}{R_x} &= \dfrac{1}{R} - \dfrac{1}{R_1} \end{aligned}$$
 **Muunnokset:** $83\,\text{mA} = 83 \cdot 0{,}001\,\text{A} = 0{,}083\,\text{A}$, ja vastaavasti muut virrat.
 **Sijoitus:** a) Suhteet $U : I$ ovat $24{,}1\,\Omega$, $24{,}1\,\Omega$, $24{,}3\,\Omega$, $24{,}0\,\Omega$ ja $24{,}2\,\Omega$. Niiden summa on $120{,}7\,\Omega$, joten keskiarvo on $R_\text{ka} = \dfrac{120{,}7\,\Omega}{5} = 24{,}13\,\Omega$. b) $\dfrac{1}{R_x} = \dfrac{1}{24{,}13\,\Omega} - \dfrac{1}{60\,\Omega} = 0{,}02477\,\dfrac{1}{\Omega}$, joten $R_x = 40{,}4\,\Omega$.
 **Vastaus:** $40\,\Omega$, kaksi merkitsevää numeroa kuten jännitteissä ja virroissa. Laskussa pidetään yksi numero enemmän, $40{,}4\,\Omega$. Suhteet vaihtelevat vain välillä $24{,}0\,\Omega$ ja $24{,}3\,\Omega$, joten kokonaisresistanssi $24{,}1\,\Omega$ on luotettava.
@@ -177,7 +177,7 @@
 **Kysytty:** a) oikein kytketyn levyn kokonaisresistanssi, b) vikaa selittävä kytkentä ja c) vastuksen $R_3$ virta $I_3$ korjatussa piirissä milliampeereina
 **Periaate:** Oikein kytketty levy on sekakytkentä. Rinnakkaiset $R_2$ ja $R_3$ korvataan yhdellä vastuksella $R_{23}$, joka on sarjassa vastuksen $R_1$ kanssa. Mitattua $180\,\Omega$ verrataan oikean kytkennän arvoon ja vian ehdokkaan arvoon. Virtamittarit kertovat, missä haarassa virtaa ei kulje. Korjatussa piirissä rinnakkaisosan jännite saadaan Ohmin laista. Se jaetaan vastuksen $R_3$ resistanssilla.
 **Kuvaajan lukeminen:** Ei kuvaajaa; arvot luetaan taulukosta.
-**Kaava:** $R_{23} = \dfrac{R_2 R_3}{R_2 + R_3}$, $R = R_1 + R_{23}$, $I = \dfrac{U}{R}$, $U_{23} = R_{23} I$ ja $I_3 = \dfrac{U_{23}}{R_3}$
+**Kaava:** $$\begin{aligned} \dfrac{U_{23}}{R_{23}} &= \dfrac{U_{23}}{R_2} + \dfrac{U_{23}}{R_3} \\ R_{23} &= \dfrac{R_2 R_3}{R_2 + R_3} \\ U &= R_1 I + R_{23} I \\ R &= R_1 + R_{23} \\ I &= \dfrac{U}{R} \\ U_{23} &= R_{23} I \\ I_3 &= \dfrac{U_{23}}{R_3} = \dfrac{R_{23} U}{R_3 R} \end{aligned}$$
 **Muunnokset:** Ei tarvita laskun aikana. Lopuksi $1\,\text{A} = 1000\,\text{mA}$.
 **Sijoitus:** a) $R_{23} = \dfrac{110\,\Omega \cdot 110\,\Omega}{220\,\Omega} = 55\,\Omega$ ja $R = 70\,\Omega + 55\,\Omega = 125\,\Omega$. b) Jos toinen haara on irti, jäljellä on vain yksi $110\,\Omega$:n vastus, ja $R = 70\,\Omega + 110\,\Omega = 180\,\Omega$. Se vastaa mittausta. Virta $R_3$:n johdossa on $0{,}0\,\text{mA}$ ja $R_2$:n virta on yhtä suuri kuin pariston virta, joten irti on $R_3$. c) Korjatussa piirissä $I = \dfrac{9{,}0\,\text{V}}{125\,\Omega} = 0{,}072\,\text{A}$, $U_{23} = 55\,\Omega \cdot 0{,}072\,\text{A} = 3{,}96\,\text{V}$ ja $I_3 = \dfrac{3{,}96\,\text{V}}{110\,\Omega} = 0{,}036\,\text{A} = 36\,\text{mA}$
 **Vastaus:** $36\,\text{mA}$, kaksi merkitsevää numeroa kuten jännitteessä $9{,}0\,\text{V}$. Levyn kokonaisresistanssin pitäisi olla $125\,\Omega$. Mittaukset selittyvät sillä, että vastus $R_3$ on irti johtimesta.
@@ -188,7 +188,7 @@
 **Kysytty:** parhaan kahden vastuksen kytkennän kokonaisresistanssi ja sen poikkeama arvosta $470\,\Omega$ prosentteina
 **Periaate:** Sarjaankytkennän tulos on suurempi kuin kumpikaan vastuksista. Rinnankytkennän tulos on pienempi kuin kumpikaan. Tämä rajaa ehdokkaat ennen laskemista. Sarjaan sopivat vain pienet vastukset ja rinnan vain suuret. Ehdokkaiden kokonaisresistanssit lasketaan, ja poikkeamia $\dfrac{|R - R_\text{tav}|}{R_\text{tav}}$ verrataan.
 **Kuvaajan lukeminen:** Ei kuvaajaa; arvot luetaan tehtävästä.
-**Kaava:** $R_\text{sarja} = R_a + R_b$, $R_\text{rinnan} = \dfrac{R_a R_b}{R_a + R_b}$ ja poikkeama $p = \dfrac{|R - R_\text{tav}|}{R_\text{tav}} \cdot 100\,\%$
+**Kaava:** $$\begin{aligned} R_\text{sarja} &= R_a + R_b \\ \dfrac{1}{R_\text{rinnan}} &= \dfrac{1}{R_a} + \dfrac{1}{R_b} \\ R_\text{rinnan} &= \dfrac{R_a R_b}{R_a + R_b} \\ p &= \dfrac{|R - R_\text{tav}|}{R_\text{tav}} \cdot 100\,\% \end{aligned}$$
 **Muunnokset:** $1{,}2\,\text{k}\Omega = 1200\,\Omega$, $1{,}5\,\text{k}\Omega = 1500\,\Omega$, $2{,}7\,\text{k}\Omega = 2700\,\Omega$ ja $5{,}6\,\text{k}\Omega = 5600\,\Omega$.
 **Sijoitus:** Sarjaankytkentä: tavoitetta $470\,\Omega$ pienempiä vastuksia ovat vain $100\,\Omega$ ja $390\,\Omega$. Niiden summa on $490\,\Omega$ (poikkeama $4{,}3\,\%$). Mikä tahansa muu sarjaankytkentä on vähintään $100\,\Omega + 560\,\Omega = 660\,\Omega$ ja huonompi. Rinnankytkentä: tulos on pienempi kuin pienempi vastus. Siksi pienemmän vastuksen on oltava yli $470\,\Omega$.
 
@@ -230,7 +230,7 @@ Kytkennän B resistanssi on pienempi kuin yksittäisen $150\,\Omega$:n vastuksen
 **Kysytty:** paristosta lähtevä kokonaisvirta $I$ milliampeereina
 **Periaate:** Vastukset ovat samojen kahden haarautumispisteen välissä, joten kummankin yli on pariston jännite $U$. Paristosta lähtevä virta on haaravirtojen summa. Sen saa myös korvaamalla rinnakkaiset vastukset yhdellä kokonaisresistanssilla $R$ ja käyttämällä Ohmin lakia.
 **Kuvan lukeminen:** Kuvasta luetaan arvot $9{,}0\,\text{V}$, $R_1 = 30\,\Omega$ ja $R_2 = 45\,\Omega$. Kumpikin vastus on omassa haarassaan. Haarat alkavat ja päättyvät samoihin pisteisiin, joten kytkentä on rinnankytkentä.
-**Kaava:** $\dfrac{1}{R} = \dfrac{1}{R_1} + \dfrac{1}{R_2}$, eli $R = \dfrac{R_1 R_2}{R_1 + R_2}$, ja $I = \dfrac{U}{R}$
+**Kaava:** $$\begin{aligned} I &= I_1 + I_2 \\ I &= \dfrac{U}{R_1} + \dfrac{U}{R_2} = U \cdot \dfrac{R_1 + R_2}{R_1 R_2} \\ U &= RI \Rightarrow R = \dfrac{R_1 R_2}{R_1 + R_2} \\ I &= \dfrac{U}{R} \end{aligned}$$
 **Muunnokset:** Ei tarvita laskun aikana. Lopuksi $1\,\text{A} = 1000\,\text{mA}$.
 **Sijoitus:** $R = \dfrac{30\,\Omega \cdot 45\,\Omega}{30\,\Omega + 45\,\Omega} = \dfrac{1350\,\Omega^2}{75\,\Omega} = 18\,\Omega$ ja $I = \dfrac{9{,}0\,\text{V}}{18\,\Omega} = 0{,}50\,\text{A} = 500\,\text{mA}$
 **Vastaus:** $500\,\text{mA}$, kaksi merkitsevää numeroa kuten jännitteessä $9{,}0\,\text{V}$.

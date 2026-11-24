@@ -49,9 +49,21 @@ When light falls on a metal, one photon gives all its energy to one electron. Th
   <foreignObject x="432" y="114.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$= 0.74\,\text{eV}$</div></foreignObject>
 </svg>
 
+```pysahdy
+If $hf < W$, what happens to the energy of the absorbed photon?
+---
+The electron cannot escape, so it soon loses the energy as heat in the metal.
+```
+
 The photon model explains every observation in the table. Brighter light means *more* photons every second, not *bigger* photons. So more electrons leave, and the current grows, but each electron still gets the energy of just one photon. One photon is absorbed at once, so there is no delay. And if one photon is too small, many photons do not help, because an electron practically never collects the energy of two photons.
 
 Energies at the scale of one electron are small, so physicists measure them in **electronvolts**: $1\ \text{eV}$ is the energy an electron gains when it moves through a voltage of one volt, ${1\ \text{eV} = 1.602 \cdot 10^{-19}\ \text{J}}$. A photon of visible light has an energy of about $1.6\text{–}3.3\ \text{eV}$.
+
+```pysahdy
+An electron moves through a voltage of $2.0\,\text{V}$. How much energy does it gain in electronvolts?
+---
+It gains $2.0\,\text{eV}$, because $1\,\text{eV}$ is the energy gained through a voltage of one volt.
+```
 
 ## Formula: Einstein's photoelectric equation
 

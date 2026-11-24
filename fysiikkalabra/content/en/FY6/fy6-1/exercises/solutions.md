@@ -12,7 +12,7 @@
 **Given:** current $I = 0.50\,\text{A}$, time $t = 40\,\text{s}$
 **Find:** the charge $Q$ that passed through the motor, in $\text{C}$
 **Principle:** Current tells how large a charge passes in a second. The current stays the same all the time, so the charge that has passed is obtained by solving it from the definition of current.
-**Formula:** $I = \dfrac{Q}{t}$, so $Q = It$
+**Formula:** $$\begin{aligned} I &= \dfrac{Q}{t} \\ Q &= It \end{aligned}$$
 **Conversions:** The current is in amperes and the time in seconds, so the charge comes in coulombs, because $1\,\text{A}\cdot\text{s} = 1\,\text{C}$.
 **Substitution:** $Q = 0.50\,\text{A}\cdot 40\,\text{s} = 20\,\text{C}$
 **Answer:** $20\,\text{C}$, two significant figures like the current $0.50\,\text{A}$ and the time $40\,\text{s}$.
@@ -34,7 +34,7 @@ For comparison, the current $0.50\,\text{A}$ is a usual current of a small motor
 **Given:** battery voltage $U = 12\,\text{V}$, charge passing from the battery $Q = 150\,\text{C}$
 **Find:** the energy $E$ transferred from the battery to the motor, in $\text{J}$
 **Principle:** Voltage is the energy transferred per unit of charge. When we know how many joules each coulomb transfers and how many coulombs pass, the energy is obtained by solving it from the definition of voltage.
-**Formula:** $U = \dfrac{E}{Q}$, so $E = UQ$
+**Formula:** $$\begin{aligned} U &= \dfrac{E}{Q} \\ E &= UQ \end{aligned}$$
 **Conversions:** The voltage is in volts and the charge in coulombs, so the energy comes in joules, because $1\,\text{V}\cdot\text{C} = 1\,\text{J}$.
 **Substitution:** $E = 12\,\text{V}\cdot 150\,\text{C} = 1800\,\text{J}$
 **Answer:** $1.8 \cdot 10^{3}\,\text{J}$ that is $1.8\,\text{kJ}$, two significant figures like the voltage $12\,\text{V}$.
@@ -44,7 +44,7 @@ For comparison, the current $0.50\,\text{A}$ is a usual current of a small motor
 **Given:** current $I = 0.080\,\text{A}$, charge passing $Q = 2.4\,\text{C}$
 **Find:** the time $t$ in $\text{s}$
 **Principle:** Current tells how large a charge passes in a second. When the current stays the same, the time needed is obtained by solving it from the definition of current.
-**Formula:** $I = \dfrac{Q}{t}$, so $t = \dfrac{Q}{I}$
+**Formula:** $$\begin{aligned} I &= \dfrac{Q}{t} \\ t &= \dfrac{Q}{I} \end{aligned}$$
 **Conversions:** The charge is in coulombs and the current in amperes, so the time comes in seconds, because $1\,\text{C} : 1\,\text{A} = 1\,\text{s}$.
 **Substitution:** $t = \dfrac{2.4\,\text{C}}{0.080\,\text{A}} = 30\,\text{s}$
 **Answer:** $30\,\text{s}$, two significant figures like the charge $2.4\,\text{C}$ and the current $0.080\,\text{A}$.
@@ -54,7 +54,7 @@ For comparison, the current $0.50\,\text{A}$ is a usual current of a small motor
 **Given:** current $I = 20\,\text{mA}$, time $t = 1.5\,\text{h}$
 **Find:** the charge $Q$ that passed through the light, in coulombs
 **Principle:** The current stays the same all the time, so the charge that has passed is the product of current and time according to the definition of current. A coulomb is an ampere-second, so the current and the time are first changed into base units.
-**Formula:** $I = \dfrac{Q}{t}$, so $Q = It$
+**Formula:** $$\begin{aligned} I &= \dfrac{Q}{t} \\ Q &= It \end{aligned}$$
 **Conversions:** $20\,\text{mA} = 20 \cdot 0.001\,\text{A} = 0.020\,\text{A}$ and $1.5\,\text{h} = 1.5 \cdot 3600\,\text{s} = 5400\,\text{s}$
 **Substitution:** $Q = 0.020\,\text{A}\cdot 5400\,\text{s} = 108\,\text{C}$
 **Answer:** $108\,\text{C} \approx 1.1 \cdot 10^{2}\,\text{C}$, two significant figures like the current $20\,\text{mA}$ and the time $1.5\,\text{h}$.
@@ -66,7 +66,7 @@ If the hours were not changed into seconds, the result would be only $0.03\,\tex
 **Given:** current $I = 0.16\,\text{A}$, time $t = 1.0\,\text{s}$, elementary charge $e = 1.602 \cdot 10^{-19}\,\text{C}$
 **Find:** the number $N$ of electrons passing through the lamp in a second
 **Principle:** Current tells how large a charge passes in a second, so we first get the charge that has passed, $Q = It$. The magnitude of the charge of each electron is the elementary charge $e$, so the charge is the number of electrons times the elementary charge.
-**Formula:** $Q = It$ and $Q = Ne$, so $Ne = It$ and $N = \dfrac{It}{e}$
+**Formula:** $$\begin{aligned} Q &= It \\ Q &= Ne \\ Ne &= It \\ N &= \dfrac{It}{e} \end{aligned}$$
 **Conversions:** The current is in amperes and the time in seconds, so the charge comes in coulombs and no conversions are needed.
 **Substitution:** $N = \dfrac{0.16\,\text{A}\cdot 1.0\,\text{s}}{1.602 \cdot 10^{-19}\,\text{C}} = \dfrac{0.16\,\text{C}}{1.602 \cdot 10^{-19}\,\text{C}} \approx 9.99 \cdot 10^{17}$
 **Answer:** rounded to two significant figures: about $1.0 \cdot 10^{18}$ electrons, like the current $0.16\,\text{A}$.
@@ -76,7 +76,7 @@ If the hours were not changed into seconds, the result would be only $0.03\,\tex
 **Given:** battery voltage $U = 3.7\,\text{V}$, charge delivered by the battery $Q = 3000\,\text{mAh}$
 **Find:** the energy $E$ transferred by the battery, in kilojoules
 **Principle:** Voltage tells how much energy each coulomb transfers, so the energy is the product of voltage and charge. The charge is given in the unit $\text{mAh}$, which is current times time, so it is first changed into coulombs.
-**Formula:** $U = \dfrac{E}{Q}$, so $E = UQ$
+**Formula:** $$\begin{aligned} U &= \dfrac{E}{Q} \\ E &= UQ \end{aligned}$$
 **Conversions:** $3000\,\text{mAh} = 3000 \cdot 0.001\,\text{A}\cdot 3600\,\text{s} = 10\,800\,\text{C}$; the answer is finally changed into kilojoules, $1\,\text{kJ} = 1000\,\text{J}$.
 **Substitution:** $E = 3.7\,\text{V}\cdot 10\,800\,\text{C} = 39\,960\,\text{J} = 39.96\,\text{kJ} \approx 40\,\text{kJ}$
 **Answer:** $40\,\text{kJ}$, two significant figures like the voltage $3.7\,\text{V}$.
@@ -89,7 +89,7 @@ If the hours were not changed into seconds, the result would be only $0.03\,\tex
 
 In the graph each product $It$ is the area of a rectangle under the current line.
 **Reading the graph:** From $0\,\text{s}$ to $20\,\text{s}$ the current is $0.40\,\text{A}$, so the first part lasts $t_1 = 20\,\text{s}$. From $20\,\text{s}$ to $50\,\text{s}$ the current is $0.10\,\text{A}$, so the second part lasts $t_2 = 30\,\text{s}$. After the time $50\,\text{s}$ the current is zero and no charge passes.
-**Formula:** $Q = Q_1 + Q_2$, where $Q_1 = I_1 t_1$ and $Q_2 = I_2 t_2$, so $Q = I_1 t_1 + I_2 t_2$
+**Formula:** $$\begin{aligned} Q &= Q_1 + Q_2 \\ Q_1 &= I_1 t_1 \\ Q_2 &= I_2 t_2 \\ Q &= I_1 t_1 + I_2 t_2 \end{aligned}$$
 **Conversions:** The currents are in amperes and the times in seconds, so no conversions are needed.
 **Substitution:** $Q = 0.40\,\text{A}\cdot 20\,\text{s} + 0.10\,\text{A}\cdot 30\,\text{s} = 8.0\,\text{C} + 3.0\,\text{C} = 11\,\text{C}$
 **Answer:** $11\,\text{C}$, two significant figures like the currents read from the graph.
@@ -99,7 +99,7 @@ In the graph each product $It$ is the area of a rectangle under the current line
 **Given:** charge of the battery $Q = 2.0\,\text{Ah}$, current of the lamp $I = 0.25\,\text{A}$
 **Find:** the time $t$ for which the lamp is lit, in hours
 **Principle:** The ampere-hour is a unit of charge: it is current times time, just as the coulomb is ampere times second. When the current stays constant, the lamp is lit until the whole charge has passed from the battery, so the time is obtained from the definition of current.
-**Formula:** $I = \dfrac{Q}{t}$, so $t = \dfrac{Q}{I}$
+**Formula:** $$\begin{aligned} I &= \dfrac{Q}{t} \\ t &= \dfrac{Q}{I} \end{aligned}$$
 **Conversions:** $2.0\,\text{Ah} = 2.0\,\text{A}\cdot 3600\,\text{s} = 7200\,\text{C}$; the answer is finally changed into hours by dividing the number of seconds by $3600$, because $1\,\text{h} = 3600\,\text{s}$.
 **Substitution:** $t = \dfrac{7200\,\text{C}}{0.25\,\text{A}} = 28\,800\,\text{s} = 8.0\,\text{h}$
 **Answer:** $8.0\,\text{h}$, two significant figures like the charge $2.0\,\text{Ah}$ and the current $0.25\,\text{A}$.
@@ -111,7 +111,7 @@ In the graph each product $It$ is the area of a rectangle under the current line
 **Principle:** The energy transferred by a battery depends on both the charge and the voltage, because voltage tells the energy per unit of charge. We calculate the energy of each, $E = UQ$, and compare them with one division.
 
 A larger charge alone does not decide, because each coulomb of the AA battery transfers less energy.
-**Formula:** $E_1 = U_1 Q_1$ and $E_2 = U_2 Q_2$, so the ratio is $\dfrac{E_1}{E_2} = \dfrac{U_1 Q_1}{U_2 Q_2}$
+**Formula:** $$\begin{aligned} E_1 &= U_1 Q_1 \\ E_2 &= U_2 Q_2 \\ \dfrac{E_1}{E_2} &= \dfrac{U_1 Q_1}{U_2 Q_2} \end{aligned}$$
 **Conversions:** $0.50\,\text{Ah} = 0.50\,\text{A}\cdot 3600\,\text{s} = 1800\,\text{C}$ and $2.5\,\text{Ah} = 2.5\,\text{A}\cdot 3600\,\text{s} = 9000\,\text{C}$
 **Substitution:** $E_1 = 9.0\,\text{V}\cdot 1800\,\text{C} = 16\,200\,\text{J}$ and $E_2 = 1.5\,\text{V}\cdot 9000\,\text{C} = 13\,500\,\text{J}$, so $\dfrac{E_1}{E_2} = \dfrac{16\,200\,\text{J}}{13\,500\,\text{J}} = 1.2$
 **Answer:** $1.2$ times, two significant figures like the initial values.
@@ -154,7 +154,7 @@ The statement that the electrons move across the gap of the switch is wrong, bec
 **Given:** current $I = 0.25\,\text{A}$, time $t = 1.0\,\text{min}$, elementary charge $e = 1.602 \cdot 10^{-19}\,\text{C}$
 **Find:** the number $N$ of electrons passing through the conductor
 **Principle:** Current tells how large a charge passes in a second, so we first get the charge that has passed, $Q = It$. The magnitude of the charge of each electron is the elementary charge $e$, so the charge is the number of electrons times the elementary charge.
-**Formula:** $Q = It$ and $Q = Ne$, so $Ne = It$ and $N = \dfrac{It}{e}$
+**Formula:** $$\begin{aligned} Q &= It \\ Q &= Ne \\ Ne &= It \\ N &= \dfrac{It}{e} \end{aligned}$$
 **Conversions:** $1.0\,\text{min} = 1.0 \cdot 60\,\text{s} = 60\,\text{s}$; the current is already in amperes.
 **Substitution:** $N = \dfrac{0.25\,\text{A}\cdot 60\,\text{s}}{1.602 \cdot 10^{-19}\,\text{C}} = \dfrac{15\,\text{C}}{1.602 \cdot 10^{-19}\,\text{C}} \approx 9.36 \cdot 10^{19}$
 **Answer:** about $9.4 \cdot 10^{19}$ electrons, two significant figures like the current $0.25\,\text{A}$.
@@ -166,7 +166,7 @@ The statement that the electrons move across the gap of the switch is wrong, bec
 **Principle:** When the current is constant, the charge is $Q = It$. The current changes steadily during each $10\,\text{s}$ interval, so the current of an interval is taken to be the average of the currents at the ends of the interval, and the charges of the intervals are added.
 
 The mean current is the total charge divided by the total time. Current is not used up in the lamp, because the charge circulates in a closed circuit, so the current is equally large on both sides of the lamp.
-**Formula:** $Q = \sum I_{\text{interval}}\,\Delta t$, where $I_{\text{interval}}$ is the average of the currents at the ends of the interval and $\Delta t$ the duration of the interval; mean current $I_{\text{avg}} = \dfrac{Q}{t}$
+**Formula:** $$\begin{aligned} Q &= \sum I_{\text{interval}}\,\Delta t \\ I_{\text{avg}} &= \dfrac{Q}{t} \end{aligned}$$
 **Conversions:** The currents are in amperes and the times in seconds, so no conversions are needed.
 **Substitution:** The mean currents of the intervals are $0.48\,\text{A}$, $0.44\,\text{A}$, $0.395\,\text{A}$, $0.355\,\text{A}$, $0.32\,\text{A}$ and $0.29\,\text{A}$, so the charges of the intervals are $4.8\,\text{C}$, $4.4\,\text{C}$, $3.95\,\text{C}$, $3.55\,\text{C}$, $3.2\,\text{C}$ and $2.9\,\text{C}$. The sum is $22.8\,\text{C}$, so $Q = 22.8\,\text{C}$ and $I_{\text{avg}} = \dfrac{22.8\,\text{C}}{60\,\text{s}} = 0.38\,\text{A}$.
 **Answer:** a) $23\,\text{C}$ (calculated $22.8\,\text{C}$), two significant figures like the currents. b) The mean current is $0.38\,\text{A}$. c) The second ammeter shows the same as the first, $0.37\,\text{A}$, because current is not used up in the lamp.
@@ -200,7 +200,7 @@ c) The difference of the averages is $0.004\,\text{A}$, which is smaller than th
 **Principle:** Voltage is the energy transferred per unit of charge, $U = \tfrac{E}{Q}$, and current is the charge per unit of time, $Q = It$. Thus $E = UQ = UIt$.
 
 The voltage and the current change during the discharge, so the energy is calculated separately for each hour, when both are constant, and the energies are added. Energies and charges are additive, because energy is transferred and charge passes through the battery all the time.
-**Formula:** $E_k = U_k I_k t$ for each hour $k$, $E = \sum E_k$; $Q = \sum I_k t$ and $U_{\text{avg}} = \dfrac{E}{Q}$; estimate $E_{\text{estimate}} = U_0 Q$
+**Formula:** $$\begin{aligned} U &= \dfrac{E}{Q} \\ Q &= It \\ E_k &= U_k I_k t \\ E &= \sum E_k \\ Q &= \sum I_k t \\ U_{\text{avg}} &= \dfrac{E}{Q} \\ E_{\text{estimate}} &= U_0 Q \end{aligned}$$
 **Conversions:** The time interval is $t = 1.0\,\text{h}$, so the product $U I t$ is directly in watt-hours, because $1\,\text{V}\cdot 1\,\text{A}\cdot 1\,\text{h} = 1\,\text{Wh}$. Watt-hour to joules: $1\,\text{Wh} = 1\,\text{V}\cdot 1\,\text{A}\cdot 3600\,\text{s} = 3600\,\text{J}$.
 **Substitution:** The energies of the hours are $$4.0\,\text{V}\cdot 0.80\,\text{A}\cdot 1.0\,\text{h} = 3.20\,\text{Wh}$$, $3.8\cdot 0.75 = 2.85\,\text{Wh}$, $3.7\cdot 0.70 = 2.59\,\text{Wh}$, $3.6\cdot 0.60 = 2.16\,\text{Wh}$ and $3.4\cdot 0.50 = 1.70\,\text{Wh}$. The sum is $12.5\,\text{Wh}$, so $E = 12.5\,\text{Wh}$.
 
@@ -216,7 +216,7 @@ The estimate is $E_{\text{estimate}} = 4.0\,\text{V}\cdot 3.35\,\text{Ah} = 13.4
 **Principle:** Current tells how large a charge passes through a cross-section in a second, and the charge is the number of electrons times $e$. When the electrons move at the speed $v$, those electrons pass through the cross-section in a second that are in the wire within a distance $v \cdot 1\,\text{s}$.
 
 Their number is $n v \cdot 1\,\text{s}$. From this we get the speed. The time needed to move a distance is the distance divided by the speed.
-**Formula:** $I = \dfrac{Ne}{t}$, so the number of electrons passing in a second is $\dfrac{N}{t} = \dfrac{I}{e}$; on the other hand $\dfrac{N}{t} = n v$, so $v = \dfrac{I}{n e}$ and $t = \dfrac{s}{v}$
+**Formula:** $$\begin{aligned} I &= \dfrac{Ne}{t} \\ \dfrac{N}{t} &= \dfrac{I}{e} \\ \dfrac{N}{t} &= n v \\ v &= \dfrac{I}{n e} \\ t &= \dfrac{s}{v} \end{aligned}$$
 **Conversions:** The speed is first calculated in $\text{m/s}$ and converted: $1\,\text{m/s} = 1000\,\text{mm/s}$. Time from seconds to hours: $1\,\text{h} = 3600\,\text{s}$.
 **Substitution:** In a second $\dfrac{N}{t} = \dfrac{0.40\,\text{A}}{1.602 \cdot 10^{-19}\,\text{C}} = 2.50 \cdot 10^{18}\,\text{1/s}$ electrons pass, so $v = \dfrac{2.50 \cdot 10^{18}\,\text{1/s}}{1.3 \cdot 10^{23}\,\text{1/m}} = 1.92 \cdot 10^{-5}\,\text{m/s} = 1.92 \cdot 10^{-2}\,\text{mm/s}$. The time is $t = \dfrac{1.0\,\text{m}}{1.92 \cdot 10^{-5}\,\text{m/s}} = 5.2 \cdot 10^{4}\,\text{s} = \dfrac{5.2 \cdot 10^{4}\,\text{s}}{3600\,\text{s/h}} = 14.5\,\text{h}$.
 **Answer:** a) $0.019\,\text{mm/s}$, two significant figures like the current $0.40\,\text{A}$ and the density of the electrons. b) Moving a distance of $1.0\,\text{m}$ takes about $14\,\text{h}$. c) The lamp lights up almost immediately, because the wire is already full of free electrons. The change caused by switching propagates through the circuit very quickly but at a finite speed, so the electrons start to move throughout the circuit almost immediately. Energy is transferred to the lamp although each electron advances slowly, because the electrons of the filament of the lamp itself start to move and the lamp does not wait for the electrons of the battery.
@@ -250,7 +250,7 @@ $E = UQ = 3.0\,\text{V} \cdot 18\,\text{C} = 54\,\text{J}$
 **Find:** the energy $E$ transferred to the battery, in $\text{J}$
 **Principle:** Voltage is the energy transferred per unit charge, $U = \tfrac{E}{Q}$, so the energy is $E = UQ$. The charge comes from the current, $Q = It$, when the current is constant. The current varies, so the charge is the area between the current graph and the time axis.
 **Reading the graph:** From $0\,\text{s}$ to $40\,\text{s}$ the current is $0.50\,\text{A}$: a rectangle of width $40\,\text{s}$. From $40\,\text{s}$ to $100\,\text{s}$ the current falls steadily from $0.50\,\text{A}$ to zero: a triangle of width $60\,\text{s}$ and height $0.50\,\text{A}$.
-**Formula:** $E = UQ$, where $Q = I_0 t_1 + \tfrac{1}{2} I_0 t_2$
+**Formula:** $$\begin{aligned} U &= \dfrac{E}{Q} \\ E &= UQ \\ Q &= I_0 t_1 + \tfrac{1}{2} I_0 t_2 \end{aligned}$$
 **Conversions:** The current is in amperes and the times in seconds, so no conversions are needed.
 **Substitution:** $Q = 0.50\,\text{A}\cdot 40\,\text{s} + \tfrac{1}{2}\cdot 0.50\,\text{A}\cdot 60\,\text{s} = 20\,\text{C} + 15\,\text{C} = 35\,\text{C}$, and $E = 4.0\,\text{V}\cdot 35\,\text{C} = 140\,\text{J}$
 **Answer:** $140\,\text{J} \approx 1.4 \cdot 10^{2}\,\text{J}$, two significant figures like the currents read and the voltage.

@@ -12,7 +12,7 @@
 **Annettu:** lähteen jännite $U = 5{,}0\,\text{V}$, LEDin jännite $U_\text{D} = 3{,}1\,\text{V}$, virta $I = 20\,\text{mA}$
 **Kysytty:** etuvastuksen resistanssi $R$ ohmeina
 **Periaate:** Lähde, vastus ja LED ovat peräkkäin eli sarjassa, joten sama virta kulkee kaikkien läpi. Kirchhoffin jännitelain mukaan lähteen jännite jakautuu komponenteille: $U = U_R + U_\text{D}$. Vastus noudattaa Ohmin lakia, $U_R = RI$.
-**Kaava:** $U = RI + U_\text{D}$, josta $R = \dfrac{U - U_\text{D}}{I}$
+**Kaava:** $$\begin{aligned} U &= U_R + U_\text{D} \\ U_R &= RI \\ U &= RI + U_\text{D} \\ R &= \dfrac{U - U_\text{D}}{I} \end{aligned}$$
 **Muunnokset:** $I = 20\,\text{mA} = 20 \cdot 10^{-3}\,\text{A} = 0{,}020\,\text{A}$
 **Sijoitus:** $R = \dfrac{5{,}0\,\text{V} - 3{,}1\,\text{V}}{0{,}020\,\text{A}} = \dfrac{1{,}9\,\text{V}}{0{,}020\,\text{A}} = 95\,\Omega$
 **Vastaus:** $95\,\Omega$, kaksi merkitsevää numeroa kuten jännitteiden erotuksessa $1{,}9\,\text{V}$ ja virrassa.
@@ -22,7 +22,7 @@
 **Annettu:** pariston jännite $U = 9{,}0\,\text{V}$, vastus $R = 1{,}0\,\text{k}\Omega$, diodin jännite $U_\text{D} = 0{,}70\,\text{V}$, diodi päästösuunnassa
 **Kysytty:** virta $I$ milliampeereina
 **Periaate:** Diodi on päästösuunnassa, joten virta kulkee. Diodin jännite on tehtävässä annettu $0{,}70\,\text{V}$. Paristo, vastus ja diodi ovat sarjassa. Pariston jännite jakautuu vastukselle ja diodille, ja vastuksen jännite on $U_R = RI$.
-**Kaava:** $U = RI + U_\text{D}$, josta $I = \dfrac{U - U_\text{D}}{R}$
+**Kaava:** $$\begin{aligned} U &= U_R + U_\text{D} \\ U_R &= RI \\ U &= RI + U_\text{D} \\ I &= \dfrac{U - U_\text{D}}{R} \end{aligned}$$
 **Muunnokset:** $R = 1{,}0\,\text{k}\Omega = 1{,}0 \cdot 1000\,\Omega = 1000\,\Omega$
 **Sijoitus:** $I = \dfrac{9{,}0\,\text{V} - 0{,}70\,\text{V}}{1000\,\Omega} = \dfrac{8{,}3\,\text{V}}{1000\,\Omega} = 0{,}0083\,\text{A} = 8{,}3\,\text{mA}$
 **Vastaus:** $8{,}3\,\text{mA}$, kaksi merkitsevää numeroa kuten jännitteessä $9{,}0\,\text{V}$ ja resistanssissa $1{,}0\,\text{k}\Omega$.
@@ -53,7 +53,7 @@
 **Annettu:** pariston jännite $U = 9{,}0\,\text{V}$, etuvastus $R = 470\,\Omega$, LED estosuunnassa; oletus: estosuunnassa virtaa ei kulje
 **Kysytty:** LEDin jännite $U_\text{D}$ voltteina
 **Periaate:** Estosuunnassa diodin läpi ei käytännössä kulje virtaa. LED ja vastus ovat sarjassa, joten myös vastuksen virta on nolla. Ohmin lain mukaan vastuksen jännite on silloin nolla. Kirchhoffin jännitelain mukaan koko pariston jännite on tällöin LEDin yli.
-**Kaava:** $U = U_R + U_\text{D}$ ja $U_R = RI$, josta virralla $I = 0$ saadaan $U_\text{D} = U - RI = U$
+**Kaava:** $$\begin{aligned} U &= U_R + U_\text{D} \\ U_R &= RI \\ I &= 0 \\ U_\text{D} &= U - RI = U \end{aligned}$$
 **Muunnokset:** Ei tarvita: virta on nolla, joten vastuksen arvoa ei tarvitse muuntaa.
 **Sijoitus:** $U_\text{D} = 9{,}0\,\text{V} - 470\,\Omega \cdot 0\,\text{A} = 9{,}0\,\text{V}$
 **Vastaus:** $9{,}0\,\text{V}$, kaksi merkitsevää numeroa kuten pariston jännitteessä.
@@ -63,7 +63,7 @@
 **Annettu:** pariston jännite $U = 9{,}0\,\text{V}$, kaksi LEDiä sarjassa, kummankin jännite $U_\text{D} = 2{,}0\,\text{V}$, virta $I = 20\,\text{mA}$
 **Kysytty:** etuvastuksen resistanssi $R$ ohmeina
 **Periaate:** Kaikki komponentit ovat sarjassa, joten sama virta kulkee niiden kaikkien läpi. Pariston jännite jakautuu vastukselle ja molemmille LEDeille: $U = U_R + 2U_\text{D}$. Vastuksen jännite on $U_R = RI$.
-**Kaava:** $U = RI + 2U_\text{D}$, josta $R = \dfrac{U - 2U_\text{D}}{I}$
+**Kaava:** $$\begin{aligned} U &= U_R + 2U_\text{D} \\ U_R &= RI \\ U &= RI + 2U_\text{D} \\ R &= \dfrac{U - 2U_\text{D}}{I} \end{aligned}$$
 **Muunnokset:** $I = 20\,\text{mA} = 0{,}020\,\text{A}$
 **Sijoitus:** $R = \dfrac{9{,}0\,\text{V} - 2 \cdot 2{,}0\,\text{V}}{0{,}020\,\text{A}} = \dfrac{5{,}0\,\text{V}}{0{,}020\,\text{A}} = 250\,\Omega$
 **Vastaus:** $250\,\Omega$, kaksi merkitsevää numeroa kuten jännitteissä ja virrassa.
@@ -73,7 +73,7 @@
 **Annettu:** pinta-ala $A = 1{,}6\,\text{m}^2$, irradianssi $G = 800\,\text{W/m}^2$, sähköteho $P = 260\,\text{W}$
 **Kysytty:** hyötysuhde $\eta$ prosentteina
 **Periaate:** Hyötysuhde on hyödyllinen teho jaettuna käytetyllä teholla. Paneeli ottaa vastaan valon tehon. Se on irradianssi kertaa pinta-ala. Hyödyllinen teho on paneelin antama sähköteho.
-**Kaava:** $\eta = \dfrac{P}{GA}$
+**Kaava:** $$\begin{aligned} \eta &= \dfrac{P_\text{hyöty}}{P_\text{otettu}} \\ P_\text{otettu} &= GA \\ P_\text{hyöty} &= P \\ \eta &= \dfrac{P}{GA} \end{aligned}$$
 **Muunnokset:** Ei tarvita: $\tfrac{\text{W}}{\text{m}^2} \cdot \text{m}^2 = \text{W}$. Lopuksi suhdeluku muutetaan prosenteiksi kertomalla sadalla.
 **Sijoitus:** $\eta = \dfrac{260\,\text{W}}{800\,\tfrac{\text{W}}{\text{m}^2} \cdot 1{,}6\,\text{m}^2} = \dfrac{260\,\text{W}}{1280\,\text{W}} = 0{,}203 = 20{,}3\,\%$
 **Vastaus:** $20\,\%$, kaksi merkitsevää numeroa kuten pinta-alassa $1{,}6\,\text{m}^2$.
@@ -93,7 +93,7 @@
 **Annettu:** LEDin jännite $U_\text{D} = 2{,}0\,\text{V}$, etuvastus $R = 120\,\Omega$, paristojen jännite aluksi $U_1 = 4{,}5\,\text{V}$ ja lopuksi $U_2 = 3{,}6\,\text{V}$
 **Kysytty:** virran pieneneminen prosentteina alkuperäisestä virrasta
 **Periaate:** Oletuksen mukaan LEDin jännite pysyy samana. Siksi koko jännitteen muutos tulee vastukselle. Virta saadaan Kirchhoffin jännitelaista ja Ohmin laista. Vastuksen jännite pienenee suhteellisesti enemmän kuin paristojen jännite, koska siitä on vähennetty LEDin vakiojännite.
-**Kaava:** $I = \dfrac{U - U_\text{D}}{R}$, joten $I_1 = \dfrac{U_1 - U_\text{D}}{R}$, $I_2 = \dfrac{U_2 - U_\text{D}}{R}$ ja suhteellinen muutos on $\dfrac{I_1 - I_2}{I_1}$
+**Kaava:** $$\begin{aligned} U &= U_R + U_\text{D} \\ U_R &= RI \\ I &= \dfrac{U - U_\text{D}}{R} \\ I_1 &= \dfrac{U_1 - U_\text{D}}{R} \\ I_2 &= \dfrac{U_2 - U_\text{D}}{R} \\ \text{muutos} &= \dfrac{I_1 - I_2}{I_1} \end{aligned}$$
 **Muunnokset:** Ei tarvita: virrat jaetaan keskenään, joten yksikkö supistuu. Suhdeluku muutetaan prosenteiksi kertomalla sadalla.
 **Sijoitus:** $I_1 = \dfrac{4{,}5\,\text{V} - 2{,}0\,\text{V}}{120\,\Omega} = 0{,}02083\,\text{A}$, $I_2 = \dfrac{3{,}6\,\text{V} - 2{,}0\,\text{V}}{120\,\Omega} = 0{,}01333\,\text{A}$ ja $\dfrac{I_1 - I_2}{I_1} = \dfrac{0{,}00750\,\text{A}}{0{,}02083\,\text{A}} = 0{,}36$
 **Vastaus:** $36\,\%$, kaksi merkitsevää numeroa kuten jännitteissä.
@@ -103,7 +103,7 @@
 **Annettu:** paneelin mittausparit $(U;\ I)$ samassa valaistuksessa (yhdeksän paria tehtävässä)
 **Kysytty:** kuormitusvastus $R$ ohmeina, kun teho on mittauksista suurin
 **Periaate:** Paneelin teho on $P = UI$. Se on nolla oikosulussa ja tyhjäkäynnissä, joten suurin teho on niiden välissä, maksimitehopisteessä. Lasketaan jokaisen mittauksen teho ja valitaan suurin. Kuormitusvastus saadaan kuorman Ohmin laista $U = RI$. Kuorman jännite on nimittäin paneelin jännite ja kuorman virta on paneelin virta.
-**Kaava:** $P = UI$, ja maksimitehopisteessä $U = RI$, josta $R = \dfrac{U}{I}$
+**Kaava:** $$\begin{aligned} P &= UI \\ U &= RI \\ R &= \dfrac{U}{I} \end{aligned}$$
 **Muunnokset:** Ei tarvita: jännitteet ovat voltteina ja virrat ampeereina.
 **Sijoitus:** Tehot ovat $0\,\text{W}$, $32{,}5\,\text{W}$, $44{,}5\,\text{W}$, $48{,}8\,\text{W}$, $49{,}3\,\text{W}$, $45{,}9\,\text{W}$, $36{,}1\,\text{W}$, $19{,}0\,\text{W}$ ja $0\,\text{W}$. Suurin on $17{,}0\,\text{V} \cdot 2{,}90\,\text{A} = 49{,}3\,\text{W}$, joten $R = \dfrac{17{,}0\,\text{V}}{2{,}90\,\text{A}} = 5{,}86\,\Omega$
 **Vastaus:** $5{,}9\,\Omega$, kaksi merkitsevää numeroa, koska suurin teho ja viereinen $48{,}8\,\text{W}$ ovat niin lähellä toisiaan, että todellinen maksimitehopiste voi olla mittausten välissä.
@@ -113,7 +113,7 @@
 **Annettu:** nauhan jännite $U = 12\,\text{V}$, ryhmässä kolme LEDiä sarjassa, jokaisen jännite $U_\text{D} = 3{,}0\,\text{V}$, ryhmän virta $I = 20\,\text{mA}$
 **Kysytty:** etuvastusten osuus nauhan tehosta prosentteina
 **Periaate:** Ryhmät ovat rinnan, joten jokaisen ryhmän yli on $12\,\text{V}$. Ryhmät ovat samanlaisia, joten riittää tarkastella yhtä ryhmää. Ryhmässä LEDit ja vastus ovat sarjassa. Sama virta kulkee kaikkien läpi, ja jännite jakautuu: $U = U_R + 3U_\text{D}$. Vastuksen teho on $U_R I$ ja koko ryhmän teho $UI$.
-**Kaava:** $U_R = U - 3U_\text{D}$ ja osuus $\dfrac{U_R I}{UI}$, josta osuus on $\dfrac{U - 3U_\text{D}}{U}$
+**Kaava:** $$\begin{aligned} U &= U_R + 3U_\text{D} \\ P_R &= U_R I \\ P &= UI \\ \text{osuus} &= \dfrac{P_R}{P} = \dfrac{U_R I}{UI} \\ &= \dfrac{U - 3U_\text{D}}{U} \end{aligned}$$
 **Muunnokset:** Ei tarvita: virta supistuu, ja jännitteiden suhde on suhdeluku. Lopuksi kerrotaan sadalla.
 **Sijoitus:** $\dfrac{12\,\text{V} - 3 \cdot 3{,}0\,\text{V}}{12\,\text{V}} = \dfrac{3{,}0\,\text{V}}{12\,\text{V}} = 0{,}25 = 25\,\%$
 **Vastaus:** $25\,\%$, kaksi merkitsevää numeroa kuten LEDin jännitteessä $3{,}0\,\text{V}$.
@@ -133,7 +133,7 @@
 **Annettu:** pinta-ala $A = 12\,\text{cm}^2$, irradianssi $G = 1000\,\text{W/m}^2$, jännite $U = 2{,}0\,\text{V}$, virta $I = 100\,\text{mA}$
 **Kysytty:** hyötysuhde $\eta$ prosentteina
 **Periaate:** Hyötysuhde kertoo, kuinka suuri osa valon tehosta muuttuu sähköksi. Se on kennon sähköteho jaettuna kennolle tulevan valon teholla. Sähköteho on jännite kertaa virta. Valon teho on irradianssi kertaa pinta-ala.
-**Kaava:** $P = UI$ ja $\eta = \dfrac{P}{GA}$
+**Kaava:** $$\begin{aligned} P &= UI \\ P_\text{otettu} &= GA \\ \eta &= \dfrac{P}{P_\text{otettu}} \\ &= \dfrac{P}{GA} \end{aligned}$$
 **Muunnokset:** $A = 12\,\text{cm}^2 = 12 \cdot 10^{-4}\,\text{m}^2 = 0{,}0012\,\text{m}^2$ ja $I = 100\,\text{mA} = 0{,}100\,\text{A}$
 **Sijoitus:** $P = 2{,}0\,\text{V} \cdot 0{,}100\,\text{A} = 0{,}20\,\text{W}$ ja $\eta = \dfrac{0{,}20\,\text{W}}{1000\,\tfrac{\text{W}}{\text{m}^2} \cdot 0{,}0012\,\text{m}^2} = \dfrac{0{,}20\,\text{W}}{1{,}2\,\text{W}} = 0{,}167 = 16{,}7\,\%$
 **Vastaus:** $17\,\%$, kaksi merkitsevää numeroa kuten jännitteessä ja pinta-alassa.
@@ -143,7 +143,7 @@
 **Annettu:** LEDien jännitteet virralla $15\,\text{mA}$: sininen $3{,}10\,\text{V}$, punainen $1{,}90\,\text{V}$, keltainen $2{,}10\,\text{V}$, lähteen jännite $U = 5{,}0\,\text{V}$, virta $I = 15\,\text{mA}$
 **Kysytty:** a) mikä LED tarvitsee suurimman etuvastuksen, b) sen etuvastuksen resistanssi $R$ ohmeina
 **Periaate:** Lähde, vastus ja LED ovat sarjassa, joten molempien läpi kulkee sama virta ja $U = U_R + U_\text{D}$. Vastuksen jännite $U_R = U - U_\text{D}$ on sitä suurempi, mitä pienempi LEDin jännite on. Virta on kaikilla sama. Ohmin lain $R = U_R : I$ mukaan suurin vastuksen jännite antaa siis suurimman resistanssin. Suurin etuvastus tarvitaan LEDille, jonka jännite on pienin. Se on punainen LED.
-**Kaava:** $R = \dfrac{U - U_\text{D}}{I}$
+**Kaava:** $$\begin{aligned} U &= U_R + U_\text{D} \\ U_R &= RI \\ R &= \dfrac{U - U_\text{D}}{I} \end{aligned}$$
 **Muunnokset:** $I = 15\,\text{mA} = 0{,}015\,\text{A}$
 **Sijoitus:** Punaiselle LEDille $R = \dfrac{5{,}0\,\text{V} - 1{,}90\,\text{V}}{0{,}015\,\text{A}} = \dfrac{3{,}1\,\text{V}}{0{,}015\,\text{A}} = 207\,\Omega$
 **Vastaus:** $2{,}1 \cdot 10^{2}\,\Omega$ (punaisen LEDin etuvastus), kaksi merkitsevää numeroa kuten virrassa.
@@ -163,7 +163,7 @@
 **Annettu:** pariston jännite $U = 9{,}0\,\text{V}$, LEDin jännite $U_\text{D} = 3{,}2\,\text{V}$, virta $I = 15\,\text{mA}$; opiskelija sai $600\,\Omega$
 **Kysytty:** a) opiskelijan virhe, b) oikea etuvastus $R$ ohmeina
 **Periaate:** Lähde, vastus ja LED ovat sarjassa, joten pariston jännite jakautuu vastukselle ja LEDille: $U = U_R + U_\text{D}$. Ohmin laki $R = U_R : I$ koskee vastuksen omaa jännitettä, ei koko pariston jännitettä. Opiskelija käytti vastuksen jännitteenä koko pariston jännitettä ja unohti LEDin jännitteen. Virhe tekee vastuksesta liian suuren, ja virta jäisi tavoitetta pienemmäksi.
-**Kaava:** $R = \dfrac{U - U_\text{D}}{I}$
+**Kaava:** $$\begin{aligned} U &= U_R + U_\text{D} \\ U_R &= RI \\ R &= \dfrac{U - U_\text{D}}{I} \end{aligned}$$
 **Muunnokset:** $I = 15\,\text{mA} = 0{,}015\,\text{A}$
 **Sijoitus:** $R = \dfrac{9{,}0\,\text{V} - 3{,}2\,\text{V}}{0{,}015\,\text{A}} = \dfrac{5{,}8\,\text{V}}{0{,}015\,\text{A}} = 387\,\Omega$
 **Vastaus:** $3{,}9 \cdot 10^{2}\,\Omega$, kaksi merkitsevää numeroa kuten jännitteissä ja virrassa.
@@ -186,7 +186,7 @@ Perustelu on siis, että diodi johtaa vain, kun anodi on plusnavan puolella, ja 
 **Annettu:** pinta-ala $A = 24\,\text{m}^2$, hyötysuhde $\eta = 19\,\%$, kuukausittaiset säteilyenergiat $H$ ja kulutukset $E_\text{kul}$ taulukossa
 **Kysytty:** a) vuosituotanto $E$, b) omavaraisuusaste prosentteina, c) kuukaudet, joissa tuotanto on kulutusta pienempi, ja omavaraisuusasteen rajoitus
 **Periaate:** Hyötysuhde on sähköenergia jaettuna paneeleille tulevalla säteilyenergialla. Säteilyenergia on säteilyenergia neliömetriä kohti kertaa pinta-ala, $H A$. Tuotettu sähköenergia on siis $E = \eta H A$. Vuosituotanto saadaan laskemalla kuukausien säteilyenergiat yhteen. Omavaraisuusaste on vuosituotannon ja vuosikulutuksen suhde.
-**Kaava:** $E = \eta A \sum H$ ja omavaraisuusaste $= \dfrac{E}{\sum E_\text{kul}}$
+**Kaava:** $$\begin{aligned} \eta &= \dfrac{E}{HA} \\ E &= \eta H A \\ E_\text{vuosi} &= \eta A \sum H \\ \text{omavaraisuusaste} &= \dfrac{E_\text{vuosi}}{\sum E_\text{kul}} \end{aligned}$$
 **Muunnokset:** $\eta = 19\,\% = 0{,}19$. Muita ei tarvita: energiat ovat kilowattitunteina.
 **Sijoitus:** a) Säteilyenergioiden summa on $\sum H = 1027\,\text{kWh/m}^2$, joten $E = 0{,}19 \cdot 24\,\text{m}^2 \cdot 1027\,\tfrac{\text{kWh}}{\text{m}^2} = 4683\,\text{kWh}$.
 
@@ -201,7 +201,7 @@ c) Kuukausituotanto on $E_\text{kk} = 0{,}19 \cdot 24\,\text{m}^2 \cdot H = 4{,}
 **Kysytty:** a) kynnysjännite, b) työpisteen virta milliampeereina, c) LEDin jännitteen muutos virran kasvaessa ja vakiojännitteen perustelu
 **Periaate:** Sarjapiirissä sama virta kulkee vastuksen ja LEDin läpi, ja $U = U_R + U_\text{D}$. Vastuksen kautta tuleva virta on $I = \dfrac{U - U_\text{D}}{R}$ kullakin LEDin jännitteellä. LEDin virta saadaan ominaiskäyrästä. Työpiste on se jännite, jolla nämä kaksi virtaa ovat yhtä suuret: kuormasuoran ja ominaiskäyrän leikkauspiste.
 **Kuvaajan lukeminen:** a) Ominaiskäyrän jyrkkä suora osa on taulukon kahden viimeisen pisteen välissä: virta kasvaa $20\,\text{mA}$:sta $41\,\text{mA}$:iin, kun jännite kasvaa $2{,}05\,\text{V}$:sta $2{,}10\,\text{V}$:iin. Suoran kulmakerroin on siis $\dfrac{41\,\text{mA} - 20\,\text{mA}}{2{,}10\,\text{V} - 2{,}05\,\text{V}} = 420\,\tfrac{\text{mA}}{\text{V}}$. Suora leikkaa jänniteakselin kohdassa $2{,}05\,\text{V} - \dfrac{20\,\text{mA}}{420\,\text{mA/V}} = 2{,}05\,\text{V} - 0{,}048\,\text{V} = 2{,}00\,\text{V}$. Kynnysjännite on noin $2{,}0\,\text{V}$.
-**Kaava:** $I = \dfrac{U - U_\text{D}}{R}$ vastuksen kautta ja ominaiskäyrän virta taulukosta
+**Kaava:** $$\begin{aligned} U &= U_R + U_\text{D} \\ U_R &= RI \\ I &= \dfrac{U - U_\text{D}}{R} \\ I_\text{LED} &= f(U_\text{D}) \text{ (taulukko)} \end{aligned}$$
 **Muunnokset:** Ei tarvita: jännitteet ovat voltteina ja resistanssi ohmeina. Tulos $\text{V} : \Omega = \text{A}$ muutetaan milliampeereiksi kertomalla luvulla $1000$.
 **Sijoitus:** Vastuksen kautta tuleva virta on jännitteellä $2{,}00\,\text{V}$ $\dfrac{4{,}5\,\text{V} - 2{,}00\,\text{V}}{180\,\Omega} = 13{,}9\,\text{mA}$ ja jännitteellä $2{,}05\,\text{V}$ $\dfrac{4{,}5\,\text{V} - 2{,}05\,\text{V}}{180\,\Omega} = 13{,}6\,\text{mA}$. LEDin virta on näillä jännitteillä $9{,}8\,\text{mA}$ ja $20\,\text{mA}$. Jännitteellä $2{,}00\,\text{V}$ vastuksen kautta tuleva virta on LEDin virtaa suurempi, jännitteellä $2{,}05\,\text{V}$ pienempi. Leikkaus on siis välillä. Suorina kuvattuna leikkaus on kohdassa $U_\text{D} \approx 2{,}02\,\text{V}$ ja $I \approx 13{,}8\,\text{mA}$. Tarkistus: $\dfrac{4{,}5\,\text{V} - 2{,}02\,\text{V}}{180\,\Omega} = 13{,}8\,\text{mA}$.
 

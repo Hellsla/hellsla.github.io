@@ -58,6 +58,12 @@ Some letters are friendly for a Finn: the French *u* (<span lang="fr">salut</spa
 Finnish *u*, *<span lang="fr">eu</span>* (<span lang="fr">un peu</span>) is close to *ö*, and *é* is a clear *e*. The *j* of <span lang="fr">je</span> and <span lang="fr">bonjour</span>
 is like the *s* in English *pleasure*.
 
+```pysahdy
+Why do <span lang="fr">finlandais</span> and <span lang="fr">finlandaise</span> sound different, although they differ by one letter?
+---
+In <span lang="fr">finlandais</span> the final <em>s</em> is silent. In <span lang="fr">finlandaise</span> the <em>s</em> is no longer at the end of the word, so it is heard, as a <em>z</em>.
+```
+
 Listen to the four points, then say them aloud:
 
 <div class="fx" data-fx="say" id="fx-say-sounds"><script type="application/json">{"phrases": [{"fr": "Salut ! Vous. Français.", "en": "Silent final letters", "tip": "No *t*, no *s*: *sa-LY*, *VU*, *frã-SÈ*."}, {"fr": "Bonjour. Merci. Au revoir.", "en": "The French r", "tip": "At the back of the throat, not rolled."}, {"fr": "Bonjour. Bien. Enchanté. Un peu.", "en": "Nasal vowels", "tip": "Air through the nose; no *n* at the end."}, {"fr": "Vous êtes finlandais ?", "en": "Liaison", "tip": "*vu-ZÈT*: the *s* of *{fr}vous{/fr}* becomes a *z* that starts *{fr}êtes{/fr}*."}]}</script></div>

@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: ca525836c3ba4fad
-Mode: delta (md-paragraphs, round 2)
+CONTENT-HASH: 2b6ae75f760733f9
+SCOPE: delta numbers from ca525836c3ba4fad base 3076572
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+(none)
 
 ## Checked
-- Diff text only: breaks before b) and c) in the electron-energy task; no new problem.
+- Diff read in full: Kaava steps start from basic equations as `aligned` blocks, one equation per row; numbers, units and substitutions unchanged.
+- Opened at 1280 px: no fi-easy fy6-12 capture; judged from the identical Finnish and English L3-01 captures (open-exercises-L3-1280-1), same cut as the Finnish source: aligned, legible, nothing clipped. Layout checks at 360-1280 px are green in the packet.
 
 ## Scores
-illustrations n/a · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 4 · accessibility 4

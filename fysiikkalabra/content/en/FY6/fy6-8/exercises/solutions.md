@@ -12,7 +12,7 @@
 **Given:** source voltage $E = 1.30\,\text{V}$, internal resistance $R_\text{s} = 0.040\,\Omega$; the resistance of the short-circuit conductor is neglected
 **Find:** the short-circuit current $I_\text{k}$ in amperes
 **Principle:** In a short circuit the resistance of the external circuit is zero, so by Kirchhoff's voltage law the whole source voltage is left across the internal resistance of the cell. Only the internal resistance limits the current.
-**Formula:** $E - R_\text{s} I_\text{k} = 0$, from which $I_\text{k} = \dfrac{E}{R_\text{s}}$
+**Formula:** $$\begin{aligned} U &= E - R_\text{s} I \\ 0 &= E - R_\text{s} I_\text{k} \\ I_\text{k} &= \dfrac{E}{R_\text{s}} \end{aligned}$$
 **Conversions:** Not needed: $1\,\text{V} : 1\,\Omega = 1\,\text{A}$.
 **Substitution:** $I_\text{k} = \dfrac{1.30\,\text{V}}{0.040\,\Omega} = 32.5\,\text{A}$
 **Answer:** $33\,\text{A}$, two significant figures like the internal resistance $0.040\,\Omega$.
@@ -32,7 +32,7 @@
 **Given:** three identical batteries in parallel, the internal resistance of each $R_{\text{s}1} = 0.45\,\Omega$
 **Find:** the internal resistance $R_\text{s}$ of the group of batteries in ohms
 **Principle:** The internal resistances of batteries in parallel are parallel branches between the same two points. The batteries are identical, so the current is shared equally among them, and the internal resistance of the group is the internal resistance of one battery divided by the number of batteries.
-**Formula:** $R_\text{s} = \dfrac{R_{\text{s}1}}{n}$
+**Formula:** $$\begin{aligned} \dfrac{1}{R_\text{s}} &= \dfrac{1}{R_{\text{s}1}} + \dots + \dfrac{1}{R_{\text{s}1}} \\ &= \dfrac{n}{R_{\text{s}1}} \\ R_\text{s} &= \dfrac{R_{\text{s}1}}{n} \end{aligned}$$
 **Conversions:** Not needed: the resistance is in ohms.
 **Substitution:** $R_\text{s} = \dfrac{0.45\,\Omega}{3} = 0.15\,\Omega$
 **Answer:** $0.15\,\Omega$, two significant figures like the internal resistance $0.45\,\Omega$; the number of batteries, $3$, is an exact number.
@@ -45,7 +45,7 @@
 
 The short-circuit current was not measured but is obtained by extending the line drawn through the points.
 **Reading the graph:** The line, extended with a dashed line, meets the horizontal axis $U = 0$ at the gridline $3.0\,\text{A}$. It meets the vertical axis at $4.5\,\text{V}$, which is the source voltage.
-**Formula:** $U = E - R_\text{s} I_\text{k} = 0$, from which $I_\text{k} = \dfrac{E}{R_\text{s}}$; the value is read from where the line meets the horizontal axis.
+**Formula:** $$\begin{aligned} U &= E - R_\text{s} I \\ 0 &= E - R_\text{s} I_\text{k} \\ I_\text{k} &= \dfrac{E}{R_\text{s}} \end{aligned}$$
 **Conversions:** Not needed: the current is read in amperes.
 **Substitution:** From the graph $I_\text{k} = 3.0\,\text{A}$.
 **Answer:** $3.0\,\text{A}$, to two significant figures, because the value is read from a grid of $0.5\,\text{A}$.
@@ -55,7 +55,7 @@ The short-circuit current was not measured but is obtained by extending the line
 **Given:** first load: $I_1 = 0.20\,\text{A}$, $U_1 = 4.30\,\text{V}$; second load: $I_2 = 0.80\,\text{A}$, $U_2 = 3.70\,\text{V}$
 **Find:** the internal resistance $R_\text{s}$ in ohms
 **Principle:** The same battery is in both measurements, so its source voltage and internal resistance are the same. The terminal voltage $U = E - R_\text{s} I$ decreases by $R_\text{s}$ for every ampere the current grows, so the source voltage cancels in the difference of the two measurements.
-**Formula:** $U_1 = E - R_\text{s} I_1$ and $U_2 = E - R_\text{s} I_2$; by subtracting $U_1 - U_2 = R_\text{s}(I_2 - I_1)$, from which $R_\text{s} = \dfrac{U_1 - U_2}{I_2 - I_1}$
+**Formula:** $$\begin{aligned} U_1 &= E - R_\text{s} I_1 \\ U_2 &= E - R_\text{s} I_2 \\ U_1 - U_2 &= R_\text{s}(I_2 - I_1) \\ R_\text{s} &= \dfrac{U_1 - U_2}{I_2 - I_1} \end{aligned}$$
 **Conversions:** Not needed: $1\,\text{V} : 1\,\text{A} = 1\,\Omega$.
 **Substitution:** $R_\text{s} = \dfrac{4.30\,\text{V} - 3.70\,\text{V}}{0.80\,\text{A} - 0.20\,\text{A}} = \dfrac{0.60\,\text{V}}{0.60\,\text{A}} = 1.0\,\Omega$
 **Answer:** $1.0\,\Omega$, two significant figures like the differences $0.60\,\text{V}$ and $0.60\,\text{A}$.
@@ -65,7 +65,7 @@ The short-circuit current was not measured but is obtained by extending the line
 **Given:** source voltage $E = 6.0\,\text{V}$, internal resistance $R_\text{s} = 0.50\,\Omega$, load resistance $R = 5.5\,\Omega$
 **Find:** the terminal voltage $U$ in volts
 **Principle:** The internal resistance and the load resistor are in series in the same loop, so Kirchhoff's voltage law $E - R_\text{s} I - RI = 0$ gives the current. The terminal voltage is the voltage of the load resistor, because the resistor is connected directly to the terminals of the source.
-**Formula:** $I = \dfrac{E}{R + R_\text{s}}$ and $U = RI$, so $U = \dfrac{R E}{R + R_\text{s}}$
+**Formula:** $$\begin{aligned} E - R_\text{s} I - RI &= 0 \\ I &= \dfrac{E}{R + R_\text{s}} \\ U &= RI \\ &= \dfrac{RE}{R + R_\text{s}} \end{aligned}$$
 **Conversions:** Not needed: all the quantities are in base units.
 **Substitution:** $I = \dfrac{6.0\,\text{V}}{5.5\,\Omega + 0.50\,\Omega} = 1.0\,\text{A}$ and $U = 5.5\,\Omega \cdot 1.0\,\text{A} = 5.5\,\text{V}$
 **Answer:** $5.5\,\text{V}$, two significant figures like the given data.
@@ -75,7 +75,7 @@ The short-circuit current was not measured but is obtained by extending the line
 **Given:** resistance of the lamp $R = 3.0\,\Omega$, source voltage $E = 4.5\,\text{V}$, internal resistance $R_\text{s} = 1.5\,\Omega$
 **Find:** the power $P$ of the lamp in watts
 **Principle:** The lamp and the internal resistance of the battery are in series in the same loop, so the voltage law gives the current. The voltage of the lamp is the terminal voltage of the battery, and electric power is the product of voltage and current (chapter *Electric power and the heating of a resistor*).
-**Formula:** $I = \dfrac{E}{R + R_\text{s}}$, $U = E - R_\text{s} I$ and $P = UI$
+**Formula:** $$\begin{aligned} E - R_\text{s} I - RI &= 0 \\ I &= \dfrac{E}{R + R_\text{s}} \\ U &= E - R_\text{s} I \\ P &= UI \end{aligned}$$
 **Conversions:** Not needed: $1\,\text{V} \cdot 1\,\text{A} = 1\,\text{W}$.
 **Substitution:** $I = \dfrac{4.5\,\text{V}}{3.0\,\Omega + 1.5\,\Omega} = 1.0\,\text{A}$, $U = 4.5\,\text{V} - 1.5\,\Omega \cdot 1.0\,\text{A} = 3.0\,\text{V}$ and $P = 3.0\,\text{V} \cdot 1.0\,\text{A} = 3.0\,\text{W}$
 **Answer:** $3.0\,\text{W}$, two significant figures like the resistances.
@@ -85,7 +85,7 @@ The short-circuit current was not measured but is obtained by extending the line
 **Given:** two batteries in series, each with $E_1 = 1.5\,\text{V}$ and $R_{\text{s}1} = 0.30\,\Omega$; load resistance $R = 2.4\,\Omega$
 **Find:** the current $I$ in amperes
 **Principle:** The source voltages of batteries in series are added, and their internal resistances are in the same loop as the load, one after the other. Kirchhoff's voltage law gives the current of the loop.
-**Formula:** $E = 2E_1$ and $R_\text{s} = 2R_{\text{s}1}$, so $I = \dfrac{E}{R + R_\text{s}} = \dfrac{2E_1}{R + 2R_{\text{s}1}}$
+**Formula:** $$\begin{aligned} E &= E_1 + E_1 = 2E_1 \\ R_\text{s} &= R_{\text{s}1} + R_{\text{s}1} = 2R_{\text{s}1} \\ E - R_\text{s} I - RI &= 0 \\ I &= \dfrac{E}{R + R_\text{s}} \\ &= \dfrac{2E_1}{R + 2R_{\text{s}1}} \end{aligned}$$
 **Conversions:** Not needed: $1\,\text{V} : 1\,\Omega = 1\,\text{A}$.
 **Substitution:** $I = \dfrac{2 \cdot 1.5\,\text{V}}{2.4\,\Omega + 2 \cdot 0.30\,\Omega} = \dfrac{3.0\,\text{V}}{3.0\,\Omega} = 1.0\,\text{A}$
 **Answer:** $1.0\,\text{A}$, two significant figures like the given data.
@@ -97,7 +97,7 @@ The short-circuit current was not measured but is obtained by extending the line
 **Principle:** The source voltage of identical batteries in parallel is the same as for one, and the internal resistances are parallel branches, so the internal resistance of the group is half the internal resistance of one battery.
 
 The group and the lamp form a loop whose current comes from the voltage law. The batteries are identical, so by the current law the total current is shared equally between them.
-**Formula:** $R_\text{s} = \dfrac{R_{\text{s}1}}{2}$, $I = \dfrac{E_1}{R + R_\text{s}}$ and $I_1 = \dfrac{I}{2}$
+**Formula:** $$\begin{aligned} \dfrac{1}{R_\text{s}} &= \dfrac{1}{R_{\text{s}1}} + \dfrac{1}{R_{\text{s}1}} \\ R_\text{s} &= \dfrac{R_{\text{s}1}}{2} \\ E_1 - R_\text{s} I - RI &= 0 \\ I &= \dfrac{E_1}{R + R_\text{s}} \\ I &= I_1 + I_1 \\ I_1 &= \dfrac{I}{2} \end{aligned}$$
 **Conversions:** Not needed: all the quantities are in base units.
 **Substitution:** $R_\text{s} = \dfrac{0.40\,\Omega}{2} = 0.20\,\Omega$, $I = \dfrac{1.5\,\text{V}}{0.80\,\Omega + 0.20\,\Omega} = 1.5\,\text{A}$ and $I_1 = \dfrac{1.5\,\text{A}}{2} = 0.75\,\text{A}$
 **Answer:** $0.75\,\text{A}$, two significant figures like the given data.
@@ -109,7 +109,7 @@ The group and the lamp form a loop whose current comes from the voltage law. The
 **Principle:** In a series connection the changes of potential are added. In the batteries that are the right way round the potential rises by $E_1$, but in the one the wrong way round it drops by the same amount, so the source voltage of the group is $E_1 + E_1 - E_1$.
 
 The internal resistance of all three is still in the same loop one after the other.
-**Formula:** $E = E_1 + E_1 - E_1 = E_1$, $R_\text{s} = 3R_{\text{s}1}$ and $I = \dfrac{E}{R + R_\text{s}} = \dfrac{E_1}{R + 3R_{\text{s}1}}$
+**Formula:** $$\begin{aligned} E &= E_1 + E_1 - E_1 = E_1 \\ R_\text{s} &= 3R_{\text{s}1} \\ E - R_\text{s} I - RI &= 0 \\ I &= \dfrac{E}{R + R_\text{s}} \\ &= \dfrac{E_1}{R + 3R_{\text{s}1}} \end{aligned}$$
 **Conversions:** Not needed: $1\,\text{V} : 1\,\Omega = 1\,\text{A}$.
 **Substitution:** $I = \dfrac{1.5\,\text{V}}{4.0\,\Omega + 3 \cdot 0.25\,\Omega} = \dfrac{1.5\,\text{V}}{4.75\,\Omega} = 0.3158\,\text{A}$
 **Answer:** $0.32\,\text{A}$, two significant figures like the given data.
@@ -121,7 +121,7 @@ The internal resistance of all three is still in the same loop one after the oth
 **Principle:** The terminal voltage is the voltage of the load resistor, so Ohm's law gives the current of each measurement. The same battery is in both measurements, so $U = E - R_\text{s} I$ holds with the same $E$ and $R_\text{s}$.
 
 From the two equations the internal resistance is solved first and then the source voltage.
-**Formula:** $I_1 = \dfrac{U_1}{R_1}$ and $I_2 = \dfrac{U_2}{R_2}$; $U_1 = E - R_\text{s} I_1$ and $U_2 = E - R_\text{s} I_2$, so $R_\text{s} = \dfrac{U_2 - U_1}{I_1 - I_2}$ and $E = U_1 + R_\text{s} I_1$
+**Formula:** $$\begin{aligned} I_1 &= \dfrac{U_1}{R_1} \\ I_2 &= \dfrac{U_2}{R_2} \\ U_1 &= E - R_\text{s} I_1 \\ U_2 &= E - R_\text{s} I_2 \\ U_2 - U_1 &= R_\text{s}(I_1 - I_2) \\ R_\text{s} &= \dfrac{U_2 - U_1}{I_1 - I_2} \\ E &= U_1 + R_\text{s} I_1 \end{aligned}$$
 **Conversions:** Not needed: all the quantities are in base units.
 **Substitution:** $I_1 = \dfrac{1.20\,\text{V}}{2.0\,\Omega} = 0.60\,\text{A}$, $I_2 = \dfrac{1.44\,\text{V}}{6.0\,\Omega} = 0.24\,\text{A}$, $R_\text{s} = \dfrac{1.44\,\text{V} - 1.20\,\text{V}}{0.60\,\text{A} - 0.24\,\text{A}} = 0.667\,\Omega$ and $E = 1.20\,\text{V} + 0.667\,\Omega \cdot 0.60\,\text{A} = 1.60\,\text{V}$
 **Answer:** $1.60\,\text{V}$, to a hundredth of a volt like the measured terminal voltages.
@@ -149,7 +149,7 @@ That is why a short circuit is dangerous and can damage the battery. The current
 **Given:** source voltage $E = 1.50\,\text{V}$, terminal voltage $U = 1.31\,\text{V}$, current $I = 0.50\,\text{A}$
 **Find:** the internal resistance $R_\text{s}$ in ohms
 **Principle:** The terminal voltage is smaller than the source voltage by the voltage drop $R_\text{s} I$ in the internal resistance. When the source voltage, the terminal voltage and the current are known, $R_\text{s}$ can be solved from the equation.
-**Formula:** $U = E - R_\text{s} I$, from which $R_\text{s} = \dfrac{E - U}{I}$
+**Formula:** $$\begin{aligned} U &= E - R_\text{s} I \\ R_\text{s} I &= E - U \\ R_\text{s} &= \dfrac{E - U}{I} \end{aligned}$$
 **Conversions:** Not needed: $1\,\text{V} : 1\,\text{A} = 1\,\Omega$.
 **Substitution:** $R_\text{s} = \dfrac{1.50\,\text{V} - 1.31\,\text{V}}{0.50\,\text{A}} = \dfrac{0.19\,\text{V}}{0.50\,\text{A}} = 0.38\,\Omega$
 **Answer:** $0.38\,\Omega$, two significant figures like the current $0.50\,\text{A}$.
@@ -164,7 +164,7 @@ The measured points have a little scatter, so the line is drawn through the midd
 **Reading the graph:** The fitted line meets the vertical axis at $1.54\,\text{V}$ and passes approximately through the point $(1.20\,\text{A};\ 0.87\,\text{V})$. The points lie on both sides of the line; if the line is turned differently within the limits of the points, the slope changes by about $\pm 0.03\,\Omega$.
 
 The two points read from the line are far apart: $(0\,\text{A};\ 1.54\,\text{V})$ and $(1.20\,\text{A};\ 0.87\,\text{V})$.
-**Formula:** $R_\text{s} = -\dfrac{\Delta U}{\Delta I} = \dfrac{U_1 - U_2}{I_2 - I_1}$
+**Formula:** $$\begin{aligned} U &= E - R_\text{s} I \\ \Delta U &= -R_\text{s} \Delta I \\ R_\text{s} &= -\dfrac{\Delta U}{\Delta I} \\ &= \dfrac{U_1 - U_2}{I_2 - I_1} \end{aligned}$$
 **Conversions:** Not needed: $1\,\text{V} : 1\,\text{A} = 1\,\Omega$.
 **Substitution:** $R_\text{s} = \dfrac{1.54\,\text{V} - 0.87\,\text{V}}{1.20\,\text{A} - 0\,\text{A}} = \dfrac{0.67\,\text{V}}{1.20\,\text{A}} = 0.558\,\Omega$
 **Answer:** a) $E \approx 1.54\,\text{V}$; b) $R_\text{s} \approx 0.56\,\Omega$, two significant figures, because the line is fitted by eye. A fit by eye varies: the slope can change by about $\pm 0.03\,\Omega$, so a value between $0.53\text{–}0.59\,\Omega$ is a good answer.
@@ -179,7 +179,7 @@ The source voltage is greater than any measured terminal voltage, as it should b
 **Reading the graph:** The line of battery A passes through the points $(0\,\text{A};\ 1.60\,\text{V})$ and $(1.00\,\text{A};\ 1.10\,\text{V})$, so $E_\text{A} = 1.60\,\text{V}$ and $R_\text{A} = 0.50\,\Omega$.
 
 The line of battery B passes through the points $(0\,\text{A};\ 1.49\,\text{V})$ and $(1.00\,\text{A};\ 1.27\,\text{V})$, so $E_\text{B} = 1.49\,\text{V}$ and $R_\text{B} = 0.22\,\Omega$. The lines intersect in the graph at about the current $0.4\,\text{A}$, between the table rows $0.30\,\text{A}$ and $0.50\,\text{A}$: first the terminal voltage of A is greater ($1.45\,\text{V}$ and $1.42\,\text{V}$), then that of B ($1.35\,\text{V}$ and $1.38\,\text{V}$).
-**Formula:** $E_\text{A} - R_\text{A} I = E_\text{B} - R_\text{B} I$, from which $I = \dfrac{E_\text{A} - E_\text{B}}{R_\text{A} - R_\text{B}}$
+**Formula:** $$\begin{aligned} U_\text{A} &= E_\text{A} - R_\text{A} I \\ U_\text{B} &= E_\text{B} - R_\text{B} I \\ U_\text{A} &= U_\text{B} \\ E_\text{A} - R_\text{A} I &= E_\text{B} - R_\text{B} I \\ (R_\text{A} - R_\text{B}) I &= E_\text{A} - E_\text{B} \\ I &= \dfrac{E_\text{A} - E_\text{B}}{R_\text{A} - R_\text{B}} \end{aligned}$$
 **Conversions:** Not needed: $1\,\text{V} : 1\,\Omega = 1\,\text{A}$.
 **Substitution:** $I = \dfrac{1.60\,\text{V} - 1.49\,\text{V}}{0.50\,\Omega - 0.22\,\Omega} = \dfrac{0.11\,\text{V}}{0.28\,\Omega} = 0.39\,\text{A}$
 **Answer:** a) about $0.40\,\text{A}$; the graphical reading and the calculation give a value between $0.35\text{–}0.45\,\text{A}$, because the fit of the lines varies. b) At a large current battery B is better, because its internal resistance $0.22\,\Omega$ is smaller than that of battery A, $0.50\,\Omega$, so its terminal voltage decreases more gently as the current grows. The source voltage of battery A is greater, so at a small current, below $0.4\,\text{A}$, battery A gives the higher terminal voltage. At the current $1.00\,\text{A}$ the terminal voltage is $1.10\,\text{V}$ for battery A and $1.27\,\text{V}$ for battery B.
@@ -205,9 +205,9 @@ Under load the current is $I = E : (R + R_\text{s})$. The power produced by the 
 
 The expression for power comes from the formula for electric power (chapter *Electric power and heating of a resistor*).
 **Reading the graph:** The line of the new battery passes through the points $(0.10\,\text{A};\ 1.56\,\text{V})$ and $(0.50\,\text{A};\ 1.46\,\text{V})$ and that of the aged battery through the points $(0.10\,\text{A};\ 1.41\,\text{V})$ and $(0.50\,\text{A};\ 0.97\,\text{V})$. The points of both lie on both sides of the line.
-**Formula:** $R_\text{s} = \dfrac{U_1 - U_2}{I_2 - I_1}$ and $E = U_1 + R_\text{s} I_1$
+**Formula:** $$\begin{aligned} U_1 &= E - R_\text{s} I_1 \\ U_2 &= E - R_\text{s} I_2 \\ U_1 - U_2 &= R_\text{s}(I_2 - I_1) \\ R_\text{s} &= \dfrac{U_1 - U_2}{I_2 - I_1} \\ E &= U_1 + R_\text{s} I_1 \end{aligned}$$
 
-$I = \dfrac{E}{R + R_\text{s}}$
+$$\begin{aligned} E - R_\text{s} I - RI &= 0 \\ I &= \dfrac{E}{R + R_\text{s}} \end{aligned}$$
 
 $\text{share} = \dfrac{R_\text{s} I^2}{EI} = \dfrac{R_\text{s}}{R + R_\text{s}}$
 
@@ -232,7 +232,7 @@ The maximum of the power is gentle, as the values $0.47\,\text{W}$, $0.53\,\text
 
 So the slope of the graph is $-(R_\text{s} + R_\text{j})$, and the student's value includes the resistance of the wires. The internal resistance of the group of batteries itself is obtained by subtracting $R_\text{j}$, and the short-circuit current is calculated from it.
 **Reading the graph:** The fitted line passes through the points $(0.50\,\text{A};\ 5.56\,\text{V})$ and $(3.00\,\text{A};\ 2.80\,\text{V})$. The points lie on both sides of the line. The line meets the vertical axis at $6.11\,\text{V}$, which is the source voltage, because when the current is zero there is no voltage drop in the wires.
-**Formula:** $E = U_1 + (R_\text{s} + R_\text{j}) I_1$; $R_\text{s} + R_\text{j} = \dfrac{U_1 - U_2}{I_2 - I_1}$; $R_\text{s} = (R_\text{s} + R_\text{j}) - R_\text{j}$; $I_\text{k} = \dfrac{E}{R_\text{s}}$
+**Formula:** $$\begin{aligned} U &= E - (R_\text{s} + R_\text{j}) I \\ U_1 - U_2 &= (R_\text{s} + R_\text{j})(I_2 - I_1) \\ R_\text{s} + R_\text{j} &= \dfrac{U_1 - U_2}{I_2 - I_1} \\ E &= U_1 + (R_\text{s} + R_\text{j}) I_1 \\ R_\text{s} &= (R_\text{s} + R_\text{j}) - R_\text{j} \\ 0 &= E - R_\text{s} I_\text{k} \\ I_\text{k} &= \dfrac{E}{R_\text{s}} \end{aligned}$$
 **Conversions:** Not needed: $1\,\text{V} : 1\,\text{A} = 1\,\Omega$.
 **Substitution:** a) $R_\text{s} + R_\text{j} = \dfrac{5.56\,\text{V} - 2.80\,\text{V}}{3.00\,\text{A} - 0.50\,\text{A}} = \dfrac{2.76\,\text{V}}{2.50\,\text{A}} = 1.10\,\Omega$
 
@@ -287,8 +287,7 @@ The uncertainty affects the result too: if the readings of the extreme points ar
 **Find:** the internal resistance $R_\text{s}$ of the battery in ohms
 **Principle:** The terminal voltage is $U = E - R_\text{s} I$, so the $(I, U)$ graph is a descending straight line whose slope is $-R_\text{s}$. The internal resistance comes from the slope, not from a single point: $U : I$ at one point would be the resistance of the external load.
 **Reading the graph:** Read two points far apart on the line, on gridlines. At the current $I_1 = 50\,\text{A}$ the terminal voltage is $U_1 = 11\,\text{V}$ and at $I_2 = 250\,\text{A}$ it is $U_2 = 7\,\text{V}$.
-**Formula:** For two points of the line $U_1 = E - R_\text{s} I_1$ and $U_2 = E - R_\text{s} I_2$. Subtracting the equations gives $U_1 - U_2 = R_\text{s}(I_2 - I_1)$, so
-$$R_\text{s} = \frac{U_1 - U_2}{I_2 - I_1}$$
+**Formula:** $$\begin{aligned} U_1 &= E - R_\text{s} I_1 \\ U_2 &= E - R_\text{s} I_2 \\ U_1 - U_2 &= R_\text{s}(I_2 - I_1) \\ R_\text{s} &= \dfrac{U_1 - U_2}{I_2 - I_1} \end{aligned}$$
 **Conversions:** Not needed: the voltage is in volts and the current in amperes.
 **Substitution:** $R_\text{s} = \dfrac{11\,\text{V} - 7\,\text{V}}{250\,\text{A} - 50\,\text{A}} = \dfrac{4\,\text{V}}{200\,\text{A}} = 0.020\,\Omega$
 **Answer:** $0.020\,\Omega$, that is $20\,\text{m}\Omega$, to two significant figures because the values are read from the grid.

@@ -1,17 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 005ee7bc5d2c433f
-SCOPE: delta caption-label,md-paragraphs,reflow,typography,wording from af25454f80bec980 base b5600a6
-
-Delta judged: one feedback sentence ("muutu miksikään muuksi") and solutions split into shorter paragraphs; no numbers or answers changed.
+CONTENT-HASH: 5c47178de9581cdf
+SCOPE: delta numbers from 005ee7bc5d2c433f base 3076572
 
 ## Blocking
 (none)
 
 ## Polish
-- (none)
+(none)
 
 ## Checked
-- L1-06 feedback "Varaus ei muutu miksikään muuksi eikä katoa" is correct Finnish and still repairs the heat misconception; the model answer matches it.
-- Paragraph splits in L1-06, L2-07 (check-graph), the zero-force task and the thread task keep the order principle, calculation, answer; the splits fall at idea boundaries.
-- Split "c)" paragraph in the thread task is clearly its own part; readable at phone width.
-- No change to levels, data, figures or tolerances; earlier PASS findings stand.
+- The Kaava/Formula step of the model solutions now starts from the basic principle equation (F = qE, W = qU, energy conservation, Newton's laws, Coulomb) and derives the result row by row; each row follows from the previous one.
+- The derivations match the Principle step above them; no step is skipped and no new symbol appears without explanation.
+- Re-broken aligned rows keep numbers, signs and units unchanged; no task, data, level or answer changed.
+- Split solution and model-answer paragraphs read more easily, text unchanged in substance.
+- Rows are short, so they stay readable at 360 px.

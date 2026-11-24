@@ -1,17 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: bfa4773eb0c378c0
-ROUND: 1
+CONTENT-HASH: 1d513d89dd494e99
+SCOPE: delta answers,numbers from f1b67e3925bfc7d6 base 48ff417
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- [Minor] fy5-4 L2-5 (Muunnokset) — comma before "ja pituus $L$ supistuu" is superfluous in Finnish.
+(none)
 
 ## Checked
-- Delta (md-paragraphs): solutions.md only, paragraph splits. Opened open-exercises-L2-1280-5 and L3-1280-8.
-- Layout survived at 1280 px with all solutions open: each split paragraph is its own block inside the solution panel, labels (Annettu, Periaate, Vastaus) and calculation rows unchanged, no clipping or overlap, units upright with thin space, decimal comma consistent.
-- Wording unchanged by the splits; each paragraph holds one idea.
+- Delta: L3-01 and L3-03 (4-20) limit values rounded to the safe side (27 km/h, 210 m).
+- Opened open-exercises-L3-1280-1, -2 (4-18 question, Sijoitus, Vastaus 27 km/h, Järkevyys) and -4, -5 (4-20 question, Kaava, Sijoitus, Vastaus 210 m) for this language.
+- KaTeX clean, rows aligned at =, units upright with thin space, no clipping or overflow; the answer box, the exact value and the rounding-direction sentence read in logical order; force diagrams unchanged.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

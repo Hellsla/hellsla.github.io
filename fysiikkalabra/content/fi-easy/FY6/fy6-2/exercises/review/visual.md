@@ -1,15 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: ca59d28bdd534f44
-Mode: delta (md-paragraphs, work queue 8c)
+CONTENT-HASH: 9e36ae77fccc1465
+SCOPE: delta wording from e0d944a8c7421a99 base 0e8231e
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- [Minor] solutions.md (2-21 and the 4,8 % task) — a paragraph opens with a pronoun whose antecedent is in the paragraph above ("Se ei kerro mittarin vaikutusta piiriin.") and the last paragraph of the 118 Ω task is a one-sentence orphan ("Mittarin resistanssi on suuri…"); move the break one sentence earlier or later.
+- [Minor] voltmeter-load task 2-22, Kaava block — the stacked-fraction rows sit close together vertically (last rows nearly touch) — shared aligned-block spacing, not per lesson; legible as is.
 
 ## Checked
-- fy6-2-open-exercises-L3-1280-3 (the 2-20 solution card, spacing normal, nothing clipped); fy6-2-open-exercises-L2-1280-12 (context only). Remaining paragraph breaks judged from the diff text.
+- Opened fi-easy fy6-2-open-exercises-L3-1280-5 (2-22 Kaava block, rows aligned at the equals sign).
+- Both changed Kaava blocks lost the "Sigma U = 0" and "(Sigma U/Sigma I)" annotations; remaining rows keep one "=" column, every row starts with its quantity, no clipping at 1280 px.
+- The lamp-in-series task (2-12, core card) has no open-solution capture; its four-row block uses the same component and was judged from source.
 
 ## Scores
-illustrations n/a · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

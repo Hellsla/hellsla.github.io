@@ -2,7 +2,7 @@
 **Annettu:** kaiun kulkuaika $t = 91{,}0\,\mu\text{s}$, äänen nopeus kudoksessa $v = 1540\,\text{m/s}$
 **Kysytty:** sikiön pään pinnan syvyys $d$ senttimetreinä
 **Periaate:** Pulssi kulkee iholta sikiön pään pintaan ja kaikuna takaisin. Kulkuaikana se kulkee siis kaksi kertaa syvyyden. Nopeus oletetaan samaksi koko matkalla, kuten laite olettaa.
-**Kaava:** $2d = v t$, joten $d = \dfrac{v t}{2}$
+**Kaava:** $$\begin{aligned} v &= \dfrac{s}{t} \\ s &= vt \\ s &= 2d \\ d &= \dfrac{s}{2} \\ &= \dfrac{vt}{2} \end{aligned}$$
 **Muunnokset:** $91{,}0\,\mu\text{s} = 91{,}0 \cdot 10^{-6}\,\text{s}$; lopuksi $1\,\text{m} = 100\,\text{cm}$.
 **Sijoitus:** $d = \dfrac{1540\,\text{m/s} \cdot 91{,}0 \cdot 10^{-6}\,\text{s}}{2} = 0{,}070\,07\,\text{m} = 7{,}007\,\text{cm}$
 **Vastaus:** $7{,}01\,\text{cm}$, kolme merkitsevää numeroa kuten kulkuajassa $91{,}0\,\mu\text{s}$.
@@ -12,7 +12,7 @@
 **Annettu:** taajuus $f = 7{,}50\,\text{MHz}$, äänen nopeus kudoksessa $v = 1540\,\text{m/s}$
 **Kysytty:** aallonpituus $\lambda$ millimetreinä
 **Periaate:** Aallon nopeus on taajuuden ja aallonpituuden tulo. Anturi määrää taajuuden, ja kudos määrää nopeuden.
-**Kaava:** $v = f\lambda$, joten $\lambda = \dfrac{v}{f}$
+**Kaava:** $$\begin{aligned} v &= f\lambda \\ \lambda &= \dfrac{v}{f} \end{aligned}$$
 **Muunnokset:** $7{,}50\,\text{MHz} = 7{,}50 \cdot 10^{6}\,\text{Hz}$; lopuksi $1\,\text{m} = 1000\,\text{mm}$.
 **Sijoitus:** $\lambda = \dfrac{1540\,\text{m/s}}{7{,}50 \cdot 10^{6}\,\text{Hz}} = 2{,}053 \cdot 10^{-4}\,\text{m} = 0{,}2053\,\text{mm}$
 **Vastaus:** $0{,}205\,\text{mm}$, kolme merkitsevää numeroa kuten taajuudessa $7{,}50\,\text{MHz}$.
@@ -22,7 +22,7 @@
 **Annettu:** kaiun kulkuaika $t = 32{,}0\,\text{ms}$, äänen nopeus vedessä $v = 1480\,\text{m/s}$
 **Kysytty:** järven syvyys $d$ metreinä
 **Periaate:** Pulssi kulkee pintaan kiinnitetystä luotaimesta pohjaan ja kaikuna takaisin. Kulkuaikana se kulkee siis kaksi kertaa syvyyden. Äänen nopeus oletetaan samaksi koko vesipatsaassa.
-**Kaava:** $2d = v t$, joten $d = \dfrac{v t}{2}$
+**Kaava:** $$\begin{aligned} v &= \dfrac{s}{t} \\ s &= vt \\ s &= 2d \\ d &= \dfrac{s}{2} \\ &= \dfrac{vt}{2} \end{aligned}$$
 **Muunnokset:** $32{,}0\,\text{ms} = 32{,}0 \cdot 10^{-3}\,\text{s} = 0{,}0320\,\text{s}$
 **Sijoitus:** $d = \dfrac{1480\,\text{m/s} \cdot 0{,}0320\,\text{s}}{2} = 23{,}68\,\text{m}$
 **Vastaus:** $23{,}7\,\text{m}$, kolme merkitsevää numeroa kuten kulkuajassa $32{,}0\,\text{ms}$.
@@ -32,7 +32,7 @@
 **Annettu:** kaiun kulkuaika $t = 15\,\text{ms}$, äänen nopeus ilmassa $v = 343\,\text{m/s}$; lepakko ja perhonen paikallaan
 **Kysytty:** etäisyys $d$ yöperhoseen metreinä
 **Periaate:** Äännähdys kulkee lepakosta perhoseen ja kaikuna takaisin. Kulkuaikana ääni kulkee siis kaksi kertaa etäisyyden. Kumpikaan ei liiku, joten matka on molempiin suuntiin sama.
-**Kaava:** $2d = v t$, joten $d = \dfrac{v t}{2}$
+**Kaava:** $$\begin{aligned} v &= \dfrac{s}{t} \\ s &= vt \\ s &= 2d \\ d &= \dfrac{s}{2} \\ &= \dfrac{vt}{2} \end{aligned}$$
 **Muunnokset:** $15\,\text{ms} = 15 \cdot 10^{-3}\,\text{s} = 0{,}015\,\text{s}$
 **Sijoitus:** $d = \dfrac{343\,\text{m/s} \cdot 0{,}015\,\text{s}}{2} = 2{,}5725\,\text{m}$
 **Vastaus:** $2{,}6\,\text{m}$, kaksi merkitsevää numeroa kuten kulkuajassa $15\,\text{ms}$.
@@ -53,7 +53,7 @@
 **Kysytty:** aseman etäisyys $d$ järistyksen alkukohdasta kilometreinä
 **Periaate:** Kumpikin aalto kulkee saman matkan tasaisella nopeudella. Saapumisaikojen ero on siis S-aallon ja P-aallon kulkuaikojen erotus. Järistyksen hetkeä ei tarvita, koska aikaero ei riipu siitä, mistä hetkestä aika lasketaan.
 **Kuvaajan lukeminen:** Pieni värähtely eli P-aalto alkaa apuviivalla $12\,\text{s}$. Suurempi värähtely eli S-aalto alkaa apuviivalla $30\,\text{s}$. Aikaero on $\Delta t = 30\,\text{s} - 12\,\text{s} = 18\,\text{s}$.
-**Kaava:** $\Delta t = \dfrac{d}{v_\text{S}} - \dfrac{d}{v_\text{P}}$, joten $d = \dfrac{v_\text{P} v_\text{S}}{v_\text{P} - v_\text{S}}\,\Delta t$
+**Kaava:** $$\begin{aligned} t_\text{P} &= \dfrac{d}{v_\text{P}} \\ t_\text{S} &= \dfrac{d}{v_\text{S}} \\ \Delta t &= t_\text{S} - t_\text{P} \\ &= \dfrac{d}{v_\text{S}} - \dfrac{d}{v_\text{P}} \\ &= d\,\dfrac{v_\text{P} - v_\text{S}}{v_\text{P} v_\text{S}} \\ d &= \dfrac{v_\text{P} v_\text{S}}{v_\text{P} - v_\text{S}}\,\Delta t \end{aligned}$$
 **Muunnokset:** Nopeudet ovat yksikössä km/s ja aika on sekunteina. Etäisyys tulee siis kilometreinä.
 **Sijoitus:** $d = \dfrac{7{,}0\,\text{km/s} \cdot 4{,}0\,\text{km/s}}{7{,}0\,\text{km/s} - 4{,}0\,\text{km/s}} \cdot 18\,\text{s} = 9{,}33\,\text{km/s} \cdot 18\,\text{s} = 168\,\text{km}$
 **Vastaus:** $168\,\text{km}$ (nopeuksien tarkkuus $7{,}0$ ja $4{,}0$ rajoittaisi kahteen merkitsevään numeroon, $170\,\text{km}$; annetaan $168\,\text{km}$ välituloksen kanssa).
@@ -63,7 +63,7 @@
 **Annettu:** rakenteiden väli $0{,}300\,\text{mm}$, erottumisen ehto: väli vähintään $2\lambda$, äänen nopeus $v = 1540\,\text{m/s}$
 **Kysytty:** pienin taajuus $f$ megahertseinä
 **Periaate:** Tehtävässä oletetaan, että rakenteet erottuvat, kun niiden väli on vähintään kaksi aallonpituutta (luvun tekstissä sanotaan väljemmin "muutama aallonpituus"). Aallonpituus on siis enintään puolet niiden välistä. Aallonpituus lyhenee, kun taajuus kasvaa. Pienin kelpaava taajuus vastaa siis suurinta kelpaavaa aallonpituutta. Ensin ratkaistaan aallonpituus ja sitten taajuus.
-**Kaava:** $2\lambda = 0{,}300\,\text{mm}$, joten $\lambda = \dfrac{0{,}300\,\text{mm}}{2}$; $v = f\lambda$, joten $f = \dfrac{v}{\lambda}$
+**Kaava:** $$\begin{aligned} 2\lambda &= 0{,}300\,\text{mm} \\ \lambda &= \dfrac{0{,}300\,\text{mm}}{2} \\ v &= f\lambda \\ f &= \dfrac{v}{\lambda} \end{aligned}$$
 **Muunnokset:** $\lambda = 0{,}150\,\text{mm} = 0{,}150 \cdot 10^{-3}\,\text{m}$; lopuksi $1\,\text{MHz} = 10^{6}\,\text{Hz}$.
 **Sijoitus:** $f = \dfrac{1540\,\text{m/s}}{0{,}150 \cdot 10^{-3}\,\text{m}} = 1{,}027 \cdot 10^{7}\,\text{Hz} = 10{,}27\,\text{MHz}$
 **Vastaus:** $10{,}3\,\text{MHz}$, kolme merkitsevää numeroa kuten välissä $0{,}300\,\text{mm}$.
@@ -73,7 +73,7 @@
 **Annettu:** suurin kuvaussyvyys $d = 20\,\text{cm}$, äänen nopeus $v = 1540\,\text{m/s}$
 **Kysytty:** pulssien suurin lähetystaajuus $n$ kilohertseinä
 **Periaate:** Uutta pulssia ei lähetetä, ennen kuin syvimmän kohdan kaiku on palannut. Ensin lasketaan, kuinka kauan pulssi kulkee $20\,\text{cm}$:n syvyyteen ja takaisin. Pulsseja voi lähettää sekunnissa enintään yksi sekunti jaettuna tällä ajalla.
-**Kaava:** $t = \dfrac{2d}{v}$ ja $n = \dfrac{1}{t}$, joten $n = \dfrac{v}{2d}$
+**Kaava:** $$\begin{aligned} v &= \dfrac{s}{t} \\ s &= 2d \\ t &= \dfrac{s}{v} = \dfrac{2d}{v} \\ n &= \dfrac{1}{t} = \dfrac{v}{2d} \end{aligned}$$
 **Muunnokset:** $d = 20\,\text{cm} = 0{,}20\,\text{m}$; lopuksi $1\,\text{kHz} = 1000\,\text{s}^{-1}$.
 **Sijoitus:** $t = \dfrac{2 \cdot 0{,}20\,\text{m}}{1540\,\text{m/s}} = 2{,}597 \cdot 10^{-4}\,\text{s}$ ja $n = \dfrac{1}{2{,}597 \cdot 10^{-4}\,\text{s}} = 3850\,\text{s}^{-1} = 3{,}85\,\text{kHz}$
 **Vastaus:** $3{,}9\,\text{kHz}$ eli noin $3900$ pulssia sekunnissa, kaksi merkitsevää numeroa kuten syvyydessä $20\,\text{cm}$.
@@ -83,7 +83,7 @@
 **Annettu:** saapumisaikojen ero $\Delta t = 14{,}0\,\text{s}$, $v_\text{P} = 6{,}0\,\text{km/s}$, $v_\text{S} = 3{,}5\,\text{km/s}$
 **Kysytty:** P-aallon kulkuaika $t_\text{P}$ sekunteina eli aika järistyksestä P-aallon saapumiseen
 **Periaate:** Aikaerosta saadaan ensin aseman etäisyys, koska aikaero on S-aallon ja P-aallon kulkuaikojen erotus. P-aallon kulkuaika on sitten etäisyys jaettuna P-aallon nopeudella.
-**Kaava:** $d = \dfrac{v_\text{P} v_\text{S}}{v_\text{P} - v_\text{S}}\,\Delta t$ ja $t_\text{P} = \dfrac{d}{v_\text{P}}$
+**Kaava:** $$\begin{aligned} t_\text{P} &= \dfrac{d}{v_\text{P}} \\ t_\text{S} &= \dfrac{d}{v_\text{S}} \\ \Delta t &= t_\text{S} - t_\text{P} \\ &= \dfrac{d}{v_\text{S}} - \dfrac{d}{v_\text{P}} \\ &= d\,\dfrac{v_\text{P} - v_\text{S}}{v_\text{P} v_\text{S}} \\ d &= \dfrac{v_\text{P} v_\text{S}}{v_\text{P} - v_\text{S}}\,\Delta t \end{aligned}$$
 **Muunnokset:** Nopeudet ovat yksikössä km/s ja aika on sekunteina. Etäisyys tulee siis kilometreinä ja kulkuaika sekunteina.
 **Sijoitus:** $d = \dfrac{6{,}0\,\text{km/s} \cdot 3{,}5\,\text{km/s}}{2{,}5\,\text{km/s}} \cdot 14{,}0\,\text{s} = 117{,}6\,\text{km}$ ja $t_\text{P} = \dfrac{117{,}6\,\text{km}}{6{,}0\,\text{km/s}} = 19{,}6\,\text{s}$
 **Vastaus:** noin $20\,\text{s}$, kaksi merkitsevää numeroa kuten nopeuksissa $6{,}0\,\text{km/s}$ ja $3{,}5\,\text{km/s}$.
@@ -114,7 +114,7 @@ Suhde on $\tfrac{d_\text{B}}{d_\text{A}} = \tfrac{24{,}0\,\text{s}}{8{,}0\,\text
 **Annettu:** lepakon nopeus $v_\text{lep} = 10\,\text{m/s}$ kohti seinää, kaiun viive $t = 40\,\text{ms}$, äänen nopeus $v = 343\,\text{m/s}$
 **Kysytty:** etäisyys $d$ seinään äännähdyksen hetkellä metreinä
 **Periaate:** Ääni kulkee seinään matkan $d$ ja palaa lepakon luo. Kaiun aikana lepakko on lentänyt matkan $v_\text{lep} t$ kohti seinää. Paluumatka on siis $d - v_\text{lep} t$. Äänen kulkema kokonaismatka on äänen nopeus kertaa viive.
-**Kaava:** $d + (d - v_\text{lep} t) = v t$, joten $2d = (v + v_\text{lep})\,t$ ja $d = \dfrac{(v + v_\text{lep})\,t}{2}$
+**Kaava:** $$\begin{aligned} v &= \dfrac{s}{t} \\ s &= vt \\ s &= d + (d - v_\text{lep} t) \\ &= 2d - v_\text{lep} t \\ d &= \dfrac{vt + v_\text{lep} t}{2} \\ &= \dfrac{(v + v_\text{lep})\,t}{2} \end{aligned}$$
 **Muunnokset:** $40\,\text{ms} = 40 \cdot 10^{-3}\,\text{s} = 0{,}040\,\text{s}$
 **Sijoitus:** $d = \dfrac{(343\,\text{m/s} + 10\,\text{m/s}) \cdot 0{,}040\,\text{s}}{2} = \dfrac{14{,}12\,\text{m}}{2} = 7{,}06\,\text{m}$
 **Vastaus:** $7{,}06\,\text{m}$ (lähtötiedot kahdella merkitsevällä numerolla antaisivat $7{,}1\,\text{m}$; kolmas numero näytetään, jotta ero paikallaan olevan lepakon tulokseen $6{,}86\,\text{m}$ erottuu).
@@ -124,7 +124,7 @@ Suhde on $\tfrac{d_\text{B}}{d_\text{A}} = \tfrac{24{,}0\,\text{s}}{8{,}0\,\text
 **Annettu:** rasvan paksuus $d_\text{ras} = 4{,}0\,\text{cm}$, $v_\text{ras} = 1450\,\text{m/s}$, lihaksen $v_\text{lih} = 1580\,\text{m/s}$, kaiun kulkuaika $t = 80{,}0\,\mu\text{s}$ lihaskerroksen alapinnalta
 **Kysytty:** rajapinnan todellinen syvyys $d$ ihon pinnasta senttimetreinä
 **Periaate:** Pulssi kulkee ensin rasvan läpi edestakaisin ja käyttää siihen osan kulkuajasta. Loppuaika kuluu lihaksessa edestakaisin. Kummassakin kerroksessa nopeus on vakio. Kerroksen paksuus on siis nopeus kertaa kerroksessa kulunut aika jaettuna kahdella.
-**Kaava:** $t_\text{ras} = \dfrac{2 d_\text{ras}}{v_\text{ras}}$ ja $d_\text{lih} = \dfrac{v_\text{lih}\,(t - t_\text{ras})}{2}$, joten $d = d_\text{ras} + d_\text{lih} = d_\text{ras} + \dfrac{v_\text{lih}}{2}\left(t - \dfrac{2 d_\text{ras}}{v_\text{ras}}\right)$
+**Kaava:** $$\begin{aligned} v &= \dfrac{s}{t} \\ t_\text{ras} &= \dfrac{2 d_\text{ras}}{v_\text{ras}} \\ d_\text{lih} &= \dfrac{v_\text{lih}\,(t - t_\text{ras})}{2} \\ d &= d_\text{ras} + d_\text{lih} \\ &= d_\text{ras} + \dfrac{v_\text{lih}}{2}\left(t - \dfrac{2 d_\text{ras}}{v_\text{ras}}\right) \end{aligned}$$
 **Muunnokset:** $d_\text{ras} = 4{,}0\,\text{cm} = 0{,}040\,\text{m}$, $t = 80{,}0 \cdot 10^{-6}\,\text{s}$; lopuksi $1\,\text{m} = 100\,\text{cm}$.
 **Sijoitus:** $t_\text{ras} = \dfrac{2 \cdot 0{,}040\,\text{m}}{1450\,\text{m/s}} = 55{,}17 \cdot 10^{-6}\,\text{s}$, $d_\text{lih} = \dfrac{1580\,\text{m/s} \cdot 24{,}83 \cdot 10^{-6}\,\text{s}}{2} = 0{,}019\,62\,\text{m}$ ja $d = 0{,}040\,\text{m} + 0{,}019\,62\,\text{m} = 0{,}059\,62\,\text{m} = 5{,}96\,\text{cm}$
 **Vastaus:** $5{,}96\,\text{cm}$ (rasvan paksuus $4{,}0\,\text{cm}$ rajoittaisi kahteen merkitsevään numeroon, $6{,}0\,\text{cm}$; kolme numeroa näytetään, jotta ero yhden nopeuden tulokseen erottuu).
@@ -134,7 +134,7 @@ Suhde on $\tfrac{d_\text{B}}{d_\text{A}} = \tfrac{24{,}0\,\text{s}}{8{,}0\,\text
 **Annettu:** syvyydet $h_1 = 4000\,\text{m}$ ja $h_2 = 10\,\text{m}$, aallonpituus $\lambda_1 = 200\,\text{km}$; jaksonaika $T$ sama
 **Kysytty:** aallonpituus $\lambda_2$ matalassa vedessä kilometreinä
 **Periaate:** Molemmissa paikoissa aallonpituus on paljon suurempi kuin syvyys, joten nopeus on $v = \sqrt{gh}$. Aalto kulkee yhdessä jaksossa aallonpituuden verran, joten $\lambda = vT$. Jaksonaika on sama. Siksi aallonpituus muuttuu samassa suhteessa kuin nopeus, ja $g$ supistuu pois.
-**Kaava:** $\dfrac{\lambda_2}{\lambda_1} = \dfrac{v_2 T}{v_1 T} = \dfrac{\sqrt{g h_2}}{\sqrt{g h_1}}$, joten $\lambda_2 = \lambda_1 \sqrt{\dfrac{h_2}{h_1}}$
+**Kaava:** $$\begin{aligned} \lambda_1 &= v_1 T \\ \lambda_2 &= v_2 T \\ v &= \sqrt{g h} \\ \dfrac{\lambda_2}{\lambda_1} &= \dfrac{v_2}{v_1} = \sqrt{\dfrac{h_2}{h_1}} \\ \lambda_2 &= \lambda_1 \sqrt{\dfrac{h_2}{h_1}} \end{aligned}$$
 **Muunnokset:** Syvyydet ovat samassa yksikössä, joten niiden suhde on yksikötön. Aallonpituus voidaan pitää kilometreinä.
 **Sijoitus:** $\lambda_2 = 200\,\text{km} \cdot \sqrt{\dfrac{10\,\text{m}}{4000\,\text{m}}} = 200\,\text{km} \cdot 0{,}050 = 10{,}0\,\text{km}$
 **Vastaus:** $10\,\text{km}$, kaksi merkitsevää numeroa kuten syvyydessä $10\,\text{m}$.
@@ -160,7 +160,7 @@ Suhde on $\tfrac{d_\text{B}}{d_\text{A}} = \tfrac{24{,}0\,\text{s}}{8{,}0\,\text
 **Kysytty:** a) rajapintojen syvyydet $d_1$, $d_2$ ja $d_3$; b) piikkejä 2 ja 3 vastaavien rajapintojen välisen kerroksen paksuus $\Delta d$ senttimetreinä
 **Periaate:** Jokainen piikki on kaiku yhdestä rajapinnasta. Pulssi kulkee rajapintaan ja takaisin. Siksi jokaisen rajapinnan syvyys on nopeus kertaa piikin hetki jaettuna kahdella. Kerroksen paksuus on kahden syvyyden erotus. Sen saa siis myös piikkien hetkien erotuksesta.
 **Taulukon lukeminen:** Taulukon hetket ovat aika pulssin lähettämisestä. Kerroksen yläpinnan kaiku on piikki 2 ja alapinnan kaiku on piikki 3. Kerroksessa kulunut aika on siis $$\begin{aligned} t_3 - t_2 &= 109{,}2\,\mu\text{s} - 58{,}9\,\mu\text{s} \\ &= 50{,}3\,\mu\text{s} \end{aligned}$$.
-**Kaava:** $d = \dfrac{v t}{2}$ ja $\Delta d = d_3 - d_2 = \dfrac{v\,(t_3 - t_2)}{2}$
+**Kaava:** $$\begin{aligned} v &= \dfrac{s}{t} \\ s &= 2d \\ d &= \dfrac{vt}{2} \\ \Delta d &= d_3 - d_2 \\ &= \dfrac{v\,(t_3 - t_2)}{2} \end{aligned}$$
 **Muunnokset:** $50{,}3\,\mu\text{s} = 50{,}3 \cdot 10^{-6}\,\text{s}$; lopuksi $1\,\text{m} = 100\,\text{cm}$.
 **Sijoitus:** a) $d_1 = 1540\,\text{m/s} \cdot 21{,}4 \cdot 10^{-6}\,\text{s} : 2 = 1{,}65\,\text{cm}$, $d_2 = 4{,}54\,\text{cm}$ ja $d_3 = 8{,}41\,\text{cm}$. b) $\Delta d = \dfrac{1540\,\text{m/s} \cdot 50{,}3 \cdot 10^{-6}\,\text{s}}{2} = 0{,}038\,73\,\text{m} = 3{,}873\,\text{cm}$
 **Vastaus:** $3{,}87\,\text{cm}$, kolme merkitsevää numeroa kuten piikkien hetkissä.
@@ -170,7 +170,7 @@ Suhde on $\tfrac{d_\text{B}}{d_\text{A}} = \tfrac{24{,}0\,\text{s}}{8{,}0\,\text
 **Annettu:** etäisyydet $L = 20{,}0$; $30{,}0$; $40{,}0$ ja $50{,}0\,\text{cm}$ sekä kaiun paluuajat $t = 270$; $407$; $540$ ja $677\,\mu\text{s}$
 **Kysytty:** äänen nopeuden keskiarvo $v_\text{ka}$ vedessä metreinä sekunnissa
 **Periaate:** Pulssi kulkee anturista levylle ja takaisin. Kulkuaikana se kulkee siis matkan $2L$ tasaisella nopeudella. Jokaisesta mittauksesta saadaan oma nopeus. Mittausten satunnaista vaihtelua tasataan ottamalla niiden keskiarvo.
-**Kaava:** $2L = v t$, joten $v = \dfrac{2L}{t}$ ja $v_\text{ka} = \dfrac{v_1 + v_2 + v_3 + v_4}{4}$
+**Kaava:** $$\begin{aligned} v &= \dfrac{s}{t} \\ s &= 2L \\ v_i &= \dfrac{2L_i}{t_i} \\ v_\text{ka} &= \dfrac{v_1 + v_2 + v_3 + v_4}{4} \end{aligned}$$
 **Muunnokset:** $L = 0{,}200$; $0{,}300$; $0{,}400$ ja $0{,}500\,\text{m}$; $t = 270 \cdot 10^{-6}\,\text{s}$ jne.
 **Sijoitus:** $v_1 = \dfrac{2 \cdot 0{,}200\,\text{m}}{270 \cdot 10^{-6}\,\text{s}} = 1481\,\text{m/s}$, $v_2 = 1474\,\text{m/s}$, $v_3 = 1481\,\text{m/s}$ ja $v_4 = 1477\,\text{m/s}$. Summa on $5914\,\text{m/s}$, joten $v_\text{ka} = 5914\,\text{m/s} : 4 = 1478{,}6\,\text{m/s}$.
 **Vastaus:** $1480\,\text{m/s}$, kolme merkitsevää numeroa kuten kulkuajoissa. Yksittäiset nopeudet poikkeavat keskiarvosta enintään $0{,}5\,\%$.
@@ -192,7 +192,7 @@ $$. Tarkistus: P-aallon kulkuaika on $134{,}4\,\text{km} : 6{,}0\,\text{km/s} = 
 **Annettu:** asemat A$(0, 0)$, B$(120, 0)$ ja C$(60, 90)$ kilometreinä; $\Delta t_\text{A} = 10{,}0\,\text{s}$, $\Delta t_\text{B} = 7{,}5\,\text{s}$, $\Delta t_\text{C} = 5{,}9\,\text{s}$; $v_\text{P} = 6{,}0\,\text{km/s}$, $v_\text{S} = 3{,}5\,\text{km/s}$
 **Kysytty:** järistyksen $y$-koordinaatti kilometreinä
 **Periaate:** Jokaisen aseman aikaerosta saadaan etäisyys järistykseen. Järistys on siis ympyrällä, jonka keskipiste on asema. Kahden ympyrän leikkauspisteitä on kaksi. Kolmannen aseman ympyrä valitsee niistä oikean.
-**Kaava:** $d = \dfrac{v_\text{P} v_\text{S}}{v_\text{P} - v_\text{S}}\,\Delta t$. Asemien A ja B ympyröiden yhtälöt ovat $x^2 + y^2 = d_\text{A}^2$ ja $(x - 120)^2 + y^2 = d_\text{B}^2$. Avataan toinen yhtälö: $$(x - 120)^2 = x^2 - 240x + 14\,400$$. Kun ensimmäinen yhtälö vähennetään toisesta, $x^2$ ja $y^2$ supistuvat ja jää $240x = d_\text{A}^2 - d_\text{B}^2 + 120^2$. Siis $x = \dfrac{d_\text{A}^2 - d_\text{B}^2 + 120^2}{240}$ ja $y = \pm\sqrt{d_\text{A}^2 - x^2}$.
+**Kaava:** $$\begin{aligned} t_\text{P} &= \dfrac{d}{v_\text{P}} \\ t_\text{S} &= \dfrac{d}{v_\text{S}} \\ \Delta t &= t_\text{S} - t_\text{P} \\ &= \dfrac{d}{v_\text{S}} - \dfrac{d}{v_\text{P}} \\ &= d\,\dfrac{v_\text{P} - v_\text{S}}{v_\text{P} v_\text{S}} \\ d &= \dfrac{v_\text{P} v_\text{S}}{v_\text{P} - v_\text{S}}\,\Delta t \\ d_\text{A}^2 &= x^2 + y^2 \\ d_\text{B}^2 &= (x - 120)^2 + y^2 \\ &= d_\text{A}^2 - 240x + 14\,400 \\ x &= \dfrac{d_\text{A}^2 - d_\text{B}^2 + 120^2}{240} \\ y &= \pm\sqrt{d_\text{A}^2 - x^2} \end{aligned}$$
 **Muunnokset:** Nopeudet ovat yksikössä km/s ja ajat sekunteina, joten etäisyydet tulevat kilometreinä. Kerroin on $\dfrac{6{,}0 \cdot 3{,}5}{2{,}5}\,\text{km/s} = 8{,}4\,\text{km/s}$.
 **Sijoitus:** a) $d_\text{A} = 8{,}4\,\text{km/s} \cdot 10{,}0\,\text{s} = 84{,}0\,\text{km}$, $d_\text{B} = 8{,}4\,\text{km/s} \cdot 7{,}5\,\text{s} = 63{,}0\,\text{km}$ ja $d_\text{C} = 8{,}4\,\text{km/s} \cdot 5{,}9\,\text{s} = 49{,}6\,\text{km}$. b) $x = \dfrac{7056 - 3969 + 14\,400}{240}\,\text{km} = 72{,}9\,\text{km}$ ja $y = \pm\sqrt{7056 - 5309}\,\text{km} = \pm 41{,}8\,\text{km}$. Mahdolliset paikat ovat $(72{,}9;\ 41{,}8)$ ja $(72{,}9;\ -41{,}8)$. Etäisyys asemalle C on ensimmäisestä $$\begin{aligned} &\sqrt{(72{,}9 - 60)^2 + (41{,}8 - 90)^2}\,\text{km} \\ &= 49{,}9\,\text{km} \end{aligned}$$ ja toisesta $$\sqrt{12{,}9^2 + 131{,}8^2}\,\text{km} = 132{,}4\,\text{km}$$. Mitattu $49{,}6\,\text{km}$ sopii ensimmäiseen.
 **Vastaus:** $y = 42\,\text{km}$ (pohjoiseen asemista A ja B), kaksi merkitsevää numeroa kuten nopeuksissa $6{,}0\,\text{km/s}$ ja $3{,}5\,\text{km/s}$. Järistys on pisteessä $(73;\ 42)\,\text{km}$.
@@ -204,7 +204,7 @@ $$. Tarkistus: P-aallon kulkuaika on $134{,}4\,\text{km} : 6{,}0\,\text{km/s} = 
 **Kysytty:** koko matkan kulkuaika $t$ minuutteina
 **Periaate:** Syvyys on jokaisella osuudella vakio, ja aallonpituus on paljon syvyyttä suurempi. Nopeus on siis osuudella vakio, ja $v = \sqrt{g h}$. Kulkuaika on osuuden pituus jaettuna sen nopeudella. Koko matkan aika on osuuksien aikojen summa.
 **Taulukon lukeminen:** Taulukosta luetaan jokaisen osuuden pituus $s$ ja syvyys $h$. Syvyys määrää nopeuden ja pituus kulkuajan.
-**Kaava:** $v = \sqrt{g h}$, $t_i = \dfrac{s_i}{v_i}$ ja $t = t_1 + t_2 + t_3$
+**Kaava:** $$\begin{aligned} v_i &= \sqrt{g h_i} \\ t_i &= \dfrac{s_i}{v_i} \\ t &= t_1 + t_2 + t_3 \end{aligned}$$
 **Muunnokset:** $s_1 = 300\,000\,\text{m}$, $s_2 = 100\,000\,\text{m}$ ja $s_3 = 20\,000\,\text{m}$; lopuksi $1\,\text{min} = 60\,\text{s}$.
 **Sijoitus:** Nopeudet ovat $v_1 = \sqrt{9{,}81 \cdot 4000}\,\text{m/s} = 198{,}1\,\text{m/s}$, $v_2 = 99{,}05\,\text{m/s}$ ja $v_3 = 22{,}15\,\text{m/s}$. Kulkuajat ovat $t_1 = 300\,000\,\text{m} : 198{,}1\,\text{m/s} = 1514\,\text{s}$, $t_2 = 1010\,\text{s}$ ja $t_3 = 903\,\text{s}$. Summa on $3427\,\text{s}$, joten $t = 3427\,\text{s} : 60\,\text{s/min} = 57{,}1\,\text{min}$.
 **Vastaus:** $57\,\text{min}$, kaksi merkitsevää numeroa kuten syvyyksissä ja osuuksien pituuksissa.
@@ -215,7 +215,7 @@ $$. Tarkistus: P-aallon kulkuaika on $134{,}4\,\text{km} : 6{,}0\,\text{km/s} = 
 **Annettu:** taulukosta (MAFY-taulukko, Aaltoliike, Äänen nopeuksia eri väliaineissa, nesteet, vesi $0\,{}^\circ\text{C}$) äänen nopeus vedessä $v = 1402{,}4\,\text{m/s}$; kaiun kulkuaika $t = 20\,\text{ms}$
 **Kysytty:** veden syvyys $d$ metreinä
 **Periaate:** Pulssi kulkee pohjaan ja takaisin samaa reittiä tasaisella nopeudella. Pohjan etäisyys on siksi puolet siitä matkasta, jonka kaiku kulkee. Veden lämpötila on $0\,{}^\circ\text{C}$, joten käytetään taulukon veden arvoa. Kudoksen arvoa $1540\,\text{m/s}$ ei käytetä.
-**Kaava:** $d = \dfrac{v t}{2}$
+**Kaava:** $$\begin{aligned} v &= \dfrac{s}{t} \\ s &= vt \\ s &= 2d \\ d &= \dfrac{s}{2} \\ &= \dfrac{vt}{2} \end{aligned}$$
 **Muunnokset:** $20\,\text{ms} = 20 \cdot 10^{-3}\,\text{s} = 0{,}020\,\text{s}$.
 **Sijoitus:** $d = \dfrac{1402{,}4\,\text{m/s} \cdot 0{,}020\,\text{s}}{2} = 14{,}024\,\text{m}$
 **Vastaus:** $14\,\text{m}$, tarkemmin $14{,}0\,\text{m}$. Aika $20\,\text{ms}$ on sovittu tarkaksi, ja taulukon arvo antaa kolme merkitsevää numeroa. Eri taulukoiden arvot poikkeavat hieman. Vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
@@ -226,7 +226,7 @@ $$. Tarkistus: P-aallon kulkuaika on $134{,}4\,\text{km} : 6{,}0\,\text{km/s} = 
 **Kysytty:** luun pinnan syvyys $d$ ihon pinnasta senttimetreinä
 **Periaate:** Pulssi kulkee ihon pinnalla olevasta anturista rajapintaan ja takaisin. Kaiun aikana kuljettu matka on siis kaksi kertaa syvyys.
 **Kuvaajan lukeminen:** Kaiku C on korkea piikki aika-akselilla kohdassa $t = 90\,\mu\text{s}$; se luetaan piikin kohdalta apuviivoja vasten.
-**Kaava:** $d = \dfrac{v t}{2}$
+**Kaava:** $$\begin{aligned} v &= \dfrac{s}{t} \\ s &= vt \\ s &= 2d \\ d &= \dfrac{s}{2} \\ &= \dfrac{vt}{2} \end{aligned}$$
 **Muunnokset:** $90\,\mu\text{s} = 90 \cdot 10^{-6}\,\text{s}$; lopuksi $1\,\text{m} = 100\,\text{cm}$.
 **Sijoitus:** $d = \dfrac{1540\,\text{m/s} \cdot 90 \cdot 10^{-6}\,\text{s}}{2} = 0{,}0693\,\text{m} = 6{,}93\,\text{cm}$
 **Vastaus:** $6{,}93\,\text{cm}$, kolme merkitsevää numeroa kuten nopeudessa $1540\,\text{m/s}$.
@@ -244,7 +244,7 @@ Seismometrit eli maan tärinää mittaavat laitteet rekisteröivät sen. Aineist
 **Kohta b):** P-aalto on pitkittäistä aaltoliikettä. Siinä aine värähtelee samassa suunnassa kuin aalto etenee, ja aallossa etenevät tihentymät ja harventumat. S-aalto on poikittaista aaltoliikettä. Siinä aine värähtelee kohtisuorasti etenemissuuntaa vastaan. P-aalto on nopeampi, joten se saapuu asemalle ensin. S-aalto saapuu sen jälkeen. P-aalto etenee sekä kiinteässä aineessa että nesteessä.
 
 S-aalto etenee vain kiinteässä aineessa. Nesteessä vierekkäiset kerrokset liukuvat toistensa ohi, eikä mikään voima palauta niitä takaisin.
-**Kaava:** Kohta c): tasaisessa liikkeessä $v = \dfrac{d}{t}$, joten kulkuajat ovat $t_\text{P} = \dfrac{d}{v_\text{P}}$ ja $t_\text{S} = \dfrac{d}{v_\text{S}}$. Saapumisaikojen ero on kulkuaikojen erotus: $\Delta t = t_\text{S} - t_\text{P} = \dfrac{d}{v_\text{S}} - \dfrac{d}{v_\text{P}}$
+**Kaava:** $$\begin{aligned} t_\text{P} &= \dfrac{d}{v_\text{P}} \\ t_\text{S} &= \dfrac{d}{v_\text{S}} \\ \Delta t &= t_\text{S} - t_\text{P} \\ &= \dfrac{d}{v_\text{S}} - \dfrac{d}{v_\text{P}} \end{aligned}$$
 **Muunnokset:** Matka on kilometreinä ja nopeudet ovat yksikössä km/s. Kilometrit supistuvat, ja aika tulee suoraan sekunteina. Muunnoksia ei tarvita.
 **Sijoitus:** $\Delta t = \dfrac{100\,\text{km}}{3{,}5\,\text{km/s}} - \dfrac{100\,\text{km}}{6{,}0\,\text{km/s}} = 28{,}571\,\text{s} - 16{,}667\,\text{s} = 11{,}905\,\text{s}$
 **Vastaus:** $\Delta t \approx 12\,\text{s}$. Yksi sekunti S–P-aikaeroa vastaa matkaa $100\,\text{km} / 11{,}905\,\text{s} \approx 8{,}4\,\text{km}$. Tulos annetaan kahdella merkitsevällä numerolla, koska nopeuksissa $6{,}0\,\text{km/s}$ ja $3{,}5\,\text{km/s}$ on kaksi merkitsevää numeroa. Tehtävän matkassa $100\,\text{km}$ niitä on kolme, joten se ei rajoita tarkkuutta.

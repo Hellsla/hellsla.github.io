@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 133385660b043c2e
-Mode: delta (md-paragraphs: paragraph breaks in solutions, work queue 8c)
+CONTENT-HASH: 260b819a49c95404
+SCOPE: delta wording from 4fe3e018a9850402 base 5965625
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+(none)
 
 ## Checked
-- fy6-7 review/shots fy6-7-open-exercises-L2-1280-14 (refrigerator task: Periaate split, Kohta d) in four paragraphs, Vastaus, Järkevyys): one idea each, the one-sentence closing paragraph reads as a conclusion, no clipping.
-- Judged at 1280 px (open-solution captures; the exercise captures exist at that width only); the breaks are plain paragraph spacing inside the solution card, no new element, so the 390 px layout follows the same card flow.
+- Delta: L3-04 (energy-saving task) Kaava block, now 7 rows with K_kallis/K_halpa rows added; opened review/shots/fy6-7-open-exercises-L3-1280-5.png (fi-easy) and, for the fi capture, -6.
+- Seven one-equation rows, equals signs aligned, fraction and subscripts intact, order principle then symbolic then combined; Kaava box fits, nothing clipped; Sijoitus rows below unchanged and consistent.
+- No 390 px solution capture; the layout checks at 360-1280 px are green.
 
 ## Scores
-illustrations n/a (no figure in the diff) · typography 4 · Finnish 4 · accessibility 4
+illustrations n/a · typography 5 · Finnish 4 · accessibility 4

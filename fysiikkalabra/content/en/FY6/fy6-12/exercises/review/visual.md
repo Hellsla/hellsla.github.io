@@ -1,15 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 6eddb95b3f6033e3
+CONTENT-HASH: 4661288f1dcc7a5b
+SCOPE: delta numbers from 6eddb95b3f6033e3 base 3076572
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+(none)
 
 ## Checked
-- delta (solutions.md paragraph breaks): read the diff; breaks now sit right before the part labels, round-1 findings resolved, no word changes.
-- Opened sample captures at 1280 px (fy6-11 L3-7, fy6-16 L3-5 and L3-8): paragraph spacing even, nothing clipped.
+- Diff read in full: Formula steps start from basic equations as `aligned` blocks, one equation per row; numbers, units and substitutions unchanged.
+- Opened at 1280 px: open-exercises-L3-1280-1 (L3-01, five-row Formula, the longest): equals signs aligned, subscripts legible, nothing clipped.
+- Layout checks at 360-1280 px are green in the packet.
 
 ## Scores
-illustrations n/a · typography 5 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · English 4 · accessibility 4

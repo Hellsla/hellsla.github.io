@@ -885,6 +885,14 @@ date	figure	hash
 2026-11-22	fy9-kaasut-sovella/fy9-kaasut-s6-pysty	912d6b108060794e
 2026-11-22	fy9-sahkokentta-sovella/fy9-sahkokentta-s1-fbd	0cf188210bb791a6
 2026-11-22	fy10-liikemaara/setup	cdb6ff4bb8b68d43
+2026-11-23	fy3-13/thermometer	f9e3c154dea6166c
+2026-11-23	fy3-14/before-after	1b663d1019e1c22c
+2026-11-23	fy3-14/energy-balance	320debb2b0039094
+2026-11-23	fy3-15/chain-bars	e14e325f88871487
+2026-11-23	fy3-15/sankey	35ca7c27258d4845
+2026-11-23	fy3-15/condenser	f5dfb084c44eaf98
+2026-11-23	fy3-16/cool-bag	d4166bcf060d754d
+2026-11-23	fy3-16/cooling-circuit	c7214b0b12ba6deb
 2026-11-23	fy9-harjoituskoe-sovella/fy9-harjoituskoe-s2-fbd	95824e02d9023025
 2026-11-23	fy8-11/ketju	6a31ce4563db6525
 2026-11-23	fy8-15/valittaja	30baccceb068aaca
@@ -933,3 +941,10 @@ date	figure	hash
 2026-11-22	fy14-tokamak-stellarator/toroidal	ce0ea2e4c77d6565
 2026-11-22	fy10-liikemaara/setup	cdb6ff4bb8b68d43
 2026-11-23	fy14-confinement-concepts/aspect	af684102ef5b8a34
+2026-11-23	fy3-13/thermometer	86f1503baee3a47f
+2026-11-23	fy3-14/before-after	d7db513d8b7ab307
+2026-11-23	fy3-14/energy-balance	944aea24587e458e
+2026-11-23	fy3-15/sankey	e8e51fb29aabbc51
+2026-11-23	fy3-15/condenser	2ce7f5f5a545d533
+2026-11-23	fy3-16/cool-bag	af6598b49e478b56
+2026-11-23	fy3-16/cooling-circuit	7748b618e7560f1e

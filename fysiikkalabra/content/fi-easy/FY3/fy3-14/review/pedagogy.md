@@ -1,21 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: edb3cdc30114bd92
+CONTENT-HASH: b6aa82ddc71bc9de
 ## Blocking
 (none)
 ## Polish
-- inquiry.json ennuste-1, correct option's feedback — it states "vähintään 26,6 °C" which is the answer to koe-1's numeric question; the feedback opens after 3 table rows but before that question is answered. Drop the number from the feedback (keep it in the model answer after the question).
-- inquiry.json ennuste-2 — the correct option "Noin 13 g" is koe-2's numeric answer (12,6 g); the question then only confirms it. Offer the options as ranges/ideas ("a few grams", "about a tenth of the ice") or ask the student to estimate before the options.
-- lesson.md Kaava — cases 3 and 4 (water freezes onto cold ice) go beyond the slot's "sulaako kaikki jää"; they appear only in text, one check and level 3. Keep, but the case-3 ice-mass formula is not given while case-2's is; say so.
-- inquiry.json koe-1 question — "askel 0,5 °C" slider hint and then a computed 26,6: good, but the first hint just says "pienennä sitä"; add the table-reading cue ("jäätä jää 0 g").
-- lesson.md Esimerkki — the example's all-melts case is never met in Tutki (all rows have ice left except the end), fine, but a one-line link to the graph's right-hand branch would help.
+- inquiry.json ennuste-1, correct option feedback — names "vähintään 26,6 °C", the answer to koe-1's numeric question, before that question is answered. Drop the number there; keep it in the model answer.
+- inquiry.json ennuste-2 — the correct option "Noin 13 g" is koe-2's numeric answer (12,6 g), so the experiment only confirms it. Offer options as ideas or ranges ("muutama gramma", "kymmenesosa jäästä").
+- lesson.md energy-balance figure (fig 3) — it uses ice at −10 °C (35,5 kJ), while the figure before it and the graph use 0 °C ice (33,4 kJ). The label says so, but add one sentence naming the change so the reader does not look for 33,4 kJ.
+- sim readout at 390 px — before the first *Sekoita* it already shows "jäätä jäljellä 24,7 g" and the bars. The prediction is committed before Tutki, so this is not blocking, but the readout could start empty until the first mix.
+- lesson.md Kaava — the ice-mass formula is given for case 2 only; cases 3–4 go beyond "sulaako kaikki jää" and appear only in text, one check and level 3. Keep, but say that case 3 is solved the same way in level 3.
 ## Checked
-- Path: prior chapters (Q = cm ΔT, Q = sm) -> hook -> retrieval -> two predictions -> sim with two guided experiments (locked/varied parameters, min 2–3) -> conclusion -> theory -> example; opening question (why ice cools better, why ice remains) answered.
-- Predictions can be refuted by model values; wrong-option feedback repairs the misconception (average temperature, "below 0 °C", "cold ice does not melt").
-- Simulation shows result emerging (ice mass, bars of Q), model values called model values; usable at 390 px.
-- Staged worked example: seven stages, symbolic first, units, reasonableness; does not repeat the sim's numbers.
-- Etsi virhe item uses a negative-temperature result: authentic misconception; transfer task has 3 hints and mistake feedback.
-- Checks: concept items test misconceptions (jääsohju at 0 °C, cold ice in 0 °C water); explain criteria observable.
-- Figures (hero, before/after, energy bars, T(Tv) graph) legible in captures, next to their paragraphs; photo beside theory.
+- Path: prior chapters (Q = cmΔT, Q = sm) -> hook -> retrieval -> prediction -> sim with locked/varied parameters -> conclusion -> theory -> example; the opening question (why ice cools well, why ice remains) is answered.
+- Predictions can be refuted by model values; wrong-option feedback repairs the misconceptions (average 15 °C, below 0 °C, cold ice does not melt).
+- Figures after the paragraphs they explain: hero (recognisable glass and ice), before/after, energy bars (colour plus labels), T(Tv) graph (shaded zone labelled, axes to scale). All legible at 390 px.
+- Simulation is usable at 390 px: controls in one column, readout understandable, explanations behind closed boxes.
+- Worked example: seven stages, symbolic first, units and reasonableness; it does not repeat the sim's numbers.
+- Etsi virhe (negative T) and the transfer task (three hints, mistake feedback) are authentic.
+- Concept checks use misconception distractors; explain criteria are observable.
 - Exit ticket tests Q = sm and the compare-then-decide step.
-- Workload about one lesson; secondary experiment, retrieval, reflect, error item optional.
-- Selkeä suomi: sentences short, terms explained at first use.
+- Workload is about one lesson (extras are optional); Selkeä suomi is short and clear.
+- Hash was the same at start and end.

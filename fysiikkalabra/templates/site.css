@@ -1525,8 +1525,10 @@ html.ex-focus-on{overflow:hidden}
   .ex-focus-pad .pad .rich-text-editor{min-height:calc(100dvh - 15rem)}
   .ex-focus-body.no-pad{grid-template-columns:minmax(0,44rem);justify-content:center}
   /* a short task (under half the view's height, lesson.js part 10): the task on top and the editor under it, filling the rest */
-  .ex-focus-body.stack{display:block;max-width:48rem;overflow-y:auto}
+  /* the task text stays 44 rem wide to read; the editor and its formula toolbar use the whole view, up to 92 rem (teacher 2026-11-23) */
+  .ex-focus-body.stack{display:block;max-width:92rem;width:100%;box-sizing:border-box;margin:0 auto;padding:0 2rem;overflow-y:auto}
   .ex-focus-body.stack>.ex-focus-task,.ex-focus-body.stack>.ex-focus-pad{overflow:visible;padding:1.4rem 0 0}
+  .ex-focus-body.stack>.ex-focus-task{max-width:44rem}
   .ex-focus-body.stack>.ex-focus-pad{border-left:0;border-top:1px solid var(--line);margin-top:1.2rem;padding-bottom:3rem}
   .ex-focus-body.stack .ex-focus-pad .pad .rich-text-editor{min-height:max(14rem,calc(100dvh - var(--tb,0px) - var(--th,0px) - 16rem))}
 }

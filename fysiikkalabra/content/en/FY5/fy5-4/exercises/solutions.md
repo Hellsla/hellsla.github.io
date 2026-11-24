@@ -22,7 +22,7 @@
 **Given:** $m = 0.50\,\text{kg}$, $r = 1.2\,\text{m}$, $v = 4.0\,\text{m/s}$, horizontal path
 **Find:** the net force $\Sigma F$ on the stone in $\text{N}$
 **Principle:** The stone is in uniform circular motion, so its acceleration is the centripetal acceleration towards the centre. By Newton's second law the net force is the product of the mass and the acceleration, and it points in the same direction.
-**Formula:** $\Sigma F = m a_\text{n}$ and $a_\text{n} = \dfrac{v^2}{r}$, so $\Sigma F = m\dfrac{v^2}{r}$
+**Formula:** $$\begin{aligned} \Sigma F &= m a_\text{n} \\ a_\text{n} &= \dfrac{v^2}{r} \\ \Sigma F &= m\dfrac{v^2}{r} \end{aligned}$$
 **Conversions:** The quantities are in SI units, so no conversions are needed.
 **Substitution:** $\Sigma F = 0.50\,\text{kg}\cdot\dfrac{(4.0\,\text{m/s})^2}{1.2\,\text{m}} = 0.50\,\text{kg}\cdot 13.33\,\text{m/s}^2 = 6.667\,\text{N}$
 **Answer:** $6.7\,\text{N}$ towards the centre of the path, two significant figures like the given data.
@@ -32,7 +32,7 @@
 **Given:** centripetal acceleration $a_\text{n} = 2.5\,\text{m/s}^2$, radius $r = 25\,\text{m}$
 **Find:** the tangential speed $v$ in $\text{m/s}$
 **Principle:** In a roundabout the car goes round a circle. If the speed is steady, the motion is uniform circular motion, and the centripetal acceleration depends on the tangential speed and the radius.
-**Formula:** $a_\text{n} = \dfrac{v^2}{r}$, so $v^2 = a_\text{n} r$ and $v = \sqrt{a_\text{n} r}$
+**Formula:** $$\begin{aligned} a_\text{n} &= \dfrac{v^2}{r} \\ v^2 &= a_\text{n} r \\ v &= \sqrt{a_\text{n} r} \end{aligned}$$
 **Conversions:** The quantities are in SI units, so no conversions are needed.
 **Substitution:** $v = \sqrt{2.5\,\text{m/s}^2\cdot 25\,\text{m}} = \sqrt{62.5\,\text{m}^2/\text{s}^2} = 7.906\,\text{m/s}$
 **Answer:** $7.9\,\text{m/s}$, two significant figures like the acceleration and the radius.
@@ -65,7 +65,7 @@ a ylös
 v oikea
 akselit 0
 ```
-**Formula:** $y$: $N - mg = m\dfrac{v^2}{r}$, so $N = m\left(g + \dfrac{v^2}{r}\right)$
+**Formula:** $$\begin{aligned} \Sigma F_y &= N - mg \\ \Sigma F_y &= m a_\text{n} \\ a_\text{n} &= \dfrac{v^2}{r} \\ N - mg &= m\dfrac{v^2}{r} \\ N &= m\left(g + \dfrac{v^2}{r}\right) \end{aligned}$$
 **Conversions:** The quantities are in SI units; the result is finally converted to kilonewtons, $1\,\text{kN} = 1000\,\text{N}$.
 **Substitution:** $$\begin{aligned} &N \\ &= 80\,\text{kg}\cdot\left(9.81\,\text{m/s}^2 + \dfrac{(8.0\,\text{m/s})^2}{16\,\text{m}}\right) \\ &= 80\,\text{kg}\cdot 13.81\,\text{m/s}^2 \\ &= 1104.8\,\text{N} \\ &= 1.1048\,\text{kN} \end{aligned}$$
 **Answer:** $1.1\,\text{kN}$ upwards, two significant figures like the speed $8.0\,\text{m/s}$ and the radius $16\,\text{m}$.
@@ -96,7 +96,7 @@ a alas
 v oikea
 akselit 0
 ```
-**Formula:** $y$: $N - mg = -m\dfrac{v^2}{r}$, so $N = m\left(g - \dfrac{v^2}{r}\right)$
+**Formula:** $$\begin{aligned} \Sigma F_y &= N - mg \\ \Sigma F_y &= -m a_\text{n} \\ a_\text{n} &= \dfrac{v^2}{r} \\ N - mg &= -m\dfrac{v^2}{r} \\ N &= m\left(g - \dfrac{v^2}{r}\right) \end{aligned}$$
 **Conversions:** The quantities are in SI units; the result is finally converted to kilonewtons, $1\,\text{kN} = 1000\,\text{N}$.
 **Substitution:** $N = 1200\,\text{kg}\cdot\left(9.81\,\text{m/s}^2 - \dfrac{(12\,\text{m/s})^2}{30\,\text{m}}\right) = 1200\,\text{kg}\cdot 5.01\,\text{m/s}^2 = 6012\,\text{N} = 6.012\,\text{kN}$
 **Answer:** $6.0\,\text{kN}$ upwards, two significant figures like the speed $12\,\text{m/s}$ and the radius $30\,\text{m}$.
@@ -106,7 +106,7 @@ akselit 0
 **Given:** $m = 7.26\,\text{kg}$, radius $r = 1.8\,\text{m}$, period $T = 0.50\,\text{s}$, the path is a horizontal circle
 **Find:** the net force $\Sigma F$ on the hammer in $\text{kN}$
 **Principle:** In the model the hammer is in uniform circular motion, so by Newton's second law the net force points towards the centre of the circle and equals $m\tfrac{v^2}{r}$. The tangential speed is found from the period.
-**Formula:** $v = \dfrac{2\pi r}{T}$ and $\Sigma F = m\dfrac{v^2}{r}$
+**Formula:** $$\begin{aligned} v &= \dfrac{2\pi r}{T} \\ \Sigma F &= m a_\text{n} \\ a_\text{n} &= \dfrac{v^2}{r} \\ \Sigma F &= m\dfrac{v^2}{r} \end{aligned}$$
 **Conversions:** The quantities are in SI units; the result is finally converted to kilonewtons, $1\,\text{kN} = 1000\,\text{N}$.
 **Substitution:** $v = \dfrac{2\pi\cdot 1.8\,\text{m}}{0.50\,\text{s}} = 22.62\,\text{m/s}$ and $\Sigma F = 7.26\,\text{kg}\cdot\dfrac{(22.62\,\text{m/s})^2}{1.8\,\text{m}} = 2064\,\text{N} = 2.064\,\text{kN}$
 **Answer:** $2.1\,\text{kN}$ towards the centre, two significant figures like the radius $1.8\,\text{m}$ and the period $0.50\,\text{s}$.
@@ -127,10 +127,10 @@ F_mu 10 oikea
 a oikea
 akselit 0
 ```
-**Formula:** $y$: $N - mg = 0$ and $x$: $\mu_0 N = m\dfrac{v^2}{r}$, so $\mu_0 mg = m\dfrac{v^2}{r}$ and $v = \sqrt{\mu_0 g r}$
+**Formula:** $$\begin{aligned} \Sigma F_y &= 0 \Rightarrow N = mg \\ F_\mu &= \mu_0 N = \mu_0 mg \\ F_\mu &= m a_\text{n} = m\dfrac{v^2}{r} \\ v^2 &= \mu_0 g r \\ v &= \sqrt{\mu_0 g r} \end{aligned}$$
 **Conversions:** The result is finally converted to $\text{km/h}$: $1\,\text{m/s} = \dfrac{0.001\,\text{km}}{\tfrac{1}{3600}\,\text{h}} = 3.6\,\text{km/h}$.
 **Substitution:** $v = \sqrt{0.10\cdot 9.81\,\text{m/s}^2\cdot 60\,\text{m}} = \sqrt{58.86\,\text{m}^2/\text{s}^2} = 7.672\,\text{m/s} = 7.672\cdot 3.6\,\text{km/h} = 27.62\,\text{km/h}$
-**Answer:** $28\,\text{km/h}$, two significant figures like the radius $60\,\text{m}$ and the coefficient $0.10$.
+**Answer:** $27\,\text{km/h}$. The exact value is $27.62\,\text{km/h}$, and two significant figures match the radius $60\,\text{m}$ and the coefficient $0.10$. This is a greatest allowed speed, so the limit is rounded down: $28\,\text{km/h}$ would exceed it.
 **Reasonableness:** On ice a bend must be taken very slowly, and on dry asphalt ($\mu_0 \approx 0.8$) the same bend could be taken at $\sqrt{8} \approx 2.8$ times the speed, about $78\,\text{km/h}$. The mass cancelled, so even a heavy car does not stay in the bend any better.
 
 ## fy5-4-L3-02
@@ -150,7 +150,7 @@ T 25 0
 a oikea
 akselit 0
 ```
-**Formula:** $x$: $T = m\dfrac{v^2}{r}$, where $T$ is the tension of the string, so $v = \sqrt{\dfrac{T r}{m}}$; $v = 2\pi r f$, so $f = \dfrac{v}{2\pi r}$
+**Formula:** $$\begin{aligned} \Sigma F_x &= T = m a_\text{n} \\ a_\text{n} &= \dfrac{v^2}{r} \\ v &= \sqrt{\dfrac{T r}{m}} \\ v &= 2\pi r f \\ f &= \dfrac{v}{2\pi r} \end{aligned}$$
 **Conversions:** The quantities are in SI units, so no conversions are needed; $1\,\text{Hz} = 1\,\text{1/s}$.
 **Substitution:** $v = \sqrt{\dfrac{25\,\text{N}\cdot 0.80\,\text{m}}{0.40\,\text{kg}}} = \sqrt{50\,\text{m}^2/\text{s}^2} = 7.071\,\text{m/s}$ and $f = \dfrac{7.071\,\text{m/s}}{2\pi\cdot 0.80\,\text{m}} = 1.407\,\text{Hz}$
 **Answer:** $1.4\,\text{Hz}$, two significant figures like the mass, the radius and the strength of the string.
@@ -171,10 +171,10 @@ F_mu 25 oikea
 a oikea
 akselit 0
 ```
-**Formula:** $y$: $N - mg = 0$ and $x$: $F_\mu = m\dfrac{v^2}{r}$. The condition $F_\mu \le 0.25\,mg$ gives $m\dfrac{v^2}{r} \le 0.25\,mg$, so $r \ge \dfrac{v^2}{0.25\,g}$
+**Formula:** $$\begin{aligned} \Sigma F_y &= 0 \Rightarrow N = mg \\ F_\mu &= m a_\text{n} = m\dfrac{v^2}{r} \\ F_\mu &\le 0.25\,mg \\ r &\ge \dfrac{v^2}{0.25\,g} \end{aligned}$$
 **Conversions:** $v = 80\,\text{km/h} = \dfrac{80\cdot 1000\,\text{m}}{3600\,\text{s}} = 22.22\,\text{m/s}$
 **Substitution:** $r = \dfrac{(22.22\,\text{m/s})^2}{0.25\cdot 9.81\,\text{m/s}^2} = \dfrac{493.8\,\text{m}^2/\text{s}^2}{2.4525\,\text{m/s}^2} = 201.4\,\text{m}$
-**Answer:** $200\,\text{m}$ or $2.0 \cdot 10^{2}\,\text{m}$, two significant figures like the speed $80\,\text{km/h}$ and the coefficient $0.25$.
+**Answer:** $210\,\text{m}$ or $2.1 \cdot 10^{2}\,\text{m}$. The exact value is $201.4\,\text{m}$, and two significant figures match the speed $80\,\text{km/h}$ and the coefficient $0.25$. This is a smallest allowed radius, so the limit is rounded up: $200\,\text{m}$ would fall short of it.
 **Reasonableness:** The radii of the bends of country roads are hundreds of metres, so the result is believable. The radius grows with the square of the speed: for $120\,\text{km/h}$ a radius $2.25$ times as large would be needed, about $450\,\text{m}$. The mass cancelled, so the same radius is enough for all cars.
 
 ## fy5-4-L1-06
@@ -195,7 +195,7 @@ An acceleration in the direction of motion would change the speed, which is not 
 **Given:** original centripetal acceleration $a_1 = 1.0\,\text{m/s}^2$, new speed $v_2 = 3\,v_1$, the same bend, that is the same radius $r$
 **Find:** the new centripetal acceleration $a_2$ in $\text{m/s}^2$
 **Principle:** The bend is the same, so the radius does not change. The centripetal acceleration $\tfrac{v^2}{r}$ is directly proportional to the square of the speed, so tripling the speed makes the acceleration nine times as large.
-**Formula:** $a_1 = \dfrac{v_1^2}{r}$ and $a_2 = \dfrac{(3\,v_1)^2}{r} = 9\,\dfrac{v_1^2}{r}$, so $a_2 = 9\,a_1$
+**Formula:** $$\begin{aligned} a_1 &= \dfrac{v_1^2}{r} \\ a_2 &= \dfrac{(3\,v_1)^2}{r} \\ a_2 &= 9\,\dfrac{v_1^2}{r} \\ a_2 &= 9\,a_1 \end{aligned}$$
 **Conversions:** No conversions are needed, because the acceleration is already in $\text{m/s}^2$ and the speed appears only as a ratio.
 **Substitution:** $a_2 = 9\cdot 1.0\,\text{m/s}^2 = 9.0\,\text{m/s}^2$
 **Answer:** $9.0\,\text{m/s}^2$, two significant figures like the original acceleration $1.0\,\text{m/s}^2$.
@@ -210,7 +210,7 @@ By Newton's second law $F = m\tfrac{v^2}{r}$, so $F$ is directly proportional to
 **Reading the graph:** Calculate $v^2$ for each row: $9.0$, $16$, $25$, $36$ and $49\,\text{m}^2/\text{s}^2$. The points $(v^2, F)$ lie close to a line but not exactly on it, because the measurements have a little scatter. The line was drawn by eye through the origin between the points, and it happens to pass through the point $(49\,\text{m}^2/\text{s}^2,\ 1.53\,\text{N})$.
 
 The slope is read from the line at two points far apart: the origin and this point. Check: the mean of the quantities $F/v^2$ is $0.0312\,\text{kg/m}$, and the least-squares fit gives the same mass, $25.0\,\text{g}$.
-**Formula:** $k = \dfrac{\Delta F}{\Delta(v^2)}$ and $k = \dfrac{m}{r}$, so $m = k\,r$
+**Formula:** $$\begin{aligned} F &= m a_\text{n} = m\dfrac{v^2}{r} \\ F &= \dfrac{m}{r}\,v^2 \\ k &= \dfrac{\Delta F}{\Delta(v^2)} = \dfrac{m}{r} \\ m &= k\,r \end{aligned}$$
 **Conversions:** $1\,\text{kg} = 1000\,\text{g}$, so $m$ is finally converted to grams.
 **Substitution:** $k = \dfrac{1.53\,\text{N} - 0\,\text{N}}{49\,\text{m}^2/\text{s}^2 - 0\,\text{m}^2/\text{s}^2} = 0.03122\,\text{kg/m}$ and $m = 0.03122\,\tfrac{\text{kg}}{\text{m}}\cdot 0.80\,\text{m} = 0.02498\,\text{kg} = 24.98\,\text{g}$
 **Answer:** $25\,\text{g}$, two significant figures like the radius $0.80\,\text{m}$.
@@ -231,7 +231,7 @@ F_mu 55 oikea
 a oikea
 akselit 0
 ```
-**Formula:** $y$: $N - mg = 0$ and $x$: $\mu_0 N = m\dfrac{v^2}{r}$, so $\mu_0\, mg = m\dfrac{v^2}{r}$ and $\mu_0 = \dfrac{v^2}{g\,r}$
+**Formula:** $$\begin{aligned} \Sigma F_y &= 0 \Rightarrow N = mg \\ F_\mu &= \mu_0 N = \mu_0 mg \\ F_\mu &= m a_\text{n} = m\dfrac{v^2}{r} \\ \mu_0 &= \dfrac{F_\mu}{mg} = \dfrac{v^2}{g\,r} \end{aligned}$$
 **Conversions:** The quantities are in SI units, so no conversions are needed.
 **Substitution:** Row by row: $\mu_0 = \dfrac{(10.4\,\text{m/s})^2}{9.81\,\text{m/s}^2\cdot 20\,\text{m}} = 0.551$, $\ 0.539$, $\ 0.558$ and $0.542$. The sum is $2.191$, so the mean is $\mu_{0,\text{av}} = \dfrac{2.191}{4} = 0.5477$
 **Answer:** $0.55$, two significant figures like the speeds and the radii.
@@ -243,7 +243,7 @@ akselit 0
 **Principle:** The car is in uniform circular motion, so by Newton's second law the sum of the real forces on the car points towards the centre and is $m\tfrac{v^2}{r}$.
 
 In the horizontal direction the only real force is the friction of the road, so the friction is this sum. There is no real centrifugal force, so it is not drawn in the force diagram and not included in the calculation.
-**Formula:** $x$ (towards the centre): $F_\mu = m\dfrac{v^2}{r}$
+**Formula:** $$\begin{aligned} \Sigma F_x &= F_\mu \\ \Sigma F_x &= m a_\text{n} \\ a_\text{n} &= \dfrac{v^2}{r} \\ F_\mu &= m\dfrac{v^2}{r} \end{aligned}$$
 **Conversions:** The quantities are in SI units; the result is finally converted to kilonewtons, $1\,\text{kN} = 1000\,\text{N}$.
 **Substitution:** $F_\mu = 850\,\text{kg}\cdot\dfrac{(18\,\text{m/s})^2}{75\,\text{m}} = 850\,\text{kg}\cdot 4.32\,\text{m/s}^2 = 3672\,\text{N} = 3.672\,\text{kN}$
 **Answer:** $3.7\,\text{kN}$ towards the centre of the bend, two significant figures like the speed $18\,\text{m/s}$ and the radius $75\,\text{m}$.
@@ -274,7 +274,7 @@ In diagram B the upward centrifugal force $\overline{F}_\text{cf}$ cancels the n
 **Find:** the radius of the bend $r$ in $\text{m}$
 **Principle:** The car is in uniform circular motion, so the centripetal acceleration is $a_\text{n} = \tfrac{v^2}{r}$. Every point of the curve belongs to the same bend, so one point read from the graph is enough to find the radius.
 **Reading the graph:** The marked point is where the vertical gridline $v = 15\,\text{m/s}$ meets the horizontal gridline $a_\text{n} = 3.0\,\text{m/s}^2$. The speed and the acceleration are read there, and the radius follows from them.
-**Formula:** $a_\text{n} = \dfrac{v^2}{r}$, so $r = \dfrac{v^2}{a_\text{n}}$
+**Formula:** $$\begin{aligned} a_\text{n} &= \dfrac{v^2}{r} \\ r &= \dfrac{v^2}{a_\text{n}} \end{aligned}$$
 **Conversions:** The units are already $\text{m/s}$ and $\text{m/s}^2$, so no conversion is needed.
 **Substitution:** $r = \dfrac{(15\,\text{m/s})^2}{3.0\,\text{m/s}^2} = \dfrac{225\,\text{m}^2/\text{s}^2}{3.0\,\text{m/s}^2} = 75\,\text{m}$
 **Answer:** $r = 75\,\text{m}$, two significant figures as in the acceleration read, $3.0\,\text{m/s}^2$.
@@ -308,7 +308,7 @@ a 270
 v 180
 akselit 0
 ```
-**Formula:** $r = \dfrac{v^2}{a_\text{n}}$. At the bottom, $y$ up: $N_1 - mg = ma_1$, so $N_1 = m(g + a_1)$. At the top, $y$ down towards the centre: $N_2 + mg = ma_2$, so $N_2 = m(a_2 - g)$. The support force is zero when $mg = m\tfrac{v_\text{min}^2}{r}$, so $v_\text{min} = \sqrt{g\,r}$
+**Formula:** $$\begin{aligned} a_\text{n} &= \dfrac{v^2}{r} \\ r &= \dfrac{v^2}{a_\text{n}} \\ \Sigma F_1 &= N_1 - mg = m a_1 \\ N_1 &= m(g + a_1) \\ \Sigma F_2 &= N_2 + mg = m a_2 \\ N_2 &= m(a_2 - g) \\ N_2 &= 0 \Rightarrow a_2 = g \\ a_2 &= \dfrac{v_\text{min}^2}{r} \\ v_\text{min} &= \sqrt{g\,r} \end{aligned}$$
 **Conversions:** The quantities are in SI units, so no conversions are needed.
 **Substitution:** a) $r_1 = \dfrac{(27.2\,\text{m/s})^2}{53.2\,\text{m/s}^2} = 13.91\,\text{m}$ and $r_2 = \dfrac{(14.0\,\text{m/s})^2}{14.1\,\text{m/s}^2} = 13.90\,\text{m}$. The sum is $27.81\,\text{m}$, so the mean is $13.90\,\text{m}$.
 b) $N_2 = 60.0\,\text{kg}\cdot(14.1 - 9.81)\,\text{m/s}^2 = 60.0\,\text{kg}\cdot 4.29\,\text{m/s}^2 = 257.4\,\text{N}$ and $N_1 = 60.0\,\text{kg}\cdot(9.81 + 53.2)\,\text{m/s}^2 = 3780.6\,\text{N}$. Compared with the weight $mg = 588.6\,\text{N}$: $\tfrac{N_1}{mg} = \tfrac{3780.6}{588.6} = 6.42$.
@@ -337,7 +337,11 @@ F_mu 42,8 alas
 a vasen
 akselit 0
 ```
-**Formula:** Without friction ($F_\mu = 0$): $x$: $N\sin\alpha = m\dfrac{v_0^2}{r}$ and $y$: $N\cos\alpha = mg$, so by dividing $\tan\alpha = \dfrac{v_0^2}{g\,r}$ and $v_0 = \sqrt{g\,r\tan\alpha}$. With friction: $x$: $N\sin\alpha + \mu_0 N\cos\alpha = m\dfrac{v^2}{r}$ and $y$: $N\cos\alpha - \mu_0 N\sin\alpha = mg$. The equations are divided by each other, so that $N$ and $m$ cancel:
+**Formula:** Without friction ($F_\mu = 0$): $$\begin{aligned} \Sigma F_y &= N\cos\alpha - mg = 0 \\ \Sigma F_x &= N\sin\alpha = m\dfrac{v_0^2}{r} \\ \tan\alpha &= \dfrac{N\sin\alpha}{N\cos\alpha} \\ \tan\alpha &= \dfrac{v_0^2}{g\,r} \\ v_0 &= \sqrt{g\,r\tan\alpha} \end{aligned}$$
+
+With friction: $$\begin{aligned} N\sin\alpha + \mu_0 N\cos\alpha &= m\dfrac{v^2}{r} \\ N\cos\alpha - \mu_0 N\sin\alpha &= mg \end{aligned}$$
+
+The equations are divided by each other, so that $N$ and $m$ cancel:
 
 $$\dfrac{\sin\alpha + \mu_0\cos\alpha}{\cos\alpha - \mu_0\sin\alpha} = \dfrac{v^2}{g\,r}$$
 
@@ -368,7 +372,7 @@ The same coefficient of friction is therefore enough for a greater speed, and on
 
 The car stays on the road as long as the friction needed does not exceed the maximum static friction $\mu_0 N$; in the limiting case $F = \mu_0 N$.
 **Reading the graph:** The marked point on the curve is where the gridlines $v = 20\,\text{m/s}$ and $F = 8.0\,\text{kN}$ meet (the vertical axis is in kilonewtons). The friction needed at $20\,\text{m/s}$ is read as $F = 8.0\,\text{kN}$.
-**Formula:** $F = \mu_0 N$ and $N = mg$, so $\mu_0 = \dfrac{F}{mg}$
+**Formula:** $$\begin{aligned} F &= \mu_0 N \\ N &= mg \\ \mu_0 &= \dfrac{F}{mg} \end{aligned}$$
 **Conversions:** $F = 8.0\,\text{kN} = 8.0 \cdot 1000\,\text{N} = 8000\,\text{N}$
 **Substitution:** $\mu_0 = \dfrac{8000\,\text{N}}{1200\,\text{kg} \cdot 9.81\,\text{m/s}^2} = \dfrac{8000\,\text{N}}{11772\,\text{N}} = 0.6796$
 **Answer:** $\mu_0 \approx 0.68$, two significant figures as in the force read, $8.0\,\text{kN}$.

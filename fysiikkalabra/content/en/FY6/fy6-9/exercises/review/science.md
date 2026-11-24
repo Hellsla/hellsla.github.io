@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: ccb98e9a17ea30ff
+CONTENT-HASH: 11a5edfc26a94f6a
+SCOPE: delta wording from 750761aac39f869c base a2442fe
 
 ## Blocking
+- none
 
 ## Polish
+- content/en/FY6/fy6-9/exercises/solutions.md (internal-energy task, Formula) — $U = R_\text{s} I$ reuses $U$, the terminal voltage in this chapter — write $U_\text{s} = R_\text{s} I$, as in fi.
 
 ## Checked
-- The new task fy6-9-L2-09 translates the fixed Finnish version (round 2): W = UQ = 504 Wh = 1,8 MJ and t = UQ/P = 4,2 h. The answer is 4,2 with tolerance 0,02, and answers.py is shared.
-- Nothing specific is attributed to the unverified Tukes page. The instructions are the student's own choice, the examples are "typical charging instructions" with "check the wording in the source material", and each reason is marked as the solution's own physics. The cold-battery reason is explicitly not claimed as the source's.
-- c): 120 W is named as the power into the battery and the loss is R_sI², with only EI stored. The falling current through the rising E and the Li-ion charger taper are kept. The charger's own losses are a separate remark. This is consistent with b).
-- d) physics: a large I from a small R_s, R_sI² quadrupling when I doubles, and an internal short turning the stored 1,8 MJ into internal energy. All are correct, and the safety wording is not unsafe.
-- Notation U_ch, E, R, R_s matches the rest of the English set.
-- Reflowed chains: same numbers, signs and units in the same order.
-- Hash read at start and end: unchanged.
+- Hash 11a5edfc26a94f6a at start and end. The diff changes only the first row of five voltage-law Formula blocks, $\Sigma U = 0$ to $\sum \Delta V = 0$, matching the lesson's Kirchhoff notation (signed potential changes) and the Finnish version; no $\Sigma U = 0$ is left.
+- The signed rows that follow, $U_\text{ch} - RI - R_\text{s}I - E = 0$ and $U_\text{ch} - R_\text{tot}I - E = 0$, have the right signs for charging; the rearrangements to $I$, $R_\text{s}$, $R_\text{tot}$ and $I_k$ are unchanged and correct.
+- Recomputed the touched answers: 5.0 A, 0.20 Ω, 33.3 %, 0.40 Ω, 7.125 h; they agree with answers.py.

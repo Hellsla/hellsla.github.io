@@ -23,6 +23,12 @@ In 1911 Rutherford explained the result. Almost all the mass and all the positiv
   <foreignObject x="470" y="3.5" width="62" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$50\ \text{fm}$</div></foreignObject>
 </svg>
 
+```pysahdy
+Why were most alpha particles hardly deflected, while a very few bounced straight back?
+---
+Most alpha particles pass far from any nucleus and feel only a weak electric force. Only the rare one that comes very close to the tiny, heavy, positive nucleus is strongly repelled.
+```
+
 ## The spectrum of hydrogen {Lines}
 
 A **gas discharge tube** contains a thin gas, and a high voltage between its ends makes the gas glow. When you look at the glow of hydrogen through a **diffraction grating** or a spectroscope, you do not see a rainbow. You see a **line spectrum**: four bright, thin lines of visible light, always at the same wavelengths.
@@ -59,6 +65,12 @@ Rutherford's atom has a tiny, heavy, positive nucleus. The nucleus of gold has a
 
 But this atom raised a new problem. An electron moving round the nucleus is always accelerating, and classical physics says that an accelerating charge sends out electromagnetic radiation. The electron should lose energy, spiral into the nucleus and send out a continuous spectrum on the way. Real atoms are stable and give sharp lines. Classical physics had failed again.
 
+```pysahdy
+According to classical physics, why should an electron orbiting a nucleus spiral into it?
+---
+An orbiting electron is always accelerating, and an accelerating charge radiates electromagnetic waves. It therefore loses energy and its orbit shrinks.
+```
+
 ## Bohr's quantum atom {Bohr}
 
 In 1913 the Danish physicist Niels Bohr, who had worked with Rutherford in Manchester, combined the nuclear atom with Planck's and Einstein's quanta. His model of hydrogen rests on three ideas:
@@ -88,6 +100,12 @@ So a hot gas sends out only the photon energies that match jumps between its lev
   <foreignObject x="303" y="213" width="74" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\lambda\ \text{in nm}$</div></foreignObject>
   <foreignObject x="176" y="324.5" width="124" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$122\ \text{nm (UV)}$</div></foreignObject>
 </svg>
+
+```pysahdy
+A hydrogen atom makes one jump from $n = 3$ to $n = 2$ and another from $n = 4$ to $n = 2$. Which jump gives the photon with the shorter wavelength?
+---
+The jump from $n = 4$ to $n = 2$. Its energy difference is bigger, so the photon has a higher frequency and, by $c = f\lambda$, a shorter wavelength.
+```
 
 Bohr's model gives the hydrogen lines very accurately, but it fails for atoms with more than one electron, and its electrons in neat circular orbits are not the whole truth. In the 1920s **quantum mechanics** replaced the orbits with waves and probabilities: the topic of the next unit. The idea of energy levels survived.
 

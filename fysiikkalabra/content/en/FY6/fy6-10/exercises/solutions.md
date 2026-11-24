@@ -34,7 +34,7 @@ In the simulation two spheres of $20\,\text{nC}$ at a distance of $3.0\,\text{cm
 **Given:** the charges of the spheres before the contact $Q_1 = +12\,\text{nC}$ and $Q_2 = -4.0\,\text{nC}$; the spheres are identical
 **Find:** the charge $Q$ of each sphere after the contact in nanocoulombs
 **Principle:** Charge is conserved: in contact electrons only move from one sphere to the other, so the common charge of the spheres is the same before and after. Identical metal spheres share their common charge equally, so each gets half.
-**Formula:** $Q_1 + Q_2 = 2Q$, so $Q = \dfrac{Q_1 + Q_2}{2}$
+**Formula:** $$\begin{aligned} Q_1 + Q_2 &= Q + Q \\ &= 2Q \\ Q &= \dfrac{Q_1 + Q_2}{2} \end{aligned}$$
 **Conversions:** Not needed: all the charges are in nanocoulombs, and the answer is asked in the same unit.
 **Substitution:** $Q = \dfrac{12\,\text{nC} + (-4.0\,\text{nC})}{2} = \dfrac{8.0\,\text{nC}}{2} = 4.0\,\text{nC}$
 **Answer:** $+4.0\,\text{nC}$ on each, two significant figures like the charge $4.0\,\text{nC}$.
@@ -54,7 +54,7 @@ In the simulation two spheres of $20\,\text{nC}$ at a distance of $3.0\,\text{cm
 **Given:** charges $q_1 = q_2 = +30\,\text{nC}$, force $F = 2.0\,\text{mN}$; $$k = 8.988 \cdot 10^{9}\,\tfrac{\text{N} \cdot \text{m}^2}{\text{C}^2}$$
 **Find:** the distance between the centres of the spheres $r$ in centimetres
 **Principle:** The spheres are small, so Coulomb's law holds when the distance is measured between the centres. The distance is solved from the law: the force is inversely proportional to the square of the distance, so the distance comes as a square root.
-**Formula:** $F = k\,\dfrac{\lvert q_1 q_2 \rvert}{r^2}$, so $r = \sqrt{\dfrac{k \lvert q_1 q_2 \rvert}{F}}$
+**Formula:** $$\begin{aligned} F &= k\,\dfrac{\lvert q_1 q_2 \rvert}{r^2} \\ r^2 &= \dfrac{k \lvert q_1 q_2 \rvert}{F} \\ r &= \sqrt{\dfrac{k \lvert q_1 q_2 \rvert}{F}} \end{aligned}$$
 **Conversions:** $q_1 = q_2 = 30 \cdot 10^{-9}\,\text{C}$ and $F = 2.0\,\text{mN} = 2.0 \cdot 10^{-3}\,\text{N}$; finally $1\,\text{m} = 100\,\text{cm}$.
 **Substitution:** $$\begin{aligned} r^2 &= 8.988 \cdot 10^{9}\,\tfrac{\text{N} \cdot \text{m}^2}{\text{C}^2} \\ &\cdot \dfrac{(30 \cdot 10^{-9}\,\text{C})^2}{2.0 \cdot 10^{-3}\,\text{N}} \\ &= 4.045 \cdot 10^{-3}\,\text{m}^2 \end{aligned}$$, so $r = \sqrt{4.045 \cdot 10^{-3}\,\text{m}^2} = 0.0636\,\text{m} = 6.36\,\text{cm}$
 **Answer:** $6.4\,\text{cm}$, two significant figures like the charges and the force.
@@ -64,7 +64,7 @@ In the simulation two spheres of $20\,\text{nC}$ at a distance of $3.0\,\text{cm
 **Given:** force $F_1 = 3.6\,\text{mN}$ at a distance $r_1 = 4.0\,\text{cm}$, new distance $r_2 = 10\,\text{cm}$; the charges stay the same
 **Find:** the force $F_2$ in millinewtons
 **Principle:** In Coulomb's law the charges and $k$ stay the same, so the force is inversely proportional to the square of the distance. When the law is written for both distances and divided, the unknown charges cancel.
-**Formula:** $\dfrac{F_2}{F_1} = \dfrac{r_1^2}{r_2^2}$, so $F_2 = F_1 \left(\dfrac{r_1}{r_2}\right)^2$
+**Formula:** $$\begin{aligned} F_1 &= k\,\dfrac{\lvert q_1 q_2 \rvert}{r_1^2} \\ F_2 &= k\,\dfrac{\lvert q_1 q_2 \rvert}{r_2^2} \\ \dfrac{F_2}{F_1} &= \dfrac{r_1^2}{r_2^2} \\ F_2 &= F_1 \left(\dfrac{r_1}{r_2}\right)^2 \end{aligned}$$
 **Conversions:** Not needed: in the ratio of the distances the centimetres cancel, and the force comes in the same unit as $F_1$.
 **Substitution:** $F_2 = 3.6\,\text{mN} \cdot \left(\dfrac{4.0\,\text{cm}}{10\,\text{cm}}\right)^2 = 3.6\,\text{mN} \cdot 0.16 = 0.576\,\text{mN}$
 **Answer:** $0.58\,\text{mN}$, two significant figures like the force and the distance $4.0\,\text{cm}$.
@@ -74,7 +74,7 @@ In the simulation two spheres of $20\,\text{nC}$ at a distance of $3.0\,\text{cm
 **Given:** the charges before the contact $Q_1 = +18\,\text{nC}$ and $Q_2 = -6.0\,\text{nC}$, distance after the contact $r = 4.0\,\text{cm}$; $$k = 8.988 \cdot 10^{9}\,\tfrac{\text{N} \cdot \text{m}^2}{\text{C}^2}$$
 **Find:** the magnitude of the force between the spheres $F$ in millinewtons
 **Principle:** Charge is conserved, and identical metal spheres share their common charge equally in contact, so the charge of each is half of the common charge. After that the force comes from Coulomb's law; spheres with charges of the same sign repel each other.
-**Formula:** $q = \dfrac{Q_1 + Q_2}{2}$ and $F = k\,\dfrac{q^2}{r^2}$
+**Formula:** $$\begin{aligned} Q_1 + Q_2 &= q + q \\ q &= \dfrac{Q_1 + Q_2}{2} \\ F &= k\,\dfrac{q^2}{r^2} \end{aligned}$$
 **Conversions:** $r = 4.0 \cdot 0.01\,\text{m} = 0.040\,\text{m}$, $1\,\text{nC} = 10^{-9}\,\text{C}$ and finally $1\,\text{N} = 1000\,\text{mN}$.
 **Substitution:** $q = \dfrac{18\,\text{nC} - 6.0\,\text{nC}}{2} = 6.0\,\text{nC}$ and $$\begin{aligned} F &= 8.988 \cdot 10^{9}\,\tfrac{\text{N} \cdot \text{m}^2}{\text{C}^2} \\ &\cdot \dfrac{(6.0 \cdot 10^{-9}\,\text{C})^2}{(0.040\,\text{m})^2} \\ &= 2.022 \cdot 10^{-4}\,\text{N} \\ &= 0.2022\,\text{mN} \end{aligned}$$
 **Answer:** $0.20\,\text{mN}$, two significant figures like the charge $6.0\,\text{nC}$ and the distance.
@@ -84,7 +84,7 @@ In the simulation two spheres of $20\,\text{nC}$ at a distance of $3.0\,\text{cm
 **Given:** the mass of each sphere $m = 0.50\,\text{g}$, distance $r = 5.0\,\text{cm}$, equal charges; $g = 9.81\,\text{m/s}^2$ and $$k = 8.988 \cdot 10^{9}\,\tfrac{\text{N} \cdot \text{m}^2}{\text{C}^2}$$
 **Find:** the charge of a sphere $q$ in nanocoulombs
 **Principle:** The electric force is equal to the weight of a sphere, $G = mg$. The spheres are small, so the force comes from Coulomb's law, and with equal charges the product of the charges is $q^2$. The charge is solved as a square root.
-**Formula:** $k\,\dfrac{q^2}{r^2} = mg$, so $q = r\sqrt{\dfrac{mg}{k}}$
+**Formula:** $$\begin{aligned} F_\text{e} &= G \\ F_\text{e} &= k\,\dfrac{q^2}{r^2} \\ G &= mg \\ k\,\dfrac{q^2}{r^2} &= mg \\ q^2 &= \dfrac{mg\,r^2}{k} \\ q &= r\sqrt{\dfrac{mg}{k}} \end{aligned}$$
 **Conversions:** $m = 0.50\,\text{g} = 0.50 \cdot 0.001\,\text{kg} = 5.0 \cdot 10^{-4}\,\text{kg}$ and $r = 5.0 \cdot 0.01\,\text{m} = 0.050\,\text{m}$; finally $1\,\text{C} = 10^{9}\,\text{nC}$.
 **Substitution:** $mg = 5.0 \cdot 10^{-4}\,\text{kg} \cdot 9.81\,\text{m/s}^2 = 4.905 \cdot 10^{-3}\,\text{N}$ and $\dfrac{mg}{k} = \dfrac{4.905 \cdot 10^{-3}\,\text{N}}{8.988 \cdot 10^{9}\,\tfrac{\text{N} \cdot \text{m}^2}{\text{C}^2}} = 5.457 \cdot 10^{-13}\,\tfrac{\text{C}^2}{\text{m}^2}$ and $q = 0.050\,\text{m} \cdot \sqrt{5.457 \cdot 10^{-13}\,\tfrac{\text{C}^2}{\text{m}^2}} = 3.693 \cdot 10^{-8}\,\text{C} = 36.94\,\text{nC}$
 **Answer:** $37\,\text{nC}$, two significant figures like the mass and the distance.
@@ -96,7 +96,7 @@ In the simulation two spheres of $20\,\text{nC}$ at a distance of $3.0\,\text{cm
 **Principle:** The force of each charge is calculated separately with Coulomb's law, and the net force is their vector sum. The positive $q_1$ repels the positive $q_3$ in the positive $x$-direction, and the negative $q_2$ attracts $q_3$ towards itself, also in the positive $x$-direction.
 
 The forces are in the same direction, so their magnitudes are added. The distances and the magnitudes of the charges are the same, so the forces are equal.
-**Formula:** $F_1 = k\,\dfrac{\lvert q_1 q_3 \rvert}{r^2}$, $F_2 = k\,\dfrac{\lvert q_2 q_3 \rvert}{r^2}$ and $F = F_1 + F_2$
+**Formula:** $$\begin{aligned} F_1 &= k\,\dfrac{\lvert q_1 q_3 \rvert}{r^2} \\ F_2 &= k\,\dfrac{\lvert q_2 q_3 \rvert}{r^2} \\ F &= F_1 + F_2 \end{aligned}$$
 **Conversions:** $r = 5.0\,\text{cm} = 0.050\,\text{m}$, $1\,\text{nC} = 10^{-9}\,\text{C}$ and finally $1\,\text{N} = 1000\,\text{mN}$.
 **Substitution:** $$\begin{aligned} F_1 &= F_2 \\ &= 8.988 \cdot 10^{9}\,\tfrac{\text{N} \cdot \text{m}^2}{\text{C}^2} \\ &\cdot \dfrac{20 \cdot 10^{-9}\,\text{C} \cdot 5.0 \cdot 10^{-9}\,\text{C}}{(0.050\,\text{m})^2} \\ &= 3.595 \cdot 10^{-4}\,\text{N} \end{aligned}$$ and $F = 2 \cdot 3.595 \cdot 10^{-4}\,\text{N} = 7.190 \cdot 10^{-4}\,\text{N} = 0.7190\,\text{mN}$
 **Answer:** $0.72\,\text{mN}$ in the positive $x$-direction, that is, towards the charge $q_2$, two significant figures like the charge $5.0\,\text{nC}$ and the distance.
@@ -106,7 +106,7 @@ The forces are in the same direction, so their magnitudes are added. The distanc
 **Given:** $$G = 6.674 \cdot 10^{-11}\,\tfrac{\text{N} \cdot \text{m}^2}{\text{kg}^2}$$, $m_\text{e} = 9.109 \cdot 10^{-31}\,\text{kg}$, $m_\text{p} = 1.673 \cdot 10^{-27}\,\text{kg}$; the values of the chapter $e = 1.602 \cdot 10^{-19}\,\text{C}$ and $$k = 8.988 \cdot 10^{9}\,\tfrac{\text{N} \cdot \text{m}^2}{\text{C}^2}$$
 **Find:** the ratio of the forces $F_\text{e} : F_\text{g}$ and why it does not depend on the distance
 **Principle:** The charge of an electron is $-e$ and that of a proton $+e$, so the electric force comes from Coulomb's law. Both forces are inversely proportional to the square of the distance, so $r^2$ cancels in the ratio, and the ratio is the same at all distances.
-**Formula:** $F_\text{e} = k\,\dfrac{e^2}{r^2}$ and $F_\text{g} = G\,\dfrac{m_\text{e} m_\text{p}}{r^2}$, so $\dfrac{F_\text{e}}{F_\text{g}} = \dfrac{k e^2}{G m_\text{e} m_\text{p}}$
+**Formula:** $$\begin{aligned} F_\text{e} &= k\,\dfrac{e^2}{r^2} \\ F_\text{g} &= G\,\dfrac{m_\text{e} m_\text{p}}{r^2} \\ \dfrac{F_\text{e}}{F_\text{g}} &= \dfrac{k e^2}{G m_\text{e} m_\text{p}} \end{aligned}$$
 **Conversions:** Not needed: all the quantities are in base units, and the units cancel, since $\tfrac{\text{N} \cdot \text{m}^2}{\text{C}^2} \cdot \text{C}^2 = \tfrac{\text{N} \cdot \text{m}^2}{\text{kg}^2} \cdot \text{kg}^2$.
 **Substitution:** $$\begin{aligned} k e^2 &= 8.988 \cdot 10^{9}\,\tfrac{\text{N} \cdot \text{m}^2}{\text{C}^2} \\ &\cdot (1.602 \cdot 10^{-19}\,\text{C})^2 \\ &= 2.307 \cdot 10^{-28}\,\text{N} \cdot \text{m}^2 \end{aligned}$$ and $$\begin{aligned} G m_\text{e} m_\text{p} &= 6.674 \cdot 10^{-11}\,\tfrac{\text{N} \cdot \text{m}^2}{\text{kg}^2} \\ &\cdot 9.109 \cdot 10^{-31}\,\text{kg} \\ &\cdot 1.673 \cdot 10^{-27}\,\text{kg} \\ &= 1.017 \cdot 10^{-67}\,\text{N} \cdot \text{m}^2 \end{aligned}$$, so $\dfrac{F_\text{e}}{F_\text{g}} = \dfrac{2.307 \cdot 10^{-28}\,\text{N} \cdot \text{m}^2}{1.017 \cdot 10^{-67}\,\text{N} \cdot \text{m}^2} = 2.27 \cdot 10^{39}$
 **Answer:** $2.27 \cdot 10^{39}$, three significant figures (a chosen precision). Check your explanation: the ratio does not depend on the distance, because the expression of each force contains the same $r^2$.
@@ -118,7 +118,7 @@ The forces are in the same direction, so their magnitudes are added. The distanc
 **Principle:** Both charges are positive, so between them they push the third charge in opposite directions. The net force is zero when the forces are equal.
 
 In Coulomb's law the magnitude of the third charge and $k$ are the same in both forces, so they cancel, and the result does not depend on the magnitude or the sign of the third charge.
-**Formula:** $k\,\dfrac{Q_1 q}{x^2} = k\,\dfrac{Q_2 q}{(d - x)^2}$, so $\dfrac{x}{d - x} = \sqrt{\dfrac{Q_1}{Q_2}}$ and $x = \dfrac{d \sqrt{Q_1 : Q_2}}{1 + \sqrt{Q_1 : Q_2}}$
+**Formula:** $$\begin{aligned} F_1 &= k\,\dfrac{Q_1 q}{x^2} \\ F_2 &= k\,\dfrac{Q_2 q}{(d - x)^2} \\ F_1 &= F_2 \\ \dfrac{Q_1}{x^2} &= \dfrac{Q_2}{(d - x)^2} \\ \dfrac{x}{d - x} &= \sqrt{\dfrac{Q_1}{Q_2}} \\ x &= \dfrac{d \sqrt{Q_1 : Q_2}}{1 + \sqrt{Q_1 : Q_2}} \end{aligned}$$
 **Conversions:** Not needed: in the ratio of the charges the nanocoulombs cancel, and the point comes in centimetres.
 **Substitution:** $\sqrt{\dfrac{4.0\,\text{nC}}{1.0\,\text{nC}}} = 2$ and $x = \dfrac{12\,\text{cm} \cdot 2}{1 + 2} = 8.0\,\text{cm}$
 **Answer:** $8.0\,\text{cm}$, two significant figures like the charges.
@@ -165,7 +165,7 @@ The line is forced through the origin, because when $r \to \infty$, $1 : r^2 \to
 The slope is not read from two points of a drawn line but is a least-squares fit through the origin: $s = \sum xy : \sum x^2$, where $x = 1 : r^2$ and $y = F$.
 
 The result is $s = 5.50 \cdot 10^{-6}\,\text{N} \cdot \text{m}^2$.
-**Formula:** $s = k q^2$, so $q = \sqrt{\dfrac{s}{k}}$
+**Formula:** $$\begin{aligned} F &= k q^2 \cdot \dfrac{1}{r^2} \\ s &= k q^2 \\ q &= \sqrt{\dfrac{s}{k}} \end{aligned}$$
 **Conversions:** Forces in newtons: $F = 13.6\,\text{mN} = 13.6 \cdot 10^{-3}\,\text{N}$ etc., and distances in metres: $r = 2.0\,\text{cm} = 0.020\,\text{m}$ etc.; finally $1\,\text{C} = 10^{9}\,\text{nC}$.
 **Substitution:** $q = \sqrt{\dfrac{5.50 \cdot 10^{-6}\,\text{N} \cdot \text{m}^2}{8.988 \cdot 10^{9}\,\tfrac{\text{N} \cdot \text{m}^2}{\text{C}^2}}} = \sqrt{6.12 \cdot 10^{-16}\,\text{C}^2} = 2.47 \cdot 10^{-8}\,\text{C} = 24.7\,\text{nC}$
 **Answer:** $25\,\text{nC}$, two significant figures like the measurements; a value read from the graph can differ slightly because of the scatter.
@@ -178,7 +178,7 @@ The result is $s = 5.50 \cdot 10^{-6}\,\text{N} \cdot \text{m}^2$.
 
 The distance $r$ and the constant $k$ cancel, so the ratio is the same at all distances; the variation in the table is due to measurement scatter.
 **Reading the table:** The ratios are $\dfrac{31.0}{9.1} = 3.41$; $\dfrac{14.4}{3.9} = 3.69$; $\dfrac{7.6}{2.3} = 3.30$; $\dfrac{3.5}{1.0} = 3.50$ and $\dfrac{1.95}{0.55} = 3.55$. They are close to the same value at all distances, so the force depends on the distance in the same way for both pairs, and the force of pair B is always about $3.5$ times the force of pair A.
-**Formula:** $q_\text{B} = 20\,\text{nC} \cdot \left(F_\text{B} : F_\text{A}\right)_\text{mean}$
+**Formula:** $$\begin{aligned} \dfrac{F_\text{B}}{F_\text{A}} &= \dfrac{q_\text{B}}{20\,\text{nC}} \\ q_\text{B} &= 20\,\text{nC} \cdot \left(F_\text{B} : F_\text{A}\right)_\text{mean} \end{aligned}$$
 **Conversions:** Not needed: the forces are in the same unit and the ratio has no unit; the charge comes in nanocoulombs.
 **Substitution:** The sum of the ratios is $17.45$, so the mean is $\left(F_\text{B} : F_\text{A}\right)_\text{mean} = 17.45 : 5 = 3.49$ and $q_\text{B} = 20\,\text{nC} \cdot 3.49 = 69.8\,\text{nC}$
 **Answer:** $70\,\text{nC}$, two significant figures like the charge of pair A.
@@ -235,7 +235,7 @@ In the region $x < 0$ the forces are opposite, but the test charge is nearer the
 In the region $x > 12\,\text{cm}$ the forces are opposite and the test charge is nearer the smaller charge $q_2$, so the forces can be equal.
 
 The zero point is therefore beyond the charge $q_2$.
-**Formula:** $k\,\dfrac{\lvert q_1 \rvert q}{x^2} = k\,\dfrac{\lvert q_2 \rvert q}{(x - d)^2}$, so $\dfrac{x}{x - d} = \sqrt{\dfrac{\lvert q_1 \rvert}{\lvert q_2 \rvert}} = s$ and $x = \dfrac{d\,s}{s - 1}$
+**Formula:** $$\begin{aligned} F_1 &= k\,\dfrac{\lvert q_1 \rvert q}{x^2} \\ F_2 &= k\,\dfrac{\lvert q_2 \rvert q}{(x - d)^2} \\ F_1 &= F_2 \\ \dfrac{x}{x - d} &= \sqrt{\dfrac{\lvert q_1 \rvert}{\lvert q_2 \rvert}} = s \\ x &= \dfrac{d\,s}{s - 1} \end{aligned}$$
 **Conversions:** Not needed: in the ratio of the charges the nanocoulombs cancel, and the point comes in centimetres.
 **Substitution:** $s = \sqrt{\dfrac{6.0\,\text{nC}}{2.5\,\text{nC}}} = \sqrt{2.4} = 1.549$ and $x = \dfrac{12\,\text{cm} \cdot 1.549}{1.549 - 1} = 33.85\,\text{cm}$
 **Answer:** $34\,\text{cm}$ from the point $x = 0$, that is, about $22\,\text{cm}$ beyond the charge $q_2$, two significant figures like the charges. c) The magnitude of the test charge $q$ is a factor in both forces, so it cancels from the equation; the zero point is determined only by the charges $q_1$ and $q_2$ and the distance between them.
@@ -251,7 +251,7 @@ In equilibrium the acceleration of the sphere is zero, so the forces cancel each
 Dividing the equations gives $F = mg\tan\theta$. The threads and the spheres form an isosceles triangle in which half of the apex angle is $\theta$, so the distance is $r = 2L\sin\theta$.
 
 Because the charges are equal, Coulomb's law gives $F = k q^2 : r^2$.
-**Formula:** $F = mg\tan\theta$, $r = 2L\sin\theta$ and $F = k\,\dfrac{q^2}{r^2}$, so $q = r\sqrt{\dfrac{F}{k}}$
+**Formula:** $$\begin{aligned} T\cos\theta &= mg \\ T\sin\theta &= F \\ F &= mg\tan\theta \\ r &= 2L\sin\theta \\ F &= k\,\dfrac{q^2}{r^2} \\ q &= r\sqrt{\dfrac{F}{k}} \end{aligned}$$
 **Conversions:** $m = 0.80\,\text{g} = 0.80 \cdot 0.001\,\text{kg} = 8.0 \cdot 10^{-4}\,\text{kg}$; finally $1\,\text{C} = 10^{9}\,\text{nC}$.
 **Substitution:** $$\begin{aligned} F &= 8.0 \cdot 10^{-4}\,\text{kg} \cdot 9.81\,\text{m/s}^2 \\ &\cdot \tan 10\,{}^\circ \\ &= 1.384 \cdot 10^{-3}\,\text{N} \end{aligned}$$ and $r = 2 \cdot 0.30\,\text{m} \cdot \sin 10\,{}^\circ = 0.1042\,\text{m}$, so $q = 0.1042\,\text{m} \cdot \sqrt{\dfrac{1.384 \cdot 10^{-3}\,\text{N}}{8.988 \cdot 10^{9}\,\tfrac{\text{N} \cdot \text{m}^2}{\text{C}^2}}} = 0.1042\,\text{m} \cdot 3.924 \cdot 10^{-7}\,\tfrac{\text{C}}{\text{m}} = 4.088 \cdot 10^{-8}\,\text{C} = 40.9\,\text{nC}$
 **Answer:** $41\,\text{nC}$, two significant figures like the mass and the angle. The distance between the spheres is $0.10\,\text{m}$. c) The electric forces are a force and its reaction force, so they are equal in magnitude even if the charges are different. The masses are the same, so the condition $\tan\theta = F : (mg)$ gives the same angle for both spheres. The angle does not stay $10\,{}^\circ$ but grows, because the force $F$ grows, but the threads are still at an equal angle to the vertical.
@@ -274,7 +274,7 @@ The constant $k$ is looked up in the MAFY table; the value $8.988 \cdot 10^{9}\,
 **Find:** the charge $q$ of each sphere in nanocoulombs
 **Principle:** The charges of the spheres are equal, so in Coulomb's law $q_1 = q_2 = q$ and $F = k\,\dfrac{q^2}{r^2}$. When the force is read from the graph at the given distance, the unknown charge can be calculated.
 **Reading the graph:** Go up from $4.0\,\text{cm}$ on the horizontal axis to the curve and from there horizontally to the vertical axis. The curve is just above the fifth millinewton grid line, about $0.06\,\text{mN}$ over it, so $F = 5.06\,\text{mN} \approx 5.1\,\text{mN}$ (the reading is accurate to about $\pm 0.1\,\text{mN}$).
-**Formula:** $F = k\,\dfrac{q^2}{r^2}$, so $q^2 = \dfrac{F r^2}{k}$ and $q = r\sqrt{\dfrac{F}{k}}$
+**Formula:** $$\begin{aligned} F &= k\,\dfrac{q^2}{r^2} \\ q^2 &= \dfrac{F r^2}{k} \\ q &= r\sqrt{\dfrac{F}{k}} \end{aligned}$$
 **Conversions:** $F = 5.06\,\text{mN} = 5.06 \cdot 10^{-3}\,\text{N}$; $r = 4.0\,\text{cm} = 0.040\,\text{m}$; finally $1\,\text{C} = 10^{9}\,\text{nC}$.
 **Substitution:** $$\begin{aligned} q &= 0.040\,\text{m} \\ &\cdot \sqrt{\dfrac{5.06 \cdot 10^{-3}\,\text{N}}{8.988 \cdot 10^{9}\,\text{N} \cdot \text{m}^2/\text{C}^2}} \\ &= 0.040\,\text{m} \cdot 7.50 \cdot 10^{-7}\,\tfrac{\text{C}}{\text{m}} \\ &= 3.00 \cdot 10^{-8}\,\text{C} \\ &= 30\,\text{nC} \end{aligned}$$
 **Answer:** $30\,\text{nC}$ on each sphere, two significant figures, because the force is read from the graph to about two digits. A reading of $5.1\,\text{mN}$ would give $30.1\,\text{nC}$, so the reading accuracy does not change the answer.
@@ -287,7 +287,7 @@ The constant $k$ is looked up in the MAFY table; the value $8.988 \cdot 10^{9}\,
 **Reading the graph:** a) Pair A: on the vertical axis $F_\text{A} = 4.0\,\text{mN}$ at the distance $r_\text{A} = 3.0\,\text{cm}$ (the curve is on the fourth millinewton grid line).
 
 Go from $4.0\,\text{mN}$ horizontally to the right to the curve of pair B: curve B crosses this line at the distance $r_\text{B} = 6.0\,\text{cm}$ (on the sixth centimetre grid line).
-**Formula:** The force of pair A is $k\,\dfrac{q_\text{A}^2}{r_\text{A}^2}$ and that of pair B $k\,\dfrac{q_\text{A} q_\text{B}}{r_\text{B}^2}$, so $q_\text{B} = q_\text{A} \left(\dfrac{r_\text{B}}{r_\text{A}}\right)^2$, where $q_\text{A} = 20\,\text{nC}$.
+**Formula:** $$\begin{aligned} F_\text{A} &= k\,\dfrac{q_\text{A}^2}{r_\text{A}^2} \\ F_\text{B} &= k\,\dfrac{q_\text{A} q_\text{B}}{r_\text{B}^2} \\ F_\text{A} &= F_\text{B} \\ \dfrac{q_\text{A}}{r_\text{A}^2} &= \dfrac{q_\text{B}}{r_\text{B}^2} \\ q_\text{B} &= q_\text{A} \left(\dfrac{r_\text{B}}{r_\text{A}}\right)^2 \end{aligned}$$, where $q_\text{A} = 20\,\text{nC}$.
 **Conversions:** The distances are in the same unit and only their ratio is needed, so no conversions are needed; the charge comes out in nanocoulombs.
 **Substitution:** $q_\text{B} = 20\,\text{nC} \cdot \left(\dfrac{6.0\,\text{cm}}{3.0\,\text{cm}}\right)^2 = 20\,\text{nC} \cdot 4.0 = 80\,\text{nC}$
 **Answer:** $80\,\text{nC}$, two significant figures like the charge of pair A. The distance is twice as large, so the product of the charges must be four times as large for the force to stay the same.

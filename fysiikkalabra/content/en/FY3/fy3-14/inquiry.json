@@ -16,7 +16,7 @@
       "id": "hook",
       "stage": "herata",
       "type": "hook",
-      "text": "On a summer day you drop a few ice cubes into a glass of juice at room temperature. The ice itself is only at 0 °C, but the juice cools quickly, much more than if you added the same amount of water at 0 °C. When the heat has evened out, there can still be ice floating at the bottom of the glass.",
+      "text": "On a summer day you drop a few ice cubes into a glass of juice at room temperature. The ice itself is only at 0 °C, but the juice cools quickly, much more than if you added the same amount of water at 0 °C. When the heat has evened out, there can still be ice floating in the glass.",
       "question": "Why does ice at 0 °C cool a drink so much more effectively than water at 0 °C, and why does not all the ice always melt?"
     },
     {
@@ -161,7 +161,7 @@
       "min": 3,
       "question": {
         "type": "numeric",
-        "prompt": "Use the slider (step $0.5\\,{}^\\circ\\text{C}$) to find the initial temperature of the water at which no ice is left but the final temperature does not yet exceed $0\\,{}^\\circ\\text{C}$. Then calculate the exact temperature and answer in degrees Celsius.",
+        "prompt": "Use the slider (step $0.5\\,{}^\\circ\\text{C}$) to find two consecutive initial temperatures of the water between which the ice disappears completely. Then calculate the exact initial temperature at which all the ice just melts and the final state is $0\\,{}^\\circ\\text{C}$, and answer in degrees Celsius.",
         "answer": 26.6,
         "unit": "°C",
         "tolerance": 0.05,

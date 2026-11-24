@@ -1,14 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: c0d75eed1cea1175
-SCOPE: delta added-exercise from cd55d963ef6779d3 base 81db4a6fd727
+CONTENT-HASH: add6ed1f8827f58d
+none
 
 ## Blocking
 (none)
 
 ## Polish
-- none.
+(none)
 
 ## Checked
-- fy5-1-L1-10 (reworked): the figure gives O, P and the grid scale; the rod OP = 5 squares (4-3-5 triangle) is read from it, and the description does not give 0.50 m.
-- 'perpendicular to the rod' makes the arm equal to OP, so M = 30 N * 0.50 m = 15 Nm is correct; the solution is staged and its check against the horizontal force (9.0 Nm) teaches the arm idea.
-- Level 1 fits (one formula after a reading); the trap of the earlier version is now the contrast, no repeat of the worked example.
+- The only change is the Kaava step of the wrench error-analysis task (solutions.md): it now defines d (measured length) and e (distance from the edge to the axis) before r = d - e. This repairs my earlier Polish 1.
+- The definition sits in the same step as the equations, before any number, so a student who could not solve the task can follow r = d - e, M = Fr, M = F(d - e) in order.
+- Sijoitus and Vastaus are unchanged and use the same numbers (0,270 m, 0,030 m, 90 N, 21,6 Nm), so the Kaava, the Sijoitus and the Periaate still agree.
+- English wording is correct: "Let d be the measured length and e the distance from the edge to the axis."
+- The rest of the set, and the earlier PASS, are unaffected. Text only.

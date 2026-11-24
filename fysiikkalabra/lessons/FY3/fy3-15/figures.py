@@ -130,7 +130,53 @@ def sankey():
 # sankey() is drawn and approved by the teacher (2026-11-12) but not yet placed: the lesson still shows the hand-made SVG
 # it replaces. Swapping a hand-made SVG for it is a figure change the review gate cannot carry over, so it waits for the
 # lesson's next reviewed round: add "sankey": sankey here and <svg data-fig="sankey"></svg> in each language's lesson.md.
-FIGURES = {"hero": hero, "scene": scene, "chain-bars": chain_bars}
+def sankey_lesson():
+    """Hand-pasted figure of the lesson, kept as it was (work queue 24: moved into figures.py before the picture swap)."""
+    f = Fig('fy315-sankey', 400, 'Virtauskaavio (Sankey) lauhdevoimalaitoksen energiaketjusta. Polttoaineen teho 500 MW kulkee vasemmalta oikealle kaistana, joka kapenee vaihe vaiheelta. Kattilassa savukaasujen mukana menee 40 MW, turbiinissa ja lauhduttimessa lämpönä mereen 248 MW ja generaattorissa ja muuntajassa 12 MW. Sähköä saadaan 200 MW, eli 40 prosenttia polttoaineen tehosta. Kaistojen ja nuolten leveydet ovat mittakaavassa, 100 MW on 40 pikseliä.', width=600)
+    f.defs_add('<linearGradient id="fy315-loss" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#ffc078"/></linearGradient><clipPath id="fy315-work"><rect x="349.4" y="0" width="400" height="400"/></clipPath>')
+    f.add('<path d="M160,270 C168,270 168,254 176,254 V300 H160 Z" fill="url(#fy315-loss)" stroke="#e8590c" stroke-width="1.5"/><polygon points="148,300 188,300 168,324" fill="#ffc078" stroke="#e8590c" stroke-width="1.5"/>')
+    f.add('<path d="M250,254 C300,254 299.4,154.6 349.4,154.6 V330 H250 Z" fill="url(#fy315-loss)" stroke="#e8590c" stroke-width="1.5"/><polygon points="236,330 363.4,330 299.7,366" fill="#ffc078" stroke="#e8590c" stroke-width="1.5"/>')
+    f.add('<path d="M430,154.6 C432,154.6 431.7,150 434.7,150 V250 H430 Z" fill="#ffc078" stroke="#e8590c" stroke-width="1.5"/><polygon points="420,250 444.7,250 432.3,272" fill="#ffc078" stroke="#e8590c" stroke-width="1.5"/>')
+    f.add('<path d="M20,70 H510 V150 H434.7 C431.7,150 432,154.6 430,154.6 H349.4 C299.4,154.6 300,254 250,254 H176 C168,254 168,270 160,270 H20 Z" fill="#e8590c"/>')
+    f.add('<path d="M20,70 H510 V150 H434.7 C431.7,150 432,154.6 430,154.6 H349.4 C299.4,154.6 300,254 250,254 H176 C168,254 168,270 160,270 H20 Z" fill="#1f2933" clip-path="url(#fy315-work)"/>')
+    f.add('<polygon points="510,56 510,164 550,110" fill="#1f2933"/>')
+    f.tex(10, 34, '\\text{polttoaine } 500\\,\\text{MW}', 'start', w=320)
+    f.tex(592, 34, '\\text{sähkö } 200\\,\\text{MW}', 'end', w=262)
+    f.tex(152, 296, '\\text{savukaasut}', 'end', w=148)
+    f.tex(152, 336, '40\\,\\text{MW}', 'end', w=148)
+    f.tex(372, 310, '\\text{lauhdutin}', 'start', w=224)
+    f.tex(372, 348, '248\\,\\text{MW}', 'start', w=224)
+    f.tex(446, 180, '\\text{generaattori}', 'start', w=150)
+    f.tex(446, 216, '\\text{ja muuntaja}', 'start', w=150)
+    f.tex(446, 252, '12\\,\\text{MW}', 'start', w=150)
+    f.add('<path d="M20,386 H60 M20,378 V394 M60,378 V394" stroke="#1f2933" stroke-width="2.5" fill="none"/>')
+    f.tex(70, 388, '=100\\,\\text{MW}', 'start', w=200)
+    return f.svg()
+
+
+def condenser():
+    """Hand-pasted figure of the lesson, kept as it was (work queue 24: moved into figures.py before the picture swap)."""
+    f = Fig('fy315-condenser', 310, 'Lauhduttimen kaaviokuva. Merivesi virtaa putkessa vasemmalta oikealle lauhduttimen läpi, ja sen lämpötila nousee arvosta T1 arvoon T2. Putken väri vaihtuu sinisestä punaiseen. Lauhduttimen yläosassa oleva höyry luovuttaa lämpöä veteen teholla P_L, jota kuvaa oranssi nuoli, ja höyry tiivistyy alaosaan vedeksi. Vesivirta q_m on molemmissa päissä sama. Kaaviokuva, ei mittakaavassa.', width=600)
+    f.defs_add('<linearGradient id="fy315-pipe" gradientUnits="userSpaceOnUse" x1="200" y1="0" x2="400" y2="0"><stop offset="0" stop-color="#1971c2"/><stop offset="0.25" stop-color="#1971c2"/><stop offset="0.75" stop-color="#c92a2a"/><stop offset="1" stop-color="#c92a2a"/></linearGradient><linearGradient id="fy315-heat" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></linearGradient>')
+    f.add('<rect x="190" y="70" width="220" height="170" rx="14" fill="#eef5f9" stroke="#1f2933" stroke-width="3"/>')
+    f.add('<path d="M193,205 H407 V228 a11,11 0 0 1 -11,11 H204 a11,11 0 0 1 -11,-11 Z" fill="#a9d1f0"/>')
+    f.add('<path d="M30,160 H570" stroke="#1f2933" stroke-width="30" stroke-linecap="butt" fill="none"/>')
+    f.add('<path d="M30,160 H570" stroke="url(#fy315-pipe)" stroke-width="22" stroke-linecap="butt" fill="none"/>')
+    f.add('<polygon points="100,148 100,172 122,160" fill="#ffffff" stroke="#1f2933" stroke-width="2"/>')
+    f.add('<polygon points="478,148 478,172 500,160" fill="#ffffff" stroke="#1f2933" stroke-width="2"/>')
+    f.add('<path d="M285,94 H315 V122 H335 L300,148 L265,122 H285 Z" fill="url(#fy315-heat)"/>')
+    f.tex(196, 90, '\\text{höyry}', 'start', w=80)
+    f.tex(366, 108, 'P_\\text{L}', 'middle', w=76)
+    f.tex(300, 218, '\\text{lauhde}', 'middle', w=108)
+    f.tex(6, 120, '\\text{merivesi sisään}', 'start', w=184)
+    f.tex(85, 204, 'T_1', 'middle', w=110)
+    f.tex(414, 120, '\\text{merivesi ulos}', 'start', w=184)
+    f.tex(504, 204, 'T_2 = T_1 + \\Delta T', 'middle', w=180)
+    f.tex(300, 281, 'q_m = \\dfrac{m}{t}', 'middle', w=320)
+    return f.svg()
+
+
+FIGURES = {"hero": hero, "scene": scene, "chain-bars": chain_bars, "sankey": sankey_lesson, "condenser": condenser}
 # What each figure would give away if put into a task (scripts/figcat.py; the catalog's "reuse"): safe | reveals: … | decorative
 REUSE = {
     "chain-bars": "safe: the powers along a condensing plant's chain as bars on gridlines; no efficiencies, no losses",

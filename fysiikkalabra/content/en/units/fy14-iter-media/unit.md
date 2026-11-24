@@ -28,6 +28,12 @@ Construction has also moved on elsewhere in the machine: in June 2026 all six mo
 
 Some things have **not** changed: ITER's scientific goal ($Q = 10$, $500\ \text{MW}$ of fusion power from $50\ \text{MW}$ of heating), the site at Cadarache, the seven Members, and the physics of fusion. An article from 2018 that reported the plan of 2018 was correct at the time; a reader in 2026 must update the dates, the costs and the construction status.
 
+```pysahdy
+A newspaper of 2018 wrote that ITER's first plasma would come in 2025. Was the article wrong?
+---
+Not at the time of writing, because 2025 was the official plan then. The plan was replaced in 2024, so a reader today must check the newest baseline.
+```
+
 ## Key idea
 
 Reading about science in the news needs three questions.
@@ -39,6 +45,12 @@ Reading about science in the news needs three questions.
 ## The physics behind the story {Physics}
 
 **How fusion releases energy.** When light nuclei fuse, the new nucleus is more tightly bound, and the total mass decreases. The missing mass becomes energy, $E = mc^2$. One $\text{D–T}$ reaction releases $17.6\ \text{MeV}$: $3.5\ \text{MeV}$ to the helium nucleus and $14.1\ \text{MeV}$ to the neutron.
+
+```pysahdy
+Where does the energy of $17.6\,\text{MeV}$ in a $\text{D–T}$ reaction come from?
+---
+The products have slightly less total mass than the nuclei that fused. The missing mass $\Delta m$ becomes energy by $E = \Delta m \cdot c^2$.
+```
 
 **Why it is difficult.** The nuclei are positively charged and repel each other, so they fuse only when they move very fast: the plasma must be at about $150$ million $^\circ\text{C}$. It must be dense enough and held long enough by magnetic fields, while the walls survive the heat and the neutrons. Tritium is radioactive and rare, so a future plant must breed it from lithium. And a high gain in the plasma is still not electricity: ITER has no turbines.
 

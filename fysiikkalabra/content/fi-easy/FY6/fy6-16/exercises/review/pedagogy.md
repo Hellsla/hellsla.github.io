@@ -1,13 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 2af55d67694057c3
+CONTENT-HASH: 3098d1d5d8e3fef6
+SCOPE: delta md-paragraphs,numbers,reflow,typography from 2af55d67694057c3 base e238aa9
 
 ## Blocking
-None.
+(none)
 
 ## Polish
-- The question does not say the limit is a maximum; the solution explains the round-down to 11 A, and both roundings pass, so no student is penalised.
+- Earlier polish items stand unchanged (not touched by this diff).
+- Kaava-lohkon rivit ovat lyhyitä, mahtuvat 360 px:n näyttöön eikä mitään leikkaudu.
 
 ## Checked
-- Key 11.5 with relative tolerance 0.05 accepts 10.93-12.08 A: 11, 11.96 and 12 A pass; 13 A (26.04 A per phase, trips the 25 A fuse) and 10 A fail. Matches the round-2 fix and the teacher's decision.
-- answers.py expression gives (11+12)/2 = 11.5; its comment states the reasoning and the accepted range.
-- exercises.json change identical across the three languages; model answer still 11 A, consistent with the solution.
+- Diff is the queue 8g change: the Kaava/Formula step now starts from basic-principle equations (P_k = UI_k, I = sum of I_k, Ohm's law per part, U = sum of parts, P = RI^2) and ends in the working formula; the order is principle, then derivation, then result, which a student who could not solve the task can follow.
+- Prose changes in solutions are reflow only (one sentence per paragraph); I compared the words removed and added and found no change in meaning, numbers or answers.
+- Series-resistance derivation (U_body + U_k) and the step-voltage lines are consistent with the chapter and with the previous chapter's Ohm's law; no step skipped.
+- Task texts, levels, counts and answers untouched; level mix as passed earlier.
+- Disk check: the aligned blocks render as separate lines in solutions.md (the packet diff shows them collapsed, a display artefact).
+- Hash unchanged at start and end.

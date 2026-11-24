@@ -44,6 +44,12 @@ Together these give ${2U = (e/m) \cdot B^2r^2}$. The field of the coil pair is $
 
 Light passes two narrow slits, and a detector moves across the pattern. Bright light is measured with a **photodiode**. Then a very dim green lamp is used, so that there is practically never more than one photon in the apparatus. A **photomultiplier** turns each photon into a pulse, and a **counter** counts the pulses in $10\ \text{s}$. This links to the unit *Waves, probability and quantum tunnelling*.
 
+```pysahdy
+Why is the lamp made so dim that there is practically never more than one photon in the apparatus?
+---
+Then any pattern cannot come from photons interfering with each other. If bands still appear, each single photon must be responsible for the wave pattern: its probability of arriving follows the wave.
+```
+
 ### Hot filament and spectra
 
 The light of a lamp filament is spread out by a prism, and a sensor measures the intensity at each wavelength at four voltages ($7$, $8$, $9$ and $10\ \text{V}$). The software calculates the filament's temperature. Compare with Wien's law ${\lambda_\text{max} T = b}$ (unit *When classical physics ran out of answers*). At the spectra station you look at lamps and gas tubes with a hand spectroscope and a spectrometer (unit *From Rutherford's nucleus to Bohr's atom*).
@@ -61,6 +67,12 @@ Every station has a **research question**: what do you want to find out? Then na
 - the **controlled variables** are kept the same (the accelerating voltage, the intensity).
 
 No measurement is exact. The **uncertainty** $\Delta x$ of a quantity $x$ tells how far the true value may be from your reading. For a scale or a digital display, the reading uncertainty is about half of the smallest step you can read, unless the reading jumps around more. If you repeat a measurement, use the mean. Half of the range, (largest minus smallest) divided by two, is a simple estimate of how much single readings spread; use it as $\Delta x$ of one reading. It is not the uncertainty of the mean, which is smaller. Write the result as ${x \pm \Delta x}$ with its unit. The **relative uncertainty** $\Delta x / x$ is often given in percent.
+
+```pysahdy
+A digital voltmeter shows $0.93\,\text{V}$ and its smallest step is $0.01\,\text{V}$. What is the reading uncertainty?
+---
+About half of the smallest step, $0.005\,\text{V}$, so the result is written ${(0.930 \pm 0.005)\,\text{V}}$ unless the reading jumps around more.
+```
 
 ### Safety at the stations
 

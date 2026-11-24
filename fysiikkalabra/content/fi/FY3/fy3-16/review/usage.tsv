@@ -20,3 +20,13 @@ date	lesson	course	agent	stage	model	effort	mode	round	tokens	input	output	cache
 2026-11-15T20:27Z	fy3-16	FY3	science-reviewer	review	claude-opus-5-5	medium	full	2	2489422	44	12046	2329247	148085	155346	21	159	23		1.4474	transcript	bb9b1d9a524a
 2026-11-15T20:27Z	fy3-16	FY3	science-reviewer	review	claude-opus-5-5	medium	full	1	1560183	26	13506	1371695	174956	181694	13	155	17		1.4193	transcript	1c1d7d3b0f32
 2026-11-15T20:27Z	fy3-16	FY3	orchestrator	orchestrate	claude-opus-5-5		session/12	1	4485973	31	10083	4439010	36849	39754	177	6435	186		1.3844	transcript	fb6a204c8d13
+2026-11-23T20:16Z	fy3-16	FY3	pedagogy-reviewer	review	claude-sonnet-5-5		full	1	263953	12	5964	196646	61331	69424	6	58	12		0.2523	transcript	9580bd0afea5
+2026-11-23T20:16Z	fy3-16	FY3	visual-editorial-reviewer	review	claude-sonnet-5-5		delta	1	120699	12	2375	85280	33032	40790	5	21	11		0.1234	transcript	1b1bc8e5c835
+2026-11-23T20:16Z	fy3-16	FY3	pedagogy-reviewer	review	claude-sonnet-5-5		full	1	370970	16	5848	299413	65693	72243	8	60	13		0.2826	transcript	a4f5957efe2d
+2026-11-23T20:16Z	fy3-16	FY3	science-reviewer	review	claude-opus-5-5		full	1	343647	14	7116	260866	75651	82498	6	73	7		0.5728	transcript	595ed88b82b6
+2026-11-23T20:16Z	fy3-16	FY3	science-reviewer	review	claude-opus-5-5		full	1	350726	14	8703	264263	77746	84488	6	97	7		0.6157	transcript	223a054ed7b1
+2026-11-23T20:16Z	fy3-16	FY3	science-reviewer	review	claude-opus-5-5		full	1	392282	16	7198	315512	69556	76474	7	80	8		0.5549	transcript	e25c89c3cd97
+2026-11-23T20:16Z	fy3-16	FY3	visual-editorial-reviewer	review	claude-sonnet-5-5		delta	1	178706	16	2552	143098	33040	40463	7	27	11		0.1368	transcript	16a4b293e110
+2026-11-23T20:16Z	fy3-16	FY3	pedagogy-reviewer	review	claude-sonnet-5-5		full	1	339066	18	6591	264350	68107	74787	8	60	12		0.2891	transcript	16e2c4f12172
+2026-11-23T20:16Z	fy3-16	FY3	visual-editorial-reviewer	review	claude-sonnet-5-5		delta	1	174124	16	2339	140577	31192	38496	7	29	12		0.1295	transcript	60c0ebbd5499
+2026-11-23T20:16Z	fy3-16	FY3	orchestrator	orchestrate	claude-sonnet-5-5		session	2	75701857	735	91931	74764944	844247	389777	291	60378	235		19.2508	transcript	bbcb21a04cc0

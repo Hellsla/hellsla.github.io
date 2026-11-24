@@ -2,7 +2,7 @@
 **Annettu:** melutaso $L = 91\,\text{dB}$; vertailu $L_0 = 85\,\text{dB}$ ja $t_0 = 8\,\text{h}$
 **Kysytty:** päivittäinen vertailuaika $t_\text{v}$ tunteina
 **Periaate:** Melualtistus lasketaan energian keskiarvona. Jokainen $3\,\text{dB}$:n nousu kaksinkertaistaa intensiteetin. Sama annos täyttyy silloin puolessa ajassa.
-**Kaava:** $t_\text{v} = \dfrac{t_0}{2^{\,n}}$, missä $n = \dfrac{L - L_0}{3\,\text{dB}}$
+**Kaava:** Olkoon $I_\text{v}$ tason $L_0$ intensiteetti. $$\begin{aligned} n &= \dfrac{L - L_0}{3\,\text{dB}} \\ I &= 2^{\,n}\,I_\text{v} \\ I\,t_\text{v} &= I_\text{v}\,t_0 \\ t_\text{v} &= t_0\,\dfrac{I_\text{v}}{I} = \dfrac{t_0}{2^{\,n}} \end{aligned}$$
 **Muunnokset:** Ei tarvita. Tasot ovat desibeleinä ja aika saadaan tunteina.
 **Sijoitus:** $n = \dfrac{91\,\text{dB} - 85\,\text{dB}}{3\,\text{dB}} = 2$, $t_\text{v} = \dfrac{8\,\text{h}}{2^2} = 2{,}0\,\text{h}$
 **Vastaus:** $2{,}0\,\text{h}$. Tasot ovat kokonaisia desibelejä ja sääntö on arvio. Kaksi merkitsevää numeroa riittää siksi.
@@ -12,7 +12,7 @@
 **Annettu:** yhden puhaltimen taso $L_1 = 70\,\text{dB}$; kaksi samanlaista puhallinta
 **Kysytty:** yhteinen taso $L$ desibeleinä
 **Periaate:** Kahden lähteen intensiteetit summautuvat, eivät tasot. Kaksi yhtä voimakasta lähdettä kaksinkertaistaa intensiteetin (luku *Intensiteetti ja desibeliasteikko*).
-**Kaava:** $L = L_1 + 10\,\text{dB} \cdot \lg \dfrac{2 I_1}{I_1} = L_1 + 10\,\text{dB} \cdot \lg 2$
+**Kaava:** $$\begin{aligned} L_1 &= 10\,\text{dB}\cdot\lg\dfrac{I_1}{I_0} \\ L &= 10\,\text{dB}\cdot\lg\dfrac{2I_1}{I_0} \\ L - L_1 &= 10\,\text{dB}\cdot\lg\dfrac{2I_1}{I_1} \\ L &= L_1 + 10\,\text{dB}\cdot\lg 2 \end{aligned}$$
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** $L = 70\,\text{dB} + 10\,\text{dB} \cdot \lg 2 = 70\,\text{dB} + 3{,}01\,\text{dB} = 73{,}01\,\text{dB}$
 **Vastaus:** $73\,\text{dB}$, kokonaisina desibeleinä kuten lähtötieto.
@@ -22,7 +22,7 @@
 **Annettu:** $L_1 = 88\,\text{dB}$ etäisyydellä $r_1 = 4{,}0\,\text{m}$, uusi etäisyys $r_2 = 8{,}0\,\text{m}$; pistemäinen lähde avoimessa tilassa
 **Kysytty:** taso $L_2$ etäisyydellä $r_2$
 **Periaate:** Pistemäisen lähteen intensiteetti on kääntäen verrannollinen etäisyyden neliöön. Kaksinkertainen etäisyys antaa siis neljäsosan intensiteetistä. Se laskee tasoa $10\,\text{dB} \cdot \lg 4 \approx 6\,\text{dB}$ (luku *Intensiteetti ja desibeliasteikko*).
-**Kaava:** $L_2 = L_1 - 6\,\text{dB}$, kun $r_2 = 2 r_1$
+**Kaava:** $$\begin{aligned} \dfrac{I_2}{I_1} &= \dfrac{r_1^2}{r_2^2} \\ &= \dfrac{r_1^2}{(2r_1)^2} = \dfrac{1}{4} \\ L_2 - L_1 &= 10\,\text{dB}\cdot\lg\dfrac{I_2}{I_1} \\ L_2 &= L_1 + 10\,\text{dB}\cdot\lg\dfrac{1}{4} \\ &\approx L_1 - 6\,\text{dB} \end{aligned}$$
 **Muunnokset:** Ei tarvita. Suhde on $r_2 : r_1 = 8{,}0\,\text{m} : 4{,}0\,\text{m} = 2$.
 **Sijoitus:** $L_2 = 88\,\text{dB} - 6\,\text{dB} = 82\,\text{dB}$
 **Vastaus:** $82\,\text{dB}$, kokonaisina desibeleinä kuten lähtötieto.
@@ -49,7 +49,7 @@ Vertailuannosta pienempi annos ei silti takaa, että kuulo on turvassa. Ilman su
 **Annettu:** kaksi samanlaista konetta, kumpikin $L_1 = 85\,\text{dB}$; vertailu $L_0 = 85\,\text{dB}$ ja $t_0 = 8\,\text{h}$
 **Kysytty:** päivittäinen vertailuaika $t_\text{v}$ tunteina
 **Periaate:** Kahden yhtä voimakkaan lähteen intensiteetit summautuvat. Intensiteetti kaksinkertaistuu, ja taso nousee noin $3\,\text{dB}$. Sitten jokainen $3\,\text{dB}$ toiminta-arvon yli puolittaa vertailuajan.
-**Kaava:** $L = L_1 + 3\,\text{dB}$ ja $t_\text{v} = \dfrac{t_0}{2^{\,n}}$, missä $n = \dfrac{L - L_0}{3\,\text{dB}}$
+**Kaava:** Olkoon $I_\text{v}$ tason $L_0$ intensiteetti. $$\begin{aligned} L &= L_1 + 10\,\text{dB}\cdot\lg\dfrac{2I_1}{I_1} \\ &\approx L_1 + 3\,\text{dB} \\ n &= \dfrac{L - L_0}{3\,\text{dB}} \\ I &= 2^{\,n}\,I_\text{v} \\ I\,t_\text{v} &= I_\text{v}\,t_0 \\ t_\text{v} &= t_0\,\dfrac{I_\text{v}}{I} = \dfrac{t_0}{2^{\,n}} \end{aligned}$$
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** $L = 85\,\text{dB} + 3\,\text{dB} = 88\,\text{dB}$, $n = \dfrac{88\,\text{dB} - 85\,\text{dB}}{3\,\text{dB}} = 1$, $t_\text{v} = \dfrac{8\,\text{h}}{2^1} = 4{,}0\,\text{h}$
 **Vastaus:** $4{,}0\,\text{h}$. Sääntö on arvio. Kaksi merkitsevää numeroa riittää siksi.
@@ -59,7 +59,7 @@ Vertailuannosta pienempi annos ei silti takaa, että kuulo on turvassa. Ilman su
 **Annettu:** taso korvassa $L = 94\,\text{dB}$, kuunteluaika $t = 1{,}5\,\text{h}$; vertailu $L_0 = 85\,\text{dB}$ ja $t_0 = 8\,\text{h}$
 **Kysytty:** annos prosentteina vertailuannoksesta
 **Periaate:** Lasketaan ensin vertailuaika tasolla $94\,\text{dB}$. Siinä ajassa kertyy täsmälleen vertailuannos. Annoksen osuus on kuunteluajan ja vertailuajan suhde, koska taso on koko ajan sama.
-**Kaava:** $t_\text{v} = \dfrac{t_0}{2^{\,n}}$, missä $n = \dfrac{L - L_0}{3\,\text{dB}}$, ja osuus $= \dfrac{t}{t_\text{v}} \cdot 100\,\%$
+**Kaava:** Olkoon $I_\text{v}$ tason $L_0$ intensiteetti. $$\begin{aligned} n &= \dfrac{L - L_0}{3\,\text{dB}} \\ I &= 2^{\,n}\,I_\text{v} \\ I\,t_\text{v} &= I_\text{v}\,t_0 \\ t_\text{v} &= t_0\,\dfrac{I_\text{v}}{I} = \dfrac{t_0}{2^{\,n}} \\ \text{osuus} &= \dfrac{t}{t_\text{v}}\cdot 100\,\% \end{aligned}$$
 **Muunnokset:** Ei tarvita. Ajat ovat tunteina, ja yksikkö supistuu.
 **Sijoitus:** $n = \dfrac{94\,\text{dB} - 85\,\text{dB}}{3\,\text{dB}} = 3$, $t_\text{v} = \dfrac{8\,\text{h}}{2^3} = 1{,}0\,\text{h}$, osuus $= \dfrac{1{,}5\,\text{h}}{1{,}0\,\text{h}} \cdot 100\,\% = 150\,\%$
 **Vastaus:** $150\,\%$, kaksi merkitsevää numeroa kuten ajassa $1{,}5\,\text{h}$.
@@ -69,7 +69,7 @@ Vertailuannosta pienempi annos ei silti takaa, että kuulo on turvassa. Ilman su
 **Annettu:** $L_1 = 78\,\text{dB}$ etäisyydellä $r_1 = 2{,}0\,\text{m}$, toivottu taso $L_2 = 60\,\text{dB}$; pistemäinen lähde avoimessa tilassa
 **Kysytty:** etäisyys $r_2$ metreinä
 **Periaate:** Avoimessa tilassa jokainen etäisyyden kaksinkertaistuminen laskee tasoa $6\,\text{dB}$, koska intensiteetti pienenee neljäsosaan (luku *Intensiteetti ja desibeliasteikko*). Lasketaan, montako kaksinkertaistumista tarvitaan.
-**Kaava:** $k = \dfrac{L_1 - L_2}{6\,\text{dB}}$ ja $r_2 = 2^{\,k} \cdot r_1$
+**Kaava:** $$\begin{aligned} \dfrac{r_2}{r_1} &= 2^{\,k} \\ L_1 - L_2 &= 10\,\text{dB}\cdot\lg\dfrac{I_1}{I_2} \\ &= 10\,\text{dB}\cdot\lg\dfrac{r_2^2}{r_1^2} \\ &= 20\,\text{dB}\cdot\lg 2^{\,k} \\ &\approx k\cdot 6\,\text{dB} \\ k &= \dfrac{L_1 - L_2}{6\,\text{dB}} \\ r_2 &= 2^{\,k}\,r_1 \end{aligned}$$
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** $k = \dfrac{78\,\text{dB} - 60\,\text{dB}}{6\,\text{dB}} = 3$, $r_2 = 2^3 \cdot 2{,}0\,\text{m} = 16\,\text{m}$
 **Vastaus:** $16\,\text{m}$, kaksi merkitsevää numeroa kuten etäisyydessä $2{,}0\,\text{m}$.
@@ -79,7 +79,7 @@ Vertailuannosta pienempi annos ei silti takaa, että kuulo on turvassa. Ilman su
 **Annettu:** taso laskee $L_1 = 92\,\text{dB}$:stä $L_2 = 62\,\text{dB}$:iin ajassa $\Delta t = 0{,}45\,\text{s}$; lasku on tasainen
 **Kysytty:** jälkikaiunta-aika $T$ eli aika, jossa taso laskee $60\,\text{dB}$
 **Periaate:** Kun taso laskee tasaisesti, se laskee yhtä monta desibeliä jokaisessa sekunnissa. Jälkikaiunta-aika saadaan laskunopeudesta. Pudotus $60\,\text{dB}$ vaatii yhtä monta kertaa pidemmän ajan kuin mitattu lasku on pienempi. Mittaus tehdään usein näin, koska huoneen taustamelu peittää täyden $60\,\text{dB}$:n pudotuksen.
-**Kaava:** $T = \dfrac{60\,\text{dB}}{L_1 - L_2} \cdot \Delta t$
+**Kaava:** $$\begin{aligned} \dfrac{L_1 - L_2}{\Delta t} &= \dfrac{60\,\text{dB}}{T} \\ T &= \dfrac{60\,\text{dB}}{L_1 - L_2}\cdot\Delta t \end{aligned}$$
 **Muunnokset:** Ei tarvita.
 **Sijoitus:** $T = \dfrac{60\,\text{dB}}{92\,\text{dB} - 62\,\text{dB}} \cdot 0{,}45\,\text{s} = 2 \cdot 0{,}45\,\text{s} = 0{,}90\,\text{s}$
 **Vastaus:** $0{,}90\,\text{s}$, kaksi merkitsevää numeroa kuten ajassa $0{,}45\,\text{s}$.
@@ -104,7 +104,7 @@ Epävarmuuden vuoksi todellinen taso voi kuitenkin olla $84$–$86\,\text{dB}$, 
 **Annettu:** $t_1 = 4{,}0\,\text{h}$ tasolla $L_1 = 88\,\text{dB}$, $t_2 = 4{,}0\,\text{h}$ tasolla $L_2 = 82\,\text{dB}$; vertailu $L_0 = 85\,\text{dB}$ ja $t_0 = 8\,\text{h}$
 **Kysytty:** päivän annos prosentteina vertailuannoksesta
 **Periaate:** Annos on korvaan kertynyt energia. Eri jaksojen osuudet lasketaan siis yhteen. Kunkin jakson osuus on sen keston ja kyseisen tason vertailuajan suhde.
-**Kaava:** $t_{\text{v},i} = \dfrac{t_0}{2^{\,n_i}}$, missä $n_i = \dfrac{L_i - L_0}{3\,\text{dB}}$, ja annos $= \left(\dfrac{t_1}{t_{\text{v},1}} + \dfrac{t_2}{t_{\text{v},2}}\right) \cdot 100\,\%$
+**Kaava:** Olkoon $I_\text{v}$ tason $L_0$ intensiteetti. $$\begin{aligned} n_i &= \dfrac{L_i - L_0}{3\,\text{dB}} \\ I_i &= 2^{\,n_i}\,I_\text{v} \\ I_i\,t_{\text{v},i} &= I_\text{v}\,t_0 \\ t_{\text{v},i} &= \dfrac{t_0}{2^{\,n_i}} \\ \text{annos} &= \left(\dfrac{t_1}{t_{\text{v},1}} + \dfrac{t_2}{t_{\text{v},2}}\right)\cdot 100\,\% \end{aligned}$$
 **Muunnokset:** Ei tarvita. Ajat ovat tunteina, ja yksikkö supistuu.
 **Sijoitus:** $n_1 = 1$, joten $t_{\text{v},1} = 8\,\text{h} : 2 = 4{,}0\,\text{h}$. $n_2 = \dfrac{82\,\text{dB} - 85\,\text{dB}}{3\,\text{dB}} = -1$, joten $t_{\text{v},2} = 8\,\text{h} \cdot 2 = 16\,\text{h}$. Annos $D = \dfrac{4{,}0\,\text{h}}{4{,}0\,\text{h}} + \dfrac{4{,}0\,\text{h}}{16\,\text{h}} = 1 + 0{,}25 = 1{,}25 = 125\,\%$
 **Vastaus:** $125\,\%$. Ajat on annettu kahden numeron tarkkuudella, joten tulos on arvio, noin $1{,}3$-kertainen annos. Päivittäinen altistus ylittää ylemmän toiminta-arvon. Kuulonsuojaimia on siis käytettävä, ja melua on vähennettävä.
@@ -114,7 +114,7 @@ Epävarmuuden vuoksi todellinen taso voi kuitenkin olla $84$–$86\,\text{dB}$, 
 **Annettu:** kaksi samanlaista yksikköä, kumpikin $L_1 = 55\,\text{dB}$ etäisyydellä $r_1 = 3{,}0\,\text{m}$; ikkunan etäisyys kummastakin $r_2 = 12\,\text{m}$; pistemäiset lähteet avoimessa tilassa
 **Kysytty:** taso $L$ ikkunan kohdalla, kun molemmat käyvät
 **Periaate:** Lasketaan ensin yhden yksikön taso ikkunalla. Jokainen etäisyyden kaksinkertaistuminen laskee tasoa $6\,\text{dB}$. Kahden yhtä voimakkaan lähteen intensiteetit summautuvat, joten yhteinen taso on $3\,\text{dB}$ suurempi.
-**Kaava:** $L_\text{yksi} = L_1 - k \cdot 6\,\text{dB}$, missä $2^{\,k} = \dfrac{r_2}{r_1}$, ja $L = L_\text{yksi} + 3\,\text{dB}$
+**Kaava:** $$\begin{aligned} \dfrac{r_2}{r_1} &= 2^{\,k} \\ L_1 - L_\text{yksi} &= 10\,\text{dB}\cdot\lg\dfrac{I_1}{I_\text{yksi}} \\ &= 20\,\text{dB}\cdot\lg 2^{\,k} \\ &\approx k\cdot 6\,\text{dB} \\ L_\text{yksi} &= L_1 - k\cdot 6\,\text{dB} \\ L &= L_\text{yksi} + 10\,\text{dB}\cdot\lg 2 \\ &\approx L_\text{yksi} + 3\,\text{dB} \end{aligned}$$
 **Muunnokset:** Ei tarvita. Suhde on $r_2 : r_1 = 12\,\text{m} : 3{,}0\,\text{m} = 4$, joten $2^{\,k} = 4$ ja $k = 2$.
 **Sijoitus:** $L_\text{yksi} = 55\,\text{dB} - 2 \cdot 6\,\text{dB} = 43\,\text{dB}$. $L = 43\,\text{dB} + 3\,\text{dB} = 46\,\text{dB}$
 **Vastaus:** $46\,\text{dB}$, kokonaisina desibeleinä kuten lähtötieto.
@@ -152,7 +152,7 @@ Pienikin ajoitusvirhe tai muutaman senttimetrin paikkaero siirtää vaihetta pal
 **Kysytty:** jälkikaiunta-ajan lyhenemä prosentteina
 **Periaate:** Kun taso laskee tasaisesti, jälkikaiunta-aika on aika, jossa lasku on $60\,\text{dB}$. Lasketaan se kummallekin mittaukselle mitatun pudotuksen ja ajan avulla. Sitten verrataan aikoja.
 **Taulukon lukeminen:** Pudotus ennen levyjä on $$\begin{aligned} \Delta L_1 &= 90{,}3\,\text{dB} - 74{,}4\,\text{dB} \\ &= 15{,}9\,\text{dB} \end{aligned}$$. Levyjen jälkeen pudotus on $$\begin{aligned} \Delta L_2 &= 90{,}2\,\text{dB} - 50{,}1\,\text{dB} \\ &= 40{,}1\,\text{dB} \end{aligned}$$.
-**Kaava:** $T = \dfrac{60\,\text{dB}}{\Delta L} \cdot \Delta t$ ja lyhenemä $= \dfrac{T_1 - T_2}{T_1} \cdot 100\,\%$
+**Kaava:** $$\begin{aligned} \dfrac{\Delta L}{\Delta t} &= \dfrac{60\,\text{dB}}{T} \\ T &= \dfrac{60\,\text{dB}}{\Delta L}\cdot\Delta t \\ \text{lyhenemä} &= \dfrac{T_1 - T_2}{T_1}\cdot 100\,\% \end{aligned}$$
 **Muunnokset:** Ei tarvita.
 **Sijoitus:**
 $$\begin{aligned}
@@ -189,7 +189,7 @@ Aallonpituudet ovat $\lambda_{125} = \dfrac{343\,\text{m/s}}{125\,\text{Hz}} = 2
 **Annettu:** työpisteen taso $L = 109\,\text{dB}$; vertailu $L_0 = 85\,\text{dB}$ ja $t_0 = 8\,\text{h}$; opiskelijan tulos $1{,}0\,\text{h}$
 **Kysytty:** a) mikä opiskelijan päättelyssä on väärin; b) oikea vertailuaika $t_\text{v}$ minuutteina
 **Periaate:** Jokainen $3\,\text{dB}$ toiminta-arvon yli puolittaa vertailuajan. Aika jaetaan siis kahdella jokaista $3\,\text{dB}$:n askelta kohti. Askeleet kertautuvat: aika jaetaan luvulla $2^{\,n}$, ei luvulla $n$.
-**Kaava:** $n = \dfrac{L - L_0}{3\,\text{dB}}$ ja $t_\text{v} = \dfrac{t_0}{2^{\,n}}$
+**Kaava:** Olkoon $I_\text{v}$ tason $L_0$ intensiteetti. $$\begin{aligned} n &= \dfrac{L - L_0}{3\,\text{dB}} \\ I &= 2^{\,n}\,I_\text{v} \\ I\,t_\text{v} &= I_\text{v}\,t_0 \\ t_\text{v} &= t_0\,\dfrac{I_\text{v}}{I} = \dfrac{t_0}{2^{\,n}} \end{aligned}$$
 **Muunnokset:** $1\,\text{h} = 60\,\text{min}$.
 **Sijoitus:**
 $$\begin{aligned}
@@ -207,7 +207,7 @@ t_\text{v} &= \frac{8\,\text{h}}{2^{\,8}} \\
 **Annettu:** sahaus $L_1 = 97\,\text{dB}$, $t_1 = 1{,}0\,\text{h}$; höyläys $L_2 = 91\,\text{dB}$, $t_2 = 2{,}0\,\text{h}$; kokoaminen $L_3 = 85\,\text{dB}$, $t_3 = 3{,}0\,\text{h}$; vertailu $L_0 = 85\,\text{dB}$ ja $t_0 = 8\,\text{h}$
 **Kysytty:** a) päivän annos prosentteina; b) kuulonsuojainten pienin vaimennus $\Delta L$; c) riittääkö sahan koteloiminen
 **Periaate:** Annos on korvaan kertynyt energia. Vaiheiden osuudet lasketaan siis yhteen. Osuus on keston ja kyseisen tason vertailuajan suhde. Kuulonsuojain pienentää kaikkien vaiheiden intensiteettiä samalla kertoimella. Siksi annos jaetaan luvulla $2^{\,\Delta L / (3\,\text{dB})}$.
-**Kaava:** $t_{\text{v},i} = \dfrac{t_0}{2^{\,n_i}}$, missä $n_i = \dfrac{L_i - L_0}{3\,\text{dB}}$; annos $D = \sum \dfrac{t_i}{t_{\text{v},i}}$; ehto $\dfrac{D}{2^{\,\Delta L / (3\,\text{dB})}} \le 1$
+**Kaava:** Olkoon $I_\text{v}$ tason $L_0$ intensiteetti. $$\begin{aligned} n_i &= \dfrac{L_i - L_0}{3\,\text{dB}} \\ I_i &= 2^{\,n_i}\,I_\text{v} \\ I_i\,t_{\text{v},i} &= I_\text{v}\,t_0 \\ t_{\text{v},i} &= \dfrac{t_0}{2^{\,n_i}} \\ D &= \sum\dfrac{t_i}{t_{\text{v},i}} \\ I_\text{korva} &= \dfrac{I}{2^{\,\Delta L/(3\,\text{dB})}} \\ D_\text{korva} &= \dfrac{D}{2^{\,\Delta L/(3\,\text{dB})}} \\ D_\text{korva} &\le 1 \end{aligned}$$
 **Muunnokset:** Ei tarvita. Ajat ovat tunteina, ja yksikkö supistuu.
 **Sijoitus:**
 Sahaus: $n_1 = \dfrac{97 - 85}{3} = 4$, joten $t_{\text{v},1} = 8\,\text{h} : 16 = 0{,}50\,\text{h}$ ja osuus on $1{,}0\,\text{h} : 0{,}50\,\text{h} = 2{,}0$. Höyläys: $n_2 = 2$, $t_{\text{v},2} = 2{,}0\,\text{h}$ ja osuus $1{,}0$. Kokoaminen: $n_3 = 0$, $t_{\text{v},3} = 8\,\text{h}$ ja osuus $0{,}375$.
@@ -230,7 +230,7 @@ Kohta c: kotelo laskee sahauksen tason arvoon $87\,\text{dB}$. Silloin $n_1 = \d
 **Annettu:** $L_1 = 112\,\text{dB}$ etäisyydellä $r_1 = 2{,}0\,\text{m}$, kuulija etäisyydellä $r_2 = 8{,}0\,\text{m}$; tulppien vaimennus $\Delta L = 8\,\text{dB}$; konsertin kesto $t = 3{,}0\,\text{h}$; vertailu $L_0 = 85\,\text{dB}$ ja $t_0 = 8\,\text{h}$
 **Kysytty:** a) taso ilman tulppia; b) vertailuaika tulppien kanssa; c) annos prosentteina ja jääkö se vertailuannosta pienemmäksi etäisyydellä $16\,\text{m}$
 **Periaate:** Pistemäisen lähteen taso laskee $6\,\text{dB}$ jokaisella etäisyyden kaksinkertaistumisella. Tulpat vähentävät korvaan pääsevää tasoa vaimennuksensa verran. Vertailuaika saadaan säännöstä, jossa jokainen $3\,\text{dB}$ toiminta-arvon yli puolittaa ajan. Annos on kuunteluajan ja vertailuajan suhde.
-**Kaava:** $L_2 = L_1 - k \cdot 6\,\text{dB}$, missä $2^{\,k} = \dfrac{r_2}{r_1}$; $L = L_2 - \Delta L$; $t_\text{v} = \dfrac{t_0}{2^{\,n}}$, missä $n = \dfrac{L - L_0}{3\,\text{dB}}$
+**Kaava:** Olkoon $I_\text{v}$ tason $L_0$ intensiteetti. $$\begin{aligned} \dfrac{r_2}{r_1} &= 2^{\,k} \\ L_1 - L_2 &= 20\,\text{dB}\cdot\lg\dfrac{r_2}{r_1} \\ &\approx k\cdot 6\,\text{dB} \\ L_2 &= L_1 - k\cdot 6\,\text{dB} \\ L &= L_2 - \Delta L \\ n &= \dfrac{L - L_0}{3\,\text{dB}} \\ I &= 2^{\,n}\,I_\text{v} \\ I\,t_\text{v} &= I_\text{v}\,t_0 \\ t_\text{v} &= t_0\,\dfrac{I_\text{v}}{I} = \dfrac{t_0}{2^{\,n}} \end{aligned}$$
 **Muunnokset:** Ei tarvita. Suhde on $r_2 : r_1 = 8{,}0\,\text{m} : 2{,}0\,\text{m} = 4$, joten $k = 2$.
 **Sijoitus:**
 Kohta a: $L_2 = 112\,\text{dB} - 2 \cdot 6\,\text{dB} = 100\,\text{dB}$.
@@ -250,7 +250,7 @@ Kohta c: annos on $\dfrac{3{,}0\,\text{h}}{1{,}59\,\text{h}} = 1{,}89$ eli $190\
 **Kysytty:** vertailuaika $t_\text{v}$ tunteina
 **Periaate:** Melualtistus lasketaan energian keskiarvona. Jokainen $3\,\text{dB}$:n nousu kaksinkertaistaa intensiteetin. Sama annos täyttyy silloin puolessa ajassa.
 **Kuvaajan lukeminen:** Asteikolla ruohonleikkurin merkki on kohdassa $90\,\text{dB}$. Se on punaisella alueella, jossa on kuulovaurion vaara. Alue alkaa kohdasta $85\,\text{dB}$.
-**Kaava:** $t_\text{v} = \dfrac{t_0}{2^{\,n}}$, missä $n = \dfrac{L - L_0}{3\,\text{dB}}$
+**Kaava:** Olkoon $I_\text{v}$ tason $L_0$ intensiteetti. $$\begin{aligned} n &= \dfrac{L - L_0}{3\,\text{dB}} \\ I &= 2^{\,n}\,I_\text{v} \\ I\,t_\text{v} &= I_\text{v}\,t_0 \\ t_\text{v} &= t_0\,\dfrac{I_\text{v}}{I} = \dfrac{t_0}{2^{\,n}} \end{aligned}$$
 **Muunnokset:** Ei tarvita. Tasot ovat desibeleinä ja aika saadaan tunteina.
 **Sijoitus:** $n = \dfrac{90\,\text{dB} - 85\,\text{dB}}{3\,\text{dB}} = \dfrac{5}{3}$, $t_\text{v} = \dfrac{8\,\text{h}}{2^{5/3}} = \dfrac{8\,\text{h}}{3{,}175} = 2{,}52\,\text{h}$
 **Vastaus:** $2{,}5\,\text{h}$. Taso luetaan kuvasta kokonaisena desibelinä ja sääntö on arvio. Kaksi merkitsevää numeroa riittää siksi.
@@ -261,7 +261,7 @@ Kohta c: annos on $\dfrac{3{,}0\,\text{h}}{1{,}59\,\text{h}} = 1{,}89$ eli $190\
 **Kysytty:** vertailuaika $t_\text{v}$ minuutteina
 **Periaate:** Korvatulpat laskevat korvaan tulevaa tasoa, ja annos riippuu korvan tasosta. Jokainen $3\,\text{dB}$:n nousu puolittaa vertailuajan, koska melualtistus lasketaan energian keskiarvona.
 **Kuvaajan lukeminen:** Rock-konsertin merkki on asteikolla kohdassa $105\,\text{dB}$, alueella, jossa on kuulovaurion vaara.
-**Kaava:** $L_\text{korva} = L - \Delta L$ ja $t_\text{v} = \dfrac{t_0}{2^{\,n}}$, missä $n = \dfrac{L_\text{korva} - L_0}{3\,\text{dB}}$
+**Kaava:** Olkoon $I_\text{v}$ tason $L_0$ intensiteetti. $$\begin{aligned} L_\text{korva} &= L - \Delta L \\ n &= \dfrac{L_\text{korva} - L_0}{3\,\text{dB}} \\ I &= 2^{\,n}\,I_\text{v} \\ I\,t_\text{v} &= I_\text{v}\,t_0 \\ t_\text{v} &= t_0\,\dfrac{I_\text{v}}{I} = \dfrac{t_0}{2^{\,n}} \end{aligned}$$
 **Muunnokset:** $t_0 = 8\,\text{h} = 8 \cdot 60\,\text{min} = 480\,\text{min}$.
 **Sijoitus:** $L_\text{korva} = 105\,\text{dB} - 12\,\text{dB} = 93\,\text{dB}$, $n = \dfrac{93\,\text{dB} - 85\,\text{dB}}{3\,\text{dB}} = \dfrac{8}{3}$, $t_\text{v} = \dfrac{480\,\text{min}}{2^{8/3}} = \dfrac{480\,\text{min}}{6{,}350} = 75{,}6\,\text{min}$
 **Vastaus:** $76\,\text{min}$. Taso luetaan kuvasta kokonaisena desibelinä ja sääntö on arvio, joten kaksi merkitsevää numeroa riittää.

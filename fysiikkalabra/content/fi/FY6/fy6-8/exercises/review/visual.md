@@ -1,5 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 98e8b3ffefd4cb5c
+CONTENT-HASH: dd7347ac758b942f
+SCOPE: delta numbers,reflow from 98e8b3ffefd4cb5c base 4d1dce4
 
 ## Blocking
 (none)
@@ -8,8 +9,9 @@ CONTENT-HASH: 98e8b3ffefd4cb5c
 (none)
 
 ## Checked
-- Delta (md-paragraphs, round 2): diff of solutions.md (L2-07 Vastaus b joined; L3-04 Sijoitus, "Ikääntynyt:" back in the paragraph above, part labels a), b), c) start their own paragraphs).
-- Opened fy6-8-open-exercises-L2-1280-7, -8 and L3-1280-5, -6 at 1280 px: spacing even, formulas intact, nothing clipped. No 390 px exercise captures; the 360 px check is green.
+- Delta: diff of solutions.md, every Kaava step now a `$$\begin{aligned}` block of basic-principle equations.
+- Opened fy6-8-open-exercises-L3-1280-8 and -9 (8-22, longest seven-row Kaava).
+- Rows render one equation each, left sides right-aligned so the equals signs share a column, fractions and subscripts intact, order principle then symbolic then result; the white Kaava box fits its column, nothing clipped. No 390 px exercise captures of the solutions; the 360 px check is green.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations n/a · typography 5 · Finnish 4 · accessibility 4

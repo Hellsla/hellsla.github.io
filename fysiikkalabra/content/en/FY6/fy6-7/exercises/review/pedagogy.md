@@ -1,18 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: df6cf372cf645c1d
+CONTENT-HASH: 7fda86c22f2d15e3
+SCOPE: delta wording from bb4c59d60a1ec530 base bad608b
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-- fy6-7-L2-09 — good authentic task: the data is needed, the date is stated, and a table keeps it working later. The ENERGY STAR data is American, in ft³; the conversion is given and is correct (17.5 ft³ ≈ 495 l).
-- Part c: "the total price of electricity" is fine, but say once that basic charges are left out (the solution does).
-- Part d asks for the compressor's input power without a value in the task; the solution's "about a hundred watts" is flagged as an order of magnitude, which is honest. A student could be asked to name the thermostat cycle as the key word.
-- Answer rounding: the box takes 39.3 W, while costs are given as about 690 € and 190 €, which is two figures against 688 € and 192 € exactly. Explained in the solution, but a short note that the exact 688 € is also accepted would help.
-- Solution displays an aligned block in the middle of a sentence ("$$...$$. So the difference"); the visual reviewer should check the layout.
+- none
 
 ## Checked
-- Whole set: levels 1–3 filled, new task last among level 2.
-- Four sub-questions that rise from compare to calculate, cost and explain a model limit.
-- Solution: E = Pt, 8760 h, 39.3 W and 50.2 W, 688 € and 880 €, all correct; reasonableness check present.
-- Does not repeat the worked example.
+- L3-04 (hourly prices, moving the heater load) Kaava block: it now runs E = Pt, then K_kallis = a_kallis E and K_halpa = a_halpa E, then S = K_kallis − K_halpa, then the factored form S = E(a_kallis − a_halpa). The saving is defined as a difference of two costs before the shortcut appears, which is the missing step for students who would otherwise take the factored form on trust.
+- The change touches no numbers, answers, units, levels or figures. The Periaate (energy stays the same, the price changes) matches the new lines.
+- Symbols are consistent with the rest of the solution (K, a, S, E_varaaja) and the substitution line that follows.
+- The same fix is in this language version as in the Finnish one.

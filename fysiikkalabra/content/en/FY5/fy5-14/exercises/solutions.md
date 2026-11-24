@@ -2,7 +2,7 @@
 **Given:** distance to the wall $d = 86.0\,\text{m}$, return time of the echo $t = 0.505\,\text{s}$
 **Find:** the speed of sound $v$ in $\text{m/s}$
 **Principle:** The sound travels to the wall and is reflected back, so during the return time it covers a distance $2d$. In air sound travels at a steady speed, so the speed is the distance travelled divided by the time.
-**Formula:** $2d = v t$, so $v = \dfrac{2d}{t}$
+**Formula:** $$\begin{aligned} s &= 2d \\ s &= vt \\ v &= \dfrac{s}{t} = \dfrac{2d}{t} \end{aligned}$$
 **Conversions:** None needed: the distance is in metres and the time in seconds.
 **Substitution:** $v = \dfrac{2 \cdot 86.0\,\text{m}}{0.505\,\text{s}} = \dfrac{172.0\,\text{m}}{0.505\,\text{s}} = 340.59\,\text{m/s}$
 **Answer:** $341\,\text{m/s}$, three significant figures like the distance and the time.
@@ -32,7 +32,7 @@
 **Given:** frequency of the note $f_0 = 415\,\text{Hz}$, speed of the car $v_\text{L} = 15.0\,\text{m/s}$ away from the listener, speed of sound $v = 340\,\text{m/s}$
 **Find:** the frequency heard $f$
 **Principle:** The sound source moves and the listener is at rest, so we use the Doppler formula for a moving source. The source moves away, so the wavefronts spread out behind it and the frequency heard is lower than $f_0$: the denominator gets a plus sign.
-**Formula:** $f = f_0 \cdot \dfrac{v}{v + v_\text{L}}$
+**Formula:** $$\begin{aligned} f &= \dfrac{v}{\lambda} \\ \lambda &= (v + v_\text{L})T_0 \\ T_0 &= \dfrac{1}{f_0} \\ f &= f_0 \cdot \dfrac{v}{v + v_\text{L}} \end{aligned}$$
 **Conversions:** None needed: the speeds are in $\text{m/s}$ and the frequency in hertz.
 **Substitution:** $f = 415\,\text{Hz} \cdot \dfrac{340\,\text{m/s}}{340\,\text{m/s} + 15.0\,\text{m/s}} = 415\,\text{Hz} \cdot \dfrac{340}{355} = 397.46\,\text{Hz}$
 **Answer:** $397\,\text{Hz}$, three significant figures like the given data.
@@ -68,7 +68,7 @@ Statement 5 is true. At the moment of passing, the frequency drops. Behind a car
 **Given:** frequency of the tuning fork $f_1 = 262\,\text{Hz}$, $N = 15$ loud moments in a time $t = 5.0\,\text{s}$, the string is lower than the tuning fork
 **Find:** the frequency of the string $f_2$
 **Principle:** Two sounds of almost the same frequency produce beats, and the number of loud moments per second equals the difference of the frequencies. The beat frequency is obtained by counting the loud moments per unit time. Because the string is lower, its frequency is smaller than that of the tuning fork by the beat frequency.
-**Formula:** $f_\text{H} = \dfrac{N}{t}$ and $f_\text{H} = |f_1 - f_2| = f_1 - f_2$, so $f_2 = f_1 - \dfrac{N}{t}$
+**Formula:** $$\begin{aligned} f_\text{H} &= \dfrac{N}{t} \\ f_\text{H} &= |f_1 - f_2| = f_1 - f_2 \\ f_2 &= f_1 - f_\text{H} = f_1 - \dfrac{N}{t} \end{aligned}$$
 **Conversions:** None needed: the time is in seconds, so $\tfrac{N}{t}$ comes out in hertz.
 **Substitution:** $f_\text{H} = \dfrac{15}{5.0\,\text{s}} = 3.0\,\text{Hz}$ and $f_2 = 262\,\text{Hz} - 3.0\,\text{Hz} = 259\,\text{Hz}$
 **Answer:** $259\,\text{Hz}$; the difference $3.0\,\text{Hz}$ is known to a tenth of a hertz, so the result is given in whole hertz like the frequency of the tuning fork.
@@ -78,7 +78,7 @@ Statement 5 is true. At the moment of passing, the frequency drops. Behind a car
 **Given:** wavelength in air $\lambda_\text{a} = 0.850\,\text{m}$, speed of sound in air $v_\text{a} = 340\,\text{m/s}$ and in water $v_\text{w} = 1480\,\text{m/s}$
 **Find:** the wavelength in water $\lambda_\text{w}$
 **Principle:** When sound passes from air into water, the frequency stays the same, because the particles at the boundary vibrate in step with the incoming wave. The speed changes, so the wavelength changes. In both substances $v = f\lambda$ holds.
-**Formula:** $f = \dfrac{v_\text{a}}{\lambda_\text{a}}$ and $\lambda_\text{w} = \dfrac{v_\text{w}}{f}$
+**Formula:** $$\begin{aligned} v_\text{a} &= f\lambda_\text{a} \\ v_\text{w} &= f\lambda_\text{w} \\ f &= \dfrac{v_\text{a}}{\lambda_\text{a}} \\ \lambda_\text{w} &= \dfrac{v_\text{w}}{f} \end{aligned}$$
 **Conversions:** None needed: the speeds are in $\text{m/s}$ and the wavelength in metres.
 **Substitution:** $f = \dfrac{340\,\text{m/s}}{0.850\,\text{m}} = 400\,\text{Hz}$ and $\lambda_\text{w} = \dfrac{1480\,\text{m/s}}{400\,\text{Hz}} = 3.70\,\text{m}$
 **Answer:** $3.70\,\text{m}$, three significant figures like the given data. The box accepts $3.70$ or $3.7$, because they are the same number.
@@ -88,7 +88,7 @@ Statement 5 is true. At the moment of passing, the frequency drops. Behind a car
 **Given:** frequency of the siren $f_0 = 650\,\text{Hz}$, speed of the driver $v_\text{H} = 90.0\,\text{km/h}$ towards the siren, speed of sound $v = 340\,\text{m/s}$
 **Find:** the frequency heard by the driver $f$
 **Principle:** The source is at rest and the listener moves, so the wavelength does not change, but the driver meets the wavefronts more often, because they approach at speed $v + v_\text{H}$. We use the Doppler formula for a moving listener with the plus sign for approaching.
-**Formula:** $f = f_0 \cdot \dfrac{v + v_\text{H}}{v}$
+**Formula:** $$\begin{aligned} v_\text{rel} &= v + v_\text{H} \\ \lambda &= v T_0 = \dfrac{v}{f_0} \\ f &= \dfrac{v_\text{rel}}{\lambda} \\ f &= f_0 \cdot \dfrac{v + v_\text{H}}{v} \end{aligned}$$
 **Conversions:** $v_\text{H} = 90.0\,\tfrac{\text{km}}{\text{h}} = 90.0 \cdot \tfrac{1000\,\text{m}}{3600\,\text{s}} = 25.0\,\tfrac{\text{m}}{\text{s}}$
 **Substitution:** $f = 650\,\text{Hz} \cdot \dfrac{340\,\text{m/s} + 25.0\,\text{m/s}}{340\,\text{m/s}} = 650\,\text{Hz} \cdot \dfrac{365}{340} = 697.79\,\text{Hz}$
 **Answer:** $698\,\text{Hz}$, three significant figures like the given data.
@@ -98,7 +98,7 @@ Statement 5 is true. At the moment of passing, the frequency drops. Behind a car
 **Given:** frequency of the engine at rest $f_0 = 425\,\text{Hz}$, frequency heard as the car moves away $f = 398\,\text{Hz}$, speed of sound $v = 340\,\text{m/s}$
 **Find:** the speed of the car $v_\text{L}$
 **Principle:** The car, that is, the sound source, moves straight away from the spectator, and the spectator is at rest, so the Doppler formula for a moving source applies with the plus sign for moving away. The engine speed is the same, so the engine's own frequency is $f_0$. The speed of the source is solved from the formula.
-**Formula:** $f = f_0 \cdot \dfrac{v}{v + v_\text{L}}$, so $v + v_\text{L} = \dfrac{f_0 v}{f}$ and $v_\text{L} = v \left(\dfrac{f_0}{f} - 1\right)$
+**Formula:** $$\begin{aligned} f &= \dfrac{v}{\lambda} \\ \lambda &= (v + v_\text{L})T_0 \\ T_0 &= \dfrac{1}{f_0} \\ f &= f_0 \cdot \dfrac{v}{v + v_\text{L}} \\ v + v_\text{L} &= \dfrac{f_0 v}{f} \\ v_\text{L} &= v\left(\dfrac{f_0}{f} - 1\right) \end{aligned}$$
 **Conversions:** None needed: the frequencies are in hertz, and the unit cancels in their ratio.
 **Substitution:** $v_\text{L} = 340\,\text{m/s} \cdot \left(\dfrac{425\,\text{Hz}}{398\,\text{Hz}} - 1\right) = 340\,\text{m/s} \cdot 0.067839 = 23.065\,\text{m/s}$
 **Answer:** $23\,\text{m/s}$, two significant figures, because the result depends on the frequency difference $27\,\text{Hz}$, which is known to two figures.
@@ -108,7 +108,7 @@ Statement 5 is true. At the moment of passing, the frequency drops. Behind a car
 **Given:** frequency heard when approaching $f_1 = 476\,\text{Hz}$ and when moving away $f_2 = 404\,\text{Hz}$, speed of sound $v = 340\,\text{m/s}$; the frequency of the siren $f_0$ is unknown
 **Find:** the speed of the ambulance $v_\text{L}$
 **Principle:** The listener is at rest and the source moves straight towards them and straight away from them at the same speed, so the moving-source formula holds in both phases, with the minus sign when approaching and the plus sign when moving away. The unknown $f_0$ cancels when the frequencies are divided by each other.
-**Formula:** $f_1 = f_0 \cdot \dfrac{v}{v - v_\text{L}}$ and $f_2 = f_0 \cdot \dfrac{v}{v + v_\text{L}}$, so $\dfrac{f_1}{f_2} = \dfrac{v + v_\text{L}}{v - v_\text{L}}$. Cross-multiplying, $f_1 v - f_1 v_\text{L} = f_2 v + f_2 v_\text{L}$, so $v_\text{L} (f_1 + f_2) = v (f_1 - f_2)$ and $v_\text{L} = v \cdot \dfrac{f_1 - f_2}{f_1 + f_2}$
+**Formula:** $$\begin{aligned} f_1 &= \dfrac{v}{\lambda_1},\; \lambda_1 = (v - v_\text{L})T_0 \\ f_2 &= \dfrac{v}{\lambda_2},\; \lambda_2 = (v + v_\text{L})T_0 \\ f_1 &= f_0 \cdot \dfrac{v}{v - v_\text{L}} \\ f_2 &= f_0 \cdot \dfrac{v}{v + v_\text{L}} \\ \dfrac{f_1}{f_2} &= \dfrac{v + v_\text{L}}{v - v_\text{L}} \\ f_1 v - f_1 v_\text{L} &= f_2 v + f_2 v_\text{L} \\ v_\text{L}(f_1 + f_2) &= v(f_1 - f_2) \\ v_\text{L} &= v \cdot \dfrac{f_1 - f_2}{f_1 + f_2} \end{aligned}$$
 **Conversions:** None needed: the unit of the frequencies cancels, and the speed comes out in $\text{m/s}$.
 **Substitution:** $v_\text{L} = 340\,\text{m/s} \cdot \dfrac{476\,\text{Hz} - 404\,\text{Hz}}{476\,\text{Hz} + 404\,\text{Hz}} = 340\,\text{m/s} \cdot \dfrac{72}{880} = 27.818\,\text{m/s}$
 **Answer:** $28\,\text{m/s}$, two significant figures, because the frequency difference $72\,\text{Hz}$ is known to two figures.
@@ -164,7 +164,7 @@ As the distance decreases, only the loudness of the sound grows. At the moment o
 **Find:** the speed of the car $v_\text{L}$
 **Principle:** The car, that is, the sound source, approaches a listener at rest, so the Doppler formula for a moving source with a minus sign applies. The measurements vary slightly, so we use their mean $f_\text{mean}$. The speed of the source is solved from the formula.
 **Processing the data:** The sum of the four frequencies in the table is $$431 + 429 + 432 + 430 = 1722$$ hertz, so the mean is $f_\text{mean} = \dfrac{1722\,\text{Hz}}{4} = 430.5\,\text{Hz}$.
-**Formula:** $f_\text{mean} = f_0 \cdot \dfrac{v}{v - v_\text{L}}$, so $v - v_\text{L} = \dfrac{f_0 v}{f_\text{mean}}$ and $v_\text{L} = v \left(1 - \dfrac{f_0}{f_\text{mean}}\right)$
+**Formula:** $$\begin{aligned} f_\text{mean} &= \dfrac{v}{\lambda} \\ \lambda &= (v - v_\text{L})T_0 \\ T_0 &= \dfrac{1}{f_0} \\ f_\text{mean} &= f_0 \cdot \dfrac{v}{v - v_\text{L}} \\ v - v_\text{L} &= \dfrac{f_0 v}{f_\text{mean}} \\ v_\text{L} &= v\left(1 - \dfrac{f_0}{f_\text{mean}}\right) \end{aligned}$$
 **Conversions:** None needed: the frequencies are in hertz, and the unit cancels in their ratio.
 **Substitution:** $v_\text{L} = 340\,\text{m/s} \cdot \left(1 - \dfrac{392\,\text{Hz}}{430.5\,\text{Hz}}\right) = 340\,\text{m/s} \cdot 0.08943 = 30.41\,\text{m/s}$
 **Answer:** $30.4\,\text{m/s}$, three significant figures like the frequencies.
@@ -187,7 +187,7 @@ As the distance decreases, only the loudness of the sound grows. At the moment o
 **Principle:** The student used a formula that applies to a moving listener. Here the listener is at rest and the sound source, the car, is moving, so the formula for a moving source applies.
 
 The motion of the source shortens the wavelength in front of the source ($\lambda = (v - v_\text{L}) T_0$), whereas the motion of a listener does not change the wavelength. The car approaches, so the sign is chosen so that $f > f_0$.
-**Formula:** $f = f_0 \cdot \dfrac{v}{v - v_\text{L}}$
+**Formula:** $$\begin{aligned} f &= \dfrac{v}{\lambda} \\ \lambda &= (v - v_\text{L})T_0 \\ T_0 &= \dfrac{1}{f_0} \\ f &= f_0 \cdot \dfrac{v}{v - v_\text{L}} \end{aligned}$$
 **Conversions:** None needed: the speeds are already in m/s.
 **Substitution:**
 $\begin{aligned} f &= 500\,\text{Hz} \cdot \dfrac{340\,\text{m/s}}{(340 - 30.0)\,\text{m/s}} \\ &= 500\,\text{Hz} \cdot \dfrac{340}{310.0} \\ &= 548.4\,\text{Hz} \end{aligned}$
@@ -203,7 +203,7 @@ It reflects the same frequency back, so it is then a moving source approaching t
 
 The greatest speed of flow corresponds to the greatest change in frequency.
 **Processing the data:** The greatest change in the table is $\Delta f = 2.47\,\text{kHz}$ at the moment $t = 0.20\,\text{s}$.
-**Formula:** $f = f_0 \cdot \dfrac{v + v_\text{b}}{v - v_\text{b}}$, so $\Delta f = f - f_0 = f_0 \cdot \dfrac{2 v_\text{b}}{v - v_\text{b}}$ and $v_\text{b} = \dfrac{v \, \Delta f}{2 f_0 + \Delta f}$
+**Formula:** $$\begin{aligned} f_1 &= f_0 \cdot \dfrac{v + v_\text{b}}{v} \\ f &= f_1 \cdot \dfrac{v}{v - v_\text{b}} \\ f &= f_0 \cdot \dfrac{v + v_\text{b}}{v - v_\text{b}} \\ \Delta f &= f - f_0 = f_0 \cdot \dfrac{2 v_\text{b}}{v - v_\text{b}} \\ \Delta f\,(v - v_\text{b}) &= 2 f_0 v_\text{b} \\ v_\text{b} &= \dfrac{v \, \Delta f}{2 f_0 + \Delta f} \end{aligned}$$
 **Conversions:** $\Delta f = 2.47\,\text{kHz} = 2470\,\text{Hz}$ and $f_0 = 4.00\,\text{MHz} = 4\,000\,000\,\text{Hz}$.
 **Substitution:** The denominator is $$
 \begin{aligned}
@@ -221,7 +221,7 @@ $\begin{aligned} v_\text{b} &= \dfrac{1540\,\text{m/s} \cdot 2470\,\text{Hz}}{8\
 **Find:** the fundamental frequency $f_1$, the missing harmonics, the speed of the wave in the string $v$ and the difference in timbre
 **Principle:** The natural frequencies of a string fixed at both ends are $f_n = n f_1$, and at the fundamental frequency the string has one antinode, so $L = \tfrac{\lambda_1}{2}$ and $v = \lambda_1 f_1$. The even harmonics have a node in the middle of the string, and plucking at a node does not excite them.
 **Processing the data:** The lowest peak is $196\,\text{Hz}$, and the others are its multiples: $\dfrac{392}{196} = 2$, $\dfrac{588}{196} = 3$, $\dfrac{784}{196} = 4$, $\dfrac{980}{196} = 5$ and $\dfrac{1176}{196} = 6$. In the spectrum of the string plucked in the middle, the amplitudes of the even harmonics ($n = 2$, $4$, $6$) are at most $0.02$.
-**Formula:** $L = \dfrac{\lambda_1}{2}$, so $\lambda_1 = 2L$, and $v = \lambda_1 f_1$, so $v = 2 L f_1$
+**Formula:** $$\begin{aligned} L &= \dfrac{\lambda_1}{2} \\ \lambda_1 &= 2L \\ v &= \lambda_1 f_1 \\ v &= 2 L f_1 \end{aligned}$$
 **Conversions:** None needed: the length is in metres and the frequency in hertz.
 **Substitution:**
 $\begin{aligned} v &= 2 \cdot 0.650\,\text{m} \cdot 196\,\text{Hz} \\ &= 254.8\,\text{m/s} \end{aligned}$

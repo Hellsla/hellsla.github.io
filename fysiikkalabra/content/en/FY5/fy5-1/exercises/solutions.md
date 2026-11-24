@@ -2,7 +2,7 @@
 **Given:** force $F = 150\,\text{N}$ perpendicular to the handle, distance of the point of application from the centre of the nut $d = 0.25\,\text{m}$
 **Find:** moment $M$ of the force about the axis of the nut in the unit $\text{Nm}$
 **Principle:** The nut rotates about its axis, so the turning effect of the force is given by its moment $M = Fr$. The force is perpendicular to the handle, so the lever arm is the whole distance to the point of application, $r = d$.
-**Formula:** $M = Fr$ and $r = d$, so $M = Fd$
+**Formula:** $$\begin{aligned} M &= Fr \\ r &= d \\ M &= Fd \end{aligned}$$
 **Conversions:** The force is in newtons and the distance in metres, so no conversions are needed.
 **Substitution:** $M = 150\,\text{N}\cdot 0.25\,\text{m} = 37.5\,\text{Nm}$
 **Answer:** $37.5\,\text{Nm} \approx 38\,\text{Nm}$, two significant figures like the distance $0.25\,\text{m}$.
@@ -12,7 +12,7 @@
 **Given:** push $F = 12\,\text{N}$ perpendicular to the door, distance of the handle from the hinges $d = 0.80\,\text{m}$
 **Find:** moment $M$ of the force about the hinges in the unit $\text{Nm}$
 **Principle:** The door rotates about the axis of rotation through the hinges, so the turning effect of the push is given by its moment. The push is perpendicular to the door, so the lever arm is the distance of the handle from the hinges.
-**Formula:** $M = Fr$ and $r = d$, so $M = Fd$
+**Formula:** $$\begin{aligned} M &= Fr \\ r &= d \\ M &= Fd \end{aligned}$$
 **Conversions:** The force is in newtons and the distance in metres, so no conversions are needed.
 **Substitution:** $M = 12\,\text{N}\cdot 0.80\,\text{m} = 9.6\,\text{Nm}$
 **Answer:** $9.6\,\text{Nm}$, two significant figures like the force $12\,\text{N}$ and the distance $0.80\,\text{m}$.
@@ -22,7 +22,7 @@
 **Given:** required moment $M = 45\,\text{Nm}$, distance of the point of application $d = 0.30\,\text{m}$, force perpendicular to the handle
 **Find:** required force $F$ in the unit $\text{N}$
 **Principle:** The tightness of the nut is decided by the moment $M = Fr$. The force is perpendicular to the handle, so the lever arm is $r = d$, and the force is solved from the formula for the moment.
-**Formula:** $M = Fd$, so $F = \dfrac{M}{d}$
+**Formula:** $$\begin{aligned} M &= Fr \\ r &= d \\ M &= Fd \\ F &= \dfrac{M}{d} \end{aligned}$$
 **Conversions:** The moment is in newton metres and the distance in metres, so the force comes directly in newtons.
 **Substitution:** $F = \dfrac{45\,\text{Nm}}{0.30\,\text{m}} = 150\,\text{N}$
 **Answer:** $150\,\text{N} = 1.5 \cdot 10^{2}\,\text{N}$, two significant figures like the moment $45\,\text{Nm}$ and the distance $0.30\,\text{m}$.
@@ -45,7 +45,7 @@ The rod itself is slanted in the figure, four squares to the right and three up,
 **Given:** force $F = 60\,\text{N}$, moment $M = 18\,\text{Nm}$
 **Find:** lever arm $r$ of the force in the unit $\text{m}$
 **Principle:** The moment is the product of the force and the lever arm, $M = Fr$. When the moment and the force are known, the lever arm is solved from the same formula.
-**Formula:** $M = Fr$, so $r = \dfrac{M}{F}$
+**Formula:** $$\begin{aligned} M &= Fr \\ r &= \dfrac{M}{F} \end{aligned}$$
 **Conversions:** The moment is in newton metres and the force in newtons, so the lever arm comes directly in metres: $\tfrac{\text{Nm}}{\text{N}} = \text{m}$.
 **Substitution:** $r = \dfrac{18\,\text{Nm}}{60\,\text{N}} = 0.30\,\text{m}$
 **Answer:** $0.30\,\text{m}$, two significant figures like the moment $18\,\text{Nm}$ and the force $60\,\text{N}$.
@@ -106,7 +106,7 @@ The expression $M d\sin\alpha$ would give a larger force with a longer spanner, 
 **Principle:** The door rotates about the hinges, so the turning effect of the string is given by its moment $M = Fr$. The string is oblique to the door, so the lever arm is shorter than $d$.
 
 The plane of the door runs from the hinges to the handle, so the angle $35^\circ$ is the angle between the force and the extension of the arm, and $r = d\sin\alpha$.
-**Formula:** $M = Fr$ and $r = d\sin\alpha$, so $M = Fd\sin\alpha$
+**Formula:** $$\begin{aligned} M &= Fr \\ r &= d\sin\alpha \\ M &= Fd\sin\alpha \end{aligned}$$
 **Conversions:** The force is in newtons and the distance in metres, so no conversions are needed.
 **Substitution:** $M = 40\,\text{N}\cdot 0.75\,\text{m}\cdot\sin 35^\circ = 30\,\text{Nm}\cdot 0.5736 = 17.21\,\text{Nm}$
 **Answer:** $17\,\text{Nm}$, two significant figures like the force $40\,\text{N}$ and the distance $0.75\,\text{m}$.
@@ -116,7 +116,7 @@ The plane of the door runs from the hinges to the handle, so the angle $35^\circ
 **Given:** force $F = 85\,\text{N}$ perpendicular to the handle, distance of the point of application $d = 35\,\text{cm}$
 **Find:** moment $M$ of the force about the axis of the nut in the unit $\text{Nm}$
 **Principle:** The nut rotates about its axis, so the turning effect of the force is given by its moment $M = Fr$. The force is perpendicular to the handle, so the lever arm is the whole distance to the point of application.
-**Formula:** $M = Fr$ and $r = d$, so $M = Fd$
+**Formula:** $$\begin{aligned} M &= Fr \\ r &= d \\ M &= Fd \end{aligned}$$
 **Conversions:** The distance is converted to metres so that the moment comes in newton metres: $d = 35\,\text{cm} = 35\cdot 0.01\,\text{m} = 0.35\,\text{m}$.
 **Substitution:** $M = 85\,\text{N}\cdot 0.35\,\text{m} = 29.75\,\text{Nm}$
 **Answer:** $30\,\text{Nm}$, two significant figures like the force $85\,\text{N}$ and the distance $35\,\text{cm}$.
@@ -128,7 +128,7 @@ The plane of the door runs from the hinges to the handle, so the angle $35^\circ
 **Principle:** The board rotates about the axis, and its rotation is decided by the net moment, which is the sum of the moments of the forces with their signs.
 
 Both forces are vertical and the board is horizontal, so the lever arms are the distances from the axis. On the right-hand side of the axis, an upward force rotates the board anticlockwise and a downward force clockwise.
-**Formula:** $M_1 = F_1 r_1$ and $M_2 = -F_2 r_2$, so $\Sigma M = F_1 r_1 - F_2 r_2$
+**Formula:** $$\begin{aligned} M_1 &= F_1 r_1 \\ M_2 &= -F_2 r_2 \\ \Sigma M &= M_1 + M_2 \\ \Sigma M &= F_1 r_1 - F_2 r_2 \end{aligned}$$
 **Conversions:** The forces are in newtons and the distances in metres, so no conversions are needed.
 **Substitution:** $\Sigma M = 30\,\text{N}\cdot 0.50\,\text{m} - 40\,\text{N}\cdot 0.20\,\text{m} = 15\,\text{Nm} - 8.0\,\text{Nm} = 7.0\,\text{Nm}$
 **Answer:** $7.0\,\text{Nm}$ anticlockwise, two significant figures like the data.
@@ -140,7 +140,7 @@ The larger force $40\,\text{N}$ does not decide the direction of rotation, becau
 **Given:** required moment $M = 50\,\text{Nm}$, length of the lever, that is the distance of the point of application from the axis, $d = 0.25\,\text{m}$, angle between the force and the extension of the lever $\alpha = 60^\circ$
 **Find:** required force $F$ in the unit $\text{N}$
 **Principle:** Turning the valve is decided by the moment $M = Fr$. The force is oblique to the lever, so its lever arm is $r = d\sin\alpha$, shorter than the length of the lever. The force is solved from the formula for the moment.
-**Formula:** $M = Fd\sin\alpha$, so $F = \dfrac{M}{d\sin\alpha}$
+**Formula:** $$\begin{aligned} M &= Fr \\ r &= d\sin\alpha \\ M &= Fd\sin\alpha \\ F &= \dfrac{M}{d\sin\alpha} \end{aligned}$$
 **Conversions:** The moment is in newton metres and the distance in metres, so no conversions are needed.
 **Substitution:** $F = \dfrac{50\,\text{Nm}}{0.25\,\text{m}\cdot\sin 60^\circ} = \dfrac{50\,\text{Nm}}{0.2165\,\text{m}} = 230.9\,\text{N}$
 **Answer:** $231\,\text{N} \approx 2.3 \cdot 10^{2}\,\text{N}$, two significant figures like the moment $50\,\text{Nm}$ and the length $0.25\,\text{m}$.
@@ -150,7 +150,7 @@ The larger force $40\,\text{N}$ does not decide the direction of rotation, becau
 **Given:** a series of measurements from the table: lever arm $r$ and the smallest force $F$ with which the nut starts to turn (five measurements); the force is perpendicular to the handle
 **Find:** the moment $M$ needed to loosen the nut in the unit $\text{Nm}$
 **Principle:** The force is perpendicular to the handle, so the lever arm is $r$ and the moment is $M = Fr$. The nut always starts to turn with the same moment, so the product $Fr$ of every measurement should be the same. The measurements vary a little, so the moment is estimated as the mean of the products.
-**Formula:** $M_i = F_i r_i$ for each measurement, and $M = \dfrac{M_1 + M_2 + \ldots + M_5}{5}$
+**Formula:** $$\begin{aligned} M_i &= F_i r_i \\ M &= \dfrac{M_1 + M_2 + \ldots + M_5}{5} \end{aligned}$$
 **Conversions:** The forces are in newtons and the lever arms in metres, so no conversions are needed.
 **Substitution:** The products are $251\,\text{N}\cdot 0.10\,\text{m} = 25.1\,\text{Nm}$, $170\,\text{N}\cdot 0.15\,\text{m} = 25.5\,\text{Nm}$, $126\,\text{N}\cdot 0.20\,\text{m} = 25.2\,\text{Nm}$, $83\,\text{N}\cdot 0.30\,\text{m} = 24.9\,\text{Nm}$ and $62\,\text{N}\cdot 0.40\,\text{m} = 24.8\,\text{Nm}$. The sum is $125.5\,\text{Nm}$, so $M = 125.5\,\text{Nm} : 5 = 25.1\,\text{Nm}$.
 **Answer:** $25\,\text{Nm}$, two significant figures like the lever arms $r$. The products are almost the same, so the force is inversely proportional to the lever arm: doubling the lever arm halves the required force.
@@ -166,7 +166,7 @@ The moment $25\,\text{Nm}$ is of the order of tens of newton metres, like ordina
 **Principle:** The weights of the hanging masses are vertical and the stick is horizontal, so the lever arm of each force is the distance of the mass from the axis.
 
 The net moment is the sum of the moments with their signs. On the left of the axis, a weight pulling down turns the stick anticlockwise (positive), and on the right clockwise (negative).
-**Formula:** $G = mg$ and $M = Gr$, so $\Sigma M = g\,(m_A r_A + m_B r_B - m_C r_C - m_D r_D)$
+**Formula:** $$\begin{aligned} G &= mg \\ M &= Gr \\ \Sigma M &= M_A + M_B - M_C - M_D \\ \Sigma M &= g\,(m_A r_A + m_B r_B \\ &\qquad - m_C r_C - m_D r_D) \end{aligned}$$
 **Conversions:** The masses are converted to kilograms and the distances to metres: $m_A = 0.200\,\text{kg}$, $m_B = 0.100\,\text{kg}$, $m_C = 0.120\,\text{kg}$, $m_D = 0.0500\,\text{kg}$ and $r_A = 0.300\,\text{m}$, $r_B = 0.100\,\text{m}$, $r_C = 0.400\,\text{m}$, $r_D = 0.200\,\text{m}$.
 **Substitution:** The products on the left are $$\begin{aligned} &0.200\cdot 0.300 + 0.100\cdot 0.100 \\ &= 0.0700\,\text{kg}\cdot\text{m} \end{aligned}$$ and on the right $$\begin{aligned} &0.120\cdot 0.400 + 0.0500\cdot 0.200 \\ &= 0.0580\,\text{kg}\cdot\text{m} \end{aligned}$$. The difference is $0.0700\,\text{kg}\cdot\text{m} - 0.0580\,\text{kg}\cdot\text{m} = 0.0120\,\text{kg}\cdot\text{m}$, so $\Sigma M = 9.81\,\text{m/s}^2\cdot 0.0120\,\text{kg}\cdot\text{m} = 0.1177\,\text{Nm}$.
 **Answer:** $0.118\,\text{Nm}$ anticlockwise, three significant figures like the masses and the distances. The net moment is positive, so the stick starts to turn anticlockwise, that is, the left end goes down.
@@ -180,7 +180,7 @@ The net moment is the sum of the moments with their signs. On the left of the ax
 The student measured the length from the edge of the spanner, so the measurement includes the distance $0.030\,\text{m}$ from the edge to the axis, which is on the other side of the axis and is not part of the lever arm.
 
 The force is perpendicular to the handle, so the correct lever arm is the distance from the axis to the hand.
-**Formula:** $r = d - e$ and $M = Fr$, so $M = F\,(d - e)$, where $d$ is the measured length and $e$ the distance from the edge to the axis
+**Formula:** Let $d$ be the measured length and $e$ the distance from the edge to the axis. $$\begin{aligned} r &= d - e \\ M &= Fr \\ M &= F\,(d - e) \end{aligned}$$
 **Conversions:** All lengths are in metres, so no conversions are needed.
 **Substitution:** $r = 0.270\,\text{m} - 0.030\,\text{m} = 0.240\,\text{m}$ and $M = 90\,\text{N}\cdot 0.240\,\text{m} = 21.6\,\text{Nm}$
 **Answer:** $21.6\,\text{Nm} \approx 22\,\text{Nm}$, two significant figures like the force $90\,\text{N}$. The student's error was to measure the lever arm from the edge of the spanner and not from the axis of rotation, so the lever arm and the moment came out too large.
@@ -192,7 +192,7 @@ The force is perpendicular to the handle, so the correct lever arm is the distan
 **Principle:** The crank rotates about its axis, so the turning effect of the foot's force is given by its moment $M = Fr$. The force is vertical, so its line of action is the vertical line through the pedal, and the lever arm is the horizontal distance of the pedal from the axis.
 
 It is greatest when the crank is horizontal ($r = d$) and zero when the crank is vertical, because then the line of action passes through the axis. In the position $45^\circ$ the horizontal distance is the side adjacent to the angle.
-**Formula:** $M = Fr$ and $r = d\cos 45^\circ$, so $M = Fd\cos 45^\circ$
+**Formula:** $$\begin{aligned} M &= Fr \\ r &= d\cos 45^\circ \\ M &= Fd\cos 45^\circ \end{aligned}$$
 **Conversions:** The force is in newtons and the distance in metres, so no conversions are needed.
 **Substitution:** $M = 500\,\text{N}\cdot 0.175\,\text{m}\cdot\cos 45^\circ = 87.5\,\text{Nm}\cdot 0.7071 = 61.87\,\text{Nm}$
 **Answer:** $61.9\,\text{Nm}$, three significant figures like the distance $0.175\,\text{m}$. The moment is greatest, $87.5\,\text{Nm}$, when the crank is horizontal pointing forwards, and zero when the crank points straight down or up.
@@ -204,7 +204,7 @@ The formula $r = d\sin\alpha$ gives the same: the angle between the force and th
 **Given:** adult's force $F_1 = 50\,\text{N}$ and lever arm $r_1 = 0.40\,\text{m}$, child's force $F_2 = 20\,\text{N}$; both push perpendicular to the gate
 **Find:** distance $r_2$ of the child's push from the hinges in the unit $\text{m}$
 **Principle:** The turning effects are equal when the moments about the hinges are equal. The lever arm of a perpendicular push is the distance of the pushing point from the hinges, so a smaller force needs a longer lever arm.
-**Formula:** $F_2 r_2 = F_1 r_1$, so $r_2 = \dfrac{F_1 r_1}{F_2}$
+**Formula:** $$\begin{aligned} M_2 &= M_1 \\ F_2 r_2 &= F_1 r_1 \\ r_2 &= \dfrac{F_1 r_1}{F_2} \end{aligned}$$
 **Conversions:** The forces are in newtons and the lever arm in metres, so no conversions are needed.
 **Substitution:** $r_2 = \dfrac{50\,\text{N}\cdot 0.40\,\text{m}}{20\,\text{N}} = \dfrac{20\,\text{Nm}}{20\,\text{N}} = 1.0\,\text{m}$
 **Answer:** $1.0\,\text{m}$, two significant figures like the forces and the distance $0.40\,\text{m}$.
@@ -218,7 +218,7 @@ The formula $r = d\sin\alpha$ gives the same: the angle between the force and th
 The rotation, however, is decided by the net moment.
 
 Both forces are vertical and the arms horizontal, so the lever arm of each is $d$. On the left of the axis a downward force and on the right of the axis an upward force both rotate anticlockwise, so the moments have the same sign and add up.
-**Formula:** $\Sigma F = F - F$ and $\Sigma M = Fd + Fd$, so $\Sigma M = 2Fd$
+**Formula:** $$\begin{aligned} \Sigma F &= F - F = 0 \\ M_1 &= Fd \\ M_2 &= Fd \\ \Sigma M &= M_1 + M_2 = 2Fd \end{aligned}$$
 **Conversions:** The forces are in newtons and the distances in metres, so no conversions are needed.
 **Substitution:** $\Sigma F = 120\,\text{N} - 120\,\text{N} = 0$ and $\Sigma M = 2\cdot 120\,\text{N}\cdot 0.20\,\text{m} = 48\,\text{Nm}$
 **Answer:** The sum of the forces is zero, and the net moment is $48\,\text{Nm}$ anticlockwise, two significant figures like the distance $0.20\,\text{m}$.
@@ -230,7 +230,7 @@ Both forces are vertical and the arms horizontal, so the lever arm of each is $d
 **Principle:** The moment of the pedal force about the axis of the crank is $M = Fr$. In the problem the crank and the front sprocket rotate steadily, so the moment of the pedal force and the moment of the chain force are equal (and opposite in direction).
 
 The force of the chain is the same at both sprockets, so the moment on the rear wheel is this force times the radius of the rear sprocket.
-**Formula:** $M_\text{pedal} = F_\text{pedal} d$ and $M_\text{pedal} = F_\text{chain} R$, so $F_\text{chain} = \dfrac{F_\text{pedal} d}{R}$; for the rear wheel $M = F_\text{chain} r$
+**Formula:** $$\begin{aligned} M_\text{pedal} &= F_\text{pedal} d \\ M_\text{pedal} &= F_\text{chain} R \\ F_\text{chain} &= \dfrac{F_\text{pedal} d}{R} \\ M &= F_\text{chain} r \end{aligned}$$
 **Conversions:** The radii of the rear sprocket are converted to metres: $r_1 = 9.00\,\text{cm} = 0.0900\,\text{m}$, $r_2 = 0.0600\,\text{m}$ and $r_3 = 0.0400\,\text{m}$.
 **Substitution:** The moment of the crank is $M_\text{pedal} = 450\,\text{N}\cdot 0.175\,\text{m} = 78.75\,\text{Nm}$, and the force of the chain is $F_\text{chain} = \dfrac{78.75\,\text{Nm}}{0.100\,\text{m}} = 787.5\,\text{N}$. In gear 1: $M = 787.5\,\text{N}\cdot 0.0900\,\text{m} = 70.875\,\text{Nm}$, in gear 2: $$787.5\,\text{N}\cdot 0.0600\,\text{m} = 47.25\,\text{Nm}$$ and in gear 3: $787.5\,\text{N}\cdot 0.0400\,\text{m} = 31.5\,\text{Nm}$.
 **Answer:** $70.9\,\text{Nm}$, three significant figures like the given data.
@@ -256,7 +256,7 @@ The order of magnitude is sensible: a radius of $9\,\text{cm}$ is a large rear s
 The angle $\alpha$ is the angle between the force and the extension of the handle, so the lever arm of the force is $r = d\sin\alpha$, and the smallest force is obtained when the moment is exactly $60.0\,\text{Nm}$.
 
 What decides how good a spanner is, is the lever arm $r$, not the length $d$ alone.
-**Formula:** $M = Fd\sin\alpha$, so $F = \dfrac{M}{d\sin\alpha}$
+**Formula:** $$\begin{aligned} M &= Fr \\ r &= d\sin\alpha \\ M &= Fd\sin\alpha \\ F &= \dfrac{M}{d\sin\alpha} \end{aligned}$$
 **Conversions:** The lengths are in metres and the moment in newton metres, so no conversions are needed.
 **Substitution:** Spanner A: $r = 0.250\,\text{m}\cdot\sin 90^\circ = 0.250\,\text{m}$ and $F = 60.0\,\text{Nm} : 0.250\,\text{m} = 240\,\text{N}$. Spanner B: $r = 0.400\,\text{m}\cdot\sin 65^\circ = 0.3625\,\text{m}$ and $F = 60.0\,\text{Nm} : 0.3625\,\text{m} = 165.5\,\text{N}$. Spanner C: $r = 0.600\,\text{m}\cdot\sin 30^\circ = 0.300\,\text{m}$ and $F = 60.0\,\text{Nm} : 0.300\,\text{m} = 200\,\text{N}$.
 **Answer:** $166\,\text{N}$ with spanner B, three significant figures like the moment and the length. Only spanner B is usable, because spanners A and C would need $240\,\text{N}$ and $200\,\text{N}$. The longest spanner C is not the best, because of the oblique pull its lever arm $0.300\,\text{m}$ is shorter than the lever arm of spanner B.
@@ -267,7 +267,7 @@ What decides how good a spanner is, is the lever arm $r$, not the length $d$ alo
 **Find:** the moment $M$ of the force about the axis $O$ in the unit $\text{Nm}$
 **Principle:** The rod rotates about the axis $O$, so the turning effect of the force is given by its moment $M = Fr$. A force perpendicular to the rod has the whole rod as its lever arm: the line of action is perpendicular to $OP$ at $P$, so $r = OP$.
 **Reading the figure:** The point $P$ is four squares to the right of and three squares above $O$. The rod $OP$ is the hypotenuse of a right triangle with the legs $4$ and $3$ squares, so its length is $\sqrt{4^2 + 3^2} = 5$ squares.
-**Formula:** $M = Fr$ with $r = OP$
+**Formula:** $$\begin{aligned} M &= Fr \\ r &= OP \\ M &= F\,OP \end{aligned}$$
 **Conversions:** $r = 5\cdot 0.10\,\text{m} = 0.50\,\text{m}$
 **Substitution:** $M = 30\,\text{N}\cdot 0.50\,\text{m} = 15\,\text{Nm}$
 **Answer:** $15\,\text{Nm}$, two significant figures like the force $30\,\text{N}$; the length of the rod is read exactly from the grid.

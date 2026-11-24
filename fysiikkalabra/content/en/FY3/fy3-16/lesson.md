@@ -11,35 +11,20 @@ Everyday heat phenomena, such as heating a sauna, a cool bag staying cold and co
 
 A power $P = UA\Delta T$ flows into the cool bag through its walls, even though the insulation is good. As long as there is ice left, this energy melts ice. When the ice and the meltwater are in thermal equilibrium with each other, the temperature of the ice–water mixture stays at about $0\,{}^\circ\text{C}$. Elsewhere in the cool bag the temperature can be higher. Melting takes a lot of energy: melting one kilogram of ice takes $334\,\text{kJ}$, the same as heating the same amount of water by 80 kelvins. When the ice has melted, the same power starts to raise the temperature of the water, and the drinks warm up. This is why it is worth putting ice in the bag and not just cold water.
 
-<svg viewBox="0 0 600 340" role="img" aria-label="Illustration of a cool bag and of energy needed. On the left is a cross-section of the cool bag: it is 28 °C outside, inside there is an ice pack and drink bottles at 0 °C, and a heat power P flows in through the walls, shown by two arrows of equal size. On the right are bars at the same scale for a mass of one kilogram: melting the ice takes 334 kJ, heating water by 10 K takes 42 kJ and by 80 K takes 335 kJ, so melting takes as much energy as warming by 80 kelvins." style="max-width:100%;font-size:24px">
-  <defs><linearGradient id="fy316a-heat" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></linearGradient><linearGradient id="fy316a-heatv" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#e8590c"/><stop offset="1" stop-color="#ffc078"/></linearGradient><linearGradient id="fy316a-water" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a9d1f0"/><stop offset="1" stop-color="#2f74b5"/></linearGradient></defs>
-  <path d="M96,66 Q146,34 196,66" fill="none" stroke="#1f2933" stroke-width="3.5" stroke-linecap="round"/>
-  <rect x="42" y="84" width="208" height="196" rx="16" fill="#c9c2b2" stroke="#1f2933" stroke-width="3"/>
-  <rect x="58" y="100" width="176" height="164" rx="8" fill="#eef5f9" stroke="#1f2933" stroke-width="2.5"/>
-  <line x1="42" y1="100" x2="250" y2="100" stroke="#1f2933" stroke-width="2.5"/>
-  <rect x="72" y="204" width="76" height="54" rx="7" fill="#a5d8ff" stroke="#4f8fbf" stroke-width="2.5"/><path d="M82,216 L98,214 M84,230 L104,226" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
-  <path d="M166,204 V190 Q166,184 170,184 Q174,184 174,190 V204 Q182,208 182,218 V252 Q182,258 177,258 H163 Q158,258 158,252 V218 Q158,208 166,204 Z" fill="url(#fy316a-water)" stroke="#1f2933" stroke-width="2.5"/>
-  <path d="M202,204 V190 Q202,184 206,184 Q210,184 210,190 V204 Q218,208 218,218 V252 Q218,258 213,258 H199 Q194,258 194,252 V218 Q194,208 202,204 Z" fill="url(#fy316a-water)" stroke="#1f2933" stroke-width="2.5"/>
-  <foreignObject x="75" y="170" width="70" height="36"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center;">$\text{ice}$</div></foreignObject>
-  <foreignObject x="70" y="108" width="150" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center;color:#1971c2;">$0\,{}^\circ\text{C}$</div></foreignObject>
-  <path d="M2,183.25 H29.0 V175.0 L56,190 L29.0,205.0 V196.75 H2 Z" fill="url(#fy316a-heat)"/>
-  <path d="M298,183.25 H271.0 V175.0 L244,190 L271.0,205.0 V196.75 H298 Z" fill="url(#fy316a-heat)"/>
-  <foreignObject x="4" y="130" width="44" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex">$P$</div></foreignObject>
-  <foreignObject x="250" y="130" width="44" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:right;">$P$</div></foreignObject>
-  <foreignObject x="36" y="292" width="230" height="44"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center;color:#c92a2a;">$28\,{}^\circ\text{C}$</div></foreignObject>
-  <line x1="304" y1="16" x2="304" y2="330" stroke="#c9c2b2" stroke-width="2" stroke-dasharray="6 6"/>
-  <foreignObject x="318" y="2" width="270" height="42"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex">$Q\ (\text{kJ}),\ m = 1.0\,\text{kg}$</div></foreignObject>
-  <line x1="324" y1="286" x2="588" y2="286" stroke="#1f2933" stroke-width="2.5"/>
-  <rect x="340" y="116.5" width="52" height="169.5" rx="3" fill="url(#fy316a-heatv)" stroke="#1f2933" stroke-width="2"/>
-  <foreignObject x="336" y="82.5" width="60" height="36"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center;">$334$</div></foreignObject>
-  <foreignObject x="323.5" y="290" width="85" height="36"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center;">$\text{melts}$</div></foreignObject>
-  <rect x="430" y="264.7" width="52" height="21.3" rx="3" fill="url(#fy316a-heatv)" stroke="#1f2933" stroke-width="2"/>
-  <foreignObject x="426" y="230.7" width="60" height="36"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center;">$42$</div></foreignObject>
-  <foreignObject x="412" y="292" width="88" height="36"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center;">$+10\,\text{K}$</div></foreignObject>
-  <rect x="520" y="115.9" width="52" height="170.1" rx="3" fill="url(#fy316a-heatv)" stroke="#1f2933" stroke-width="2"/>
-  <foreignObject x="516" y="81.9" width="60" height="36"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center;">$335$</div></foreignObject>
-  <foreignObject x="502" y="292" width="88" height="36"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center;">$+80\,\text{K}$</div></foreignObject>
-  <line x1="392" y1="116.5" x2="546" y2="116.5" stroke="#6b7480" stroke-width="2" stroke-dasharray="5 5"/>
+<svg data-fig="cool-bag" viewBox="0 0 600 340" role="img" aria-label="Illustration of a cool bag and of energy needed. On the left is a cross-section of the cool bag: it is 28 °C outside, inside there is an ice pack and drink bottles at 0 °C, and a heat power P flows in through the walls, shown by two arrows of equal size. On the right are bars at the same scale for a mass of one kilogram: melting the ice takes 334 kJ, heating water by 10 K takes 42 kJ and by 80 K takes 335 kJ, so melting takes as much energy as warming by 80 kelvins." style="max-width:100%;font-size:24px">
+  <image href="pics/fy3/fy3-16-cool-bag.webp" x="1.2" y="0" width="597" height="349.5" preserveAspectRatio="none"/>
+  <foreignObject x="75" y="173.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{ice}$</div></foreignObject>
+  <foreignObject x="70" y="113.5" width="150" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#1971c2">$0\,{}^\circ\text{C}$</div></foreignObject>
+  <foreignObject x="4" y="135.5" width="44" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$P$</div></foreignObject>
+  <foreignObject x="250" y="135.5" width="44" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px">$P$</div></foreignObject>
+  <foreignObject x="36" y="299.5" width="230" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$28\,{}^\circ\text{C}$</div></foreignObject>
+  <foreignObject x="318" y="8.5" width="270" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$Q\ (\text{kJ}),\ m = 1.0\,\text{kg}$</div></foreignObject>
+  <foreignObject x="336" y="86" width="60" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$334$</div></foreignObject>
+  <foreignObject x="323.5" y="293.5" width="85" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{melts}$</div></foreignObject>
+  <foreignObject x="426" y="234" width="60" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$42$</div></foreignObject>
+  <foreignObject x="412" y="295.5" width="88" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$+10\,\text{K}$</div></foreignObject>
+  <foreignObject x="516" y="85.5" width="60" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$335$</div></foreignObject>
+  <foreignObject x="502" y="295.5" width="88" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$+80\,\text{K}$</div></foreignObject>
 </svg>
 
 A sauna stove heats stones with a specific heat capacity of about $800\,\text{J/(kg}\cdot\text{K)}$. When you throw water on the hot stones, the water warms up and evaporates, and the energy is taken from the stones. Most of it goes into vaporisation: $0.20\,\text{kg}$ of water warms from $20\,{}^\circ\text{C}$ to $100\,{}^\circ\text{C}$ with $67\,\text{kJ}$ of energy, but vaporising it takes $452\,\text{kJ}$. This is why the stones cool down at once and the stove has to heat them again. When the steam condenses on your skin, the same energy is released again, and this is why the steam feels hot.
@@ -123,35 +108,16 @@ P = c\,\frac{m}{t}\,\Delta T
 ```
 where $m/t$ is the mass of liquid carried per second (kg/s) and $\Delta T = T_2 - T_1$ is the rise in the temperature of the liquid in the engine (K). In steady running the radiator gives the same power $P$ out to the air, so the temperatures $T_1$ and $T_2$ of the liquid stay constant.
 
-<svg viewBox="0 0 600 340" role="img" aria-label="Schematic of the cooling circuit of an engine. Waste heat from the engine is transferred to the liquid as a heat power P. The liquid travels along the upper pipe to the radiator at temperature T2 and returns along the lower pipe through the pump at temperature T1, and the radiator gives the same power P out to the air. The mass flow of the liquid is m/t. The picture is a diagram and not to scale." style="max-width:100%;font-size:24px">
-  <defs><linearGradient id="fy316c-heat" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffc078"/><stop offset="1" stop-color="#e8590c"/></linearGradient></defs>
-  <path d="M190,130 H408" stroke="#1f2933" stroke-width="20" fill="none"/>
-  <path d="M190,130 H408" stroke="#c92a2a" stroke-width="13" fill="none"/>
-  <path d="M408,214 H190" stroke="#1f2933" stroke-width="20" fill="none"/>
-  <path d="M408,214 H190" stroke="#1971c2" stroke-width="13" fill="none"/>
-  <path d="M312,118 L334,130 L312,142 Z" fill="#ffffff" stroke="#1f2933" stroke-width="2"/>
-  <path d="M252,202 L230,214 L252,226 Z" fill="#ffffff" stroke="#1f2933" stroke-width="2"/>
-  <circle cx="330" cy="214" r="22" fill="#eef5f9" stroke="#1f2933" stroke-width="3"/><path d="M342,226 V202 L318,214 Z" fill="#1f2933"/>
-  <rect x="96" y="96" width="94" height="152" rx="8" fill="#6c757d" stroke="#1f2933" stroke-width="3"/>
-  <rect x="110" y="112" width="16" height="44" rx="3" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5"/>
-  <rect x="135" y="112" width="16" height="44" rx="3" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5"/>
-  <rect x="160" y="112" width="16" height="44" rx="3" fill="#c4ccd4" stroke="#1f2933" stroke-width="1.5"/>
-  <rect x="408" y="96" width="94" height="152" rx="8" fill="#c4ccd4" stroke="#1f2933" stroke-width="3"/>
-  <line x1="424" y1="108" x2="424" y2="236" stroke="#1f2933" stroke-width="2"/>
-  <line x1="438" y1="108" x2="438" y2="236" stroke="#1f2933" stroke-width="2"/>
-  <line x1="452" y1="108" x2="452" y2="236" stroke="#1f2933" stroke-width="2"/>
-  <line x1="466" y1="108" x2="466" y2="236" stroke="#1f2933" stroke-width="2"/>
-  <line x1="480" y1="108" x2="480" y2="236" stroke="#1f2933" stroke-width="2"/>
-  <line x1="494" y1="108" x2="494" y2="236" stroke="#1f2933" stroke-width="2"/>
-  <foreignObject x="81" y="252" width="124" height="36"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center;">$\text{engine}$</div></foreignObject><foreignObject x="386.5" y="252" width="137" height="36"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center;">$\text{radiator}$</div></foreignObject>
-  <path d="M106,172.8 H137.0 V164.0 L168,180 L137.0,196.0 V187.2 H106 Z" fill="url(#fy316c-heat)"/>
-  <path d="M510,164.8 H541.0 V156.0 L572,172 L541.0,188.0 V179.2 H510 Z" fill="url(#fy316c-heat)"/>
-  <foreignObject x="112" y="198" width="50" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex">$P$</div></foreignObject>
-  <foreignObject x="520" y="118" width="50" height="40"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex">$P$</div></foreignObject>
-  <foreignObject x="244" y="78" width="110" height="44"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center;color:#c92a2a;">$T_2$</div></foreignObject>
-  <foreignObject x="236" y="236" width="70" height="44"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center;color:#1971c2;">$T_1$</div></foreignObject>
-  <foreignObject x="246" y="154" width="110" height="36"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center;">$m/t$</div></foreignObject>
-  <foreignObject x="150" y="292" width="300" height="46"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:center;">$P = c\,\dfrac{m}{t}\,\Delta T$</div></foreignObject>
+<svg data-fig="cooling-circuit" viewBox="0 0 600 340" role="img" aria-label="Schematic of the cooling circuit of an engine. Waste heat from the engine is transferred to the liquid as a heat power P. The liquid travels along the upper pipe to the radiator at temperature T2 and returns along the lower pipe through the pump at temperature T1, and the radiator gives the same power P out to the air. The mass flow of the liquid is m/t. The picture is a diagram and not to scale." style="max-width:100%;font-size:24px">
+  <image href="pics/fy3/fy3-16-cooling-circuit.webp" x="1.2" y="10" width="600" height="347.5" preserveAspectRatio="none"/>
+  <foreignObject x="81" y="255.5" width="124" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{engine}$</div></foreignObject>
+  <foreignObject x="386.5" y="255.5" width="137" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{radiator}$</div></foreignObject>
+  <foreignObject x="112" y="203.5" width="50" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$P$</div></foreignObject>
+  <foreignObject x="520" y="123.5" width="50" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px">$P$</div></foreignObject>
+  <foreignObject x="244" y="85.5" width="110" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$T_2$</div></foreignObject>
+  <foreignObject x="236" y="243.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#1971c2">$T_1$</div></foreignObject>
+  <foreignObject x="246" y="157.5" width="110" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$m/t$</div></foreignObject>
+  <foreignObject x="150" y="286" width="300" height="58" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$P = c\,\dfrac{m}{t}\,\Delta T$</div></foreignObject>
 </svg>
 
 ```pysahdy

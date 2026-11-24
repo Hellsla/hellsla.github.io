@@ -1,14 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: c1008c5486383ca4
+CONTENT-HASH: fc0cbaa8df160143
+none
 
 ## Blocking
 (none)
 
 ## Polish
-- L2-09 and L3-06 heading "Reading the graph" should read "Reading the figure" (still open).
+- L2-09 and L3-06: heading "Reading the graph" should read "Reading the figure" (still open).
 - L2-10 wording polish from round 0 (wavelength phrasing, name the PhET start control).
 
 ## Checked
-- Delta: solutions.md only gained paragraph breaks (L1-03, L2-02, L2-03, L2-04) plus "heat" -> "internal energy" in L2-06; no numbers, symbols or steps changed.
-- L2-06: "internal energy" is correct and matches the FY4 term; the answer still repairs the "energy is lost" misconception (waves pass through each other, sources' power unchanged, energy redistributed).
-- Shorter paragraphs make each solution step easier to follow.
+- All changed Kaava steps begin from basic equations (λ = v/f, Δs = λ/2, s = vt + vt) and reach the final expression symbolically before Sijoitus.
+- The two-frequency task: subtracting Δs/λ2 − Δs/λ1 = 1, then λ = v/f, gives Δs = v/(f2 − f1); each line follows.
+- Listing Δs = λ/2 then λ = 2Δs then f = v/λ is correct and consistent across the L2/L3 tasks.
+- Substitutions, answers and tolerances unchanged.

@@ -1,18 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: a138b3319b58764e
-SCOPE: delta added-exercise from e8fa4352e893527d base abdc9e095e4f
+CONTENT-HASH: eb20b821dc5ff1d9
+none
 
 ## Blocking
 (none)
 
 ## Polish
-- fy5-16-L2-10: "toiminta-arvot ja raja-arvo" are the page's terms and are not explained; add "(rajat, joissa työnantajan pitää toimia)" once.
-- fy5-16-L2-10 b): "Äänitaso kasvaa 3 dB tai 10 dB" reads as one case; write "Laske kahdessa tapauksessa: taso kasvaa 3 dB tai 10 dB."
-- fy5-16-L2-10 c) packs four questions into one paragraph; give the dose question its own sentence or part.
+- solutions.md:35, 139, 174 — Kaava stays a single line (L = L_m − ΔL, ΔL = L_ulko − L_sisä); fine for one-step tasks.
+- The old Polish items on L2-10 (terms "toiminta-arvo" and "raja-arvo" unexplained; b) and c) packing several questions) still stand; they are task text, not part of this change.
 
 ## Checked
-- Facts match the source notes: 80/85/87 dB(A) rows, 8-hour dose, protectors inside (raja-arvo), impulse noise; the 3 dB rule is taken from the lesson, not attributed to TTL.
-- The task tells the S2 reader what to find (the three reference values, the table) and scaffolds c) with the 8-hour assumption.
-- Calculation: 10^0,9 = 7,94, t = 1,007 h; answer 1,0 h, tolerance 0,03; nyrkkisääntö check agrees.
-- Solution c) and d) are staged and answer the question (94 dB for 8 h exceeds the limit by 7 dB; 1 h gives 85 dB(A)).
-- Non-repeat of L1-09 / L2-09: new is source reading plus dose reasoning.
+- The diff in the packet shows the aligned rows without their line breaks; the files on disk have them, so only the diff view is garbled.
+- The dose rule is now derived: n = (L − L0)/3 dB, I = 2^n I_v, equal dose I t_v = I_v t_0, so t_v = t_0/2^n. Each step is one row, correct, and shows why the time halves per 3 dB.
+- Distance rule derived: I2/I1 = r1²/r2², L1 − L2 = 20 dB·lg 2^k ≈ 6k dB, k = (L1 − L2)/6 dB, r2 = 2^k r1. Algebra correct (20·lg 2 = 6,02).
+- Combining two equal sources and the reverberation time (ΔL/Δt = 60 dB/T) start from the definition or the constant rate, then solve for the unknown; correct.
+- The protector case adds I_korva = I/2^(ΔL/3 dB) and D_korva = D/2^(ΔL/3 dB), correct and explained in Periaate.
+- Sijoitus, answers and tolerances unchanged; paragraph splits in L1-04, L2, L3 solutions only improve readability.

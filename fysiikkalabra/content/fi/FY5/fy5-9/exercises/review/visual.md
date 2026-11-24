@@ -1,17 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: c31c9ae0e22076bb
+CONTENT-HASH: 23cf1121d1015995
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] solutions.md L3-05 Järkevyys, capture L3-1280-9 — the line breaks right after the opening parenthesis "(" before "0,5988 m/s > 0,5981 m/s" — keep the parenthesis with its content (a non-breaking join) in the shared component, not per task.
-- [Minor] solutions.md L3-05, new sentence "Sama suuruusluokka näkyy oppitunnin taulukossa ... 0,2 %" — adds a claim, more than a paragraph cut — for science: check that the lesson table's 10° deviation really is 0,2 %.
+- [Minor] solutions.md, 9-L3 (m_0 / k_1 task) Kaava — the new symbol $\delta$ (error in per cent) is not named in Kysytty or the text; say "virhe $\delta$" once in Kysytty.
+- [Minor] solutions.md, long Kaava blocks (clock task 7 rows, pendulum task 7 rows) — the sub-tasks a/b/c are not marked in the rows; readable, optional.
 
 ## Checked
-- Delta (solutions.md, L3-05 Järkevyys cut into two paragraphs). The diff's "L2-08" heading is only context; the task is fy5-9-L3-05.
-- Opened fy5-9-open-exercises-L3-1280-8 and -9 (Muunnokset, Sijoitus, Vastaus, Järkevyys split in two paragraphs with the same box): the paragraph break reads well, formulas intact, units upright, nothing clipped.
-- Opened L3-1280-5, -6 and L2-1280-8, -9, -11, -12 for the surrounding layout: no gaps, no overflow.
+- Delta, solutions.md Kaava rows only. Opened (lesson review/shots): open-exercises-L3-1280-2 (9-20/9-21), -4 (clock-lag task, 7-row Kaava), -6 (T^2 = am + b task, 8-row Kaava), -8 (pendulum a/b/c task, 7-row Kaava).
+- Aligned blocks render correctly in KaTeX inside the solution panel, equals signs in one column, radicals and fractions not clipped, no overflow at 1280 px (check_layout 360/390 per packet). Order principle → basic law → rearrangement → result reads well; Muunnokset and Sijoitus unchanged.
+- Other changed tasks are shorter blocks of the same form; not each opened.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

@@ -1,5 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: e9dac3fa96d21dfd
+CONTENT-HASH: afd4fbbebd320dc8
+SCOPE: delta answers,numbers from eeef02e000ff63e5 base 48ff417
 
 ## Blocking
 (none)
@@ -8,9 +9,9 @@ CONTENT-HASH: e9dac3fa96d21dfd
 (none)
 
 ## Checked
-- Own capture w4-390-1.png (Kuvaajan lukeminen, to its start at 390 px): KaTeX renders, nothing clipped.
-- Second half of that block, Mallivastaus (line 167) and Järkevyys (line 281) not opened as captures; judged from the diff and the same card layout seen in the other sets.
-- scrollWidth 390 and 1280.
+- Delta: L3-01 and L3-03 (4-20) limit values rounded to the safe side (27 km/h, 210 m).
+- Opened open-exercises-L3-1280-1, -2 (4-18 question, Sijoitus, Vastaus 27 km/h, Järkevyys) and -4, -5 (4-20 question, Kaava, Sijoitus, Vastaus 210 m) for this language.
+- KaTeX clean, rows aligned at =, units upright with thin space, no clipping or overflow; the answer box, the exact value and the rounding-direction sentence read in logical order; force diagrams unchanged.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4
