@@ -65,9 +65,9 @@ $$
 **Annettu:** teräksinen kahvakuula, $V_0 = 2{,}0\,\text{dm}^3$, $T_0 = -22\,{}^\circ\text{C}$, $T = 20\,{}^\circ\text{C}$, $\alpha = 12 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$ (tehtävässä annettu)
 **Kysytty:** tilavuuden kasvu $\Delta V$ kuutiosenttimetreinä
 **Periaate:** Kuula laajenee kaikkiin kolmeen suuntaan samassa suhteessa. Siksi tilavuus kasvaa suhteellisesti noin kolme kertaa niin paljon kuin pituus: $\gamma \approx 3\alpha$. Tämä pätee kiinteälle aineelle, jonka olomuoto ei muutu. Tilavuuden muutos on verrannollinen alkutilavuuteen ja lämpötilan muutokseen.
-**Kaava:** $$\begin{aligned} \gamma &\approx 3\alpha \\
-\Delta V &= \gamma V_0 \Delta T \\
-&= 3\alpha V_0 \Delta T
+**Kaava:** $$\begin{aligned} \Delta V &= \gamma V_0 \Delta T \\
+\gamma &\approx 3\alpha \\
+\Delta V &\approx 3\alpha V_0 \Delta T
 \end{aligned}
 $$
 **Muunnokset:** $V_0 = 2{,}0\,\text{dm}^3 = 2000\,\text{cm}^3$, koska $1\,\text{dm}^3 = 1000\,\text{cm}^3$. $\Delta T = 20\,{}^\circ\text{C} - (-22\,{}^\circ\text{C}) = 42\,\text{K}$, sama kelvineinä.

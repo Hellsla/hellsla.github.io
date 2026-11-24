@@ -65,9 +65,9 @@ $$
 **Given:** steel kettlebell, $V_0 = 2.0\,\text{dm}^3$, $T_0 = -22\,{}^\circ\text{C}$, $T = 20\,{}^\circ\text{C}$, $\alpha = 12 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$ (given in the problem)
 **Find:** the increase in volume $\Delta V$ in cubic centimetres
 **Principle:** The kettlebell expands in all three directions in the same proportion, so its volume grows in relative terms about three times as much as its length: $\gamma \approx 3\alpha$. This holds for a solid whose state of matter does not change. The change in volume is proportional to the initial volume and the change in temperature.
-**Formula:** $$\begin{aligned} \gamma &\approx 3\alpha \\
-\Delta V &= \gamma V_0 \Delta T \\
-&= 3\alpha V_0 \Delta T
+**Formula:** $$\begin{aligned} \Delta V &= \gamma V_0 \Delta T \\
+\gamma &\approx 3\alpha \\
+\Delta V &\approx 3\alpha V_0 \Delta T
 \end{aligned}
 $$
 **Conversions:** $V_0 = 2.0\,\text{dm}^3 = 2000\,\text{cm}^3$, because $1\,\text{dm}^3 = 1000\,\text{cm}^3$. $\Delta T = 20\,{}^\circ\text{C} - (-22\,{}^\circ\text{C}) = 42\,\text{K}$, the same in kelvins.

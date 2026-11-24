@@ -161,10 +161,6 @@ c_\text{w} m_\text{w} \Delta T_\text{w} + s m_\text{w} - c_\text{i} m_\text{w} T
 c_\text{w} m_\text{w} \Delta T_\text{w} + s m_\text{w} + c_\text{i} m_\text{i} T_\text{i} &= c_\text{i} (m_\text{i} + m_\text{w}) T \\
 T &= \dfrac{c_\text{w} m_\text{w} \Delta T_\text{w} + s m_\text{w} + c_\text{i} m_\text{i} T_\text{i}}{c_\text{i} (m_\text{i} + m_\text{w})}
 \end{aligned}$$. The water gives out the heat $c_\text{w} m_\text{w} \Delta T_\text{w}$ when it cools to $0\,{}^\circ\text{C}$, $s m_\text{w}$ when it freezes and $c_\text{i} m_\text{w} (0 - T)$ when the ice formed cools to the temperature $T$. The original ice takes the heat $c_\text{i} m_\text{i} (T - T_\text{i})$ when it warms from $T_\text{i}$ to $T$
-
-The original ice takes in, when it warms from the temperature $T_\text{i}$ to the temperature $T$, a quantity of heat $c_\text{i} m_\text{i} (T - T_\text{i})$. Conservation of energy: $c_\text{w} m_\text{w} \Delta T_\text{w} + s m_\text{w} - c_\text{i} m_\text{w} T = c_\text{i} m_\text{i} T - c_\text{i} m_\text{i} T_\text{i}$.
-
-Moving the terms that contain $T$ to the right: $c_\text{w} m_\text{w} \Delta T_\text{w} + s m_\text{w} + c_\text{i} m_\text{i} T_\text{i} = c_\text{i} (m_\text{i} + m_\text{w}) T$, so $T = \dfrac{c_\text{w} m_\text{w} \Delta T_\text{w} + s m_\text{w} + c_\text{i} m_\text{i} T_\text{i}}{c_\text{i} (m_\text{i} + m_\text{w})}$
 **Conversions:** The temperature differences are the same in kelvins: the water falls by $10\,\text{K}$ and the ice rises by $0 - (-40) = 40\,\text{K}$. The latent heat of fusion is $334\,\tfrac{\text{kJ}}{\text{kg}} = 334\,000\,\tfrac{\text{J}}{\text{kg}}$.
 **Substitution:** The water can give out at most $$\begin{aligned} &4190 \cdot 0.100 \cdot 10.0\,\text{J} \\ &+ 334\,000 \cdot 0.100\,\text{J} \\ &= 37\,590\,\text{J} \end{aligned}$$, but warming the ice to $0\,{}^\circ\text{C}$ needs $$\begin{aligned} &2100 \cdot 0.500 \cdot 40.0\,\text{J} \\ &= 42\,000\,\text{J} \end{aligned}$$, so all the water freezes.
 
