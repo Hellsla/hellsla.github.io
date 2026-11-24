@@ -1,9 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: b6ab507aba8871f7
+CONTENT-HASH: 6142c4376e8e3b18
 ## Blocking
 (none)
 ## Polish
-- solutions.md:50 — 'Muutaman kymmenen watin teho' sits oddly beside 60 W; say 'Kuudenkymmenen watin teho on tavallinen ...'.
+(none)
 ## Checked
-- Delta: L-sled Järkevyys now ties 3,0 m/s to about 11 km/h (10,8) as a skier's pace; accurate and concrete, 60 W stays 'few tens of watts' plausible.
-- Judged from the diff text; captures not opened.
+- Delta: only the Kaava step of the model solutions changed; read from solutions.md itself (the packet diff shows the aligned rows flattened). In fy3-2 the work and power chains (W = Fs, P = W/t, P = Fv, W = mgh) now go basic law by law down to the final formula.
+- Answers, Sijoitus and Muunnokset unchanged; Sijoitus substitutes into the last symbolic form.
+- Tasks whose asked quantity is already alone state so in one line; nothing skipped for a student who could not solve the task.
+- Judged from the solutions text; captures not opened.

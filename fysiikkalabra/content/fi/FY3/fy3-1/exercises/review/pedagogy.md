@@ -1,9 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: fbc2796c4aef5550
+CONTENT-HASH: 8361d8c133f37f03
 ## Blocking
 (none)
 ## Polish
-(none)
+- solutions.md:224 (L3 jousen kalibrointi) — "c: jousen vakio" is a spring constant, a term the chapter dropped elsewhere (L1-02 Järkevyys) — say "jousen ominaisuus, sama molemmissa" or leave c out and write the ratio x/m ∝ g.
 ## Checked
-- Delta: L1-02 Järkevyys / Reasonableness now says 'venymä newtonia kohti' / 'extension per newton' instead of spring constant; the term is not taught in FY3 (force-meter extension is proportional to force), and the ratio 2,0 cm / 4,0 N = 0,50 cm/N and 0,50 · 12 = 6,0 are unchanged and correct. Clearer for the student.
-- Judged from the diff text; captures not opened.
+- Delta: the Kaava step of each solution now stands as an aligned block that starts from the basic equation(s) (G = mg, F = m g, proportion), derives the formula and simplifies symbolically to the end; read from the file itself (the packet diff shows the rows flattened, the source has the rows).
+- Answers, Sijoitus, Muunnokset unchanged; each Sijoitus substitutes into the last symbolic form.
+- Single-equation Kaava lines (G = m g, already solved for the asked quantity) are stated as such; fine.
+- Longest chains (L2 Kuu/Maa difference, L3 Marsin kantavuus) stay stepwise, one thing per row.
+- Judged from the solutions text; captures not opened.

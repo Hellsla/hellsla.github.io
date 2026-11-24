@@ -1,14 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: fbc2796c4aef5550
+CONTENT-HASH: 8361d8c133f37f03
 
 ## Blocking
 
 ## Polish
-- solutions.md:19 (fy3-1-L1-02): the check's last product, $0{,}50 \cdot 12 = 6{,}0$, has no units. Consider writing $0{,}50\,\tfrac{\text{cm}}{\text{N}} \cdot 12\,\text{N} = 6{,}0\,\text{cm}$. This is style only.
+- solutions.md:283 (fy3-1-L2-08): the Kaava stops at two separate forms, $g = G_1/m_1$ and $G = m g$. It could finish the symbolic step as $G = m\,G_1/m_1$ before the Sijoitus. Sijoitus did not change, so this is optional.
+- solutions.md:19 (fy3-1-L1-02), carried over: the check's product $0{,}50 \cdot 12 = 6{,}0$ still has no units.
 
 ## Checked
-- The delta is solutions.md:19 alone. "jousivakio" is now "venymä newtonia kohti", which is the right name for $x/F$ (cm/N). The old wording named a quantity that is not taught in FY3 and is the inverse of the spring constant, so the fix is correct.
-- Recomputed: $2{,}0\,\text{cm}/4{,}0\,\text{N} = 0{,}50\,\text{cm/N}$ and $0{,}50 \cdot 12 = 6{,}0\,\text{cm}$. This matches the answer and the ratio method of the solution.
-- The word "jousivakio" no longer appears anywhere in exercises.json or solutions.md. The FY3 scope holds (no Hooke's law constant k).
-- No number, symbol or other task changed. The previous report's checks still stand.
+- The packet's diff shows the aligned blocks flattened. I read the real multi-row `aligned` blocks on disk (solutions.md:15–283), and every row is a separate equation.
+- All 14 changed Kaava blocks start from the basic law ($G = m g$, or the proportionality $x \propto F$) and solve symbolically for the asked quantity. The last symbolic form is the one Sijoitus evaluates.
+- Algebra checked row by row: $x = x_1F/F_1$, $F = F_1x/x_1$, $m = G/g$, $\Delta G = m(g_\text{Maa}-g_\text{Kuu})$, $F = mgx/x_1$, $G_\text{Mars} = G_\text{Maa}g_\text{Mars}/g_\text{Maa}$, $m_\text{Kuu} = m_\text{Maa}g_\text{Maa}/g_\text{Kuu}$, $m = Lg_\text{Maa}/g_\text{Mars}$, $g_\text{Mars} = g_\text{Maa}G_\text{Mars}/G_\text{Maa}$, $g_\text{X} = g_\text{Maa}(x_\text{X}/m_\text{X})/(x/m)_\text{Maa}$, $m_\text{lisä} = F_\text{max}/g_\text{Mars} - m_\text{yht}$. All are correct, with no sign or power-of-ten slips.
+- I evaluated each final form again with the task data: 6,0 cm, 7,0 N, 4,99 kg, 1,19 kN, 5,89 N, 6,81 N, 133 kg, 68,8 kg, 3,7 m/s², 3,59 m/s² and 60 N. These match the unchanged Sijoitus and answers.
+- L1-09: the paragraph split changes no physics. The figure descriptions still match the option figures (G and F equal, F_k acts on the meter).
+- Scope: the set uses only $G = mg$ and spring proportionality, with no Hooke's $k$ and no Newton's laws.
 - The hash was the same at the start and the end.

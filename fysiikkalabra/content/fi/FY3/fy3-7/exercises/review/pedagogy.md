@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 7a9c50335981d2c1
-SCOPE: delta md-paragraphs,wording from 51751878d112a680 base 89f35dc72c991cb511bf6276291fec56cd9c5737
+CONTENT-HASH: 8bb8903fbb269fb9
 ## Blocking
 (none)
 ## Polish
 (none)
 ## Checked
-- Delta judged in context: the prefix "Esimerkkiaineisto:" removed from task texts; no numbers, symbols, data or questions changed.
-- Each task now opens with the situation (e.g. a sentence starting with the subject in Finnish nominative/partitive), grammatical without the prefix; the question still comes last.
-- Solutions.md changes are presentation only (reflow / paragraphs); levels, figures and answer fields untouched.
+- Delta: only the Kaava step of the model solutions changed; read from solutions.md itself (the packet diff shows the aligned rows flattened). In fy3-7 phase-change chains start from Q = sm or Q = rm and the balance Q_luovutettu = Q_vastaanotettu; the heating-curve tasks sum the stages symbolically.
+- Answers, Sijoitus and Muunnokset unchanged; Sijoitus substitutes into the last symbolic form.
+- Tasks whose asked quantity is already alone state so in one line; nothing skipped for a student who could not solve the task.
+- Judged from the solutions text; captures not opened.

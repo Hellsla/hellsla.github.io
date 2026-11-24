@@ -1,18 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 2c6d0cf2ab541ab3
-SCOPE: delta added-exercise from 9d2994a56073576c base 71f5784fca44
+CONTENT-HASH: 1beb241a2eae9769
+SCOPE: delta Kaava step of model solutions (basic equations, derived formula, symbolic simplification)
 
 ## Blocking
 None.
 
 ## Polish
-- fy3-9-L2-10 — workload is at the upper end for one L2 task (6 measurements, graph, fit, prediction, explanation); acceptable as the experimental task, but say it takes a lesson-length slot or lower the minimum to five points.
-- Solution a) uncertainty ±30 kPa vs the first point 51 kPa from the line: the text explains it as one reading, but then "mahtuu heilahtelun rajoihin" in c) is the right comparison; make the ±30 estimate from the spread more explicit.
-- Phone: operating the PhET sim and a graph on a 360 px screen is awkward; note that a computer is recommended.
+- L2-10 (carried over): note that a computer is recommended for the PhET task on a phone.
+- L2-10: make the ±30 kPa estimate from the spread more explicit (carried over).
 
 ## Checked
-- Brief section 6 walked: real investigation, student acts on own data; method solution with dated example data, not a single answer.
-- Ratio 450/300 = 1,50 independent of k; answer field 1,5 with 2 % tolerance correct. Example fit and residuals recomputed: consistent.
-- Variable control (V, N fixed, one variable changed), repeated readings, prediction test outside the range: strong.
-- Uses only lesson content (isokoorinen, kelvin); PhET link returns 200; no repeat of earlier exercises.
-- The answer field cannot check the measurement itself; acceptable.
+- Every Kaava step now starts from the basic equation(s) and ends in the solved symbolic form that Sijoitus uses (Boyle, isobaric/isochoric, L2-07 hose volume derived in five rows, L3-01 p1 = p0 + rho g h, L3-02 gauge pressure, L3-03 two-step process).
+- Answers and Sijoitus unchanged; the symbolic forms are consistent with the substitutions.
+- Added paragraph breaks in long model answers help readability and change no content.
+- Aligned blocks are short enough for 360 px.

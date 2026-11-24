@@ -1,11 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 9574c3020bc20cb0
-SCOPE: delta wording from df1aa72edd405367 base 6153818
+CONTENT-HASH: 4da5d6b6c0b16245
 ## Blocking
 (none)
 ## Polish
 (none)
 ## Checked
-- Delta: the first task of the water-volume table exercise now reads "Taulukossa on 1,000 kg:n vesimäärän tilavuus eri lämpötiloissa". Grammar fix only; numbers, units and the answer 45 unchanged.
-- A 16-19-year-old reads the sentence without difficulty: the mass and the quantity measured (volume) are clear, and the question still comes last.
-- Levels, figures, solutions and answer fields untouched.
+- Delta: only the Kaava step of the model solutions changed; read from solutions.md itself (the packet diff shows the aligned rows flattened). In fy3-8 expansion chains start from Δl = αl0ΔT or ΔV = γV0ΔT, rearrange or combine (γ ≈ 3α) and simplify symbolically to the end.
+- Answers, Sijoitus and Muunnokset unchanged; Sijoitus substitutes into the last symbolic form.
+- Tasks whose asked quantity is already alone state so in one line; nothing skipped for a student who could not solve the task.
+- Judged from the solutions text; captures not opened.

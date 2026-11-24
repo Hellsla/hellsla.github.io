@@ -1,9 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 9f35c8b8291f8ed1
+CONTENT-HASH: faf427df85f5c676
 ## Blocking
 (none)
 ## Polish
-(none)
+- solutions.md fy3-1-L3 (spring-calibration task), Formula row — "c: spring constant" names a term FY3 does not teach (L1-02 was already changed to "extension per newton") — write "c: constant of the spring" or "c: a constant of the spring".
 ## Checked
-- Delta: L1-02 Järkevyys / Reasonableness now says 'venymä newtonia kohti' / 'extension per newton' instead of spring constant; the term is not taught in FY3 (force-meter extension is proportional to force), and the ratio 2,0 cm / 4,0 N = 0,50 cm/N and 0,50 · 12 = 6,0 are unchanged and correct. Clearer for the student.
-- Judged from the diff text; captures not opened.
+- Delta: only the Formula step of model solutions changed, plus paragraph splits in Principle/Model answer; no number, unit, answer or task text changed.
+- Formula rows now start from the basic equation and derive the asked quantity symbolically, one equation per row, as the house rule asks; the packet diff shows them flattened onto one line, the files hold aligned blocks.
+- Where the asked quantity is already alone, the row says so (no empty rearrangement step).
+- Each Formula row leads to the symbolic form that the Substitution step uses; nothing skipped.
+- Judged from the diff and solutions.md on disk; captures not opened.
