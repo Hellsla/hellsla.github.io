@@ -108,8 +108,9 @@ c_\text{w} m_\text{w} (T_\text{w} - T) &= s m_\text{i} \\
 &\quad + c_\text{w} m_\text{i} T \\
 s m_\text{i} &= c_\text{w} m_\text{w} (T_\text{w} - T) \\
 &\quad - c_\text{w} m_\text{i} T \\
-s m_\text{i} &= c_\text{w} [ m_\text{w} (T_\text{w} - T) - m_\text{i} T ] \\
-s &= \dfrac{c_\text{w} [ m_\text{w} (T_\text{w} - T) - m_\text{i} T ]}{m_\text{i}}
+K &= m_\text{w} (T_\text{w} - T) - m_\text{i} T \\
+s m_\text{i} &= c_\text{w} K \\
+s &= \dfrac{c_\text{w} K}{m_\text{i}}
 \end{aligned}$$
 **Conversions:** The temperature differences are the same in kelvins: $T_\text{w} - T = 30.0 - 8.1 = 21.9\,\text{K}$ and $T - 0 = 8.1\,\text{K}$. Finally $1\,\text{kJ} = 1000\,\text{J}$.
 **Substitution:** The expression in the square brackets is $$\begin{aligned} &0.200\,\text{kg} \cdot 21.9\,\text{K} - 0.0500\,\text{kg} \cdot 8.1\,\text{K} \\ &= 4.380\,\text{kg}\cdot\text{K} - 0.405\,\text{kg}\cdot\text{K} \\ &= 3.975\,\text{kg}\cdot\text{K} \end{aligned}$$, so
@@ -276,7 +277,8 @@ c_\text{w} m_\text{w} (T_\text{w} - T) &= c_\text{i} m_\text{i} \Delta T_\text{i
 &\quad + s m_\text{i} + c_\text{w} m_\text{i} T \\
 s m_\text{i} &= c_\text{w} m_\text{w} (T_\text{w} - T) \\
 &\quad - c_\text{w} m_\text{i} T - c_\text{i} m_\text{i} \Delta T_\text{i} \\
-N &= c_\text{w} [ m_\text{w} (T_\text{w} - T) - m_\text{i} T ] \\
+K &= m_\text{w} (T_\text{w} - T) - m_\text{i} T \\
+N &= c_\text{w} K \\
 &\quad - c_\text{i} m_\text{i} \Delta T_\text{i} \\
 s m_\text{i} &= N \\
 s &= \dfrac{N}{m_\text{i}}
