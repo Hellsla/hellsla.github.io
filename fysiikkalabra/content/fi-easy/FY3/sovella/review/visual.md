@@ -1,16 +1,17 @@
-VERDICT: FAIL
-CONTENT-HASH: c75053d468fb5e32
+VERDICT: PASS
+CONTENT-HASH: 51c86aaf9a3b697c
 
 ## Blocking
-- [Major] solutions.md fy3-s3 b), c) Annettu/Sijoitus/Vastaus; tasks.json fy3-s3 b), c) — litre written `\text{l}` (`6{,}0\,\text{l}`, `12{,}0\,\text{l}`, `20\,\text{l/min}`, `725\,\text{l}`); it renders as the digit 1 ("6,01", capture page-390-22) — a quantity reads as another number; NOTES §1 makes it a lint error — write `\textsf{l}` everywhere (also `\text{l/min}` -> `\textsf{l}/\text{min}`).
 
 ## Polish
-- [Minor] Kaava blocks (s1 c, s2 d, s3 a): rows with a fraction sit slightly off the `=` column of the plain rows (page-390-5); acceptable, no change needed unless the aligned rows are re-built.
-- [Minor] Captures exist only for the Finnish page (screenshot.py cannot capture fi-easy Sovella); fi-easy judged from the same layout plus source.
+- [Minor] solutions.md s3 b/c (rows 197, 202, 203, 213) — the rate `20\,\text{l/min}` still sets the litre as a roman `l`; next to `\textsf{l}` quantities it is inconsistent and can read as "1/min" — write `20\,\textsf{l}/\text{min}` (lint does not flag it).
+- [Minor] Kaava blocks (s1 c, s2 d, s3 a): rows with a fraction sit slightly off the `=` column of the plain rows; acceptable.
+- [Minor] fi-easy Sovella cannot be captured; judged from the Finnish captures of the same layout plus the fi-easy source.
 
 ## Checked
-- contact-1; page-390-5, -8, -12, -14, -22 (Kaava, Muunnokset, Sijoitus, Vastaus blocks, aligned multi-row Kaava of s1 c/d, s2, s3 a at 390 px). Fi captures, fi-easy source read in full; fig-1-390 not separately opened (unchanged figure).
-- The new aligned Kaava blocks render cleanly: no clipping, no horizontal overflow, one step per row, readable at 390 px.
+- Round 2 delta: all `\text{l}` quantities are now `\textsf{l}` (grep over fi-easy/FY3/sovella: tasks and solutions; `6{,}0`, `12{,}0`, `725` litre values fixed). The s3 d Kaava is a one-step-per-row aligned block (source read).
+- Earlier round captures: contact-1; page-390-5, -8, -12, -14, -22 (Finnish): Kaava/Sijoitus/Vastaus blocks, no clipping or horizontal overflow. The figure is unchanged and was not reopened.
+- The fi-easy captures were not re-made, as instructed.
 
 ## Scores
-illustrations 4 · typography 3 · Finnish 4 · accessibility 4
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4
