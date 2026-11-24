@@ -3371,6 +3371,12 @@ Roll a ball towards a hill. If its kinetic energy is less than the energy needed
   <foreignObject x="450" y="9.5" width="120" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#6b7480">$\text{schematic}$</div></foreignObject>
 </svg>
 
+```pysahdy
+A ball with too little energy always rolls back from a hill. Why can an electron sometimes appear on the far side of a thin energy barrier?
+---
+The electron's wave does not stop at the edge of the barrier but shrinks inside it. If the barrier is thin, a small wave comes out on the other side, so there is a small probability of finding the electron there.
+```
+
 How large is the chance? The table gives approximate model values for an electron whose energy is $1\ \text{eV}$ below the top of a barrier, for different barrier widths.
 
 | Barrier width (nm) | Chance of passing |
@@ -3395,6 +3401,12 @@ A particle with the momentum $p = mv$ has the wavelength
 \lambda = \frac{h}{p} = \frac{h}{mv}
 ```
 where $h = 6.626 \cdot 10^{-34}\ \text{J} \cdot \text{s}$. If the kinetic energy $E_\text{k} = \tfrac{1}{2}mv^2$ is known, the momentum is $p = \sqrt{2mE_\text{k}}$. The chance of tunnelling falls very fast, roughly exponentially, when the barrier becomes wider or higher, or when the particle is heavier.
+
+```pysahdy
+Does a proton or an electron with the same kinetic energy have the longer de Broglie wavelength?
+---
+The electron. With the same $E_\text{k}$ the momentum is $p = \sqrt{2mE_\text{k}}$, which is smaller for the smaller mass, so $\lambda = h/p$ is longer.
+```
 
 ## Tunnelling and the Sun {Sun}
 

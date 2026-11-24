@@ -30,6 +30,12 @@ On 28 June 2005, in Moscow, the ITER partners chose Cadarache instead of Rokkash
 was signed in Paris on 21 November 2006. Today seven members (China, the European Union, India, Japan, Korea, Russia
 and the United States) work together there. As of November 2026, the start of research operation is planned for 2034.
 
+```pysahdy
+WEST held a plasma for $1\,337\,\text{s}$. How many minutes is that, and is ITER part of the CEA?
+---
+$1\,337\,\text{s} / 60 \approx 22.3\,\text{min}$, which is over 22 minutes. ITER is not part of the CEA: it is a separate international organisation built next to the Cadarache centre.
+```
+
 <figure class="unit-photo"><img src="units/fy14/pics/iter-site-aerial-2.jpg" alt="Colour photograph of the ITER buildings in a hilly, wooded Provence landscape." width="1600" height="1067" loading="lazy"><figcaption>The ITER buildings seen from a distance in 2022, near the CEA Cadarache research centre. <span class="photo-credit">Photo: Johannes Reimer, CC BY 4.0, via Wikimedia Commons</span></figcaption></figure>
 
 ## Cadarache, ITER and Provence
@@ -78,6 +84,12 @@ The directions you hear most often:
 
 **Careful with floors.** In France the ground floor is the *<span lang="fr"><span class="nobr">rez-de-chaussée</span></span>*, and the *<span lang="fr">premier étage</span>* is
 the floor above it. In Finland that floor is the *toinen kerros*.
+
+```pysahdy
+A receptionist says your meeting room is <span lang="fr">au premier étage</span>. Do you stay on the ground floor or go up one level?
+---
+Go up one level. In France the ground floor is the <span lang="fr">rez-de-chaussée</span>, and the <span lang="fr">premier étage</span> is the floor above it.
+```
 
 <svg data-fig="plan" viewBox="0 0 800 940" role="img" aria-label="Plan of the ground floor of an invented research building. The entrance is at the bottom in the middle. Just inside is the reception desk with a star: you are here, facing a long corridor that runs straight up. On the left of the corridor, first comes the cafeteria and then the library. On the right, first comes the lift and then the toilets, opposite the library. At the end of the corridor is the conference room. A separate strip below the plan shows the first floor, one level up by the lift, where the laboratory is." style="max-width:100%;font-size:32px">
   <rect x="20" y="20" width="760" height="660" fill="#fbf8f1" stroke="#1f2933" stroke-width="4"/>

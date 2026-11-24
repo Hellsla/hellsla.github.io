@@ -22,9 +22,21 @@ News about fusion mixes three kinds of statements. Learn to tell them apart.
 
 A good reader also asks *when* a statement was made. Every changing fact in this unit carries its date.
 
+```pysahdy
+A company announces that it will deliver fusion electricity in 2028. Is this an established result, an institutional plan or a corporate claim?
+---
+It is a corporate claim. It states a goal of a private company, not a measured and checked event, so it is not yet evidence.
+```
+
 ## Uncertainties: engineering, money and time {Uncertain}
 
 No fusion device has yet delivered electricity to a grid (as of November 2026). The **engineering** questions include materials that survive years of fast neutrons, breeding enough tritium, removing intense heat, and keeping a machine running reliably for months. Scientific gain $Q$ compares fusion power with heating power only; a power plant must also pay for its magnets, lasers, pumps and conversion losses.
+
+```pysahdy
+Why does a scientific gain $Q > 1$ not mean that a fusion power plant would produce net electricity?
+---
+$Q$ compares the fusion power only with the heating power of the plasma. A power plant must also pay for its magnets, lasers, pumps and conversion losses.
+```
 
 The **economic** questions are just as open. In 2006 ITER's construction was estimated at $5.9$ billion euros; later estimates of construction and operation together are $18\text{–}22$ billion euros. Nobody can yet give the price of fusion electricity: published figures for future power plants are estimates, not prices. Money comes from two directions: **public funding** (ITER, national programmes such as the UK's £2.5 billion announced in June 2025) and **private investment**. In a 2026 survey of 56 fusion companies, the Fusion Industry Association counted USD 14.24 billion raised in total, USD 4.48 billion of it in the year to July 2026.
 
@@ -73,6 +85,12 @@ A deuterium–tritium (D–T) power plant burns two isotopes of hydrogen: ${}^{2
 | main waste | spent fuel, long-lived | activated structure |
 
 In a fission reactor, a **chain reaction** of neutrons keeps going and must be controlled. A fusion plasma holds only a few grams of fuel at a time, and any disturbance cools it within seconds, so it cannot run away. The product of the reaction, helium, is not radioactive.
+
+```pysahdy
+Why can a fusion plasma not run away like a fission chain reaction?
+---
+The plasma holds only a few grams of fuel, and any disturbance cools it within seconds. The reaction simply stops instead of growing.
+```
 
 Fusion still has real hazards. Tritium can escape into the environment, so it must be contained. The $14.1\ \text{MeV}$ neutrons make the steel and other materials of the machine radioactive. This **neutron activation** gives large volumes of low- and intermediate-level waste, but no long-lived high-level waste from the fuel. Most of the activity fades within about 100 years. Strong magnets, very cold helium and great heat are further, industrial hazards.
 
