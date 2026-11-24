@@ -2,7 +2,7 @@
 **Given:** $V_1 = 30.0\,\text{ml}$, $p_1 = 101\,\text{kPa}$, $V_2 = 45.0\,\text{ml}$, temperature constant, no air enters or leaves the syringe
 **Find:** the air pressure $p_2$ in kilopascals
 **Principle:** The temperature and the amount of air stay the same, so this is an isothermal change and Boyle's law holds: the pressure is inversely proportional to the volume, that is, the product $pV$ stays constant.
-**Formula:** $p_1 V_1 = p_2 V_2$, so $p_2 = \dfrac{p_1 V_1}{V_2}$
+**Formula:** $$\begin{aligned} p_1 V_1 &= p_2 V_2 \\ p_2 &= \dfrac{p_1 V_1}{V_2} \end{aligned}$$
 **Conversions:** No units need to be converted: both volumes are in millilitres, so $\text{ml}$ cancels, and the pressure comes out in the same unit as $p_1$.
 **Substitution:** $p_2 = \dfrac{101\,\text{kPa} \cdot 30.0\,\text{ml}}{45.0\,\text{ml}} = 67.333\,\text{kPa}$
 **Answer:** $p_2 \approx 67.3\,\text{kPa}$, three significant figures. All three initial values ($101\,\text{kPa}$, $30.0\,\text{ml}$ and $45.0\,\text{ml}$) have three figures, so nothing limits the result to fewer than three.
@@ -12,7 +12,7 @@
 **Given:** $V_1 = 24.0\,\textsf{l}$, $p_1 = 160.0\,\text{kPa}$, $p_2 = 280.0\,\text{kPa}$ (total pressures), temperature constant, the air in the tank is sealed
 **Find:** the air volume $V_2$ in litres
 **Principle:** The air at the top of the tank is sealed and its temperature stays the same, so the volume and pressure of the air follow Boyle's law. The rising water compresses the air and raises its pressure.
-**Formula:** $p_1 V_1 = p_2 V_2$, so $V_2 = \dfrac{p_1 V_1}{p_2}$
+**Formula:** $$\begin{aligned} p_1 V_1 &= p_2 V_2 \\ V_2 &= \dfrac{p_1 V_1}{p_2} \end{aligned}$$
 **Conversions:** No units need to be converted: the kilopascals cancel in the quotient, and the volume comes out directly in litres.
 **Substitution:** $V_2 = \dfrac{160.0\,\text{kPa} \cdot 24.0\,\textsf{l}}{280.0\,\text{kPa}} = 13.714\,\textsf{l}$
 **Answer:** $V_2 \approx 13.7\,\textsf{l}$, three significant figures. The limiting value is the volume $24.0\,\textsf{l}$ (three figures); the pressures $160.0\,\text{kPa}$ and $280.0\,\text{kPa}$ are given with four figures, so they do not limit the result.
@@ -23,7 +23,7 @@
 **Find:** the air pressure $p_2$ in kilopascals
 **Principle:** The amount of air and the temperature stay the same, so the air follows Boyle's law: the product $pV$ is constant. So the pressure is not read from a line segment drawn between the points, because the $(V, p)$ graph is a curve and not a straight line.
 **Reading the graph:** Choose a point that lies exactly at a grid crossing: $(20\,\text{ml};\ 100\,\text{kPa})$. The point $(40\,\text{ml};\ 50\,\text{kPa})$ also gives the same product $pV = 2000\,\text{kPa}\cdot\text{ml}$, which supports that the temperature stayed the same.
-**Formula:** $p_1 V_1 = p_2 V_2$, so $p_2 = \dfrac{p_1 V_1}{V_2}$
+**Formula:** $$\begin{aligned} p_1 V_1 &= p_2 V_2 \\ p_2 &= \dfrac{p_1 V_1}{V_2} \end{aligned}$$
 **Conversions:** Not needed: the millilitres cancel in the quotient, and the pressure comes out in kilopascals.
 **Substitution:** $p_2 = \dfrac{100\,\text{kPa} \cdot 20\,\text{ml}}{25\,\text{ml}} = 80\,\text{kPa}$
 **Answer:** $p_2 = 80\,\text{kPa}$, two significant figures like the volume $25\,\text{ml}$ and the volume $20\,\text{ml}$ read from the graph.
@@ -33,7 +33,7 @@
 **Given:** $V_1 = 3.0\,\textsf{l}$, $\theta_1 = 22\,{}^\circ\text{C}$, $\theta_2 = -18\,{}^\circ\text{C}$, pressure constant
 **Find:** the air volume $V_2$ in litres
 **Principle:** The pressure and the amount of air stay the same, so the change is isobaric and the volume is directly proportional to the temperature in kelvins: $V/T$ stays constant. The proportionality holds only for the absolute temperature.
-**Formula:** $\dfrac{V_1}{T_1} = \dfrac{V_2}{T_2}$, so $V_2 = \dfrac{V_1 T_2}{T_1}$
+**Formula:** $$\begin{aligned} \dfrac{V_1}{T_1} &= \dfrac{V_2}{T_2} \\ V_2 &= \dfrac{V_1 T_2}{T_1} \end{aligned}$$
 **Conversions:** The temperatures in kelvins: $T_1 = (22 + 273.15)\,\text{K} = 295.15\,\text{K}$ and $T_2 = (-18 + 273.15)\,\text{K} = 255.15\,\text{K}$.
 **Substitution:** $V_2 = \dfrac{3.0\,\textsf{l} \cdot 255.15\,\text{K}}{295.15\,\text{K}} = 2.5934\,\textsf{l}$
 **Answer:** $V_2 \approx 2.6\,\textsf{l}$, two significant figures. The limiting value is the volume $3.0\,\textsf{l}$; the temperatures in kelvins, $295\,\text{K}$ and $255\,\text{K}$ (from whole degrees), have three figures and do not limit the result.
@@ -43,7 +43,7 @@
 **Given:** $p_1 = 101\,\text{kPa}$, $\theta_1 = 22\,{}^\circ\text{C}$, $\theta_2 = -18\,{}^\circ\text{C}$, volume constant
 **Find:** the air pressure $p_2$ in kilopascals
 **Principle:** The lid is tight and the volume of the freezer does not change, so the amount of air and the volume stay the same. The change is isochoric, and the pressure is directly proportional to the temperature in kelvins: $p/T$ stays constant.
-**Formula:** $\dfrac{p_1}{T_1} = \dfrac{p_2}{T_2}$, so $p_2 = \dfrac{p_1 T_2}{T_1}$
+**Formula:** $$\begin{aligned} \dfrac{p_1}{T_1} &= \dfrac{p_2}{T_2} \\ p_2 &= \dfrac{p_1 T_2}{T_1} \end{aligned}$$
 **Conversions:** The temperatures in kelvins: $T_1 = (22 + 273.15)\,\text{K} = 295.15\,\text{K}$ and $T_2 = (-18 + 273.15)\,\text{K} = 255.15\,\text{K}$.
 **Substitution:** $p_2 = \dfrac{101\,\text{kPa} \cdot 255.15\,\text{K}}{295.15\,\text{K}} = 87.312\,\text{kPa}$
 **Answer:** $p_2 \approx 87.3\,\text{kPa}$, three significant figures. The pressure $101\,\text{kPa}$ and the temperatures in kelvins, $295\,\text{K}$ and $255\,\text{K}$ (from whole degrees $22\,{}^\circ\text{C}$ and $-18\,{}^\circ\text{C}$), all have three figures.
@@ -55,7 +55,7 @@ A completely tight lid of half a square metre would experience an extra force of
 **Given:** $V_1 = 6.8\,\textsf{l}$, $p_1 = 300.0\,\text{bar}$, $p_2 = 101\,\text{kPa}$, $1\,\text{bar} = 100\,\text{kPa}$, temperature constant
 **Find:** the air volume $V_2$ at outside air pressure in cubic metres
 **Principle:** The amount of air and the temperature stay the same when the air is released, so Boyle's law holds (the exercise tells us to assume it holds even at high pressure). The air expands until its pressure is the same as the atmospheric pressure.
-**Formula:** $p_1 V_1 = p_2 V_2$, so $V_2 = \dfrac{p_1 V_1}{p_2}$
+**Formula:** $$\begin{aligned} p_1 V_1 &= p_2 V_2 \\ V_2 &= \dfrac{p_1 V_1}{p_2} \end{aligned}$$
 **Conversions:** Pressures to the same unit: $p_1 = 300.0\,\text{bar} = 300.0 \cdot 100\,\text{kPa} = 30\,000\,\text{kPa}$ (the factor $100\,\text{kPa/bar}$ is a definition and does not limit). The result comes out in litres, and $1\,\text{m}^3 = 1000\,\textsf{l}$.
 **Substitution:** $V_2 = \dfrac{30\,000\,\text{kPa} \cdot 6.8\,\textsf{l}}{101\,\text{kPa}} = 2019.8\,\textsf{l} = 2.0198\,\text{m}^3$
 **Answer:** $V_2 \approx 2.0\,\text{m}^3$, two significant figures. The limiting value is the volume $6.8\,\textsf{l}$ (two figures); the pressure $300.0\,\text{bar}$ has four figures and $101\,\text{kPa}$ has three, so neither limits the result.
@@ -67,7 +67,7 @@ At such a high pressure air no longer follows Boyle's law exactly: the product $
 **Given:** $\theta_1 = 20\,{}^\circ\text{C}$, $p_1 = 101\,\text{kPa}$, $p_2 = 125\,\text{kPa}$, volume constant
 **Find:** the temperature $\theta_2$ in degrees Celsius when the cork pops out
 **Principle:** The bottle is sealed and its volume stays the same, so the amount of air and the volume are constant. The change is isochoric, and the pressure is directly proportional to the temperature in kelvins: $p/T$ stays constant.
-**Formula:** $\dfrac{p_1}{T_1} = \dfrac{p_2}{T_2}$, so $T_2 = \dfrac{T_1 p_2}{p_1}$ and $\theta_2 = T_2 - 273.15\,\text{K}$ in degrees Celsius
+**Formula:** $$\begin{aligned} \dfrac{p_1}{T_1} &= \dfrac{p_2}{T_2} \\ T_2 &= \dfrac{T_1 p_2}{p_1} \\ \theta_2 &= T_2 - 273.15\,\text{K} \end{aligned}$$
 **Conversions:** $T_1 = (20 + 273.15)\,\text{K} = 293.15\,\text{K}$. At the end the kelvins are converted back to degrees Celsius by subtracting $273.15$. The pressures do not need to be converted because they are in the same unit.
 **Substitution:** $T_2 = \dfrac{293.15\,\text{K} \cdot 125\,\text{kPa}}{101\,\text{kPa}} = 362.81\,\text{K}$, so $\theta_2 = (362.81 - 273.15)\,{}^\circ\text{C} = 89.66\,{}^\circ\text{C}$
 **Answer:** $\theta_2 \approx 90\,{}^\circ\text{C}$, in whole degrees Celsius. The temperature in kelvins, $T_2 = 362.8\,\text{K} \approx 363\,\text{K}$, has three figures, because the pressures $101\,\text{kPa}$ and $125\,\text{kPa}$ and $T_1 = 293\,\text{K}$ (from the whole degree $20\,{}^\circ\text{C}$) have three figures. When $273.15\,\text{K}$ is subtracted, the precision of the temperature is in units, so the result is given in whole degrees: $90\,{}^\circ\text{C}$.
@@ -98,7 +98,7 @@ So the slope of the line is almost the same as $pV$ for every point, and Boyle's
 **Given:** $V_1 = 2800\,\text{m}^3$, $\theta_1 = 10\,{}^\circ\text{C}$, $\theta_2 = 100\,{}^\circ\text{C}$, pressure constant
 **Find:** the volume $V_2$ of the original air at $100\,{}^\circ\text{C}$ and the volume $\Delta V$ pushed out of the envelope, in cubic metres
 **Principle:** The bottom of the envelope is open, so the pressure stays equal to the outside air pressure. When the same amount of air is heated at constant pressure, the volume is directly proportional to the temperature in kelvins. The volume of the envelope is constant, $V_1$, so the extra air is pushed out through the opening.
-**Formula:** $\dfrac{V_1}{T_1} = \dfrac{V_2}{T_2}$, so $V_2 = \dfrac{V_1 T_2}{T_1}$ and the volume pushed out is $\Delta V = V_2 - V_1$
+**Formula:** $$\begin{aligned} \dfrac{V_1}{T_1} &= \dfrac{V_2}{T_2} \\ V_2 &= \dfrac{V_1 T_2}{T_1} \\ \Delta V &= V_2 - V_1 \end{aligned}$$
 **Conversions:** The temperatures in kelvins: $T_1 = (10 + 273.15)\,\text{K} = 283.15\,\text{K}$ and $T_2 = (100 + 273.15)\,\text{K} = 373.15\,\text{K}$.
 **Substitution:** $V_2 = \dfrac{2800\,\text{m}^3 \cdot 373.15\,\text{K}}{283.15\,\text{K}} = 3690.0\,\text{m}^3$, so $\Delta V = 3690.0\,\text{m}^3 - 2800\,\text{m}^3 = 890.0\,\text{m}^3$
 **Answer:** $\Delta V \approx 890\,\text{m}^3$, two significant figures. The limiting value is the temperature difference $\Delta T = 100\,{}^\circ\text{C} - 10\,{}^\circ\text{C} = 90\,\text{K}$, which as a difference of whole degrees has two figures; the volume $2800\,\text{m}^3$ has at least two figures and does not limit the result. When $\Delta V = V_1 (T_2 - T_1)/T_1$ is calculated directly from the difference, the temperature $T_1 = 283\,\text{K}$ has three figures and the result is $890\,\text{m}^3$.
@@ -110,7 +110,7 @@ So less air is left in the envelope than when it was cold, and the balloon becom
 **Given:** $h = 20.0\,\text{m}$, $V_1 = 2.0\,\text{cm}^3$, $p_0 = 101\,\text{kPa}$, $\rho = 1000\,\tfrac{\text{kg}}{\text{m}^3}$, $g = 9.81\,\tfrac{\text{m}}{\text{s}^2}$, temperature constant, air does not dissolve in water
 **Find:** the volume $V_2$ of the bubble at the surface in cubic centimetres
 **Principle:** Deep down, the bubble is subject to the hydrostatic pressure of the water in addition to the atmospheric pressure. A rising bubble is in balance with the surrounding water, so its pressure is always the pressure of its surroundings. The temperature and the amount of air stay the same, so Boyle's law holds.
-**Formula:** $p_1 = p_0 + \rho g h$ and $p_1 V_1 = p_0 V_2$, so $V_2 = \dfrac{p_1 V_1}{p_0} = \dfrac{(p_0 + \rho g h) V_1}{p_0}$
+**Formula:** $$\begin{aligned} p_1 &= p_0 + \rho g h \\ p_1 V_1 &= p_0 V_2 \\ V_2 &= \dfrac{p_1 V_1}{p_0} \end{aligned}$$
 **Conversions:** The hydrostatic pressure in pascals: $\rho g h = 196\,200\,\text{Pa} = 196.2\,\text{kPa}$, because $1\,\text{kPa} = 1000\,\text{Pa}$. The volumes are in the same unit, so they do not need to be converted.
 **Substitution:** $$\begin{aligned} p_1 &= 101\,\text{kPa} \\ &+ 1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 9.81\,\tfrac{\text{m}}{\text{s}^2} \cdot 20.0\,\text{m} \\ &= 101\,\text{kPa} + 196.2\,\text{kPa} \\ &= 297.2\,\text{kPa} \end{aligned}$$. $V_2 = \dfrac{297.2\,\text{kPa} \cdot 2.0\,\text{cm}^3}{101\,\text{kPa}} = 5.885\,\text{cm}^3$
 **Answer:** $V_2 \approx 5.9\,\text{cm}^3$, two significant figures. The limiting value is the volume of the bubble, $2.0\,\text{cm}^3$ (two figures); the depth $20.0\,\text{m}$ and the atmospheric pressure $101\,\text{kPa}$ have three figures, and the density of water, $1000\,\tfrac{\text{kg}}{\text{m}^3}$, is a known table value that does not limit the result.
@@ -126,7 +126,7 @@ The lungs cannot stretch that much, and lung tissue can be damaged by far smalle
 **Principle:** The volume of the tyre and the amount of air stay the same, so the pressure is directly proportional to the temperature in kelvins.
 
 The proportionality applies to the total pressure, not to the gauge pressure of the meter: the gauge pressure is the total pressure minus the atmospheric pressure, and there is still air in the tyre even when the gauge shows zero.
-**Formula:** $p = \Delta p + p_0$ and $\dfrac{p_1}{T_1} = \dfrac{p_2}{T_2}$, so $p_2 = \dfrac{p_1 T_2}{T_1}$ and $\Delta p_2 = p_2 - p_0$
+**Formula:** $$\begin{aligned} p_1 &= \Delta p_1 + p_0 \\ \dfrac{p_1}{T_1} &= \dfrac{p_2}{T_2} \\ p_2 &= \dfrac{p_1 T_2}{T_1} \\ \Delta p_2 &= p_2 - p_0 \end{aligned}$$
 **Conversions:** The total pressure $p_1 = 250.0\,\text{kPa} + 101\,\text{kPa} = 351\,\text{kPa}$ (the precision of the sum is in units, because $101\,\text{kPa}$ is given to the precision of units). The temperatures in kelvins: $T_1 = (20 + 273.15)\,\text{K} = 293.15\,\text{K}$ and $T_2 = (-20 + 273.15)\,\text{K} = 253.15\,\text{K}$.
 **Substitution:** $p_2 = \dfrac{351\,\text{kPa} \cdot 253.15\,\text{K}}{293.15\,\text{K}} = 303.11\,\text{kPa}$, so $\Delta p_2 = 303.11\,\text{kPa} - 101\,\text{kPa} = 202.11\,\text{kPa}$
 **Answer:** $\Delta p_2 \approx 202\,\text{kPa}$, three significant figures. The atmospheric pressure $101\,\text{kPa}$ is given to the precision of units, so both the total pressure $351\,\text{kPa}$ and $p_2 = 303\,\text{kPa}$ are known to the precision of units (three figures); also $T_1 = 293\,\text{K}$ and $T_2 = 253\,\text{K}$ have three figures. The difference $303 - 101$ keeps the units, so $202\,\text{kPa}$ has three figures.
@@ -140,7 +140,7 @@ The reading drops from $250\,\text{kPa}$ to $202\,\text{kPa}$, almost a fifth, s
 **Principle:** The valve is closed, so the air in the cylinder is sealed and its temperature stays the same: Boyle's law holds. The valve opens only when the pressure in the cylinder equals the total pressure of the tyre, $p_0 + \Delta p$.
 
 The cross-sectional area of the cylinder is constant, so the volume is proportional to the length of the air column.
-**Formula:** $p_2 = p_0 + \Delta p$ and $p_1 A L_1 = p_2 A L_2$, so $L_2 = \dfrac{p_1 L_1}{p_2}$ and the distance $s = L_1 - L_2$
+**Formula:** $$\begin{aligned} p_2 &= p_0 + \Delta p \\ p_1 A L_1 &= p_2 A L_2 \\ L_2 &= \dfrac{p_1 L_1}{p_2} \\ s &= L_1 - L_2 \end{aligned}$$
 **Conversions:** The total pressure of the tyre is obtained by adding the atmospheric pressure to the gauge pressure: $p_2 = 300.0\,\text{kPa} + 101\,\text{kPa} = 401\,\text{kPa}$. No other conversions are needed, because $A$ and the kilopascals cancel and the lengths are in centimetres.
 **Substitution:** $L_2 = \dfrac{101\,\text{kPa} \cdot 40.0\,\text{cm}}{401\,\text{kPa}} = 10.075\,\text{cm}$, so $s = 40.0\,\text{cm} - 10.075\,\text{cm} = 29.925\,\text{cm}$
 **Answer:** $s \approx 29.9\,\text{cm}$, three significant figures. In the difference $40.0\,\text{cm} - 10.1\,\text{cm}$ the decimals are determined by the length $40.0\,\text{cm}$ (tenths of a centimetre), so the result $29.9\,\text{cm}$ has three figures; the pressures $101\,\text{kPa}$ and $401\,\text{kPa}$ also have three figures.
@@ -166,7 +166,7 @@ A horizontal graph is wrong, because a constant temperature does not mean a cons
 **Given:** $V_1 = 1.50\,\textsf{l}$, $p_1 = 101\,\text{kPa}$, $p_2 = 240\,\text{kPa}$, temperature constant, no air escapes
 **Find:** the air volume $V_2$ in litres
 **Principle:** The amount and the temperature of the air stay the same, so Boyle's law holds: the pressure is inversely proportional to the volume and the product $pV$ stays constant.
-**Formula:** $p_1 V_1 = p_2 V_2$, so $V_2 = \dfrac{p_1 V_1}{p_2}$
+**Formula:** $$\begin{aligned} p_1 V_1 &= p_2 V_2 \\ V_2 &= \dfrac{p_1 V_1}{p_2} \end{aligned}$$
 **Conversions:** No units need to be converted: the kilopascals cancel in the quotient, and the volume comes out directly in litres.
 **Substitution:** $V_2 = \dfrac{101\,\text{kPa} \cdot 1.50\,\textsf{l}}{240\,\text{kPa}} = 0.6312\,\textsf{l}$
 **Answer:** $V_2 \approx 0.63\,\textsf{l}$, two significant figures like the pressure $240\,\text{kPa}$.
@@ -197,7 +197,7 @@ In vessel B the ratio $V/T$ is $0.0501$; $0.0501$; $0.0498$; $0.0498\,\tfrac{\te
 The small variation is due to the random variation of the measurements. In degrees Celsius the ratio of vessel A is $p/\theta = 4.99$; $2.66$; $1.89$; $1.50\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$.
 
 These decrease sharply, so the pressure is not proportional to the temperature in degrees Celsius but to the temperature in kelvins.
-**Formula:** $\dfrac{p}{T} = k$, so $p = kT$
+**Formula:** $$\begin{aligned} \dfrac{p}{T} &= k \\ p &= kT \end{aligned}$$
 **Conversions:** $T = \theta + 273.15\,\text{K}$, so $T_{100} = (100 + 273.15)\,\text{K} = 373.15\,\text{K}$. The coefficient $k$ is the mean of the four ratios of vessel A.
 **Substitution:** The sum of the ratios is $1.3598\,\tfrac{\text{kPa}}{\text{K}}$, so $k = 0.33995\,\tfrac{\text{kPa}}{\text{K}}$.
 
@@ -222,7 +222,7 @@ When $V$ is small, this extra volume is a large part of the total volume and the
 The error is systematic: it is in the same direction in every measurement and the volume is the same, so it does not vary randomly.
 
 Repeating the measurements would not remove it; it is corrected by taking the volume of the hose into account.
-**Formula:** $p_1 (V_1 + V_\text{h}) = p_4 (V_4 + V_\text{h})$, so $V_\text{h} = \dfrac{p_4 V_4 - p_1 V_1}{p_1 - p_4}$
+**Formula:** $$\begin{aligned} p_1 (V_1 + V_\text{h}) &= p_4 (V_4 + V_\text{h}) \\ p_1 V_1 + p_1 V_\text{h} &= p_4 V_4 + p_4 V_\text{h} \\ p_1 V_\text{h} - p_4 V_\text{h} &= p_4 V_4 - p_1 V_1 \\ V_\text{h}\,(p_1 - p_4) &= p_4 V_4 - p_1 V_1 \\ V_\text{h} &= \dfrac{p_4 V_4 - p_1 V_1}{p_1 - p_4} \end{aligned}$$
 **Conversions:** Not needed: the kilopascals and millilitres are the same on both sides of the equation, and the result comes out in millilitres.
 **Substitution:** The products are $p_4 V_4 = 57.1\,\text{kPa} \cdot 40.0\,\text{ml} = 2284\,\text{kPa}\cdot\text{ml}$ and $p_1 V_1 = 200\,\text{kPa} \cdot 10.0\,\text{ml} = 2000\,\text{kPa}\cdot\text{ml}$. The pressure difference is $p_1 - p_4 = 142.9\,\text{kPa}$.
 
@@ -246,7 +246,7 @@ The fitted line passes less than $0.04\,\text{kPa}$ from the measured points $(0
 The extrapolation reaches about $276\,\text{K}$ below the measured range, although the measurement interval is only $80\,\text{K}$, so even a small error in the slope changes the result a lot.
 
 The extension is a prediction of the model: a real gas condenses into a liquid at a much higher temperature, and then the pressure is no longer proportional to the temperature in kelvins and the extension of the line does not hold.
-**Formula:** The slope of the line $k = \dfrac{p_2 - p_1}{\theta_2 - \theta_1}$ and the line $p = p_1 + k(\theta - \theta_1)$. From the condition $p = 0$ we get $\theta_0 = \theta_1 - \dfrac{p_1}{k}$.
+**Formula:** $$\begin{aligned} k &= \dfrac{p_2 - p_1}{\theta_2 - \theta_1} \\ p &= p_1 + k(\theta - \theta_1) \\ 0 &= p_1 + k(\theta_0 - \theta_1) \\ \theta_0 &= \theta_1 - \dfrac{p_1}{k} \end{aligned}$$
 **Conversions:** Not needed: a temperature difference is the same in degrees Celsius and in kelvins, and the result is wanted in degrees Celsius.
 **Substitution:** The slope
 
@@ -282,7 +282,7 @@ In fast compression the products are $4040$; $4230$; $4520$ and $4810\,\text{kPa
 The particles of warmer gas hit the walls more often and harder, so the pressure is greater than at a constant temperature. Boyle's law requires a constant temperature, so it does not describe this situation.
 
 When the plunger is held still, the volume is constant and the air gives energy to the surroundings until the temperature is again $20.0\,{}^\circ\text{C}$. The pressure then drops back to the value given by Boyle's law, that is, about $404\,\text{kPa}$.
-**Formula:** Step 1 (isothermal): $p_1 V_1 = p' V_2$, so $p' = \dfrac{p_1 V_1}{V_2}$. Step 2 (isochoric): $\dfrac{p'}{T_1} = \dfrac{p_2}{T_2}$, so $T_2 = \dfrac{T_1 p_2}{p'}$ and $\theta_2 = T_2 - 273.15\,\text{K}$ in degrees Celsius.
+**Formula:** $$\begin{aligned} p_1 V_1 &= p' V_2 \\ p' &= \dfrac{p_1 V_1}{V_2} \\ \dfrac{p'}{T_1} &= \dfrac{p_2}{T_2} \\ T_2 &= \dfrac{T_1 p_2}{p'} \\ \theta_2 &= T_2 - 273.15\,\text{K} \end{aligned}$$
 **Conversions:** $T_1 = (20.0 + 273.15)\,\text{K} = 293.15\,\text{K}$. Finally the kelvins are converted back to degrees Celsius by subtracting $273.15$. The pressures and volumes do not need to be converted, because they cancel.
 **Substitution:** The isothermal compression gives the pressure
 
@@ -312,7 +312,7 @@ The ratio of the pressures $481 : 404 \approx 1.19$ is the same as the ratio of 
 **Principle:** At the depth $h$ the lungs are subject to the hydrostatic pressure of the water in addition to the atmospheric pressure, $p = p_0 + \rho g h$. The pressure in the lungs is the same as the pressure of the surroundings. The temperature and the amount of the air stay the same, so Boyle's law holds if the product $pV$ is constant.
 **Reading the graph:** For each depth in the table the pressure is calculated with the formula $p = p_0 + \rho g h$ and multiplied by the volume. The mean of the products $pV$ gives the constant of Boyle's law, and it is used to calculate the pressure at which $V = 1.5\,\textsf{l}$.
 **Model answer a):** The pressures are $101$; $150$; $199$ and $297\,\text{kPa}$, and the products $pV = 606$; $600$; $597$ and $594\,\text{kPa}\cdot\textsf{l}$. The products decrease steadily, but differ from each other by less than $2\,\%$, which is within the measurement uncertainty, so the air in the lungs obeys Boyle's law.
-**Formula:** $p = p_0 + \rho g h$ and $p V = \text{constant}$. At the limit $p_\text{limit} = \dfrac{pV}{V_\text{limit}}$, and the depth is $h = \dfrac{p_\text{limit} - p_0}{\rho g}$.
+**Formula:** $$\begin{aligned} p &= p_0 + \rho g h \\ pV &= \text{constant} \\ p_\text{limit} V_\text{limit} &= pV \\ p_\text{limit} &= \dfrac{pV}{V_\text{limit}} \\ p_\text{limit} &= p_0 + \rho g h \\ h &= \dfrac{p_\text{limit} - p_0}{\rho g} \end{aligned}$$
 **Conversions:** $\rho g = 1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 9.81\,\tfrac{\text{m}}{\text{s}^2} = 9810\,\tfrac{\text{Pa}}{\text{m}} = 9.81\,\tfrac{\text{kPa}}{\text{m}}$. The products $pV$ are calculated in the unit $\text{kPa}\cdot\textsf{l}$, so $V_\text{limit}$ stays in litres and the result comes out in kilopascals.
 **Substitution:** The sum of the products is $2397\,\text{kPa}\cdot\textsf{l}$, so $pV = 599.25\,\text{kPa}\cdot\textsf{l}$.
 
@@ -361,7 +361,7 @@ In graph C the pressure stays the same, which confuses a constant temperature wi
 **Given:** $V_1 = 2.0\,\textsf{l}$, $p_1 = 101\,\text{kPa}$, temperature constant, no air escapes; from the table (MAFY table, air pressure, density and temperature at different heights, height $3000\,\text{m}$) $p_2 = 70\,100\,\text{Pa}$
 **Find:** the volume of the air $V_2$ in litres
 **Principle:** The amount and the temperature of the air stay the same, so Boyle's law applies: the product $pV$ stays constant. In reality the temperature drops with height, but the task assumes it constant.
-**Formula:** $p_1 V_1 = p_2 V_2$, so $V_2 = \dfrac{p_1 V_1}{p_2}$
+**Formula:** $$\begin{aligned} p_1 V_1 &= p_2 V_2 \\ V_2 &= \dfrac{p_1 V_1}{p_2} \end{aligned}$$
 **Conversions:** $70\,100\,\text{Pa} = 70.1\,\text{kPa}$, because $1\,\text{kPa} = 1000\,\text{Pa}$. The volume stays in litres, because the pressure units cancel.
 **Substitution:** $V_2 = \dfrac{101\,\text{kPa} \cdot 2.0\,\textsf{l}}{70.1\,\text{kPa}} = 2.882\,\textsf{l}$
 **Answer:** $V_2 \approx 2.9\,\textsf{l}$, two significant figures, as in the volume $2.0\,\textsf{l}$. The pressure $70\,100\,\text{Pa}$ is from the MAFY table (air pressure, density and temperature at different heights); the answer is accepted within about $\pm 4\,\%$.
@@ -372,7 +372,7 @@ In graph C the pressure stays the same, which confuses a constant temperature wi
 **Find:** the pressure $p_2$ of the air in kilopascals when $\theta_2 = 100\,{}^\circ\text{C}$
 **Principle:** The container is closed and rigid, so the volume and the amount of air stay the same. The change of state is isochoric: the pressure is directly proportional to the kelvin temperature, $p_1/T_1 = p_2/T_2$.
 **Reading the graph:** The points of the graph lie on grid crossings. At the point whose horizontal value is $T_1 = 300\,\text{K}$ the pressure $p_1 = 120\,\text{kPa}$ is read from the vertical axis. The other points, for example $(200\,\text{K};\ 80\,\text{kPa})$ and $(350\,\text{K};\ 140\,\text{kPa})$, give the same ratio $p/T = 0.40\,\text{kPa/K}$, so they lie on one line through the origin.
-**Formula:** $\dfrac{p_1}{T_1} = \dfrac{p_2}{T_2}$, so $p_2 = p_1 \cdot \dfrac{T_2}{T_1}$
+**Formula:** $$\begin{aligned} \dfrac{p_1}{T_1} &= \dfrac{p_2}{T_2} \\ p_2 &= p_1 \cdot \dfrac{T_2}{T_1} \end{aligned}$$
 **Conversions:** $T_2 = 100 + 273.15\,\text{K} = 373.15\,\text{K}$, because the ratio needs the kelvin temperature. The pressure needs no conversion, because the units cancel.
 **Substitution:** $p_2 = 120\,\text{kPa} \cdot \dfrac{373.15\,\text{K}}{300\,\text{K}} = 149.26\,\text{kPa}$
 **Answer:** $p_2 \approx 149\,\text{kPa}$, three significant figures as in the pressure read, $120\,\text{kPa}$. Reading a graph is an estimate, so the answer is accepted within $\pm 2\,\%$.
@@ -415,7 +415,7 @@ The first point deviates most: it is $51\,\text{kPa}$ above the line, while the 
 A result that clearly deviates is checked, and the measurement can be repeated if needed. A result is not removed merely because it differs from the others.
 
 The constant $k$ depends on the number of particles and the volume, so your own value may be different, but the form of the dependence is the same.
-**Formula:** $p = kT$, so the prediction is $p_\text{pred} = kT_\text{pred}$ and the pressure ratio is $\dfrac{p_2}{p_1} = \dfrac{kT_2}{kT_1} = \dfrac{T_2}{T_1}$
+**Formula:** $$\begin{aligned} p &= kT \\ p_\text{pred} &= kT_\text{pred} \\ \dfrac{p_2}{p_1} &= \dfrac{kT_2}{kT_1} \\ &= \dfrac{T_2}{T_1} \end{aligned}$$
 **Conversions:** None needed: the temperatures are already in kelvins and the pressures in kilopascals. The ratio could not be calculated in degrees Celsius.
 **Substitution:** The prediction of part c) with the model of the example measurement:
 

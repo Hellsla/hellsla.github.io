@@ -12,7 +12,9 @@
 **Annettu:** $T = 350\,\text{K}$
 **Kysytty:** lämpötila celsiusasteina, $\theta$
 **Periaate:** Kelvin- ja celsiusasteikon välit ovat yhtä suuret, ja nollakohtien ero on $273{,}15$. Celsiuslukema saadaan siis vähentämällä kelvinlukemasta $273{,}15$.
-**Kaava:** $\tfrac{T}{\text{K}} = \tfrac{\theta}{{}^\circ\text{C}} + 273{,}15$, josta $\tfrac{\theta}{{}^\circ\text{C}} = \tfrac{T}{\text{K}} - 273{,}15$
+**Kaava:** $$\begin{aligned} \tfrac{T}{\text{K}} &= \tfrac{\theta}{{}^\circ\text{C}} + 273{,}15 \\
+\tfrac{\theta}{{}^\circ\text{C}} &= \tfrac{T}{\text{K}} - 273{,}15
+\end{aligned}$$
 **Muunnokset:** Kelvinlämpötila muutetaan celsiusasteiksi tämän kaavan avulla; muita yksikkömuunnoksia ei tarvita.
 **Sijoitus:** $\theta = (350 - 273{,}15)\,{}^\circ\text{C} = 76{,}85\,{}^\circ\text{C}$
 **Vastaus:** $77\,{}^\circ\text{C}$, täysinä asteina, koska $350\,\text{K}$ on annettu täysinä kelvineinä.
@@ -22,7 +24,9 @@
 **Annettu:** $T = 77{,}4\,\text{K}$
 **Kysytty:** lämpötila celsiusasteina, $\theta$
 **Periaate:** Celsius- ja kelvinasteikon välit ovat yhtä suuret, ja nollakohtien ero on $273{,}15$. Siksi $\theta$ saadaan vähentämällä kelvinlukemasta $273{,}15$. Kaava pätee myös, kun tulos on negatiivinen.
-**Kaava:** $\tfrac{T}{\text{K}} = \tfrac{\theta}{{}^\circ\text{C}} + 273{,}15$, josta $\tfrac{\theta}{{}^\circ\text{C}} = \tfrac{T}{\text{K}} - 273{,}15$
+**Kaava:** $$\begin{aligned} \tfrac{T}{\text{K}} &= \tfrac{\theta}{{}^\circ\text{C}} + 273{,}15 \\
+\tfrac{\theta}{{}^\circ\text{C}} &= \tfrac{T}{\text{K}} - 273{,}15
+\end{aligned}$$
 **Muunnokset:** Kelvinlämpötila muutetaan celsiusasteiksi tämän kaavan avulla; muita yksikkömuunnoksia ei tarvita.
 **Sijoitus:** $\theta = (77{,}4 - 273{,}15)\,{}^\circ\text{C} = -195{,}75\,{}^\circ\text{C}$
 **Vastaus:** $-196\,{}^\circ\text{C}$, kolme merkitsevää numeroa kuten arvossa $77{,}4\,\text{K}$ (tarkka vakio $273{,}15$ ei rajoita; desimaalin tarkkuudella tulos olisi $-195{,}8\,{}^\circ\text{C}$).
@@ -32,7 +36,11 @@
 **Annettu:** $\theta_1 = 20\,{}^\circ\text{C}$, $\theta_2 = 45\,{}^\circ\text{C}$
 **Kysytty:** lämpötilan muutos kelvineinä, $\Delta T$
 **Periaate:** Celsiusasteen ja kelvinin suuruus on sama, ja asteikkojen nollakohdat eroavat vain vakiolla $273{,}15$. Vakio supistuu eron laskussa pois, joten lämpötilan muutos on sama kummallakin asteikolla.
-**Kaava:** $\Delta T = T_2 - T_1$, ja koska $T/\text{K} = \theta/{}^\circ\text{C} + 273{,}15$, vakio $273{,}15$ kumoutuu: $\Delta T/\text{K} = (\theta_2 - \theta_1)/{}^\circ\text{C}$
+**Kaava:** $$\begin{aligned} \tfrac{T}{\text{K}} &= \tfrac{\theta}{{}^\circ\text{C}} + 273{,}15 \\
+\frac{\Delta T}{\text{K}} &= \frac{T_2}{\text{K}} - \frac{T_1}{\text{K}} \\
+&= \left(\tfrac{\theta_2}{{}^\circ\text{C}} + 273{,}15\right) - \left(\tfrac{\theta_1}{{}^\circ\text{C}} + 273{,}15\right) \\
+&= \frac{\theta_2 - \theta_1}{{}^\circ\text{C}}
+\end{aligned}$$
 **Muunnokset:** Muunnosta ei tarvita, koska lämpötilan muutos on sama celsiusasteina ja kelvineinä; vain yksikkö vaihtuu.
 **Sijoitus:** $\Delta T = (45 - 20)\,\text{K} = 25\,\text{K}$
 **Vastaus:** $25\,\text{K}$, kaksi merkitsevää numeroa kuten annetuissa lämpötiloissa.
@@ -42,7 +50,9 @@
 **Annettu:** $T = 2{,}7\,\text{K}$
 **Kysytty:** lämpötila celsiusasteina, $\theta$
 **Periaate:** Celsius- ja kelvinasteikon välit ovat yhtä suuret, ja nollakohtien ero on $273{,}15$, joten $\theta$ saadaan vähentämällä kelvinlukemasta $273{,}15$. Kelvinlukema on pieni, joten tulos on negatiivinen.
-**Kaava:** $\tfrac{T}{\text{K}} = \tfrac{\theta}{{}^\circ\text{C}} + 273{,}15$, josta $\tfrac{\theta}{{}^\circ\text{C}} = \tfrac{T}{\text{K}} - 273{,}15$
+**Kaava:** $$\begin{aligned} \tfrac{T}{\text{K}} &= \tfrac{\theta}{{}^\circ\text{C}} + 273{,}15 \\
+\tfrac{\theta}{{}^\circ\text{C}} &= \tfrac{T}{\text{K}} - 273{,}15
+\end{aligned}$$
 **Muunnokset:** Kelvinlämpötila muutetaan celsiusasteiksi tämän kaavan avulla; muita yksikkömuunnoksia ei tarvita.
 **Sijoitus:** $\theta = (2{,}7 - 273{,}15)\,{}^\circ\text{C} = -270{,}45\,{}^\circ\text{C}$
 **Vastaus:** $-270\,{}^\circ\text{C}$, kaksi merkitsevää numeroa kuten arvossa $2{,}7\,\text{K}$ (tarkka vakio $273{,}15$ ei rajoita; desimaalin tarkkuudella tulos olisi $-270{,}5\,{}^\circ\text{C}$).
@@ -72,7 +82,10 @@
 **Annettu:** $T_1 = 288\,\text{K}$, lämpötilan nousu $\Delta T = 45\,\text{K}$
 **Kysytty:** loppulämpötila celsiusasteina, $\theta_2$
 **Periaate:** Lämpötilan muutos on sama kelvineinä ja celsiusasteina, joten nousu voidaan lisätä suoraan kelvinlämpötilaan. Vasta lopuksi tulos muutetaan celsiusasteiksi.
-**Kaava:** $T_2 = T_1 + \Delta T$ ja $\tfrac{\theta_2}{{}^\circ\text{C}} = \tfrac{T_2}{\text{K}} - 273{,}15$, joten $\tfrac{\theta_2}{{}^\circ\text{C}} = \tfrac{T_1 + \Delta T}{\text{K}} - 273{,}15$
+**Kaava:** $$\begin{aligned} T_2 &= T_1 + \Delta T \\
+\tfrac{\theta_2}{{}^\circ\text{C}} &= \tfrac{T_2}{\text{K}} - 273{,}15 \\
+&= \tfrac{T_1 + \Delta T}{\text{K}} - 273{,}15
+\end{aligned}$$
 **Muunnokset:** Nousu $45\,\text{K}$ lisätään sellaisenaan. Loppulämpötila muutetaan kelvineistä celsiusasteiksi vähentämällä $273{,}15$.
 **Sijoitus:** $T_2 = (288 + 45)\,\text{K} = 333\,\text{K}$, ja $\theta_2 = (333 - 273{,}15)\,{}^\circ\text{C} = 59{,}85\,{}^\circ\text{C}$
 **Vastaus:** $60\,{}^\circ\text{C}$, täysinä asteina, koska lähtöarvot on annettu täysinä kelvineinä.
@@ -82,7 +95,10 @@
 **Annettu:** $(\theta_1,\, p_1) = (0\,{}^\circ\text{C},\ 90{,}0\,\text{kPa})$ ja $(\theta_2,\, p_2) = (100\,{}^\circ\text{C},\ 123\,\text{kPa})$; paine riippuu lämpötilasta lineaarisesti
 **Kysytty:** paine $p$ lämpötilassa $\theta = 35\,{}^\circ\text{C}$ kilopascaleina
 **Periaate:** Astia on suljettu ja jäykkä, joten kaasun määrä ja tilavuus pysyvät samoina ja paine muuttuu vain lämpötilan mukana. Tehtävä sallii lineaarisen mallin, jolloin pisteet määräävät suoran, ja suoralta luetaan paine kohdassa $35\,{}^\circ\text{C}$.
-**Kaava:** kulmakerroin $k = \dfrac{p_2 - p_1}{\theta_2 - \theta_1}$ ja suora $p = p_1 + k\theta$, koska $\theta_1 = 0\,{}^\circ\text{C}$; siis $p = p_1 + \dfrac{p_2 - p_1}{\theta_2 - \theta_1}\,\theta$
+**Kaava:** $$\begin{aligned} k &= \dfrac{p_2 - p_1}{\theta_2 - \theta_1} \\
+p &= p_1 + k\theta \quad (\theta_1 = 0\,{}^\circ\text{C}) \\
+&= p_1 + \dfrac{p_2 - p_1}{\theta_2 - \theta_1}\,\theta
+\end{aligned}$$
 **Muunnokset:** Muunnoksia ei tarvita: paineet ovat samassa yksikössä, ja lämpötilaero $\theta_2 - \theta_1$ on sama celsiusasteina ja kelvineinä. Kulmakertoimen yksikkö on $\tfrac{\text{kPa}}{{}^\circ\text{C}}$.
 **Sijoitus:** $k = \dfrac{(123 - 90{,}0)\,\text{kPa}}{(100 - 0)\,{}^\circ\text{C}} = 0{,}33\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$, ja $p = 90{,}0\,\text{kPa} + 0{,}33\,\tfrac{\text{kPa}}{{}^\circ\text{C}} \cdot 35\,{}^\circ\text{C} = 101{,}55\,\text{kPa}$
 **Vastaus:** $102\,\text{kPa}$. Paine-ero $\Delta p = 123 - 90{,}0 = 33\,\text{kPa}$ on kaksinumeroinen, joten $k = 0{,}33\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$ ja $k\theta \approx 12\,\text{kPa}$; summa $90{,}0 + 12 = 102\,\text{kPa}$ pyöristyy kokonaisiin kilopascaleihin.
@@ -103,7 +119,10 @@
 **Annettu:** $\theta_\text{yö} = -173\,{}^\circ\text{C}$ ja $\theta_\text{päivä} = 127\,{}^\circ\text{C}$
 **Kysytty:** kelvinlämpötilojen suhde $\dfrac{T_\text{päivä}}{T_\text{yö}}$
 **Periaate:** Suhdetta kysytään kelvinlämpötiloista, koska vain kelvinasteikon nolla on absoluuttinen nollapiste, alin mahdollinen lämpötila. Celsiusasteiden suhteella ei ole fysikaalista merkitystä.
-**Kaava:** $\tfrac{T}{\text{K}} = \tfrac{\theta}{{}^\circ\text{C}} + 273{,}15$, ja suhde $\dfrac{T_\text{päivä}}{T_\text{yö}} = \dfrac{\theta_\text{päivä}/{}^\circ\text{C} + 273{,}15}{\theta_\text{yö}/{}^\circ\text{C} + 273{,}15}$
+**Kaava:** $$\begin{aligned} \tfrac{T}{\text{K}} &= \tfrac{\theta}{{}^\circ\text{C}} + 273{,}15 \\
+\dfrac{T_\text{päivä}}{T_\text{yö}} &= \dfrac{T_\text{päivä}/\text{K}}{T_\text{yö}/\text{K}} \\
+&= \dfrac{\theta_\text{päivä}/{}^\circ\text{C} + 273{,}15}{\theta_\text{yö}/{}^\circ\text{C} + 273{,}15}
+\end{aligned}$$
 **Muunnokset:** Molemmat lämpötilat muutetaan kelvineiksi lisäämällä $273{,}15$: $T_\text{yö} = (-173 + 273{,}15)\,\text{K} = 100{,}15\,\text{K}$ ja $T_\text{päivä} = (127 + 273{,}15)\,\text{K} = 400{,}15\,\text{K}$.
 **Sijoitus:** $\dfrac{T_\text{päivä}}{T_\text{yö}} = \dfrac{400{,}15\,\text{K}}{100{,}15\,\text{K}} = 3{,}9955$
 **Vastaus:** $4{,}00$ kertaa. Täydet asteet antavat kelvinlämpötilat $100\,\text{K}$ ja $400\,\text{K}$ kelvinin tarkkuudella, kolme merkitsevää numeroa kummassakin, joten osamäärässäkin on kolme.
@@ -154,7 +173,9 @@ $$\begin{aligned}
 **Annettu:** $p_1 = 300\,\text{kPa}$ (kokonaispaine), $\theta_1 = 15\,{}^\circ\text{C}$, $\theta_2 = 35\,{}^\circ\text{C}$
 **Kysytty:** paine $p_2$ lämpötilassa $\theta_2$ kilopascaleina
 **Periaate:** Rengas ei vuoda eikä sen tilavuus muutu, joten ilman määrä ja tilavuus ovat vakiot. Silloin paine on suoraan verrannollinen kelvinlämpötilaan: lämpimämmän kaasun hiukkaset liikkuvat nopeammin ja törmäävät seinään useammin ja kovemmin. Verrannollisuus ei päde celsiuslämpötilaan.
-**Kaava:** $\dfrac{p_2}{p_1} = \dfrac{T_2}{T_1}$, josta $p_2 = p_1\,\dfrac{T_2}{T_1}$
+**Kaava:** $$\begin{aligned} \dfrac{p_2}{p_1} &= \dfrac{T_2}{T_1} \\
+p_2 &= p_1\,\dfrac{T_2}{T_1}
+\end{aligned}$$
 **Muunnokset:** Lämpötilat muutetaan kelvineiksi: $T_1 = (15 + 273{,}15)\,\text{K} = 288{,}15\,\text{K}$ ja $T_2 = (35 + 273{,}15)\,\text{K} = 308{,}15\,\text{K}$. Paine pysyy kilopascaleina, koska se esiintyy vain suhteessa.
 **Sijoitus:** $p_2 = 300\,\text{kPa} \cdot \dfrac{308{,}15\,\text{K}}{288{,}15\,\text{K}} = 320{,}8\,\text{kPa}$
 **Vastaus:** $321\,\text{kPa}$, kolme merkitsevää numeroa kuten annetuissa arvoissa.
@@ -164,7 +185,10 @@ $$\begin{aligned}
 **Annettu:** $p_1 = 150\,\text{kPa}$, $\theta_1 = 27{,}0\,{}^\circ\text{C}$, $p_2 = 200\,\text{kPa}$
 **Kysytty:** loppulämpötila celsiusasteina, $\theta_2$
 **Periaate:** Astia on suljettu ja jäykkä, joten tilavuus ja kaasun määrä pysyvät samoina, ja paine on suoraan verrannollinen kelvinlämpötilaan. Siksi paineen ja kelvinlämpötilan suhteet ovat yhtä suuret.
-**Kaava:** $\dfrac{p_2}{p_1} = \dfrac{T_2}{T_1}$, josta $T_2 = T_1\,\dfrac{p_2}{p_1}$, ja $\tfrac{\theta_2}{{}^\circ\text{C}} = \tfrac{T_2}{\text{K}} - 273{,}15$
+**Kaava:** $$\begin{aligned} \dfrac{p_2}{p_1} &= \dfrac{T_2}{T_1} \\
+T_2 &= T_1\,\dfrac{p_2}{p_1} \\
+\tfrac{\theta_2}{{}^\circ\text{C}} &= \tfrac{T_2}{\text{K}} - 273{,}15
+\end{aligned}$$
 **Muunnokset:** Alkulämpötila muutetaan kelvineiksi: $T_1 = (27{,}0 + 273{,}15)\,\text{K} = 300{,}15\,\text{K}$. Lopuksi tulos muutetaan celsiusasteiksi vähentämällä $273{,}15$. Paineita ei tarvitse muuttaa, koska ne ovat samassa yksikössä.
 **Sijoitus:** $T_2 = 300{,}15\,\text{K} \cdot \dfrac{200\,\text{kPa}}{150\,\text{kPa}} = 400{,}2\,\text{K}$, ja $\theta_2 = (400{,}2 - 273{,}15)\,{}^\circ\text{C} = 127{,}05\,{}^\circ\text{C}$
 **Vastaus:** $127\,{}^\circ\text{C}$, kolme merkitsevää numeroa kuten arvossa $27{,}0\,{}^\circ\text{C}$.
@@ -174,7 +198,10 @@ $$\begin{aligned}
 **Annettu:** $\theta_1 = 20{,}0\,{}^\circ\text{C}$ ja keskimääräinen liike-energia $E_2 = \tfrac{1}{2}E_1$
 **Kysytty:** loppulämpötila celsiusasteina, $\theta_2$
 **Periaate:** Tehtävän mukaan kaasun hiukkasten keskimääräinen liike-energia on suoraan verrannollinen kelvinlämpötilaan; näin on harvassa kaasussa, jonka hiukkaset vaikuttavat toisiinsa vain törmätessään. Verrannollisuus koskee kelvinlämpötilaa, koska vain kelvinasteikon nolla on absoluuttinen nollapiste. Kun energia puolittuu, myös kelvinlämpötila puolittuu. Celsiuslämpötilaa ei saa puolittaa.
-**Kaava:** $\dfrac{E_2}{E_1} = \dfrac{T_2}{T_1} = \dfrac{1}{2}$, josta $T_2 = \dfrac{T_1}{2}$, ja $\tfrac{\theta_2}{{}^\circ\text{C}} = \tfrac{T_2}{\text{K}} - 273{,}15$
+**Kaava:** $$\begin{aligned} \dfrac{E_2}{E_1} &= \dfrac{T_2}{T_1} = \dfrac{1}{2} \\
+T_2 &= \dfrac{T_1}{2} \\
+\tfrac{\theta_2}{{}^\circ\text{C}} &= \tfrac{T_2}{\text{K}} - 273{,}15
+\end{aligned}$$
 **Muunnokset:** Alkulämpötila muutetaan kelvineiksi: $T_1 = (20{,}0 + 273{,}15)\,\text{K} = 293{,}15\,\text{K}$. Lopuksi $T_2$ muutetaan takaisin celsiusasteiksi vähentämällä $273{,}15$.
 **Sijoitus:** $T_2 = \dfrac{293{,}15\,\text{K}}{2} = 146{,}575\,\text{K}$, ja $\theta_2 = (146{,}575 - 273{,}15)\,{}^\circ\text{C} = -126{,}575\,{}^\circ\text{C}$
 **Vastaus:** $-127\,{}^\circ\text{C}$, kolme merkitsevää numeroa kuten arvossa $20{,}0\,{}^\circ\text{C}$.
@@ -215,11 +242,12 @@ $$\theta_\text{otsa,korj} = 37{,}6 - 0{,}6 = 37{,}0\,{}^\circ\text{C}$$
 **Annettu:** ylipaine $p_\text{y1} = 600\,\text{kPa}$ lämpötilassa $\theta_1 = 20{,}0\,{}^\circ\text{C}$, ilmanpaine $p_0 = 101\,\text{kPa}$, venttiilin avautumisraja ylipaineessa $p_\text{y,max} = 900\,\text{kPa}$, $\theta_2 = 60{,}0\,{}^\circ\text{C}$ (esimerkkiaineisto)
 **Kysytty:** lämpötila $\theta_3$ celsiusasteina, jossa varoventtiili avautuu (kohta b); lisäksi kokonaispaine ja ylipaine lämpötilassa $\theta_2$ ja liike-energian kasvu
 **Periaate:** Säiliö on tiivis ja jäykkä, joten ilman määrä ja tilavuus ovat vakiot. Silloin kokonaispaine on suoraan verrannollinen kelvinlämpötilaan. Verrannollisuus koskee kokonaispainetta, ei ylipainetta, joten ylipaineet muutetaan ensin kokonaispaineiksi lisäämällä ilmanpaine. Harvassa kaasussa hiukkasten keskimääräinen liike-energia on myös suoraan verrannollinen kelvinlämpötilaan.
-**Kaava:** $p = p_\text{y} + p_0$
-$$p_2 = p_1\,\frac{T_2}{T_1}$$
-$$\frac{\Delta E_\text{k}}{E_\text{k,1}} = \frac{T_2 - T_1}{T_1}$$
-$$T_3 = T_1\,\frac{p_3}{p_1}$$
-$$\tfrac{\theta_3}{{}^\circ\text{C}} = \tfrac{T_3}{\text{K}} - 273{,}15$$
+**Kaava:** $$\begin{aligned} p &= p_\text{y} + p_0 \\
+p_2 &= p_1\,\frac{T_2}{T_1} \\
+\frac{\Delta E_\text{k}}{E_\text{k,1}} &= \frac{T_2 - T_1}{T_1} \\
+T_3 &= T_1\,\frac{p_3}{p_1} \\
+\tfrac{\theta_3}{{}^\circ\text{C}} &= \tfrac{T_3}{\text{K}} - 273{,}15
+\end{aligned}$$
 **Muunnokset:** $T_1 = (20{,}0 + 273{,}15)\,\text{K} = 293{,}15\,\text{K}$ ja $T_2 = (60{,}0 + 273{,}15)\,\text{K} = 333{,}15\,\text{K}$. Kokonaispaineet: $p_1 = 600 + 101 = 701\,\text{kPa}$ ja $p_3 = 900 + 101 = 1001\,\text{kPa}$.
 **Sijoitus:**
 $$\begin{aligned}
@@ -267,7 +295,9 @@ Tarkistus: $\tfrac{\text{kPa}}{\text{K}} \cdot \text{K} = \text{kPa}$, joten $c\
 **Kysytty:** lämpötila $\theta$ celsiusasteina, kun paine on $100\,\text{kPa}$
 **Periaate:** Kaasun tilavuus ja ainemäärä pysyvät samoina. Silloin paine riippuu lämpötilasta lineaarisesti: $p = p_0 + k\theta$. Suoran kulmakerroin saadaan kahdesta kaukana toisistaan olevasta pisteestä. Sen avulla ratkaistaan lämpötila, jossa paine on $100\,\text{kPa}$.
 **Kuvaajan lukeminen:** Pisteet ovat lähes samalla suoralla. Pystyakselin leikkauspiste $p_0 = 75\,\text{kPa}$ luetaan ruudukon viivalta. Viimeisen pisteen paine luetaan viivan $100\,\text{kPa}$ yläpuolelta: se on noin $102{,}5\,\text{kPa}$. Kulmakerroin on $k = \dfrac{(102{,}5 - 75)\,\text{kPa}}{(100 - 0)\,{}^\circ\text{C}} = 0{,}275\,\dfrac{\text{kPa}}{{}^\circ\text{C}}$.
-**Kaava:** $p = p_0 + k\theta$, joten $\theta = \dfrac{p - p_0}{k}$
+**Kaava:** $$\begin{aligned} p &= p_0 + k\theta \\
+\theta &= \dfrac{p - p_0}{k}
+\end{aligned}$$
 **Muunnokset:** Muunnoksia ei tarvita. Paine on kilopascaleina ja lämpötila celsiusasteina.
 **Sijoitus:** $\theta = \dfrac{(100 - 75)\,\text{kPa}}{0{,}275\,\text{kPa}/{}^\circ\text{C}} = 90{,}9\,{}^\circ\text{C}$
 **Vastaus:** $\theta \approx 91\,{}^\circ\text{C}$. Vastauksessa on kaksi merkitsevää numeroa, koska kuvaajasta voi lukea paineen noin yhden kilopascalin tarkkuudella. Luentavirheen takia $8\,\%$ sisällä oleva arvo $84$–$98\,{}^\circ\text{C}$ hyväksytään.
