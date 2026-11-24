@@ -48,7 +48,6 @@ new p5((p) => {
     selSp.selected('1');                                                  // pace only; every quantity follows simulated time
     const scrub = () => { running = false; toTime(sl.value()); };         // the student drags the clock: playback stops
     sl.elt.addEventListener('input', scrub); sl.elt.addEventListener('change', scrub);
-    p.createP(__('huomautus')).parent('sim-root').class('note');
     p.textFont('Arial');
     restart();
     // adapter for guided investigations (sim-embed.js): the page may set, lock and reset these parameters

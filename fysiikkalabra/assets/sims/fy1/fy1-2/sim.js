@@ -79,7 +79,10 @@ new p5((p) => {
     cv.setAttribute('role', 'img'); cv.setAttribute('aria-label', __('kuva_selite'));
     const controls = p.createDiv('').parent('sim-root').class('controls');
     readout = p.createDiv('').parent('sim-root').class('readout');
-    btn = p.createButton(__('matkusta')).parent(controls);
+    // three rows: the trip (travel, reset, pace), the view (scroll buttons, power-of-ten slider), the places (date, jump buttons)
+    const row = () => { const r = p.createDiv('').parent(controls); r.style('display', 'flex'); r.style('flex-wrap', 'wrap'); r.style('align-items', 'center'); r.style('gap', '.5rem'); r.style('flex', '1 1 100%'); return r; };
+    const rTrip = row(), rView = row(), rPlaces = row();
+    btn = p.createButton(__('matkusta')).parent(rTrip);
     btn.elt.addEventListener('click', () => {
       if (trip.on) { trip.on = false; return; }
       const v = voyager(dateIso());
@@ -88,31 +91,30 @@ new p5((p) => {
       }
       trip.on = true;
     });
-    const bR = p.createButton(__('alusta')).parent(controls); bR.elt.addEventListener('click', reset);
-    const lv = p.createElement('label').parent(controls); p.createSpan(__('nopeus')).parent(lv); selSp = p.createSelect().parent(lv);
+    const bR = p.createButton(__('alusta')).parent(rTrip); bR.elt.addEventListener('click', reset);
+    const lv = p.createElement('label').parent(rTrip); p.createSpan(__('nopeus')).parent(lv); selSp = p.createSelect().parent(lv);
     for (const [txt, v] of [[__('hidas'), 1], [__('normaali'), 100], [__('nopea'), 10000]]) selSp.option(txt, v);
     selSp.selected('100');                                                // pace only: the elapsed time is the same at every speed
-    const bL = p.createButton('$\\leftarrow$').parent(controls), bRt = p.createButton('$\\rightarrow$').parent(controls);
+    const bL = p.createButton('$\\leftarrow$').parent(rView), bRt = p.createButton('$\\rightarrow$').parent(rView);
     bL.attribute('aria-label', __('vasemmalle')); bRt.attribute('aria-label', __('oikealle'));
     for (const [b, dir] of [[bL, -1], [bRt, 1]]) {                       // hold to scroll, faster the longer it is held; a key press steps
       b.elt.addEventListener('pointerdown', (e) => { holdDir = dir; holdT = 0; vel = 0; trip.on = false; e.preventDefault(); });
       for (const ev of ['pointerup', 'pointerleave', 'pointercancel']) b.elt.addEventListener(ev, () => { if (holdDir === dir) holdDir = 0; });
       b.elt.addEventListener('click', (e) => { if (e.detail === 0) jump(xc + dir * 500); });
     }
-    lSl = p.createElement('label').parent(controls); const lsp = p.createSpan('').parent(lSl); sl = p.createSlider(N_MIN, N_MAX, N_MIN, 0.01).parent(lSl);
+    lSl = p.createElement('label').parent(rView); const lsp = p.createSpan('').parent(lSl); sl = p.createSlider(N_MIN, N_MAX, N_MIN, 0.01).parent(lSl);
     lSel = lsp;
     sl.elt.addEventListener('input', () => { jump(Math.pow(10, Number(sl.value())) / MOON_KM); });
     sl.elt.addEventListener('pointerdown', () => { sliderBusy = true; });
     for (const ev of ['pointerup', 'pointercancel', 'blur']) sl.elt.addEventListener(ev, () => { sliderBusy = false; });
-    const ld = p.createElement('label').parent(controls); p.createSpan(__('voyager_paiva')).parent(ld);
+    const ld = p.createElement('label').parent(rPlaces); p.createSpan(__('voyager_paiva')).parent(ld);
     inDate = p.createInput(todayIso(), 'date').parent(ld); inDate.attribute('min', DATE_MIN); inDate.attribute('max', DATE_MAX);
     inDate.elt.style.cssText = 'min-height:40px;font:inherit;font-size:var(--fs-ui);padding:0 .6rem;border:1px solid #767676;border-radius:.4rem;background:#fff;color:var(--ink)';
-    const jumps = p.createDiv('').parent(controls).class('jumps');
+    const jumps = p.createDiv('').parent(rPlaces).class('jumps');
     jumps.style('display', 'flex'); jumps.style('flex-wrap', 'wrap'); jumps.style('gap', '.4rem'); jumps.style('flex', '1 1 100%');
     const jb = (label, target) => { const b = p.createButton(label).parent(jumps); b.elt.style.padding = '0 .8rem'; b.elt.addEventListener('click', () => jump(target())); };
     for (const b of BODIES) jb(__(b.id), () => b.x);
     jb(__('voyager_2'), () => voyager(dateIso()).x);
-    p.createP(__('selite')).parent('sim-root').class('note');
 
     // drag, wheel and keys on the picture
     cv.addEventListener('pointerdown', (e) => { dragging = true; lastX = e.clientX; lastT = performance.now(); vel = 0; trip.on = false; try { cv.setPointerCapture(e.pointerId); } catch (err) { /* a synthetic or ended pointer */ } cv.style.cursor = 'grabbing'; });

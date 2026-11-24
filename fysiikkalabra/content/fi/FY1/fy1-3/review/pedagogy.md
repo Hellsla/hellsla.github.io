@@ -1,23 +1,23 @@
 VERDICT: PASS
-CONTENT-HASH: 25b3b9bd9015b47f
+CONTENT-HASH: e33eeabe0760019d
 
 ## Blocking
+(none)
 
 ## Polish
-- lesson.md:231 and inquiry.json (task "siirto", hint 3 and solution) — display math `$$...$$` sits mid-sentence and is followed by ", joten" or "." — end the sentence before the display block or use inline math, so the sentence does not break around the block.
-- inquiry.json pred-1, first option — "vaikka yksittäiset tulokset heittelevät edelleen" already states half of what exp-1's question asks (the range does not shrink). Predictions reopen after the investigation, so this is not wrong; consider ending the option at "Keskiarvo lähestyy oikeaa aikaa" and leaving the scatter to the other options.
-- inquiry.json exp-2 question, hint 3 — "Jos keskiarvo on 2,70 s" gives the table value the student was asked to read. Acceptable as the last hint; rewrite as "Lue rivin $n = 40$ keskiarvo ja vähennä siitä $2{,}40\,\text{s}$" if you want the reading kept.
-- Workload — three experiments (one optional), a data task, a rough-error task, a transfer task, three checks and an exit ticket, beyond the slot's goals (rough error, resolution, relative uncertainty, rounding rule). Everything is reachable and optional pieces are marked; if time is short, trim exp-3 or the rounding paragraph first.
-- inquiry.json check-c2 — "Resoluutio ja epävarmuus" assumes resoluutio from lesson.md:180 only; it is not in the lesson's glossary list above. Add resoluutio and oikeellisuus to glossary.json if not already there.
+- inquiry.json pred-2, correct choice: it is the longest option and already contains the reasoning ("satunnainen osa vaimenee, mutta systemaattinen virhe jää"), and the prompt hands over the $0{,}30\,\text{s}$ shift. Make the options equally long and keep the reasoning in the justification box and in the feedback.
+- inquiry.json "karkea": the data reuse the worked example's six readings with $3{,}31\,\text{s}$ changed to $4{,}31\,\text{s}$. Use a new series so the task does not look like the example.
+- lesson.md "Kaava: Keskiarvo ja virhearvio": one section carries the mean, range half, rounding, reading uncertainty $d/2$, resolution, relative uncertainty and the systematic correction (about 600 words). It fits one hour only because of the pysahdy checks. Consider "###" subheadings (Pyöristys, Lukeman epävarmuus, Systemaattisen virheen korjaus) so the student can find each idea.
+- inquiry.json exp-3 (optional): the numeric answer $6{,}2$ with tolerance $0{,}03$ is very tight for a value read off a rounded table. Use 0,1.
+- lesson.md Yleinen virhekäsitys: three misconceptions in one paragraph of over 120 words. Split it into a list.
 
 ## Checked
-- Opening question (ten results from one clock; how to trust a result and spot a shared fault) is answered by the experiments, the theory and the reflect task, only after the student has predicted.
-- Retrieval item ties to the same phenomenon (2,40 s on the clock) and its wrong options repair real misconceptions.
-- Predictions refutable by exp-1 and exp-2; feedback names the evidence; options are not lettered in references.
-- Worked example: staged, symbolic first; sum 19,09 s, mean 3,18 s, 0,12 s, 3,8 % and the interval check (five of six) all agree.
-- Rough-error choice numbers verified (shift of the mean about 0,2 s; estimate 0,09 s to 0,62 s).
-- Aineisto (thermometer in ice water) mean 1,5 and half-range 0,1 verified; it tests the systematic-error idea on a table.
-- Transfer task (5,44 g) and its mistake values (5,6; 27,2; 4,8; 28) match the solution; check-2 answer 2,08 with tolerance 0,1 accepts the stated 2 %, now consistent with the rounding rule.
-- Exit ticket tests the core idea (dominant error, why averaging works for one only, relative uncertainty); solutions complete.
-- Finnish read: no case or glossary errors found; model values are called model values in sim text and conclusion.
-- Captures not opened; the packet's mechanics checks cover phone layout.
+- Path: the prerequisite (significant figures) is retrieved through the opening situation. The hook's question (reliable result, and how to know the clock is wrong for everyone) is answered only in reflect and johtopaatos, after the student has acted.
+- The slot's goals are covered (random and systematic error, repeatability, gross error). The relative uncertainty and rounding rules are a little beyond the slot but are used in the example, the check and the exit ticket.
+- pred-1 and pred-2 can be refuted by exp-1 and exp-2. Each wrong option's feedback repairs its misconception, and the right ones cite the table values. Variables are locked correctly (n varied, sat and sys locked). I checked the numbers: $-0{,}22\,\text{s}$ at n=1 matches the sim capture.
+- The sim at 390 and 1280 px is legible. The controls sit next to the readout, the three boxes hold the text, and the speed control is present. The model's $T$ is labelled as the model's value.
+- The experiment cards show Alkutila, Vakiona and Muutetaan in separate rows, and the table is clear.
+- Figure "error-types" (390 px) is readable, with a scale, colour plus label, and no answer given away.
+- The worked example has seven stages with correct arithmetic ($19{,}09\,\text{s}$, $3{,}18\,\text{s} \pm 0{,}12\,\text{s}$, $3{,}8\,\%$) and a justified sanity check.
+- The thermometer data task and the checks use misconception-based distractors. The explain criteria are observable and match the prompt. check-c2 tests resolution against uncertainty well.
+- The exit ticket tests the core idea (systematic correction, why the mean helps only against random error, relative uncertainty). Finnish is correct, with the terms from the glossary.

@@ -131,7 +131,6 @@ new p5((p) => {
     selGo.option(__('siirry_valitse'), '');
     OBJ.map((o, i) => i).sort((a, b) => OBJ[a].logExt - OBJ[b].logExt).forEach((i) => selGo.option(__('o_' + OBJ[i].id), OBJ[i].id));
     selGo.elt.addEventListener('change', () => { const o = OBJ.find((x) => x.id === selGo.value()); if (o) goTo(o.logExt - Math.log10(150 / VIEW)); selGo.selected(''); });
-    p.createP(__('kartta_ohje')).parent('sim-root').class('note');
     p.textFont('Arial');
     // direct manipulation: drag the picture, drag along the map, wheel and keys once the canvas has the focus
     cv.elt.tabIndex = 0; cv.elt.style.touchAction = 'pan-y'; cv.elt.style.cursor = 'grab';

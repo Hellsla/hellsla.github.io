@@ -219,7 +219,7 @@
             "feedback": "Oikein. Satunnaisvirheessä poikkeamat vaihtelisivat molempiin suuntiin sattumanvaraisesti. Kun ne muodostavat kuvion (päissä ylös, keskellä alas), riippuvuus on kaareva eikä lineaarinen malli sovi."
           },
           {
-            "text": "Ei sovi, koska mikään suora ei kulje kaikkien pisteiden kautta, vaikka mittaukset olisivat tarkkoja.",
+            "text": "Ei sovi, koska mikään suora ei kulje kaikkien pisteiden kautta.",
             "feedback": "Mitatussa aineistossa suora ei yleensä kulje kaikkien pisteiden kautta, koska mittauksissa on satunnaisvirhettä. Sopivuuden ratkaisee se, ovatko poikkeamat satunnaisia vai muodostavatko ne kuvion."
           },
           {
