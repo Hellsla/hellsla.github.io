@@ -1,23 +1,22 @@
 VERDICT: PASS
-CONTENT-HASH: 65fc756e7f0609a4
-
-Scope (teacher 2026-11-20): only the four new ```pysahdy blocks, round 2. The round 1 blocking item (broken `<figure>` tag) is fixed; the tag is now correct.
+CONTENT-HASH: b3bf46f46d777be7
 
 ## Blocking
-(none)
 
 ## Polish
-- lesson.md, block 2 (putoavan magneetin vauhti kasvaa) — the block sits after the train-brake photo, three elements away from the tube paragraph and figure it tests, so the photo of another device interrupts the question — move the block directly after the `tube` figure, before the photo (the photo then opens the next subsection's idea).
-- lesson.md, block 2 — the question only recalls a sentence of the preceding paragraph (force grows with speed); a stronger version asks what follows: "Mitä tapahtuu lopulta, kun jarruttava voima kasvaa?" (terminal speed). Optional.
-- lesson.md, block 3 (teho) — the answer says "F on yhtä suuri kuin paino" without the reason; add "koska vauhti on tasainen ja kokonaisvoima on nolla".
-- lesson.md, block 3 — same method and unit as the later check "Laske: lämmitysteho" (mg·v); fine as scaffolding, but keep the check's numbers different (they are: 18 g, 0,24 m/s).
-
-## Vanhan sisällön löydökset
-(none that stop the blocks working; the photo's position before the tube-related block is old content)
+- lesson.md (figure `scene`, after Tiivistelmä) — the induction-hob figure is not beside the paragraph "Pyörrevirtajarru, induktioliesi ja metallinilmaisin" and appears in none of the 73 captures (apparently inside the closed Tiivistelmä) — move it right after that paragraph, or drop it.
+- inquiry.json `ennuste-rako` — the correct option states the mechanism ("rako katkaisee putken ympäri kiertävät virrat"), while the distractors state none, so the right answer can be picked from its wording alone; the pyörrevirta theory also comes after the prediction — give all three options a mechanism, e.g. "koska raon reunoille syntyy lisää virtoja" next to "koska kuparia on yhä yhtä paljon".
+- inquiry.json `ennuste-putket` — the prompt's remark "Kupari johtaa paremmin kuin alumiini" nearly gives the copper vs aluminium order — drop the remark and let the feedback bring conductivity in.
+- inquiry.json koe-1 — the steel piece (the second half of the hook) and Lenz's direction are covered by no experiment (koe-1 and koe-2 lock `kappale` to the magnet); the reflection asks about the steel nut without any data — add an optional run of the steel piece or give the reflection its own cue ("kokeile Pudota-painiketta teräskappaleella").
+- lesson.md "Yleinen virhekäsitys" — "magnetoimaton teräskappale" (steel is ferromagnetic, so this is "an unmagnetised steel piece") can leave the impression that the nut is non-ferromagnetic — write "magnetisoimaton (magneetiksi muuttumaton) teräskappale" once.
 
 ## Checked
-- Block 1 (S-napa, rengas): follows the figure, tests transfer from N to S, answer correct and reasoned.
-- Block 3: calculation rechecked, 0,196 N and 0,059 W, two significant figures, units in LaTeX.
-- Questions come before the answer; answer is behind "Vastaus"; no commitment gate needed, no answer leaked.
-- Each block is answerable from the paragraph just read, one idea, short; no extra workload.
-- Finnish, glossary terms and sisäenergia wording fine; no "lämmöksi".
+- Learning path: ring (Lenz direction) → energy → eddy currents → applications → thin-plate core. Goals of the slot only, and the opening question gets its answer in the conclusion and the reflection.
+- Predictions can be argued about before the evidence (three tubes, slot). The feedback names the model values and repairs each misconception; both experiments vary one thing and lock the piece.
+- The sim is a model with a stated assumption (F = kv); numbers called model values. At 390 px the picture, graph, bars and controls are clear and the explanations sit in closed boxes.
+- Figure physics checked from the aria-labels: ring and tube current and field directions are consistent with Lenz's law and the right-hand rule; energy bars to scale (0,2 mJ).
+- Worked example: seven stages, one step each; principle before formula; the v = h/t shortcut is justified ("lähes koko matkan tasaisella vauhdilla").
+- The transfer task (roller-coaster brake) is new, with three progressive hints and real mistake values (25, 9, 42 verified); the check numbers are correct (42 mW).
+- Check 1 and the "Etsi virhe" distractors are misconception-based; the explain criteria are observable and match the questions; the exit ticket tests direction (pulling) and the core idea (laminated core).
+- Finnish: case after number+unit correct (`$0{,}45\,\text{s}$`:ssa), glossary terms used; "sisäenergia" and no "lämmöksi". Workload one lesson.
+- The exercises were not judged (they are reviewed apart).
