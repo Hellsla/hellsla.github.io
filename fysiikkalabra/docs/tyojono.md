@@ -126,6 +126,7 @@ PR 4b (#834): uudet käyttöliittymätekstit ja kuvat hyväksytty: opettaja 2026
 PR 5 (#836, vaikea ratkaisuvaihe ja toistuvat virheet): uudet käyttöliittymätekstit ja kuvat hyväksytty: opettaja 2026-11-24 tekijäsessioon ("Hyväksyn tekstit ja kuvat"). Jäljellä: PR 6–8.
 Varattu: claude/11b-pr6-koetila (PR 6 koetila ja minikokeet 30/60 min, harjoituskokeen koetila)
 PR 6 (#847, koetila ja minikokeet): uudet käyttöliittymätekstit ja kuvat hyväksytty: opettaja 2026-11-24 tekijäsessioon ("Hyväksyn tekstit ja kuvat").
+PR 7b (jaettu, PR 7:n jälkeen, ennen PR 8:aa): valmentajan "Aloita diagnoosilla" vie nyt `fy9-koe.html`:n alkuun; linkin pitää viedä suoraan 24 kohdan diagnoosiin (osio 5 Esimerkit, `testi-1`). Muutos `valmentaja.py`:n `data-diag`-arvoon (ankkuri), ei uutta tekstiä. **Opettaja 2026-11-24 ("go with your recommendations")**.
 
 ## 17. Kehitys ilman kirjautumista (opettaja 2026-11-15)
 17a PR 1 (#720) ja PR 2 (#741, manifesti ja pysyvä tallennus) sekä 17b PR 1 (#818, koko työ yhteen tiedostoon; tekstit opettaja 2026-11-23) tehty; webkit.org sallittu ympäristöön 2026-11-19, opettajan luvalla.
