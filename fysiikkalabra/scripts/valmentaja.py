@@ -184,7 +184,7 @@ def languages():
 
 # ---- the pages (work queue 11b PR 4; plan 6.1-6.2): the coach page and the row and tile on the course page ---------------
 PAGE = "FY9-valmentaja.html"
-UI_KEYS = ("diag", "min", "why_stale", "why_wrong", "why_new", "why_more", "basis", "own", "note", "row_one", "row_n", "go", "clear", "clear_confirm", "nostore", "goal_h", "goal_lead", "goal_none", "goal_LE", "goal_MC", "goal_BA", "courses_h", "courses_lead", "courses_none", "set_note")
+UI_KEYS = ("diag", "min", "why_stale", "why_wrong", "why_new", "why_more", "basis", "own", "note", "row_one", "row_n", "go", "clear", "clear_confirm", "nostore", "goal_h", "goal_lead", "goal_none", "goal_LE", "goal_MC", "goal_BA", "courses_h", "courses_lead", "courses_none", "set_note", "steps_h", "mistakes_h", "mistakes_n")
 STATES = ("none", "few", "practise", "growing", "strong", "strongdue")
 
 
@@ -193,9 +193,26 @@ def _esc(s):
     return html.escape(str(s), quote=True)
 
 
+STEP_IDS = ("tulkinta", "annettu", "periaate", "kaava", "muunnokset", "sijoitus", "vastaus", "jarkevyys", "kuvaaja")
+STEP_NAMES = {"annettu": "Annettu", "periaate": "Periaate", "kaava": "Kaava", "muunnokset": "Muunnokset", "sijoitus": "Sijoitus",
+              "vastaus": "Vastaus", "jarkevyys": "Järkevyys", "kuvaaja": "Kuvaaja"}   # the page's own names of a solution's steps (practice.step_names)
+
+
+def step_labels(T):
+    """{step id: label} of the fixed list of "the hardest step" (PR 5): the names the solution itself shows, and one new one, the reading of the task."""
+    names = T("practice.step_names")
+    return {i: (T("coach.step_tulkinta") if i == "tulkinta" else names.get(STEP_NAMES[i], STEP_NAMES[i])) for i in STEP_IDS}
+
+
+def unit_json(T):
+    """The texts of the "Mikä vaihe oli vaikein?" row on a unit page (data-t of its script tag)."""
+    return _esc(json.dumps({"q": T("coach.hard_q"), "steps": step_labels(T)}, ensure_ascii=False))
+
+
 def ui_json(T):
     """The texts the script shows, as the JSON in data-t (T: the build's translator)."""
     t = {k: T("coach." + k) for k in UI_KEYS}
+    t["steps"] = step_labels(T)
     t.update({"state_" + s: T("coach.state_" + s) for s in STATES})
     t["comp"] = {c: T("competency." + c) for c in practice.framework()["competencies"]}
     t["chapter"] = T("site.chapter_n", n="{n}")
@@ -207,7 +224,7 @@ def index_script(index):
     return '<script type="application/json" id="fy9-index">' + dumps(index).strip().replace("</", "<\\/") + "</script>"
 
 
-def page_body(T, index, course_page):
+def page_body(T, index, course_page, lang=None):
     """The coach page: heading, the next tasks, the competency areas and the data row, filled by templates/valmentaja.js; without the
     script it says so and links to the lessons and the task mixer (plan 7.3)."""
     return (f'<h1>{T("coach.title")}</h1>'
@@ -217,7 +234,35 @@ def page_body(T, index, course_page):
             f'<p class="coach-free"><a href="yo-sekoitin.html">{T("coach.free")}</a> · <a href="{course_page}">{T("site.back_to_course", course="FY9")}</a></p></section>'
             f'<details class="coach-set" id="coach-set" hidden><summary>{T("coach.goal_h")}</summary><div class="coach-set-body"></div></details>'
             f'<details class="coach-areas" id="coach-areas" hidden><summary>{T("coach.areas")}</summary><div class="coach-areas-body"></div></details>'
-            f'<div class="coach-data" id="coach-data"></div></div>' + index_script(index) + '<script src="valmentaja.js"></script>')
+            f'<details class="coach-areas" id="coach-steps" hidden><summary>{T("coach.steps_h")}</summary><div class="coach-steps-body"></div></details>'
+            f'<details class="coach-areas" id="coach-mistakes" hidden><summary>{T("coach.mistakes_h")}</summary><div class="coach-mistakes-body"></div></details>'
+            f'<div class="coach-data" id="coach-data"></div></div>' + index_script(index) + (mistakes_script(lang, index) if lang else "") + '<script src="valmentaja.js"></script>')
+
+
+def mistakes_data(lang, index):
+    """{task id: [feedback of the option logged as number i]}: the existing, reviewed feedback of every wrong option and common mistake of the
+    index's tasks (plan 4.2: no new text). A number task's number i is its i-th common mistake; a choice's is the position the option was shown in
+    (inquiry.choice_order). Embedded in the coach page so that it shows the feedback again without a request."""
+    import inquiry
+    have = {t["id"] for t in index["tasks"]}
+    out = {}
+    for u in index["units"]:
+        uid = u["id"]
+        for a in json.loads((units.folder(uid, lang) / "inquiry.json").read_text(encoding="utf-8"))["activities"]:
+            key = f"{uid}#{a['id']}"
+            if key not in have: continue
+            if a["type"] == "choice":
+                fb = [c["feedback"] for c in inquiry.choice_order(a["choices"], uid, a["id"])]
+            elif a["type"] == "numeric":
+                fb = [m.get("feedback", "") if isinstance(m, dict) else "" for m in a.get("mistakes", [])]
+            else:
+                continue
+            if any(fb): out[key] = fb
+    return out
+
+
+def mistakes_script(lang, index):
+    return ('<script type="application/json" id="fy9-mistakes">' + json.dumps(mistakes_data(lang, index), ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/") + "</script>")
 
 
 def row_html(T, index):
