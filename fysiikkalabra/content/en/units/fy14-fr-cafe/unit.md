@@ -33,6 +33,12 @@ A visit to a café follows a simple order, and each step has its own phrase.
 **Coffee words.** *<span lang="fr">Un café</span>* is a small cup of strong black coffee. *<span lang="fr">Un café crème</span>* has milk or cream,
 *<span lang="fr">un café noisette</span>* a little milk foam, and *<span lang="fr">un café allongé</span>* is a longer, weaker coffee.
 
+```pysahdy
+You have finished your coffee and the waiter has not brought the bill. What do you say, and why do you not need to hurry the waiter?
+---
+You say <span lang="fr">L'addition, s'il vous plaît.</span> In France the waiter usually does not hurry you, and the bill often comes only when you ask for it.
+```
+
 ## Polite ordering
 
 The waiter is an adult you do not know, so you use **<span lang="fr">vous</span>**, even if you are only two teenagers at the table.
@@ -41,6 +47,12 @@ With your friend you say **<span lang="fr">tu</span>**: <span lang="fr">Tu prend
 The most useful polite form is **<span lang="fr">je voudrais</span>** (I would like). <span lang="fr">Je veux</span> (I want) is grammatically correct, but to
 a waiter it sounds like a demand, as *I want* does in English. Short orders are fine when they end politely:
 <span lang="fr">Un café, s'il vous plaît.</span>
+
+```pysahdy
+Why is <span lang="fr">Je voudrais un café</span> better than <span lang="fr">Je veux un café</span> when you speak to a waiter?
+---
+<span lang="fr">Je veux</span> (I want) is correct but sounds like a demand, as in English. <span lang="fr">Je voudrais</span> (I would like) is the polite form.
+```
 
 <div class="fx" data-fx="say" id="fx-say-cafe-sounds"><script type="application/json">{"phrases": [{"fr": "Je voudrais un café, s'il vous plaît.", "en": "I would like a coffee, please.", "tip": "*žö vu-DRÈ ẽ ka-FE, sil vu PLÈ*: the *s* of *{fr}vous{/fr}* is silent before a consonant."}, {"fr": "L'addition, s'il vous plaît.", "en": "The bill, please.", "tip": "*la-di-SJÕ*: *{fr}-tion{/fr}* sounds like *sjõ*, with a nasal *õ*."}, {"fr": "Un croissant et un jus d'orange.", "en": "A croissant and an orange juice.", "tip": "*ẽ krwa-SÃ e ẽ žy do-RÃŽ*: the *t* of *{fr}croissant{/fr}* and *{fr}et{/fr}* is silent."}]}</script></div>
 

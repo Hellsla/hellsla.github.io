@@ -1,17 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: ad7141695fb701d6
+CONTENT-HASH: e1c14049ce6a5690
+SCOPE: delta (Stop and think boxes only, git diff origin/main)
 
-Delta review of the editorial correction 57b67249 in "Why you understand more than you think": "You already know thousands of French words without having studied them." → "You can already recognise many French words, especially through English, Swedish and international scientific vocabulary." Nothing else changed.
-
-## Blocking
-
-None.
-
-## Polish
-
-1. (Carried over, still open) `fx-say-article`, line 4: *C'est une expérience* respelled *se-ty-neks-…*; elsewhere *c'est* is *sè*. Write *sè-ty-nèks-pe-RJÃS sjã-ti-FIK*.
-
-## Checked
-
-- Fact: the new sentence removes an unquantified claim ("thousands … know") and says something defensible: recognition of French words through English (large French/Latin borrowing), Swedish loans (*trottoar*, *paraply*, *byrå*) and international scientific terms, which the examples that follow illustrate. The examples are unchanged and correct.
-- No French text, task answer or ITER/CEA fact changed; the previous checks stand.
+1. Blocking: none
+2. Checked: Box (after the five strategies list): réacteur via the word-ending strategy, -eur = -or, so reactor. Correct, and réacteur is the text's own example for strategy 3. Markup (span lang, em, non-breaking hyphen) well formed. Polish: strategy 2 (look-alike words) also gives the meaning, so 'which strategy' has a second defensible answer; the model answer is still right, not blocking.

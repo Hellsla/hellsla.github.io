@@ -51,6 +51,12 @@ In a **pinch**, a strong current flows through the plasma itself. The current ma
   <foreignObject x="117.5" y="321.5" width="33" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{F}$</div></foreignObject>
 </svg>
 
+```pysahdy
+In a Z-pinch the current flows along the plasma column. Why does this squeeze the plasma towards the axis?
+---
+The current produces a magnetic field that circles around the column. The magnetic force on the moving charges is directed towards the axis.
+```
+
 In 1951 **Lyman Spitzer**, a Princeton astronomer, read about Richter's claim and doubted it. He then designed a different magnetic bottle, the **stellarator**: a tube bent into a figure-eight, so that the slow sideways drift of the particles in one half of the loop cancels the drift in the other half. The Atomic Energy Commission gave him 50,000 dollars, and his secret Project Matterhorn later became the Princeton Plasma Physics Laboratory. Its first small machine, Model A, ran in 1953. In Moscow, Tamm and Sakharov's ring became the **tokamak**, a ring with both a strong magnetic field from outside coils and a current in the plasma. The first true tokamak, T-1, started at the end of 1958.
 
 ## ZETA: a headline and a correction {ZETA}
