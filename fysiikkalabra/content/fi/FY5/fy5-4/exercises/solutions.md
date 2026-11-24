@@ -122,7 +122,7 @@ akselit 0
 **Kaava:** $$\begin{aligned} \Sigma F_y &= 0 \Rightarrow N = mg \\ F_\mu &= \mu_0 N = \mu_0 mg \\ F_\mu &= m a_\text{n} = m\dfrac{v^2}{r} \\ v^2 &= \mu_0 g r \\ v &= \sqrt{\mu_0 g r} \end{aligned}$$
 **Muunnokset:** Tulos muutetaan lopuksi yksikköön $\text{km/h}$: $1\,\text{m/s} = \dfrac{0{,}001\,\text{km}}{\tfrac{1}{3600}\,\text{h}} = 3{,}6\,\text{km/h}$.
 **Sijoitus:** $v = \sqrt{0{,}10\cdot 9{,}81\,\text{m/s}^2\cdot 60\,\text{m}} = \sqrt{58{,}86\,\text{m}^2/\text{s}^2} = 7{,}672\,\text{m/s} = 7{,}672\cdot 3{,}6\,\text{km/h} = 27{,}62\,\text{km/h}$
-**Vastaus:** $28\,\text{km/h}$, kaksi merkitsevää numeroa kuten säteessä $60\,\text{m}$ ja kertoimessa $0{,}10$.
+**Vastaus:** $27\,\text{km/h}$. Tarkka arvo on $27{,}62\,\text{km/h}$, ja kaksi merkitsevää numeroa on kuten säteessä $60\,\text{m}$ ja kertoimessa $0{,}10$. Kyse on suurimmasta sallitusta nopeudesta, joten raja pyöristetään alaspäin: $28\,\text{km/h}$ ylittäisi rajan.
 **Järkevyys:** Jäällä kaarteeseen on ajettava hyvin hitaasti, ja kuivalla asfaltilla ($\mu_0 \approx 0{,}8$) sama kaarre onnistuisi $\sqrt{8} \approx 2{,}8$ kertaa suuremmalla nopeudella, noin $78\,\text{km/h}$. Massa supistui, joten raskaskaan auto ei pysy kaarteessa paremmin.
 
 ## fy5-4-L3-02
@@ -160,7 +160,7 @@ akselit 0
 **Kaava:** $$\begin{aligned} \Sigma F_y &= 0 \Rightarrow N = mg \\ F_\mu &= m a_\text{n} = m\dfrac{v^2}{r} \\ F_\mu &\le 0{,}25\,mg \\ r &\ge \dfrac{v^2}{0{,}25\,g} \end{aligned}$$
 **Muunnokset:** $v = 80\,\text{km/h} = \dfrac{80\cdot 1000\,\text{m}}{3600\,\text{s}} = 22{,}22\,\text{m/s}$
 **Sijoitus:** $r = \dfrac{(22{,}22\,\text{m/s})^2}{0{,}25\cdot 9{,}81\,\text{m/s}^2} = \dfrac{493{,}8\,\text{m}^2/\text{s}^2}{2{,}4525\,\text{m/s}^2} = 201{,}4\,\text{m}$
-**Vastaus:** $200\,\text{m}$ eli $2{,}0 \cdot 10^{2}\,\text{m}$, kaksi merkitsevää numeroa kuten nopeudessa $80\,\text{km/h}$ ja kertoimessa $0{,}25$.
+**Vastaus:** $210\,\text{m}$ eli $2{,}1 \cdot 10^{2}\,\text{m}$. Tarkka arvo on $201{,}4\,\text{m}$, ja kaksi merkitsevää numeroa on kuten nopeudessa $80\,\text{km/h}$ ja kertoimessa $0{,}25$. Kyse on pienimmästä sallitusta säteestä, joten raja pyöristetään ylöspäin: $200\,\text{m}$ jäisi rajan alle.
 **Järkevyys:** Maantien kaarteiden säteet ovat satoja metrejä, joten tulos on uskottava. Säde kasvaa nopeuden neliön mukana: nopeudelle $120\,\text{km/h}$ tarvittaisiin $2{,}25$-kertainen säde, noin $450\,\text{m}$. Massa supistui, joten sama säde riittää kaikille autoille.
 
 ## fy5-4-L1-06

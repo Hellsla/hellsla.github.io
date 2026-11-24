@@ -87,7 +87,44 @@
     const result = Math.round(100 * Math.max(0, Math.min(1, det.got / det.max))) / 100;
     log([now(), k, 's', result, firstOf(d, k, 's') ? 1 : 0, opened(det.id), null, 'p'], true);   // changing the points revises the same assessment
   });
-  window.flValmentaja = { KEY, unit, read, write, canStore: () => canStore };
+  // "Mikä vaihe oli vaikein?" (PR 5, plan 6.3): once a number task's solution or a long task's model answer is open, an optional row of chips from a fixed
+  // list; a chip pressed again is taken back. Kept in the same key as steps { "<task key>": ["sijoitus", ...] }, on this device only, never
+  // in the teacher's view (palautus_tasks.py takes every details out of a task). The row is made when the solution first opens, so the page is as
+  // before until then; where nothing can be stored (read gives null) there is no row.
+  const SCRIPT = document.currentScript;
+  const STEPS = ['tulkinta', 'annettu', 'periaate', 'kaava', 'muunnokset', 'sijoitus', 'vastaus', 'jarkevyys', 'kuvaaja'];
+  const stepsOf = (d, k) => (d && d.steps && typeof d.steps === 'object' && Array.isArray(d.steps[k]) ? d.steps[k].filter((x) => STEPS.includes(x)) : []);
+  const setStep = (k, id, on) => {
+    const d = read(); if (!d) return false;
+    const steps = d.steps && typeof d.steps === 'object' && !Array.isArray(d.steps) ? d.steps : {};
+    const mine = new Set(stepsOf({ steps }, k)); on ? mine.add(id) : mine.delete(id);
+    if (mine.size) steps[k] = STEPS.filter((x) => mine.has(x)); else delete steps[k];
+    if (Object.keys(steps).length) d.steps = steps; else delete d.steps;
+    return write(d);
+  };
+  let UI = null; try { UI = JSON.parse(SCRIPT && SCRIPT.dataset.t || 'null'); } catch (e) { UI = null; }
+  if (UI && UI.steps) document.addEventListener('toggle', (e) => {
+    const box = e.target;
+    if (!unit || !box || !box.matches || !box.open || box.querySelector('.hardstep')) return;
+    if (!box.matches('details.solution') && !box.matches('.practice-task > details.reveal')) return;
+    const task = box.closest(TASK); if (!task || !task.id || !read()) return;
+    const k = taskKey(task.id), row = document.createElement('div'), q = document.createElement('p'), chips = document.createElement('div');
+    row.className = 'hardstep'; row.setAttribute('role', 'group'); q.className = 'hardstep-q'; q.id = 'hs-' + task.id; q.textContent = UI.q;
+    row.setAttribute('aria-labelledby', q.id); chips.className = 'hardstep-chips';
+    for (const id of STEPS) {
+      const b = document.createElement('button'), on = stepsOf(read(), k).includes(id);
+      b.type = 'button'; b.className = 'hardstep-chip'; b.dataset.step = id; b.textContent = UI.steps[id] || id; b.setAttribute('aria-pressed', on ? 'true' : 'false');
+      b.addEventListener('click', () => {
+        const want = b.getAttribute('aria-pressed') !== 'true';
+        if (setStep(k, id, want)) b.setAttribute('aria-pressed', want ? 'true' : 'false');
+      });
+      chips.append(b);
+    }
+    row.append(q, chips);
+    const into = box.querySelector(':scope > .reveal-body') || box, rub = into.querySelector(':scope > .rubric');   // a long task: before the points the student gives, after the solution
+    rub ? into.insertBefore(row, rub) : into.append(row);
+  }, true);
+  window.flValmentaja = { KEY, unit, read, write, canStore: () => canStore, stepsOf, STEPS };
 })();
 
 /* (e) the goal and the courses taken (work queue 11b PR 4b, P13): the student's own two settings under the key ruukkilabra:fy9-tavoite
@@ -273,7 +310,26 @@
   const fits = (goal, t) => (goal === 'BA' ? t.check === 'auto' && t.kind !== 'long' : goal === 'LE' ? ['long', 'explain', 'interpret'].includes(t.kind) : false);
   const LIMIT_OF = { BA: { long: 0 }, MC: { long: 2, short: 2 }, LE: { plain: 1 } };
   const klass = (t) => [t.kind === 'long' ? 'long' : 'short', t.kind === 'choice' || t.kind === 'numeric' ? 'plain' : ''];
-  window.flCoach = { cells, recommend, compact, evidence, today, COMPS, readSet, writeSet, within, SET_KEY, GOALS };
+  // the mistakes that came back (PR 5, plan 6.2.3): a wrong option or a common mistake counts when the same one was hit at least twice, in any attempt;
+  // options that the side file groups as one misconception (index.misconceptions, "<task>/<number>") count together. [{task, n, mistake, grp}] most
+  // often first, a tie by the latest hit; the page shows the existing feedback of that option, nothing new
+  const repeated = (log, index) => {
+    const by = new Map(index.tasks.map((t) => [t.id, t])), grp = new Map();
+    for (const [name, g] of Object.entries(index.misconceptions || {})) for (const it of (g && g.items) || []) grp.set(it, name);
+    const hit = new Map();
+    log.forEach((r, i) => {
+      if (!Number.isInteger(r[6]) || !by.has(r[1])) return;
+      const pair = r[1] + '/' + r[6], key = grp.get(pair) || pair, h = hit.get(key) || { n: 0 };
+      h.n++; h.last = i; h.task = r[1]; h.mistake = r[6]; hit.set(key, h);
+    });
+    return [...hit.values()].filter((h) => h.n >= 2).sort((a, b) => b.n - a.n || b.last - a.last);
+  };
+  // the steps the student marked as the hardest, in the order of the list: [[step, [task id, ...]], ...] (a task the index no longer knows is left out)
+  const hardSteps = (d, index) => {
+    const known = new Set(index.tasks.map((t) => t.id)), s = d && d.steps && typeof d.steps === 'object' ? d.steps : {};
+    return V.STEPS.map((id) => [id, Object.keys(s).filter((k) => known.has(k) && Array.isArray(s[k]) && s[k].includes(id))]).filter((x) => x[1].length);
+  };
+  window.flCoach = { cells, recommend, compact, evidence, today, COMPS, readSet, writeSet, within, SET_KEY, GOALS, repeated, hardSteps };
 
   // ---- (d) the views ----
   const el = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; };
@@ -371,6 +427,39 @@
     const note = el('p', 'notice', T.nostore); note.hidden = true;
     set.querySelector('.coach-set-body').replaceChildren(goals, cs, el('p', 'coach-note', T.set_note), note);
     set.hidden = false;
+  }
+
+  // the hard steps and the repeated mistakes: shown only when there is something, and only what the student did or chose; the feedback is the page's own
+  const taskOf = (id) => index.tasks.find((x) => x.id === id);
+  const stepBox = document.getElementById('coach-steps');
+  if (stepBox) {
+    const hs = hardSteps(d, index);
+    if (hs.length) {
+      const ul = el('ul', 'coach-steplist');
+      for (const [id, ids] of hs) {
+        const li = el('li'), names = el('span', 'coach-step', (T.steps || {})[id] || id);
+        li.append(names, document.createTextNode(': '));
+        ids.forEach((tid, i) => { const t = taskOf(tid), a = el('a', '', t.title); a.href = t.href; if (i) li.append(document.createTextNode(', ')); li.append(a); });
+        ul.append(li);
+      }
+      stepBox.querySelector('.coach-steps-body').replaceChildren(ul);
+      stepBox.hidden = false;
+    }
+  }
+  const missBox = document.getElementById('coach-mistakes');
+  if (missBox) {
+    const feedback = json('fy9-mistakes') || {}, plain = (x) => String(x).replace(/\[([^\]]*)\]\([^)]*\)/g, '$1').replace(/\*/g, '');
+    const list = repeated(d.log, index).filter((h) => feedback[h.task] && feedback[h.task][h.mistake]);
+    if (list.length) {
+      const ul = el('ul', 'coach-misslist');
+      for (const h of list) {
+        const t = taskOf(h.task), li = el('li'), a = el('a', 'coach-task', t.title); a.href = t.href;
+        li.append(a, el('span', 'coach-where', where(t)), el('span', 'coach-min', fmt(T.mistakes_n, { n: h.n })), el('p', 'coach-feedback', plain(feedback[h.task][h.mistake])));
+        ul.append(li);
+      }
+      missBox.querySelector('.coach-mistakes-body').replaceChildren(ul);
+      missBox.hidden = false;
+    }
   }
 
   const keep = document.getElementById('coach-data');

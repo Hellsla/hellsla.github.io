@@ -2337,6 +2337,19 @@ main.home>.resume{margin:0 0 1rem}
 .s-strong .coach-mark,.s-strongdue .coach-mark{color:var(--accent-deep)}
 .s-practise .coach-word{text-decoration:underline;text-decoration-thickness:2px}
 .coach-note{margin:.8rem 0 0;color:var(--ink-2);font-size:var(--fs-small)}
+.hardstep{margin:1rem 0;padding-top:.8rem;border-top:1px solid var(--line-2)}
+.hardstep-q{margin:0 0 .4rem;font:600 var(--fs-ui) var(--sans);color:var(--ink-2)}
+.hardstep-chips{display:flex;flex-wrap:wrap;gap:.5rem}
+.hardstep-chip{display:inline-flex;align-items:center;gap:.4rem;min-height:44px;padding:0 1rem;border:1px solid var(--line);border-radius:999px;background:var(--surface);color:var(--ink);font:500 var(--fs-ui) var(--sans);cursor:pointer}
+.hardstep-chip:hover{border-color:var(--accent-deep)}
+.hardstep-chip[aria-pressed="true"]{background:var(--accent-deep);border-color:var(--accent-deep);color:#fff;font-weight:700}
+.hardstep-chip[aria-pressed="true"]::before{content:"✓"}
+.coach-steplist,.coach-misslist{list-style:none;margin:.5rem 0 0;padding:0;display:grid;gap:.7rem}
+.coach-steplist li{font-size:var(--fs-ui);line-height:1.5}
+.coach-steplist a{display:inline-flex;align-items:center;min-height:40px}
+.coach-step{font-weight:700}
+.coach-misslist li{display:grid;grid-template-columns:1fr auto;gap:.15rem .8rem;padding:.8rem 1rem;background:var(--surface);border:1px solid var(--line);border-radius:12px}
+.coach-feedback{grid-column:1/-1;margin:.2rem 0 0;font-size:var(--fs-ui);line-height:1.5}
 .coach-set{margin:1.4rem 0 0}
 .coach-set[hidden]{display:none}
 .coach-set>summary{font:700 var(--fs-h3) var(--sans);cursor:pointer;min-height:44px;display:flex;align-items:center}
