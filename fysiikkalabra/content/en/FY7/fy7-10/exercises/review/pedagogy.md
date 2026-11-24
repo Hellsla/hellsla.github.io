@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: e4f008bdc749a0ff
+CONTENT-HASH: 704b4f14fe8576b4
+SCOPE: delta numbers,teacher-figure from e4f008bdc749a0ff base 146d1b7
 
 ## Blocking
+- none
 
 ## Polish
-- solutions.md:116 — the row `n = c/v` sits between the two laws without saying it is substituted into the first; "n = c/v, so n_1 = c/v_1 and n_2 = c/v_2" would read more clearly.
-- solutions.md:131 — `\frac{c : n}{c}` mixes the colon and fraction notations; write `\frac{c/n}{c}`.
+- solutions.md ~l.105: the symbol n (water) beside n_2 (air) is easy to misread; "n_1 = n" or naming n_2 = 1.00 in the Principle would help.
+- Earlier polish (n = c/v bridging row; c : n inside a fraction) is not part of this diff and still applies if not yet fixed.
 
 ## Checked
-- Delta only: the four changed Formula steps now run basic law, derived formula, simplification, then substitution, as aligned rows.
-- Line 75: `t_\text{glass}` and `t_\text{air}` are now English and defined; the Substitution step uses the same quantities.
-- Symbols stay consistent between Formula and Substitution (n_2, v, \Delta t, \sin\alpha_2, v_1, v_2, \lambda_0, \lambda).
-- No Finnish subscripts or words remain in the formulas of this file.
-- Derivations are correct: n = c/v, \lambda = \lambda_0/n, \Delta t = (n-1)d/c.
-- Hash at the start and at the end: e4f008bdc749a0ff.
+- Delta: the apparent-depth Formula is now aligned rows: d tan a1 = h' tan a2, a1 = arctan(h' tan a2 / d), n sin a1 = n_2 sin a2, n = n_2 sin a2 / sin a1, n_mean; each follows from the previous and matches the Substitution rows (tan a1 = 0.1320, a1 = 7.517 degrees, n = 1.3274, mean 1.3301).
+- The arctan step is now explicit, so the student sees how a1 is found before the sine.
+- Protractor picture changed but is teacher-approved (carry category teacher-figure); the figure description (a1 = 50, a2 = 30 not stated) still gives no answer.
+- Numbers and answers unchanged.
+- Language checked: en. Hash 704b4f14fe8576b4 at start and end.

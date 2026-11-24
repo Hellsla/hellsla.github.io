@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: dc09b0ce9519b96f
+CONTENT-HASH: 238e593134987e6b
+SCOPE: delta numbers,teacher-figure from dc09b0ce9519b96f base 146d1b7
 
 ## Blocking
 
 ## Polish
-- lessons/FY7/fy7-10/answers.py:51–52 — the comment still says "slope k = 0,596 / 0,40 = 1,49 = n" and computes an unused `k`, while line 53 and the solution use n = 1,50 (carried) — drop the dead line or reword the comment.
+- solutions.md:186 (L3-04, Sijoitus): the Kaava chain now solves $\alpha_1 = \arctan(h'\tan\alpha_2/d)$, but Sijoitus still begins with $\tan\alpha_1 = \dots$. Write it as $\alpha_1 = \arctan\dfrac{44{,}9\cdot\tan 10{,}0^\circ}{60{,}0} = 7{,}517^\circ$ so that it substitutes into the last symbolic form.
+- solutions.md:186 (L3-04, Sijoitus): $n = \sin 10{,}0^\circ / \sin 7{,}517^\circ$ leaves out $n_2 = 1{,}00$, which the Kaava chain keeps. The number is the same.
+- lessons/FY7/fy7-10/answers.py:51–52: the dead slope line from my earlier report is still there (carried).
 
 ## Checked
-- Delta: four Kaava steps rewritten as aligned chains (solutions.md:65, 75, 116, 133; the packet's diff shows them with the aligned markup stripped, the file on disk has proper `aligned` rows), three paragraphs split, caption marker removed; no number, answer, Muunnokset or Sijoitus changed; hash identical at start and end.
-- solutions.md:65: $n_1\sin\alpha_1 = n_2\sin\alpha_2 \Rightarrow n_2 = n_1\sin\alpha_1/\sin\alpha_2$; $n_2 = c/v \Rightarrow v = c/n_2$: correct.
-- solutions.md:75: $t_\text{lasi} = d/v$, $t_\text{ilma} = d/c$, $v = c/n$, $\Delta t = nd/c - d/c = (n-1)d/c$: correct (normal incidence, path $d$, air $n = 1{,}00$ as the Periaate says).
-- solutions.md:116: Snell with $n = c/v$ gives $(c/v_1)\sin\alpha_1 = (c/v_2)\sin\alpha_2 \Rightarrow \sin\alpha_2 = v_2\sin\alpha_1/v_1$: correct.
-- solutions.md:133: same $f$, $\lambda = v/f$, $\lambda/\lambda_0 = v/v_0 = (c/n)/c = 1/n$ with air $v_0 \approx c$: correct.
-- Paragraph splits (refraction model answer, apparent-depth Periaate and Vastaus): text identical, physics unchanged.
-- Every chain's last symbolic form is the one the unchanged Sijoitus substitutes into.
+- Delta: the L3-04 Kaava line was rewritten as an aligned chain. No number, answer, Muunnokset or Sijoitus changed. The protractor picture and drawing are teacher-approved (teacher-figure). The hash was the same at the start and the end.
+- Geometry: the ray meets the surface at horizontal offset $x = d\tan\alpha_1$ (true depth) and $x = h'\tan\alpha_2$ (image straight above the object, as Periaate states). Setting them equal gives $\alpha_1 = \arctan(h'\tan\alpha_2/d)$, which is correct.
+- Snell at the water–air surface: $n\sin\alpha_1 = n_2\sin\alpha_2 \Rightarrow n = n_2\sin\alpha_2/\sin\alpha_1$ is correct. $\alpha_1$ is the angle in water and $\alpha_2$ the angle in air.
+- Recomputed with $d = 60{,}0\,\text{cm}$: $\alpha_1 = 7{,}517^\circ;\ 14{,}880^\circ;\ 22{,}006^\circ;\ 28{,}978^\circ$ and $n = 1{,}3274;\ 1{,}3319;\ 1{,}3344;\ 1{,}3268$. These match the solution.
+- The mean is $1{,}3301$. This matches the solution and answers.py ($1{,}330124$). The answer $1{,}33$ with three significant figures is justified.

@@ -1,14 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: dc09b0ce9519b96f
-SCOPE: delta answers from 91929cab691c65d8 base cf48f26
+CONTENT-HASH: 238e593134987e6b
+SCOPE: delta numbers,teacher-figure from dc09b0ce9519b96f base 146d1b7
 
 ## Blocking
 - none
 
 ## Polish
-- solutions.md ~L186 (water apparent depth): Kaava still opens with the combined d tan α1 = h' tan α2 in one inline chain, not an aligned law-to-result block like the rest; set it as aligned rows.
+- none
 
 ## Checked
-- The packet diff shows several Kaava lines run together (e.g. n_2 sin α_2 n_2 = ...); the files on disk (lines 65, 75, 116, 133) are proper aligned blocks, so the flattening is only in the diff display.
-- Basic law first (n_1 sin α_1 = n_2 sin α_2, n = c/v, t = d/v), then rearranged, then final form; answers unchanged; caption marker removal is the teacher's approved change.
-- Language checked: fi. Hash dc09b0ce9519b96f at start and end.
+- Apparent-depth Kaava is now an aligned block: d tan α1 = h' tan α2, then α1 = arctan(h' tan α2 / d), then Snell's law, n = n2 sin α2 / sin α1, then the mean; this closes my earlier polish.
+- Symbolic chain is complete and correct before substitution; Sijoitus numbers unchanged (n_ka = 1,3301).
+- The sum row in Sijoitus is set as an aligned block; readable at a phone width as the shared component wraps it.
+- The protractor picture and drawing are teacher-approved (carried); the description matches the task (a1 = 50°, a2 = 30° to be read) and gives no answer.
+- Language checked: fi. Hash 238e593134987e6b at start and end.

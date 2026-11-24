@@ -1,5 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: c6b17c0a5ccb80ab
+CONTENT-HASH: 2d5871271805ce79
+SCOPE: delta numbers,reflow from c6b17c0a5ccb80ab base c48271b
 
 ## Blocking
 - none
@@ -8,8 +9,9 @@ CONTENT-HASH: c6b17c0a5ccb80ab
 - none
 
 ## Checked
-- Delta (changed Formula/Kaava blocks, numbers/formulas): opened current full-size captures at 1280 px in the lesson folder review/shots: open-exercises-L3-1280-5 (8-22, top of the Formula block only). Formula blocks render as aligned display blocks, with equals signs in one column, readable fractions and subscripts, no clipping or overflow, no red KaTeX; the card, the Conversions block and the following Substitution blocks keep their layout. Not every capture was opened; the unopened ones show the same component with other formulas.
+- Delta, 1280 px captures with every solution open: fy7-8-open-exercises-L3-1280-3 and -4 (neighbouring Formula blocks, unchanged); L3-1280-5, -6, -7 (task 8-22: extended Formula chain E = P_h t = RP^2 t/U^2 and the factored saving render as aligned rows); L2-1280-11 and -12 (graph task, R = 0.030 U^2/P last row legible). No overflow, clipping or red KaTeX.
+- Not opened: other L2/L3 captures (unchanged tasks).
 - Hash identical at start and end.
 
 ## Scores
-illustrations n/a · typography 5 · Finnish (English) 5 · accessibility 5
+illustrations n/a · typography 5 · Finnish 5 · accessibility 5
