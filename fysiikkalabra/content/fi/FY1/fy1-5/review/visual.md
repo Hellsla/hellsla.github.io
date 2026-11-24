@@ -1,17 +1,17 @@
-VERDICT: FAIL
-CONTENT-HASH: 5cd975f38e79ae36
+VERDICT: PASS
+CONTENT-HASH: 1814c2be4d581b22
 
 ## Blocking
-- [Major] sim-390 / sim-1280, assets/sims/fy1/fy1-5/sim.js and inquiry.json `howto` — the pace select was renamed from "Toistonopeus" to "Nopeus", right under the physics slider "Nopeus $v = 2{,}0\,\text{m/s}$". Two controls now carry the same name. The howto sentence "*Nopeus* muuttaa vain toiston tahtia" cannot tell the student which one it means. A student can easily think the select changes $v$, and the lesson is about $v$ and the graph slope. The ambiguity is in the controls and the instruction text — fix: name the select "Toisto" or "Toiston nopeus" (not plain "Nopeus"), and use the same word in the howto sentence.
+(none) The round-1 Major is fixed: the pace select is labelled "Toistonopeus" (sim-390, sim-1280), distinct from the "Nopeus $v$" slider. The howto text also says "*Toistonopeus* muuttaa vain toiston tahtia", so the two controls can no longer be confused.
 
 ## Polish
-- [Minor] sim-390 — the removed note line ("Lippu: alkupaikka. Nuoli: nopeus…") is fine. The howto still explains flag, arrow and markers, so no information is lost.
+- [Minor] sim.js line 6 comment — the code comment still says "Toistonopeus" correctly; no action needed. Nothing else to report.
 
 ## Checked
-- fy1-5-sim-390.png and fy1-5-sim-1280.png: the changed controls. Layout, KaTeX labels and readouts are clean and nothing is clipped. The only problem is the duplicate "Nopeus" label.
-- fy1-5-intro-1280.png (new hero image): it reads clearly, the subject is in the middle third, no text. Good.
-- fy1-5-fig-2-390.png (new motion image): clean, labels are LaTeX, units are upright, nothing is clipped.
-- The deterministic layout checks at 360/390/768/1280 px are ok. I did not open the other captures, since the diff does not touch them.
+- fy1-5-sim-390.png and fy1-5-sim-1280.png: the controls, labels and readouts are clean and nothing is clipped. The removed note line leaves no gap, and the usage information is still in Käyttöohje.
+- The howto text in inquiry.json read as source.
+- I did not reopen the hero and motion images or the other captures. In round 1 they passed, and this round's diff only removes the note line.
+- The deterministic layout checks at 360/390/768/1280 px are ok.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 4 · accessibility 5
