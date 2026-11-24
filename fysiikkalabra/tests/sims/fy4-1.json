@@ -30,16 +30,16 @@
   "note": "main button Käynnistä first, then Alusta; DOM order canvas, controls, readout"
  },
  {
-  "expr": "(() => { const l=[...document.querySelectorAll('#sim-root label')].map(x=>x.textContent); return l.length===3 && l[0].startsWith('Tapaus') && /^Hetki \\$t = .*\\\\,\\\\text\\{s\\}\\$$/.test(simText(document.querySelectorAll('#sim-root label')[1])) && l[2].startsWith('Nopeus (toisto)') ? 1 : 0 })()",
+  "expr": "(() => { const l=[...document.querySelectorAll('#sim-root label')].map(x=>x.textContent); return l.length===3 && l[0].startsWith('Tapaus') && /^Hetki \\$t = .*\\\\,\\\\text\\{s\\}\\$$/.test(simText(document.querySelectorAll('#sim-root label')[1])) && l[2].startsWith('Nopeus') ? 1 : 0 })()",
   "expected": 1,
   "tol": 0,
-  "note": "three labelled controls: Tapaus, Hetki t with unit s, Nopeus (toisto)"
+  "note": "three labelled controls: Tapaus, Hetki t with unit s, Nopeus"
  },
  {
-  "expr": "(() => { const n=document.querySelectorAll('#sim-root p.note'); return !document.querySelector('#sim-root details') && n.length===1 && n[0].textContent.trim().split(/\\s+/).length<=15 ? 1 : 0 })()",
+  "expr": "(() => { const n=document.querySelectorAll('#sim-root p.note'); return !document.querySelector('#sim-root details') && n.length===0 ? 1 : 0 })()",
   "expected": 1,
   "tol": 0,
-  "note": "no Lisätietoja box; one legend line of at most 15 words (explanations live in the lesson's inquiry.json)"
+  "note": "no Lisätietoja box and no legend line (the legend is in the lesson's inquiry.json)"
  },
  {
   "expr": "(() => { const P=window.simAdapter && window.simAdapter.params; return P && Object.keys(P).sort().join(',')==='t,tapaus' && P.t.unit==='s' ? 1 : 0 })()",
