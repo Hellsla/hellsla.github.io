@@ -1,15 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 4da5d6b6c0b16245
+CONTENT-HASH: 1acfcf757217e158
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] fy3-8-open-exercises-L2-1280-3 (Vastaus of the ΔU, W task) — the text after the boxed answer starts with "; erotus tunnetaan …": begin the sentence normally ("Erotus tunnetaan …").
+(none)
 
 ## Checked
-- Delta (Kaava steps as aligned multi-row blocks; previous scope line is for an earlier delta). Captures in content/fi/FY3/fy3-8/review/shots; exercise captures at 1280 px only.
-- fy3-8-open-exercises-L2-1280-3 (two-row Kaava aligned, Muunnokset and Sijoitus rows, Vastaus, Järkevyys) and the ΔT/α task below it (Sijoitus chain, boxed Vastaus).
-- No clipping; layout intact.
+- Delta (fy3-8-L3-04 Vastaus: "käytännössä vähintään $14\,\text{mm}$"). Captures in content/fi/FY3/fy3-8/review/shots, 1280 px.
+- fy3-8-open-exercises-L3-1280-6 (the task with the rail gap: Annettu, Periaate, Taulukon lukeminen rows, Kaava block aligned at "="); -L3-1280-4 (neighbouring task, layout).
+- Changed sentence read in source: units LaTeX, wording clear; no clipping.
+- Hash same at start and end.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

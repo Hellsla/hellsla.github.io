@@ -1,15 +1,17 @@
-VERDICT: FAIL
-CONTENT-HASH: 2b0d3c5665d5edc6
+VERDICT: PASS
+CONTENT-HASH: 746496959811ec08
 
 ## Blocking
-- [Major] solutions.md fy3-16-L3-03 (16-22) Kaava — the long block does not align at "=": rows `Q = c m ΔT` and `= m(…)` sit at the right, while the row `m(c_jää ΔT_jää + s) = UAΔTt + c m_j ΔT_j` starts at the left edge of the card about 215 px away, and the final fraction's numerator is stacked with a leading "+" ("UAΔTt" over "+c m_j ΔT_j"). Equals signs in two columns, one row nearly touching the card edge — hard to follow, and the quad continuation does not read as a continuation — put the long left side on its own row (`m\,(…) \\ &= …`) with no quad rows, or break the chain into shorter named steps so every `=` shares one column.
+(none)
 
 ## Polish
-- [Minor] fy3-16 L3-03 Kaava is 12 rows, longer than the other Kaava blocks; two or three fewer rows would read better.
+(none)
 
 ## Checked
-- Delta (Kaava re-set as aligned blocks; solutions.md). Opened at 1280 px, solutions open: open-exercises-L3-1280-1 (16-20: fine), L3-1280-4 and -5 (16-22: defect above), L2-1280-3 (fine).
+- Delta (every Kaava re-set as `X &= Y` rows; round 1 Major item 16-22 re-checked). Captures in content/fi/FY3/fy3-16/review/shots, 1280 px, solutions open.
+- L3-1280-4 (16-22): eight rows, long left side on its own row, equals signs in one column, final fraction E_yht / (c_jää ΔT_jää + s) whole, no clipping.
+- L3-1280-3 (16-21), L3-1280-9 (16-24, m=ρV chain), L3-1280-8, L3-1280-2, L2-1280-1 (16-11, `\quad` row now a clean continuation), L2-1280-2 and -3 (16-12): aligned, intact.
 - Hash same at start and end.
 
 ## Scores
-illustrations 5 · typography 2 · Finnish 5 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

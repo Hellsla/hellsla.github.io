@@ -1,14 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 8361d8c133f37f03
+CONTENT-HASH: c1c4d31ab8d2e60a
 
 ## Blocking
+(none)
 
 ## Polish
+(none)
 
 ## Checked
-- Delta (Kaava steps re-set as aligned rows; four pick-* figure pictures teacher-approved, carried). Captures are in content/fi/FY3/fy3-1/review/shots; exercise captures exist at 1280 px only (the 360 px layout check is clean per the packet).
-- fy3-1-open-exercises-1280-1 (1-1: one-row Kaava), -1280-4 (1-8: two-row Kaava, equals signs aligned), L2-1280-3 (four-row F = Gx/x1 = mgx/x1 chain), L2-1280-6, L3-1280-3 (five-row L, G, m chain with continuation row).
-- Rows split at the principle, rearrangement and result steps; equals signs aligned; nothing clipped; surrounding layout intact.
+- Delta (one Kaava aside in fy3-1-L3-04 changed to `(c = x/F)`). Captures in content/fi/FY3/fy3-1/review/shots, 1280 px.
+- fy3-1-open-exercises-L3-1280-4 (1-22 task text and table) and -5 (1-22 solution: three-row Kaava aligned at "=", clean, Muunnokset follows).
+- Nothing clipped; layout intact; the 360 px layout check is clean per packet.
+- Hash same at start and end.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 4

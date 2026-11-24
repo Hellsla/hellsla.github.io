@@ -1,19 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: b5a901260dcdfe41
+CONTENT-HASH: 6d5e4fe26062f07c
 
 ## Blocking
 
 ## Polish
-- exercises/solutions.md (fy3-15-L3-04, Kaava) — the old last sentence "Erotus on $P_{\text{o},\text{A}} - P_{\text{o},\text{B}}$" was dropped, so the Kaava no longer ends with the asked quantity. Add the row $\Delta P_\text{o} = P_{\text{o},\text{A}} - P_{\text{o},\text{B}}$. Also (unchanged): the task text writes the CHP heat as $0{,}560\,P_{\text{o},\text{B}}$, while the solution's $P_{\text{o},\text{B}}$ is option B's total (CHP + boiler) and the CHP plant's own is $P_{\text{o},\text{CHP}}$; one symbol for one quantity would help.
-- The packet's diff drops the line breaks of the aligned blocks; every Kaava was read from the file on disk.
+- solutions.md:268 (fy3-15-L3-04 Annettu), carried over: the CHP heat is given as $0{,}560\,P_{\text{o},\text{B}}$. In the Kaava, $P_{\text{o},\text{B}}$ is option B's total (CHP plus boiler), and the CHP plant's own fuel power is $P_{\text{o},\text{CHP}}$. Fix: write $0{,}560\,P_{\text{o},\text{CHP}}$ in the Annettu so that one symbol means one quantity. The task text itself is unambiguous.
 
 ## Checked
-- Chain efficiency (L1-01, L2-01, L2-07): $P_1 = \eta_1P_\text{o}$, $P_2 = \eta_2P_1$, $P_3 = \eta_3P_2$ → $\eta = P_3/P_\text{o} = \eta_1\eta_2\eta_3$, as the lesson; $\eta_2 = \eta/(\eta_1\eta_3)$ (L2-02) right.
-- Solar panel: $P_\text{o} = IA$, $P = \eta IA$. Steam-cycle waste: $P_\text{o} = P_\text{a} + P_\text{h}$ → $P_\text{h} = P_1 - P_2$ with the stated identification.
-- Wood chips (L2-03): $P_\text{s} = \eta P_\text{o}$, $P_\text{o} = Hm/t$ → $m = P_\text{s}t/(\eta H) = 166{,}7\,\text{t}$; the hour is exact.
-- Condenser (L2-04, L3-05, L1-09): $Q = cm\Delta T$, $P = Q/t = cq_m\Delta T$, $q_m = P_\text{L}/(c\Delta T)$; notation as the lesson.
-- L2-06: $P_\text{o} = P_\text{s} + P_\text{h}$; L3-02: $E = \eta Hm$ → $m = E/(\eta H)$.
-- Heat pump chain (L3-03): $W = Q_1/\varepsilon$, $E_\text{polttoaine} = Q_1/(\eta_\text{siirto}\eta_\text{voimala}\varepsilon) = 87{,}7\,\text{kWh}$; lämpökerroin, not an efficiency.
-- CHP vs separate (L3-04): 472,2 − 340,3 = 131,9 MW recomputed; the model (CHP sized to the electricity, boiler for the rest) matches the task.
-- L3-01 linear electricity–heat trade-off $P_\text{s} = P_\text{s,0} - kP_\text{k}$ and $\eta_\text{kok}$ right.
-- Numbers, Sijoitus and answers unchanged against the previous PASS. Hash the same at start and end.
+- I read the changed Kaava block of L3-04 on disk (solutions.md:272–280). It now ends with the asked quantity, $\Delta P_\text{o} = P_{\text{o},\text{A}} - P_{\text{o},\text{B}}$, which is the Kysytty of the task (part c).
+- The whole symbolic chain is right:
+  - It starts from $P_\text{o} = P_\text{hyöty}/\eta$.
+  - Option A: $P_{\text{o},\text{A}} = P_\text{s}/\eta_\text{s,A} + P_\text{k}/\eta_\text{kat}$.
+  - Option B: $P_{\text{o},\text{CHP}} = P_\text{s}/\eta_\text{s,B}$ and $P_\text{k,CHP} = 0{,}560\,P_{\text{o},\text{CHP}}$, with the boiler covering $P_\text{k} - P_\text{k,CHP}$.
+  - This is the model the task text describes.
+- I recomputed with my own formulas: $P_{\text{o},\text{A}} = 250 + 222{,}2 = 472{,}2\,\text{MW}$ and $P_{\text{o},\text{B}} = 312{,}5 + 25{,}0/0{,}900 = 340{,}3\,\text{MW}$. The difference is $131{,}9\,\text{MW}$, so the answer $132\,\text{MW}$ is right. The saving is $131{,}9/472{,}2 = 28\,\%$, as stated.
+- The reasonableness check is consistent: CHP total efficiency $0{,}880$ and $275\,\text{MW}$ useful power, against $0{,}635$ for option A.
+- No Sijoitus, answer or answers.py value changed.
+- The hash was the same at the start and the end.
