@@ -1,14 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 799cb028f0c08717
+CONTENT-HASH: 488bea21891a1bfc
+SCOPE: delta numbers,teacher-figure from 799cb028f0c08717 base 146d1b737ca97eeaaeace34f65a0e2ba3434576b
+Covered: fy7-10 exercises solutions.md Kaava and Sijoitus of task 10-22, and the approved protractor figure (10-13); layout checked at 1280 px
 
 ## Blocking
-- none
 
 ## Polish
 - none
 
 ## Checked
-- Delta (work queue 8g: Kaava step rewritten into aligned display blocks, fi-easy). Opened full-size at 1280 px with solutions open: fy7-10-open-exercises-L2-1280-3 (10-12 Kaava, aligned t_lasi, t_ilma, Δt, v chain). Equals signs align, fractions and subscripts render, the order principle, symbolic steps, then substitution holds, the block sits inside the solution card with no clipping, overflow or red KaTeX. The neighbouring blocks are unaffected. No figures changed. No 390 px solution capture exists in this packet, so the phone wrap of the longest chains was not judged.
+- Round 1 delta, fi-easy, 1280 px: open-exercises-L3-1280-5 and -6 (10-22 Kaava as aligned display block, Sijoitus, summa row, n_ka), -3 and -4 for neighbours; open-exercises-L2-1280-3 and -4 (10-13 with the teacher-approved protractor drawing, scale numbers legible, ray and labels clear, solution reads the angles).
+- Kaava rows align at =, arctan and fractions render, no clipping or red KaTeX. The sum sits as one row. No 390 px solution capture in packet.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 4

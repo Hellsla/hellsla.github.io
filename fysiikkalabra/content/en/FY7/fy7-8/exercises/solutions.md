@@ -198,9 +198,7 @@ The student's result $4600\,\text{W}$ is ten times the primary power $460\,\text
 **Principle:** The task uses the simplified two-wire model. The current of the line is determined by the transmission voltage, $I = P : U$, and the power that becomes internal energy in the conductors is $P_\text{h} = R I^2$. The same power flows with a smaller current at a higher voltage, so the loss is smaller.
 
 Because the power is constant, the lost energy is the power loss multiplied by the time, $E = P_\text{h} t$, and the saving is the difference of the energies multiplied by the price.
-**Formula:** $$\begin{aligned} P &= U I \\ I &= \frac{P}{U} \\ P_\text{h} &= R I^2 \\ &= \frac{R P^2}{U^2} \\ E &= P_\text{h} t \end{aligned}$$
-
-$$\text{saving} = (E_\text{A} - E_\text{B}) \cdot \text{price}$$
+**Formula:** $$\begin{aligned} P &= U I \\ I &= \frac{P}{U} \\ P_\text{h} &= R I^2 \\ &= \frac{R P^2}{U^2} \\ E &= P_\text{h} t = \frac{R P^2 t}{U^2} \\ \text{saving} &= (E_\text{A} - E_\text{B}) \cdot \text{price} \\ &= R P^2 t \left(\frac{1}{U_\text{A}^2} - \frac{1}{U_\text{B}^2}\right) \cdot \text{price} \end{aligned}$$
 **Conversions:** $P = 200\,\text{MW} = 200 \cdot 10^{6}\,\text{W}$, $U_\text{A} = 220 \cdot 10^{3}\,\text{V}$ and $U_\text{B} = 400 \cdot 10^{3}\,\text{V}$. The power loss is finally converted to megawatts, $1\,\text{MW} = 10^{6}\,\text{W}$.
 **Substitution:** a) $R = 0.040\,\tfrac{\Omega}{\text{km}} \cdot 150\,\text{km} = 6.0\,\Omega$, $I_\text{A} = \dfrac{200 \cdot 10^{6}\,\text{W}}{220 \cdot 10^{3}\,\text{V}} = 909.1\,\text{A}$ and $I_\text{B} = \dfrac{200 \cdot 10^{6}\,\text{W}}{400 \cdot 10^{3}\,\text{V}} = 500\,\text{A}$. b) $P_\text{h,A} = 6.0\,\Omega \cdot (909.1\,\text{A})^2 = 4.959\,\text{MW}$ and $P_\text{h,B} = 6.0\,\Omega \cdot (500\,\text{A})^2 = 1.500\,\text{MW}$, so $E_\text{A} = 4.959\,\text{MW} \cdot 8760\,\text{h} = 43\,440\,\text{MWh}$ and $E_\text{B} = 1.500\,\text{MW} \cdot 8760\,\text{h} = 13\,140\,\text{MWh}$. c) Saving $$\begin{aligned} &= (43\,440\,\text{MWh} - 13\,140\,\text{MWh}) \\ &\cdot 50\,\tfrac{\text{€}}{\text{MWh}} \\ &= 30\,300\,\text{MWh} \cdot 50\,\tfrac{\text{€}}{\text{MWh}} \\ &= 1.515 \cdot 10^{6}\,\text{€} \end{aligned}$$
 **Answer:** about $1.5\,\text{million €}$ a year, two significant figures like the power $200\,\text{MW}$. Justification: the transmitted power is the same, but at a higher voltage the current is smaller ($500\,\text{A}$ and not $909\,\text{A}$).
@@ -248,7 +246,7 @@ Reasonableness: the transformer reduces the current to about $29$ times smaller 
 **Find:** the total resistance $R$ of the conductors in ohms
 **Principle:** The task uses the simplified two-wire model. The line is heated by the current, and the power loss is $P_\text{h} = R I^2$. The current follows from the transmitted power and the transmission voltage, $P = U I$. When one point is read from the curve, the share gives the power loss and the power loss gives the resistance.
 **Reading the graph:** The curve passes through the grid point ($200\,\text{kV}$; $3.0\,\%$): at the voltage $200\,\text{kV}$ the power loss is $3.0\,\%$ of the transmitted power.
-**Formula:** $$\begin{aligned} P &= U I \\ I &= \frac{P}{U} \\ P_\text{h} &= R I^2 \\ P_\text{h} &= 0.030\,P \\ R &= \frac{P_\text{h}}{I^2} \end{aligned}$$
+**Formula:** $$\begin{aligned} P &= U I \\ I &= \frac{P}{U} \\ P_\text{h} &= R I^2 \\ P_\text{h} &= 0.030\,P \\ R &= \frac{P_\text{h}}{I^2} \\ &= \frac{0.030\,P}{(P/U)^2} = \frac{0.030\,U^2}{P} \end{aligned}$$
 **Conversions:** $200\,\text{MW} = 200 \cdot 10^{6}\,\text{W}$, $200\,\text{kV} = 200 \cdot 10^{3}\,\text{V}$ and $3.0\,\% = 0.030$.
 **Substitution:** $P_\text{h} = 0.030 \cdot 200 \cdot 10^{6}\,\text{W} = 6.0 \cdot 10^{6}\,\text{W}$
 
