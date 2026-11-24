@@ -1,19 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: dd0ed8e8a279aeef
+CONTENT-HASH: 65496fbb78cfc318
 
 ## Blocking
 
 ## Polish
-- exercises.json fy3-16-L2-01, fy3-16-L3-03 — with tolerance 0.07 the check accepts 1.58–1.82 kg (key 1.7) and 1.49–1.71 kg (key 1.6), so the value one step above the key (1.8 kg; 1.7 kg) also passes — follows from the teacher's both-directions decision; no change needed.
+- solutions.md fy3-16-L3-03 Formula — the energy conducted through the wall is put under $Q_\text{released}$. The outside air gives that energy and the wall only conducts it, so the label is loose. The balance itself is right. — Optional fix: name it $Q_\text{in}$ ("energy into the box"), or write $Q_\text{absorbed} = E + c\,m_\text{j}\,\Delta T_\text{j}$ directly.
+- solutions.md fy3-16-L2-06 Formula — the chain ends in $UA = -k/t$, but the Substitution puts in the slope's magnitude 100 kWh/K without its sign. The result is right, because the Conversions speaks of the magnitude. — Optional fix: write $UA = |k|/t$, or substitute $k = -100$ kWh/K.
 
 ## Checked
-- Round 4, full: all 21 numeric answers recomputed in one script from the task texts with my own formulas; all agree with exercises.json and answers.py.
-- Limit-value tasks L2-01 and L3-03: key and model answer round up (1.617→1.7; 1.511→1.6), answers.py uses ceil; tolerance 0.07 accepts the rounded-down 1.6 (5.9 %) and 1.5 (6.3 %) as the teacher decided; the unrounded values pass too.
-- Every other tolerance lets a student who rounds to the data's figures pass (680 vs 678, 2.4 vs 2.444, 140 vs 139, 480 vs 480.6, 590 vs 592).
-- Laws and conditions: Q = cmΔT only without a change of state (said in each Periaate), sm and rm at constant temperature, P = UAΔT with the inside at 0 °C stated in the task, mixing task checks 251 400 J > 167 000 J first and states the "not enough" case correctly.
-- Multiple choice L1-06, L1-07, L2-08: exactly one correct option; each distractor is wrong and its feedback gives the right physics (net transfer wording, no "cold flows", t ∝ m/(UΔT) ratio = 2).
-- Intermediate numbers of the solutions recomputed (period efficiencies, break-even price 0.44 €/kg, stage energies, fitted line, axis crossing ≈ +20 °C): all right.
-- Figures fy3-6/heating-line and fy3-7/melting-curve give the needed readings (180 s, 40 K; 220 kJ), agree with c_ice·m·ΔT + sm = 20.2 + 200 kJ, and do not show the answer.
-- Scope: FY3 central contents only (heat, changes of state, U-value from the lesson); symbols as in the brief (s, r, c, m/t, UA).
-- Guardrails: melting explained by interaction energy, heater efficiency "käytännössä 100 %", example data called esimerkkiaineisto, slope read from the fitted line.
-- en: answers, units, tolerances, data and correct options identical to fi; every number in every solution matches fi (compared mechanically); the packet's exercise brief is empty for en, so notation was judged against the Finnish brief.
+- Diff: only Formula steps changed. Each now starts from the basic equation ($Q_\text{released} = Q_\text{absorbed}$, $E = Q$, $\eta = E_\text{useful}/E$), then the basic laws ($Q = cm\Delta T$, $Q = sm$, $Q = rm$, $E = Pt$, $P = UA\Delta T$), then the combined form. This follows the teacher's rule.
+- L1-05, L2-03: the step $m/t$ is shown, giving 14 kW and 0.857 kg/s. L2-02: Q = 649 kJ.
+- L2-01, L2-07: wall power times time equals $sm$, giving m = 1.617 kg (key rounded up to 1.7) and t = 2.91 h.
+- L2-04: m_ice = 91.1 g. L3-01: factoring $m_\text{v}(c_\text{v}\Delta T_\text{v} + r)$ gives ΔT_k = 26.0 K.
+- L3-02: the rearrangement $c\,m_\text{v}T_\text{v} - s\,m_\text{ice} = c(m_\text{v} + m_\text{ice})T$ is correct, giving T = 8.06 °C. The check 251 400 J > 167 000 J is unchanged.
+- L3-03: $m(c_\text{ice}\Delta T_\text{ice} + s) = UA\Delta T\,t + c\,m_\text{j}\Delta T_\text{j}$ gives m = 1.511 kg, rounded up to 1.6 kg (limit value, guardrail).
+- L2-05: η = 75.6 %. L1-08: t = 251 s. L2-09: c = 900 J/(kg·K). L2-10: t = 2.44 h.
+- L2-06: $E = UAt(T_\text{in} - T_\text{out})$ is linear in $T_\text{out}$ with slope $-UAt$. UA = 139 W/K, and the axis crossing is the indoor temperature.
+- L3-04: E = 5443 kWh; the costs follow from $E/\eta$ and $m = E/(\eta_\text{B}H)$. L3-05: the three stages are factored over $m$ and divided by $t$.
+- I recomputed every changed solution in one script, and all match. The hash is identical at start and end.
