@@ -3187,7 +3187,20 @@
     "mistakes_n": "Osui {n} kertaa",
     "mini_h": "Minikokeet ja harjoituskoe",
     "mini_item": "{min} min · {pts} p",
-    "mini_exam": "Harjoituskoe"
+    "mini_exam": "Harjoituskoe",
+    "path_h": "Kertauspolku",
+    "path_len": "Kesto",
+    "path_14": "14 vrk",
+    "path_28": "28 vrk",
+    "path_exam": "Koepäivä",
+    "path_per": "Harjoituspäiviä viikossa",
+    "path_min": "Minuutteja päivässä",
+    "path_mins": "{n} min",
+    "path_save": "Tallenna polku",
+    "path_del": "Poista polku",
+    "path_today": "Tänään",
+    "path_over": "Polku on päättynyt.",
+    "path_note": "Polku pysyy vain tällä laitteella. Se ei lähetä ilmoituksia eikä sähköposteja."
   },
   "koetila": {
     "eyebrow": "FY9 · Koetila",

@@ -185,7 +185,7 @@ def languages():
 
 # ---- the pages (work queue 11b PR 4; plan 6.1-6.2): the coach page and the row and tile on the course page ---------------
 PAGE = "FY9-valmentaja.html"
-UI_KEYS = ("diag", "min", "why_stale", "why_wrong", "why_new", "why_more", "basis", "own", "note", "row_one", "row_n", "go", "clear", "clear_confirm", "nostore", "goal_h", "goal_lead", "goal_none", "goal_LE", "goal_MC", "goal_BA", "courses_h", "courses_lead", "courses_none", "set_note", "steps_h", "mistakes_h", "mistakes_n", "mini_item", "mini_exam")
+UI_KEYS = ("diag", "min", "why_stale", "why_wrong", "why_new", "why_more", "basis", "own", "note", "row_one", "row_n", "go", "clear", "clear_confirm", "nostore", "goal_h", "goal_lead", "goal_none", "goal_LE", "goal_MC", "goal_BA", "courses_h", "courses_lead", "courses_none", "set_note", "steps_h", "mistakes_h", "mistakes_n", "mini_item", "mini_exam") + ("path_h", "path_len", "path_14", "path_28", "path_exam", "path_per", "path_min", "path_mins", "path_save", "path_del", "path_today", "path_over", "path_note")
 STATES = ("none", "few", "practise", "growing", "strong", "strongdue")
 
 
@@ -237,6 +237,7 @@ def page_body(T, index, course_page, lang=None, mini=None):
             f'<details class="coach-areas" id="coach-areas" hidden><summary>{T("coach.areas")}</summary><div class="coach-areas-body"></div></details>'
             f'<details class="coach-areas" id="coach-steps" hidden><summary>{T("coach.steps_h")}</summary><div class="coach-steps-body"></div></details>'
             f'<details class="coach-areas" id="coach-mistakes" hidden><summary>{T("coach.mistakes_h")}</summary><div class="coach-mistakes-body"></div></details>'
+            f'<details class="coach-areas" id="coach-path"><summary>{T("coach.path_h")}</summary><div class="coach-path-body"></div></details>'
             + (f'<details class="coach-areas" id="coach-mini" data-mini="{_esc(json.dumps(mini, ensure_ascii=False))}"><summary>{T("coach.mini_h")}</summary><div class="coach-mini-body"></div></details>' if mini else "") +
             f'<div class="coach-data" id="coach-data"></div></div>' + index_script(index) + (mistakes_script(lang, index) if lang else "") + '<script src="valmentaja.js"></script>')
 
