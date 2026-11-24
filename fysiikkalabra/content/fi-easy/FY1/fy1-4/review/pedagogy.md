@@ -1,22 +1,24 @@
 VERDICT: PASS
-CONTENT-HASH: 33db7ef8ef38a233
+CONTENT-HASH: 12818391684b0010
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- lesson.md:230 and :232 — S2 requirement 3: "kvantitatiivinen", "systemaattisesti" and "kaareutua" are not explained at first use — e.g. "Yhtälö antaa lukuarvoja, joten malli on kvantitatiivinen eli lukuihin perustuva." and "Pisteet voivat kaareutua eli muodostaa käyrän, jossa poikkeamat ovat samansuuntaisia (systemaattisesti), suoran ympärillä."
-- lesson.md:167, :221 (kettle example) — 8,0 °C/min over 5 min means a heater of only a few hundred watts for 0,5 L; a real kettle warms 25 to 30 °C/min. A sharp student can doubt the context. Say "pieni vedenlämmitin" or use a larger volume, and keep the numbers.
-- lesson.md:125 (pysahdy) — "Jännite mitattiin välillä x = 2…10": voltage is not met in FY1 and which axis it is on is unclear. Use a lesson context (tilavuus, aika) instead.
-- inquiry.json tarkistus-2 (hiking) repeats the worked example and the optional siirto task (solve t from a line with b ≠ 0). The check does not test a different representation; swap it for reading k and b from a graph or judging whether a line fits.
-- inquiry.json ennuste-1 — the stem already says the cart moved uniformly from s = 0, so the right line is almost given; leave the uniform-motion claim out and let the choice between polyline and fitted line carry the prediction.
+- inquiry.json (simulaatio, `calc`) — d is the root mean square but is called "keskimääräinen poikkeama", which an S2 student reads as the plain average of the lengths. The calc box shows the formula, but the first use does not warn. Fix: add "(neliöllinen keskiarvo)" to the readout label or the calc lead sentence.
+- inquiry.json (koe-1, koe-2) — the "Näytä laskettu paras suora" checkbox is visible from the first experiment and shows the answer the student is meant to find by moving the slider. Fix: say in the intro "Älä käytä valintaruutua ennen kuin olet kirjannut mittaukset", or lock it in koe-1 and koe-2. The checkbox is only needed in koe-3.
+- inquiry.json (tarkistus-2, prompt) — "Retkeläinen oli siis jo kulkenut matkaa, kun kello käynnistettiin" gives away that b is not 0, which is the trap this task tests. Fix: drop the sentence and leave the situation to the data.
+- lesson.md (fi-easy, "Lineaarinen malli" paragraph) — this paragraph is dense for S2: it holds interpolation, extrapolation and curvature, about 130 words. Fix: split it at "Suoraa voi jatkaa" and gloss "interpolointi" and "ekstrapolointi" the first time ("arvio mitattujen pisteiden väliltä / niiden ulkopuolelta").
+- inquiry.json (hook) — the long sentences and the shift from "kärry" to "kuvaaja" are heavy for a fi-easy opening. Fix: shorten it to three sentences.
 
 ## Checked
-- Learning path: hook question (which line, what does the slope say) is answered by Koe 1-2, theory, example; no goal beyond the slot; prerequisite (random error) retrieved in kertaus.
-- Predictions 1 and 2 are refutable by Koe 1 and 2 (d values re-derived: 0,12 / 0,76 / 0,44 m; about 61 g vs 1 g); each wrong option's feedback repairs its misconception; no letter or place references.
-- Koe 3 (kahvi) gives the "model does not fit" case with a pattern-in-residuals question; sim shows the numbers as model values (howto/model/calc boxes closed).
-- Worked example: seven stages, one step each, k = 8,0, b = 20, t = 2,5 min verified; points 3 above, 3 below the line; reasonableness check present.
-- Etsi virhe, kuvaajasta (k = 15 km/h; b = 5 km read from the svg), siirto (20 vrk) and exit ticket (k = 1,5 m/s, b = 2,0 m) recomputed; mistake values 16,7, 0,067, 25, 16, 8,3, 5,5 match the described errors; solutions have all seven parts.
-- Misconceptions (polyline, line through a point, k from two near points, origin always) each have a task or feedback.
-- Phone captures (#1, #2): sim, controls and readout readable and not clipped; key_concepts present for S2.
-- Figure captures #3-#7 are legible and sit beside the paragraphs they explain.
+- The hash at the start and the end matches the packet (12818391684b0010).
+- The learning path follows the slot's goals: graph, fit, slope and constant, when the line does not fit. The Miksi question is answered by the experiments and the model answer.
+- Ennuste 1 and 2 can be refuted by d in koe-1 and koe-2. The distractors are misconceptions (polyline, line through one point, b = 0, the first point), and the feedback gives numbers that repair them.
+- Koe 3 makes the pattern in the residuals visible, and its choice question separates "small d" from "random residuals". It is a good model-fit check.
+- The simulation at 390 px has a legible graph, a readout and closed boxes behind the named buttons. The kettle figure is legible, with the read-off points marked and the dashed line at 40 °C.
+- The worked example has seven stages, one step each. The data match the line (largest deviation 0,8 °C). The reasonableness check uses the table.
+- Etsi virhe uses the real consecutive slopes. The cyclist task's figure description gives the grid readings (data) but not the slope. Both numeric tasks have mistake feedback for the typical slips (b ignored, k and b swapped).
+- Core path: tarkistus-3, siirto, kertaus and pohdi are optional. The workload fits one lesson.
+- The exit ticket tests the equation from two points and the physical meaning of b.
+- The exercise set is not judged here.

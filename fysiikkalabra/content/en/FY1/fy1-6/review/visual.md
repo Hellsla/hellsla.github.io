@@ -1,11 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: cdb5bffd5c73d8e5
+CONTENT-HASH: e86447c15ad2370f
 
 ## Blocking
 - none
 
 ## Polish
-- none
+- [Minor] sim readout — "v : t is not defined yet" reads awkwardly (stray spaces around the colon, odd phrasing) — e.g. "v is not defined at t = 0".
 
 ## Checked
-batch delta review: contact sheets (page 2 of fy1-1, fy1-2, fy1-4, fy1-6; the added "Stop and think" boxes render as a tinted box with a closed Answer disclosure, readable at 390 px, maths rendered, no clipping, layout around them intact); other lessons judged from the diff plus the same shared component, the figures unchanged.
+- Delta: removed sim note line. Opened sim-390, sim-1280 (layout intact; lead text, closed boxes, controls and readout fine, no clipping), top-390 (new hero webp clean, subject centred), fig-3, fig-4, fig-5 at 390, fig-row-1280 (figures and maths unchanged and legible).
+
+## Scores
+illustrations 5 · typography 5 · Finnish 4 · accessibility 5
