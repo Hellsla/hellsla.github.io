@@ -1,16 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: dcf9a25f9b327a71
+CONTENT-HASH: fac43d3c5888a291
+Mode: delta
 
 ## Blocking
-- none
+None.
 
 ## Polish
-- none
+None.
 
 ## Checked
-- Delta: only the Kaava step of the solutions changed to aligned multi-row blocks. Opened fy3-14-open-exercises-1280-1.png (level 1, solution open; its Kaava stays one row) from the lesson's review/shots.
-- No 360/390 px capture of an open multi-row Kaava block was available; judged at 1280 px and the layout around the block.
-- No clipping or overflow, block order and layout intact.
+- Delta: Kaava blocks of L2-04, L3-03 and L3-04 no longer use hand-stacked array numerators; rows are `X &= Y`, with helper K or N, then `s = \dfrac{c_v K}{m_j}`.
+- Opened at 1280 px, solutions open: fy3-14-open-exercises-L2-1280-4 (L2-04), L3-1280-4 (L3-03), L3-1280-6 (L3-04), plus L3-1280-5/8 and L2-1280-6 for layout around.
+- Judged: rows aligned at `=`, one equation per row, subscripts legible, single-line fractions, nothing clipped, Muunnokset/Sijoitus below intact.
+- No 360/390 px open-solution captures exist for exercises.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 4 · accessibility 4

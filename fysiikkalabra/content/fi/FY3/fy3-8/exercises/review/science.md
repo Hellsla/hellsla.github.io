@@ -1,23 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 4da5d6b6c0b16245
+CONTENT-HASH: 1acfcf757217e158
 
 ## Blocking
 
 ## Polish
-- solutions.md (rail-gap task, $g_\text{max}$): the Kaava now writes $g_\text{max} + \Delta l_\text{talvi} = g_\text{raja}$, which is correct. Writing it as $g_\text{max} + \alpha l_0 \Delta T_\text{talvi} \le g_\text{raja}$ would show that it is an "at most" condition, matching the Periaate. This is optional.
+- exercises.json:358–361 (fy3-8-L3-04): the answer is 13,2 mm with a 3 % tolerance. A student who enters the practical, safe-side value 14 mm that the Vastaus now recommends is marked wrong (6 % off). The field could say "laskettu pienin rako", or the tolerance could be widened to take 14.
+- solutions.md:268 (rail-gap task), carried over: $g_\text{max} + \alpha l_0 \Delta T_\text{talvi} \le g_\text{raja}$ would show that this is an "at most" condition. Optional.
 
 ## Checked
-- The packet's diff shows the `aligned` blocks flattened. I read the real multi-row blocks on disk (for example solutions.md:55, 82, 97, 222 and 244).
-- Every changed Kaava starts from the lesson's $\Delta l = \alpha l_0 \Delta T$ or $\Delta V = \gamma V_0 \Delta T$ and solves for the asked quantity. Each solves to the right result:
-  - $l_0 = \Delta l/(\alpha\Delta T)$, $\Delta T = \Delta l/(\alpha l_0)$ and $T = T_0 + \Delta T$, $\alpha = \Delta l/(l_0\Delta T)$, $\gamma = \Delta V/(V_0\Delta T)$
-  - steel ball: $\Delta V \approx 3\alpha V_0\Delta T$, with $\gamma \approx 3\alpha$ only for the solid, as the guardrail requires
-  - hole in the wheel: $\Delta d = \alpha d_0\Delta T$, so the hole grows, which is correct
-  - bimetal strip: $(\alpha_\text{Cu} - \alpha_\text{Fe}) l_0\Delta T$, factored correctly
-  - fuel can: $\Delta V_\text{yli} = \gamma_\text{b}V_0\Delta T - 3\alpha_\text{t}V_0\Delta T$
-  - thermometer: $h = (\Delta V_\text{e} - \Delta V_\text{pallo})/(\pi r^2)$
-  - water column: $A$ cancels, so $\Delta h = \gamma h_0 \Delta T$
-  - read-off accuracy, part c): $0{,}5\,\text{mm} \le 0{,}050\,\Delta l$ gives $\Delta l \ge 10\,\text{mm}$, and the inequality direction is right
-- I evaluated each final form again with the task data: 52,1 m, 3,02 cm³, 36 °C, 12·10⁻⁶ 1/K, 120 °C, 20 µm, 457 cm³, 45·10⁻⁶ 1/K, 22,9·10⁻⁶ 1/K, 0,96 mm and 13 m, 75,8 mm, 53,3 °C, 3,43 mm/a and 60 mm. All match the unchanged Sijoitus.
-- Powers of ten are right throughout: 10⁻⁶ for $\alpha$, 10⁻³ for $\gamma$, mm³ and mm² units consistent in the capillary task.
-- The lesson's conditions on the laws hold: solids within about 100 K, and a liquid's $\gamma$ only near its table temperature or as given in the task.
+- I read the changed Vastaus of L3-04 on disk (solutions.md:276). "Käytännössä vähintään 14 mm" now rounds the minimum gap to the safe side: a "vähintään" value is rounded up with two figures, as the guardrail and CLAUDE.md require. The b) maximum of 18 mm is an exact 18,0 mm, so rounding it down changes nothing.
+- I recomputed both limits: $12\cdot10^{-6}\cdot 25{,}0\cdot 44 = 13{,}2\,\text{mm}$ and $30 - 12\cdot10^{-6}\cdot 25{,}0\cdot 40\cdot 1000 = 18{,}0\,\text{mm}$. answers.py gives 13,2 mm, which matches.
+- The model answer to c) stays consistent: $15\,\text{mm}$ lies between 13,2 and 18 mm (and above 14 mm). The summer and winter gaps are 1,8 mm and 27 mm. The case of installing in winter frost ($\Delta T = 84\,\text{K}$, 25,2 mm > 15 mm) is unchanged and correct.
+- The multi-row Kaava block (solutions.md:265–271) was not changed and still solves symbolically for each limit.
+- No other line of the set changed. My previous checks still hold.
 - The hash was the same at the start and the end.

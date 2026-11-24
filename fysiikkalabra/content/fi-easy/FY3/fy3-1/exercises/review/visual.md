@@ -1,17 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 5e6541ff07793d7a
+CONTENT-HASH: ca97d56eea315b06
 Mode: delta
 
 ## Blocking
 None.
 
 ## Polish
-- [Minor] fy3-1 L3 1-16 Kaava: stacked fraction rows sit close together and the note (c: jousen vakio) hangs beside row 1; readable, optional more row spacing in the shared style.
+- [Minor] fy3-1 L3 1-16 Kaava: the two stacked-fraction rows sit close together; readable, optional more row spacing in the shared style.
 
 ## Checked
-- Delta: only the Kaava step became aligned multi-row blocks (source is `aligned`; the diff view flattened the rows). Captures are newer than solutions.md and match the hash.
-- Opened at 1280 px, solutions open: fy3-1-open-exercises-1280-1/2/3, L2-1280-1/3, L3-1280-3/5/6.
-- Judged: tasks 1-2, 1-11, 1-12, 1-16, 1-21 Kaava blocks: rows aligned at `=`, one equation per row, units and decimal commas in LaTeX, nothing clipped, Muunnokset/Sijoitus below unaffected.
+- Delta: the note "(c: jousen vakio)" became "(c = x/F)". Captures (14:27) are newer than solutions.md (14:19).
+- Opened at 1280 px, solutions open: fy3-1-open-exercises-L3-1280-5 (Kaava of the g_X task, three rows aligned at `=`, note beside row 1) and L3-1280-6 (Sijoitus, Vastaus, Järkevyys below intact).
+- Judged: the note reads as a definition in LaTeX, nothing clipped, layout intact.
 - No 360/390 px open-solution captures exist for exercises.
 
 ## Scores

@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 0d8ceb3846b7e870
+CONTENT-HASH: 0171826181598c8e
 Mode: delta
 
 ## Blocking
@@ -9,9 +9,9 @@ None.
 None.
 
 ## Checked
-- Delta: the Kaava step as aligned multi-row blocks. Captures are newer than solutions.md and match the hash.
-- Opened at 1280 px, solutions open: fy3-8-open-exercises-L2-1280-6, L3-1280-4.
-- Judged: the ΔV = γV_0ΔT / γ = ΔV/(V_0ΔT) / ΔV = V_10 − V_4 block and the five-row ΔV_yli chain: rows aligned at `=`, subscripts legible, nothing clipped, layout around them intact.
+- Delta: Vastaus of the rail-gap task: "käytännössä vähintään $14\,\text{mm}$" replaces "$13\,\text{mm}$".
+- Opened at 1280 px, solutions open: fy3-8-open-exercises-L3-1280-7 (Sijoitus, Vastaus, Mallivastaus c, Järkevyys) and L3-1280-8 (next task, layout intact).
+- Judged: quantity in LaTeX with unit, thin space, decimal commas; aligned rows intact; nothing clipped.
 - No 360/390 px open-solution captures exist for exercises.
 
 ## Scores

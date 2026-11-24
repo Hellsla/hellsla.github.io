@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 561d3e679af9f6d9
+CONTENT-HASH: 7e6d204e0c7b09d6
 
 ## Blocking
 - none
@@ -8,10 +8,10 @@ CONTENT-HASH: 561d3e679af9f6d9
 - none
 
 ## Checked
-- Delta: Formula step of model solutions re-set as aligned multi-row blocks (numbers, signs, units unchanged). Captures current for this hash (stamp.txt).
-- 1280 px, every solution open: fy3-8-open-exercises-L2-1280-4 (graph task with Formula rows); L3-1280-5.
-- Formula blocks render as KaTeX aligned rows: equals signs in one column, one step per row, nothing shrunk, clipped or overflowing; substitution, answer and reasonableness blocks intact below.
-- No solution-open 390 px capture exists; the 360/390 layout check is in the packet's deterministic scope.
+- Delta: one wording change in the Answer of fy3-8-L3-04 (10-23): "in practice at least $14\,\text{mm}$". Captures current for this hash (stamp.txt).
+- 1280 px, level 3, every solution open: fy3-8-open-exercises-L3-1280-5 (the neighbouring task above it), -6 (task text and table) and -7 (Formula, Substitution, changed Answer, part c).
+- The changed Answer line reads cleanly, with the units upright in LaTeX. The aligned Formula rows, the substitution rows and the reasonableness block are intact.
+- Not opened: 390 px solution captures. None exist, and the 360/390 layout check is covered by the packet's deterministic scope.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 5

@@ -1,16 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: b7d7e4725f7e9cf3
+CONTENT-HASH: aa08ba5b4a64f36f
+Mode: delta
 
 ## Blocking
-- none
+None.
 
 ## Polish
-- none
+None.
 
 ## Checked
-- Delta: only the Kaava step of the solutions changed to aligned multi-row blocks. Opened fy3-15-open-exercises-1280-1.png (level 1, solution open, Kaava with a fraction) from the lesson's review/shots.
-- No 360/390 px capture of an open multi-row Kaava block was available; judged at 1280 px.
-- No clipping or overflow, block order and layout intact.
+- Delta: L3-04 Kaava gained the row `ΔP_o = P_{o,A} − P_{o,B}`.
+- Opened at 1280 px, solutions open: fy3-15-open-exercises-L3-1280-6 (Kaava, Muunnokset, Sijoitus) and L3-1280-7 (Vastaus, Järkevyys).
+- Judged: six rows aligned at `=`, fractions legible, the new row reads cleanly and matches the Kysytty line; nothing clipped.
+- No 360/390 px open-solution captures exist for exercises.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 4 · accessibility 4
