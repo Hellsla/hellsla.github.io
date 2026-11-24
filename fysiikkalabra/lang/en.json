@@ -658,7 +658,7 @@
       "alkupaikka": "Initial position $s_0 = {{s0}}\\,\\text{m}$",
       "kappaleen_nopeus": "Speed $v = {{v}}\\,\\text{m/s}$",
       "hetki": "Moment $t = {{t}}\\,\\text{s}$",
-      "nopeus_toisto": "Speed",
+      "nopeus_toisto": "Replay speed",
       "hidas": "slow",
       "normaali": "normal",
       "nopea": "fast",

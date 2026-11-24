@@ -1,16 +1,18 @@
-VERDICT: PASS
-CONTENT-HASH: 6f329e9d073562f2
+VERDICT: FAIL
+CONTENT-HASH: c8723da10d15d450
 
 ## Blocking
-- none
+- [Major] assets/sims/fy1/fy1-5/sim.js (sim-390, sim-1280) and inquiry.json `howto` — the replay-pace select is now labelled "Speed", the same word as the physics slider "Speed v = 2,0 m/s". On the same control row a student cannot tell which one changes the trolley's speed. The howto sentence "*Speed* changes only the pace of the replay" is then ambiguous too. At 1280 px the select also shows only "normal", with no visible label beside it. — The two controls mean different things (the quantity v against the playback pace), and the lesson is about v. — Give the select a distinct word, for example "Playback" or "Pace" (it must not read "Speed"), and use the same word in the `howto`. Keep the interface text short.
 
 ## Polish
-- none
+- [Minor] sim-390 — the "Moment t" slider and the select sit on one row, so the slider is short (about half width). Acceptable, but the select could go on the row of the Start and Reset buttons.
+- [Minor] sim.js — the legend note (flag, arrow, dots) was removed from the page. `howto` still explains the flag, arrow and marks, so nothing essential is lost.
 
 ## Checked
-- review/shots/fy1-5-open-exit-1280.png: exit-ticket question 2 with its answer open. The changed chain $s = s_0 + vt = 4\,\text{m} + 3\,\text{m/s} \cdot 2\,\text{s} = 10\,\text{m}$ renders without red source, is set as aligned rows with the quantity first, units upright with a thin space, \cdot for multiplication. Nothing clipped; question 1 and the card layout are intact.
-- Delta (x, x0 changed to s, s0) makes the symbols match the lesson text, where s_0 is used throughout and no x_0 remains, and question 1's s = vt. Notation is now consistent across the chapter.
-- Figures, lesson text and simulation unchanged from the passed version; the shared exit-ticket component renders the same at 390 px as at 1280 px.
+- fy1-5-sim-390.png and fy1-5-sim-1280.png: controls, readout and labels. The canvas labels render as LaTeX, with no clipping or overflow. The removed note leaves no gap.
+- fy1-5-top-390.png and fy1-5-intro-1280.png: the new hero picture (Voyager 2 and the planets). It is a clear flat illustration, the subject sits in the middle third, and it has no text or clutter.
+- fy1-5-fig-2-390.png: the motion diagram (fy1-5-motion.webp, the changed picture). Five trolleys, equal Δs brackets, blue velocity arrow, LaTeX labels, legible at 390 px.
+- The text of inquiry.json: only the control name changed. The LaTeX is intact.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish (English prose) 5 · accessibility 5
+illustrations 5 · typography 5 · Finnish (English prose) 4 · accessibility 4

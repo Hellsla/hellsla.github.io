@@ -658,7 +658,7 @@
       "alkupaikka": "Alkupaikka $s_0 = {{s0}}\\,\\text{m}$",
       "kappaleen_nopeus": "Nopeus $v = {{v}}\\,\\text{m/s}$",
       "hetki": "Hetki $t = {{t}}\\,\\text{s}$",
-      "nopeus_toisto": "Nopeus",
+      "nopeus_toisto": "Toistonopeus",
       "hidas": "hidas",
       "normaali": "normaali",
       "nopea": "nopea",
