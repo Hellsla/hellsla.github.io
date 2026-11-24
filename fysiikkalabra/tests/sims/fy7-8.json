@@ -18,10 +18,10 @@
   "note": "DOM order canvas, controls, readout"
  },
  {
-  "expr": "(() => { const n=document.querySelectorAll('#sim-root p.note'); return !document.querySelector('#sim-root details') && n.length===1 && n[0].textContent.trim().split(/\\s+/).length<=15 ? 1 : 0 })()",
+  "expr": "(() => { const n=document.querySelectorAll('#sim-root p.note'); return !document.querySelector('#sim-root details') && n.length===0 ? 1 : 0 })()",
   "expected": 1,
   "tol": 0,
-  "note": "no Lisätietoja box; one legend line of at most 15 words"
+  "note": "no Lisätietoja box and no legend line (the legend is in the lesson's inquiry.json)"
  },
  {
   "expr": "(() => { const P=window.simAdapter && window.simAdapter.params; return P && Object.keys(P).sort().join(',')==='P,U,l' && P.U.unit==='kV' && P.P.unit==='MW' && P.l.unit==='km' ? 1 : 0 })()",

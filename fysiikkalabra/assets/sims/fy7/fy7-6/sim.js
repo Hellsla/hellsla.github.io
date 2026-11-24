@@ -60,7 +60,6 @@ new p5((p) => {
     selK.option(__('magneetti'), 'magneetti'); selK.option(__('teras'), 'teras'); selK.selected('magneetti');
     const ls = p.createElement('label').parent(controls); p.createSpan(__('nopeus')).parent(ls); selSpeed = p.createSelect().parent(ls);
     selSpeed.option(__('hidas'), '0.5'); selSpeed.option(__('normaali'), '1'); selSpeed.option(__('nopea'), '2'); selSpeed.selected('1');
-    p.createP(__('selite')).parent('sim-root').class('note');
     p.textFont('Arial');
     for (const e of [selT.elt, selK.elt]) e.addEventListener('change', () => { sync(); p.redraw(); });
     // adapter for guided investigations (sim-embed.js): the page may set, lock and reset these parameters

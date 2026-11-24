@@ -53,7 +53,6 @@ new p5((p) => {
     const l1 = p.createElement('label').parent(controls); lT = p.createSpan('').parent(l1); slT = p.createSlider(200, 10000, 5800, 100).parent(l1);
     const l2 = p.createElement('label').parent(controls); p.createSpan(__('alue')).parent(l2); selA = p.createSelect().parent(l2);
     selA.option(__('alue_lyhyt'), 'lyhyt'); selA.option(__('alue_pitka'), 'pitka'); selA.selected('lyhyt');
-    p.createP(__('selite')).parent('sim-root').class('note');
     p.textFont('Arial');
     if (window.defineSimAdapter) window.defineSimAdapter({
       params: { T: { input: slT.elt, unit: 'K' }, alue: { input: selA.elt, unit: '' } },
