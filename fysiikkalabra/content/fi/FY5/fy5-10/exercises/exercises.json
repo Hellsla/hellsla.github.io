@@ -297,7 +297,7 @@
     {
       "id": "fy5-10-L3-04",
       "level": 3,
-      "text": "Esimerkkiaineisto: $12{,}0\\,\\text{m}$ pitkää narua kiristetään eri voimilla $F$, ja narun päähän tehty pulssi kulkee koko narun pituuden ajassa $t$. Mittaustulokset ovat taulukossa.\n\nLaske pulssin nopeus jokaiselle jännitykselle. Tutki, riippuuko nopeus jännityksestä suoraan verrannollisesti vai jollakin muulla tavalla.\n\nNarua heilutetaan taajuudella $5{,}0\\,\\text{Hz}$, kun jännitys on $30\\,\\text{N}$. Mikä on syntyvän aallon aallonpituus? Perustele, miksi aallonpituus muuttuisi, jos naru vaihdettaisiin paksumpaan mutta taajuus pidettäisiin samana.\n\nAnna vastaus aallonpituutena.",
+      "text": "$12{,}0\\,\\text{m}$ pitkää narua kiristetään eri voimilla $F$, ja narun päähän tehty pulssi kulkee koko narun pituuden ajassa $t$. Mittaustulokset ovat taulukossa.\n\nLaske pulssin nopeus jokaiselle jännitykselle. Tutki, riippuuko nopeus jännityksestä suoraan verrannollisesti vai jollakin muulla tavalla.\n\nNarua heilutetaan taajuudella $5{,}0\\,\\text{Hz}$, kun jännitys on $30\\,\\text{N}$. Mikä on syntyvän aallon aallonpituus? Perustele, miksi aallonpituus muuttuisi, jos naru vaihdettaisiin paksumpaan mutta taajuus pidettäisiin samana.\n\nAnna vastaus aallonpituutena.",
       "kind": [
         "data",
         "model"
@@ -334,7 +334,7 @@
     {
       "id": "fy5-10-L3-05",
       "level": 3,
-      "text": "Esimerkkiaineisto: pitkä köysi koostuu kahdesta eri paksuisesta osasta, jotka on liitetty toisiinsa. Köyden päätä heilutetaan tasaisesti taajuudella $5{,}0\\,\\text{Hz}$, ja aallonpituus mitataan kummassakin osassa. Tulokset ovat taulukossa.\n\nHeilutuksen alussa köyteen tehdään yksi pulssi, joka kulkee ensin ohuen osan ja sitten paksun osan. Pulssin heijastumista liitoskohdassa ei huomioida, ja pulssi etenee kummassakin osassa tasaisella nopeudella.\n\nKuinka kauan pulssilta kuluu köyden koko matkaan? Perustele, miksi taajuus on sama kummassakin osassa mutta aallonpituus ei.",
+      "text": "Pitkä köysi koostuu kahdesta eri paksuisesta osasta, jotka on liitetty toisiinsa. Köyden päätä heilutetaan tasaisesti taajuudella $5{,}0\\,\\text{Hz}$, ja aallonpituus mitataan kummassakin osassa. Tulokset ovat taulukossa.\n\nHeilutuksen alussa köyteen tehdään yksi pulssi, joka kulkee ensin ohuen osan ja sitten paksun osan. Pulssin heijastumista liitoskohdassa ei huomioida, ja pulssi etenee kummassakin osassa tasaisella nopeudella.\n\nKuinka kauan pulssilta kuluu köyden koko matkaan? Perustele, miksi taajuus on sama kummassakin osassa mutta aallonpituus ei.",
       "kind": [
         "data",
         "model"
