@@ -2,7 +2,9 @@
 
 Kuvat eivät muutu ulkonäöltään: vain `aria-label` (alt-teksti) muuttuu. Piirrosten sisäiset nimiöt (`\text{harvennus}`) jätettiin ennalleen ja ovat uudelleen piirrettävien listalla.
 
-Jälkeen-kuvat: `fy5-10-types-jalkeen.png`, `fy5-14-pitkittainen-jalkeen.png` (ennen-kuva on ulkonäöltään sama, vain nimiö on piirroksessa vielä "harvennus").
+Kuvat (390 px): `*-ennen.png` = nykyinen (alt-tekstit vaihdettu, nimiö piirroksessa "harvennus"); `*-jalkeen-nimio.png` = vaihtoehto, jossa myös nimiö on "harventuma".
+
+**Vaihtoehto (EI PR:ssä):** `nimio-vaihtoehto.patch` vaihtaa `figures.py`:n nimiöt (fy5-10 rivit 87–88, fy5-14 rivi 67), `figures.json`-käännösavaimet ja uudelleengeneroidut lesson.md-kuvat (fi, fi-easy, en). Opettaja päättää: approve-figures koko muutokselle tai vain alt-teksteille. Kuvat pysyvät muuten samoina; nimiö on hieman lyhyempi.
 
 ## Alt-tekstit (vain muuttuneet lauseet)
 | Kuva | Ennen | Jälkeen |
