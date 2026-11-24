@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 5a2a6d8880fe81c5
-SCOPE: delta numbers,reflow,teacher-figure from 67b4799bb076bead base b3ee786
+CONTENT-HASH: 57544ac197c30d1e
+SCOPE: delta wording
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+(none)
 
 ## Checked
-- Delta (8g, Kaava step of solutions.md only). Rendered every Kaava block of the exercise solutions at 390 px (own Playwright capture, `?ratkaisut=1`, all boxes open; the packet's shots are 1280 px only): no clipping, scrollWidth 390, equals signs aligned in one column, one equation per row, symbols and units unchanged. Also contact captures of the 1280 px open-exercises set from screenshot.py.
-- Figures fy8-5/nodes and fy8-5/string and the two webp pictures are listed as teacher-approved and unchanged; not re-judged.
+- Delta only: prefix "Esimerkkiaineisto: " removed, first letter capitalised. Opened fy8-5-open-exercises-L2-1280-6 (L2-05/06 area); text reads naturally, layout (cards, tables, formulas, answer fields) intact, no clipping or overflow.
+- Source diff read for the changed tasks; no numbers, units or formulas changed.
 
 ## Scores
-illustrations 5 · typography  · Finnish 5 · accessibility 5
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

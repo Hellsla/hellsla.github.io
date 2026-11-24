@@ -1,17 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 295c391cac8e837b
-SCOPE: delta md-paragraphs,reflow,typography from a7371b05089e9246 base 5b3ca4f
+CONTENT-HASH: 4a6a45e6ddeaa9ce
+SCOPE: delta wording
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+(none)
 
 ## Checked
-- Delta judged from git diff 5b3ca4f against the current captures in content/fi/FY6/fy6-1/review/shots/ (stamp current): the changes are the Kaava/Formula steps now written as aligned blocks of basic equations, and long Principle/Model answer paragraphs split into one idea each.
-- Opened the longest changed blocks (fy6-1 L3 1280-5: seven-row Formula block; fy6-3 L3 1280-2/-3: three-row and chain blocks, fy6-1 L2 1280-9): rows aligned at =, fractions and subscripts legible, nothing clipped, Substitution chains and boxed answers intact, spacing between split paragraphs even.
-- The unchanged figures and layout of the rest of the page were not re-judged; no figure or caption text in the diff beyond what is named in SCOPE.
+- Delta only: prefix "Esimerkkiaineisto: " removed, first letter capitalised. Opened fy6-1-open-exercises-L3-1280-7 (copper wire task L3-05); text reads naturally, layout (cards, tables, formulas, answer fields) intact, no clipping or overflow.
+- Source diff read for the changed tasks; no numbers, units or formulas changed.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5
