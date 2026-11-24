@@ -1,22 +1,23 @@
 VERDICT: PASS
-CONTENT-HASH: cdb5bffd5c73d8e5
+CONTENT-HASH: e86447c15ad2370f
 
 ## Blocking
 (none)
 
 ## Polish
-1. inquiry.json exp-1 / pred-2 / exp-2 — exp-1 already sets m_A = 1 kg, m_B = 8 kg, so its table shows equal speeds for the exact pair pred-2 asks about. The reveal "after exp-2" is then cosmetic and exp-2 adds little. Fix: give exp-1 equal masses (or hide v_B there), so the mass question is answered only by exp-2.
-2. inquiry.json johtopaatos, check-3, lesson.md "Mass does not affect falling" — "the difference is caused by the air, not by mass as such" sits next to exp-3, where the heavier ball is clearly faster in air. A 17-year-old reads that as a contradiction of the learn goal "when mass affects falling". Fix: "In a vacuum mass does not matter; in air the same air resistance slows a light ball more, so there mass seems to matter." Also exp-3 varies mass at constant size, so "wide" is not tested; say "light" (and a feather is also wide).
-3. lesson.md figure free-fall — shows fall distances 4.9, 19.6 and 44.1 m and the gaps 14.7 and 24.5 m. No text explains them, and FY1 has no tool to derive them (only s = vt and v = gt). Fix: one sentence in Key idea ("the distances are shown for comparison; the formula for them comes in a later course"), or drop the distance labels.
-4. inquiry.json check-1 and check-c2 — both ask what the graph or g means, and check-c2 is not optional, so there are four checks plus the exit ticket after three experiments. Mark check-c2 optional (or merge it with check-1) to keep the lesson at one lesson's workload.
-5. lesson.md Formula section — switches from speed to "change in velocity" and "velocity" while the rest of the lesson and FY1 use speed; use "speed" throughout. Strobe photo sits after the 5.0 m/s paragraph and shows a bounce (rising gaps shrink); move it under the free-fall figure in Key idea and say it shows only the falling part. Not mine, but visible in capture #2: the sim shows both "Assumptions of the model and explanation" and "Assumptions of the model".
+- inquiry.json exp-3 and lesson.md "Mass does not affect falling" — the sim keeps the diameter fixed at 0.20 m, so exp-3 shows that mass matters in air but never tests the "light, wide" reason given for the feather — add one sentence to the exp-3 conclusion or model note that in the sim only the mass changes and that for a real feather the large area does the same.
+- inquiry.json pred-1 — the prompt gives "about 10 m/s after 1.0 s", so a linear guess is easy; the distractors still separate constant, slowing and growing increase — optional: ask for the speed after 2.0 s and 3.0 s without the first value.
+- inquiry.json exp-1 — the sim only computes v = gt in a vacuum, so the experiment cannot refute the prediction. The conclusion's model answer says this openly; acceptable, with exp-3 as the emergent evidence.
+- lesson.md "Key idea" — the feather/hammer explanation and the value 9.81 are in the theory text before the student has gathered data; the stages gate this, so only the standalone reading is affected.
+- glossary — "free fall" is still missing from glossary.json (developer to add).
 
 ## Checked
-- Path: Apollo hook, retrieval (average speed, answers verified), two predictions, simulation, three experiments, conclusion, theory, example, checks. A student with only fy1-5 can follow it; the slot goals are met and nothing goes past FY1 scope.
-- Option feedback repairs the misconception behind each wrong option; the right options name the evidence. Pred-1 and pred-2 wording still reads correctly when reopened after the experiments.
-- exp-3 model values checked by hand: terminal-speed formula with K = 0.5 · 1.2 · 0.47 · π · 0.1² gives 10.5 m/s at 0.1 kg and about 37.6 m/s at 10 kg at t = 4 s, as the model answer states. The sim's numbers are called model values, and the conclusion admits that exp-1/2 repeat the formula and only exp-3 shows an emergent effect.
-- Worked example: seven stages, one step each, symbolic first, conversion explained; 14.715 m/s = 52.97 km/h correct.
-- Exit ticket tests the core idea (proportionality to g): 4.9 m/s, 29 m/s, ratio 6.06, all correct.
-- Hint ladders and mistake values in exp-1, siirto, check-2 and the data item match the real wrong routes; the data item's graph points and line agree with the table.
-- Phone captures #1–#12: nothing clipped, controls and readout understandable, figures legible.
-- Exercises not judged (reviewed apart).
+- Path: retrieval (average speed, Moon hammer) → two predictions → sim → three experiments → theory → staged example → error-spotting and transfer → checks → exit ticket; both slot goals (linear model v = gt, mass in falling) are covered and nothing beyond FY1 scope (no forces).
+- The opening Apollo 15 question is answered by exp-2, exp-3 and the conclusion, not before the student commits.
+- Predictions have four misconception-based options; each wrong option's feedback repairs the idea (constant speed, slowing, growing increase, mass effect) and the right ones cite the table.
+- exp-3 (air) is the emergent result and shows that the variable is air, not mass as such; locks and varied quantity are correct in all three experiments.
+- Slope reading from noisy example data (optional) and the numeric answers and mistake values (19.6, 29.4, 11.0, 22.2, 3.7) are consistent with the solutions.
+- Worked example has seven stages, one step each; units, rounding and reasonableness shown.
+- Figures: free-fall capture (fig-3 at 390 px) is legible and uses distance and speed together without giving away the task; the sim at 390 px and the lab at 1280 px show the picture, controls and key values, with the text behind the three closed boxes.
+- Check tasks: concept, representation and calculation check misconceptions (g read as speed, as distance, horizontal graph); the explain criteria are observable and match the question; the exit ticket (Moon g) tests v = gt and proportionality.
+- Workload is about one lesson with the optional items removed.
