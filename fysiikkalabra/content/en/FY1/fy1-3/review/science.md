@@ -1,21 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: 97e76b1902e96d98
+CONTENT-HASH: 6b5fc5bd9373a765
 
 ## Blocking
 
 ## Polish
-- content/en/FY1/fy1-3/inquiry.json:exp-2 solution (Answer) — "two decimal places like the mean in the table": the sim readout and table show the mean to three decimals ($2.700\,\text{s}$ at $n = 40$, model $2.6995\,\text{s}$). Say "like the true time and the readings", or quote the mean as the table shows it.
-- content/en/FY1/fy1-3/lesson.md:505 and Summary — "for the mean $\Delta x$ is a cautious estimate" is correct (C), but it stays close to the guardrail "never call half the range the uncertainty of the mean". Keep the wording "cautious (too large) estimate" and do not shorten it to "the uncertainty of the mean".
+- lesson.md:180 — `x = x_reading − Δx_sys` works only when the error at the measured value is the same as at the reference (a constant offset). The definition of systematic error ("almost the same in direction and size") covers this, so it is a fair simplification (C), but a short clause would stop a student from correcting, say, a 60 °C reading with an ice-point offset alone — add "when the error is the same size over the whole range" or similar.
+- lessons/FY1/fy1-3/lesson-answers.py:989 — `inq-ice-corrected` (62,3 °C − 1,5 °C = 60,8 °C) matches no number in lesson.md, inquiry.json or exit-ticket.json; remove it or use it.
+- assets/sims/fy1/fy1-3/sim.js:1040 — `tx()` always writes a decimal comma, so the English page shows `2,18 s`, `0,15 s`, `1,6` while the English text uses points (screenshot fy1-3-sim-390.png); decide the separator from the page language.
+- inquiry.json exp-3 solution/hint — quotes `0.0850 s` (four figures) while the readout shows three decimals (`0.085`); quote the value as the table shows it.
+- lesson.md:283 — "a cautious uncertainty estimate for the mean" is correct as worded, and the Formula section explains it (half the range describes individual results; the mean's uncertainty is smaller). Keep that explanation next to it so the summary is never read on its own as "the uncertainty of the mean" (guardrail).
 
 ## Checked
-- Round-2 finding fixed: check-2 Answer is back to "$2\,\%$, one significant figure like the error estimate $0.05\,\text{s}$ (calculator value $2.08\,\%$)". Relative tolerance 0.1 accepts 2, 2.1 and 2.08 and rejects the listed mistakes 4.2, 0.05 and 0.021.
-- Recomputed in one python run from the sim's G series: hook readings 2.18/2.45/2.68/2.67/2.40 s; exp-1 n=1 difference −0.22 s, n=40 difference −0.0005 s, half range 0.25 s (n=5) and 0.26 s (n=40); exp-2 n=40 mean 2.6995 s, so the difference is 0.30 s; exp-3 0.525/0.085 = 6.18, tolerance 0.03 rejects the mistake 6.
-- Worked example: 19.09 s, 3.18 s ± 0.12 s, 3.77 % → 3.8 %. The interval 3.06–3.30 s holds five of the six results.
-- karkea: 4.31 s moves the mean by +0.19 s and the half range goes from 0.09 to 0.62 s, as its feedback says.
-- siirto: 5.44 g; the mistake values 5.6, 27.2, 4.8 and 28 are correct and their feedback is right.
-- Exit ticket: 19.9 g, Δm = 0.1 g, 0.09/4.52 = 1.99 % ≈ 2 %. Thermometer data: mean 1.5 °C, half range 0.1 °C, a ratio of 15.
-- The terms (measurement error with a sign, uncertainty positive and not a strict limit, resolution vs uncertainty, rule for gross errors and outliers, half range as a scatter estimate) match the guardrails.
-- Systematic error: $\Delta x_\text{sys} = \bar{x}_\text{ref} - x_\text{true}$ and $x = x_\text{reading} - \Delta x_\text{sys}$ have the right sign. The zero-scale figure shows 48.7 − 1.2 = 47.5 g.
-- sim.js uses the model the model box gives: reading rounded to 0.01 s, fixed series. lesson-answers.py matches it.
-- Each experiment's locked and varied parameters isolate one variable. Exactly one option is correct in every choice item.
-- Content hash 97e76b1902e96d98 at the start and at the end.
+- I recomputed every number in one script with my own formulas: worked example (19,09 s; 3,1817 s; 0,12 s; 3,77 % → 3,8 %; 5 of 6 results in 3,06–3,30 s), pysähdy (0,2 s), siirto 5,44 g and the mistakes 5,6 / 27,2 / 4,8 / 28, check-2 2,083 % (mistake 4,17 %), exit ticket (19,9 g; 0,1 g; 1,99 %), ice data (1,5 °C; 0,1 °C; ratio 15), gross error (mean shift 0,19 s; half-range 0,09 → 0,62 s, ×6,9). All agree, and so does lesson-answers.py.
+- Simulation with its fixed series: exp-1 n = 1 gives −0,22 s, n = 40 gives −0,0005 s, and the half-range is 0,25/0,26 s at n = 5, 10 and 40; exp-2 n = 40 gives a mean of 2,6995 s (0,2995 s); exp-3 gives 0,085 and 0,525 s (ratio 6,18). The ratio is exactly 6 before rounding, so the feedback blaming rounding is right. The hook times are the sim's first readings.
+- Experiments: setups isolate the varied parameter; slider steps reach 0,05/0,15/0,30 and +0,30; simState has `mean`, `puoli`, `vir`.
+- Each choice item has exactly one correct option; every distractor's feedback is correct.
+- Figures: "error-types" is to scale (true value 2,40 s, means 2,41 s and 2,59 s, Δt_sys ≈ 0,19 s); example-plot points, mean and the 3,06–3,30 s bar are at the right places; range-half bar = mean ± half-range; zero-scale 48,7 − 1,2 = 47,5 g.
+- Terms follow the guardrails: error vs uncertainty vs resolution, how outliers are handled, the scale-reading wording, and hand timing at about 0,2 s.
+- Scope: within FY1's measurement and reliability content; nothing from later courses.
+- Sim model box states the model, that the values are model values and the reading rounding; Δt_ran is the per-reading standard deviation, consistent with half-range > Δt_ran.
