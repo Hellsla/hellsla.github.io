@@ -29,6 +29,8 @@ In each state it reports:
   datafig    a small table beside a figure (.data-fig): stacked although both fit, overlapping, its caption wrapped to a
              narrow column, or an empty strip at the table's right edge (work queue 22, teacher 2026-11-19)
   heading    a stage heading hidden under the sticky navigation after following its link (closed state only)
+A page with the exam mode (the minikoe pages, the practice exam) is checked in two more states, "exam" (started, two tasks chosen, the clock
+bar at the foot of the window) and "exam-ended-*" (ended: the result, then the three states above).
 Each finding names where it is (work queue 5, 2026-11-16): the nearest block with an id (the task "#fy8-1-L2-08", the
 stage "#teoria"), the open box, the solution step and the element ("at #fy8-1-L2-08 > details.solution > step
 "Substitution" > div.eq-chain"); a page wider than the window names the deepest element past its edge. For CI's
@@ -283,6 +285,9 @@ HEADINGS = """async () => { const V = (e) => e.checkVisibility(), out = [], nav 
   }
   window.scrollTo(0, 0); return out; }"""
 
+# which picture files of figures drawn on one load (read by the "svg-image" check; a reload of the page, as the exam mode does, loses it: run it again)
+FIGIMG = """Promise.all([...document.querySelectorAll('main svg image')].map((i) => new Promise((ok) => { const m = new Image(); m.onload = () => ok([i.getAttribute('href'), m.naturalWidth]); m.onerror = () => ok([i.getAttribute('href'), 0]); m.src = new URL(i.getAttribute('href'), document.baseURI).href; }))).then((r) => { window.__figimg = Object.fromEntries(r); return true; })"""
+
 bad = 0
 with sync_playwright() as pw:
     b = launch(pw)
@@ -293,13 +298,25 @@ with sync_playwright() as pw:
         page = b.new_page(viewport={"width": width, "height": 800})
         page.goto(page_file.as_uri())
         page.evaluate("document.fonts.ready.then(() => true)")   # measure with the page's own fonts, not a fallback
-        page.evaluate("""Promise.all([...document.querySelectorAll('main svg image')].map((i) => new Promise((ok) => { const m = new Image(); m.onload = () => ok([i.getAttribute('href'), m.naturalWidth]); m.onerror = () => ok([i.getAttribute('href'), 0]); m.src = new URL(i.getAttribute('href'), document.baseURI).href; }))).then((r) => { window.__figimg = Object.fromEntries(r); return true; })""")   # which picture files of figures drawn on one (scripts/figimage.py) load: the "svg-image" check
+        page.evaluate(FIGIMG)   # which picture files of figures drawn on one (scripts/figimage.py) load: the "svg-image" check
         page.wait_for_timeout(400)
         found = [dict(f, state="closed") for f in page.evaluate(HEADINGS)]
         for state, js in OPEN.items():
             page.evaluate(js); page.wait_for_timeout(150 if state != "closed" else 0)
             if state != "closed": page.evaluate("document.querySelectorAll('.katex-display').length")   # (opened maths is already rendered by auto-render)
             found += [dict(f, state=state) for f in page.evaluate(JS)]
+        if page.locator("#koetila .kt-go").count():   # an exam-mode page (templates/koetila.js, work queue 11b PR 6): the same checks while the exam runs and once it has ended
+            page.on("dialog", lambda d: d.accept())
+            page.click("#koetila .kt-go"); page.wait_for_selector(".kt-bar", timeout=8000); page.wait_for_timeout(700)
+            page.evaluate("document.fonts.ready.then(() => true)"); page.evaluate(FIGIMG)
+            for pick in page.locator(".kt-pick").all()[:2]:   # a task chosen shows its whole body beside an unchosen one
+                if pick.is_enabled(): pick.click()
+            page.wait_for_timeout(200)
+            found += [dict(f, state="exam") for f in page.evaluate(JS)]
+            page.click(".kt-end"); page.wait_for_selector(".kt-result", timeout=10000); page.wait_for_timeout(3500); page.evaluate(FIGIMG)
+            for state, js in OPEN.items():
+                page.evaluate(js); page.wait_for_timeout(700 if state != "closed" else 0)   # (a picture inside a box that has just opened loads lazily)
+                found += [dict(f, state="exam-ended-" + state) for f in page.evaluate(JS)]
         page.close()
         uniq = []
         key = page_file.relative_to(OUT).with_suffix("").as_posix()
