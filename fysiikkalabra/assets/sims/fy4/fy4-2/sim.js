@@ -60,7 +60,6 @@ new p5((p) => {
     for (const e of [slV0.elt, slA.elt]) { e.addEventListener('input', restart); e.addEventListener('change', restart); }
     const scrub = () => { running = false; toTime(slT.value()); };        // the student drags the clock: playback stops
     slT.elt.addEventListener('input', scrub); slT.elt.addEventListener('change', scrub);
-    p.createP(__('legend')).parent('sim-root').class('note');
     p.textFont('Arial');
     restart();
     // adapter for guided investigations (sim-embed.js): the page may set, lock and reset these parameters
