@@ -1,9 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 84e65900254f17b0
-SCOPE: delta (old-content fixes, git diff origin/main)
-Checked: fy9-kokeellisuus (fi): rendered preview page at 390 and 1280 px with every details/solution open (DOM check: no page overflow, no KaTeX error, no clipped or scrolling display formula); captures review/shots/*stage-sovella-*, *stage-exercises-*, *teacher-*, intro and stage-selita/tarkista tiles, with sample tiles opened at readable size (aallot fi sovella-1280-5 and 390-6, liike en sovella-390-9, ympyraliike fi-easy sovella-390-8, energia fi teacher-1280-1); changed numbers and units diffed against the source for decimal comma/point and \, thin space.
+CONTENT-HASH: dbd4509c7fbbbf79
 
-1. Blocking: none.
-2. Typography: changed numbers and units are LaTeX with thin space, decimal comma in fi and fi-easy, decimal point in en; aligned blocks and inline formulas fit at 390 px; no layout regressions from the changed lines.
-3. Language: changed lines read naturally and consistently with the glossary terms; no wording defect found.
-4. Polish: known drawing issues (kone-kuva W arrow, kalteva.webp, geo-kuva ray, kartta label, sahkokentta formula map E vs W) are known to the teacher, not re-judged here.
+Blocking: none.
+
+Polish:
+1. [Polish] s-heiluri c, vihje 1 (fi): "Mihin heilurin mallissa $l$ tarkoittaa pituutta?" on kömpelö. Korvaa: "Mitä $l$ tarkoittaa heilurin mallissa? Mistä pisteestä mihin ryhmä mittasi pituuden?"
+2. [Polish] Lämpöenergia-osa, vihje 3 (fi): "Muunna … jouleiksi kilogrammaa ja kelviniä kohti" on raskas; "$2{,}0\,\text{kJ/(kg}\cdot\text{K)}$ yksikköön $\text{J/(kg}\cdot\text{K)}$".
+
+Checked: Tehtävät cards at 390 and 1280 px (Playwright), hints closed (stacked list at 390) and open; no page overflow, no formula wider than its hint box; all 15 parts' hint texts read.
