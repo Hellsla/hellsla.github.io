@@ -1,9 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 3271ecde73bf4128
-SCOPE: delta (old-content fixes, git diff origin/main)
-Checked: fy9-energia (fi): rendered preview page at 390 and 1280 px with every details/solution open (DOM check: no page overflow, no KaTeX error, no clipped or scrolling display formula); captures review/shots/*stage-sovella-*, *stage-exercises-*, *teacher-*, intro and stage-selita/tarkista tiles, with sample tiles opened at readable size (aallot fi sovella-1280-5 and 390-6, liike en sovella-390-9, ympyraliike fi-easy sovella-390-8, energia fi teacher-1280-1); changed numbers and units diffed against the source for decimal comma/point and \, thin space.
+CONTENT-HASH: 31a986a4af64bc1a
 
-1. Blocking: none.
-2. Typography: changed numbers and units are LaTeX with thin space, decimal comma in fi and fi-easy, decimal point in en; aligned blocks and inline formulas fit at 390 px; no layout regressions from the changed lines.
-3. Language: changed lines read naturally and consistently with the glossary terms; no wording defect found.
-4. Polish: known drawing issues (kone-kuva W arrow, kalteva.webp, geo-kuva ray, kartta label, sahkokentta formula map E vs W) are known to the teacher, not re-judged here.
+## Blocking
+None.
+
+## Polish
+None.
+
+## Checked
+Vihjeet tarkistettu leveyksillä 390 ja 1280 px, suljettuina ja avattuina (tehtävien s1–s9 kortit). Suljetut vihjeet ovat 1280 px:llä samalla rivillä ja rivittyvät siististi 390 px:llä. Avatut laatikot ovat luettavia, kaavat eivät leikkaudu eikä vaakasuuntaista ylivuotoa ole. Lukujärjestys on kohta, vihje 1, 2, 3. Desimaalipilkku ja ohut väli ennen yksikköä ovat oikein. Suomi on luontevaa ja ääni yhtenäinen.
