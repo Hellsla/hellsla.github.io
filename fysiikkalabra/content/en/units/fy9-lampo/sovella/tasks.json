@@ -301,7 +301,7 @@
           "text": "Draw a graph of the mass of water vaporised as a function of the power of the heater, and fit a suitable model to the points.",
           "hints": [
             "Which quantity does the group set and which is the measured result? Which one belongs on the horizontal axis?",
-            "Choose scales that start from zero and plot the five points $(P,\\ \\Delta m)$. Fit a line that runs between the points, and look where it meets the vertical axis.",
+            "Plot the five points $(P,\\ \\Delta m)$ and fit a line that runs between the points. Look at whether it passes through the origin.",
             "Look at part c: what must you be able to read from the graph? Choose a scale on the axes where that is possible, and think what you must do to the line."
           ],
           "criteria": [
@@ -333,7 +333,7 @@
           "text": "Determine the specific latent heat of vaporisation of water with the help of the graph.",
           "hints": [
             "The heater supplies energy that the water takes as it vaporises. Which feature of the graph tells how much more water vaporises when the power increases?",
-            "The energy needed for vaporisation is $Q = r\\,\\Delta m$, and the heater supplies the energy $P\\,t$. Write down conservation of energy and work out what the slope of the line tells.",
+            "The energy needed for vaporisation is $Q = r\\,\\Delta m$. Of the heater's energy $P\\,t$, the part $P_\\text{loss}\\,t$ is conducted to the room: $(P - P_\\text{loss})\\,t = r\\,\\Delta m$. Work out what the slope of the line tells.",
             "Read the slope from two points of the line on the graph and convert its unit from grams to kilograms. Then solve $r$ with the slope and the time $t = 300\\,\\text{s}$."
           ],
           "answer": {
@@ -405,7 +405,7 @@
           "hints": [
             "What does the calculation from one measurement, $r = \\dfrac{P\\,t}{\\Delta m}$, assume about the power of the heater? Is the assumption true in a real experiment?",
             "Compare the formula for one measurement with the equation of the graph's model, $(P - P_\\text{loss})\\,t = r\\,\\Delta m$. What is the difference, and in which direction does it distort the result?",
-            "Calculate the difference as a percentage: $\\dfrac{2.54\\,\\text{MJ/kg} - r_\\text{graph}}{r_\\text{graph}}$. Then ask what a loss that stays constant does to the line, and how many measurements each method uses."
+            "Calculate the difference as a percentage: $\\dfrac{2.54\\,\\text{MJ/kg} - r_\\text{graph}}{r_\\text{graph}}$. Then consider what a loss that stays constant does to the line."
           ],
           "criteria": [
             {
@@ -454,7 +454,7 @@
           "text": "Explain why a lake freezes from the surface down and why there is water at about $4\\,{}^\\circ\\text{C}$ at the bottom even in winter.",
           "hints": [
             "What do you know about how the density of water changes as it cools towards $0\\,{}^\\circ\\text{C}$? How does density decide which water stays at the surface and which sinks?",
-            "Look at the density of water as a function of temperature over two ranges: above $4\\,{}^\\circ\\text{C}$, and between $0\\,{}^\\circ\\text{C}$ and $4\\,{}^\\circ\\text{C}$. At what temperature is the density greatest?",
+            "Look at the density of water as a function of temperature. How does it change as water cools from above $4\\,{}^\\circ\\text{C}$, and how as it cools from $4\\,{}^\\circ\\text{C}$ towards $0\\,{}^\\circ\\text{C}$?",
             "Describe the autumn step by step: what happens to the surface water as it cools, and what happens after the whole lake has reached the temperature at which the density is greatest?"
           ],
           "criteria": [
@@ -511,7 +511,7 @@
           "hints": [
             "The ice fisher says that snow is cold and cools the ice. In which direction does energy transfer when the lower surface of the ice is at $0\\,{}^\\circ\\text{C}$ and the air is frosty?",
             "Snow contains a lot of air. What kind of heat conductor is air, and what does snow do to the power conducted through the ice? Use the reasoning of part b: the ice grows only as fast as energy is conducted away.",
-            "Reason in two steps: what does snow do to the power conducted from the lower surface of the ice, and what does it do to the speed at which the ice grows? Then decide whether snow strengthens the ice."
+            "Reason in two steps: what does snow do to the power conducted from the lower surface of the ice, and what does it do to the speed at which the ice grows?"
           ],
           "criteria": [
             {
@@ -629,7 +629,7 @@
           "hints": [
             "Go through the group's report step by step: at which steps can an error arise that affects the result?",
             "Write each improvement in the form: what the source of error is, how it distorts the result, and how the improvement removes or reduces it. The energy balance assumes that all the heat exchange takes place in the cup.",
-            "Think separately about three things: what is done to the ice before it is dropped in the water, how the mass of the ice is found, and what the cup and the surroundings do to the temperature of the water."
+            "Go through the three things that are measured or assumed in the experiment: the surface and temperature of the ice before it is dropped in, the mass of the ice, and the measurement of the water temperature. Which of them can distort the result, and why?"
           ],
           "criteria": [
             {
@@ -785,7 +785,7 @@
           "text": "The driver is advised: \"On a long downhill use engine braking, so that the brakes do not overheat.\" Justify the advice using energy.",
           "hints": [
             "When the car descends at constant speed, its potential energy decreases. Where can it go if the brakes are not used?",
-            "Energy is conserved, so the decrease in potential energy must go somewhere. Compare two ways: the energy ends up in the brake discs, or it ends up in the engine. Which of them can give out its internal energy to the air?",
+            "Energy is conserved, so the decrease in potential energy must go somewhere. Compare two ways: the energy ends up in the brake discs, or it ends up in the engine. Which of them can give out its internal energy to the air at a high power for the whole long descent without overheating?",
             "Write a chain for each way: where the energy comes from, where it goes first and how it gets to the air. Then think why it is good for the brake discs to stay cool even though energy does not disappear."
           ],
           "criteria": [

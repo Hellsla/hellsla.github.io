@@ -301,7 +301,7 @@
      "text": "Esitä höyrystyneen veden massa kuumentimen tehon funktiona kuvaajana, ja sovita pisteisiin sopiva malli.",
      "hints": [
       "Kumpaa suuretta ryhmä säätää ja kumpi on mittaustulos? Kumpi kuuluu vaaka-akselille?",
-      "Valitse asteikot, jotka alkavat nollasta, ja merkitse viisi pistettä $(P,\\ \\Delta m)$. Sovita pisteisiin suora, joka kulkee pisteiden lomitse, ja katso, mihin se osuu pystyakselilla.",
+      "Merkitse viisi pistettä $(P,\\ \\Delta m)$ ja sovita niihin suora, joka kulkee pisteiden lomitse. Katso, kulkeeko se origon kautta.",
       "Katso c-kohtaa: mitä kuvaajasta pitää voida lukea? Valitse akseleille mittakaava, jossa se on mahdollista, ja mieti, mitä suoralle pitää tehdä."
      ],
      "criteria": [
@@ -333,7 +333,7 @@
      "text": "Määritä veden ominaishöyrystymislämpö kuvaajan avulla.",
      "hints": [
       "Kuumennin tuottaa energiaa, jonka vesi ottaa höyrystyessään. Mikä kuvaajan ominaisuus kertoo, kuinka paljon enemmän vettä höyrystyy, kun teho kasvaa?",
-      "Höyrystymiseen tarvittava energia on $Q = r\\,\\Delta m$, ja kuumennin antaa energiaa $P\\,t$. Kirjoita energian säilyminen ja päättele, mitä suoran kulmakerroin kertoo.",
+      "Höyrystymiseen tarvittava energia on $Q = r\\,\\Delta m$. Kuumentimen energiasta $P\\,t$ osa $P_\\text{h}\\,t$ johtuu huoneeseen: $(P - P_\\text{h})\\,t = r\\,\\Delta m$. Päättele, mitä suoran kulmakerroin kertoo.",
       "Lue kulmakerroin kuvaajan suoralta kahden pisteen avulla ja muunna sen yksikkö grammoista kilogrammoiksi. Ratkaise sitten $r$ kulmakertoimen ja ajan $t = 300\\,\\text{s}$ avulla."
      ],
      "answer": {
@@ -405,7 +405,7 @@
      "hints": [
       "Mitä yhden mittauksen lasku $r = \\dfrac{P\\,t}{\\Delta m}$ olettaa kuumentimen tehosta? Pitääkö oletus paikkansa todellisessa kokeessa?",
       "Vertaa yhden mittauksen kaavaa kuvaajan mallin yhtälöön $(P - P_\\text{h})\\,t = r\\,\\Delta m$. Mikä ero niillä on, ja kumpaan suuntaan se vääristää tulosta?",
-      "Laske ero prosentteina: $\\dfrac{2{,}54\\,\\text{MJ/kg} - r_\\text{kuvaaja}}{r_\\text{kuvaaja}}$. Kysy sen jälkeen, mitä vakiona pysyvä häviö tekee suoralle ja kuinka monta mittausta kumpikin menetelmä käyttää."
+      "Laske ero prosentteina: $\\dfrac{2{,}54\\,\\text{MJ/kg} - r_\\text{kuvaaja}}{r_\\text{kuvaaja}}$. Pohdi sen jälkeen, mitä vakiona pysyvä häviö tekee suoralle."
      ],
      "criteria": [
       {
@@ -454,7 +454,7 @@
      "text": "Selitä, miksi järvi jäätyy pinnalta alkaen ja miksi pohjalla on talvellakin noin $4\\,{}^\\circ\\text{C}$:ista vettä.",
      "hints": [
       "Mitä tiedät veden tiheyden muutoksesta, kun vesi jäähtyy kohti $0\\,{}^\\circ\\text{C}$:ta? Miten tiheys vaikuttaa siihen, mikä vesi pysyy pinnalla ja mikä painuu alas?",
-      "Tarkastele veden tiheyttä lämpötilan funktiona kahdella välillä: yli $4\\,{}^\\circ\\text{C}$:n ja $0\\,{}^\\circ\\text{C}$:n ja $4\\,{}^\\circ\\text{C}$:n välillä. Missä lämpötilassa tiheys on suurin?",
+      "Tarkastele veden tiheyttä lämpötilan funktiona. Miten tiheys muuttuu, kun vesi jäähtyy yli $4\\,{}^\\circ\\text{C}$:n lämpötilasta, ja miten, kun se jäähtyy $4\\,{}^\\circ\\text{C}$:sta kohti $0\\,{}^\\circ\\text{C}$:ta?",
       "Kuvaile syksy vaihe vaiheelta: mitä pintavedelle tapahtuu, kun se jäähtyy, ja mitä tapahtuu sen jälkeen, kun koko järvi on saavuttanut lämpötilan, jossa tiheys on suurin?"
      ],
      "criteria": [
@@ -511,7 +511,7 @@
      "hints": [
       "Pilkkijän mukaan lumi on kylmää ja jäähdyttää jäätä. Mihin suuntaan energiaa siirtyy, kun jään alapinta on $0\\,{}^\\circ\\text{C}$:ssa ja ilma on pakkasella?",
       "Lumessa on paljon ilmaa. Millainen lämmönjohde ilma on, ja mitä lumi tekee jään läpi johtuvalle teholle? Käytä b-kohdan päättelyä: jää kasvaa vain sitä mukaa kuin energiaa johtuu pois.",
-      "Päättele kahdessa vaiheessa: mitä lumi tekee jään alapinnalta johtuvalle teholle, ja mitä se tekee jään kasvun nopeudelle. Ratkaise sen jälkeen, vahvistaako lumi jäätä."
+      "Päättele kahdessa vaiheessa: mitä lumi tekee jään alapinnalta johtuvalle teholle, ja mitä se tekee jään kasvun nopeudelle."
      ],
      "criteria": [
       {
@@ -558,7 +558,7 @@
      "hints": [
       "Kuuma vesi luovuttaa energiaa ja jää ottaa sitä. Mitä jäälle on tapahduttava matkalla alkutilasta loppulämpötilaan $14{,}3\\,{}^\\circ\\text{C}$?",
       "Kirjoita energiatase: veden luovuttama energia on $c_\\text{v} m_\\text{v} (T_\\text{v} - T)$, ja jää ottaa sulamiseen ja sulamisveden lämpenemiseen energian $s m_\\text{j} + c_\\text{v} m_\\text{j} T$. Ratkaise $s$.",
-      "Laske veden luovuttama energia ja sulamisveden lämpeneminen erikseen ja ratkaise sitten $s$. Kun saat ryhmän tuloksen, kysy: missä lämpötilassa jään on tässä taseessa oltava?"
+      "Laske veden luovuttama energia ja sulamisveden lämpeneminen erikseen ja ratkaise sitten $s$. Kun saat ryhmän tuloksen, pohdi: missä lämpötilassa jään on tässä taseessa oltava?"
      ],
      "answer": {
       "value": 370.8,
@@ -629,7 +629,7 @@
      "hints": [
       "Käy ryhmän selostus läpi vaihe vaiheelta: missä vaiheissa voi syntyä virhe, joka vaikuttaa tulokseen?",
       "Kirjoita jokainen parannus muotoon: mikä virhelähde on, miten se vääristää tulosta ja miten parannus poistaa tai pienentää sen. Energiataseen oletus on, että koko lämmönvaihto tapahtuu mukissa.",
-      "Mieti erikseen kolme asiaa: mitä jäälle tehdään ennen kuin se pudotetaan veteen, miten jään massa saadaan selville ja mitä muki ja ympäristö tekevät veden lämpötilalle."
+      "Käy läpi mittauksen kolme mitattavaa tai oletettua kohtaa: jään pinta ja lämpötila ennen pudotusta, jään massa ja veden lämpötilan mittaus. Mikä niistä voi vääristää tulosta ja miksi?"
      ],
      "criteria": [
       {
@@ -785,7 +785,7 @@
      "text": "Kuljettajalle neuvotaan: ”Käytä pitkässä alamäessä moottorijarrutusta, ettei jarru kuumene.” Perustele neuvo energian avulla.",
      "hints": [
       "Kun auto laskee alamäkeä tasaisella nopeudella, potentiaalienergia vähenee. Minne se voi mennä, jos jarruja ei käytetä?",
-      "Energia säilyy, joten potentiaalienergian väheneminen on jonnekin siirryttävä. Vertaa kahta tapaa: energia päätyy jarrulevyihin tai energia päätyy moottoriin. Kumpi kohde pystyy luovuttamaan sisäenergiansa ilmaan?",
+      "Energia säilyy, joten potentiaalienergian väheneminen on jonnekin siirryttävä. Vertaa kahta tapaa: energia päätyy jarrulevyihin tai energia päätyy moottoriin. Kumpi kohde pystyy luovuttamaan sisäenergiansa ilmaan suurella teholla koko pitkän mäen ajan ylikuumenematta?",
       "Kirjoita kummallekin tavalle ketju: mistä energia lähtee, mihin se ensin menee ja miten se pääsee ilmaan. Mieti sitten, miksi jarrulevyjen kannattaa pysyä viileinä, vaikka energia ei katoa."
      ],
      "criteria": [
