@@ -1,36 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: c66703f1d31a22ae
-SCOPE: full. The change is three new `pysahdy` boxes in unit.md, judged first. After that the unit text, inquiry.json, teacher.md and the Sovella task set (s1–s8) were judged with it.
+CONTENT-HASH: bdef44d88ed5bb2a
+
+Delta review (work queue 11c): the `hints` added to `sovella/tasks.json`, 32 parts (s1 a–s8 c). Each hint checked against its part's rubric, answer and `sovella/solutions.md`.
 
 ## Blocking
 None.
 
 ## Polish
-- Box 2 (kulmakerroin) gives two reasons: the fitted line represents all the data, and far-apart points shrink the share of the reading error. Both are correct and agree with lahto-3 and the "Yleisiä virheitä" list. It could also say that two measurement points carry their own random errors and leave out the other points, as the lahto-3 feedback does. This is optional (C).
-- Carried from round 3: s8 a criterion 5 range versus the model answer; s7 c rubric $1{,}2/30{,}0$ versus $1{,}22$; s8 c interval wording. None is an error.
+1. s4 b, hint 2 (fi): the hint calls $k$ a "kulmakerroin", but the slope only comes up in c, and it writes $m_\text{tod}$ where the solution has $m_\text{punnus}$ (c) or $m$ (b). Replacement: "… todellinen massa on lukema jaettuna suhteella $k$: $m = \dfrac{m_\text{lukema}}{k}$, missä punnuksilla $k = \dfrac{m_\text{lukema}}{m_\text{punnus}}$."
+2. s5 c, hint 2 (fi): the symbol $c$ for the scale factor is new (the solution names no symbol) and can be confused with "c-kohta". This is not wrong. A possible replacement is "$c_\text{m}$" or no symbol at all.
 
 ## Checked
-- Box 1 (clock that always runs fast): this is a systematic error with the same sign in every reading, so averaging does not remove it. Correct (A/B: none). It agrees with the theory paragraph above it, with lahto-2, with virhelaji and with the "Yleisiä virheitä" item.
-- Box 3: $s = \tfrac{a}{2}t^2$, so $k = \tfrac{a}{2}$ and $a = 2k$. Correct. The conditions (start from rest, constant acceleration, time from the start) are stated in the paragraph just before the box. A straight $(t^2, s)$ line through the origin implies them anyway, so there is no unstated condition (B: none). It agrees with lahto-5 and kuula-kouru.
-- Inquiry numbers, recomputed in scratchpad `r/sov.py` and `inq.py`:
-  - lahto-1: $2{,}705 \to 2{,}7\,\text{g/cm}^3$.
-  - tutki-kaasu: $\theta_0 = -271{,}7 \approx -270\,{}^\circ\text{C}$.
-  - kolikot: $2{,}70\,\%$.
-  - jousi-suora: $79{,}0\,\text{N/m}$; mistakes $48{,}6$ and $8$.
-  - kuula-kouru: $1{,}24\,\text{m/s}^2$; mistakes $0{,}62$ and $0{,}31$.
-  - kattila: $10{,}0\,\text{min}$; mistakes $13{,}0$ and $16{,}1$.
-  - tarkista-1: A $(1{,}8033 \pm 0{,}0005)\,\text{m}$, B $(1{,}803 \pm 0{,}015)\,\text{m}$.
-  - tarkista-2: $28\,\text{kg/m}^3$.
-  - The rounded final answers ($1{,}2$, $30$) stay inside their tolerances.
-  - Each multiple-choice question has exactly one correct option, and every distractor's feedback is right.
-- Sovella numbers, recomputed with my own fits (numpy, not answers.py):
-  - s1: $13{,}71 \pm 0{,}19\,\text{s}$, $7{,}29\,\text{m/s}$, bounds $7{,}17$/$7{,}42$, Mira $13{,}96 \pm 0{,}16\,\text{s}$.
-  - s2: $102\,\mu\text{m}$, $79{,}8\,\text{g/m}^2$, $783\,\text{kg/m}^3$.
-  - s3 (row $60\,\text{ml}$ excluded): $k = 0{,}9183$, $b = 118{,}65\,\text{g}$, $V \approx 70{,}5\,\text{ml}$, $1{,}378\,\text{kg}$.
-  - s4: $k = 1{,}0205$, $b \approx 0$, $749{,}7\,\text{g}$.
-  - s5: $0{,}477\,\text{m/s}$, and the report's through-the-origin slope $0{,}6341$ is reproduced.
-  - s6: $pV$ $2269 \to 2454$, $V_0 = 1{,}77\,\text{ml}$, $n = 1{,}06\,\text{mmol}$.
-  - s7 and s8 as in round 3 (answers.py agrees).
-- The other changes to solutions.md since 6b32d6f31 only split paragraphs (carry `md-paragraphs`, carry.tsv 2026-11-18). No number or claim changed.
-- No later-course physics appears: the scope is FY1 measurement, plus Boyle's law and $pV = nRT$ in s6 as the unit states.
-- `practice.py check`: OK. The hash is c66703f1d31a22ae at the start and at the end.
+- Models and symbols match the solutions: $v = s/\bar t$ and $\Delta t$ as half the range (s1); $t_\text{mitattu} = t_\text{tod} + \tau_\text{p} - \tau_\text{k}$ (s1 d); $d = h/N$, $\sigma = M/(Nab)$, $\rho = \sigma/d$ (s2); $m = kV + b$, ±1 ml horizontal bars, $\Delta\rho = (k_\text{max}-k_\text{min})/2$ (s3); $m = m_\text{lukema}/k$ (s4); $x = x_0 + vt$, not forced through the origin (s5); $V = C/p - V_0$, $C = nRT$, MPa·ml = J, kelvins (s6); $F_\text{v} = kx$, ±0,2 cm, $\Delta x/x = \Delta k/k$ (s7); $s = \tfrac12 gt^2$, $g = 2\,\Delta s/\Delta(t^2)$, ±0,01 m (s8).
+- Recomputed with my own script: s1 a 7,294 m/s / 26,26 km/h; s1 b relative-sum route 0,1230 against max–min 0,1230 m/s (the two routes the hint offers agree); s1 c Mira $13{,}96 \pm 0{,}16$ s; s2 31,19 m², 79,85 g/m², 783 kg/m³; s7 c 0,150 m, 4,2 %; s8 c 5,5 %, √(10,35/9,81) = 1,027. The values the hints state (13,52…13,90 s, 1000 m, 3600 s, 1000 µm, 80 g/m², 1000 kg/m³, 9,81 m/s²) agree with the task data.
+- Direction claims: the hints on τ_k/τ_p signs, air resistance lowering $g$, leakage and heating in s6 d, and the zero crossing of the limit lines in s7 b agree with the rubric.
+- No hint states a part's final answer. LaTeX and decimal commas are correct.
+- Content hash: the same at the start and at the end.

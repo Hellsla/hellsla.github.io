@@ -1,17 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 3e94f6a46e4cf227
+CONTENT-HASH: cddfd08f0802bd10
 
 ## Blocking
-- none
+None.
 
 ## Polish
-- [Minor] unit.md "The big picture" — "Processing measurement data often proceeds from the measurement results and their uncertainties to a graph, where needed to fitting a model and interpreting it, and finally to the result…" is ungrammatical ("where needed to fitting") — "…to a graph and, where needed, to fitting a model and interpreting it, and finally to the result with its uncertainty."
-- [Minor] unit.md, linearisation paragraph — the paragraph before the third stop-think box is a dense 100-word block; acceptable, but one sentence per relationship (motion, gas, liquid) could be a short list.
+1. [Minor] s3 c, hint 3 (en): ok; none required. Optional: "As the time, use" -> "Use the mean of the three readings as the time" (s3 a, hint 2).
+2. [Minor] all parts, 390 px (en): an open hint box is indented and narrower than the task text (about 270 px of 324 px), so formulas such as $\sigma = \dfrac{M}{N\,a\,b}$ wrap onto their own line. Nothing is clipped or scrolled. Shared issue (templates/site.css `ol.parts>li>.hints`): reduce the left margin of the open box on phones. This is optional.
 
 ## Checked
-- Captures opened: top-390, selita-390-1..4 (recognition chart, formulas, all three Stop and think boxes, anatomy and linearisation figures), selita-1280-2 (two boxes, formula table, anatomy figure start). Captures current for hash 3e94f6a46e4cf227.
-- Stop and think boxes (aside.stop-think): green left rule, small-caps label, question, openable "Answer" with a disclosure triangle, on both 390 and 1280. Maths ($\bar{x}$, $\Delta x$, $k=\tfrac{a}{2}$, $a=2k$) is rendered, not clipped. Reading width stays within the column and there is no horizontal overflow. The boxes sit after the paragraph they test and do not push figures apart. The answers are closed by default (shown open in the "every box open" captures).
-- English text is fluent apart from the one sentence above. Units and symbols are in LaTeX. Not opened: exercises/sovella/tarkista captures (judged only via the packet's deterministic checks, no changes there in scope).
-
-## Scores
-illustrations 4 · typography 5 · English 4 · accessibility 4
+- Built previews at 390 and 1280 px: Tehtävät cards with hints closed (row of three, one row at 1280, three stacked lines at 390) and open (s1 a-d, s2 a-d, 29 hint groups counted, no horizontal page overflow, scrollWidth equal to viewport).
+- Formulas in the hint boxes (fractions, \Delta, \tau_k, units with thin spaces) render inside the boxes. Decimal comma or point is correct for the language. Reading order is correct.
