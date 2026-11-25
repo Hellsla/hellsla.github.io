@@ -18,6 +18,11 @@
           "kind": "calc",
           "points": 6,
           "text": "Kuinka paljon lämpöä kylmäkoneen on vähintään poistettava, jotta kaikesta vedestä tulee $-4{,}0\\,{}^\\circ\\text{C}$:n jäätä?",
+          "hints": [
+            "Vesi muuttuu $15{,}0\\,{}^\\circ\\text{C}$:n vedestä $-4{,}0\\,{}^\\circ\\text{C}$:n jääksi. Mitä kaikkea veden täytyy tällä matkalla käydä läpi? Mistä saat selville, kuinka paljon vettä on?",
+            "Jaa matka vaiheisiin. Laske jokaiselle vaiheelle oma lämpö: veden jäähtyminen $Q = c_\\text{v} m \\Delta T_\\text{v}$, jäätyminen $Q = sm$ ja jään jäähtyminen $Q = c_\\text{j} m \\Delta T_\\text{j}$. Massa saadaan tilavuudesta ja tiheydestä: $m = \\rho A d$.",
+            "Muuta paksuus metreiksi: $3{,}00\\,\\text{cm} = 0{,}0300\\,\\text{m}$. Laske sitten massa. Muuta myös sulamislämpö jouleiksi kilogrammaa kohti: $334\\,\\text{kJ/kg} = 334\\,000\\,\\text{J/kg}$."
+          ],
           "answer": {
             "value": 21.88,
             "unit": "GJ",
@@ -51,6 +56,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Kuinka kauan jäädyttäminen kestää vähintään?",
+          "hints": [
+            "Kylmäkone poistaa lämpöä koko ajan yhtä nopeasti. Mikä suure kertoo, kuinka nopeasti energiaa siirtyy? Miten sen avulla saa ajan?",
+            "Teho kertoo energian aikayksikköä kohti: $P = \\dfrac{Q}{t}$, joten $t = \\dfrac{Q}{P}$. Käytä a-kohdan tulosta.",
+            "Muuta teho watteiksi ennen laskua: $350\\,\\text{kW} = 350\\,000\\,\\text{W}$. Tulos tulee sekunteina. Muuta se tunneiksi ($1\\,\\text{h} = 3600\\,\\text{s}$)."
+          ],
           "answer": {
             "value": 17.37,
             "unit": "h",
@@ -84,6 +94,11 @@
           "kind": "word",
           "points": 5,
           "text": "Arvioi jäämestarin väite a-kohdan tulosten avulla.",
+          "hints": [
+            "Jäämestarin mielestä vesi luovuttaa energiaa vain silloin, kun sen lämpötila laskee. Onko se totta jäätymisen aikana?",
+            "Jäätyessään vesi luovuttaa sulamislämmön $Q = sm$, vaikka lämpötila pysyy $0\\,{}^\\circ\\text{C}$:ssa. Kylmäkone poistaa sen samalla teholla kuin muunkin lämmön.",
+            "Laske, kuinka suuri osa kokonaislämmöstä kuuluu kullekin vaiheelle: $\\dfrac{Q_\\text{vaihe}}{Q}$. Muuta lämmöt sitten ajoiksi teholla $350\\,\\text{kW}$ ja vertaa aikoja. Mitä luvut kertovat jäämestarin väitteestä?"
+          ],
           "criteria": [
             {
               "text": "Laskee, kuinka suuri osa kokonaislämmöstä kuuluu kuhunkin vaiheeseen: jäätyminen noin $82\\,\\%$, veden jäähtyminen noin $16\\,\\%$ ja jään jäähtyminen noin $2\\,\\%$.",
@@ -132,6 +147,11 @@
           "kind": "calc",
           "points": 5,
           "text": "Kuinka paljon kivimassan keskimääräinen lämpötila nousee yhden lämmityskerran aikana?",
+          "hints": [
+            "Mistä kiveen siirtyvä energia tulee? Kuinka suuri osa siitä päätyy kiveen? Mikä yhteys kertoo, kuinka paljon kiven lämpötila nousee, kun siihen siirtyy lämpöä?",
+            "Puun vapauttama energia on $H m_\\text{p}$. Siitä osuus $\\eta$ siirtyy kiveen: $Q = \\eta H m_\\text{p}$. Kiven lämpötilan nousu saadaan yhtälöstä $Q = c\\,m_\\text{k}\\,\\Delta T$.",
+            "Muuta lämpöarvo jouleiksi: $15\\,\\text{MJ/kg} = 15 \\cdot 10^{6}\\,\\text{J/kg}$. Muuta osuus desimaaliluvuksi: $80\\,\\% = 0{,}80$. Laske ensin kiveen siirtyvä energia ja sitten lämpötilan nousu."
+          ],
           "answer": {
             "value": 81.63,
             "unit": "K",
@@ -165,6 +185,11 @@
           "kind": "calc",
           "points": 3,
           "text": "Kuinka suurella keskimääräisellä teholla takka lämmittää taloa seuraavan vuorokauden aikana?",
+          "hints": [
+            "Kivi luovuttaa huoneisiin sen energian, joka siihen siirtyi lämmityksessä. Se tapahtuu koko vuorokauden aikana. Mikä suure kertoo, kuinka nopeasti energia siirtyy?",
+            "Teho on energia jaettuna ajalla: $P = \\dfrac{Q}{t}$. Tässä $Q$ on kiveen siirtynyt energia ja $t = 24\\,\\text{h}$.",
+            "Muuta aika sekunneiksi: $24\\,\\text{h} = 24 \\cdot 3600\\,\\text{s} = 86\\,400\\,\\text{s}$. Käytä energiaa jouleina."
+          ],
           "answer": {
             "value": 1.667,
             "unit": "kW",
@@ -193,6 +218,11 @@
           "kind": "calc",
           "points": 3,
           "text": "Pakkasvuorokauden keskilämpötila on $-10\\,{}^\\circ\\text{C}$. Kuinka suuren osan talon lämmöntarpeesta takka kattaa eli hoitaa?",
+          "hints": [
+            "Talon lämmöntarve on teho, jolla talo menettää lämpöä, kun sisälämpötila pysyy samana. Mistä tämä teho riippuu? Mihin sitä pitää verrata?",
+            "Häviöteho on $P_\\text{h} = 150\\,\\tfrac{\\text{W}}{\\text{K}} \\cdot \\Delta T$. Tässä $\\Delta T$ on sisä- ja ulkolämpötilan ero. Takan osuus on $\\dfrac{P_\\text{takka}}{P_\\text{h}}$, ja $P_\\text{takka}$ on b-kohdan teho.",
+            "Laske ensin lämpötilaero $\\Delta T = 21\\,{}^\\circ\\text{C} - (-10\\,{}^\\circ\\text{C})$. Laske sen avulla häviöteho. Käytä b-kohdan tehoa samassa yksikössä, watteina."
+          ],
           "answer": {
             "value": 35.8,
             "unit": "%",
@@ -221,6 +251,11 @@
           "kind": "word",
           "points": 4,
           "text": "Naapurilla on ohutseinäinen peltikamiina. Se lämpenee nopeasti, mutta huone viilenee pian, kun tuli sammuu. Selitä, miksi kamiina toimii eri tavalla kuin varaava takka.",
+          "hints": [
+            "Kun tuli on sammunut, mistä huoneeseen siirtyvä lämpö tulee? Mikä eroaa kivimassan ja ohuen peltikuoren välillä?",
+            "Lämpökapasiteetti $C = cm$ kertoo, kuinka paljon energiaa tarvitaan, kun kappaleen lämpötila nousee yhden kelvinin. Pinnan ja huoneen lämpötilaero määrää, kuinka suurella teholla lämpö siirtyy huoneeseen.",
+            "Vertaa laitteita kahdella kysymyksellä: kuinka paljon energiaa kumpikin varastoi lämmetessään? Kuinka kuuma sen pinta on? Kerro lopuksi, miten ero näkyy huoneen lämpötilassa tulen sammuttua."
+          ],
           "criteria": [
             {
               "text": "Selittää lämpökapasiteetilla $C = cm$: suuri kivimassa varastoi saman energian, vaikka sen lämpötila nousee vähän. Ohut pelti tulee kuumaksi, mutta se varastoi vähän energiaa.",
@@ -264,6 +299,11 @@
           "kind": "graph",
           "points": 5,
           "text": "Piirrä kuvaaja, jossa höyrystyneen veden massa on kuumentimen tehon funktiona. Sovita pisteisiin sopiva malli.",
+          "hints": [
+            "Kumpaa suuretta ryhmä säätää? Kumpi on mittaustulos? Kumpi kuuluu vaaka-akselille?",
+            "Valitse asteikot, jotka alkavat nollasta. Merkitse viisi pistettä $(P,\\ \\Delta m)$. Sovita pisteisiin suora, joka kulkee pisteiden lomitse. Katso, mihin se osuu pystyakselilla.",
+            "Katso c-kohtaa: mitä kuvaajasta pitää voida lukea? Valitse akseleille mittakaava, jossa se onnistuu. Mieti, mitä suoralle pitää tehdä."
+          ],
           "criteria": [
             {
               "key": "graph_axes",
@@ -291,6 +331,11 @@
           "kind": "calc",
           "points": 6,
           "text": "Määritä veden ominaishöyrystymislämpö kuvaajan avulla.",
+          "hints": [
+            "Kuumennin tuottaa energiaa, jonka vesi ottaa höyrystyessään. Mikä kuvaajan ominaisuus kertoo, kuinka paljon enemmän vettä höyrystyy, kun teho kasvaa?",
+            "Höyrystymiseen tarvittava energia on $Q = r\\,\\Delta m$. Kuumennin antaa energiaa $P\\,t$. Kirjoita energian säilyminen. Päättele, mitä suoran kulmakerroin kertoo.",
+            "Lue kulmakerroin kuvaajan suoralta kahden pisteen avulla. Muuta sen yksikkö grammoista kilogrammoiksi. Ratkaise sitten $r$ kulmakertoimen ja ajan $t = 300\\,\\text{s}$ avulla."
+          ],
           "answer": {
             "value": 2.256,
             "unit": "MJ/kg",
@@ -324,6 +369,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Suora ei kulje origon kautta. Määritä kuvaajasta, millä teholla vesi ei höyrystyisi lainkaan. Tulkitse tulos eli kerro, mitä se tarkoittaa.",
+          "hints": [
+            "Mikä kuvaajan kohta kertoo, millä teholla höyrystynyt massa on nolla? Minne kuumentimen teho silloin menee?",
+            "Energian säilymisen mukaan $(P - P_\\text{h})\\,t = r\\,\\Delta m$. Tässä $P_\\text{h}$ on teho, joka ei höyrystä vettä. Mitä ehto $\\Delta m = 0$ tarkoittaa tälle yhtälölle?",
+            "Lue vaaka-akselin leikkauskohta jatketusta suorasta. Voit myös ratkaista sen suoran yhtälöstä, kun $\\Delta m = 0$."
+          ],
           "answer": {
             "value": 69.9,
             "unit": "W",
@@ -352,6 +402,11 @@
           "kind": "word",
           "points": 5,
           "text": "Arvioi, miksi yhdestä mittauksesta laskettu $2{,}54\\,\\text{MJ/kg}$ on eri kuin kuvaajan tulos. Kumpi tulos on luotettavampi?",
+          "hints": [
+            "Mitä yhden mittauksen lasku $r = \\dfrac{P\\,t}{\\Delta m}$ olettaa kuumentimen tehosta? Pitääkö oletus paikkansa oikeassa kokeessa?",
+            "Vertaa yhden mittauksen kaavaa kuvaajan mallin yhtälöön $(P - P_\\text{h})\\,t = r\\,\\Delta m$. Mikä ero niillä on? Mihin suuntaan se vääristää tulosta?",
+            "Laske ero prosentteina: $\\dfrac{2{,}54\\,\\text{MJ/kg} - r_\\text{kuvaaja}}{r_\\text{kuvaaja}}$. Kysy sitten, mitä vakiona pysyvä häviö tekee suoralle. Kysy myös, kuinka monta mittausta kumpikin menetelmä käyttää."
+          ],
           "criteria": [
             {
               "key": "error_sources",
@@ -397,6 +452,11 @@
           "kind": "word",
           "points": 5,
           "text": "Selitä, miksi järvi alkaa jäätyä pinnalta. Selitä myös, miksi pohjalla on talvellakin noin $4\\,{}^\\circ\\text{C}$:ista vettä.",
+          "hints": [
+            "Mitä tiedät veden tiheydestä, kun vesi jäähtyy kohti $0\\,{}^\\circ\\text{C}$:ta? Miten tiheys vaikuttaa siihen, mikä vesi pysyy pinnalla ja mikä painuu alas?",
+            "Tarkastele veden tiheyttä lämpötilan funktiona kahdella välillä: yli $4\\,{}^\\circ\\text{C}$:n ja $0\\,{}^\\circ\\text{C}$:n ja $4\\,{}^\\circ\\text{C}$:n välillä. Missä lämpötilassa tiheys on suurin?",
+            "Kuvaile syksy vaihe vaiheelta. Mitä pintavedelle tapahtuu, kun se jäähtyy? Mitä tapahtuu sen jälkeen, kun koko järvi on lämpötilassa, jossa tiheys on suurin?"
+          ],
           "criteria": [
             {
               "text": "Kertoo, että veden tiheys on suurin noin $4\\,{}^\\circ\\text{C}$:ssa. Lämpötilojen $0\\,{}^\\circ\\text{C}$ ja $4\\,{}^\\circ\\text{C}$ välillä vesi kutistuu, kun se lämpenee.",
@@ -420,6 +480,11 @@
           "kind": "word",
           "points": 5,
           "text": "Selitä energian säilymisen ja lämmön siirtymisen avulla, mihin jäätyvän veden energia menee. Selitä myös, miksi jää kasvaa sitä hitaammin, mitä paksumpaa se on.",
+          "hints": [
+            "Kun vesi jäätyy, sen lämpötila ei laske. Mihin sen energia silloin menee? Minne energian täytyy päästä, jotta lisää jäätä syntyy?",
+            "Jäätyessään vesi luovuttaa sulamislämmön $Q = sm$. Energia johtuu jään läpi kylmään ilmaan. Miten johtuva teho riippuu kerroksen paksuudesta, kun lämpötilaero on sama?",
+            "Kirjoita kaksi asiaa peräkkäin. Ensin: kuinka paljon energiaa on poistettava, jotta uusi jääkerros syntyy? Sitten: millä teholla energia pääsee jään läpi? Vertaa ohutta ja paksua jäätä."
+          ],
           "criteria": [
             {
               "text": "Kertoo, että jäätyessään vesi luovuttaa sulamislämmön, noin $334\\,\\text{kJ}$ kilogrammaa kohti, vaikka lämpötila pysyy $0\\,{}^\\circ\\text{C}$:ssa.",
@@ -443,6 +508,11 @@
           "kind": "word",
           "points": 5,
           "text": "Arvioi pilkkijän väite.",
+          "hints": [
+            "Pilkkijän mukaan lumi on kylmää ja jäähdyttää jäätä. Mihin suuntaan energia siirtyy, kun jään alapinta on $0\\,{}^\\circ\\text{C}$:ssa ja ilma on pakkasella?",
+            "Lumessa on paljon ilmaa. Millainen lämmönjohde ilma on? Mitä lumi tekee jään läpi johtuvalle teholle? Käytä b-kohdan päättelyä: jää kasvaa vain sitä mukaa kuin energiaa johtuu pois.",
+            "Päättele kahdessa vaiheessa. Mitä lumi tekee jään alapinnalta johtuvalle teholle? Mitä se tekee jään kasvun nopeudelle? Päätä sitten, vahvistaako lumi jäätä."
+          ],
           "criteria": [
             {
               "text": "Huomaa, että lumi johtaa lämpöä huonosti, koska siinä on paljon ilmaa. Lumi eristää jään pakkasesta eikä jäähdytä sitä.",
@@ -485,6 +555,11 @@
           "kind": "calc",
           "points": 5,
           "text": "Näytä, miten ryhmä sai tulokseksi $371\\,\\text{kJ/kg}$. Mitä ryhmä oletti jään alkulämpötilasta?",
+          "hints": [
+            "Kuuma vesi luovuttaa energiaa, ja jää ottaa sitä. Mitä jäälle täytyy tapahtua matkalla alkutilasta loppulämpötilaan $14{,}3\\,{}^\\circ\\text{C}$?",
+            "Kirjoita energiatase. Veden luovuttama energia on $c_\\text{v} m_\\text{v} (T_\\text{v} - T)$. Jää ottaa sulamiseen ja sulamisveden lämpenemiseen energian $s m_\\text{j} + c_\\text{v} m_\\text{j} T$. Ratkaise $s$.",
+            "Laske veden luovuttama energia ja sulamisveden lämpeneminen erikseen. Ratkaise sitten $s$. Kun saat ryhmän tuloksen, kysy: missä lämpötilassa jään täytyy tässä taseessa olla?"
+          ],
           "answer": {
             "value": 370.8,
             "unit": "kJ/kg",
@@ -513,6 +588,11 @@
           "kind": "calc",
           "points": 5,
           "text": "Laske tulos uudelleen niin, että otat huomioon jään todellisen alkulämpötilan. Arvioi ryhmän johtopäätös.",
+          "hints": [
+            "Jää tuli pakastimesta, joten se oli kylmempää kuin sulamispiste. Mitä lisäenergiaa tämä vaatii, ennen kuin jää voi alkaa sulaa?",
+            "Lisää a-kohdan taseeseen jään lämpeneminen sulamispisteeseen: $c_\\text{j} m_\\text{j} \\Delta T_\\text{j}$. Tässä $\\Delta T_\\text{j}$ on jään alkulämpötilan ja $0\\,{}^\\circ\\text{C}$:n erotus.",
+            "Laske jään lämpenemiseen kuluva energia. Vähennä se energiasta, jonka ryhmä katsoi kuluneen sulamiseen. Vertaa uutta tulosta taulukkoarvoon $334\\,\\text{kJ/kg}$. Mieti, voiko muki selittää eron."
+          ],
           "answer": {
             "value": 333.0,
             "unit": "kJ/kg",
@@ -546,6 +626,11 @@
           "kind": "word",
           "points": 5,
           "text": "Ryhmä haluaa toistaa mittauksen luotettavammin. Ehdota kolme parannusta. Perustele jokaisen kohdalla, mihin virhelähteeseen parannus vaikuttaa.",
+          "hints": [
+            "Käy ryhmän selostus läpi vaihe vaiheelta. Missä vaiheissa voi syntyä virhe, joka vaikuttaa tulokseen?",
+            "Kirjoita jokainen parannus näin: mikä virhelähde on, miten se vääristää tulosta ja miten parannus poistaa tai pienentää sen. Energiataseessa oletetaan, että koko lämmönvaihto tapahtuu mukissa.",
+            "Mieti erikseen kolme asiaa: mitä jäälle tehdään ennen kuin se pudotetaan veteen, miten jään massa saadaan selville ja mitä muki ja ympäristö tekevät veden lämpötilalle."
+          ],
           "criteria": [
             {
               "text": "Käyttää jäätä, joka on sulamassa $0\\,{}^\\circ\\text{C}$:ssa, ja kuivaa jään pinnan ennen punnitsemista. Toinen tapa on mitata jään lämpötila ja ottaa se huomioon (jään lämpeneminen, jään pinnalla oleva vesi).",
@@ -594,6 +679,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Auto pysäytetään tasaisella tiellä nopeudesta $90\\,\\text{km/h}$. Kuinka paljon jarrulevyjen lämpötila nousee?",
+          "hints": [
+            "Auton liike-energia häviää jarrutuksessa, mutta energia ei katoa. Minne se menee? Mikä yhteys kertoo, kuinka paljon levyjen lämpötila nousee, kun niihin siirtyy energiaa?",
+            "Liike-energia on $E_\\text{k} = \\tfrac{1}{2} m v^2$. Levyihin siirtyy siitä osuus $0{,}85$: $0{,}85\\,E_\\text{k} = c\\,m_\\text{l}\\,\\Delta T$.",
+            "Muuta nopeus ensin yksikköön $\\text{m/s}$. Käytä liike-energiassa koko auton massaa. Käytä lämpenemisessä pelkkien levyjen massaa."
+          ],
           "answer": {
             "value": 31.48,
             "unit": "K",
@@ -622,6 +712,11 @@
           "kind": "calc",
           "points": 5,
           "text": "Kuinka paljon jarrulevyjen lämpötila nousisi alamäessä, jos levyt eivät luovuttaisi lämpöä ilmaan?",
+          "hints": [
+            "Auton nopeus pysyy samana. Mitä se kertoo liike-energian muutoksesta? Minne potentiaalienergian väheneminen menee?",
+            "Kirjoita energiaperiaate. Potentiaalienergian väheneminen $mgh$ jakautuu ajovastusten työhön $F s$ ja jarruihin siirtyvään energiaan $Q_\\text{jarrut}$. Levyihin siirtyy siitä osuus $0{,}85$, ja se lämmittää levyjä.",
+            "Laske potentiaalienergian väheneminen. Luku $h = 250\\,\\text{m}$ on korkeusero, ei tien pituus. Ajovastusten työn matka on $s = 4{,}0\\,\\text{km}$. Muuta se metreiksi."
+          ],
           "answer": {
             "value": 133.7,
             "unit": "K",
@@ -655,6 +750,11 @@
           "kind": "calc",
           "points": 3,
           "text": "Mäen alla mitattiin, että levyjen lämpötila oli noussut vain $80\\,\\text{K}$. Kuinka suuri osa levyihin tulleesta energiasta siirtyi mäen aikana ilmaan? Millä tavoilla energia siirtyi?",
+          "hints": [
+            "Mikä osa levyihin tulleesta energiasta jäi lämmittämään levyjä? Mitä energian muulle osalle tapahtui? Millä tavoilla lämpö siirtyy kuumasta levystä ympäristöön?",
+            "Levyihin jäänyt energia on $Q_\\text{jäi} = c\\,m_\\text{l}\\,\\Delta T$. Ilmaan siirtyi $Q_\\text{tuli} - Q_\\text{jäi}$. Osuus on $\\dfrac{Q_\\text{tuli} - Q_\\text{jäi}}{Q_\\text{tuli}}$.",
+            "Käytä b-kohdan levyihin tullutta energiaa ($0{,}85\\,Q_\\text{jarrut}$), älä koko jarruenergiaa. Laske sitten, kuinka paljon energiaa levyihin jäi, kun lämpötila nousi $80\\,\\text{K}$."
+          ],
           "answer": {
             "value": 40.2,
             "unit": "%",
@@ -683,6 +783,11 @@
           "kind": "word",
           "points": 3,
           "text": "Kuljettajaa neuvotaan: ”Käytä pitkässä alamäessä moottorijarrutusta, ettei jarru kuumene.” Moottorijarrutuksessa auto hidastuu, kun kaasu nostetaan ylös ja vaihde on päällä. Perustele neuvo energian avulla.",
+          "hints": [
+            "Kun auto laskee alamäkeä tasaisella nopeudella, potentiaalienergia vähenee. Minne se voi mennä, jos jarruja ei käytetä?",
+            "Energia säilyy, joten potentiaalienergian väheneminen siirtyy jonnekin. Vertaa kahta tapaa: energia päätyy jarrulevyihin, tai energia päätyy moottoriin. Kumpi pystyy luovuttamaan sisäenergiansa ilmaan?",
+            "Kirjoita kummallekin tavalle ketju: mistä energia lähtee, mihin se ensin menee ja miten se pääsee ilmaan. Mieti sitten, miksi jarrulevyjen kannattaa pysyä viileinä, vaikka energia ei katoa."
+          ],
           "criteria": [
             {
               "text": "Selittää, että moottorijarrutuksessa potentiaalienergia muuttuu moottorin kitkan kautta moottorin sisäenergiaksi. Moottorin jäähdytysjärjestelmä luovuttaa tämän energian ilmaan.",
@@ -720,6 +825,11 @@
           "kind": "calc",
           "points": 3,
           "text": "Kuinka monta kelvintä kappaleen lämpötila nousee sekunnissa?",
+          "hints": [
+            "Kuvaajassa lämpötila on ajan funktiona. Mikä kuvaajan ominaisuus kertoo, kuinka monta kelvintä lämpötila nousee sekunnissa?",
+            "Se on suoran kulmakerroin: $\\dfrac{\\Delta T}{\\Delta t}$.",
+            "Valitse suoralta kaksi pistettä, jotka ovat kaukana toisistaan. Lue niiden aika ja lämpötila. Laske lämpötilan muutos ja ajan muutos erikseen. Jaa ne sitten."
+          ],
           "answer": {
             "value": 0.222,
             "unit": "K/s",
@@ -748,6 +858,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Määritä kappaleen aineen ominaislämpökapasiteetti. Voisiko kappale olla alumiinia?",
+          "hints": [
+            "Kuumennin antaa kappaleelle energiaa koko ajan. Mikä aineen ominaisuus kertoo, kuinka paljon energiaa tarvitaan lämpötilan nostamiseen?",
+            "Energia on teho kertaa aika. Lämpenemiseen tarvittava energia on $cm\\Delta T$. Siis $Pt = cm\\Delta T$ ja $c = \\dfrac{P\\,\\Delta t}{m\\,\\Delta T}$.",
+            "Käytä aikaa ja lämpötilan nousua samasta kuvaajan kohdasta kuin a-kohdassa. Vertaa tulosta alumiinin arvoon $896\\,\\text{J/(kg}\\cdot\\text{K)}$. Kuinka monta prosenttia ne eroavat toisistaan?"
+          ],
           "answer": {
             "value": 900,
             "unit": "J/(kg·K)",
@@ -781,6 +896,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Kuinka kauan lämmitystä on jatkettava mittauksen alusta, jotta kappaleen lämpötila on $100\\,{}^\\circ\\text{C}$?",
+          "hints": [
+            "Kuinka paljon lämpötilan täytyy nousta? Mikä yhteys kertoo, kuinka paljon energiaa se vaatii? Miten tämä energia liittyy aikaan?",
+            "Käytä samaa yhtälöä kuin b-kohdassa. Ratkaise aika: $t = \\dfrac{cm\\,\\Delta T}{P}$.",
+            "Lue alkulämpötila kuvaajan alusta. Laske lämpötilan nousu $\\Delta T = 100\\,{}^\\circ\\text{C} - T_0$. Käytä b-kohdan ominaislämpökapasiteettia ja tehoa $100\\,\\text{W}$."
+          ],
           "answer": {
             "value": 360,
             "unit": "s",
@@ -814,6 +934,11 @@
           "kind": "word",
           "points": 3,
           "text": "Todellisessa kokeessa kuvaaja kaartuisi loppua kohti loivemmaksi. Selitä energian avulla, miksi.",
+          "hints": [
+            "Kappale on lämpimämpi kuin ympäristönsä. Mitä lämpimälle kappaleelle tapahtuu ympäristössä? Miten se muuttuu, kun lämpötila nousee?",
+            "Kirjoita energian säilyminen tehoille. Mihin kaikkialle vastuksen teho $100\\,\\text{W}$ menee, kun kappale on ympäristöään lämpimämpi? Mikä niistä saa lämpötilan nousemaan?",
+            "Vertaa kahta hetkeä: lämmityksen alkua ja loppua. Kummalla hetkellä kappaleen ja ympäristön lämpötilaero on suurempi? Mitä se tekee ympäristöön siirtyvälle teholle ja kuvaajan kulmakertoimelle?"
+          ],
           "criteria": [
             {
               "text": "Selittää, että lämmin kappale siirtää lämpönä energiaa ympäristöön, ja lämpöteho kasvaa kappaleen ja ympäristön lämpötilaeron kasvaessa.",
@@ -854,6 +979,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Määritä jään ominaislämpökapasiteetti kuvaajasta.",
+          "hints": [
+            "Kuvaajan ensimmäisellä osalla jää lämpenee mutta ei sula. Mikä yhteys on energian ja lämpötilan muutoksen välillä? Mitä kuvaajasta pitää lukea?",
+            "Lämpenemiseen tarvittava energia on $Q = cm\\Delta T$, joten $c = \\dfrac{Q}{m\\,\\Delta T}$.",
+            "Lue ensimmäisen osan päätepisteet: energia $Q$ ja lämpötilan muutos. Muuta kilojoulet jouleiksi ennen laskua. Käytä jään massaa $0{,}60\\,\\text{kg}$."
+          ],
           "answer": {
             "value": 2083,
             "unit": "J/(kg·K)",
@@ -887,6 +1017,11 @@
           "kind": "calc",
           "points": 5,
           "text": "Määritä jään ominaissulamislämpö kuvaajasta.",
+          "hints": [
+            "Kuvaajassa on osa, jolla lämpötila ei muutu, vaikka energiaa siirtyy. Mitä jäälle silloin tapahtuu? Minkä välin kuvaajasta pitää lukea?",
+            "Sulamiseen tarvittava energia on $Q = sm$, joten $s = \\dfrac{Q}{m}$.",
+            "Lue vaakasuoran osan alku- ja loppupiste vaaka-akselilta. Sulamiseen kuluva energia on näiden erotus. Käytä kilojoulet tai joulet koko ajan samalla tavalla."
+          ],
           "answer": {
             "value": 333,
             "unit": "kJ/kg",
@@ -925,6 +1060,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Lämmitystä jatketaan, kunnes lämpötila on $20\\,{}^\\circ\\text{C}$. Kuinka paljon energiaa on silloin siirretty yhteensä?",
+          "hints": [
+            "Lämpötila nousee yli sulamispisteen. Mitä jäälle on tapahtunut, ennen kuin lämpötila voi nousta yli $0\\,{}^\\circ\\text{C}$:n? Mikä nyt lämpenee?",
+            "Kokonaisenergia on vaiheiden energioiden summa: $Q = Q_\\text{jää+sulaminen} + c_\\text{v} m\\,\\Delta T$. Jälkimmäinen termi on sulamisveden lämpeneminen.",
+            "Lue kuvaajasta, kuinka paljon energiaa on siirretty, kun jää on juuri sulanut. Laske sitten veden lämpeneminen $0\\,{}^\\circ\\text{C}$:sta $20\\,{}^\\circ\\text{C}$:seen. Lisää se."
+          ],
           "answer": {
             "value": 270.2,
             "unit": "kJ",
@@ -958,6 +1098,11 @@
           "kind": "calc",
           "points": 3,
           "text": "Kuinka suuri massa jääpalasta on sulanut, kun siirretty energia on $120\\,\\text{kJ}$?",
+          "hints": [
+            "Sulamisen aikana lämpötila ei muutu. Kuinka suuri osa $120\\,\\text{kJ}$:sta on ehtinyt jo mennä muuhun kuin sulamiseen?",
+            "Sulamiseen käytetty energia on kokonaisenergia, josta on vähennetty jään lämmittämiseen kulunut energia $Q_1$: $m_\\text{s} = \\dfrac{Q - Q_1}{s}$.",
+            "Lue kuvaajasta, kuinka paljon energiaa jään lämmittäminen $0\\,{}^\\circ\\text{C}$:seen vaati. Vähennä se $120\\,\\text{kJ}$:sta. Jaa tulos sulamislämmöllä. Tarkista kuvaajasta, että $120\\,\\text{kJ}$ on vaakasuoralla osalla."
+          ],
           "answer": {
             "value": 0.3,
             "unit": "kg",
