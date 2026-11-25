@@ -2361,7 +2361,8 @@ main.home>.resume{margin:0 0 1rem}
 .coach-course-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(7rem,1fr));gap:0 .8rem}
 .coach-data{margin:1.6rem 0 0}
 .coach-clear{min-height:44px;padding:0 1rem;border:1px solid var(--ink-2);border-radius:999px;background:transparent;color:var(--ink-2);font:600 var(--fs-ui) var(--sans);cursor:pointer}
-.coach-clear:hover{color:var(--ink)}
+.coach-clear:hover,.coach-pathdel:hover{color:var(--ink)}
+.coach-pathdel{min-height:44px;padding:0 1rem;border:1px solid var(--ink-2);border-radius:999px;background:transparent;color:var(--ink-2);font:600 var(--fs-ui) var(--sans);cursor:pointer}
 @media print{.coach-row,.coach-clear{display:none!important}}
 
 /* The theory's two heading levels apart, and one text face in the lesson (design audit 2026-11-10, problem 6;
@@ -2469,6 +2470,21 @@ details .fig-row.side>.fig svg{max-width:min(100%,32rem)}
 .kt-table .kt-skip{color:var(--ink-2)}
 .kt-sub{color:var(--ink-2);font-weight:400}
 .kt-page .kt-task-start{margin-right:0}
+.coach-optrow{display:flex;flex-wrap:wrap;gap:0 1.2rem}
+.coach-date{display:block;margin:.2rem 0 0}
+.coach-date[hidden]{display:none}
+.coach-date input{min-height:44px;max-width:12rem;font-size:var(--fs-ui)}
+.coach-pathform{margin:.4rem 0 0}
+.coach-pathacts{display:flex;flex-wrap:wrap;gap:.6rem;margin:1rem 0 0}
+.coach-save{min-height:44px;padding:0 1.2rem;border:1px solid var(--accent-deep);border-radius:999px;background:var(--accent-deep);color:#fff;font:700 var(--fs-ui) var(--sans);cursor:pointer}
+.coach-pathdays{list-style:none;margin:1.2rem 0 0;padding:0;display:grid;gap:.8rem}
+.coach-pathday{padding:.8rem 1rem;background:var(--surface);border:1px solid var(--line);border-radius:12px}
+.coach-pathdate{display:flex;flex-wrap:wrap;gap:.2rem .8rem;align-items:baseline;margin:0 0 .4rem;font-size:var(--fs-ui)}
+.coach-today{font-weight:700;color:var(--accent-deep)}
+.coach-pathitems{list-style:none;margin:0;padding:0;display:grid;gap:.4rem}
+.coach-pathitems li{display:grid;gap:.1rem;font-size:var(--fs-ui)}
+.coach-pathitems .coach-min,.coach-pathdate .coach-min{grid-column:auto;grid-row:auto}
+.coach-pathitems a{display:inline-flex;align-items:center;min-height:40px}
 .coach-minilist{list-style:none;margin:.6rem 0 0;padding:0;display:grid;gap:.5rem}
 .coach-mini-item{display:grid;gap:.1rem}
 @media print{.kt-bar,.kt-row,.koetila-panel{display:none!important}}

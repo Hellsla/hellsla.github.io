@@ -3187,7 +3187,20 @@
     "mistakes_n": "Happened {n} times",
     "mini_h": "Mini exams and the practice exam",
     "mini_item": "{min} min · {pts} p",
-    "mini_exam": "Practice exam"
+    "mini_exam": "Practice exam",
+    "path_h": "Revision path",
+    "path_len": "Length",
+    "path_14": "14 days",
+    "path_28": "28 days",
+    "path_exam": "Exam day",
+    "path_per": "Practice days per week",
+    "path_min": "Minutes per day",
+    "path_mins": "{n} min",
+    "path_save": "Save path",
+    "path_del": "Delete path",
+    "path_today": "Today",
+    "path_over": "The path has ended.",
+    "path_note": "The path stays on this device only. It sends no notifications and no emails."
   },
   "koetila": {
     "eyebrow": "FY9 · Exam mode",
