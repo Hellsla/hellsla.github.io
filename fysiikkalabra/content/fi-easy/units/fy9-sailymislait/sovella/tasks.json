@@ -18,6 +18,11 @@
           "kind": "calc",
           "points": 3,
           "text": "Kuinka suuri laskijan nopeus olisi loppupäässä, jos ilmanvastusta ja vaunun pyörien vastusta ei olisi?",
+          "hints": [
+            "Mitä energiaa laskijalla on lähdössä ja mitä loppupäässä, kun vastusvoimia ei ole? Mikä energia muuttuu toiseksi?",
+            "Mekaaninen energia säilyy: $mgh = \\tfrac12 mv^2$.",
+            "Massa supistuu pois yhtälöstä. Ratkaise ensin $v$ symbolein. Käytä korkeuseroa $h$, älä vaijerin pituutta."
+          ],
           "answer": {
             "value": 26.58,
             "unit": "m/s",
@@ -46,6 +51,11 @@
           "kind": "calc",
           "points": 5,
           "text": "Kuinka suuren työn ilmanvastus ja pyörien vastus tekevät laskun aikana? Kuinka suuri on vastusvoimien keskimääräinen suuruus vaijerin suunnassa?",
+          "hints": [
+            "Mitä mekaaniselle energialle (liike- ja potentiaalienergian summa) tapahtuu, kun vastusvoimat tekevät työtä? Onko tämä työ positiivinen vai negatiivinen?",
+            "Energiaperiaate: vastusvoimien työ on mekaanisen energian muutos, $W_\\text{muut} = E_\\text{loppu} - E_\\text{alku}$. Keskimääräinen voima saadaan työstä ja matkasta: $F = |W_\\text{muut}| : s$.",
+            "Alussa laskija on levossa. Lopussa potentiaalienergian nollataso on loppupäässä. Kummassakin tilassa on siis vain yksi energialaji. Matka $s$ on vaijerin pituus."
+          ],
           "answer": [
             {
               "name": "W",
@@ -88,6 +98,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Jarru pysäyttää vaunun, ja vaunu pysäyttää samalla laskijan ja valjaat. Kuinka suuri keskimääräinen vaakasuora voima jarrusta kohdistuu vaunuun? Vertaa voimaa laskijan, valjaiden ja vaunun yhteiseen painoon.",
+          "hints": [
+            "Mikä suure muuttuu, kun jarru pysäyttää vaunun ja laskijan? Kuinka kauan se kestää?",
+            "Impulssiperiaate: keskimääräisen voiman impulssi on liikemäärän muutos, $F_\\text{ka}\\,\\Delta t = |\\Delta p|$.",
+            "Kun liike loppuu, loppuliikemäärä on nolla. Silloin $|\\Delta p| = mv$. Käytä nopeutena GPS-mittarin lukemaa. Laske vertailua varten myös paino $mg$."
+          ],
           "answer": {
             "value": 768.8,
             "unit": "N",
@@ -121,6 +136,11 @@
           "kind": "word",
           "points": 3,
           "text": "Liu'un valvoja sanoo: ”Kevyet laskijat tulevat perille hitaammin, koska painovoima vetää heitä heikommin.” Arvioi väite.",
+          "hints": [
+            "Mitä massalle tapahtuu energiayhtälössä, kun vastusvoimia ei ole? Mitä väite sanoisi tästä tilanteesta?",
+            "Riippuuko ilmanvastus laskijan massasta samalla tavalla kuin painovoima? Mieti, miten vastusvoimien työ vertautuu laskijan mekaaniseen energiaan.",
+            "Vertaa kevyttä ja painavaa laskijaa. Kumman mekaanisesta energiasta sama vastuksen työ on suurempi osa? Päättele, pitääkö havainto paikkansa ja pitääkö sen perustelu paikkansa."
+          ],
           "criteria": [
             {
               "text": "Perustelee, että ilman vastusvoimia massa supistuu pois energiayhtälöstä. Siksi loppunopeus $\\sqrt{2gh}$ ei riipu massasta.",
@@ -164,6 +184,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Kuinka suuri on kiven ja jään välinen kitkakerroin?",
+          "hints": [
+            "Mikä voima tekee työtä, kun kivi liukuu jäällä? Mitä sen työ tekee kiven liike-energialle?",
+            "Energiaperiaate: liike-energia lähdössä miinus kitkan työ on liike-energia osumahetkellä, $\\tfrac12 mv_0^2 - \\mu mg s = \\tfrac12 mv_1^2$. Kitkavoima on $\\mu N$. Jää on vaakasuora, joten tukivoima on yhtä suuri kuin paino.",
+            "Massa supistuu pois yhtälöstä. Ratkaise ensin $\\mu$ symbolein. Käytä lähtönopeutta, osumahetken nopeutta ja matkaa $27{,}0\\,\\text{m}$."
+          ],
           "answer": {
             "value": 0.01015,
             "unit": "",
@@ -197,6 +222,11 @@
           "kind": "calc",
           "points": 5,
           "text": "Kuinka suuri on osuman saaneen kiven nopeus heti törmäyksen jälkeen? Onko törmäys kimmoisa?",
+          "hints": [
+            "Mitkä voimat vaikuttavat kiviin törmäyksen aikana? Kuinka kauan törmäys kestää verrattuna kiven liukumiseen?",
+            "Kitkan impulssi on pieni, joten kivien yhteinen liikemäärä säilyy. Ennen törmäystä liikkuu vain heitetty kivi, jälkeen molemmat. Kirjoita $p_\\text{ennen} = p_\\text{jälkeen}$ kummankin kiven massalla $m$.",
+            "Massat ovat yhtä suuret ja supistuvat pois. Ratkaise osuman saaneen kiven nopeus symbolein. Kimmoisuutta arvioidaksesi mieti, mikä suure säilyy kimmoisassa törmäyksessä. Vertaa sitä ennen ja jälkeen."
+          ],
           "answer": {
             "value": 0.57,
             "unit": "m/s",
@@ -230,6 +260,11 @@
           "kind": "calc",
           "points": 3,
           "text": "Kuinka pitkän matkan osuman saanut kivi liukuu ennen kuin se pysähtyy?",
+          "hints": [
+            "Mikä pysäyttää osuman saaneen kiven? Miksi sen liike-energia muuttuu?",
+            "Energiaperiaate: liike-energia kuluu kitkan työhön, $\\tfrac12 mv_2'^2 = \\mu mg s$.",
+            "Jää on koko matkalla samanlaista. Käytä siis a-kohdan kitkakerrointa ja b-kohdan nopeutta. Ratkaise $s$ symbolein. Massa supistuu pois."
+          ],
           "answer": {
             "value": 1.632,
             "unit": "m",
@@ -258,6 +293,11 @@
           "kind": "word",
           "points": 3,
           "text": "Pelaajat harjaavat usein jäätä liukuvan kiven edestä. Silloin kitkakerroin pienenee. Selitä energian avulla, miksi kivi silloin liukuu pidemmälle, vaikka harjat eivät koske kiveen.",
+          "hints": [
+            "Mihin kiven liike-energia muuttuu liukumisen aikana? Mikä voima sen aiheuttaa?",
+            "Kitkan työ on $-\\mu mg s$. Mikä tässä lausekkeessa muuttuu, kun jäätä harjataan? Mikä pysyy samana?",
+            "Kiven liike-energia lähtöhetkellä on sama kummassakin tapauksessa. Miten matka $s$, jonka jälkeen kaikki liike-energia on kulunut, riippuu kitkakertoimesta? Lisäävätkö harjat kiven energiaa?"
+          ],
           "criteria": [
             {
               "text": "Selittää, että kiven liike-energia muuttuu sisäenergiaksi kitkan tekemän negatiivisen työn $-\\mu mg s$ kautta. Pienempi $\\mu$ tarkoittaa pienempää työtä metriä kohti.",
@@ -295,6 +335,11 @@
           "kind": "graph",
           "points": 4,
           "text": "Esitä pysähtymismatka kuvaajana lähtönopeuden funktiona. Perustele, miksi pisteisiin ei sovi suora.",
+          "hints": [
+            "Laske peräkkäisten mittausten matkojen erotukset. Ovatko ne yhtä suuria, kun nopeus kasvaa aina $10\\,\\text{km/h}$?",
+            "Pysähtymismatka on reaktiomatka plus jarrutusmatka. Miten kumpikin riippuu lähtönopeudesta?",
+            "Yhdistä ensimmäinen ja viimeinen piste suoralla. Ovatko muut pisteet suoran samalla puolella vai eri puolilla?"
+          ],
           "criteria": [
             {
               "key": "graph_axes",
@@ -317,6 +362,11 @@
           "kind": "graph",
           "points": 5,
           "text": "Muodosta aineistosta suure, jonka kuvaaja lähtönopeuden funktiona on suora, kun kuljettajan reaktioaika ja auton hidastuvuus pysyvät samoina. Esitä suure kuvaajana. Sovita pisteisiin suora.",
+          "hints": [
+            "Reaktiomatka on verrannollinen nopeuteen. Jarrutusmatka on verrannollinen nopeuden neliöön. Mikä laskutoimitus pysähtymismatkalle kannattaa tehdä, jotta tulos olisi nopeuden suora funktio?",
+            "Pysähtymismatkan malli on $s_\\text{p} = v_0 t_\\text{r} + \\dfrac{v_0^2}{2a}$. Jaa se puolittain nopeudella $v_0$. Vertaa tulosta suoran yhtälöön $y = b + kx$.",
+            "Muunna nopeudet ensin yksikköön $\\text{m/s}$. Esimerkiksi $30\\,\\text{km/h} = 8{,}33\\,\\text{m/s}$ ja $90\\,\\text{km/h} = 25{,}0\\,\\text{m/s}$. Laske sitten $s_\\text{p} : v_0$ jokaiselle mittaukselle ja sovita suora."
+          ],
           "criteria": [
             {
               "text": "Perustelee linearisoinnin: kun $s_\\text{p} = v_0 t_\\text{r} + \\dfrac{v_0^2}{2a}$ jaetaan nopeudella, saadaan $\\dfrac{s_\\text{p}}{v_0} = t_\\text{r} + \\dfrac{1}{2a}\\,v_0$. Tämä on suoran yhtälö.",
@@ -340,6 +390,11 @@
           "kind": "calc",
           "points": 6,
           "text": "Määritä kuvaajasta kuljettajan reaktioaika ja auton hidastuvuus.",
+          "hints": [
+            "Mikä on suure $s_\\text{p} : v_0$, kun nopeus lähestyy nollaa? Mitä suoran kulmakerroin kertoo?",
+            "Linearisoidussa mallissa $\\dfrac{s_\\text{p}}{v_0} = t_\\text{r} + \\dfrac{1}{2a}\\,v_0$. Kulmakerroin on siis $k = \\dfrac{1}{2a}$.",
+            "Lue kulmakerroin $k = \\dfrac{\\Delta y}{\\Delta x}$ kahdesta kaukana toisistaan olevasta sovitetun suoran pisteestä. Älä käytä mittauspisteitä. Ratkaise sitten $a$ symbolein."
+          ],
           "answer": [
             {
               "name": "tr",
@@ -382,6 +437,11 @@
           "kind": "calc",
           "points": 5,
           "text": "Kuinka suuri on renkaiden ja märän asfaltin välinen kitkakerroin? Arvioi mallin avulla pysähtymismatka nopeudesta $100\\,\\text{km/h}$ samalla tiellä. Arvioi myös, kuinka luotettava arvio on.",
+          "hints": [
+            "Mikä voima hidastaa autoa lukkojarrutuksessa vaakasuoralla tiellä? Mistä sen suuruus riippuu?",
+            "Lukkojarrutuksen rajalla kitkavoima antaa hidastuvuuden: $\\mu mg = ma$, joten $\\mu = a : g$. Pysähtymismatka on $s_\\text{p} = v_0 t_\\text{r} + \\dfrac{v_0^2}{2a}$.",
+            "Muunna $100\\,\\text{km/h}$ yksikköön $\\text{m/s}$. Laske reaktiomatka ja jarrutusmatka erikseen c-kohdan arvoilla. Mitkä mallin oletukset voivat olla väärin mitatun alueen ulkopuolella?"
+          ],
           "answer": [
             {
               "name": "mu",
@@ -438,6 +498,11 @@
           "kind": "word",
           "points": 5,
           "text": "Arvioi väite 1. Selitä, mistä tuulivoimalan teho riippuu ja miksi.",
+          "hints": [
+            "Mistä kahdesta asiasta riippuu, kuinka paljon energiaa roottorin läpi virtaava ilma tuo sekunnissa? Miten kumpikin riippuu tuulen nopeudesta?",
+            "Teho on energia aikayksikköä kohti, $P = E : t$. Ajassa $t$ roottorin läpi kulkee ilmamassa $m = \\rho A v t$. Sen liike-energia on $\\tfrac12 mv^2$.",
+            "Päättele, miten teho riippuu nopeudesta. Laske tehojen suhde, kun nopeus muuttuu suhteessa $9 : 6$. Mieti lopuksi, milloin tämä riippuvuus lakkaa pätemästä."
+          ],
           "criteria": [
             {
               "text": "Selittää, että tuulen liike-energia ilmakilogrammaa kohti on verrannollinen nopeuden neliöön. Roottorin läpi sekunnissa virtaava ilmamäärä on verrannollinen nopeuteen. Siksi teho on verrannollinen kuutioon $v^3$.",
@@ -466,6 +531,11 @@
           "kind": "word",
           "points": 5,
           "text": "Arvioi väite 2. Selitä vesivoimalan energiaketju: mistä veden energia on peräisin, ja miksi kaikki energia ei muutu sähköksi.",
+          "hints": [
+            "Seuraa energiaa padon yläpuolisesta vedestä sähköverkkoon. Missä muodossa se on kussakin vaiheessa? Mikä nosti veden alun perin ylös?",
+            "Energia ei synny eikä häviä. Voimala muuntaa sen muodosta toiseen. Mitä väite ”kuluttamatta mitään” sanoo tästä?",
+            "Missä kohdissa ketjua osa energiasta ei päädy sähköksi? Mieti putkea, turbiinia, generaattoria ja veden liikettä voimalan alapuolella."
+          ],
           "criteria": [
             {
               "text": "Kuvaa ketjun: veden potentiaalienergia muuttuu putkessa liike-energiaksi. Turbiini ja generaattori muuttavat sen sähköksi.",
@@ -494,6 +564,11 @@
           "kind": "word",
           "points": 5,
           "text": "Arvioi väite 3. Laske voimalan nykyinen sähköteho.",
+          "hints": [
+            "Mistä suureista voimalan teho riippuu? Mitä tapahtuu teholle, kun yksi tekijä kasvaa kolmanneksella?",
+            "Voimalan teho on $P = \\eta \\rho Q g h$. Se on verrannollinen sekä virtaamaan $Q$ että putouskorkeuteen $h$.",
+            "Laske nykyinen teho sijoittamalla SI-yksiköissä. Vertaa sitten, kuinka monta kertaa suurempi $h$ olisi korotetulla padolla. Vertaa myös, kuinka monta kertaa suurempi $Q$ olisi, kun se kasvaa kolmanneksen."
+          ],
           "criteria": [
             {
               "key": "equation",
@@ -542,6 +617,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Kuinka monta prosenttia kokonaisliikemäärä muuttui kokeessa 2?",
+          "hints": [
+            "Mitä suuretta verrataan ennen törmäystä ja sen jälkeen? Mitkä kärryt liikkuvat kummassakin tilanteessa?",
+            "Ennen törmäystä liikkuu vain kärry A: $p = m_\\text{A} v_\\text{A}$. Jälkeen kärryt liikkuvat yhdessä: $p' = (m_\\text{A} + m_\\text{B})\\,v'$. Suhteellinen muutos on $\\dfrac{p' - p}{p}$.",
+            "Käytä kokeen 2 rivin arvoja. Laske ensin $p$ ja $p'$ erikseen yksikössä $\\text{kg} \\cdot \\text{m/s}$. Muuta muutos sitten prosenteiksi. Etumerkki kertoo suunnan."
+          ],
           "answer": {
             "value": -6.32,
             "unit": "%",
@@ -570,6 +650,11 @@
           "kind": "word",
           "points": 5,
           "text": "Arvioi ryhmän johtopäätös. Mistä mittausten ero todennäköisesti johtuu?",
+          "hints": [
+            "Ryhmä sanoo, että liikemäärä muuttuu lämmöksi ja ääneksi. Onko liikemäärä energian laji?",
+            "Missä kohdassa nopeus $v'$ mitattiin? Mikä voima vaikuttaa kärryihin törmäyksen ja mittauskohdan välillä? Mitä liikemäärän säilyminen vaatii ulkoisilta voimilta?",
+            "Laske liikemäärän suhteellinen muutos jokaisessa kokeessa. Katso, miten se riippuu nopeudesta. Onko ero satunnainen vai systemaattinen? Mitä se kertoo?"
+          ],
           "criteria": [
             {
               "text": "Toteaa, että sisäenergiaksi ja ääneksi muuttuu liike-energiaa, ei liikemäärää. Liikemäärä ei ole energian laji.",
@@ -598,6 +683,11 @@
           "kind": "word",
           "points": 6,
           "text": "Suunnittele, miten koetta parannetaan niin, että sillä voi testata luotettavasti liikemäärän säilymistä.",
+          "hints": [
+            "Missä kohdassa törmäykseen nähden nopeudet pitäisi määrittää, jotta vertailu koskee vain törmäyshetkeä?",
+            "Mitkä ulkoiset voimat vaikuttavat kärryihin radalla? Miten niiden vaikutusta voi pienentää tai mitata?",
+            "Mistä päättelet, onko liikemäärien ero vielä mittaustarkkuuden rajoissa? Mieti toistoja sekä nopeuden ja massan epävarmuutta. Mieti myös mittauksia eri massoilla ja nopeuksilla."
+          ],
           "criteria": [
             {
               "text": "Nopeudet mitataan juuri ennen törmäystä ja heti sen jälkeen, esimerkiksi valoporteilla tai videosta lyhyeltä matkalta. Toinen tapa on ekstrapoloida nopeus $(t, v)$-kuvaajasta törmäyshetkeen.",
@@ -647,6 +737,11 @@
           "kind": "calc",
           "points": 3,
           "text": "Kuinka suuri on järkäleen nopeus juuri ennen kuin se osuu paaluun?",
+          "hints": [
+            "Mikä energiamuoto muuttuu toiseksi järkäleen pudotessa? Voiko ilmanvastuksen jättää huomiotta tällä pudotuksella?",
+            "Mekaanisen energian säilyminen: $Mgh = \\tfrac12 Mv^2$.",
+            "Massa supistuu pois yhtälöstä. Ratkaise $v$ ensin symbolein. Korkeus $h$ on pudotuskorkeus, ei paalun painuma."
+          ],
           "answer": {
             "value": 3.431,
             "unit": "m/s",
@@ -675,6 +770,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Kuinka suuri on järkäleen ja paalun yhteinen nopeus heti törmäyksen jälkeen? Kuinka paljon liike-energiaa muuttuu törmäyksessä muiksi energiamuodoiksi?",
+          "hints": [
+            "Mikä suure säilyy lyhyessä törmäyksessä, jossa järkäle ja paalu jäävät kiinni toisiinsa?",
+            "Liikemäärän säilyminen: $Mv = (M + m)\\,v'$. Muiksi energiamuodoiksi muuttuva energia on $E_\\text{h} = \\tfrac12 Mv^2 - \\tfrac12 (M + m)\\,v'^2$.",
+            "Käytä a-kohdan nopeutta ja massoja $3500\\,\\text{kg}$ ja $1100\\,\\text{kg}$. Ratkaise $v'$ symbolein ennen sijoitusta. Laske liike-energiat ennen ja jälkeen erikseen."
+          ],
           "answer": [
             {
               "name": "v",
@@ -717,6 +817,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Kuinka suuren keskimääräisen voiman maa kohdistaa paaluun, kun paalu painuu syvemmälle?",
+          "hints": [
+            "Mitä energiamuotoja järkäleellä ja paalulla on heti törmäyksen jälkeen? Mitä niille tapahtuu, kun paalu painuu?",
+            "Energiaperiaate: liike-energia ja potentiaalienergian väheneminen kuluvat maan voiman työhön. Tämä työ vastustaa liikettä, ja se on $-Fs$.",
+            "Painuma on $s = 18\\,\\text{mm} = 0{,}018\\,\\text{m}$. Potentiaalienergian muutos on $(M + m)\\,g s$. Käytä liike-energiana b-kohdan törmäyksen jälkeistä arvoa. Ratkaise $F$ symbolein."
+          ],
           "answer": {
             "value": 915.9,
             "unit": "kN",
@@ -750,6 +855,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Oletetaan, että $40\\,\\%$ törmäyksessä muuttuneesta energiasta jää paalun yläpään teräkseen sisäenergiaksi. Oletetaan myös, että yläpää ei ehdi luovuttaa lämpöä ympäristöön. Kuinka paljon yläpää lämpenee $50$ lyönnin aikana? Arvioi, miten oletukset vaikuttavat tulokseen.",
+          "hints": [
+            "Kuinka monta lyöntiä on? Kuinka suuri osa jokaisen törmäyksen energiasta jää teräkseen?",
+            "Sisäenergian kasvu liittyy lämpenemiseen yhtälöllä $\\Delta U = cm\\Delta T$.",
+            "Sisäenergian kasvu on kaikkien $50$ lyönnin yhteinen: $\\Delta U = 50 \\cdot 0{,}40 \\cdot E_\\text{h}$. Tässä $E_\\text{h}$ on b-kohdan tulos. Ratkaise $\\Delta T$ symbolein. Mitkä oletukset tekevät tuloksesta liian suuren tai liian pienen?"
+          ],
           "answer": {
             "value": 7.14,
             "unit": "K",
@@ -803,6 +913,11 @@
           "kind": "calc",
           "points": 3,
           "text": "Määritä kelkan lähtökorkeus rinteen alapäähän nähden.",
+          "hints": [
+            "Mitä energiaa levossa olevalla kelkalla on lähtöhetkellä, kun nollataso on rinteen alapäässä? Mistä kuvaajan kohdasta se luetaan?",
+            "Lähdössä on vain potentiaalienergia: $E_{\\text{p}0} = mgh$.",
+            "Lue $E_{\\text{p}0}$ vihreän palkin yläreunasta. Ratkaise $h$ symbolein ennen sijoitusta."
+          ],
           "answer": {
             "value": 2.039,
             "unit": "m",
@@ -831,6 +946,11 @@
           "kind": "calc",
           "points": 5,
           "text": "Laske kitkavoiman tekemä työ ja kitkavoiman suuruus.",
+          "hints": [
+            "Mitä kuvaajan palkit kertovat energiasta alussa ja lopussa? Minne puuttuva osa on mennyt?",
+            "Energiaperiaate: $E_{\\text{p}0} + W_\\text{kitka} = E_\\text{k}$. Kitkavoima vastustaa liikettä, joten $W_\\text{kitka} = -F s$.",
+            "Lue $E_\\text{k}$ sinisen palkin yläreunasta. Matka $s$ on rinteen pituus, ei korkeus."
+          ],
           "answer": [
             {
               "name": "W",
@@ -873,6 +993,11 @@
           "kind": "calc",
           "points": 3,
           "text": "Laske kelkan nopeus rinteen alapäässä. Kuinka suuri nopeus olisi ilman kitkaa?",
+          "hints": [
+            "Mikä energia kelkalla on rinteen alapäässä? Miten nopeus saadaan siitä?",
+            "Liike-energia on $E_\\text{k} = \\tfrac12 mv^2$. Ilman kitkaa mekaaninen energia säilyisi: $E_{\\text{p}0} = \\tfrac12 mv_0^2$.",
+            "Ratkaise $v$ ja $v_0$ symbolein. Kitkallisessa tapauksessa käytä palkin loppuliike-energiaa. Kitkattomassa tapauksessa käytä alun potentiaalienergiaa. Miksi nopeus on kitkan kanssa pienempi?"
+          ],
           "answer": [
             {
               "name": "v",
@@ -910,6 +1035,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Kelkan tilalle vaihdetaan samanlainen kelkka, jonka massa on $3{,}0\\,\\text{kg}$. Rinne ja liukukitkakerroin pysyvät samoina. Mitä tapahtuu nopeudelle rinteen alapäässä? Perustele laskemalla.",
+          "hints": [
+            "Miten kelkan massa vaikuttaa potentiaalienergiaan? Miten se vaikuttaa kitkavoimaan?",
+            "Kitkavoima on $F = \\mu N = \\mu mg\\cos\\alpha$. Energiaperiaate on $mgh - \\mu mg\\cos\\alpha \\cdot s = \\tfrac12 mv^2$.",
+            "Katso, mitä massalle tapahtuu yhtälössä. Tarkista laskemalla massalla $3{,}0\\,\\text{kg}$ uusi potentiaalienergia ja kitkan työ. Päättele sitten loppunopeus."
+          ],
           "answer": {
             "value": 5.0,
             "unit": "m/s",
@@ -964,6 +1094,11 @@
           "kind": "calc",
           "points": 3,
           "text": "Määritä impulssi, jonka jalka antaa pallolle.",
+          "hints": [
+            "Mikä suure saadaan voiman ja ajan kuvaajan sekä aika-akselin väliin jäävästä alasta?",
+            "Impulssi on tämän alan suuruinen. Kolmion alalle $I = \\tfrac12 F_\\text{max}\\,\\Delta t$.",
+            "Lue kolmion korkeus $F_\\text{max}$ ja kanta $\\Delta t$ kuvaajasta. Muunna aika millisekunneista sekunneiksi."
+          ],
           "answer": {
             "value": 5.4,
             "unit": "N s",
@@ -992,6 +1127,11 @@
           "kind": "calc",
           "points": 3,
           "text": "Kuinka suurella nopeudella pallo lähtee potkusta?",
+          "hints": [
+            "Mikä suure muuttuu, kun palloon kohdistuu impulssi? Mikä on pallon liikemäärä aluksi?",
+            "Impulssiperiaate: $I = \\Delta p = mv - 0$.",
+            "Käytä a-kohdan impulssia ja massaa $0{,}43\\,\\text{kg}$. Ratkaise $v$ ensin symbolein."
+          ],
           "answer": {
             "value": 12.558,
             "unit": "m/s",
@@ -1020,6 +1160,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Laske pallon liike-energia heti potkun jälkeen. Laske myös korkeus, jolle pallo nousisi ilman ilmanvastusta.",
+          "hints": [
+            "Mitä energiaa pallolla on heti potkun jälkeen? Miksi se muuttuu nousun aikana?",
+            "Liike-energia on $E_\\text{k} = \\tfrac12 mv^2$. Ilman ilmanvastusta mekaaninen energia säilyy: $\\tfrac12 mv^2 = mgh$.",
+            "Käytä b-kohdan nopeutta. Massa supistuu pois korkeuden yhtälöstä. Ratkaise $h$ symbolein. Nollataso on pallon korkeus potkun hetkellä."
+          ],
           "answer": [
             {
               "name": "Ek",
@@ -1062,6 +1207,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Todellisessa potkussa pallo nousee korkeimmillaan $6{,}5\\,\\text{m}$:n korkeuteen. Laske ilmanvastuksen tekemä työ. Laske myös ilmanvastuksen keskimääräinen suuruus nousun aikana. Mitä energialle tapahtuu?",
+          "hints": [
+            "Mille korkeudelle pallo nousisi ilman ilmanvastusta? Mitä eroa todellisella korkeudella on energian kannalta?",
+            "Energiaperiaate: $E_\\text{k0} + W_\\text{ilma} = mgh_\\text{mitattu}$. Keskimääräinen vastusvoima on $F = \\dfrac{-W_\\text{ilma}}{h_\\text{mitattu}}$.",
+            "Laske ensin pallon potentiaalienergia korkeudella $6{,}5\\,\\text{m}$. Vertaa sitä c-kohdan liike-energiaan. Mikä on työn etumerkki? Mihin energiamuotoon puuttuva energia on siirtynyt?"
+          ],
           "answer": [
             {
               "name": "W",
