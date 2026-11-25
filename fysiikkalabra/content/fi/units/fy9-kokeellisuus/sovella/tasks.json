@@ -11,6 +11,11 @@
      "kind": "word",
      "points": 6,
      "text": "Suunnittele koe, jolla vertailet kenkien pitoa. Kerro, mitä mittaat ja millä välineellä, miten mittaus tehdään, mitä pidät vakiona ja kuinka monta mittausta teet.",
+     "hints": [
+      "Mitä yhtä lukua kenkien pidosta haluat verrata, kun kengät painavat eri paljon? Mikä ilmiö kertoo, milloin kenkä ei vielä liu'u?",
+      "Lepokitkalle pätee $F_{\\mu 0} \\le \\mu_0 N$. Miten voit mitata tämän rajan, kun käytössäsi on lauta, jousivaaka ja kaltevuusmittari?",
+      "Kirjoita suunnitelmaan neljä kohtaa: mitä mittaat ja millä välineellä, miten mittaus tehdään, mitä pidät vakiona ja kuinka monta toistoa teet. Mitä kaikkea kengän ja laudan välillä täytyy pitää samana?"
+     ],
      "criteria": [
       {
        "text": "Valitsee pidon mitaksi lepokitkakertoimen ja perustelee, miksi kertoimen eikä pelkän voiman: kengät painavat eri paljon.",
@@ -39,6 +44,11 @@
      "kind": "word",
      "points": 3,
      "text": "Miten lasket tuloksen mittauksistasi, ja miten osoitat, että kenkien ero on todellinen eikä mittausten vaihtelua?",
+     "hints": [
+      "Mitä suuretta mittauksesi antavat suoraan, ja mitä suuretta niistä lasketaan? Miten yksi mittaus muuttuu pidon luvuksi?",
+      "Kallistuksessa kenkä lähtee liukumaan, kun $mg\\sin\\alpha_0 = \\mu_0\\,mg\\cos\\alpha_0$. Vedossa lepokitkan raja on $\\mu_0 N$, missä $N = mg$.",
+      "Laske kummallekin kengälle keskiarvo ja vaihteluvälin puolikas. Miltä kahden kengän välit näyttävät lukusuoralla, jos ero on todellinen, ja miltä, jos ei?"
+     ],
      "criteria": [
       {
        "key": "equation",
@@ -62,6 +72,11 @@
      "kind": "word",
      "points": 3,
      "text": "Nimeä kaksi merkittävää virhelähdettä ja kerro, miten pienennät kummankin vaikutusta.",
+     "hints": [
+      "Missä mittauksen vaiheessa lukema voi mennä väärin tai kengän pito muuttua? Mikä niistä vaikuttaisi tulokseen eniten?",
+      "Kuvaa virhelähde sanomalla, mihin suuntaan se muuttaa lukemaa ja onko se satunnainen vai aina samansuuntainen.",
+      "Kirjoita kummallekin virhelähteelle kolmen osan ketju: virhelähde, mihin suuntaan se muuttaa lukemaa ja mitä teet sen pienentämiseksi."
+     ],
      "criteria": [
       {
        "key": "error_sources",
@@ -98,6 +113,11 @@
      "kind": "word",
      "points": 5,
      "text": "Suunnittele koe, jolla määrität rypsiöljyn ominaislämpökapasiteetin. Kerro, mitä mittaat ja miten, ja mitä pidät vakiona.",
+     "hints": [
+      "Kuinka paljon lämpöenergiaa vastus antaa tietyssä ajassa, ja mikä mittaus kertoo, mihin tämä energia menee? Mitä suureita siis tarvitset?",
+      "Vastuksen antama energia on $E = Pt$, ja se lämmittää nestettä: $Pt = cm\\,\\Delta T$. Mitkä yhtälön suureista tiedät jo ja mitkä sinun täytyy mitata?",
+      "Kirjoita suunnitelmaan, mitä punnitset, mitä mittaat ja kuinka usein, ja mitä pidät vakiona. Mitä saisit selville, jos tekisit saman mittauksen toisella nesteellä?"
+     ],
      "criteria": [
       {
        "text": "Punnitsee öljyn vaa'alla, esimerkiksi noin $200\\,\\text{g}$, ja kirjaa vastuksen tehon.",
@@ -126,6 +146,11 @@
      "kind": "word",
      "points": 3,
      "text": "Miten ominaislämpökapasiteetti määritetään mittausten kuvaajasta?",
+     "hints": [
+      "Millaisen kuvaajan lämpötila ja aika muodostavat, kun teho on vakio ja öljyä sekoitetaan? Mikä kuvaajan osa sopii malliin parhaiten?",
+      "Yhtälöstä $P\\,\\Delta t = cm\\,\\Delta T$ saat $\\dfrac{\\Delta T}{\\Delta t} = \\dfrac{P}{cm}$. Mikä kuvaajan ominaisuus on $\\dfrac{\\Delta T}{\\Delta t}$?",
+      "Sovita suora $(t, T)$-pisteiden siihen osaan, joka on suora, lue kulmakerroin $k$ ja ratkaise siitä $c$. Miksi koko aineiston käyttäminen ei sovi, kun öljy on lämmennyt ympäristöä lämpimämmäksi?"
+     ],
      "criteria": [
       {
        "key": "graph_read",
@@ -149,6 +174,11 @@
      "kind": "calc",
      "points": 3,
      "text": "Taulukkokirjan mukaan rypsiöljyn ominaislämpökapasiteetti on noin $2{,}0\\,\\text{kJ/(kg}\\cdot\\text{K)}$. Arvioi, kuinka kauan $200\\,\\text{g}$:n öljyerän lämpeneminen $20\\,{}^\\circ\\text{C}$:lla kestää, kun lämpöä ei häviä.",
+     "hints": [
+      "Mikä energia tarvitaan öljyn lämmittämiseen, ja mikä antaa sen? Miten aika liittyy näihin kahteen?",
+      "Vastuksen energia on $Pt$ ja öljyn lämpenemiseen tarvittava energia $cm\\,\\Delta T$. Kun lämpöä ei häviä, $Pt = cm\\,\\Delta T$.",
+      "Muunna ensin yksiköt: $200\\,\\text{g}$ kilogrammoiksi ja $2{,}0\\,\\text{kJ/(kg}\\cdot\\text{K)}$ jouleiksi kilogrammaa ja kelviniä kohti. Ratkaise sitten aika $t$."
+     ],
      "answer": {
       "value": 160,
       "unit": "s",
@@ -177,6 +207,11 @@
      "kind": "word",
      "points": 3,
      "text": "Lämpöä häviää kokeen aikana ympäristöön. Tuleeko ominaislämpökapasiteetista liian suuri vai liian pieni? Perustele ja kerro, miten vaikutusta pienennetään.",
+     "hints": [
+      "Jos osa vastuksen energiasta häviää ympäristöön, lämmittääkö öljy saman energian kuin laskussa oletetaan? Mitä se tekee lämpötilan nousunopeudelle?",
+      "Tulos lasketaan kaavalla $c = \\dfrac{P}{mk}$. Miten $c$ muuttuu, jos todellinen kulmakerroin $k$ on pienempi kuin häviöttömässä tapauksessa?",
+      "Keksi yksi toimenpide, joka pienentää häviöitä, ja yksi keino, jolla häviöiden vaikutus voitaisiin arvioida mittauksesta."
+     ],
      "criteria": [
       {
        "key": "error_sources",
@@ -214,6 +249,11 @@
      "kind": "word",
      "points": 6,
      "text": "Arvioi raporttia. Esitä vähintään neljä puutetta ja perustele, miksi kukin heikentää tulosta tai johtopäätöstä.",
+     "hints": [
+      "Lue raportti tarkastajana: voisiko toinen ryhmä toistaa kokeen sen perusteella? Mitä tulokselta puuttuu, jotta sitä voisi verrata arvoon $9{,}81\\,\\text{m/s}^2$?",
+      "Tarkastele kolmea kohtaa: ajanoton tarkkuutta suhteessa noin $0{,}8\\,\\text{s}$:n aikaan, tuloksen numeroiden määrää ja sitä, mitä sanat ”todistettiin” ja ”johtuu ilmanvastuksesta” vaativat.",
+      "Mieti, kuinka suuri osa noin $0{,}8\\,\\text{s}$:n ajasta on käsin ajanoton reaktioaika. Onko tuloksen ero arvoon $9{,}81\\,\\text{m/s}^2$ suurempi vai pienempi kuin mittauksen epävarmuus?"
+     ],
      "criteria": [
       {
        "key": "uncertainty",
@@ -247,6 +287,11 @@
      "kind": "calc",
      "points": 4,
      "text": "Määritä raportin mittauksista putoamiskiihtyvyys ja sen epävarmuus ääriarvomenetelmällä.",
+     "hints": [
+      "Pallo lähtee levosta. Mikä yhtälö antaa putoamiskiihtyvyyden korkeudesta ja ajasta? Mikä mittaus vaikuttaa tulokseen eniten?",
+      "Kun pallo lähtee levosta, $h = \\tfrac{1}{2}gt^2$, joten $g = \\dfrac{2h}{t^2}$. Ääriarvomenetelmässä epävarmuus on suurimman ja pienimmän tuloksen erotuksen puolikas.",
+      "Laske $g$ sekä lyhimmällä ajalla $0{,}75\\,\\text{s}$ että pisimmällä ajalla $0{,}82\\,\\text{s}$ käyttäen korkeutta $3{,}0\\,\\text{m}$. Kumpi aika antaa suuremman $g$:n? Pyöristä tulos samaan desimaaliin kuin epävarmuus."
+     ],
      "answer": [
       {
        "name": "g",
@@ -289,6 +334,11 @@
      "kind": "word",
      "points": 3,
      "text": "Ehdota parannettu menetelmä koulun tavallisilla välineillä. Kerro myös, miten tulos lasketaan.",
+     "hints": [
+      "Mikä osa raportin mittauksesta aiheutti suurimman epävarmuuden? Miten sen voisi poistaa tai pienentää koulun välineillä?",
+      "Yhden korkeuden toistojen sijaan voi mitata usealla korkeudella. Millä suureilla akseleille $h = \\tfrac{1}{2}gt^2$ antaa suoran, ja mitä sen kulmakerroin kertoo?",
+      "Kirjoita menetelmään, miten saat ajan ilman käsin ajanottoa, kuinka monta korkeutta käytät ja montako toistoa kustakin. Laske sitten jokaiselle korkeudelle kuvaajan vaaka-akselin suure ja sovita suora."
+     ],
      "criteria": [
       {
        "text": "Ajanotto ilman reaktioaikaa: pudotus kuvataan puhelimella mittanauhan edessä ja aika luetaan kuvista, tai käytetään valoportteja.",
@@ -333,6 +383,11 @@
      "kind": "graph",
      "points": 5,
      "text": "Piirrä mittauksista kuvaaja, josta putoamiskiihtyvyys voidaan määrittää, ja sovita pisteisiin suora.",
+     "hints": [
+      "Mikä on heilurin jaksonajan ja pituuden yhteys? Millä suureilla akseleille pisteiden pitäisi asettua suoralle?",
+      "Neliöi malli $T = 2\\pi\\sqrt{\\dfrac{l}{g}}$. Minkä suureen suoraan verrannollinen $T^2$ on?",
+      "Taulukossa on kymmenen heilahduksen aika. Laske jokaiselle riville jaksonaika $T = t_{10} : 10$ ja sitten $T^2$. Piirrä pisteet ja sovita suora niiden lomitse."
+     ],
      "criteria": [
       {
        "text": "Valitsee suureet $l$ ja $T^2$ ja perustelee valinnan: heilurin malli $T^2 = \\tfrac{4\\pi^2}{g}\\, l$ on suoran yhtälö.",
@@ -364,6 +419,11 @@
      "kind": "calc",
      "points": 4,
      "text": "Määritä kuvaajasta putoamiskiihtyvyys.",
+     "hints": [
+      "Mikä kuvaajan ominaisuus liittyy putoamiskiihtyvyyteen? Miksi kulmakerroin kannattaa lukea suoran kahdesta kaukana toisistaan olevasta pisteestä?",
+      "Vertaa mallia $T^2 = \\dfrac{4\\pi^2}{g}\\,l$ suoran yhtälöön $y = kx + b$. Mikä on kulmakertoimen $k$ ja $g$:n yhteys?",
+      "Lue suoralta kaksi kaukana toisistaan olevaa pistettä ja laske $k = \\dfrac{\\Delta (T^2)}{\\Delta l}$. Ratkaise sitten $g$ yhtälöstä."
+     ],
      "answer": {
       "value": 9.84,
       "unit": "m/s²",
@@ -396,6 +456,11 @@
      "kind": "calc",
      "points": 4,
      "text": "Suora ei kulje origon kautta. Selitä, mistä vakiotermi johtuu, ja määritä kuvaajan avulla kuulan halkaisija.",
+     "hints": [
+      "Mihin heilurin mallissa $l$ tarkoittaa pituutta? Mistä pisteestä mihin ryhmä mittasi pituuden?",
+      "Jos malli on $T^2 = \\dfrac{4\\pi^2}{g}(l + r)$, missä $r$ on mittaamatta jäänyt matka, kerro sulut auki ja vertaa suoran yhtälöön $y = kx + b$.",
+      "Lue vakiotermi $b$ suoran ja pystyakselin leikkauskohdasta. Mikä yhtälö antaa $r$:n, kun tiedät $k$:n ja $b$:n? Mikä halkaisija on, kun tiedät $r$:n?"
+     ],
      "answer": {
       "value": 5.0,
       "unit": "cm",
@@ -429,6 +494,11 @@
      "kind": "word",
      "points": 3,
      "text": "Arvioi, miten pituuden mittausvirhe vaikutti b-kohdan tulokseen ja miten se olisi vaikuttanut, jos $g$ olisi laskettu jokaiselta riviltä erikseen. Onko tulos sopusoinnussa arvon $9{,}81\\,\\text{m/s}^2$ kanssa?",
+     "hints": [
+      "Pituuden mittausvirhe on systemaattinen. Mitä suoralle tapahtuu, jos jokaiseen pituuteen lisätään sama matka? Mikä suoran ominaisuus muuttuu ja mikä pysyy?",
+      "Rivikohtaisessa laskussa $g = \\dfrac{4\\pi^2 l}{T^2}$ pituus on mukana suoraan. Kuinka suuri suhteellinen vaikutus samalla pituusvirheellä on lyhyellä ja kuinka pitkällä langalla?",
+      "Laske $g$ taulukon ensimmäiseltä riviltä ($l = 0{,}250\\,\\text{m}$, $T = 1{,}055\\,\\text{s}$). Arvioi sitten kulmakertoimen lukemisen epävarmuus ja sen vaikutus $g$:hen. Onko $9{,}81\\,\\text{m/s}^2$ tuloksen epävarmuusvälin sisällä?"
+     ],
      "criteria": [
       {
        "key": "error_sources",
@@ -473,6 +543,11 @@
      "kind": "calc",
      "points": 3,
      "text": "Laske kiven tiheys.",
+     "hints": [
+      "Miten tiheys määritellään, ja mitkä kaksi suuretta saat mittauksista? Mistä tilavuus tulee, kun kivi on mittalasissa vedessä?",
+      "Tiheys on $\\rho = \\dfrac{m}{V}$, missä $V$ on kiven syrjäyttämän veden tilavuus eli vedenpinnan kahden lukeman erotus.",
+      "Muista, että $1\\,\\text{m}\\textsf{l} = 1\\,\\text{cm}^3$ ja $1\\,\\text{g/cm}^3 = 1000\\,\\text{kg/m}^3$. Laske ensin $V$, sitten $\\rho$, ja mieti, montako merkitsevää numeroa tuloksessa voi olla."
+     ],
      "answer": {
       "value": 2680,
       "unit": "kg/m³",
@@ -501,6 +576,11 @@
      "kind": "calc",
      "points": 4,
      "text": "Määritä tiheyden epävarmuus ääriarvomenetelmällä.",
+     "hints": [
+      "Mitkä mittausten luvuista voivat olla pielessä ja kuinka paljon? Millä massan ja tilavuuden yhdistelmällä tiheys on suurin ja millä pienin?",
+      "Tilavuus on kahden lukeman erotus, joten sen epävarmuus on lukemien epävarmuuksien summa. Ääriarvomenetelmässä $\\Delta\\rho = \\dfrac{\\rho_\\text{max} - \\rho_\\text{min}}{2}$.",
+      "Kirjoita ensin $m$:n ja $V$:n ääriarvot tehtävän epävarmuuksilla. Laske niistä $\\rho_\\text{max}$ ja $\\rho_\\text{min}$ ja sitten niiden erotuksen puolikas."
+     ],
      "answer": {
       "value": 78,
       "unit": "kg/m³",
@@ -534,6 +614,11 @@
      "kind": "word",
      "points": 2,
      "text": "Voiko kiven tunnistaa graniitiksi tai basaltiksi tiheyden perusteella?",
+     "hints": [
+      "Millä välillä kiven tiheys voi epävarmuus huomioiden olla? Mihin taulukkokirjan alueisiin tämä väli osuu?",
+      "Vertaa tulosvälin ala- ja ylärajaa graniitin ja basaltin alueiden rajoihin. Mitä väli sallii ja mitä se sulkee pois?",
+      "Mieti vielä, riittääkö yksi suure kivilajin tunnistamiseen: onko taulukon väli yksi kivilaji vai tyypillinen arvo, ja voiko toisella kivilajilla olla sama tiheys?"
+     ],
      "criteria": [
       {
        "key": "conclusion",
@@ -552,6 +637,11 @@
      "kind": "word",
      "points": 3,
      "text": "Kumpi mittaus rajoittaa tuloksen tarkkuutta enemmän, massa vai tilavuus? Ehdota, miten tulosta voisi tarkentaa.",
+     "hints": [
+      "Miten vertaat kahden mittauksen merkitystä, kun niillä on eri yksiköt ja eri suuruus? Mikä luku kertoo, kuinka suuri osa mittauksesta epävarmuus on?",
+      "Suhteellinen epävarmuus on $\\dfrac{\\Delta x}{x}$. Laske se massalle ja tilavuudelle tehtävän lukemilla.",
+      "Vertaa suhteellisia epävarmuuksia: kumpaa pienentämällä tulos paranisi eniten? Keksi, miten sen mittaus voitaisiin tehdä tarkemmin, ja arvioi, mikä uusi epävarmuus siitä tulee."
+     ],
      "criteria": [
       {
        "key": "uncertainty",
@@ -588,6 +678,11 @@
      "kind": "word",
      "points": 3,
      "text": "Opiskelijat olettavat, että hidastuvuus on jokaisessa jarrutuksessa sama. Mitä oletus ennustaa jarrutusmatkan ja nopeuden välisestä yhteydestä, ja millaisella kuvaajalla oletuksen voi testata?",
+     "hints": [
+      "Jos hidastuvuus on vakio, millainen liike on kyseessä? Mikä yhtälö yhdistää nopeuden, hidastuvuuden ja matkan ilman aikaa?",
+      "Tasaisesti hidastuvassa liikkeessä pysähtyvälle pyörälle pätee $v^2 = 2as$. Ratkaise tästä $s$ ja katso, miten $s$ riippuu nopeudesta $v$.",
+      "Mitä jarrutusmatkalle tapahtuu, kun nopeus kaksinkertaistuu? Valitse akseleiksi suureet, joilla riippuvuus on suora. Mihin suora kulkee, kun nopeus on nolla?"
+     ],
      "criteria": [
       {
        "key": "equation",
@@ -611,6 +706,11 @@
      "kind": "graph",
      "points": 5,
      "text": "Piirrä kuvaaja, jolla testaat oletuksen, ja määritä siitä pyörän hidastuvuus.",
+     "hints": [
+      "Mitkä suureet piirtämällä jarrutusmatkan ja nopeuden yhteys on suora? Missä yksiköissä niiden pitää olla?",
+      "Oletus antaa $s = \\dfrac{v^2}{2a}$. Vertaa suoran yhtälöön $y = kx$ ja päättele, mikä on kulmakerroin $k$ ja miten se liittyy $a$:han.",
+      "Muunna nopeudet ensin yksikköön $\\text{m/s}$ (esimerkiksi $10\\,\\text{km/h} \\approx 2{,}8\\,\\text{m/s}$) ja neliöi vasta sitten. Lue kulmakerroin suoran kahdesta kaukana toisistaan olevasta pisteestä."
+     ],
      "answer": {
       "value": 4.2,
       "unit": "m/s²",
@@ -649,6 +749,11 @@
      "kind": "calc",
      "points": 3,
      "text": "Kuinka suuri lepokitkakertoimen renkaiden ja asfaltin välillä on vähintään oltava, jotta tällainen jarrutus on mahdollinen? Ilmanvastusta ei oteta huomioon.",
+     "hints": [
+      "Mikä voima hidastaa pyörää vaakasuoralla tiellä? Liukuuko rengas tiehen nähden vai ei, ja mikä kitka silloin on kyseessä?",
+      "Vaakasuunnassa vain kitkavoima hidastaa: $ma = F_{\\mu 0}$, ja lepokitkalle $F_{\\mu 0} \\le \\mu_0 N$, missä $N = mg$.",
+      "Sijoita $N = mg$ ja supista massa. Mikä ehto $\\mu_0$:lle jää, kun käytät b-kohdan hidastuvuutta? Mieti, onko kysytty arvo ylä- vai alaraja, ja mikä on kertoimen yksikkö."
+     ],
      "answer": {
       "value": 0.42,
       "unit": "",
@@ -677,6 +782,11 @@
      "kind": "calc",
      "points": 4,
      "text": "Myöhemmin selvisi, että sovellus näytti nopeuden $5\\,\\%$ todellista suurempana kaikissa ajoissa. Kuinka monta prosenttia b-kohdan hidastuvuus poikkeaa todellisesta, ja mihin suuntaan? Muuttuuko johtopäätös siitä, että hidastuvuus on vakio?",
+     "hints": [
+      "Sovellus näyttää kaikki nopeudet samassa suhteessa liian suurina. Mitä tämä tekee kuvaajan vaaka-akselin suureelle ja kulmakertoimelle?",
+      "Jos $v_\\text{sov} = 1{,}05\\,v$, ilmaise $v_\\text{sov}^2$ suureella $v^2$. Miten kulmakerroin $k$ ja hidastuvuus $a = \\dfrac{1}{2k}$ muuttuvat?",
+      "Laske $1{,}05^2$ ja päättele, kuinka monta prosenttia hidastuvuus on liian suuri tai pieni. Pysyvätkö pisteet suoralla, kun jokainen $v^2$ kerrotaan samalla luvulla?"
+     ],
      "answer": {
       "value": 10,
       "unit": "%",
@@ -739,6 +849,11 @@
      "kind": "word",
      "points": 3,
      "text": "Tarkastele kuvaajaa. Onko aineistossa merkkejä systemaattisesta virheestä? Mitä kuvaajan perusteella voi sanoa satunnaisesta vaihtelusta?",
+     "hints": [
+      "Katso, miten pisteet asettuvat suoran ympärille ja mihin suora osuu pystyakselilla. Mitä erilaisia virheitä kuvaajasta voi lukea?",
+      "Systemaattinen virhe siirtää kaikkia pisteitä samaan suuntaan, satunnainen vaihtelu hajottaa pisteet suoran molemmille puolille. Mitä suoran kulku origon suhteen kertoo?",
+      "Arvioi, kuinka paljon pisteet poikkeavat suorasta pystysuunnassa, ja vertaa poikkeamaa jousivaa'an asteikkoväliin $0{,}1\\,\\text{N}$. Poikkeavatko pisteet yhteen suuntaan vai kumpaankin?"
+     ],
      "criteria": [
       {
        "text": "Toteaa, että pisteet ovat lähes suoralla, joka kulkee origon kautta, joten kitkavoima on suoraan verrannollinen tukivoimaan: $F_\\mu = \\mu N$.",
@@ -762,6 +877,11 @@
      "kind": "calc",
      "points": 4,
      "text": "Määritä liukukitkakerroin ja sen virhearvio kuvaajan perusteella.",
+     "hints": [
+      "Mikä kuvaajan ominaisuus kertoo kitkavoiman ja tukivoiman suhteen? Miten virhearvion voi arvioida usean pisteen avulla?",
+      "Liukukitkalle $F_\\mu = \\mu N$, joten $(N, F_\\mu)$-kuvaajan suoran kulmakerroin on $\\mu$. Virhearvio on vaihteluvälin puolikas.",
+      "Lue kuvaajalta jokaisen pisteen $N$ ja $F_\\mu$ ja laske suhde $F_\\mu : N$ kullekin. Ota keskiarvo ja suurimman ja pienimmän suhteen erotuksen puolikas."
+     ],
      "answer": {
       "value": 0.215,
       "unit": "",
@@ -795,6 +915,11 @@
      "kind": "calc",
      "points": 4,
      "text": "Toinen ryhmä käytti samaa palikkaa ja pöytää, mutta heidän jousivaakansa näytti kuormittamattomana $0{,}3\\,\\text{N}$, eikä ryhmä huomioinut sitä. Kun tukivoima oli $10\\,\\text{N}$, vaaka näytti $2{,}4\\,\\text{N}$. Laske kitkakerroin, jonka ryhmä sai tästä lukemasta, ja oikea kitkakerroin sekä virheen suuruus prosentteina oikeasta arvosta. Perustele lisäksi, miten nollavirhe vaikuttaisi kulmakertoimeen, jos kerroin määritettäisiin koko mittaussarjasta sovitetun suoran avulla.",
+     "hints": [
+      "Jousivaaka näyttää kuormittamattomana $0{,}3\\,\\text{N}$. Onko tämä lukema osa kitkavoimaa? Mikä osa lukemasta on oikeaa kitkavoimaa?",
+      "Oikea kitkavoima on lukema miinus nollavirhe: $F_\\mu = F_\\text{lukema} - F_0$, ja $\\mu = \\dfrac{F_\\mu}{N}$. Mitä nollavirhe tekee suoralle, kun jokaista pistettä siirretään saman verran?",
+      "Laske kerroin ensin korjaamattomalla lukemalla ja sitten nollavirheellä korjatulla voimalla. Vertaa ero oikeaan arvoon prosentteina."
+     ],
      "answer": [
       {
        "name": "mu_wrong",
@@ -843,6 +968,11 @@
      "kind": "word",
      "points": 3,
      "text": "Arvioi mittausmenetelmää: nimeä kaksi tuloksen luotettavuutta heikentävää asiaa ja kerro, miten kokeen toteutusta parannettaisiin.",
+     "hints": [
+      "Käy koe läpi vaihe vaiheelta: vetäminen, lukeman lukeminen, toistojen määrä, pinta. Missä kohdassa tulos voi vaihdella tai vääristyä?",
+      "Vertaa jousivaa'an asteikkoväliä $0{,}1\\,\\text{N}$ pienimpään kuvaajan kitkavoimaan. Mitä se tekee pienen tukivoiman pisteelle?",
+      "Valitse kaksi heikkoutta ja kirjoita kummallekin ketju: heikkous, sen vaikutus tulokseen ja mitä tekisit toisin."
+     ],
      "criteria": [
       {
        "key": "error_sources",
@@ -883,6 +1013,11 @@
      "kind": "calc",
      "points": 4,
      "text": "Määritä kuvaajan suoran kulmakerroin ja sen avulla käämin kierrostiheys $n$.",
+     "hints": [
+      "Mikä kuvaajan ominaisuus kertoo, kuinka paljon kenttä kasvaa virran kasvaessa? Miten luet sen kuvaajalta?",
+      "Vertaa mallia $B = \\mu_0 n I$ suoran yhtälöön $B = kI$. Miten kulmakerroin $k$ ja kierrostiheys $n$ liittyvät toisiinsa?",
+      "Lue sovitetulta suoralta kaksi kaukana toisistaan olevaa pistettä. Muunna millitesla teslaksi ($1\\,\\text{mT} = 10^{-3}\\,\\text{T}$) ennen kuin ratkaiset $n$:n."
+     ],
      "answer": {
       "value": 1960,
       "unit": "1/m",
@@ -916,6 +1051,11 @@
      "kind": "calc",
      "points": 3,
      "text": "Ryhmä haluaa tuottaa käämin keskelle kentän $B = 12\\,\\text{mT}$. Mikä virta tarvitaan kuvaajan perusteella? Onko tulos luotettava?",
+     "hints": [
+      "Mitä suora kertoo $B$:n ja $I$:n yhteydestä? Kuinka kaukana mitatusta virta-alueesta tarvittava arvo on?",
+      "Suora kulkee käytännössä origon kautta, joten $B = kI$ ja $I = \\dfrac{B}{k}$. Mikä on kulmakerroin $k$ a-kohdasta?",
+      "Käytä samoja yksiköitä kuin kulmakertoimessa ja laske virta. Vertaa tulosta suurimpaan mitattuun virtaan ja mieti, mitä se tekee tuloksen luotettavuudelle."
+     ],
      "answer": {
       "value": 4.9,
       "unit": "A",
@@ -944,6 +1084,11 @@
      "kind": "calc",
      "points": 4,
      "text": "Kun käämin virta oli nolla, anturi näytti silti lukeman $0{,}04\\,\\text{mT}$. Laske, kuinka monta prosenttia tämä lukema on kuvaajasta luetuista kentän arvoista virroilla $0{,}50\\,\\text{A}$ ja $2{,}5\\,\\text{A}$. Minkä tyyppinen virhe on kyseessä, ja miten se vaikuttaa kulmakertoimeen?",
+     "hints": [
+      "Riippuuko lukema $0{,}04\\,\\text{mT}$ virrasta? Onko virhe aina samansuuntainen? Miltä tällainen virhe näyttää kuvaajalla?",
+      "Suhteellinen osuus on $\\dfrac{\\text{virhe}}{\\text{lukema}} \\cdot 100\\,\\%$. Miten vakio vaikuttaa suoran $B = kI + b$ kulmakertoimeen $k$ ja miten vakiotermiin $b$?",
+      "Lue kuvaajalta $B$ virroilla $0{,}50\\,\\text{A}$ ja $2{,}5\\,\\text{A}$ ja laske osuus kummallakin. Kuvittele sitten, että kaikkiin pisteisiin lisätään $0{,}04\\,\\text{mT}$: miten suora muuttuu?"
+     ],
      "answer": [
       {
        "name": "r05",
@@ -986,6 +1131,11 @@
      "kind": "word",
      "points": 3,
      "text": "Arvioi kokeen suunnittelua. Sopiiko malli $B \\propto I$ mittaukseen, ja miten kokeen toteutusta parannettaisiin?",
+     "hints": [
+      "Katso, miten pisteet asettuvat suoran ympärille. Mitä se kertoo siitä, sopiiko malli $B \\propto I$ mitatulle virta-alueelle?",
+      "Mallin sopivuus koskee vain mitattua aluetta. Mieti myös, mikä systemaattinen virhe kokeessa oli ja miten se voitaisiin mitata ja poistaa tuloksista.",
+      "Keksi vielä yksi toinen heikkous kokeen toteutuksesta (esimerkiksi toistojen määrä, virran pysyvyys tai anturin paikka) ja yksi parannus siihen."
+     ],
      "criteria": [
       {
        "text": "Toteaa, että pisteet ovat lähes suoralla ja poikkeavat siitä vain vähän kumpaankin suuntaan, joten malli sopii virta-alueelle $0\\text{–}2{,}5\\,\\text{A}$ ja satunnainen vaihtelu on pientä.",
