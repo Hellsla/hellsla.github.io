@@ -99,6 +99,7 @@ Tehty (PR #852, 2026-11-24): tehtävätekstien ja tutkimusvaiheen alkuetuliite "
 Jäljellä: FY3 (#849:n yhteydessä); fy2-1:n tutkimusvaiheen otsikko "Esimerkkiaineisto: pomppiva pallo" (kaikissa kielissä; täysi katselmointi, joten tehdään fy2-1:n seuraavan sisältömuutoksen mukana); en-yksikön `units/fy14-fotoni/inquiry.json` kehote "Example data: …" (yksikön katselmointi); fy6-11:n `solutions.md`:n Annettu-rivin pieni alkukirjain "esimerkkiaineisto: levyjen etäisyys …" (visual Polish, ei uutta kierrosta). Leipätekstin "esimerkkiaineistossa" ja palautteiden "Esimerkkiaineisto kumoaa/tukee tätä" jäävät tarkoituksella.
 
 ## 10. Simulaatioiden käyttöliittymä (opettaja 2026-11-14)
+Varattu: claude/jaettu-1px-vihjeet (1 px -selite + vihjelaatikon sisennys)
 Mittaus ja päätökset `docs/audits/2026-11-14-simulaatioiden-kayttoliittyma.md`. PR 1–4b tehty (#563, #588, #591, #648, #652), PR 5 tehty (#711: canvasin nimi ja kuvaus, 40 px:n valintaruudut, näkyvä kohdistus). Myöhemmin kurssi kerrallaan luvun seuraavan
 sisältömuutoksen yhteydessä: tyyppi D (fy6-5, fy6-6, fy6-9, fy6-12, fy6-13, fy6-14), fy1-2:n säätimien ryhmittely, näppäinvaihtoehto raahaukselle,
 nimien yhtenäistäminen (Toisto / Tauko / Alusta), toistuvien seliterivien poisto. 1366×650:n lisähuomiot: loki §10.
