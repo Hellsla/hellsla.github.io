@@ -130,6 +130,13 @@ Varattu: claude/11b-pr7-kertauspolku (PR 7 kertauspolku 2/4 viikkoa, 14/28 vrk, 
 PR 7 (#851, kertauspolku): uudet käyttöliittymätekstit ja kuvat hyväksytty: opettaja 2026-11-25 tekijäsessioon ("I approve texts and images").
 PR 7b (jaettu, PR 7:n jälkeen, ennen PR 8:aa): valmentajan "Aloita diagnoosilla" vie nyt `fy9-koe.html`:n alkuun; linkin pitää viedä suoraan 24 kohdan diagnoosiin (osio 5 Esimerkit, `testi-1`). Muutos `valmentaja.py`:n `data-diag`-arvoon (ankkuri), ei uutta tekstiä. **Opettaja 2026-11-24 ("go with your recommendations")**.
 
+## 11c. FY9: vihjeportaat pitkiin tehtäviin (opettaja 2026-11-25 "Do 1 and 2")
+Varattu: ccr-5b78822d-5kk0z7
+Lähtötilanne: FY9:n 86 lyhyessä laskutehtävässä on jo kolme vihjettä (83/86; harjoituskokeen kolmessa ei) ja yleisen virheen palaute (86/86). Pitkissä tehtävissä (yksiköiden Tehtävät, `sovella/tasks.json`: 124 tehtävää, noin 500 kohtaa) ei ole vihjeitä, joten jumiin jäänyt opiskelija voi avata vain koko mallivastauksen.
+PR 1 (jaettu `scripts/practice.py` + malliyksikkö fy9-liike, fi): tehtävän kohdalle valinnainen `hints` (enintään kolme: periaate, MAFY-kaava, ensimmäinen rivi), sama vihjekomponentti kuin lyhyissä tehtävissä, ei uutta käyttöliittymätekstiä; koetila piilottaa vihjeet kuten ennenkin. Opettaja hyväksyy mallin ennen muita yksiköitä.
+PR 2– (sisältö, yksikkö kerrallaan mallin mukaan; en ja fi-easy samalla): muut 15 yksikköä. Harjoituskokeeseen (fy9-harjoituskoe) ei vihjeitä ilman opettajan päätöstä.
+Avoin päätös (opettaja): vastauksen tarkistus ja yleisen virheen palaute pitkien tehtävien laskukohtiin. Muuttaisi mallivastauksen lukkoa, tehty-laskuria ja valmentajan näyttölokia, joten vasta 11b PR 8:n jälkeen ja omana jaettuna PR:nään.
+
 ## 17. Kehitys ilman kirjautumista (opettaja 2026-11-15)
 17a PR 1 (#720) ja PR 2 (#741, manifesti ja pysyvä tallennus) sekä 17b PR 1 (#818, koko työ yhteen tiedostoon; tekstit opettaja 2026-11-23) tehty; webkit.org sallittu ympäristöön 2026-11-19, opettajan luvalla.
 Ohjeet ja päätökset K1–K9: `docs/audits/2026-11-15-kehitys-ilman-kirjautumista.md`. Jokainen osa oma PR, yksin; uudet käyttöliittymätekstit PR:n kuvauksessa. Tallennusavaimia, tiedostomuotoja ja korttien id:itä ei muuteta.
