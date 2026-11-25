@@ -531,7 +531,7 @@
           "points": 5,
           "text": "Explain how a rainbow forms. On which edge of the arc is red, and why?",
           "hints": [
-            "What happens to light when it enters a water drop and leaves it? What happens to different colours if the refractive index depends on the wavelength?",
+            "What happens to light when it enters a water drop, reflects from its back surface and leaves it? What happens to different colours if the refractive index depends on the wavelength?",
             "The dependence of the refractive index on the wavelength is called dispersion. The law of refraction is $n_1 \\sin\\alpha_1 = n_2 \\sin\\alpha_2$.",
             "Compare the refractive indices of red and violet light: which is greater? Which colour is refracted more? Deduce at what angle from the antisolar point each colour leaves the drop, and which edge of the arc the red is on."
           ],
@@ -589,7 +589,7 @@
           "hints": [
             "What do the dense tracks of a CD do to light? What happens to the waves reflected from many tracks?",
             "The waves reinforce one another in the directions for which the grating equation $d\\sin\\theta = k\\lambda$ holds, where $d$ is the spacing of the tracks and $k$ the order.",
-            "Solve $\\sin\\theta = \\dfrac{k\\lambda}{d}$ for $k = 1$. Convert the wavelengths and the spacing to metres: $1\\,\\text{nm} = 10^{-9}\\,\\text{m}$ and $1.6\\,\\mu\\text{m} = 1.6 \\cdot 10^{-6}\\,\\text{m}$. Which colour deviates more in a grating than in a drop? Then evaluate the claim separately for each phenomenon."
+            "Solve $\\sin\\theta = \\dfrac{k\\lambda}{d}$ for $k = 1$. Convert the wavelengths and the spacing to metres: $1\\,\\text{nm} = 10^{-9}\\,\\text{m}$ and $1.6\\,\\mu\\text{m} = 1.6 \\cdot 10^{-6}\\,\\text{m}$. Compare which colour the grating deviates more and which colour the drop refracts more. Then evaluate the claim separately for each phenomenon."
           ],
           "criteria": [
             {
@@ -688,7 +688,7 @@
           "hints": [
             "Where might the assumption in the group's calculation fail? When is the approximation $\\sin\\theta \\approx \\tan\\theta$ good?",
             "For each order compare the ratio $\\dfrac{x}{L}$ used by the group with $\\sin\\theta$ calculated from the tangent. Which order has the greater error, and why?",
-            "Check the third conclusion: is $3\\lambda < d$? With the wavelength of part a calculate $\\sin\\theta_3$ and the angle $\\theta_3$, and then the distance $x_3 = L\\tan\\theta_3$. Does the maximum fit on the wall, and is it bright?"
+            "Check the third conclusion: what condition must hold for a third-order maximum to exist? With the wavelength of part a calculate $\\sin\\theta_3$ and the angle $\\theta_3$, and then the distance $x_3 = L\\tan\\theta_3$. Does the maximum fit on the wall, and is it bright?"
           ],
           "criteria": [
             {

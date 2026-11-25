@@ -531,7 +531,7 @@
           "points": 5,
           "text": "Selitä, miten sateenkaari syntyy. Kummalla reunalla kaarta punainen on? Miksi?",
           "hints": [
-            "Mitä valolle tapahtuu, kun se tulee vesipisaraan ja lähtee siitä pois? Mitä eri väreille tapahtuu, jos taitekerroin riippuu aallonpituudesta?",
+            "Mitä valolle tapahtuu, kun se tulee vesipisaraan? Se heijastuu pisaran takapinnasta ja lähtee pois. Mitä eri väreille tapahtuu, jos taitekerroin riippuu aallonpituudesta?",
             "Dispersio tarkoittaa, että taitekerroin riippuu aallonpituudesta. Taittumislaki on $n_1 \\sin\\alpha_1 = n_2 \\sin\\alpha_2$.",
             "Vertaa punaisen ja violetin taitekertoimia. Kummalla on suurempi? Kumpi väri taittuu enemmän? Päättele, missä kulmassa vastapisteeseen nähden kumpikin väri tulee pisarasta. Kummalla reunalla punainen on?"
           ],
@@ -589,7 +589,7 @@
           "hints": [
             "Mitä CD-levyn tiheät urat tekevät valolle? Mitä tapahtuu monesta urasta heijastuneille aalloille?",
             "Aallot vahvistavat toisiaan suunnissa, joille pätee hilayhtälö $d\\sin\\theta = k\\lambda$. Tässä $d$ on urien väli ja $k$ kertaluku.",
-            "Ratkaise $\\sin\\theta = \\dfrac{k\\lambda}{d}$, kun $k = 1$. Muunna aallonpituudet ja urien väli metreiksi: $1\\,\\text{nm} = 10^{-9}\\,\\text{m}$ ja $1{,}6\\,\\mu\\text{m} = 1{,}6 \\cdot 10^{-6}\\,\\text{m}$. Kumpi väri poikkeaa enemmän hilassa kuin pisarassa? Arvioi väite sitten jokaisen ilmiön kohdalla erikseen."
+            "Ratkaise $\\sin\\theta = \\dfrac{k\\lambda}{d}$, kun $k = 1$. Muunna aallonpituudet ja urien väli metreiksi: $1\\,\\text{nm} = 10^{-9}\\,\\text{m}$ ja $1{,}6\\,\\mu\\text{m} = 1{,}6 \\cdot 10^{-6}\\,\\text{m}$. Kumpi väri poikkeaa hilassa enemmän? Kumpi taittuu pisarassa enemmän? Arvioi väite sitten jokaisen ilmiön kohdalla erikseen."
           ],
           "criteria": [
             {
@@ -688,7 +688,7 @@
           "hints": [
             "Missä ryhmän laskussa oletus voi pettää? Milloin approksimaatio $\\sin\\theta \\approx \\tan\\theta$ on hyvä?",
             "Vertaa ryhmän käyttämää suhdetta $\\dfrac{x}{L}$ tangentista laskettuun $\\sin\\theta$:aan kummallekin kertaluvulle. Kumman kertaluvun virhe on suurempi? Miksi?",
-            "Tarkista kolmas johtopäätös. Onko $3\\lambda < d$? Laske a-kohdan aallonpituudella $\\sin\\theta_3$ ja kulma $\\theta_3$. Laske sitten etäisyys $x_3 = L\\tan\\theta_3$. Mahtuuko maksimi seinälle? Onko se kirkas?"
+            "Tarkista kolmas johtopäätös. Mikä ehto kolmannen kertaluvun maksimille pätee? Laske a-kohdan aallonpituudella $\\sin\\theta_3$ ja kulma $\\theta_3$. Laske sitten etäisyys $x_3 = L\\tan\\theta_3$. Mahtuuko maksimi seinälle? Onko se kirkas?"
           ],
           "criteria": [
             {
