@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 2d591342a2ac0928
+CONTENT-HASH: 2cbf331629254180
 
 ## Blocking
 (none)
@@ -7,4 +7,8 @@ CONTENT-HASH: 2d591342a2ac0928
 ## Polish
 (none)
 
-Checked: built previews, 34 hint rows x 102 hints, 390 and 1280 px, closed and open: no horizontal overflow, no clipped formulas, closed hints on one stacked row, open boxes readable, reading order intact; screenshots of s1 a card opened; language and typography of the new texts read (LaTeX units, decimal comma/point correct).
+## Checked
+- Round 2 delta: changed hints in tasks.json (en) read for language and typography (text only, no new formulas); previews rebuilt; check_layout at 360 and 390 px OK (2 known clipped formulas at 360).
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5
