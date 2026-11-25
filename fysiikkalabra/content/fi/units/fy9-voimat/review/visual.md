@@ -1,9 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: c7bd857714016ab6
-SCOPE: delta (old-content fixes, git diff origin/main)
-Checked: fy9-voimat (fi): rendered preview page at 390 and 1280 px with every details/solution open (DOM check: no page overflow, no KaTeX error, no clipped or scrolling display formula); captures review/shots/*stage-sovella-*, *stage-exercises-*, *teacher-*, intro and stage-selita/tarkista tiles, with sample tiles opened at readable size (aallot fi sovella-1280-5 and 390-6, liike en sovella-390-9, ympyraliike fi-easy sovella-390-8, energia fi teacher-1280-1); changed numbers and units diffed against the source for decimal comma/point and \, thin space.
+CONTENT-HASH: 187e87e7e825313c
 
-1. Blocking: none.
-2. Typography: changed numbers and units are LaTeX with thin space, decimal comma in fi and fi-easy, decimal point in en; aligned blocks and inline formulas fit at 390 px; no layout regressions from the changed lines.
-3. Language: changed lines read naturally and consistently with the glossary terms; no wording defect found.
-4. Polish: known drawing issues (kone-kuva W arrow, kalteva.webp, geo-kuva ray, kartta label, sahkokentta formula map E vs W) are known to the teacher, not re-judged here.
+Delta review of the new `hints` (visual & editorial). Rendered at 390 and 1280 px, hints closed and open (parts s1 a, s3 b, s5 b, s6 a and others sampled): closed hints sit on one row at 1280 and wrap to a column at 390 (readable, no overflow, page scrollWidth = clientWidth); open boxes are readable, formulas ($\mu N_\text{B}$, $\Sigma F = m_\text{B}a$, $F - F_\mu = ma$, $k=\Delta a/\Delta F$) are not clipped and need no scrolling; reading order of the card is correct. Numbers with units are LaTeX with decimal comma ($1{,}20\,\text{N}$, $0{,}500\,\text{kg}$).
+
+## Blocking
+None.
+
+## Polish
+1. s? "Rajakulma" part (phone on incline), hint 2, fi: states $\mu_0 = \tan\alpha_0$, which may be the part's result. For science/pedagogy: consider ending the hint at $mg\sin\alpha_0 = \mu_0 mg\cos\alpha_0$ and leaving the last step to the student.
+2. s3 c hint 2, fi: "voit tarkistaa tuloksen käsittelemällä molempia rekiä yhtenä systeemiä" is fine but long; optional split: "Voit tarkistaa tuloksen myös käsittelemällä molempia rekiä yhtenä systeeminä. Köyden 2 voimat ovat silloin sisäisiä."
+3. s? Ella part, hint 3, fi: "Mitä tapahtuu, kun jalan työntövoima ylittää tämän rajan, ja miten jään pieni $\mu_0$ vaikuttaa rajaan?" is two questions in one sentence; acceptable, optional full stop split.
+
+## Shared issues
+None.

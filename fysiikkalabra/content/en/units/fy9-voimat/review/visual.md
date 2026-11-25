@@ -1,9 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 8c6a0362c846fe10
-SCOPE: delta (old-content fixes, git diff origin/main)
-Checked: fy9-voimat (en): rendered preview page at 390 and 1280 px with every details/solution open (DOM check: no page overflow, no KaTeX error, no clipped or scrolling display formula); captures review/shots/*stage-sovella-*, *stage-exercises-*, *teacher-*, intro and stage-selita/tarkista tiles, with sample tiles opened at readable size (aallot fi sovella-1280-5 and 390-6, liike en sovella-390-9, ympyraliike fi-easy sovella-390-8, energia fi teacher-1280-1); changed numbers and units diffed against the source for decimal comma/point and \, thin space.
+CONTENT-HASH: 92213781ef328030
 
-1. Blocking: none.
-2. Typography: changed numbers and units are LaTeX with thin space, decimal comma in fi and fi-easy, decimal point in en; aligned blocks and inline formulas fit at 390 px; no layout regressions from the changed lines.
-3. Language: changed lines read naturally and consistently with the glossary terms; no wording defect found.
-4. Polish: known drawing issues (kone-kuva W arrow, kalteva.webp, geo-kuva ray, kartta label, sahkokentta formula map E vs W) are known to the teacher, not re-judged here.
+Delta review of the new `hints` (visual & editorial). Rendered at 390 and 1280 px, closed and open (s1 a, s3 b, s5 b, s6 a sampled): no overflow, formulas not clipped, hint boxes readable, labels "Hint 1: a guiding question / 2: what is the connection / 3: an intermediate step" consistent. Numbers with units are LaTeX with decimal point ($1.20\,\text{N}$, $0.500\,\text{kg}$).
+
+## Blocking
+None.
+
+## Polish
+1. Phone-incline part, hint 3, en: "Treat it with a reason before taking the mean." Replace: "Treat it with a justified correction or exclusion before taking the mean."
+2. s5 b hint 3, en: "Read two points that are far apart from the line" is ambiguous. Replace: "Read two points from the line that are far apart (not measured points)".
+3. Elevator distance part, hint 2, en: "taking the magnitude of the velocity" is unclear. Replace: "taking the sign of the velocity into account".
+4. Phone-incline part, hint 2: states $\mu_0 = \tan\alpha_0$ (for science/pedagogy: possible giveaway of the part's result).
+5. Ella part, hint 3: two questions in one sentence; optional split.
+
+## Shared issues
+None.
