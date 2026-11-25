@@ -772,7 +772,7 @@
           "text": "What is the common velocity of the ram and the pile just after the collision? How much kinetic energy is transformed into other forms of energy in the collision?",
           "hints": [
             "Which quantity is conserved in a short collision in which the ram and the pile stay together?",
-            "Conservation of momentum: $Mv = (M + m)\\,v'$. The energy converted to other forms is $E_\\text{loss} = \\tfrac12 Mv^2 - \\tfrac12 (M + m)\\,v'^2$.",
+            "Conservation of momentum: $Mv = (M + m)\\,v'$. The energy converted to other forms is $$\n\\begin{aligned}\nE_\\text{loss} &= \\tfrac12 Mv^2 \\\\\n&\\quad - \\tfrac12 (M + m)\\,v'^2\n\\end{aligned}\n$$",
             "Use the speed from part a) and the masses $3500\\,\\text{kg}$ and $1100\\,\\text{kg}$. Solve for $v'$ in symbols before substituting, and calculate the kinetic energies before and after separately."
           ],
           "answer": [
@@ -1037,7 +1037,7 @@
           "text": "The sled is replaced by a similar sled with a mass of $3.0\\,\\text{kg}$. The slope and the coefficient of sliding friction stay the same. What happens to the speed at the bottom of the slope? Justify by calculation.",
           "hints": [
             "How does the mass of the sled affect the potential energy and how does it affect the friction force?",
-            "The friction force is $F = \\mu N = \\mu mg\\cos\\alpha$, and the work–energy principle is $mgh - \\mu mg\\cos\\alpha \\cdot s = \\tfrac12 mv^2$.",
+            "The friction force is $F = \\mu N = \\mu mg\\cos\\alpha$, and the work–energy principle is $$\n\\begin{aligned}\nmgh &- \\mu mg\\cos\\alpha \\cdot s \\\\\n&= \\tfrac12 mv^2\n\\end{aligned}\n$$",
             "See what happens to the mass in the equation. Check by calculation with the mass $3.0\\,\\text{kg}$: the new potential energy and the work of friction, and deduce the final speed."
           ],
           "answer": {

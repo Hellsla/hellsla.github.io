@@ -772,7 +772,7 @@
           "text": "Kuinka suuri on järkäleen ja paalun yhteinen nopeus heti törmäyksen jälkeen? Kuinka paljon liike-energiaa muuttuu törmäyksessä muiksi energiamuodoiksi?",
           "hints": [
             "Mikä suure säilyy lyhyessä törmäyksessä, jossa järkäle ja paalu jäävät kiinni toisiinsa?",
-            "Liikemäärän säilyminen: $Mv = (M + m)\\,v'$. Muiksi energiamuodoiksi muuttuva energia on $E_\\text{h} = \\tfrac12 Mv^2 - \\tfrac12 (M + m)\\,v'^2$.",
+            "Liikemäärän säilyminen: $Mv = (M + m)\\,v'$. Muiksi energiamuodoiksi muuttuva energia on $$\n\\begin{aligned}\nE_\\text{h} &= \\tfrac12 Mv^2 \\\\\n&\\quad - \\tfrac12 (M + m)\\,v'^2\n\\end{aligned}\n$$",
             "Käytä a-kohdan nopeutta ja massoja $3500\\,\\text{kg}$ ja $1100\\,\\text{kg}$. Ratkaise $v'$ symbolein ennen sijoitusta. Laske liike-energiat ennen ja jälkeen erikseen."
           ],
           "answer": [
@@ -1037,7 +1037,7 @@
           "text": "Kelkan tilalle vaihdetaan samanlainen kelkka, jonka massa on $3{,}0\\,\\text{kg}$. Rinne ja liukukitkakerroin pysyvät samoina. Mitä tapahtuu nopeudelle rinteen alapäässä? Perustele laskemalla.",
           "hints": [
             "Miten kelkan massa vaikuttaa potentiaalienergiaan? Miten se vaikuttaa kitkavoimaan?",
-            "Kitkavoima on $F = \\mu N = \\mu mg\\cos\\alpha$. Energiaperiaate on $mgh - \\mu mg\\cos\\alpha \\cdot s = \\tfrac12 mv^2$.",
+            "Kitkavoima on $F = \\mu N = \\mu mg\\cos\\alpha$. Energiaperiaate on $$\n\\begin{aligned}\nmgh &- \\mu mg\\cos\\alpha \\cdot s \\\\\n&= \\tfrac12 mv^2\n\\end{aligned}\n$$",
             "Katso, mitä massalle tapahtuu yhtälössä. Tarkista laskemalla massalla $3{,}0\\,\\text{kg}$ uusi potentiaalienergia ja kitkan työ. Päättele sitten loppunopeus."
           ],
           "answer": {
