@@ -1,13 +1,11 @@
-VERDICT: FAIL
-CONTENT-HASH: ec997ed6c12a6814
+VERDICT: PASS
+CONTENT-HASH: 72129cac0a084efb
 
-Blocking
-1. s5 c, hint 3 (fi): it lists the three answers, which are the rubric's three improvements (ice dried/handled before use, mass found by weighing, mug insulated/lid). Replace with: "Käy läpi mittauksen kolme mitattavaa tai oletettua kohtaa: jään pinta ja lämpötila ennen pudotusta, jään massa ja veden lämpötilan mittaus. Mikä niistä voi vääristää tulosta ja miksi?"
+Round 2 (hints delta, fi). The ladder works on every part: hint 1 a guiding question, hint 2 the relation, hint 3 one step that still leaves work. The round 1 blocking item is closed: s5 c hint 3 no longer lists the improvements and asks which measured or assumed points can distort the result. The round 1 polish items (s3 a, s3 d, s4 c, s6 d, fi-easy wording) are revised and read well.
 
 Polish
-2. s3 a, hints 1-2 (fi): "vaaka-akseli" and "asteikot alkavat nollasta, suora lomitse" give the rubric's axis, scale and fit points. Keep hint 1 as the question only ("Mikä on syy ja mikä seuraus?") and move the scale advice out.
-3. s4 c, hints 2-3: "ilma lämmönjohde" and the two-step chain nearly dictate the verdict. Drop "vahvistaako lumi jäätä" from hint 3.
-4. s6 d, hint 2: "Kumpi kohde pystyy luovuttamaan sisäenergiansa ilmaan?" gives the main argument; ask "Kummassa kohteessa energia pääsee ilmaan?".
-5. s3 d, hint 3: lists both rubric criteria (constant loss, number of measurements); keep one.
+1. s5 c, hint 3 (all languages): it names the ice surface and temperature and the ice mass, which are the first two rubric points. It leaves the improvement and the reasoning to the student, so it is acceptable. If you want it less leading, replace it with "Käy mittauksen vaiheet läpi: jään valmistelu, punnitus, sekoitus ja lämpötilan luku. Missä kohdassa virhe tulee, ja miten sen voisi välttää?"
+2. Evaluation parts (s2 c, s5 b/d, s6 d): hint 3 asks for the shares or the steps and not for the conclusion, as the brief requires.
+3. No hint states a part's final answer. The numbers in the hints are conversions or given data.
 
-Checked: ladders of all 8 tasks (guiding question, relation, step) against answers; no hint states a final answer; units conversions fine.
+Checked: all hints against rubrics and solutions.md (fi); fi-easy and en carry the same physics; the s5 c hint 3 wording in all three languages.
