@@ -126,7 +126,7 @@ PR 4b (#834): uudet käyttöliittymätekstit ja kuvat hyväksytty: opettaja 2026
 PR 5 (#836, vaikea ratkaisuvaihe ja toistuvat virheet): uudet käyttöliittymätekstit ja kuvat hyväksytty: opettaja 2026-11-24 tekijäsessioon ("Hyväksyn tekstit ja kuvat"). Jäljellä: PR 6–8.
 Varattu: claude/11b-pr6-koetila (PR 6 koetila ja minikokeet 30/60 min, harjoituskokeen koetila)
 PR 6 (#847, koetila ja minikokeet): uudet käyttöliittymätekstit ja kuvat hyväksytty: opettaja 2026-11-24 tekijäsessioon ("Hyväksyn tekstit ja kuvat").
-Varattu: claude/11b-pr7-kertauspolku (PR 7 kertauspolku 2/4 viikkoa, 14/28 vrk, 3–7 pv/vko, 20/40/60 min)
+Varattu: claude/11b-pr7b-diagnoosi (PR 7b)
 PR 7 (#851, kertauspolku): uudet käyttöliittymätekstit ja kuvat hyväksytty: opettaja 2026-11-25 tekijäsessioon ("I approve texts and images").
 PR 7b (jaettu, PR 7:n jälkeen, ennen PR 8:aa): valmentajan "Aloita diagnoosilla" vie nyt `fy9-koe.html`:n alkuun; linkin pitää viedä suoraan 24 kohdan diagnoosiin (osio 5 Esimerkit, `testi-1`). Muutos `valmentaja.py`:n `data-diag`-arvoon (ankkuri), ei uutta tekstiä. **Opettaja 2026-11-24 ("go with your recommendations")**.
 
