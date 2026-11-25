@@ -3200,7 +3200,11 @@
     "path_del": "Poista polku",
     "path_today": "Tänään",
     "path_over": "Polku on päättynyt.",
-    "path_note": "Polku pysyy vain tällä laitteella. Se ei lähetä ilmoituksia eikä sähköposteja."
+    "path_note": "Polku pysyy vain tällä laitteella. Se ei lähetä ilmoituksia eikä sähköposteja.",
+    "path_chapters": "luvut {list}",
+    "path_done": "Tehty",
+    "path_all": "Näytä koko polku",
+    "path_one": "Näytä vain tämä viikko"
   },
   "koetila": {
     "eyebrow": "FY9 · Koetila",

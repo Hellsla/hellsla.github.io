@@ -203,11 +203,33 @@ with sync_playwright() as pw:
             expect(f"{lang} {w}px: saving writes the one key on this device (28 days, 4 a week, 40 minutes, from today) and nothing else is written", saved["days"] == 28 and saved["per"] == 4 and saved["min"] == 40 and saved["exam"] is None and re.fullmatch(r"\d{4}-\d\d-\d\d", saved["start"]) and p.evaluate("() => Object.keys(localStorage).filter((k) => k.startsWith('ruukkilabra:')).sort().join()") == PKEY, saved)
             lis = p.locator(".coach-pathday")
             n = lis.count()
-            expect(f"{lang} {w}px: the days of this week are a list, with the date, the minutes, tasks with a link, the chapter and the minutes; today is marked", 1 <= n <= 4 and all(lis.nth(i).locator(".coach-pathitems a").count() >= 1 and lis.nth(i).locator(".coach-pathdate").inner_text() for i in range(n)) and p.locator(".coach-today").count() <= 1 and (p.locator(".coach-today").count() == 0 or p.locator(".coach-today").inner_text() == T["path_today"]), n)
+            expect(f"{lang} {w}px: the days of this week are a list, with the date, the minutes, tasks with a link, the chapter and the minutes; today is marked", 1 <= n <= 4 and all(lis.nth(i).locator(".coach-pathitems a").count() >= 1 and lis.nth(i).locator("summary").inner_text() for i in range(n)) and p.locator(".coach-today").count() <= 1 and (p.locator(".coach-today").count() == 0 or p.locator(".coach-today").inner_text() == T["path_today"]), n)
             hrefs = [lis.nth(i).locator(".coach-pathitems a").nth(j).get_attribute("href") for i in range(n) for j in range(lis.nth(i).locator(".coach-pathitems a").count())]
             expect(f"{lang} {w}px: every task of the path exists on its page", all(f'id="{h.split("#")[1]}"' in (d / h.split("#")[0]).read_text(errors="ignore") for h in hrefs if "#" in h and "minikoe" not in h) and hrefs, hrefs[:4])
-            mins = [int(re.search(r"\d+", lis.nth(i).locator(".coach-pathdate .coach-min").inner_text()).group()) for i in range(n)]
+            mins = [int(re.search(r"\d+", lis.nth(i).locator("summary .coach-min").inner_text()).group()) for i in range(n)]
             expect(f"{lang} {w}px: no day is over the 40 minutes chosen", all(m <= 40 for m in mins), mins)
+            opn = p.evaluate("() => [...document.querySelectorAll('.coach-pathday details')].map((x) => [x.open, !!x.closest('.coach-pathday').querySelector('.coach-today')])")
+            expect(f"{lang} {w}px: only today's day is open, the others are one summary line (date, minutes, chapters)", all(o == t for o, t in opn) and (len(opn) < 2 or not all(o for o, _ in opn)) and all(lis.nth(i).locator("summary .coach-min").count() == 1 for i in range(n)), opn)
+            grp = p.evaluate("() => [...document.querySelectorAll('.coach-pathgroup')].map((g) => [g.querySelectorAll(':scope > .coach-where').length, g.querySelectorAll('.coach-pathtasks a').length, g.querySelectorAll('.coach-pathtasks .coach-where').length])")
+            expect(f"{lang} {w}px: the tasks of a day are grouped under one chapter line, which is not repeated under every link", grp and all(g[2] == 0 and g[0] <= 1 for g in grp), grp[:3])
+            allb = p.locator(".coach-pathall")
+            expect(f"{lang} {w}px: the whole-path button is a button with aria-expanded and opens every day, then closes back", allb.count() == 1 and allb.get_attribute("aria-expanded") == "false" and allb.inner_text() == T["path_all"], None)
+            allb.click()
+            expect(f"{lang} {w}px: after it every day is open, its text changes and aria-expanded is true", allb.get_attribute("aria-expanded") == "true" and allb.inner_text() == T["path_one"] and p.evaluate("() => [...document.querySelectorAll('.coach-pathday details')].every((x) => x.open)") and p.locator(".coach-pathday").count() >= n, None)
+            from collections import defaultdict
+            by = defaultdict(set)
+            for t in idx["tasks"]: by[t["title"]].add(t["unit"])
+            bare = [t for t in p.locator(".coach-pathtasks a").all_inner_texts() if len(by.get(t, ())) >= 3]
+            expect(f"{lang} {w}px: a title the same in three chapters or more (1. Käsite) never stands bare, the chapter's name is in front of it", not bare, bare[:3])
+            allb.click()
+            expect(f"{lang} {w}px: pressed again it goes back to this week with only today open", p.locator(".coach-pathday").count() == n and allb.get_attribute("aria-expanded") == "false", None)
+            tid = p.evaluate("() => { const a = document.querySelector('.coach-pathday details[open] .coach-pathtasks a'); return a ? a.getAttribute('href') : null; }")
+            if tid and tid.split('#')[0].startswith('fy9-') and '#' in tid:
+                key = tid.split('#')[0][:-5] + '#' + tid.split('#')[1]
+                keys = [t["id"] for t in idx["tasks"] if t["href"] == tid]
+                p.evaluate("([k, id]) => { localStorage.setItem(k, JSON.stringify({v: 1, log: [[new Date().toISOString(), id, 'a', 'ok', 0, 0, null, 'p']]})); }", [KEY, keys[0]])
+                p.reload(); p.locator("#coach-path > summary").click()
+                expect(f"{lang} {w}px: a task the existing log holds for today is marked done (the log is read, nothing new is stored)", p.locator(".coach-done").count() >= 1 and p.locator(".coach-done").first.inner_text() == T["path_done"] and p.evaluate("() => Object.keys(localStorage).filter((k) => k.startsWith('ruukkilabra:')).sort().join()") == PKEY + "," + KEY, p.locator(".coach-done").count())
             expect(f"{lang} {w}px: the page says the path stays on this device and sends nothing", T["path_note"] in p.locator("#coach-path").inner_text() and "%" not in p.locator("#coach-path").inner_text())
             over = p.evaluate("() => document.scrollingElement.scrollWidth - document.scrollingElement.clientWidth")
             small = p.evaluate("() => [...document.querySelectorAll('main a, main button, main summary')].filter((e) => e.checkVisibility() && e.getBoundingClientRect().height < 40 && !e.closest('p') && !e.closest('td')).map((e) => e.textContent.trim().slice(0, 30))")
