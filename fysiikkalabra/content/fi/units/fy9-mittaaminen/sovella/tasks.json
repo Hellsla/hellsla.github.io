@@ -13,6 +13,11 @@
      "kind": "calc",
      "points": 4,
      "text": "Laske Liisan keskinopeus yksiköissä $\\text{m/s}$ ja $\\text{km/h}$. Perustele tuloksen tarkkuus kellojen lukemien hajonnan avulla.",
+     "hints": [
+      "Mikä yksi aika kuvaa Liisan juoksua parhaiten, kun kolme kelloa antaa eri lukemat? Mikä kertoo, kuinka paljon lukemat eroavat?",
+      "Keskinopeus on matka jaettuna ajalla: $v = \\dfrac{s}{t}$. Aikana käytetään kolmen kellon lukemien keskiarvoa. Numeroiden määrän perustelet lukemien hajonnalla.",
+      "Muunna yksikkö sijoittamalla $1\\,\\text{km} = 1000\\,\\text{m}$ ja $1\\,\\text{h} = 3600\\,\\text{s}$. Lukemat vaihtelevat välillä $13{,}52\\ldots 13{,}90\\,\\text{s}$: kuinka monta numeroa tulokseen sopii?"
+     ],
      "answer": [
       {
        "name": "ms",
@@ -55,6 +60,11 @@
      "kind": "calc",
      "points": 4,
      "text": "Arvioi Liisan keskinopeuden epävarmuus ajan ja matkan epävarmuuksien perusteella ja ilmoita nopeus epävarmuuksineen.",
+     "hints": [
+      "Miten ajan ja matkan epävarmuudet vaikuttavat nopeuteen? Kumpi niistä on suhteellisesti suurempi?",
+      "Ajan epävarmuus on lukemien vaihteluvälin puolikas: $\\Delta t = \\dfrac{t_\\text{max} - t_\\text{min}}{2}$. Nopeuden epävarmuuden saa suurimman ja pienimmän mahdollisen nopeuden erotuksesta tai suhteellisten epävarmuuksien summasta: $\\dfrac{\\Delta v}{v} \\approx \\dfrac{\\Delta s}{s} + \\dfrac{\\Delta t}{t}$.",
+      "Laske suhteelliset epävarmuudet $\\dfrac{\\Delta s}{s}$ ja $\\dfrac{\\Delta t}{t}$ ja lisää ne yhteen. Kerro summa a-kohdan nopeudella ja mieti, kuinka monta numeroa epävarmuudelle riittää."
+     ],
      "answer": {
       "value": 0.12,
       "unit": "m/s",
@@ -83,6 +93,11 @@
      "kind": "word",
      "points": 3,
      "text": "Mira juoksi samassa lähdössä. Voidaanko näillä mittauksilla osoittaa, että Liisa oli nopeampi? Perustele.",
+     "hints": [
+      "Jos kummankin juoksijan aika ilmoitetaan keskiarvona ja epävarmuutena, mitä tapahtuu, kun vertaat heidän aikojensa välejä?",
+      "Kunkin ajan väli on keskiarvo ± epävarmuus, ja epävarmuutena voi käyttää lukemien vaihteluvälin puolikasta: $\\Delta t = \\dfrac{t_\\text{max} - t_\\text{min}}{2}$. Eron voi osoittaa vain, jos välit eivät mene päällekkäin.",
+      "Laske kummallekin juoksijalle väli $\\bar t \\pm \\Delta t$ ja piirrä välit samalle lukusuoralle. Mieti sen jälkeen, mitä tulos kertoo ja mitä se ei kerro."
+     ],
      "criteria": [
       {
        "key": "uncertainty",
@@ -106,6 +121,11 @@
      "kind": "word",
      "points": 3,
      "text": "Arvioi käsiajanoton systemaattisia virhelähteitä. Voidaanko tehtävän tietojen perusteella päätellä varmasti, onko mitattu aika todellista pidempi vai lyhyempi? Perustele. Selitä myös, miksi usean ajanottajan keskiarvo ei välttämättä poista systemaattista virhettä.",
+     "hints": [
+      "Mitä ajanottaja tekee kahdesti jokaisessa ajanotossa, ja kuinka nopeasti hän reagoi kumpaankin?",
+      "Kirjoita mitattu aika todellisen ajan ja kahden viiveen avulla: $\\tau_\\text{k}$ käynnistyksessä ja $\\tau_\\text{p}$ pysäytyksessä. Kumpi viive lisää ja kumpi vähentää mitattua aikaa?",
+      "Voiko tehtävän tiedoista päätellä, kumpi viive on suurempi? Mieti sitten, mitä usean ajanottajan keskiarvo tekee viiveiden satunnaiselle ja kaikille yhteiselle osalle."
+     ],
      "criteria": [
       {
        "key": "error_sources",
@@ -148,6 +168,11 @@
      "kind": "calc",
      "points": 4,
      "text": "Laske yhden arkin paksuus mikrometreinä epävarmuuksineen.",
+     "hints": [
+      "Pino koostuu $500$ samanlaisesta arkista. Miten yhden arkin paksuus ja sen epävarmuus saadaan pinon mitasta?",
+      "Arkin paksuus on pinon korkeus jaettuna arkkien lukumäärällä: $d = \\dfrac{h}{N}$. Epävarmuus jakautuu samoin: $\\Delta d = \\dfrac{\\Delta h}{N}$.",
+      "Muunna millimetrit mikrometreiksi sijoittamalla $1\\,\\text{mm} = 1000\\,\\mu\\text{m}$ ja laske sitten $d$ ja $\\Delta d$. Mieti vasta lopuksi, montako numeroa epävarmuudelle ja tulokselle kuuluu."
+     ],
      "answer": {
       "value": 102,
       "unit": "µm",
@@ -181,6 +206,11 @@
      "kind": "calc",
      "points": 4,
      "text": "Tarkista punnituksen avulla, pitääkö paketin neliömassa paikkansa.",
+     "hints": [
+      "Neliömassa kertoo massan pinta-alaa kohti. Mitä suureita tarvitset, jotta voit laskea sen punnituksesta?",
+      "Neliömassa on massa jaettuna kokonaispinta-alalla: $\\sigma = \\dfrac{M}{N\\,a\\,b}$, missä $a$ ja $b$ ovat arkin sivut ja $N$ arkkien lukumäärä.",
+      "Muunna sivut metreiksi ja massa grammoiksi ennen laskua. Laske ensin yhden arkin ala ja sitten kaikkien arkkien yhteisala. Vertaa tulosta lopuksi merkintään $80\\,\\text{g/m}^2$."
+     ],
      "answer": {
       "value": 79.8,
       "unit": "g/m²",
@@ -214,6 +244,11 @@
      "kind": "calc",
      "points": 4,
      "text": "Laske paperin tiheys ja vertaa sitä veden tiheyteen.",
+     "hints": [
+      "Yhden neliömetrin kokoisen paperikerroksen massa tunnetaan b-kohdasta. Mikä on sen tilavuus, kun paksuus tunnetaan a-kohdasta?",
+      "Tiheys on massa jaettuna tilavuudella. Yhden neliömetrin kokoiselle paperille $V = 1\\,\\text{m}^2 \\cdot d$, joten $\\rho = \\dfrac{\\sigma}{d}$.",
+      "Muunna neliömassa yksikköön $\\text{kg/m}^2$ ja paksuus metreiksi ennen laskua. Vertaa tulosta veden tiheyteen $1000\\,\\text{kg/m}^3$ suhteena."
+     ],
      "answer": {
       "value": 780,
       "unit": "kg/m³",
@@ -247,6 +282,11 @@
      "kind": "word",
      "points": 3,
      "text": "Opiskelijan pari ehdottaa, että yhden arkin paksuus mitattaisiin suoraan samalla viivaimella. Arvioi ehdotusta. Selitä myös, miksi pinon korkeuden epävarmuus on suurempi kuin puolet viivaimen pienimmästä asteikkovälistä.",
+     "hints": [
+      "Mitä viivain näyttäisi yhdelle arkille, kun asteikkoväli on $1\\,\\text{mm}$ ja arkin paksuus on a-kohdan tulos?",
+      "Vertaa suhteellisia epävarmuuksia: $\\dfrac{\\Delta d}{d}$ yhdelle arkille ja pinolle. Mihin viivaimen lukeman epävarmuus jakautuu, kun mitataan pino?",
+      "Pinon korkeuden epävarmuuteen vaikuttaa muukin kuin asteikon tarkkuus. Mitä tehtävän kuvaus kertoo pinon reunoista ja siitä, mitä viivaimen painaminen pinoa vasten tekee?"
+     ],
      "criteria": [
       {
        "key": "uncertainty",
@@ -289,6 +329,11 @@
      "kind": "graph",
      "points": 3,
      "text": "Esitä mittaustulokset kuvaajana, josta voi määrittää myös suoran vakiotermin.",
+     "hints": [
+      "Kumpi suure on riippumaton ja kumpi riippuva muuttuja? Kumpi kuuluu vaaka- ja kumpi pystyakselille?",
+      "Tavoitteena on lukea myös suoran vakiotermi, joten vaaka-akselin on ulotuttava nollaan asti. Pystyakseli saa alkaa suuremmasta lukemasta, kun se merkitään selvästi. Valitse asteikko niin, että pisteet täyttävät suurimman osan kuvaajasta.",
+      "Merkitse kaikki yhdeksän pistettä erillisinä. Mieti, miten teet näkyväksi, että yksi niistä on kirjattu eri tavalla kuin muut."
+     ],
      "criteria": [
       {
        "key": "graph_axes",
@@ -312,6 +357,11 @@
      "kind": "graph",
      "points": 3,
      "text": "Sovita pisteisiin malli. Päätä ja perustele, miten käsittelet rivin $60\\,\\text{ml}$.",
+     "hints": [
+      "Miltä pisteet näyttävät suoran ympärillä? Onko jokin piste selvästi erillään muista, ja mitä muistiinpano kertoo siitä?",
+      "Malli on suora $m = kV + b$. Mitä vakiotermi $b$ voisi olla tässä mittauksessa, kun vaaka punnitsee mittalasin ja nesteen yhdessä?",
+      "Piirrä suora ensin silmämääräisesti kaikkien pisteiden lomaan ja katso poikkeama. Päätä sitten, kuuluuko poikkeava piste sovitukseen, ja kirjaa päätös ja sen syy."
+     ],
      "criteria": [
       {
        "key": "graph_fit",
@@ -335,6 +385,11 @@
      "kind": "calc",
      "points": 4,
      "text": "Määritä suoran kulmakerroin ja vakiotermi yksiköineen. Mitä kumpikin kertoo?",
+     "hints": [
+      "Mitä suoran kulmakerroin ja vakiotermi tarkoittavat, kun $V$ on nesteen tilavuus ja $m$ koko punnitus?",
+      "Suoralle $m = kV + b$ kulmakerroin on $k = \\dfrac{\\Delta m}{\\Delta V}$. Lue se sovitetun suoran kahdesta pisteestä, jotka ovat kaukana toisistaan. Mittauspisteitä saa käyttää vain, jos ne ovat suoralla.",
+      "Kun $k$ tunnetaan, ratkaise $b$ sijoittamalla yhtälöön $m = kV + b$ yksi suoran piste. Tarkista kummankin yksikkö."
+     ],
      "answer": [
       {
        "name": "rho",
@@ -377,6 +432,11 @@
      "kind": "calc",
      "points": 4,
      "text": "Arvioi tiheyden epävarmuus ja päättele, mikä neste on.",
+     "hints": [
+      "Kuinka paljon kulmakerroin voisi vaihdella, kun jokaiseen pisteeseen kuuluu epävarmuus? Miten piirtäisit ääritapaukset?",
+      "Piirrä pisteisiin epävarmuusjanat (vaakasuunnassa $\\pm 1\\,\\text{ml}$) ja kaksi rajasuoraa: jyrkin ja loivin, jotka vielä kulkevat janojen kautta. Epävarmuus on $\\Delta\\rho = \\dfrac{k_\\text{max} - k_\\text{min}}{2}$.",
+      "Vertaa väliä $\\rho \\pm \\Delta\\rho$ taulukkokirjan kolmeen tiheyteen. Mitä päätelmää voit perustella ja mitä et?"
+     ],
      "criteria": [
       {
        "key": "uncertainty",
@@ -400,6 +460,11 @@
      "kind": "calc",
      "points": 3,
      "text": "Opiskelija haluaa arvioida tuloksen avulla, kuinka paljon $1{,}50\\,\\text{l}$ tätä nestettä painaa. Laske massa ja arvioi, onko tuloksen käyttö näin kaukana mitatun alueen ulkopuolella perusteltua.",
+     "hints": [
+      "Mitä mittalasin suoran vakiotermi kuvaa? Kuuluuko sen massa nesteen massaan?",
+      "Nesteen massa on tiheys kertaa tilavuus: $m = \\rho V$. Käytä tiheytenä c-kohdan kulmakerrointa.",
+      "Muunna tilavuus yksikköön $\\text{cm}^3$, jotta se sopii tiheyden yksikköön $\\text{g/cm}^3$. Mieti luotettavuutta varten, mihin laskusi tarkalleen nojaa: suoran jatkamiseen vai johonkin muuhun."
+     ],
      "answer": {
       "value": 1.38,
       "unit": "kg",
@@ -450,6 +515,11 @@
      "kind": "word",
      "points": 4,
      "text": "Mitä virhelajeja aineistossa näkyy? Perustele aineiston luvuilla.",
+     "hints": [
+      "Vertaa jokaisen punnuksen lukemia toisiinsa ja punnuksen todelliseen massaan. Mikä toistuu ja mikä vaihtelee?",
+      "Systemaattinen virhe on joka mittauksessa samansuuntainen. Satunnaisvirhe vaihtelee mittauksesta toiseen. Karkea virhe poikkeaa selvästi muista lukemista.",
+      "Laske jokaiselle punnukselle lukemien keskiarvon ero punnuksen massaan ja ero prosentteina massasta. Katso, miten ero muuttuu massan kasvaessa."
+     ],
      "criteria": [
       {
        "key": "error_sources",
@@ -478,6 +548,11 @@
      "kind": "word",
      "points": 4,
      "text": "Ystävä sanoo: ”Vaaka näyttää grammat, joten kun se näyttää jauhoille $765\\,\\text{g}$, jauhoja on $(765 \\pm 0{,}5)\\,\\text{g}$.” Arvioi väite ja anna parempi arvio jauhojen massasta.",
+     "hints": [
+      "Mitä näytön resoluutio kertoo ja mitä se jättää kertomatta? Mitä vaa'an tarkistus kertoi vaa'an lukemista?",
+      "Jos vaaka näyttää aina saman suhteen liikaa, todellinen massa on lukema jaettuna kulmakertoimella: $m = \\dfrac{m_\\text{lukema}}{k}$, missä $k = \\dfrac{m_\\text{lukema}}{m_\\text{tod}}$ punnuksilla.",
+      "Määritä $k$ a-kohdan aineistosta ja korjaa lukema $765\\,\\text{g}$. Epävarmuuden suuruuteen vaikuttavat toistojen vaihtelu ja se, kuinka tarkasti $k$ tunnetaan."
+     ],
      "criteria": [
       {
        "key": "uncertainty",
@@ -506,6 +581,11 @@
      "kind": "word",
      "points": 4,
      "text": "Kuvaile, miltä kuvaaja näyttää, kun vaaka-akselilla on punnuksen massa ja pystyakselilla lukemien keskiarvo, ja selitä, miten kuvaajasta näkee virheen laadun. Miksi punnitusten toistaminen ei korjaa virhettä?",
+     "hints": [
+      "Millainen kuvaaja olisi, jos vaaka olisi täysin oikein? Mitä saat, kun piirrät lukemien keskiarvon punnuksen massan funktiona?",
+      "Kuvaajan suora on muotoa $y = kx + b$. Vertaa kulmakerrointa $k$ ja vakiotermiä $b$ arvoihin, jotka oikea vaaka antaisi. Mitä kumpikin poikkeama kertoisi virheestä?",
+      "Mieti, mitä keskiarvon laskeminen toistoista tekee satunnaisille poikkeamille ja mitä virheelle, joka on joka mittauksessa samanlainen."
+     ],
      "criteria": [
       {
        "key": "graph_read",
@@ -553,6 +633,11 @@
      "kind": "word",
      "points": 5,
      "text": "Arvioi raportin menetelmää ja johtopäätöstä. Nimeä ainakin neljä puutetta ja kerro, miksi kukin heikentää tulosta.",
+     "hints": [
+      "Käy raportin jokainen vaihe läpi ja kysy: onko tapa perusteltu aineistosta? Mitä yhden pisteen virhe tekee kussakin vaiheessa?",
+      "Malli on yksi yhtälö, jonka vakiot sovitetaan koko aineistoon. Tasaisella nopeudella kulkevan auton paikka on $x = x_0 + vt$, ja vakiotermi $x_0$ on paikka hetkellä $t = 0$.",
+      "Raportissa on viisi vaihetta: kuvaaja, pisteen poisto, nopeuden laskenta, sovitus ja tulos. Arvioi kutakin erikseen ja kerro, miksi se heikentää tulosta tai ei heikennä sitä."
+     ],
      "criteria": [
       {
        "key": "graph_fit",
@@ -586,6 +671,11 @@
      "kind": "graph",
      "points": 5,
      "text": "Määritä aineistosta leluauton nopeus epävarmuuksineen. Perustele, miten käsittelet pisteen $t = 1{,}5\\,\\text{s}$.",
+     "hints": [
+      "Mikä malli kuvaa tasaisella nopeudella kulkevan auton paikkaa ajan funktiona? Mitä kulmakerroin ja vakiotermi ovat?",
+      "Malli on suora $x = x_0 + vt$, jossa $v$ on kulmakerroin ja $x_0$ vakiotermi. Mieti, kulkeeko suora origon kautta, kun ajanotto alkoi vasta auton jo liikkuessa.",
+      "Piirrä suora ja katso, kuinka kaukana piste $t = 1{,}5\\,\\text{s}$ siitä on. Lue kulmakerroin kahdesta kaukana toisistaan olevasta suoran pisteestä. Epävarmuuden saat sen jälkeen jyrkimmästä ja loivimmasta suorasta, jotka vielä sopivat pisteisiin."
+     ],
      "answer": {
       "value": 0.477,
       "unit": "m/s",
@@ -624,6 +714,11 @@
      "kind": "word",
      "points": 4,
      "text": "Ryhmä haluaa parantaa mittausta. Ehdota kaksi parannusta, joista toinen koskee mahdollista systemaattista virhettä, ja perustele ne.",
+     "hints": [
+      "Mistä kaikki videolta luetut paikat voivat saada saman suhteellisen virheen? Mistä pisteiden satunnainen hajonta suoran ympärillä tulee?",
+      "Mittakaavakerroin on tunnetun pituuden suhde sen kuvassa näkyvään pituuteen: $\\text{kerroin} = \\dfrac{1{,}00\\,\\text{m}}{\\text{pituus kuvassa}}$. Mitkä asiat kameran ja mittanauhan asettelussa tekevät kertoimesta virheellisen?",
+      "Valitse yksi parannus systemaattiselle virheelle ja yksi satunnaiselle hajonnalle. Perustele kummankin kohdalla, mitä se muuttaa: tulosta vai sen epävarmuutta."
+     ],
      "criteria": [
       {
        "key": "error_sources",
@@ -673,6 +768,11 @@
      "kind": "word",
      "points": 3,
      "text": "Opiskelija väittää, että ilman paine on kääntäen verrannollinen ruiskun lukemaan $V$. Testaa väite aineiston avulla.",
+     "hints": [
+      "Jos paine olisi kääntäen verrannollinen lukemaan $V$, mikä suure pysyisi vakiona kaikilla riveillä?",
+      "Kääntäen verrannollisille suureille $p = \\dfrac{C}{V}$, eli tulo $pV = C$ on vakio. Laske tulo usealle taulukon riville.",
+      "Laske $pV$ ensimmäiselle ja viimeiselle riville. Onko ero satunnaista vai kasvaako tulo koko ajan samaan suuntaan?"
+     ],
      "criteria": [
       {
        "key": "calculation",
@@ -696,6 +796,11 @@
      "kind": "graph",
      "points": 5,
      "text": "Esitä aineisto kuvaajana, jossa riippuvuus on suoraviivainen, ja sovita pisteisiin suora.",
+     "hints": [
+      "Ruiskun lukema ei kerro koko ilman tilavuutta. Mikä tilavuus puuttuu lukemasta ja miten se pitää ottaa huomioon yhtälössä?",
+      "Kokonaistilavuus on $V + V_0$, ja vakiolämpötilassa $p\\,(V + V_0)$ on vakio $C$. Ratkaise tästä $V$ ja katso, minkä suureen funktiona se on suora.",
+      "Laske jokaiselle riville $\\dfrac{1}{p}$ ja valitse yksikkö, jolla luvut ovat sopivan kokoisia. Jatka suoraa pystyakselille asti ja mieti, mihin suuntaan pystyakselin pitää ulottua."
+     ],
      "criteria": [
       {
        "key": "graph_axes",
@@ -729,6 +834,11 @@
      "kind": "calc",
      "points": 5,
      "text": "Määritä kuvaajasta letkun ja anturin ilmatilavuus $V_0$ ja ilman ainemäärä.",
+     "hints": [
+      "Mitä kuvaajan vakiotermi ja kulmakerroin kertovat yhtälöstä $V = \\dfrac{C}{p} - V_0$?",
+      "Kulmakerroin on $C = p(V + V_0) = nRT$, joten $n = \\dfrac{C}{RT}$. Vakiotermi on $-V_0$.",
+      "Lue kulmakerroin suoran kahdesta kaukana toisistaan olevasta pisteestä. Muunna sen yksikkö yksikköön $\\text{J}$ (paine pascaleina, tilavuus kuutiometreinä) ja lämpötila kelvineiksi ennen sijoitusta."
+     ],
      "answer": [
       {
        "name": "V0",
@@ -776,6 +886,11 @@
      "kind": "word",
      "points": 4,
      "text": "Arvioi, mitä oletuksia tulos edellyttää ja miten tulos muuttuisi, jos ne eivät pitäisi.",
+     "hints": [
+      "Minkä suureiden pitää pysyä samoina, jotta tulo $p(V + V_0) = nRT$ pysyy vakiona? Luettele ne.",
+      "Tarkastele yhtälöä $p(V + V_0) = nRT$: jos $T$ tai $n$ muuttuu mittauksen aikana, miten tulo muuttuu ja miten se näkyisi mittauspisteissä?",
+      "Vertaa tuloa $p(V + V_0)$ taulukon riveillä tuloon $pV$. Kumpi pysyy lähempänä vakiota, ja mitä se kertoo $V_0$:sta?"
+     ],
      "criteria": [
       {
        "key": "assumptions",
@@ -833,6 +948,11 @@
      "kind": "calc",
      "points": 5,
      "text": "Sovita pisteisiin suora ja määritä jousen jousivakio $k$ epävarmuuksineen.",
+     "hints": [
+      "Mikä on suoran kulmakertoimen fysikaalinen merkitys, kun pystyakselilla on voima ja vaaka-akselilla venymä?",
+      "Jousivoima on suoraan verrannollinen venymään: $F_\\text{v} = kx$, joten $k = \\dfrac{\\Delta F_\\text{v}}{\\Delta x}$. Lue $\\Delta F_\\text{v}$ ja $\\Delta x$ sovitetun suoran kahdesta kaukana toisistaan olevasta pisteestä.",
+      "Muunna venymä senttimetreistä metreiksi. Epävarmuutta varten etsi jyrkin ja loivin suora, jotka kulkevat pisteiden $\\pm 0{,}2\\,\\text{cm}$ vaakavälien kautta: $\\Delta k = \\dfrac{k_\\text{max} - k_\\text{min}}{2}$."
+     ],
      "answer": {
       "value": 30.0,
       "unit": "N/m",
@@ -871,6 +991,11 @@
      "kind": "word",
      "points": 4,
      "text": "Pitääkö sovitettavan suoran kulkea origon kautta? Perustele sekä jousen toiminnalla että aineistolla. Mitä tarkoittaisi, jos jousen suora leikkaisi $F_\\text{v}$-akselin kohdassa $+0{,}30\\,\\text{N}$?",
+     "hints": [
+      "Mitkä ovat jousen venymä ja jousivoima, kun jousi on kuormittamaton? Mitä aineisto kertoo suoran ja akselien leikkauskohdista?",
+      "Ideaalisen jousen yhtälö on $F_\\text{v} = kx$. Vertaa sitä yleiseen suoraan $F_\\text{v} = kx + b$ ja mieti, mitä vakiotermi $b$ kertoisi.",
+      "Piirrä pisteiden epävarmuuksien sallimat jyrkin ja loivin suora ja katso, mihin ne leikkaavat $x$-akselin. Kuuluuko nolla niiden väliin?"
+     ],
      "criteria": [
       {
        "key": "graph_fit",
@@ -899,6 +1024,11 @@
      "kind": "calc",
      "points": 4,
      "text": "Jousta venytetään voimalla $4{,}5\\,\\text{N}$. Arvioi, kuinka paljon jousi venyy, ja kommentoi tuloksen luotettavuutta.",
+     "hints": [
+      "Mikä yhteys antaa venymän, kun voima ja jousi tunnetaan? Mitä tarvitset a-kohdasta?",
+      "Jousivoima on $F_\\text{v} = kx$, joten $x = \\dfrac{F_\\text{v}}{k}$, missä $k$ on a-kohdan jousivakio ja $\\Delta k$ sen epävarmuus.",
+      "Laske $x$ SI-yksiköissä ja muunna lopuksi senttimetreiksi. Venymän epävarmuus saadaan suhteellisesta epävarmuudesta: $\\dfrac{\\Delta x}{x} = \\dfrac{\\Delta k}{k}$. Mieti, missä voima $4{,}5\\,\\text{N}$ on suhteessa kuvaajan mittausalueeseen."
+     ],
      "answer": {
       "value": 15.0,
       "unit": "cm",
@@ -954,6 +1084,11 @@
      "kind": "graph",
      "points": 5,
      "text": "Esitä aineisto kuvaajana, josta putoamiskiihtyvyys voidaan määrittää, ja sovita pisteisiin suora. Perustele kuvaajan valinta.",
+     "hints": [
+      "Kuula putoaa levosta. Mikä yhtälö kuvaa matkaa ajan funktiona, ja miten saat siitä suoran yhtälön?",
+      "Levosta tasaisesti kiihtyvälle liikkeelle $s = \\tfrac{1}{2}gt^2$. Mitä suuretta pitää merkitä vaaka-akselille, jotta $s$ on sen suora funktio, ja mikä on suoran kulmakerroin?",
+      "Laske $t^2$ jokaiselle ajalle (yksikkö $\\text{s}^2$) ja merkitse pisteet erillisinä. Sovita yksi suora pisteiden lomaan ja katso, kuinka lähellä origoa se leikkaa pystyakselin verrattuna lukemisen epävarmuuteen $0{,}01\\,\\text{m}$."
+     ],
      "criteria": [
       {
        "key": "graph_axes",
@@ -987,6 +1122,11 @@
      "kind": "calc",
      "points": 5,
      "text": "Määritä kuvaajasta putoamiskiihtyvyys $g$ epävarmuuksineen.",
+     "hints": [
+      "Mihin suureeseen kulmakerroin liittyy yhtälössä $s = \\tfrac{1}{2}gt^2$? Miten saat sen suoran kahdesta pisteestä?",
+      "Kulmakerroin on $\\dfrac{\\Delta s}{\\Delta(t^2)} = \\tfrac{1}{2}g$, joten $g = 2\\,\\dfrac{\\Delta s}{\\Delta(t^2)}$. Lue $\\Delta s$ ja $\\Delta(t^2)$ suoran kahdesta kaukana toisistaan olevasta pisteestä.",
+      "Epävarmuutta varten piirrä jyrkin ja loivin suora, jotka kulkevat kaikkien pisteiden $\\pm 0{,}01\\,\\text{m}$ välien kautta. Laske kummallekin $g$ ja ota puolet niiden erotuksesta."
+     ],
      "answer": {
       "value": 10.35,
       "unit": "m/s^2",
@@ -1025,6 +1165,11 @@
      "kind": "word",
      "points": 4,
      "text": "Putoamiskiihtyvyyden paikallinen arvo on $9{,}81\\,\\text{m/s}^2$. Vertaa mittaustulosta tähän ja arvioi, mistä ero voi johtua.",
+     "hints": [
+      "Kuinka suuri on ero prosentteina? Onko paikallinen arvo $9{,}81\\,\\text{m/s}^2$ oman epävarmuusvälisi sisällä?",
+      "Vertaa eroa epävarmuuteen $\\Delta g$: pieni ero voi johtua lukemisvirheestä, mutta suuri ei. Mitä virhelähteitä videomittauksessa on, jotka muuttavat kaikkia pisteitä samaan suuntaan?",
+      "Kokeile, miten $g = 2\\,\\dfrac{\\Delta s}{\\Delta(t^2)}$ muuttuu, jos matkan mittakaava tai ajan väli on väärin tietyn prosentin. Mieti myös, mihin suuntaan ilmanvastus muuttaisi tulosta."
+     ],
      "criteria": [
       {
        "key": "conclusion",
