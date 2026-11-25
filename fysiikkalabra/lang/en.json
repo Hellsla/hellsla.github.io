@@ -3200,7 +3200,11 @@
     "path_del": "Delete path",
     "path_today": "Today",
     "path_over": "The path has ended.",
-    "path_note": "The path stays on this device only. It sends no notifications and no emails."
+    "path_note": "The path stays on this device only. It sends no notifications and no emails.",
+    "path_chapters": "chapters {list}",
+    "path_done": "Done",
+    "path_all": "Show the whole path",
+    "path_one": "Show this week only"
   },
   "koetila": {
     "eyebrow": "FY9 · Exam mode",

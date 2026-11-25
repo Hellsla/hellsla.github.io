@@ -185,7 +185,7 @@ def languages():
 
 # ---- the pages (work queue 11b PR 4; plan 6.1-6.2): the coach page and the row and tile on the course page ---------------
 PAGE = "FY9-valmentaja.html"
-UI_KEYS = ("diag", "min", "why_stale", "why_wrong", "why_new", "why_more", "basis", "own", "note", "row_one", "row_n", "go", "clear", "clear_confirm", "nostore", "goal_h", "goal_lead", "goal_none", "goal_LE", "goal_MC", "goal_BA", "courses_h", "courses_lead", "courses_none", "set_note", "steps_h", "mistakes_h", "mistakes_n", "mini_item", "mini_exam") + ("path_h", "path_len", "path_14", "path_28", "path_exam", "path_per", "path_min", "path_mins", "path_save", "path_del", "path_today", "path_over", "path_note")
+UI_KEYS = ("diag", "min", "why_stale", "why_wrong", "why_new", "why_more", "basis", "own", "note", "row_one", "row_n", "go", "clear", "clear_confirm", "nostore", "goal_h", "goal_lead", "goal_none", "goal_LE", "goal_MC", "goal_BA", "courses_h", "courses_lead", "courses_none", "set_note", "steps_h", "mistakes_h", "mistakes_n", "mini_item", "mini_exam") + ("path_h", "path_len", "path_14", "path_28", "path_exam", "path_per", "path_min", "path_mins", "path_save", "path_del", "path_today", "path_over", "path_note", "path_chapters", "path_done", "path_all", "path_one")
 STATES = ("none", "few", "practise", "growing", "strong", "strongdue")
 
 
