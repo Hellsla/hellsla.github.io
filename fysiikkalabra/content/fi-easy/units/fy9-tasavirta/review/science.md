@@ -1,7 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: b7a064501d25d396
-SCOPE: delta (rubric points rescaled, git diff origin/main)
+CONTENT-HASH: 73714318d80c8932
 
-1. Blocking: none.
-2. Checked: s7 parts 3+3+5+4 = 15 and s8 4+4+3+4 = 15; every part's criteria sum to its points in all eight tasks (no mismatch); unit total 20 (s3 *Taskulampun paristot kuormitettuna*) + 7x15 = 125. Removed only units_precision in s7 a and s8 a, b, c; each remaining answer step still earns a point once (s7 a: reading 0.21 A, R = U/I, 9.5 Ω; s8 a: connection, formulas, 0.30 A, check; s8 b: U_p = 6.0 V and both currents (2 p), sum check; s8 c: formulas, 1.8 W and 3.6 W, power sum). s7 d keeps its units_precision point, consistent with the stated change. Task text, answers and solutions unchanged. teacher.md: 20 p + seven others of 15 p = 125, no stale 129/16/18 left in the unit.
-3. Language fi-easy: points identical to fi part by part; teacher.md says 20 + Seitsemän muuta 15 = 125 like fi.
+Delta review (work queue 11c): the new `hints` of s1–s8 in `sovella/tasks.json`, compared with the fi hints, each part's rubric, answer and `sovella/solutions.md`.
+
+## Blocking
+None.
+
+## Polish
+1. s6 a, hint 2 (fi-easy): $E = Pt$ uses $E$, which in this unit means the source voltage. Replacement: "Veden lämmittämiseen tarvittava energia on $Q = cm\Delta T$. Vastuksen antama energia on $W = Pt$. Hyötysuhde on käytännössä $100\,\%$, joten $Pt = cm\Delta T$."
+
+## Checked
+- Each hint has the physics of the fi hint, split into shorter sentences, with nothing dropped. The s2 c addition ("Jännitehäviö on jännitteen lasku resistanssissa") is correct.
+- The symbols, formulas and conversions are the same as in fi and the rubric. All the stated conversions are correct (see the fi report), the answers they lead to were recomputed and agree, and no hint gives a final answer.
+- Decimal commas; numbers with units in LaTeX.

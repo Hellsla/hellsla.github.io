@@ -1,7 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 7e70715142338d5c
-SCOPE: delta (rubric points rescaled, git diff origin/main)
+CONTENT-HASH: 7de132967afb2fba
 
-1. Blocking: none.
-2. Checked: s7 parts 3+3+5+4 = 15 and s8 4+4+3+4 = 15; every part's criteria sum to its points in all eight tasks (no mismatch); unit total 20 (s3 *Torch batteries under load*) + 7x15 = 125. Removed only units_precision in s7 a and s8 a, b, c; each remaining answer step still earns a point once (s7 a: reading 0.21 A, R = U/I, 9.5 Ω; s8 a: connection, formulas, 0.30 A, check; s8 b: U_p = 6.0 V and both currents (2 p), sum check; s8 c: formulas, 1.8 W and 3.6 W, power sum). s7 d keeps its units_precision point, consistent with the stated change. Task text, answers and solutions unchanged. teacher.md: 20 p + seven others of 15 p = 125, no stale 129/16/18 left in the unit.
-3. Language en: points identical to fi part by part; teacher.md says 20 + seven others of 15 = 125 like fi.
+Delta review (work queue 11c): the new `hints` of s1–s8 in `sovella/tasks.json`, compared with the fi hints, each part's rubric, answer and `sovella/solutions.md`.
+
+## Blocking
+None.
+
+## Polish
+1. s2 d, hint 2 (en): the hint writes $W_\text{battery}$, but the rubric and solution write $W_\text{bat}$. Replacement: "The energy given by the charger is $W_\text{ch} = U_\text{ch} Q$, and the efficiency is $\eta = \dfrac{W_\text{bat}}{W_\text{ch}}$, where $W_\text{bat}$ is the energy of part a."
+2. s6 a, hint 2 (en): $E = Pt$ uses $E$, which is the emf elsewhere in the unit. Replacement: "The energy needed to heat the water is $Q = cm\Delta T$ and the energy given by the resistor is $W = Pt$. The efficiency is practically $100\,\%$, so $Pt = cm\Delta T$."
+
+## Checked
+- Each hint has the same physics as the fi hint, and its symbols match the en rubric ($U_\text{ch}$, $W_\text{ch}$, $U_\text{p}$, $I_\text{k}$, $R_\text{s}$). The exception is item 1.
+- The stated conversions use decimal points and are correct ($3.0\cdot10^{-3}\,\text{m}$, $3600\,\text{J}$, $3.6\cdot10^{6}\,\text{J}$, $0.75\cdot10^{-6}\,\text{m}^2$, $0.040\,\text{m}$, $4.00\cdot10^{-4}\,\text{m}^2$, $0.0053\,\text{A}$, $1600\,\text{Wh}$). The answers they lead to were recomputed and agree, and no hint gives a final answer.
