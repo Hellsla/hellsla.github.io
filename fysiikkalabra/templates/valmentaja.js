@@ -500,7 +500,7 @@
     const res = recommend(index, d, t, { goal: st.goal, courses: st.courses });
     if (next) {
       if (res.diag) {
-        const a = el('a', 'coach-go', T.diag); a.href = page.dataset.diag || 'fy9-koe.html'; next.replaceChildren(a);
+        const a = el('a', 'coach-go', T.diag); a.href = page.dataset.diag || 'fy9-koe.html#testi-ohje'; next.replaceChildren(a);
       } else {
         const ol = el('ol', 'coach-recs');
         for (const r of res.recs) {
