@@ -1,7 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 8c6a0362c846fe10
-SCOPE: delta (old-content fixes, git diff origin/main)
+CONTENT-HASH: 1896009dee3b9458
 
-1. Blocking: none.
-2. Checked: s5 mean of tan 22, 24, 21, 23 deg = 0.4144 -> 0.414 (tan of the mean angle 0.4142). teacher.md 20 + 5x15 + 17 + 19 = 131, 'muut seitsemän' matches 8 tasks. en: terminal-velocity symbol v_t in the rubric now matches the en solution.
-3. Language en: the changed numbers and wording were checked to carry the same values as fi.
+Delta review, round 2: the `hints` in `sovella/tasks.json` (diff against origin/main), focusing on the round-1 edits (`git diff HEAD~1`). A script confirmed that only `hints` differ from origin/main (30 parts). The round-1 numbers still hold; I re-checked $\alpha_0 = 19.3^\circ$ and the s3 values ($m' = 1.351\,\text{kg}$, $F_\mu = 0.238\,\text{N}$, intercept $0.38\,\text{N}$).
+
+## Blocking
+None.
+
+## Polish
+None new.
+
+## Checked
+1. **s3 b, hint 3.** The reworded sentence ("two points on the line that are far apart") has the same physics. The slope gives $1/m$, and the intercept on the force axis gives $F_\mu$.
+2. **s4 c, hint 2.** It now starts with "The Earth gives the weight." The list is complete and matches the solution and fi.
+3. **s5 b, hint 3.** "Decide, with a justification, how to treat it" leaves the treatment of measurement 5 to the student. This is consistent with the rubric.
+4. **s6 c, hint 3.** "grows only a little" matches the solution ("slightly larger").
+5. **s8 d, hint 2.** "using the speed (the magnitude of the velocity)" is correct for the distance travelled. It matches $12.23\,\text{m}$ in the solution.
+6. **s3 d, hint 3** is still correct ("divide the friction force by it"), and fi and fi-easy now say the same.
+7. No hint gives a final answer. Decimal points, LaTeX. The hashes are the same at the start and the end.

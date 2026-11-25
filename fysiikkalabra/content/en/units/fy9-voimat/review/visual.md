@@ -1,9 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 8c6a0362c846fe10
-SCOPE: delta (old-content fixes, git diff origin/main)
-Checked: fy9-voimat (en): rendered preview page at 390 and 1280 px with every details/solution open (DOM check: no page overflow, no KaTeX error, no clipped or scrolling display formula); captures review/shots/*stage-sovella-*, *stage-exercises-*, *teacher-*, intro and stage-selita/tarkista tiles, with sample tiles opened at readable size (aallot fi sovella-1280-5 and 390-6, liike en sovella-390-9, ympyraliike fi-easy sovella-390-8, energia fi teacher-1280-1); changed numbers and units diffed against the source for decimal comma/point and \, thin space.
+CONTENT-HASH: 1896009dee3b9458
 
-1. Blocking: none.
-2. Typography: changed numbers and units are LaTeX with thin space, decimal comma in fi and fi-easy, decimal point in en; aligned blocks and inline formulas fit at 390 px; no layout regressions from the changed lines.
-3. Language: changed lines read naturally and consistently with the glossary terms; no wording defect found.
-4. Polish: known drawing issues (kone-kuva W arrow, kalteva.webp, geo-kuva ray, kartta label, sahkokentta formula map E vs W) are known to the teacher, not re-judged here.
+## Blocking
+None.
+
+## Polish
+1. [Minor] lift distance part, hint 1 (en): the hint says "elevator" while the task says "lift". Use one word, preferably "lift".
+2. The new texts ("Decide, with a justification, how to treat it", "using the speed (the magnitude of the velocity)") are idiomatic English.
+
+## Checked (round 2, delta)
+Cards at 390 and 1280 px, closed and open, for every part whose hint text changed: line-reading part, uncertainty part (hint 3), car force diagram, air resistance, lift distance (hint 2). The row of closed hints, the open boxes, the formulas and the reading order are fine. No overflow and no clipped formula.
