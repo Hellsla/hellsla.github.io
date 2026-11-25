@@ -565,7 +565,7 @@
           "points": 5,
           "text": "Assess claim 3 and calculate the present electric power of the plant.",
           "hints": [
-            "On which quantities does the power of the plant depend? What happens to the input when one factor grows by a third?",
+            "On which quantities does the power of the plant depend? What happens to the product when one factor grows by a third?",
             "The power of the plant is $P = \\eta \\rho Q g h$: it is proportional to both the flow rate $Q$ and the head $h$.",
             "Calculate the present power by substituting in SI units, and then compare how many times larger $h$ would be with the raised dam and how many times larger $Q$ would be after an increase of a third."
           ],
@@ -684,7 +684,7 @@
           "points": 6,
           "text": "Plan how to improve the experiment so that it can test conservation of momentum reliably.",
           "hints": [
-            "Where, relative to the collision, should the velocities be determined so that the comparison concerns only the moment of the collision?",
+            "What happens to the trolleys between the collision and the point of measurement if the velocities are measured further away from the collision?",
             "Which external forces act on the trolleys on the track? How can their effect be reduced or measured?",
             "How do you conclude whether the difference between the momenta is still within the measurement accuracy? Think about repeats, the uncertainty of the speed and the mass, and measurements with different masses and speeds."
           ],
@@ -772,7 +772,7 @@
           "text": "What is the common velocity of the ram and the pile just after the collision? How much kinetic energy is transformed into other forms of energy in the collision?",
           "hints": [
             "Which quantity is conserved in a short collision in which the ram and the pile stay together?",
-            "Conservation of momentum: $Mv = (M + m)\\,v'$. The energy converted to other forms is $E_\\text{h} = \\tfrac12 Mv^2 - \\tfrac12 (M + m)\\,v'^2$.",
+            "Conservation of momentum: $Mv = (M + m)\\,v'$. The energy converted to other forms is $E_\\text{loss} = \\tfrac12 Mv^2 - \\tfrac12 (M + m)\\,v'^2$.",
             "Use the speed from part a) and the masses $3500\\,\\text{kg}$ and $1100\\,\\text{kg}$. Solve for $v'$ in symbols before substituting, and calculate the kinetic energies before and after separately."
           ],
           "answer": [
@@ -858,7 +858,7 @@
           "hints": [
             "How many blows are there, and what fraction of the energy of each collision stays in the steel?",
             "The increase in internal energy is related to the warming by $\\Delta U = cm\\Delta T$.",
-            "The increase in internal energy is that of all $50$ blows together: $\\Delta U = 50 \\cdot 0.40 \\cdot E_\\text{h}$, where $E_\\text{h}$ is the result of part b). Solve for $\\Delta T$ in symbols. Which assumptions make the result too large or too small?"
+            "The increase in internal energy is that of all $50$ blows together: $\\Delta U = 50 \\cdot 0.40 \\cdot E_\\text{loss}$, where $E_\\text{loss}$ is the result of part b). Solve for $\\Delta T$ in symbols. Which assumptions make the result too large or too small?"
           ],
           "answer": {
             "value": 7.14,

@@ -54,7 +54,7 @@
      "hints": [
       "Mitä mekaaniselle energialle tapahtuu, kun vastusvoimat tekevät työtä? Onko tämä työ positiivinen vai negatiivinen?",
       "Energiaperiaate: vastusvoimien työ on mekaanisen energian muutos, $W_\\text{muut} = E_\\text{loppu} - E_\\text{alku}$. Keskimääräinen voima saadaan työstä ja matkasta: $F = |W_\\text{muut}| : s$.",
-      "Alussa laskija on levossa ja lopussa potentiaalienergian nollataso on loppupäässä, joten kummassakin tilassa on vain yksi energialaji. Matka $s$ on vaijerin pituus."
+      "Alussa laskija on levossa ylhäällä, lopussa potentiaalienergian nollatasolla; kummassakin tilassa on vain yksi energialaji. Matka $s$ on vaijerin pituus."
      ],
      "answer": [
       {
@@ -338,7 +338,7 @@
      "hints": [
       "Laske peräkkäisten mittausten matkojen erotukset. Ovatko ne yhtä suuria, kun nopeus kasvaa aina $10\\,\\text{km/h}$?",
       "Pysähtymismatka on reaktiomatka plus jarrutusmatka. Miten kumpikin riippuu lähtönopeudesta?",
-      "Yhdistä ensimmäinen ja viimeinen piste suoralla. Ovatko muut pisteet sen saman puolen vai eri puolten kummallakin?"
+      "Yhdistä ensimmäinen ja viimeinen piste suoralla. Ovatko muut pisteet suoran samalla puolella vai eri puolilla?"
      ],
      "criteria": [
       {
@@ -684,7 +684,7 @@
      "points": 6,
      "text": "Suunnittele, miten koetta parannetaan niin, että sillä voi testata liikemäärän säilymistä luotettavasti.",
      "hints": [
-      "Missä kohdassa suhteessa törmäykseen nopeudet pitäisi määrittää, jotta vertailu koskee vain törmäyshetkeä?",
+      "Mitä kärryille tapahtuu törmäyksen ja mittauskohdan välillä, jos nopeudet mitataan kauempana törmäyksestä?",
       "Mitkä ulkoiset voimat vaikuttavat kärryihin radalla? Miten niiden vaikutusta voi pienentää tai mitata?",
       "Mistä päättelet, onko liikemäärien ero vielä mittaustarkkuuden rajoissa? Mieti toistoja, nopeuden ja massan epävarmuutta sekä eri massoilla ja nopeuksilla tehtäviä mittauksia."
      ],

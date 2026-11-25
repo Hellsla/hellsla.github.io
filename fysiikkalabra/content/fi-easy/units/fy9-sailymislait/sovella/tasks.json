@@ -261,7 +261,7 @@
           "points": 3,
           "text": "Kuinka pitkän matkan osuman saanut kivi liukuu ennen kuin se pysähtyy?",
           "hints": [
-            "Mikä pysäyttää osuman saaneen kiven? Miksi sen liike-energia muuttuu?",
+            "Mikä pysäyttää osuman saaneen kiven? Mihin sen liike-energia muuttuu?",
             "Energiaperiaate: liike-energia kuluu kitkan työhön, $\\tfrac12 mv_2'^2 = \\mu mg s$.",
             "Jää on koko matkalla samanlaista. Käytä siis a-kohdan kitkakerrointa ja b-kohdan nopeutta. Ratkaise $s$ symbolein. Massa supistuu pois."
           ],
@@ -392,7 +392,7 @@
           "text": "Määritä kuvaajasta kuljettajan reaktioaika ja auton hidastuvuus.",
           "hints": [
             "Mikä on suure $s_\\text{p} : v_0$, kun nopeus lähestyy nollaa? Mitä suoran kulmakerroin kertoo?",
-            "Linearisoidussa mallissa $\\dfrac{s_\\text{p}}{v_0} = t_\\text{r} + \\dfrac{1}{2a}\\,v_0$. Kulmakerroin on siis $k = \\dfrac{1}{2a}$.",
+            "Linearisoidussa mallissa (malli on muutettu suoran muotoon) $\\dfrac{s_\\text{p}}{v_0} = t_\\text{r} + \\dfrac{1}{2a}\\,v_0$. Kulmakerroin on siis $k = \\dfrac{1}{2a}$.",
             "Lue kulmakerroin $k = \\dfrac{\\Delta y}{\\Delta x}$ kahdesta kaukana toisistaan olevasta sovitetun suoran pisteestä. Älä käytä mittauspisteitä. Ratkaise sitten $a$ symbolein."
           ],
           "answer": [
@@ -684,7 +684,7 @@
           "points": 6,
           "text": "Suunnittele, miten koetta parannetaan niin, että sillä voi testata luotettavasti liikemäärän säilymistä.",
           "hints": [
-            "Missä kohdassa törmäykseen nähden nopeudet pitäisi määrittää, jotta vertailu koskee vain törmäyshetkeä?",
+            "Mitä kärryille tapahtuu törmäyksen ja mittauskohdan välillä, jos nopeudet mitataan kauempana törmäyksestä?",
             "Mitkä ulkoiset voimat vaikuttavat kärryihin radalla? Miten niiden vaikutusta voi pienentää tai mitata?",
             "Mistä päättelet, onko liikemäärien ero vielä mittaustarkkuuden rajoissa? Mieti toistoja sekä nopeuden ja massan epävarmuutta. Mieti myös mittauksia eri massoilla ja nopeuksilla."
           ],

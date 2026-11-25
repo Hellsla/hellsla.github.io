@@ -1,7 +1,18 @@
-VERDICT: PASS
-CONTENT-HASH: 203fe3ac4224a796
-SCOPE: delta (old-content fixes, git diff origin/main)
+VERDICT: FAIL
+CONTENT-HASH: 82ab8ad2c35bae63
 
-1. Blocking: none.
-2. Checked: s8 I = ½*900 N*0.012 s = 5.4 Ns, v = 12.56 m/s = 45.2 km/h. s7 d: 2.0 kg gives 40 J, friction work 15 J, 25 J, v = 5.0 m/s; 3.0 kg gives 60 J, 22.5 J, 37.5 J, v = 5.0 m/s. New wording (friction does more work, more mechanical energy becomes internal energy) is correct and the same in solution and rubric; the air-drag sentence (force independent of mass, smaller share for the heavier sled) is correct and the task's assumption is stated.
-3. Language en: the changed numbers and wording were checked to carry the same values as fi.
+Delta review: only the new `hints` in `sovella/tasks.json` (s1–s8), per docs/fy9/vihjeet-review-brief.md.
+
+## Blocking
+1. (A, internal consistency) s6 b, hint 2 and s6 d, hint 3 (en): the hints name the converted energy $E_\text{h}$, but the en rubric (s6 b criterion) and solutions.md (7 times) call it $E_\text{loss}$. The symbol was copied from fi. A student who follows the hint meets a quantity that the solution and rubric never define. Replace every `E_\text{h}` with `E_\text{loss}`:
+   - s6 b, hint 2: "…The energy converted to other forms is $E_\text{loss} = \tfrac12 Mv^2 - \tfrac12 (M + m)\,v'^2$."
+   - s6 d, hint 3: "…$\Delta U = 50 \cdot 0.40 \cdot E_\text{loss}$, where $E_\text{loss}$ is the result of part b)…"
+
+## Polish
+1. s4 c, hint 1 (en): "What happens to the input when one factor grows by a third?" mistranslates fi "tulolle" (the product). Replacement: "What happens to the product when one factor grows by a third?"
+
+## Checked
+- Apart from the two items above, the physics agrees with fi part by part, and so do the symbols: W_other, F_avg, W_friction, W_air and h_measured all match the en solutions.
+- The hint numbers (8.33 m/s, 25.0 m/s, 0.018 m, 27.0 m, 0.43 kg, 3.0 kg, 6.5 m) match my recomputation in the fi report, which agrees with the answers.
+- No hint states a final answer.
+- Numbers are in LaTeX with a decimal point.

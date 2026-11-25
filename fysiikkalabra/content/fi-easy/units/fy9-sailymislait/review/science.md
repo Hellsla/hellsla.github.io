@@ -1,7 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: b3e3ee5b4e82ab7c
-SCOPE: delta (old-content fixes, git diff origin/main)
+CONTENT-HASH: b0ece4665fb38bc2
 
-1. Blocking: none.
-2. Checked: s8 I = ½*900 N*0.012 s = 5.4 Ns, v = 12.56 m/s = 45.2 km/h. s7 d: 2.0 kg gives 40 J, friction work 15 J, 25 J, v = 5.0 m/s; 3.0 kg gives 60 J, 22.5 J, 37.5 J, v = 5.0 m/s. New wording (friction does more work, more mechanical energy becomes internal energy) is correct and the same in solution and rubric; the air-drag sentence (force independent of mass, smaller share for the heavier sled) is correct and the task's assumption is stated.
-3. Language fi-easy: the changed numbers and wording were checked to carry the same values as fi.
+Delta review: only the new `hints` in `sovella/tasks.json` (s1–s8), per docs/fy9/vihjeet-review-brief.md.
+
+## Blocking
+None.
+
+## Polish
+1. s2 c, hint 1 (fi-easy): "Miksi sen liike-energia muuttuu?" asks a different question from fi ("mihin … muuttuu": into what). The first sentence already asks what stops the stone, so the energy form (internal energy, from the work of friction) drops out of this hint. Replacement: "Mihin sen liike-energia muuttuu?"
+
+## Checked
+- The hints say the same physics as fi, part by part, with the same formulas, symbols (W_muut, F_ka, E_h, W_kitka, W_ilma), sign conventions and values (8,33 m/s; 25,0 m/s; 0,018 m; 27,0 m; 3500 kg and 1100 kg; 0,43 kg; 3,0 kg; 6,5 m; 50 · 0,40 · E_h).
+- My recomputation is the one in the fi report, and the numbers agree with the answers and rubrics.
+- The explanation in brackets in s1 b ("liike- ja potentiaalienergian summa") is correct.
+- No hint states a final answer.
+- Numbers are in LaTeX with a decimal comma.
+- The fi s3 a hint 3 wording issue does not occur here.
