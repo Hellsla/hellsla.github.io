@@ -1,7 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 5aa0d3f2a0381b2a
-SCOPE: delta (rubric points rescaled, git diff origin/main)
+CONTENT-HASH: 38b447f08cd0aafa
 
-Blocking: none.
+## Blocking
+None.
 
-Checked: fy9-tasavirta (fi) preview built; s7 and s8 task cards at 360 and 1280 px with all details/solution open (fi captures opened: s8 at 360, s7 at 1280; en and fi-easy by DOM only). Task badges read 15 pistettä; part badges 3+3+5+4 (s7) and 4+4+3+4 (s8) = 15; rubric criteria sum to part points in the JSON; no page or card overflow, no KaTeX errors at either width. Unit total 125 p, matching teacher.md. Rubric rows themselves were not opened as images.
+## Polish
+1. [Minor] All tasks, all languages: at 390 px the three closed hints stack in a column (one row only at 1280 px); acceptable, optional. Open hint boxes at 390 px have a wide left indent, so the text column is narrow; optional (shared CSS `ol.parts>li>.hints`).
+
+## Checked
+Built preview pages; Tehtävät cards at 390 and 1280 px, hints closed and open (fi 390 closed/open, fi 1280 closed, fi-easy 390 open, en 1280 open). No horizontal overflow in any of the six captures, no clipped or scrolled formulas, order and typography fine (LaTeX units, decimal comma in fi/fi-easy, point in en). Language of new hint texts read in all three versions; no issues.

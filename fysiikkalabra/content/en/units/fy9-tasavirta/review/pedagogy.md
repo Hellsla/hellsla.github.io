@@ -1,10 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 7e70715142338d5c
-SCOPE: delta (rubric points rescaled, git diff origin/main)
+CONTENT-HASH: 7de132967afb2fba
 
-Blocking: none.
+Checked: all 30 written parts (s1-s8) have three hints in the order guiding question, relation, intermediate step. Hint 1 never names a formula, hint 2 gives the relation, hint 3 leaves the computation or judgement to the student. No final answer is stated. fi, fi-easy and en say the same.
 
-1. Checked: s7 a-d (3,3,5,4) and s8 a-d (4,4,3,4) sum to 15 each; the part points equal the sum of the remaining criteria in tasks.json. Effort matches points (multi-step parts 4-5, single-step 3).
-2. Checked: no criterion left that a student cannot score; the removed units_precision lines were only the sig-fig/unit restatement, and the other criteria (formula, substitution with units, result, reasonableness) still cover units. Other tasks keep their units_precision (14 remain).
-3. Checked: teacher.md (7e70715142338d5c0 + seven x 15 = 125) reads clearly and matches the points; the old "16 and 18 points" sentence is gone. Precision is still named as a criterion, which holds for the other tasks.
-4. Polish: none.
+Blocking
+- none.
+
+Polish
+1. s2 c, hint 3: "calculate how much it exceeds the emf because of the internal resistance" is hard to parse. Replacement: "The terminal voltage is the voltage measured across the terminals. During charging it is the emf plus the voltage drop \text{s} I$ across the internal resistance."
+2. s3 a, hint 3 lists the whole method (do not join, line with points on both sides, extend to the axis), which makes the rubric's points nearly free. Replacement: "Draw the points and think what line or curve a model of the form of hint 2 would give. Where should it be extended, and why?"
+3. s5 c, hint 3 names the rubric's design points and the meter connection. Replacement: "What would make the result more reliable: the number and spread of the points, the accuracy of the reading, the temperature of the resistor? Choose and justify."
+4. s5 b, hint 3 ("Could heating explain the change? Calculate the largest power") leads the evaluation. Make it a question: "Is the change in resistance larger than the error limits? If so, what could change it? Check with the power  = UI$."
+5. s7 b, hint 2 gives the whole causal chain as questions. Acceptable; if tightened, drop "and how does temperature affect the resistance of a metal?" from hint 2 and leave it to the student.

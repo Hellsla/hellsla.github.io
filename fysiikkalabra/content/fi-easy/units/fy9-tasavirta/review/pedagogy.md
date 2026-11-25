@@ -1,10 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: b7a064501d25d396
-SCOPE: delta (rubric points rescaled, git diff origin/main)
+CONTENT-HASH: 73714318d80c8932
 
-Blocking: none.
+Checked: kaikki 30 kirjoitettavaa osaa (s1-s8) saavat kolme vihjettä oikeassa järjestyksessä. Lauseet ovat lyhyempiä kuin fi-versiossa ja fysiikka on sama. Lopputulosta ei kerrota.
 
-1. Checked: s7 a-d (3,3,5,4) and s8 a-d (4,4,3,4) sum to 15 each; the part points equal the sum of the remaining criteria in tasks.json. Effort matches points (multi-step parts 4-5, single-step 3).
-2. Checked: no criterion left that a student cannot score; the removed units_precision lines were only the sig-fig/unit restatement, and the other criteria (formula, substitution with units, result, reasonableness) still cover units. Other tasks keep their units_precision (14 remain).
-3. Checked: teacher.md (b7a064501d25d3960 + seven x 15 = 125) reads clearly and matches the points; the old "16 and 18 points" sentence is gone. Precision is still named as a criterion, which holds for the other tasks.
-4. Polish: none.
+Blocking
+- Ei ole.
+
+Polish
+1. Samat huomiot kuin fi-raportissa: s2 c vihje 3, s3 a vihje 3, s5 b vihje 3, s5 c vihje 3 ja s7 b vihje 2 (korvaustekstit fi-raportissa, lyhyin lausein).
+2. s2 c, vihje 3, fi-easy-korvaus: "Napajännite on akun navoilla mitattu jännite. Latauksessa se on lähdejännite ja sisäisen resistanssin jännitehäviö $R_\text{s} I$ yhteensä."
+3. fi-easy ei selitä vaikeita sanoja vihjeissä (virheraja, kulmakerroin, oikosulku). Lisää s3 b vihje 2:een: "Kulmakerroin kertoo, kuinka jyrkästi suora nousee tai laskee." Lisää s3 c vihje 1:een: "Oikosulku tarkoittaa, että navat yhdistetään suoraan johdolla ilman kuormaa."
