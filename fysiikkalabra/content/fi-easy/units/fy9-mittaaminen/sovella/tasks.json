@@ -247,7 +247,7 @@
           "hints": [
             "Yhden neliömetrin kokoisen paperikerroksen massa tunnetaan b-kohdasta. Mikä on sen tilavuus, kun paksuus tunnetaan a-kohdasta?",
             "Tiheys on massa jaettuna tilavuudella. Yhden neliömetrin kokoiselle paperille $V = 1\\,\\text{m}^2 \\cdot d$. Siksi $\\rho = \\dfrac{\\sigma}{d}$.",
-            "Muunna neliömassa yksikköön $\\text{kg/m}^2$ ja paksuus metreiksi ennen laskua. Vertaa tulosta veden tiheyteen $1000\\,\\text{kg/m}^3$. Laske suhde."
+            "Muunna neliömassa yksikköön $\\text{kg/m}^2$ ja paksuus metreiksi ennen laskua. Vertaa tulosta veden tiheyteen $1000\\,\\text{kg/m}^3$. Laske, kuinka moninkertainen tulos on veden tiheyteen verrattuna."
           ],
           "answer": {
             "value": 780,
@@ -331,7 +331,7 @@
           "text": "Esitä mittaustulokset kuvaajana. Kuvaajasta pitää voida määrittää myös suoran vakiotermi.",
           "hints": [
             "Kumpi suure on riippumaton ja kumpi riippuva muuttuja? Kumpi kuuluu vaaka-akselille ja kumpi pystyakselille?",
-            "Haluat lukea kuvaajasta myös suoran vakiotermin. Siksi vaaka-akselin on ulotuttava nollaan asti. Pystyakseli saa alkaa suuremmasta lukemasta, kun merkitset sen selvästi. Valitse asteikko niin, että pisteet täyttävät suurimman osan kuvaajasta.",
+            "Haluat lukea kuvaajasta myös suoran jatkeen. Mitä se tarkoittaa vaaka-akselin alkukohdalle? Mitä pystyakselin alku tekee pisteille?",
             "Merkitse kaikki yhdeksän pistettä erillisinä. Mieti, miten teet näkyväksi, että yksi niistä on kirjattu eri tavalla kuin muut."
           ],
           "criteria": [
@@ -359,7 +359,7 @@
           "text": "Sovita pisteisiin malli. Päätä, miten käsittelet rivin $60\\,\\text{ml}$, ja perustele päätöksesi.",
           "hints": [
             "Miltä pisteet näyttävät suoran ympärillä? Onko jokin piste selvästi erillään muista? Mitä muistiinpano kertoo siitä?",
-            "Malli on suora $m = kV + b$. Mitä vakiotermi $b$ voisi olla tässä mittauksessa? Vaaka punnitsee mittalasin ja nesteen yhdessä.",
+            "Malli on suora $m = kV + b$. Mitä vakiotermi $b$ eli suoran ja pystyakselin leikkauskohta voisi olla tässä mittauksessa? Vaaka punnitsee mittalasin ja nesteen yhdessä.",
             "Piirrä suora ensin silmämääräisesti kaikkien pisteiden lomaan. Katso, kuinka paljon yksi piste poikkeaa. Päätä sitten, kuuluuko se sovitukseen. Kirjaa päätös ja sen syy."
           ],
           "criteria": [
@@ -549,8 +549,8 @@
           "points": 4,
           "text": "Ystävä sanoo: ”Vaaka näyttää grammat. Kun se näyttää jauhoille $765\\,\\text{g}$, jauhoja on siis $(765 \\pm 0{,}5)\\,\\text{g}$.” Arvioi väite. Anna parempi arvio jauhojen massasta.",
           "hints": [
-            "Mitä näytön resoluutio kertoo? Mitä se jättää kertomatta? Mitä vaa'an tarkistus kertoi vaa'an lukemista?",
-            "Jos vaaka näyttää aina saman suhteen liikaa, todellinen massa on lukema jaettuna kulmakertoimella: $m = \\dfrac{m_\\text{lukema}}{k}$. Punnuksilla $k = \\dfrac{m_\\text{lukema}}{m_\\text{tod}}$.",
+            "Mitä näytön resoluutio eli pienin lukemaero kertoo? Mitä se jättää kertomatta? Mitä vaa'an tarkistus kertoi vaa'an lukemista?",
+            "Jos vaaka näyttää aina saman suhteen liikaa, todellinen massa on lukema jaettuna suhteella $k$: $m = \\dfrac{m_\\text{lukema}}{k}$. Punnuksilla $k = \\dfrac{m_\\text{lukema}}{m_\\text{punnus}}$.",
             "Määritä $k$ a-kohdan aineistosta ja korjaa lukema $765\\,\\text{g}$. Epävarmuuden suuruuteen vaikuttavat kaksi asiaa: toistojen vaihtelu ja se, kuinka tarkasti tunnet $k$:n."
           ],
           "criteria": [
@@ -716,7 +716,7 @@
           "text": "Ryhmä haluaa parantaa mittausta. Ehdota kaksi parannusta. Toisen parannuksen pitää koskea mahdollista systemaattista virhettä. Perustele parannukset.",
           "hints": [
             "Mistä kaikki videolta luetut paikat voivat saada saman suhteellisen virheen? Mistä pisteiden satunnainen hajonta suoran ympärillä tulee?",
-            "Mittakaavakerroin kertoo, kuinka monta metriä on yhtä kuvan pituutta kohti. Kerroin on $c = \\dfrac{1{,}00\\,\\text{m}}{L}$. Tässä $L$ on mittanauhan metrin pituus kuvassa. Mitkä asiat kameran ja mittanauhan asettelussa tekevät kertoimesta virheellisen?",
+            "Mittakaavakerroin kertoo, kuinka monta metriä on yhtä kuvan pituutta kohti. Kerroin on $\\dfrac{1{,}00\\,\\text{m}}{L}$. Tässä $L$ on mittanauhan metrin pituus kuvassa. Mitkä asiat kameran ja mittanauhan asettelussa tekevät kertoimesta virheellisen?",
             "Valitse yksi parannus systemaattiselle virheelle ja yksi satunnaiselle hajonnalle. Perustele kummankin kohdalla, mitä se muuttaa. Muuttaako se tulosta vai sen epävarmuutta?"
           ],
           "criteria": [
