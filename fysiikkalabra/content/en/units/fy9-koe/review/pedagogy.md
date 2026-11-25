@@ -1,14 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: aeaefa09d8b665ad
-Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
+CONTENT-HASH: 4813b5d60f39361c
 
-## Blocking
-- (none)
+Round 2, hints only. Blocking: none.
 
-## Polish
-- (none)
+Polish:
+1. s2 b hint 3 (en): "so that there are points on both sides" is slightly procedural but leaves the choice of y to the student; acceptable.
+2. s3 c hint 3 (en): leads close to the latent-heat idea; still leaves the conclusion to the student; acceptable.
 
-## Checked
-- inquiry.json efficiency check: the correct option and three feedbacks now say internal energy; the wrong options stay wrong; each feedback still repairs its own misconception (disappears, stored, flows back) and the correct option is not given away by wording more than before.
-- solutions.md c) and d) Principle sentences: read well, physics correct (resistive forces -> internal energy; rest of food energy -> internal energy in the muscles).
-- Grep for remaining "becomes heat / into heat": none.
+Checked: ladder (guiding question, relation, step) holds in all parts; no hint states a final answer or the rubric points; evaluation and design parts (s1 e, s3 a, s4 a, s4 d) guide reasoning without dictating a conclusion; round-1 fixes (l vs L, no origin, nollataso, lämpöteho, hajonta, s4 a, s3 d) present and fi-easy keeps the physics with shorter sentences.

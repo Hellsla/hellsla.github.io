@@ -1,13 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 82bed51c399175e5
+CONTENT-HASH: 7c576415ca151e1e
+
+Round 2, hints opened at 390 and 1280 px: no overflow, no clipped or scrolling formulas, 17 hint rows, text reads naturally.
+
+## Shared issues
+- Hint box is indented wide (site.css); not blocking.
 
 ## Blocking
-(none)
+none
 
 ## Polish
-(none)
-
-## Checked
-- Diff origin/main...HEAD for unit.md and inquiry.json (fi-easy): only paragraph breaks. In unit.md the worked example's "Tunnetut ja kysytty" paragraph is split so the question stands alone; in inquiry.json two model-answer fields (kettle-efficiency marking comment, helmet answer) are split at a sentence boundary. Words, maths and figures are identical.
-- Contact sheets contact-6.png (#61-#72: model solutions, marking, self-assessment, exit ticket) and contact-9.png (#97-#108: example boxes with staged solutions) in review/shots/, at contact-sheet resolution only. The split paragraphs sit as short paragraphs inside the cards; no clipping, overlap or overflow, and the stage layout survived.
-- The earlier Sovella visual report (sovella/review/visual.md, PASS) read as evidence. I did not open individual 390 px captures, so fine type size is not judged.
+none
