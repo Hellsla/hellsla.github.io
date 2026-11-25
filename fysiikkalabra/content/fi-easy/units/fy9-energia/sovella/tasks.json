@@ -18,6 +18,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Kuinka paljon sähköenergiaa mökin laitteet käyttävät vuorokaudessa?",
+          "hints": [
+            "Jokaisella laitteella on teho ja käyttöaika. Mikä suure kertoo, paljonko energiaa laite käyttää? Mitä teet laitteiden energioille lopuksi?",
+            "Laitteen energia on teho kertaa aika: $E = P\\,t$. Laske energia jokaiselle laitteelle erikseen. Laske sitten energiat yhteen.",
+            "Kahvinkeitin on päällä vain $15\\,\\text{min}$. Sen teho on kilowatteina, joten muuta aika tunneiksi. Lamppuja on kuusi, joten niiden yhteisteho on $6 \\cdot 7{,}0\\,\\text{W}$."
+          ],
           "answer": {
             "value": 1.54,
             "unit": "kWh",
@@ -46,6 +51,11 @@
           "kind": "calc",
           "points": 5,
           "text": "Laitteiden sähkö tulee akun ja vaihtosuuntaajan kautta. Kuinka paljon sähköä paneelien täytyy tuottaa vuorokaudessa, jotta a-kohdan tarve katetaan eli saadaan kokonaan? Riittääkö pilvisen päivän tuotanto?",
+          "hints": [
+            "Energia kulkee paneeleilta akulle, vaihtosuuntaajalle ja laitteille. Joka vaiheessa osa energiasta menee hukkaan. Pitääkö paneelien tuottaa enemmän vai vähemmän kuin laitteet käyttävät?",
+            "Vaiheet ovat peräkkäin, joten hyötysuhteet kerrotaan keskenään: $E_\\text{paneelit} = \\dfrac{E_\\text{tarve}}{\\eta_\\text{akku}\\,\\eta_\\text{v}}$.",
+            "Laske ensin yhteishyötysuhde $\\eta_\\text{akku}\\,\\eta_\\text{v}$. Laske sitten paneelien energia. Kuinka paljon pilvisen päivän energiasta pääsee laitteille?"
+          ],
           "answer": {
             "value": 1.84,
             "unit": "kWh",
@@ -79,6 +89,11 @@
           "kind": "word",
           "points": 4,
           "text": "Mökin naapuri sanoo: ”Paneelien teho on $1{,}2\\,\\text{kW}$, joten ne tuottavat $1{,}2\\,\\text{kWh}$ päivässä.” Arvioi väite.",
+          "hints": [
+            "Naapuri sekoittaa kilowatin ja kilowattitunnin. Kumpi kertoo, kuinka nopeasti energiaa tuotetaan? Kumpi kertoo energian määrän?",
+            "Energia on teho kertaa aika: $E = P\\,t$. Nimellisteho on suurin teho, jolla paneelit voivat tuottaa.",
+            "Laske, montako tuntia nimellisteholla pitäisi tuottaa, jotta saisi $5{,}4\\,\\text{kWh}$ tai $1{,}5\\,\\text{kWh}$. Mitä luvut kertovat naapurin väitteestä?"
+          ],
           "criteria": [
             {
               "text": "Erottaa tehon ja energian. Kilowatti kertoo, kuinka nopeasti sähköä tuotetaan. Kilowattitunti kertoo energian määrän. Energia on teho kertaa aika.",
@@ -121,6 +136,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Kuinka suuri on voimalan polttoaineteho?",
+          "hints": [
+            "Hake sisältää energiaa, ja kattilaan syötetään sitä koko ajan. Mikä suure kertoo, paljonko energiaa tulee joka sekunti? Mitä tarvitset sen laskemiseen?",
+            "Poltetun hakkeen energia on lämpöarvo kertaa massa: $Q = Hm$. Teho on energia jaettuna ajalla: $P_0 = \\dfrac{Q}{t}$.",
+            "Muuta ensin tunnissa poltettu massa tonneista kilogrammoiksi. Muuta myös tunti sekunneiksi: $t = 3600\\,\\text{s}$. Laske sitten tunnin energia ja jaa se ajalla."
+          ],
           "answer": {
             "value": 110.8,
             "unit": "MW",
@@ -149,6 +169,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Laske voimalan sähköhyötysuhde ja kokonaishyötysuhde.",
+          "hints": [
+            "Hyötysuhde kertoo, kuinka suuri osa polttoaineen tehosta tulee hyötykäyttöön. Mikä on hyötyä, kun lasketaan sähköhyötysuhde? Entä kokonaishyötysuhde?",
+            "$\\eta = \\dfrac{P_\\text{hyöty}}{P_0}$. Sähköhyötysuhteessa hyöty on sähköteho $P_\\text{s}$. Kokonaishyötysuhteessa hyöty on sähkö- ja kaukolämpöteho yhdessä: $\\eta_\\text{kok} = \\dfrac{P_\\text{s} + P_\\text{k}}{P_0}$.",
+            "Käytä jakajana a-kohdan polttoainetehoa. Laske ensin kokonaishyöty $P_\\text{s} + P_\\text{k}$. Jaa vasta sitten."
+          ],
           "answer": [
             {
               "name": "s",
@@ -186,6 +211,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Oletetaan, että sama sähkö tuotettaisiin lauhdevoimalassa ja sama kaukolämpö lämpökattilassa, eli erikseen. Kuinka monta tonnia haketta tarvittaisiin silloin tunnissa?",
+          "hints": [
+            "Jos sähkö ja lämpö tehtäisiin erikseen, kumpikin laitos tarvitsisi oman polttoaineensa. Miten polttoaineteho lasketaan, kun hyötyteho ja hyötysuhde tunnetaan?",
+            "Kummankin laitoksen polttoaineteho on $P_0 = \\dfrac{P_\\text{hyöty}}{\\eta}$. Laske tehot yhteen. Hakkeen massa on $m = \\dfrac{P_0\\,t}{H}$.",
+            "Laske ensin kummankin laitoksen polttoaineteho erikseen. Laske ne yhteen. Laske sitten tunnin energia ja hakkeen massa, ja muuta se tonneiksi. Vertaa tulosta yhteistuotannon $42\\,\\text{t}$:iin."
+          ],
           "answer": {
             "value": 59.4,
             "unit": "t",
@@ -214,6 +244,11 @@
           "kind": "word",
           "points": 3,
           "text": "Kesällä kaukolämpöä tarvitaan vain lämpimään käyttöveteen, esimerkiksi suihkuun. Voimala tuottaa kesällä saman sähkötehon kuin talvella. Selitä, miksi voimalan kokonaishyötysuhde ei silloin pysy samana.",
+          "hints": [
+            "Kesällä kaukolämpöä ei tarvita paljon. Mihin lauhduttimen lämpö silloin joutuu? Kuka sitä käyttää?",
+            "Kokonaishyötysuhteessa lasketaan mukaan vain energia, joka tulee käyttöön: $\\eta_\\text{kok} = \\dfrac{P_\\text{s} + P_\\text{k}}{P_0}$. Mitä osoittajalle tapahtuu, kun $P_\\text{k}$ pienenee?",
+            "Kirjoita kokonaishyötysuhteen lauseke tilanteessa, jossa $P_\\text{k}$ on pieni tai nolla. Vertaa sitä b-kohdan hyötysuhteisiin. Mitä voimalan ajossa kannattaisi silloin miettiä?"
+          ],
           "criteria": [
             {
               "text": "Selittää, että lauhduttimen lämpö on hyödyksi vain silloin, kun sitä voi käyttää kaukolämpönä. Muuten lämpö täytyy luovuttaa ympäristöön hukkalämpönä.",
@@ -252,6 +287,11 @@
           "kind": "graph",
           "points": 4,
           "text": "Piirrä kuvaaja, jossa vuorokauden kulutus on ulkolämpötilan funktiona. Sovita pisteisiin sopiva malli.",
+          "hints": [
+            "Kumpi suure on riippumaton ja kumpi riippuva? Mitä kulutukselle tapahtuu, kun lämpötila muuttuu?",
+            "Piirrä pisteet $(T,\\,E)$-koordinaatistoon. Sovita niihin suora $E = kT + b$. Suora kulkee pisteiden välistä. Pisteitä ei yhdistetä toisiinsa.",
+            "Vaaka-akselin pitää ulottua negatiivisiin lämpötiloihin. Kirjoita akseleille suure ja yksikkö. Valitse asteikot niin, että pisteet täyttävät kuvaajan."
+          ],
           "criteria": [
             {
               "key": "graph_axes",
@@ -274,6 +314,11 @@
           "kind": "calc",
           "points": 5,
           "text": "Määritä suoran kulmakerroin kuvaajasta. Kuinka paljon lämmitysteho kasvaa, kun ulkolämpötila laskee yhden kelvinin? Vastaa watteina kelviniä kohti.",
+          "hints": [
+            "Mitä suoran kulmakerroin kertoo? Se kertoo, kuinka paljon energia muuttuu, kun lämpötila muuttuu. Mistä kuvaajan pisteistä sen kannattaa lukea?",
+            "Kulmakerroin on $k = \\dfrac{\\Delta E}{\\Delta T}$. Lue se suoran kahdesta pisteestä, jotka ovat kaukana toisistaan. Keskiteho on energia jaettuna ajalla: $P = \\dfrac{E}{t}$.",
+            "Kulmakertoimen yksikkö on $\\text{kWh}/{}^\\circ\\text{C}$ vuorokaudessa. Jaa se vuorokauden pituudella $24\\,\\text{h}$. Muuta tulos watteiksi. Yhden asteen muutos on yhtä suuri kuin yhden kelvinin muutos."
+          ],
           "answer": {
             "value": 204,
             "unit": "W/K",
@@ -307,6 +352,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Arvioi kuvaajan avulla talon sähkönkulutus vuorokautena, jonka keskilämpötila on $-28\\,{}^\\circ\\text{C}$. Arvioi myös, kuinka luotettava arviosi on.",
+          "hints": [
+            "Mittaukset ovat vain tietyltä lämpötila-alueelta. Mitä tarkoittaa jatkaa suoraa mitatun alueen ulkopuolelle? Kuinka varma arvio on?",
+            "Käytä suoran yhtälöä $E = kT + b$ tai jatka suoraa kuvaajassa. Luku $k$ on b-kohdan tulos. Luku $b$ on suoran arvo lämpötilassa $0\\,{}^\\circ\\text{C}$.",
+            "Sijoita $T = -28\\,{}^\\circ\\text{C}$. Katso, kuinka monta astetta tämä on kylmimmän mittauspisteen alapuolella. Mieti, pysyykö suora suorana niin kylmässä."
+          ],
           "answer": {
             "value": 230,
             "unit": "kWh",
@@ -335,6 +385,11 @@
           "kind": "word",
           "points": 5,
           "text": "Missä ulkolämpötilassa talo ei mallin mukaan tarvitsisi lämmitystä ollenkaan? Selitä, miksi tämä lämpötila ei ole sama kuin sisälämpötila $21\\,{}^\\circ\\text{C}$.",
+          "hints": [
+            "Milloin talo ei tarvitse lämmitystä lainkaan? Paljonko sähköä talo silloin kuluttaa?",
+            "Kun lämmitystä ei tarvita, jäljelle jää vain muu sähkönkulutus, jonka tehtävä antaa. Ratkaise lämpötila suoran yhtälöstä $E = kT + b$ tai lue kuvaajasta, missä $E$ saa tämän arvon.",
+            "Vertaa saamaasi lämpötilaa sisälämpötilaan $21\\,{}^\\circ\\text{C}$. Mikä muu kuin lämmitys tuo taloon energiaa? Mitä energian säilyminen sanoo siitä?"
+          ],
           "criteria": [
             {
               "key": "graph_read",
@@ -379,6 +434,11 @@
           "kind": "word",
           "points": 4,
           "text": "Arvioi ensimmäinen väite. Perustele vastauksesi laskulla.",
+          "hints": [
+            "Väitteessä on kaksi asiaa. Tuulivoima tuottaa vuodessa riittävästi energiaa. Siksi diesel voitaisiin purkaa. Riittääkö vuoden energia kulutukseen? Entä joka hetki?",
+            "Energia on keskiteho kertaa aika: $E = P_\\text{keski}\\,t$. Tuulivoimaloiden keskiteho on $30\\,\\%$ nimellistehosta. Vuodessa on $8760\\,\\text{h}$. Akun kesto huipputeholla on $t = \\dfrac{E_\\text{akku}}{P_\\text{huippu}}$.",
+            "Laske ensin kahden voimalan yhteinen keskiteho. Laske sitten vuoden energia gigawattitunteina ja vertaa sitä kulutukseen $3{,}0\\,\\text{GWh}$. Laske lopuksi, montako tuntia täysi akku riittää huipulle $1{,}2\\,\\text{MW}$."
+          ],
           "criteria": [
             {
               "text": "Laskee tuulivoimaloiden vuoden energian keskitehosta: $$\n\\begin{aligned}\n&2{,}0\\,\\text{MW} \\cdot 0{,}30 \\cdot 8760\\,\\text{h} \\\\\n&\\approx 5{,}3\\,\\text{GWh}\n\\end{aligned}\n$$. Se on enemmän kuin $3{,}0\\,\\text{GWh}$.",
@@ -407,6 +467,11 @@
           "kind": "word",
           "points": 5,
           "text": "Vertaa vaihtoehtoja. Käytä vähintään kolmea perustetta. Tee perusteltu suositus.",
+          "hints": [
+            "Mitä sähköntuotannon pitää saarella pystyä tekemään joka hetki? Missä A, B ja C eroavat toisistaan?",
+            "Valitse vähintään kolme perustetta. Perusteita ovat esimerkiksi säädettävyys, toimitusvarmuus, päästöt, polttoaineen kuljetus ja hinta. Käy jokainen vaihtoehto läpi aineiston lukujen avulla.",
+            "Tee vertailusta pieni taulukko: rivit ovat perusteet ja sarakkeet vaihtoehdot. Perustele jokainen ruutu aineiston luvulla. Suositus tulee vasta taulukon jälkeen. Sen pitää seurata taulukosta."
+          ],
           "criteria": [
             {
               "text": "Käyttää vähintään kolmea vertailuperustetta, esimerkiksi säädettävyys, toimitusvarmuus, päästöt, polttoaineen kuljetus ja hinta.",
@@ -430,6 +495,11 @@
           "kind": "word",
           "points": 4,
           "text": "Arvioi toinen väite. Kuinka suuri on dieselvoimalan hiilidioksidipäästö vuodessa? Miten sitä verrataan tuulivoiman päästöihin?",
+          "hints": [
+            "Päästö riippuu tuotetusta energiasta ja päästökertoimesta. Syntyykö tuulivoimalasta päästöjä vain käytössä? Vai myös ennen sitä?",
+            "Päästön massa on päästökerroin kertaa energia: $m = e\\,E$. Tässä $e = 700\\,\\text{g/kWh}$ ja $E$ on saaren vuosikulutus.",
+            "Muuta energia ensin gigawattitunneista kilowattitunneiksi: $1\\,\\text{GWh} = 10^{6}\\,\\text{kWh}$. Kerro vasta sitten. Muuta lopuksi grammat tonneiksi. Mieti vertailua varten, mitä päästöjä tuulivoimalan valmistuksesta ja rakentamisesta syntyy."
+          ],
           "criteria": [
             {
               "text": "Laskee dieselin päästön: $$\n\\begin{aligned}\nm &= e \\cdot E \\\\\n&= 700\\,\\text{g}/\\text{kWh} \\cdot 3{,}0 \\\\\n&\\cdot 10^{6}\\,\\text{kWh} \\\\\n&= 2{,}1 \\cdot 10^{9}\\,\\text{g} \\\\\n&= 2100\\,\\text{t}\n\\end{aligned}\n$$.",
@@ -474,6 +544,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Näytä, miten ryhmä sai hyötysuhteeksi $83\\,\\%$.",
+          "hints": [
+            "Hyötysuhde vertaa hyödyksi tulevaa energiaa käytettyyn energiaan. Mikä energia on tässä hyötyä? Mikä on käytetty energia?",
+            "$\\eta = \\dfrac{Q}{E}$. Veden lämmittämiseen tarvittava energia on $Q = cm\\Delta T$. Keittimen ottama sähköenergia on $E = P\\,t$.",
+            "Laske lämpötilan muutos $\\Delta T$. Muuta aika sekunneiksi ($3\\,\\text{min}\\ 5\\,\\text{s}$). Laske sitten $Q$ ja $E$ erikseen. Jaa vasta sen jälkeen."
+          ],
           "answer": {
             "value": 83.4,
             "unit": "%",
@@ -502,6 +577,11 @@
           "kind": "word",
           "points": 5,
           "text": "Arvioi, onko ryhmän johtopäätös perusteltu. Kerro mittauksen tärkeimmät virhelähteet. Kerro myös, muuttaako kukin virhelähde tulosta suuremmaksi vai pienemmäksi.",
+          "hints": [
+            "Mikä luku on oikeasti mitattu? Mikä on vain luettu arvokilvestä? Missä mittaus ei vastaa täsmälleen laskun oletuksia?",
+            "Kysy jokaisesta virhelähteestä kaksi asiaa. Muuttaako se osoittajaa $Q$ vai jakajaa $E$? Kasvattaako vai pienentääkö se hyötysuhdetta $\\eta = \\dfrac{Q}{E}$?",
+            "Kokeile yhtä virhelähdettä kerrallaan. Sijoita laskuun hieman toinen arvo. Katso, montako prosenttiyksikköä $\\eta$ muuttuu. Voiko yhden mittauksen perusteella sanoa valmistajan väitteen vääräksi?"
+          ],
           "criteria": [
             {
               "key": "error_sources",
@@ -525,6 +605,11 @@
           "kind": "word",
           "points": 5,
           "text": "Ryhmä epäilee, että hyötysuhde riippuu vesimäärästä. Suunnittele koe, jolla tämän voi selvittää luotettavasti.",
+          "hints": [
+            "Mikä suure muuttuu, kun vesimäärä vaihtelee? Minkä pitää pysyä samana, jotta vertailu on reilu?",
+            "Muutat vesimäärää $m$. Tutkit hyötysuhdetta $\\eta = \\dfrac{c\\,m\\,\\Delta T}{E}$. Päätä, mitkä suureet mittaat ja millä välineellä. Päätä myös, mitkä pidät samoina.",
+            "Mieti, milloin luet lämpötilan, jotta lukema on luotettava. Mieti, miten mittaat sähköenergian. Montako vesimäärää tarvitset? Mitä toistat? Miten esität tulokset?"
+          ],
           "criteria": [
             {
               "text": "Muuttaa vain vesimäärää (esimerkiksi $0{,}50$–$1{,}5\\,\\text{kg}$). Pitää muut asiat samoina: sama alkulämpötila, sama keitin ja kansi kiinni.",
@@ -569,6 +654,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Kuinka paljon potentiaalienergiaa täyden yläaltaan vedellä on ala-altaaseen verrattuna? Anna vastaus megawattitunteina.",
+          "hints": [
+            "Millä korkeuserolla vedellä on potentiaalienergiaa? Mitä tarvitset veden massasta?",
+            "$E_\\text{p} = mgh$. Massa saadaan tiheydestä ja tilavuudesta: $m = \\rho V$.",
+            "Laske massa. Muuta korkeus metreiksi. Tulos tulee jouleina. Muuta se megawattitunneiksi: $1\\,\\text{MWh} = 10^{6}\\,\\text{W} \\cdot 3600\\,\\text{s}$."
+          ],
           "answer": {
             "value": 245.3,
             "unit": "MWh",
@@ -602,6 +692,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Kuinka suuri on voimalan sähköteho, kun allas tyhjennetään?",
+          "hints": [
+            "Kaikki potentiaalienergia ei tule ulos sähkönä. Mikä luku kertoo, kuinka suuri osa muuttuu sähköksi? Missä ajassa energia vapautuu?",
+            "Sähköenergia on $\\eta_\\text{t}\\,E_\\text{p}$. Teho on energia jaettuna ajalla: $P = \\dfrac{\\eta_\\text{t}\\,E_\\text{p}}{t}$.",
+            "Käytä a-kohdan potentiaalienergiaa ja turbiinin hyötysuhdetta $0{,}88$. Jaa ajalla $6{,}0\\,\\text{h}$. Jos energia on megawattitunteina, teho tulee suoraan megawatteina."
+          ],
           "answer": {
             "value": 35.97,
             "unit": "MW",
@@ -635,6 +730,11 @@
           "kind": "calc",
           "points": 5,
           "text": "Kuinka paljon sähköenergiaa verkosta täytyy ottaa, kun tyhjä yläallas pumpataan täyteen? Allas ensin täytetään ja sitten tyhjennetään. Mikä on silloin varaston kokonaishyötysuhde?",
+          "hints": [
+            "Pumpatessa energia kulkee toiseen suuntaan. Se menee verkosta moottoriin ja pumppuun ja siitä veteen. Pitääkö verkosta ottaa enemmän vai vähemmän kuin vedelle tulee?",
+            "Pumppauksessa hyöty on veden potentiaalienergia: $E_\\text{verkko} = \\dfrac{E_\\text{p}}{\\eta_\\text{p}}$. Täyttö ja tyhjennys ovat peräkkäin, joten hyötysuhteet kerrotaan: $\\eta = \\eta_\\text{p}\\,\\eta_\\text{t}$.",
+            "Laske ensin $E_\\text{verkko}$ pumpun hyötysuhteella $0{,}85$. Tarkista kokonaishyötysuhde. Jaa tyhjennyksessä saatu sähköenergia verkosta otetulla energialla."
+          ],
           "answer": [
             {
               "name": "E",
@@ -677,6 +777,11 @@
           "kind": "word",
           "points": 4,
           "text": "Suunnittelija sanoo: ”Voimala tuottaa joka päivä $216\\,\\text{MWh}$ sähköä.” Arvioi väite. Perustele, miksi voimala voi silti olla hyödyllinen.",
+          "hints": [
+            "Voiko voimala tuottaa energiaa? Mitä energian säilyminen sanoo siitä, mistä voimalan antama energia tulee?",
+            "Vertaa energiaa, jonka voimala ottaa verkosta täytettäessä, energiaan, jonka se antaa tyhjennettäessä. Mikä on niiden erotus? Minne se menee?",
+            "Mieti hyötyä. Milloin sähköä on halvalla tai liikaa? Milloin sitä tarvitaan eniten? Kuinka nopeasti voimalan tehoa voi säätää? Kirjoita suunnittelijan väite uudelleen niin, että se on oikein."
+          ],
           "criteria": [
             {
               "text": "Toteaa energian säilymisen perusteella, että pumppuvoimala ei tuota energiaa vaan varastoi sitä. Se ottaa verkosta enemmän energiaa kuin antaa, noin $73\\,\\text{MWh}$ jokaisella täytöllä ja tyhjennyksellä.",
@@ -723,6 +828,11 @@
           "kind": "calc",
           "points": 3,
           "text": "Valitse kolme sähköautoa lähteen kaaviosta, tai käytä taulukon autoja. Laske jokaiselle autolle, kuinka monta prosenttia mitattu toimintamatka poikkeaa ilmoitetusta. Kerro sitten, mitä vertailu osoittaa.",
+          "hints": [
+            "Mitä ilmoitettu ja mitattu toimintamatka kertovat yhdessä? Miten ero kerrotaan prosentteina, kun sitä verrataan ilmoitettuun arvoon?",
+            "Poikkeama prosentteina on $\\dfrac{s_\\text{mit} - s_\\text{ilm}}{s_\\text{ilm}} \\cdot 100\\,\\%$. Jos tulos on negatiivinen, mitattu matka on ilmoitettua lyhyempi.",
+            "Kirjoita kolmen auton ilmoitettu ja mitattu matka taulukkoon. Laske jokaiselle ero $s_\\text{mit} - s_\\text{ilm}$. Jaa se ilmoitetulla matkalla. Katso lopuksi, ovatko poikkeamat samanlaisia kaikilla autoilla."
+          ],
           "criteria": [
             {
               "text": "Poimii aineistosta kolmen auton ilmoitetun ja mitatun toimintamatkan. Esittää ne selkeästi, esimerkiksi taulukkona.",
@@ -746,6 +856,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Sähköauton käytettävissä oleva akkuenergia on $75\\,\\text{kWh}$. Auton toimintamatka leudolla säällä on $450\\,\\text{km}$. Laske auton keskimääräinen energiankulutus sataa kilometriä kohti. Laske myös kulutus pakkasella. Oleta, että toimintamatka on $38\\,\\%$ lyhyempi, kuten testissä keskimäärin, ja että akusta saadaan sama energia. Arvioi lopuksi, kuinka hyvin tämä oletus pitää paikkansa.",
+          "hints": [
+            "Akun energia ja toimintamatka ovat verrannolliset. Miten saat kulutuksen sataa kilometriä kohti, kun tiedät, kuinka pitkälle koko akullinen riittää?",
+            "Kulutus sataa kilometriä kohti on $E_{100} = \\dfrac{E\\,s_{100}}{s}$, kun $s_{100} = 100\\,\\text{km}$. Pakkasella matka on $s_\\text{k} = (1 - 0{,}38)\\,s$. Akun energian oletetaan olevan sama.",
+            "Laske ensin pakkasmatka $s_\\text{k}$. Sijoita se samaan kaavaan. Mieti sitten oletusta samasta akun energiasta. Mitä kylmälle akulle tapahtuu? Mihin suuntaan se muuttaisi laskettua kulutusta?"
+          ],
           "answer": [
             {
               "name": "E100",
@@ -788,6 +903,11 @@
           "kind": "word",
           "points": 4,
           "text": "Selitä, miksi sähköauton energiankulutus kilometriä kohti kasvaa pakkasella. Käytä selityksessä lämpöoppia, sähköoppia ja mekaniikkaa.",
+          "hints": [
+            "Ajattele kolmea paikkaa, joissa kylmä lisää energian kulutusta. Ne ovat lämpötilaero auton ja ulkoilman välillä, akku ja liike. Mikä ilmiö on kussakin?",
+            "Lämpöoppi: lämpö karkaa nopeammin, kun lämpötilaero on suurempi. Sähköoppi: teho on $P = UI$ tai häviöteho $P = R_\\text{s}I^2$. Mekaniikka: vastusvoimien työ on $W = Fs$. Valitse jokaisesta osasta sopiva peruste.",
+            "Kokoa selitys energian säilymisellä. Kaikki energia tulee samasta akusta. Kirjoita jokaisesta kolmesta osasta, mihin energiaa menee. Päätä, miksi ajamiseen jää vähemmän."
+          ],
           "criteria": [
             {
               "text": "Lämpöoppi: lämpö siirtyy matkustamosta ja akusta ympäristöön sitä nopeammin, mitä suurempi lämpötilaero on. Siksi lämpötilan ylläpito vaatii lämmitystehon. Sähköautossa se otetaan ajoakusta.",
@@ -816,6 +936,11 @@
           "kind": "word",
           "points": 2,
           "text": "Testin raportin mukaan pisimmälle ajaneen auton toimintamatka jäi ilmoitetusta $46\\,\\%$ lyhyemmäksi. Se on yksi testin suurimmista poikkeamista. Tästä ei voi päätellä, että se kestää pakkasta huonommin kuin muut autot. Selitä aineiston avulla, miksi ei.",
+          "hints": [
+            "Tutki aineiston tietoja. Ajoivatko kaikki autot samoissa olosuhteissa koko reitin? Missä lämpötilassa kukin auto ajoi?",
+            "Autojen prosenttipoikkeamat ovat vertailukelpoisia vain, jos olosuhteet ovat samat. Mikä muuttui reitillä pohjoiseen ajettaessa?",
+            "Vertaa Hyundai Insterin pysähtymislämpötilaa lämpötiloihin, joissa pisimmälle ajanut auto ajoi. Mitä se kertoo olosuhteista, joissa kumpikin ajoi?"
+          ],
           "criteria": [
             {
               "text": "Käyttää aineistoa: lämpötila laski reitin varrella $-7\\,{}^\\circ\\text{C}$:sta $-32\\,{}^\\circ\\text{C}$:seen. Pisimmälle ajanut auto ajoi siksi suuren osan matkastaan kylmimmällä osuudella ja oli pakkasessa pisimpään. Lyhyen toimintamatkan auto pysähtyi jo $-16\\,{}^\\circ\\text{C}$:n kohdalla.",
@@ -834,6 +959,11 @@
           "kind": "word",
           "points": 2,
           "text": "Arvioi, miksi tämän yhden talvitestin perusteella ei voi ennustaa tietyn sähköauton toimintamatkaa kaikissa talviolosuhteissa. Nimeä ainakin kolme tekijää, jotka muuttavat kulutusta. Kerro myös, miten testiä pitäisi muuttaa, jotta tulos olisi luotettavampi.",
+          "hints": [
+            "Mitkä asiat vaihtelevat talvesta, reitistä ja kuljettajasta toiseen? Ne vaikuttavat kulutukseen. Mitä tämä yksi testi näytti vain yhdestä tilanteesta?",
+            "Etsi tekijät kolmesta ryhmästä: sää (esimerkiksi lämpötila ja tuuli), tie ja reitti sekä auto ja kuljettaja. Aineisto antaa yhden esimerkin: vertaa kahden testin poikkeamia ja niiden lämpötiloja.",
+            "Mieti, miten testi tehtiin. Montako kertaa kukin auto ajettiin? Olivatko olosuhteet samat? Miten testiä pitäisi muuttaa, jotta tulosten vaihtelua voisi arvioida?"
+          ],
           "criteria": [
             {
               "key": "error_sources",
@@ -874,6 +1004,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Kuinka paljon sisäenergiaa kitka on tuottanut radalle ja laudan pyörille matkalla A:sta B:hen ja matkalla A:sta C:hen?",
+          "hints": [
+            "Mitä energiamuotoja pylväät esittävät? Mitä niiden summalle pitäisi tapahtua, jos kitkaa ei olisi?",
+            "Mekaaninen energia on potentiaalienergian ja liike-energian summa: $E_\\text{mek} = E_\\text{p} + E_\\text{k}$. Kokonaisenergia säilyy. Kitkan synnyttämä sisäenergia on siis $\\Delta E_\\text{sis} = E_\\text{mek,A} - E_\\text{mek}$.",
+            "Lue kohdista A, B ja C kummankin pylvään korkeus jouleina. Laske mekaaninen energia. Vähennä se kohdan A mekaanisesta energiasta. Tee tämä erikseen kohdille B ja C."
+          ],
           "answer": [
             {
               "name": "dB",
@@ -916,6 +1051,11 @@
           "kind": "calc",
           "points": 3,
           "text": "Määritä skeittarin vauhti kohdassa C.",
+          "hints": [
+            "Mikä energiamuoto liittyy vauhtiin? Kuinka paljon sitä on kohdassa C?",
+            "Liike-energia on $E_\\text{k} = \\tfrac{1}{2}mv^2$. Ratkaise siitä vauhti: $v = \\sqrt{\\dfrac{2E_\\text{k}}{m}}$.",
+            "Lue kohdan C liike-energia pylväästä. Sijoita se kaavaan massan $m = 45\\,\\text{kg}$ kanssa. Energian yksikkö on joule: $1\\,\\text{J} = 1\\,\\text{kg}\\,\\text{m}^2/\\text{s}^2$."
+          ],
           "answer": {
             "value": 4.7,
             "unit": "m/s",
@@ -944,6 +1084,11 @@
           "kind": "calc",
           "points": 3,
           "text": "Kuinka suuri on kitkavoima keskimäärin matkalla A:sta C:hen?",
+          "hints": [
+            "Kitka tekee työtä skeittariin. Minkä energian muutos on yhtä suuri kuin kitkan tekemä työ?",
+            "Kitkan työ on sama kuin sisäenergian lisäys: $\\Delta E_\\text{sis} = Fs$. Siitä saat voiman: $F = \\dfrac{\\Delta E_\\text{sis}}{s}$.",
+            "Käytä a-kohdan sisäenergian lisäystä koko matkalle A:sta C:hen. Matka on $s = 3{,}4\\,\\text{m}$. Vertaa tulosta skeittarin painoon $mg$. Onko tulos järkevä?"
+          ],
           "answer": {
             "value": 59,
             "unit": "N",
@@ -972,6 +1117,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Mikä olisi skeittarin vauhti kohdassa C, jos kitkaa ei olisi? Miksi todellinen vauhti on pienempi?",
+          "hints": [
+            "Mitä energiaa skeittarilla on alussa ja lopussa, jos energiaa ei menisi hukkaan?",
+            "Ilman kitkaa mekaaninen energia säilyy: $E_\\text{k,C} = E_\\text{p,A}$. Siitä saat vauhdin: $v = \\sqrt{\\dfrac{2E_\\text{p,A}}{m}}$.",
+            "Lue $E_\\text{p,A}$ kuvasta ja laske vauhti. Vertaa sitä b-kohdan vauhtiin. Selitä ero energian avulla. Minne se energia joutuu, joka ei ole liike-energiaa?"
+          ],
           "answer": {
             "value": 5.6,
             "unit": "m/s",
@@ -1020,6 +1170,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Määritä laitteiden A ja B sähköteho.",
+          "hints": [
+            "Mitä kuvaajan suoran jyrkkyys kertoo? Mikä suure kertoo, kuinka nopeasti energia muuttuu?",
+            "Teho on energian muutosnopeus: $P = \\dfrac{\\Delta E}{\\Delta t}$. Se on $(t,\\,E)$-kuvaajan kulmakerroin.",
+            "Valitse kummaltakin suoralta piste kaukana origosta. Lue sen aika ja energia. Jaa energia ajalla."
+          ],
           "answer": [
             {
               "name": "PA",
@@ -1062,6 +1217,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Kumpaakin laitetta käytetään $3{,}0\\,\\text{h}$ vuorokaudessa $30$ vuorokauden ajan. Paljonko kummankin laitteen sähkö maksaa tänä aikana?",
+          "hints": [
+            "Mikä on laitteen energia, kun tiedät koko käyttöajan? Miten energia muutetaan euroiksi, kun hinta on annettu kilowattituntia kohti?",
+            "$E = Pt$. Hinta on $C = E\\,p$, kun $p = 0{,}16\\,\\text{€/kWh}$. Energian pitää olla kilowattitunteina.",
+            "Laske ensin koko käyttöaika tunteina ($30$ vuorokautta, $3{,}0\\,\\text{h}$ päivässä). Käytä a-kohdan tehoja kilowatteina. Silloin $\\text{kW} \\cdot \\text{h} = \\text{kWh}$."
+          ],
           "answer": [
             {
               "name": "cA",
@@ -1104,6 +1264,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Määritä hissin moottorin B hyötysuhde.",
+          "hints": [
+            "Mikä energia on hissin moottorissa hyötyä? Mikä on moottorin ottama energia?",
+            "$\\eta = \\dfrac{E_\\text{hyöty}}{E}$. Hyötyenergia on kuorman potentiaalienergian muutos: $E_\\text{hyöty} = mgh$.",
+            "Laske hyötyenergia. Lue kuvaajasta B:n ottama sähköenergia ajalla $80\\,\\text{s}$. Käytä samaa yksikköä, kun jaat."
+          ],
           "answer": {
             "value": 74,
             "unit": "%",
@@ -1137,6 +1302,11 @@
           "kind": "calc",
           "points": 3,
           "text": "Kuinka suuri teho siirtyy moottorista B lämpönä ympäristöön? Mihin energiamuotoon se ensin muuttuu?",
+          "hints": [
+            "Moottori ottaa energiaa, mutta vain osa menee kuorman nostoon. Mitä muuta energialle tapahtuu? Missä muodossa se on?",
+            "Häviöteho on otettu teho miinus hyötyteho: $P_\\text{häviö} = P - P_\\text{hyöty}$. Hyötyteho on $P_\\text{hyöty} = \\dfrac{E_\\text{hyöty}}{t}$.",
+            "Laske ensin hyötyteho, joka menee kuorman nostoon ajalla $80\\,\\text{s}$. Vähennä se a-kohdan sähkötehosta $P_\\text{B}$. Mieti sitten, mihin energiamuotoon häviö ensin muuttuu. Miten se pääsee ympäristöön?"
+          ],
           "answer": {
             "value": 0.13,
             "unit": "kW",

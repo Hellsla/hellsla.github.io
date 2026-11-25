@@ -1,7 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: eaa8e53380b1d3b8
-SCOPE: delta (old-content fixes, git diff origin/main)
+CONTENT-HASH: 85343cad525f8a4a
 
-1. Blocking: none.
-2. Checked: s5 mean of tan 22, 24, 21, 23 deg = 0.4144 -> 0.414 (tan of the mean angle 0.4142). teacher.md 20 + 5x15 + 17 + 19 = 131, 'muut seitsemän' matches 8 tasks. en: terminal-velocity symbol v_t in the rubric now matches the en solution.
-3. Language fi-easy: the changed numbers and wording were checked to carry the same values as fi.
+Delta review, round 2: the `hints` in `sovella/tasks.json` (diff against origin/main), focusing on the round-1 fixes (`git diff HEAD~1`). A script confirmed that only `hints` differ from origin/main (30 parts). The round-1 numbers still hold; I re-checked $\alpha_0 = 19{,}3^\circ$ and the s3 values ($m' = 1{,}351\,\text{kg}$, $F_\mu = 0{,}238\,\text{N}$, intercept $0{,}38\,\text{N}$).
+
+## Blocking
+None.
+
+## Polish
+1. **s1 a, hint 3; s1 b, hint 2 (carried over from round 1, optional).** "painon osa" is fine. Saying once "painon osa eli komponentti" would tie it to the solution's term.
+
+## Checked
+1. **s3 d, hint 3 (round-1 Blocking A): fixed.** "jaa kitkavoima sillä" gives $\mu = F_\mu/N$, the same as fi, en, hint 2 and the solution.
+2. **s1 c, hints 2–3.** The new explanations are correct physics. "Lepokitka (kitka, joka pitää kappaleen paikallaan)" fits a body at rest, and the hint keeps "enintään $\mu_0 N$". "Rajakulma (pienimmällä kulmalla, jolla vene lähtee liukumaan)" is the threshold where $\tan\alpha_0 = \mu_0$. It does not give the value $19{,}3^\circ$.
+3. **s1 a, hint 3.** "yhtä suuret ja vastakkaiset" is correct for constant velocity.
+4. **s4 c, hint 2.** It now includes the weight from the Earth. The list is complete and matches the solution and fi.
+5. **s6 c, hint 3.** "ilmanvastus kasvaa vain vähän" matches the solution and fi.
+6. The physics is the same as in fi. No hint gives a final answer. Decimal commas, LaTeX. The hashes are the same at the start and the end.

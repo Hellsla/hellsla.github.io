@@ -1,9 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: eaa8e53380b1d3b8
-SCOPE: delta (old-content fixes, git diff origin/main)
-Checked: fy9-voimat (fi-easy): rendered preview page at 390 and 1280 px with every details/solution open (DOM check: no page overflow, no KaTeX error, no clipped or scrolling display formula); captures review/shots/*stage-sovella-*, *stage-exercises-*, *teacher-*, intro and stage-selita/tarkista tiles, with sample tiles opened at readable size (aallot fi sovella-1280-5 and 390-6, liike en sovella-390-9, ympyraliike fi-easy sovella-390-8, energia fi teacher-1280-1); changed numbers and units diffed against the source for decimal comma/point and \, thin space.
+CONTENT-HASH: 85343cad525f8a4a
 
-1. Blocking: none.
-2. Typography: changed numbers and units are LaTeX with thin space, decimal comma in fi and fi-easy, decimal point in en; aligned blocks and inline formulas fit at 390 px; no layout regressions from the changed lines.
-3. Language: changed lines read naturally and consistently with the glossary terms; no wording defect found.
-4. Polish: known drawing issues (kone-kuva W arrow, kalteva.webp, geo-kuva ray, kartta label, sahkokentta formula map E vs W) are known to the teacher, not re-judged here.
+## Blocking
+None.
+
+## Polish
+1. [Minor] friction part, hint 3 (fi-easy): same as fi, optional "jaa kitkavoima luvulla $N$".
+2. The glosses "lepokitka (kitka, joka pitää kappaleen paikallaan)" and "rajakulmalla (pienimmällä kulmalla, jolla vene lähtee liukumaan)" are short and clear. "yhtä suuret ja vastakkaiset" is good Finnish.
+
+## Checked (round 2, delta)
+Cards at 390 and 1280 px, closed and open, for every part whose hint text changed: boat on the ramp (hints 1-3), friction/cart part, car force diagram, air resistance. The row of closed hints, the open boxes, the formulas and the reading order are fine. No overflow and no clipped formula.

@@ -18,6 +18,11 @@
           "kind": "calc",
           "points": 6,
           "text": "At least how much heat must the refrigeration machine remove for all the water to become ice at $-4.0\\,{}^\\circ\\text{C}$?",
+          "hints": [
+            "The water turns from water at $15.0\\,{}^\\circ\\text{C}$ into ice at $-4.0\\,{}^\\circ\\text{C}$. What must happen to the water on the way? How do you find how much water there is?",
+            "Split the route into stages and calculate the heat of each: cooling of the water $Q = c_\\text{w} m \\Delta T_\\text{w}$, freezing $Q = sm$ and cooling of the ice $Q = c_\\text{i} m \\Delta T_\\text{i}$. The mass comes from the volume and the density: $m = \\rho A d$.",
+            "Convert the thickness to metres: $3.00\\,\\text{cm} = 0.0300\\,\\text{m}$, and then calculate the mass. Also convert the latent heat to joules per kilogram: $334\\,\\text{kJ/kg} = 334\\,000\\,\\text{J/kg}$."
+          ],
           "answer": {
             "value": 21.88,
             "unit": "GJ",
@@ -51,6 +56,11 @@
           "kind": "calc",
           "points": 4,
           "text": "At least how long does the freezing take?",
+          "hints": [
+            "The refrigeration machine removes heat steadily. Which quantity tells how fast energy is transferred, and how does it give you the time?",
+            "Power is energy per unit time: $P = \\dfrac{Q}{t}$, so $t = \\dfrac{Q}{P}$. Use the result of part a.",
+            "Convert the power to watts before calculating: $350\\,\\text{kW} = 350\\,000\\,\\text{W}$. The division gives seconds, so convert the result to hours ($1\\,\\text{h} = 3600\\,\\text{s}$)."
+          ],
           "answer": {
             "value": 17.37,
             "unit": "h",
@@ -84,6 +94,11 @@
           "kind": "word",
           "points": 5,
           "text": "Assess the ice master's claim with the results of part a.",
+          "hints": [
+            "The ice master thinks that water gives out energy only while its temperature falls. Is that true during freezing?",
+            "When freezing, water releases the latent heat of fusion $Q = sm$ although the temperature stays at $0\\,{}^\\circ\\text{C}$. The machine removes it at the same power as any other heat.",
+            "Calculate the share of each stage in the total heat: $\\dfrac{Q_\\text{stage}}{Q}$. Then turn the heats into times at $350\\,\\text{kW}$ and compare them. What do the numbers say about the ice master's claim?"
+          ],
           "criteria": [
             {
               "text": "Calculates the shares of the stages: freezing about $82\\,\\%$, cooling of the water about $16\\,\\%$ and cooling of the ice about $2\\,\\%$ of the total heat.",
@@ -132,6 +147,11 @@
           "kind": "calc",
           "points": 5,
           "text": "By how much does the average temperature of the stone mass rise during one firing?",
+          "hints": [
+            "Where does the energy that goes into the stone come from, and how large a share of it ends up in the stone? Which relation tells how much the temperature of the stone rises when heat is transferred to it?",
+            "The energy released by the wood is $H m_\\text{wood}$, and the share $\\eta$ of it goes into the stone: $Q = \\eta H m_\\text{wood}$. The temperature rise of the stone comes from $Q = c\\,m_\\text{stone}\\,\\Delta T$.",
+            "Convert the heating value to joules: $15\\,\\text{MJ/kg} = 15 \\cdot 10^{6}\\,\\text{J/kg}$, and the share to a decimal number: $80\\,\\% = 0.80$. First calculate the energy that goes into the stone, then the temperature rise."
+          ],
           "answer": {
             "value": 81.63,
             "unit": "K",
@@ -165,6 +185,11 @@
           "kind": "calc",
           "points": 3,
           "text": "At what average power does the fireplace heat the house during the next day?",
+          "hints": [
+            "The stone gives out to the rooms the energy that was transferred to it during the firing, and it does so over the whole day. Which quantity tells how fast the energy is transferred?",
+            "Power is energy divided by time: $P = \\dfrac{Q}{t}$, where $Q$ is the energy transferred to the stone and $t = 24\\,\\text{h}$.",
+            "Convert the time to seconds: $24\\,\\text{h} = 24 \\cdot 3600\\,\\text{s} = 86\\,400\\,\\text{s}$, and use the energy in joules."
+          ],
           "answer": {
             "value": 1.667,
             "unit": "kW",
@@ -193,6 +218,11 @@
           "kind": "calc",
           "points": 3,
           "text": "The mean temperature of a frosty day is $-10\\,{}^\\circ\\text{C}$. What share of the heat demand of the house does the fireplace cover?",
+          "hints": [
+            "The heat demand of the house is the power at which the house loses heat while the indoor temperature stays constant. What does this power depend on, and what must it be compared with?",
+            "The loss power is $P_\\text{loss} = 150\\,\\tfrac{\\text{W}}{\\text{K}} \\cdot \\Delta T$, where $\\Delta T$ is the difference between the indoor and outdoor temperatures. The fireplace's share is $\\dfrac{P_\\text{fireplace}}{P_\\text{loss}}$, and $P_\\text{fireplace}$ is the power of part b.",
+            "First calculate the temperature difference $\\Delta T = 21\\,{}^\\circ\\text{C} - (-10\\,{}^\\circ\\text{C})$ and with it the loss power. Use the power of part b in the same unit, watts."
+          ],
           "answer": {
             "value": 35.8,
             "unit": "%",
@@ -221,6 +251,11 @@
           "kind": "word",
           "points": 4,
           "text": "The neighbour's thin-walled sheet-metal stove warms up quickly, but the room cools soon after the fire goes out. Explain the difference from the heat-storing fireplace.",
+          "hints": [
+            "After the fire has gone out, where does the heat that goes into the room come from? What is different between a mass of stone and a thin sheet-metal shell?",
+            "The heat capacity $C = cm$ tells how much energy is needed to raise the temperature of an object by one kelvin. The temperature difference between the surface and the room decides at what power heat is transferred to the room.",
+            "Compare the two stoves with two questions: how much energy does each store as it warms up, and how hot is its surface? Finally say how the difference shows in the room temperature after the fire has gone out."
+          ],
           "criteria": [
             {
               "text": "Explains with the heat capacity $C = cm$: the large stone mass stores the same energy with a small rise in temperature, while the thin sheet metal gets hot but stores little.",
@@ -264,6 +299,11 @@
           "kind": "graph",
           "points": 5,
           "text": "Draw a graph of the mass of water vaporised as a function of the power of the heater, and fit a suitable model to the points.",
+          "hints": [
+            "Which quantity does the group set and which is the measured result? Which one belongs on the horizontal axis?",
+            "Plot the five points $(P,\\ \\Delta m)$ and fit a line that runs between the points. Look at whether it passes through the origin.",
+            "Look at part c: what must you be able to read from the graph? Choose a scale on the axes where that is possible, and think what you must do to the line."
+          ],
           "criteria": [
             {
               "key": "graph_axes",
@@ -291,6 +331,11 @@
           "kind": "calc",
           "points": 6,
           "text": "Determine the specific latent heat of vaporisation of water with the help of the graph.",
+          "hints": [
+            "The heater supplies energy that the water takes as it vaporises. Which feature of the graph tells how much more water vaporises when the power increases?",
+            "The energy needed for vaporisation is $Q = r\\,\\Delta m$. Of the heater's energy $P\\,t$, the part $P_\\text{loss}\\,t$ is conducted to the room: $(P - P_\\text{loss})\\,t = r\\,\\Delta m$. Work out what the slope of the line tells.",
+            "Read the slope from two points of the line on the graph and convert its unit from grams to kilograms. Then solve $r$ with the slope and the time $t = 300\\,\\text{s}$."
+          ],
           "answer": {
             "value": 2.256,
             "unit": "MJ/kg",
@@ -324,6 +369,11 @@
           "kind": "calc",
           "points": 4,
           "text": "The line does not pass through the origin. Determine from the graph at what power the water would not vaporise at all, and interpret the result.",
+          "hints": [
+            "Which point of the graph tells at what power the vaporised mass is zero? Where does the power of the heater go then?",
+            "By conservation of energy $(P - P_\\text{loss})\\,t = r\\,\\Delta m$, where $P_\\text{loss}$ is the power that does not vaporise water. What does the condition $\\Delta m = 0$ mean for this equation?",
+            "Read the point where the extended line meets the horizontal axis. You can also solve it from the equation of the line with $\\Delta m = 0$."
+          ],
           "answer": {
             "value": 69.9,
             "unit": "W",
@@ -352,6 +402,11 @@
           "kind": "word",
           "points": 5,
           "text": "Assess why the value $2.54\\,\\text{MJ/kg}$ calculated from one measurement differs from the result of the graph, and which result is more reliable.",
+          "hints": [
+            "What does the calculation from one measurement, $r = \\dfrac{P\\,t}{\\Delta m}$, assume about the power of the heater? Is the assumption true in a real experiment?",
+            "Compare the formula for one measurement with the equation of the graph's model, $(P - P_\\text{loss})\\,t = r\\,\\Delta m$. What is the difference, and in which direction does it distort the result?",
+            "Calculate the difference as a percentage: $\\dfrac{2.54\\,\\text{MJ/kg} - r_\\text{graph}}{r_\\text{graph}}$. Then consider what a loss that stays constant does to the line."
+          ],
           "criteria": [
             {
               "key": "error_sources",
@@ -397,6 +452,11 @@
           "kind": "word",
           "points": 5,
           "text": "Explain why a lake freezes from the surface down and why there is water at about $4\\,{}^\\circ\\text{C}$ at the bottom even in winter.",
+          "hints": [
+            "What do you know about how the density of water changes as it cools towards $0\\,{}^\\circ\\text{C}$? How does density decide which water stays at the surface and which sinks?",
+            "Look at the density of water as a function of temperature. How does it change as water cools from above $4\\,{}^\\circ\\text{C}$, and how as it cools from $4\\,{}^\\circ\\text{C}$ towards $0\\,{}^\\circ\\text{C}$?",
+            "Describe the autumn step by step: what happens to the surface water as it cools, and what happens after the whole lake has reached the temperature at which the density is greatest?"
+          ],
           "criteria": [
             {
               "text": "States that the density of water is greatest at about $4\\,{}^\\circ\\text{C}$: between $0\\,{}^\\circ\\text{C}$ and $4\\,{}^\\circ\\text{C}$ water contracts as it warms.",
@@ -420,6 +480,11 @@
           "kind": "word",
           "points": 5,
           "text": "Explain with conservation of energy and heat transfer where the energy of the freezing water goes and why the ice grows more slowly the thicker it is.",
+          "hints": [
+            "When water freezes its temperature does not fall. Where does its energy go then, and where must the energy be able to go for more ice to form?",
+            "When freezing, water releases the latent heat of fusion $Q = sm$, and the energy is conducted through the ice to the cold air. How does the conducted power depend on the thickness of the layer when the temperature difference is the same?",
+            "Write two things one after the other: first, how much energy must be removed for a new layer of ice to form, and then at what power the energy gets through the ice. Compare thin and thick ice."
+          ],
           "criteria": [
             {
               "text": "States that when water freezes it gives out the latent heat of fusion, about $334\\,\\text{kJ}$ per kilogram, although the temperature stays at $0\\,{}^\\circ\\text{C}$.",
@@ -443,6 +508,11 @@
           "kind": "word",
           "points": 5,
           "text": "Assess the ice fisher's claim.",
+          "hints": [
+            "The ice fisher says that snow is cold and cools the ice. In which direction does energy transfer when the lower surface of the ice is at $0\\,{}^\\circ\\text{C}$ and the air is frosty?",
+            "Snow contains a lot of air. What kind of heat conductor is air, and what does snow do to the power conducted through the ice? Use the reasoning of part b: the ice grows only as fast as energy is conducted away.",
+            "Reason in two steps: what does snow do to the power conducted from the lower surface of the ice, and what does it do to the speed at which the ice grows?"
+          ],
           "criteria": [
             {
               "text": "Notes that snow is a poor conductor of heat, because it contains a lot of air: it insulates the ice from the frost and does not cool it.",
@@ -485,6 +555,11 @@
           "kind": "calc",
           "points": 5,
           "text": "Show how the group got the result $371\\,\\text{kJ/kg}$. What did the group assume about the initial temperature of the ice?",
+          "hints": [
+            "The hot water gives out energy and the ice takes it. What must happen to the ice on the way from its initial state to the final temperature $14.3\\,{}^\\circ\\text{C}$?",
+            "Write the energy balance: the energy given out by the water is $c_\\text{w} m_\\text{w} (T_\\text{w} - T)$, and the ice takes for melting and for warming the meltwater the energy $s m_\\text{i} + c_\\text{w} m_\\text{i} T$. Solve $s$.",
+            "Calculate the energy given out by the water and the warming of the meltwater separately, then solve $s$. When you get the group's result, ask: at what temperature must the ice be in this balance?"
+          ],
           "answer": {
             "value": 370.8,
             "unit": "kJ/kg",
@@ -513,6 +588,11 @@
           "kind": "calc",
           "points": 5,
           "text": "Calculate the result again taking into account the real initial temperature of the ice. Assess the group's conclusion.",
+          "hints": [
+            "The ice came from a freezer, so it was colder than the melting point. What extra energy does this require before the ice can begin to melt?",
+            "Add to the balance of part a the warming of the ice to the melting point: $c_\\text{i} m_\\text{i} \\Delta T_\\text{i}$, where $\\Delta T_\\text{i}$ is the difference between the initial temperature of the ice and $0\\,{}^\\circ\\text{C}$.",
+            "Calculate the energy used to warm the ice and subtract it from the energy the group counted as used for melting. Compare the new result with the table value $334\\,\\text{kJ/kg}$ and consider whether the cup could explain the difference."
+          ],
           "answer": {
             "value": 333.0,
             "unit": "kJ/kg",
@@ -546,6 +626,11 @@
           "kind": "word",
           "points": 5,
           "text": "The group wants to repeat the measurement more reliably. Suggest three improvements and justify which source of error each one affects.",
+          "hints": [
+            "Go through the group's report step by step: at which steps can an error arise that affects the result?",
+            "Write each improvement in the form: what the source of error is, how it distorts the result, and how the improvement removes or reduces it. The energy balance assumes that all the heat exchange takes place in the cup.",
+            "Go through the three things that are measured or assumed in the experiment: the surface and temperature of the ice before it is dropped in, the mass of the ice, and the measurement of the water temperature. Which of them can distort the result, and why?"
+          ],
           "criteria": [
             {
               "text": "Uses ice that is melting at $0\\,{}^\\circ\\text{C}$ and dries its surface before weighing, or measures the temperature of the ice and takes it into account (warming of the ice, water on the surface of the ice).",
@@ -594,6 +679,11 @@
           "kind": "calc",
           "points": 4,
           "text": "The car is stopped on a level road from a speed of $90\\,\\text{km/h}$. By how much does the temperature of the brake discs rise?",
+          "hints": [
+            "The kinetic energy of the car disappears in braking, but energy is not lost. Where does it go, and which relation tells how much the temperature of the discs rises when energy is transferred to them?",
+            "The kinetic energy is $E_\\text{k} = \\tfrac{1}{2} m v^2$, and the share $0.85$ of it goes to the discs: $0.85\\,E_\\text{k} = c\\,m_\\text{discs}\\,\\Delta T$.",
+            "Convert the speed to $\\text{m/s}$ first. Use the mass of the whole car in the kinetic energy and the mass of the discs alone in the warming."
+          ],
           "answer": {
             "value": 31.48,
             "unit": "K",
@@ -622,6 +712,11 @@
           "kind": "calc",
           "points": 5,
           "text": "By how much would the temperature of the brake discs rise on the downhill if the discs gave out no heat to the air?",
+          "hints": [
+            "The speed of the car is constant. What does that tell about the change in kinetic energy, and where does the decrease in potential energy go?",
+            "Write the energy principle: the decrease in potential energy $mgh$ is divided between the work against the driving resistances $F s$ and the energy transferred to the brakes $Q_\\text{brakes}$. The share $0.85$ of that goes to the discs and warms them.",
+            "Calculate the decrease in potential energy: $h = 250\\,\\text{m}$ is the height difference, not the length of the road. The distance of the work against the resistances is $s = 4.0\\,\\text{km}$, which you convert to metres."
+          ],
           "answer": {
             "value": 133.7,
             "unit": "K",
@@ -655,6 +750,11 @@
           "kind": "calc",
           "points": 3,
           "text": "At the bottom of the hill the temperature of the discs was measured to have risen by only $80\\,\\text{K}$. What share of the energy that came into the discs was transferred to the air during the descent, and in which ways was it transferred?",
+          "hints": [
+            "What part of the energy that came into the discs stayed to warm them? What happened to the rest, and in which ways does heat transfer from a hot disc to the surroundings?",
+            "The energy that stayed in the discs is $Q_\\text{stayed} = c\\,m_\\text{discs}\\,\\Delta T$, and $Q_\\text{came} - Q_\\text{stayed}$ was transferred to the air. The share is $\\dfrac{Q_\\text{came} - Q_\\text{stayed}}{Q_\\text{came}}$.",
+            "Use the energy that came into the discs in part b ($0.85\\,Q_\\text{brakes}$), not the whole braking energy. Then calculate how much energy stayed in the discs when the temperature rose by $80\\,\\text{K}$."
+          ],
           "answer": {
             "value": 40.2,
             "unit": "%",
@@ -683,6 +783,11 @@
           "kind": "word",
           "points": 3,
           "text": "The driver is advised: \"On a long downhill use engine braking, so that the brakes do not overheat.\" Justify the advice using energy.",
+          "hints": [
+            "When the car descends at constant speed, its potential energy decreases. Where can it go if the brakes are not used?",
+            "Energy is conserved, so the decrease in potential energy must go somewhere. Compare two ways: the energy ends up in the brake discs, or it ends up in the engine. Which of them can give out its internal energy to the air at a high power for the whole long descent without overheating?",
+            "Write a chain for each way: where the energy comes from, where it goes first and how it gets to the air. Then think why it is good for the brake discs to stay cool even though energy does not disappear."
+          ],
           "criteria": [
             {
               "text": "Explains that in engine braking the potential energy turns, through the friction of the engine, into internal energy in the engine, and the engine's cooling system gives it out to the air.",
@@ -720,6 +825,11 @@
           "kind": "calc",
           "points": 3,
           "text": "By how many kelvins does the temperature of the block rise per second?",
+          "hints": [
+            "The graph shows temperature as a function of time. Which feature of the graph tells by how many kelvins the temperature rises per second?",
+            "It is the slope of the line: $\\dfrac{\\Delta T}{\\Delta t}$.",
+            "Choose two points on the line far from each other and read their time and temperature. Calculate the change in temperature and the change in time separately, and divide."
+          ],
           "answer": {
             "value": 0.222,
             "unit": "K/s",
@@ -748,6 +858,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Determine the specific heat capacity of the material of the block. Could the block be aluminium?",
+          "hints": [
+            "The heater gives the block energy all the time. Which property of the material tells how much energy is needed to raise the temperature?",
+            "Energy is power times time, and the energy needed for warming is $cm\\Delta T$: $Pt = cm\\Delta T$, so $c = \\dfrac{P\\,\\Delta t}{m\\,\\Delta T}$.",
+            "Use the time and the temperature rise from the same place on the graph as in part a. Compare the result with the value for aluminium, $896\\,\\text{J/(kg}\\cdot\\text{K)}$: by how many percent do they differ?"
+          ],
           "answer": {
             "value": 900,
             "unit": "J/(kg·K)",
@@ -781,6 +896,11 @@
           "kind": "calc",
           "points": 4,
           "text": "How long must the heating continue from the start of the measurement for the temperature of the block to be $100\\,{}^\\circ\\text{C}$?",
+          "hints": [
+            "By how much must the temperature rise, and which relation tells how much energy that requires? How is this energy related to the time?",
+            "Use the same equation as in part b and solve the time: $t = \\dfrac{cm\\,\\Delta T}{P}$.",
+            "Read the initial temperature from the start of the graph and calculate the temperature rise $\\Delta T = 100\\,{}^\\circ\\text{C} - T_0$. Use the specific heat capacity of part b and the power $100\\,\\text{W}$."
+          ],
           "answer": {
             "value": 360,
             "unit": "s",
@@ -814,6 +934,11 @@
           "kind": "word",
           "points": 3,
           "text": "In a real experiment the graph would curve flatter towards the end. Explain using energy why.",
+          "hints": [
+            "The block is warmer than its surroundings. What happens to a warm object in its surroundings, and how does it change as the temperature rises?",
+            "Write conservation of energy for powers: where does the $100\\,\\text{W}$ of the resistor go when the block is warmer than its surroundings? Which of them makes the temperature rise?",
+            "Compare two moments: the start and the end of the heating. At which moment is the temperature difference between the block and its surroundings greater, and what does it do to the power transferred to the surroundings and to the slope of the graph?"
+          ],
           "criteria": [
             {
               "text": "Explains that the warm block transfers energy to the surroundings as heat, and the rate of transfer grows as the temperature difference between the block and the surroundings grows.",
@@ -854,6 +979,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Determine the specific heat capacity of ice from the graph.",
+          "hints": [
+            "On the first part of the graph the ice warms but does not melt. What is the relation between the energy and the change in temperature, and what must you read from the graph?",
+            "The energy needed for warming is $Q = cm\\Delta T$, so $c = \\dfrac{Q}{m\\,\\Delta T}$.",
+            "Read the end points of the first part: the energy $Q$ and the change in temperature. Convert kilojoules to joules before calculating and use the mass of the ice, $0.60\\,\\text{kg}$."
+          ],
           "answer": {
             "value": 2083,
             "unit": "J/(kg·K)",
@@ -887,6 +1017,11 @@
           "kind": "calc",
           "points": 5,
           "text": "Determine the specific latent heat of fusion of ice from the graph.",
+          "hints": [
+            "The graph has a part where the temperature does not change although energy is transferred. What happens to the ice then, and which interval must you read from the graph?",
+            "The energy needed for melting is $Q = sm$, so $s = \\dfrac{Q}{m}$.",
+            "Read the start and end points of the horizontal part on the horizontal axis. The energy used for melting is their difference. Use kilojoules or joules consistently."
+          ],
           "answer": {
             "value": 333,
             "unit": "kJ/kg",
@@ -925,6 +1060,11 @@
           "kind": "calc",
           "points": 4,
           "text": "The heating is continued until the temperature is $20\\,{}^\\circ\\text{C}$. How much energy has then been transferred in total?",
+          "hints": [
+            "The temperature rises above the melting point. What must have happened to the ice before the temperature can rise above $0\\,{}^\\circ\\text{C}$, and what is warming now?",
+            "The total energy is the sum of the energies of the stages: $Q = Q_\\text{ice+melting} + c_\\text{w} m\\,\\Delta T$, where the latter term is the warming of the meltwater.",
+            "Read from the graph how much energy has been transferred when the ice has just melted. Then calculate the warming of the water from $0\\,{}^\\circ\\text{C}$ to $20\\,{}^\\circ\\text{C}$ and add it."
+          ],
           "answer": {
             "value": 270.2,
             "unit": "kJ",
@@ -958,6 +1098,11 @@
           "kind": "calc",
           "points": 3,
           "text": "What mass of the piece of ice has melted when the energy transferred is $120\\,\\text{kJ}$?",
+          "hints": [
+            "During melting the temperature does not change. How large a part of the $120\\,\\text{kJ}$ has already gone to something other than melting?",
+            "The energy used for melting is the total energy minus the energy $Q_1$ used to warm the ice: $m_\\text{m} = \\dfrac{Q - Q_1}{s}$.",
+            "Read from the graph how much energy warming the ice to $0\\,{}^\\circ\\text{C}$ required. Subtract it from $120\\,\\text{kJ}$ and divide by the latent heat of fusion. Check on the graph that $120\\,\\text{kJ}$ lies on the horizontal part."
+          ],
           "answer": {
             "value": 0.3,
             "unit": "kg",

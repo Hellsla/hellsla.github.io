@@ -11,6 +11,11 @@
           "kind": "word",
           "points": 6,
           "text": "Plan an experiment to compare the grip of the shoes. Say what you measure and with which instrument, how the measurement is done, what you keep constant and how many measurements you make.",
+          "hints": [
+            "Which single number do you compare for the grip of the shoes, when the shoes have different masses? Which phenomenon tells you when a shoe is still not sliding?",
+            "For static friction, $F_{\\mu 0} \\le \\mu_0 N$ holds. How can you measure this limit with a board, a spring balance and a tilt meter?",
+            "Write four items into the plan: what you measure and with which instrument, how the measurement is done, what you keep constant and how many repeats you make. What must stay the same between the shoe and the board?"
+          ],
           "criteria": [
             {
               "text": "Chooses the coefficient of static friction as the measure of grip and justifies why the coefficient and not just the force: the shoes have different weights.",
@@ -39,6 +44,11 @@
           "kind": "word",
           "points": 3,
           "text": "How do you calculate the result from your measurements, and how do you show that the difference between the shoes is real and not variation in the measurements?",
+          "hints": [
+            "Which quantity do your measurements give directly, and which quantity do you calculate from them? How does one measurement become a number for grip?",
+            "When tilting, the limit of sliding is the limit of static friction, $\\mu_0 N$. Which forces are then in balance along the board? When pulling, the limit is also $\\mu_0 N$, where $N = mg$.",
+            "For each shoe, calculate the mean and half the range. How do the two intervals look on a number line if the difference is real, and how if it is not?"
+          ],
           "criteria": [
             {
               "key": "equation",
@@ -62,6 +72,11 @@
           "kind": "word",
           "points": 3,
           "text": "Name two significant sources of error and say how you reduce the effect of each.",
+          "hints": [
+            "At which step of the measurement can a reading go wrong or the grip of the shoe change? Which of them would affect the result most?",
+            "Describe a source of error by saying in which direction it changes the reading and whether it is random or always in the same direction.",
+            "For each source of error, write a chain of three parts: the source, the direction in which it changes the reading, and what you do to reduce it."
+          ],
           "criteria": [
             {
               "key": "error_sources",
@@ -98,6 +113,11 @@
           "kind": "word",
           "points": 5,
           "text": "Plan an experiment to determine the specific heat capacity of rapeseed oil. Say what you measure and how, and what you keep constant.",
+          "hints": [
+            "How much thermal energy does the heater give in a given time, and which measurement tells you where this energy goes? Which quantities do you therefore need?",
+            "The energy from the heater is $E = Pt$, and it warms the liquid: $Pt = cm\\,\\Delta T$. Which quantities of the equation do you already know, and which must you measure?",
+            "Write into the plan what you weigh, what you measure and how often, and what you keep constant. What would you find out if you made the same measurement with another liquid?"
+          ],
           "criteria": [
             {
               "text": "Weighs the oil on the balance, for example about $200\\,\\text{g}$, and records the power of the resistor.",
@@ -126,6 +146,11 @@
           "kind": "word",
           "points": 3,
           "text": "How is the specific heat capacity determined from a graph of the measurements?",
+          "hints": [
+            "What does the graph of temperature against time look like when the power is constant and the oil is stirred? Which part of the graph fits the model best?",
+            "From $P\\,\\Delta t = cm\\,\\Delta T$ you get $\\dfrac{\\Delta T}{\\Delta t} = \\dfrac{P}{cm}$. Which property of the graph is $\\dfrac{\\Delta T}{\\Delta t}$?",
+            "Fit a line to the part of the $(t, T)$ points that is straight, read its slope $k$ and solve for $c$ from it. Why should you not use all the data when the oil has become warmer than its surroundings?"
+          ],
           "criteria": [
             {
               "key": "graph_read",
@@ -149,6 +174,11 @@
           "kind": "calc",
           "points": 3,
           "text": "According to a data book, the specific heat capacity of rapeseed oil is about $2.0\\,\\text{kJ/(kg}\\cdot\\text{K)}$. Estimate how long it takes to heat a $200\\,\\text{g}$ batch of oil by $20\\,{}^\\circ\\text{C}$ when no heat is lost.",
+          "hints": [
+            "Which energy is needed to warm the oil, and what supplies it? How is the time related to these two?",
+            "The energy from the heater is $Pt$ and the energy needed to warm the oil is $cm\\,\\Delta T$. When no heat is lost, $Pt = cm\\,\\Delta T$.",
+            "Convert the units first: $200\\,\\text{g}$ to kilograms and $2.0\\,\\text{kJ/(kg}\\cdot\\text{K)}$ to $\\text{J/(kg}\\cdot\\text{K)}$. Then solve for the time $t$."
+          ],
           "answer": {
             "value": 160,
             "unit": "s",
@@ -177,6 +207,11 @@
           "kind": "word",
           "points": 3,
           "text": "Heat is lost to the surroundings during the experiment. Does the specific heat capacity come out too large or too small? Justify your answer and say how the effect is reduced.",
+          "hints": [
+            "If part of the energy from the heater is lost to the surroundings, does the oil receive the energy assumed in the calculation? What does this do to the rate of temperature rise?",
+            "The result is calculated with $c = \\dfrac{P}{mk}$. How does $c$ change if the real slope $k$ is smaller than in the lossless case?",
+            "Think of one measure that reduces the losses and one way in which the effect of the losses could be estimated from the measurement."
+          ],
           "criteria": [
             {
               "key": "error_sources",
@@ -214,6 +249,11 @@
           "kind": "word",
           "points": 6,
           "text": "Assess the report. Present at least four shortcomings and justify why each weakens the result or the conclusion.",
+          "hints": [
+            "Read the report as an inspector: could another group repeat the experiment from it? What is missing from the result for it to be compared with $9.81\\,\\text{m/s}^2$?",
+            "Look at three things: the accuracy of the timing compared with a time of about $0.8\\,\\text{s}$, the number of digits in the result, and what the words ‘was proved’ and ‘is caused by air resistance’ would require.",
+            "Think how large a part of a time of about $0.8\\,\\text{s}$ the reaction time is when the timing is done by hand. Is the difference between the result and $9.81\\,\\text{m/s}^2$ larger or smaller than the uncertainty of the measurement?"
+          ],
           "criteria": [
             {
               "key": "uncertainty",
@@ -247,6 +287,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Determine the free-fall acceleration and its uncertainty from the report's measurements with the extreme-value method.",
+          "hints": [
+            "The ball starts from rest. Which equation gives the acceleration of free fall from the height and the time? Which measurement affects the result most?",
+            "When the ball starts from rest, $h = \\tfrac{1}{2}gt^2$, so $g = \\dfrac{2h}{t^2}$. In the extreme-value method the uncertainty is half the difference between the largest and the smallest result.",
+            "Calculate $g$ both with the shortest time $0.75\\,\\text{s}$ and with the longest time $0.82\\,\\text{s}$, using the height $3.0\\,\\text{m}$. Which time gives the larger $g$? Round the result to the same decimal as the uncertainty."
+          ],
           "answer": [
             {
               "name": "g",
@@ -289,6 +334,11 @@
           "kind": "word",
           "points": 3,
           "text": "Suggest an improved method using ordinary school equipment. Also say how the result is calculated.",
+          "hints": [
+            "Which part of the report's measurement caused the greatest uncertainty? How could it be removed or reduced with school equipment?",
+            "Instead of repeating one height, you can measure at several heights. Which quantities on the axes make $h = \\tfrac{1}{2}gt^2$ a straight line, and what does its slope tell you?",
+            "Write into the method how you get the time without timing by hand, how many heights you use and how many repeats of each. Then calculate the quantity of the horizontal axis for each height and fit a line."
+          ],
           "criteria": [
             {
               "text": "Timing without reaction time: the drop is filmed with a phone in front of a tape measure and the time is read from the frames, or light gates are used.",
@@ -333,6 +383,11 @@
           "kind": "graph",
           "points": 5,
           "text": "Draw a graph of the measurements from which the free-fall acceleration can be determined, and fit a straight line to the points.",
+          "hints": [
+            "What is the relation between the period and the length of a pendulum? Which quantities on the axes should put the points on a straight line?",
+            "Square the model $T = 2\\pi\\sqrt{\\dfrac{l}{g}}$. To which quantity is $T^2$ directly proportional?",
+            "The table gives the time of ten swings. For each row calculate the period $T = t_{10} : 10$ and then $T^2$. Plot the points and fit a line between them."
+          ],
           "criteria": [
             {
               "text": "Chooses the quantities $l$ and $T^2$ and justifies the choice: the pendulum model $T^2 = \\tfrac{4\\pi^2}{g}\\, l$ is the equation of a straight line.",
@@ -364,6 +419,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Determine the free-fall acceleration from the graph.",
+          "hints": [
+            "Which property of the graph is related to the acceleration of free fall? Why is it best to read the slope from two points of the line that are far apart?",
+            "Compare the model $T^2 = \\dfrac{4\\pi^2}{g}\\,l$ with the equation of a line $y = kx + b$. How are the slope $k$ and $g$ related?",
+            "Read two points far apart on the line and calculate $k = \\dfrac{\\Delta (T^2)}{\\Delta l}$. Then solve $g$ from the equation."
+          ],
           "answer": {
             "value": 9.84,
             "unit": "m/s²",
@@ -396,6 +456,11 @@
           "kind": "calc",
           "points": 4,
           "text": "The line does not pass through the origin. Explain what causes the constant term, and use the graph to determine the diameter of the ball.",
+          "hints": [
+            "What does $l$ stand for in the pendulum model? From which point to which point did the group measure the length?",
+            "If the model is $T^2 = \\dfrac{4\\pi^2}{g}(l + r)$, where $r$ is the distance that was left unmeasured, expand the brackets and compare with the equation of a line $y = kx + b$.",
+            "Read the constant term $b$ from the point where the line crosses the vertical axis. Which equation gives $r$ when you know $k$ and $b$? What is the diameter once you know $r$?"
+          ],
           "answer": {
             "value": 5.0,
             "unit": "cm",
@@ -429,6 +494,11 @@
           "kind": "word",
           "points": 3,
           "text": "Assess how the error in measuring the length affected the result of part b and how it would have affected it if $g$ had been calculated from each row separately. Is the result consistent with the value $9.81\\,\\text{m/s}^2$?",
+          "hints": [
+            "The error in the length is systematic. What happens to the line if the same distance is added to every length? Which property of the line changes and which stays the same?",
+            "In the calculation row by row, $g = \\dfrac{4\\pi^2 l}{T^2}$, the length is included directly. How large is the relative effect of the same length error with a short string and with a long string?",
+            "Calculate $g$ from the first row of the table ($l = 0.250\\,\\text{m}$, $T = 1.055\\,\\text{s}$). Then estimate the uncertainty of reading the slope and its effect on $g$. Is $9.81\\,\\text{m/s}^2$ within the uncertainty interval of the result?"
+          ],
           "criteria": [
             {
               "key": "error_sources",
@@ -473,6 +543,11 @@
           "kind": "calc",
           "points": 3,
           "text": "Calculate the density of the stone.",
+          "hints": [
+            "How is density defined, and which two quantities do you get from the measurements? Where does the volume come from when the stone is in the measuring cylinder?",
+            "Density is $\\rho = \\dfrac{m}{V}$, where $V$ is the volume of water displaced by the stone, that is, the difference of the two readings of the water level.",
+            "Remember that $1\\,\\text{m}\\textsf{l} = 1\\,\\text{cm}^3$ and $1\\,\\text{g/cm}^3 = 1000\\,\\text{kg/m}^3$. Calculate $V$ first, then $\\rho$, and think how many significant figures the result can have."
+          ],
           "answer": {
             "value": 2680,
             "unit": "kg/m³",
@@ -501,6 +576,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Determine the uncertainty of the density with the extreme-value method.",
+          "hints": [
+            "Which of the numbers of the measurements may be off, and by how much? With which combination of mass and volume is the density greatest and with which smallest?",
+            "The volume is the difference of two readings, so its uncertainty is the sum of the uncertainties of the readings. In the extreme-value method $\\Delta\\rho = \\dfrac{\\rho_\\text{max} - \\rho_\\text{min}}{2}$.",
+            "First write the extreme values of $m$ and $V$ with the uncertainties of the task. Calculate $\\rho_\\text{max}$ and $\\rho_\\text{min}$ from them and then half their difference."
+          ],
           "answer": {
             "value": 78,
             "unit": "kg/m³",
@@ -534,6 +614,11 @@
           "kind": "word",
           "points": 2,
           "text": "Can the stone be identified as granite or basalt by its density?",
+          "hints": [
+            "Within which interval can the density of the stone lie when the uncertainty is taken into account? Which ranges of the table book does this interval fall into?",
+            "Compare the lower and upper limit of the result interval with the limits of the ranges of granite and basalt. What does the interval allow, and what does it rule out?",
+            "Think also whether one quantity is enough to identify a rock: is the range in the table one rock or a typical value, and can another rock have the same density?"
+          ],
           "criteria": [
             {
               "key": "conclusion",
@@ -552,6 +637,11 @@
           "kind": "word",
           "points": 3,
           "text": "Which measurement limits the precision of the result more, the mass or the volume? Suggest how the result could be made more precise.",
+          "hints": [
+            "How do you compare the importance of two measurements when they have different units and different sizes? Which number tells how large a part of the measurement the uncertainty is?",
+            "The relative uncertainty is $\\dfrac{\\Delta x}{x}$. Calculate it for the mass and for the volume with the readings of the task.",
+            "Compare the relative uncertainties: reducing which one would improve the result most? Think how its measurement could be made more precise, and estimate what new uncertainty that brings."
+          ],
           "criteria": [
             {
               "key": "uncertainty",
@@ -588,6 +678,11 @@
           "kind": "word",
           "points": 3,
           "text": "The students assume that the deceleration is the same in every braking. What does the assumption predict about the relationship between the braking distance and the speed, and with what kind of graph can the assumption be tested?",
+          "hints": [
+            "If the deceleration is constant, what kind of motion is it? Which equation connects the velocity, the deceleration and the distance without the time?",
+            "For a bicycle that decelerates uniformly to a stop, $v^2 = 2as$. Solve $s$ from this and see how $s$ depends on the velocity $v$.",
+            "What happens to the braking distance when the velocity doubles? Choose as axes the quantities for which the dependence is a straight line. Where does the line go when the velocity is zero?"
+          ],
           "criteria": [
             {
               "key": "equation",
@@ -611,6 +706,11 @@
           "kind": "graph",
           "points": 5,
           "text": "Draw a graph with which you test the assumption, and determine the deceleration of the bicycle from it.",
+          "hints": [
+            "Which quantities plotted make the relation between the braking distance and the velocity a straight line? In which units must they be?",
+            "The assumption gives $s = \\dfrac{v^2}{2a}$. Compare with the equation of a line $y = kx$ and decide what the slope $k$ is and how it is related to $a$.",
+            "Convert the velocities first to $\\text{m/s}$ (for example $10\\,\\text{km/h} \\approx 2.8\\,\\text{m/s}$) and only then square them. Read the slope from two points of the line that are far apart."
+          ],
           "answer": {
             "value": 4.2,
             "unit": "m/s²",
@@ -649,6 +749,11 @@
           "kind": "calc",
           "points": 3,
           "text": "How large must the coefficient of static friction between the tyres and the asphalt be at least for such braking to be possible? Air resistance is not taken into account.",
+          "hints": [
+            "Which force decelerates the bicycle on a horizontal road? Is the tyre sliding relative to the road or not, and which friction is it then?",
+            "In the horizontal direction only friction decelerates: $ma = F_{\\mu 0}$, and for static friction $F_{\\mu 0} \\le \\mu_0 N$.",
+            "Substitute $N = mg$ and cancel the mass. What condition remains for $\\mu_0$ when you use the deceleration of part b? Think whether the asked value is an upper or a lower limit, and what the unit of the coefficient is."
+          ],
           "answer": {
             "value": 0.42,
             "unit": "",
@@ -677,6 +782,11 @@
           "kind": "calc",
           "points": 4,
           "text": "It later turned out that the app showed the speed $5\\,\\%$ higher than the true speed in every run. By how many per cent does the deceleration of part b differ from the true value, and in which direction? Does the conclusion that the deceleration is constant change?",
+          "hints": [
+            "The app shows all velocities too large in the same proportion. What does this do to the quantity of the horizontal axis and to the slope?",
+            "If $v_\\text{app} = 1.05\\,v$, express $v_\\text{app}^2$ with $v^2$. How do the slope $k$ and the deceleration $a = \\dfrac{1}{2k}$ change?",
+            "First decide whether the slope grows or shrinks when $v^2$ grows. Then calculate by how many percent $1.05^2$ is above $1$. Do the points stay on a line?"
+          ],
           "answer": {
             "value": 10,
             "unit": "%",
@@ -739,6 +849,11 @@
           "kind": "word",
           "points": 3,
           "text": "Examine the graph. Is there any sign of a systematic error in the data? What does the graph tell about random variation?",
+          "hints": [
+            "Look at how the points lie around the line and where the line meets the vertical axis. What different kinds of errors can be read from the graph?",
+            "A systematic error moves all points in the same direction, random variation scatters the points on both sides of the line. What does the line's passing through the origin tell you?",
+            "Estimate how much the points deviate vertically from the line and compare the deviation with the scale interval of the spring balance, $0.1\\,\\text{N}$. Do the points deviate in one direction or in both?"
+          ],
           "criteria": [
             {
               "text": "States that the points lie close to a straight line through the origin, so the friction force is directly proportional to the normal force: $F_\\mu = \\mu N$.",
@@ -762,6 +877,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Determine the coefficient of sliding friction and its error estimate from the graph.",
+          "hints": [
+            "Which property of the graph tells the ratio of the friction force to the normal force? How can the error estimate be found from several points?",
+            "For sliding friction $F_\\mu = \\mu N$, so the slope of the line in the $(N, F_\\mu)$ graph is $\\mu$. The error estimate is half the range.",
+            "Read the slope from a fitted line, or calculate the ratio $F_\\mu : N$ for each point. Estimate the error as half the range of the ratios."
+          ],
           "answer": {
             "value": 0.215,
             "unit": "",
@@ -795,6 +915,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Another group used the same block and table, but their spring balance read $0.3\\,\\text{N}$ with no load, and the group did not take it into account. When the normal force was $10\\,\\text{N}$, the balance read $2.4\\,\\text{N}$. Calculate the coefficient of friction the group got from this reading, the correct coefficient and the size of the error as a percentage of the correct value. Also justify how the zero error would affect the slope if the coefficient were determined from a line fitted to the whole series.",
+          "hints": [
+            "The spring balance shows $0.3\\,\\text{N}$ when unloaded. Is this reading part of the friction force? Which part of the reading is the real friction force?",
+            "The real friction force is the reading minus the zero error: $F_\\mu = F_\\text{reading} - F_0$, and $\\mu = \\dfrac{F_\\mu}{N}$. What does a zero error do to the line when every point is shifted by the same amount?",
+            "Calculate the coefficient first from the uncorrected reading and then from the force corrected for the zero error. Compare the difference with the correct value in percent."
+          ],
           "answer": [
             {
               "name": "mu_wrong",
@@ -843,6 +968,11 @@
           "kind": "word",
           "points": 3,
           "text": "Evaluate the measurement method: name two things that weaken the reliability of the result and say how the experiment would be improved.",
+          "hints": [
+            "Go through the experiment step by step: pulling, reading the value, number of repeats, surface. Where can the result vary or be distorted?",
+            "Compare the scale interval of the spring balance, $0.1\\,\\text{N}$, with the smallest friction force in the graph. What does it do to the point with a small normal force?",
+            "Choose two weaknesses and write a chain for each: the weakness, its effect on the result, and what you would do differently."
+          ],
           "criteria": [
             {
               "key": "error_sources",
@@ -883,6 +1013,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Determine the slope of the line in the graph and use it to find the turn density $n$ of the coil.",
+          "hints": [
+            "Which property of the graph tells how much the field increases when the current increases? How do you read it from the graph?",
+            "Compare the model $B = \\mu_0 n I$ with the equation of a line $B = kI$. How are the slope $k$ and the turn density $n$ related?",
+            "Read two points far apart on the fitted line. Convert millitesla to tesla ($1\\,\\text{mT} = 10^{-3}\\,\\text{T}$) before solving $n$."
+          ],
           "answer": {
             "value": 1960,
             "unit": "1/m",
@@ -916,6 +1051,11 @@
           "kind": "calc",
           "points": 3,
           "text": "The group wants to produce a field $B = 12\\,\\text{mT}$ at the centre of the coil. What current is needed according to the graph? Is the result reliable?",
+          "hints": [
+            "What does the line tell about the relation of $B$ and $I$? How far from the measured current range is the required value?",
+            "The line passes practically through the origin, so $B = kI$ and $I = \\dfrac{B}{k}$. What is the slope $k$ from part a?",
+            "Use the same units as in the slope and calculate the current. Compare the result with the largest measured current and think what that does to the reliability of the result."
+          ],
           "answer": {
             "value": 4.9,
             "unit": "A",
@@ -944,6 +1084,11 @@
           "kind": "calc",
           "points": 4,
           "text": "With no current in the coil, the sensor still showed a reading of $0.04\\,\\text{mT}$. Calculate what percentage this reading is of the values of the field read from the graph at the currents $0.50\\,\\text{A}$ and $2.5\\,\\text{A}$. What type of error is this, and how does it affect the slope?",
+          "hints": [
+            "Does the reading $0.04\\,\\text{mT}$ depend on the current? Is the error always in the same direction? What does such an error look like on the graph?",
+            "The relative share is $\\dfrac{\\text{error}}{\\text{reading}} \\cdot 100\\,\\%$. How does a constant affect the slope $k$ of the line $B = kI + b$, and how the constant term $b$?",
+            "Read $B$ from the graph at the currents $0.50\\,\\text{A}$ and $2.5\\,\\text{A}$ and calculate the share for each. Then imagine that $0.04\\,\\text{mT}$ is subtracted from all points: how does the line change?"
+          ],
           "answer": [
             {
               "name": "r05",
@@ -986,6 +1131,11 @@
           "kind": "word",
           "points": 3,
           "text": "Evaluate the design of the experiment. Does the model $B \\propto I$ fit the measurement, and how would the experiment be improved?",
+          "hints": [
+            "Look at how the points lie around the line. What does that tell about whether the model $B \\propto I$ fits the measured current range?",
+            "The fit of a model concerns only the measured range. Also think what systematic error there was in the experiment and how it could be measured and removed from the results.",
+            "Think of one more weakness in the implementation of the experiment (for example the number of repeats, the steadiness of the current or the position of the sensor) and one improvement for it."
+          ],
           "criteria": [
             {
               "text": "States that the points lie almost on the line and deviate from it only a little in both directions, so the model fits the current range $0\\text{–}2.5\\,\\text{A}$ and the random variation is small.",
