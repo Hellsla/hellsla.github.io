@@ -262,6 +262,18 @@ JS = """() => {
     if (!V(c) || c.closest('#sim-root') || c.matches('.kc-term-btn')) continue;   // a concept term inside a sentence is an inline target (WCAG 2.5.8 exception)
     if (R(c).height < 39.5) { out.push({at: W(c), what: 'small', over: Math.round(40 - R(c).height), text: `control ${Math.round(R(c).height)} px tall: "${c.textContent.trim().slice(0, 40)}"`}); break; }
   }
+  // speed-label: the name of a simulation's playback-speed choice is shown, never clipped to a 1 px box (work queue 10, 2026-11-25:
+  // fy4-1 and fy4-3 at 1280 px)
+  for (const l of document.querySelectorAll('#sim-root .sim-speed')) {
+    const sp = l.querySelector(':scope > span');
+    if (sp && V(l) && R(sp).width < 8) out.push({at: W(l), what: 'small', over: Math.round(8 - R(sp).width), text: `${name(l)}: the speed choice's name is ${Math.round(R(sp).width)} px wide`});
+  }
+  // hint-indent: an open hint of a long task's part (ol.parts) fills the part's text column on a phone; it is not pushed in
+  // another 1.2rem (11c PR 2, fy9-liike at 390 px)
+  if (window.innerWidth <= 600) for (const d of document.querySelectorAll('ol.parts > li > .hints details[open] > div')) {
+    const t = d.closest('li').children[1];
+    if (V(d) && t && R(d).left - R(t).left > 2 * K) { out.push({at: W(d), what: 'column', over: Math.round(R(d).left - R(t).left), text: `${name(d)}: the hint box starts ${Math.round(R(d).left - R(t).left)} px in from the part's text`}); break; }
+  }
   return out;
 }"""
 
