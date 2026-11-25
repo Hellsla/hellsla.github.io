@@ -1,9 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 95f3a46fa1222f84
-SCOPE: delta (old-content fixes, git diff origin/main)
-Checked: fy9-liike (fi): rendered preview page at 390 and 1280 px with every details/solution open (DOM check: no page overflow, no KaTeX error, no clipped or scrolling display formula); captures review/shots/*stage-sovella-*, *stage-exercises-*, *teacher-*, intro and stage-selita/tarkista tiles, with sample tiles opened at readable size (aallot fi sovella-1280-5 and 390-6, liike en sovella-390-9, ympyraliike fi-easy sovella-390-8, energia fi teacher-1280-1); changed numbers and units diffed against the source for decimal comma/point and \, thin space.
+CONTENT-HASH: c767ce33ecb8d411
 
-1. Blocking: none.
-2. Typography: changed numbers and units are LaTeX with thin space, decimal comma in fi and fi-easy, decimal point in en; aligned blocks and inline formulas fit at 390 px; no layout regressions from the changed lines.
-3. Language: changed lines read naturally and consistently with the glossary terms; no wording defect found.
-4. Polish: known drawing issues (kone-kuva W arrow, kalteva.webp, geo-kuva ray, kartta label, sahkokentta formula map E vs W) are known to the teacher, not re-judged here.
+## Blocking
+(none)
+
+## Polish
+1. [Minor] CSS ol.parts>li>.hints, 390 px: the three closed hints stack in one column at 390 px (three 40 px rows per part) instead of one row; readable, no overflow. Acceptable; optional shorter summaries would fit one row.
+2. [Minor] Open hint, 390 px: the box is narrow beside the part indent, so lines are short but formulas (including display $a=\frac{2x}{t^2}$ chains) are not clipped.
+
+## Checked
+- Built fy9-liike; Finnish page, cards s1, s3, s5, s8 (others by the same template; all eight measured) at 390 and 1280 px, hints closed and all 90 hints open. No page-level horizontal overflow (scrollWidth = viewport) in any state.
+- Row of closed hints, open hint box, formulas, reading order, language and typography of new texts: no defects.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5
