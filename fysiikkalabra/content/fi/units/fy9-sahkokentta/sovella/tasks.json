@@ -18,6 +18,11 @@
      "kind": "calc",
      "points": 5,
      "text": "Piirrä toisen pallon voimakuvio. Kuinka suuri sähköinen voima palloihin vaikuttaa?",
+     "hints": [
+      "Mitkä voimat vaikuttavat toiseen palloon, ja mihin suuntiin ne osoittavat? Mitä pallon lepo kertoo voimien summasta?",
+      "Voimien summa on nolla: langan voiman vaakakomponentti kumoaa sähköisen voiman $F_\\text{s}$ ja pystykomponentti painon $mg$. Kun lanka on kulmassa $\\alpha$ pystysuoraan nähden, $\\tan\\alpha = \\dfrac{F_\\text{s}}{mg}$.",
+      "Kulma saadaan geometriasta: pallo on puolen etäisyyden $\\dfrac{r}{2}$ päässä pystysuorasta ja lanka on $L$ pitkä, joten $\\sin\\alpha = \\dfrac{r/2}{L}$. Laske ensin $\\alpha$ ja sitten $F_\\text{s}$. Muunna massa kilogrammoiksi: $0{,}50\\,\\text{g} = 5{,}0 \\cdot 10^{-4}\\,\\text{kg}$."
+     ],
      "answer": {
       "value": 0.493,
       "unit": "mN",
@@ -56,6 +61,11 @@
      "kind": "calc",
      "points": 4,
      "text": "Kuinka suuri on kummankin pallon varaus? Kuinka monta elektronia on siirtynyt, jos pallot ovat positiivisia?",
+     "hints": [
+      "Mikä laki yhdistää sähköisen voiman, varaukset ja etäisyyden? Mitä tiedät pallojen varauksista toisiinsa nähden?",
+      "Coulombin voiman suuruus on kahdelle yhtä suurelle varaukselle $F_\\text{s} = k\\dfrac{q^2}{r^2}$. Siirtyneiden elektronien lukumäärä $n$ saadaan varauksesta: $q = ne$.",
+      "Ratkaise varaus $q$ symbolein ennen sijoitusta. Muunna etäisyys metreiksi ja käytä a-kohdan voimaa newtoneina: $1\\,\\text{mN} = 10^{-3}\\,\\text{N}$. Onko elektroneja tullut palloihin lisää vai poistunut, kun pallot ovat positiivisia?"
+     ],
      "answer": {
       "value": 18.74,
       "unit": "nC",
@@ -89,6 +99,11 @@
      "kind": "calc",
      "points": 3,
      "text": "Toista palloa kosketetaan hetken kolmannella samanlaisella, varauksettomalla pallolla, joka viedään sitten pois. Kuinka suuri sähköinen voima palloihin vaikuttaisi, jos niiden etäisyys olisi edelleen $8{,}0\\,\\text{cm}$? Ovatko pallojen voimat yhtä suuret?",
+     "hints": [
+      "Mitä varaukselle tapahtuu, kun varattu pallo koskettaa samanlaista varauksetonta palloa? Mikä suure säilyy, ja miten varaus jakautuu kahden samanlaisen pallon kesken?",
+      "Varaus säilyy, ja Coulombin voiman suuruus on $F_\\text{s} = k\\dfrac{Q_1 Q_2}{r^2}$, jossa $Q_1$ ja $Q_2$ ovat pallojen varaukset.",
+      "Selvitä kummankin pallon varaus kosketuksen jälkeen ja vertaa varausten tuloa alkuperäiseen tuloon $q^2$. Etäisyys on sama, joten voima muuttuu samassa suhteessa kuin varausten tulo. Mieti lopuksi Newtonin kolmatta lakia: miten pallojen toisiinsa kohdistamat voimat liittyvät toisiinsa?"
+     ],
      "answer": {
       "value": 0.2465,
       "unit": "mN",
@@ -117,6 +132,11 @@
      "kind": "calc",
      "points": 3,
      "text": "Pallot asettuvat uuteen lepoasemaan. Kuinka suuri on nyt pallojen keskipisteiden etäisyys?",
+     "hints": [
+      "Mikä pitää pallot paikallaan uudessa asennossa? Mikä on samoin kuin a-kohdassa ja mikä on nyt toisin?",
+      "Tasapainossa pätee kuten a-kohdassa $\\tan\\alpha = \\dfrac{F_\\text{s}}{mg}$, mutta sähköinen voima on nyt $F_\\text{s} = k\\dfrac{Q_1 Q_2}{r^2}$ c-kohdan varauksilla. Pienellä kulmalla $\\tan\\alpha$ ja $\\sin\\alpha = \\dfrac{r}{2L}$ ovat lähes yhtä suuret.",
+      "Kirjoita voimatasapaino symbolein uudelle etäisyydelle $r$ ja samoin alkuperäiselle etäisyydelle $r_0$. Jaa yhtälöt toisillaan: $k$, $m$, $g$ ja $L$ supistuvat. Mihin potenssiin $r$ jää yhtälöön?"
+     ],
      "answer": {
       "value": 6.35,
       "unit": "cm",
@@ -164,6 +184,11 @@
      "kind": "calc",
      "points": 4,
      "text": "Kuinka suuri on kondensaattorin kapasitanssi? Kuinka suuri varaus levyillä on?",
+     "hints": [
+      "Mitkä levykondensaattorin mitat ja mikä aineen ominaisuus määräävät, kuinka paljon varausta se pystyy varastoimaan? Miten varaus riippuu jännitteestä?",
+      "Levykondensaattorin kapasitanssi on $C = \\dfrac{\\varepsilon_0\\varepsilon_\\text{r}A}{d}$ ja kondensaattorilaki $Q = CU$.",
+      "Laske ensin neliön muotoisen levyn pinta-ala $A$ ja muunna etäisyys metreiksi: $3{,}00\\,\\text{mm} = 3{,}00 \\cdot 10^{-3}\\,\\text{m}$. Ilmalle $\\varepsilon_\\text{r}$ on taulukossa. Laske sitten $C$ ja vasta sen jälkeen $Q$."
+     ],
      "answer": [
       {
        "name": "C",
@@ -206,6 +231,11 @@
      "kind": "calc",
      "points": 4,
      "text": "Kuinka paljon energiaa kondensaattoriin on varastoitunut? Arvioi, onko ilmaväli turvassa läpilyönniltä.",
+     "hints": [
+      "Mihin kondensaattorin energia perustuu? Mikä suure kertoo, kuinka voimakas kenttä levyjen välissä on, ja mihin sitä pitää verrata?",
+      "Kondensaattorin energia on $W = \\tfrac12 CU^2$ ja homogeenisessa kentässä $E = \\dfrac{U}{d}$. Ilman läpilyöntilujuus on taulukon arvo $E_\\text{max}$.",
+      "Laske energia a-kohdan kapasitanssilla ja jännitteellä $4{,}50\\,\\text{kV} = 4500\\,\\text{V}$. Laske kentän voimakkuus ja vertaa sitä ilman läpilyöntilujuuteen: kuinka suuri osa siitä se on? Päättele sen avulla, onko väli turvassa."
+     ],
      "answer": [
       {
        "name": "W",
@@ -248,6 +278,11 @@
      "kind": "calc",
      "points": 4,
      "text": "Kondensaattori irrotetaan lähteestä, ja levyjen väliin työnnetään $3{,}00\\,\\text{mm}$:n paksuinen lasilevy, joka täyttää välin kokonaan. Kuinka suuri on nyt levyjen välinen jännite? Kuinka suuri on kondensaattorin energia?",
+     "hints": [
+      "Kondensaattori irrotetaan lähteestä. Mikä suure ei voi silloin muuttua, kun varauksella ei ole reittiä minnekään? Mitä lasilevy muuttaa?",
+      "Irrotetun kondensaattorin varaus $Q$ pysyy samana. Lasi kasvattaa kapasitanssin $\\varepsilon_\\text{r}$-kertaiseksi: $C' = \\varepsilon_\\text{r}C$. Jännite on $U' = \\dfrac{Q}{C'}$ ja energia $W' = \\tfrac12 QU'$.",
+      "Laske ensin uusi kapasitanssi $C'$ ja sitten jännite $U'$ a-kohdan varauksella. Voit myös selvittää symbolein, kuinka monta kertaa pienempi $U'$ on kuin $U$. Laske lopuksi energia ja vertaa sitä b-kohdan energiaan."
+     ],
      "answer": [
       {
        "name": "U",
@@ -290,6 +325,11 @@
      "kind": "word",
      "points": 3,
      "text": "Mihin c-kohdan energia on kadonnut? Opiskelija sanoo: ”Lähde on irrotettu, joten levyihin voi nyt koskea paljain käsin.” Arvioi väite.",
+     "hints": [
+      "Mihin suuntaan levyjen kenttä vaikuttaa lasilevyyn, kun se työnnetään väliin? Kuka tai mikä tekee työtä ja mitä sille tapahtuu?",
+      "Energia ei häviä: kondensaattorin energian muutos $W' - W$ näkyy muuna energiana. Irrotetulla kondensaattorilla varaus $Q$ on pysynyt, ja jännite on $U' = \\dfrac{Q}{C'}$.",
+      "Onko jännite $U'$ edelleen suuri? Mitä tapahtuisi kädelle, joka koskettaa levyjä? Miten kondensaattorin voisi tehdä turvalliseksi ennen koskettamista?"
+     ],
      "criteria": [
       {
        "text": "Selittää, että levyjen kenttä vetää polarisoituvaa lasilevyä väliin ja tekee sille työtä; energia siirtyy työntävän käden tai lasin liike- ja sisäenergiaksi.",
@@ -333,6 +373,11 @@
      "kind": "graph",
      "points": 4,
      "text": "Esitä kapasitanssi levyjen etäisyyden funktiona kuvaajana. Perustele kuvaajan avulla, onko kapasitanssi kääntäen verrannollinen levyjen etäisyyteen.",
+     "hints": [
+      "Kumpi suure on riippumaton ja kumpi riippuva muuttuja, ja mitä akseleille merkitään? Mitä kääntäen verrannollisuus tarkoittaa, kun toinen suure kaksinkertaistuu?",
+      "Jos $C$ on kääntäen verrannollinen etäisyyteen $d$, tulo $C \\cdot d$ on vakio ja etäisyyden kaksinkertaistuessa $C$ puolittuu.",
+      "Piirrä pisteet äläkä yhdistä niitä murtoviivaksi. Valitse kaksi pistettä, joiden etäisyydet ovat suhteessa $1 : 2$, esimerkiksi $1{,}0\\,\\text{mm}$ ja $2{,}0\\,\\text{mm}$, ja vertaa kapasitanssien suhdetta. Mihin arvoon käyrä näyttää lähestyvän, kun $d$ kasvaa? Onko se nolla?"
+     ],
      "criteria": [
       {
        "key": "graph_axes",
@@ -355,6 +400,11 @@
      "kind": "graph",
      "points": 6,
      "text": "Muodosta aineistosta suure, jonka funktiona kapasitanssin kuvaaja on suora. Perustele valintasi. Esitä kuvaaja ja sovita pisteisiin suora.",
+     "hints": [
+      "Mikä on levykondensaattorin kapasitanssin ja etäisyyden välinen malli? Minkä suureen funktiona $C$ olisi suora?",
+      "Ilmalle $C = \\varepsilon_0\\varepsilon_\\text{r}\\dfrac{A}{d}$ eli $C = \\varepsilon_0 A \\cdot \\dfrac{1}{d}$. Suora on muotoa $y = kx + b$. Mikä suure on tässä $x$?",
+      "Laske taulukkoon uuden suureen arvot kaikille seitsemälle mittaukselle ja merkitse yksikkö. Piirrä pisteet ja vedä suora niin, että pisteitä on sen molemmin puolin. Kulkeeko suora origon kautta?"
+     ],
      "criteria": [
       {
        "text": "Perustelee linearisoinnin: levykondensaattorille $C = \\varepsilon_0 A \\cdot \\tfrac{1}{d}$, joten $C$ on suoraan verrannollinen suureeseen $\\tfrac{1}{d}$; johtojen ja mittarin oma kapasitanssi lisää vakiotermin.",
@@ -383,6 +433,11 @@
      "kind": "calc",
      "points": 5,
      "text": "Määritä suoran kulmakerroin. Määritä sen avulla sähkövakio $\\varepsilon_0$ ja vertaa tulosta taulukkoarvoon $8{,}854 \\cdot 10^{-12}\\,\\text{F/m}$.",
+     "hints": [
+      "Mitä suoran kulmakerroin kuvaa mallin mukaan? Mikä on sen yksikkö?",
+      "Kulmakerroin on $k = \\dfrac{\\Delta C}{\\Delta x}$, kun $x$ on b-kohdan suure. Mallista $C = \\varepsilon_0 A \\cdot \\dfrac{1}{d}$ näet, mitä vakioita kulmakerroin sisältää.",
+      "Lue kaksi suoran pistettä kaukana toisistaan (ei mittauspisteitä) ja laske kulmakerroin. Muunna yksikkö: $1\\,\\text{pF} \\cdot \\text{mm} = 10^{-15}\\,\\text{F} \\cdot \\text{m}$. Levyn pinta-ala on $A = 0{,}0400\\,\\text{m}^2$. Vertaa tulosta taulukkoarvoon suhteellisena erona."
+     ],
      "answer": {
       "value": 8.844,
       "unit": "pF/m",
@@ -421,6 +476,11 @@
      "kind": "calc",
      "points": 5,
      "text": "Mikä on suoran ja pystyakselin leikkauspisteen arvo, ja mitä se tarkoittaa tässä mittauksessa? Arvioi, millä etäisyyksillä levykondensaattorin malli ei enää päde.",
+     "hints": [
+      "Mitä $C$ on suoran mukaan, kun levyt ovat hyvin kaukana toisistaan? Pitäisikö kapasitanssin olla silloin nolla, ja mitä muuta mittari mittaa?",
+      "Suoran yhtälö on $C = kx + b$, ja $b$ on suoran ja pystyakselin leikkauskohta. Malli $C = \\dfrac{\\varepsilon_0 A}{d}$ edellyttää, että levyjen väli on pieni levyn kokoon verrattuna.",
+      "Lue $b$ suoralta tai laske se kahden suoran pisteen avulla: $b = C - kx$. Vertaa etäisyyksiä levyn sivuun $200\\,\\text{mm}$ ja mieti, missä kenttä lakkaa olemasta homogeeninen. Mieti myös pienintä etäisyyttä $1{,}0\\,\\text{mm}$: kuinka suuri osa siitä on välikappaleen paksuuden epävarmuus?"
+     ],
      "answer": {
       "value": 22.2,
       "unit": "pF",
@@ -480,6 +540,11 @@
      "kind": "word",
      "points": 5,
      "text": "Varis istuu johtimella. Opiskelija sanoo: ”Lintu on turvassa, koska sen jalat ovat kuivat ja eristävät.” Arvioi väite.",
+     "hints": [
+      "Mikä saa virran kulkemaan kehon läpi? Mitkä kaksi kohtaa linnun jalat yhdistävät, kun lintu istuu yhdellä johtimella?",
+      "Virta kulkee kehon läpi vain, jos kehon kahden kohdan välillä on jännite. Johtimessa virta aiheuttaa matkalla jännitehäviön $U = RI$.",
+      "Arvioi jännite linnun jalkojen välillä: ota jalkojen väliksi noin $5\\,\\text{cm}$ ja käytä johtimen resistanssia kilometriä kohti. Muunna matka kilometreiksi: $5\\,\\text{cm} = 5 \\cdot 10^{-5}\\,\\text{km}$. Arvioi sitten, onko väitteen perustelu oikea."
+     ],
      "criteria": [
       {
        "text": "Selittää, että virta kulkee kehon läpi vain, jos kehon kahden kohdan välillä on jännite eli potentiaaliero.",
@@ -508,6 +573,11 @@
      "kind": "word",
      "points": 5,
      "text": "Kalastaja heittää hiilikuituvavalla linjan alla. Selitä, miksi hän voi saada sähköiskun, vaikka vapa ei koske johtimeen. Arvioi, enintään kuinka pitkän ilmavälin yli läpilyönti tapahtuu varmasti.",
+     "hints": [
+      "Mikä jännite on kalastajan ja johtimen välillä, kun kalastaja seisoo maassa? Johtaako hiilikuitu sähköä, ja mikä on vavan kärjen potentiaali?",
+      "Tasaisessa kentässä ilmaväli kestää jännitteen $U = E_\\text{max}d$, kun $E_\\text{max}$ on ilman läpilyöntilujuus. Läpilyönnin jälkeen virta kulkee valokaaren, vavan ja kalastajan kautta maahan.",
+      "Tehtävässä on kaksi jännitettä: vaihejohtimien välinen ja johtimen jännite maahan nähden. Valitse se, joka on ilmavälin yli. Ratkaise $d$ symbolein ja laske. Mieti lopuksi, onko tulos turvaetäisyys: miten ohut johdin, kosteus ja lika vaikuttavat?"
+     ],
      "criteria": [
       {
        "text": "Selittää, että hiilikuitu johtaa sähköä, joten vavan kärki on lähes maan potentiaalissa, kun kalastaja seisoo maassa; ilmavälin yli on silloin koko johtimen ja maan välinen jännite.",
@@ -536,6 +606,11 @@
      "kind": "word",
      "points": 5,
      "text": "Myrsky katkaisee johtimen, ja se putoaa maahan rannan niitylle. Miksi lähelle ei saa mennä, ja miten alueelta poistutaan? Miksi lehmä on niityllä suuremmassa vaarassa kuin ihminen?",
+     "hints": [
+      "Minne virta menee, kun johdin on maassa? Onko maan potentiaali kaikkialla sama?",
+      "Maa johtaa heikosti, joten virta aiheuttaa maassa jännitehäviön $U = RI$: potentiaali on suurin kosketuskohdassa ja pienenee etäisyyden kasvaessa. Kahden pisteen välinen jännite on niiden potentiaalien erotus.",
+      "Vertaa kahta tapausta: jalat vierekkäin ja jalat kaukana toisistaan lähellä kosketuskohtaa. Mitä tämä kertoo poistumistavasta? Vertaa sitten ihmisen ja lehmän jalkojen välimatkaa ja mieti, mitä kautta virta kulkee kehossa, kun jalkojen välillä on jännite."
+     ],
      "criteria": [
       {
        "text": "Selittää, että virta leviää maahan kosketuskohdasta, ja maan potentiaali pienenee etäisyyden kasvaessa, joten eri kohtien välillä on jännite.",
@@ -584,6 +659,11 @@
      "kind": "calc",
      "points": 5,
      "text": "Määritä raportin taulukosta paneelin suurin teho ja sitä vastaava hyötysuhde, kun valon voimakkuus on raportin olettama.",
+     "hints": [
+      "Mikä sähköinen suure kertoo paneelin tehon tietyllä kuormalla? Löytyykö se taulukosta suoraan?",
+      "Teho on $P = UI$ ja hyötysuhde $\\eta = \\dfrac{P}{GA}$, missä $G$ on valon voimakkuus ja $A$ paneelin pinta-ala.",
+      "Laske teho jokaiselle taulukon riville ja etsi suurin. Muunna virta ampeereiksi: $210\\,\\text{mA} = 0{,}210\\,\\text{A}$. Muunna pinta-ala neliömetreiksi: $60\\,\\text{cm}^2 = 0{,}0060\\,\\text{m}^2$. Käytä hyötysuhteessa suurinta tehoa."
+     ],
      "answer": [
       {
        "name": "P",
@@ -631,6 +711,11 @@
      "kind": "word",
      "points": 5,
      "text": "Arvioi raportin johtopäätöstä ja mittauksen luotettavuutta. Nimeä raportin puutteet ja perustele ne.",
+     "hints": [
+      "Mitä raportin teho $6{,}10\\,\\text{V} \\cdot 0{,}210\\,\\text{A}$ oikeastaan kuvaa? Mitataanko nämä kaksi lukemaa yhtä aikaa samalla kuormalla? Vertaa taulukon tehoihin.",
+      "Paneelin teho tietyllä kuormalla on $P = UI$ samalla hetkellä mitatuista $U$:sta ja $I$:stä. Hyötysuhde $\\eta = \\dfrac{P}{GA}$ tarvitsee myös valon voimakkuuden $G$.",
+      "Käy raportti läpi kohta kohdalta: mitä mitattiin, mitä vain oletettiin ja miten tulos on ilmoitettu. Montako merkitsevää numeroa tuloksessa $21{,}35\\,\\%$ on, kun lähtötiedot ovat annetut? Vertaa korjattua hyötysuhdetta valmistajan arvoon ja arvioi johtopäätös."
+     ],
      "criteria": [
       {
        "key": "error_sources",
@@ -659,6 +744,11 @@
      "kind": "word",
      "points": 5,
      "text": "Suunnittele parannettu koe, jolla paneelin hyötysuhde saadaan luotettavasti. Kerro, mitä mitataan, mitä pidetään vakiona ja miten tulos määritetään.",
+     "hints": [
+      "Mitkä raportin suureet jäivät mittaamatta tai epävarmoiksi? Mitä pitäisi mitata, jotta hyötysuhde voidaan laskea luotettavasti?",
+      "Hyötysuhde on $\\eta = \\dfrac{P}{GA}$. Tarvitset sähkötehon $P = UI$ eli paneelin suurimman tehon ja valon voimakkuuden $G$ samalta hetkeltä.",
+      "Kuvaile koe vaiheittain: miten kuormaa muutetaan, mitä mitataan, mitä pidät vakiona, miten toistat mittauksen ja miten löydät suurimman tehon. Kerro lopuksi, miten arvioit tuloksen epävarmuuden."
+     ],
      "criteria": [
       {
        "text": "Mittaa valon voimakkuuden säteilymittarilla paneelin tasossa samaan aikaan kuin sähköiset suureet, ja pitää paneelin kohtisuorassa auringon säteitä vastaan.",
@@ -709,6 +799,11 @@
      "kind": "calc",
      "points": 4,
      "text": "Kuinka suurella nopeudella ionit lähtevät moottorista? Kuinka voimakas on verkkojen välinen sähkökenttä?",
+     "hints": [
+      "Mikä energiamuoto kasvaa, kun ioni kiihtyy sähkökentässä? Mikä voima tekee työtä, ja mistä energia tulee?",
+      "Sähkökentän tekemä työ $W = QU$ muuttuu ionin liike-energiaksi $\\tfrac12 mv^2$. Ionin varaus on $Q = e$. Homogeenisessa kentässä jännite on $U = Ed$.",
+      "Ratkaise nopeus $v$ symbolein ennen sijoitusta. Muunna jännite ja etäisyys: $1{,}10\\,\\text{kV} = 1100\\,\\text{V}$ ja $1{,}0\\,\\text{mm} = 1{,}0 \\cdot 10^{-3}\\,\\text{m}$. Kentän voimakkuuden saat jännitteestä ja etäisyydestä."
+     ],
      "answer": {
       "value": 40.21,
       "unit": "km/s",
@@ -742,6 +837,11 @@
      "kind": "calc",
      "points": 4,
      "text": "Kuinka suuren työntövoiman ionisuihku antaa satelliitille?",
+     "hints": [
+      "Miten satelliitti saa liikemäärää, kun ionit lähtevät siitä? Mitä ionisuihkusta täytyy tietää sekunnissa?",
+      "Virta kertoo ionien lukumäärän sekunnissa: $I = Ne$, missä $N$ on sekunnissa lähtevien ionien lukumäärä. Voima on liikemäärän muutosnopeus: $F = \\dfrac{\\Delta p}{\\Delta t}$.",
+      "Laske ensin ionien lukumäärä sekunnissa ja sen avulla massavirta $\\dfrac{\\Delta m}{\\Delta t}$ eli massa, joka lähtee sekunnissa. Liikemäärä sekunnissa on massavirta kertaa ionien nopeus a-kohdasta."
+     ],
      "answer": {
       "value": 87.54,
       "unit": "mN",
@@ -775,6 +875,11 @@
      "kind": "calc",
      "points": 4,
      "text": "Moottori toimii yhtäjaksoisesti $30$ vuorokautta. Kuinka paljon satelliitin nopeus muuttuu tänä aikana? Kuinka paljon ksenonia kuluu?",
+     "hints": [
+      "Mikä suure kertoo, kuinka nopeasti satelliitin nopeus muuttuu? Kuinka kauan moottori toimii sekunteina?",
+      "Newtonin toisen lain mukaan $a = \\dfrac{F}{M}$, ja nopeuden muutos on $\\Delta v = a\\,\\Delta t$. Kulunut ksenon on massavirta kertaa aika.",
+      "Muunna aika sekunneiksi: $30 \\cdot 24 \\cdot 3600\\,\\text{s}$. Käytä b-kohdan voimaa newtoneina ja massavirtaa. Perustele lopuksi, miksi satelliitin massan voi pitää vakiona: vertaa kulunutta ksenonia massaan $650\\,\\text{kg}$."
+     ],
      "answer": [
       {
        "name": "dv",
@@ -817,6 +922,11 @@
      "kind": "word",
      "points": 3,
      "text": "Riittävätkö aurinkopaneelit moottorin käyttöön? Selitä, miksi ionimoottorin työntövoima on pieni, vaikka sen teho on suuri, ja miksi sitä silti käytetään.",
+     "hints": [
+      "Kuinka suuri sähköteho ionisuihkulla on, ja mihin luku pitää verrata? Mikä rajoittaa työntövoimaa, kun nopeus on suuri?",
+      "Suihkun teho on $P = UI$. Ionien liike-energia sekunnissa on $P = \\tfrac12 \\dfrac{\\Delta m}{\\Delta t}\\,v^2$ ja työntövoima $F = \\dfrac{\\Delta m}{\\Delta t}\\,v$.",
+      "Laske suihkun teho ja vertaa sitä paneelien tehoon. Jaa sitten kaksi viimeistä yhtälöä: mitä yhtälö kertoo työntövoimasta, kun teho on annettu ja nopeus suuri? Millaiseen tehtävään pieni työntövoima riittää, kun aikaa on viikkoja?"
+     ],
      "criteria": [
       {
        "text": "Laskee suihkun tehon $$\n\\begin{aligned}\nP &= UI \\\\\n&= 1100\\,\\text{V} \\cdot 1{,}60\\,\\text{A} \\\\\n&\\approx 1{,}76\\,\\text{kW}\n\\end{aligned}\n$$, joka on paneelien $2{,}5\\,\\text{kW}$:a pienempi; se on sama kuin ionien liike-energia sekunnissa $\\tfrac12 \\tfrac{\\Delta m}{\\Delta t} v^2$.",
@@ -862,6 +972,11 @@
      "kind": "calc",
      "points": 4,
      "text": "Määritä levyjen välisen sähkökentän voimakkuus ja kerro kentän suunta.",
+     "hints": [
+      "Miltä potentiaalin kuvaaja näyttää homogeenisessa kentässä? Mitä kuvaajan jyrkkyys kertoo kentästä?",
+      "Homogeenisessa kentässä $U = Ed$, joten kentän voimakkuus on $E = \\dfrac{\\Delta V}{\\Delta x}$ (itseisarvo). Kenttä osoittaa suuntaan, jossa potentiaali pienenee.",
+      "Lue kuvaajasta kaksi pistettä kaukana toisistaan ja muunna etäisyys metreiksi. Katso, kasvaako potentiaali vai pieneneekö se, kun $x$ kasvaa, ja päättele siitä kentän suunta."
+     ],
      "answer": {
       "value": 5.0,
       "unit": "kV/m",
@@ -895,6 +1010,11 @@
      "kind": "calc",
      "points": 4,
      "text": "Kuinka suuri on alfahiukkasen kiihtyvyys? Mihin suuntaan se kiihtyy?",
+     "hints": [
+      "Mikä voima vaikuttaa hiukkaseen kentässä, ja mikä voima voidaan jättää huomiotta? Mikä laki yhdistää voiman ja kiihtyvyyden?",
+      "Sähköinen voima on $F_E = QE$ ja Newtonin toinen laki $F = ma$. Alfahiukkasen varaus on $Q = 2e$. Positiiviseen varaukseen voima on kentän suuntainen.",
+      "Laske ensin voima a-kohdan kentästä ja sitten kiihtyvyys. Kentän yksikkö: $1\\,\\text{V/m} = 1\\,\\text{N/C}$. Päättele suunta kentän suunnasta ja varauksen merkistä."
+     ],
      "answer": {
       "value": 241100000000.0,
       "unit": "m/s²",
@@ -928,6 +1048,11 @@
      "kind": "calc",
      "points": 4,
      "text": "Alfahiukkanen vapautetaan levosta kohdassa $x = 4{,}0\\,\\text{cm}$. Kuinka suuri on sen nopeus kohdassa $x = 2{,}0\\,\\text{cm}$?",
+     "hints": [
+      "Mikä voima tekee työtä, kun alfahiukkanen kiihtyy levosta? Mikä energia kasvaa ja mikä pienenee?",
+      "Energiaperiaatteen mukaan kentän tekemä työ $W = QU$ muuttuu liike-energiaksi $\\tfrac12 mv^2$. Tässä $Q = 2e$ ja $U$ on lähtö- ja loppupisteen potentiaaliero.",
+      "Lue kuvaajasta potentiaali kummassakin pisteessä, $x = 4{,}0\\,\\text{cm}$ ja $x = 2{,}0\\,\\text{cm}$, ja laske erotus. Ratkaise sitten $v$ symbolein ennen sijoitusta."
+     ],
      "answer": {
       "value": 98.2,
       "unit": "km/s",
@@ -961,6 +1086,11 @@
      "kind": "calc",
      "points": 3,
      "text": "Nollatasoksi valitaan negatiivisen levyn sijasta positiivinen levy. Mikä on potentiaali kohdassa $x = 4{,}0\\,\\text{cm}$ tämän valinnan jälkeen? Muuttuvatko sähkökentän voimakkuus ja c-kohdan nopeus?",
+     "hints": [
+      "Mitä nollatason valinta muuttaa: potentiaaleja, potentiaalieroja vai molempia? Miltä kuvaaja näyttää, kun nollataso vaihtuu?",
+      "Potentiaali $V = \\dfrac{E_\\text{p}}{Q}$ on suhteessa valittuun nollakohtaan, ja jännite on kahden pisteen potentiaalien erotus $U = V_A - V_B$. Kenttä saadaan yhtälöstä $E = \\dfrac{U}{d}$ ja työ yhtälöstä $W = QU$.",
+      "Vähennä jokaisesta vanhasta potentiaalista positiivisen levyn vanha potentiaali ja laske tulos kohdalle $x = 4{,}0\\,\\text{cm}$. Tarkista sitten, miten kohtien $2{,}0\\,\\text{cm}$ ja $4{,}0\\,\\text{cm}$ potentiaaliero on muuttunut."
+     ],
      "answer": {
       "value": -50.0,
       "unit": "V",
@@ -1012,6 +1142,11 @@
      "kind": "calc",
      "points": 4,
      "text": "Kuinka suuri virta piirissä kulkee?",
+     "hints": [
+      "Mikä on sama piirin kaikissa osissa, kun LED ja vastus ovat sarjassa? Miten lähteen jännite jakautuu niiden kesken?",
+      "Sarjassa virta on sama ja $U = U_\\text{R} + U_\\text{D}$, kun $U_\\text{R} = RI$. LEDin jännite $U_\\text{D}$ luetaan ominaiskäyrältä.",
+      "Ratkaise virta $I$ symbolein. Käyrä on virta-alueella $5\\ldots 30\\,\\text{mA}$ lähes pystysuora, joten voit lukea $U_\\text{D}$:n sieltä, vaikka virtaa ei vielä tunneta. Tarkista lopuksi, että tulos on tällä alueella."
+     ],
      "answer": {
       "value": 17.27,
       "unit": "mA",
@@ -1045,6 +1180,11 @@
      "kind": "calc",
      "points": 4,
      "text": "Kuinka suuri on vastuksen teho? Kuinka suuri osuus lähteen sähkötehosta muuttuu vastuksessa sisäenergiaksi?",
+     "hints": [
+      "Mitä tarvitset vastuksen tehoon? Miten lähteen koko teho lasketaan, ja miten osuus saadaan niistä?",
+      "Teho on $P = UI$, joten $P_\\text{R} = U_\\text{R}I$. Osuus on tehojen suhde $\\dfrac{P_\\text{R}}{P}$. Koska virta on sama, mihin suhde supistuu?",
+      "Laske vastuksen jännite $U_\\text{R} = U - U_\\text{D}$ ja käytä a-kohdan virtaa. Tarkista lopuksi: LEDin teho ja vastuksen teho yhteensä on lähteen teho."
+     ],
      "answer": [
       {
        "name": "P",
@@ -1087,6 +1227,11 @@
      "kind": "calc",
      "points": 3,
      "text": "Vastus vaihdetaan toiseen, ja lähdejännite pysyy samana. Mikä on pienin etuvastus, jolla virta ei ylitä sallittua virtaa?",
+     "hints": [
+      "Mikä virta saa olla enintään? Rajoittaako pieni vai suuri vastus virtaa enemmän?",
+      "Virta on $I = \\dfrac{U - U_\\text{D}}{R}$, joten pienin sallittu resistanssi vastaa suurinta sallittua virtaa $I_\\text{max}$.",
+      "Ratkaise $R$ symbolein ja sijoita $I_\\text{max} = 30\\,\\text{mA} = 0{,}030\\,\\text{A}$ sekä LEDin jännite käyrältä. Kumpaan suuntaan tulos pyöristetään, jotta virta ei ylitä rajaa?"
+     ],
      "answer": {
       "value": 126.7,
       "unit": "Ω",
@@ -1115,6 +1260,11 @@
      "kind": "calc",
      "points": 4,
      "text": "Lue kuvaajasta LEDin jännite virroilla $5\\,\\text{mA}$ ja $20\\,\\text{mA}$ ja laske LEDin resistanssi $U_\\text{D}/I$ kummallakin virralla. Mitä tulokset kertovat LEDin ja Ohmin lain suhteesta?",
+     "hints": [
+      "Mitä tarkoittaa, että komponentti noudattaa Ohmin lakia? Mitä kuvaajalta pitää lukea, jotta asian voi tarkistaa?",
+      "Resistanssi lasketaan kustakin pisteestä $R = \\dfrac{U_\\text{D}}{I}$. Ohmin lain mukaan resistanssi on vakio.",
+      "Lue jännite kummallakin virralla ja muunna virrat ampeereiksi ennen jakoa. Vertaa tuloksia: mitä resistanssille tapahtuu, kun virta kasvaa? Päättele tuloksista, miksi LEDin kanssa tarvitaan etuvastus."
+     ],
      "answer": [
       {
        "name": "R5",
