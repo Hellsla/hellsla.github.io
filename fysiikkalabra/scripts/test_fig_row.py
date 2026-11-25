@@ -9,7 +9,10 @@ Every built page that has a `.fig-row.side`, at 1280 and 1920 px with every box 
   - a side-by-side unit's text column is at least 30 rem wide (the width fig_side assumes), wherever the unit stands;
   - a unit inside a details box stands under its text, not beside it, and is marked .stack, not .side (the class
     is what test_inquiry compares the rendering with; build.py fig_rows);
-  - no text column of a figure unit has content wider than itself.
+  - no text column of a figure unit has content wider than itself;
+  - the text of a side-by-side unit starts at the unit's top (never centred), the paragraphs it took in (.fig-more) stand
+    under its text in the same column, and the figure is in the right column (work queue 8e, 11 U3, 2026-11-25);
+  - two small tables (.tbl-pair) on a wide screen stand side by side and neither is wider than its half.
 Usage: python scripts/test_fig_row.py [page-id ...]"""
 import pathlib, sys
 HERE = pathlib.Path(__file__).resolve().parent
@@ -20,7 +23,7 @@ from playwright.sync_api import sync_playwright
 SITE = HERE.parent / "site"
 only = set(sys.argv[1:])
 pages = [p for p in sorted(SITE.glob("*.html")) + sorted(SITE.glob("*/*.html"))
-         if "-" in p.stem and (not only or p.stem in only) and "fig-row side" in p.read_text(encoding="utf-8")]
+         if "-" in p.stem and (not only or p.stem in only) and ("fig-row side" in p.read_text(encoding="utf-8") or "tbl-pair" in p.read_text(encoding="utf-8"))]
 
 JS = """() => {
   const out = [];
@@ -30,8 +33,20 @@ JS = """() => {
     const box = r.closest('details');
     if (t.scrollWidth > t.clientWidth + 1) out.push(`text column ${t.clientWidth} px has content ${t.scrollWidth} px wide: "${t.textContent.trim().slice(0, 50)}"`);
     if (side && getComputedStyle(r).display === 'grid' && t.clientWidth < 30 * 16) out.push(`side-by-side text column only ${t.clientWidth} px: "${t.textContent.trim().slice(0, 50)}"`);
+    if (side && getComputedStyle(r).display === 'grid') {
+      const f = r.querySelector(':scope > .fig'), m = r.querySelector(':scope > .fig-more'), rt = r.getBoundingClientRect();
+      if (t.getBoundingClientRect().top - rt.top > 2) out.push(`the text does not start at the top of its unit: "${t.textContent.trim().slice(0, 50)}"`);
+      if (f.getBoundingClientRect().left < t.getBoundingClientRect().right) out.push(`the figure is not in the right column: "${t.textContent.trim().slice(0, 50)}"`);
+      if (m && (m.getBoundingClientRect().top < t.getBoundingClientRect().bottom - 1 || m.getBoundingClientRect().left !== t.getBoundingClientRect().left)) out.push(`the paragraphs beside a tall figure are not under the text: "${t.textContent.trim().slice(0, 50)}"`);
+    }
     if (box && side) out.push(`a unit inside a closed-box (details) is marked .side though it is stacked: "${t.textContent.trim().slice(0, 50)}"`);
     if (box && getComputedStyle(r).display === 'grid') out.push(`a unit inside a closed-box (details) is beside its text: "${t.textContent.trim().slice(0, 50)}"`);
+  }
+  for (const p of document.querySelectorAll('.tbl-pair')) {
+    if (!p.checkVisibility() || p.closest('details')) continue;
+    const [a, b] = p.children, ra = a.getBoundingClientRect(), rb = b.getBoundingClientRect();
+    if (p.getBoundingClientRect().width > 36 * 16 && Math.abs(ra.top - rb.top) > 2) out.push('two small tables are stacked although there is room for both: "' + a.textContent.trim().slice(0, 40) + '"');
+    if (a.scrollWidth > a.clientWidth + 1 || b.scrollWidth > b.clientWidth + 1) out.push('a table of a pair scrolls sideways: "' + a.textContent.trim().slice(0, 40) + '"');
   }
   return out; }"""
 

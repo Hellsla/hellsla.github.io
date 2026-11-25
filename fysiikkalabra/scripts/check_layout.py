@@ -26,6 +26,8 @@ In each state it reports:
              shorter one (a card that grows beside a short one; a figure beside a much longer text). The simulation
              and the worked example's problem are sticky beside their column and are not counted.
   small      reading text under 17 px (a phone never gets smaller text) or a control under 40 px tall
+  figgap     a figure unit beside its text (.fig-row.side): the text or the figure does not start at the unit's top, or one column
+             ends over 190 px above the other (230 px beside a photograph: its caption stands under it) (work queue 8e, 11 U3)
   datafig    a small table beside a figure (.data-fig): stacked although both fit, overlapping, its caption wrapped to a
              narrow column, or an empty strip at the table's right edge (work queue 22, teacher 2026-11-19)
   heading    a stage heading hidden under the sticky navigation after following its link (closed state only)
@@ -226,17 +228,27 @@ JS = """() => {
   const cards = [...document.querySelectorAll('main .activity, main details.opt')].filter((e) => V(e) && !e.closest('.lab-side, details.opt .activity') && !e.parentElement.closest('.activity'));
   for (let i = 1; i < cards.length; i++) if (R(cards[i]).top < R(cards[i - 1]).top - 1)
     out.push({at: W(cards[i]), what: 'order', over: Math.round(R(cards[i - 1]).top - R(cards[i]).top), text: `${name(cards[i])} shows above ${name(cards[i - 1])}`});
-  // gap: a row of two columns where one is far taller than the other (the empty area beside a grown card)
+  // gap (a .fig-row.side has its own check below, figgap: its text may stand in two grid rows): a row of two columns where one is far taller than the other (the empty area beside a grown card)
   for (const g of document.querySelectorAll('main *')) {
     const cs = getComputedStyle(g);
-    if (cs.display !== 'grid' || !V(g) || g.matches('.lab, .example, ul.choices, .prior ul')) continue;
+    if (cs.display !== 'grid' || !V(g) || g.matches('.lab, .example, ul.choices, .prior ul, .fig-row.side')) continue;
     if (cs.gridTemplateColumns.trim().split(/\\s+/).length < 2) continue;
     const rows = {};
     for (const c of g.children) { if (!V(c) || getComputedStyle(c).position === 'sticky') continue; const k = Math.round(R(c).top); (rows[k] = rows[k] || []).push(R(c).height); }
     for (const hs of Object.values(rows)) if (hs.length > 1) {
       const hi = Math.max(...hs), lo = Math.min(...hs);
-      if (hi - lo > 240 * K && lo < 0.55 * hi) out.push({at: W(g), what: 'gap', over: Math.round(hi - lo), text: `${name(g)}: ${Math.round(hi - lo)} px empty beside the shorter column`});
+      if (hi - lo > 240 * K && lo < 0.55 * hi) out.push({at: W(g), what: 'gap', over: Math.round(hi - lo), text: `${name(g)}: ${Math.round(hi - lo)} px empty beside the shorter column (${hs.map(Math.round).join("/")})`});
     }
+  }
+  // figgap (work queue 8e, 11 U3): in a figure unit beside its text the text starts at the row's top (it is never centred
+  // between empty stretches) and neither column ends far above the other: at most 190 px (the figure's own margin
+  // counted) of empty column under the shorter one
+  for (const r of document.querySelectorAll('main .fig-row.side')) {
+    if (!V(r) || getComputedStyle(r).display !== 'grid') continue;
+    const t = r.querySelector(':scope > .fig-text'), f = r.querySelector(':scope > .fig'), mo = r.querySelector(':scope > .fig-more'), rr = R(r);
+    const tb = R(mo || t).bottom, fb = R(f).bottom, tt = R(t).top - rr.top, ft = R(f).top - rr.top;
+    if (tt > 2 * K || ft > 2 * K) out.push({at: W(r), what: 'figgap', over: Math.round(Math.max(tt, ft)), text: `${name(r)}: ${Math.round(Math.max(tt, ft))} px empty above ${tt > ft ? 'the text' : 'the figure'} at the top of the unit`});
+    if (Math.abs(tb - fb) > (f.querySelector('figure.unit-photo') ? 230 : 190) * K) out.push({at: W(r), what: 'figgap', over: Math.round(Math.abs(tb - fb)), text: `${name(r)} "${t.textContent.trim().slice(0, 25)}" (${Math.round(R(t).height)}/${Math.round(R(f).height)}): ${Math.round(Math.abs(tb - fb))} px empty under the ${tb < fb ? 'text' : 'figure'} beside the ${tb < fb ? 'figure' : 'text'}`});
   }
   // datafig: a small table and a figure of one task (.data-fig, work queue 22) sit side by side when both fit and stacked when
   // they do not; the table's caption is one row and the table has no empty strip at its right edge
@@ -310,6 +322,7 @@ with sync_playwright() as pw:
         page = b.new_page(viewport={"width": width, "height": 800})
         page.goto(page_file.as_uri())
         page.evaluate("document.fonts.ready.then(() => true)")   # measure with the page's own fonts, not a fallback
+        page.evaluate("Promise.all([...document.images].map((i) => { i.loading = 'eager'; return i.complete ? 0 : new Promise((ok) => { i.onload = i.onerror = ok; }); }))")   # a lazy photograph is measured at its real size, not as an empty box
         page.evaluate(FIGIMG)   # which picture files of figures drawn on one (scripts/figimage.py) load: the "svg-image" check
         page.wait_for_timeout(400)
         found = [dict(f, state="closed") for f in page.evaluate(HEADINGS)]
