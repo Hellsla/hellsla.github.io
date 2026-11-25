@@ -1,9 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: e2121525d211a935
-SCOPE: delta (old-content fixes, git diff origin/main)
-Checked: fy9-kaasut (fi): rendered preview page at 390 and 1280 px with every details/solution open (DOM check: no page overflow, no KaTeX error, no clipped or scrolling display formula); captures review/shots/*stage-sovella-*, *stage-exercises-*, *teacher-*, intro and stage-selita/tarkista tiles, with sample tiles opened at readable size (aallot fi sovella-1280-5 and 390-6, liike en sovella-390-9, ympyraliike fi-easy sovella-390-8, energia fi teacher-1280-1); changed numbers and units diffed against the source for decimal comma/point and \, thin space.
+CONTENT-HASH: c4d5780e8f5b63b7
 
-1. Blocking: none.
-2. Typography: changed numbers and units are LaTeX with thin space, decimal comma in fi and fi-easy, decimal point in en; aligned blocks and inline formulas fit at 390 px; no layout regressions from the changed lines.
-3. Language: changed lines read naturally and consistently with the glossary terms; no wording defect found.
-4. Polish: known drawing issues (kone-kuva W arrow, kalteva.webp, geo-kuva ray, kartta label, sahkokentta formula map E vs W) are known to the teacher, not re-judged here.
+Delta: hints on the Tehtävät parts (fi).
+
+## Blocking
+(none)
+
+## Polish
+1. [Minor] Closed hints at 390 px stack in a column (three rows) instead of one row; readable and tappable, no overflow. Acceptable.
+2. [Minor] Hint 3 of the methane part (a) gives the conversion values ready-made ( = 298{,}15\,\text{K}$,  = 0{,}0160\,\text{kg/mol}$); for pedagogy to judge whether the student should do these.
+
+## Checked
+- Built fy9-kaasut; 31 parts with hints, 0 horizontal overflow at 390 and 1280 px, no hint box or KaTeX formula wider than its box (scripted) with all hints open.
+- Screenshots opened: methane part closed (390) and open (1280), the amount-of-substance part open (390, fractions and units render cleanly, no clipping).
+- Language and typography of all new Finnish hints read in the diff: decimal comma, thin-space units, LaTeX symbols, fluent Finnish; no findings.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

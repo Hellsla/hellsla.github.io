@@ -18,6 +18,11 @@
           "kind": "calc",
           "points": 5,
           "text": "What is the gauge pressure in the cylinder during the lift?",
+          "hints": [
+            "The car rises at a constant velocity. What does that tell you about the sum of the forces? Which forces push the piston from below and from above?",
+            "The forces are in balance. The pressure difference $\\Delta p$ between the air in the cylinder and the outside air pushes the piston up with the force $\\Delta p\\,A$, so $\\Delta p\\,A = mg$.",
+            "The area of the piston is the area of a circle, $A = \\pi r^2$. The task gives the diameter, so find the radius $r$ first. Convert the pressure to kilopascals at the end."
+          ],
           "answer": {
             "value": 562.1,
             "unit": "kPa",
@@ -51,6 +56,11 @@
           "kind": "calc",
           "points": 5,
           "text": "How much work does the lift do on the car and the platform? Justify the result by calculating it in two different ways. Explain why the air in the cylinder nevertheless does more work.",
+          "hints": [
+            "In which two ways can you calculate the work: from the energy of the car and the platform, or from the pressure of the air in the cylinder?",
+            "The work done on the car and the platform is $W = mgh$. The work done by the pressure difference is $W = \\Delta p\\,\\Delta V$, where $\\Delta V = Ah$ is the increase in the volume of the cylinder.",
+            "Convert the volume to cubic metres and the pressure to pascals, so that the product is in joules. Then calculate the total pressure of the air in the cylinder and the work it does, and compare it with the work done by the lift. Where does the difference go?"
+          ],
           "answer": {
             "value": 21.19,
             "unit": "kJ",
@@ -84,6 +94,11 @@
           "kind": "calc",
           "points": 5,
           "text": "What does the tank's gauge read after one lift? Is the air in the tank enough for a second, identical lift if the compressor does not start in between? Also assess how the temperature assumption affects the result.",
+          "hints": [
+            "What happens to the air as it flows from the tank into the cylinder? What stays the same when the temperature is constant?",
+            "At a constant temperature the amount of air is proportional to the product $pV$ (the ideal gas law). After the lift the air is in the tank and in the cylinder: $p_1V_\\text{s} = p_2V_\\text{s} + p_\\text{c}\\,\\Delta V$.",
+            "Use total pressures: add the atmospheric pressure to the gauge reading. Convert $\\Delta V$ to litres, and turn the pressure back into a gauge reading at the end. For the second lift, think about how high the pressure in the tank must be at least for air to flow into the cylinder."
+          ],
           "answer": {
             "value": 650.0,
             "unit": "kPa",
@@ -136,6 +151,11 @@
           "kind": "calc",
           "points": 5,
           "text": "How many kilograms of methane does the engine burn per hour?",
+          "hints": [
+            "The gas meter gives the volume at a certain temperature and pressure. How do you get the number of moles from it, and then the mass?",
+            "From the ideal gas law $pV = nRT$ you get the amount of substance $n = \\dfrac{pV}{RT}$. The mass follows from the molar mass: $m = nM$.",
+            "Convert before calculating: the temperature to kelvins ($T = 298.15\\,\\text{K}$), the pressure to pascals ($104\\,\\text{kPa} = 104\\,000\\,\\text{Pa}$) and the molar mass to $\\text{kg/mol}$ ($M = 0.0160\\,\\text{kg/mol}$)."
+          ],
           "answer": {
             "value": 34.92,
             "unit": "kg",
@@ -169,6 +189,11 @@
           "kind": "calc",
           "points": 5,
           "text": "What is the electrical power of the plant?",
+          "hints": [
+            "The fuel brings energy into the engine. How fast is the energy released, and how large a share of it ends up as electricity?",
+            "The fuel power is the energy released per unit of time: $P_0 = \\dfrac{Hm}{t}$, where $H$ is the heating value. The electrical power follows from the efficiency: $P_\\text{s} = \\eta_\\text{s} P_0$.",
+            "Use the mass per hour from part a. Convert the time to seconds ($1\\,\\text{h} = 3600\\,\\text{s}$) and the heating value to $\\text{J/kg}$ before substituting."
+          ],
           "answer": {
             "value": 174.6,
             "unit": "kW",
@@ -202,6 +227,11 @@
           "kind": "calc",
           "points": 5,
           "text": "Why can the engine not turn all of the fuel power into electricity, even if its friction were removed completely? What share of the fuel power is put to use as electricity and heat together?",
+          "hints": [
+            "Where does all the energy of the fuel go? If the friction were zero, where else than into electricity would part of the energy still go?",
+            "Energy is conserved: $P_0 = P_\\text{s} + P_\\text{out}$, so the heat power given out is $P_\\text{out} = P_0 - P_\\text{s}$. Think about what would happen to the engine if it had no colder surroundings to give heat to.",
+            "The recovered heat power is $75\\,\\%$ of the heat power given out. Add the electrical power and the recovered heat power, and compare the sum with the fuel power: $\\eta_\\text{tot} = \\dfrac{P_\\text{s} + P_\\text{rec}}{P_0}$."
+          ],
           "answer": {
             "value": 84.0,
             "unit": "%",
@@ -250,6 +280,11 @@
           "kind": "graph",
           "points": 5,
           "text": "Present the volume of the air as a function of the temperature as a graph, and fit a suitable model to the points.",
+          "hints": [
+            "Which quantity does the group set, and which is the measurement result? Which belongs on the horizontal axis?",
+            "Plot the eight points $(\\theta,\\ V)$ and draw the uncertainty bars $\\pm 0.3\\,\\text{ml}$. Fit a line that passes between the points and through the uncertainty bars. Do not join the points with a broken line.",
+            "The vertical axis does not have to start at zero: choose a scale in which the points fill the graph, and say that the scale does not start at zero. Finally, see what the graph tells you about how the volume changes as the temperature rises."
+          ],
           "criteria": [
             {
               "key": "graph_axes",
@@ -277,6 +312,11 @@
           "kind": "calc",
           "points": 5,
           "text": "Use the graph to determine the temperature at which the volume of the air would be zero according to the model. Estimate the uncertainty of the result, and compare the result with the accepted value $-273.15\\,{}^\\circ\\text{C}$.",
+          "hints": [
+            "In which direction must the line be extended for the volume to be zero? Where do you get the slope of the line and the volume $V_0$ at $0\\,{}^\\circ\\text{C}$?",
+            "The equation of the line is $V = V_0 + k\\theta$, so the volume is zero when $\\theta_0 = -\\dfrac{V_0}{k}$. The slope is $k = \\dfrac{\\Delta V}{\\Delta\\theta}$.",
+            "Read two points from the line, not from the measured points, and choose them far apart. To estimate the uncertainty, draw the steepest and the shallowest line that still pass through all the uncertainty bars, and calculate their zero points. Finally, see whether the accepted value fits in the interval."
+          ],
           "answer": {
             "value": -279,
             "unit": "°C",
@@ -310,6 +350,11 @@
           "kind": "calc",
           "points": 5,
           "text": "What amount of substance of air is in the syringe? Use the slope you determined from the graph.",
+          "hints": [
+            "Write the ideal gas law so that the volume is a function of the temperature. What stays constant when the pressure is constant, and what does it do to the line of the graph?",
+            "At a constant pressure $V = \\dfrac{nR}{p}\\,T$, so the slope is $k = \\dfrac{nR}{p}$. A change of one kelvin equals a change of one degree Celsius, so the slope of part b can be used as it is. Solve for $n$.",
+            "Before calculating, convert the slope to $\\text{m}^3/\\text{K}$ ($1\\,\\text{ml} = 10^{-6}\\,\\text{m}^3$) and the pressure to pascals. Check the result by calculating the amount of substance from one measured point."
+          ],
           "answer": {
             "value": 1.646,
             "unit": "mmol",
@@ -343,6 +388,11 @@
           "kind": "word",
           "points": 5,
           "text": "Another group made the same measurement, but the tip of their syringe was connected to a tube that held $1.5\\,\\text{ml}$ of air and stayed outside the bath at room temperature. Because the air in the tube belongs to the enclosed amount of air, the group added the tube's $1.5\\,\\text{ml}$ to every volume read from the syringe's scale. How does this change their line and their estimate of absolute zero? Assess whether the error can be removed by repeating the measurements.",
+          "hints": [
+            "The air in the tube is part of the closed amount of air, but at what temperature is it? What happens to its volume when the temperature of the bath rises?",
+            "The total volume is $V = V_\\text{syringe} + V_\\text{tube}$. For each part separately, think about whether it changes with the temperature. What does that do to the slope of the line, and what to the intercept on the vertical axis?",
+            "Look at the expression for the zero point, $\\theta_0 = -\\dfrac{V_0}{k}$, and think about what changes in it because of the addition and what does not. Finally, think about whether repeating can remove an error that points the same way in every measurement."
+          ],
           "criteria": [
             {
               "text": "Explains that the air in the tube does not warm, so its volume stays constant and the same addition $1.5\\,\\text{ml}$ is made to every total volume: the line moves upwards, but its slope does not change.",
@@ -386,6 +436,11 @@
           "kind": "word",
           "points": 6,
           "text": "Assess the first inventor's brochure. What in the brochure is true and what is not? Justify.",
+          "hints": [
+            "The brochure makes two claims: energy is conserved, and so the engine breaks no law of nature. Is the first claim true? Does the second follow from it?",
+            "Conservation of energy only says that the total amount of energy does not change. A heat engine takes heat $Q_1$ from a warm source, does work $W$ and gives out heat $Q_2$: $W = Q_1 - Q_2$.",
+            "See where the engine of the brochure could give out the heat $Q_2$ and which temperatures it has available. Finally, assess whether the project is worth funding, and justify."
+          ],
           "criteria": [
             {
               "text": "States that the conservation of energy does not rule out the idea: as far as energy goes, the internal energy of the sea could turn into work, and the brochure describes this correctly.",
@@ -409,6 +464,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Calculate the efficiency of the second inventor's machine and the heat power given to the frosty air. Assess why the efficiency is so small.",
+          "hints": [
+            "What does the efficiency tell you? What does the machine do with the heat that is not turned into work?",
+            "The efficiency is the useful power divided by the input power: $\\eta = \\dfrac{P_W}{P_1}$. Energy is conserved: $P_1 = P_W + P_2$, which gives the heat power $P_2$ given out.",
+            "For the explanation, convert the temperatures to kelvins and calculate the temperature difference. Compare it with the temperature of the hot source."
+          ],
           "answer": {
             "value": 6.0,
             "unit": "%",
@@ -442,6 +502,11 @@
           "kind": "word",
           "points": 5,
           "text": "The ship's cabins are heated with a heat pump that takes heat from the same $3\\,{}^\\circ\\text{C}$ seawater. The pump uses an electrical power of $10\\,\\text{kW}$ and gives a heat power of $35\\,\\text{kW}$ to the cabins. Explain why this is possible, even though the first inventor's engine is not.",
+          "hints": [
+            "Where does the heat pump get its heat, and where does it take it? What does the pump need to do that?",
+            "A heat pump moves heat from cold to warm with the help of electrical power. Energy is conserved: $P_\\text{cabin} = P_\\text{sea} + P_\\text{el}$. Calculate how large a power comes from the sea.",
+            "Compare the heat pump with the engine of the brochure: does each need outside work, and does heat go from cold to warm or the other way round? Also calculate the ratio $\\dfrac{P_\\text{cabin}}{P_\\text{el}}$ and think about whether it is an efficiency."
+          ],
           "criteria": [
             {
               "text": "Explains that the heat pump does not turn heat into work but uses electricity to move heat from the cold seawater to the warm cabins: $25\\,\\text{kW}$ comes from the sea and $10\\,\\text{kW}$ from the electricity.",
@@ -484,6 +549,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Show how the group got a molar mass of $25\\,\\text{g/mol}$.",
+          "hints": [
+            "What changes in the bottle when the pump adds air to it? Which quantities stay the same?",
+            "The volume and the temperature are the same, so the ideal gas law $pV = nRT$ gives $\\Delta n = \\dfrac{\\Delta p\\,V}{RT}$ for the added air. The molar mass is mass per amount of substance: $M = \\dfrac{\\Delta m}{\\Delta n}$.",
+            "Find the mass of the added air as the difference of the two weighings. Before substituting, convert the pressure to pascals, the volume to cubic metres and the temperature to kelvins."
+          ],
           "answer": {
             "value": 25.45,
             "unit": "g/mol",
@@ -512,6 +582,11 @@
           "kind": "word",
           "points": 6,
           "text": "Assess whether the group's conclusion is justified. Name the most important sources of error in the measurement and tell in which direction each changes the result.",
+          "hints": [
+            "What did the group assume about the air in the bottle and about the measurement when it calculated the amount of substance from the ideal gas law? Do the assumptions hold right after pumping?",
+            "Each source of error affects either the calculated amount of substance $\\Delta n$ or the weighed mass $\\Delta m$, and $M = \\dfrac{\\Delta m}{\\Delta n}$. For each one, think about whether the numerator or the denominator grows or shrinks and in which direction the result moves.",
+            "Go through the temperature, the gauge reading, the leaking of air and the volume of the bottle. Estimate the size of an effect by recalculating $M$ with a changed value, and compare it with the effect of the reading accuracy of the balance."
+          ],
           "criteria": [
             {
               "key": "error_sources",
@@ -535,6 +610,11 @@
           "kind": "word",
           "points": 5,
           "text": "Design an improved experiment that gives the molar mass of air more reliably.",
+          "hints": [
+            "Which of the measured quantities are the most uncertain? How would you measure them more accurately?",
+            "One measurement does not tell you the size of the error. Repeat the experiment at several different gauge pressures and keep the other factors the same. Think about what you show in a graph and which quantity is determined by its slope.",
+            "From the ideal gas law, write the mass of the added air as a function of the pressure: $\\Delta m = \\dfrac{MV}{RT}\\,\\Delta p$. What must you measure, and what must you keep constant, so that you can get $M$ from the slope of the line?"
+          ],
           "criteria": [
             {
               "text": "Measures the necessary quantities reliably: the volume of the bottle by filling it with water and weighing, the gauge pressure with a precise gauge directly from the bottle, and the reading only when the air has cooled to room temperature.",
@@ -579,6 +659,11 @@
           "kind": "calc",
           "points": 5,
           "text": "The pane is lifted from a pallet in a horizontal position, and the pad is in the middle of the upper surface of the pane. Draw the force diagram of the pane at the start of the lift, while the crane is accelerating. What is the minimum partial vacuum needed under the pad to keep the pane attached?",
+          "hints": [
+            "Which forces act on the horizontal pane when the crane accelerates upwards? Which force comes from the pressure difference, and what is the support force at the edge of the pad when the pane just stays attached?",
+            "Draw the weight downwards and the force of the pressure difference $F_\\text{p} = \\Delta p\\,A$ upwards. Newton's second law upwards: $F_\\text{p} - mg = ma$.",
+            "First find the mass of the pane from the density and the dimensions, $m = \\rho\\,l\\,w\\,d$, and convert the dimensions to metres. The area of the pad follows from the inner diameter, so use the radius, not the diameter."
+          ],
           "answer": {
             "value": 11.21,
             "unit": "kPa",
@@ -612,6 +697,11 @@
           "kind": "calc",
           "points": 5,
           "text": "For installation the pane is turned upright, and the pad is on the vertical surface of the pane. Draw the force diagram of the pane, and calculate the minimum partial vacuum now needed when the lift accelerates in the same way.",
+          "hints": [
+            "Which forces act on the upright pane, and in which directions do they point? Which force keeps the pane from falling?",
+            "The force of the pressure difference and the support force at the edge of the pad are horizontal and equal: $N = F_\\text{p}$. In the vertical direction the weight is opposed by static friction, for which $F_{\\mu 0} - mg = ma$ and $F_{\\mu 0} \\le \\mu_0 N$.",
+            "The smallest underpressure is needed when the static friction is at its maximum. Replace the support force $N$ with the expression $\\Delta p\\,A$ and solve for $\\Delta p$."
+          ],
           "answer": {
             "value": 18.69,
             "unit": "kPa",
@@ -650,6 +740,11 @@
           "kind": "word",
           "points": 5,
           "text": "Use the manufacturer's instructions to assess whether the glazier can lift the pane in the upright position also in the rain, when the glass is wet.",
+          "hints": [
+            "What does the manufacturer's instruction require of the holding force? What changes when the glass is wet?",
+            "Use the expression of part b that contains the coefficient of static friction $\\mu_0$, and substitute the coefficient of wet glass. Compare the required underpressure with the $60\\,\\text{kPa}$ of the lifter.",
+            "Calculate the safety factor $\\dfrac{60\\,\\text{kPa}}{\\Delta p_\\text{required}}$ and compare it with the requirement of the instruction. Finally, think about which force carries the weight in the horizontal and in the upright position, and why one is more demanding."
+          ],
           "criteria": [
             {
               "key": "calculation",
@@ -694,6 +789,11 @@
           "kind": "calc",
           "points": 2,
           "text": "According to the source, how large is the thermal power of the reactor and how large is the net electrical power of the plant? Calculate the efficiency of the plant from them, and compare the result with the row *Kokonaishyötysuhde* (total efficiency) of the table.",
+          "hints": [
+            "Which two quantities do you need to calculate the efficiency? Which rows of the table give them?",
+            "The efficiency is the useful power divided by the power used: $\\eta = \\dfrac{P_\\text{s}}{P_1}$, where $P_1$ is the thermal power of the reactor and $P_\\text{s}$ the net electrical power.",
+            "Read the values from the table and write them in the same unit. Finally, compare the result with the row *Kokonaishyötysuhde*."
+          ],
           "answer": {
             "value": 37.21,
             "unit": "%",
@@ -717,6 +817,11 @@
           "kind": "calc",
           "points": 3,
           "text": "How large a heat power is transferred from the plant to the environment when the plant runs at its rated power? How much energy is transferred to the environment as heat in one day?",
+          "hints": [
+            "Only part of the heat of the reactor ends up in the grid as electricity. Where does the rest go? What does conservation of energy say about this?",
+            "The plant runs steadily, so $P_1 = P_\\text{s} + P_2$ and $P_2 = P_1 - P_\\text{s}$. The energy follows from the power and the time: $Q_2 = P_2 t$.",
+            "Convert one day to hours, so that the megawatt-hour is a suitable unit. Finally, think about how many significant figures to keep when the electrical power is given to the nearest hundred megawatts."
+          ],
           "answer": [
             {
               "name": "P2",
@@ -754,6 +859,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Seawater flows through the condenser at the rate given in the row *Merivesivirtaus* of the source. Derive in symbols an expression for the change in the temperature of the seawater when the heat transferred to the water per unit time (the heat power) and the volume of water flowing per second are known. By how much does the seawater warm in the condenser? Assess whether the real warming is larger or smaller than the calculated one.",
+          "hints": [
+            "What happens to the seawater when heat is transferred to it? Which quantity tells you how much it warms up?",
+            "The mass of water flowing in time $t$ is $m = \\rho V$, and the heat transferred to it is $Q = P_2 t$. The expression for heat is $Q = cm\\Delta T$. Combine them in symbols and solve for $\\Delta T$.",
+            "The seawater flow in the source is a volume per second, $\\dfrac{V}{t}$. Convert megawatts to watts and kilojoules to joules before substituting. Finally, think about whether all the heat given out really goes into the seawater."
+          ],
           "answer": {
             "value": 11.31,
             "unit": "K",
@@ -787,6 +897,11 @@
           "kind": "word",
           "points": 3,
           "text": "The efficiency of the plant stays clearly below $100\\,\\%$. Use the working principle of a heat engine to explain why not all the heat of the reactor can be turned into electrical energy, even if the turbine and the generator worked without friction and other losses. Use the steam temperature of the source and the temperature of the seawater in your justification.",
+          "hints": [
+            "What does the plant take in, what does it do and what does it give out? Why does the plant need the seawater?",
+            "Describe the plant as a heat engine: it takes heat $Q_1$ from a hot source, does work $W$ and gives out heat $Q_2$ to a colder place: $W = Q_1 - Q_2$. Does the heat $Q_2$ disappear if friction is removed?",
+            "Convert the steam temperature of the source to kelvins and compare it with the temperature of the seawater. How large is the temperature difference compared with the temperature of the hot source, and what does it tell you about how large a share of the heat can become work?"
+          ],
           "criteria": [
             {
               "text": "Describes the plant as a heat engine: it takes the heat $Q_1$ from the hot source, does the work $W$ in the turbine and gives the heat $Q_2$ to the colder seawater, and by the conservation of energy $W = Q_1 - Q_2$.",
@@ -810,6 +925,11 @@
           "kind": "word",
           "points": 3,
           "text": "Use the results of parts b and c to assess how the heat transferred to the sea can affect the environment near the plant. Explain also why it is difficult to make use of this heat, for example as district heat, although there is a lot of it.",
+          "hints": [
+            "Where does the energy transferred to the sea end up? What do the results of parts b and c tell you about its size?",
+            "The heat transferred to the sea increases the internal energy of the seawater, and the $\\Delta T$ of part c tells you how much the water warms up. Heat flows by itself only from hotter to colder.",
+            "Compare the temperature of the cooling water with the temperature of the water in a district heating network: can heat flow by itself from it into the network? Also think about what the warming could do near the discharge point."
+          ],
           "criteria": [
             {
               "text": "Explains the effect on the environment: the heat transferred to the sea increases the internal energy of the seawater, so the water warms near the outlet, by at most about $11\\,\\text{K}$. Mentions a consequence, for example an area that stays free of ice in winter or an effect on the growth of organisms and on which species live there.",
@@ -853,6 +973,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Determine the amount of substance of gas A.",
+          "hints": [
+            "Which quantities do you need to calculate the amount of substance with the ideal gas law? Which do you read from the graph, and which is given in the task?",
+            "From $pV = nRT$ you get $n = \\dfrac{pV}{RT}$. The volume is the volume of the vessel, and the pressure and temperature are read from the same point of the line of gas A.",
+            "Choose a point on the line whose values you can read accurately. Convert kilopascals to pascals and litres to cubic metres, and check the result with a second point."
+          ],
           "answer": {
             "value": 0.0602,
             "unit": "mol",
@@ -886,6 +1011,11 @@
           "kind": "calc",
           "points": 4,
           "text": "By what percentage is the amount of substance of gas B smaller than that of gas A? Justify the comparison.",
+          "hints": [
+            "The vessels are identical. Which quantity of the gases differs if the amounts of substance differ at the same temperature?",
+            "Write the ideal gas law for each gas and divide the equations by each other. Which quantities cancel?",
+            "Read the pressure of both gases at the same temperature and calculate the ratio. The percentage difference is $\\dfrac{n_\\text{A} - n_\\text{B}}{n_\\text{A}}$."
+          ],
           "answer": {
             "value": 40.0,
             "unit": "%",
@@ -914,6 +1044,11 @@
           "kind": "calc",
           "points": 3,
           "text": "Vessel A cools in frosty weather to a temperature of $-20\\,{}^\\circ\\text{C}$. What is the pressure of gas A then?",
+          "hints": [
+            "What stays the same when the vessel cools? How does the pressure of the gas then depend on the temperature?",
+            "When $V$ and $n$ are constant, the ideal gas law gives that $\\dfrac{p}{T}$ is constant: $\\dfrac{p_1}{T_1} = \\dfrac{p_2}{T_2}$.",
+            "Convert the temperature to kelvins: $T_2 = (-20 + 273.15)\\,\\text{K}$. Use one point of the line of gas A as the initial state, and check that the result is reasonable."
+          ],
           "answer": {
             "value": 63.3,
             "unit": "kPa",
@@ -962,6 +1097,11 @@
           "kind": "calc",
           "points": 3,
           "text": "How much work does the gas do as it expands?",
+          "hints": [
+            "What does the gas do to the piston as it expands? What does the area under the p–V graph tell you?",
+            "When the pressure is constant, the work is $W = p\\,\\Delta V$, the area of the rectangle between the graph and the $V$ axis.",
+            "Read the pressure and the initial and final volumes from the graph and find $\\Delta V$. Convert kilopascals to pascals and litres to cubic metres, so that the product is in joules."
+          ],
           "answer": {
             "value": 750.0,
             "unit": "J",
@@ -990,6 +1130,11 @@
           "kind": "calc",
           "points": 4,
           "text": "How many moles of gas are in the cylinder?",
+          "hints": [
+            "In which state of the gas do you know the pressure, the volume and the temperature? Which quantity is missing?",
+            "The ideal gas law $pV = nRT$ holds for the initial state, and it gives $n = \\dfrac{pV}{RT}$.",
+            "Read the pressure and the volume of the initial state from the graph. Convert the temperature to kelvins, litres to cubic metres and kilopascals to pascals."
+          ],
           "answer": {
             "value": 0.1026,
             "unit": "mol",
@@ -1018,6 +1163,11 @@
           "kind": "calc",
           "points": 4,
           "text": "What is the temperature of the gas at the end of the expansion?",
+          "hints": [
+            "What stays the same during the expansion and what changes? How is the temperature related to the volume?",
+            "The amount of substance and the pressure are constant, so $\\dfrac{V}{T}$ is constant. You can also use the ideal gas law for the final state: $pV_2 = nRT_2$.",
+            "Read the final volume from the graph and use the initial temperature in kelvins or the amount of substance of part b. Check the result: by what factor did the volume grow, and what does that do to the temperature in kelvins?"
+          ],
           "answer": {
             "value": 1172.6,
             "unit": "K",
@@ -1046,6 +1196,11 @@
           "kind": "word",
           "points": 3,
           "text": "During the expansion the gas received heat $Q$ from its surroundings. Is $Q$ greater than, equal to or smaller than the work $W$ done by the gas? Justify.",
+          "hints": [
+            "What happens to the temperature and the internal energy of the gas during the expansion? What does the gas do with the heat it receives?",
+            "Conservation of energy: $Q = \\Delta U + W$. The internal energy of an ideal gas increases when its temperature rises.",
+            "Use part c to decide whether $\\Delta U$ is positive, zero or negative. Then compare $Q$ and $W$."
+          ],
           "criteria": [
             {
               "text": "States that the temperature of the gas rises, so its internal energy increases: $\\Delta U > 0$.",

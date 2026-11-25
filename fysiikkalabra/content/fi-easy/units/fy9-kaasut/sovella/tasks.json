@@ -18,6 +18,11 @@
           "kind": "calc",
           "points": 5,
           "text": "Kuinka suuri ylipaine sylinterissä on noston aikana?",
+          "hints": [
+            "Auto nousee tasaisella nopeudella. Mitä se kertoo voimien summasta? Mitkä voimat työntävät mäntää alhaalta ja ylhäältä?",
+            "Voimat ovat tasapainossa. Ylipaine $\\Delta p$ on sylinterin ilman ja ulkoilman paine-ero. Se työntää mäntää ylös voimalla $\\Delta p\\,A$, joten $\\Delta p\\,A = mg$.",
+            "Männän pinta-ala on ympyrän ala $A = \\pi r^2$. Tehtävässä on annettu halkaisija. Laske siis ensin säde $r$. Muunna lopuksi paine kilopascaleiksi."
+          ],
           "answer": {
             "value": 562.1,
             "unit": "kPa",
@@ -51,6 +56,11 @@
           "kind": "calc",
           "points": 5,
           "text": "Kuinka suuren työn nostin tekee autoon ja lavaan? Perustele tulos niin, että lasket sen kahdella eri tavalla. Selitä, miksi sylinterin ilma tekee silti enemmän työtä.",
+          "hints": [
+            "Millä kahdella tavalla voit laskea työn? Voit katsoa auton ja lavan energiaa tai sylinterin ilman painetta.",
+            "Auton ja lavan saama työ on $W = mgh$. Paine-eron tekemä työ on $W = \\Delta p\\,\\Delta V$. Tässä $\\Delta V = Ah$ on sylinterin tilavuuden kasvu.",
+            "Muunna tilavuus kuutiometreiksi ja paine pascaleiksi. Silloin tulo on jouleina. Laske sitten sylinterin ilman kokonaispaine ja sen tekemä työ. Vertaa työtä nostimen tekemään työhön. Mihin erotus menee?"
+          ],
           "answer": {
             "value": 21.19,
             "unit": "kJ",
@@ -84,6 +94,11 @@
           "kind": "calc",
           "points": 5,
           "text": "Mitä säiliön mittari näyttää yhden noston jälkeen? Riittääkö säiliön ilma toiseen samanlaiseen nostoon, jos kompressori ei käynnisty välillä? Arvioi myös, miten oletus lämpötilasta vaikuttaa tulokseen.",
+          "hints": [
+            "Mitä ilmalle tapahtuu, kun se virtaa säiliöstä sylinteriin? Mikä pysyy samana, kun lämpötila on vakio?",
+            "Vakiolämpötilassa ilman määrä on verrannollinen tuloon $pV$ (ideaalikaasun tilanyhtälö). Noston jälkeen ilma on säiliössä ja sylinterissä: $p_1V_\\text{s} = p_2V_\\text{s} + p_\\text{c}\\,\\Delta V$.",
+            "Käytä kokonaispaineita. Lisää siis mittarin lukemaan ilmanpaine. Muunna $\\Delta V$ litroiksi. Muuta lopuksi paine takaisin mittarin lukemaksi. Toista nostoa varten mieti: kuinka suuri säiliön paineen pitää vähintään olla, jotta ilma virtaa sylinteriin?"
+          ],
           "answer": {
             "value": 650.0,
             "unit": "kPa",
@@ -136,6 +151,11 @@
           "kind": "calc",
           "points": 5,
           "text": "Kuinka monta kilogrammaa metaania moottori polttaa tunnissa?",
+          "hints": [
+            "Kaasumittari kertoo tilavuuden tietyssä lämpötilassa ja paineessa. Miten saat siitä moolimäärän? Miten saat sitten massan?",
+            "Tilanyhtälöstä $pV = nRT$ saat ainemäärän $n = \\dfrac{pV}{RT}$. Massan saat moolimassalla: $m = nM$.",
+            "Muunna ensin yksiköt: lämpötila kelvineiksi ($T = 298{,}15\\,\\text{K}$), paine pascaleiksi ($104\\,\\text{kPa} = 104\\,000\\,\\text{Pa}$) ja moolimassa yksikköön $\\text{kg/mol}$ ($M = 0{,}0160\\,\\text{kg/mol}$)."
+          ],
           "answer": {
             "value": 34.92,
             "unit": "kg",
@@ -169,6 +189,11 @@
           "kind": "calc",
           "points": 5,
           "text": "Kuinka suuri on laitoksen sähköteho?",
+          "hints": [
+            "Polttoaine tuo moottoriin energiaa. Kuinka nopeasti energiaa vapautuu? Kuinka suuri osa siitä päätyy sähköksi?",
+            "Polttoaineteho on vapautuva energia aikaa kohti: $P_0 = \\dfrac{Hm}{t}$. Tässä $H$ on lämpöarvo. Sähköteho saadaan hyötysuhteella: $P_\\text{s} = \\eta_\\text{s} P_0$.",
+            "Käytä a-kohdan massaa tunnissa. Muunna aika sekunneiksi ($1\\,\\text{h} = 3600\\,\\text{s}$). Muunna lämpöarvo yksikköön $\\text{J/kg}$ ennen sijoittamista."
+          ],
           "answer": {
             "value": 174.6,
             "unit": "kW",
@@ -202,6 +227,11 @@
           "kind": "calc",
           "points": 5,
           "text": "Miksi moottori ei voi muuttaa koko polttoainetehoa sähköksi, vaikka kaikki kitka poistettaisiin? Kuinka suuri osa polttoainetehosta saadaan hyötyyn sähkönä ja lämpönä yhteensä?",
+          "hints": [
+            "Mihin polttoaineen energia päätyy? Jos kitka olisi nolla, mihin muuhun kuin sähköön osa energiasta silti menisi?",
+            "Energia säilyy: $P_0 = P_\\text{s} + P_\\text{luov}$. Siksi luovutettu lämpöteho on $P_\\text{luov} = P_0 - P_\\text{s}$. Mieti, mitä moottorille tapahtuisi, jos sillä ei olisi kylmempää ympäristöä, johon lämpö voisi mennä.",
+            "Talteen otettu lämpöteho on $75\\,\\%$ luovutetusta lämpötehosta. Laske sähkö- ja talteen otettu lämpöteho yhteen. Vertaa summaa polttoainetehoon: $\\eta_\\text{kok} = \\dfrac{P_\\text{s} + P_\\text{talteen}}{P_0}$."
+          ],
           "answer": {
             "value": 84.0,
             "unit": "%",
@@ -250,6 +280,11 @@
           "kind": "graph",
           "points": 5,
           "text": "Esitä kuvaajana, miten ilman tilavuus riippuu lämpötilasta. Sovita pisteisiin sopiva malli.",
+          "hints": [
+            "Kumpaa suuretta ryhmä säätää? Kumpi on mittaustulos? Kumpi kuuluu vaaka-akselille?",
+            "Merkitse kahdeksan pistettä $(\\theta,\\ V)$. Piirrä epävarmuusjanat $\\pm 0{,}3\\,\\text{ml}$. Sovita pisteisiin viiva, joka kulkee pisteiden lomitse ja epävarmuusjanojen kautta. Älä yhdistä pisteitä murtoviivaksi.",
+            "Pystyakselin ei tarvitse alkaa nollasta. Valitse asteikko, jossa pisteet täyttävät kuvaajan. Kerro, että asteikko ei ala nollasta. Katso lopuksi, mitä kuvaaja kertoo: miten tilavuus muuttuu, kun lämpötila nousee?"
+          ],
           "criteria": [
             {
               "key": "graph_axes",
@@ -277,6 +312,11 @@
           "kind": "calc",
           "points": 5,
           "text": "Määritä kuvaajan avulla lämpötila, jossa ilman tilavuus olisi mallin mukaan nolla. Arvioi tuloksen epävarmuus. Vertaa tulosta hyväksyttyyn arvoon $-273{,}15\\,{}^\\circ\\text{C}$.",
+          "hints": [
+            "Mihin suuntaan suoraa pitää jatkaa, jotta tilavuus olisi nolla? Mistä saat suoran kulmakertoimen eli jyrkkyyden? Mistä saat tilavuuden $V_0$ asteessa $0\\,{}^\\circ\\text{C}$?",
+            "Suoran yhtälö on $V = V_0 + k\\theta$. Tilavuus on nolla, kun $\\theta_0 = -\\dfrac{V_0}{k}$. Kulmakerroin on $k = \\dfrac{\\Delta V}{\\Delta\\theta}$.",
+            "Lue kaksi pistettä suoralta. Älä käytä mittauspisteitä. Valitse pisteet kaukaa toisistaan. Arvioi epävarmuus piirtämällä jyrkin ja loivin suora, jotka vielä kulkevat kaikkien epävarmuusjanojen kautta. Laske niiden nollakohdat. Katso lopuksi, mahtuuko hyväksytty arvo väliin."
+          ],
           "answer": {
             "value": -279,
             "unit": "°C",
@@ -310,6 +350,11 @@
           "kind": "calc",
           "points": 5,
           "text": "Kuinka suuri ainemäärä ilmaa ruiskussa on? Käytä kulmakerrointa, jonka määritit kuvaajasta.",
+          "hints": [
+            "Kirjoita tilanyhtälö niin, että tilavuus on lämpötilan funktio. Mikä pysyy vakiona, kun paine on vakio? Mitä se tekee kuvaajan suoralle?",
+            "Vakiopaineessa $V = \\dfrac{nR}{p}\\,T$. Siksi kulmakerroin on $k = \\dfrac{nR}{p}$. Kelvinin ja celsiusasteen muutos ovat yhtä suuret. Voit siis käyttää b-kohdan kulmakerrointa sellaisenaan. Ratkaise $n$.",
+            "Muunna ensin kulmakerroin yksikköön $\\text{m}^3/\\text{K}$ ($1\\,\\text{ml} = 10^{-6}\\,\\text{m}^3$). Muunna paine pascaleiksi. Tarkista tulos laskemalla ainemäärä yhdestä mittauspisteestä."
+          ],
           "answer": {
             "value": 1.646,
             "unit": "mmol",
@@ -343,6 +388,11 @@
           "kind": "word",
           "points": 5,
           "text": "Toinen ryhmä teki saman mittauksen. Heidän ruiskunsa kärkeen oli kuitenkin liitetty letku, jossa oli $1{,}5\\,\\text{ml}$ ilmaa. Letku jäi hauteen ulkopuolelle huoneenlämpöön. Letkun ilma kuuluu suljettuun ilmamäärään. Siksi ryhmä lisäsi letkun $1{,}5\\,\\text{ml}$ jokaiseen tilavuuteen, jonka he lukivat ruiskun asteikolta. Miten tämä muuttaa heidän suoraansa ja nollapisteen arviota? Arvioi, voiko virheen poistaa toistamalla mittauksia.",
+          "hints": [
+            "Letkun ilma kuuluu suljettuun ilmamäärään. Missä lämpötilassa se on? Mitä sen tilavuudelle tapahtuu, kun hauteen lämpötila nousee?",
+            "Kokonaistilavuus on $V = V_\\text{ruisku} + V_\\text{letku}$. Mieti kummallekin osalle erikseen, muuttuuko se lämpötilan mukana. Mitä se tekee suoran kulmakertoimelle? Mitä se tekee pystyakselin leikkauskohdalle?",
+            "Katso nollakohdan lauseketta $\\theta_0 = -\\dfrac{V_0}{k}$. Mikä siinä muuttuu lisäyksen takia ja mikä ei? Mieti lopuksi, voiko toistaminen poistaa virheen, joka on joka mittauksessa samaan suuntaan."
+          ],
           "criteria": [
             {
               "text": "Selittää, että letkun ilma ei lämpene. Siksi sen tilavuus pysyy vakiona, ja jokaiseen kokonaistilavuuteen tulee sama lisä $1{,}5\\,\\text{ml}$. Suora siirtyy ylöspäin, mutta sen kulmakerroin ei muutu.",
@@ -386,6 +436,11 @@
           "kind": "word",
           "points": 6,
           "text": "Arvioi ensimmäisen keksijän esitettä. Mikä esitteessä pitää paikkansa ja mikä ei? Perustele.",
+          "hints": [
+            "Esitteessä on kaksi väitettä. Ensimmäinen: energia säilyy. Toinen: siksi moottori ei riko luonnonlakeja. Onko ensimmäinen väite totta? Seuraako siitä toinen?",
+            "Energian säilyminen kertoo vain, että energian kokonaismäärä ei muutu. Lämpövoimakone ottaa lämpimästä lähteestä lämmön $Q_1$ ja tekee työn $W$. Loput se luovuttaa lämpönä $Q_2$: $W = Q_1 - Q_2$.",
+            "Katso, mihin esitteen moottori voisi luovuttaa lämmön $Q_2$. Katso myös, mitä lämpötiloja sillä on käytössä. Arvioi lopuksi, kannattaako hanketta rahoittaa. Perustele."
+          ],
           "criteria": [
             {
               "text": "Toteaa, että energian säilyminen ei estä ideaa. Energian kannalta meren sisäenergia voisi muuttua työksi, ja esite kuvaa sen oikein.",
@@ -409,6 +464,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Laske toisen keksijän koneen hyötysuhde. Laske myös lämpöteho, jonka kone luovuttaa pakkasilmaan. Arvioi, miksi hyötysuhde on näin pieni.",
+          "hints": [
+            "Mitä hyötysuhde kertoo? Mitä kone tekee sille lämmölle, joka ei muutu työksi?",
+            "Hyötysuhde on hyötyteho jaettuna ottoteholla: $\\eta = \\dfrac{P_W}{P_1}$. Energia säilyy: $P_1 = P_W + P_2$. Siitä saat luovutetun lämpötehon $P_2$.",
+            "Selitystä varten muunna lämpötilat kelvineiksi ja laske lämpötilaero. Vertaa eroa kuuman lähteen lämpötilaan."
+          ],
           "answer": {
             "value": 6.0,
             "unit": "%",
@@ -442,6 +502,11 @@
           "kind": "word",
           "points": 5,
           "text": "Laivan hytit eli huoneet lämmitetään lämpöpumpulla. Lämpöpumppu ottaa lämpöä samasta $3\\,{}^\\circ\\text{C}$:n merivedestä. Pumppu käyttää sähkötehoa $10\\,\\text{kW}$, ja se luovuttaa hytteihin lämpötehoa $35\\,\\text{kW}$. Selitä, miksi tämä on mahdollista, vaikka ensimmäisen keksijän moottori ei ole mahdollinen.",
+          "hints": [
+            "Mistä lämpöpumppu saa lämmön? Minne se sen vie? Mitä pumppu tarvitsee siihen?",
+            "Lämpöpumppu siirtää lämpöä kylmästä lämpimään sähkötehon avulla. Energia säilyy: $P_\\text{hytti} = P_\\text{meri} + P_\\text{sähkö}$. Laske, kuinka suuri teho tulee merestä.",
+            "Vertaa lämpöpumppua esitteen moottoriin. Tarvitseeko kumpikin ulkopuolista työtä? Kulkeeko lämpö kylmästä lämpimään vai päinvastoin? Laske myös suhde $\\dfrac{P_\\text{hytti}}{P_\\text{sähkö}}$. Onko se hyötysuhde?"
+          ],
           "criteria": [
             {
               "text": "Selittää, että lämpöpumppu ei muuta lämpöä työksi. Se siirtää sähkön avulla lämpöä kylmästä merivedestä lämpimiin hytteihin. Merestä tulee $25\\,\\text{kW}$ ja sähköstä $10\\,\\text{kW}$.",
@@ -484,6 +549,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Näytä, miten ryhmä sai moolimassaksi $25\\,\\text{g/mol}$.",
+          "hints": [
+            "Mikä pullossa muuttuu, kun pumppu lisää siihen ilmaa? Mitkä suureet pysyvät samoina?",
+            "Tilavuus ja lämpötila ovat samat. Siksi tilanyhtälö $pV = nRT$ antaa lisätylle ilmalle $\\Delta n = \\dfrac{\\Delta p\\,V}{RT}$. Moolimassa on massa ainemäärää kohti: $M = \\dfrac{\\Delta m}{\\Delta n}$.",
+            "Laske lisätyn ilman massa punnitusten erotuksena. Muunna ennen sijoittamista paine pascaleiksi, tilavuus kuutiometreiksi ja lämpötila kelvineiksi."
+          ],
           "answer": {
             "value": 25.45,
             "unit": "g/mol",
@@ -512,6 +582,11 @@
           "kind": "word",
           "points": 6,
           "text": "Arvioi, onko ryhmän johtopäätös perusteltu. Nimeä mittauksen tärkeimmät virhelähteet. Kerro, mihin suuntaan kukin virhelähde muuttaa tulosta.",
+          "hints": [
+            "Mitä ryhmä oletti pullon ilmasta ja mittauksesta, kun se laski ainemäärän tilanyhtälöllä? Pitävätkö oletukset paikkansa heti pumppauksen jälkeen?",
+            "Jokainen virhelähde vaikuttaa joko laskettuun ainemäärään $\\Delta n$ tai punnittuun massaan $\\Delta m$. Muista, että $M = \\dfrac{\\Delta m}{\\Delta n}$. Mieti jokaisen kohdalla, kasvaako vai pieneneekö osoittaja tai nimittäjä. Mihin suuntaan tulos siirtyy?",
+            "Käy läpi lämpötila, mittarin lukema, ilman vuoto ja pullon tilavuus. Arvioi vaikutuksen suuruus laskemalla $M$ uudelleen muutetulla arvolla. Vertaa sitä vaa'an lukematarkkuuden vaikutukseen."
+          ],
           "criteria": [
             {
               "key": "error_sources",
@@ -535,6 +610,11 @@
           "kind": "word",
           "points": 5,
           "text": "Suunnittele parempi koe, jolla ilman moolimassa saadaan luotettavammin.",
+          "hints": [
+            "Mitkä mitatuista suureista ovat epävarmimpia? Miten mittaisit ne tarkemmin?",
+            "Yksi mittaus ei kerro virheen suuruutta. Toista koe usealla eri ylipaineella. Pidä muut tekijät samoina. Mieti, mitä esität kuvaajassa. Mieti myös, mikä suure määräytyy sen kulmakertoimesta.",
+            "Kirjoita tilanyhtälöstä lisätyn ilman massa paineen funktiona: $\\Delta m = \\dfrac{MV}{RT}\\,\\Delta p$. Mitä sinun pitää mitata? Mitä pitää pitää vakiona, jotta suoran kulmakertoimesta saa $M$:n?"
+          ],
           "criteria": [
             {
               "text": "Mittaa tarvittavat suureet luotettavasti. Pullon tilavuus mitataan täyttämällä pullo vedellä ja punnitsemalla. Ylipaine mitataan tarkalla mittarilla suoraan pullosta. Lukema luetaan vasta, kun ilma on jäähtynyt huoneenlämpöön.",
@@ -579,6 +659,11 @@
           "kind": "calc",
           "points": 5,
           "text": "Levy nostetaan lavalta vaakasuorassa asennossa. Laikka on levyn yläpinnan keskellä. Piirrä levyn voimakuvio noston alussa, kun nosturi kiihdyttää. Kuinka suuri alipaine laikan alla vähintään tarvitaan, jotta levy pysyy kiinni?",
+          "hints": [
+            "Mitkä voimat vaikuttavat vaakasuorassa olevaan levyyn, kun nosturi kiihdyttää ylöspäin? Mikä voima tulee paine-erosta? Kuinka suuri on laikan reunan tukivoima, kun levy juuri ja juuri pysyy kiinni?",
+            "Piirrä paino alas ja paine-eron voima $F_\\text{p} = \\Delta p\\,A$ ylös. Newtonin II laki ylöspäin: $F_\\text{p} - mg = ma$.",
+            "Laske ensin levyn massa: $m = \\rho\\,l\\,w\\,d$. Muunna mitat metreiksi. Laikan pinta-ala saadaan sisähalkaisijasta. Käytä siis sädettä, ei halkaisijaa."
+          ],
           "answer": {
             "value": 11.21,
             "unit": "kPa",
@@ -612,6 +697,11 @@
           "kind": "calc",
           "points": 5,
           "text": "Levy asennetaan pystyasennossa. Siksi levy käännetään pystyyn, ja laikka on levyn pystysuoralla pinnalla. Piirrä levyn voimakuvio. Laske, kuinka suuri alipaine nyt vähintään tarvitaan, kun nosto kiihtyy samalla tavalla.",
+          "hints": [
+            "Mitkä voimat vaikuttavat pystyssä olevaan levyyn? Mihin suuntiin ne osoittavat? Mikä voima estää levyä putoamasta?",
+            "Paine-eron voima ja laikan reunan tukivoima ovat vaakasuorassa ja yhtä suuret: $N = F_\\text{p}$. Pystysuunnassa painoa vastaan on lepokitka. Sille pätee $F_{\\mu 0} - mg = ma$ ja $F_{\\mu 0} \\le \\mu_0 N$.",
+            "Pienin alipaine tarvitaan, kun lepokitka on suurimmillaan. Korvaa tukivoima $N$ lausekkeella $\\Delta p\\,A$. Ratkaise sitten $\\Delta p$."
+          ],
           "answer": {
             "value": 18.69,
             "unit": "kPa",
@@ -650,6 +740,11 @@
           "kind": "word",
           "points": 5,
           "text": "Käytä valmistajan ohjetta. Arvioi, voiko asentaja nostaa levyn pystyasennossa myös sateella, kun lasi on märkä.",
+          "hints": [
+            "Mitä valmistajan ohje vaatii pitävältä voimalta? Mikä muuttuu, kun lasi on märkä?",
+            "Käytä b-kohdan lauseketta, jossa on lepokitkakerroin $\\mu_0$. Sijoita siihen märän lasin kerroin. Vertaa vaadittua alipainetta nostimen $60\\,\\text{kPa}$:iin.",
+            "Laske varmuuskerroin $\\dfrac{60\\,\\text{kPa}}{\\Delta p_\\text{vaadittu}}$. Vertaa sitä ohjeen vaatimukseen. Mieti lopuksi, mikä voima kantaa painon vaaka- ja pystyasennossa. Miksi toinen on vaativampi?"
+          ],
           "criteria": [
             {
               "key": "calculation",
@@ -694,6 +789,11 @@
           "kind": "calc",
           "points": 2,
           "text": "Kuinka suuri on aineiston mukaan reaktorin lämpöteho? Kuinka suuri on laitoksen nettosähköteho? Laske näistä laitoksen hyötysuhde. Vertaa tulosta taulukon riviin *Kokonaishyötysuhde*.",
+          "hints": [
+            "Mitkä kaksi suuretta tarvitset hyötysuhteen laskemiseen? Mitkä taulukon rivit kertovat ne?",
+            "Hyötysuhde on hyöty jaettuna käytetyllä: $\\eta = \\dfrac{P_\\text{s}}{P_1}$. Tässä $P_1$ on reaktorin lämpöteho ja $P_\\text{s}$ nettosähköteho.",
+            "Lue luvut taulukosta ja kirjoita ne samassa yksikössä. Vertaa lopuksi tulosta taulukon riviin *Kokonaishyötysuhde*."
+          ],
           "answer": {
             "value": 37.21,
             "unit": "%",
@@ -717,6 +817,11 @@
           "kind": "calc",
           "points": 3,
           "text": "Kuinka suuri lämpöteho siirtyy laitoksesta ympäristöön, kun laitos toimii nimellistehollaan? Kuinka suuri energia siirtyy ympäristöön lämpönä yhden vuorokauden aikana?",
+          "hints": [
+            "Reaktorin lämmöstä vain osa päätyy verkkoon sähkönä. Minne loput menevät? Mitä energian säilyminen sanoo tästä?",
+            "Laitos toimii tasaisesti. Siksi $P_1 = P_\\text{s} + P_2$ ja $P_2 = P_1 - P_\\text{s}$. Energia saadaan tehosta ja ajasta: $Q_2 = P_2 t$.",
+            "Muunna vuorokausi tunneiksi. Silloin megawattitunti on sopiva yksikkö. Mieti lopuksi, montako merkitsevää numeroa kannattaa jättää, kun sähköteho on annettu sadan megawatin tarkkuudella."
+          ],
           "answer": [
             {
               "name": "P2",
@@ -754,6 +859,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Lauhduttimen läpi virtaa merivettä. Veden määrä on aineiston rivillä *Merivesivirtaus*. Johda symbolein lauseke meriveden lämpötilan muutokselle. Tunnet lämmön, joka siirtyy veteen aikayksikössä, eli lämpötehon. Tunnet myös sekunnissa virtaavan veden tilavuuden. Kuinka paljon merivesi lämpenee lauhduttimessa? Arvioi lopuksi, onko todellinen lämpeneminen laskettua suurempi vai pienempi.",
+          "hints": [
+            "Mitä merivedelle tapahtuu, kun siihen siirtyy lämpöä? Mikä suure kertoo, kuinka paljon se lämpenee?",
+            "Ajassa $t$ virtaavan veden massa on $m = \\rho V$. Siihen siirtyy lämpö $Q = P_2 t$. Lämpömäärän lauseke on $Q = cm\\Delta T$. Yhdistä ne symbolein ja ratkaise $\\Delta T$.",
+            "Aineiston merivesivirtaus on tilavuus sekunnissa, $\\dfrac{V}{t}$. Muunna megawatit watteiksi ja kilojoulet jouleiksi ennen sijoittamista. Mieti lopuksi, siirtyykö kaikki luovutettu lämpö todella meriveteen."
+          ],
           "answer": {
             "value": 11.31,
             "unit": "K",
@@ -787,6 +897,11 @@
           "kind": "word",
           "points": 3,
           "text": "Laitoksen hyötysuhde on selvästi alle $100\\,\\%$. Selitä lämpövoimakoneen toimintaperiaatteen avulla, miksi kaikkea reaktorin lämpöä ei voi muuttaa sähköenergiaksi. Oleta, että turbiini ja generaattori toimivat ilman kitkaa ja muita häviöitä. Käytä perustelussa aineiston höyryn lämpötilaa ja meriveden lämpötilaa.",
+          "hints": [
+            "Mitä laitos ottaa, mitä se tekee ja mitä se luovuttaa? Miksi laitos tarvitsee meriveden?",
+            "Kuvaa laitos lämpövoimakoneena. Se ottaa kuumasta lähteestä lämmön $Q_1$ ja tekee työn $W$. Se luovuttaa lämmön $Q_2$ kylmempään: $W = Q_1 - Q_2$. Poistuuko lämpö $Q_2$, jos kitka poistetaan?",
+            "Muunna aineiston höyryn lämpötila kelvineiksi. Vertaa sitä meriveden lämpötilaan. Kuinka suuri lämpötilaero on kuuman lähteen lämpötilaan verrattuna? Mitä se kertoo siitä, kuinka suuri osa lämmöstä voi muuttua työksi?"
+          ],
           "criteria": [
             {
               "text": "Kuvaa laitoksen lämpövoimakoneena. Laitos ottaa kuumasta lähteestä lämmön $Q_1$, tekee turbiinissa työn $W$ ja luovuttaa lämmön $Q_2$ kylmempään meriveteen. Energia säilyy, joten $W = Q_1 - Q_2$.",
@@ -810,6 +925,11 @@
           "kind": "word",
           "points": 3,
           "text": "Käytä b- ja c-kohdan tuloksia. Arvioi, miten mereen siirtyvä lämpö voi vaikuttaa ympäristöön laitoksen lähellä. Selitä myös, miksi tätä lämpöä on vaikea käyttää hyödyksi esimerkiksi kaukolämpönä eli rakennusten lämmitykseen, vaikka lämpöä on paljon.",
+          "hints": [
+            "Mihin mereen siirtyvä energia päätyy? Mitä b- ja c-kohdan luvut kertovat sen suuruudesta?",
+            "Mereen siirtyvä lämpö kasvattaa meriveden sisäenergiaa. C-kohdan $\\Delta T$ kertoo, kuinka paljon vesi lämpenee. Lämpö siirtyy itsestään vain kuumemmasta kylmempään.",
+            "Vertaa jäähdytysveden lämpötilaa kaukolämpöverkon veden lämpötilaan. Voiko lämpö siirtyä siitä itsestään verkkoon? Mieti myös, mitä lämpeneminen voisi tehdä purkupaikan lähellä."
+          ],
           "criteria": [
             {
               "text": "Selittää ympäristövaikutuksen. Mereen siirtyvä lämpö kasvattaa meriveden sisäenergiaa. Siksi vesi lämpenee purkupaikan lähellä, enintään noin $11\\,\\text{K}$. Mainitsee seurauksen: esimerkiksi alue pysyy talvella sulana, tai lämpö vaikuttaa eliöiden kasvuun ja lajistoon.",
@@ -853,6 +973,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Määritä kaasun A ainemäärä.",
+          "hints": [
+            "Mitä suureita tarvitset ainemäärän laskemiseen tilanyhtälöllä? Mitkä niistä luet kuvaajasta? Mikä on annettu tehtävässä?",
+            "Tilanyhtälöstä $pV = nRT$ saat $n = \\dfrac{pV}{RT}$. Tilavuus on astian tilavuus. Paine ja lämpötila luetaan kaasun A suoran samasta pisteestä.",
+            "Valitse suoralta piste, jonka arvot voit lukea tarkasti. Muunna kilopascalit pascaleiksi ja litrat kuutiometreiksi. Tarkista tulos toisella pisteellä."
+          ],
           "answer": {
             "value": 0.0602,
             "unit": "mol",
@@ -886,6 +1011,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Kuinka monta prosenttia pienempi kaasun B ainemäärä on kuin kaasun A ainemäärä? Perustele vertailu.",
+          "hints": [
+            "Astiat ovat samanlaisia. Mikä kaasujen suure eroaa, jos ainemäärät ovat eri suuret samassa lämpötilassa?",
+            "Kirjoita tilanyhtälö kummallekin kaasulle. Jaa yhtälöt keskenään. Mitkä suureet supistuvat?",
+            "Lue molempien kaasujen paine samassa lämpötilassa ja laske suhde. Prosenttiero on $\\dfrac{n_\\text{A} - n_\\text{B}}{n_\\text{A}}$."
+          ],
           "answer": {
             "value": 40.0,
             "unit": "%",
@@ -914,6 +1044,11 @@
           "kind": "calc",
           "points": 3,
           "text": "Astia A jäähtyy pakkasessa lämpötilaan $-20\\,{}^\\circ\\text{C}$. Mikä on kaasun A paine silloin?",
+          "hints": [
+            "Mikä pysyy samana, kun astia jäähtyy? Miten kaasun paine silloin riippuu lämpötilasta?",
+            "Kun $V$ ja $n$ ovat vakioita, tilanyhtälöstä seuraa, että $\\dfrac{p}{T}$ on vakio: $\\dfrac{p_1}{T_1} = \\dfrac{p_2}{T_2}$.",
+            "Muunna lämpötila kelvineiksi: $T_2 = (-20 + 273{,}15)\\,\\text{K}$. Käytä alkutilana yhtä kaasun A suoran pistettä. Tarkista, että tulos on järkevä."
+          ],
           "answer": {
             "value": 63.3,
             "unit": "kPa",
@@ -962,6 +1097,11 @@
           "kind": "calc",
           "points": 3,
           "text": "Kuinka suuren työn kaasu tekee laajetessaan?",
+          "hints": [
+            "Mitä kaasu tekee mäntään laajetessaan? Mitä p–V-kuvaajan pinta-ala kertoo?",
+            "Kun paine on vakio, työ on $W = p\\,\\Delta V$. Se on kuvaajan ja $V$-akselin väliin jäävän suorakulmion ala.",
+            "Lue kuvaajasta paine sekä alku- ja lopputilavuus. Laske $\\Delta V$. Muunna kilopascalit pascaleiksi ja litrat kuutiometreiksi. Silloin tulo on jouleina."
+          ],
           "answer": {
             "value": 750.0,
             "unit": "J",
@@ -990,6 +1130,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Kuinka monta moolia kaasua sylinterissä on?",
+          "hints": [
+            "Missä kaasun tilassa tunnet paineen, tilavuuden ja lämpötilan? Mikä suure puuttuu?",
+            "Alkutilaan pätee ideaalikaasun tilanyhtälö $pV = nRT$. Siitä saat $n = \\dfrac{pV}{RT}$.",
+            "Lue alkutilan paine ja tilavuus kuvaajasta. Muunna lämpötila kelvineiksi, litrat kuutiometreiksi ja kilopascalit pascaleiksi."
+          ],
           "answer": {
             "value": 0.1026,
             "unit": "mol",
@@ -1018,6 +1163,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Mikä on kaasun lämpötila laajenemisen lopussa?",
+          "hints": [
+            "Mikä pysyy samana laajenemisen aikana ja mikä muuttuu? Miten lämpötila liittyy tilavuuteen?",
+            "Ainemäärä ja paine ovat vakioita, joten $\\dfrac{V}{T}$ on vakio. Voit myös käyttää lopputilaan tilanyhtälöä $pV_2 = nRT_2$.",
+            "Lue lopputilavuus kuvaajasta. Käytä alkulämpötilaa kelvineinä tai b-kohdan ainemäärää. Tarkista tulos: kuinka moninkertaiseksi tilavuus kasvoi? Mitä se tekee kelvinlämpötilalle?"
+          ],
           "answer": {
             "value": 1172.6,
             "unit": "K",
@@ -1046,6 +1196,11 @@
           "kind": "word",
           "points": 3,
           "text": "Kaasu sai laajenemisen aikana ympäristöltä lämpöä $Q$. Onko $Q$ suurempi, yhtä suuri vai pienempi kuin kaasun tekemä työ $W$? Perustele.",
+          "hints": [
+            "Mitä kaasun lämpötilalle ja sisäenergialle tapahtuu laajenemisessa? Mihin kaasu käyttää ottamansa lämmön?",
+            "Energian säilyminen: $Q = \\Delta U + W$. Ideaalikaasun sisäenergia kasvaa, kun lämpötila nousee.",
+            "Päättele c-kohdan perusteella, onko $\\Delta U$ positiivinen, nolla vai negatiivinen. Vertaa sitten $Q$:ta ja $W$:tä."
+          ],
           "criteria": [
             {
               "text": "Toteaa, että kaasun lämpötila nousee, joten sen sisäenergia kasvaa: $\\Delta U > 0$.",
