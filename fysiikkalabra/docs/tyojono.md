@@ -181,9 +181,7 @@ Avoimet: **Varattu: claude/fy5-harventuma** — FY5 `fy5-10/types` "harvennus" �
 
 ## 26. Opettajan päätökset 2026-11-25 (koordinaattorin chatissa, "Yes yes")
 (a) Kohdan 11c jatko: pitkien tehtävien laskukohtiin vastauksen tarkistus ja yleisen virheen palaute (muuttaa mallivastauksen lukkoa, tehty-laskuria ja valmentajan näyttölokia). Jaettu, oma PR, vasta 11b PR 8:n ja 11c:n vihjeyksiköiden jälkeen; uudet käyttöliittymätekstit hyväksytään tekijäsessioon.
-(b) Fysiklabbet- ja Mafy-vertailun ehdotukset (sessio "Fysillabbet vs ruukkilabra", 2026-11-25) jonoon. Kustakin ensin lyhyt ehdotus opettajalle (mitä muuttuu, kuva ennen/jälkeen, kustannus), toteutus vasta päätöksen jälkeen:
-  1. esitystila oppitunneille; 2. hyppyrivi luvun alkuun; 3. teoriakappaleiden 60 sanan raja (233/1593 kappaletta yli); 4. kaavalaatikon tunnusluettelo;
-  5. MAOL/Mafy-taulukoiden käyttö fy9-koe-yksikössä ja hakutehtävät; 6. Mafy-kartta; 7. taulukoiden versiovahti CI:hin; 8. toinen harjoituskoe.
+(b) Fysiklabbet- ja Mafy-vertailun ehdotuksia (esitystila, hyppyrivi, 60 sanan raja, tunnusluettelo, Mafy-taulukot ja -kartta, taulukoiden versiovahti, toinen harjoituskoe) ei tehdä: opettaja 2026-11-25 ("No need to do the list on b").
 
 ## 14. Ahjo ja LUMA-tutor yhteiseen jaksopohjaan (opettaja 2026-11-13; juuri ennen vihkoja)
 Siirretään `ahjo.py` ja `lumatutor.py` jaksopohjan lohkoiksi niin, että sivut pysyvät tavulleen samoina kuten Kilparobotiikassa; puuttuvat lohkot yhteiseen kirjastoon. Jaettu: yksin.
