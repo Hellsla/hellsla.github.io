@@ -18,6 +18,7 @@ args = sys.argv[1:]
 SITE = ROOT / (args[0] if args and (ROOT / args[0]).is_dir() else ("site" if (ROOT / "site" / "FY9-valmentaja.html").is_file() else "preview"))
 KEY = "ruukkilabra:fy9-valmentaja"
 fails = 0
+DIAG_HREF = "fy9-koe.html#testi-ohje"   # PR 7b: straight to the 24-task diagnostic (section 5 Esimerkit: its instruction, then the module boxes)
 
 
 def expect(name, ok, detail=""):
@@ -214,9 +215,17 @@ with sync_playwright() as pw:
             p.goto(base + "FY9-valmentaja.html")
             T = p.evaluate("() => JSON.parse(document.getElementById('fy9-coach').dataset.t)")
             idx = p.evaluate("() => JSON.parse(document.getElementById('fy9-index').textContent)")
+            # PR 7b: the link scrolls the diagnostic into view under the sticky navigation (a closed box opens by the hash)
+            q = c.new_page(); q.goto(base + "FY9-valmentaja.html")
+            q.locator("#coach-recs a.coach-go").click(); q.wait_for_url("**/fy9-koe.html#testi-ohje"); q.wait_for_timeout(700)
+            r = q.evaluate("""() => { const e = document.getElementById('testi-ohje'), r = e.getBoundingClientRect();
+                const nav = Math.max(0, ...[...document.querySelectorAll('body *')].filter(x => ['sticky', 'fixed'].includes(getComputedStyle(x).position) && x.getBoundingClientRect().top <= 5).map(x => x.getBoundingClientRect().bottom));
+                return {top: r.top, h: r.height, nav, tasks: [...document.querySelectorAll('[id^="testi-"]')].filter(x => /^testi-\\d+$/.test(x.id)).length} }""")
+            expect(f"{lang} {w}px: the diagnostic link lands on its instruction below the sticky navigation, 24 tasks on the page", r["h"] > 0 and r["nav"] <= r["top"] < h / 2 and r["tasks"] == 24, r)
+            q.close()
             if w == 360:
                 expect(f"{lang}: no data: the diagnostic is offered, no recommendation, no competency list, no Tyhjennä",
-                       p.locator("#coach-recs a.coach-go").count() == 1 and p.locator("#coach-recs a").first.get_attribute("href") == "fy9-koe.html" and p.locator("li.coach-rec").count() == 0
+                       p.locator("#coach-recs a.coach-go").count() == 1 and p.locator("#coach-recs a").first.get_attribute("href") == DIAG_HREF and p.locator("li.coach-rec").count() == 0
                        and not p.locator("#coach-areas").is_visible() and p.locator(".coach-clear").count() == 0)
                 expect(f"{lang}: free practice is always linked", p.locator('a[href="yo-sekoitin.html"]').count() >= 1 and p.locator(f'a[href="FY9.html"]').count() >= 1)
                 expect(f"{lang}: the page makes no request but to itself and its own files", all(u.startswith(BASE) for u in reqs), [u for u in reqs if not u.startswith(BASE)])
