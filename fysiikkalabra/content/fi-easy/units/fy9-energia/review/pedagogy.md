@@ -1,9 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: fe735814878a79ef
-SCOPE: delta (old-content fixes, git diff origin/main)
+CONTENT-HASH: 1b1a927529cf0fb7
 
 Blocking: none.
 
-1. Teacher.md: 'other eight tasks are homework' matches nine tasks; sovella s2 formula and rubric now Q = Hm in all three languages and consistent with the solution. Points sum (134) is not claimed in teacher.md.
-2. Earlier delta lines re-read briefly: the changes touch only counts, points and notation; no misconception feedback, hint ladder or rubric criterion was weakened, and no answer is disclosed early.
-3. Polish: none.
+Ladder: across all written parts, hint 1 is a guiding question, hint 2 the relation or representation, hint 3 one intermediate step; no hint states a final answer or fills a rubric point. Evaluation and design parts (neighbour's claim, island plan, recommendation, error sources, experiment design, extrapolation, the designer's claim) guide the reasoning and leave the conclusion to the student.
+
+Polish:
+1. Heating part (house, balance temperature), hint 2: it states "other consumption E = 12 kWh" and so hands the student the key identification that hint 1 asks them to find. Suggest: "Ratkaise suoran yhtälöstä  = kT + b$ tai lue kuvaajalta lämpötila, jossa lämmitystä ei enää tarvita." (same idea in en and fi-easy).
+2. Summer condenser part, hint 3, last sentence ("Mitä voimalan ajossa kannattaisi silloin harkita?") and the pumped-storage designer-claim hint 3 ("Muotoile väite uudelleen niin, että se on oikein") lean toward the conclusion; acceptable, optional softening to a pure question.
+3. Hint 3 of the island emissions part gives the unit chain in full; it still leaves the arithmetic, so no change needed.
+
+Language (fi-easy): Short sentences, one idea each; difficult terms (hyötysuhde, kulmakerroin) are introduced by a question or relation, none of the physics is dropped. Readability fine.
