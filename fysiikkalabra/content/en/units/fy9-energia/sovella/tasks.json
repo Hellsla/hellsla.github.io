@@ -53,8 +53,8 @@
           "text": "How much electricity must the panels produce in a day so that the need in part a is covered through the battery and the inverter? Is the production of a cloudy day enough?",
           "hints": [
             "The energy flows from the panels through the battery and the inverter to the devices. Must the panels produce more or less energy than the devices use?",
-            "The stages are in series, so the efficiencies are multiplied: $E_\\text{panels} = \\dfrac{E_\\text{need}}{\\eta_\\text{battery}\\,\\eta_\\text{i}}$.",
-            "First calculate the combined efficiency $\\eta_\\text{battery}\\,\\eta_\\text{i}$, then the energy of the panels. Compare the result with the production of the cloudy day: how much of the cloudy day's energy reaches the devices?"
+            "The stages are in series, so the efficiencies are multiplied: $E_\\text{panels} = \\dfrac{E_\\text{need}}{\\eta_\\text{batt}\\,\\eta_\\text{inv}}$.",
+            "First calculate the combined efficiency $\\eta_\\text{batt}\\,\\eta_\\text{inv}$, then the energy of the panels. Compare the result with the production of the cloudy day: how much of the cloudy day's energy reaches the devices?"
           ],
           "answer": {
             "value": 1.84,
@@ -171,8 +171,8 @@
           "text": "Calculate the electrical efficiency and the overall efficiency of the plant.",
           "hints": [
             "Efficiency tells what fraction of the fuel power is put to use. What counts as useful in the electrical efficiency, and what in the total efficiency?",
-            "$\\eta = \\dfrac{P_\\text{useful}}{P_0}$: for the electrical efficiency the useful part is the electric power $P_\\text{e}$, and for the total efficiency the electric and district-heating power together, $\\eta_\\text{tot} = \\dfrac{P_\\text{e} + P_\\text{h}}{P_0}$.",
-            "Use the fuel power of part a as the denominator. Calculate the total useful power $P_\\text{e} + P_\\text{h}$ first and divide only then."
+            "$\\eta = \\dfrac{P_\\text{useful}}{P_0}$: for the electrical efficiency the useful part is the electric power $P_\\text{el}$, and for the total efficiency the electric and district-heating power together, $\\eta_\\text{tot} = \\dfrac{P_\\text{el} + P_\\text{dh}}{P_0}$.",
+            "Use the fuel power of part a as the denominator. Calculate the total useful power $P_\\text{el} + P_\\text{dh}$ first and divide only then."
           ],
           "answer": [
             {
@@ -246,8 +246,8 @@
           "text": "In summer district heat is needed only for hot tap water. Explain why the overall efficiency of the plant does not then stay the same if it produces the same electrical power.",
           "hints": [
             "Where does the heat of the condenser go in summer, when there is no need for district heating? Who makes use of it then?",
-            "Only the power that ends up as useful is counted in the total efficiency: $\\eta_\\text{tot} = \\dfrac{P_\\text{e} + P_\\text{h}}{P_0}$. What happens to the numerator when $P_\\text{h}$ gets smaller?",
-            "Write the expression of the total efficiency for the case $P_\\text{h} = 0$ and compare it with the efficiencies of part b. What should be considered in running the plant then?"
+            "Only the power that ends up as useful is counted in the total efficiency: $\\eta_\\text{tot} = \\dfrac{P_\\text{el} + P_\\text{dh}}{P_0}$. What happens to the numerator when $P_\\text{dh}$ gets smaller?",
+            "Write the expression of the total efficiency for the case $P_\\text{dh}$ small or zero and compare it with the efficiencies of part b. What should be considered in running the plant then?"
           ],
           "criteria": [
             {
@@ -387,7 +387,7 @@
           "text": "At what outdoor temperature would the house, according to the model, need no heating at all? Explain why this temperature is not the same as the indoor temperature $21\\,{}^\\circ\\text{C}$.",
           "hints": [
             "When does the house need no heating at all? How much electricity use is then left?",
-            "When no heating is needed, only the other electricity use $E = 12\\,\\text{kWh}$ is left. Solve from the equation of the line $E = kT + b$, or read from the graph, the temperature at which $E$ has this value.",
+            "When no heating is needed, only the other electricity use, which the task gives, is left. Solve from the equation of the line $E = kT + b$, or read from the graph, the temperature at which $E$ has this value.",
             "Compare the temperature you found with the indoor temperature $21\\,{}^\\circ\\text{C}$. What other than the heating brings energy into the house, and what does conservation of energy say about it?"
           ],
           "criteria": [
@@ -905,7 +905,7 @@
           "text": "Explain with thermal physics, electricity and mechanics why the energy consumption of an electric car per kilometre grows in frost.",
           "hints": [
             "Think of three places where the cold increases energy consumption: the temperature difference between the car and the surroundings, the battery, and the motion. What is the phenomenon in each?",
-            "Thermal physics: the heat flow grows as the temperature difference grows. Electricity: power is $P = UI$ or the loss power $P = R_\\text{i}I^2$. Mechanics: the work against resisting forces is $W = Fs$. Choose a suitable argument from each area.",
+            "Thermal physics: the heat flow grows as the temperature difference grows. Electricity: power is $P = UI$ or the loss power $P = R_\\text{s}I^2$. Mechanics: the work against resisting forces is $W = Fs$. Choose a suitable argument from each area.",
             "Put the explanation together with conservation of energy: all the energy comes from the same battery. Write a chain in which some form of energy grows in each part, and conclude why less is left for driving."
           ],
           "criteria": [
@@ -939,7 +939,7 @@
           "hints": [
             "Study the information in the data: did all the cars drive in the same conditions along the whole route? At what temperature did each car drive?",
             "Comparing the percentage deviations of the cars is fair only if the conditions are the same. What changed along the route going north?",
-            "Compare the temperature at which the car with the shortest range stopped with the temperature range that the car that drove furthest went through. What does it tell about the conditions in which each drove?"
+            "Compare the temperature at which the Hyundai Inster stopped with the temperature range that the car that drove furthest went through. What does it tell about the conditions in which each drove?"
           ],
           "criteria": [
             {

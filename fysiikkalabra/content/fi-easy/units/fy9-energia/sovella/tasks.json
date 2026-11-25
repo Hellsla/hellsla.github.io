@@ -247,7 +247,7 @@
           "hints": [
             "Kesällä kaukolämpöä ei tarvita paljon. Mihin lauhduttimen lämpö silloin joutuu? Kuka sitä käyttää?",
             "Kokonaishyötysuhteessa lasketaan mukaan vain energia, joka tulee käyttöön: $\\eta_\\text{kok} = \\dfrac{P_\\text{s} + P_\\text{k}}{P_0}$. Mitä osoittajalle tapahtuu, kun $P_\\text{k}$ pienenee?",
-            "Kirjoita kokonaishyötysuhteen lauseke tilanteessa $P_\\text{k} = 0$. Vertaa sitä b-kohdan hyötysuhteisiin. Mitä voimalan ajossa kannattaisi silloin miettiä?"
+            "Kirjoita kokonaishyötysuhteen lauseke tilanteessa, jossa $P_\\text{k}$ on pieni tai nolla. Vertaa sitä b-kohdan hyötysuhteisiin. Mitä voimalan ajossa kannattaisi silloin miettiä?"
           ],
           "criteria": [
             {
@@ -387,7 +387,7 @@
           "text": "Missä ulkolämpötilassa talo ei mallin mukaan tarvitsisi lämmitystä ollenkaan? Selitä, miksi tämä lämpötila ei ole sama kuin sisälämpötila $21\\,{}^\\circ\\text{C}$.",
           "hints": [
             "Milloin talo ei tarvitse lämmitystä lainkaan? Paljonko sähköä talo silloin kuluttaa?",
-            "Kun lämmitystä ei tarvita, jäljelle jää muu sähkönkulutus $E = 12\\,\\text{kWh}$. Ratkaise lämpötila suoran yhtälöstä $E = kT + b$ tai lue kuvaajasta, missä $E$ saa tämän arvon.",
+            "Kun lämmitystä ei tarvita, jäljelle jää vain muu sähkönkulutus, jonka tehtävä antaa. Ratkaise lämpötila suoran yhtälöstä $E = kT + b$ tai lue kuvaajasta, missä $E$ saa tämän arvon.",
             "Vertaa saamaasi lämpötilaa sisälämpötilaan $21\\,{}^\\circ\\text{C}$. Mikä muu kuin lämmitys tuo taloon energiaa? Mitä energian säilyminen sanoo siitä?"
           ],
           "criteria": [
@@ -939,7 +939,7 @@
           "hints": [
             "Tutki aineiston tietoja. Ajoivatko kaikki autot samoissa olosuhteissa koko reitin? Missä lämpötilassa kukin auto ajoi?",
             "Autojen prosenttipoikkeamat ovat vertailukelpoisia vain, jos olosuhteet ovat samat. Mikä muuttui reitillä pohjoiseen ajettaessa?",
-            "Vertaa lyhimmälle matkalle jääneen auton pysähtymislämpötilaa lämpötiloihin, joissa pisimmälle ajanut auto ajoi. Mitä se kertoo olosuhteista, joissa kumpikin ajoi?"
+            "Vertaa Hyundai Insterin pysähtymislämpötilaa lämpötiloihin, joissa pisimmälle ajanut auto ajoi. Mitä se kertoo olosuhteista, joissa kumpikin ajoi?"
           ],
           "criteria": [
             {
