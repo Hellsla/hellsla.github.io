@@ -1,14 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: c8d1c7be46b19133
-Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
+CONTENT-HASH: 7c576415ca151e1e
 
-## Blocking
-- (none)
+Round 2, hints only. Blocking: none.
 
-## Polish
-- (none)
+Polish:
+1. s2 b hint 3 (fi-easy): "so that there are points on both sides" is slightly procedural but leaves the choice of y to the student; acceptable.
+2. s3 c hint 3 (fi-easy): leads close to the latent-heat idea; still leaves the conclusion to the student; acceptable.
 
-## Checked
-- inquiry.json "6. Hyötysuhde": read the prompt with the changed correct option and the three changed feedbacks. The correct option still answers the question, is not longer or more telling than the distractors, and the distractors stay wrong for the same misconceptions; each feedback still repairs its misconception ("Niiden summa" refers clearly to valo and sisäenergia).
-- sovella/solutions.md, two Periaate lines (vastusvoimat, lihakset): sentences read well and agree with the rest of the solution.
-- Searched the unit for remaining "lämmöksi": none. No task added in fi-easy.
+Checked: ladder (guiding question, relation, step) holds in all parts; no hint states a final answer or the rubric points; evaluation and design parts (s1 e, s3 a, s4 a, s4 d) guide reasoning without dictating a conclusion; round-1 fixes (l vs L, no origin, nollataso, lämpöteho, hajonta, s4 a, s3 d) present and fi-easy keeps the physics with shorter sentences.

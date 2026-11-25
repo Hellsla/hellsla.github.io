@@ -13,6 +13,11 @@
      "kind": "calc",
      "points": 3,
      "text": "Kuinka paljon pyöräilijän ja pyörän potentiaalienergia kasvaa nousun aikana?",
+     "hints": [
+      "Mikä energialaji muuttuu, kun korkeus kasvaa? Mitkä suureet siihen vaikuttavat, ja mikä tehtävän luvuista ei kuulu niihin?",
+      "Painovoimakentässä potentiaalienergian muutos on $\\Delta E_\\text{p} = mgh$, kun nollataso on tien alapäässä ja $g = 9{,}81\\,\\text{m/s}^2$.",
+      "Sijoita korkeudeksi $h$ korkeuden kasvu, ei tien pituutta."
+     ],
      "answer": {
       "value": 36198.9,
       "unit": "J",
@@ -40,6 +45,11 @@
      "kind": "calc",
      "points": 2,
      "text": "Kuinka suuri keskimääräinen teho tarvitaan pelkästään nostamaan pyöräilijä ja pyörä vaaralle?",
+     "hints": [
+      "Teho kertoo, kuinka nopeasti energiaa siirretään. Mikä energia ja mikä aika tässä verrataan toisiinsa?",
+      "Keskimääräinen teho on energia jaettuna ajalla: $P = \\dfrac{\\Delta E_\\text{p}}{t}$. Käytä a-kohdan energiaa.",
+      "Muunna nousun kesto sekunneiksi ennen sijoittamista, koska teho lasketaan watteina."
+     ],
      "answer": {
       "value": 134.07,
       "unit": "W",
@@ -63,6 +73,11 @@
      "kind": "calc",
      "points": 4,
      "text": "Kuinka suuri mekaaninen teho pyöräilijän on tuotettava nousun aikana keskimäärin?",
+     "hints": [
+      "Nopeus on vakio, joten liike-energia ei muutu. Mihin kaikkeen lihasten työ silloin kuluu?",
+      "Energian säilymisen mukaan lihasten työ on $W = \\Delta E_\\text{k} + \\Delta E_\\text{p} + W_\\text{v}$, missä $W_\\text{v} = F_\\text{v}\\,s$ on vastusvoimien työ. Teho on $P = \\dfrac{W}{t}$.",
+      "Vastusvoima vaikuttaa koko tien matkalla, ei vain korkeuden muutoksen matkalla. Laske vastusvoimien työ ja lisää se a-kohdan energiaan ennen jakamista ajalla."
+     ],
      "answer": {
       "value": 214.07,
       "unit": "W",
@@ -91,6 +106,11 @@
      "kind": "calc",
      "points": 3,
      "text": "Kuinka paljon ravinnon energiaa nousu kuluttaa? Vastaa kilojouleina.",
+     "hints": [
+      "Lihasten työ on vain osa ravinnosta saadusta energiasta. Mikä suure kertoo, kuinka suuri osa?",
+      "Hyötysuhde on hyödyksi saatu osuus kokonaisenergiasta: $\\eta = \\dfrac{W}{E}$, josta $E = \\dfrac{W}{\\eta}$.",
+      "Hyötynä on lihasten koko nousussa tekemä työ. Muuta hyötysuhde prosentista desimaaliluvuksi ennen sijoittamista."
+     ],
      "answer": {
       "value": 262.72,
       "unit": "kJ",
@@ -118,6 +138,11 @@
      "kind": "word",
      "points": 3,
      "text": "Pyöräilijän kaveri sanoo, että nousun jälkeen voi syödä suklaalevyn, jonka energiasisältö on pakkauksen mukaan $2200\\,\\text{kJ}$, koska nousu kuluttaa sen. Arvioi väitettä.",
+     "hints": [
+      "Vertaa kahta energiaa: mitä nousu kuluttaa ja paljonko levy sisältää? Mikä tässä pitää laskea ennen kuin väitettä voi arvioida?",
+      "Vertaa energioita suhteena: $\\dfrac{E_\\text{nousu}}{E_\\text{levy}}$. Mieti myös, mitkä mallin oletukset (vakionopeus, vastusvoima, hyötysuhde) vaikuttavat tulokseen.",
+      "Muunna molemmat energiat samaan yksikköön ja laske, kuinka suuri osa levyn energiasta nousuun kuluu. Päätä sitten, tukeeko luku väitettä."
+     ],
      "criteria": [
       {
        "text": "Vastaus vertaa lukuja: nousu kuluttaa noin $12\\,\\%$ levyn energiasta, eli levyn energia vastaa noin kahdeksaa nousua.",
@@ -160,6 +185,11 @@
      "kind": "word",
      "points": 2,
      "text": "Miksi opiskelijat mittaavat kymmenen heilahdusjakson keston eivätkä yhden jakson?",
+     "hints": [
+      "Käsin ajanotto ei ole täsmällistä. Mitä tapahtuu ajanoton virheen suhteelliselle osuudelle, kun mitattava aika on pitkä?",
+      "Vertaa kellon käynnistyksen ja pysäytyksen virhettä yhden jakson kestoon ja kymmenen jakson kestoon: kumpaan se on suurempi osa?",
+      "Jaksonaika saadaan $T = \\dfrac{t_{10}}{10}$. Mitä tämä jako tekee ajanoton virheelle?"
+     ],
      "criteria": [
       {
        "key": "error_sources",
@@ -178,6 +208,11 @@
      "kind": "graph",
      "points": 5,
      "text": "Laadi aineistosta kuvaaja, jonka pisteet asettuvat suoralle, ja sovita siihen suora.",
+     "hints": [
+      "Jaksonaika ei ole suoraan verrannollinen pituuteen. Miten lausekkeen $T$ ja $L$ välisen yhteyden voi muuttaa suoran yhtälöksi?",
+      "Heilurille $T = 2\\pi\\sqrt{\\dfrac{l}{g}}$, missä $l$ on heilurin pituus. Muokkaa lauseke muotoon $y = kl$, jossa $y$ on jokin $T$:n lauseke. Mittauksessa $L$ on $l$:n arvio.",
+      "Laske jokaisesta mittauksesta ensin $T = \\dfrac{t_{10}}{10}$ ja sitten valitsemasi $y$. Merkitse pisteet ja sovita suora niin, että pisteitä jää suoran molemmin puolin."
+     ],
      "criteria": [
       {
        "text": "Valitsee akseleille suureet $L$ ja $T^2$ ja perustelee valinnan heilurin jaksonajan lausekkeella $T = 2\\pi\\sqrt{\\tfrac{l}{g}}$.",
@@ -205,6 +240,11 @@
      "kind": "calc",
      "points": 5,
      "text": "Määritä kuvaajasta putoamiskiihtyvyys.",
+     "hints": [
+      "Mitä suuretta kuvaajan kulmakerroin vastaa heilurin lausekkeessa, ja missä $g$ siinä on?",
+      "Suoralle $y = kL + b$ pätee $k = \\dfrac{4\\pi^2}{g}$, kun $y$ on b-kohdassa valitsemasi suure. Suora ei välttämättä kulje origon kautta, mutta kulmakerroin ratkaisee $g$:n.",
+      "Lue suoralta kaksi toisistaan kaukana olevaa pistettä ja laske $k = \\dfrac{\\Delta y}{\\Delta L}$. Käytä suoran pisteitä, älä välttämättä mittauspisteitä."
+     ],
      "answer": {
       "value": 9.81,
       "unit": "m/s²",
@@ -242,6 +282,11 @@
      "kind": "word",
      "points": 4,
      "text": "Sovitettu suora ei kulje origon kautta. Selitä, mistä tämä johtuu, ja arvioi, vaikuttaako se c-kohdan tulokseen.",
+     "hints": [
+      "Mistä pisteestä mihin heilurin pituus pitäisi mitata, ja mihin kohtaan se tässä mitattiin?",
+      "Merkitse todellista pituutta $l$ ja mitattua pituutta $L$. Kirjoita niiden yhteys punnuksen säteen $r$ avulla.",
+      "Sijoita yhteys lausekkeeseen $T^2 = \\dfrac{4\\pi^2}{g}\\,l$ ja vertaa suoraan $T^2 = kL + b$: mikä suoran luvuista muuttuu ja mikä ei?"
+     ],
      "criteria": [
       {
        "key": "graph_read",
@@ -286,6 +331,11 @@
      "kind": "word",
      "points": 5,
      "text": "Selitä, miten termospullon rakenne hidastaa teen jäähtymistä. Käsittele jokaista tapaa, jolla lämpö voi siirtyä.",
+     "hints": [
+      "Lämpö voi siirtyä kolmella tavalla. Mitkä ne ovat, ja mikä termospullon osa vaikuttaa mihinkin?",
+      "Käy läpi johtuminen, konvektio ja lämpösäteily yksi kerrallaan: mitä kukin tarvitsee toimiakseen, ja mikä pullon osa (tyhjiö, peilipinta, korkki) estää sen?",
+      "Kirjoita jokaisesta tavasta yksi lause: mitä tapa tarvitsee ja miten pullo estää sen. Tarkista lopuksi, estääkö pullo siirtymisen kokonaan."
+     ],
      "criteria": [
       {
        "text": "Johtuminen: tyhjiössä ei ole hiukkasia, jotka siirtäisivät energiaa törmäyksin seinästä toiseen.",
@@ -319,6 +369,11 @@
      "kind": "word",
      "points": 3,
      "text": "Retkeilijä huomaa, että tee jäähtyy iltapäivällä hitaammin kuin aamulla. Selitä havainto.",
+     "hints": [
+      "Mikä on eri aamulla ja iltapäivällä teen ja ympäristön välillä? Miten se voisi vaikuttaa energian siirtymiseen?",
+      "Energian siirtymisen teho riippuu teen ja ympäristön lämpötilaerosta $\\Delta T$. Mieti, miten $\\Delta T$ muuttuu kuuden tunnin aikana.",
+      "Päättele ketju: lämpötilaero, lämpöteho, jäähtymisnopeus. Mihin suuntaan kukin muuttuu, kun tee jäähtyy?"
+     ],
      "criteria": [
       {
        "text": "Teestä ympäristöön siirtyvä lämpöteho kasvaa teen ja ympäristön lämpötilaeron kasvaessa.",
@@ -337,6 +392,11 @@
      "kind": "calc",
      "points": 3,
      "text": "Laske keskimääräinen lämpöteho, jolla energiaa siirtyy teestä ympäristöön kuuden tunnin aikana.",
+     "hints": [
+      "Lämpöteho kertoo, kuinka paljon energiaa siirtyy aikayksikössä. Paljonko energiaa tee luovuttaa kuuden tunnin aikana?",
+      "Teen luovuttama energia on $Q = cm\\Delta T$ ja keskimääräinen teho $P = \\dfrac{Q}{t}$.",
+      "Lämpötilan muutos $\\Delta T$ saadaan teen alku- ja loppulämpötilasta, ei ympäristön lämpötilasta. Muunna kuusi tuntia sekunneiksi."
+     ],
      "answer": {
       "value": 1.455,
       "unit": "W",
@@ -364,6 +424,11 @@
      "kind": "word",
      "points": 3,
      "text": "Pitääkö termospullo myös jääveden kylmänä? Perustele.",
+     "hints": [
+      "Mihin suuntaan energiaa siirtyy, kun pullossa on jäävettä ja ulkona on lämmintä?",
+      "Tyhjiö, peilipinta ja korkki hidastavat siirtymistä suunnasta riippumatta. Mieti, kumpi on nyt lämpimämpi ja mihin suuntaan energiaa siirtyy.",
+      "Mieti, mitä energialle tapahtuu, kun se saapuu veteen, jossa on vielä jäätä. Muuttuuko lämpötila heti?"
+     ],
      "criteria": [
       {
        "text": "Samat rakenteet hidastavat energian siirtymistä kumpaankin suuntaan; nyt energiaa siirtyy nettomääräisesti lämpimästä ympäristöstä kylmään veteen.",
@@ -407,6 +472,11 @@
      "kind": "word",
      "points": 5,
      "text": "Suunnittele koe, jolla ryhmä voi selvittää asian.",
+     "hints": [
+      "Minkä suureen riippuvuutta mistä ryhmä selvittää? Mikä muutetaan ja mikä saadaan tuloksena?",
+      "Hyötysuhde vertaa hyödyksi saatua energiaa kulutettuun energiaan. Mitkä suureet on mitattava, jotta kumpikin energia voidaan laskea, ja millä annetulla välineellä kukin mitataan?",
+      "Kirjoita suunnitelma vaiheina niin, että toinen ryhmä voisi toistaa sen. Kerro jokaisessa vaiheessa, mitä tehdään ja mitä mitataan."
+     ],
      "criteria": [
       {
        "text": "Muutettava suure on veden massa, esimerkiksi viisi eri määrää keittimen pienimmästä merkistä suurimpaan.",
@@ -440,6 +510,11 @@
      "kind": "calc",
      "points": 4,
      "text": "Yhdessä mittauksessa keittimessä on $0{,}500\\,\\text{kg}$ vettä, joka lämpenee $15{,}0\\,{}^\\circ\\text{C}$:sta $95{,}0\\,{}^\\circ\\text{C}$:een, ja energiamittari näyttää $0{,}054\\,\\text{kWh}$. Laske keittimen hyötysuhde.",
+     "hints": [
+      "Mikä on hyödyksi saatu ja mikä kulutettu energia tässä mittauksessa, ja mistä kumpikin saadaan?",
+      "$\\eta = \\dfrac{Q}{E}$, jossa veden lämpenemiseen tarvittava energia on $Q = cm\\Delta T$ ja $c = 4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$.",
+      "Energiamittari näyttää kilowattitunteina. Muunna lukema jouleiksi ennen jakamista: $1\\,\\text{kWh} = 3{,}6\\cdot 10^{6}\\,\\text{J}$."
+     ],
      "answer": {
       "value": 86.2,
       "unit": "%",
@@ -473,6 +548,11 @@
      "kind": "word",
      "points": 4,
      "text": "Arvioi kokeen virhelähteitä ja kerro, miten niiden vaikutusta voi pienentää.",
+     "hints": [
+      "Mihin kaikkeen energiamittarin lukemasta voi kulua muuhun kuin veden lämmittämiseen? Mitkä mittaukset ovat epätarkimpia?",
+      "Käy läpi jokainen mittaus: massa, lämpötilat ja energia. Arvioi jokaisesta, kuinka suuri osa lukemasta on mittauksen epävarmuutta.",
+      "Valitse kolme virhelähdettä ja ehdota jokaiselle toimenpide, jolla virhe pienenee. Mieti myös, vaikuttaako virhe samalla tavalla pieniin ja suuriin vesimääriin."
+     ],
      "criteria": [
       {
        "key": "error_sources",
@@ -496,6 +576,11 @@
      "kind": "word",
      "points": 3,
      "text": "Miten ryhmä esittää tulokset, ja millainen tulos osoittaisi, että hyötysuhde riippuu vesimäärästä?",
+     "hints": [
+      "Millaisen kuvaajan avulla näkee, riippuuko yksi suure toisesta? Mitä akseleilla pitää olla?",
+      "Tulokset voi esittää kuvaajana, jossa kustakin vesimäärästä on keskiarvo ja hajonta. Mihin hyötysuhteen muutosta pitää verrata, ennen kuin sen voi sanoa olevan todellinen?",
+      "Kuvaile kaksi mahdollista tulosta: hyötysuhde pysyy samana, ja hyötysuhde muuttuu vesimäärän mukana. Kummassa tapauksessa riippuvuus on osoitettu?"
+     ],
      "criteria": [
       {
        "key": "graph_axes",
