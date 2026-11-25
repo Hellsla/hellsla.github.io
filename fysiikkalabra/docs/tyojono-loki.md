@@ -514,6 +514,18 @@ Tiedostot: `build.py` `fig_rows`, `site.css`, `check_layout.py` (tarkistus tyhj�
 fy3-8 ja fy4-3 leveyksillä 1280, 1440 ja 1920 px sekä fy1-1. Luonnoksessa Teoria-vaihe lyheni noin 8 % (fy3-8:
 4082 → 3775 px, fy4-3: 3703 → 3380 px leveydellä 1280 px).
 
+**U3 ja 8e tehty (PR #862, 2026-11-25; opettajan hyväksyntä "I approve the layout" suoraan työntekijäsessiossa, kuvat `docs/audits/u3-taitto/`).**
+`build.py fig_rows`: teksti rivin yläreunaan (`align-items:start`); kuvaa lyhyempi teksti ottaa seuraavat kappaleet, luettelot ja
+väliotsikot (enintään neljä) kuvan viereen (`.fig-more`, lähteessä kuvan jälkeen: puhelimella järjestys teksti, kuva, loput);
+valokuva kuvateksteineen oikealle palstalle (`fig_height` lukee koon `photos.json`ista); kaksi pientä taulukkoa (enintään 9 riviä ja
+3 saraketta) `.tbl-pair`-pariksi vierekkäin ja niiden kuva viereen; laatikossa ja työstetyn esimerkin vaiheissa yksikkö aina
+tekstin alla. Rajat: teksti/kuva 0,55–1,3 (valokuva 0,5–1,3), mitattu 1280 ja 1920 px:llä. `check_layout.py figgap`: teksti alkaa
+rivin yläreunasta eikä toinen palsta pääty yli 190 px (valokuva 230 px) toisen yläpuolelle; laiska valokuva ladataan ennen mittausta;
+yleinen `gap` ohittaa `.fig-row.side`n. `test_fig_row.py` tarkistaa yläreunan, oikean palstan ja taulukkoparin. Teoria-vaiheen korkeus
+1280 px: fy3-8 3567 → 3728, fy4-3 3030 → 3217, fy1-1 6259 → 6125 (valokuvarivin korkeus on kuvan korkeus). Tiedossa: fy3-8:n
+ensimmäisen valokuvarivin jälkeen jää noin 100 px tyhjää, koska seuraava kappale kuuluu kuvalliseen yksikköön. check_layout läpi
+FY1–FY8:n 338 sivulla (fi, en, fi-easy) 1280 ja 1920 px:llä.
+
 ### [loki] Ei tehdä (opettaja 2026-11-14)
 - Ei Aloita-riviä moduulisivulle; Jatka-rivi pysyy ennallaan.
 - Ei "Näytä kaikki tehtävät" -toimintoa.
