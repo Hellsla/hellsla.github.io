@@ -1,12 +1,4 @@
 VERDICT: PASS
-CONTENT-HASH: c0fd3842a4c8746c
+CONTENT-HASH: d39f6affb7f26d7e
 
-Delta review of the hints on the long tasks (fi-easy). Ladder works throughout: hint 1 a guiding question, hint 2 the relation, hint 3 one intermediate step; no final answer stated, rubric points not given away.
-
-Polish
-1. Loss-fraction part: no issue in this language (the "wateiksi" slip is only in fi).
-2. Grating evaluation part (hint 3): "Tarkista kolmas johtopäätös: onko $3\lambda < d$?" names the decisive check of the evaluation. Prefer a question: "Mikä ehto kertaluvulle 3 pitää täyttyä, jotta maksimi on olemassa? Tarkista se a-kohdan aallonpituudella." (en: "What condition must order 3 satisfy for the maximum to exist? Check it with the wavelength of part a.")
-3. Soap-film part (hint 3) points strongly to phase reversal and the d to 0 limit; acceptable, but could end "Mitä heijastuksissa tapahtuu vaiheelle?" so the student finds which surface reverses.
-4. Uncertainty part (hint 3) lists three prompts (reporting, reliability, laser safety); fine as a checklist, no change needed.
-
-Checked: hints in all parts read against the task parts; fi-easy sentences short and complete, physics matches fi; en matches fi, decimal point used.
+Round 2 delta (fi-easy). Fixes judged: s4 a hint 1 now names the back reflection (the rainbow mechanism, without the answer); s4 c hint 3 asks which colour the grating and which the drop deviates more, a clearer comparison; s5 b hint 3 asks for the existence condition instead of stating 3λ<d, so the student must reason. Typo fixes fine. Ladder intact, no answers disclosed.
