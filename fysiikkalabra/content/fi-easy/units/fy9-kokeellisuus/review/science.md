@@ -1,16 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: ffea1ab4ffc929bb
+CONTENT-HASH: 67c4c38be19a1232
 
-Delta review of the new `hints` in `sovella/tasks.json` (s1–s8, 96 hints), compared with fi and with the rubric and `solutions.md`.
+Round 2 delta review of the changed hints in `sovella/tasks.json` (git diff HEAD~1), compared with fi: s1 b hint 2, s2 c hint 3, s4 c hint 1, s6 c hint 2, s6 d hint 3, s7 b hint 3, s7 c hint 3, s8 c hint 3.
 
 ## Blocking
 None.
 
 ## Polish
-1. s8 c, hint 3 (fi-easy): same point as fi. The offset is already in the points, so subtracting it fits the correction in part d better. Replacement: "Lue kuvaajalta $B$ virroilla $0{,}50\,\text{A}$ ja $2{,}5\,\text{A}$. Laske osuus kummallakin virralla. Kuvittele sitten, että kaikista pisteistä vähennetään $0{,}04\,\text{mT}$. Miten suora muuttuu?"
+None.
 
 ## Checked
-- Each hint says the same physics as the fi hint for the same part. The sentences are split, and nothing is dropped. One difference: s1 a hint 1 drops "Mikä ilmiö", but hint 2 names static friction, so the ladder still leads there. s4 d hint 1 adds "eli aina samansuuntainen", which is correct.
-- The models, symbols and inequality directions are the same as in fi, the rubric and the solution ($F_{\mu 0} \le \mu_0 N$, $Pt = cm\,\Delta T$, $g = 2h/t^2$, $T^2 = \tfrac{4\pi^2}{g}(l + r)$, $s = v^2/(2a)$, $a = 1/(2k)$, $F_\mu = F_\text{lukema} - F_0$, $B = kI$).
-- Numbers stated in hints were recomputed in the same script as for fi: $10\,\text{km/h} \approx 2{,}8\,\text{m/s}$, $0{,}75\,\text{s}$ and $0{,}82\,\text{s}$ for the extreme values, the first row $l = 0{,}250\,\text{m}$ and $T = 1{,}055\,\text{s}$, the unit relations. All are correct, and no hint states a final answer.
-- LaTeX with decimal commas throughout.
+- Each changed hint says the same physics as the fi hint, split into shorter sentences: s1 b limit $\mu_0 N$ and the force-balance question; s2 c unit $\text{J/(kg}\cdot\text{K)}$; s6 c $N = mg$ only in hint 3; s6 d slope direction first, then $1{,}05^2$ above $1$ ($10{,}25\,\%$, not the final answer with its sign); s7 b slope or per-point ratios with half the range; s7 c "eroa"; s8 c offset subtracted (round-1 polish adopted).
+- Recomputed: $1{,}05^2 = 1{,}1025$; $2{,}0\,\text{kJ} = 2000\,\text{J}$. Agrees with rubric and solution.
+- No hint gives a final answer; LaTeX with decimal commas.

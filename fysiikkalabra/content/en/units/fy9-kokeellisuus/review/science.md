@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: e7dfc7df1596dbe0
+CONTENT-HASH: 886b665ccf8c816c
 
-Delta review of the new `hints` in `sovella/tasks.json` (s1–s8, 96 hints), compared with fi and with the rubric and `solutions.md`.
+Round 2 delta review of the changed hints in `sovella/tasks.json` (git diff HEAD~1), compared with fi: s1 a hint 2 (wording), s1 b hint 2, s2 b hint 3 (wording), s2 c hint 3, s4 c hint 1, s6 c hint 2, s6 d hint 3, s7 b hint 3, s8 c hint 3.
 
 ## Blocking
 None.
 
 ## Polish
-1. s8 c, hint 3 (en): same point as fi. The offset is already in the measured points, so subtracting it matches the correction in part d. Replacement: "Read $B$ from the graph at the currents $0.50\,\text{A}$ and $2.5\,\text{A}$ and calculate the share for each. Then imagine that $0.04\,\text{mT}$ is subtracted from all points: how does the line change?"
+None.
 
 ## Checked
-- Every hint is a faithful rendering of the fi hint: same model, symbols and sign or inequality direction ($F_{\mu 0} \le \mu_0 N$, $\mu_0$ as a lower limit in s6 c, $Pt = cm\,\Delta T$, $c = P/(mk)$, $g = 2h/t^2$, $T^2 = \tfrac{4\pi^2}{g}(l + r)$, $s = v^2/(2a)$, $a = 1/(2k)$, $v_\text{app} = 1.05\,v$, $F_\mu = F_\text{reading} - F_0$, $B = \mu_0 n I = kI$).
-- Numbers recomputed (same script as fi): $10\,\text{km/h} = 2.78\,\text{m/s} \approx 2.8\,\text{m/s}$; the extreme times $0.75\,\text{s}$ and $0.82\,\text{s}$ give $\Delta g = 0.87\,\text{m/s}^2$; first pendulum row $g = 8.87\,\text{m/s}^2$; all unit relations correct. No hint gives a final answer.
-- Numbers with units are LaTeX with decimal points.
+- Each changed hint matches the fi hint: s1 b limit $\mu_0 N$ with the force-balance question (pulling also $\mu_0 N$, $N = mg$); s2 c unit $\text{J/(kg}\cdot\text{K)}$; s6 c $N = mg$ only in hint 3; s6 d slope direction first, then by how many percent $1.05^2$ is above $1$ ($10.25\,\%$, sign and link to $a$ left to the student); s7 b slope of a fitted line or per-point ratios, error half the range; s8 c offset subtracted (round-1 polish adopted). s1 a and s2 b changes are wording only.
+- Recomputed: $1.05^2 = 1.1025$; $2.0\,\text{kJ} = 2000\,\text{J}$. Agrees with rubric and solution.
+- No hint gives a final answer; LaTeX with decimal points.
