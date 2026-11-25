@@ -1,7 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: b3e3ee5b4e82ab7c
-SCOPE: delta (old-content fixes, git diff origin/main)
+CONTENT-HASH: d15ab4b683dca6af
 
-1. Blocking: none.
-2. Checked: s8 I = ½*900 N*0.012 s = 5.4 Ns, v = 12.56 m/s = 45.2 km/h. s7 d: 2.0 kg gives 40 J, friction work 15 J, 25 J, v = 5.0 m/s; 3.0 kg gives 60 J, 22.5 J, 37.5 J, v = 5.0 m/s. New wording (friction does more work, more mechanical energy becomes internal energy) is correct and the same in solution and rubric; the air-drag sentence (force independent of mass, smaller share for the heavier sled) is correct and the task's assumption is stated.
-3. Language fi-easy: the changed numbers and wording were checked to carry the same values as fi.
+Delta review, round 4: two hints set as display math (aligned), git show HEAD.
+
+## Blocking
+None.
+
+## Polish
+None.
+
+## Checked
+- s6 b, hint 2: $E_\text{h} = \tfrac12 Mv^2 - \tfrac12 (M+m)\,v'^2$ split after the first term; the continued row carries the minus sign, so the meaning is unchanged. Symbol matches the rubric and solutions. Momentum relation $Mv = (M+m)\,v'$ unchanged.
+- s7 d, hint 2: $mgh - \mu mg\cos\alpha \cdot s = \tfrac12 mv^2$ split before "="; signs and symbols unchanged, mass still cancels (speed independent of m), consistent with hint 3 and the answer.
+- No other content changed; earlier recomputation stands.
