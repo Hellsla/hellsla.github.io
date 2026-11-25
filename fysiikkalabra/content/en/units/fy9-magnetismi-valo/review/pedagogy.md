@@ -1,9 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: d698c998cbb31e85
-SCOPE: delta (old-content fixes, git diff origin/main)
+CONTENT-HASH: 2d591342a2ac0928
 
-Blocking: none.
+Delta review of the hints on the long tasks (en). Ladder works throughout: hint 1 a guiding question, hint 2 the relation, hint 3 one intermediate step; no final answer stated, rubric points not given away.
 
-1. Teacher.md: 'other eight' matches nine tasks; points line (20 + seven 15 + 12 = 137) matches tasks.json sums, identical in fi, en, fi-easy.
-2. Earlier delta lines re-read briefly: the changes touch only counts, points and notation; no misconception feedback, hint ladder or rubric criterion was weakened, and no answer is disclosed early.
-3. Polish: none.
+Polish
+1. Loss-fraction part: no issue in this language (the "wateiksi" slip is only in fi).
+2. Grating evaluation part (hint 3): "Tarkista kolmas johtopäätös: onko $3\lambda < d$?" names the decisive check of the evaluation. Prefer a question: "Mikä ehto kertaluvulle 3 pitää täyttyä, jotta maksimi on olemassa? Tarkista se a-kohdan aallonpituudella." (en: "What condition must order 3 satisfy for the maximum to exist? Check it with the wavelength of part a.")
+3. Soap-film part (hint 3) points strongly to phase reversal and the d to 0 limit; acceptable, but could end "Mitä heijastuksissa tapahtuu vaiheelle?" so the student finds which surface reverses.
+4. Uncertainty part (hint 3) lists three prompts (reporting, reliability, laser safety); fine as a checklist, no change needed.
+
+Checked: hints in all parts read against the task parts; fi-easy sentences short and complete, physics matches fi; en matches fi, decimal point used.
