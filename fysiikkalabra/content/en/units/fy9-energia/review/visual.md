@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: e4a23b82d6dbe839
+CONTENT-HASH: 7cf0294cfa76a90c
 
 ## Blocking
 None.
@@ -8,4 +8,4 @@ None.
 None.
 
 ## Checked
-Hints checked at 390 and 1280 px, closed and open (Tehtävät cards of s1–s9). The closed hints sit on one row at 1280 px and wrap cleanly at 390 px. Open boxes are readable, formulas are not clipped, there is no horizontal overflow, and the reading order is part, then hints 1, 2 and 3. Decimal point and thin space before units are correct. The English is natural and the voice is consistent. The clipped formulas in docs/clipped-formulas/FY9.tsv are old and are in the solutions, not in the hints.
+Round 2 delta (en): rebuilt preview, 34 hint-bearing parts at 390 and 1280 px closed and open; no page overflow, hint boxes and formulas unclipped; changed hints (s3 hint 3 "pieni tai nolla", house-model hint 2, Hyundai Inster hint 3; en also the renamed subscripts) opened and read. Spot-checked all 102 hints for decimal separator, LaTeX units and language; no findings.
