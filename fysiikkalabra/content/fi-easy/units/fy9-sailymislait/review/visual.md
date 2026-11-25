@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: b92e85bd7d746228
+CONTENT-HASH: fi a309dc117dbd635f; fi-easy d15ab4b683dca6af; en d26a4f3bcc899fbb
 
 ## Blocking
 (none)
@@ -8,7 +8,8 @@ CONTENT-HASH: b92e85bd7d746228
 (none)
 
 ## Checked
-- Round 3 delta: s5 b hint 1 reads fluently; no layout impact.
+- Round 4 delta: s6 b hint 2 and s7 d hint 2 at 360 and 390 px in fi, fi-easy, en (captures opened: en-360, fi-360, fi-easy-390).
+- Display formulas fit the box, no clipping or scroll, rows aligned, punctuation sensible.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 5 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

@@ -1,8 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: ba2303f7d9295a9b
+CONTENT-HASH: d26a4f3bcc899fbb
 
-Round 2 (delta). Re-read the changed hints in sovella/tasks.json. s5 c hint 1 now asks what happens to the trolleys between the collision and the measurement point: a guiding question that does not state the answer (friction or loss). The s1 b, s3 a, fi-easy s2 c and s3 c glosses and the en s4 c and s6 symbol changes are clearer and keep the ladder (question, relation, one step). No hint gives a part's final answer.
+Blocking: none.
 
-Polish (not applied, accepted): wind-turbine s4 a hints; fi-easy glosses of kimmoisa and impulssiperiaate. Hint 2 is the relation by the brief.
+Polish: none.
 
-Checked: changed hints in en; consistency with the other two languages.
+Checked (round 4 delta): s6 b hint 2 and s7 d hint 2 now show the formula as aligned display rows. The ladder is intact: hint 1 is the question, hint 2 gives the relation without the answer, and hint 3 gives the method. The sentence before the formula still leads into it, and the rows (Eh = ..., then the continuation row) read cleanly. Nothing else changed.

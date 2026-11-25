@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: ba2303f7d9295a9b
+CONTENT-HASH: fi a309dc117dbd635f; fi-easy d15ab4b683dca6af; en d26a4f3bcc899fbb
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+(none)
 
 ## Checked
-- Round 2 delta, preview en at 390 px, hints opened: changed hints (fi s1 b hint 3, s2 c hint 1, s3 a, s4 c, s5 c, en s6) read naturally; no overflow (scrollWidth 390), no clipped formulas. Screenshots of one changed hint per language.
+- Round 4 delta: s6 b hint 2 and s7 d hint 2 at 360 and 390 px in fi, fi-easy, en (captures opened: en-360, fi-360, fi-easy-390).
+- Display formulas fit the box, no clipping or scroll, rows aligned, punctuation sensible.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 5

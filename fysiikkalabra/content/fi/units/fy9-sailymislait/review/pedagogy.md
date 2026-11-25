@@ -1,6 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: c7832d9b0ff96aeb
+CONTENT-HASH: a309dc117dbd635f
 
-Round 3 (delta). s5 b hint 1 asks whether momentum is a form of energy: a guiding question that does not state the conclusion. Ladder intact.
+Blocking: none.
 
-Checked: changed hint.
+Polish: none.
+
+Checked (round 4 delta): s6 b hint 2 and s7 d hint 2 now show the formula as aligned display rows. The ladder is intact: hint 1 is the question, hint 2 gives the relation without the answer, and hint 3 gives the method. The sentence before the formula still leads into it, and the rows (Eh = ..., then the continuation row) read cleanly. Nothing else changed.
