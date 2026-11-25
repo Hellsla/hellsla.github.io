@@ -18,6 +18,11 @@
           "kind": "calc",
           "points": 3,
           "text": "What would the rider's speed be at the end if there were no air resistance and no resistance from the trolley's wheels?",
+          "hints": [
+            "Which forms of energy does the rider have at the start and at the end when there are no resistive forces? Which one turns into the other?",
+            "Mechanical energy is conserved: $mgh = \\tfrac12 mv^2$.",
+            "The mass cancels from the equation, so solve for $v$ in symbols first. Use the height difference $h$, not the length of the cable."
+          ],
           "answer": {
             "value": 26.58,
             "unit": "m/s",
@@ -46,6 +51,11 @@
           "kind": "calc",
           "points": 5,
           "text": "How much work do air resistance and the wheel resistance do during the ride? What is the average magnitude of the resistive forces along the cable?",
+          "hints": [
+            "What happens to the mechanical energy when the resistive forces do work? Is this work positive or negative?",
+            "Work–energy principle: the work done by the resistive forces is the change in mechanical energy, $W_\\text{other} = E_\\text{final} - E_\\text{initial}$. The average force follows from the work and the distance: $F = |W_\\text{other}| : s$.",
+            "At the start the rider is at rest, and at the end the zero level of potential energy is at the end of the line, so each state has only one form of energy. The distance $s$ is the length of the cable."
+          ],
           "answer": [
             {
               "name": "W",
@@ -88,6 +98,11 @@
           "kind": "calc",
           "points": 4,
           "text": "What is the average horizontal force of the brake on the trolley, when the trolley also stops the rider and the harness? Compare the force with the combined weight of the rider, the harness and the trolley.",
+          "hints": [
+            "Which quantity changes when the brake stops the trolley and the rider, and how long does it take?",
+            "Impulse–momentum principle: the impulse of the average force is the change in momentum, $F_\\text{avg}\\,\\Delta t = |\\Delta p|$.",
+            "When stopping, the final momentum is zero, so $|\\Delta p| = mv$. Use the speed from the GPS meter. For the comparison, also calculate the weight $mg$."
+          ],
           "answer": {
             "value": 768.8,
             "unit": "N",
@@ -121,6 +136,11 @@
           "kind": "word",
           "points": 3,
           "text": "The zip-line attendant says: “Light riders arrive more slowly, because gravity pulls them less strongly.” Assess the claim.",
+          "hints": [
+            "What happens to the mass in the energy equation when there are no resistive forces? What would the claim say about this situation?",
+            "Does air resistance depend on the rider's mass in the same way as gravity does? Think about how the work of the resistive forces compares with the rider's mechanical energy.",
+            "Compare a light and a heavy rider: for which one is the same work done by resistance a larger part of the mechanical energy? Decide whether the observation or its explanation holds."
+          ],
           "criteria": [
             {
               "text": "Justifies that without resistive forces the mass cancels out of the energy equation, so the final speed $\\sqrt{2gh}$ does not depend on the mass.",
@@ -164,6 +184,11 @@
           "kind": "calc",
           "points": 4,
           "text": "What is the coefficient of friction between the stone and the ice?",
+          "hints": [
+            "Which force does work as the stone slides on the ice, and what does its work do to the kinetic energy of the stone?",
+            "Work–energy principle: the initial kinetic energy minus the work of friction is the kinetic energy at the moment of impact, $\\tfrac12 mv_0^2 - \\mu mg s = \\tfrac12 mv_1^2$. The friction force is $\\mu N$, and on horizontal ice the normal force equals the weight.",
+            "The mass cancels from the equation: solve for $\\mu$ in symbols first. Use the initial speed, the speed at impact and the distance $27.0\\,\\text{m}$."
+          ],
           "answer": {
             "value": 0.01015,
             "unit": "",
@@ -197,6 +222,11 @@
           "kind": "calc",
           "points": 5,
           "text": "What is the speed of the struck stone just after the collision? Is the collision elastic?",
+          "hints": [
+            "Which forces act on the stones during the collision, and how long does the collision last compared with the sliding of the stone?",
+            "When the impulse of friction is small, the total momentum of the stones is conserved: before the collision only the thrown stone moves, afterwards both do. Write $p_\\text{before} = p_\\text{after}$ using the mass $m$ of each stone.",
+            "The masses are equal and cancel, so solve for the speed of the struck stone in symbols. To judge elasticity, think about which quantity is conserved in an elastic collision, and compare it before and after."
+          ],
           "answer": {
             "value": 0.57,
             "unit": "m/s",
@@ -230,6 +260,11 @@
           "kind": "calc",
           "points": 3,
           "text": "How far does the struck stone slide before it stops?",
+          "hints": [
+            "What stops the struck stone, and what does its kinetic energy turn into?",
+            "Work–energy principle: the kinetic energy is used up in the work of friction, $\\tfrac12 mv_2'^2 = \\mu mg s$.",
+            "The ice is the same along the whole distance, so use the coefficient of friction from part a) and the speed from part b). Solve for $s$ in symbols; the mass cancels."
+          ],
           "answer": {
             "value": 1.632,
             "unit": "m",
@@ -258,6 +293,11 @@
           "kind": "word",
           "points": 3,
           "text": "Players often sweep the ice in front of a sliding stone, which reduces the coefficient of friction. Explain with energy why the stone then slides further, even though the brooms do not touch the stone.",
+          "hints": [
+            "Into what does the kinetic energy of the stone turn as it slides, and which force causes this?",
+            "The work of friction is $-\\mu mg s$. What changes in this expression when the ice is swept, and what stays the same?",
+            "The kinetic energy of the stone at the start is the same in both cases. How does the distance $s$ at which all the kinetic energy has been used up depend on the coefficient of friction? Do the brooms add energy to the stone?"
+          ],
           "criteria": [
             {
               "text": "Explains that the kinetic energy of the stone is transformed into internal energy through the negative work $-\\mu mg s$ done by friction, and a smaller $\\mu$ means less work per metre.",
@@ -295,6 +335,11 @@
           "kind": "graph",
           "points": 4,
           "text": "Present the stopping distance as a function of the initial speed in a graph. Justify why a straight line does not fit the points.",
+          "hints": [
+            "Calculate the differences between the distances of successive measurements. Are they equal when the speed always increases by $10\\,\\text{km/h}$?",
+            "The stopping distance is the reaction distance plus the braking distance. How does each depend on the initial speed?",
+            "Join the first and the last point with a straight line. Are the other points on the same side of it, or on both sides?"
+          ],
           "criteria": [
             {
               "key": "graph_axes",
@@ -317,6 +362,11 @@
           "kind": "graph",
           "points": 5,
           "text": "From the data, form a quantity whose graph against the initial speed is a straight line when the driver's reaction time and the car's deceleration stay the same. Present it in a graph and fit a straight line to the points.",
+          "hints": [
+            "The reaction distance is proportional to the speed and the braking distance to the square of the speed. What operation on the stopping distance would give a result that is a linear function of the speed?",
+            "The model of the stopping distance is $s_\\text{p} = v_0 t_\\text{r} + \\dfrac{v_0^2}{2a}$. Divide both sides by $v_0$ and compare the result with the equation of a line $y = b + kx$.",
+            "First convert the speeds to $\\text{m/s}$: for example $30\\,\\text{km/h} = 8.33\\,\\text{m/s}$ and $90\\,\\text{km/h} = 25.0\\,\\text{m/s}$. Then calculate $s_\\text{p} : v_0$ for each measurement and fit a line."
+          ],
           "criteria": [
             {
               "text": "Justifies the linearisation: dividing $s_\\text{p} = v_0 t_\\text{r} + \\dfrac{v_0^2}{2a}$ by the speed gives $\\dfrac{s_\\text{p}}{v_0} = t_\\text{r} + \\dfrac{1}{2a}\\,v_0$, which is a straight line.",
@@ -340,6 +390,11 @@
           "kind": "calc",
           "points": 6,
           "text": "Determine the driver's reaction time and the car's deceleration from the graph.",
+          "hints": [
+            "What is the quantity $s_\\text{p} : v_0$ when the speed approaches zero? What does the slope of the line tell?",
+            "In the linearised model $\\dfrac{s_\\text{p}}{v_0} = t_\\text{r} + \\dfrac{1}{2a}\\,v_0$, so the slope is $k = \\dfrac{1}{2a}$.",
+            "Read the slope $k = \\dfrac{\\Delta y}{\\Delta x}$ from two points of the fitted line that are far apart, not from the measured points. Then solve for $a$ in symbols."
+          ],
           "answer": [
             {
               "name": "tr",
@@ -382,6 +437,11 @@
           "kind": "calc",
           "points": 5,
           "text": "What is the coefficient of friction between the tyres and the wet asphalt? Use the model to estimate the stopping distance from $100\\,\\text{km/h}$ on the same road, and assess how reliable the estimate is.",
+          "hints": [
+            "Which force decelerates the car in locked-wheel braking on a horizontal road, and what does its magnitude depend on?",
+            "At the limit of locked-wheel braking friction gives the deceleration: $\\mu mg = ma$, so $\\mu = a : g$. The stopping distance is $s_\\text{p} = v_0 t_\\text{r} + \\dfrac{v_0^2}{2a}$.",
+            "Convert $100\\,\\text{km/h}$ to $\\text{m/s}$ and calculate the reaction distance and the braking distance separately with the values of part c). Which assumptions of the model may fail outside the measured range?"
+          ],
           "answer": [
             {
               "name": "mu",
@@ -438,6 +498,11 @@
           "kind": "word",
           "points": 5,
           "text": "Assess claim 1. Explain what the power of a wind turbine depends on and why.",
+          "hints": [
+            "On which two things does the energy that the air flowing through the rotor brings each second depend? How does each depend on the wind speed?",
+            "Power is energy per unit time, $P = E : t$. In time $t$ the mass of air passing through the rotor is $m = \\rho A v t$, and its kinetic energy is $\\tfrac12 mv^2$.",
+            "Work out how the power depends on the speed, and calculate the ratio of the powers when the speed changes in the ratio $9 : 6$. Finally, think about when this dependence stops being valid."
+          ],
           "criteria": [
             {
               "text": "Explains that the kinetic energy of the wind per kilogram of air is proportional to the square of the speed and the amount of air flowing through the rotor per second to the speed, so the power is proportional to the cube $v^3$.",
@@ -466,6 +531,11 @@
           "kind": "word",
           "points": 5,
           "text": "Assess claim 2. Explain the energy chain of a hydropower plant: where the energy of the water comes from and why not all of it is converted into electricity.",
+          "hints": [
+            "Follow the energy from the water above the dam to the electricity grid: in what form is it at each stage? What lifted the water up in the first place?",
+            "Energy is neither created nor destroyed: the power plant converts it from one form to another. What does the claim “without consuming anything” say about this?",
+            "At which points in the chain does some of the energy not end up as electricity? Think about the penstock, the turbine, the generator and the motion of the water below the plant."
+          ],
           "criteria": [
             {
               "text": "Describes the chain: the potential energy of the water is transformed into kinetic energy in the penstock, and the turbine and the generator convert it into electricity.",
@@ -494,6 +564,11 @@
           "kind": "word",
           "points": 5,
           "text": "Assess claim 3 and calculate the present electric power of the plant.",
+          "hints": [
+            "On which quantities does the power of the plant depend? What happens to the product when one factor grows by a third?",
+            "The power of the plant is $P = \\eta \\rho Q g h$: it is proportional to both the flow rate $Q$ and the head $h$.",
+            "Calculate the present power by substituting in SI units, and then compare how many times larger $h$ would be with the raised dam and how many times larger $Q$ would be after an increase of a third."
+          ],
           "criteria": [
             {
               "key": "equation",
@@ -542,6 +617,11 @@
           "kind": "calc",
           "points": 4,
           "text": "By what percentage did the total momentum change in test 2?",
+          "hints": [
+            "Which quantity is compared before and after the collision, and which trolleys are moving in each situation?",
+            "Before the collision only trolley A moves: $p = m_\\text{A} v_\\text{A}$. Afterwards the trolleys move together: $p' = (m_\\text{A} + m_\\text{B})\\,v'$. The relative change is $\\dfrac{p' - p}{p}$.",
+            "Use the values of the row of test 2. First calculate $p$ and $p'$ separately in $\\text{kg} \\cdot \\text{m/s}$ and then convert the change to a percentage. The sign tells the direction."
+          ],
           "answer": {
             "value": -6.32,
             "unit": "%",
@@ -570,6 +650,11 @@
           "kind": "word",
           "points": 5,
           "text": "Assess the group's conclusion. What is the difference between the measurements most likely due to?",
+          "hints": [
+            "The group says that momentum turns into heat and sound. Is momentum a form of energy?",
+            "Where was the velocity $v'$ measured, and which force acts on the trolleys between the collision and the point of measurement? What does conservation of momentum require of external forces?",
+            "Calculate the relative change in momentum in each test and see how it depends on the speed. Is the difference random or systematic, and what does it tell?"
+          ],
           "criteria": [
             {
               "text": "States that kinetic energy, not momentum, is converted into internal energy and sound: momentum is not a form of energy.",
@@ -598,6 +683,11 @@
           "kind": "word",
           "points": 6,
           "text": "Plan how to improve the experiment so that it can test conservation of momentum reliably.",
+          "hints": [
+            "What happens to the trolleys between the collision and the point of measurement if the velocities are measured further away from the collision?",
+            "Which external forces act on the trolleys on the track? How can their effect be reduced or measured?",
+            "How do you conclude whether the difference between the momenta is still within the measurement accuracy? Think about repeats, the uncertainty of the speed and the mass, and measurements with different masses and speeds."
+          ],
           "criteria": [
             {
               "text": "The velocities are measured just before and just after the collision, for example with light gates or from a video over a short distance, or the velocity is extrapolated from a $(t, v)$ graph to the moment of collision.",
@@ -647,6 +737,11 @@
           "kind": "calc",
           "points": 3,
           "text": "What is the speed of the ram just before it hits the pile?",
+          "hints": [
+            "Which form of energy turns into another as the ram falls? Can air resistance be ignored for this drop?",
+            "Conservation of mechanical energy: $Mgh = \\tfrac12 Mv^2$.",
+            "The mass cancels from the equation, so solve for $v$ in symbols first. The height $h$ is the drop height, not the depth the pile sinks."
+          ],
           "answer": {
             "value": 3.431,
             "unit": "m/s",
@@ -675,6 +770,11 @@
           "kind": "calc",
           "points": 4,
           "text": "What is the common velocity of the ram and the pile just after the collision? How much kinetic energy is transformed into other forms of energy in the collision?",
+          "hints": [
+            "Which quantity is conserved in a short collision in which the ram and the pile stay together?",
+            "Conservation of momentum: $Mv = (M + m)\\,v'$. The energy converted to other forms is $$\n\\begin{aligned}\nE_\\text{loss} &= \\tfrac12 Mv^2 \\\\\n&\\quad - \\tfrac12 (M + m)\\,v'^2\n\\end{aligned}\n$$",
+            "Use the speed from part a) and the masses $3500\\,\\text{kg}$ and $1100\\,\\text{kg}$. Solve for $v'$ in symbols before substituting, and calculate the kinetic energies before and after separately."
+          ],
           "answer": [
             {
               "name": "v",
@@ -717,6 +817,11 @@
           "kind": "calc",
           "points": 4,
           "text": "What average force does the ground exert on the pile as the pile sinks deeper?",
+          "hints": [
+            "Which forms of energy do the ram and the pile have right after the collision, and what happens to them as the pile sinks?",
+            "Work–energy principle: the kinetic energy and the decrease in potential energy are used up in the work of the force from the ground, which opposes the motion and is $-Fs$.",
+            "The sinking is $s = 18\\,\\text{mm} = 0.018\\,\\text{m}$ and the change in potential energy is $(M + m)\\,g s$. Use the kinetic energy right after the collision from part b) and solve for $F$ in symbols."
+          ],
           "answer": {
             "value": 915.9,
             "unit": "kN",
@@ -750,6 +855,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Assume that $40\\,\\%$ of the energy transformed in the collision stays in the steel at the top of the pile as internal energy. By how much does the top of the pile warm up during $50$ blows if it has no time to give off heat to the surroundings? Assess how the assumptions affect the result.",
+          "hints": [
+            "How many blows are there, and what fraction of the energy of each collision stays in the steel?",
+            "The increase in internal energy is related to the warming by $\\Delta U = cm\\Delta T$.",
+            "The increase in internal energy is that of all $50$ blows together: $\\Delta U = 50 \\cdot 0.40 \\cdot E_\\text{loss}$, where $E_\\text{loss}$ is the result of part b). Solve for $\\Delta T$ in symbols. Which assumptions make the result too large or too small?"
+          ],
           "answer": {
             "value": 7.14,
             "unit": "K",
@@ -803,6 +913,11 @@
           "kind": "calc",
           "points": 3,
           "text": "Determine the starting height of the sled above the bottom of the slope.",
+          "hints": [
+            "What energy does the sled at rest have at the start when the zero level is at the bottom of the slope? From which point of the graph is it read?",
+            "At the start there is only potential energy: $E_{\\text{p}0} = mgh$.",
+            "Read $E_{\\text{p}0}$ from the top of the green bar and solve for $h$ in symbols before substituting."
+          ],
           "answer": {
             "value": 2.039,
             "unit": "m",
@@ -831,6 +946,11 @@
           "kind": "calc",
           "points": 5,
           "text": "Calculate the work done by the friction force and the magnitude of the friction force.",
+          "hints": [
+            "What do the bars of the graph tell about the energy at the start and at the end? Where has the missing part gone?",
+            "Work–energy principle: $E_{\\text{p}0} + W_\\text{friction} = E_\\text{k}$. Friction opposes the motion, so $W_\\text{friction} = -F s$.",
+            "Read $E_\\text{k}$ from the top of the blue bar. The distance $s$ is the length of the slope, not the height."
+          ],
           "answer": [
             {
               "name": "W",
@@ -873,6 +993,11 @@
           "kind": "calc",
           "points": 3,
           "text": "Calculate the speed of the sled at the bottom of the slope. How large would the speed be without friction?",
+          "hints": [
+            "What energy does the sled have at the bottom of the slope, and how is the speed obtained from it?",
+            "The kinetic energy is $E_\\text{k} = \\tfrac12 mv^2$. Without friction mechanical energy would be conserved: $E_{\\text{p}0} = \\tfrac12 mv_0^2$.",
+            "Solve for $v$ and $v_0$ in symbols. In the case with friction use the final kinetic energy of the bar, and in the frictionless case the initial potential energy. Why is the speed smaller with friction?"
+          ],
           "answer": [
             {
               "name": "v",
@@ -910,6 +1035,11 @@
           "kind": "calc",
           "points": 4,
           "text": "The sled is replaced by a similar sled with a mass of $3.0\\,\\text{kg}$. The slope and the coefficient of sliding friction stay the same. What happens to the speed at the bottom of the slope? Justify by calculation.",
+          "hints": [
+            "How does the mass of the sled affect the potential energy and how does it affect the friction force?",
+            "The friction force is $F = \\mu N = \\mu mg\\cos\\alpha$, and the work–energy principle is $$\n\\begin{aligned}\nmgh &- \\mu mg\\cos\\alpha \\cdot s \\\\\n&= \\tfrac12 mv^2\n\\end{aligned}\n$$",
+            "See what happens to the mass in the equation. Check by calculation with the mass $3.0\\,\\text{kg}$: the new potential energy and the work of friction, and deduce the final speed."
+          ],
           "answer": {
             "value": 5.0,
             "unit": "m/s",
@@ -964,6 +1094,11 @@
           "kind": "calc",
           "points": 3,
           "text": "Determine the impulse that the foot exerts on the ball.",
+          "hints": [
+            "Which quantity is given by the area between the force–time graph and the time axis?",
+            "The impulse equals this area. For the area of a triangle $I = \\tfrac12 F_\\text{max}\\,\\Delta t$.",
+            "Read the height $F_\\text{max}$ and the base $\\Delta t$ of the triangle from the graph. Convert the time from milliseconds to seconds."
+          ],
           "answer": {
             "value": 5.4,
             "unit": "N s",
@@ -992,6 +1127,11 @@
           "kind": "calc",
           "points": 3,
           "text": "With what speed does the ball leave the kick?",
+          "hints": [
+            "Which quantity changes when an impulse acts on the ball? What is the momentum of the ball at the start?",
+            "Impulse–momentum principle: $I = \\Delta p = mv - 0$.",
+            "Use the impulse from part a) and the mass $0.43\\,\\text{kg}$. Solve for $v$ in symbols first."
+          ],
           "answer": {
             "value": 12.558,
             "unit": "m/s",
@@ -1020,6 +1160,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Calculate the kinetic energy of the ball right after the kick and the height to which the ball would rise without air resistance.",
+          "hints": [
+            "What energy does the ball have right after the kick, and why does it change during the rise?",
+            "The kinetic energy is $E_\\text{k} = \\tfrac12 mv^2$. Without air resistance mechanical energy is conserved: $\\tfrac12 mv^2 = mgh$.",
+            "Use the speed from part b). The mass cancels from the equation for the height, so solve for $h$ in symbols. The zero level is the height of the ball at the moment of the kick."
+          ],
           "answer": [
             {
               "name": "Ek",
@@ -1062,6 +1207,11 @@
           "kind": "calc",
           "points": 4,
           "text": "In a real kick the ball rises to a maximum height of $6.5\\,\\text{m}$. Calculate the work done by air resistance and the mean magnitude of air resistance during the rise. What happens to the energy?",
+          "hints": [
+            "To what height would the ball rise without air resistance? What does the difference from the real height mean for the energy?",
+            "Work–energy principle: $E_\\text{k0} + W_\\text{air} = mgh_\\text{measured}$. The average resistive force is $F = \\dfrac{-W_\\text{air}}{h_\\text{measured}}$.",
+            "First calculate the potential energy of the ball at the height $6.5\\,\\text{m}$ and compare it with the kinetic energy of part c). What is the sign of the work, and into which form of energy has the missing energy gone?"
+          ],
           "answer": [
             {
               "name": "W",
