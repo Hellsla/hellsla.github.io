@@ -122,13 +122,12 @@ PR 9 Abitti 2 -ohje; PR 10 kielimallin selvitys. Ei palvelinta, ei tekoälyrajap
 PR 1 tehty (e2c7f5c, YTL/Abitti-tiedot). PR 2 tehty (#824: tehtäväindeksi `valmentaja/fy9.json`, `kertaus/FY9.json`, `valmentaja.py`; R9 tarkistettu, harmiton). Minikoesarjat ja diagnostisten tehtävien jaksokartoitus (`kertaus/FY9.json`, ehdotus P8) **hyväksytty: opettaja 2026-11-23 ("ok")**. Jaetun kaistan järjestys (opettaja 2026-11-23): 17b → 0g PR 3 → 11b PR 2–8 → 11 U3. PR 3 tehty (#826, näytön kirjaus).
 PR 4 tehty (#830): uudet käyttöliittymätekstit, tietosuojalause, kuvat ja laattakuva `coach.svg` hyväksytty: opettaja 2026-11-23 tekijäsessioon ("Hyväksyn tekstit ja kuvat").
 PR 4b (seuraavaksi, ennen PR 5:tä): tavoite L–E / M–C / B–A ja käydyt kurssit, suunnitelman P13 ja PR 4b; **opettaja 2026-11-23 ("yes, go with the recommendations")**; uudet tekstit hyväksytään tekijäsessioon.
-Varattu: claude/11b-pr4b-tavoite (PR 4b tavoite L–E / M–C / B–A ja käydyt kurssit, P13; #834)
 PR 4b (#834): uudet käyttöliittymätekstit ja kuvat hyväksytty: opettaja 2026-11-23 tekijäsessioon ("hyväksyn tekstit ja kuvat").
 PR 5 (#836, vaikea ratkaisuvaihe ja toistuvat virheet): uudet käyttöliittymätekstit ja kuvat hyväksytty: opettaja 2026-11-24 tekijäsessioon ("Hyväksyn tekstit ja kuvat"). Jäljellä: PR 6–8.
-Varattu: claude/11b-pr6-koetila (PR 6 koetila ja minikokeet 30/60 min, harjoituskokeen koetila)
 PR 6 (#847, koetila ja minikokeet): uudet käyttöliittymätekstit ja kuvat hyväksytty: opettaja 2026-11-24 tekijäsessioon ("Hyväksyn tekstit ja kuvat").
 PR 7 (#851, kertauspolku): uudet käyttöliittymätekstit ja kuvat hyväksytty: opettaja 2026-11-25 tekijäsessioon ("I approve texts and images").
 PR 7b TEHTY (ankkuri `#testi-ohje`, ei uutta tekstiä; `valmentaja.py` `data-diag`, `valmentaja.js` varailmaisu, testi `test_valmentaja_coach.py`): valmentajan "Aloita diagnoosilla" vie nyt `fy9-koe.html`:n alkuun; linkin pitää viedä suoraan 24 kohdan diagnoosiin (osio 5 Esimerkit, `testi-1`). Muutos `valmentaja.py`:n `data-diag`-arvoon (ankkuri), ei uutta tekstiä. **Opettaja 2026-11-24 ("go with your recommendations")**.
+Varattu: claude/11b-pr7c-polku-luettavuus (PR 7c)
 PR 7c (jaettu, PR 7b:n jälkeen, ennen PR 8:aa): kertauspolun luettavuus.
 (1) Vain tämän päivän kortti auki. Muut päivät yhden rivin yhteenvetona (päivä · ~min · luvut) ja avattavina.
 (2) Päivän tehtävät ryhmitellään luvun alle; lukurivi ei toistu jokaisen linkin alla.
