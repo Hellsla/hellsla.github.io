@@ -18,6 +18,11 @@
           "kind": "calc",
           "points": 4,
           "text": "How much electrical energy do the cottage's devices use in a day?",
+          "hints": [
+            "Each device has a power and a running time. Which quantity tells you how much energy a device uses in that time, and what do you do with the devices' energies at the end?",
+            "The electrical energy of a device is power times time: $E = P\\,t$. Find the energy of each device separately and add the energies together.",
+            "The coffee maker runs for only $15\\,\\text{min}$ and its power is in kilowatts: convert the time to hours before multiplying. There are six lamps, so their combined power is $6 \\cdot 7.0\\,\\text{W}$."
+          ],
           "answer": {
             "value": 1.54,
             "unit": "kWh",
@@ -46,6 +51,11 @@
           "kind": "calc",
           "points": 5,
           "text": "How much electricity must the panels produce in a day so that the need in part a is covered through the battery and the inverter? Is the production of a cloudy day enough?",
+          "hints": [
+            "The energy flows from the panels through the battery and the inverter to the devices. Must the panels produce more or less energy than the devices use?",
+            "The stages are in series, so the efficiencies are multiplied: $E_\\text{panels} = \\dfrac{E_\\text{need}}{\\eta_\\text{batt}\\,\\eta_\\text{inv}}$.",
+            "First calculate the combined efficiency $\\eta_\\text{batt}\\,\\eta_\\text{inv}$, then the energy of the panels. Compare the result with the production of the cloudy day: how much of the cloudy day's energy reaches the devices?"
+          ],
           "answer": {
             "value": 1.84,
             "unit": "kWh",
@@ -79,6 +89,11 @@
           "kind": "word",
           "points": 4,
           "text": "The cottage's neighbour says: “The panels' power is $1.2\\,\\text{kW}$, so they produce $1.2\\,\\text{kWh}$ a day.” Evaluate the claim.",
+          "hints": [
+            "The neighbour treats the kilowatt and the kilowatt-hour as if they were the same thing. Which one tells how fast energy is produced, and which one tells the amount of energy?",
+            "Energy is power times time: $E = P\\,t$. The rated power is the greatest power the panels can produce.",
+            "Calculate how many hours at rated power would correspond to the $5.4\\,\\text{kWh}$ of the sunny day and to the $1.5\\,\\text{kWh}$ of the cloudy day. What do the numbers tell you about the neighbour's claim?"
+          ],
           "criteria": [
             {
               "text": "Tells power and energy apart: the kilowatt tells the rate of production, the kilowatt-hour the amount of energy; energy is power multiplied by time.",
@@ -121,6 +136,11 @@
           "kind": "calc",
           "points": 4,
           "text": "How large is the fuel power of the plant?",
+          "hints": [
+            "Wood chips contain chemical energy, and they are fed into the boiler all the time. Which quantity tells how much energy arrives every second, and what do you need to calculate it?",
+            "The energy of the burned chips is the heating value times the mass: $Q = Hm$. Power is energy divided by time: $P_0 = \\dfrac{Q}{t}$.",
+            "Convert the mass burned in an hour from tonnes to kilograms and the hour to seconds, $t = 3600\\,\\text{s}$. Then calculate the energy of one hour and divide it by the time."
+          ],
           "answer": {
             "value": 110.8,
             "unit": "MW",
@@ -149,6 +169,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Calculate the electrical efficiency and the overall efficiency of the plant.",
+          "hints": [
+            "Efficiency tells what fraction of the fuel power is put to use. What counts as useful in the electrical efficiency, and what in the total efficiency?",
+            "$\\eta = \\dfrac{P_\\text{useful}}{P_0}$: for the electrical efficiency the useful part is the electric power $P_\\text{el}$, and for the total efficiency the electric and district-heating power together, $\\eta_\\text{tot} = \\dfrac{P_\\text{el} + P_\\text{dh}}{P_0}$.",
+            "Use the fuel power of part a as the denominator. Calculate the total useful power $P_\\text{el} + P_\\text{dh}$ first and divide only then."
+          ],
           "answer": [
             {
               "name": "s",
@@ -186,6 +211,11 @@
           "kind": "calc",
           "points": 4,
           "text": "How many tonnes of chips per hour would be needed if the same electricity and the same district heat were produced separately in a condensing power plant and a heating boiler?",
+          "hints": [
+            "In separate production each plant needs its own fuel. How do you find the fuel power when the useful power and the efficiency are known?",
+            "The fuel power of each plant is $P_0 = \\dfrac{P_\\text{useful}}{\\eta}$, and the powers are added together. The mass of chips is $m = \\dfrac{P_0\\,t}{H}$.",
+            "First calculate the fuel power of the condensing plant and of the heat boiler separately, and their sum. Then calculate the energy of one hour and the mass of chips, and convert it to tonnes. Compare the result with the $42\\,\\text{t}$ of the combined production."
+          ],
           "answer": {
             "value": 59.4,
             "unit": "t",
@@ -214,6 +244,11 @@
           "kind": "word",
           "points": 3,
           "text": "In summer district heat is needed only for hot tap water. Explain why the overall efficiency of the plant does not then stay the same if it produces the same electrical power.",
+          "hints": [
+            "Where does the heat of the condenser go in summer, when there is no need for district heating? Who makes use of it then?",
+            "Only the power that ends up as useful is counted in the total efficiency: $\\eta_\\text{tot} = \\dfrac{P_\\text{el} + P_\\text{dh}}{P_0}$. What happens to the numerator when $P_\\text{dh}$ gets smaller?",
+            "Write the expression of the total efficiency for the case $P_\\text{dh}$ small or zero and compare it with the efficiencies of part b. What should be considered in running the plant then?"
+          ],
           "criteria": [
             {
               "text": "Explains that the heat of the condenser is useful only when there is a use for it as district heat; otherwise it must be given off to the surroundings as waste heat.",
@@ -252,6 +287,11 @@
           "kind": "graph",
           "points": 4,
           "text": "Present the daily consumption as a function of the outdoor temperature in a graph, and fit a suitable model to the points.",
+          "hints": [
+            "Which quantity is independent and which is dependent? What happens to the consumption when the temperature changes?",
+            "Plot the points in a $(T,\\,E)$ coordinate system and fit a line $E = kT + b$ to them. The line passes between the points, and the points are not joined into a broken line.",
+            "The horizontal axis must reach negative temperatures. Label the axes with the quantity and its unit and choose scales so that the points fill the graph."
+          ],
           "criteria": [
             {
               "key": "graph_axes",
@@ -274,6 +314,11 @@
           "kind": "calc",
           "points": 5,
           "text": "Determine the slope of the line from the graph. By how much does the heating power increase for each kelvin the outdoor temperature falls? Answer in watts per kelvin.",
+          "hints": [
+            "What does the slope of the line tell about the change of energy as the temperature changes? From which points of the graph should you read the slope?",
+            "The slope is $k = \\dfrac{\\Delta E}{\\Delta T}$. Read it from two points of the line that are far apart. Average power is energy divided by time: $P = \\dfrac{E}{t}$.",
+            "The unit of the slope is the energy of a day per degree, $\\text{kWh}/{}^\\circ\\text{C}$. Divide it by the length of a day, $24\\,\\text{h}$, and convert to watts. A change of one degree Celsius equals a change of one kelvin."
+          ],
           "answer": {
             "value": 204,
             "unit": "W/K",
@@ -307,6 +352,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Use the graph to estimate the house's electricity consumption on a day whose average temperature is $-28\\,{}^\\circ\\text{C}$. Assess how reliable the estimate is.",
+          "hints": [
+            "The measurements cover only a certain temperature range. What does it mean to extend the line beyond the measured range, and how certain is that?",
+            "Use the equation of the line $E = kT + b$ or extend the line on the graph. The slope $k$ is the result of part b, and $b$ is the value of the line at $0\\,{}^\\circ\\text{C}$.",
+            "Substitute $T = -28\\,{}^\\circ\\text{C}$. Find how many kelvins this is below the coldest measured point, and consider whether the line is likely to stay straight in such cold."
+          ],
           "answer": {
             "value": 230,
             "unit": "kWh",
@@ -335,6 +385,11 @@
           "kind": "word",
           "points": 5,
           "text": "At what outdoor temperature would the house, according to the model, need no heating at all? Explain why this temperature is not the same as the indoor temperature $21\\,{}^\\circ\\text{C}$.",
+          "hints": [
+            "When does the house need no heating at all? How much electricity use is then left?",
+            "When no heating is needed, only the other electricity use, which the task gives, is left. Solve from the equation of the line $E = kT + b$, or read from the graph, the temperature at which $E$ has this value.",
+            "Compare the temperature you found with the indoor temperature $21\\,{}^\\circ\\text{C}$. What other than the heating brings energy into the house, and what does conservation of energy say about it?"
+          ],
           "criteria": [
             {
               "key": "graph_read",
@@ -379,6 +434,11 @@
           "kind": "word",
           "points": 4,
           "text": "Evaluate the first claim. Justify your answer with a calculation.",
+          "hints": [
+            "The claim contains two separate things: the wind produces enough energy in a year, and that is enough to remove the diesel. Is the energy of a year enough for the consumption? And is it enough at every moment?",
+            "Energy is average power times time: $E = P_\\text{avg}\\,t$. The average power of the wind turbines is $30\\,\\%$ of the rated power, and a year has $8760\\,\\text{h}$. The time the battery lasts at peak power is $t = \\dfrac{E_\\text{battery}}{P_\\text{peak}}$.",
+            "First calculate the combined average power of the two turbines and then the energy of a year in gigawatt-hours; compare it with the consumption of $3.0\\,\\text{GWh}$. Then calculate for how many hours a full battery covers the peak of $1.2\\,\\text{MW}$."
+          ],
           "criteria": [
             {
               "text": "Calculates the wind turbines' annual energy from the average power: $$\n\\begin{aligned}\n&2.0\\,\\text{MW} \\cdot 0.30 \\cdot 8760\\,\\text{h} \\\\\n&\\approx 5.3\\,\\text{GWh}\n\\end{aligned}\n$$, which is more than $3.0\\,\\text{GWh}$.",
@@ -407,6 +467,11 @@
           "kind": "word",
           "points": 5,
           "text": "Compare the options using at least three criteria and make a reasoned recommendation.",
+          "hints": [
+            "What must the energy system on the island be able to do at every moment? Where do A, B and C differ from each other?",
+            "Choose at least three criteria, for example controllability, security of supply, emissions, fuel transport or cost, and go through each option using the numbers of the data.",
+            "Make a small table of the comparison: the rows are the criteria and the columns the options. Justify each cell with a number from the data. The recommendation comes only after the table and follows from it."
+          ],
           "criteria": [
             {
               "text": "Uses at least three criteria of comparison, for example controllability, security of supply, emissions, transport of fuel and price.",
@@ -430,6 +495,11 @@
           "kind": "word",
           "points": 4,
           "text": "Evaluate the second claim. How large are the annual carbon dioxide emissions of the diesel power plant, and how are they compared with the emissions of wind power?",
+          "hints": [
+            "Emissions depend on the energy produced and the emission factor. Does a wind turbine cause emissions only in use, or also before that?",
+            "The mass of the emissions is the emission factor times the energy: $m = e\\,E$, where $e = 700\\,\\text{g/kWh}$ and $E$ is the island's yearly consumption.",
+            "Convert the energy from gigawatt-hours to kilowatt-hours, $1\\,\\text{GWh} = 10^{6}\\,\\text{kWh}$, before multiplying, and convert the grams to tonnes at the end. For the comparison, think what emissions arise from making and building a wind turbine."
+          ],
           "criteria": [
             {
               "text": "Calculates the emissions of diesel: $$\n\\begin{aligned}\nm &= e \\cdot E \\\\\n&= 700\\,\\text{g}/\\text{kWh} \\cdot 3.0 \\\\\n&\\cdot 10^{6}\\,\\text{kWh} \\\\\n&= 2.1 \\cdot 10^{9}\\,\\text{g} \\\\\n&= 2100\\,\\text{t}\n\\end{aligned}\n$$.",
@@ -474,6 +544,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Show how the group got $83\\,\\%$ as the efficiency.",
+          "hints": [
+            "Efficiency compares the useful energy with the energy used. Which energy is the useful one here, and which one is the energy used?",
+            "$\\eta = \\dfrac{Q}{E}$, where the energy needed to heat the water is $Q = cm\\Delta T$ and the electrical energy taken by the kettle is $E = P\\,t$.",
+            "Calculate the change in temperature $\\Delta T$ and convert the time to seconds ($3\\,\\text{min}\\ 5\\,\\text{s}$). Then calculate $Q$ and $E$ separately before dividing."
+          ],
           "answer": {
             "value": 83.4,
             "unit": "%",
@@ -502,6 +577,11 @@
           "kind": "word",
           "points": 5,
           "text": "Assess whether the group's conclusion is justified. Name the most important sources of error in the measurement and tell in which direction each changes the result.",
+          "hints": [
+            "Which number was actually measured, and which one was only read from the rating plate? Where does the measurement differ from what the calculation assumes?",
+            "Ask two things of each source of error: does it change the numerator $Q$ or the denominator $E$, and does it make the efficiency $\\eta = \\dfrac{Q}{E}$ larger or smaller?",
+            "Try one source of error at a time: substitute a slightly different value into the calculation and see by how many percentage points $\\eta$ changes. What does this tell about whether one measurement can show the manufacturer's claim to be wrong?"
+          ],
           "criteria": [
             {
               "key": "error_sources",
@@ -525,6 +605,11 @@
           "kind": "word",
           "points": 5,
           "text": "The group suspects that the efficiency depends on the amount of water. Plan an experiment that can find this out reliably.",
+          "hints": [
+            "Which quantity changes when the amount of water varies, and what must stay the same so that the comparison is fair?",
+            "The quantity you change is the amount of water $m$ and the quantity you study is the efficiency $\\eta = \\dfrac{c\\,m\\,\\Delta T}{E}$. Decide which quantities are measured and with what instrument, and which are kept constant.",
+            "Think when the temperature is read so that the reading is reliable, and how the electrical energy is measured. How many amounts of water do you need, what do you repeat and how do you present the results?"
+          ],
           "criteria": [
             {
               "text": "Varies only the amount of water (for example $0.50$–$1.5\\,\\text{kg}$) and keeps the other factors constant: the same initial temperature, the same kettle, the lid closed.",
@@ -569,6 +654,11 @@
           "kind": "calc",
           "points": 4,
           "text": "How much potential energy does the water of the full upper reservoir have compared with the lower reservoir? Give the answer in megawatt-hours.",
+          "hints": [
+            "Relative to what level does the water have potential energy? What do you need to know about the mass of the water?",
+            "$E_\\text{p} = mgh$, where the mass is found from the density and the volume: $m = \\rho V$.",
+            "Calculate the mass and convert the height to metres. The result is in joules; convert it to megawatt-hours: $1\\,\\text{MWh} = 10^{6}\\,\\text{W} \\cdot 3600\\,\\text{s}$."
+          ],
           "answer": {
             "value": 245.3,
             "unit": "MWh",
@@ -602,6 +692,11 @@
           "kind": "calc",
           "points": 4,
           "text": "How large is the electrical power of the plant when the reservoir is emptied?",
+          "hints": [
+            "Not all of the potential energy comes out as electricity. Which factor tells what fraction becomes electricity, and over what time is the energy released?",
+            "The electrical energy is $\\eta_\\text{t}\\,E_\\text{p}$ and power is energy divided by time: $P = \\dfrac{\\eta_\\text{t}\\,E_\\text{p}}{t}$.",
+            "Use the potential energy of part a and the turbine efficiency $0.88$ and divide by the time $6.0\\,\\text{h}$. If you keep the energy in megawatt-hours, you get the power directly in megawatts."
+          ],
           "answer": {
             "value": 35.97,
             "unit": "MW",
@@ -635,6 +730,11 @@
           "kind": "calc",
           "points": 5,
           "text": "How much electrical energy must be taken from the grid when the empty upper reservoir is pumped full? What is the overall efficiency of the storage when the reservoir is first filled and then emptied?",
+          "hints": [
+            "In pumping, the energy flows the other way: from the grid to the motor and pump and on to the water. Must more or less energy be taken from the grid than ends up in the water?",
+            "In pumping, the useful energy is the potential energy of the water: $E_\\text{grid} = \\dfrac{E_\\text{p}}{\\eta_\\text{p}}$. Filling and emptying the reservoir are stages in series, so the efficiencies are multiplied: $\\eta = \\eta_\\text{p}\\,\\eta_\\text{t}$.",
+            "First calculate $E_\\text{grid}$ with the pump efficiency $0.85$. Check the overall efficiency by dividing the electrical energy obtained in emptying by the energy taken from the grid."
+          ],
           "answer": [
             {
               "name": "E",
@@ -677,6 +777,11 @@
           "kind": "word",
           "points": 4,
           "text": "The designer says: “The plant produces $216\\,\\text{MWh}$ of electricity every day.” Evaluate the claim and explain why the plant can still be useful.",
+          "hints": [
+            "Can the plant produce energy? What does conservation of energy say about where the energy the plant gives out comes from?",
+            "Compare the energy taken from the grid when filling with the electrical energy obtained when emptying. What is their difference and where does it go?",
+            "Assess the benefit: when is electricity cheap or in surplus, when is it needed most, and how fast can the plant's power be adjusted? Reword the designer's claim so that it is correct."
+          ],
           "criteria": [
             {
               "text": "States on the basis of conservation of energy that a pumped-storage plant does not produce energy but stores it: it takes more from the grid than it gives, about $73\\,\\text{MWh}$ in each filling and emptying.",
@@ -723,6 +828,11 @@
           "kind": "calc",
           "points": 3,
           "text": "Choose three electric cars from the chart of the source or use the cars of the table. Calculate by how many per cent the measured range of each car deviates from the stated one, and tell what the comparison shows.",
+          "hints": [
+            "What do the stated and the measured range tell together? How is the difference expressed as a percentage when it is compared with the stated value?",
+            "The deviation as a percentage is $\\dfrac{s_\\text{meas} - s_\\text{stated}}{s_\\text{stated}} \\cdot 100\\,\\%$. A negative result means that the measured distance is shorter than the stated one.",
+            "Put the stated and measured range of three cars of your choice into a table. For each, calculate the difference $s_\\text{meas} - s_\\text{stated}$ and divide it by the stated range. Finally, see whether the deviation varies from one car to another."
+          ],
           "criteria": [
             {
               "text": "Picks the stated and the measured range of three cars from the source and presents them clearly, for example as a table.",
@@ -746,6 +856,11 @@
           "kind": "calc",
           "points": 4,
           "text": "The usable battery energy of an electric car is $75\\,\\text{kWh}$, and its range in mild weather is $450\\,\\text{km}$. Calculate the car's average energy consumption per hundred kilometres. Calculate also the consumption in frost, when the range is shorter by the test's average of $38\\,\\%$ and the battery is assumed to give the same energy. Assess how well the assumption holds.",
+          "hints": [
+            "The energy of the battery and the range are proportional. How do you get the consumption per hundred kilometres when you know how far a full battery goes?",
+            "The consumption per hundred kilometres is $E_{100} = \\dfrac{E\\,s_{100}}{s}$, where $s_{100} = 100\\,\\text{km}$. In the cold the range is $s_\\text{c} = (1 - 0.38)\\,s$ and the energy of the battery is assumed to be the same.",
+            "First calculate the range in the cold $s_\\text{c}$ and substitute it into the same formula. Then consider the assumption of the same battery energy: what happens to a cold battery, and in which direction would it change the calculated consumption?"
+          ],
           "answer": [
             {
               "name": "E100",
@@ -788,6 +903,11 @@
           "kind": "word",
           "points": 4,
           "text": "Explain with thermal physics, electricity and mechanics why the energy consumption of an electric car per kilometre grows in frost.",
+          "hints": [
+            "Think of three places where the cold increases energy consumption: the temperature difference between the car and the surroundings, the battery, and the motion. What is the phenomenon in each?",
+            "Thermal physics: the heat flow grows as the temperature difference grows. Electricity: power is $P = UI$ or the loss power $P = R_\\text{s}I^2$. Mechanics: the work against resisting forces is $W = Fs$. Choose a suitable argument from each area.",
+            "Put the explanation together with conservation of energy: all the energy comes from the same battery. Write a chain in which some form of energy grows in each part, and conclude why less is left for driving."
+          ],
           "criteria": [
             {
               "text": "Thermal physics: heat is transferred from the cabin and the battery to the surroundings the faster the larger the temperature difference is, so keeping the temperature takes heating power. In an electric car it is taken from the traction battery.",
@@ -816,6 +936,11 @@
           "kind": "word",
           "points": 2,
           "text": "According to the test report, the range of the car that drove the furthest fell short of its stated range by $46\\,\\%$, which is one of the largest deviations in the test. Explain with the help of the source why this does not show that it withstands frost worse than the other cars.",
+          "hints": [
+            "Study the information in the data: did all the cars drive in the same conditions along the whole route? At what temperature did each car drive?",
+            "Comparing the percentage deviations of the cars is fair only if the conditions are the same. What changed along the route going north?",
+            "Compare the temperature at which the Hyundai Inster stopped with the temperature range that the car that drove furthest went through. What does it tell about the conditions in which each drove?"
+          ],
           "criteria": [
             {
               "text": "Uses the source: the temperature fell along the route from $-7\\,{}^\\circ\\text{C}$ to $-32\\,{}^\\circ\\text{C}$, so the car that drove the furthest drove a large part of its distance on the coldest section and was in the frost the longest, whereas a car with a short range stopped already at the $-16\\,{}^\\circ\\text{C}$ point.",
@@ -834,6 +959,11 @@
           "kind": "word",
           "points": 2,
           "text": "Assess why the range of a particular electric car in all winter conditions cannot be predicted from this one winter test. Name at least three factors that change the consumption. Tell also how the test should be changed to make the result more reliable.",
+          "hints": [
+            "Which factors vary from one winter, route and driver to another and affect the consumption? What did this single test show about only one situation?",
+            "Look for factors in three groups: weather (for example temperature, wind), road and route, and car and driver. The data gives one example: compare the deviations of the two tests and their temperatures.",
+            "Think about how the test was carried out: how many times was each car driven, and were the conditions the same? How should the test be changed so that the spread of the results could be estimated?"
+          ],
           "criteria": [
             {
               "key": "error_sources",
@@ -874,6 +1004,11 @@
           "kind": "calc",
           "points": 4,
           "text": "How much internal energy has friction produced in the track and the skateboard's wheels from A to B and from A to C?",
+          "hints": [
+            "Which forms of energy do the bars show? What should happen to their sum if there were no friction?",
+            "Mechanical energy is the sum of potential and kinetic energy: $E_\\text{mech} = E_\\text{p} + E_\\text{k}$. Total energy is conserved, so the internal energy produced by friction is $\\Delta E_\\text{int} = E_\\text{mech,A} - E_\\text{mech}$.",
+            "At each of A, B and C read the height of both bars in joules and calculate the mechanical energy. Subtract it from the mechanical energy at A, separately for B and for C."
+          ],
           "answer": [
             {
               "name": "dB",
@@ -916,6 +1051,11 @@
           "kind": "calc",
           "points": 3,
           "text": "Determine the skateboarder's speed at point C.",
+          "hints": [
+            "Which form of energy is related to speed, and how much of it is there at C?",
+            "Kinetic energy is $E_\\text{k} = \\tfrac{1}{2}mv^2$. Solve the speed from it: $v = \\sqrt{\\dfrac{2E_\\text{k}}{m}}$.",
+            "Read the kinetic energy at C from the bar and substitute it with the mass $m = 45\\,\\text{kg}$. Remember that energy is in joules: $1\\,\\text{J} = 1\\,\\text{kg}\\,\\text{m}^2/\\text{s}^2$."
+          ],
           "answer": {
             "value": 4.7,
             "unit": "m/s",
@@ -944,6 +1084,11 @@
           "kind": "calc",
           "points": 3,
           "text": "How large is the average force of friction on the skateboarder from A to C?",
+          "hints": [
+            "Friction does work on the skater. The change in which energy equals the work done by friction?",
+            "The work of friction equals the increase in internal energy: $\\Delta E_\\text{int} = Fs$, from which $F = \\dfrac{\\Delta E_\\text{int}}{s}$.",
+            "Use the increase in internal energy of part a for the whole way from A to C and the distance $s = 3.4\\,\\text{m}$. Compare the result with the skater's weight $mg$ and judge whether it is reasonable."
+          ],
           "answer": {
             "value": 59,
             "unit": "N",
@@ -972,6 +1117,11 @@
           "kind": "calc",
           "points": 4,
           "text": "What would the skateboarder's speed at C be if there were no friction? Why is the real speed smaller?",
+          "hints": [
+            "What energy does the skater have at the start and at the end if nothing were lost?",
+            "Without friction the mechanical energy is conserved: $E_\\text{k,C} = E_\\text{p,A}$, and from this $v = \\sqrt{\\dfrac{2E_\\text{p,A}}{m}}$.",
+            "Read $E_\\text{p,A}$ from the figure and calculate the speed. Compare it with the speed of part b and explain the difference with energy: where does the energy that is not kinetic energy go?"
+          ],
           "answer": {
             "value": 5.6,
             "unit": "m/s",
@@ -1020,6 +1170,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Determine the electrical power of devices A and B.",
+          "hints": [
+            "What does the steepness of the line on the graph tell? Which quantity is the change of energy in time?",
+            "Power is the rate of change of energy: $P = \\dfrac{\\Delta E}{\\Delta t}$, which is the slope of the $(t,\\,E)$ graph.",
+            "On each line choose a point far from the origin and read its time and energy. Convert the energy from kilojoules if needed and divide it by the time."
+          ],
           "answer": [
             {
               "name": "PA",
@@ -1062,6 +1217,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Each device is used for $3.0\\,\\text{h}$ a day for $30$ days. How much does the electricity of each device cost during that time?",
+          "hints": [
+            "What is the energy of a device when the total running time is known? How is energy converted to euros when the price is given per kilowatt-hour?",
+            "$E = Pt$ and the cost is $C = E\\,p$, where $p = 0.16\\,\\text{€/kWh}$. The energy must be given in kilowatt-hours.",
+            "First calculate the total running time in hours ($30$ days, $3.0\\,\\text{h}$ a day). Use the powers of part a in kilowatts, so that $\\text{kW} \\cdot \\text{h} = \\text{kWh}$."
+          ],
           "answer": [
             {
               "name": "cA",
@@ -1104,6 +1264,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Determine the efficiency of the lift motor B.",
+          "hints": [
+            "Which energy is the useful one in the lift motor, and which is the energy it takes?",
+            "$\\eta = \\dfrac{E_\\text{useful}}{E}$, where the useful energy is the change in the potential energy of the load, $E_\\text{useful} = mgh$.",
+            "Calculate the useful energy and read the electrical energy taken by B in $80\\,\\text{s}$ from the graph. Use the same unit when you divide."
+          ],
           "answer": {
             "value": 74,
             "unit": "%",
@@ -1137,6 +1302,11 @@
           "kind": "calc",
           "points": 3,
           "text": "How large is the power transferred from motor B to the surroundings as heat? Into which form of energy does it first change?",
+          "hints": [
+            "The motor takes energy, but only part of it goes to lifting the load. What else happens to the energy? In what form is it?",
+            "The loss power is the power taken minus the useful power: $P_\\text{loss} = P - P_\\text{useful}$, where $P_\\text{useful} = \\dfrac{E_\\text{useful}}{t}$.",
+            "First calculate the useful power that goes into lifting the load in $80\\,\\text{s}$ and subtract it from the electric power $P_\\text{B}$ of part a. Then think into which form of energy the loss first changes and how it gets to the surroundings."
+          ],
           "answer": {
             "value": 0.13,
             "unit": "kW",
