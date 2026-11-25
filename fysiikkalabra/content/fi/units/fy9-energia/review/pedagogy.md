@@ -1,13 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 31a986a4af64bc1a
+CONTENT-HASH: db34d403f3fd146a
 
 Blocking: none.
 
-Ladder: across all written parts, hint 1 is a guiding question, hint 2 the relation or representation, hint 3 one intermediate step; no hint states a final answer or fills a rubric point. Evaluation and design parts (neighbour's claim, island plan, recommendation, error sources, experiment design, extrapolation, the designer's claim) guide the reasoning and leave the conclusion to the student.
+Round 2: all hints of all written parts (s1 a to s9 d) read in full in fi, fi-easy and en.
+
+Ladder: hint 1 is a guiding question, hint 2 the relation or representation, hint 3 one intermediate step that leaves the calculation or argument to the student. No hint states a part's final answer or makes a rubric point free. The fixed hints now work: s3 d hint 2 no longer gives the 12 kWh (it says only "the other electricity use the task gives"); s2 d hint 3 and s7 d hint 3 point at the comparison without giving the conclusion. Evaluation and design parts (s2 d, s4 a/b, s5 b/c, s6 d, s7 d/e) guide the reasoning and leave the conclusion open. Symbols agree with the solutions (en: P_el, P_dh, E_int, s_c, s_meas, s_stated).
+
+Language: Finnish.
 
 Polish:
-1. Heating part (house, balance temperature), hint 2: it states "other consumption E = 12 kWh" and so hands the student the key identification that hint 1 asks them to find. Suggest: "Ratkaise suoran yhtälöstä  = kT + b$ tai lue kuvaajalta lämpötila, jossa lämmitystä ei enää tarvita." (same idea in en and fi-easy).
-2. Summer condenser part, hint 3, last sentence ("Mitä voimalan ajossa kannattaisi silloin harkita?") and the pumped-storage designer-claim hint 3 ("Muotoile väite uudelleen niin, että se on oikein") lean toward the conclusion; acceptable, optional softening to a pure question.
-3. Hint 3 of the island emissions part gives the unit chain in full; it still leaves the arithmetic, so no change needed.
+1. s3 b hint 2 (all languages) mixes slope and average power in one hint; acceptable, since both are needed, but splitting the thought across hints 2 and 3 would be tidier.
+2. s7 c hint 3 (all languages) comes close to prescribing the chain structure; acceptable because the rubric asks for exactly that reasoning, not a conclusion.
 
-Language (fi): Finnish is clear and consistent with the rubric terms.
+Checked: hints on all 40 written parts, three languages, against the brief's ladder, no-giveaway and fi-easy readability criteria.
