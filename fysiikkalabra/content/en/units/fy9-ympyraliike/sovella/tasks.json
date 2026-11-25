@@ -18,6 +18,11 @@
           "kind": "calc",
           "points": 5,
           "text": "Draw the free-body diagram of the trailer and the boat. How large is the vertical force of the coupling on the drawbar? What is the nose weight?",
+          "hints": [
+            "About which point could the trailer and boat tip? Which force has zero moment about that point?",
+            "At rest the moments sum to zero: the moments turning one way equal those turning the other way. A moment is force times lever arm, $M = Fd$.",
+            "Take the axle of the trailer as the pivot. The lever arm of the coupling force is $3.25\\,\\text{m}$, and the lever arms of the weights are the distances of the centres of gravity from the axle. Write the equation in symbols before any numbers. The nose weight is the force divided by $g$."
+          ],
           "answer": [
             {
               "name": "F",
@@ -65,6 +70,11 @@
           "kind": "calc",
           "points": 3,
           "text": "How large a force does the ground exert on the wheels of the trailer?",
+          "hints": [
+            "Which vertical forces act on the trailer and boat together? What is their sum when they are at rest?",
+            "In the vertical direction $\\Sigma F = 0$: the forces up equal the forces down.",
+            "The weights together are $(m_\\text{t} + m_\\text{b})g$. Subtract the force of the coupling from part a. What is left is the combined force $N$ on both wheels."
+          ],
           "answer": {
             "value": 5.392,
             "unit": "kN",
@@ -93,6 +103,11 @@
           "kind": "calc",
           "points": 4,
           "text": "The boat can be moved forwards on the trailer. How far must the boat be moved for the nose weight to be $60\\,\\text{kg}$?",
+          "hints": [
+            "What changes when the boat is moved forwards, and what stays the same? Whose lever arm changes?",
+            "Write the moment condition about the axle as in part a. The lever arm of the boat's weight is now $0.12\\,\\text{m} + \\Delta x$, and the force of the coupling is the target nose weight times $g$.",
+            "The acceleration $g$ cancels. Solve for $\\Delta x$ in symbols and substitute only then. Convert the answer to centimetres at the end."
+          ],
           "answer": {
             "value": 11.09,
             "unit": "cm",
@@ -126,6 +141,11 @@
           "kind": "word",
           "points": 3,
           "text": "For the trip to the cottage, $30\\,\\text{kg}$ of fuel and gear are loaded at the stern of the boat, $1.40\\,\\text{m}$ behind the axle. How does the nose weight change from the situation of part a? Why is too small or a negative nose weight dangerous?",
+          "hints": [
+            "Which side of the axle is the extra load on? Which way does it tend to turn the trailer about the axle compared with the weights of the boat and the trailer?",
+            "A weight behind the axle turns the trailer the opposite way to the weights in front of it. In the moment condition its moment reduces the force the coupling has to exert.",
+            "Work out the moment of the load about the axle: mass times $g$ times lever arm. Divide it by the lever arm of the coupling to get the change in nose weight. Finally ask: what would the coupling have to do if the nose weight went below zero?"
+          ],
           "criteria": [
             {
               "text": "Justifies with the moment condition that a load behind the axle reduces the nose weight: $30\\,\\text{kg} \\cdot 1.40\\,\\text{m} : 3.25\\,\\text{m} \\approx 13\\,\\text{kg}$, so the nose weight is about $32\\,\\text{kg}$.",
@@ -164,6 +184,11 @@
           "kind": "calc",
           "points": 5,
           "text": "How large is the orbital speed of the satellite? How long is its period in minutes?",
+          "hints": [
+            "Which force gives the satellite its acceleration towards the centre of the orbit? What distance is the radius of the orbit?",
+            "Gravitation is the only force and gives the normal acceleration: $\\gamma\\dfrac{Mm}{r^2} = m\\dfrac{v^2}{r}$. The period is $T = \\dfrac{2\\pi r}{v}$.",
+            "The radius of the orbit is the radius of the Earth plus the altitude. The mass $m$ cancels, so solve for $v$ in symbols. Convert kilometres to metres before substituting, and seconds to minutes at the end."
+          ],
           "answer": [
             {
               "name": "v",
@@ -211,6 +236,11 @@
           "kind": "calc",
           "points": 4,
           "text": "How large a gravitational force acts on the satellite in its orbit? What percentage is it of the weight of the satellite at the Earth's surface?",
+          "hints": [
+            "Which law gives the force of the Earth on the satellite? Which distance goes into it?",
+            "The gravitational force is $F = \\gamma\\dfrac{Mm}{r^2}$, and the weight at the surface is $G = mg$.",
+            "Use the distance from the centre of the Earth, not the altitude alone. The percentage is the force in orbit divided by the weight $mg$."
+          ],
           "answer": {
             "value": 31.5,
             "unit": "kN",
@@ -244,6 +274,11 @@
           "kind": "calc",
           "points": 3,
           "text": "The plane of the satellite's orbit stays almost fixed in space, and the Earth turns beneath it. Through how many degrees does the Earth turn during one revolution of the satellite? How far does a point on the equator move in the same time?",
+          "hints": [
+            "What fraction of the Earth's rotation period passes during one orbit of the satellite?",
+            "The Earth turns uniformly, so the angle is the fraction $\\dfrac{T}{T_\\text{Earth}}$ of $360^\\circ$. The distance moved by a point on the equator is the same fraction of the circumference $2\\pi R$.",
+            "Convert both times to seconds before dividing. Use the period from part a and the rotation period of the Earth, $23\\,\\text{h}\\;56\\,\\text{min}$."
+          ],
           "answer": [
             {
               "name": "deg",
@@ -281,6 +316,11 @@
           "kind": "word",
           "points": 3,
           "text": "A student suggests: “Let's move the weather satellite to a geostationary orbit, then it will see Finland all the time.” Assess why an orbit over the poles is still used for accurate measurements of northern regions. The geostationary orbit is at a height of $35\\,800\\,\\text{km}$ above the equator.",
+          "hints": [
+            "What is the good side of the student's suggestion? What does it leave out when precise measurements of northern regions are needed?",
+            "Compare the two orbits on two grounds: distance from what is measured (how well details show) and the plane of the orbit (whether the polar region is seen).",
+            "Work out how many times farther away the geostationary orbit is than $830\\,\\text{km}$. Think about the angle at which Finland is seen from a satellite in the equatorial plane."
+          ],
           "criteria": [
             {
               "text": "Justifies with the distance: the geostationary orbit is over $40$ times further away than $830\\,\\text{km}$, so with the same instrument details look much less sharp.",
@@ -324,6 +364,11 @@
           "kind": "graph",
           "points": 4,
           "text": "Present the force of the string as a function of the period in a graph. Justify why a straight line does not fit the points.",
+          "hints": [
+            "What is the time of one revolution when the time of ten revolutions was measured? What shape do the points form when you plot them?",
+            "The force of the string gives the trolley its normal acceleration: $F = m\\dfrac{v^2}{r}$, and the speed is $v = \\dfrac{2\\pi r}{T}$. How does $F$ depend on $T$ according to these?",
+            "Add the time of one revolution $T = \\dfrac{10T}{10}$ to the table and plot the points. Check whether the force changes by the same amount for every equal increase in the revolution time."
+          ],
           "criteria": [
             {
               "key": "graph_axes",
@@ -346,6 +391,11 @@
           "kind": "graph",
           "points": 6,
           "text": "Form from the data a quantity against which the graph of the force of the string is a straight line when the mass of the cart and its distance from the axis stay the same. Justify your choice. Present the graph and fit a straight line to the points.",
+          "hints": [
+            "As a function of which quantity should the force give a straight line? Which relation do you use to find it?",
+            "Substitute $v = \\dfrac{2\\pi r}{T}$ into $F = m\\dfrac{v^2}{r}$. See which quantity $F$ is a multiple of when $m$ and $r$ stay constant.",
+            "Calculate this quantity with its unit for every row of the table. Plot the points and fit a line; think about where the model says the line should go."
+          ],
           "criteria": [
             {
               "text": "Justifies the linearisation: $F = m\\tfrac{v^2}{r}$ and $v = \\tfrac{2\\pi r}{T}$ give $F = 4\\pi^2 mr \\cdot \\tfrac{1}{T^2}$, so $F$ is directly proportional to the quantity $\\tfrac{1}{T^2}$.",
@@ -374,6 +424,11 @@
           "kind": "calc",
           "points": 5,
           "text": "Determine the slope of the line. Use it to determine the mass of the cart and compare the result with the weighed mass.",
+          "hints": [
+            "What does the slope of the line tell you when you know what is on the axes?",
+            "According to the model $F = k\\cdot\\dfrac{1}{T^2}$ and $k = 4\\pi^2 mr$. The slope is $k = \\dfrac{\\Delta F}{\\Delta(1/T^2)}$.",
+            "Read two points far apart from the fitted line (not measured points). Calculate $k$ with its unit and solve for $m$ in symbols before substituting. Compare with the weighed mass, $0.200\\,\\text{kg}$."
+          ],
           "answer": {
             "value": 0.1976,
             "unit": "kg",
@@ -412,6 +467,11 @@
           "kind": "calc",
           "points": 5,
           "text": "According to the manufacturer the string withstands a force of at most $8.0\\,\\text{N}$. What is the shortest period at which the platform may be turned with this cart and distance? Assess how reliable the prediction is.",
+          "hints": [
+            "What is the greatest force the string can take? Which revolution time does the line give for it?",
+            "On the line $F = k\\cdot\\dfrac{1}{T^2}$, and the requirement is $F \\le F_\\text{max}$. What does that mean for the revolution time $T$?",
+            "The shortest revolution time belongs to the greatest permitted force. Solve for $T$ in symbols. Then compare the value of $\\dfrac{1}{T^2}$ with the measured range: is the prediction inside it or outside? What is the uncertainty of the hand-timed measurement?"
+          ],
           "answer": {
             "value": 0.4937,
             "unit": "s",
@@ -471,6 +531,11 @@
           "kind": "word",
           "points": 5,
           "text": "The article says: “On present-day stations astronauts float, because at a height of $400\\,\\text{km}$ there is no gravity any more.” Assess the claim.",
+          "hints": [
+            "Which force keeps the station in its orbit at $400\\,\\text{km}$? Does it exist there?",
+            "The strength of the gravitational field at altitude is $\\gamma\\dfrac{M}{(R + h)^2}$, and at the surface it is $g$. Weightlessness means that the floor does not support: think what that requires of the station and the astronaut.",
+            "Calculate the field strength at $R + h$ and compare it with the surface value. Then explain what acceleration the astronaut has and what the station has, and what that says about the support force."
+          ],
           "criteria": [
             {
               "text": "Calculates or estimates that the gravitational field strength at a height of $400\\,\\text{km}$ is $\\gamma\\tfrac{M}{(R + h)^2} \\approx 8.7\\,\\text{m/s}^2$, almost $90\\,\\%$ of its value at the surface.",
@@ -499,6 +564,11 @@
           "kind": "word",
           "points": 5,
           "text": "Explain why an astronaut standing on the floor of the rotating ring feels heavy. Which direction is “down” for them? Estimate the period at which the floor presses on the astronaut with as large a force as the surface of the Earth.",
+          "hints": [
+            "Which way must the net force on the astronaut point when they move along a circle with the ring? Which force gives it?",
+            "The support force of the floor gives the normal acceleration: $N = m\\dfrac{v^2}{r}$. Feeling the usual weight requires the same support force as on the surface of the Earth, $N = mg$.",
+            "Combine the conditions: $\\dfrac{v^2}{r} = g$ and $v = \\dfrac{2\\pi r}{T}$. The mass cancels, so solve for $T$ in symbols. Also think which direction the floor is in, as seen from the astronaut's feet."
+          ],
           "criteria": [
             {
               "text": "Explains that the astronaut moves in a circle with the ring, so the net force on them must point to the centre of the ring: it is given by the normal force of the floor, $N = m\\tfrac{v^2}{r}$.",
@@ -522,6 +592,11 @@
           "kind": "word",
           "points": 5,
           "text": "An astronaut holds a key in their hand and lets go of it. Describe and explain how the key moves as seen from outside the station and what its motion looks like to the astronaut.",
+          "hints": [
+            "Which force acts on the key after the astronaut lets go? What does Newton's first law say?",
+            "With no force a body moves in a straight line at constant speed. The velocity of the key at the moment of release points along the tangent of the circle.",
+            "Describe the motion first from outside the station: where does the key go, and where does the floor move meanwhile? Then think about what the astronaut sees when they turn with the floor."
+          ],
           "criteria": [
             {
               "text": "Explains that after it is released no force acts on the key (the gravitation of the Earth is ignored), so it carries on in a straight line with the velocity it had at the moment of release: along the tangent of the path.",
@@ -566,6 +641,11 @@
           "kind": "calc",
           "points": 5,
           "text": "Calculate the mass of the stone from the measurements of the report. Compare the result with the reading of the kitchen scale.",
+          "hints": [
+            "Which weights act on the metre rule? Where does its own weight act relative to the pivot?",
+            "Moment condition about the pivot: the moment of the weight equals the sum of the moments of the stone and the rule, if they turn the rule the same way. The weight of a uniform rule acts at its midpoint.",
+            "Work out the distance of the rule's centre of gravity from the pivot and which side of the pivot it is on. The mass of the rule is $120\\,\\text{g}$. Solve for $m_\\text{s}$ in symbols and compare the result with the reading of the scale."
+          ],
           "answer": {
             "value": 114.3,
             "unit": "g",
@@ -604,6 +684,11 @@
           "kind": "word",
           "points": 5,
           "text": "Assess the conclusion of the report and the reliability of the measurement. Name the shortcomings of the report and justify them.",
+          "hints": [
+            "Does friction at the pivot explain such a large difference? What is missing from the report's calculation?",
+            "Check whether every moment is included in the moment condition. Compare whether friction would act in both directions or in one direction only.",
+            "Also estimate how precisely the balance point can be read: if it varies by $\\pm 0.5\\,\\text{cm}$, how much does the mass change? How many digits are sensible in the result? How many measurements were made?"
+          ],
           "criteria": [
             {
               "key": "error_sources",
@@ -632,6 +717,11 @@
           "kind": "word",
           "points": 5,
           "text": "Plan an improved experiment that gives the mass of the stone reliably with the same equipment. Say what is measured, what is kept constant and how the result is determined.",
+          "hints": [
+            "What in the report's set-up made the calculation wrong? How could it be removed or taken into account?",
+            "The moment condition has the form $m_\\text{w} d_\\text{w} = m_\\text{s} d_\\text{s} + \\dots$. If you change only one distance and keep the others fixed, the graph can be a straight line.",
+            "Write down what you change, what you keep constant and what you measure each time. Say how the mass is found from the graph and how you estimate the uncertainty."
+          ],
           "criteria": [
             {
               "text": "Removes or takes into account the moment of the metre stick's weight: the support at the centre of gravity of the stick, $50.0\\,\\text{cm}$, or the weight of the stick included in the moment condition.",
@@ -681,6 +771,11 @@
           "kind": "calc",
           "points": 4,
           "text": "How large is the speed of the car at the bottom of the loop?",
+          "hints": [
+            "Where does the energy go as the car runs down the hill and part of it becomes internal energy?",
+            "The kinetic energy at the bottom is $88\\,\\%$ of the initial potential energy: $\\tfrac12 mv^2 = 0.88\\,mgh$.",
+            "The mass cancels, so solve for $v$ in symbols. The height $h$ is that of the top of the hill above the bottom of the loop."
+          ],
           "answer": {
             "value": 22.76,
             "unit": "m/s",
@@ -714,6 +809,11 @@
           "kind": "calc",
           "points": 4,
           "text": "How large a force does the seat exert on the passenger at the bottom of the loop? How many times the passenger's weight is the force?",
+          "hints": [
+            "Which forces act on the passenger at the bottom of the loop? Which way must the net force point?",
+            "The net force points up, towards the centre: $N - mg = m\\dfrac{v_\\text{b}^2}{r}$, where $v_\\text{b}$ is the speed from part a.",
+            "Solve for $N$ in symbols and then substitute the speed from part a. The multiple is $N$ divided by the weight $mg$."
+          ],
           "answer": {
             "value": 3696,
             "unit": "N",
@@ -747,6 +847,11 @@
           "kind": "calc",
           "points": 4,
           "text": "How large is the speed of the car at the top of the loop? Does the seat press on the passenger at the top, and with how large a force?",
+          "hints": [
+            "Which energy changes as the car rises from the bottom to the top? Which forces act on the passenger at the top?",
+            "In the loop losses are neglected: $\\tfrac12 mv_\\text{b}^2 = \\tfrac12 mv_\\text{t}^2 + mg\\cdot 2r$. At the top the net force points down: $N + mg = m\\dfrac{v_\\text{t}^2}{r}$.",
+            "Solve for $v_\\text{t}$ first and substitute it into the equation of motion. The top is at height $2r$ above the bottom. What does the sign of $N$ tell you about whether the seat pushes the passenger?"
+          ],
           "answer": [
             {
               "name": "v",
@@ -789,6 +894,11 @@
           "kind": "word",
           "points": 3,
           "text": "Modern loops are not circles: their radius of curvature is small at the top and large in the lower part. Use your results to explain why such a shape is better for the passenger.",
+          "hints": [
+            "What do the earlier results say about the force of the seat at the bottom and the speed at the top? What would you want to change at each point?",
+            "The normal acceleration $a_\\text{n} = \\dfrac{v^2}{r}$ depends on the radius. At the top the passenger stays in the seat when $\\dfrac{v^2}{r} \\ge g$.",
+            "Think what happens to the seat force $N$ at the bottom when the radius grows and the speed stays the same. Think what happens to the condition at the top when the radius shrinks."
+          ],
           "criteria": [
             {
               "text": "Explains the lower part: a larger radius of curvature reduces the centripetal acceleration $\\tfrac{v^2}{r}$ and so the force of the seat, which in the circle model was calculated to be over six times the weight.",
@@ -833,6 +943,11 @@
           "kind": "calc",
           "points": 4,
           "text": "At what altitude does the station orbit the Earth according to the source? Does the height $400\\,\\text{km}$ of the model fit the source? Calculate the orbital speed of the station with the model.",
+          "hints": [
+            "What should you read from the NASA page? Which number of the model do you compare it with?",
+            "On a circular orbit the speed is $v = \\dfrac{2\\pi r}{T}$, where $r = R + h$ is the radius of the orbit from the centre of the Earth.",
+            "Convert the radius to metres and the period to seconds before substituting. Compare the altitude in the source with the $400\\,\\text{km}$ of the model."
+          ],
           "answer": {
             "value": 7.707,
             "unit": "km/s",
@@ -866,6 +981,11 @@
           "kind": "calc",
           "points": 3,
           "text": "Calculate the centripetal acceleration of the station. What percentage is it of the free-fall acceleration at the surface of the Earth?",
+          "hints": [
+            "Which acceleration points towards the centre in circular motion? How does it depend on the speed and the radius?",
+            "The normal acceleration is $a_\\text{n} = \\dfrac{v^2}{r} = \\dfrac{4\\pi^2 r}{T^2}$.",
+            "Use the radius $r$ from part a. Compare the result with the acceleration of free fall $g = 9.81\\,\\text{m/s}^2$ by dividing."
+          ],
           "answer": {
             "value": 8.773,
             "unit": "m/s^2",
@@ -894,6 +1014,11 @@
           "kind": "word",
           "points": 3,
           "text": "An astronaut floats inside the station without touching the walls or the floor. Which force gives them the centripetal acceleration of part b? Explain with the equation of motion why they are weightless although the gravitation of the Earth acts on them.",
+          "hints": [
+            "Which is the only force acting on the floating astronaut? Which way does it point?",
+            "If the floor supported the astronaut, the equation of motion would be $G - N = ma_\\text{n}$. What is $N$ when gravitation alone gives the acceleration $a_\\text{n}$?",
+            "Compare the accelerations of the astronaut and the station. Say what weightlessness means for the support force and for gravitation. Compare the strength of gravitation with the result of part b."
+          ],
           "criteria": [
             {
               "text": "States that the astronaut moves along the same orbit at the same speed as the station and that the gravitational force of the Earth is the only force on them: it points to the centre of the orbit and gives the centripetal acceleration, $G = ma_\\text{n}$.",
@@ -917,6 +1042,11 @@
           "kind": "calc",
           "points": 3,
           "text": "How much electrical energy can the solar arrays of the station generate in a year according to the source? Calculate the mean electrical power that corresponds to it.",
+          "hints": [
+            "Which figure on the NASA page gives the energy per year? How are power and energy related?",
+            "Average power is energy divided by time: $P = \\dfrac{E}{t}$.",
+            "Use the time in hours, $t = 365 \\cdot 24\\,\\text{h}$, and the energy in kilowatt-hours. Then the result comes directly in kilowatts."
+          ],
           "answer": {
             "value": 83.9,
             "unit": "kW",
@@ -945,6 +1075,11 @@
           "kind": "word",
           "points": 2,
           "text": "Explain with the orbit and the period of the station why the station needs batteries besides the solar arrays. Why does the mean power of part d alone not tell whether there is enough electricity at every moment?",
+          "hints": [
+            "What happens to the station on every orbit in relation to the Sun? How often?",
+            "The period of the station is $92\\,\\text{min}$. Think how large a part of each orbit is spent in the Earth's shadow and what the panels produce then.",
+            "The average power spreads the production over the whole year. Think what the production is in the shadow and in sunlight compared with the average. What do the devices need at every moment?"
+          ],
           "criteria": [
             {
               "text": "Explains that the station passes through the shadow of the Earth about every $92\\,\\text{min}$, on almost every orbit. In the shadow the arrays generate no electricity, but the equipment needs it all the time.",
@@ -984,6 +1119,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Determine the radius of the bend with the help of the graph.",
+          "hints": [
+            "Which points can you read accurately from the graph using the guide lines?",
+            "On a circular path the normal acceleration is $a_\\text{n} = \\dfrac{v^2}{r}$.",
+            "Solve for $r$ in symbols. Substitute, with units, one matching pair $(v, a_\\text{n})$ that you read from the graph."
+          ],
           "answer": {
             "value": 75.0,
             "unit": "m",
@@ -1017,6 +1157,11 @@
           "kind": "calc",
           "points": 3,
           "text": "Draw the free-body diagram of the car. How large a friction force is needed when the car goes through the bend at the speed $15\\,\\text{m/s}$?",
+          "hints": [
+            "Which force turns the car in the bend? Which way does it point? What do you draw in the free-body diagram?",
+            "In the horizontal direction friction is the only force, so $\\Sigma F = ma_\\text{n}$.",
+            "The friction is static friction of the tyres, since they do not slide. No centrifugal force is drawn. Use the normal acceleration read in part a."
+          ],
           "answer": {
             "value": 3.6,
             "unit": "kN",
@@ -1045,6 +1190,11 @@
           "kind": "calc",
           "points": 5,
           "text": "What is the greatest speed at which the car can go through the bend on the wet road without slipping? Give the answer also in $\\text{km/h}$.",
+          "hints": [
+            "What limits the size of the friction force? What is its greatest value?",
+            "Static friction is at most $F_\\text{max} = \\mu_0 N$, and in the vertical direction $N = mg$. In the limiting case friction gives the normal acceleration.",
+            "Write the equation of motion for the limiting case. The mass cancels, so solve for $v$ in symbols. Convert to $\\text{km/h}$ at the end: $1\\,\\text{m/s} = 3.6\\,\\text{km/h}$."
+          ],
           "answer": {
             "value": 19.18,
             "unit": "m/s",
@@ -1083,6 +1233,11 @@
           "kind": "word",
           "points": 3,
           "text": "The car is loaded with passengers and luggage, and its mass is $1500\\,\\text{kg}$. How does the load affect the greatest speed in the bend on the wet road? Does the graph change? Justify by calculating.",
+          "hints": [
+            "Which quantities appear in the equation of the limiting case? Which of them depend on the mass?",
+            "In the limiting case $\\mu_0 mg = \\dfrac{mv^2}{r}$. Compare the friction needed with the greatest possible friction for the new mass.",
+            "At $15\\,\\text{m/s}$ calculate the friction needed, $ma_\\text{n}$, and the greatest possible friction $\\mu_0 mg$ for $1500\\,\\text{kg}$. Check whether the mass appears in the equation of the graph, $a_\\text{n} = \\dfrac{v^2}{r}$."
+          ],
           "criteria": [
             {
               "text": "Justifies that the mass cancels from the equation of motion $\\mu_0 mg = \\dfrac{mv^2}{r}$, so the greatest speed $$\n\\begin{aligned}\n\\sqrt{\\mu_0 g r} &\\approx 19\\,\\text{m/s}\n\\end{aligned}\n$$ does not change.",
@@ -1128,6 +1283,11 @@
           "kind": "calc",
           "points": 6,
           "text": "Draw the free-body diagram of the rod and the sign. How large is the force in the cable?",
+          "hints": [
+            "About which point is it best to write the moment condition, so that the unknown force of the hinge does not appear?",
+            "The moment of a force is force times perpendicular lever arm. The component of the wire's force perpendicular to the rod is $T\\sin\\theta$.",
+            "The weight of the sign acts at the end of the rod and the weight of the rod at its middle. Write the moment condition about the hinge in symbols: the length of the rod cancels. Read the length and the angle from the figure."
+          ],
           "answer": {
             "value": 382.6,
             "unit": "N",
@@ -1171,6 +1331,11 @@
           "kind": "calc",
           "points": 5,
           "text": "How large is the force that the hinge exerts on the rod?",
+          "hints": [
+            "Which forces act on the rod, and which of them do you already know? Which components does the hinge force have?",
+            "In equilibrium the forces sum to zero separately in the horizontal and vertical directions. The hinge force has a horizontal component $H$ and a vertical component $V$.",
+            "Calculate $H$ and $V$ using the components of the force $T$ from part a, and combine them into the magnitude $\\sqrt{H^2 + V^2}$. You can check $V$ with a moment condition about the end of the rod."
+          ],
           "answer": {
             "value": 331.7,
             "unit": "N",
@@ -1209,6 +1374,11 @@
           "kind": "calc",
           "points": 3,
           "text": "The cable withstands a force of at most $600\\,\\text{N}$. What is the greatest mass of the sign that the cable still holds?",
+          "hints": [
+            "Which condition sets the greatest mass? What is the force in the wire then?",
+            "Use the same moment condition as in part a, but the unknown is now $m_\\text{s}$ and the force in the wire is $T = T_\\text{max}$.",
+            "Solve for $m_\\text{s}$ in symbols before any numbers. The weight of the rod acts at its middle, so its lever arm is half the length of the rod."
+          ],
           "answer": {
             "value": 29.08,
             "unit": "kg",
@@ -1237,6 +1407,11 @@
           "kind": "word",
           "points": 3,
           "text": "The cable is fixed to the wall higher up so that the angle between the cable and the rod is $45^\\circ$. How does the force in the cable change from part a? Justify by calculating and explain why the change is in this direction.",
+          "hints": [
+            "Which part of the wire's force supports the weight in the vertical direction? What does the angle affect?",
+            "The moment condition about the hinge gives a requirement for the vertical component $T\\sin\\theta$ of the wire's force that depends on the weights. What happens to $T$ when $\\theta$ grows?",
+            "Calculate the new $T$ in symbols, keeping the vertical component $T\\sin\\theta$ the same as in part a. Compare with part a. Think which part of the force carries the weight and which part pulls the rod towards the wall."
+          ],
           "criteria": [
             {
               "text": "Justifies with the moment condition: the vertical component of the cable force $T\\sin\\theta \\approx 191\\,\\text{N}$ does not depend on the angle, so at a greater angle the whole force $T$ is smaller.",
