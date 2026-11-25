@@ -43,6 +43,7 @@ docs/teacher-figures.tsv, docs/teacher-text.tsv) change no page: their unit test
   content/<lang>/tietoa.md, site/<lang>/tietoa.html          nothing (Sivustosta, the about page; test_home.py checks it)
   content/<lang>/tietosuoja.md, site/<lang>/tietosuoja.html  nothing (Tietosuoja, the privacy page; test_home.py checks it)
   site/<lang>/nain-opiskelet.html                              nothing (the study guide; test_home.py checks it)
+  site/<lang>/kaavat.html                                      nothing (the formula index, scripts/kaavahakemisto.py, 17f PR 1; test_home.py and test_kaavat.py check it)
   site/<lang>/yo-sekoitin.html                                 nothing (the task mixer, scripts/mixer.py; test_home.py checks it)
   site/<lang>/FY9-valmentaja.html                              nothing (the FY9 coach page, 11b PR 4; test_valmentaja_coach.py checks it in every run)
   site/<lang>/fy9-minikoe-*.html                               nothing of its own (the FY9 minikoe pages, 11b PR 6: cut out of the unit pages, which are in the plan; test_koetila.py and a layout step check them in every run)
@@ -69,7 +70,7 @@ LANG = r"[a-z]{2,3}(?:-[a-z]+)?"
 REVIEW_SYSTEM = re.compile(r"scripts/(?:reviews|review_packet|test_reviews|ci_scope|ci_parallel|test_ci_parallel|valmentaja|test_valmentaja)\.py")   # tested by their own unit tests and reviews.py verify in every run; they render no page
 SMOKE = ("fy1-1", "fy2-1", "fy3-5", "fy3-10", "fy4-14", "fy5-8", "fy5-14", "fy6-2", "fy7-3", "fy8-15", "FY3-sovella", "lumatutor-tyopaja-ilmastodata")   # one or two pages of every course and kind, the ones that have failed before first; at most 12, so one job per check
 NOTHING = re.compile(rf"(?:docs/(?!visual-baseline\.tsv$).+|(?!content/)[^/]+\.md|(?!content/).+/README\.md|tests/models/.+|(?:news|newsletter|tips)/.+"
-                     rf"|site/(?:sims|pics|kortit|vihkot)/.+|kortit/.+|kertaus/.+|site/(?:{LANG}/)?valmentaja/.+|booklets/.+|content/{LANG}/(?:courses|lukuvinkit)\.json|content/{LANG}/(?:tietoa|tietosuoja)\.md|site/(?:{LANG}/)?(?:index|FY\d+(?:-valmentaja)?|lukuvinkit|vihkot|nain-opiskelet|tietoa|tietosuoja|kasitteet|yo-sekoitin)\.html|site/(?:{LANG}/)?fy9-minikoe-[a-z0-9-]+\.html)")
+                     rf"|site/(?:sims|pics|kortit|vihkot)/.+|kortit/.+|kertaus/.+|site/(?:{LANG}/)?valmentaja/.+|booklets/.+|content/{LANG}/(?:courses|lukuvinkit)\.json|content/{LANG}/(?:tietoa|tietosuoja)\.md|site/(?:{LANG}/)?(?:index|FY\d+(?:-valmentaja)?|lukuvinkit|vihkot|nain-opiskelet|tietoa|tietosuoja|kasitteet|kaavat|yo-sekoitin)\.html|site/(?:{LANG}/)?fy9-minikoe-[a-z0-9-]+\.html)")
 
 
 def git(*a):
