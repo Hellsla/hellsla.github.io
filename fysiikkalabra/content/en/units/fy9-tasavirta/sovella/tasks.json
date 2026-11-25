@@ -258,7 +258,7 @@
           "hints": [
             "Go once around the circuit. Where does the potential rise and where does it fall when the current passes through the battery during charging?",
             "By the voltage law, the voltage of the charger equals the emf of the battery plus the voltage drops across the resistances: $U_\\text{ch} = E + (R + R_\\text{s})\\,I$.",
-            "Solve the current $I$ from this and substitute the values. The terminal voltage is the voltage measured across the terminals of the battery: calculate how much it exceeds the emf because of the internal resistance."
+            "Solve the current $I$ from this and substitute the values. The terminal voltage is the voltage measured across the terminals of the battery. During charging it is the emf plus the voltage drop $R_\\text{s} I$ across the internal resistance."
           ],
           "answer": [
             {
@@ -304,7 +304,7 @@
           "text": "Estimate the efficiency of charging when the voltage of the charger stays at $42.0\\,\\text{V}$ and a charge of $10.4\\,\\text{Ah}$ passes through the battery during charging. How much does one full charge cost?",
           "hints": [
             "Efficiency is the useful energy divided by the energy used. Which energy is the useful one here, and which energy is taken from the charger?",
-            "The energy given by the charger is $W_\\text{ch} = U_\\text{ch} Q$, and the efficiency is $\\eta = \\dfrac{W_\\text{battery}}{W_\\text{ch}}$, where $W_\\text{battery}$ is the energy of part a.",
+            "The energy given by the charger is $W_\\text{ch} = U_\\text{ch} Q$, and the efficiency is $\\eta = \\dfrac{W_\\text{bat}}{W_\\text{ch}}$, where $W_\\text{bat}$ is the energy of part a.",
             "Calculate $W_\\text{ch}$ in watt-hours and convert it to kilowatt-hours: $1\\,\\text{kWh} = 1000\\,\\text{Wh}$. The cost is the energy taken from the charger in kilowatt-hours times the unit price."
           ],
           "answer": {
@@ -362,7 +362,7 @@
           "hints": [
             "Which quantity was adjusted in the measurement, and which one followed from it? Which axes should the graph have?",
             "The terminal voltage of a battery is the emf minus the voltage drop $R_\\text{s} I$ across the internal resistance. Think about how this drop depends on the current and what kind of graph it produces.",
-            "Plot the six points and do not join them with a broken line. Draw one straight line so that there are points on both sides of it, and extend it to the vertical axis."
+            "Plot the points and think about what kind of line the model of hint 2 would give. How far should the line be extended, and why?"
           ],
           "criteria": [
             {
@@ -545,7 +545,7 @@
           "hints": [
             "Is current used up in the cord? Does the same current flow to the device and back? What happens to electrical energy when current passes through a resistance?",
             "The resistance of a conductor is $R = \\rho\\,\\dfrac{l}{A}$, and the power at which electrical energy is transformed in a resistance is $P = RI^2$.",
-            "The current flows along the cord to the device and back, so calculate the resistance for the total length of the conductors. Convert the area: $0.75\\,\\text{mm}^2 = 0.75 \\cdot 10^{-6}\\,\\text{m}^2$. Finally think about how the power changes when the current grows, and whether the danger depends on the length alone."
+            "The current flows along the cord to the device and back, so calculate the resistance for the total length of the conductors. Convert the area to square metres: $1\\,\\text{mm}^2 = 10^{-6}\\,\\text{m}^2$. Finally think about how the power changes when the current grows, and whether the danger depends on the length alone."
           ],
           "criteria": [
             {
@@ -703,7 +703,7 @@
           "hints": [
             "How accurate are the three resistances? Do they fit the same value within their error limits?",
             "Calculate the error limits for measurements 2 and 3 as in part a, and write down the interval $R \\pm \\Delta R$ of each resistance. By Ohm's law the resistance $R = \\dfrac{U}{I}$ does not depend on the voltage.",
-            "See where the three intervals overlap. Think about why the error limit is relatively largest at the smallest reading. Could heating explain the change? Calculate the largest power of the resistor, $P = UI$."
+            "Is the change in resistance larger than the error limits? If it is, what could cause it? Check with the power $P = UI$."
           ],
           "criteria": [
             {
@@ -736,7 +736,7 @@
           "hints": [
             "What left uncertainty in the measurement? What would you do differently so that a constant resistance, or the lack of one, shows clearly?",
             "By Ohm's law $U = RI$, so the points of the $(I, U)$ graph lie on a line through the origin whose slope is $R$. How is this tested with many points?",
-            "Think about three things: how many points and over what voltage range, which measuring range gives the most accurate reading, and how the temperature of the resistor is kept constant. Also think about how the meters are connected."
+            "What would make the result more reliable: the number and spread of the points, the accuracy of the reading, the temperature of the resistor? Choose and justify."
           ],
           "criteria": [
             {
@@ -788,7 +788,7 @@
           "text": "How long does heating the water take when the heat losses are ignored?",
           "hints": [
             "Where does the electrical energy of the resistor go when the losses are ignored? How much energy is needed to heat the water?",
-            "The energy needed to heat the water is $Q = cm\\Delta T$ and the energy given by the resistor is $E = Pt$. The efficiency is practically $100\\,\\%$, so $Pt = cm\\Delta T$.",
+            "The energy needed to heat the water is $Q = cm\\Delta T$ and the energy given by the resistor is $W = Pt$. The efficiency is practically $100\\,\\%$, so $Pt = cm\\Delta T$.",
             "Calculate the mass of the water from the litres and the change in temperature $\\Delta T$. Solve the time $t$ and convert the seconds to hours."
           ],
           "answer": {
@@ -987,7 +987,7 @@
           "text": "Determine the resistance of the lamp also at the voltage $3.0\\,\\text{V}$ and explain why it differs from the value in part a.",
           "hints": [
             "Read the current now at the voltage $3.0\\,\\text{V}$. How does this resistance differ from the value in part a? What happens to the lamp as the voltage increases?",
-            "The power $P = UI$ grows with the voltage. What does that do to the temperature of the filament, and how does temperature affect the resistance of a metal?",
+            "The power $P = UI$ grows with the voltage. What does that do to the temperature of the filament?",
             "Calculate the resistance $R = \\dfrac{U}{I}$ at both points and compare. Think about what a component that obeys Ohm's law would look like on the same graph, and compare it with the curve of the lamp."
           ],
           "criteria": [

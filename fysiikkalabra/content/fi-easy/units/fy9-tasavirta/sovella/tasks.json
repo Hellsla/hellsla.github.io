@@ -258,7 +258,7 @@
           "hints": [
             "Kierrä piiri yhden kerran. Missä kohdissa potentiaali nousee ja missä se laskee, kun virta kulkee akun läpi latauksessa?",
             "Jännitelain mukaan laturin jännite on yhtä suuri kuin akun lähdejännite ja resistanssien jännitehäviöt yhteensä: $U_\\text{lat} = E + (R + R_\\text{s})\\,I$. Jännitehäviö on jännitteen lasku resistanssissa.",
-            "Ratkaise tästä virta $I$ ja sijoita arvot. Napajännite on akun navoilla mitattu jännite. Laske, kuinka paljon se on lähdejännitettä suurempi akun sisäisessä resistanssissa."
+            "Ratkaise tästä virta $I$ ja sijoita arvot. Napajännite on akun navoilla mitattu jännite. Latauksessa se on lähdejännite lisättynä sisäisen resistanssin jännitehäviöllä $R_\\text{s} I$."
           ],
           "answer": [
             {
@@ -362,7 +362,7 @@
           "hints": [
             "Kumpaa suuretta mittauksessa säädettiin? Kumpi suure seurasi siitä? Millä akseleilla kuvaaja kannattaa piirtää?",
             "Pariston napajännite on lähdejännite vähennettynä sisäisen resistanssin jännitehäviöllä $R_\\text{s} I$. Mieti, miten tämä häviö riippuu virrasta ja millaisen kuvaajan se tuottaa.",
-            "Piirrä kuusi pistettä. Älä yhdistä niitä murtoviivaksi. Vedä yksi suora niin, että pisteitä on sen molemmin puolin. Jatka suora pystyakselille asti."
+            "Piirrä pisteet ja mieti, millaisen viivan vihjeen 2 malli antaisi. Mihin asti viiva kannattaa jatkaa ja miksi?"
           ],
           "criteria": [
             {
@@ -393,7 +393,7 @@
           "points": 6,
           "text": "Määritä kuvaajasta paristoryhmän lähdejännite ja sisäinen resistanssi. Vertaa tuloksia uuden AA-pariston tyypillisiin arvoihin. Tyypillinen lähdejännite on $1{,}5$–$1{,}6\\,\\text{V}$ ja sisäinen resistanssi $0{,}1$–$0{,}3\\,\\Omega$.",
           "hints": [
-            "Milloin napajännite on yhtä suuri kuin lähdejännite? Mitä pystyakselin leikkauskohta siis kertoo? Mitä suoran kulmakerroin kertoo?",
+            "Milloin napajännite on yhtä suuri kuin lähdejännite? Mitä pystyakselin leikkauskohta siis kertoo? Mitä suoran kulmakerroin eli jyrkkyys kertoo?",
             "Yhtälö $U = E - R_\\text{s} I$ on suoran yhtälö. Suoran leikkauskohta pystyakselilla on $E$ ja kulmakerroin on $-R_\\text{s}$.",
             "Lue suoralta kaksi pistettä, jotka ovat kaukana toisistaan. Laske kulmakerroin $\\dfrac{\\Delta U}{\\Delta I}$. Sisäinen resistanssi on sen vastaluku. Vertailua varten: paristoja on sarjassa kolme."
           ],
@@ -445,7 +445,7 @@
           "points": 4,
           "text": "Kuinka suuri virta kulkisi, jos kotelon navat oikosuljettaisiin eli yhdistettäisiin suoraan johdolla? Miksi tätä virtaa ei mitattu? Kuinka luotettava tulos on?",
           "hints": [
-            "Mitä oikosulku tarkoittaa? Kuinka suuri on napajännite, kun navat yhdistetään suoraan johdolla?",
+            "Oikosulku tarkoittaa, että navat yhdistetään suoraan johdolla. Kuinka suuri on silloin napajännite?",
             "Oikosulussa napajännite on nolla: $0 = E - R_\\text{s} I_\\text{k}$. Kuvaajassa tämä on piste, jossa suora leikkaa vaaka-akselin.",
             "Ratkaise oikosulkuvirta $I_\\text{k}$ ja sijoita b-kohdan arvot. Mieti sitten, kuinka kaukana tulos on mitatuista virroista. Mieti myös, mitä paristoille tapahtuisi, jos virta mitattaisiin."
           ],
@@ -545,7 +545,7 @@
           "hints": [
             "Kuluuko virta johdossa? Kulkeeko sama virta laitteeseen ja takaisin? Mitä sähköenergialle tapahtuu, kun virta kulkee resistanssin läpi?",
             "Johtimen resistanssi on $R = \\rho\\,\\dfrac{l}{A}$. Resistanssissa muuttuvan sähköenergian teho on $P = RI^2$.",
-            "Virta kulkee johdon kautta laitteeseen ja takaisin. Laske siis resistanssi johtimien yhteispituudelle. Muunna poikkipinta-ala: $0{,}75\\,\\text{mm}^2 = 0{,}75 \\cdot 10^{-6}\\,\\text{m}^2$. Mieti lopuksi, miten teho muuttuu, kun virta kasvaa. Riippuuko vaara vain pituudesta?"
+            "Virta kulkee johdon kautta laitteeseen ja takaisin. Laske siis resistanssi johtimien yhteispituudelle. Muunna poikkipinta-ala neliömetreiksi: $1\\,\\text{mm}^2 = 10^{-6}\\,\\text{m}^2$. Mieti lopuksi, miten teho muuttuu, kun virta kasvaa. Riippuuko vaara vain pituudesta?"
           ],
           "criteria": [
             {
@@ -703,7 +703,7 @@
           "hints": [
             "Kuinka tarkkoja kolme resistanssia ovat? Mahtuvatko ne virherajojen puitteissa samalle arvolle?",
             "Laske mittauksille 2 ja 3 virherajat kuten a-kohdassa. Merkitse jokaisen resistanssin väli $R \\pm \\Delta R$. Ohmin lain mukaan resistanssi $R = \\dfrac{U}{I}$ ei riipu jännitteestä.",
-            "Katso, millä välillä kolme väliä ovat päällekkäin. Mieti, miksi pienimmällä lukemalla virheraja on suhteellisesti suurin. Voisiko lämpeneminen selittää muutoksen? Laske vastuksen suurin teho $P = UI$."
+            "Onko resistanssin muutos virherajoja suurempi? Jos on, mikä sen voisi aiheuttaa? Tarkista tehon $P = UI$ avulla."
           ],
           "criteria": [
             {
@@ -736,7 +736,7 @@
           "hints": [
             "Mikä mittauksessa jätti epävarmuutta? Mitä tekisit toisin, jotta vakioresistanssi tai sen puute näkyisi selvästi?",
             "Ohmin lain mukaan $U = RI$. Siksi $(I, U)$-kuvaajan pisteet ovat origon kautta kulkevalla suoralla, jonka kulmakerroin on $R$. Miten tämä testataan usealla pisteellä?",
-            "Mieti kolmea asiaa. Montako pistettä mitataan ja millä jännitealueella? Millä mittausalueella lukema on mahdollisimman tarkka? Miten vastuksen lämpötila pysyy vakiona? Mieti myös mittarien kytkentää."
+            "Mikä tekisi tuloksesta luotettavamman: pisteiden määrä ja jakauma, lukeman tarkkuus, vastuksen lämpötila? Valitse ja perustele."
           ],
           "criteria": [
             {
@@ -788,7 +788,7 @@
           "text": "Kuinka kauan veden lämmittäminen kestää, kun lämpöhäviöitä ei oteta huomioon?",
           "hints": [
             "Mihin vastuksen sähköenergia päätyy, kun häviöt jätetään huomiotta? Kuinka paljon energiaa veden lämmittämiseen tarvitaan?",
-            "Veden lämmittämiseen tarvittava energia on $Q = cm\\Delta T$. Vastuksen antama energia on $E = Pt$. Hyötysuhde on käytännössä $100\\,\\%$, joten $Pt = cm\\Delta T$.",
+            "Veden lämmittämiseen tarvittava energia on $Q = cm\\Delta T$. Vastuksen antama energia on $W = Pt$. Hyötysuhde on käytännössä $100\\,\\%$, joten $Pt = cm\\Delta T$.",
             "Laske veden massa litroista ja lämpötilan muutos $\\Delta T$. Ratkaise aika $t$ ja muunna sekunnit tunneiksi."
           ],
           "answer": {
@@ -987,7 +987,7 @@
           "text": "Määritä lampun resistanssi myös jännitteellä $3{,}0\\,\\text{V}$. Selitä, miksi se on eri kuin a-kohdassa.",
           "hints": [
             "Lue virta nyt jännitteellä $3{,}0\\,\\text{V}$. Miten tämä resistanssi eroaa a-kohdan arvosta? Mitä lampulle tapahtuu, kun jännite kasvaa?",
-            "Teho $P = UI$ kasvaa jännitteen mukana. Mitä se tekee hehkulangan lämpötilalle? Miten lämpötila vaikuttaa metallin resistanssiin?",
+            "Teho $P = UI$ kasvaa jännitteen mukana. Mitä se tekee hehkulangan lämpötilalle?",
             "Laske resistanssi $R = \\dfrac{U}{I}$ kummassakin pisteessä ja vertaa. Mieti, millaisena käyränä Ohmin lakia noudattava komponentti näkyisi samassa kuvaajassa. Vertaa sitä lampun käyrään."
           ],
           "criteria": [
