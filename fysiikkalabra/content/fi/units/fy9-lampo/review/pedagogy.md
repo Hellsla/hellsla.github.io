@@ -1,9 +1,13 @@
-VERDICT: PASS
-CONTENT-HASH: 7f37516e15da1f99
-SCOPE: delta (old-content fixes, git diff origin/main)
+VERDICT: FAIL
+CONTENT-HASH: ec997ed6c12a6814
 
-Blocking: none.
+Blocking
+1. s5 c, hint 3 (fi): it lists the three answers, which are the rubric's three improvements (ice dried/handled before use, mass found by weighing, mug insulated/lid). Replace with: "Käy läpi mittauksen kolme mitattavaa tai oletettua kohtaa: jään pinta ja lämpötila ennen pudotusta, jään massa ja veden lämpötilan mittaus. Mikä niistä voi vääristää tulosta ja miksi?"
 
-1. Teacher.md: 'other seven tasks are homework' matches eight tasks. Earlier delta lines (solutions, tasks) still consistent across languages.
-2. Earlier delta lines re-read briefly: the changes touch only counts, points and notation; no misconception feedback, hint ladder or rubric criterion was weakened, and no answer is disclosed early.
-3. Polish: none.
+Polish
+2. s3 a, hints 1-2 (fi): "vaaka-akseli" and "asteikot alkavat nollasta, suora lomitse" give the rubric's axis, scale and fit points. Keep hint 1 as the question only ("Mikä on syy ja mikä seuraus?") and move the scale advice out.
+3. s4 c, hints 2-3: "ilma lämmönjohde" and the two-step chain nearly dictate the verdict. Drop "vahvistaako lumi jäätä" from hint 3.
+4. s6 d, hint 2: "Kumpi kohde pystyy luovuttamaan sisäenergiansa ilmaan?" gives the main argument; ask "Kummassa kohteessa energia pääsee ilmaan?".
+5. s3 d, hint 3: lists both rubric criteria (constant loss, number of measurements); keep one.
+
+Checked: ladders of all 8 tasks (guiding question, relation, step) against answers; no hint states a final answer; units conversions fine.

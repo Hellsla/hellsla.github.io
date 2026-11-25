@@ -1,9 +1,12 @@
-VERDICT: PASS
-CONTENT-HASH: a65eeaeb662d4b9b
-SCOPE: delta (old-content fixes, git diff origin/main)
+VERDICT: FAIL
+CONTENT-HASH: def4bdd54696f8c2
 
-Blocking: none.
+Blocking
+1. s5 c, hint 3 (fi-easy): lists the three answers (ice before dropping, ice mass, mug and surroundings), which are the rubric's improvements. Replace: "Katso kolmea kohtaa: jään pinta ja lämpötila ennen pudotusta, jään massa ja veden lämpötila. Mikä niistä voi vääristää tulosta?"
 
-1. Teacher.md: 'other seven tasks are homework' matches eight tasks. Earlier delta lines (solutions, tasks) still consistent across languages.
-2. Earlier delta lines re-read briefly: the changes touch only counts, points and notation; no misconception feedback, hint ladder or rubric criterion was weakened, and no answer is disclosed early.
-3. Polish: none.
+Polish
+2. Same polish as fi: s3 a hints 1-2, s4 c hint 3, s6 d hint 2, s3 d hint 3.
+3. Readability: hints are short and clear. Unexplained words: "johtuu" (s4 b), "lomitse" (s3 a; use "keskeltä pisteiden välistä"), "tase" (s5 a; add "energioiden vertailu"). s3 d hint 3 "Kysy sitten" is odd; write "Mieti sitten".
+4. Physics is not dropped against fi.
+
+Checked: ladders of all 8 tasks (guiding question, relation, step) against answers; no hint states a final answer; units conversions fine.

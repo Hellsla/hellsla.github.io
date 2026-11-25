@@ -1,9 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 0894ff446efa15c2
-SCOPE: delta (old-content fixes, git diff origin/main)
-Checked: fy9-lampo (en): rendered preview page at 390 and 1280 px with every details/solution open (DOM check: no page overflow, no KaTeX error, no clipped or scrolling display formula); captures review/shots/*stage-sovella-*, *stage-exercises-*, *teacher-*, intro and stage-selita/tarkista tiles, with sample tiles opened at readable size (aallot fi sovella-1280-5 and 390-6, liike en sovella-390-9, ympyraliike fi-easy sovella-390-8, energia fi teacher-1280-1); changed numbers and units diffed against the source for decimal comma/point and \, thin space.
+CONTENT-HASH: 0f632e8514615b4f
 
-1. Blocking: none.
-2. Typography: changed numbers and units are LaTeX with thin space, decimal comma in fi and fi-easy, decimal point in en; aligned blocks and inline formulas fit at 390 px; no layout regressions from the changed lines.
-3. Language: changed lines read naturally and consistently with the glossary terms; no wording defect found.
-4. Polish: known drawing issues (kone-kuva W arrow, kalteva.webp, geo-kuva ray, kartta label, sahkokentta formula map E vs W) are known to the teacher, not re-judged here.
+## Blocking
+None. Tehtävät cards (8 long tasks, 87 hints) built and viewed at 390 and 1280 px, hints closed and open: closed row correct, open hint boxes readable, formulas not clipped, no horizontal overflow (scrollWidth equals viewport), reading order a-b-c with hints under each part, labels "Vihje 1-3" / "Hint 1-3" correct.
+Language: decimal comma in fi and fi-easy, point in en; all numbers with units in LaTeX; fi-easy has shorter sentences.
+
+## Polish
+1. Closed hints stack one per row at 390 px (three labels do not fit one row); at 1280 px one row. Acceptable, no fix.
+2. English hints skimmed in the built page: decimal point used, units in LaTeX; no wording problems found beyond taste.
