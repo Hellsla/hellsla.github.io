@@ -442,23 +442,63 @@ def named_sections(html):
     return re.sub(r"<h2>(.*?)</h2>", sub, html)
 
 
-FIG = re.compile(r"(<p>(?:(?!</?p>|<svg).)*</p>|<table>(?:(?!</?table>).)*</table>|<ul>(?:(?!<ul>).)*?</ul>|<ol>(?:(?!<ol>).)*?</ol>)\s*<p>(<svg\b.*?</svg>)</p>", re.S)
+TBL = r"<table>(?:(?!</?table>).)*</table>"
+PAIR = r'<div class="tbl-pair">(?:(?!</?div>).)*</div>'
+PHOTO_FIG = r'<figure class="unit-photo"><img src="(?:pics/[a-z0-9]+|shared/pics)/[^"]+"[^>]*>(?:<figcaption>.*?</figcaption>)?</figure>'
+FIG = re.compile(rf"(<p>(?:(?!</?p>|<svg).)*</p>|{TBL}|{PAIR}|<ul>(?:(?!<ul>).)*?</ul>|<ol>(?:(?!<ol>).)*?</ol>)\s*(<p><svg\b.*?</svg></p>|{PHOTO_FIG})", re.S)
+PULL = re.compile(r'\s*(<p>(?:(?!</?p>|<svg).)*</p>|<h3[^>]*>.*?</h3>|<ul>(?:(?!<ul>).)*?</ul>|<ol>(?:(?!<ol>).)*?</ol>)(?!\s*(?:<p><svg|<figure class="unit-photo"))', re.S)
+SMALL_TABLES = re.compile(rf"({TBL})\s*({TBL})", re.S)
+
+
+def table_pairs(html):
+    """Two small tables in a row (at most 9 rows and 3 columns each; fy3-8 α and γ) are one .tbl-pair: side by side
+    when the column has room for both, one under the other on a phone (teacher 2026-11-13, work queue 8e)."""
+    def small(t): return t.count("<tr") <= 9 and len(re.findall(r"<t[hd]\b", t.split("</tr>")[0])) <= 3
+    def pair(m):
+        return f'<div class="tbl-pair">{m.group(1)}{m.group(2)}</div>' if small(m.group(1)) and small(m.group(2)) else m.group(0)
+    return SMALL_TABLES.sub(pair, html)
 
 
 def fig_rows(html):
-    """A figure with the paragraph, table or list it explains (NOTES.md §3 puts it right after that block), as one
-    unit: the text first, then its figure (teacher 2026-10-27, "kuvien sijoittelu"). On a wide screen the two stand
-    side by side only when they are about as tall as each other (fig_side), so neither column is left with a long
-    empty stretch; otherwise the figure stands under its text in the reading column. After the unit the text runs on
-    in the reading column. On a phone and in print the figure is always under its text."""
-    def row(m):
+    """A figure or photograph with the paragraph, table or list it explains (NOTES.md §3 puts it right after that
+    block), as one unit: the text first, then its figure (teacher 2026-10-27, "kuvien sijoittelu"). On a wide screen
+    the two stand side by side, the text at the top of the row, when they are about as tall as each other (fig_side).
+    A figure clearly taller than its text takes the paragraphs that follow it into the text column (up to three)
+    until the two are about as tall; if the text is still far shorter, the figure stands under it. A figure under a
+    long text stands under it too. A photograph with its caption stands in the right column the same way (teacher
+    2026-11-13 and 2026-11-14, work queue 8e and 11 U3). After the unit the text runs on in the reading column.
+    On a phone and in print the figure is always under its text."""
+    html = table_pairs(html)
+    out, pos = [], 0
+    while True:
+        m = FIG.search(html, pos)
+        if not m: break
+        out.append(html[pos:m.start()])
+        text, fig, end = m.group(1), m.group(2), m.end()
         # inside a closed box (details) site.css always stacks the unit (a grid there squeezed the text, fy3-6, fy7-14),
         # so the class says what is rendered: only a unit outside every box may be .side (fy5-9, fy5-12, 2026-11-20)
-        before = html[:m.start()]
+        before = "".join(out)
         in_box = before.count("<details") > before.count("</details>")
-        side = not in_box and fig_side(m.group(1), m.group(2))
-        return f'<div class="fig-row {"side" if side else "stack"}"><div class="fig-text">{m.group(1)}</div><div class="fig">{m.group(2)}</div></div>'
-    return FIG.sub(row, html)
+        # the steps of the worked example run in a narrower column under their problem (site.css .example; a grid there gave 298 px to the text): the unit stands stacked
+        in_box = in_box or re.search(rf"<h2[^>]*>{re.escape(T('sections.Esimerkki'))}</h2>(?:(?!<h2).)*\Z", before, flags=re.S) is not None
+        side = False
+        if not in_box:
+            h, more = fig_height(fig), ""
+            for _ in range(4):
+                if h and text_height(text + more) / h >= 0.6: break
+                nxt = PULL.match(html, end)
+                if not nxt: break
+                more, end = more + nxt.group(1), nxt.end()
+            side = fig_side(text + more, fig)
+            if not side:
+                more, end = "", m.end()
+        else: more = ""
+        # the paragraphs a tall figure takes in stand after the figure in the source (fig-more), so a phone reads text, figure, more
+        out.append(f'<div class="fig-row {"side" if side else "stack"}"><div class="fig-text">{text}</div><div class="fig">{fig}</div>'
+                   + (f'<div class="fig-more">{more}</div>' if more else "") + '</div>')
+        pos = end
+    out.append(html[pos:])
+    return "".join(out)
 
 
 SIDE_FIG = 26 * 16          # px: the figure column of a side-by-side unit (site.css .fig-row.side)
@@ -467,18 +507,32 @@ LINE, CHARS = 18 * 1.6, 72  # px per line and characters per line of the 38rem t
 
 def text_height(html):
     """About how tall a block of text is in the reading column: its characters over the line length, maths counted
-    by a third of its source, a table row 42 px, a list item a little extra for its spacing."""
-    maths = sum(len(x) for x in re.findall(r"\$[^$]*\$", html))
+    by a third of its source, a table row 42 px, a list item a little extra for its spacing, a heading its line and
+    its space. Two tables side by side are as tall as the taller one."""
+    maths = sum(len(re.sub(r"\\[a-zA-Z]+|[{}\\_^$]", "", x)) * 3 for x in re.findall(r"\$[^$]*\$", html))   # a formula as long as it prints (commands and braces take no room), /3 below: it also takes less than the same number of letters
     plain = re.sub(r"<[^>]+>", " ", re.sub(r"\$[^$]*\$", "", html))
-    return (len(" ".join(plain.split())) + maths / 3) / CHARS * LINE + html.count("<tr") * 42 + html.count("<li") * LINE * 0.4
+    rows = max((t.count("<tr") for t in re.findall(TBL, html, flags=re.S)), default=0) if "tbl-pair" in html else html.count("<tr")
+    return ((len(" ".join(plain.split())) + maths / 3) / CHARS * LINE + rows * 42 + html.count("<li") * LINE * 0.4
+            + html.count("<h3") * 40 + html.count("<p>") * 0.4 * LINE + html.count("$$") // 2 * 50)
 
 
-def fig_side(text_html, svg):
-    """Side by side only when the text and the figure are of a similar height (0.6 to 1.5 times)."""
-    vb = re.search(r'viewBox="[\d.\s-]*?([\d.]+)\s+([\d.]+)"', svg)
-    if not vb: return False
-    fig_h = SIDE_FIG * float(vb.group(2)) / float(vb.group(1))
-    return 0.6 <= text_height(text_html) / fig_h <= 1.5
+def fig_height(fig):
+    """The height of a figure in the 26 rem figure column: an SVG from its viewBox, a photograph from the size in
+    photos.json with its caption (about 55 characters a line) and credit."""
+    if fig.startswith("<figure"):
+        ref = re.search(r'src="([^"]+)"', fig).group(1)
+        c = photo_credits(ref)
+        cap = re.sub(r"<[^>]+>", "", (re.search(r"<figcaption>(.*?)</figcaption>", fig, flags=re.S) or [0, ""])[1])
+        return min(224, 384 * c["height"] / c["width"]) + (len(cap) / 42 + 2) * 21   # site.css figure.unit-photo: image at most 14 rem tall, 20 rem wide caption
+    vb = re.search(r'viewBox="[\d.\s-]*?([\d.]+)\s+([\d.]+)"', fig)
+    return SIDE_FIG * float(vb.group(2)) / float(vb.group(1)) + 24 if vb else 0   # + the figure's frame (padding, border, the animation button)
+
+
+def fig_side(text_html, fig):
+    """Side by side only when the text and the figure are of a similar height (0.55 to 1.3 times, measured against pages at 1280 and 1920 px; a photograph with its
+    caption may be taller, 0.5: its caption belongs under it and a column of text beside it is enough)."""
+    h = fig_height(fig)
+    return bool(h) and (0.5 if fig.startswith("<figure") else 0.55) <= text_height(text_html) / h <= 1.3
 
 
 PHOTO = re.compile(r'<figure class="unit-photo( wide)?"><img src="((?:pics/[a-z0-9]+|shared/pics)/[^"]+)"([^>]*)>(?:<figcaption>(.*?)</figcaption>)?</figure>', re.S)

@@ -961,7 +961,10 @@ details.level>ol>li:last-child,.core-card>ol>li:last-child{border-bottom:0}
 .fig.fbd{margin:.6rem 0 1rem}.fig.fbd svg{max-width:min(100%,24rem)}   /* a drawn force diagram in a solution step (scripts/fbdspec.py) */
 .fig-row{max-width:var(--measure);margin:0 0 .5rem}
 .fig-row.stack .fig svg{max-width:min(100%,32rem)}
-.fig-row .fig-text>:first-child{margin-top:0}.fig-row .fig-text>:last-child{margin-bottom:0}
+.tbl-pair{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,15rem),1fr));column-gap:1rem;align-items:start;max-width:var(--measure)}   /* two small tables side by side when there is room (work queue 8e) */
+.tbl-pair>table{width:100%;margin:1rem 0}
+.fig-row .fig-text>.tbl-pair{margin:0}.fig-row .fig-text>.tbl-pair>table{margin:0}
+.fig-row .fig-text>:first-child,.fig-row .fig-more>:first-child{margin-top:0}.fig-row .fig-text>:last-child{margin-bottom:0}
 
 /* ---- wide content (main at least 60rem): a text track and a margin track ----
    inquiry.js reads --wide on .lab to know that the simulation sits beside the experiments. */
@@ -1014,8 +1017,13 @@ details.level>ol>li:last-child,.core-card>ol>li:last-child{border-bottom:0}
 @container content (min-width:62.5rem){
   /* a figure beside the paragraph it explains, when the two are about as tall (build.py fig_side); the text after the
      unit runs on in the reading column */
-  .fig-row.side{display:grid;grid-template-columns:minmax(0,var(--measure)) minmax(0,26rem);column-gap:var(--gap);align-items:center;max-width:none;margin:0 0 1.25rem}
-  .fig-row.side>.fig{margin:0}
+  .fig-row.side{display:grid;grid-template-columns:minmax(0,var(--measure)) minmax(0,26rem);column-gap:var(--gap);align-items:start;max-width:none;margin:0 0 1.25rem}   /* text at the top of the row, never centred: a centred text left a gap above and below it (work queue 8e) */
+  .fig-row.side>.fig{margin:0;grid-column:2;grid-row:1 / span 2}
+  .fig-row.side>.fig-text,.fig-row.side>.fig-more{grid-column:1;min-width:0}
+  .fig-row.side>.fig-text{grid-row:1}.fig-row.side>.fig-more{grid-row:2}
+  .fig-row.side:has(>.fig-more){row-gap:1rem}   /* the paragraphs a tall figure takes in stand under the text, beside the figure */
+  .fig-row.side>.fig-more>:first-child{margin-top:0}.fig-row.side>.fig-more>:last-child{margin-bottom:0}
+  .fig-row.side>.fig>figure.unit-photo{float:none;margin:0;max-width:100%}   /* a photograph with its caption in the figure column */
   .fig-row.side>.fig-text>:last-child{margin-bottom:0}
 }
 
