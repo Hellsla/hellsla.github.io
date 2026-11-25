@@ -129,6 +129,13 @@ Varattu: claude/11b-pr6-koetila (PR 6 koetila ja minikokeet 30/60 min, harjoitus
 PR 6 (#847, koetila ja minikokeet): uudet käyttöliittymätekstit ja kuvat hyväksytty: opettaja 2026-11-24 tekijäsessioon ("Hyväksyn tekstit ja kuvat").
 PR 7 (#851, kertauspolku): uudet käyttöliittymätekstit ja kuvat hyväksytty: opettaja 2026-11-25 tekijäsessioon ("I approve texts and images").
 PR 7b TEHTY (ankkuri `#testi-ohje`, ei uutta tekstiä; `valmentaja.py` `data-diag`, `valmentaja.js` varailmaisu, testi `test_valmentaja_coach.py`): valmentajan "Aloita diagnoosilla" vie nyt `fy9-koe.html`:n alkuun; linkin pitää viedä suoraan 24 kohdan diagnoosiin (osio 5 Esimerkit, `testi-1`). Muutos `valmentaja.py`:n `data-diag`-arvoon (ankkuri), ei uutta tekstiä. **Opettaja 2026-11-24 ("go with your recommendations")**.
+PR 7c (jaettu, PR 7b:n jälkeen, ennen PR 8:aa): kertauspolun luettavuus.
+(1) Vain tämän päivän kortti auki. Muut päivät yhden rivin yhteenvetona (päivä · ~min · luvut) ja avattavina.
+(2) Päivän tehtävät ryhmitellään luvun alle; lukurivi ei toistu jokaisen linkin alla.
+(3) Yleisnimiset otsikot ("1. Käsite", "2. Laskeminen", "3. Selitä") saavat oppitunnin nimen eteen.
+(4) Tehdyt tehtävät merkitään tunnisteella; tieto tulee valmentajan olemassa olevasta lokista.
+(5) Painike "Näytä koko polku".
+Uudet käyttöliittymätekstit hyväksytään tekijäsessioon. Opettaja 2026-11-25 ("Do these").
 
 ## 17. Kehitys ilman kirjautumista (opettaja 2026-11-15)
 17a PR 1 (#720) ja PR 2 (#741, manifesti ja pysyvä tallennus) sekä 17b PR 1 (#818, koko työ yhteen tiedostoon; tekstit opettaja 2026-11-23) tehty; webkit.org sallittu ympäristöön 2026-11-19, opettajan luvalla.
