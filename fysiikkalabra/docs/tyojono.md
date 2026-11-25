@@ -131,10 +131,10 @@ PR 7 (#851, kertauspolku): uudet käyttöliittymätekstit ja kuvat hyväksytty: 
 PR 7b (jaettu, PR 7:n jälkeen, ennen PR 8:aa): valmentajan "Aloita diagnoosilla" vie nyt `fy9-koe.html`:n alkuun; linkin pitää viedä suoraan 24 kohdan diagnoosiin (osio 5 Esimerkit, `testi-1`). Muutos `valmentaja.py`:n `data-diag`-arvoon (ankkuri), ei uutta tekstiä. **Opettaja 2026-11-24 ("go with your recommendations")**.
 
 ## 11c. FY9: vihjeportaat pitkiin tehtäviin (opettaja 2026-11-25 "Do 1 and 2")
-Varattu: ccr-5b78822d-5kk0z7
-Lähtötilanne: FY9:n 86 lyhyessä laskutehtävässä on jo kolme vihjettä (83/86; harjoituskokeen kolmessa ei) ja yleisen virheen palaute (86/86). Pitkissä tehtävissä (yksiköiden Tehtävät, `sovella/tasks.json`: 124 tehtävää, noin 500 kohtaa) ei ole vihjeitä, joten jumiin jäänyt opiskelija voi avata vain koko mallivastauksen.
-PR 1 (jaettu `scripts/practice.py` + malliyksikkö fy9-liike, fi): tehtävän kohdalle valinnainen `hints` (enintään kolme: periaate, MAFY-kaava, ensimmäinen rivi), sama vihjekomponentti kuin lyhyissä tehtävissä, ei uutta käyttöliittymätekstiä; koetila piilottaa vihjeet kuten ennenkin. Opettaja hyväksyy mallin ennen muita yksiköitä.
-PR 2– (sisältö, yksikkö kerrallaan mallin mukaan; en ja fi-easy samalla): muut 15 yksikköä. Harjoituskokeeseen (fy9-harjoituskoe) ei vihjeitä ilman opettajan päätöstä.
+Varattu: ccr-5b78822d-5kk0z7 (PR 1, #855)
+Lähtötilanne: FY9:n 86 lyhyessä laskutehtävässä on jo kolme vihjettä (83/86; harjoituskokeen kolmessa ei) ja yleisen virheen palaute (86/86). Pitkissä tehtävissä (yksiköiden Tehtävät, `sovella/tasks.json`: 124 tehtävää, noin 500 kohtaa) ei ollut vihjeitä.
+PR 1 (#855; jaettu `scripts/practice.py` ja `templates/site.css` + malliyksikkö fy9-liike fi, fi-easy, en; katselmoinnit PASS): tehtävän kohdalle valinnainen `hints` (1–3), sama vihjekomponentti kuin lyhyissä tehtävissä, ei uutta käyttöliittymätekstiä. **Opettaja 2026-11-25 (tekijäsessiossa): vihjeiden tyyli hyväksytty ("1 yes"); harjoituskokeeseen ei vihjeitä ("2 no"); pitkien tehtävien `v_ka`-tunnusta ei muuteta ("3 no need").** Yhdistetään ensin, yksin (jaettu).
+PR 2– (sisältö, vasta kun PR 1 on mainissa; yksikkö kerrallaan, peräkkäin, fi + fi-easy + en samassa PR:ssä): fy9-koe, fy9-mittaaminen, fy9-kokeellisuus, fy9-energia, fy9-lampo, fy9-kaasut, fy9-voimat, fy9-sailymislait, fy9-ympyraliike, fy9-aallot, fy9-tasavirta, fy9-sahkokentta, fy9-magnetismi-valo, fy9-moderni (14 yksikköä, noin 116 tehtävää). Ohje tekijälle `docs/fy9/vihjeet-developer-brief.md`, katselmoijille `docs/fy9/vihjeet-review-brief.md` (delta, kolme roolia × kolme kieltä).
 Avoin päätös (opettaja): vastauksen tarkistus ja yleisen virheen palaute pitkien tehtävien laskukohtiin. Muuttaisi mallivastauksen lukkoa, tehty-laskuria ja valmentajan näyttölokia, joten vasta 11b PR 8:n jälkeen ja omana jaettuna PR:nään.
 
 ## 17. Kehitys ilman kirjautumista (opettaja 2026-11-15)
