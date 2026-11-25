@@ -18,6 +18,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Kuinka suurella nopeudella aalto etenee kielessä? Kuinka pitkä on perustaajuuden aallonpituus kielessä? Kuinka pitkä se on äänessä, joka lähtee kitarasta ilmaan?",
+          "hints": [
+            "Ovatko kielen päät solmuja vai kupuja? Kuinka suuri osa aallonpituudesta kielen pituus on, kun kieli värähtelee perustaajuudella? (Solmu on kohta, jossa kieli ei liiku.)",
+            "Perustaajuudella kielen pituus on puolet aallonpituudesta: $\\lambda_1 = 2L$. Aallon nopeus on $v = f_1 \\lambda_1$. Ilmassa taajuus on sama, mutta aallonpituus riippuu äänen nopeudesta ilmassa.",
+            "Laske ensin kielen aallonpituus $\\lambda_1$ metreinä. Sijoita se nopeuden kaavaan. Ilman aallonpituuden saat äänen nopeudesta $343\\,\\text{m/s}$ ja samasta taajuudesta."
+          ],
           "answer": [
             {
               "name": "v",
@@ -60,6 +65,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Kuinka pitkä kielen värähtelevän osan on oltava, jotta kieli soi H-säveltä $123{,}5\\,\\text{Hz}$? Kuinka kaukana satulasta nauha on?",
+          "hints": [
+            "Mikä kielessä pysyy samana, kun kieltä painetaan nauhaa vasten? Mikä muuttuu? Mitä se kertoo aallon nopeudesta?",
+            "Kieli ja sen kireys eivät muutu. Siksi aallon nopeus $v$ on sama kuin a-kohdassa. Lyhentyneen osan perustaajuus on $f' = \\dfrac{v}{2L'}$.",
+            "Ratkaise ensin lyhentynyt pituus $L'$ symbolein. Sijoita luvut vasta sitten. Nauhan etäisyys satulasta on alkuperäisen ja lyhentyneen pituuden erotus. Muunna lopuksi millimetreiksi."
+          ],
           "answer": [
             {
               "name": "L",
@@ -102,6 +112,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Kieli ja kosketinsoittimen ääni soivat yhtä aikaa. Kitaristi kuulee $6$ huojahdusta $4{,}0$ sekunnissa. Huojunta on äänen voimakkuuden säännöllistä vaihtelua. Kitaristi kiristää kieltä vähän, ja huojunta hidastuu. Mikä oli kielen taajuus ennen kiristämistä?",
+          "hints": [
+            "Mitä huojunta kertoo kahden lähes yhtä suuren taajuuden erosta? Miten huojahdusten määrä sekunnissa liittyy tähän eroon?",
+            "Huojuntataajuus on taajuuksien erotuksen itseisarvo: $f_\\text{h} = |f_\\text{kieli} - 110{,}0\\,\\text{Hz}|$. Huojuntataajuus on huojahdusten määrä jaettuna ajalla.",
+            "Laske ensin $f_\\text{h}$. Itseisarvosta saat kaksi mahdollista kielen taajuutta. Mitä kiristäminen tekee kielen taajuudelle? Kumpi kahdesta vaihtoehdosta sopii siihen, että huojunta hidastui?"
+          ],
           "answer": {
             "value": 108.5,
             "unit": "Hz",
@@ -130,6 +145,11 @@
           "kind": "word",
           "points": 3,
           "text": "Kieli soi vapaana. Kitaristi koskettaa kieltä kevyesti tarkalleen sen keskikohdasta. Kieli soi edelleen, mutta oktaavia korkeammalta. Selitä, miksi näin käy.",
+          "hints": [
+            "Mitä sormen kevyt kosketus pakottaa tapahtumaan kielen keskikohdassa? Millaisia värähtelymuotoja kieleen voi silloin jäädä? (Solmu on kohta, jossa kieli ei liiku.)",
+            "Kielessä voi olla vain värähtelymuotoja, joiden päissä on solmu. Niiden taajuudet ovat $f_n = n f_1$. Sormi lisää solmun myös keskikohtaan.",
+            "Piirrä värähtelymuodot $n = 1$, $n = 2$ ja $n = 3$. Katso, millä niistä on solmu keskikohdassa. Mikä on alin sellainen? Miten sen taajuus suhtautuu perustaajuuteen?"
+          ],
           "criteria": [
             {
               "text": "Selittää, että sormi pakottaa kielen keskikohtaan solmun. Siksi kieleen jäävät vain ne ominaistaajuudet, joilla keskikohdassa on solmu: $n = 2, 4, 6, \\ldots$",
@@ -167,6 +187,11 @@
           "kind": "calc",
           "points": 3,
           "text": "Kuinka pitkä on pulssin aallonpituus ilmassa?",
+          "hints": [
+            "Mitkä kolme suuretta kuvaavat aaltoa? Miten ne liittyvät toisiinsa? Mitkä niistä on annettu?",
+            "Aallon nopeus on taajuus kertaa aallonpituus: $v = f\\lambda$. Siis $\\lambda = \\dfrac{v}{f}$.",
+            "Muunna taajuus ensin hertseiksi ($1\\,\\text{kHz} = 1000\\,\\text{Hz}$). Anna tulos millimetreinä."
+          ],
           "answer": {
             "value": 11.33,
             "unit": "mm",
@@ -195,6 +220,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Lepakko kuulee hyönteisestä heijastuneen kaiun $12{,}0\\,\\text{ms}$ sen jälkeen, kun se lähetti pulssin. Kuinka kaukana hyönteinen on? Lepakko lentää koko ajan nopeudella $6{,}0\\,\\text{m/s}$. Arvioi, kuinka paljon se vaikuttaa tulokseen.",
+          "hints": [
+            "Minkä matkan pulssi kulkee, ennen kuin lepakko kuulee kaiun? Mikä osa tästä matkasta on etäisyys hyönteiseen?",
+            "Pulssi kulkee matkan hyönteiseen kahdesti: menossa ja kaikuna takaisin. Siis $2d = vt$. Lepakon oma liike ajassa $t$ on $v_\\text{L}t$.",
+            "Ratkaise ensin $d$ symbolein. Muunna aika sekunneiksi ennen sijoitusta. Laske sitten, kuinka pitkän matkan lepakko lentää kaiun aikana. Vertaa sitä etäisyyteen $d$."
+          ],
           "answer": {
             "value": 2.04,
             "unit": "m",
@@ -228,6 +258,11 @@
           "kind": "calc",
           "points": 5,
           "text": "Lepakko lentää nopeudella $6{,}0\\,\\text{m/s}$ suoraan kohti aitan seinää. Millä taajuudella lepakko kuulee kaiun, joka heijastuu seinästä?",
+          "hints": [
+            "Mikä on lähde ja mikä kuulija, kun ääni osuu seinään? Entä kun kaiku palaa lepakolle? Kumpi liikkuu kummassakin vaiheessa?",
+            "Kirjoita kumpikin vaihe Dopplerin ilmiön kaavalla, kun etäisyys lähteen ja kuulijan välillä pienenee. Seinä vastaanottaa taajuuden $f_\\text{s}$. Seuraavassa vaiheessa se toimii lähteenä:\n$$\n\\begin{aligned}\nf_\\text{s} &= f_0 \\cdot \\dfrac{v}{v - v_\\text{L}} \\\\\nf &= f_\\text{s} \\cdot \\dfrac{v + v_\\text{H}}{v}\n\\end{aligned}\n$$",
+            "Laske ensin seinän vastaanottama taajuus $f_\\text{s}$. Käytä sitä seuraavan vaiheen lähtötaajuutena. Lepakon nopeus on molemmissa vaiheissa $6{,}0\\,\\text{m/s}$. Äänen nopeus on $340\\,\\text{m/s}$."
+          ],
           "answer": {
             "value": 31.08,
             "unit": "kHz",
@@ -261,6 +296,11 @@
           "kind": "word",
           "points": 3,
           "text": "Oletetaan, että lepakko käyttäisi kuuloalueen ääntä, jonka taajuus on $3\\,\\text{kHz}$. Kuuloalueen ääni on ääni, jonka ihminen kuulee. Selitä, miksi lepakko ei silloin voisi havaita hyttystä.",
+          "hints": [
+            "Mitä aallonpituudelle tapahtuu, kun taajuus on kymmenesosa? Miten aallonpituus suhtautuu hyttysen kokoon kummassakin tapauksessa?",
+            "Aallonpituus on $\\lambda = \\dfrac{v}{f}$. Aalto taipuu esteen ohi eli diffraktoituu sitä enemmän, mitä suurempi aallonpituus on esteeseen verrattuna.",
+            "Laske aallonpituus taajuuksilla $3\\,\\text{kHz}$ ja $30{,}0\\,\\text{kHz}$. Vertaa niitä hyttysen pituuteen $5\\,\\text{mm}$. Kummalle aallolle hyttynen on tuntuva este?"
+          ],
           "criteria": [
             {
               "text": "Laskee, että taajuuden $3\\,\\text{kHz}$ aallonpituus on noin $11\\,\\text{cm}$. Se on yli kaksikymmentä kertaa hyttysen pituus. Taajuuden $30\\,\\text{kHz}$ aallonpituus on noin $11\\,\\text{mm}$, eli se on hyttysen kokoluokkaa.",
@@ -304,6 +344,11 @@
           "kind": "graph",
           "points": 4,
           "text": "Piirrä kuvaaja, jossa on heilurin jaksonaika langan pituuden funktiona. Onko jaksonaika suoraan verrannollinen pituuteen? Perustele kuvaajan avulla.",
+          "hints": [
+            "Mikä mittaustuloksista on jaksonaika? Miten saat sen taulukon ajoista? Missä pisteiden pitäisi olla, jos kaksi suuretta on suoraan verrannollisia?",
+            "Jaksonaika on yhden heilahduksen aika: $T = \\dfrac{t_{10}}{10}$. Piirrä pituus $l$ vaaka-akselille ja jaksonaika $T$ pystyakselille. Akselit alkavat nollasta.",
+            "Laske $T$ jokaiselle pituudelle ja piirrä pisteet. Jos $T$ olisi suoraan verrannollinen pituuteen, mitä tapahtuisi pituuden kaksinkertaistuessa tai nelinkertaistuessa? Tarkista kuvaajasta."
+          ],
           "criteria": [
             {
               "key": "graph_axes",
@@ -327,6 +372,11 @@
           "kind": "graph",
           "points": 5,
           "text": "Esitä aineisto niin, että pisteisiin sopii suora, kun heilahdukset ovat pieniä. Perustele valintasi. Sovita sitten pisteisiin suora.",
+          "hints": [
+            "Miten jaksonaika riippuu pituudesta teorian mukaan? Minkä suureen pitäisi laskea, jotta pisteet olisivat suoralla?",
+            "Pienillä heilahduksilla $T = 2\\pi\\sqrt{\\dfrac{l}{g}}$. Korota yhtälö toiseen potenssiin. Katso, minkä kahden suureen välillä on suora verrannollisuus.",
+            "Laske jokaiselle mittaukselle $T = \\dfrac{t_{10}}{10}$ ja $T^2$ yksikössä $\\text{s}^2$. Piirrä $T^2$ pituuden $l$ funktiona. Sovita pisteisiin yksi suora."
+          ],
           "criteria": [
             {
               "text": "Perustelee linearisoinnin eli sen, miten aineisto saadaan suoraksi: kun $T = 2\\pi\\sqrt{\\dfrac{l}{g}}$ korotetaan toiseen, saadaan $T^2 = \\dfrac{4\\pi^2}{g}\\,l$. Siksi $T^2$ on suoraan verrannollinen pituuteen.",
@@ -350,6 +400,11 @@
           "kind": "calc",
           "points": 6,
           "text": "Määritä kuvaajasta putoamiskiihtyvyys. Vertaa tulosta arvoon $9{,}81\\,\\text{m/s}^2$.",
+          "hints": [
+            "Mitä suoran kulmakerroin kertoo? Mitä suuretta vastaava kerroin sisältää teorian yhtälössä?",
+            "Vertaa suoran yhtälöä $T^2 = kl$ teorian yhtälöön $T^2 = \\dfrac{4\\pi^2}{g}\\,l$.",
+            "Lue suoralta kaksi kaukana toisistaan olevaa pistettä. Älä käytä mittauspisteitä. Laske kulmakerroin $k = \\dfrac{\\Delta (T^2)}{\\Delta l}$. Ratkaise $g$ symbolein ja sijoita sitten. Vertaa tulosta arvoon $9{,}81\\,\\text{m/s}^2$ prosentteina."
+          ],
           "answer": {
             "value": 9.78,
             "unit": "m/s²",
@@ -388,6 +443,11 @@
           "kind": "calc",
           "points": 5,
           "text": "Suora ei kulje origon kautta. Mitä se kertoo mittauksesta? Ryhmä mittaa pituuden samalla tavalla kuin ennen. Kuinka pitkäksi pituus $l$ on säädettävä, jotta heilurin jaksonaika on $2{,}00\\,\\text{s}$?",
+          "hints": [
+            "Mitä suora ennustaa, kun pituus on nolla? Mitä teorian pituus $l$ tarkoittaa heilurissa? Mihin kohtaan ryhmä mittasi pituuden?",
+            "Suoran yhtälö on $T^2 = kl + b$. Tässä $k$ on c-kohdan kulmakerroin. Luku $b$ on suoran ja $T^2$-akselin leikkauskohta.",
+            "Ratkaise yhtälöstä $l$ symbolein. Sijoita $T^2 = (2{,}00\\,\\text{s})^2$ sekä suoralta luetut $k$ ja $b$. Jaa $b$ luvulla $k$, niin saat pituuden poikkeaman. Mieti, mistä poikkeama voi johtua."
+          ],
           "answer": {
             "value": 0.976,
             "unit": "m",
@@ -441,6 +501,11 @@
           "kind": "word",
           "points": 5,
           "text": "Arvioi väite 1. Kuinka suuri taso on mallin mukaan lähimpien talojen kohdalla?",
+          "hints": [
+            "Mitä pistemäisen lähteen intensiteetille tapahtuu, kun etäisyys kaksinkertaistuu? Onko desibeliasteikko suoraan verrannollinen intensiteettiin?",
+            "Pistemäisen lähteen intensiteetti on $I = \\dfrac{P}{4\\pi r^2}$. Tason muutos on $\\Delta L = 10\\,\\text{dB} \\cdot \\lg \\dfrac{I_2}{I_1}$.",
+            "Laske intensiteettien suhde etäisyyksillä $20\\,\\text{m}$ ja $400\\,\\text{m}$. Sijoita se tason muutoksen kaavaan. Laske taso taloilla mitatusta tasosta. Mieti lopuksi, mitä malli jättää huomiotta."
+          ],
           "criteria": [
             {
               "text": "Selittää, että pistemäisen lähteen intensiteetti on $I = \\dfrac{P}{4\\pi r^2}$. Kun etäisyys kaksinkertaistuu, intensiteetti putoaa neljäsosaan. Siksi taso laskee $10\\,\\text{dB} \\cdot \\lg 4 \\approx 6\\,\\text{dB}$ eikä puoleen.",
@@ -469,6 +534,11 @@
           "kind": "word",
           "points": 5,
           "text": "Arvioi väite 2. Selitä aaltojen avulla, miksi aidan takana kuuluu eniten matalia ääniä.",
+          "hints": [
+            "Mitä aaltoilmiötä tapahtuu, kun ääni kohtaa esteen? Mistä riippuu, kuinka paljon aalto taipuu esteen taakse?",
+            "Diffraktiossa aalto taipuu esteen taakse sitä enemmän, mitä suurempi aallonpituus on esteen kokoon verrattuna. Aallonpituus on $\\lambda = \\dfrac{v}{f}$.",
+            "Laske aallonpituus matalalle äänelle, esimerkiksi $100\\,\\text{Hz}$. Laske se myös korkealle äänelle, esimerkiksi $2\\,\\text{kHz}$. Vertaa niitä aidan korkeuteen $2\\,\\text{m}$. Kumpi ääni jää aidan taakse varjoon? Mitä se tarkoittaa väitteelle?"
+          ],
           "criteria": [
             {
               "text": "Selittää diffraktion: aalto taipuu esteen taakse. Se taipuu sitä voimakkaammin, mitä suurempi aallonpituus on esteen kokoon verrattuna.",
@@ -497,6 +567,11 @@
           "kind": "word",
           "points": 5,
           "text": "Arvioi väite 3. Kuinka pitkä altistus on sallittu melun nyrkkisäännön mukaan? Nyrkkisääntö on yksinkertainen sääntö, joka antaa arvion. Mitä muuttaisivat kuulonsuojaimet, joiden vaimennus on $20\\,\\text{dB}$?",
+          "hints": [
+            "Mikä taso on nyrkkisäännön raja? Kuinka paljon sen yläpuolella oleva taso lyhentää sallittua aikaa? (Nyrkkisääntö on yksinkertainen sääntö, joka antaa arvion.)",
+            "Nyrkkisäännön mukaan sallittu aika on\n$$\nt_\\text{sall} = \\dfrac{t_0}{2^{\\,n}}, \\quad n = \\dfrac{L - 85\\,\\text{dB}}{3\\,\\text{dB}}\n$$\nja $t_0 = 8\\,\\text{h}$.",
+            "Laske, montako $3\\,\\text{dB}$:n askelta taso $100\\,\\text{dB}$ on rajan yläpuolella. Ratkaise sallittu aika. Suojaimet pienentävät korvaan tulevaa tasoa. Laske uusi taso ja arvioi sama tavalla. Muista, että nyrkkisääntö on vain arvio."
+          ],
           "criteria": [
             {
               "key": "equation",
@@ -551,6 +626,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Laske äänen nopeus mittausten keskiarvosta. Arvioi tuloksen epävarmuus.",
+          "hints": [
+            "Minkä matkan ääni kulkee, ennen kuin ryhmä kuulee kaiun? Millä ajalla se kuljetaan, kun käytät kaikkia viittä mittausta?",
+            "Ääni kulkee seinälle ja takaisin. Siis $v = \\dfrac{2d}{\\bar{t}}$. Ajan epävarmuuden arvio on $\\Delta t = \\dfrac{t_\\text{max} - t_\\text{min}}{2}$.",
+            "Laske ensin viiden ajan keskiarvo $\\bar{t}$. Laske sitten ajan epävarmuus $\\Delta t$. Laske suhteellinen epävarmuus $\\dfrac{\\Delta t}{\\bar{t}}$. Käytä sitä nopeuden epävarmuuden arvioon."
+          ],
           "answer": {
             "value": 354.2,
             "unit": "m/s",
@@ -584,6 +664,11 @@
           "kind": "word",
           "points": 5,
           "text": "Arvioi ryhmän johtopäätös.",
+          "hints": [
+            "Missä lämpötilassa kirjan arvo $343\\,\\text{m/s}$ pätee? Mikä lämpötila oli mittauspäivänä? Kuuluuko kirjan arvo mittauksen epävarmuusvälin sisään?",
+            "Kaasussa äänen nopeus kasvaa lämpötilan noustessa, noin $0{,}6\\,\\text{m/s}$ jokaista astetta kohti. Epävarmuusväli on $v \\pm \\Delta v$ a-kohdan mukaan.",
+            "Kirjan arvo koskee $20\\,{}^\\circ\\text{C}$:n ilmaa. Arvioi, millainen nopeus odotetaan mittauspäivän lämpötilassa. Vertaa sitä mitattuun nopeuteen ja sen epävarmuuteen. Mieti myös, mitä käsiajanotto tekee ajoille."
+          ],
           "criteria": [
             {
               "text": "Toteaa, että kirjan arvo $343\\,\\text{m/s}$ koskee ilmaa, jonka lämpötila on $20\\,{}^\\circ\\text{C}$. Kaasussa äänen nopeus kasvaa, kun lämpötila nousee, noin $0{,}6\\,\\text{m/s}$ astetta kohti. Siksi lämpötilassa $5\\,{}^\\circ\\text{C}$ odotetaan noin $334\\,\\text{m/s}$.",
@@ -612,6 +697,11 @@
           "kind": "word",
           "points": 6,
           "text": "Suunnittele, miten mittausta parannetaan niin, että lämpötilan vaikutus äänen nopeuteen voidaan havaita.",
+          "hints": [
+            "Mikä ryhmän mittauksessa vaikuttaa tulokseen eniten? Millä välineellä ajan voisi mitata ilman omaa reaktioaikaa?",
+            "Mittaa matka $s$ ja kulkuaika $t$ usealla etäisyydellä. Silloin $s = vt$. Matka–aika-kuvaajan kulmakerroin on nopeus.",
+            "Käytä b-kohdan arviota nopeuden muutoksesta lämpötilan mukana. Arvioi, kuinka monta prosenttia nopeus muuttuu, kun lämpötila muuttuu $15\\,{}^\\circ\\text{C}$. Päättele, kuinka pieni ajan epävarmuuden on oltava. Mieti myös, mitä muuta on seurattava tai pidettävä samana."
+          ],
           "criteria": [
             {
               "text": "Aika mitataan ilman reaktioaikaa. Yksi mikrofoni, esimerkiksi puhelin, tallentaa sekä lyönnin että kaiun, ja aikaero luetaan äänen kuvaajasta. Toinen tapa on kaksi mikrofonia tunnetun matkan päässä toisistaan.",
@@ -661,6 +751,11 @@
           "kind": "calc",
           "points": 3,
           "text": "Kuinka suuri hyppääjän nopeus on, kun nauha alkaa venyä?",
+          "hints": [
+            "Mitkä energiamuodot muuttuvat toisikseen, kun hyppääjä putoaa matkan $L_0$ ja nauha ei vielä veny? Mikä säilyy?",
+            "Mekaaninen energia säilyy: $mgL_0 = \\tfrac12 mv^2$.",
+            "Massa $m$ supistuu yhtälöstä. Ratkaise ensin $v$ symbolein. Sijoita luvut vasta sitten."
+          ],
           "answer": {
             "value": 18.79,
             "unit": "m/s",
@@ -689,6 +784,11 @@
           "kind": "calc",
           "points": 5,
           "text": "Kuinka syvälle sillan alapuolelle hyppääjä putoaa?",
+          "hints": [
+            "Missä kohdassa hyppääjän nopeus on hetkellisesti nolla? Mitkä energiat ovat silloin muuttuneet toisikseen, kun vertaat lähtötilannetta ja alinta kohtaa?",
+            "Energia säilyy koko pudotuksen ajan. Painon potentiaalienergian muutos on yhtä suuri kuin nauhan jousienergia: $mg(L_0 + x) = \\tfrac12 kx^2$. Tässä $x$ on nauhan venymä.",
+            "Järjestä yhtälö niin, että toisella puolella on nolla. Ratkaise venymä $x$ toisen asteen yhtälön ratkaisukaavalla. Valitse juuri, jolla on fysikaalinen merkitys. Syvyys on lepopituus plus venymä."
+          ],
           "answer": {
             "value": 39.59,
             "unit": "m",
@@ -722,6 +822,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Kuinka suuri on hyppääjän kiihtyvyys alimmassa kohdassa? Mihin suuntaan kiihtyvyys osoittaa?",
+          "hints": [
+            "Mitkä kaksi voimaa vaikuttavat hyppääjään alimmassa kohdassa? Onko niiden summa nolla, vaikka nopeus on silloin hetkellisesti nolla?",
+            "Newtonin toinen laki on $\\Sigma \\overline{F} = m\\overline{a}$. Valitse ylöspäin positiiviseksi suunnaksi. Kirjoita voimat etumerkkeineen. Nauhan voima on $F = kx$.",
+            "Käytä b-kohdan venymää $x$. Ratkaise $a$ symbolein ennen lukuja. Tulkitse tuloksen etumerkki: mihin suuntaan kiihtyvyys osoittaa? Vertaa tulosta arvoon $g$."
+          ],
           "answer": {
             "value": 26.17,
             "unit": "m/s²",
@@ -755,6 +860,11 @@
           "kind": "calc",
           "points": 3,
           "text": "Lopulta hyppääjä jää roikkumaan nauhan varaan. Hän keinuu ylös ja alas pienin värähdyksin. Kuinka suuri on värähtelyn jaksonaika?",
+          "hints": [
+            "Millainen voima palauttaa hyppääjän kohti tasapainoasemaa, kun hän keinuu nauhan varassa? Mitkä suureet määräävät värähtelyn jaksonajan?",
+            "Massan ja jousen värähtelyn jaksonaika on $T = 2\\pi\\sqrt{\\dfrac{m}{k}}$.",
+            "Sijoita hyppääjän massa ja nauhan jousivakio. Tarkista, että yksiköistä tulee sekunti: $1\\,\\text{N/m} = 1\\,\\text{kg/s}^2$."
+          ],
           "answer": {
             "value": 4.867,
             "unit": "s",
@@ -802,6 +912,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Määritä matkat $s_1$ ja $s_2$ pisteestä $\\text{P}$ kaiuttimiin $S_1$ ja $S_2$. Määritä myös matkaero $\\Delta s = s_2 - s_1$.",
+          "hints": [
+            "Mistä kohdasta mihin kohtaan matka mitataan? Mitä ruudukko ja kuvan mittakaava kertovat matkoista?",
+            "Matka on ruutujen lukumäärä kertaa ruudun sivun pituus. Jos kolmio $S_1$, $S_2$, $\\text{P}$ on suorakulmainen, matka toiseen kaiuttimeen saadaan Pythagoraan lauseella.",
+            "Laske kuvasta ruutujen lukumäärät välille $S_1$–$\\text{P}$ ja $S_1$–$S_2$. Muunna ne metreiksi. Laske $s_2$ Pythagoraan lauseella. Laske sitten matkaero $\\Delta s = s_2 - s_1$."
+          ],
           "answer": [
             {
               "name": "s1",
@@ -850,6 +965,11 @@
           "kind": "calc",
           "points": 2,
           "text": "Laske kaiuttimien äänen aallonpituus ilmassa.",
+          "hints": [
+            "Mitkä suureet kuvaavat siniääntä? Mitkä niistä on annettu?",
+            "Aallon nopeus on $v = f\\lambda$. Siis $\\lambda = \\dfrac{v}{f}$.",
+            "Sijoita taajuus ja äänen nopeus $343{,}4\\,\\text{m/s}$. Anna aallonpituus metreinä."
+          ],
           "answer": {
             "value": 1.0,
             "unit": "m",
@@ -873,6 +993,11 @@
           "kind": "word",
           "points": 3,
           "text": "Onko mikrofonin kohdalla pisteessä $\\text{P}$ ääni voimakas vai vaimea? Perustele a- ja b-kohdan tuloksilla.",
+          "hints": [
+            "Montako aallonpituutta matkaero on? Mitä se kertoo siitä, missä vaiheessa kaiuttimien aallot ovat pisteessä $\\text{P}$?",
+            "Samassa vaiheessa olevien lähteiden aallot vahvistavat toisiaan, kun $\\Delta s = n\\lambda$. Ne kumoavat toisensa, kun $\\Delta s = \\left(n + \\tfrac12\\right)\\lambda$. Tässä $n = 0, 1, 2, \\ldots$",
+            "Laske $\\dfrac{\\Delta s}{\\lambda}$ a- ja b-kohdan arvoilla. Onko tulos kokonaisluku vai puolikas? Missä vaiheessa aallot ovat toisiinsa nähden? Mitä se tarkoittaa äänen voimakkuudelle?"
+          ],
           "criteria": [
             {
               "text": "Vertaa matkaeroa aallonpituuteen. Matkaero $\\Delta s = 0{,}50\\,\\text{m}$ on puolet aallonpituudesta $1{,}00\\,\\text{m}$. Siksi aallot saapuvat pisteeseen $\\text{P}$ vastakkaisvaiheessa.",
@@ -891,6 +1016,11 @@
           "kind": "calc",
           "points": 3,
           "text": "Generaattorin taajuutta nostetaan arvosta $343\\,\\text{Hz}$. Millä pienimmällä taajuudella pisteessä $\\text{P}$ kuuluu taas voimakas ääni?",
+          "hints": [
+            "Mikä ehto matkaerolle pitää täyttyä, jotta ääni on voimakas? Mikä pysyy samana, kun taajuutta nostetaan: matkaero vai aallonpituus?",
+            "Ääni on voimakas, kun $\\Delta s = n\\lambda$. Aallonpituus on $\\lambda = \\dfrac{v}{f}$. Matkaero $\\Delta s$ riippuu vain pisteiden paikoista, joten se ei muutu.",
+            "Ratkaise ehdosta taajuus: $f = \\dfrac{nv}{\\Delta s}$. Valitse pienin kokonaisluku $n$, jolla taajuus on suurempi kuin $343\\,\\text{Hz}$."
+          ],
           "answer": {
             "value": 687,
             "unit": "Hz",
@@ -939,6 +1069,11 @@
           "kind": "calc",
           "points": 3,
           "text": "Määritä kuvan perusteella aallonpituus $\\lambda$ narussa.",
+          "hints": [
+            "Mitä viivain ja kuva kertovat narun pituudesta ja silmukoiden lukumäärästä? Kuinka suuri osa aallonpituudesta yksi silmukka on?",
+            "Yksi silmukka on puolen aallonpituuden mittainen. Siis $L = n\\dfrac{\\lambda}{2}$.",
+            "Lue narun pituus $L$ viivaimelta. Laske silmukat $n$ kuvasta. Ratkaise $\\lambda$ symbolein ennen lukuja. Anna aallonpituus metreinä."
+          ],
           "answer": {
             "value": 0.6,
             "unit": "m",
@@ -967,6 +1102,11 @@
           "kind": "calc",
           "points": 3,
           "text": "Laske aallon etenemisnopeus narussa.",
+          "hints": [
+            "Mikä yhteys on aallon nopeudella, taajuudella ja aallonpituudella? Mitkä niistä tiedät?",
+            "Aallon nopeus on $v = f\\lambda$.",
+            "Käytä a-kohdan aallonpituutta metreinä. Käytä täryttäjän taajuutta $50\\,\\text{Hz}$."
+          ],
           "answer": {
             "value": 30,
             "unit": "m/s",
@@ -995,6 +1135,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Täryttäjän taajuutta muutetaan niin, että narussa on kolme yhtä pitkää silmukkaa. Mikä taajuus täryttäjälle on asetettava?",
+          "hints": [
+            "Mikä narussa muuttuu, kun täryttäjän taajuutta muutetaan? Mikä pysyy samana? Mistä aallon nopeus narussa riippuu?",
+            "Kolmella silmukalla $L = 3\\dfrac{\\lambda_3}{2}$. Siis $\\lambda_3 = \\dfrac{2L}{3}$. Taajuus on $f_3 = \\dfrac{v}{\\lambda_3}$.",
+            "Käytä b-kohdan nopeutta. Sievennä $f_3$ symbolein ennen lukuja. Sijoita $v$ ja $L$ vasta sitten. Vertaa tulosta alkuperäiseen taajuuteen. Onko tulos järkevä, kun silmukoita on vähemmän?"
+          ],
           "answer": {
             "value": 37.5,
             "unit": "Hz",
@@ -1028,6 +1173,11 @@
           "kind": "word",
           "points": 3,
           "text": "Täryttäjän taajuudeksi asetetaan $20\\,\\text{Hz}$. Syntyykö narussa selvä seisova aalto? Perustele.",
+          "hints": [
+            "Mitä ehtoa narun päissä täytyy vaatia, jotta naruun syntyy seisova aalto? Mitä se asettaa narun pituuden ja aallonpituuden suhteelle?",
+            "Seisova aalto syntyy ominaistaajuuksilla $f_n = n\\dfrac{v}{2L}$, $n = 1, 2, 3, \\ldots$",
+            "Laske kaksi alinta ominaistaajuutta $f_1$ ja $f_2$. Käytä b-kohdan nopeutta ja narun pituutta. Vertaa niitä taajuuteen $20\\,\\text{Hz}$."
+          ],
           "criteria": [
             {
               "text": "Selittää, että seisova aalto syntyy vain, kun narun pituus on kokonainen määrä puolia aallonpituuksia. Silloin päihin tulee solmut. Ominaistaajuudet ovat $f_n = n\\dfrac{v}{2L}$.",
