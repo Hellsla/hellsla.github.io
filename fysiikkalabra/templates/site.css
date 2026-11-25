@@ -999,7 +999,7 @@ details.level>ol>li:last-child,.core-card>ol>li:last-child{border-bottom:0}
   .lab-side.sim-card2 #sim-root .controls>label:has(select):not(.sim-speed){order:1;flex:1 0 100%!important;flex-direction:row;align-items:center;gap:.6rem}
   .lab-side.sim-card2 #sim-root .controls>label:has(select):not(.sim-speed) select{flex:1 1 auto}
   .lab-side.sim-card2 #sim-root .controls>.sim-speed{flex:0 0 auto!important;margin-inline-start:auto}   /* !important: FY3 sketches set a box's flex inline */
-  .lab-side.sim-card2 #sim-root .controls>.sim-speed>span{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap!important}   /* named by the select's aria-label; no row of its own */
+  .lab-side.sim-card2 #sim-root .controls>.sim-speed{flex-direction:row;align-items:center;gap:.5rem}.lab-side.sim-card2 #sim-root .controls>.sim-speed>span{position:static;width:auto;height:auto;overflow:visible;clip-path:none;white-space:nowrap!important}   /* the pace keeps its visible name, on the row beside the select (it was clipped to 1 px at 1280; work queue 10, 2026-11-25) */
   .lab-side.sim-card2 .sim-lead{display:none}   /* on a short laptop screen the picture shrinks so the controls stay in view */
 }
 /* a phone (work queue 10, PR 4; pilot approved by the teacher 2026-11-16, PR 4b every simulation): the simulation's
@@ -1037,6 +1037,7 @@ fieldset.crit{margin:0;padding:0;border:0;min-width:0}
 ol.parts{list-style:none;margin:1rem 0;padding:0;border-top:1px solid var(--line-2)}
 ol.parts>li{display:grid;grid-template-columns:1.8rem 1fr auto;gap:.2rem .5rem;padding:.6rem 0;border-bottom:1px solid var(--line-2)}
 ol.parts>li>.hints{grid-column:2/-1;display:flex;flex-wrap:wrap;gap:0 1.2rem;margin:.1rem 0 0}   /* a part's hints under its text, closed ones on one row (work queue 11c) */
+@media (max-width:600px){ol.parts>li>.hints details>div{margin-left:0}}   /* the box fills its column; the 1.2rem of .hints details>div (line 910) overrode the phone rule above it (11c PR 2, 390 px) */
 ol.parts>li>.hints details{margin:0}ol.parts>li>.hints details[open]{flex:1 1 100%}ol.parts>li>.hints summary{display:inline-flex;align-items:center;min-height:40px;cursor:pointer}
 .part-id{font-weight:700}.pts{font:600 var(--fs-small) var(--sans);color:var(--ink-2);white-space:nowrap}
 details.reveal{margin:1rem 0 0;border-top:1px solid var(--line)}
