@@ -19,6 +19,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Kuinka suuri on lämmittimen teho? Kuinka suuri on yhden raidan resistanssi?",
+          "hints": [
+            "Millainen kytkentä syntyy, kun jokainen raita kulkee kiskosta toiseen? Mikä on kaikilla raidoilla sama? Miten virta jakautuu raitojen kesken?",
+            "Lämmittimen teho saadaan kiskojen jännitteestä ja kokonaisvirrasta: $P = UI$. Yhden raidan resistanssi saadaan sen jännitteestä ja virrasta: $R_1 = \\dfrac{U}{I_1}$.",
+            "Raidat ovat samanlaisia. Siksi yhden raidan virta $I_1$ on kokonaisvirta jaettuna raitojen lukumäärällä. Laske ensin $I_1$ ja sijoita se resistanssin lausekkeeseen."
+          ],
           "answer": [
             {
               "name": "P",
@@ -61,6 +66,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Kuinka paksu raita on?",
+          "hints": [
+            "Yhden raidan resistanssi tunnetaan a-kohdasta. Mitkä raidan mitat ja mikä aineen ominaisuus määräävät resistanssin?",
+            "Johtimen resistanssi on $R_1 = \\rho\\,\\dfrac{l}{A}$. Raidan poikkipinta-ala on leveyden $b$ ja paksuuden $h$ tulo: $A = b\\,h$.",
+            "Ratkaise ensin poikkipinta-ala $A$ symbolein ja laske se. Muunna leveys metreiksi: $3{,}0\\,\\text{mm} = 3{,}0 \\cdot 10^{-3}\\,\\text{m}$. Ratkaise sitten paksuus $h$."
+          ],
           "answer": {
             "value": 9.78,
             "unit": "µm",
@@ -89,6 +99,11 @@
           "kind": "word",
           "points": 3,
           "text": "Yksi raita katkeaa, koska lasiin tulee naarmu. Miten lämmittimen virta ja teho muuttuvat? Lämpeneekö lasi ehjien raitojen kohdalta yhtä hyvin kuin ennen?",
+          "hints": [
+            "Mihin raitoihin katkeaminen vaikuttaa? Muuttuuko ehjien raitojen jännite, kun yksi haara poistuu?",
+            "Rinnankytkennässä jokaisen haaran yli on sama jännite. Kokonaisvirta on haarojen virtojen summa: $I = I_1 + I_2 + \\dots$",
+            "Päättele ensin, mitä yhdelle ehjälle raidalle tapahtuu. Laske sitten, montako raitaa johtaa virtaa. Käytä lauseketta $P = UI$. Mieti lopuksi, minkä lasin kohdan lämmitys loppuu."
+          ],
           "criteria": [
             {
               "text": "Perustelee rinnankytkennän avulla: katkennut haara ei muuta muiden raitojen jännitettä. Siksi ehjien raitojen virta ja teho pysyvät samoina kuin ennen.",
@@ -112,6 +127,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Moottori sammutetaan, ja lämmitin saa sähkön pelkästä akusta. Akun lähdejännite on $12{,}6\\,\\text{V}$ ja sisäinen resistanssi $0{,}020\\,\\Omega$. Kaikki raidat ovat ehjiä. Kuinka suuri on lämmittimen teho nyt?",
+          "hints": [
+            "Akulla on sisäinen resistanssi. Mitkä resistanssit ovat nyt sarjassa lähdejännitteen kanssa? Mikä on lämmittimen resistanssi, kun $10$ samanlaista raitaa on rinnan?",
+            "Yhtä suurten rinnankytkettyjen vastusten yhteisresistanssi on yhden resistanssi jaettuna lukumäärällä: $R = \\dfrac{R_1}{10}$. Virta on $I = \\dfrac{E}{R + R_\\text{s}}$. Lämmittimen teho on $P = RI^2$.",
+            "Laske lämmittimen resistanssi $R$ a-kohdan raidan resistanssista. Laske sitten virta niin, että sisäinen resistanssi on mukana. Laske teho vasta lopuksi."
+          ],
           "answer": {
             "value": 136.2,
             "unit": "W",
@@ -164,6 +184,11 @@
           "kind": "calc",
           "points": 3,
           "text": "Kuinka paljon energiaa täyteen ladattuun akkuun on varastoitunut? Anna vastaus wattitunteina ja megajouleina.",
+          "hints": [
+            "Tyyppikilvessä on jännite ja varaus ampeeritunteina. Minkä suureen saat, kun kerrot jännitteen varauksella?",
+            "Akun energia on $W = UQ$. Kun jännite on voltteina ja varaus ampeeritunteina, tulo on suoraan wattitunteina.",
+            "Muunna wattitunnit jouleiksi: $1\\,\\text{Wh} = 3600\\,\\text{J}$. Muunna sitten joulet megajouleiksi: $1\\,\\text{MJ} = 10^6\\,\\text{J}$."
+          ],
           "answer": {
             "value": 374.4,
             "unit": "Wh",
@@ -192,6 +217,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Kuinka pitkän matkan täydellä akulla voi ajaa, kun nopeus on $20\\,\\text{km/h}$?",
+          "hints": [
+            "Akun varaus kertoo, kuinka pitkään tietty virta voi kulkea. Kuinka kauan akku riittää, kun ajossa kulkee keskimäärin tietty virta?",
+            "Varaus, virta ja aika liittyvät yhtälöön $Q = It$. Matka on nopeuden ja ajan tulo: $s = vt$.",
+            "Ratkaise ensin aika $t$ yhtälöstä $Q = It$. Kun varaus on ampeeritunteina ja virta ampeereina, aika tulee suoraan tunteina. Kerro aika sitten nopeudella."
+          ],
           "answer": {
             "value": 27.73,
             "unit": "km",
@@ -225,6 +255,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Laturi kytketään tyhjään akkuun. Kuinka suuri on latausvirta latauksen alussa? Kuinka suuri on silloin akun napajännite?",
+          "hints": [
+            "Kierrä piiri yhden kerran. Missä kohdissa potentiaali nousee ja missä se laskee, kun virta kulkee akun läpi latauksessa?",
+            "Jännitelain mukaan laturin jännite on yhtä suuri kuin akun lähdejännite ja resistanssien jännitehäviöt yhteensä: $U_\\text{lat} = E + (R + R_\\text{s})\\,I$. Jännitehäviö on jännitteen lasku resistanssissa.",
+            "Ratkaise tästä virta $I$ ja sijoita arvot. Napajännite on akun navoilla mitattu jännite. Laske, kuinka paljon se on lähdejännitettä suurempi akun sisäisessä resistanssissa."
+          ],
           "answer": [
             {
               "name": "I",
@@ -267,6 +302,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Arvioi latauksen hyötysuhde. Oletetaan, että laturin jännite pysyy $42{,}0\\,\\text{V}$:ssa ja akun läpi kulkee latauksessa varaus $10{,}4\\,\\text{Ah}$. Kuinka paljon yksi täysi lataus maksaa?",
+          "hints": [
+            "Hyötysuhde on hyödyksi saatu energia jaettuna käytetyllä energialla. Mikä energia on tässä hyödyksi saatu? Mikä energia otetaan laturilta?",
+            "Laturin antama energia on $W_\\text{lat} = U_\\text{lat} Q$. Hyötysuhde on $\\eta = \\dfrac{W_\\text{akku}}{W_\\text{lat}}$, missä $W_\\text{akku}$ on a-kohdan energia.",
+            "Laske $W_\\text{lat}$ wattitunteina ja muunna kilowattitunneiksi: $1\\,\\text{kWh} = 1000\\,\\text{Wh}$. Hinta on laturilta otettu energia kilowattitunteina kerrottuna yksikköhinnalla."
+          ],
           "answer": {
             "value": 85.71,
             "unit": "%",
@@ -319,6 +359,11 @@
           "kind": "graph",
           "points": 5,
           "text": "Piirrä kuvaaja, jossa napajännite on virran funktiona. Sovita pisteisiin malli. Perustele, miksi valitsit tämän mallin.",
+          "hints": [
+            "Kumpaa suuretta mittauksessa säädettiin? Kumpi suure seurasi siitä? Millä akseleilla kuvaaja kannattaa piirtää?",
+            "Pariston napajännite on lähdejännite vähennettynä sisäisen resistanssin jännitehäviöllä $R_\\text{s} I$. Mieti, miten tämä häviö riippuu virrasta ja millaisen kuvaajan se tuottaa.",
+            "Piirrä kuusi pistettä. Älä yhdistä niitä murtoviivaksi. Vedä yksi suora niin, että pisteitä on sen molemmin puolin. Jatka suora pystyakselille asti."
+          ],
           "criteria": [
             {
               "key": "graph_axes",
@@ -347,6 +392,11 @@
           "kind": "calc",
           "points": 6,
           "text": "Määritä kuvaajasta paristoryhmän lähdejännite ja sisäinen resistanssi. Vertaa tuloksia uuden AA-pariston tyypillisiin arvoihin. Tyypillinen lähdejännite on $1{,}5$–$1{,}6\\,\\text{V}$ ja sisäinen resistanssi $0{,}1$–$0{,}3\\,\\Omega$.",
+          "hints": [
+            "Milloin napajännite on yhtä suuri kuin lähdejännite? Mitä pystyakselin leikkauskohta siis kertoo? Mitä suoran kulmakerroin kertoo?",
+            "Yhtälö $U = E - R_\\text{s} I$ on suoran yhtälö. Suoran leikkauskohta pystyakselilla on $E$ ja kulmakerroin on $-R_\\text{s}$.",
+            "Lue suoralta kaksi pistettä, jotka ovat kaukana toisistaan. Laske kulmakerroin $\\dfrac{\\Delta U}{\\Delta I}$. Sisäinen resistanssi on sen vastaluku. Vertailua varten: paristoja on sarjassa kolme."
+          ],
           "answer": [
             {
               "name": "E",
@@ -394,6 +444,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Kuinka suuri virta kulkisi, jos kotelon navat oikosuljettaisiin eli yhdistettäisiin suoraan johdolla? Miksi tätä virtaa ei mitattu? Kuinka luotettava tulos on?",
+          "hints": [
+            "Mitä oikosulku tarkoittaa? Kuinka suuri on napajännite, kun navat yhdistetään suoraan johdolla?",
+            "Oikosulussa napajännite on nolla: $0 = E - R_\\text{s} I_\\text{k}$. Kuvaajassa tämä on piste, jossa suora leikkaa vaaka-akselin.",
+            "Ratkaise oikosulkuvirta $I_\\text{k}$ ja sijoita b-kohdan arvot. Mieti sitten, kuinka kaukana tulos on mitatuista virroista. Mieti myös, mitä paristoille tapahtuisi, jos virta mitattaisiin."
+          ],
           "answer": {
             "value": 6.31,
             "unit": "A",
@@ -427,6 +482,11 @@
           "kind": "calc",
           "points": 5,
           "text": "Taskulampun lampun resistanssi on $3{,}6\\,\\Omega$, kun lamppu palaa. Kuinka suuri teho lamppuun siirtyy? Kuinka suuri osa paristojen lähdetehosta $EI$ se on?",
+          "hints": [
+            "Lamppu ja paristojen sisäinen resistanssi ovat samassa silmukassa. Mikä on silloin piirin kokonaisresistanssi?",
+            "Virta on $I = \\dfrac{E}{R + R_\\text{s}}$. Lampun teho on $P = RI^2$ ja paristojen lähdeteho on $EI$. Osuus on lampun teho jaettuna lähdetehona.",
+            "Laske ensin virta $I$ b-kohdan arvoilla. Laske sitten lampun teho ja lähdeteho erikseen ja jaa ne."
+          ],
           "answer": {
             "value": 4.11,
             "unit": "W",
@@ -482,6 +542,11 @@
           "kind": "word",
           "points": 5,
           "text": "Arvioi väite 1. Käytä esimerkkinä $15\\,\\text{m}$:n jatkojohtoa. Johdossa on kaksi johdinta, ja kummankin poikkipinta-ala on $0{,}75\\,\\text{mm}^2$. Johdon läpi kulkee $10\\,\\text{A}$. Kuinka suuri teho muuttuu johdossa sisäenergiaksi?",
+          "hints": [
+            "Kuluuko virta johdossa? Kulkeeko sama virta laitteeseen ja takaisin? Mitä sähköenergialle tapahtuu, kun virta kulkee resistanssin läpi?",
+            "Johtimen resistanssi on $R = \\rho\\,\\dfrac{l}{A}$. Resistanssissa muuttuvan sähköenergian teho on $P = RI^2$.",
+            "Virta kulkee johdon kautta laitteeseen ja takaisin. Laske siis resistanssi johtimien yhteispituudelle. Muunna poikkipinta-ala: $0{,}75\\,\\text{mm}^2 = 0{,}75 \\cdot 10^{-6}\\,\\text{m}^2$. Mieti lopuksi, miten teho muuttuu, kun virta kasvaa. Riippuuko vaara vain pituudesta?"
+          ],
           "criteria": [
             {
               "text": "Selittää, että virta ei kulu: sama virta kulkee johtoa pitkin laitteeseen ja takaisin. Johtimien resistanssissa sähköenergiaa muuttuu sisäenergiaksi teholla $P = RI^2$.",
@@ -510,6 +575,11 @@
           "kind": "word",
           "points": 5,
           "text": "Arvioi väite 2. Käytä esimerkkinä $2000\\,\\text{W}$:n vedenkeitintä ja $850\\,\\text{W}$:n leivänpaahdinta. Ne ovat samassa ryhmässä, ja ryhmän sulake on $10\\,\\text{A}$.",
+          "hints": [
+            "Mikä jännite on kaikilla samaan ryhmään kytketyillä laitteilla? Mitä se kertoo yhden laitteen virrasta?",
+            "Laitteen virta saadaan tehosta ja jännitteestä: $I = \\dfrac{P}{U}$. Rinnankytkennässä ryhmän johdossa kulkee haarojen virtojen summa.",
+            "Laske kummankin laitteen virta erikseen ja laske ne yhteen. Vertaa summaa sulakkeen arvoon. Mieti, mitä sulake tekee."
+          ],
           "criteria": [
             {
               "text": "Selittää rinnankytkennän: jokaisen pistorasian ja laitteen yli on verkon jännite $230\\,\\text{V}$. Siksi laitteen virta $I = \\tfrac{P}{U}$ ei riipu muista laitteista.",
@@ -538,6 +608,11 @@
           "kind": "word",
           "points": 5,
           "text": "Arvioi väite 3. Linnun jalat ovat alumiinijohtimella $4{,}0\\,\\text{cm}$:n päässä toisistaan. Johtimen poikkipinta-ala on $400\\,\\text{mm}^2$, ja siinä kulkee $600\\,\\text{A}$. Arvioi linnun jalkojen välinen jännite.",
+          "hints": [
+            "Mikä määrää, kuinka suuri virta kulkee linnun kehon läpi? Minkä kahden pisteen välinen jännite siihen vaikuttaa?",
+            "Johdossa kulkeva virta aiheuttaa jännitehäviön $U = RI$ jokaisella johdon osalla. Jalkojen välillä on johdon pätkä, jonka resistanssi on $R = \\rho\\,\\dfrac{l}{A}$.",
+            "Muunna yksiköt: $4{,}0\\,\\text{cm} = 0{,}040\\,\\text{m}$ ja $400\\,\\text{mm}^2 = 4{,}00 \\cdot 10^{-4}\\,\\text{m}^2$. Laske pätkän resistanssi ja sen jännite. Mieti sitten, mikä muuttuu, kun lintu koskettaa myös pylvästä. Mihin potentiaaliin pylväs on kytketty?"
+          ],
           "criteria": [
             {
               "text": "Selittää, että linnun kautta kulkevan virran määrää jalkojen välinen potentiaaliero. Sitä ei määrää johdon potentiaali maahan verrattuna.",
@@ -587,6 +662,11 @@
           "kind": "calc",
           "points": 5,
           "text": "Laske mittauksen 1 resistanssi. Laske sen virheraja mittarien virherajojen avulla.",
+          "hints": [
+            "Resistanssi saadaan jännitteestä ja virrasta. Kuinka suuri on kummankin mittarin virheraja, kun tiedät prosenttiosuuden ja numeroiden lukumäärän?",
+            "Mittarin virheraja on $\\Delta x = p \\cdot x + n \\cdot r$. Tässä $p$ on prosenttiosuus, $x$ on lukema, $n$ on numeroiden lukumäärä ja $r$ on resoluutio. Resistanssi on $R = \\dfrac{U}{I}$.",
+            "Laske $\\Delta U$ ja $\\Delta I$ erikseen. Muunna virta ampeereiksi ennen jakoa: $5{,}3\\,\\text{mA} = 0{,}0053\\,\\text{A}$. Resistanssin suhteellinen virheraja on jännitteen ja virran suhteellisten virherajojen summa. Anna virheraja yhdellä merkitsevällä numerolla."
+          ],
           "answer": {
             "value": 96.23,
             "unit": "Ω",
@@ -620,6 +700,11 @@
           "kind": "word",
           "points": 5,
           "text": "Arvioi ryhmän johtopäätös.",
+          "hints": [
+            "Kuinka tarkkoja kolme resistanssia ovat? Mahtuvatko ne virherajojen puitteissa samalle arvolle?",
+            "Laske mittauksille 2 ja 3 virherajat kuten a-kohdassa. Merkitse jokaisen resistanssin väli $R \\pm \\Delta R$. Ohmin lain mukaan resistanssi $R = \\dfrac{U}{I}$ ei riipu jännitteestä.",
+            "Katso, millä välillä kolme väliä ovat päällekkäin. Mieti, miksi pienimmällä lukemalla virheraja on suhteellisesti suurin. Voisiko lämpeneminen selittää muutoksen? Laske vastuksen suurin teho $P = UI$."
+          ],
           "criteria": [
             {
               "key": "uncertainty",
@@ -648,6 +733,11 @@
           "kind": "word",
           "points": 5,
           "text": "Suunnittele, miten mittausta parannetaan, jotta Ohmin lain voimassaolo voidaan todeta luotettavasti.",
+          "hints": [
+            "Mikä mittauksessa jätti epävarmuutta? Mitä tekisit toisin, jotta vakioresistanssi tai sen puute näkyisi selvästi?",
+            "Ohmin lain mukaan $U = RI$. Siksi $(I, U)$-kuvaajan pisteet ovat origon kautta kulkevalla suoralla, jonka kulmakerroin on $R$. Miten tämä testataan usealla pisteellä?",
+            "Mieti kolmea asiaa. Montako pistettä mitataan ja millä jännitealueella? Millä mittausalueella lukema on mahdollisimman tarkka? Miten vastuksen lämpötila pysyy vakiona? Mieti myös mittarien kytkentää."
+          ],
           "criteria": [
             {
               "text": "Mitataan useita pisteitä, esimerkiksi kahdeksan, laajalla jännitealueella. Piirretään $(I, U)$-kuvaaja ja sovitetaan suora. Ohmin lain mukaan pisteet ovat origon kautta kulkevalla suoralla, jonka kulmakerroin on $R$.",
@@ -696,6 +786,11 @@
           "kind": "calc",
           "points": 5,
           "text": "Kuinka kauan veden lämmittäminen kestää, kun lämpöhäviöitä ei oteta huomioon?",
+          "hints": [
+            "Mihin vastuksen sähköenergia päätyy, kun häviöt jätetään huomiotta? Kuinka paljon energiaa veden lämmittämiseen tarvitaan?",
+            "Veden lämmittämiseen tarvittava energia on $Q = cm\\Delta T$. Vastuksen antama energia on $E = Pt$. Hyötysuhde on käytännössä $100\\,\\%$, joten $Pt = cm\\Delta T$.",
+            "Laske veden massa litroista ja lämpötilan muutos $\\Delta T$. Ratkaise aika $t$ ja muunna sekunnit tunneiksi."
+          ],
           "answer": {
             "value": 6.4,
             "unit": "h",
@@ -734,6 +829,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Kuinka suuri on varaajan lämpöhäviöiden keskimääräinen teho? Kuinka paljon häviöt maksavat vuodessa?",
+          "hints": [
+            "Varaaja luovuttaa energiaa ympäristöön vuorokaudessa. Mikä suure kertoo energian siirtymisen nopeuden?",
+            "Teho on energia jaettuna ajalla: $P = \\dfrac{E}{t}$. Vuoden energia on vuorokauden energia kerrottuna vuoden päivien lukumäärällä. Hinta on energia kertaa yksikköhinta.",
+            "Muunna yksiköt: $1{,}6\\,\\text{kWh} = 1600\\,\\text{Wh}$ ja vuorokausi on $24\\,\\text{h}$. Laske häviöenergia vuodessa kilowattitunteina ennen hintaa."
+          ],
           "answer": {
             "value": 66.67,
             "unit": "W",
@@ -767,6 +867,11 @@
           "kind": "calc",
           "points": 3,
           "text": "Illalla verkon jännite on $220\\,\\text{V}$. Oletetaan, että vastuksen resistanssi on sama kuin ennen. Kuinka suuri on vastuksen teho silloin?",
+          "hints": [
+            "Muuttuuko vastuksen resistanssi, kun verkon jännite muuttuu? Mikä siis pysyy samana ja mikä muuttuu?",
+            "Resistanssi saadaan nimellisarvoista: $R = \\dfrac{U^2}{P}$. Teho uudella jännitteellä on $P' = \\dfrac{U'^2}{R}$.",
+            "Laske ensin vastuksen resistanssi nimellisjännitteellä $230\\,\\text{V}$ ja nimellisteholla. Sijoita se sitten tehon lausekkeeseen uudella jännitteellä $220\\,\\text{V}$."
+          ],
           "answer": {
             "value": 2.745,
             "unit": "kW",
@@ -795,6 +900,11 @@
           "kind": "calc",
           "points": 3,
           "text": "Suihkussa käytetään $10\\,\\text{min}$ ajan $40\\,{}^\\circ\\text{C}$:n vettä $8{,}0\\,\\text{l}$ minuutissa. Vesi on lämmitetty $15\\,{}^\\circ\\text{C}$:sta. Kuinka paljon sähköenergiaa suihkun lämmin vesi vastaa?",
+          "hints": [
+            "Mitä suihkuun lämmitettävälle vedelle tapahtuu? Kuinka suuri on veden massa? Kuinka paljon lämpötila nousee kylmästä vedestä?",
+            "Veden lämmittämiseen tarvittava energia on $E = cm\\Delta T$. Sähköenergia kilowattitunteina saadaan jouleista: $1\\,\\text{kWh} = 3{,}6 \\cdot 10^6\\,\\text{J}$.",
+            "Laske massa. Vettä kuluu $8{,}0\\,\\text{l}$ minuutissa $10\\,\\text{min}$ ajan, ja yhden litran massa on $1{,}0\\,\\text{kg}$. Lämpötilan muutos on suihkuveden ja kylmän veden lämpötilojen erotus. Muunna lopuksi joulet kilowattitunneiksi."
+          ],
           "answer": {
             "value": 2.328,
             "unit": "kWh",
@@ -842,6 +952,11 @@
           "kind": "calc",
           "points": 3,
           "text": "Määritä lampun resistanssi, kun lampun jännite on $2{,}0\\,\\text{V}$.",
+          "hints": [
+            "Mikä suure luetaan käyrältä, kun jännite tunnetaan? Mikä yhteys on jännitteen, virran ja resistanssin välillä tässä pisteessä?",
+            "Lampun resistanssi pisteessä on $R = \\dfrac{U}{I}$. Käyrän tangentin kulmakerroin ei ole resistanssi.",
+            "Etsi pystyakselilta jännite $2{,}0\\,\\text{V}$. Lue samasta käyrän pisteestä virta vaaka-akselilta. Sijoita luvut yhtälöön."
+          ],
           "answer": {
             "value": 9.5,
             "unit": "Ω",
@@ -870,6 +985,11 @@
           "kind": "word",
           "points": 3,
           "text": "Määritä lampun resistanssi myös jännitteellä $3{,}0\\,\\text{V}$. Selitä, miksi se on eri kuin a-kohdassa.",
+          "hints": [
+            "Lue virta nyt jännitteellä $3{,}0\\,\\text{V}$. Miten tämä resistanssi eroaa a-kohdan arvosta? Mitä lampulle tapahtuu, kun jännite kasvaa?",
+            "Teho $P = UI$ kasvaa jännitteen mukana. Mitä se tekee hehkulangan lämpötilalle? Miten lämpötila vaikuttaa metallin resistanssiin?",
+            "Laske resistanssi $R = \\dfrac{U}{I}$ kummassakin pisteessä ja vertaa. Mieti, millaisena käyränä Ohmin lakia noudattava komponentti näkyisi samassa kuvaajassa. Vertaa sitä lampun käyrään."
+          ],
           "criteria": [
             {
               "key": "calculation",
@@ -888,6 +1008,11 @@
           "kind": "calc",
           "points": 5,
           "text": "Lamppu halutaan käyttää suurimmalla sallitulla jännitteellä. Käytettävissä on pariston lisäksi yksi vastus. Miten vastus kytketään? Kuinka suuri sen resistanssin pitää olla?",
+          "hints": [
+            "Paristo antaisi lampulle liian suuren jännitteen. Kytketäänkö vastus lampun kanssa sarjaan vai rinnan, kun osa jännitteestä pitää saada pois lampulta?",
+            "Sarjassa virta on sama kaikkialla ja jännitteet summautuvat: $E = U_\\text{L} + U_\\text{R}$. Vastuksen resistanssi on $R = \\dfrac{U_\\text{R}}{I}$.",
+            "Lue käyrältä virta, kun lampun jännite on $3{,}0\\,\\text{V}$. Sama virta kulkee vastuksessa. Laske vastuksen jännite $U_\\text{R}$ ja sitten sen resistanssi."
+          ],
           "answer": {
             "value": 4.0,
             "unit": "Ω",
@@ -926,6 +1051,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Laske lampun ja vastuksen teho c-kohdan kytkennässä. Kuinka suuri osa pariston tehosta muuttuu lampussa?",
+          "hints": [
+            "Mistä pariston teho muodostuu? Mitä tehoa verrataan mihin, kun lasketaan lampussa muuttuva osuus?",
+            "Teho on jännitteen ja virran tulo: $P = UI$. Laske se lampulle, vastukselle ja paristolle kunkin omalla jännitteellä.",
+            "Laske lampun ja vastuksen teho c-kohdan virralla. Laske pariston teho lähdejännitteellä. Osuus on lampun teho jaettuna pariston teholla."
+          ],
           "answer": {
             "value": 75.0,
             "unit": "%",
@@ -980,6 +1110,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Kuinka suuri virta kulkee paristosta?",
+          "hints": [
+            "Katso kuvasta: mitkä vastukset ovat samassa haarassa ja mitkä jakavat saman jännitteen? Voisitko korvata osan kytkennästä yhdellä vastuksella?",
+            "Rinnankytkettyjen vastusten yhteisresistanssi on $R_\\text{p} = \\dfrac{R_1 R_2}{R_1 + R_2}$. Sarjassa resistanssit summautuvat: $R = R_3 + R_\\text{p}$. Virta on $I = \\dfrac{E}{R}$.",
+            "Laske ensin rinnankytkettyjen $60\\,\\Omega$:n ja $30\\,\\Omega$:n vastusten yhteisresistanssi. Lisää siihen $20\\,\\Omega$. Sijoita kokonaisresistanssi virran lausekkeeseen."
+          ],
           "answer": {
             "value": 0.3,
             "unit": "A",
@@ -1013,6 +1148,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Kuinka suuri virta kulkee $60\\,\\Omega$:n vastuksessa? Kuinka suuri virta kulkee $30\\,\\Omega$:n vastuksessa?",
+          "hints": [
+            "Missä kohdassa piiriä virta jakautuu kahteen? Mikä on sama $60\\,\\Omega$:n ja $30\\,\\Omega$:n vastuksella?",
+            "Rinnankytkettyjen vastusten yli on sama jännite $U_\\text{p}$. Kummankin virta on $I_k = \\dfrac{U_\\text{p}}{R_k}$. Jännite saadaan lähdejännitteestä: $U_\\text{p} = E - I R_3$.",
+            "Laske a-kohdan virralla $20\\,\\Omega$:n vastuksen jännite $I R_3$. Vähennä se lähdejännitteestä. Näin saat rinnankytkettyjen vastusten jännitteen."
+          ],
           "answer": [
             {
               "name": "I60",
@@ -1050,6 +1190,11 @@
           "kind": "calc",
           "points": 3,
           "text": "Laske $20\\,\\Omega$:n vastuksen teho. Laske myös koko kytkennän teho.",
+          "hints": [
+            "Mikä virta kulkee $20\\,\\Omega$:n vastuksen läpi? Mistä koko kytkennän teho muodostuu?",
+            "Vastuksen teho on $P = RI^2$. Koko kytkennän teho on pariston teho $P = EI$, missä $I$ on pariston virta.",
+            "Laske vastuksen teho a-kohdan virralla. Voit tarkistaa tuloksen laskemalla kaikkien vastusten tehot yhteen. Vertaa summaa pariston tehoon."
+          ],
           "answer": [
             {
               "name": "P20",
@@ -1087,6 +1232,11 @@
           "kind": "word",
           "points": 4,
           "text": "Opiskelija irrottaa $30\\,\\Omega$:n vastuksen kytkennästä. Miten $60\\,\\Omega$:n vastuksen teho muuttuu? Ennusta ensin. Perustele sitten laskemalla.",
+          "hints": [
+            "Mitä kokonaisresistanssille ja virralle tapahtuu, kun yksi rinnakkainen haara poistetaan? Mitä se tekee $20\\,\\Omega$:n vastuksen jännitteelle?",
+            "Vastuksen teho riippuu sen jännitteestä: $P = \\dfrac{U^2}{R}$. Poiston jälkeen lähdejännite jakautuu uudelleen $20\\,\\Omega$:n ja $60\\,\\Omega$:n vastuksen kesken.",
+            "Laske uusi kokonaisresistanssi ja virta. Laske $20\\,\\Omega$:n vastuksen jännite. Vähennä se lähdejännitteestä, niin saat $60\\,\\Omega$:n vastuksen jännitteen. Vertaa tehoa alkuperäiseen."
+          ],
           "criteria": [
             {
               "text": "Ennustaa ja perustelee: piirin resistanssi kasvaa ja virta pienenee. Myös $20\\,\\Omega$:n vastuksen jännite pienenee. Siksi $60\\,\\Omega$:n vastukselle jää suurempi jännite, ja sen teho kasvaa.",
