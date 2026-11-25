@@ -1,15 +1,14 @@
-VERDICT: FAIL
-CONTENT-HASH: 6cc9e05376028525
+VERDICT: PASS
+CONTENT-HASH: 8fe89f76d0aefc29
 
-Delta review (work queue 11c): the new `hints` of all 31 written parts in `sovella/tasks.json`, checked against each part's rubric, answer and `sovella/solutions.md`, and against the fi hints.
+Delta review round 2 (work queue 11c): the hint fixes of commit a0849c11 after round 1, judged against each part's rubric, answer and `sovella/solutions.md`; the other hints are unchanged since the round-1 check of all 31 parts.
 
 ## Blocking
-1. (A, internal consistency) s4 c, hint 2, en: the hint names the permitted time $t_\text{perm}$, but the en rubric (equation and calculation criteria) and the solution use $t_\text{allowed}$; the brief requires the same symbols. Replace `t_\text{perm} = \dfrac{t_0}{2^{\,n}}` with `t_\text{allowed} = \dfrac{t_0}{2^{\,n}}`.
+None.
 
 ## Polish
-2. s7 c, hint 3, en: "Consider how the waves are in phase relative to each other" presupposes they are in phase, while the answer is that they arrive in antiphase. Replace with "Consider what the phase relation of the two waves is at $\text{P}$ and what that means for the loudness of the sound." (fi: "millä tavalla aallot ovat vaiheessa toisiinsa nähden" is neutral.)
+None.
 
 ## Checked
-- Every other hint says the same physics as fi and matches the en rubric and solution symbols: $f_\text{string}$, $f_\text{h}$, $f_\text{s}$, $v_\text{L}$, $v_\text{H}$, $t_\text{max}$, $t_\text{min}$, $T^2 = kl + b$, upward-positive Newton II, $f = \dfrac{nv}{\Delta s}$.
-- Recomputed values: $\bar t = 0.48\,\text{s}$, $\Delta t = 0.07\,\text{s}$, $15\,{}^\circ\text{C}\cdot 0.6\,\text{m/s} \approx 2.6\,\%$, $b/k \approx 1.4\,\text{cm}$, $3.4\,\text{m}$ and $17\,\text{cm}$ against $2\,\text{m}$, $80\,\text{dB}$, $686.8\,\text{Hz}$, $12.5$ and $25\,\text{Hz}$, $1\,\text{N/m} = 1\,\text{kg/s}^2$; all agree with answers and solutions.
-- No hint states a final answer; units in LaTeX with decimal point.
+- s4 c hint 2 now uses t_allowed, matching the rubric and solution (no t_perm left; 'permitted' remains only as an ordinary word). s1 a hint 1 antinode definition correct; s3 b hint 2, s5 c hint 1, s7 c hint 3 reworded as in fi (s7 c no longer presupposes in phase). Same physics as fi, decimal point, no answer given.
+- s4 c recomputed: $n = (100 - 85)/3 = 5$, $t = 8\,\text{h}/2^5 = 15\,\text{min}$; the hint states only the relation, not the result.

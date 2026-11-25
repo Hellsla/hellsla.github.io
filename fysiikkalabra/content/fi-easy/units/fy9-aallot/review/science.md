@@ -1,16 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: dce457b5292d0146
+CONTENT-HASH: 9c23ec6ec989bf25
 
-Delta review (work queue 11c): the new `hints` of all 31 written parts in `sovella/tasks.json`, checked against each part's rubric, answer and `sovella/solutions.md`, and against the fi hints.
+Delta review round 2 (work queue 11c): the hint fixes of commit a0849c11 after round 1, judged against each part's rubric, answer and `sovella/solutions.md`; the other hints are unchanged since the round-1 check of all 31 parts.
 
 ## Blocking
 None.
 
 ## Polish
-None that is scientific.
+None.
 
 ## Checked
-- Every hint says the same physics as the fi hint for the same part, split into shorter sentences; no relation, condition or value is dropped (s1 d still says the end nodes and $f_n = n f_1$; s2 c keeps both Doppler steps; s3 c keeps "read from the line, not the data points"; s5 c keeps the $15\,{}^\circ\text{C}$ percentage step). The added glosses (solmu, nyrkkisääntö) are physically right.
-- Symbols match the fi-easy rubric and solutions: $f_\text{kieli}$, $f_\text{h}$, $f_\text{s}$, $v_\text{L}$, $v_\text{H}$, $t_\text{sall}$, $t_\text{max}$, $t_\text{min}$, $T^2 = kl + b$.
-- Recomputed values as in the fi report ($\bar t = 0{,}48\,\text{s}$, $\Delta t = 0{,}07\,\text{s}$, $\approx 2{,}6\,\%$, $b/k \approx 1{,}4\,\text{cm}$, $3{,}4\,\text{m}$ and $17\,\text{cm}$, $80\,\text{dB}$, $686{,}8\,\text{Hz}$, $12{,}5$ and $25\,\text{Hz}$); all agree with answers and solutions.
-- No hint states a final answer; units in LaTeX with decimal comma.
+- s1 a hint 1 adds the antinode definition (where the string moves the most: correct), s3 b hint 2, s5 c hint 1 and s7 c hint 3 reworded as in fi; same physics as fi, no answer given.
+- s4 c recomputed: $n = (100 - 85)/3 = 5$, $t = 8\,\text{h}/2^5 = 15\,\text{min}$; the hint states only the relation, not the result.
