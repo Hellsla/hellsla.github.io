@@ -1,22 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 92213781ef328030
+CONTENT-HASH: 1896009dee3b9458
 
-Delta review: only the new `hints` in `sovella/tasks.json` (diff against origin/main). I checked each hint against the part, its rubric, `sovella/solutions.md`, the answer and the Finnish hints. The numbers were recomputed in one script: s1 $1331\,\text{N}$, $\tan 14^\circ = 0.249 < 0.35$ and $19.3^\circ$; s2 $118.5\,\text{N}$, $296.2\,\text{N}$ and ratio $0.40$; s3 $\mu = 0.0285$, $1/m' = 0.740\,\tfrac{1}{\text{kg}}$ and intercept $0.38\,\text{N}$; s5 $\tan 22.5^\circ = 0.414$; s6 $10.09\,\text{m/s}$ and $64.8\,\text{m}$; s7 $623\,\text{N}$, $48.3\,\text{m/s}$ and $\sqrt{100/75}$; s8 $-1.143\,\text{m/s}^2$, $0.857\,\text{m/s}^2$ and $12.23\,\text{m}$. All agree with the solutions.
+Delta review, round 2: the `hints` in `sovella/tasks.json` (diff against origin/main), focusing on the round-1 edits (`git diff HEAD~1`). A script confirmed that only `hints` differ from origin/main (30 parts). The round-1 numbers still hold; I re-checked $\alpha_0 = 19.3^\circ$ and the s3 values ($m' = 1.351\,\text{kg}$, $F_\mu = 0.238\,\text{N}$, intercept $0.38\,\text{N}$).
 
 ## Blocking
 None.
 
 ## Polish
-
-1. **s4 c, hint 2.** Hint 1 asks for every body that interacts with the car, but hint 2 leaves out the weight (from the Earth), which the solution lists first. Start: "The Earth gives the weight; the road gives the normal force, …"
-2. **s6 c, hint 3.** "the air resistance stays about the same" is a bit stronger than the solution ("slightly larger"). Suggest: "…when the mass grows a lot but the air resistance only a little?"
+None new.
 
 ## Checked
-- s3 d, hint 3 is correct here ("divide the friction force by it"). The fi and fi-easy versions invert it and fail on that point.
-- Symbols and sign conventions match the en solutions: $v_\text{t}$ for terminal velocity, as in the en solution; down positive in s7; up positive in s8.
-- Friction terms: sliding friction; static friction "at most $\mu_0 N$".
-- The two equal forces of the light rope (s2 a) are not called a third-law pair.
-- The physics is the same as in fi, part by part.
-- No hint gives a final answer.
-- Numbers with units are LaTeX with decimal points.
-- Hashes are the same at the start and the end.
+1. **s3 b, hint 3.** The reworded sentence ("two points on the line that are far apart") has the same physics. The slope gives $1/m$, and the intercept on the force axis gives $F_\mu$.
+2. **s4 c, hint 2.** It now starts with "The Earth gives the weight." The list is complete and matches the solution and fi.
+3. **s5 b, hint 3.** "Decide, with a justification, how to treat it" leaves the treatment of measurement 5 to the student. This is consistent with the rubric.
+4. **s6 c, hint 3.** "grows only a little" matches the solution ("slightly larger").
+5. **s8 d, hint 2.** "using the speed (the magnitude of the velocity)" is correct for the distance travelled. It matches $12.23\,\text{m}$ in the solution.
+6. **s3 d, hint 3** is still correct ("divide the friction force by it"), and fi and fi-easy now say the same.
+7. No hint gives a final answer. Decimal points, LaTeX. The hashes are the same at the start and the end.

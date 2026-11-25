@@ -1,21 +1,18 @@
-VERDICT: FAIL
-CONTENT-HASH: 7d9f47e38af3bb24
+VERDICT: PASS
+CONTENT-HASH: 85343cad525f8a4a
 
-Delta review: only the new `hints` in `sovella/tasks.json` (diff against origin/main). I checked each hint against the part, its rubric, `sovella/solutions.md`, the answer and the Finnish hints. The numbers were recomputed in one script (same values as in the fi report: s1 $1331\,\text{N}$ and $19{,}3^\circ$; s2 $118{,}5\,\text{N}$, $296{,}2\,\text{N}$ and $0{,}40$; s3 $\mu = 0{,}0285$; s5 $0{,}414$; s6 $10{,}09\,\text{m/s}$ and $64{,}8\,\text{m}$; s7 $623\,\text{N}$ and $48{,}3\,\text{m/s}$; s8 $-1{,}143\,\text{m/s}^2$, $0{,}857\,\text{m/s}^2$ and $12{,}23\,\text{m}$). They agree with the solutions. The physics is the same as in fi: each sentence was split, and nothing was dropped.
+Delta review, round 2: the `hints` in `sovella/tasks.json` (diff against origin/main), focusing on the round-1 fixes (`git diff HEAD~1`). A script confirmed that only `hints` differ from origin/main (30 parts). The round-1 numbers still hold; I re-checked $\alpha_0 = 19{,}3^\circ$ and the s3 values ($m' = 1{,}351\,\text{kg}$, $F_\mu = 0{,}238\,\text{N}$, intercept $0{,}38\,\text{N}$).
 
 ## Blocking
-
-1. **s3 d, hint 3 (A, an error).** "Laske $N$ vaunun massasta (b-kohta) ja jaa kitkavoimalla" divides $N$ by the friction force ($N/F_\mu \approx 35$). This is the inverse of $\mu = F_\mu/N$ in hint 2, the task and the solution. The fi hint has the same error; en is right. Replacement: "Laske $N$ vaunun massasta (b-kohta). Jaa kitkavoima tällä tukivoimalla. Lisäpunnuksen jälkeen massa on $m + 0{,}500\,\text{kg}$. Laske uusi $\tfrac{1}{m'}$ ja uusi leikkauskohta $\mu m' g$. Vertaa vanhoihin."
+None.
 
 ## Polish
-
-2. **s4 c, hint 2.** The weight (from the Earth) is missing from the list of the bodies that act on the car. The solution names it first. Start: "Maa antaa painon. Tie antaa tukivoiman, …"
-3. **s6 c, hint 3.** "ilmanvastus pysyy suunnilleen samana": the solution says the father's air resistance is a little larger. Suggest: "…kun massa kasvaa paljon mutta ilmanvastus vain vähän?"
-4. **s1 a, hint 3; s1 b, hint 2.** In fi the word is "komponentti" and here it is "painon osa". That is acceptable. Saying once "painon osa eli komponentti" would tie the hint to the term the solution uses.
+1. **s1 a, hint 3; s1 b, hint 2 (carried over from round 1, optional).** "painon osa" is fine. Saying once "painon osa eli komponentti" would tie it to the solution's term.
 
 ## Checked
-- Models, symbols ($T$, $T_1$, $T_2$, $F_\mu$, $F_\text{v}$, $v_\text{r}$, $k$) and sign conventions (down positive in s7, up positive in s8) are the same as in the solutions.
-- Lepokitka is described as "enintään $\mu_0 N$", following the house rule.
-- No hint gives a final answer.
-- Numbers with units are LaTeX with decimal commas.
-- Hashes are the same at the start and the end.
+1. **s3 d, hint 3 (round-1 Blocking A): fixed.** "jaa kitkavoima sillä" gives $\mu = F_\mu/N$, the same as fi, en, hint 2 and the solution.
+2. **s1 c, hints 2–3.** The new explanations are correct physics. "Lepokitka (kitka, joka pitää kappaleen paikallaan)" fits a body at rest, and the hint keeps "enintään $\mu_0 N$". "Rajakulma (pienimmällä kulmalla, jolla vene lähtee liukumaan)" is the threshold where $\tan\alpha_0 = \mu_0$. It does not give the value $19{,}3^\circ$.
+3. **s1 a, hint 3.** "yhtä suuret ja vastakkaiset" is correct for constant velocity.
+4. **s4 c, hint 2.** It now includes the weight from the Earth. The list is complete and matches the solution and fi.
+5. **s6 c, hint 3.** "ilmanvastus kasvaa vain vähän" matches the solution and fi.
+6. The physics is the same as in fi. No hint gives a final answer. Decimal commas, LaTeX. The hashes are the same at the start and the end.
