@@ -229,7 +229,7 @@ def page_body(T, index, course_page, lang=None, mini=None):
     """The coach page: heading, the next tasks, the competency areas and the data row, filled by templates/valmentaja.js; without the
     script it says so and links to the lessons and the task mixer (plan 7.3)."""
     return (f'<h1>{T("coach.title")}</h1>'
-            f'<div class="coach" id="fy9-coach" data-t="{ui_json(T)}" data-diag="fy9-koe.html">'
+            f'<div class="coach" id="fy9-coach" data-t="{ui_json(T)}" data-diag="fy9-koe.html#testi-ohje">'
             f'<noscript><p class="notice" role="note">{T("coach.nojs")}</p></noscript>'
             f'<section aria-labelledby="coach-next-h"><h2 id="coach-next-h">{T("coach.next")}</h2><div id="coach-recs"></div>'
             f'<p class="coach-free"><a href="yo-sekoitin.html">{T("coach.free")}</a> · <a href="{course_page}">{T("site.back_to_course", course="FY9")}</a></p></section>'
