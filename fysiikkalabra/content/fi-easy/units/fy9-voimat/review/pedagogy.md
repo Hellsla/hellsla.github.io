@@ -1,10 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 7d9f47e38af3bb24
+CONTENT-HASH: 85343cad525f8a4a
 
-Polish only (no blocking):
-1. s1 a ja s5 a (piirto), hint 2: sama kuin fi, luettelevat voimat ja suunnat. Käytä fi:n korvausta lyhyinä lauseina: "Mitkä asiat koskettavat venettä? Mikä voima on kohtisuoraan pintaa vasten?"
-2. s5 a hint 3: pituussuhde sanellaan; muuta kysymykseksi.
-3. s3 hint 2 ja 3: kuten fi (kohdat 3–4); johtopäätöksen laajuus ja poikkeava arvo paljastuvat.
-4. "Rajakulma" ja "lepokitka" vaativat selityksen ensimmäisellä esiintymällä hinteissä (NOTES.md §12); lisää esim. "rajakulma (kulma, jossa kappale juuri alkaa liukua)".
+Round 2 (delta on hints only).
 
-Lauseet ovat lyhyempiä kuin fi:ssä ja fysiikka säilyy; tikapuut toimivat.
+Blocking
+- None.
+
+Polish
+1. s4 c, hint 2: naming the weight makes one rubric point (weight in the diagram) free. Accepted: the hint lists the interacting bodies and forces without directions, lengths or the net-force relation, which hint 3 and the student still have to supply.
+2. s6 c, hint 3: "air resistance grows only a little" nudges the conclusion, but the part's answer (mass cancels in the model, air resistance matters more for a light body) still has to be reasoned; the hint 1-2 ladder is unchanged.
+
+Checked
+- s3 d hint 3 ($ from the cart mass, divide the friction force by it): the intermediate step is kept, the final $\mu$ is not stated; the referent of the pronoun is clear.
+- s4 c hint 2, s6 c hint 3: ladder holds (guiding question, relation, one step).
+- Wording tweaks in s5 a, s3 b, s8 d (and the other changed hints) keep the meaning and give nothing away.
+- fi-easy s1 a hint 3 ("yhtä suuret ja vastakkaiset") and s1 c hints 2-3: the explanations of lepokitka and rajakulma are short, in brackets and keep all the physics; the ladder holds and the limiting-angle result is still left for the student.

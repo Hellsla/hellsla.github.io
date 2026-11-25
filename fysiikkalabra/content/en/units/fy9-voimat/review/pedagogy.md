@@ -1,10 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 92213781ef328030
+CONTENT-HASH: 1896009dee3b9458
 
-Polish only (no blocking):
-1. s1 a (drawing), hint 2: lists all four forces and their directions, making the diagram rubric points almost free. Replace: "Think about which bodies touch the boat and what pulls it from a distance. Decide each force's direction: which is perpendicular to the surface, which opposes the motion?"
-2. s5 a (car diagram), hint 2 lists the forces; hint 3 "draw the forward force longer" dictates the length relation. Rephrase as a question: "Which force is larger when the car accelerates?"
-3. s3 (error evaluation), hint 3 "does it apply only to the measured surfaces?" dictates the flaw; replace: "For which situations is the conclusion written, and what does the measurement support?"
-4. s3 hint 2 "one value differs from the others" reveals the outlier; replace: "Compare the measured angles with each other: what do you notice, and how does the report treat it?"
+Round 2 (delta on hints only).
 
-Otherwise the ladder works (question, relation, intermediate step; no final answers). English matches the Finnish physics.
+Blocking
+- None.
+
+Polish
+1. s4 c, hint 2: naming the weight makes one rubric point (weight in the diagram) free. Accepted: the hint lists the interacting bodies and forces without directions, lengths or the net-force relation, which hint 3 and the student still have to supply.
+2. s6 c, hint 3: "air resistance grows only a little" nudges the conclusion, but the part's answer (mass cancels in the model, air resistance matters more for a light body) still has to be reasoned; the hint 1-2 ladder is unchanged.
+
+Checked
+- s3 d hint 3 ($ from the cart mass, divide the friction force by it): the intermediate step is kept, the final $\mu$ is not stated; the referent of the pronoun is clear.
+- s4 c hint 2, s6 c hint 3: ladder holds (guiding question, relation, one step).
+- Wording tweaks in s5 a, s3 b, s8 d (and the other changed hints) keep the meaning and give nothing away.
+- en tweaks (s5 a hint 3, s3 b hint 3 "Decide, with a justification, how to treat it", s8 d hint 2 "speed (the magnitude of the velocity)") read more clearly and keep the ladder.
