@@ -1,10 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: ffea1ab4ffc929bb
+CONTENT-HASH: 67c4c38be19a1232
 
-Blocking: none.
+## Blocking
+none
 
-Polish:
-1. [Polish] kitka-osa (nollavirhe), vihje 3 (fi-easy): "Vertaa ero oikeaan arvoon prosentteina." Korvaa: "Vertaa eroa oikeaan arvoon prosentteina."
-2. [Polish] heiluri c, vihje 1 (fi-easy): "Mihin heilurin mallissa $l$ tarkoittaa pituutta?" Korvaa: "Mitä $l$ tarkoittaa heilurin mallissa? Mistä pisteestä mihin ryhmä mittasi pituuden?"
+## Polish
+none
 
-Checked: Tehtävät cards at 390 and 1280 px (Playwright), hints closed (stacked list at 390) and open; no page overflow, no formula wider than its hint box; all 15 parts' hint texts read.
+## Checked
+Round 2 delta: the changed hints in sovella/tasks.json (fi-easy) read for language and typography (units, \text{J/(kg}\cdot\text{K)}, decimal comma/point, thin spaces, colons in ratios); build rebuilt without errors. Round 1 polish items confirmed applied; the 390/1280 px layout from round 1 is unchanged because only hint text changed and the formulas are shorter or equal in length.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

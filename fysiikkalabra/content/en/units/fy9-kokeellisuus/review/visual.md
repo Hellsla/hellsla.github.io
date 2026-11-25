@@ -1,11 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: e7dfc7df1596dbe0
+CONTENT-HASH: 886b665ccf8c816c
 
-Blocking: none.
+## Blocking
+none
 
-Polish:
-1. [Polish] shoe-grip plan, hint 2 (en): "For static friction $F_{\mu 0} \le \mu_0 N$." has no verb. Use: "For static friction, $F_{\mu 0} \le \mu_0 N$ holds."
-2. [Polish] oil graph part, hint 3 (en): "solve $c$ from it" -> "solve for $c$ from it"; "Why is it not suitable to use the whole data" -> "Why should you not use all the data".
-3. [Polish] pendulum diameter part, hint 1 (en): "Which length does $l$ mean in the model of the pendulum?" -> "What does $l$ stand for in the pendulum model?"
+## Polish
+none
 
-Checked: Tehtävät cards at 390 and 1280 px (Playwright), hints closed (stacked list at 390) and open; no page overflow, no formula wider than its hint box; all 15 parts' hint texts read.
+## Checked
+Round 2 delta: the changed hints in sovella/tasks.json (en) read for language and typography (units, \text{J/(kg}\cdot\text{K)}, decimal comma/point, thin spaces, colons in ratios); build rebuilt without errors. Round 1 polish items confirmed applied; the 390/1280 px layout from round 1 is unchanged because only hint text changed and the formulas are shorter or equal in length.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

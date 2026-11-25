@@ -1,10 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: dbd4509c7fbbbf79
+CONTENT-HASH: 3b228bb03c7f5970
 
-Blocking: none.
+## Blocking
+none
 
-Polish:
-1. [Polish] s-heiluri c, vihje 1 (fi): "Mihin heilurin mallissa $l$ tarkoittaa pituutta?" on kömpelö. Korvaa: "Mitä $l$ tarkoittaa heilurin mallissa? Mistä pisteestä mihin ryhmä mittasi pituuden?"
-2. [Polish] Lämpöenergia-osa, vihje 3 (fi): "Muunna … jouleiksi kilogrammaa ja kelviniä kohti" on raskas; "$2{,}0\,\text{kJ/(kg}\cdot\text{K)}$ yksikköön $\text{J/(kg}\cdot\text{K)}$".
+## Polish
+none
 
-Checked: Tehtävät cards at 390 and 1280 px (Playwright), hints closed (stacked list at 390) and open; no page overflow, no formula wider than its hint box; all 15 parts' hint texts read.
+## Checked
+Round 2 delta: the changed hints in sovella/tasks.json (fi) read for language and typography (units, \text{J/(kg}\cdot\text{K)}, decimal comma/point, thin spaces, colons in ratios); build rebuilt without errors. Round 1 polish items confirmed applied; the 390/1280 px layout from round 1 is unchanged because only hint text changed and the formulas are shorter or equal in length.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5
