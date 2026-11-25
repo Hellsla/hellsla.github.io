@@ -1,6 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: eaa8e53380b1d3b8
-SCOPE: delta (old-content fixes, git diff origin/main)
+CONTENT-HASH: 7d9f47e38af3bb24
 
-Checked
-1. Count (8 tasks, seven homework) and points (131 = 20 + 5 x 15 + 17 + 19) agree; mu_0 = 0.414 matches tan 22.5 degrees and tasks.json 0.4142. The fi, en and fi-easy versions carry the same changes with the same meaning.
+Polish only (no blocking):
+1. s1 a ja s5 a (piirto), hint 2: sama kuin fi, luettelevat voimat ja suunnat. Käytä fi:n korvausta lyhyinä lauseina: "Mitkä asiat koskettavat venettä? Mikä voima on kohtisuoraan pintaa vasten?"
+2. s5 a hint 3: pituussuhde sanellaan; muuta kysymykseksi.
+3. s3 hint 2 ja 3: kuten fi (kohdat 3–4); johtopäätöksen laajuus ja poikkeava arvo paljastuvat.
+4. "Rajakulma" ja "lepokitka" vaativat selityksen ensimmäisellä esiintymällä hinteissä (NOTES.md §12); lisää esim. "rajakulma (kulma, jossa kappale juuri alkaa liukua)".
+
+Lauseet ovat lyhyempiä kuin fi:ssä ja fysiikka säilyy; tikapuut toimivat.
