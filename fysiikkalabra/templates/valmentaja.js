@@ -470,6 +470,10 @@
   const data = () => V.read() || { v: 1, log: [] };
   const rank = (d) => { const e = evidence(d.log, index); return e.length || Object.keys(d.cells || {}).length; };
   const minutes = (recs) => recs.reduce((s, r) => s + (r.task.min || 0), 0);
+  // a title the same in several chapters ("1. Käsite") gets the chapter's name in front of it (PR 7c)
+  const spread = new Map();
+  for (const t of index.tasks) { if (!spread.has(t.title)) spread.set(t.title, new Set()); spread.get(t.title).add(t.unit); }
+  const named = (t) => { const u = index.units.find((x) => x.id === t.unit); return u && spread.get(t.title).size >= 3 ? u.title + ': ' + t.title : t.title; };
   const where = (t) => { const u = index.units.find((x) => x.id === t.unit); return u ? (u.n ? fmt(T.chapter, { n: u.n }) + ' ' : '') + u.title : ''; };
   const reason = (r) => (r.key === 'stale' ? fmt(T.why_stale, { n: r.days }) : T['why_' + r.key] || '');
   const SYMBOL = { none: '○', few: '◔', practise: '▲', growing: '◑', strong: '●', strongdue: '●' };
@@ -504,7 +508,7 @@
       } else {
         const ol = el('ol', 'coach-recs');
         for (const r of res.recs) {
-          const li = el('li', 'coach-rec'), a = el('a', 'coach-task', r.task.title); a.href = r.task.href;
+          const li = el('li', 'coach-rec'), a = el('a', 'coach-task', named(r.task)); a.href = r.task.href;
           li.append(a, el('span', 'coach-where', where(r.task)), el('span', 'coach-min', fmt(T.min, { n: r.task.min })), el('span', 'coach-why', reason(r.reason)));
           ol.append(li);
         }
@@ -619,23 +623,51 @@
       const parts = [form];
       if (p) {
         const res = path(index, d, p, t0, { goal: st.goal, courses: st.courses }), names = json2(miniBox && miniBox.dataset.mini) || {};
-        const horizon = num(t0) + 7, week = res.days.filter((x) => x.n < horizon), days = week.length ? week : res.days.slice(0, 1);
-        if (!days.length) parts.push(el('p', 'coach-note', T.path_over));
+        const horizon = num(t0) + 7, week = res.days.filter((x) => x.n < horizon), wk = week.length ? week : res.days.slice(0, 1);
+        if (!res.days.length) parts.push(el('p', 'coach-note', T.path_over));
         else {
-          const ol = el('ol', 'coach-pathdays');
-          for (const x of days) {
-            const li = el('li', 'coach-pathday'), h = el('p', 'coach-pathdate');
-            h.append(el('strong', '', new Date(x.n * DAY).toLocaleDateString(lang, { weekday: 'short', day: 'numeric', month: 'numeric', timeZone: 'UTC' })));
-            if (x.date === t0) h.append(el('span', 'coach-today', T.path_today));
-            h.append(el('span', 'coach-min', fmt(T.min, { n: x.minutes })));
-            const ul = el('ul', 'coach-pathitems');
+          const doneOn = (date) => new Set((d.log || []).filter((r) => dayOf(r[0]) === date).map((r) => r[1]));   // what the log already holds for that day: nothing new is stored
+          const dayItem = (x) => {
+            const li = el('li', 'coach-pathday'), det = el('details'), sum = el('summary'), done = doneOn(x.date);
+            const chapters = []; for (const it of x.items) { const u = it.task && index.units.find((y) => y.id === it.task.unit); if (u && u.n && !chapters.includes(u.n)) chapters.push(u.n); }
+            sum.append(el('strong', '', new Date(x.n * DAY).toLocaleDateString(lang, { weekday: 'short', day: 'numeric', month: 'numeric', timeZone: 'UTC' })));
+            if (x.date === t0) sum.append(el('span', 'coach-today', T.path_today));
+            sum.append(el('span', 'coach-min', fmt(T.min, { n: x.minutes })));
+            if (chapters.length) sum.append(el('span', 'coach-chapters', chapters.length === 1 ? fmt(T.chapter, { n: chapters[0] }) : fmt(T.path_chapters, { list: chapters.join(', ') })));
+            det.append(sum); det.open = x.date === t0;
+            const ul = el('ul', 'coach-pathitems'), groups = new Map();
             for (const it of x.items) {
-              const q = el('li');
-              if (it.mini) { const a = el('a', 'coach-task', it.mini.kind === 'exam' ? T.mini_exam : names[it.mini.id] || it.mini.id); a.href = it.mini.href; q.append(a, el('span', 'coach-min', fmt(T.mini_item, { min: it.mini.minutes, pts: it.mini.points }))); }
-              else { const a = el('a', 'coach-task', it.task.title); a.href = it.task.href; q.append(a, el('span', 'coach-where', where(it.task)), el('span', 'coach-min', fmt(T.min, { n: it.task.min }))); }
-              ul.append(q);
+              const key = it.task ? it.task.unit : '';
+              if (!groups.has(key)) groups.set(key, []);
+              groups.get(key).push(it);
             }
-            li.append(h, ul); ol.append(li);
+            for (const [unitId, its] of groups) {
+              const g = el('li', 'coach-pathgroup'), u = index.units.find((y) => y.id === unitId), gl = el('ul', 'coach-pathtasks');
+              if (its[0].task && u) g.append(el('p', 'coach-where', (u.n ? fmt(T.chapter, { n: u.n }) + ' ' : '') + u.title));
+              for (const it of its) {
+                const q = el('li');
+                if (it.mini) { const a = el('a', 'coach-task', it.mini.kind === 'exam' ? T.mini_exam : names[it.mini.id] || it.mini.id); a.href = it.mini.href; q.append(a, el('span', 'coach-min', fmt(T.mini_item, { min: it.mini.minutes, pts: it.mini.points }))); }
+                else {
+                  const a = el('a', 'coach-task', named(it.task)); a.href = it.task.href; q.append(a, el('span', 'coach-min', fmt(T.min, { n: it.task.min })));
+                  if (done.has(it.task.id)) q.append(el('span', 'coach-done', T.path_done));
+                }
+                gl.append(q);
+              }
+              g.append(gl); ul.append(g);
+            }
+            det.append(ul); li.append(det); return li;
+          };
+          const ol = el('ol', 'coach-pathdays'), all = el('button', 'coach-pathall', T.path_all);
+          all.type = 'button'; all.setAttribute('aria-expanded', 'false');
+          const fill = (xs, open) => { ol.replaceChildren(...xs.map(dayItem)); if (open) for (const dt of ol.querySelectorAll('details')) dt.open = true; };
+          fill(wk, false);
+          if (res.days.length > wk.length || wk.length > 1) {
+            all.addEventListener('click', () => {
+              const on = all.getAttribute('aria-expanded') !== 'true';
+              all.setAttribute('aria-expanded', String(on)); all.textContent = on ? T.path_one : T.path_all;
+              fill(on ? res.days : wk, on);
+            });
+            parts.push(all);
           }
           parts.push(ol);
         }
