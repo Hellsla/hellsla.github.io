@@ -19,7 +19,7 @@
           "points": 4,
           "text": "Kuinka suurella nopeudella aalto etenee kielessä? Kuinka pitkä on perustaajuuden aallonpituus kielessä? Kuinka pitkä se on äänessä, joka lähtee kitarasta ilmaan?",
           "hints": [
-            "Ovatko kielen päät solmuja vai kupuja? Kuinka suuri osa aallonpituudesta kielen pituus on, kun kieli värähtelee perustaajuudella? (Solmu on kohta, jossa kieli ei liiku.)",
+            "Ovatko kielen päät solmuja vai kupuja? Kuinka suuri osa aallonpituudesta kielen pituus on, kun kieli värähtelee perustaajuudella? (Solmu on kohta, jossa kieli ei liiku. Kupu on kohta, jossa kieli liikkuu eniten.)",
             "Perustaajuudella kielen pituus on puolet aallonpituudesta: $\\lambda_1 = 2L$. Aallon nopeus on $v = f_1 \\lambda_1$. Ilmassa taajuus on sama, mutta aallonpituus riippuu äänen nopeudesta ilmassa.",
             "Laske ensin kielen aallonpituus $\\lambda_1$ metreinä. Sijoita se nopeuden kaavaan. Ilman aallonpituuden saat äänen nopeudesta $343\\,\\text{m/s}$ ja samasta taajuudesta."
           ],
@@ -374,7 +374,7 @@
           "text": "Esitä aineisto niin, että pisteisiin sopii suora, kun heilahdukset ovat pieniä. Perustele valintasi. Sovita sitten pisteisiin suora.",
           "hints": [
             "Miten jaksonaika riippuu pituudesta teorian mukaan? Minkä suureen pitäisi laskea, jotta pisteet olisivat suoralla?",
-            "Pienillä heilahduksilla $T = 2\\pi\\sqrt{\\dfrac{l}{g}}$. Korota yhtälö toiseen potenssiin. Katso, minkä kahden suureen välillä on suora verrannollisuus.",
+            "Pienillä heilahduksilla $T = 2\\pi\\sqrt{\\dfrac{l}{g}}$. Mitä saat, kun korotat yhtälön molemmat puolet toiseen potenssiin? Minkä kahden suureen välillä on silloin suora verrannollisuus?",
             "Laske jokaiselle mittaukselle $T = \\dfrac{t_{10}}{10}$ ja $T^2$ yksikössä $\\text{s}^2$. Piirrä $T^2$ pituuden $l$ funktiona. Sovita pisteisiin yksi suora."
           ],
           "criteria": [
@@ -698,7 +698,7 @@
           "points": 6,
           "text": "Suunnittele, miten mittausta parannetaan niin, että lämpötilan vaikutus äänen nopeuteen voidaan havaita.",
           "hints": [
-            "Mikä ryhmän mittauksessa vaikuttaa tulokseen eniten? Millä välineellä ajan voisi mitata ilman omaa reaktioaikaa?",
+            "Mikä ryhmän mittauksessa vaikuttaa tulokseen eniten? Millainen mittaus ei riippuisi ihmisen reaktiosta?",
             "Mittaa matka $s$ ja kulkuaika $t$ usealla etäisyydellä. Silloin $s = vt$. Matka–aika-kuvaajan kulmakerroin on nopeus.",
             "Käytä b-kohdan arviota nopeuden muutoksesta lämpötilan mukana. Arvioi, kuinka monta prosenttia nopeus muuttuu, kun lämpötila muuttuu $15\\,{}^\\circ\\text{C}$. Päättele, kuinka pieni ajan epävarmuuden on oltava. Mieti myös, mitä muuta on seurattava tai pidettävä samana."
           ],
@@ -996,7 +996,7 @@
           "hints": [
             "Montako aallonpituutta matkaero on? Mitä se kertoo siitä, missä vaiheessa kaiuttimien aallot ovat pisteessä $\\text{P}$?",
             "Samassa vaiheessa olevien lähteiden aallot vahvistavat toisiaan, kun $\\Delta s = n\\lambda$. Ne kumoavat toisensa, kun $\\Delta s = \\left(n + \\tfrac12\\right)\\lambda$. Tässä $n = 0, 1, 2, \\ldots$",
-            "Laske $\\dfrac{\\Delta s}{\\lambda}$ a- ja b-kohdan arvoilla. Onko tulos kokonaisluku vai puolikas? Missä vaiheessa aallot ovat toisiinsa nähden? Mitä se tarkoittaa äänen voimakkuudelle?"
+            "Laske $\\dfrac{\\Delta s}{\\lambda}$ a- ja b-kohdan arvoilla. Onko tulos kokonaisluku vai puolikas? Mitä aaltojen vaihe-ero pisteessä $\\text{P}$ tarkoittaa äänen voimakkuudelle?"
           ],
           "criteria": [
             {

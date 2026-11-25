@@ -374,7 +374,7 @@
      "text": "Esitä aineisto niin, että pisteisiin sopii suora, kun heilahdukset ovat pieniä. Perustele valintasi ja sovita pisteisiin suora.",
      "hints": [
        "Miten jaksonaika riippuu pituudesta teorian mukaan? Mikä suure pitäisi laskea, jotta riippuvuus muuttuisi suoraksi?",
-       "Pienillä heilahduksilla $T = 2\\pi\\sqrt{\\dfrac{l}{g}}$. Korota yhtälö toiseen potenssiin ja katso, minkä kahden suureen välillä on suora verrannollisuus.",
+       "Pienillä heilahduksilla $T = 2\\pi\\sqrt{\\dfrac{l}{g}}$. Mitä saat, kun korotat yhtälön molemmat puolet toiseen potenssiin? Minkä kahden suureen välillä on silloin suora verrannollisuus?",
        "Laske jokaiselle mittaukselle $T = \\dfrac{t_{10}}{10}$ ja $T^2$ yksikössä $\\text{s}^2$. Piirrä $T^2$ pituuden $l$ funktiona ja sovita pisteisiin yksi suora."
      ],
      "criteria": [
@@ -698,7 +698,7 @@
      "points": 6,
      "text": "Suunnittele, miten mittausta parannetaan niin, että lämpötilan vaikutus äänen nopeuteen voidaan havaita.",
      "hints": [
-       "Mikä ryhmän mittauksessa vaikuttaa tulokseen eniten? Millä välineellä ajan voisi mitata ilman omaa reaktioaikaa?",
+       "Mikä ryhmän mittauksessa vaikuttaa tulokseen eniten? Millainen mittaus ei riippuisi ihmisen reaktiosta?",
        "Kun mitataan matka $s$ ja kulkuaika $t$ useilla etäisyyksillä, $s = vt$: matka–aika-kuvaajan kulmakerroin on nopeus.",
        "Käytä b-kohdan arviota nopeuden muutoksesta lämpötilan mukana ja arvioi, kuinka monta prosenttia nopeus muuttuu lämpötilan muuttuessa $15\\,{}^\\circ\\text{C}$. Päättele, kuinka pieni ajan epävarmuuden on oltava. Mieti myös, mitä muuta on seurattava tai pidettävä vakiona, jotta lämpötilan vaikutus erottuu."
      ],
@@ -996,7 +996,7 @@
      "hints": [
        "Montako aallonpituutta matkaero on? Mitä se kertoo siitä, missä vaiheessa kaiuttimien aallot ovat pisteessä $\\text{P}$?",
        "Samassa vaiheessa olevien lähteiden aallot vahvistavat toisiaan, kun $\\Delta s = n\\lambda$, ja kumoavat toisensa, kun $\\Delta s = \\left(n + \\tfrac12\\right)\\lambda$. Tässä $n = 0, 1, 2, \\ldots$",
-       "Laske $\\dfrac{\\Delta s}{\\lambda}$ a- ja b-kohdan arvoilla. Onko tulos kokonaisluku vai puolikas? Mieti, millä tavalla aallot ovat vaiheessa toisiinsa nähden ja mitä se tarkoittaa äänen voimakkuudelle."
+       "Laske $\\dfrac{\\Delta s}{\\lambda}$ a- ja b-kohdan arvoilla. Onko tulos kokonaisluku vai puolikas? Mitä aaltojen vaihe-ero pisteessä $\\text{P}$ tarkoittaa äänen voimakkuudelle?"
      ],
      "criteria": [
       {
