@@ -1,9 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: f4131ce8a7b012d5
-SCOPE: delta (old-content fixes, git diff origin/main)
-Checked: fy9-aallot (fi-easy): rendered preview page at 390 and 1280 px with every details/solution open (DOM check: no page overflow, no KaTeX error, no clipped or scrolling display formula); captures review/shots/*stage-sovella-*, *stage-exercises-*, *teacher-*, intro and stage-selita/tarkista tiles, with sample tiles opened at readable size (aallot fi sovella-1280-5 and 390-6, liike en sovella-390-9, ympyraliike fi-easy sovella-390-8, energia fi teacher-1280-1); changed numbers and units diffed against the source for decimal comma/point and \, thin space.
+CONTENT-HASH: dce457b5292d0146
 
-1. Blocking: none.
-2. Typography: changed numbers and units are LaTeX with thin space, decimal comma in fi and fi-easy, decimal point in en; aligned blocks and inline formulas fit at 390 px; no layout regressions from the changed lines.
-3. Language: changed lines read naturally and consistently with the glossary terms; no wording defect found.
-4. Polish: known drawing issues (kone-kuva W arrow, kalteva.webp, geo-kuva ray, kartta label, sahkokentta formula map E vs W) are known to the teacher, not re-judged here.
+## Blocking
+(none)
+
+## Polish
+1. [Minor] All parts, fi-easy, 360 px — the three closed hint labels do not fit on one row at 360 px (and 390 px) and wrap into a column; at 1280 px they sit on one row. Reading order and tap targets are fine; no change needed.
+
+## Checked
+- Built previews (fi, fi-easy, en) of Tehtävät at 360, 390 and 1280 px: closed row of hints, all hints opened (30 hints per language): no horizontal page overflow, no KaTeX errors.
+- Display formula of the Doppler hint (task part with the bat echo, hint 2): fits at 360 px (234 of 234 px) and 1280 px, nothing clipped or scrolled.
+- Open hint boxes: spacing, labels and inline units ($343\,\text{m/s}$, decimal comma in fi and fi-easy, point in en) render correctly.
+- fi-easy and en texts read through: short sentences, "solmu" explained, same physics as fi.
+- docs/clipped-formulas: no rows added by me; long formulas are display.
+
+## Scores
+illustrations n/a · typography 5 · Finnish 5 · accessibility 4

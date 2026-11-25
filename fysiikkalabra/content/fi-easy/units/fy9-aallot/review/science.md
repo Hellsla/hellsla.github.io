@@ -1,8 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: f4131ce8a7b012d5
-SCOPE: delta (old-content fixes, git diff origin/main)
+CONTENT-HASH: dce457b5292d0146
 
-1. Blocking: none.
-2. Checked: the Doppler symbols are now v_L (source) and v_H (listener) as in unit.md, in the inquiry feedback, hints, mistake and solution, in s2 c and its rubric. Recomputed: train v_L = 340*84/1040 = 27.46 m/s (99 km/h), f0 = 517 Hz; bat echo 30.0*(346/334) = 31.08 kHz; the step v_H = v_L is stated before it is used.
-3. Checked: s7 c model answer and rubric now follow the task's stated assumption (loudness difference ignored), so complete cancellation at P is correct; lambda = 343.4/343 = 1.001 m, delta s/lambda = 0.50.
-4. Language fi-easy: the changed numbers and wording were checked to carry the same values as fi.
+Delta review (work queue 11c): the new `hints` of all 31 written parts in `sovella/tasks.json`, checked against each part's rubric, answer and `sovella/solutions.md`, and against the fi hints.
+
+## Blocking
+None.
+
+## Polish
+None that is scientific.
+
+## Checked
+- Every hint says the same physics as the fi hint for the same part, split into shorter sentences; no relation, condition or value is dropped (s1 d still says the end nodes and $f_n = n f_1$; s2 c keeps both Doppler steps; s3 c keeps "read from the line, not the data points"; s5 c keeps the $15\,{}^\circ\text{C}$ percentage step). The added glosses (solmu, nyrkkisääntö) are physically right.
+- Symbols match the fi-easy rubric and solutions: $f_\text{kieli}$, $f_\text{h}$, $f_\text{s}$, $v_\text{L}$, $v_\text{H}$, $t_\text{sall}$, $t_\text{max}$, $t_\text{min}$, $T^2 = kl + b$.
+- Recomputed values as in the fi report ($\bar t = 0{,}48\,\text{s}$, $\Delta t = 0{,}07\,\text{s}$, $\approx 2{,}6\,\%$, $b/k \approx 1{,}4\,\text{cm}$, $3{,}4\,\text{m}$ and $17\,\text{cm}$, $80\,\text{dB}$, $686{,}8\,\text{Hz}$, $12{,}5$ and $25\,\text{Hz}$); all agree with answers and solutions.
+- No hint states a final answer; units in LaTeX with decimal comma.
