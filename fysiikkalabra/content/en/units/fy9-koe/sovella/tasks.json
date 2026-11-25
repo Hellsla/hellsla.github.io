@@ -13,6 +13,11 @@
           "kind": "calc",
           "points": 3,
           "text": "How much does the potential energy of the cyclist and the bicycle increase during the climb?",
+          "hints": [
+            "Which kind of energy changes when the height increases? Which quantities affect it, and which of the numbers in the task are not among them?",
+            "In a gravitational field the change in potential energy is $\\Delta E_\\text{p} = mgh$, with the zero level at the bottom of the road and $g = 9.81\\,\\text{m/s}^2$.",
+            "Use the increase in height as $h$, not the length of the road."
+          ],
           "answer": {
             "value": 36198.9,
             "unit": "J",
@@ -40,6 +45,11 @@
           "kind": "calc",
           "points": 2,
           "text": "How large an average power is needed just to lift the cyclist and the bicycle up the hill?",
+          "hints": [
+            "Power tells how fast energy is transferred. Which energy and which time are compared here?",
+            "Average power is energy divided by time: $P = \\dfrac{\\Delta E_\\text{p}}{t}$. Use the energy of part a.",
+            "Convert the duration of the climb to seconds before substituting, because power is calculated in watts."
+          ],
           "answer": {
             "value": 134.07,
             "unit": "W",
@@ -63,6 +73,11 @@
           "kind": "calc",
           "points": 4,
           "text": "How large a mechanical power must the cyclist produce on average during the climb?",
+          "hints": [
+            "The speed is constant, so the kinetic energy does not change. What does the work of the muscles go into, then?",
+            "By conservation of energy the work of the muscles is $W = \\Delta E_\\text{k} + \\Delta E_\\text{p} + W_\\text{r}$, where $W_\\text{r} = F_\\text{r}\\,s$ is the work against the resistive forces. The power is $P = \\dfrac{W}{t}$.",
+            "The resistive force acts along the whole road, not only along the change in height. Calculate the work against it and add it to the energy of part a before dividing by the time."
+          ],
           "answer": {
             "value": 214.07,
             "unit": "W",
@@ -91,6 +106,11 @@
           "kind": "calc",
           "points": 3,
           "text": "How much energy from food does the climb use? Answer in kilojoules.",
+          "hints": [
+            "The work of the muscles is only a part of the energy obtained from food. Which quantity tells how large a part?",
+            "Efficiency is the useful share of the total energy: $\\eta = \\dfrac{W}{E}$, so $E = \\dfrac{W}{\\eta}$.",
+            "The useful part is the whole work done by the muscles during the climb. Convert the efficiency from a percentage to a decimal number before substituting."
+          ],
           "answer": {
             "value": 262.72,
             "unit": "kJ",
@@ -118,6 +138,11 @@
           "kind": "word",
           "points": 3,
           "text": "The cyclist's friend says that after the climb you can eat a bar of chocolate whose energy content is $2200\\,\\text{kJ}$ according to the wrapper, because the climb uses it up. Assess the claim.",
+          "hints": [
+            "Compare two energies: how much does the climb use, and how much does the bar contain? What must be calculated before the claim can be assessed?",
+            "Compare the energies as a ratio: $\\dfrac{E_\\text{climb}}{E_\\text{bar}}$. Also consider which assumptions of the model (constant speed, resistive force, efficiency) affect the result.",
+            "Convert both energies to the same unit and calculate what share of the energy of the bar the climb uses. Then decide whether the number supports the claim."
+          ],
           "criteria": [
             {
               "text": "The answer compares the numbers: the climb uses about $12\\,\\%$ of the energy of the bar, so the energy of the bar equals about eight climbs.",
@@ -160,6 +185,11 @@
           "kind": "word",
           "points": 2,
           "text": "Why do the students measure the time of ten periods and not of one?",
+          "hints": [
+            "Timing by hand is not exact. What happens to the relative share of the timing error when the time measured is long?",
+            "Compare the error of starting and stopping the clock with the time of one period and with the time of ten periods: which is it a larger part of?",
+            "The period is obtained from $T = \\dfrac{t_{10}}{10}$. What does this division do to the timing error?"
+          ],
           "criteria": [
             {
               "key": "error_sources",
@@ -178,6 +208,11 @@
           "kind": "graph",
           "points": 5,
           "text": "Make a graph of the data whose points lie on a straight line, and fit a line to it.",
+          "hints": [
+            "The period is not directly proportional to the length. How can the relation between $T$ and $L$ be turned into the equation of a straight line?",
+            "For a pendulum $T = 2\\pi\\sqrt{\\dfrac{l}{g}}$, where $l$ is the length of the pendulum. Rearrange it into the form $y = kl$, where $y$ is some expression of $T$. In the measurement $L$ is an estimate of $l$.",
+            "First calculate $T = \\dfrac{t_{10}}{10}$ for every measurement and then the $y$ you chose. Plot the points and fit a line so that there are points on both sides of it."
+          ],
           "criteria": [
             {
               "text": "Chooses the quantities $L$ and $T^2$ for the axes and justifies the choice with the expression for the period of a pendulum $T = 2\\pi\\sqrt{\\tfrac{l}{g}}$.",
@@ -205,6 +240,11 @@
           "kind": "calc",
           "points": 5,
           "text": "Determine the free-fall acceleration from the graph.",
+          "hints": [
+            "Which quantity of the pendulum equation does the slope of the graph correspond to, and where is $g$ in it?",
+            "For the line $y = kL + b$, $k = \\dfrac{4\\pi^2}{g}$, where $y$ is the quantity you chose in part b. The line need not pass through the origin; its slope still gives $g$.",
+            "Read two points of the line that are far apart and calculate $k = \\dfrac{\\Delta y}{\\Delta L}$. Use points of the line, not necessarily measured points."
+          ],
           "answer": {
             "value": 9.81,
             "unit": "m/s²",
@@ -242,6 +282,11 @@
           "kind": "word",
           "points": 4,
           "text": "The fitted line does not pass through the origin. Explain why, and assess whether it affects the result of part c.",
+          "hints": [
+            "From which point to which point should the length of a pendulum be measured, and to which point was it measured here?",
+            "Call the true length $l$ and the measured length $L$. Write the relation between them using the radius $r$ of the bob.",
+            "Substitute the relation into $T^2 = \\dfrac{4\\pi^2}{g}\\,l$ and compare with the line $T^2 = kL + b$: which of the numbers of the line changes and which does not?"
+          ],
           "criteria": [
             {
               "key": "graph_read",
@@ -286,6 +331,11 @@
           "kind": "word",
           "points": 5,
           "text": "Explain how the structure of the flask slows down the cooling of the tea. Deal with every way in which heat can be transferred.",
+          "hints": [
+            "Heat can be transferred in three ways. What are they, and which part of the flask affects which?",
+            "Go through conduction, convection and thermal radiation one at a time: what does each need in order to work, and which part of the flask (vacuum, mirror surface, stopper) prevents it?",
+            "Write one sentence for each way: what it needs and how the flask prevents it. Finally check whether the flask stops the transfer completely."
+          ],
           "criteria": [
             {
               "text": "Conduction: a vacuum has no particles to transfer energy by collisions from one wall to the other.",
@@ -319,6 +369,11 @@
           "kind": "word",
           "points": 3,
           "text": "The hiker notices that the tea cools more slowly in the afternoon than in the morning. Explain the observation.",
+          "hints": [
+            "What is different between morning and afternoon in the tea and its surroundings? How could it affect the transfer of energy?",
+            "The rate of energy transfer depends on the temperature difference $\\Delta T$ between the tea and the surroundings. Consider how $\\Delta T$ changes during the six hours.",
+            "Reason along the chain: temperature difference, heat flow, rate of cooling. Which way does each change as the tea cools?"
+          ],
           "criteria": [
             {
               "text": "The heat flow from the tea to the surroundings grows as the temperature difference between the tea and the surroundings grows.",
@@ -337,6 +392,11 @@
           "kind": "calc",
           "points": 3,
           "text": "Calculate the average heat flow with which energy is transferred from the tea to the surroundings during the six hours.",
+          "hints": [
+            "The heat flow tells how much energy is transferred per unit of time. How much energy does the tea give up in six hours?",
+            "The energy given up by the tea is $Q = cm\\Delta T$ and the average heat flow is $P = \\dfrac{Q}{t}$.",
+            "The change in temperature $\\Delta T$ comes from the starting and final temperatures of the tea, not from the temperature of the surroundings. Convert six hours to seconds."
+          ],
           "answer": {
             "value": 1.455,
             "unit": "W",
@@ -364,6 +424,11 @@
           "kind": "word",
           "points": 3,
           "text": "Does the vacuum flask also keep ice water cold? Justify your answer.",
+          "hints": [
+            "Which way is energy transferred when the flask holds ice water and it is warm outside?",
+            "The vacuum, the mirror surface and the stopper slow down the transfer whichever way it goes. Consider which is now warmer and which way energy moves.",
+            "Consider what happens to the energy when it arrives in water that still contains ice. Does the temperature change at once?"
+          ],
           "criteria": [
             {
               "text": "The same structures slow down the transfer of energy in both directions; now there is a net transfer of energy from the warm surroundings to the cold water.",
@@ -407,6 +472,11 @@
           "kind": "word",
           "points": 5,
           "text": "Plan an experiment with which the group can find out.",
+          "hints": [
+            "The dependence of which quantity on which is the group finding out? Which is changed and which is obtained as the result?",
+            "Efficiency compares the useful energy with the energy used. Which quantities must be measured so that both energies can be calculated, and with which of the given instruments is each measured?",
+            "Write the plan in steps so that another group could repeat it. In each step, say what is done and what is measured."
+          ],
           "criteria": [
             {
               "text": "The quantity changed is the mass of the water, for example five different amounts from the smallest mark of the kettle to the largest.",
@@ -440,6 +510,11 @@
           "kind": "calc",
           "points": 4,
           "text": "In one measurement the kettle holds $0.500\\,\\text{kg}$ of water, which warms from $15.0\\,{}^\\circ\\text{C}$ to $95.0\\,{}^\\circ\\text{C}$, and the energy meter shows $0.054\\,\\text{kWh}$. Calculate the efficiency of the kettle.",
+          "hints": [
+            "What is the useful energy and what is the energy used in this measurement, and where does each come from?",
+            "$\\eta = \\dfrac{Q}{E}$, where the energy needed to warm the water is $Q = cm\\Delta T$ and $c = 4190\\,\\tfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$.",
+            "The energy meter shows kilowatt-hours. Convert the reading to joules before dividing: $1\\,\\text{kWh} = 3.6\\cdot 10^{6}\\,\\text{J}$."
+          ],
           "answer": {
             "value": 86.2,
             "unit": "%",
@@ -473,6 +548,11 @@
           "kind": "word",
           "points": 4,
           "text": "Assess the sources of error of the experiment and say how their effect can be reduced.",
+          "hints": [
+            "Where can the energy shown by the energy meter go besides warming the water? Which measurements are the least exact?",
+            "Go through each measurement: mass, temperatures and energy. For each, estimate how large a part of the reading the uncertainty of the measurement is.",
+            "Choose three sources of error and suggest for each a measure that reduces it. Also consider whether the error affects small and large amounts of water in the same way."
+          ],
           "criteria": [
             {
               "key": "error_sources",
@@ -496,6 +576,11 @@
           "kind": "word",
           "points": 3,
           "text": "How does the group present the results, and what kind of result would show that the efficiency depends on the amount of water?",
+          "hints": [
+            "What kind of graph shows whether one quantity depends on another? What must be on the axes?",
+            "The results can be presented as a graph with the mean and the spread of each amount of water. What must a change in efficiency be compared with before it can be called real?",
+            "Describe two possible results: the efficiency stays the same, and the efficiency changes with the amount of water. In which case is the dependence shown?"
+          ],
           "criteria": [
             {
               "key": "graph_axes",
