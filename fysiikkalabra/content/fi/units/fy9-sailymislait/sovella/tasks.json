@@ -651,7 +651,7 @@
      "points": 5,
      "text": "Arvioi ryhmän johtopäätös. Mistä mittausten ero todennäköisesti johtuu?",
      "hints": [
-      "Ryhmä sanoo, että liikemäärä muuttuu lämmöksi ja ääneksi. Onko liikemäärä energian laji?",
+      "Ryhmä selittää liikemäärän vähenemisen lämmöllä ja äänellä. Onko liikemäärä energian laji?",
       "Missä kohdassa nopeus $v'$ mitattiin, ja mikä voima vaikuttaa kärryihin törmäyksen ja mittauskohdan välillä? Mitä liikemäärän säilyminen vaatii ulkoisilta voimilta?",
       "Laske liikemäärän suhteellinen muutos jokaisessa kokeessa ja katso, miten se riippuu nopeudesta. Onko ero satunnainen vai systemaattinen, ja mitä se kertoo?"
      ],

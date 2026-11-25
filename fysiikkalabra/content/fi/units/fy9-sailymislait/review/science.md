@@ -1,7 +1,7 @@
 VERDICT: PASS
-CONTENT-HASH: c59d4aa02d9158fe
+CONTENT-HASH: c7832d9b0ff96aeb
 
-Delta review, round 2: the hint fixes of the last commit (docs/fy9/vihjeet-review-brief.md).
+Delta review, round 3: s5 b hint 1 rewording (CI phrase rule, no "muuttuu lämmöksi").
 
 ## Blocking
 None.
@@ -10,7 +10,5 @@ None.
 None.
 
 ## Checked
-- s3 a, hint 3: round 1 polish item fixed ("suoran samalla puolella vai eri puolilla?"); the physics is unchanged (middle points lie below the chord, so the data are convex).
-- s1 b, hint 3: new wording "Alussa laskija on levossa ylhäällä, lopussa potentiaalienergian nollatasolla" is correct: at the start there is only potential energy, at the end only kinetic energy, and this matches solutions.md (zero level at the lower end, v = 15,0 m/s, s = 410 m).
-- s5 c, hint 1: the new question (what happens to the trolleys between the collision and the measuring point) points at friction and other external forces changing the velocities. That is correct physics, it matches the rubric and it does not give away the conclusion.
-- My round 1 recomputation still holds; no other hint changed.
+- s5 b, hint 1: "Ryhmä selittää liikemäärän vähenemisen lämmöllä ja äänellä. Onko liikemäärä energian laji?" reports the group's claim without asserting it, and the question correctly leads to the point that momentum is not a form of energy, so heat and sound cannot account for a momentum loss (that needs an external impulse, e.g. friction before the measuring point). Consistent with hint 2, the solution and the rubric.
+- No other content changed since round 2 (git diff HEAD -- content); my earlier recomputation still holds.
