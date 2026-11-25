@@ -3176,7 +3176,7 @@
     "goal_MC": "M–C: hyvä osaaminen",
     "goal_BA": "B–A: perusasiat varmoiksi",
     "courses_h": "Käydyt kurssit",
-    "courses_lead": "Valitse kurssit, jotka olet käynyt. Muiden kurssien aiheita ei ehdoteta eikä näytetä taulukossa.",
+    "courses_lead": "Valitse kurssit, jotka olet käynyt. Valmentaja ei ehdota muiden kurssien aiheita. Niitä ei myöskään näytetä taulukossa.",
     "courses_none": "Jos et valitse mitään, kaikki aiheet ovat mukana.",
     "set_note": "Valinnat tallentuvat vain tähän laitteeseen. Tavoite muuttaa vain ehdotuksia. Se ei estä mitään.",
     "nojs": "Valmentaja tarvitsee JavaScriptin.",
