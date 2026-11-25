@@ -13,7 +13,7 @@
           "text": "Plan an experiment to compare the grip of the shoes. Say what you measure and with which instrument, how the measurement is done, what you keep constant and how many measurements you make.",
           "hints": [
             "Which single number do you compare for the grip of the shoes, when the shoes have different masses? Which phenomenon tells you when a shoe is still not sliding?",
-            "For static friction $F_{\\mu 0} \\le \\mu_0 N$. How can you measure this limit with a board, a spring balance and a tilt meter?",
+            "For static friction, $F_{\\mu 0} \\le \\mu_0 N$ holds. How can you measure this limit with a board, a spring balance and a tilt meter?",
             "Write four items into the plan: what you measure and with which instrument, how the measurement is done, what you keep constant and how many repeats you make. What must stay the same between the shoe and the board?"
           ],
           "criteria": [
@@ -46,7 +46,7 @@
           "text": "How do you calculate the result from your measurements, and how do you show that the difference between the shoes is real and not variation in the measurements?",
           "hints": [
             "Which quantity do your measurements give directly, and which quantity do you calculate from them? How does one measurement become a number for grip?",
-            "When tilting, the shoe starts to slide when $mg\\sin\\alpha_0 = \\mu_0\\,mg\\cos\\alpha_0$. When pulling, the limit of static friction is $\\mu_0 N$, where $N = mg$.",
+            "When tilting, the limit of sliding is the limit of static friction, $\\mu_0 N$. Which forces are then in balance along the board? When pulling, the limit is also $\\mu_0 N$, where $N = mg$.",
             "For each shoe, calculate the mean and half the range. How do the two intervals look on a number line if the difference is real, and how if it is not?"
           ],
           "criteria": [
@@ -149,7 +149,7 @@
           "hints": [
             "What does the graph of temperature against time look like when the power is constant and the oil is stirred? Which part of the graph fits the model best?",
             "From $P\\,\\Delta t = cm\\,\\Delta T$ you get $\\dfrac{\\Delta T}{\\Delta t} = \\dfrac{P}{cm}$. Which property of the graph is $\\dfrac{\\Delta T}{\\Delta t}$?",
-            "Fit a line to the part of the $(t, T)$ points that is straight, read its slope $k$ and solve $c$ from it. Why is it not suitable to use the whole data when the oil has become warmer than its surroundings?"
+            "Fit a line to the part of the $(t, T)$ points that is straight, read its slope $k$ and solve for $c$ from it. Why should you not use all the data when the oil has become warmer than its surroundings?"
           ],
           "criteria": [
             {
@@ -177,7 +177,7 @@
           "hints": [
             "Which energy is needed to warm the oil, and what supplies it? How is the time related to these two?",
             "The energy from the heater is $Pt$ and the energy needed to warm the oil is $cm\\,\\Delta T$. When no heat is lost, $Pt = cm\\,\\Delta T$.",
-            "Convert the units first: $200\\,\\text{g}$ to kilograms and $2.0\\,\\text{kJ/(kg}\\cdot\\text{K)}$ to joules per kilogram and kelvin. Then solve the time $t$."
+            "Convert the units first: $200\\,\\text{g}$ to kilograms and $2.0\\,\\text{kJ/(kg}\\cdot\\text{K)}$ to $\\text{J/(kg}\\cdot\\text{K)}$. Then solve for the time $t$."
           ],
           "answer": {
             "value": 160,
@@ -457,7 +457,7 @@
           "points": 4,
           "text": "The line does not pass through the origin. Explain what causes the constant term, and use the graph to determine the diameter of the ball.",
           "hints": [
-            "Which length does $l$ mean in the model of the pendulum? From which point to which point did the group measure the length?",
+            "What does $l$ stand for in the pendulum model? From which point to which point did the group measure the length?",
             "If the model is $T^2 = \\dfrac{4\\pi^2}{g}(l + r)$, where $r$ is the distance that was left unmeasured, expand the brackets and compare with the equation of a line $y = kx + b$.",
             "Read the constant term $b$ from the point where the line crosses the vertical axis. Which equation gives $r$ when you know $k$ and $b$? What is the diameter once you know $r$?"
           ],
@@ -751,7 +751,7 @@
           "text": "How large must the coefficient of static friction between the tyres and the asphalt be at least for such braking to be possible? Air resistance is not taken into account.",
           "hints": [
             "Which force decelerates the bicycle on a horizontal road? Is the tyre sliding relative to the road or not, and which friction is it then?",
-            "In the horizontal direction only friction decelerates: $ma = F_{\\mu 0}$, and for static friction $F_{\\mu 0} \\le \\mu_0 N$, where $N = mg$.",
+            "In the horizontal direction only friction decelerates: $ma = F_{\\mu 0}$, and for static friction $F_{\\mu 0} \\le \\mu_0 N$.",
             "Substitute $N = mg$ and cancel the mass. What condition remains for $\\mu_0$ when you use the deceleration of part b? Think whether the asked value is an upper or a lower limit, and what the unit of the coefficient is."
           ],
           "answer": {
@@ -785,7 +785,7 @@
           "hints": [
             "The app shows all velocities too large in the same proportion. What does this do to the quantity of the horizontal axis and to the slope?",
             "If $v_\\text{app} = 1.05\\,v$, express $v_\\text{app}^2$ with $v^2$. How do the slope $k$ and the deceleration $a = \\dfrac{1}{2k}$ change?",
-            "Calculate $1.05^2$ and decide by how many percent the deceleration is too large or too small. Do the points stay on a line when every $v^2$ is multiplied by the same number?"
+            "First decide whether the slope grows or shrinks when $v^2$ grows. Then calculate by how many percent $1.05^2$ is above $1$. Do the points stay on a line?"
           ],
           "answer": {
             "value": 10,
@@ -880,7 +880,7 @@
           "hints": [
             "Which property of the graph tells the ratio of the friction force to the normal force? How can the error estimate be found from several points?",
             "For sliding friction $F_\\mu = \\mu N$, so the slope of the line in the $(N, F_\\mu)$ graph is $\\mu$. The error estimate is half the range.",
-            "Read $N$ and $F_\\mu$ of each point from the graph and calculate the ratio $F_\\mu : N$ for each. Take the mean and half the difference between the largest and the smallest ratio."
+            "Read the slope from a fitted line, or calculate the ratio $F_\\mu : N$ for each point. Estimate the error as half the range of the ratios."
           ],
           "answer": {
             "value": 0.215,
@@ -1087,7 +1087,7 @@
           "hints": [
             "Does the reading $0.04\\,\\text{mT}$ depend on the current? Is the error always in the same direction? What does such an error look like on the graph?",
             "The relative share is $\\dfrac{\\text{error}}{\\text{reading}} \\cdot 100\\,\\%$. How does a constant affect the slope $k$ of the line $B = kI + b$, and how the constant term $b$?",
-            "Read $B$ from the graph at the currents $0.50\\,\\text{A}$ and $2.5\\,\\text{A}$ and calculate the share for each. Then imagine that $0.04\\,\\text{mT}$ is added to all points: how does the line change?"
+            "Read $B$ from the graph at the currents $0.50\\,\\text{A}$ and $2.5\\,\\text{A}$ and calculate the share for each. Then imagine that $0.04\\,\\text{mT}$ is subtracted from all points: how does the line change?"
           ],
           "answer": [
             {

@@ -46,7 +46,7 @@
      "text": "Miten lasket tuloksen mittauksistasi, ja miten osoitat, että kenkien ero on todellinen eikä mittausten vaihtelua?",
      "hints": [
       "Mitä suuretta mittauksesi antavat suoraan, ja mitä suuretta niistä lasketaan? Miten yksi mittaus muuttuu pidon luvuksi?",
-      "Kallistuksessa kenkä lähtee liukumaan, kun $mg\\sin\\alpha_0 = \\mu_0\\,mg\\cos\\alpha_0$. Vedossa lepokitkan raja on $\\mu_0 N$, missä $N = mg$.",
+      "Kallistuksessa liukumisen raja on lepokitkan raja $\\mu_0 N$. Mitkä voimat ovat silloin tasapainossa lautaa pitkin? Vedossa raja on myös $\\mu_0 N$, missä $N = mg$.",
       "Laske kummallekin kengälle keskiarvo ja vaihteluvälin puolikas. Miltä kahden kengän välit näyttävät lukusuoralla, jos ero on todellinen, ja miltä, jos ei?"
      ],
      "criteria": [
@@ -177,7 +177,7 @@
      "hints": [
       "Mikä energia tarvitaan öljyn lämmittämiseen, ja mikä antaa sen? Miten aika liittyy näihin kahteen?",
       "Vastuksen energia on $Pt$ ja öljyn lämpenemiseen tarvittava energia $cm\\,\\Delta T$. Kun lämpöä ei häviä, $Pt = cm\\,\\Delta T$.",
-      "Muunna ensin yksiköt: $200\\,\\text{g}$ kilogrammoiksi ja $2{,}0\\,\\text{kJ/(kg}\\cdot\\text{K)}$ jouleiksi kilogrammaa ja kelviniä kohti. Ratkaise sitten aika $t$."
+      "Muunna ensin yksiköt: $200\\,\\text{g}$ kilogrammoiksi ja $2{,}0\\,\\text{kJ/(kg}\\cdot\\text{K)}$ yksikköön $\\text{J/(kg}\\cdot\\text{K)}$. Ratkaise sitten aika $t$."
      ],
      "answer": {
       "value": 160,
@@ -457,7 +457,7 @@
      "points": 4,
      "text": "Suora ei kulje origon kautta. Selitä, mistä vakiotermi johtuu, ja määritä kuvaajan avulla kuulan halkaisija.",
      "hints": [
-      "Mihin heilurin mallissa $l$ tarkoittaa pituutta? Mistä pisteestä mihin ryhmä mittasi pituuden?",
+      "Mitä $l$ tarkoittaa heilurin mallissa? Mistä pisteestä mihin ryhmä mittasi pituuden?",
       "Jos malli on $T^2 = \\dfrac{4\\pi^2}{g}(l + r)$, missä $r$ on mittaamatta jäänyt matka, kerro sulut auki ja vertaa suoran yhtälöön $y = kx + b$.",
       "Lue vakiotermi $b$ suoran ja pystyakselin leikkauskohdasta. Mikä yhtälö antaa $r$:n, kun tiedät $k$:n ja $b$:n? Mikä halkaisija on, kun tiedät $r$:n?"
      ],
@@ -751,7 +751,7 @@
      "text": "Kuinka suuri lepokitkakertoimen renkaiden ja asfaltin välillä on vähintään oltava, jotta tällainen jarrutus on mahdollinen? Ilmanvastusta ei oteta huomioon.",
      "hints": [
       "Mikä voima hidastaa pyörää vaakasuoralla tiellä? Liukuuko rengas tiehen nähden vai ei, ja mikä kitka silloin on kyseessä?",
-      "Vaakasuunnassa vain kitkavoima hidastaa: $ma = F_{\\mu 0}$, ja lepokitkalle $F_{\\mu 0} \\le \\mu_0 N$, missä $N = mg$.",
+      "Vaakasuunnassa vain kitkavoima hidastaa: $ma = F_{\\mu 0}$, ja lepokitkalle $F_{\\mu 0} \\le \\mu_0 N$.",
       "Sijoita $N = mg$ ja supista massa. Mikä ehto $\\mu_0$:lle jää, kun käytät b-kohdan hidastuvuutta? Mieti, onko kysytty arvo ylä- vai alaraja, ja mikä on kertoimen yksikkö."
      ],
      "answer": {
@@ -785,7 +785,7 @@
      "hints": [
       "Sovellus näyttää kaikki nopeudet samassa suhteessa liian suurina. Mitä tämä tekee kuvaajan vaaka-akselin suureelle ja kulmakertoimelle?",
       "Jos $v_\\text{sov} = 1{,}05\\,v$, ilmaise $v_\\text{sov}^2$ suureella $v^2$. Miten kulmakerroin $k$ ja hidastuvuus $a = \\dfrac{1}{2k}$ muuttuvat?",
-      "Laske $1{,}05^2$ ja päättele, kuinka monta prosenttia hidastuvuus on liian suuri tai pieni. Pysyvätkö pisteet suoralla, kun jokainen $v^2$ kerrotaan samalla luvulla?"
+      "Mieti ensin, kasvaako vai pieneneekö kulmakerroin, kun $v^2$ kasvaa. Laske sitten, kuinka monta prosenttia $1{,}05^2$ on yli $1$. Pysyvätkö pisteet suoralla?"
      ],
      "answer": {
       "value": 10,
@@ -880,7 +880,7 @@
      "hints": [
       "Mikä kuvaajan ominaisuus kertoo kitkavoiman ja tukivoiman suhteen? Miten virhearvion voi arvioida usean pisteen avulla?",
       "Liukukitkalle $F_\\mu = \\mu N$, joten $(N, F_\\mu)$-kuvaajan suoran kulmakerroin on $\\mu$. Virhearvio on vaihteluvälin puolikas.",
-      "Lue kuvaajalta jokaisen pisteen $N$ ja $F_\\mu$ ja laske suhde $F_\\mu : N$ kullekin. Ota keskiarvo ja suurimman ja pienimmän suhteen erotuksen puolikas."
+      "Lue kulmakerroin sovitetulta suoralta tai laske suhde $F_\\mu : N$ jokaiselle pisteelle. Arvioi virhe suhteiden vaihteluvälin puolikkaana."
      ],
      "answer": {
       "value": 0.215,
@@ -918,7 +918,7 @@
      "hints": [
       "Jousivaaka näyttää kuormittamattomana $0{,}3\\,\\text{N}$. Onko tämä lukema osa kitkavoimaa? Mikä osa lukemasta on oikeaa kitkavoimaa?",
       "Oikea kitkavoima on lukema miinus nollavirhe: $F_\\mu = F_\\text{lukema} - F_0$, ja $\\mu = \\dfrac{F_\\mu}{N}$. Mitä nollavirhe tekee suoralle, kun jokaista pistettä siirretään saman verran?",
-      "Laske kerroin ensin korjaamattomalla lukemalla ja sitten nollavirheellä korjatulla voimalla. Vertaa ero oikeaan arvoon prosentteina."
+      "Laske kerroin ensin korjaamattomalla lukemalla ja sitten nollavirheellä korjatulla voimalla. Vertaa eroa oikeaan arvoon prosentteina."
      ],
      "answer": [
       {
@@ -1087,7 +1087,7 @@
      "hints": [
       "Riippuuko lukema $0{,}04\\,\\text{mT}$ virrasta? Onko virhe aina samansuuntainen? Miltä tällainen virhe näyttää kuvaajalla?",
       "Suhteellinen osuus on $\\dfrac{\\text{virhe}}{\\text{lukema}} \\cdot 100\\,\\%$. Miten vakio vaikuttaa suoran $B = kI + b$ kulmakertoimeen $k$ ja miten vakiotermiin $b$?",
-      "Lue kuvaajalta $B$ virroilla $0{,}50\\,\\text{A}$ ja $2{,}5\\,\\text{A}$ ja laske osuus kummallakin. Kuvittele sitten, että kaikkiin pisteisiin lisätään $0{,}04\\,\\text{mT}$: miten suora muuttuu?"
+      "Lue kuvaajalta $B$ virroilla $0{,}50\\,\\text{A}$ ja $2{,}5\\,\\text{A}$ ja laske osuus kummallakin. Kuvittele sitten, että kaikista pisteistä vähennetään $0{,}04\\,\\text{mT}$: miten suora muuttuu?"
      ],
      "answer": [
       {
