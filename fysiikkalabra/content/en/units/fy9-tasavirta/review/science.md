@@ -1,7 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 7e70715142338d5c
-SCOPE: delta (rubric points rescaled, git diff origin/main)
+CONTENT-HASH: de045e32f94a55db
 
-1. Blocking: none.
-2. Checked: s7 parts 3+3+5+4 = 15 and s8 4+4+3+4 = 15; every part's criteria sum to its points in all eight tasks (no mismatch); unit total 20 (s3 *Torch batteries under load*) + 7x15 = 125. Removed only units_precision in s7 a and s8 a, b, c; each remaining answer step still earns a point once (s7 a: reading 0.21 A, R = U/I, 9.5 Ω; s8 a: connection, formulas, 0.30 A, check; s8 b: U_p = 6.0 V and both currents (2 p), sum check; s8 c: formulas, 1.8 W and 3.6 W, power sum). s7 d keeps its units_precision point, consistent with the stated change. Task text, answers and solutions unchanged. teacher.md: 20 p + seven others of 15 p = 125, no stale 129/16/18 left in the unit.
-3. Language en: points identical to fi part by part; teacher.md says 20 + seven others of 15 = 125 like fi.
+Delta review round 2 (work queue 11c): the hints changed since round 1 (s2 c h3, s2 d h2, s3 a h3, s4 a h3, s5 b h3, s5 c h3, s6 a h2, s7 b h2), and all other hints re-read against the fi hints, each part's rubric, answer and `sovella/solutions.md`.
+
+## Blocking
+None.
+
+## Polish
+None. Both round 1 items are fixed: s2 d, hint 2 now writes $W_\text{bat}$ as the rubric and solution do, and s6 a, hint 2 writes $W = Pt$.
+
+## Checked
+- s2 c, h3: terminal voltage during charging is the emf plus $R_\text{s} I$, agreeing with $U_\text{ch} = E + (R + R_\text{s})I$; no number given.
+- s3 a, h3; s5 b, h3; s5 c, h3; s7 b, h2: the same physics as the fi hints, correct and consistent with the solutions ($P_\text{max} \approx 0.09\,\text{W}$ in s5 b); no conclusion dictated.
+- s4 a, h3: $1\,\text{mm}^2 = 10^{-6}\,\text{m}^2$ is correct.
+- Symbols match the en rubric ($U_\text{ch}$, $W_\text{ch}$, $W_\text{bat}$, $R_\text{s}$, $I_\text{k}$); decimal points; no hint states a final answer.

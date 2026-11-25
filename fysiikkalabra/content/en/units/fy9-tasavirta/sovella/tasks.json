@@ -19,6 +19,11 @@
           "kind": "calc",
           "points": 4,
           "text": "What is the power of the heater, and what is the resistance of one strip?",
+          "hints": [
+            "What connection is formed when every strip runs from one busbar to the other? What is the same for all the strips, and how does the current divide among them?",
+            "The power of the heater follows from the voltage between the busbars and the total current: $P = UI$. The resistance of one strip follows from its voltage and current: $R_1 = \\dfrac{U}{I_1}$.",
+            "The strips are identical, so the current $I_1$ of one strip is the total current divided by the number of strips. Calculate $I_1$ first and substitute it into the expression for the resistance."
+          ],
           "answer": [
             {
               "name": "P",
@@ -61,6 +66,11 @@
           "kind": "calc",
           "points": 4,
           "text": "How thick is a strip?",
+          "hints": [
+            "The resistance of one strip is known from part a. Which dimensions of the strip and which property of the material determine the resistance?",
+            "The resistance of a conductor is $R_1 = \\rho\\,\\dfrac{l}{A}$. The cross-sectional area of the strip is the product of its width $b$ and thickness $h$: $A = b\\,h$.",
+            "First solve the cross-sectional area $A$ in symbols and calculate it. Convert the width to metres: $3.0\\,\\text{mm} = 3.0 \\cdot 10^{-3}\\,\\text{m}$. Then solve the thickness $h$."
+          ],
           "answer": {
             "value": 9.78,
             "unit": "µm",
@@ -89,6 +99,11 @@
           "kind": "word",
           "points": 3,
           "text": "One strip breaks because of a scratch. How do the current and the power of the heater change, and does the glass warm up as well as before where the strips are intact?",
+          "hints": [
+            "Which strips does the break affect? Does the voltage across the intact strips change when one branch is removed?",
+            "In a parallel connection the voltage across every branch is the same, and the total current is the sum of the branch currents: $I = I_1 + I_2 + \\dots$",
+            "First work out what happens to one intact strip. Then count how many strips still conduct current, and use $P = UI$. Finally think about which part of the glass is no longer heated."
+          ],
           "criteria": [
             {
               "text": "Justifies with the parallel connection: the broken branch does not change the voltage across the other strips, so the current and the power of the intact strips stay as they were.",
@@ -112,6 +127,11 @@
           "kind": "calc",
           "points": 4,
           "text": "The engine is switched off, and the heater runs on the battery alone. The emf of the battery is $12.6\\,\\text{V}$ and its internal resistance $0.020\\,\\Omega$. What is the power of the heater now, when all the strips are intact?",
+          "hints": [
+            "The battery has an internal resistance. Which resistances are now in series with the emf, and what is the resistance of the heater when $10$ identical strips are in parallel?",
+            "The combined resistance of equal resistors in parallel is the resistance of one divided by their number: $R = \\dfrac{R_1}{10}$. The current is $I = \\dfrac{E}{R + R_\\text{s}}$ and the power of the heater $P = RI^2$.",
+            "Calculate the resistance $R$ of the heater from the resistance of a strip in part a. Then calculate the current with the internal resistance included, and the power only last."
+          ],
           "answer": {
             "value": 136.2,
             "unit": "W",
@@ -164,6 +184,11 @@
           "kind": "calc",
           "points": 3,
           "text": "How much energy is stored in the fully charged battery? Give the answer in watt-hours and in megajoules.",
+          "hints": [
+            "The rating plate gives a voltage and a charge in ampere-hours. Which quantity do you get by multiplying the voltage by the charge?",
+            "The energy of the battery is $W = UQ$. When the voltage is in volts and the charge in ampere-hours, the product is directly in watt-hours.",
+            "Convert watt-hours to joules: $1\\,\\text{Wh} = 3600\\,\\text{J}$. Then convert joules to megajoules: $1\\,\\text{MJ} = 10^6\\,\\text{J}$."
+          ],
           "answer": {
             "value": 374.4,
             "unit": "Wh",
@@ -192,6 +217,11 @@
           "kind": "calc",
           "points": 4,
           "text": "How far can you ride on a full battery at $20\\,\\text{km/h}$?",
+          "hints": [
+            "The charge of the battery tells how long a given current can flow. How long does the battery last when an average current flows during riding?",
+            "Charge, current and time are related by $Q = It$. The distance is the product of speed and time: $s = vt$.",
+            "First solve the time $t$ from $Q = It$. When the charge is in ampere-hours and the current in amperes, the time comes out directly in hours. Then multiply it by the speed."
+          ],
           "answer": {
             "value": 27.73,
             "unit": "km",
@@ -225,6 +255,11 @@
           "kind": "calc",
           "points": 4,
           "text": "The charger is connected to the empty battery. What is the charging current at the start of charging, and what is the terminal voltage of the battery then?",
+          "hints": [
+            "Go once around the circuit. Where does the potential rise and where does it fall when the current passes through the battery during charging?",
+            "By the voltage law, the voltage of the charger equals the emf of the battery plus the voltage drops across the resistances: $U_\\text{ch} = E + (R + R_\\text{s})\\,I$.",
+            "Solve the current $I$ from this and substitute the values. The terminal voltage is the voltage measured across the terminals of the battery. During charging it is the emf plus the voltage drop $R_\\text{s} I$ across the internal resistance."
+          ],
           "answer": [
             {
               "name": "I",
@@ -267,6 +302,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Estimate the efficiency of charging when the voltage of the charger stays at $42.0\\,\\text{V}$ and a charge of $10.4\\,\\text{Ah}$ passes through the battery during charging. How much does one full charge cost?",
+          "hints": [
+            "Efficiency is the useful energy divided by the energy used. Which energy is the useful one here, and which energy is taken from the charger?",
+            "The energy given by the charger is $W_\\text{ch} = U_\\text{ch} Q$, and the efficiency is $\\eta = \\dfrac{W_\\text{bat}}{W_\\text{ch}}$, where $W_\\text{bat}$ is the energy of part a.",
+            "Calculate $W_\\text{ch}$ in watt-hours and convert it to kilowatt-hours: $1\\,\\text{kWh} = 1000\\,\\text{Wh}$. The cost is the energy taken from the charger in kilowatt-hours times the unit price."
+          ],
           "answer": {
             "value": 85.71,
             "unit": "%",
@@ -319,6 +359,11 @@
           "kind": "graph",
           "points": 5,
           "text": "Present the terminal voltage as a function of the current as a graph and fit a model to the points. Justify the choice of model.",
+          "hints": [
+            "Which quantity was adjusted in the measurement, and which one followed from it? Which axes should the graph have?",
+            "The terminal voltage of a battery is the emf minus the voltage drop $R_\\text{s} I$ across the internal resistance. Think about how this drop depends on the current and what kind of graph it produces.",
+            "Plot the points and think about what kind of line the model of hint 2 would give. How far should the line be extended, and why?"
+          ],
           "criteria": [
             {
               "key": "graph_axes",
@@ -347,6 +392,11 @@
           "kind": "calc",
           "points": 6,
           "text": "Determine the emf and the internal resistance of the group of batteries from the graph. Compare the results with the typical values of a new AA battery, which are an emf of $1.5$–$1.6\\,\\text{V}$ and an internal resistance of $0.1$–$0.3\\,\\Omega$.",
+          "hints": [
+            "When is the terminal voltage equal to the emf? What does the intercept on the vertical axis tell you, and what does the slope of the line tell you?",
+            "The equation $U = E - R_\\text{s} I$ is the equation of a line. Its intercept on the vertical axis is $E$ and its slope is $-R_\\text{s}$.",
+            "Read two points from the line that are far apart and calculate the slope $\\dfrac{\\Delta U}{\\Delta I}$. The internal resistance is its negative. For the comparison: there are three batteries in series."
+          ],
           "answer": [
             {
               "name": "E",
@@ -394,6 +444,11 @@
           "kind": "calc",
           "points": 4,
           "text": "How large a current would flow if the terminals of the holder were short-circuited? Why was this current not measured, and how reliable is the result?",
+          "hints": [
+            "What does a short circuit mean? How large is the terminal voltage when the terminals are joined directly with a wire?",
+            "In a short circuit the terminal voltage is zero: $0 = E - R_\\text{s} I_\\text{k}$. On the graph this is the point where the line crosses the horizontal axis.",
+            "Solve the short-circuit current $I_\\text{k}$ and substitute the values from part b. Then think about how far the result is from the measured currents, and what would happen to the batteries if the current were measured."
+          ],
           "answer": {
             "value": 6.31,
             "unit": "A",
@@ -427,6 +482,11 @@
           "kind": "calc",
           "points": 5,
           "text": "The resistance of the torch bulb is $3.6\\,\\Omega$ when it is lit. What power is transferred to the bulb, and what fraction of the source power $EI$ of the batteries is it?",
+          "hints": [
+            "The bulb and the internal resistance of the batteries are in the same loop. What is the total resistance of the circuit then?",
+            "The current is $I = \\dfrac{E}{R + R_\\text{s}}$, the power of the bulb is $P = RI^2$ and the source power of the batteries is $EI$. The fraction is the power of the bulb divided by the source power.",
+            "First calculate the current $I$ with the values of part b. Then calculate the power of the bulb and the source power separately and divide them."
+          ],
           "answer": {
             "value": 4.11,
             "unit": "W",
@@ -482,6 +542,11 @@
           "kind": "word",
           "points": 5,
           "text": "Assess claim 1. As an example, estimate the power that is transformed into internal energy in a $15\\,\\text{m}$ extension cord whose two conductors each have a cross-sectional area of $0.75\\,\\text{mm}^2$, when a current of $10\\,\\text{A}$ passes through the cord.",
+          "hints": [
+            "Is current used up in the cord? Does the same current flow to the device and back? What happens to electrical energy when current passes through a resistance?",
+            "The resistance of a conductor is $R = \\rho\\,\\dfrac{l}{A}$, and the power at which electrical energy is transformed in a resistance is $P = RI^2$.",
+            "The current flows along the cord to the device and back, so calculate the resistance for the total length of the conductors. Convert the area to square metres: $1\\,\\text{mm}^2 = 10^{-6}\\,\\text{m}^2$. Finally think about how the power changes when the current grows, and whether the danger depends on the length alone."
+          ],
           "criteria": [
             {
               "text": "Explains that current is not used up: the same current passes along the cord to the device and back. In the resistance of the conductors electrical energy is transformed into internal energy at the power $P = RI^2$.",
@@ -510,6 +575,11 @@
           "kind": "word",
           "points": 5,
           "text": "Assess claim 2. Use as an example a $2000\\,\\text{W}$ kettle and an $850\\,\\text{W}$ toaster on the same circuit, whose fuse is $10\\,\\text{A}$.",
+          "hints": [
+            "What voltage is across all the devices connected to the same circuit? What does it tell you about the current of one device?",
+            "The current of a device follows from its power and the voltage: $I = \\dfrac{P}{U}$. In a parallel connection the lead of the circuit carries the sum of the branch currents.",
+            "Calculate the current of each device separately and add them. Compare the sum with the value of the fuse and think about what the fuse does."
+          ],
           "criteria": [
             {
               "text": "Explains the parallel connection: the mains voltage $230\\,\\text{V}$ is across every socket and device, so the current of a device $I = \\tfrac{P}{U}$ does not depend on the other devices.",
@@ -538,6 +608,11 @@
           "kind": "word",
           "points": 5,
           "text": "Assess claim 3. Estimate the voltage between the bird's feet when the feet are $4.0\\,\\text{cm}$ apart on an aluminium conductor whose cross-sectional area is $400\\,\\text{mm}^2$ and which carries $600\\,\\text{A}$.",
+          "hints": [
+            "What determines how large a current flows through the body of the bird? Between which two points does the voltage matter?",
+            "The current in the conductor causes a voltage drop $U = RI$ across every part of it. Between the feet there is a piece of conductor whose resistance is $R = \\rho\\,\\dfrac{l}{A}$.",
+            "Convert the units: $4.0\\,\\text{cm} = 0.040\\,\\text{m}$ and $400\\,\\text{mm}^2 = 4.00 \\cdot 10^{-4}\\,\\text{m}^2$. Calculate the resistance of the piece and the voltage across it. Then think about what changes when the bird also touches the pylon: to which potential is the pylon connected?"
+          ],
           "criteria": [
             {
               "text": "Explains that the current through the bird is set by the potential difference between its feet, not by the potential of the line relative to the earth.",
@@ -587,6 +662,11 @@
           "kind": "calc",
           "points": 5,
           "text": "Calculate the resistance of measurement 1 and its error limit from the error limits of the meters.",
+          "hints": [
+            "The resistance follows from the voltage and the current. How large is the error limit of each meter when you know the percentage and the number of digits?",
+            "The error limit of a meter is $\\Delta x = p \\cdot x + n \\cdot r$, where $p$ is the percentage, $x$ the reading, $n$ the number of digits and $r$ the resolution. The resistance is $R = \\dfrac{U}{I}$.",
+            "Calculate $\\Delta U$ and $\\Delta I$ separately. Convert the current to amperes before dividing: $5.3\\,\\text{mA} = 0.0053\\,\\text{A}$. The relative error limit of the resistance is the sum of the relative error limits of the voltage and the current. Give the error limit with one significant figure."
+          ],
           "answer": {
             "value": 96.23,
             "unit": "Ω",
@@ -620,6 +700,11 @@
           "kind": "word",
           "points": 5,
           "text": "Assess the group's conclusion.",
+          "hints": [
+            "How accurate are the three resistances? Do they fit the same value within their error limits?",
+            "Calculate the error limits for measurements 2 and 3 as in part a, and write down the interval $R \\pm \\Delta R$ of each resistance. By Ohm's law the resistance $R = \\dfrac{U}{I}$ does not depend on the voltage.",
+            "Is the change in resistance larger than the error limits? If it is, what could cause it? Check with the power $P = UI$."
+          ],
           "criteria": [
             {
               "key": "uncertainty",
@@ -648,6 +733,11 @@
           "kind": "word",
           "points": 5,
           "text": "Plan how to improve the measurement so that the validity of Ohm's law can be established reliably.",
+          "hints": [
+            "What left uncertainty in the measurement? What would you do differently so that a constant resistance, or the lack of one, shows clearly?",
+            "By Ohm's law $U = RI$, so the points of the $(I, U)$ graph lie on a line through the origin whose slope is $R$. How is this tested with many points?",
+            "What would make the result more reliable: the number and spread of the points, the accuracy of the reading, the temperature of the resistor? Choose and justify."
+          ],
           "criteria": [
             {
               "text": "Several points, for example eight, are measured over a wide voltage range, an $(I, U)$ graph is drawn and a straight line is fitted; according to Ohm's law the points lie on a straight line through the origin whose slope is $R$.",
@@ -696,6 +786,11 @@
           "kind": "calc",
           "points": 5,
           "text": "How long does heating the water take when the heat losses are ignored?",
+          "hints": [
+            "Where does the electrical energy of the resistor go when the losses are ignored? How much energy is needed to heat the water?",
+            "The energy needed to heat the water is $Q = cm\\Delta T$ and the energy given by the resistor is $W = Pt$. The efficiency is practically $100\\,\\%$, so $Pt = cm\\Delta T$.",
+            "Calculate the mass of the water from the litres and the change in temperature $\\Delta T$. Solve the time $t$ and convert the seconds to hours."
+          ],
           "answer": {
             "value": 6.4,
             "unit": "h",
@@ -734,6 +829,11 @@
           "kind": "calc",
           "points": 4,
           "text": "What is the average power of the heat losses of the heater, and how much do the losses cost in a year?",
+          "hints": [
+            "The heater gives off energy to its surroundings per day. Which quantity tells how fast energy is transferred?",
+            "Power is energy divided by time: $P = \\dfrac{E}{t}$. The energy in a year is the energy per day times the number of days in a year, and the cost is the energy times the unit price.",
+            "Convert the units: $1.6\\,\\text{kWh} = 1600\\,\\text{Wh}$ and a day is $24\\,\\text{h}$. Calculate the energy lost in a year in kilowatt-hours before the cost."
+          ],
           "answer": {
             "value": 66.67,
             "unit": "W",
@@ -767,6 +867,11 @@
           "kind": "calc",
           "points": 3,
           "text": "In the evening the mains voltage is $220\\,\\text{V}$. What is the power of the resistor then, when its resistance is assumed to be the same?",
+          "hints": [
+            "Does the resistance of the resistor change when the mains voltage changes? What therefore stays the same and what changes?",
+            "The resistance follows from the rated values: $R = \\dfrac{U^2}{P}$. The power at the new voltage is $P' = \\dfrac{U'^2}{R}$.",
+            "First calculate the resistance of the resistor from the rated voltage $230\\,\\text{V}$ and the rated power. Then substitute it into the expression for the power at the new voltage $220\\,\\text{V}$."
+          ],
           "answer": {
             "value": 2.745,
             "unit": "kW",
@@ -795,6 +900,11 @@
           "kind": "calc",
           "points": 3,
           "text": "A shower uses $8.0\\,\\text{l}$ of water at $40\\,{}^\\circ\\text{C}$ per minute for $10\\,\\text{min}$. How much electrical energy does the hot water of the shower correspond to, when the water has been heated from $15\\,{}^\\circ\\text{C}$?",
+          "hints": [
+            "What happens to the water that is heated for the shower? How large is the mass of the water, and how much does its temperature rise from the cold water?",
+            "The energy needed to heat the water is $E = cm\\Delta T$. Electrical energy in kilowatt-hours follows from joules: $1\\,\\text{kWh} = 3.6 \\cdot 10^6\\,\\text{J}$.",
+            "Calculate the mass: $8.0\\,\\text{l}$ of water is used per minute for $10\\,\\text{min}$, and the mass of one litre is $1.0\\,\\text{kg}$. The change in temperature is the difference between the temperatures of the shower water and the cold water. Finally convert joules to kilowatt-hours."
+          ],
           "answer": {
             "value": 2.328,
             "unit": "kWh",
@@ -842,6 +952,11 @@
           "kind": "calc",
           "points": 3,
           "text": "Determine the resistance of the lamp when the voltage across it is $2.0\\,\\text{V}$.",
+          "hints": [
+            "Which quantity is read from the curve when the voltage is known? What relation links voltage, current and resistance at this point?",
+            "The resistance of the lamp at a point is $R = \\dfrac{U}{I}$. The slope of the tangent of the curve is not the resistance.",
+            "Find the voltage $2.0\\,\\text{V}$ on the vertical axis and read the current from the horizontal axis at the same point of the curve. Substitute the numbers into the equation."
+          ],
           "answer": {
             "value": 9.5,
             "unit": "Ω",
@@ -870,6 +985,11 @@
           "kind": "word",
           "points": 3,
           "text": "Determine the resistance of the lamp also at the voltage $3.0\\,\\text{V}$ and explain why it differs from the value in part a.",
+          "hints": [
+            "Read the current now at the voltage $3.0\\,\\text{V}$. How does this resistance differ from the value in part a? What happens to the lamp as the voltage increases?",
+            "The power $P = UI$ grows with the voltage. What does that do to the temperature of the filament?",
+            "Calculate the resistance $R = \\dfrac{U}{I}$ at both points and compare. Think about what a component that obeys Ohm's law would look like on the same graph, and compare it with the curve of the lamp."
+          ],
           "criteria": [
             {
               "key": "calculation",
@@ -888,6 +1008,11 @@
           "kind": "calc",
           "points": 5,
           "text": "The lamp is to be used at its largest permitted voltage. Besides the battery, one resistor is available. How is the resistor connected, and how large must its resistance be?",
+          "hints": [
+            "The battery would give the lamp too large a voltage. Is the resistor connected in series or in parallel with the lamp when part of the voltage has to be taken away from the lamp?",
+            "In series the current is the same everywhere and the voltages add up: $E = U_\\text{L} + U_\\text{R}$. The resistance of the resistor is $R = \\dfrac{U_\\text{R}}{I}$.",
+            "Read from the curve the current when the voltage across the lamp is $3.0\\,\\text{V}$. The same current flows in the resistor. Calculate the voltage $U_\\text{R}$ of the resistor and then its resistance."
+          ],
           "answer": {
             "value": 4.0,
             "unit": "Ω",
@@ -926,6 +1051,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Calculate the power of the lamp and of the resistor in the connection of part c. What fraction of the power of the battery is transferred in the lamp?",
+          "hints": [
+            "What does the power of the battery consist of? Which power is compared with which when you calculate the fraction transferred in the lamp?",
+            "Power is the product of voltage and current, $P = UI$. Calculate it for the lamp, the resistor and the battery, each with its own voltage.",
+            "Calculate the power of the lamp and of the resistor with the current of part c, and the power of the battery with the emf. The fraction is the power of the lamp divided by the power of the battery."
+          ],
           "answer": {
             "value": 75.0,
             "unit": "%",
@@ -980,6 +1110,11 @@
           "kind": "calc",
           "points": 4,
           "text": "How large is the current through the battery?",
+          "hints": [
+            "Look at the figure: which resistors are in the same branch, and which share the same voltage? Could you replace part of the connection with one resistor?",
+            "The combined resistance of resistors in parallel is $R_\\text{p} = \\dfrac{R_1 R_2}{R_1 + R_2}$, and in series the resistances add up: $R = R_3 + R_\\text{p}$. The current is $I = \\dfrac{E}{R}$.",
+            "First calculate the combined resistance of the $60\\,\\Omega$ and $30\\,\\Omega$ resistors in parallel. Add $20\\,\\Omega$ to it and substitute the total resistance into the expression for the current."
+          ],
           "answer": {
             "value": 0.3,
             "unit": "A",
@@ -1013,6 +1148,11 @@
           "kind": "calc",
           "points": 4,
           "text": "How large is the current in the $60\\,\\Omega$ resistor, and how large in the $30\\,\\Omega$ resistor?",
+          "hints": [
+            "Where in the circuit does the current divide in two? What is the same for the $60\\,\\Omega$ and the $30\\,\\Omega$ resistor?",
+            "The voltage $U_\\text{p}$ across resistors in parallel is the same, and the current of each is $I_k = \\dfrac{U_\\text{p}}{R_k}$. The voltage follows from the emf: $U_\\text{p} = E - I R_3$.",
+            "With the current of part a, calculate the voltage $I R_3$ of the $20\\,\\Omega$ resistor. Subtract it from the emf to get the voltage across the resistors in parallel."
+          ],
           "answer": [
             {
               "name": "I60",
@@ -1050,6 +1190,11 @@
           "kind": "calc",
           "points": 3,
           "text": "Calculate the power of the $20\\,\\Omega$ resistor and the power of the whole connection.",
+          "hints": [
+            "What current flows through the $20\\,\\Omega$ resistor, and what does the power of the whole connection consist of?",
+            "The power of a resistor is $P = RI^2$. The power of the whole connection is the power of the battery, $P = EI$, where $I$ is the current through the battery.",
+            "Calculate the power of the resistor with the current of part a. You can check the result by adding the powers of all the resistors and comparing the sum with the power of the battery."
+          ],
           "answer": [
             {
               "name": "P20",
@@ -1087,6 +1232,11 @@
           "kind": "word",
           "points": 4,
           "text": "A student removes the $30\\,\\Omega$ resistor from the connection. How does the power of the $60\\,\\Omega$ resistor change? First predict, then justify by calculation.",
+          "hints": [
+            "What happens to the total resistance and the current when one parallel branch is removed? What does that do to the voltage of the $20\\,\\Omega$ resistor?",
+            "The power of a resistor depends on its voltage: $P = \\dfrac{U^2}{R}$. After the removal the emf is divided anew between the $20\\,\\Omega$ and the $60\\,\\Omega$ resistor.",
+            "Calculate the new total resistance and current, and the voltage of the $20\\,\\Omega$ resistor. Subtract it from the emf to get the voltage of the $60\\,\\Omega$ resistor. Compare the power with the original."
+          ],
           "criteria": [
             {
               "text": "Predicts and justifies: the resistance of the circuit grows and the current falls, but the voltage across the $20\\,\\Omega$ resistor falls, so a larger voltage is left for the $60\\,\\Omega$ resistor and its power grows.",
