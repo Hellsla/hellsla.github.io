@@ -58,7 +58,7 @@ STEPS = {"calc": ["Annettu", "Kysytty", "Periaate", "Kaava", "Muunnokset", "Sijo
 GRAPH_STEP = "Kuvaajan lukeminen"
 EXTRA = ("Yleisiä virheitä", "Hyväksytään myös")
 MAX_CRITERION = 4                       # points: a criterion worth more is several criteria
-TEXT_KEYS = {"intro", "title", "text", "detail", "source_note"}   # what a translation translates in tasks.json
+TEXT_KEYS = {"intro", "title", "text", "detail", "source_note", "hints"}   # what a translation translates in tasks.json
 
 
 def esc(s): return _h.escape(str(s), quote=True)
@@ -248,6 +248,10 @@ def check(code, lang=i18n.SOURCE, seen=None):
             if kind not in KINDS: P(f"kind must be one of {KINDS}")
             if (kind == "own") != own: P("kind own belongs to a task of kind own (its student's own work), and only there")
             if not str(p.get("text", "")).strip(): P("no text")
+            hints = p.get("hints")                      # optional (work queue 11c): at most three, as on a numeric task (question, relation, intermediate step)
+            if hints is not None:
+                if is_exam(code) or kind in ("choice", "own"): P("hints belong to a written part of a Sovella or unit task, never to an exam, a choice or an own-work part")
+                elif not (isinstance(hints, list) and 1 <= len(hints) <= 3 and all(isinstance(h, str) and h.strip() for h in hints)): P("hints: a list of one to three texts (question, relation, intermediate step)")
             if kind == "choice":
                 opts, ok = p.get("options"), p.get("correct")
                 if not (isinstance(opts, list) and 3 <= len(opts) <= 5 and all(isinstance(o, str) and o.strip() for o in opts)): P("options: 3–5 texts")
@@ -449,9 +453,11 @@ def _card(task, sols, md, solution_html):
     src = task.get("source")
     import inquiry
     badge = inquiry.source_line(src, task.get("source_note"), inline)   # no tag on example or simulated data (teacher 2026-11-13)
+    import mathlayout
+    hints = lambda p: inquiry.hints_html([md(mathlayout.display_chains(h)) for h in p.get("hints") or []])   # the numeric task's hint boxes (work queue 11c)
     parts = "" if own else "<ol class=\"parts\">" + "".join(
         f'<li><span class="part-id">{p["id"]})</span> <span class="part-text">{inline(p["text"])}</span> <span class="pts">{T("practice.points", n=p["points"])}</span>{fig(p)}'
-        + (choice_html(task, p, inline) if p["kind"] == "choice" else "") + '</li>'
+        + (choice_html(task, p, inline) if p["kind"] == "choice" else "") + hints(p) + '</li>'
         for p in task["parts"]) + "</ol>"
     if own:
         reveal = (f'<details class="reveal"><summary>{T("practice.own_reveal")}</summary><div class="reveal-body">'

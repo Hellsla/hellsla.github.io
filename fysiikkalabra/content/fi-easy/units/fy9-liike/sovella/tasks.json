@@ -18,6 +18,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Kuinka kauan auton kiihdytys kaistalla kestää?",
+          "hints": [
+            "Kiihtyvyyttä ei vielä tunneta. Mitkä kolme suuretta tunnetaan? Mikä yhtälö yhdistää ne aikaan ilman kiihtyvyyttä?",
+            "Tasaisesti kiihtyvässä liikkeessä siirtymä on $(t,v)$-kuvaajan alle jäävä ala. Ala on puolisuunnikas: $\\Delta x = \\dfrac{v_0 + v}{2}\\,t$.",
+            "Muunna nopeudet ensin: $54\\,\\text{km/h} = 15\\,\\text{m/s}$ ja $108\\,\\text{km/h} = 30\\,\\text{m/s}$. Ratkaise sitten yhtälöstä aika $t$."
+          ],
           "answer": {
             "value": 12.0,
             "unit": "s",
@@ -51,6 +56,11 @@
           "kind": "calc",
           "points": 3,
           "text": "Kuinka suuri on auton kiihtyvyys?",
+          "hints": [
+            "Nyt tunnetaan nopeuden muutos ja siihen kulunut aika. Miten kiihtyvyys määritellään niiden avulla?",
+            "Kiihtyvyys on nopeuden muutos jaettuna ajalla: $a = \\dfrac{\\Delta v}{\\Delta t}$. Tasaisesti kiihtyvässä liikkeessä kiihtyvyys on koko ajan sama.",
+            "Nopeuden muutos on $\\Delta v = 30\\,\\text{m/s} - 15\\,\\text{m/s}$. Aika $\\Delta t$ on a-kohdan tulos."
+          ],
           "answer": {
             "value": 1.25,
             "unit": "m/s²",
@@ -79,6 +89,11 @@
           "kind": "calc",
           "points": 5,
           "text": "Ehtiikö rekka kiihdytyksen aikana auton rinnalle eli auton viereen? Kuinka pieni on rekan ja auton välimatka pienimmillään?",
+          "hints": [
+            "Rekka on aluksi nopeampi kuin auto, mutta auto kiihdyttää. Millä hetkellä välimatka lakkaa pienenemästä?",
+            "Kirjoita kummankin paikka samassa koordinaatistossa. Origo on kaistan alussa: $x_\\text{A} = v_0\\,t + \\tfrac{1}{2}\\,a\\,t^2$ ja $x_\\text{R} = -40\\,\\text{m} + v_\\text{R}\\,t$.",
+            "Välimatka on pienin, kun nopeudet ovat yhtä suuret: $v_0 + a\\,t = v_\\text{R}$. Rekan nopeus on $v_\\text{R} = 81\\,\\text{km/h} = 22{,}5\\,\\text{m/s}$. Laske tällä hetkellä erotus $x_\\text{A} - x_\\text{R}$."
+          ],
           "answer": {
             "value": 17.5,
             "unit": "m",
@@ -112,6 +127,11 @@
           "kind": "word",
           "points": 3,
           "text": "Toinen kuljettaja kiihdyttää samalla kaistalla tasaisesti koko kaistan matkan. Hän kiihdyttää kuitenkin vain nopeuteen $72\\,\\text{km/h}$. Selitä kuvaajien avulla, miksi rekka silloin saavuttaa hänet. Selitä myös, miksi kiihdytyskaistalla kannattaa kiihdyttää samaan nopeuteen kuin muu liikenne.",
+          "hints": [
+            "Vertaa auton suurinta nopeutta rekan nopeuteen. Kumpi ajoneuvo on nopeampi koko kaistan ajan?",
+            "Piirrä molempien $(t,v)$-kuvaajat samaan koordinaatistoon. Kuljettu matka on kuvaajan alle jäävä ala. Kumman ala kasvaa nopeammin?",
+            "Laske ensin, kuinka kauan kiihdytys nyt kestää: $\\Delta x = \\dfrac{v_0 + v}{2}\\,t$, missä $v = 72\\,\\text{km/h} = 20\\,\\text{m/s}$. Laske sitten, kuinka pitkän matkan rekka kulkee samassa ajassa."
+          ],
           "criteria": [
             {
               "text": "Selittää, että auto on koko kaistan ajan hitaampi kuin rekka ($72\\,\\text{km/h} < 81\\,\\text{km/h}$). Siksi $(t,v)$-kuvaajassa rekan suorakulmion ala kasvaa nopeammin kuin auton ala. Perustelee myös luvuilla: kiihdytys kestää noin $15{,}4\\,\\text{s}$ ja auton keskinopeus on $17{,}5\\,\\text{m/s}$. Rekka kulkee siis keskimäärin noin $5\\,\\text{m/s}$ nopeammin. Se kuroo umpeen noin $77\\,\\text{m}$, mikä on enemmän kuin $40\\,\\text{m}$:n ero.",
@@ -149,6 +169,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Kuinka korkealle lattiasta heitetty pallo nousee?",
+          "hints": [
+            "Lakipiste on pallon radan korkein kohta. Mikä on pallon nopeus lakipisteessä? Entä sen kiihtyvyys?",
+            "Valitse suunta ylös positiiviseksi. Silloin nopeus on $v = v_0 - g\\,t$ ja paikka $y = y_0 + v_0\\,t - \\tfrac{1}{2}\\,g\\,t^2$.",
+            "Lakipisteessä $v = 0$, joten nousuaika on $t_\\text{l} = \\dfrac{v_0}{g}$. Sijoita se paikan yhtälöön. Muista lähtökorkeus $y_0 = 1{,}5\\,\\text{m}$."
+          ],
           "answer": {
             "value": 8.84,
             "unit": "m",
@@ -182,6 +207,11 @@
           "kind": "calc",
           "points": 5,
           "text": "Milloin pallot ohittavat toisensa? Millä korkeudella ne silloin ovat?",
+          "hints": [
+            "Pallot ohittavat toisensa. Mitä pallojen korkeuksista voidaan sanoa sillä hetkellä?",
+            "Kirjoita kummankin pallon korkeus ajan funktiona samassa koordinaatistossa. Merkitse korkeudet yhtä suuriksi: $y_\\text{A}(t) = y_\\text{B}(t)$.",
+            "Yhtälö on $y_{0\\text{A}} + v_0\\,t - \\tfrac{1}{2}\\,g\\,t^2 = y_{0\\text{B}} - \\tfrac{1}{2}\\,g\\,t^2$. Sama termi on kummallakin puolella, joten se supistuu pois. Korkeuden saat, kun sijoitat ajan jompaankumpaan paikan yhtälöön."
+          ],
           "answer": [
             {
               "name": "t",
@@ -224,6 +254,11 @@
           "kind": "word",
           "points": 3,
           "text": "Selitä, miksi ohitushetki ei riipu putoamiskiihtyvyydestä. Ohittaisivatko pallot toisensa Kuussa samalla hetkellä?",
+          "hints": [
+            "Katso b-kohdan yhtälöä. Mikä termi supistui pois? Miksi se on sama kummallekin pallolle?",
+            "Kummallakin pallolla on sama kiihtyvyys. Miten pallojen nopeuksien erotus silloin muuttuu ajan kuluessa?",
+            "Ohitushetki riippuu vain alkuvälimatkasta ja alkunopeuksien erotuksesta. Mieti erikseen ohituskorkeutta: Kuussa kumpikin pallo putoaa samassa ajassa vähemmän."
+          ],
           "criteria": [
             {
               "text": "Selittää, että molemmilla palloilla on sama kiihtyvyys. Siksi niiden nopeuksien erotus pysyy koko ajan $12{,}0\\,\\text{m/s}$, ja välimatka $7{,}5\\,\\text{m}$ pienenee tasaisesti.",
@@ -242,6 +277,11 @@
           "kind": "calc",
           "points": 3,
           "text": "Mitkä ovat pallojen nopeudet ohitushetkellä?",
+          "hints": [
+            "Kumpi pallo liikkuu ohitushetkellä ylöspäin ja kumpi alaspäin? Miten suunta näkyy vastauksessa?",
+            "Suunta ylös on positiivinen. Silloin nopeus on $v = v_0 - g\\,t$. Pudotetulla pallolla $v_0 = 0$.",
+            "Sijoita b-kohdan ohitushetki kumpaankin nopeuden yhtälöön. Pudotetun pallon nopeus on negatiivinen, koska pallo liikkuu alaspäin."
+          ],
           "answer": [
             {
               "name": "vA",
@@ -298,6 +338,11 @@
           "kind": "graph",
           "points": 6,
           "text": "Esitä junan nopeus ajan funktiona kuvaajana. Sovita pisteisiin sopiva malli.",
+          "hints": [
+            "Katso taulukkoa ennen kuin piirrät. Muuttuuko nopeus koko ajan samalla tavalla?",
+            "Aineistossa on kaksi vaihetta. Aluksi nopeus pysyy lähes samana. Sitten nopeus pienenee tasaisesti. Kumpikin vaihe tarvitsee oman suoransa.",
+            "Sovita laskeva suora vain jarrutuksen pisteisiin. Pisteitä pitää jäädä suoran kummallekin puolelle. Jatka aika-akselia ainakin hetkeen $50\\,\\text{s}$, koska c-kohdassa suoraa jatketaan."
+          ],
           "criteria": [
             {
               "key": "graph_axes",
@@ -325,6 +370,11 @@
           "kind": "calc",
           "points": 5,
           "text": "Määritä junan kiihtyvyys jarrutuksen aikana. Anna vastaus yksikössä $\\text{m/s}^2$.",
+          "hints": [
+            "Mikä $(t,v)$-kuvaajan ominaisuus kertoo kiihtyvyyden?",
+            "Kiihtyvyys on jarrutussuoran kulmakerroin: $a = \\dfrac{\\Delta v}{\\Delta t}$. Lue sovitetulta suoralta kaksi pistettä, jotka ovat kaukana toisistaan. Älä lue pisteitä taulukosta.",
+            "Kulmakertoimen yksikkö on $\\text{km/h}$ sekuntia kohti. Muunna nopeuden muutos yksikköön $\\text{m/s}$: jaa luvulla $3{,}6$. Kerro myös, mitä tuloksen etumerkki tarkoittaa."
+          ],
           "answer": {
             "value": -0.645,
             "unit": "m/s²",
@@ -363,6 +413,11 @@
           "kind": "calc",
           "points": 5,
           "text": "Arvioi kuvaajan avulla, milloin juna pysähtyy. Arvioi myös, kuinka pitkän matkan juna kulkee jarrutuksen alusta siihen, kun se pysähtyy.",
+          "hints": [
+            "Mistä kohdasta kuvaajaa näet, milloin jarrutus alkaa? Mistä näet, milloin nopeus on nolla?",
+            "Jarrutus alkaa suorien leikkauskohdasta. Juna pysähtyy siinä, missä jatkettu jarrutussuora leikkaa aika-akselin. Matka on $(t,v)$-kuvaajan ja aika-akselin välinen pinta-ala.",
+            "Pinta-ala on kolmio: $\\Delta x = \\tfrac{1}{2}\\,v_0\\,\\Delta t$. Muunna alkunopeus yksikköön $\\text{m/s}$ ennen laskua."
+          ],
           "answer": {
             "value": 481,
             "unit": "m",
@@ -396,6 +451,11 @@
           "kind": "word",
           "points": 4,
           "text": "Matkustaja päättelee, että juna pysähtyi tarkalleen c-kohdan matkan päähän jarrutuksen alusta. Arvioi, kuinka luotettava päätelmä on.",
+          "hints": [
+            "Mihin hetkeen asti mittaukset ulottuvat? Mihin hetkeen asti mallia käytettiin?",
+            "Pysähtymishetki saatiin, kun suoraa jatkettiin mittausalueen ulkopuolelle. Mitä malli olettaa jarrutuksesta hetken $40\\,\\text{s}$ jälkeen?",
+            "Piirrä pisteisiin jyrkin ja loivin sopiva suora. Katso, kuinka paljon pysähtymishetki ja matka muuttuvat. Vertaa muutosta matkustajan sanaan ”tarkalleen”."
+          ],
           "criteria": [
             {
               "key": "assumptions",
@@ -441,6 +501,11 @@
           "kind": "word",
           "points": 5,
           "text": "Arvioi ensimmäinen kannanotto. Perustele vastauksesi $(t,x)$- tai $(t,v)$-kuvaajan avulla.",
+          "hints": [
+            "Miten keskinopeus määritellään? Mitä keskinopeus on $(t,x)$-kuvaajassa?",
+            "Oleta, että nopeus on koko osuudella enintään $80\\,\\text{km/h}$. Kuinka suuri $(t,v)$-kuvaajan alle jäävä ala silloin enintään on?",
+            "Jos ala on enintään $80\\,\\text{km/h}$ kertaa aika, keskinopeus on enintään $80\\,\\text{km/h}$. Mitä siitä seuraa, jos keskinopeus on tätä suurempi? Mieti myös, päteekö päättely toiseen suuntaan."
+          ],
           "criteria": [
             {
               "text": "Selittää, että keskinopeus on siirtymä jaettuna ajalla. $(t,x)$-kuvaajassa se on sen suoran kulmakerroin, joka kulkee osuuden alku- ja loppupisteen kautta.",
@@ -464,6 +529,11 @@
           "kind": "calc",
           "points": 5,
           "text": "Arvioi toinen kannanotto. Laske kuljettajan keskinopeus osuudella.",
+          "hints": [
+            "Ajoiko kuljettaja kumpaakin nopeutta yhtä kauan?",
+            "Keskinopeus on koko siirtymä jaettuna koko ajalla: $v_\\text{ka} = \\dfrac{\\Delta x}{t_1 + t_2}$. Nopeuksien keskiarvo on eri asia.",
+            "Laske kummankin osan aika erikseen: $t_1 = \\dfrac{\\Delta x_1}{v_1}$ ja $t_2 = \\dfrac{\\Delta x_2}{v_2}$."
+          ],
           "answer": {
             "value": 81.8,
             "unit": "km/h",
@@ -497,6 +567,11 @@
           "kind": "word",
           "points": 5,
           "text": "Arvioi kolmas kannanotto. Auto ajaa nopeudella $80\\,\\text{km/h}$. Kuinka suuri on keskinopeuden epävarmuus $3{,}0\\,\\text{km}$:n osuudella? Kuinka suuri se on $100\\,\\text{m}$:n osuudella?",
+          "hints": [
+            "Auto ajaa nopeudella $80\\,\\text{km/h}$. Kuinka kauan se on kummallakin osuudella?",
+            "Kumpikin kamera kirjaa hetken $0{,}5\\,\\text{s}$:n tarkkuudella. Siksi kulkuajan epävarmuus on noin $1\\,\\text{s}$. Vertaa sitä kulkuaikaan.",
+            "Ajan suhteellinen epävarmuus on likimain myös keskinopeuden suhteellinen epävarmuus. Pitkällä osuudella kulkuaika on $135\\,\\text{s}$ ja lyhyellä $4{,}5\\,\\text{s}$."
+          ],
           "criteria": [
             {
               "key": "uncertainty",
@@ -542,6 +617,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Näytä, miten ryhmä sai kiihtyvyyden. Arvioi, kuinka paljon tulos voi muuttua ajanoton epävarmuuden takia.",
+          "hints": [
+            "Ryhmä mittasi vain matkan ja ajan. Minkä oletuksen ryhmä tarvitsi, jotta niistä saadaan kiihtyvyys?",
+            "Kappale lähtee levosta ja kiihtyy tasaisesti. Silloin $x = \\tfrac{1}{2}\\,a\\,t^2$, joten $a = \\dfrac{2x}{t^2}$.",
+            "Laske kiihtyvyys myös ajoilla $1{,}4\\,\\text{s}$ ja $1{,}8\\,\\text{s}$. Näiden tulosten väli kertoo, kuinka paljon tulos voi muuttua."
+          ],
           "answer": {
             "value": 0.9375,
             "unit": "m/s²",
@@ -570,6 +650,11 @@
           "kind": "word",
           "points": 5,
           "text": "Arvioi ryhmän johtopäätös. Nimeä mittauksen tärkeimmät heikkoudet.",
+          "hints": [
+            "Mitä kaava $a = \\dfrac{2x}{t^2}$ olettaa liikkeestä? Voiko kaavalla saatu luku todistaa saman oletuksen?",
+            "Ryhmällä on yksi $(t,x)$-piste. Kuinka monen erilaisen liikkeen kuvaaja voi kulkea origon ja yhden pisteen kautta?",
+            "Käy mittaus läpi vaihe vaiheelta: lähtö, ajanoton aloitus ja lopetus, ohituskohdan lukeminen ja toistojen määrä. Missä vaiheissa syntyy virhettä?"
+          ],
           "criteria": [
             {
               "text": "Huomaa, että päättely on kehäpäätelmä: se olettaa sen, mikä pitäisi osoittaa. Kaava $a = \\dfrac{2x}{t^2}$ olettaa tasaisen kiihtyvyyden. Siksi kaavalla saatu luku ei voi osoittaa, että liike on tasaisesti kiihtyvää. Yksi $(t,x)$-piste sopii mihin tahansa kiihtyvään liikkeeseen.",
@@ -593,6 +678,11 @@
           "kind": "word",
           "points": 6,
           "text": "Suunnittele koe, jolla voi luotettavasti selvittää, onko kärryn liike tasaisesti kiihtyvää. Kokeella pitää myös voida määrittää kärryn kiihtyvyys.",
+          "hints": [
+            "Mitä tasaisesti kiihtyvästä liikkeestä pitää nähdä, jotta sen voi erottaa muusta kiihtyvästä liikkeestä?",
+            "Tarvitset kärryn paikan tai nopeuden monella hetkellä. Tasaisesti kiihtyvässä liikkeessä $(t,v)$-pisteet asettuvat suoralle. Silloin $(t,x)$-pisteet asettuvat toisen asteen käyrälle.",
+            "Kirjoita suunnitelmaan kolme asiaa. Ensin: millä välineellä mittaat monta pistettä. Toiseksi: minkä kuvaajan ja sovituksen teet ja mistä luet kiihtyvyyden. Kolmanneksi: miten toistat mittauksen ja mitkä asiat pidät samoina."
+          ],
           "criteria": [
             {
               "text": "Mittaa kärryn paikan monella hetkellä, esimerkiksi videoanalyysillä (tunnettu kuvanopeus, mittakaava radan tasossa) tai valoporteilla eri kohdissa.",
@@ -638,6 +728,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Määritä pallon putoamiskiihtyvyys sovituksen avulla.",
+          "hints": [
+            "Sovitettu polynomi on $y = A\\,t^2 + B\\,t + C$. Mihin tuttuun yhtälöön sitä voi verrata?",
+            "Paikka tasaisesti kiihtyvässä suoraviivaisessa liikkeessä on $y = y_0 + v_0\\,t + \\tfrac{1}{2}\\,a\\,t^2$. Vertaa kertoimia termi kerrallaan.",
+            "Toisen asteen termistä saadaan $A = \\tfrac{1}{2}\\,a$. Mieti myös, mitä $B \\approx 0$ kertoo. Mieti lisäksi, mitä miinusmerkki tarkoittaa."
+          ],
           "answer": {
             "value": 8.88,
             "unit": "m/s²",
@@ -666,6 +761,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Kuinka suuri on tuloksen epävarmuus sovituksen perusteella? Sopiiko tulos taulukkoarvoon $9{,}81\\,\\text{m/s}^2$?",
+          "hints": [
+            "Kiihtyvyys laskettiin kertoimesta $A$. Miten kertoimen epävarmuus siirtyy kiihtyvyyteen?",
+            "Koska $a = 2A$, myös epävarmuus tulee kaksinkertaiseksi: $\\Delta a = 2\\,\\Delta A$.",
+            "Laske tuloksen ja taulukkoarvon $9{,}81\\,\\text{m/s}^2$ erotus. Vertaa erotusta epävarmuuteen. Kuinka monta kertaa epävarmuus mahtuu erotukseen?"
+          ],
           "answer": {
             "value": 0.1,
             "unit": "m/s²",
@@ -694,6 +794,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Selitä, mistä systemaattinen virhe johtuu ja mihin suuntaan se muuttaa tulosta. Korjaa tulos.",
+          "hints": [
+            "Missä tasossa mittakaava asetettiin? Missä tasossa pallo liikkui?",
+            "Kohde, joka on kauempana kamerasta, näkyy kuvassa pienempänä. Todellinen matka saadaan, kun kuvasta mitattu matka kerrotaan etäisyyksien suhteella.",
+            "Etäisyyksien suhde on $3{,}30 : 3{,}00$. Kaikki pallon matkat kerrotaan tällä suhteella. Siksi myös kiihtyvyys kerrotaan sillä."
+          ],
           "answer": {
             "value": 9.77,
             "unit": "m/s²",
@@ -722,6 +827,11 @@
           "kind": "word",
           "points": 3,
           "text": "Opiskelijan pari ehdottaa, että kiihtyvyys laskettaisiin vain ensimmäisestä ja viimeisestä pisteestä kaavalla $a = \\dfrac{2\\,\\Delta y}{t^2}$. Arvioi ehdotus.",
+          "hints": [
+            "Kuinka monta mittauspistettä kumpikin tapa käyttää?",
+            "Mieti, mitä yhden pisteen satunnainen virhe tekee tulokselle kummassakin tavassa. Mieti myös, kummasta tavasta saadaan epävarmuus.",
+            "Kokeile ehdotusta taulukon ensimmäisellä ja viimeisellä pisteellä: $a = \\dfrac{2\\,\\Delta y}{t^2}$. Vertaa tulosta sovituksen tulokseen. Mieti, korjaako kumpikaan tapa mittakaavavirhettä."
+          ],
           "criteria": [
             {
               "text": "Selittää, että sovitus käyttää kaikkia pisteitä. Siksi yhden pisteen satunnainen virhe vaikuttaa vähemmän. Sovituksesta saadaan myös epävarmuus, ja siitä näkee, sopiiko malli.",
@@ -760,6 +870,11 @@
           "kind": "calc",
           "points": 3,
           "text": "Laske kärryn nopeus liikkeen ensimmäisessä vaiheessa.",
+          "hints": [
+            "Mikä $(t,x)$-kuvaajan ominaisuus kertoo nopeuden?",
+            "Tasaisessa liikkeessä nopeus on $(t,x)$-kuvaajan suoran kulmakerroin: $v = \\dfrac{\\Delta x}{\\Delta t}$.",
+            "Lue ensimmäiseltä suoralta kaksi pistettä, jotka ovat kaukana toisistaan ja osuvat ruudukon risteyksiin. Sopivat pisteet ovat esimerkiksi suoran alkupiste ja loppupiste."
+          ],
           "answer": {
             "value": 3.0,
             "unit": "m/s",
@@ -788,6 +903,11 @@
           "kind": "calc",
           "points": 3,
           "text": "Mikä on kärryn nopeus hetkellä $8\\,\\text{s}$? Mihin suuntaan kärry silloin liikkuu?",
+          "hints": [
+            "Mihin liikkeen vaiheeseen hetki $8\\,\\text{s}$ kuuluu?",
+            "Nopeus on sen vaiheen suoran kulmakerroin: $v = \\dfrac{\\Delta x}{\\Delta t}$. Laskevan suoran kulmakerroin on negatiivinen.",
+            "Lue kolmannen vaiheen suoran alkupiste ja loppupiste. Negatiivinen nopeus tarkoittaa, että paikka $x$ pienenee."
+          ],
           "answer": {
             "value": -2.0,
             "unit": "m/s",
@@ -816,6 +936,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Kärry on paikassa $x = 12\\,\\text{m}$ kaksi kertaa. Laske molemmat hetket.",
+          "hints": [
+            "Missä vaiheissa kuvaaja käy arvossa $x = 12\\,\\text{m}$? Piirrä kuvaajaan vaakasuora viiva tälle korkeudelle.",
+            "Kussakin vaiheessa paikka on $x = x_0 + v\\,(t - t_0)$. Tässä $t_0$ on vaiheen alkuhetki ja $x_0$ paikka sillä hetkellä.",
+            "Ratkaise $t = t_0 + \\dfrac{x - x_0}{v}$ erikseen ensimmäiselle ja kolmannelle vaiheelle. Käytä kummankin vaiheen omaa nopeutta ja sen etumerkkiä."
+          ],
           "answer": [
             {
               "name": "t1",
@@ -858,6 +983,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Laske kärryn keskinopeus koko kuvaajan esittämältä ajalta. Miksi keskinopeus on eri kuin keskivauhti? Kumpi niistä on suurempi?",
+          "hints": [
+            "Kärry kääntyy takaisin. Mitä eroa silloin on siirtymällä ja kuljetulla matkalla?",
+            "Keskinopeus on $v_\\text{ka} = \\dfrac{\\Delta x}{\\Delta t}$. Tässä $\\Delta x$ on paikan muutos alkuhetkestä loppuhetkeen. Keskivauhdissa osoittajassa on kuljettu matka.",
+            "Lue kuvaajasta paikka alussa ja lopussa. Niistä saat siirtymän. Laske kuljettu matka vaihe kerrallaan ja vertaa näitä kahta."
+          ],
           "answer": {
             "value": 0.4,
             "unit": "m/s",
@@ -906,6 +1036,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Laske kulkijoiden nopeudet. Kirjoita myös etumerkit.",
+          "hints": [
+            "Kumman kulkijan paikka kasvaa ja kumman pienenee? Miten se näkyy nopeuden etumerkissä?",
+            "Tasaisessa liikkeessä nopeus on $(t,x)$-kuvaajan suoran kulmakerroin: $v = \\dfrac{\\Delta x}{\\Delta t}$.",
+            "Lue kummankin suoran päätepisteet hetkillä $0\\,\\text{s}$ ja $8\\,\\text{s}$. Laske paikan muutos aina näin: loppupaikka miinus alkupaikka."
+          ],
           "answer": [
             {
               "name": "vA",
@@ -948,6 +1083,11 @@
           "kind": "calc",
           "points": 5,
           "text": "Kirjoita kulkijoiden paikat ajan funktiona. Laske, milloin kulkijat kohtaavat.",
+          "hints": [
+            "Mitä kulkijoiden paikoista voidaan sanoa kohtaamishetkellä?",
+            "Tasaisessa liikkeessä paikka on $x = x_0 + v\\,t$. Kirjoita yhtälö kummallekin kulkijalle. Merkitse paikat yhtä suuriksi: $x_\\text{A} = x_\\text{B}$.",
+            "Alkupaikat luet kuvaajasta hetkeltä $0\\,\\text{s}$. Siirrä termit, joissa on aika $t$, samalle puolelle. Ota $t$ yhteiseksi tekijäksi. Muista B:n nopeuden etumerkki."
+          ],
           "answer": {
             "value": 4.0,
             "unit": "s",
@@ -981,6 +1121,11 @@
           "kind": "calc",
           "points": 2,
           "text": "Missä kohdassa kulkijat kohtaavat?",
+          "hints": [
+            "Tiedät jo kohtaamishetken. Mistä saat paikan sillä hetkellä?",
+            "Sijoita kohtaamishetki A:n paikan yhtälöön $x_\\text{A} = x_{0\\text{A}} + v_\\text{A}\\,t$.",
+            "Tarkista tulos: sijoita sama hetki B:n yhtälöön. Paikan pitää olla sama."
+          ],
           "answer": {
             "value": 12.0,
             "unit": "m",
@@ -1004,6 +1149,11 @@
           "kind": "word",
           "points": 4,
           "text": "Oletetaan, että B:n nopeuden suuruus olisi $1{,}0\\,\\text{m/s}$. B lähtisi samasta alkupaikasta kuin ennen. A:n liike ei muutu. Miten kohtaamishetki ja kohtaamispaikka muuttuisivat? Perustele laskemalla ja kuvaajan suoran avulla.",
+          "hints": [
+            "B:n nopeuden suuruus pienenee, mutta alkupaikka pysyy samana. Miten B:n suora muuttuu kuvaajassa?",
+            "Loivempi suora leikkaa A:n suoran eri kohdassa. Kohtaamisehto on yhä $x_\\text{A} = x_\\text{B}$. Nyt B:n nopeus on $-1{,}0\\,\\text{m/s}$.",
+            "Välimatka $16\\,\\text{m}$ pienenee nyt nopeudella $3{,}0\\,\\text{m/s}$. Laske kohtaamishetki ja sijoita se A:n yhtälöön."
+          ],
           "criteria": [
             {
               "text": "Perustelee kuvaajalla: B:n suora loivenee, koska B:n nopeuden suuruus pienenee. Silloin se leikkaa A:n suoran myöhemmin ja ylempänä kuin alkuperäinen suora.",
