@@ -137,6 +137,13 @@ PR 7c (jaettu, PR 7b:n jälkeen, ennen PR 8:aa): kertauspolun luettavuus.
 (5) Painike "Näytä koko polku".
 Uudet käyttöliittymätekstit hyväksytään tekijäsessioon. Opettaja 2026-11-25 ("Do these").
 
+## 11c. FY9: vihjeportaat pitkiin tehtäviin (opettaja 2026-11-25 "Do 1 and 2")
+Varattu: ccr-5b78822d-5kk0z7 (PR 1, #855)
+Lähtötilanne: FY9:n 86 lyhyessä laskutehtävässä on jo kolme vihjettä (83/86; harjoituskokeen kolmessa ei) ja yleisen virheen palaute (86/86). Pitkissä tehtävissä (yksiköiden Tehtävät, `sovella/tasks.json`: 124 tehtävää, noin 500 kohtaa) ei ollut vihjeitä.
+PR 1 (#855; jaettu `scripts/practice.py` ja `templates/site.css` + malliyksikkö fy9-liike fi, fi-easy, en; katselmoinnit PASS): tehtävän kohdalle valinnainen `hints` (1–3), sama vihjekomponentti kuin lyhyissä tehtävissä, ei uutta käyttöliittymätekstiä. **Opettaja 2026-11-25 (tekijäsessiossa): vihjeiden tyyli hyväksytty ("1 yes"); harjoituskokeeseen ei vihjeitä ("2 no"); pitkien tehtävien `v_ka`-tunnusta ei muuteta ("3 no need").** Yhdistetään ensin, yksin (jaettu).
+PR 2– (sisältö, vasta kun PR 1 on mainissa; yksikkö kerrallaan, peräkkäin, fi + fi-easy + en samassa PR:ssä): fy9-koe, fy9-mittaaminen, fy9-kokeellisuus, fy9-energia, fy9-lampo, fy9-kaasut, fy9-voimat, fy9-sailymislait, fy9-ympyraliike, fy9-aallot, fy9-tasavirta, fy9-sahkokentta, fy9-magnetismi-valo, fy9-moderni (14 yksikköä, noin 116 tehtävää). Ohje tekijälle `docs/fy9/vihjeet-developer-brief.md`, katselmoijille `docs/fy9/vihjeet-review-brief.md` (delta, kolme roolia × kolme kieltä).
+Avoin päätös (opettaja): vastauksen tarkistus ja yleisen virheen palaute pitkien tehtävien laskukohtiin. Muuttaisi mallivastauksen lukkoa, tehty-laskuria ja valmentajan näyttölokia, joten vasta 11b PR 8:n jälkeen ja omana jaettuna PR:nään.
+
 ## 17. Kehitys ilman kirjautumista (opettaja 2026-11-15)
 17a PR 1 (#720) ja PR 2 (#741, manifesti ja pysyvä tallennus) sekä 17b PR 1 (#818, koko työ yhteen tiedostoon; tekstit opettaja 2026-11-23) tehty; webkit.org sallittu ympäristöön 2026-11-19, opettajan luvalla.
 Ohjeet ja päätökset K1–K9: `docs/audits/2026-11-15-kehitys-ilman-kirjautumista.md`. Jokainen osa oma PR, yksin; uudet käyttöliittymätekstit PR:n kuvauksessa. Tallennusavaimia, tiedostomuotoja ja korttien id:itä ei muuteta.
