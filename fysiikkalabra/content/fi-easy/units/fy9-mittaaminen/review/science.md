@@ -1,17 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 62c0d3bd3b935fc4
+CONTENT-HASH: 79a94d9ff8ddcbdd
 
-Delta review (work queue 11c): the `hints` added to `sovella/tasks.json`, 32 parts. Each hint checked against its part's rubric, answer and `sovella/solutions.md`, and against the fi hints.
+Delta review, round 2 (work queue 11c): the hint corrections since df89c4b3 in `sovella/tasks.json` (s2 c, s3 a, s3 b, s4 b, s5 c), checked against rubric, answers, `sovella/solutions.md` and the fi hints.
 
 ## Blocking
 None.
 
 ## Polish
-1. s4 b, hint 2 (fi-easy): this has the same issue as fi. The hint says "kulmakertoimella" before the slope comes up in c, and $m_\text{tod}$ differs from the solution's $m_\text{punnus}$. Replacement: "… todellinen massa on lukema jaettuna suhteella $k$: $m = \dfrac{m_\text{lukema}}{k}$. Punnuksilla $k = \dfrac{m_\text{lukema}}{m_\text{punnus}}$."
-2. s5 c, hint 2 (fi-easy): the symbol $c$ can be confused with "c-kohta". This is optional. The added sentence that explains the scale factor is correct.
+None.
 
 ## Checked
-- Every hint says the same physics as fi, with the same formulas, symbols, signs and values. The split sentences keep all the content: s1 b keeps both uncertainty routes, s1 d keeps both the random part and the shared part of the delays, s3 d keeps the ±1 ml horizontal bars, s6 c keeps Pa, m³ and K.
-- Formulas recomputed with my own script (s1 v = 7,294 m/s, Δv = 0,123 m/s by both routes; s2 79,85 g/m², 783 kg/m³; s7 c 0,150 m; s8 c 5,5 %). They agree with the rubric and solutions.
-- No hint states a final answer. LaTeX and decimal commas are correct.
-- Content hash: the same at the start and at the end.
+- s2 c, hint 3: "kuinka moninkertainen tulos on veden tiheyteen verrattuna" is the ratio ρ/ρ_vesi (0,78), same as fi; not stated.
+- s3 a, hint 2: guiding question on the line's extension and the axes, same physics as fi and agrees with the rubric.
+- s3 b, hint 2: "$b$ eli suoran ja pystyakselin leikkauskohta" is correct for $m = kV + b$ (value at V = 0, the mass of the empty measuring glass).
+- s4 b, hints 1–2: "resoluutio eli pienin lukemaero" is a correct gloss; "suhteella $k$" and $m_\text{punnus}$ match the solution (line 414). k = 1,0207, 765 g → 749,5 g, not stated. Round 1 polish 1 fixed.
+- s5 c, hint 2: symbol $c$ removed, factor $1{,}00\,\text{m}/L$ correct. Round 1 polish 2 fixed.
+- LaTeX and decimal commas correct. Content hash the same at the start and the end.

@@ -1,13 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 62c0d3bd3b935fc4
+CONTENT-HASH: 79a94d9ff8ddcbdd
 
 ## Blocking
-None.
+(none)
 
 ## Polish
-1. [Minor] s3 c, vihje 3 (fi-easy): ok; "Laske suhde." jää irralliseksi. Korvaa: "Laske, kuinka monta kertaa tiheys on veden tiheys."
-2. [Minor] all parts, 390 px (fi-easy): an open hint box is indented and narrower than the task text (about 270 px of 324 px), so formulas such as $\sigma = \dfrac{M}{N\,a\,b}$ wrap onto their own line. Nothing is clipped or scrolled. Shared issue (templates/site.css `ol.parts>li>.hints`): reduce the left margin of the open box on phones. This is optional.
+- [Minor] Open-box indent at 390 px: known shared point, not repeated as blocking.
 
 ## Checked
-- Built previews at 390 and 1280 px: Tehtävät cards with hints closed (row of three, one row at 1280, three stacked lines at 390) and open (s1 a-d, s2 a-d, 29 hint groups counted, no horizontal page overflow, scrollWidth equal to viewport).
-- Formulas in the hint boxes (fractions, \Delta, \tau_k, units with thin spaces) render inside the boxes. Decimal comma or point is correct for the language. Reading order is correct.
+- Round 2 delta (s1 a/d, s2 c/d, s3 a/b, s4 b, s5 c hints) wording and formulas read in the diff.
+- Rendered preview of fi-easy at 390 and 1280 px with hints opened (fi, fi-easy, en captures viewed): KaTeX fractions, units and subscripts render, no clipping or horizontal overflow (scrollWidth equals viewport).
+- Round 2 rewrites are clearer: k is now the ratio, subscripts are m_punnus/m_weight, the extra c is dropped, hints no longer give the axis answer away.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

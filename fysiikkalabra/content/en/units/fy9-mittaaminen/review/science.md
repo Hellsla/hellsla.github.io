@@ -1,17 +1,19 @@
-VERDICT: FAIL
-CONTENT-HASH: cddfd08f0802bd10
+VERDICT: PASS
+CONTENT-HASH: 74db1531ca3d16e8
 
-Delta review (work queue 11c): the `hints` added to `sovella/tasks.json`, 32 parts. Each hint checked against its part's rubric, answer and `sovella/solutions.md`, and against the fi hints.
+Delta review, round 2 (work queue 11c): the hint corrections since df89c4b3 in `sovella/tasks.json` (s1 a, s1 d, s2 c, s2 d, s3 a, s4 b, s5 c), checked against rubric, answers, `sovella/solutions.md` and the fi hints.
 
 ## Blocking
-1. s1 d, hint 2 (en), symbol inconsistency (category 6). The hint names the delays $\tau_\text{k}$ and $\tau_\text{p}$, the Finnish subscripts. The en rubric criteria and the en model solution use $\tau_\text{start}$ and $\tau_\text{stop}$, so a student who follows the hint writes symbols that do not match the rubric and the model answer. Replacement: "Write the measured time using the true time and two delays: $\tau_\text{start}$ at the start and $\tau_\text{stop}$ at the stop. Which delay adds to the measured time and which one subtracts from it?"
+None. Round 1 blocking item 1 (s1 d, hint 2) is fixed: the hint now uses $\tau_\text{start}$ and $\tau_\text{stop}$, the symbols of the en rubric criteria and the model solution ($t_\text{meas} = t_\text{true} + \tau_\text{stop} - \tau_\text{start}$). The question of which delay adds and which subtracts leaves the sign for the student.
 
 ## Polish
-1. s4 b, hint 2 (en): the hint calls $k$ "the slope" before the slope comes up in c, and $m_\text{true}$ differs from the solution's $m_\text{weight}$. Replacement: "… the true mass is the reading divided by the ratio $k$: $m = \dfrac{m_\text{reading}}{k}$, where $k = \dfrac{m_\text{reading}}{m_\text{weight}}$ for the weights."
-2. s5 c, hint 2 (en): the symbol $c$ for the scale factor can be confused with "part c". This is optional.
+None.
 
 ## Checked
-- Apart from item 1, every hint says the same physics as fi, with the same models, symbols, signs and values. Checked: $\bar t$ and half-range $\Delta t$; $d = h/N$, $\sigma = M/(Nab)$, $\rho = \sigma/d$; $m = kV + b$ with ±1 ml bars; $x = x_0 + vt$; $V = C/p - V_0$ with $C = nRT$ and the conversion to J; $F_\text{v} = kx$ with ±0.2 cm; $g = 2\,\Delta s/\Delta(t^2)$ with ±0.01 m.
-- Recomputed with my own script: s1 7.294 m/s and 26.26 km/h, Δv 0.123 m/s by both suggested routes; s2 31.19 m², 79.85 g/m², 783 kg/m³; s7 c 0.150 m; s8 c 5.5 %. These agree with the rubric.
-- No hint states a final answer. LaTeX and decimal points are correct.
-- Content hash: the same at the start and at the end.
+- s1 a, hint 2: wording only; $v = s/t$ with the mean time, as in the solution (7.294 m/s, not stated).
+- s2 c, hint 3: "by calculating the ratio" (783 kg/m³, ratio 0.78), not stated.
+- s2 d, hint 2: "how many sheets share the uncertainty of the ruler reading" is correct: Δd = Δh/N, so the relative uncertainty is the stack's, N times smaller than for one sheet.
+- s3 a, hint 2: guiding question on the extension of the line and the axes; agrees with the rubric (horizontal axis to zero, marked vertical start, points fill the graph).
+- s4 b, hint 2: "ratio $k$" and $m_\text{weight}$ match the solution; k = 1.0207, 765 g → 749.5 g, not stated. Round 1 polish 1 fixed.
+- s5 c, hint 2: symbol $c$ removed, factor $1.00\,\text{m}/L$ correct. Round 1 polish 2 fixed.
+- Same physics as fi; LaTeX and decimal points correct. Content hash the same at the start and the end.

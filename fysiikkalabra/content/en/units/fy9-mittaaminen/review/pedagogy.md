@@ -1,11 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: cddfd08f0802bd10
+CONTENT-HASH: 74db1531ca3d16e8
 
-Blocking: none. The ladder works in all parts: hint 1 a guiding question, hint 2 relation or representation, hint 3 an intermediate step; no final answer is stated. Evaluation and design parts (comparison of runners, uncertainty of the stack, density conclusion, report critique, improvements) guide reasoning without dictating the conclusion. fi-easy and en say the same as fi.
+Blocking: none. Round 2 hints (s1 a/d, s2 c/d, s3 a/b, s4 b, s5 c) judged: the ladder holds, no hint states an answer, and the evaluation and design parts guide the reasoning only.
+
+Resolved from round 1
+- s2 c hint 2: the axis choice is no longer dictated; it is now a guiding question, so the graph rubric's axis points are not free.
+- s3 b hint 2: "kulmakerroin" replaced by a ratio k, which removes the slope confusion.
+- s1 d, s5 c, s4 b: wording and symbol fixes are sound (symbol c dropped; en start/stop delay labels are clear).
 
 Polish
-1. Graph part (hint 2, en): states the axis choice outright, giving the graph-rubric axis points away. Replacement: "Think what you want to read from the extension of the line. What does that require of the horizontal axis, and what does the start of the vertical axis do to how well the points show?"
-2. Ruler part (hint 2): "Over what is the uncertainty of the ruler reading shared" is awkward; use "How many sheets share the uncertainty of the ruler reading when you measure the stack?"
-3. Hint 2 of part "average speed": "You justify the number of digits by..." -> "Justify the number of digits by the spread of the readings."
-
-Checked: all hints of every long-task part in en, against the part's task text.
+1. none.
+Checked: all changed hints in en against the brief and round 1 findings.

@@ -1,10 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 62c0d3bd3b935fc4
+CONTENT-HASH: 79a94d9ff8ddcbdd
 
-Blocking: none. The ladder works in all parts: hint 1 a guiding question, hint 2 relation or representation, hint 3 an intermediate step; no final answer is stated. Evaluation and design parts (comparison of runners, uncertainty of the stack, density conclusion, report critique, improvements) guide reasoning without dictating the conclusion. fi-easy and en say the same as fi.
+Blocking: none. Round 2 hints (s1 a/d, s2 c/d, s3 a/b, s4 b, s5 c) judged: the ladder holds, no hint states an answer, and the evaluation and design parts guide the reasoning only.
+
+Resolved from round 1
+- s2 c hint 2: the axis choice is no longer dictated; it is now a guiding question, so the graph rubric's axis points are not free.
+- s3 b hint 2: "kulmakerroin" replaced by a ratio k, which removes the slope confusion.
+- s1 d, s5 c, s4 b: wording and symbol fixes are sound (symbol c dropped; en start/stop delay labels are clear).
 
 Polish
-1. Graafiosa (hint 2, fi-easy): sama kuin fi, akselivalinta annetaan suoraan. Korvaus: "Haluat lukea kuvaajasta myös suoran jatkeen. Mitä se tarkoittaa vaaka-akselin alkukohdalle? Mitä pystyakselin alku tekee pisteille?"
-2. Hint 2 -sanat "vakiotermi", "resoluutio": selitä kerran ("vakiotermi = kohta, jossa suora leikkaa pystyakselin"). Muuten lauseet lyhyitä ja fysiikka on mukana.
-
-Checked: all hints of every long-task part in fi-easy, against the part's task text.
+1. none.
+Checked: all changed hints in fi-easy against the brief and round 1 findings.

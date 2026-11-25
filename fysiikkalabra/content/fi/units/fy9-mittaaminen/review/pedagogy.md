@@ -1,11 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: bdef44d88ed5bb2a
+CONTENT-HASH: 7a3b9bcc0537b512
 
-Blocking: none. The ladder works in all parts: hint 1 a guiding question, hint 2 relation or representation, hint 3 an intermediate step; no final answer is stated. Evaluation and design parts (comparison of runners, uncertainty of the stack, density conclusion, report critique, improvements) guide reasoning without dictating the conclusion. fi-easy and en say the same as fi.
+Blocking: none. Round 2 hints (s1 a/d, s2 c/d, s3 a/b, s4 b, s5 c) judged: the ladder holds, no hint states an answer, and the evaluation and design parts guide the reasoning only.
+
+Resolved from round 1
+- s2 c hint 2: the axis choice is no longer dictated; it is now a guiding question, so the graph rubric's axis points are not free.
+- s3 b hint 2: "kulmakerroin" replaced by a ratio k, which removes the slope confusion.
+- s1 d, s5 c, s4 b: wording and symbol fixes are sound (symbol c dropped; en start/stop delay labels are clear).
 
 Polish
-1. Graafiosa (hint 2, fi): se kertoo suoraan akselivalinnan (vaaka nollaan asti, pystyakselin katko), jolloin kuvaajarubriikin akselipisteet tulevat ilmaisiksi. Korvaus: "Mieti, mitä haluat lukea kuvaajasta suoran jatkeelta. Mihin kohtaan vaaka-akselilla se vaikuttaa, ja mitä pystyakselin alku tekee pisteiden näkyvyydelle?"
-2. Kellotusosa (hint 3, fi): "mitä keskiarvo tekee viiveiden satunnaiselle ja kaikille yhteiselle osalle" jakaa vastauksen kahteen osaan valmiiksi; sallittu, mutta hint 1 olisi riittänyt ohjaamaan.
-3. Raporttiosa (hint 3): viiden vaiheen luettelo on tehtävätekstin sisältöä, ei ratkaisu; hyväksytty.
-
-Checked: all hints of every long-task part in fi, against the part's task text.
+1. 2. Kellotusosa hint 3 (fi): jako satunnaiseen ja yhteiseen osaan on edelleen valmis; hyväksytty, ei muutosta.
+Checked: all changed hints in fi against the brief and round 1 findings.
