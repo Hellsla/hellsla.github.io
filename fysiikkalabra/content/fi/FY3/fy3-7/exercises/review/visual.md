@@ -1,17 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 7a9c50335981d2c1
-SCOPE: delta wording from 9fd36711862df6e6 base 64d4935
+CONTENT-HASH: 8bb8903fbb269fb9
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
+- [Minor] fy3-7-open-exercises-L3-1280-1 (8-20 Kaava, last row) — the numerator `cm_1T_1 + cm_2T_0 - sm_2` is stacked on two lines inside the fraction, which reads a little oddly next to the row above; fine to leave, or keep the numerator on one line if it fits.
 
 ## Checked
-- Delta, wording only: the diff read in full. The prefix "Esimerkkiaineisto:" is gone; each task now opens with a capital letter and reads as a normal sentence. No numbers, symbols, units or LaTeX changed.
-- Captures: opened fy3-4 L3 part 1 and 4 at 1280 px (content/fi/FY3/fy3-4/review/shots), which show the layout of this kind of task card; the other sets' captures were not opened, because the diff changes only the first words of a text.
-- Hash unchanged at the end.
+- Delta (Kaava steps as aligned multi-row blocks; formula re-setting; previous scope line is for an earlier delta). Captures in content/fi/FY3/fy3-7/review/shots; exercise captures at 1280 px only.
+- fy3-7-open-exercises-L3-1280-1 (seven-row Kaava from Q_luovutettu = Q_vastaanotettu to T, aligned; Muunnokset), L3-1280-2 (Sijoitus rows with continuation, Vastaus, Järkevyys).
+- No clipping; layout intact.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 4
+illustrations 5 · typography 4 · Finnish 5 · accessibility 4

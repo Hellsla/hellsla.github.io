@@ -73,7 +73,7 @@
 **Kysytty:** teho $P$, jolla vesi saa energiaa auringonsäteilystä
 **Periaate:** Veden saama teho näkyy siinä, kuinka nopeasti sen lämpötila nousee: lämpömäärä on $Q = cm\Delta T$ ja teho $P = Q : \Delta t$. Lämpöä johtuu ja säteilee ympäristöön sitä enemmän, mitä lämpimämpää vesi on ilmaa. Mittauksen alussa vesi on ilman lämpöistä, joten silloin lähes kaikki auringosta saatu teho lämmittää vettä. Siksi teho määritetään kuvaajan alusta, ei koko mittauksen keskimääräisestä noususta.
 **Kuvaajan lukeminen:** Käyrälle piirretään tangentti hetkellä $0\,\text{min}$. Se kulkee pisteiden $(0\,\text{min};\ 20{,}0\,{}^\circ\text{C})$ ja $(10\,\text{min};\ 28{,}5\,{}^\circ\text{C})$ kautta, joten alun lämpenemisnopeus on $\dfrac{\Delta T}{\Delta t} = \dfrac{8{,}5\,\text{K}}{10\,\text{min}} = 0{,}85\,\text{K/min}$.
-**Kaava:** $P = \dfrac{Q}{\Delta t} = cm \cdot \dfrac{\Delta T}{\Delta t}$
+**Kaava:** $$\begin{aligned} Q &= P\Delta t \\ Q &= cm\Delta T \\ P\Delta t &= cm\Delta T \\ P &= cm \cdot \dfrac{\Delta T}{\Delta t} \end{aligned}$$
 **Muunnokset:** $0{,}85\,\text{K/min} = 0{,}85\,\text{K} : 60\,\text{s} = 0{,}014\,17\,\text{K/s}$. Lämpötilan muutos on sama celsiusasteina ja kelvineinä.
 **Sijoitus:** $$\begin{aligned} P &= 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 4{,}00\,\text{kg} \cdot 0{,}014\,17\,\text{K/s} \\ &= 237\,\text{W} \end{aligned}$$
 **Vastaus:** $P \approx 240\,\text{W}$, kaksi merkitsevää numeroa, koska tangentin kulmakerroin luetaan kuvaajalta noin kahden numeron tarkkuudella.
@@ -83,7 +83,7 @@
 **Annettu:** veden saama teho $P \approx 237\,\text{W}$, säteilyn teho pinta-alaa kohti $800\,\text{W/m}^2$ ja pinta-ala $A = 0{,}50\,\text{m}^2$
 **Kysytty:** keräimen hyötysuhde $\eta$ mittauksen alussa, kun häviöitä ei vielä ole
 **Periaate:** Hyötysuhde on hyödyllisen tehon ja tulevan tehon suhde. Hyödyllinen teho on b-kohdan teho, jonka vesi saa alussa ennen häviöitä, ja tuleva teho on keräimen pinnalle osuvan säteilyn teho.
-**Kaava:** $P_\text{o} = 800\,\text{W/m}^2 \cdot A$ ja $\eta = \dfrac{P_\text{a}}{P_\text{o}}$, missä antoteho $P_\text{a} = P$ on veden saama teho ja ottoteho $P_\text{o}$ keräimeen tulevan säteilyn teho
+**Kaava:** $$\begin{aligned} P_\text{o} &= 800\,\text{W/m}^2 \cdot A \\ \eta &= \dfrac{P_\text{a}}{P_\text{o}} \\ P_\text{a} &= P \\ \eta &= \dfrac{P}{800\,\text{W/m}^2 \cdot A} \end{aligned}$$
 **Muunnokset:** Ei tarvita, tehot ovat watteina.
 **Sijoitus:** $P_\text{o} = 800\,\text{W/m}^2 \cdot 0{,}50\,\text{m}^2 = 400\,\text{W}$ ja $\eta = \dfrac{237\,\text{W}}{400\,\text{W}} = 0{,}59$
 **Vastaus:** $\eta \approx 0{,}59$ eli noin $60\,\%$, kaksi merkitsevää numeroa kuten b-kohdan tehossa.
@@ -94,7 +94,7 @@
 **Kysytty:** miksi lämpeneminen hidastuu ja lämpöhäviön teho $P_\text{häviö}$ hetkellä $50\,\text{min}$
 **Periaate:** Lämpöä johtuu laatikon seinien ja lasin läpi sitä suuremmalla teholla, mitä suurempi on veden ja ilman lämpötilaero ($P = UA\Delta T$), ja lämmin laatikko myös säteilee enemmän. Kun vesi lämpenee, häviö kasvaa, joten veteen jää yhä pienempi osa auringosta saadusta tehosta ja lämpötila nousee yhä hitaammin. Auringosta saatu teho pysyy samana, joten häviö on sen ja veteen jäävän tehon erotus.
 **Kuvaajan lukeminen:** Kulmakerroin hetkellä $50\,\text{min}$ luetaan hetkien $40\,\text{min}$ ja $60\,\text{min}$ pisteiden kautta kulkevasta suorasta, joka on lähes käyrän tangentin suuntainen: $\dfrac{54{,}7\,{}^\circ\text{C} - 46{,}2\,{}^\circ\text{C}}{20\,\text{min}} = 0{,}425\,\text{K/min}$.
-**Kaava:** $P_\text{vesi} = cm \cdot \dfrac{\Delta T}{\Delta t}$ ja $P_\text{häviö} = P - P_\text{vesi}$
+**Kaava:** $$\begin{aligned} Q &= cm\Delta T \\ P_\text{vesi} &= \dfrac{Q}{\Delta t} \\ &= cm \cdot \dfrac{\Delta T}{\Delta t} \\ P &= P_\text{vesi} + P_\text{häviö} \\ P_\text{häviö} &= P - P_\text{vesi} \end{aligned}$$
 **Muunnokset:** $0{,}425\,\text{K/min} = 0{,}425\,\text{K} : 60\,\text{s} = 0{,}007\,08\,\text{K/s}$
 **Sijoitus:** $$\begin{aligned} P_\text{vesi} &= 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 4{,}00\,\text{kg} \\ &\cdot 0{,}007\,08\,\text{K/s} \\ &= 119\,\text{W} \end{aligned}$$ ja $P_\text{häviö} = 237\,\text{W} - 119\,\text{W} = 118\,\text{W}$
 **Vastaus:** $P_\text{häviö} \approx 120\,\text{W}$, kaksi merkitsevää numeroa, koska molemmat kulmakertoimet on luettu kuvaajalta.
@@ -123,7 +123,7 @@
 **Periaate:** Vesi kiehuu siinä lämpötilassa, joka vastaa veden pinnalla vaikuttavaa kokonaispainetta. Kun venttiili päästää höyryä ulos, kattilan kokonaispaine on ulkoilman paine ja venttiilin ylipaine yhteensä. Ilma on jo poistunut, joten kannen alla on vain vesihöyryä ja koko paine on höyryn painetta.
 
 Taulukossa on kiehumislämpötila vain $5\,{}^\circ\text{C}$:n välein, joten väliin jäävä arvo interpoloidaan kahden lähimmän rivin välistä olettaen, että lämpötila muuttuu niiden välillä tasaisesti.
-**Kaava:** $p = p_0 + \Delta p$ ja $T = T_1 + (T_2 - T_1) \cdot \dfrac{p - p_1}{p_2 - p_1}$
+**Kaava:** $$\begin{aligned} p &= p_0 + \Delta p \\ \dfrac{T - T_1}{T_2 - T_1} &= \dfrac{p - p_1}{p_2 - p_1} \\ T &= T_1 + (T_2 - T_1) \cdot \dfrac{p - p_1}{p_2 - p_1} \end{aligned}$$
 **Muunnokset:** Ei tarvita, kaikki paineet ovat kilopascaleina.
 
 **Sijoitus:** $p = 101\,\text{kPa} + 80\,\text{kPa} = 181\,\text{kPa}$, joka on rivien $169{,}2\,\text{kPa}$ ja $198{,}7\,\text{kPa}$ välissä. $T = 115\,{}^\circ\text{C} + 5\,{}^\circ\text{C} \cdot \dfrac{11{,}8\,\text{kPa}}{29{,}5\,\text{kPa}} = 115\,{}^\circ\text{C} + 2{,}0\,{}^\circ\text{C} = 117\,{}^\circ\text{C}$
@@ -142,7 +142,7 @@ Ruoka kypsyy, kun sen sisäosat lämpenevät riittävästi. Koska vesi on $17\,{
 **Annettu:** levyn teho $P = 300\,\text{W}$, josta $\eta = 0{,}80$ siirtyy kattilan sisältöön, aika $t = 20\,\text{min}$ ja veden ominaishöyrystymislämpö $r = 2260\,\text{kJ/kg}$
 **Kysytty:** höyrystyvän veden massa $m$
 **Periaate:** Venttiili pitää paineen vakiona, joten kattilan sisältö pysyy kiehumislämpötilassa. Lämpötila ei nouse, ja perunoiden oletetaan jo olevan kattilan lämpötilassa, joten kaikki sisältöön siirtyvä energia kuluu veden höyrystämiseen, ja syntyvä höyry purkautuu venttiilistä. Veden ja perunoiden massaa ei tarvita: se ratkaisee vain, kuinka kauan vettä riittää.
-**Kaava:** $\eta P t = rm$, josta $m = \dfrac{\eta P t}{r}$
+**Kaava:** $$\begin{aligned} E &= Pt \\ E_\text{hyöty} &= \eta E \\ Q &= rm \\ E_\text{hyöty} &= Q \\ \eta P t &= rm \\ m &= \dfrac{\eta P t}{r} \end{aligned}$$
 **Muunnokset:** $t = 20\,\text{min} = 20 \cdot 60\,\text{s} = 1200\,\text{s}$ ja $r = 2260\,\text{kJ/kg} = 2{,}26 \cdot 10^6\,\text{J/kg}$
 **Sijoitus:** $\eta P t = 0{,}80 \cdot 300\,\text{W} \cdot 1200\,\text{s} = 288\,000\,\text{J}$ ja $m = \dfrac{288\,000\,\text{J}}{2{,}26 \cdot 10^6\,\text{J/kg}} = 0{,}127\,\text{kg}$
 **Vastaus:** $m \approx 0{,}13\,\text{kg}$, kaksi merkitsevää numeroa kuten osuudessa $0{,}80$ ja ajassa $20\,\text{min}$.
@@ -152,11 +152,11 @@ Ruoka kypsyy, kun sen sisäosat lämpenevät riittävästi. Koska vesi on $17\,{
 **Annettu:** veden lämpötila $117\,{}^\circ\text{C}$, kiehumislämpötila ulkoilman paineessa $100\,{}^\circ\text{C}$, $c = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ ja $r = 2{,}26 \cdot 10^6\,\text{J/kg}$
 **Kysytty:** mitä tapahtuu ja kuinka suuri osa $\dfrac{m_\text{h}}{m}$ vedestä höyrystyy
 **Periaate:** Kun kansi avataan, kattilan paine laskee heti ulkoilman paineeseen, jolloin kiehumislämpötila laskee $100\,{}^\circ\text{C}$:seen. Vesi on $17\,{}^\circ\text{C}$ kuumempaa kuin kiehumislämpötilansa, joten se kiehuu rajusti koko tilavuudeltaan, kunnes se on jäähtynyt $100\,{}^\circ\text{C}$:seen. Energia säilyy: höyrystymiseen tarvittava energia tulee veden omasta jäähtymisestä. Höyrystyvä osa on pieni, joten jäähtyvän veden massana voi käyttää koko massaa $m$.
-**Kaava:** $c m \Delta T = r m_\text{h}$, josta $\dfrac{m_\text{h}}{m} = \dfrac{c \Delta T}{r}$
+**Kaava:** $$\begin{aligned} Q_\text{luovutettu} &= Q_\text{vastaanotettu} \\ Q_\text{luovutettu} &= c m \Delta T \\ Q_\text{vastaanotettu} &= r m_\text{h} \\ c m \Delta T &= r m_\text{h} \\ \dfrac{m_\text{h}}{m} &= \dfrac{c \Delta T}{r} \end{aligned}$$
 **Muunnokset:** $\Delta T = 117\,{}^\circ\text{C} - 100\,{}^\circ\text{C} = 17\,\text{K}$ ja $r = 2{,}26 \cdot 10^6\,\text{J/kg}$
 **Sijoitus:** $\dfrac{m_\text{h}}{m} = \dfrac{4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 17\,\text{K}}{2{,}26 \cdot 10^6\,\text{J/kg}} = 0{,}031$
 **Vastaus:** noin $3\,\%$ vedestä höyrystyy hetkessä. Yksi merkitsevä numero riittää, koska laskussa jätettiin perunoiden ja kattilan lämpö pois. Ne jäähtyvät myös ja höyrystävät lisää vettä, joten todellinen osuus on hieman suurempi.
-**Järkevyys:** c-kohdan jälkeen vettä on noin $1{,}4\,\text{kg}$, ja siitä höyrystyy noin $40\,\text{g}$. Se on noin $2{,}4\,\text{mol}$, ja ideaalikaasuna $100\,{}^\circ\text{C}$:ssa ja paineessa $101\,\text{kPa}$ se vie tilaa $V = \dfrac{nRT}{p} \approx 70\,\text{l}$. Kymmeniä litroja kuumaa höyryä ja kiehuvaa roisketta purkautuu kerralla, ja höyry polttaa tiivistyessään pahemmin kuin yhtä kuuma vesi. Siksi painekattilan saa avata vasta, kun paine on laskenut.
+**Järkevyys:** c-kohdan jälkeen vettä on noin $1{,}4\,\text{kg}$, ja siitä höyrystyy noin $40\,\text{g}$. Se on noin $2{,}4\,\text{mol}$, ja ideaalikaasuna $100\,{}^\circ\text{C}$:ssa ja paineessa $101\,\text{kPa}$ se vie tilaa $V = \dfrac{nRT}{p} \approx 70\,\textsf{l}$. Kymmeniä litroja kuumaa höyryä ja kiehuvaa roisketta purkautuu kerralla, ja höyry polttaa tiivistyessään pahemmin kuin yhtä kuuma vesi. Siksi painekattilan saa avata vasta, kun paine on laskenut.
 
 ### Hyväksytään myös
 - c- ja d-kohdassa voi käyttää $117\,{}^\circ\text{C}$:n arvoa $r \approx 2{,}21 \cdot 10^6\,\text{J/kg}$; tulokset eivät muutu.
@@ -174,29 +174,29 @@ Ruoka kypsyy, kun sen sisäosat lämpenevät riittävästi. Koska vesi on $17\,{
 **Annettu:** kuplan tilavuus pohjalla $V_1 = 4{,}0\,\text{cm}^3$, syvyys $h = 15{,}0\,\text{m}$, lämpötilat $T_1 = 6{,}0\,{}^\circ\text{C}$ ja $T_2 = 20{,}0\,{}^\circ\text{C}$, ilmanpaine $p_0 = 101\,\text{kPa}$, veden tiheys $\rho = 1000\,\text{kg/m}^3$ ja $g = 9{,}81\,\text{m/s}^2$
 **Kysytty:** kuplan tilavuus $V_2$ pinnalla
 **Periaate:** Kuplan ilmamäärä pysyy samana. Kupla on pieni, joten se on aina ympäröivän veden lämpöinen, ja sen paine on veden paine kyseisessä syvyydessä: ilmanpaine ja hydrostaattinen paine yhteensä. Ideaalikaasun tilanyhtälöstä $pV = nRT$ seuraa, että kun $n$ on vakio, $\dfrac{pV}{T}$ pysyy samana. Sekä paine että lämpötila muuttuvat, joten kumpaakaan ei voi jättää pois.
-**Kaava:** $p_1 = p_0 + \rho g h$ ja $\dfrac{p_1 V_1}{T_1} = \dfrac{p_2 V_2}{T_2}$, josta $V_2 = V_1 \cdot \dfrac{p_1}{p_2} \cdot \dfrac{T_2}{T_1}$, missä pinnalla $p_2 = p_0$
+**Kaava:** $$\begin{aligned} p_1 &= p_0 + \rho g h \\ p_2 &= p_0 \\ pV &= nRT \\ \dfrac{p_1 V_1}{T_1} &= \dfrac{p_2 V_2}{T_2} \\ V_2 &= V_1 \cdot \dfrac{p_1}{p_2} \cdot \dfrac{T_2}{T_1} \end{aligned}$$
 **Muunnokset:** $p_0 = 101\,\text{kPa} = 101\,000\,\text{Pa}$, $T_1 = (6{,}0 + 273{,}15)\,\text{K} = 279{,}15\,\text{K}$ ja $T_2 = (20{,}0 + 273{,}15)\,\text{K} = 293{,}15\,\text{K}$. Tilavuus voi jäädä kuutiosenttimetreiksi, koska yhtälössä on tilavuuksien suhde.
 **Sijoitus:** $$\begin{aligned} p_1 &= 101\,000\,\text{Pa} \\ &+ 1000\,\text{kg/m}^3 \cdot 9{,}81\,\text{m/s}^2 \cdot 15{,}0\,\text{m} \\ &= 248\,150\,\text{Pa} \end{aligned}$$ ja $$\begin{aligned} V_2 &= 4{,}0\,\text{cm}^3 \cdot \dfrac{248\,150\,\text{Pa}}{101\,000\,\text{Pa}} \cdot \dfrac{293{,}15\,\text{K}}{279{,}15\,\text{K}} \\ &= 10{,}3\,\text{cm}^3 \end{aligned}$$
 **Vastaus:** $V_2 \approx 10\,\text{cm}^3$, kaksi merkitsevää numeroa kuten tilavuudessa $4{,}0\,\text{cm}^3$.
 **Järkevyys:** Paine pienenee noustessa noin $2{,}5$-osaan, joten tilavuus kasvaa noin $2{,}5$-kertaiseksi, ja lämpeneminen kasvattaa sitä vielä noin $5\,\%$. Kuplien kasvu noustessa näkyy myös sukellusvideoissa.
 
 ### b)
-**Annettu:** keuhkot täynnä ilmaa, $V_1 = 6{,}0\,\text{l}$, paineessa $p_1 = 248\,\text{kPa}$ ja pinnan paine $p_2 = 101\,\text{kPa}$
+**Annettu:** keuhkot täynnä ilmaa, $V_1 = 6{,}0\,\textsf{l}$, paineessa $p_1 = 248\,\text{kPa}$ ja pinnan paine $p_2 = 101\,\text{kPa}$
 **Kysytty:** ilman tilavuus pinnalla ja miksi nousu hengitystä pidättäen on vaarallista
 **Periaate:** Ilmamäärä pysyy samana, kun hengitystä pidätetään. Keuhkoissa ilma on ruumiinlämpöistä, noin $37\,{}^\circ\text{C}$, syvyydestä ja veden lämpötilasta riippumatta. Siksi lämpötila pysyy vakiona, ja tilavuus muuttuu Boylen lain mukaan.
 **Kaava:** $p_1 V_1 = p_2 V_2$, josta $V_2 = V_1 \cdot \dfrac{p_1}{p_2}$
 **Muunnokset:** Ei tarvita, paineiden suhteessa yksiköt supistuvat.
-**Sijoitus:** $V_2 = 6{,}0\,\text{l} \cdot \dfrac{248\,\text{kPa}}{101\,\text{kPa}} = 14{,}7\,\text{l}$
-**Vastaus:** Ilma laajenisi noin $15\,\text{l}$:aan (kaksi merkitsevää numeroa kuten $6{,}0\,\text{l}$). Keuhkoihin mahtuu vain tehtävässä annettu $6{,}0\,\text{l}$, joten pidätetty ilma venyttäisi niitä ja voisi repiä keuhkokudoksen. Noustessa ei saa koskaan pidättää hengitystä: hengitetään normaalisti koko nousun ajan, jolloin laajeneva ilma pääsee ulos keuhkoista.
+**Sijoitus:** $V_2 = 6{,}0\,\textsf{l} \cdot \dfrac{248\,\text{kPa}}{101\,\text{kPa}} = 14{,}7\,\textsf{l}$
+**Vastaus:** Ilma laajenisi noin $15\,\textsf{l}$:aan (kaksi merkitsevää numeroa kuten $6{,}0\,\textsf{l}$). Keuhkoihin mahtuu vain tehtävässä annettu $6{,}0\,\textsf{l}$, joten pidätetty ilma venyttäisi niitä ja voisi repiä keuhkokudoksen. Noustessa ei saa koskaan pidättää hengitystä: hengitetään normaalisti koko nousun ajan, jolloin laajeneva ilma pääsee ulos keuhkoista.
 **Järkevyys:** Tilavuus kasvaa samassa suhteessa kuin a-kohdan kupla, paitsi lämpenemisen osuutta: keuhkojen lämpötila ei muutu.
 
 ### c)
-**Annettu:** säiliön tilavuus $V_\text{s} = 12{,}0\,\text{l}$, mittarin lukemat $200\,\text{bar}$ ja $50\,\text{bar}$ ylipainetta, kulutus $q = 20\,\text{l/min}$ syvyyden paineessa $p = 248\,\text{kPa}$
+**Annettu:** säiliön tilavuus $V_\text{s} = 12{,}0\,\textsf{l}$, mittarin lukemat $200\,\text{bar}$ ja $50\,\text{bar}$ ylipainetta, kulutus $q = 20\,\text{l/min}$ syvyyden paineessa $p = 248\,\text{kPa}$
 **Kysytty:** aika $t$, jonka sukeltaja voi olla $15{,}0\,\text{m}$:n syvyydessä
 **Periaate:** Tehtävän mukaan ilman lämpötila on sama säiliössä ja keuhkoissa (d-kohdassa arvioidaan lämpenemisen vaikutus), joten ilmamäärä on verrannollinen paineen ja tilavuuden tuloon (Boylen laki). Säiliöstä käytetty ilma vie syvyyden paineessa tilavuuden, joka hengitetään. Mittari näyttää ylipainetta. Kokonaispaineiden erotus on kuitenkin sama kuin ylipaineiden erotus, koska ilmanpaine kumoutuu.
-**Kaava:** $\Delta p_\text{s} V_\text{s} = p V$, josta $V = \dfrac{\Delta p_\text{s} V_\text{s}}{p}$, ja $t = \dfrac{V}{q}$
+**Kaava:** $$\begin{aligned} p_1 V_\text{s} &= n_1 RT \\ p_2 V_\text{s} &= n_2 RT \\ \Delta p_\text{s} &= p_1 - p_2 \\ \Delta n &= n_1 - n_2 \\ \Delta p_\text{s} V_\text{s} &= \Delta n\,RT \\ pV &= \Delta n\,RT \\ V &= \dfrac{\Delta p_\text{s} V_\text{s}}{p} \\ t &= \dfrac{V}{q} \end{aligned}$$
 **Muunnokset:** $\Delta p_\text{s} = 200\,\text{bar} - 50\,\text{bar} = 150\,\text{bar} = 150 \cdot 100\,\text{kPa} = 15\,000\,\text{kPa}$. Tilavuudet voivat jäädä litroiksi.
-**Sijoitus:** $V = \dfrac{15\,000\,\text{kPa} \cdot 12{,}0\,\text{l}}{248\,\text{kPa}} = 725\,\text{l}$ ja $t = \dfrac{725\,\text{l}}{20\,\text{l/min}} = 36\,\text{min}$
+**Sijoitus:** $V = \dfrac{15\,000\,\text{kPa} \cdot 12{,}0\,\textsf{l}}{248\,\text{kPa}} = 725\,\textsf{l}$ ja $t = \dfrac{725\,\textsf{l}}{20\,\text{l/min}} = 36\,\text{min}$
 **Vastaus:** $t \approx 36\,\text{min}$, kaksi merkitsevää numeroa kuten kulutuksessa $20\,\text{l/min}$.
 **Järkevyys:** Pinnalla sama ilma riittäisi $2{,}5$ kertaa pidempään, noin $89\,\text{min}$, koska jokainen hengenveto vie syvyydessä $2{,}5$-kertaisen ilmamäärän. Noin puolen tunnin sukellus vastaa tavallisia harrastajien sukelluksia.
 

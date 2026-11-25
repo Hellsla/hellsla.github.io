@@ -39,7 +39,7 @@ Perustele ennusteesi fysiikan avulla. Palaat siihen johtopäätöksissä.
 
 ## Teoriaa lyhyesti
 
-Ääni on ilmassa etenevää pitkittäistä aaltoliikettä: ilmahiukkaset värähtelevät edestakaisin aallon etenemissuunnassa, ja ilmanpaine vaihtelee tihentymien ja harvennusten mukana. Aallon etenemisnopeus $v$, taajuus $f$ ja aallonpituus $\lambda$ liittyvät toisiinsa yhtälöllä
+Ääni on ilmassa etenevää pitkittäistä aaltoliikettä: ilmahiukkaset värähtelevät edestakaisin aallon etenemissuunnassa, ja ilmanpaine vaihtelee tihentymien ja harventumien mukana. Aallon etenemisnopeus $v$, taajuus $f$ ja aallonpituus $\lambda$ liittyvät toisiinsa yhtälöllä
 
 ```latex
 v = f\lambda

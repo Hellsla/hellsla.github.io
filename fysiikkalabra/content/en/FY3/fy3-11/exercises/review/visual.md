@@ -1,16 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 503a9e89add91265
-SCOPE: delta wording from 76dadb3bbd6deb39 base 6153818
+CONTENT-HASH: 1744afda0ee103a3
 
 ## Blocking
-(none)
+None.
 
 ## Polish
-(none)
+- [Minor] Formula blocks (all chapters) — the aligned Formula rows put the left sides right-aligned at "=", so short and long left sides sit in a stepped column; this is readable and consistent with the other aligned blocks, no action needed.
 
 ## Checked
-- Delta: only the Answer line of L2-04 in solutions.md. Answer line: reason leads, clear plain sentences, units in LaTeX, no AI filler; rendered solution (L2-04, 1280 px, capture open-exercises-L2-1280-4) shows the paragraph under the boxed answer 720 kW without clipping.
-- Opened content/en/FY3/fy3-11/review/shots/fy3-11-open-exercises-L2-1280-4.png and -5.png, -6.png (layout around the change intact). No phone capture of the solution opened; the change is plain prose, no new formula row.
+- Delta: only the Formula step of the model solutions changed to aligned multi-row blocks (solutions.md).
+- 1280 px, solutions open: fy3-11-open-exercises-L2-1280-4 (four-row efficiency block).
+- Rows align at "=", fractions are in display style, subscripts and units upright, nothing clipped or overflowing, order principle then symbolic steps then asked quantity is kept, spacing to the Conversions block intact.
+- No 360/390 px capture of an opened solution; judged from 1280 px captures.
+- Hash run at start and end: unchanged.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations 5 · typography 4 · Finnish 4 · accessibility 4

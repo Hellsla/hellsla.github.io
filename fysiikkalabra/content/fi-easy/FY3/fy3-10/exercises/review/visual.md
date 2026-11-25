@@ -1,17 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 825040ba89ccd2d0
-Mode: delta
-Round: 1
+CONTENT-HASH: b3173cb95ad51c48
 
 ## Blocking
-None.
+- none
 
 ## Polish
-None.
+- none
 
 ## Checked
-- Delta: changed task texts (prefix "Esimerkkiaineisto:" removed, each text now opens with a capital); read in the diff. Layout judged from the shared open-exercise rendering (fy3-4 and fy3-13 L3 captures opened; same component).
-- Wording only: the new openings read naturally; maths and units unchanged and in LaTeX.
+- Delta: only the Kaava step of the solutions changed to aligned multi-row blocks. Opened fy3-10-open-exercises-1280-1.png (level 1, solution open, two-row Kaava block) from the lesson's review/shots.
+- No 360/390 px capture of an open Kaava block was available; judged at 1280 px.
+- Rows align at the equals sign, fractions are display size, no clipping or overflow, block order and layout intact.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 4 · accessibility 4

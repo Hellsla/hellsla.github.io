@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 191a6317ef0bbcdc
-SCOPE: delta wording from 0fc397895a2ab582 base 6153818
+CONTENT-HASH: 309dda9004ec4ead
 
 ## Blocking
-(none)
+- none
 
 ## Polish
-(none)
+- none
 
 ## Checked
-- Delta: only the Answer line of L2-04 in solutions.md. Vastaus-rivi: lyhyet selkeät lauseet, syy ensin, Siksi-päätelmä; selkeä suomi säilyy.
-- Opened content/en/FY3/fy3-11/review/shots/fy3-11-open-exercises-L2-1280-4.png and -5.png, -6.png (layout around the change intact). No phone capture of the solution opened; the change is plain prose, no new formula row.
+- Delta: only the Kaava step of the solutions changed to aligned multi-row blocks. Opened fy3-11-open-exercises-1280-1.png (level 1, solution open, four-row Kaava block W = Fs, F = pA, ΔV = As, W = pΔV) from the lesson's review/shots.
+- No 360/390 px capture of an open Kaava block was available; judged at 1280 px.
+- Equals signs in one column, no clipping or overflow, block order and layout intact.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations 5 · typography 5 · Finnish 4 · accessibility 4

@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: a33f09c0181e8d79
+CONTENT-HASH: e2c8ce659288c7b2
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+(none)
 
 ## Checked
-- Delta: exercises.json answer, option and feedback and solutions.md (L1-06/07 area) changed harvennuksia -> harventumia, no numbers or symbols. Read in source; no exercise-specific captures exist in this packet, so I opened the lesson capture open-exercises-1280-6 (fi, solutions open) to confirm the exercise card layout survives (units in LaTeX, solution blocks inside card).
+- Delta only: prefix "Esimerkkiaineisto: " removed, first letter capitalised. Opened fy5-10-open-exercises-L3-1280-6 (rope task); text reads naturally, layout (cards, tables, formulas, answer fields) intact, no clipping or overflow.
+- Source diff read for the changed tasks; no numbers, units or formulas changed.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

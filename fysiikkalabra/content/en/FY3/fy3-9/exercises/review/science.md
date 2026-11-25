@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: f4b33f0f26651d8a
-Round: 1
+CONTENT-HASH: 41092b6a79bcf791
+Round: 2
 Mode: delta
 
 ## Blocking
@@ -8,11 +8,13 @@ Mode: delta
 ## Polish
 
 ## Checked
-- New fy3-9-L2-10 (PhET Gas Properties): the setup isolates T, because "Hold Constant: Volume (V)" keeps V fixed and no pumping keeps N fixed. The task tells the student to choose kPa and K and to read the fluctuating gauge several times, as the source facts require.
-- I recomputed the seven-point fit independently. The line through the origin has k = Σ(pT)/Σ(T²) = 3.924 kPa/K. The free fit has a slope of 3.84 kPa/K and an intercept of 32 kPa. The residuals are +51, −3, −7, −18, −8, −16 and +19 kPa, and the ratios p/T are 4.18 … 3.96 kPa/K. All match the solution.
-- The prediction is 3.924 · 601 = 2358 kPa, against the 2346 kPa read: a difference of 12 kPa (0.53 %), inside ±30 kPa. The extrapolation of 90 K beyond the measured range is stated.
-- The answer field is p₂/p₁ = T₂/T₁ = 450/300 = 1.50, the same for every k. The key is 1.5 with a 2 % tolerance. In the reasonableness check, the model gives 1177 and 1766 kPa, and the measured ratio 1766/1170 is 1.51.
-- The outlier wording follows the guardrail (the point is checked, not removed). The condition "thin gas far from condensing" is stated. The particle explanation (faster particles, more frequent and harder hits, the same number density) is right.
-- A scripted comparison with the Finnish set (passed today) found identical answer, unit, tolerance and kind, and the same numbers in the text and in every solution section.
-- Captions: only "(example data)" removed.
-- Hash identical at start and end.
+- Diff: the Formula steps are now aligned chains, and some paragraphs are split. No number, answer or Substitution changed.
+- Each Boyle, isobaric and isochoric chain starts from the basic law (p1V1 = p2V2, V/T, p/T) and solves for the unknown symbolically. The solved forms match the Substitution rows (L1-01…L1-05, L2-01, L2-02, L2-04, L2-09, L1-07, L1-08).
+- L2-06 hose volume: I checked every step of the expansion and collection. p1V1 + p1Vh = p4V4 + p4Vh gives Vh(p1 − p4) = p4V4 − p1V1, and that gives Vh = 1.99 ml.
+- L2-07 absolute zero: the condition p = 0 is written into the line equation before solving, θ0 = θ1 − p1/k. This is correct.
+- L3-01, L3-02, L3-03: the hydrostatic and gauge-to-total pressure rows come first, then the basic law, then the solved form. A cancels in L3-03. The answers recompute to 5.9 cm³, 202 kPa and 29.9 cm.
+- L3-04: the two-step chain (isothermal p′, then isochoric T2) is right. p′ = 404 kPa and θ2 = 75.9 °C.
+- L3-05: Boyle's law, then p_limit = p0 + ρgh solved for h = 30.4 m. This is correct, though p = p0 + ρgh appears twice (harmless).
+- L2-10: the k cancellation p2/p1 = T2/T1 is shown symbolically.
+- The split paragraphs keep every physical statement. The safety wording in L3-01 is unchanged and follows the guardrail.
+- I recomputed every changed solution's result in one script, and all match. The hash is identical at start and end.

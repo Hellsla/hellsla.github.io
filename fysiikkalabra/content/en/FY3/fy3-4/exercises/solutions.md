@@ -62,7 +62,7 @@
 **Given:** gauge pressure $\Delta p = 350\,\text{kPa}$, $\rho = 1000\,\text{kg/m}^3$, $g = 9.81\,\text{m/s}^2$
 **Find:** the height $h$ of the water surface above the tap in metres
 **Principle:** When the taps are closed, the water is at rest, so the gauge pressure at the tap is the hydrostatic pressure of the column of water, $\Delta p = \rho g h$. The water between the tower and the tap is continuous, so only the difference in height matters, not the length of the pipes.
-**Formula:** $\Delta p = \rho g h$, so $h = \dfrac{\Delta p}{\rho g}$
+**Formula:** $$\begin{aligned} \Delta p &= \rho g h \\ h &= \dfrac{\Delta p}{\rho g} \end{aligned}$$
 **Conversions:** $350\,\text{kPa} = 350\,000\,\text{Pa}$, so that the units $\text{Pa} = \text{kg}/(\text{m}\cdot\text{s}^2)$ cancel to metres.
 **Substitution:** $h = \dfrac{350\,000\,\text{Pa}}{1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 9.81\,\tfrac{\text{m}}{\text{s}^2}} = 35.678\,\text{m}$
 **Answer:** $35.7\,\text{m}$, three significant figures: the gauge pressure $350\,\text{kPa} = 3.50\cdot10^{2}\,\text{kPa}$ and the density $1000\,\text{kg/m}^3$ are given here to three figures.
@@ -73,7 +73,7 @@
 **Find:** the depth $h_\text{A}$ at which the pressure in liquid A equals the pressure in liquid B at depth $h_\text{B}$
 **Principle:** In a liquid $p = p_0 + \rho g h$, so the $(h, p)$ graph is a straight line whose slope $k = \rho g$ is greater for the denser liquid. The densities do not have to be calculated; the slopes are read from the graph.
 **Reading the graph:** The lines start from the same point $(0\,\text{m};\ 100\,\text{kPa})$ and end at crossings of the grid. So $k_\text{A} = \dfrac{(200 - 100)\,\text{kPa}}{10\,\text{m}} = 10\,\tfrac{\text{kPa}}{\text{m}}$ and $k_\text{B} = \dfrac{(250 - 100)\,\text{kPa}}{10\,\text{m}} = 15\,\tfrac{\text{kPa}}{\text{m}}$.
-**Formula:** $p_0 + k_\text{A} h_\text{A} = p_0 + k_\text{B} h_\text{B}$, so $h_\text{A} = \dfrac{k_\text{B}}{k_\text{A}}\, h_\text{B}$
+**Formula:** $$\begin{aligned} p_\text{A} &= p_0 + k_\text{A} h_\text{A} \\ p_\text{B} &= p_0 + k_\text{B} h_\text{B} \\ p_\text{A} &= p_\text{B} \\ p_0 + k_\text{A} h_\text{A} &= p_0 + k_\text{B} h_\text{B} \\ k_\text{A} h_\text{A} &= k_\text{B} h_\text{B} \\ h_\text{A} &= \dfrac{k_\text{B}}{k_\text{A}}\, h_\text{B} \end{aligned}$$
 **Conversions:** No conversions are needed: the kilopascals cancel in the ratio $k_\text{B}/k_\text{A}$.
 **Substitution:** $h_\text{A} = \dfrac{15\,\text{kPa/m}}{10\,\text{kPa/m}} \cdot 4.0\,\text{m} = 6.0\,\text{m}$
 **Answer:** $h_\text{A} = 6.0\,\text{m}$, two significant figures like the depth $4.0\,\text{m}$. A value read by eye in the range $5.8$–$6.2\,\text{m}$ is accepted.
@@ -83,7 +83,7 @@
 **Given:** gauge pressure $\Delta p = 0.85\,\text{bar}$ (according to the problem $1\,\text{bar} = 100\,\text{kPa}$), area of the lid $A = 380\,\text{cm}^2$
 **Find:** the force $F$ on the lid in kilonewtons
 **Principle:** The gauge pressure pushes the lid from the inside at every point, and pressure is force divided by area. The total force is therefore the gauge pressure multiplied by the area of the lid. The pressure of the outside air is not part of this, because only the force caused by the gauge pressure is asked for.
-**Formula:** $\Delta p = \dfrac{F}{A}$, so $F = \Delta p\,A$
+**Formula:** $$\begin{aligned} \Delta p &= \dfrac{F}{A} \\ F &= \Delta p\,A \end{aligned}$$
 **Conversions:** $0.85\,\text{bar} = 85\,\text{kPa} = 85\,000\,\text{Pa}$ and $380\,\text{cm}^2 = 380 \cdot 10^{-4}\,\text{m}^2 = 0.0380\,\text{m}^2$. At the end $1\,\text{kN} = 1000\,\text{N}$.
 **Substitution:** $F = 85\,000\,\text{Pa} \cdot 0.0380\,\text{m}^2 = 3230\,\text{N} = 3.23\,\text{kN}$
 **Answer:** $3.2\,\text{kN}$, two significant figures like the gauge pressure $0.85\,\text{bar}$.
@@ -93,7 +93,7 @@
 **Given:** mass with the rucksack $m = 85\,\text{kg}$, greatest permitted pressure $p_\text{max} = 6.0\,\text{kPa}$, $g = 9.81\,\text{m/s}^2$; the whole weight on one foot
 **Find:** the smallest area $A$ of one snowshoe in square metres
 **Principle:** The hiker does not sink when the pressure on the snow is at most $p_\text{max}$. For a moment the whole weight is on one foot, so the force on this shoe is the whole weight $G = mg$, and the area is smallest when the pressure is exactly $p_\text{max}$.
-**Formula:** $G = mg$ and $p_\text{max} = \dfrac{G}{A}$, so $A = \dfrac{G}{p_\text{max}} = \dfrac{mg}{p_\text{max}}$
+**Formula:** $$\begin{aligned} G &= mg \\ p_\text{max} &= \dfrac{G}{A} \\ A &= \dfrac{G}{p_\text{max}} \\ &= \dfrac{mg}{p_\text{max}} \end{aligned}$$
 **Conversions:** $6.0\,\text{kPa} = 6000\,\text{Pa}$. The mass is already in kilograms.
 **Substitution:** $G = 85\,\text{kg} \cdot 9.81\,\tfrac{\text{m}}{\text{s}^2} = 833.85\,\text{N}$; $A = \dfrac{833.85\,\text{N}}{6000\,\text{Pa}} = 0.13898\,\text{m}^2$
 **Answer:** $0.14\,\text{m}^2$, two significant figures like the pressure $6.0\,\text{kPa}$ and the mass $85\,\text{kg}$.
@@ -105,7 +105,7 @@
 **Principle:** The water in the barrel and the water in the hose are one liquid at rest, so at the lid the pressure grows by the hydrostatic pressure $\rho g h$ of the column of water in the hose.
 
 The pressure depends only on the height, not on the amount of water, so a thin hose is enough. This increase in pressure acts on the whole area of the lid.
-**Formula:** $\Delta p = \rho g h$ and $\Delta F = \Delta p \, A$, so $\Delta F = \rho g h A$
+**Formula:** $$\begin{aligned} \Delta p &= \rho g h \\ \Delta F &= \Delta p \, A \\ &= \rho g h A \end{aligned}$$
 **Conversions:** All quantities are in SI units. At the end $1\,\text{kN} = 1000\,\text{N}$.
 **Substitution:** $\Delta p = 1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 9.81\,\tfrac{\text{m}}{\text{s}^2} \cdot 4.0\,\text{m} = 39\,240\,\text{Pa}$; $\Delta F = 39\,240\,\text{Pa} \cdot 0.25\,\text{m}^2 = 9810\,\text{N} = 9.81\,\text{kN}$
 **Answer:** $9.8\,\text{kN}$, two significant figures like the height $4.0\,\text{m}$ and the area $0.25\,\text{m}^2$.
@@ -115,7 +115,7 @@ The pressure depends only on the height, not on the amount of water, so a thin h
 **Given:** layer of water $h_2 = 1.60\,\text{m}$, $\rho_2 = 1000\,\text{kg/m}^3$; on top of it a layer of oil $h_1 = 0.40\,\text{m}$, $\rho_1 = 850\,\text{kg/m}^3$; $g = 9.81\,\text{m/s}^2$
 **Find:** the gauge pressure $\Delta p$ at the bottom of the well in kilopascals
 **Principle:** The liquids are at rest, and the bottom carries the whole column of liquid above it. Because the density changes at the interface, the hydrostatic pressure of each layer is calculated with its own density and height, and the pressures are added. Gauge pressure means that atmospheric pressure is not included.
-**Formula:** the pressures of the layers are added, so $\Delta p = \rho_1 g h_1 + \rho_2 g h_2$
+**Formula:** $$\begin{aligned} \Delta p_1 &= \rho_1 g h_1 \\ \Delta p_2 &= \rho_2 g h_2 \\ \Delta p &= \Delta p_1 + \Delta p_2 \\ &= \rho_1 g h_1 + \rho_2 g h_2 \end{aligned}$$
 **Conversions:** All quantities are in SI units, so the pressure comes in pascals. At the end $1\,\text{kPa} = 1000\,\text{Pa}$.
 **Substitution:** $\rho_1 g h_1 = 850\,\tfrac{\text{kg}}{\text{m}^3} \cdot 9.81\,\tfrac{\text{m}}{\text{s}^2} \cdot 0.40\,\text{m} = 3335.4\,\text{Pa}$; $\rho_2 g h_2 = 1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 9.81\,\tfrac{\text{m}}{\text{s}^2} \cdot 1.60\,\text{m} = 15\,696\,\text{Pa}$; $\Delta p = 3335.4\,\text{Pa} + 15\,696\,\text{Pa} = 19\,031.4\,\text{Pa}$
 **Answer:** $19.0\,\text{kPa}$. In a sum the decimals are determined by the least precise term: the $3.3\,\text{kPa}$ of the oil layer (thickness $0.40\,\text{m}$, two figures) is precise to one decimal place, so $3.3 + 15.7 = 19.0\,\text{kPa}$.
@@ -156,7 +156,7 @@ The pressure grows with depth, but not with the square of the depth, and the den
 
 In real series of measurements the data points are usually not exactly on one line because of measurement uncertainty, so the fitted line passes through the middle of the set of points, and therefore through the mean point.
 **Reading the table:** The constant term is the pressure of the line at $h = 0$, and it is obtained from the mean point. The sum of the depths is $30.0\,\text{m}$ and the sum of the pressures $891.8\,\text{kPa}$.
-**Formula:** a) $k = \rho g$, so $\rho = \dfrac{k}{g}$. b) $p_{\text{mean}} = p_0 + k h_{\text{mean}}$, so $p_0 = p_{\text{mean}} - k h_{\text{mean}}$
+**Formula:** a) $$\begin{aligned} p &= p_0 + \rho g h \\ k &= \rho g \\ \rho &= \dfrac{k}{g} \end{aligned}$$ b) $$\begin{aligned} p_{\text{mean}} &= p_0 + k h_{\text{mean}} \\ p_0 &= p_{\text{mean}} - k h_{\text{mean}} \end{aligned}$$
 **Conversions:** $k = 9.78\,\text{kPa/m} = 9780\,\text{Pa/m} = 9780\,\text{N/m}^3$, so that the density comes in the unit $\text{kg/m}^3$.
 **Substitution:** a) $\rho = \dfrac{9780\,\text{N/m}^3}{9.81\,\text{m/s}^2} = 997.0\,\tfrac{\text{kg}}{\text{m}^3}$. b) $h_{\text{mean}} = 30.0\,\text{m} : 6 = 5.0\,\text{m}$ and $p_{\text{mean}} = 891.8\,\text{kPa} : 6 = 148.63\,\text{kPa}$, so
 
@@ -193,7 +193,7 @@ The surface on the gas side is lower because the pressure of the gas is greater 
 **Find:** a) the hydrostatic pressure $\Delta p_{\text{a}}$ layer by layer; b) the pressure with a constant density and its difference $\delta p$ from part a) in kilopascals; c) whether the difference and the error in depth are visible
 **Principle:** Each layer adds the pressure $\rho_i g d_i$, and the pressures of the layers are added, because the layers are on top of one another. If the density is taken to be constant, one density $\rho = 1000\,\text{kg/m}^3$ is used for the whole depth. The difference can be observed only if it is greater than the uncertainty of the gauge.
 **Reading the table:** The thickness $d_i$ and the density $\rho_i$ of each layer are read from the table; the sum of the thicknesses is the depth of the gauge, $20.0\,\text{m}$.
-**Formula:** a) $\Delta p_{\text{a}} = g\,(\rho_1 d_1 + \rho_2 d_2 + \rho_3 d_3)$. b) $\Delta p_{\text{b}} = \rho g h$ and $\delta p = \Delta p_{\text{b}} - \Delta p_{\text{a}}$. c) error in depth $\delta h = h - \dfrac{\Delta p_{\text{a}}}{\rho g}$
+**Formula:** a) $$\begin{aligned} \Delta p_i &= \rho_i g d_i \\ \Delta p_{\text{a}} &= \Delta p_1 + \Delta p_2 + \Delta p_3 \\ &= g\,(\rho_1 d_1 + \rho_2 d_2 + \rho_3 d_3) \end{aligned}$$ b) $$\begin{aligned} \Delta p_{\text{b}} &= \rho g h \\ \delta p &= \Delta p_{\text{b}} - \Delta p_{\text{a}} \end{aligned}$$ c) $$\begin{aligned} h' &= \dfrac{\Delta p_{\text{a}}}{\rho g} \\ \delta h &= h - h' \\ &= h - \dfrac{\Delta p_{\text{a}}}{\rho g} \end{aligned}$$
 **Conversions:** All quantities are in SI units, so the pressures come in pascals. At the end $1\,\text{kPa} = 1000\,\text{Pa}$.
 **Substitution:** a) The sum of the $\rho_i d_i$ is $$\begin{aligned} &998.2 \cdot 5.0 + 999.7 \cdot 10.0 \\ &+ 1000.0 \cdot 5.0 \\ &= 19\,988\,\tfrac{\text{kg}}{\text{m}^2} \end{aligned}$$, so $\Delta p_{\text{a}} = 9.81\,\tfrac{\text{m}}{\text{s}^2} \cdot 19\,988\,\tfrac{\text{kg}}{\text{m}^2} = 196\,082\,\text{Pa} = 196.08\,\text{kPa}$. b) $\Delta p_{\text{b}} = 1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 9.81\,\tfrac{\text{m}}{\text{s}^2} \cdot 20.0\,\text{m} = 196\,200\,\text{Pa}$, so $\delta p = 196\,200\,\text{Pa} - 196\,082\,\text{Pa} = 118\,\text{Pa} = 0.118\,\text{kPa}$. c) When the reading of the gauge $196\,082\,\text{Pa}$ is converted to depth with the density $1000\,\text{kg/m}^3$:
 
@@ -212,7 +212,7 @@ It is smaller than the uncertainty of the gauge, $0.5\,\text{kPa}$, and the erro
 
 Because the pressure is a linear function of depth, the mean pressure of a part is the mean of the pressures at its top and bottom edges, and the force on the part is $F = p_{\text{mean}} A$.
 **Reading the table:** The depths $h_1$ and $h_2$ of the top and bottom edges of each part are read from the table. The height of each part is $h_2 - h_1 = 5.0\,\text{m}$, so the area of a part is $A = 5.0\,\text{m} \cdot 1.0\,\text{m} = 5.0\,\text{m}^2$.
-**Formula:** a) $\Delta p = \rho g h$. b) $p_{\text{mean}} = \dfrac{\rho g h_1 + \rho g h_2}{2}$ and $F = p_{\text{mean}} A$. c) the whole strip: $F_{\text{tot}} = \dfrac{0 + \rho g H}{2} \cdot H w$. d) compare the forces $F_4$ and $F_1$
+**Formula:** a) $\Delta p = \rho g h$. b) $$\begin{aligned} p_{\text{mean}} &= \dfrac{\rho g h_1 + \rho g h_2}{2} \\ F &= p_{\text{mean}} A \end{aligned}$$ c) $$\begin{aligned} p_{\text{mean}} &= \dfrac{0 + \rho g H}{2} \\ A &= H w \\ F_{\text{tot}} &= p_{\text{mean}} A \\ &= \dfrac{0 + \rho g H}{2} \cdot H w \end{aligned}$$ d) compare the forces $F_4$ and $F_1$
 **Conversions:** All quantities are in SI units, so the pressures come in pascals and the forces in newtons. At the end $1\,\text{kN} = 1000\,\text{N}$.
 **Substitution:** a) $\rho g = 9810\,\text{Pa/m}$, so the pressures at the edges are $0$, $49.05$, $98.1$, $147.15$ and $196.2\,\text{kPa}$ at the depths $0$, $5.0$, $10.0$, $15.0$ and $20.0\,\text{m}$. b) The mean pressure of part 1 is $$\begin{aligned} &(0 + 49.05\,\text{kPa}) : 2 \\ &= 24.525\,\text{kPa} \end{aligned}$$, so $F_1 = 24.525\,\text{kPa} \cdot 5.0\,\text{m}^2 = 122.6\,\text{kN}$. The mean pressure of part 4 is $$\begin{aligned} &(147.15\,\text{kPa} + 196.2\,\text{kPa}) : 2 \\ &= 171.675\,\text{kPa} \end{aligned}$$, so
 
@@ -255,7 +255,7 @@ The answer $10^{6}\,\text{Pa}$ corresponds to the depth $100\,\text{m}$ and the 
 **Find:** the density $\rho_\text{B}$ of liquid B in $\text{kg/m}^3$
 **Principle:** In a liquid $p = p_0 + \rho g h$, so the $(h, p)$ graph is a line whose slope is $k = \rho g$. The density is obtained by reading the slope from the graph and dividing it by $g$.
 **Reading the graph:** Line B starts at $(0\,\text{m};\ 100\,\text{kPa})$, where the pressure is the air pressure, and ends at the grid crossing $(10\,\text{m};\ 250\,\text{kPa})$. The slope is $k_\text{B} = \dfrac{(250 - 100)\,\text{kPa}}{10\,\text{m}} = 15\,\dfrac{\text{kPa}}{\text{m}}$.
-**Formula:** $k = \rho g$, so $\rho_\text{B} = \dfrac{k_\text{B}}{g}$
+**Formula:** $$\begin{aligned} p &= p_0 + \rho_\text{B} g h \\ k_\text{B} &= \rho_\text{B} g \\ \rho_\text{B} &= \dfrac{k_\text{B}}{g} \end{aligned}$$
 **Conversions:** $15\,\dfrac{\text{kPa}}{\text{m}} = 15\,000\,\dfrac{\text{Pa}}{\text{m}}$, and $1\,\text{Pa} = 1\,\dfrac{\text{kg}}{\text{m} \cdot \text{s}^2}$, so $\dfrac{\text{Pa/m}}{\text{m/s}^2}$ is $\text{kg/m}^3$.
 **Substitution:** $\rho_\text{B} = \dfrac{15\,000\,\text{Pa/m}}{9.81\,\text{m/s}^2} = 1529\,\text{kg/m}^3$
 **Answer:** $\rho_\text{B} \approx 1.5 \cdot 10^{3}\,\text{kg/m}^3$, that is $1500\,\text{kg/m}^3$, two significant figures, because the values of the graph were read from the grid lines. A value read by eye between $1450$ and $1600\,\text{kg/m}^3$ is accepted.

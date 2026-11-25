@@ -1,16 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: 191a6317ef0bbcdc
-SCOPE: delta wording from 0fc397895a2ab582 base 6153818
+CONTENT-HASH: 309dda9004ec4ead
+Round: 2
+Mode: delta
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
+- exercises/solutions.md:282 (L3-05) — the Kaava writes W = pΔV and ΔU = Q − W, with W the gas's work as the task defines it; L2-03 and the lesson's first law use W for work done on the gas (ΔU = Q + W, W = −pΔV). Correct as written, but the same letter carries two signs in one set — start from ΔU = Q + W_ilmaan, W_ilmaan = −pΔV, as in L2-03, or name the gas's work W_k as the lesson's glossary does.
 
 ## Checked
-- Diff since base 6153818: only the Answer line of L2-04 in solutions.md changed; numbers, units and the answer 720 kW are identical.
-- New wording gives the reason first: the trailing zero of 480 kW is significant (three figures), 40.0 % has three figures, so the answer has three significant figures. This matches house rule P7 (a rated value's trailing zeros are significant unless the task says otherwise; "480 kW: three"); the task text gives 480 kW as the engine's rated mechanical power with no other statement.
-- Recomputed: P_o = 480 kW / 0.400 = 1200 kW, P_waste = 1200 kW - 480 kW = 720 kW; three figures is right for a quotient of two three-figure values.
-- The reasoning is the same as the passed version, only reordered; no new claim, no physics change.
-- Hash same at start and end.
+- Every changed Kaava opens with the defining law (W = Fs, η = W/Q1, ΔU = Q + W, η = Pa/Po, ε = Q1/W, Q1 = Q2 + W) and solves the asked quantity symbolically; every row algebraically right.
+- L1-01: F = pA, ΔV = As, W = pAs = pΔV right; L2-03 sign convention (W = −pΔV on the gas) matches the lesson.
+- L3-01 CHP comparison: ΔP = Ps/η_lauh + Pkl/η_k − P_pa; recomputed 240 + 200 − 320 = 120 MW.
+- L3-02: ΔE = Q1 − W = Q2 = Q1(1 − 1/ε) = 9.60 MWh; energy balance of the heat pump stated.
+- L3-03: P = ηρVH/t chain (Q1 = mH, m = ρV, t = s/v) right.
+- L1-08: ε = P1t/(Pst) = P1/Ps, time cancels correctly; L2-10: Q2 = (ε − 1)W right.
+- Sijoitus and answers unchanged; final symbolic forms reproduce them.
+- Hash identical at start and end.

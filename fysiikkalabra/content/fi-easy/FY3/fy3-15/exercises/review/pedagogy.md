@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: a86d3985160cc30e
+CONTENT-HASH: a14dcf70d249d4ff
 ## Blocking
 (none)
 ## Polish
 (none)
 ## Checked
-- Delta: L3-05 d now says the condenser heat cannot "in practice" (käytännössä) be used for electricity; the solution adds that with an ~11 K difference the largest possible efficiency is only a few per cent. Correct (about 11/300) and a fair hedge, replacing an absolute claim.
-- Reasoning in the solution is brief but understandable at this level; the colon plus "but" sentence is slightly run-on (Polish only).
-- Judged from the diff and the previous PASS; captures not opened.
+- Delta: Annettu now writes the CHP heat as 0,560 P_o,CHP instead of P_o,B.
+- This matches the Kaava rows (P_k,CHP = 0,560 P_o,CHP; P_o,B = P_o,CHP + boiler fuel), so the plant's own fuel power is no longer confused with the total of option B.
+- The numbers are unchanged: 312,5 MW, 175,0 MW, 340,28 MW, difference 131,94 MW; Kysytty still asks P_o,A − P_o,B.
+- Judged from the diff and the solutions file on disk. Hash unchanged at start and end.

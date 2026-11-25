@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 17b69b240046c296
-SCOPE: delta numbers,reflow from 1ff31619fa8f1ce4 base 4b05399
+CONTENT-HASH: 467d957120463d13
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] solutions captures — the open-solution captures exist only at 1280 px (664 px column); the new Kaava rows are short (under ~30 characters, one equation per row), so no clipping is expected at 360–390 px, and check_layout covers it. A 390 px open-solution capture would let this be seen.
-- [Minor] Kaava aligned blocks — rows of the form `E &= hf` / `c &= f\lambda` align at "=" so symbols sit right-aligned and look slightly staggered; acceptable, consistent with the other solutions.
+(none)
 
 ## Checked
-- Delta (solutions.md, Kaava step re-set as aligned LaTeX blocks): fy8-4-open-exercises-L2-1280-1 (4-11: inline Kaava line plus aligned block)
-- Source of every changed Kaava block read: one equation per row, words outside maths, units and decimal comma unchanged, no red KaTeX source seen. The flattened Kaava lines in the packet diff are a diff artefact: the file holds proper aligned blocks.
+- Delta round 1: the diff only removes the prefix "Esimerkkiaineisto: " and capitalises the next word; no numbers, symbols, formulas or figures changed.
+- Opened (content/fi-easy/FY8/fy8-4/review/shots/): fy8-4-open-exercises-L2-1280-6 (task 5, now "Kaksoisrakokokeessa yksittäiset fotonit …" with its table and solution).
+- Layout intact, the prefix removal reads well. The other three changed tasks (X-ray scattering, double-slit laser, Compton) have the same one-word edit and were read in the diff only.
+- Hash re-run at the end: unchanged.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 5 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

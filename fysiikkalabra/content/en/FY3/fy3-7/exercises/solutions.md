@@ -43,7 +43,10 @@
 **Find:** the specific latent heat of fusion of ice $s$
 **Principle:** On the horizontal part of the graph the temperature stays constant at $0\,{}^\circ\text{C}$ even though energy is transferred: the ice melts, and all the energy transferred is used for melting, $Q = sm$. The energy used for melting is the length of the horizontal part on the horizontal axis.
 **Reading the graph:** The horizontal part starts at the grid crossing $(20\,\text{kJ};\ 0\,{}^\circ\text{C})$ and ends at the crossing $(220\,\text{kJ};\ 0\,{}^\circ\text{C})$. So the energy used for melting is $Q = 220\,\text{kJ} - 20\,\text{kJ} = 200\,\text{kJ}$.
-**Formula:** $Q = sm$, from which $s = \dfrac{Q}{m}$
+**Formula:** $$\begin{aligned} Q &= sm \\
+s &= \dfrac{Q}{m}
+\end{aligned}
+$$
 **Conversions:** None needed: the energy is read in kilojoules, and the answer is requested in the unit $\tfrac{\text{kJ}}{\text{kg}}$.
 **Substitution:** $s = \dfrac{200\,\text{kJ}}{0.60\,\text{kg}} = 333\,\tfrac{\text{kJ}}{\text{kg}}$
 **Answer:** $3.3 \cdot 10^{2}\,\tfrac{\text{kJ}}{\text{kg}}$, two significant figures as in the mass $0.60\,\text{kg}$ (calculated $333\,\tfrac{\text{kJ}}{\text{kg}}$). The values are read exactly from the grid, so $323\ldots343\,\tfrac{\text{kJ}}{\text{kg}}$ is accepted.
@@ -53,7 +56,13 @@
 **Given:** $P = 2.0\,\text{kW}$, mass vaporised from boiling water $m = 0.50\,\text{kg}$, all the energy from the hotplate goes into the water; from the table $r = 2260\,\tfrac{\text{kJ}}{\text{kg}}$
 **Find:** the time $t$ in minutes
 **Principle:** The water is already boiling, so its temperature does not rise and all the energy $Pt$ from the hotplate is used for vaporisation, $Q = rm$. Energy is conserved when there are no losses, so $Pt = rm$.
-**Formula:** $Pt = rm$, from which $t = \dfrac{rm}{P}$
+**Formula:** $$\begin{aligned} E &= Pt \\
+Q &= rm \\
+E &= Q \\
+Pt &= rm \\
+t &= \dfrac{rm}{P}
+\end{aligned}
+$$
 **Conversions:** $P = 2.0\,\text{kW} = 2000\,\text{W}$ and $r = 2260\,\tfrac{\text{kJ}}{\text{kg}} = 2\,260\,000\,\tfrac{\text{J}}{\text{kg}}$. The time comes out in seconds and is finally converted to minutes: $1\,\text{min} = 60\,\text{s}$.
 **Substitution:** $t = \dfrac{2\,260\,000\,\tfrac{\text{J}}{\text{kg}} \cdot 0.50\,\text{kg}}{2000\,\text{W}} = 565\,\text{s} = \dfrac{565}{60}\,\text{min} = 9.42\,\text{min}$
 **Answer:** $9.4\,\text{min}$, two significant figures like the power $2.0\,\text{kW}$ and the mass $0.50\,\text{kg}$.
@@ -63,7 +72,13 @@
 **Given:** ice, $m = 750\,\text{g}$, $T_1 = -18\,{}^\circ\text{C}$, ending as water at $0\,{}^\circ\text{C}$; from the table $c_\text{ice} = 2100\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ and $s = 334\,\tfrac{\text{kJ}}{\text{kg}}$
 **Find:** the total quantity of heat $Q$ in kilojoules
 **Principle:** The process has two stages. First the ice warms from $-18\,{}^\circ\text{C}$ to the melting temperature $0\,{}^\circ\text{C}$ ($Q_1 = cm\Delta T$), and then it melts at a constant temperature ($Q_2 = sm$). The total quantity of heat is the sum of these.
-**Formula:** $Q = Q_1 + Q_2$, and $Q = c_\text{ice} m \Delta T + sm$, where $\Delta T = 0\,{}^\circ\text{C} - T_1$
+**Formula:** $$\begin{aligned} Q_1 &= c_\text{ice} m \Delta T \\
+\Delta T &= 0\,{}^\circ\text{C} - T_1 \\
+Q_2 &= sm \\
+Q &= Q_1 + Q_2 \\
+&= c_\text{ice} m \Delta T + sm
+\end{aligned}
+$$
 **Conversions:** $m = 750\,\text{g} = 0.750\,\text{kg}$. The temperature change is the same in kelvins: $\Delta T = 0\,{}^\circ\text{C} - (-18\,{}^\circ\text{C}) = 18\,\text{K}$. $s = 334\,000\,\tfrac{\text{J}}{\text{kg}}$ and finally $1\,\text{kJ} = 1000\,\text{J}$.
 **Substitution:** $Q_1 = 2100\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0.750\,\text{kg} \cdot 18\,\text{K} = 28\,350\,\text{J}$ and $Q_2 = 334\,000\,\tfrac{\text{J}}{\text{kg}} \cdot 0.750\,\text{kg} = 250\,500\,\text{J}$, so $Q = 28\,350\,\text{J} + 250\,500\,\text{J} = 278\,850\,\text{J} = 278.85\,\text{kJ}$
 **Answer:** $280\,\text{kJ}$, two significant figures like the temperature $-18\,{}^\circ\text{C}$.
@@ -73,7 +88,10 @@
 **Given:** energy received from the Sun $Q = 12\,\text{MJ}$ per square metre, ice at $0\,{}^\circ\text{C}$, all the energy is used for melting; from the table $s = 334\,\tfrac{\text{kJ}}{\text{kg}}$
 **Find:** the mass $m$ of ice that melts, in kilograms
 **Principle:** The ice is already at $0\,{}^\circ\text{C}$, so it does not warm up and all the energy is used for melting. So the quantity of heat needed for melting is $Q = sm$, and we get the mass that melts by solving for $m$.
-**Formula:** $Q = sm$, from which $m = \dfrac{Q}{s}$
+**Formula:** $$\begin{aligned} Q &= sm \\
+m &= \dfrac{Q}{s}
+\end{aligned}
+$$
 **Conversions:** Megajoules and kilojoules must be put in the same unit before dividing: $12\,\text{MJ} = 12\,000\,000\,\text{J}$ and $334\,\tfrac{\text{kJ}}{\text{kg}} = 334\,000\,\tfrac{\text{J}}{\text{kg}}$.
 **Substitution:** $m = \dfrac{12\,000\,000\,\text{J}}{334\,000\,\tfrac{\text{J}}{\text{kg}}} = 35.93\,\text{kg}$
 **Answer:** $36\,\text{kg}$, two significant figures like the energy $12\,\text{MJ}$.
@@ -83,7 +101,13 @@
 **Given:** water $m = 2.0\,\text{kg}$, $T_1 = 15\,{}^\circ\text{C}$, $T_2 = 100\,{}^\circ\text{C}$, part that vaporises $m_\text{v} = 0.10\,\text{kg}$; from the table $c = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ and $r = 2260\,\tfrac{\text{kJ}}{\text{kg}}$
 **Find:** the total quantity of heat $Q$ transferred to the water, in megajoules
 **Principle:** The process has two stages. First all the water warms to the boiling point ($Q_1 = cm\Delta T$), and then only the part that vaporises turns into steam at a constant temperature ($Q_2 = rm_\text{v}$). The total quantity of heat is the sum of these.
-**Formula:** $Q = Q_1 + Q_2$, and $Q = cm(T_2 - T_1) + rm_\text{v}$
+**Formula:** $$\begin{aligned} Q_1 &= cm\Delta T \\
+\Delta T &= T_2 - T_1 \\
+Q_2 &= rm_\text{v} \\
+Q &= Q_1 + Q_2 \\
+&= cm(T_2 - T_1) + rm_\text{v}
+\end{aligned}
+$$
 **Conversions:** The temperature change is the same in kelvins: $T_2 - T_1 = 100\,{}^\circ\text{C} - 15\,{}^\circ\text{C} = 85\,\text{K}$. $r = 2\,260\,000\,\tfrac{\text{J}}{\text{kg}}$ and finally $1\,\text{MJ} = 10^6\,\text{J}$.
 **Substitution:** $Q_1 = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 2.0\,\text{kg} \cdot 85\,\text{K} = 712\,300\,\text{J}$ and $Q_2 = 2\,260\,000\,\tfrac{\text{J}}{\text{kg}} \cdot 0.10\,\text{kg} = 226\,000\,\text{J}$, so $Q = 938\,300\,\text{J} = 0.9383\,\text{MJ}$
 **Answer:** $0.94\,\text{MJ}$, two significant figures like the masses $2.0\,\text{kg}$ and $0.10\,\text{kg}$.
@@ -114,7 +138,16 @@ Estimate: vaporisation needs a lot even for a small mass because $r$ is large, a
 **Given:** juice (the $c$ of water) $m_1 = 0.35\,\text{kg}$, $T_1 = 25\,{}^\circ\text{C}$; ice $m_2 = 60\,\text{g}$, $T_0 = 0\,{}^\circ\text{C}$; no heat losses; from the table $c = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ and $s = 334\,\tfrac{\text{kJ}}{\text{kg}}$
 **Find:** the final temperature $T$ when all the ice has melted
 **Principle:** Energy is conserved when no heat passes to the glass or the air: the quantity of heat the juice gives out equals the quantity used to melt the ice and warm the meltwater. The ice melts completely if the juice has enough energy: cooling to $0\,{}^\circ\text{C}$ it would give out $36\,662.5\,\text{J}$, but melting needs only $20\,040\,\text{J}$.
-**Formula:** $$\begin{aligned} &cm_1(T_1 - T) \\ &= sm_2 + cm_2(T - T_0) \end{aligned}$$, from which $T = \dfrac{cm_1T_1 + cm_2T_0 - sm_2}{c(m_1 + m_2)}$
+**Formula:** $$\begin{aligned} Q_\text{out} &= Q_\text{received} \\
+Q_\text{out} &= cm_1(T_1 - T) \\
+Q_\text{received} &= sm_2 + cm_2(T - T_0) \\
+cm_1(T_1 - T) &= sm_2 \\
+&\quad + cm_2(T - T_0) \\
+c(m_1 + m_2)T &= cm_1T_1 \\
+&\quad + cm_2T_0 - sm_2 \\
+T &= \dfrac{\begin{array}{c} cm_1T_1 \\ + cm_2T_0 - sm_2 \end{array}}{c(m_1 + m_2)}
+\end{aligned}
+$$
 **Conversions:** $m_2 = 60\,\text{g} = 0.060\,\text{kg}$ and $s = 334\,000\,\tfrac{\text{J}}{\text{kg}}$. Since $T_0 = 0\,{}^\circ\text{C}$, the term $cm_2T_0$ is zero, and the temperatures can be substituted in degrees Celsius because the formula contains temperature differences.
 **Substitution:** The numerator is $4190 \cdot 0.35 \cdot 25 - 334\,000 \cdot 0.060 = 36\,662.5 - 20\,040 = 16\,622.5$ and the denominator is $4190 \cdot 0.41 = 1717.9$, so
 
@@ -128,7 +161,13 @@ $$T = \dfrac{16\,622.5}{1717.9}\,{}^\circ\text{C} = 9.68\,{}^\circ\text{C}$$
 **Given:** water $m = 0.25\,\text{kg}$, $T_1 = 20\,{}^\circ\text{C}$, warms to $T_2 = 100\,{}^\circ\text{C}$ and vaporises completely; stones $m_\text{s} = 30\,\text{kg}$, $c_\text{s} = 800\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$; from the table $c = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ and $r = 2260\,\tfrac{\text{kJ}}{\text{kg}}$
 **Find:** the drop in temperature $\Delta T$ of the stones, in kelvins
 **Principle:** Energy is conserved: all the energy the water needs comes from the stones. The water first needs $cm(T_2 - T_1)$ to warm up and then $rm$ to vaporise, during which the temperature does not change. The quantity of heat the stones give out is $c_\text{s}m_\text{s}\Delta T$.
-**Formula:** $$c_\text{s}m_\text{s}\Delta T = cm(T_2 - T_1) + rm$$, from which $\Delta T = \dfrac{cm(T_2 - T_1) + rm}{c_\text{s}m_\text{s}}$
+**Formula:** $$\begin{aligned} Q_\text{out} &= Q_\text{received} \\
+Q_\text{out} &= c_\text{s}m_\text{s}\Delta T \\
+Q_\text{received} &= cm(T_2 - T_1) + rm \\
+c_\text{s}m_\text{s}\Delta T &= cm(T_2 - T_1) + rm \\
+\Delta T &= \dfrac{cm(T_2 - T_1) + rm}{c_\text{s}m_\text{s}}
+\end{aligned}
+$$
 **Conversions:** $T_2 - T_1 = 100\,{}^\circ\text{C} - 20\,{}^\circ\text{C} = 80\,\text{K}$, the same in kelvins. $r = 2\,260\,000\,\tfrac{\text{J}}{\text{kg}}$.
 **Substitution:** $Q_1 = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0.25\,\text{kg} \cdot 80\,\text{K} = 83\,800\,\text{J}$ and $Q_2 = 2\,260\,000\,\tfrac{\text{J}}{\text{kg}} \cdot 0.25\,\text{kg} = 565\,000\,\text{J}$, so $\Delta T = \dfrac{648\,800\,\text{J}}{800\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 30\,\text{kg}} = \dfrac{648\,800\,\text{J}}{24\,000\,\tfrac{\text{J}}{\text{K}}} = 27.03\,\text{K}$
 **Answer:** $27\,\text{K}$, two significant figures like the mass $0.25\,\text{kg}$.
@@ -138,7 +177,15 @@ $$T = \dfrac{16\,622.5}{1717.9}\,{}^\circ\text{C} = 9.68\,{}^\circ\text{C}$$
 **Given:** $P_1 = 800\,\text{W}$, $\Delta m_1 = 196\,\text{g}$; $P_2 = 400\,\text{W}$, $\Delta m_2 = 90.0\,\text{g}$; in both $t = 10.0\,\text{min}$; the water is at $100\,{}^\circ\text{C}$, so the power $P_\text{loss}$ passing to the air is the same
 **Find:** the specific latent heat of vaporisation $r$ in $\tfrac{\text{MJ}}{\text{kg}}$
 **Principle:** The water boils all the time, so its temperature does not change and the energy that stays in the water is used for vaporisation: $(P - P_\text{loss})t = r\Delta m$. There are two equations and two unknowns ($r$ and $P_\text{loss}$), so they can be solved together.
-**Formula:** $(P_1 - P_\text{loss})t = r\Delta m_1$ and $(P_2 - P_\text{loss})t = r\Delta m_2$. Subtract the equations: $(P_1 - P_2)t = r(\Delta m_1 - \Delta m_2)$, from which $r = \dfrac{(P_1 - P_2)t}{\Delta m_1 - \Delta m_2}$
+**Formula:** $$\begin{aligned} E_\text{water} &= (P - P_\text{loss})t \\
+Q &= r\Delta m \\
+E_\text{water} &= Q \\
+(P_1 - P_\text{loss})t &= r\Delta m_1 \\
+(P_2 - P_\text{loss})t &= r\Delta m_2 \\
+(P_1 - P_2)t &= r(\Delta m_1 - \Delta m_2) \\
+r &= \dfrac{(P_1 - P_2)t}{\Delta m_1 - \Delta m_2}
+\end{aligned}
+$$
 **Conversions:** $t = 10.0\,\text{min} = 600\,\text{s}$, $\Delta m_1 = 0.196\,\text{kg}$ and $\Delta m_2 = 0.0900\,\text{kg}$. Finally $1\,\text{MJ} = 10^6\,\text{J}$.
 **Substitution:** $r = \dfrac{(800\,\text{W} - 400\,\text{W}) \cdot 600\,\text{s}}{0.196\,\text{kg} - 0.0900\,\text{kg}} = \dfrac{240\,000\,\text{J}}{0.106\,\text{kg}} = 2\,264\,151\,\tfrac{\text{J}}{\text{kg}} = 2.264\,\tfrac{\text{MJ}}{\text{kg}}$
 **Answer:** $2.26\,\tfrac{\text{MJ}}{\text{kg}}$, three significant figures: the difference $196\,\text{g} - 90.0\,\text{g} = 106\,\text{g}$ is accurate to the nearest gram and has three figures.
@@ -162,7 +209,10 @@ Only when all the ice has melted does the meltwater start to warm up.
 **Given:** energy used for vaporisation $Q = 1.36\,\text{MJ}$; from the table $r = 2260\,\tfrac{\text{kJ}}{\text{kg}}$
 **Find:** the mass $m$ of water that boils away, in kilograms
 **Principle:** The water is already boiling, so its temperature does not rise and all the energy is used for vaporisation, $Q = rm$. The mass that vaporises is proportional to the energy.
-**Formula:** $Q = rm$, from which $m = \dfrac{Q}{r}$
+**Formula:** $$\begin{aligned} Q &= rm \\
+m &= \dfrac{Q}{r}
+\end{aligned}
+$$
 **Conversions:** $Q = 1.36\,\text{MJ} = 1360\,\text{kJ}$, because $1\,\text{MJ} = 1000\,\text{kJ}$. Then $r$ can be taken in kilojoules per kilogram.
 **Substitution:** $m = \dfrac{1360\,\text{kJ}}{2260\,\tfrac{\text{kJ}}{\text{kg}}} = 0.6018\,\text{kg}$
 **Answer:** $0.602\,\text{kg}$, three significant figures like the energy $1.36\,\text{MJ}$.
@@ -180,7 +230,13 @@ Start: the rows $0\,\text{s}$ and $10\,\text{s}$ give a rise of $1.14\,\tfrac{\t
 End: at the row $160\,\text{s}$ the temperature is $1.9\,{}^\circ\text{C}$, and the rise between the rows $160\,\text{s}$ and $180\,\text{s}$ is $0.575\,\tfrac{\text{K}}{\text{s}}$, so the rise began about $3.3\,\text{s}$ earlier, at about $157\,\text{s}$.
 
 The duration of melting is $\Delta t = 157\,\text{s} - 18\,\text{s} = 139\,\text{s}$.
-**Formula:** $Pt = sm$, from which $s = \dfrac{P\,\Delta t}{m}$
+**Formula:** $$\begin{aligned} E &= P\,\Delta t \\
+Q &= sm \\
+E &= Q \\
+P\,\Delta t &= sm \\
+s &= \dfrac{P\,\Delta t}{m}
+\end{aligned}
+$$
 **Conversions:** The power and time are already in base units, $1\,\text{W} \cdot 1\,\text{s} = 1\,\text{J}$. Finally $1\,\text{kJ} = 1000\,\text{J}$.
 **Substitution:**
 
@@ -203,7 +259,13 @@ If the plateau is read directly as the rows $20\,\text{s}$ and $150\,\text{s}$, 
 **Find:** a) the error in the student’s reasoning; b) the mass $m$ of water that boils away, in kilograms
 **Principle:** In an open pan the pressure is constant atmospheric pressure, and the temperature of boiling water stays at the boiling point, about $100\,{}^\circ\text{C}$ at normal pressure. All the energy $Pt$ given by the hob is used for vaporisation, $Q = rm$, so $Pt = rm$.
 **Model answer a):** The student assumes that the added energy raises the temperature of boiling water. At constant pressure the temperature does not rise during a change of state: the extra energy is used to vaporise the water. The power affects how fast the water vaporises but not the temperature of the water. Twice the power vaporises twice as many kilograms of water in the same time, and the water stays at $100\,{}^\circ\text{C}$ all the time.
-**Formula:** $Pt = rm$, from which $m = \dfrac{Pt}{r}$
+**Formula:** $$\begin{aligned} E &= Pt \\
+Q &= rm \\
+E &= Q \\
+Pt &= rm \\
+m &= \dfrac{Pt}{r}
+\end{aligned}
+$$
 **Conversions:** $P = 3.0\,\text{kW} = 3000\,\text{W}$, $t = 5.0\,\text{min} = 5.0 \cdot 60\,\text{s} = 300\,\text{s}$ and $r = 2260\,\tfrac{\text{kJ}}{\text{kg}} = 2\,260\,000\,\tfrac{\text{J}}{\text{kg}}$.
 **Substitution:**
 
@@ -251,7 +313,14 @@ Solidification begins at about $3.2\,\text{min}$: the plateau is reached along t
 Solidification ends at about $30.9\,\text{min}$: the rows of the solid, $32\,\text{min}$ and $34\,\text{min}$, give a cooling rate of $$\begin{aligned} &(65.0\,\text{K} - 57.4\,\text{K}) : 2\,\text{min} \\ &= 3.8\,\tfrac{\text{K}}{\text{min}} \end{aligned}$$, so from the plateau temperature $69.2\,{}^\circ\text{C}$ to the temperature $65.0\,{}^\circ\text{C}$ of the row $32\,\text{min}$ takes $4.2\,\text{K} : 3.8\,\tfrac{\text{K}}{\text{min}} = 1.1\,\text{min}$.
 
 The duration of solidification is about $$\begin{aligned} &30.9\,\text{min} - 3.2\,\text{min} \\ &= 27.7\,\text{min} \end{aligned}$$.
-**Formula:** b) $P = \dfrac{cm\Delta T}{\Delta t}$; c) $Q = P\,\Delta t_\text{sol}$ and $Q = sm$, from which $s = \dfrac{Q}{m}$
+**Formula:** $$\begin{aligned} Q_\text{liquid} &= cm\Delta T \\
+P &= \dfrac{Q_\text{liquid}}{\Delta t} \\
+&= \dfrac{cm\Delta T}{\Delta t} \\
+Q &= P\,\Delta t_\text{sol} \\
+Q &= sm \\
+s &= \dfrac{Q}{m}
+\end{aligned}
+$$
 **Conversions:** The change in temperature is the same in degrees Celsius and in kelvins. $\Delta t = 3\,\text{min} = 180\,\text{s}$ and $\Delta t_\text{sol} = 27.7\,\text{min} = 1662\,\text{s}$. Finally $1\,\text{kJ} = 1000\,\text{J}$.
 **Substitution:**
 
@@ -281,7 +350,23 @@ Comparison: if the same energy $19.9\,\text{kJ}$ cooled the liquid, the temperat
 **Given:** milk $M = 0.300\,\text{kg}$, $T_0 = 20.0\,{}^\circ\text{C}$, final temperature $T = 65.0\,{}^\circ\text{C}$; steam at $100\,{}^\circ\text{C}$; no heat losses; from the table $c = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ and $r = 2260\,\tfrac{\text{kJ}}{\text{kg}}$
 **Find:** a) the mass $m_\text{s}$ of steam that condenses, in grams; b) for comparison: the mass of water at $100\,{}^\circ\text{C}$ needed
 **Principle:** Energy is conserved when there are no losses: the energy absorbed by the milk equals the energy given out by the steam. The steam gives out energy in two stages: as it condenses into water at $100\,{}^\circ\text{C}$ ($Q = rm_\text{s}$) and then as the condensed water cools from $100\,{}^\circ\text{C}$ to the final temperature ($Q = cm_\text{s}\Delta T$).
-**Formula:** $$\begin{aligned} &c M (T - T_0) \\ &= r m_\text{s} + c\, m_\text{s}(100\,{}^\circ\text{C} - T) \end{aligned}$$, from which $m_\text{s} = \dfrac{c M (T - T_0)}{r + c\,(100\,{}^\circ\text{C} - T)}$. In the comparison, water alone at $100\,{}^\circ\text{C}$ gives out energy only as it cools: $$\begin{aligned} &c M (T - T_0) \\ &= c\, m_\text{w}(100\,{}^\circ\text{C} - T) \end{aligned}$$, from which $m_\text{w} = \dfrac{M (T - T_0)}{100\,{}^\circ\text{C} - T}$.
+**Formula:** $$\begin{aligned} Q_\text{out} &= Q_\text{received} \\
+Q_\text{received} &= cM(T - T_0) \\
+Q_\text{out} &= rm_\text{s} \\
+&\quad + c\,m_\text{s}(100\,{}^\circ\text{C} - T) \\
+cM(T - T_0) &= rm_\text{s} \\
+&\quad + c\,m_\text{s}(100\,{}^\circ\text{C} - T) \\
+cM(T - T_0) &= m_\text{s}\,(r + c\,(100\,{}^\circ\text{C} - T)) \\
+m_\text{s} &= \dfrac{cM(T - T_0)}{r + c\,(100\,{}^\circ\text{C} - T)}
+\end{aligned}
+$$
+
+In the comparison, water alone at $100\,{}^\circ\text{C}$ gives out energy only as it cools:
+
+$$\begin{aligned} cM(T - T_0) &= c\,m_\text{w}(100\,{}^\circ\text{C} - T) \\
+m_\text{w} &= \dfrac{M(T - T_0)}{100\,{}^\circ\text{C} - T}
+\end{aligned}
+$$
 **Conversions:** The temperature differences are the same in degrees Celsius and in kelvins: $T - T_0 = 45.0\,\text{K}$ and $100\,{}^\circ\text{C} - T = 35.0\,\text{K}$. $r = 2\,260\,000\,\tfrac{\text{J}}{\text{kg}}$ and finally $1\,\text{kg} = 1000\,\text{g}$.
 **Substitution:** The numerator is $$\begin{aligned} &4190 \cdot 0.300 \cdot 45.0\,\text{J} \\ &= 56\,565\,\text{J} \end{aligned}$$ and the denominator is $$\begin{aligned} &2\,260\,000 + 4190 \cdot 35.0 \\ &= 2\,406\,650\,\tfrac{\text{J}}{\text{kg}} \end{aligned}$$, so
 
@@ -317,7 +402,10 @@ Steam that hits the skin condenses on the surface of the skin and gives this lar
 **Find:** the specific heat capacity of ice, $c$
 **Principle:** When ice warms without melting, the quantity of heat transferred is $Q = cm\Delta T$, so $c = \dfrac{Q}{m\Delta T}$. In the first part of the graph the ice warms; the horizontal part is melting.
 **Reading the graph:** The first part ends at the grid intersection $(20\,\text{kJ};\ 0\,{}^\circ\text{C})$, which gives $Q = 20\,\text{kJ}$ (the start is at the origin, $0\,\text{kJ}$). The initial temperature $-16\,{}^\circ\text{C}$ is given in the task, so $\Delta T = 0\,{}^\circ\text{C} - (-16\,{}^\circ\text{C}) = 16\,\text{K}$.
-**Formula:** $c = \dfrac{Q}{m\Delta T}$
+**Formula:** $$\begin{aligned} Q &= cm\Delta T \\
+c &= \dfrac{Q}{m\Delta T}
+\end{aligned}
+$$
 **Conversions:** $Q = 20\,\text{kJ} = 20\,000\,\text{J}$, so that $c$ comes in $\text{J}/(\text{kg}\cdot\text{K})$.
 **Substitution:** $c = \dfrac{20\,000\,\text{J}}{0.60\,\text{kg} \cdot 16\,\text{K}} = 2083\,\dfrac{\text{J}}{\text{kg}\cdot\text{K}} \approx 2.1 \cdot 10^{3}\,\dfrac{\text{J}}{\text{kg}\cdot\text{K}}$
 **Answer:** $2.1 \cdot 10^{3}\,\dfrac{\text{J}}{\text{kg}\cdot\text{K}}$, two significant figures, like the datum $0.60\,\text{kg}$. The heat is read from a grid intersection, so $2020\ldots2150\,\dfrac{\text{J}}{\text{kg}\cdot\text{K}}$ is accepted.

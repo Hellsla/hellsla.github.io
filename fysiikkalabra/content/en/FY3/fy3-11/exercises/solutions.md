@@ -2,7 +2,12 @@
 **Given:** the steam pressure stays constant, $p = 480.0\,\text{kPa}$, change in volume $\Delta V = 0.0250\,\text{m}^3$
 **Find:** the work $W$ done by the steam on the piston in kilojoules
 **Principle:** The pressure stays constant, so the force $F = pA$ that the steam exerts on the piston is the same throughout the motion, and the work is force times distance. Since the change in volume is the area of the piston times the distance, $\Delta V = A s$, the work is the pressure times the change in volume.
-**Formula:** $W = F s = pA s$, so $W = p\,\Delta V$
+**Formula:** $$\begin{aligned} W &= F s \\
+F &= pA \\
+\Delta V &= A s \\
+W &= pAs = p\,\Delta V
+\end{aligned}
+$$
 **Conversions:** $480.0\,\text{kPa} = 480\,000\,\text{Pa}$. The volume is already in cubic metres, so $\text{Pa} \cdot \text{m}^3 = \text{J}$ without further conversion. Finally $1\,\text{kJ} = 1000\,\text{J}$.
 **Substitution:** $W = 480\,000\,\text{Pa} \cdot 0.0250\,\text{m}^3 = 12\,000\,\text{J} = 12.0\,\text{kJ}$
 **Answer:** $12.0\,\text{kJ}$, three significant figures. Both values, the pressure $480.0\,\text{kPa}$ and the change in volume $0.0250\,\text{m}^3$, are given with at least three figures.
@@ -63,7 +68,12 @@
 **Given:** mass of firewood $m = 120\,\text{kg}$ per hour, heat of combustion $H = 15\,\tfrac{\text{MJ}}{\text{kg}}$, power of the steam engine $P = 45\,\text{kW}$, time $t = 1\,\text{h}$
 **Find:** the overall efficiency $\eta$ of the boiler and the steam engine as a percentage
 **Principle:** The whole plant is a heat engine: the burning of the firewood releases heat $Q_1$ and the engine does work $W$. Efficiency is the share of this heat that becomes work, and both are calculated for the same hour.
-**Formula:** $Q_1 = mH$ and $W = Pt$, so $\eta = \dfrac{W}{Q_1} = \dfrac{Pt}{mH}$
+**Formula:** $$\begin{aligned} \eta &= \dfrac{W}{Q_1} \\
+W &= Pt \\
+Q_1 &= mH \\
+\eta &= \dfrac{Pt}{mH}
+\end{aligned}
+$$
 **Conversions:** $45\,\text{kW} = 45\,000\,\text{W}$, $1\,\text{h} = 3600\,\text{s}$ and $15\,\tfrac{\text{MJ}}{\text{kg}} = 15 \cdot 10^6\,\tfrac{\text{J}}{\text{kg}}$, so that both energies are in joules.
 **Substitution:** $\eta = \dfrac{45\,000\,\text{W} \cdot 3600\,\text{s}}{120\,\text{kg} \cdot 15 \cdot 10^6\,\tfrac{\text{J}}{\text{kg}}} = \dfrac{1.62 \cdot 10^8\,\text{J}}{1.8 \cdot 10^9\,\text{J}} = 0.090 = 9.0\,\%$
 **Answer:** $9.0\,\%$, two significant figures. The limiting values are the power $45\,\text{kW}$ and the heat of combustion $15\,\tfrac{\text{MJ}}{\text{kg}}$ (both two figures); the mass $120\,\text{kg}$ has at least two figures and does not limit the precision, and $3600\,\text{s/h}$ is a definition.
@@ -75,7 +85,11 @@
 **Principle:** Energy is conserved, so the heat supplied to the air is divided into a change in internal energy and the work done by the air: the first law $\Delta U = Q + W$, where $W$ is the work done on the air.
 
 The piston moves lightly, so the pressure stays constant. The air expands and does the work $p\,\Delta V$, so the work done on it is $W = -p\,\Delta V$.
-**Formula:** $W = -p\,\Delta V$, so $\Delta U = Q + W = Q - p\,\Delta V$
+**Formula:** $$\begin{aligned} \Delta U &= Q + W \\
+W &= -p\,\Delta V \\
+\Delta U &= Q - p\,\Delta V
+\end{aligned}
+$$
 **Conversions:** $125\,\text{kPa} = 125\,000\,\text{Pa}$ and $1.60\,\textsf{l} = 0.00160\,\text{m}^3$, so $\text{Pa} \cdot \text{m}^3 = \text{J}$.
 **Substitution:** $$\begin{aligned} \Delta U &= 700.0\,\text{J} \\ &- 125\,000\,\text{Pa} \cdot 0.00160\,\text{m}^3 \\ &= 700.0\,\text{J} - 200\,\text{J} \\ &= 500\,\text{J} \end{aligned}$$
 **Answer:** $+500\,\text{J}$, that is, the internal energy grows, three significant figures.
@@ -91,7 +105,12 @@ If the work were added to the heat, the result would be $900\,\text{J}$, more th
 **Given:** mechanical power $P_\text{a} = 480\,\text{kW}$, efficiency $\eta = 40.0\,\% = 0.400$
 **Find:** the power of the waste heat $P_\text{waste}$ in kilowatts
 **Principle:** The engine is a heat engine, and energy is conserved: the fuel power is divided into mechanical power and waste heat. Efficiency links the mechanical power to the fuel power, so the fuel power is calculated first.
-**Formula:** $\eta = \dfrac{P_\text{a}}{P_\text{o}}$, so $P_\text{o} = \dfrac{P_\text{a}}{\eta}$ and $P_\text{waste} = P_\text{o} - P_\text{a}$
+**Formula:** $$\begin{aligned} \eta &= \dfrac{P_\text{a}}{P_\text{o}} \\
+P_\text{o} &= \dfrac{P_\text{a}}{\eta} \\
+P_\text{o} &= P_\text{a} + P_\text{waste} \\
+P_\text{waste} &= P_\text{o} - P_\text{a}
+\end{aligned}
+$$
 **Conversions:** Efficiency $40.0\,\% = \tfrac{40.0}{100} = 0.400$. The powers are already in kilowatts, so no other conversion is needed.
 **Substitution:** $P_\text{o} = \dfrac{480\,\text{kW}}{0.400} = 1200\,\text{kW}$, so $P_\text{waste} = 1200\,\text{kW} - 480\,\text{kW} = 720\,\text{kW}$
 **Answer:** $720\,\text{kW}$. The final zero of the mechanical power $480\,\text{kW}$ is significant, so it has three figures, and the efficiency $40.0\,\%$ also has three figures. The answer is therefore given with three significant figures.
@@ -101,7 +120,14 @@ If the work were added to the heat, the result would be $900\,\text{J}$, more th
 **Given:** in combined production fuel power $P_\text{CHP} = 320\,\text{MW}$, electric power $P_\text{e} = 96\,\text{MW}$, district heating power $P_\text{dh} = 180\,\text{MW}$; in separate production the efficiency of the condensing plant $\eta_\text{cond} = 0.400$ and of the heating plant $\eta_\text{h} = 0.900$
 **Find:** the additional fuel power $\Delta P$ needed by separate production in megawatts, and a justification for the difference in efficiencies
 **Principle:** The same electric and heating powers are produced in two separate plants, and the fuel power of each is obtained from the efficiency $\eta = \tfrac{P_\text{a}}{P_\text{o}}$, where $P_\text{a}$ is the useful power of the plant and $P_\text{o}$ its fuel power: $P_\text{o} = \tfrac{P_\text{a}}{\eta}$. The comparison is fair because the useful powers are the same in both cases.
-**Formula:** $P_\text{cond} = \dfrac{P_\text{e}}{\eta_\text{cond}}$ and $P_\text{hp} = \dfrac{P_\text{dh}}{\eta_\text{h}}$, so $\Delta P = \dfrac{P_\text{e}}{\eta_\text{cond}} + \dfrac{P_\text{dh}}{\eta_\text{h}} - P_\text{CHP}$
+**Formula:** $$\begin{aligned} \eta_\text{cond} &= \dfrac{P_\text{e}}{P_\text{cond}} \\
+\eta_\text{h} &= \dfrac{P_\text{dh}}{P_\text{hp}} \\
+P_\text{cond} &= \dfrac{P_\text{e}}{\eta_\text{cond}} \\
+P_\text{hp} &= \dfrac{P_\text{dh}}{\eta_\text{h}} \\
+\Delta P &= P_\text{cond} + P_\text{hp} - P_\text{CHP} \\
+&= \dfrac{P_\text{e}}{\eta_\text{cond}} + \dfrac{P_\text{dh}}{\eta_\text{h}} - P_\text{CHP}
+\end{aligned}
+$$
 **Conversions:** The efficiencies are $40.0\,\% = 0.400$ and $90.0\,\% = 0.900$. All powers are in megawatts, so no other conversion is needed.
 **Substitution:** $$\begin{aligned} \Delta P &= \dfrac{96\,\text{MW}}{0.400} + \dfrac{180\,\text{MW}}{0.900} \\ &- 320\,\text{MW} \\ &= 240\,\text{MW} + 200\,\text{MW} \\ &- 320\,\text{MW} \\ &= 120\,\text{MW} \end{aligned}$$
 **Answer:** $120\,\text{MW}$, two significant figures. The limiting value is the electric power $96\,\text{MW}$ (two figures): it determines the fuel power of the condensing plant, $240\,\text{MW}$, to the nearest ten megawatts, and the difference $440\,\text{MW} - 320\,\text{MW}$ keeps this precision. The efficiencies $40.0\,\%$ and $90.0\,\%$ have three figures and do not limit the precision.
@@ -117,7 +143,15 @@ A condensing power plant turns heat into work, and then part of the heat must al
 In direct electric heating the resistors turn practically all the electrical energy into internal energy, which is transferred as heat to the room, so it needs as much electricity as heat.
 
 Energy is conserved: the heat entering the house is the pump's electricity and the heat taken from the outdoor air together.
-**Formula:** $\varepsilon = \dfrac{Q_1}{W}$, so $W = \dfrac{Q_1}{\varepsilon}$. The saving is $\Delta E = Q_1 - W$ and from conservation of energy $Q_2 = Q_1 - W$, so $\Delta E = Q_2 = Q_1 - \dfrac{Q_1}{\varepsilon}$.
+**Formula:** $$\begin{aligned} \varepsilon &= \dfrac{Q_1}{W} \\
+W &= \dfrac{Q_1}{\varepsilon} \\
+Q_1 &= W + Q_2 \\
+Q_2 &= Q_1 - W \\
+\Delta E &= Q_1 - W = Q_2 \\
+&= Q_1 - \dfrac{Q_1}{\varepsilon} \\
+&= Q_1\left(1 - \dfrac{1}{\varepsilon}\right)
+\end{aligned}
+$$
 **Conversions:** All energies are in megawatt-hours and the coefficient of performance has no unit, so no conversions are needed.
 **Substitution:** $W = \dfrac{16.0\,\text{MWh}}{2.50} = 6.40\,\text{MWh}$, so $\Delta E = Q_2 = 16.0\,\text{MWh} - 6.40\,\text{MWh} = 9.60\,\text{MWh}$, or directly $\Delta E = Q_1\left(1 - \dfrac{1}{\varepsilon}\right) = 16.0\,\text{MWh} \cdot 0.600 = 9.60\,\text{MWh}$
 **Answer:** $9.60\,\text{MWh}$ both as electricity saved and as heat taken from the outdoor air, three significant figures.
@@ -131,7 +165,15 @@ The result is the product $Q_1\left(1 - \tfrac{1}{\varepsilon}\right)$, and its 
 **Given:** volume of fuel $V = 6.00\,\textsf{l}$ over a distance $s = 100\,\text{km}$ (the reference distance for consumption), speed $v = 80.0\,\tfrac{\text{km}}{\text{h}}$; density of petrol $\rho = 0.750\,\tfrac{\text{kg}}{\textsf{l}}$ and heat of combustion $H = 43.0\,\tfrac{\text{MJ}}{\text{kg}}$; efficiency $\eta = 28.0\,\% = 0.280$
 **Find:** the average mechanical power $P$ of the engine in kilowatts, and justifications for where the energy goes and why an electric car needs less
 **Principle:** The engine is a heat engine: the energy $Q_1$ released when petrol burns is divided into work $W = \eta Q_1$ and waste heat. Power is work divided by the time taken for the distance, and the speed is steady, so the power is constant.
-**Formula:** $Q_1 = \rho V H$ and $t = \dfrac{s}{v}$, so $P = \dfrac{W}{t} = \dfrac{\eta \rho V H}{t}$
+**Formula:** $$\begin{aligned} \eta &= \dfrac{W}{Q_1} \\
+W &= \eta Q_1 \\
+Q_1 &= mH \\
+m &= \rho V \\
+t &= \dfrac{s}{v} \\
+P &= \dfrac{W}{t} \\
+&= \dfrac{\eta \rho V H}{t}
+\end{aligned}
+$$
 **Conversions:** $t = \dfrac{100\,\text{km}}{80.0\,\text{km/h}} = 1.25\,\text{h} = 4500\,\text{s}$ and $43.0\,\tfrac{\text{MJ}}{\text{kg}} = 43.0 \cdot 10^6\,\tfrac{\text{J}}{\text{kg}}$. Finally $1\,\text{kW} = 1000\,\text{W}$.
 **Substitution:** The work obtained from the energy of the fuel is $$\begin{aligned} W &= 0.280 \cdot 0.750\,\tfrac{\text{kg}}{\textsf{l}} \\ &\cdot 6.00\,\textsf{l} \cdot 43.0 \cdot 10^6\,\tfrac{\text{J}}{\text{kg}} \\ &= 5.418 \cdot 10^7\,\text{J} \end{aligned}$$, so
 
@@ -164,7 +206,12 @@ Electricity and heat are both energy, so they can be compared with each other.
 **Given:** electric power of the pump $P_\text{el} = 1.20\,\text{kW}$, thermal power given out to the heating circuit $P_1 = 3.90\,\text{kW}$
 **Find:** the coefficient of performance $\varepsilon$
 **Principle:** The coefficient of performance tells how many times as much heat the pump gives out indoors as the electrical energy it uses. It can also be calculated from the powers, because both powers are energy in the same time.
-**Formula:** $\varepsilon = \dfrac{Q_1}{W}$, so from the powers $\varepsilon = \dfrac{P_1}{P_\text{el}}$
+**Formula:** $$\begin{aligned} \varepsilon &= \dfrac{Q_1}{W} \\
+Q_1 &= P_1 \,t \\
+W &= P_\text{el}\,t \\
+\varepsilon &= \dfrac{P_1\,t}{P_\text{el}\,t} = \dfrac{P_1}{P_\text{el}}
+\end{aligned}
+$$
 **Conversions:** Both powers are in kilowatts, so the unit cancels and no conversion is needed. The coefficient of performance has no unit.
 **Substitution:** $\varepsilon = \dfrac{3.90\,\text{kW}}{1.20\,\text{kW}} = 3.25$
 **Answer:** $\varepsilon = 3.25$, three significant figures, because both powers are given with three figures.
@@ -174,7 +221,11 @@ Electricity and heat are both energy, so they can be compared with each other.
 **Given:** heat of combustion of the fuel $H = 43\,\text{MJ/kg}$. Power and consumption: $20.0\,\text{kW}$ and $7.9\,\text{kg/h}$; $40.0\,\text{kW}$ and $11.6\,\text{kg/h}$; $60.0\,\text{kW}$ and $16.0\,\text{kg/h}$; $80.0\,\text{kW}$ and $22.5\,\text{kg/h}$
 **Find:** the greatest efficiency $\eta$ of the engine as a percentage
 **Principle:** The engine is a heat engine, and its efficiency is the share of the power released in the burning of the fuel that becomes mechanical power. The fuel power is the consumption times the heat of combustion. The efficiency is calculated separately for each load, and the greatest is chosen.
-**Formula:** $P_1 = q_m H$ and $\eta = \dfrac{P}{P_1} = \dfrac{P}{q_m H}$
+**Formula:** $$\begin{aligned} \eta &= \dfrac{P}{P_1} \\
+P_1 &= q_m H \\
+\eta &= \dfrac{P}{q_m H}
+\end{aligned}
+$$
 **Conversions:** $43\,\text{MJ/kg} = 43 \cdot 10^6\,\text{J/kg}$ and $1\,\text{h} = 3600\,\text{s}$, so for example $16.0\,\text{kg/h} = \tfrac{16.0}{3600}\,\text{kg/s} = 4.444 \cdot 10^{-3}\,\text{kg/s}$. The power $60.0\,\text{kW} = 60\,000\,\text{W}$.
 **Substitution:** At the load $60.0\,\text{kW}$:
 ```latex
@@ -204,7 +255,10 @@ The size of the engine or the heat of combustion of the fuel does not change thi
 **Given:** electrical energies of the four days in the table $W$: $2.1$, $3.0$, $4.2$ and $3.6\,\text{kWh}$, and the heats given out indoors $Q_1$: $6.4$, $8.1$, $10.0$ and $9.3\,\text{kWh}$
 **Find:** the heat $Q_2$ taken from the outdoor air in total in the four days
 **Principle:** A heat pump does not produce energy. The heat given out indoors is the sum of the heat taken from the outdoor air and the electrical energy used by the pump, and this holds also for sums over several days.
-**Formula:** $Q_2 = Q_1 - W$
+**Formula:** $$\begin{aligned} Q_1 &= Q_2 + W \\
+Q_2 &= Q_1 - W
+\end{aligned}
+$$
 **Conversions:** All the energies are given in kilowatt-hours, so no conversions are needed.
 **Substitution:** The sums are $W = 2.1 + 3.0 + 4.2 + 3.6 = 12.9\,\text{kWh}$ and $Q_1 = 6.4 + 8.1 + 10.0 + 9.3 = 33.8\,\text{kWh}$. So
 ```latex
@@ -226,7 +280,12 @@ The coefficient of performance $Q_1/W$ of each day is over 1 ($3.05$; $2.70$; $2
 The coefficient of performance of the whole season is defined in the same way from the energies of the whole season: the heat given out during the season divided by the electrical energy of the season.
 
 The electricity use of direct electric heating is equal to the heat demand.
-**Formula:** $W = \dfrac{Q}{\varepsilon}$ and $\varepsilon_\text{season} = \dfrac{\sum Q}{\sum W}$
+**Formula:** $$\begin{aligned} \varepsilon &= \dfrac{Q_1}{W} \\
+Q_1 &= Q \\
+W &= \dfrac{Q}{\varepsilon} \\
+\varepsilon_\text{season} &= \dfrac{\sum Q}{\sum W}
+\end{aligned}
+$$
 **Conversions:** All the energies are in megawatt-hours, so no conversions are needed. The coefficient of performance has no unit.
 **Substitution:** a) Month by month:
 ```latex
@@ -270,7 +329,13 @@ The pressure is constant, so the work done by the air is $W = p\,\Delta V$, and 
 
 Energy is conserved: by the first law the internal energy changes by the heat and the work done on the air. The work done on the expanding air is $-p\,\Delta V$, so $\Delta U = Q - p\,\Delta V$.
 **Reading the graph:** From the table the height of the piston grows from $h_1 = 10.0\,\text{cm}$ to $h_2 = 22.0\,\text{cm}$, so $\Delta h = 12.0\,\text{cm}$. The height grows by about the same amount every second ($3.0\,\text{cm/s}$). The pressure is given as constant, and the steady rise fits heating with a constant power.
-**Formula:** $Q = Pt$, $\Delta V = A\,\Delta h$, $W = p\,\Delta V$ and $\Delta U = Q - p\,\Delta V$
+**Formula:** $$\begin{aligned} Q &= Pt \\
+\Delta V &= A\,\Delta h \\
+W &= p\,\Delta V \\
+\Delta U &= Q - W \\
+&= Q - p\,\Delta V
+\end{aligned}
+$$
 **Conversions:** $A = 200\,\text{cm}^2 = 200 \cdot 10^{-4}\,\text{m}^2 = 0.0200\,\text{m}^2$, $\Delta h = 12.0\,\text{cm} = 0.120\,\text{m}$ and $p = 125\,\text{kPa} = 125\,000\,\text{Pa}$.
 **Substitution:** a)
 ```latex
@@ -330,7 +395,12 @@ The size of the absorbed heat alone does not decide either, and the comparison n
 **Find:** the displacement of the piston $\Delta s$ in metres
 **Principle:** The cross-sectional area of the cylinder is constant, so the volume of the gas is $V = A s$ and the change in volume is $\Delta V = A\,\Delta s$. The more the volume increases, the farther the piston moves.
 **Reading the graph:** The pressure is constant, so the graph is a horizontal segment. Its start is at $V_1 = 1.0\,\textsf{l}$ and its end at $V_2 = 4.0\,\textsf{l}$. The value of the pressure is not needed, only the change in volume $\Delta V = V_2 - V_1$.
-**Formula:** $\Delta V = V_2 - V_1$ and $\Delta V = A\,\Delta s$, so $\Delta s = \dfrac{V_2 - V_1}{A}$
+**Formula:** $$\begin{aligned} \Delta V &= V_2 - V_1 \\
+\Delta V &= A\,\Delta s \\
+\Delta s &= \dfrac{\Delta V}{A} \\
+&= \dfrac{V_2 - V_1}{A}
+\end{aligned}
+$$
 **Conversions:** $V_2 - V_1 = 4.0\,\textsf{l} - 1.0\,\textsf{l} = 3.0\,\textsf{l} = 3.0 \cdot 0.001\,\text{m}^3 = 0.0030\,\text{m}^3$ and $A = 50\,\text{cm}^2 = 50 \cdot 0.0001\,\text{m}^2 = 0.0050\,\text{m}^2$.
 **Substitution:** $\Delta s = \dfrac{0.0030\,\text{m}^3}{0.0050\,\text{m}^2} = 0.60\,\text{m}$
 **Answer:** $\Delta s \approx 0.60\,\text{m}$, two significant figures, as in the volumes read and the area.
@@ -344,7 +414,13 @@ From the task: coefficient of performance $\varepsilon = 4.0$ and the electrical
 **Principle:** Energy is conserved. A heat pump does not produce energy but transfers it: the heat given out to the room is the sum of the heat taken from the surroundings and the electrical energy used by the pump.
 
 The coefficient of performance tells how many times greater the heat given out to the room is than the electrical energy used by the pump. The task gives $\varepsilon$ and $W$, so these two equations are enough.
-**Formula:** $Q_1 = Q_2 + W$ and $\varepsilon = \dfrac{Q_1}{W}$, from which $Q_1 = \varepsilon W$ and $Q_2 = Q_1 - W = (\varepsilon - 1)\,W$
+**Formula:** $$\begin{aligned} Q_1 &= Q_2 + W \\
+\varepsilon &= \dfrac{Q_1}{W} \\
+Q_1 &= \varepsilon W \\
+Q_2 &= Q_1 - W \\
+&= (\varepsilon - 1)\,W
+\end{aligned}
+$$
 **Conversions:** The electrical energy is given and the heats are asked for in kilowatt-hours, so no conversions are needed. The coefficient of performance has no unit.
 **Substitution:** a) According to the source, the coefficient of performance tells how much heat the pump produces in relation to the electrical energy it uses, that is, $\varepsilon = Q_1/W$.
 

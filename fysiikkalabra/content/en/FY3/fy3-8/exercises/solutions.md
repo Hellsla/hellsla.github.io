@@ -52,7 +52,10 @@
 **Given:** steel pipe, maximum allowance of the bellows section $\Delta l = 50.0\,\text{mm}$, $T_0 = 10\,{}^\circ\text{C}$, $T = 90\,{}^\circ\text{C}$, $\alpha = 12 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$ (given in the problem)
 **Find:** the greatest length $l_0$ of the straight section in metres
 **Principle:** The change in the length of the pipe is proportional to its length and the change in temperature, and the bellows section takes up at most $50.0\,\text{mm}$. Steel stays solid, so the same expansion formula applies. The formula is rearranged for the initial length, because the change is known and the length is asked for.
-**Formula:** $\Delta l = \alpha l_0 \Delta T$, from which $l_0 = \dfrac{\Delta l}{\alpha \Delta T}$
+**Formula:** $$\begin{aligned} \Delta l &= \alpha l_0 \Delta T \\
+l_0 &= \dfrac{\Delta l}{\alpha \Delta T}
+\end{aligned}
+$$
 **Conversions:** $\Delta l = 50.0\,\text{mm} = 0.0500\,\text{m}$, so that the result comes out in metres. $\Delta T = 90\,{}^\circ\text{C} - 10\,{}^\circ\text{C} = 80\,\text{K}$, the same in kelvins.
 **Substitution:** $l_0 = \dfrac{0.0500\,\text{m}}{12 \cdot 10^{-6}\,\tfrac{1}{\text{K}} \cdot 80\,\text{K}} = \dfrac{0.0500\,\text{m}}{9.6 \cdot 10^{-4}} = 52.083\,\text{m}$
 **Answer:** $l_0 \approx 52\,\text{m}$, two significant figures. The limiting data are $\alpha = 12 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$ and the difference of whole degrees $\Delta T = 80\,\text{K}$ (both have two figures); the allowed change $50.0\,\text{mm}$ has three figures and does not limit the result.
@@ -62,7 +65,11 @@
 **Given:** steel kettlebell, $V_0 = 2.0\,\text{dm}^3$, $T_0 = -22\,{}^\circ\text{C}$, $T = 20\,{}^\circ\text{C}$, $\alpha = 12 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$ (given in the problem)
 **Find:** the increase in volume $\Delta V$ in cubic centimetres
 **Principle:** The kettlebell expands in all three directions in the same proportion, so its volume grows in relative terms about three times as much as its length: $\gamma \approx 3\alpha$. This holds for a solid whose state of matter does not change. The change in volume is proportional to the initial volume and the change in temperature.
-**Formula:** $\gamma \approx 3\alpha$ and $\Delta V = \gamma V_0 \Delta T$, that is, $\Delta V = 3\alpha V_0 \Delta T$.
+**Formula:** $$\begin{aligned} \Delta V &= \gamma V_0 \Delta T \\
+\gamma &\approx 3\alpha \\
+\Delta V &\approx 3\alpha V_0 \Delta T
+\end{aligned}
+$$
 **Conversions:** $V_0 = 2.0\,\text{dm}^3 = 2000\,\text{cm}^3$, because $1\,\text{dm}^3 = 1000\,\text{cm}^3$. $\Delta T = 20\,{}^\circ\text{C} - (-22\,{}^\circ\text{C}) = 42\,\text{K}$, the same in kelvins.
 **Substitution:** $\gamma \approx 3 \cdot 12 \cdot 10^{-6}\,\tfrac{1}{\text{K}} = 36 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$, and $\Delta V = 36 \cdot 10^{-6}\,\tfrac{1}{\text{K}} \cdot 2000\,\text{cm}^3 \cdot 42\,\text{K} = 3.024\,\text{cm}^3$
 **Answer:** $\Delta V \approx 3.0\,\text{cm}^3$, two significant figures. There are three limiting data: the volume $2.0\,\text{dm}^3$, the coefficient $12 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$ and the difference of whole degrees $\Delta T = 42\,\text{K}$ all have two figures. The factor $3$ ($\gamma \approx 3\alpha$) is an exact number and does not limit the result.
@@ -72,7 +79,11 @@
 **Given:** steel rail, $l_0 = 25.0\,\text{m}$, $T_0 = 12\,{}^\circ\text{C}$, gap $\Delta l = 7.2\,\text{mm}$, $\alpha = 12 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$ (given in the problem)
 **Find:** the temperature $T$ at which the gap closes
 **Principle:** The rail gets longer when it warms up, in proportion to its length and its change in temperature. According to the assumption in the problem, the gap closes when the rail has lengthened by the width of the gap, so $\Delta l$ is set equal to the gap and the required change in temperature is solved.
-**Formula:** $\Delta l = \alpha l_0 \Delta T$, from which $\Delta T = \dfrac{\Delta l}{\alpha l_0}$, and finally $T = T_0 + \Delta T$.
+**Formula:** $$\begin{aligned} \Delta l &= \alpha l_0 \Delta T \\
+\Delta T &= \dfrac{\Delta l}{\alpha l_0} \\
+T &= T_0 + \Delta T
+\end{aligned}
+$$
 **Conversions:** $\Delta l = 7.2\,\text{mm} = 0.0072\,\text{m}$, so that the lengths are in the same unit. The change in temperature $\Delta T$ comes out in kelvins, and it is the same in degrees Celsius, so it is added directly to the temperature $T_0$.
 **Substitution:** $\Delta T = \dfrac{0.0072\,\text{m}}{12 \cdot 10^{-6}\,\tfrac{1}{\text{K}} \cdot 25.0\,\text{m}} = \dfrac{0.0072\,\text{m}}{3.0 \cdot 10^{-4}\,\text{m/K}} = 24\,\text{K}$, and $T = 12\,{}^\circ\text{C} + 24\,\text{K} = 36\,{}^\circ\text{C}$.
 **Answer:** $T = 36\,{}^\circ\text{C}$, two significant figures. The figures of the change in temperature $\Delta T = 24\,\text{K}$ are limited by the gap $7.2\,\text{mm}$ and the coefficient $12 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$ (both have two figures; the length $25.0\,\text{m}$ has three). The sum $12\,{}^\circ\text{C} + 24\,\text{K}$ is in whole degrees, so $36\,{}^\circ\text{C}$ keeps those two figures.
@@ -83,7 +94,10 @@
 **Find:** the coefficient of linear expansion $\alpha$ in the unit $10^{-6}\,\tfrac{1}{\text{K}}$ and, based on it, the metal
 **Principle:** The beam gets longer when it warms up, in proportion to its length and its change in temperature, and the coefficient $\alpha$ is a constant characteristic of the material. The points of the graph give the change in temperature and the change in length, and from them $\alpha$, which can be compared with the table.
 **Reading the graph:** The line starts at the grid crossing $(20\,{}^\circ\text{C};\ 0\,\text{mm})$ and ends at the crossing $(70\,{}^\circ\text{C};\ 3.0\,\text{mm})$. So the change in temperature is $\Delta T = 70\,{}^\circ\text{C} - 20\,{}^\circ\text{C} = 50\,\text{K}$ and the change in length is $\Delta l = 3.0\,\text{mm}$.
-**Formula:** $\Delta l = \alpha l_0 \Delta T$, from which $\alpha = \dfrac{\Delta l}{l_0 \Delta T}$
+**Formula:** $$\begin{aligned} \Delta l &= \alpha l_0 \Delta T \\
+\alpha &= \dfrac{\Delta l}{l_0 \Delta T}
+\end{aligned}
+$$
 **Conversions:** $\Delta l = 3.0\,\text{mm} = 0.0030\,\text{m}$, so that the units cancel. The change in temperature is the same in degrees Celsius and in kelvins. The result is given in the unit $10^{-6}\,\tfrac{1}{\text{K}}$, so the factor $10^{-6}$ is left in the unit.
 **Substitution:** $\alpha = \dfrac{0.0030\,\text{m}}{5.00\,\text{m} \cdot 50\,\text{K}} = \dfrac{0.0030}{250}\,\tfrac{1}{\text{K}} = 0.000012\,\tfrac{1}{\text{K}} = 12 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$
 **Answer:** $\alpha = 12 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$, so the beam is steel. Two significant figures, because the change in length $3.0\,\text{mm}$ was read with two figures. The values are read exactly from the grid, so $11.6\ldots12.4$ is accepted.
@@ -106,7 +120,12 @@ The shorter rod lengthens more, because its temperature rises three-fold even th
 **Given:** steel gear, diameter of the hole $d_0 = 75.000\,\text{mm}$ at the temperature $T_0 = 20\,{}^\circ\text{C}$, diameter of the axle $d = 75.090\,\text{mm}$, $\alpha = 12 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$ (given in the problem)
 **Find:** the lowest temperature $T$ at which the hole is at least as big as the axle
 **Principle:** An object expands in all directions in the same proportion, as when a photograph is enlarged, and so does a hole. The diameter of the hole is a dimension of the object itself, so its change follows the same formula $\Delta d = \alpha d_0 \Delta T$ as a change in length. So the hole does not get smaller even though the material around it expands. When it cools, the hole tries to return to the size $75.000\,\text{mm}$, but the axle is in the way, and the gear is pressed tightly in place.
-**Formula:** $\Delta d = \alpha d_0 \Delta T$, from which $\Delta T = \dfrac{\Delta d}{\alpha d_0}$, and $T = T_0 + \Delta T$. Here $\Delta d = d - d_0$.
+**Formula:** $$\begin{aligned} \Delta d &= \alpha d_0 \Delta T \\
+\Delta T &= \dfrac{\Delta d}{\alpha d_0} \\
+T &= T_0 + \Delta T
+\end{aligned}
+$$
+Here $\Delta d = d - d_0$.
 **Conversions:** All the dimensions are in millimetres, so $\Delta d$ and $d_0$ cancel in the same unit and no conversion is needed. $\Delta T$ comes out in kelvins and is the same as in degrees Celsius.
 **Substitution:** $\Delta d = 75.090\,\text{mm} - 75.000\,\text{mm} = 0.090\,\text{mm}$, and $\Delta T = \dfrac{0.090\,\text{mm}}{12 \cdot 10^{-6}\,\tfrac{1}{\text{K}} \cdot 75.000\,\text{mm}} = \dfrac{0.090}{9.0 \cdot 10^{-4}}\,\text{K} = 100\,\text{K}$. So $T = 20\,{}^\circ\text{C} + 100\,\text{K} = 120\,{}^\circ\text{C}$.
 **Answer:** $T = 120\,{}^\circ\text{C}$, two significant figures. The difference of the diameters $\Delta d = 0.090\,\text{mm}$ has two figures, because the dimensions are given to the nearest thousandth of a millimetre ($75.000$ and $75.090$), and the coefficient $12 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$ also has two figures; they limit the result $\Delta T = 100\,\text{K}$ and thus the temperature $120\,{}^\circ\text{C}$.
@@ -116,7 +135,13 @@ The shorter rod lengthens more, because its temperature rises three-fold even th
 **Given:** copper and steel strips, $l_0 = 50.0\,\text{mm}$, $T_0 = 20\,{}^\circ\text{C}$, $T = 100\,{}^\circ\text{C}$, $\alpha_\text{Cu} = 17.0 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$, $\alpha_\text{Fe} = 12.0 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$ (given in the problem)
 **Find:** the difference of the lengthenings $\Delta l_\text{Cu} - \Delta l_\text{Fe}$ in micrometres and the direction in which the strip bends
 **Principle:** Both strips are solids and lengthen according to the formula $\Delta l = \alpha l_0 \Delta T$. The strips have the same initial length and the same change in temperature, so the difference in length comes only from the difference of the coefficients. Copper lengthens more because its $\alpha$ is greater.
-**Formula:** $\Delta l_\text{Cu} - \Delta l_\text{Fe} = (\alpha_\text{Cu} - \alpha_\text{Fe}) l_0 \Delta T$, where $\Delta T = T - T_0$.
+**Formula:** $$\begin{aligned} \Delta l_\text{Cu} &= \alpha_\text{Cu} l_0 \Delta T \\
+\Delta l_\text{Fe} &= \alpha_\text{Fe} l_0 \Delta T \\
+\Delta l_\text{Cu} - \Delta l_\text{Fe} &= \alpha_\text{Cu} l_0 \Delta T - \alpha_\text{Fe} l_0 \Delta T \\
+&= (\alpha_\text{Cu} - \alpha_\text{Fe}) l_0 \Delta T
+\end{aligned}
+$$
+Here $\Delta T = T - T_0$.
 **Conversions:** $\Delta T = 100\,{}^\circ\text{C} - 20\,{}^\circ\text{C} = 80\,\text{K}$, the same in kelvins. $l_0$ is in millimetres, so the difference comes out in millimetres, and $1\,\text{mm} = 1000\,\mu\text{m}$.
 **Substitution:** $$\begin{aligned} \Delta l_\text{Cu} &= 17.0 \cdot 10^{-6}\,\tfrac{1}{\text{K}} \\ &\cdot 50.0\,\text{mm} \cdot 80\,\text{K} \\ &= 0.068\,\text{mm} \end{aligned}$$ and $$\begin{aligned} \Delta l_\text{Fe} &= 12.0 \cdot 10^{-6}\,\tfrac{1}{\text{K}} \cdot 50.0\,\text{mm} \cdot 80\,\text{K} \\ &= 0.048\,\text{mm} \end{aligned}$$. The difference is $0.068\,\text{mm} - 0.048\,\text{mm} = 0.020\,\text{mm} = 20\,\mu\text{m}$.
 **Answer:** $20\,\mu\text{m}$, two significant figures. The limiting datum is the difference of the coefficients $17.0 - 12.0 = 5.0$ (in the unit $10^{-6}\,\tfrac{1}{\text{K}}$), which has two figures because the coefficients are given to the nearest tenth; $\Delta T = 80\,\text{K}$ also has two figures. If the coefficients were given only as whole numbers, the difference $17 - 12 = 5$ would have one figure.
@@ -126,7 +151,13 @@ The shorter rod lengthens more, because its temperature rises three-fold even th
 **Given:** petrol $V_0 = 20.0\,\textsf{l}$, $T_0 = 10\,{}^\circ\text{C}$, $T = 35\,{}^\circ\text{C}$, $\gamma_\text{petrol} = 0.95 \cdot 10^{-3}\,\tfrac{1}{\text{K}}$; steel can $\alpha_\text{steel} = 12 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$ (given in the problem)
 **Find:** the volume of petrol that overflows $\Delta V_\text{over}$ in cubic centimetres and a justification for why the can is not filled to the brim
 **Principle:** Both the petrol and the inner space of the can expand, and the inner volume of the can grows like that of a steel object of the same size ($\gamma \approx 3\alpha$). The can was full, so what overflows is the difference between the growth of the petrol and the growth of the inner volume. Both volumes are calculated with the same formula.
-**Formula:** $\Delta V = \gamma V_0 \Delta T$ for both, $\gamma_\text{steel} \approx 3\alpha_\text{steel}$ and $\Delta V_\text{over} = \Delta V_\text{petrol} - \Delta V_\text{can}$.
+**Formula:** $$\begin{aligned} \Delta V_\text{petrol} &= \gamma_\text{petrol} V_0 \Delta T \\
+\gamma_\text{steel} &\approx 3\alpha_\text{steel} \\
+\Delta V_\text{can} &= \gamma_\text{steel} V_0 \Delta T \\
+&= 3\alpha_\text{steel} V_0 \Delta T \\
+\Delta V_\text{over} &= \Delta V_\text{petrol} - \Delta V_\text{can}
+\end{aligned}
+$$
 **Conversions:** $V_0 = 20.0\,\textsf{l} = 20\,000\,\text{cm}^3$, because $1\,\textsf{l} = 1000\,\text{cm}^3$. $\Delta T = 35\,{}^\circ\text{C} - 10\,{}^\circ\text{C} = 25\,\text{K}$, the same in kelvins.
 **Substitution:** $$\begin{aligned} \Delta V_\text{petrol} &= 0.95 \cdot 10^{-3}\,\tfrac{1}{\text{K}} \\ &\cdot 20\,000\,\text{cm}^3 \cdot 25\,\text{K} \\ &= 475\,\text{cm}^3 \end{aligned}$$ and $$\begin{aligned} \Delta V_\text{can} &= 3 \cdot 12 \cdot 10^{-6}\,\tfrac{1}{\text{K}} \\ &\cdot 20\,000\,\text{cm}^3 \cdot 25\,\text{K} \\ &= 18\,\text{cm}^3 \end{aligned}$$. So $\Delta V_\text{over} = 475\,\text{cm}^3 - 18\,\text{cm}^3 = 457\,\text{cm}^3$.
 **Answer:** $\Delta V_\text{over} \approx 460\,\text{cm}^3$, two significant figures. The growth of the petrol $475\,\text{cm}^3$ is limited by the coefficient $\gamma = 0.95 \cdot 10^{-3}\,\tfrac{1}{\text{K}}$ (two figures), so it is known only to the nearest tens of cubic centimetres. In the difference $475 - 18$ the less precise number determines the decimals, so the result is rounded to tens: $460\,\text{cm}^3$. The $\alpha$ of steel and the volume $20.0\,\textsf{l}$ affect only the small part $18\,\text{cm}^3$.
@@ -158,7 +189,11 @@ $$\begin{aligned} \Delta l &= 23 \cdot 10^{-6}\,\tfrac{1}{\text{K}} \cdot 2.0\,\
 **Find:** a) the temperature at which water takes up the least space and what that tells about the density; b) $\gamma$ over $4\,{}^\circ\text{C} \ldots 10\,{}^\circ\text{C}$ in the unit $10^{-6}\,\tfrac{1}{\text{K}}$; c) the comparison with the value $210 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$ and the unusual behaviour of water
 **Principle:** The mass of a substance is constant, so the smallest volume means the greatest density $\rho = m/V$. The temperature coefficient is obtained from the change in volume: when $\Delta V = \gamma V_0 \Delta T$ holds, then $\gamma = \dfrac{\Delta V}{V_0 \Delta T}$.
 **Reading the table:** The volume in the table decreases from $1.00016\,\text{dm}^3$ at $0\,{}^\circ\text{C}$ to $1.00003\,\text{dm}^3$ at $4\,{}^\circ\text{C}$ and then grows to $1.00030\,\text{dm}^3$ at $10\,{}^\circ\text{C}$. So the smallest volume is at $4\,{}^\circ\text{C}$.
-**Formula:** $\Delta V = \gamma V_0 \Delta T$, so $\gamma = \dfrac{\Delta V}{V_0 \Delta T}$ and $\Delta V = V_{10} - V_4$
+**Formula:** $$\begin{aligned} \Delta V &= \gamma V_0 \Delta T \\
+\gamma &= \dfrac{\Delta V}{V_0 \Delta T} \\
+\Delta V &= V_{10} - V_4
+\end{aligned}
+$$
 **Conversions:** The volumes are in the same unit, so $\Delta V$ and $V_0$ cancel in the same unit. The change in temperature is $\Delta T = 10\,{}^\circ\text{C} - 4\,{}^\circ\text{C} = 6\,\text{K}$, the same in kelvins. The result is given in the unit $10^{-6}\,\tfrac{1}{\text{K}}$.
 **Substitution:** $\Delta V = 1.00030\,\text{dm}^3 - 1.00003\,\text{dm}^3 = 0.00027\,\text{dm}^3$, and
 $\gamma = \dfrac{0.00027\,\text{dm}^3}{1.00003\,\text{dm}^3 \cdot 6\,\text{K}} = 0.000045\,\tfrac{1}{\text{K}} = 45 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$
@@ -183,7 +218,10 @@ After that the colder water is lighter and stays at the surface, so the water at
 **Find:** a) $\alpha$ in the unit $10^{-6}\,\tfrac{1}{\text{K}}$; b) the material of the rod and why the points are not exactly on a straight line
 **Principle:** The rod gets longer in proportion to the change in temperature and the initial length, and the coefficient $\alpha$ is characteristic of the material. A straight line through the points tells the change per kelvin, and the same property gives the coefficient.
 **Reading the table:** From the first point to the last, the temperature changes by $\Delta T = 80\,{}^\circ\text{C} - 20\,{}^\circ\text{C} = 60\,\text{K}$ and the length by $\Delta l = 1.10\,\text{mm}$.
-**Formula:** $\Delta l = \alpha l_0 \Delta T$, so $\alpha = \dfrac{\Delta l}{l_0 \Delta T}$
+**Formula:** $$\begin{aligned} \Delta l &= \alpha l_0 \Delta T \\
+\alpha &= \dfrac{\Delta l}{l_0 \Delta T}
+\end{aligned}
+$$
 **Conversions:** $\Delta l = 1.10\,\text{mm} = 0.00110\,\text{m}$, so that the units cancel. The result is given in the unit $10^{-6}\,\tfrac{1}{\text{K}}$.
 **Substitution:** $\alpha = \dfrac{0.00110\,\text{m}}{0.800\,\text{m} \cdot 60\,\text{K}} = \dfrac{0.00110}{48}\,\tfrac{1}{\text{K}} = 22.9 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$
 **Answer:** a) $\alpha \approx 22.9 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$, three significant figures, because the change in length $1.10\,\text{mm}$ is given to three figures.
@@ -202,7 +240,12 @@ So the variation of the steps $0.17\ldots 0.20\,\text{mm}$ is to be expected, an
 **Given:** steel tube, $l_0 = 1.00\,\text{m}$, $T_0 = 20\,{}^\circ\text{C}$, $T = 100\,{}^\circ\text{C}$, $\alpha = 12 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$ (given in the problem); reading accuracy of the tape measure $0.5\,\text{mm}$
 **Find:** a) the change in length $\Delta l$; b) why the tape measure is not suitable and which instrument is; c) the length of the tube $l_0$ when the reading accuracy is at most $5.0\,\%$ of the change
 **Principle:** The change in length is proportional to the initial length and the change in temperature, $\Delta l = \alpha l_0 \Delta T$. A measurement is reliable only if the change to be measured is much greater than the reading accuracy of the instrument. In part c) the condition is written for the change and the length is solved from it.
-**Formula:** a) $\Delta l = \alpha l_0 \Delta T$. c) The condition $0.5\,\text{mm} \le 0.050 \cdot \Delta l$ gives $\Delta l \ge 10\,\text{mm}$, and $\Delta l = \alpha l_0 \Delta T$ gives $l_0 = \dfrac{\Delta l}{\alpha \Delta T}$.
+**Formula:** a) $\Delta l = \alpha l_0 \Delta T$. c) $$\begin{aligned} 0.5\,\text{mm} &\le 0.050 \cdot \Delta l \\
+\Delta l &\ge 10\,\text{mm} \\
+\Delta l &= \alpha l_0 \Delta T \\
+l_0 &= \dfrac{\Delta l}{\alpha \Delta T}
+\end{aligned}
+$$
 **Conversions:** $\Delta T = 100\,{}^\circ\text{C} - 20\,{}^\circ\text{C} = 80\,\text{K}$, the same in kelvins. The change in length $10\,\text{mm} = 0.010\,\text{m}$, so that $l_0$ comes out in metres.
 **Substitution:** a) $\Delta l = 12 \cdot 10^{-6}\,\tfrac{1}{\text{K}} \cdot 1.00\,\text{m} \cdot 80\,\text{K} = 0.00096\,\text{m} = 0.96\,\text{mm}$. c) The required change is $\Delta l = \dfrac{0.5\,\text{mm}}{0.050} = 10\,\text{mm} = 0.010\,\text{m}$, so
 $l_0 = \dfrac{0.010\,\text{m}}{12 \cdot 10^{-6}\,\tfrac{1}{\text{K}} \cdot 80\,\text{K}} = 10.4\,\text{m}$
@@ -219,12 +262,19 @@ A small change is measured with an instrument that reads to a hundredth of a mil
 **Find:** a) the smallest installation gap $g_\text{min}$; b) the greatest installation gap $g_\text{max}$; c) why a gap of $15\,\text{mm}$ is acceptable at the installation temperature but not in a winter frost
 **Principle:** The change in the width of the gap is equal to the change in the length of one rail, $\Delta l = \alpha l_0 \Delta T$. In summer the rail gets longer and the gap narrows, so the installation gap must be at least this change. In winter the rail gets shorter and the gap widens, so the installation gap plus the change in winter must be at most $30\,\text{mm}$.
 **Reading the table:** The temperatures are read from the table. The change in temperature from installation to summer is $$\begin{aligned} \Delta T_\text{summer} &= 52\,{}^\circ\text{C} - 8\,{}^\circ\text{C} \\ &= 44\,\text{K} \end{aligned}$$. The change from installation to winter is $$\begin{aligned} \Delta T_\text{winter} &= 8\,{}^\circ\text{C} - (-32\,{}^\circ\text{C}) \\ &= 40\,\text{K} \end{aligned}$$.
-**Formula:** $g_\text{min} = \alpha l_0 \Delta T_\text{summer}$ and $g_\text{max} = g_\text{limit} - \alpha l_0 \Delta T_\text{winter}$, where $g_\text{limit}$ is the greatest gap allowed in winter
+**Formula:** $$\begin{aligned} \Delta l &= \alpha l_0 \Delta T \\
+g_\text{min} &= \Delta l_\text{summer} \\
+&= \alpha l_0 \Delta T_\text{summer} \\
+g_\text{max} + \Delta l_\text{winter} &= g_\text{limit} \\
+g_\text{max} &= g_\text{limit} - \alpha l_0 \Delta T_\text{winter}
+\end{aligned}
+$$
+Here $g_\text{limit}$ is the greatest gap allowed in winter.
 **Conversions:** The change in temperature is the same in degrees Celsius and in kelvins. The length is in metres, so the changes come out in metres; finally $1\,\text{m} = 1000\,\text{mm}$.
 **Substitution:** a)
 $g_\text{min} = 12 \cdot 10^{-6}\,\tfrac{1}{\text{K}} \cdot 25.0\,\text{m} \cdot 44\,\text{K} = 0.0132\,\text{m} = 13.2\,\text{mm}$
 b) The change in winter is $12 \cdot 10^{-6}\,\tfrac{1}{\text{K}} \cdot 25.0\,\text{m} \cdot 40\,\text{K} = 0.0120\,\text{m} = 12.0\,\text{mm}$, so $g_\text{max} = 30\,\text{mm} - 12.0\,\text{mm} = 18\,\text{mm}$.
-**Answer:** a) $g_\text{min} = 13.2\,\text{mm}$, in practice $13\,\text{mm}$, and b) $g_\text{max} = 18\,\text{mm}$. The coefficient $12 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$ is a two-figure value, so the results are acceptable rounded to two figures.
+**Answer:** a) $g_\text{min} = 13.2\,\text{mm}$ (the lower limit is rounded up: at least $14\,\text{mm}$), and b) $g_\text{max} = 18\,\text{mm}$. The coefficient $12 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$ is a two-figure value, so the results are good to two figures; a lower limit is still always rounded up.
 
 Model answer c): the gap $15\,\text{mm}$ is in the range $13.2\,\text{mm} \ldots 18\,\text{mm}$, so it is acceptable when installing at $8\,{}^\circ\text{C}$: in summer a gap of $15\,\text{mm} - 13.2\,\text{mm} = 1.8\,\text{mm}$ is left, and in winter it is $$\begin{aligned} &15\,\text{mm} + 12.0\,\text{mm} \\ &= 27\,\text{mm} \\ &< 30\,\text{mm} \end{aligned}$$.
 
@@ -238,7 +288,16 @@ That is more than the gap of $15\,\text{mm}$, so the gap would close and the rai
 **Given:** ethanol $V_0 = 1.00\,\text{cm}^3$ at $10\,{}^\circ\text{C}$, $\gamma_\text{ethanol} = 1.1 \cdot 10^{-3}\,\tfrac{1}{\text{K}}$; glass bulb $\alpha_\text{glass} = 9.0 \cdot 10^{-6}\,\tfrac{1}{\text{K}}$; inner radius of the capillary $r = 0.30\,\text{mm}$; temperature $10\,{}^\circ\text{C} \rightarrow 30\,{}^\circ\text{C}$ (example data)
 **Find:** a) the rise of the column $h$ in millimetres; b) how much greater the rise would be without the expansion of the bulb; c) the rise with water and a justification of why water is not suitable
 **Principle:** Ethanol expands more than the glass bulb that contains it. Of the growth in the volume of the ethanol, the part that does not fit in the expanded bulb rises into the capillary. The inner volume of the glass bulb grows like an equal piece of glass, so $\gamma_\text{glass} \approx 3\alpha$. The volume that moves into the tube is the volume of a cylinder $A h$, where $A = \pi r^2$.
-**Formula:** $\Delta V_\text{ethanol} = \gamma V_0 \Delta T$, $\Delta V_\text{bulb} = 3\alpha V_0 \Delta T$ and $A h = \Delta V_\text{ethanol} - \Delta V_\text{bulb}$, so $h = \dfrac{\Delta V_\text{ethanol} - \Delta V_\text{bulb}}{\pi r^2}$
+**Formula:** $$\begin{aligned} \Delta V_\text{ethanol} &= \gamma_\text{ethanol} V_0 \Delta T \\
+\gamma_\text{glass} &\approx 3\alpha_\text{glass} \\
+\Delta V_\text{bulb} &= \gamma_\text{glass} V_0 \Delta T \\
+&= 3\alpha_\text{glass} V_0 \Delta T \\
+A &= \pi r^2 \\
+A h &= \Delta V_\text{ethanol} - \Delta V_\text{bulb} \\
+h &= \dfrac{\Delta V_\text{ethanol} - \Delta V_\text{bulb}}{A} \\
+&= \dfrac{\Delta V_\text{ethanol} - \Delta V_\text{bulb}}{\pi r^2}
+\end{aligned}
+$$
 **Conversions:** $V_0 = 1.00\,\text{cm}^3 = 1000\,\text{mm}^3$, so that the volumes and the area of the capillary are in the same unit, and $$\begin{aligned} \Delta T &= 30\,{}^\circ\text{C} - 10\,{}^\circ\text{C} \\ &= 20\,\text{K} \end{aligned}$$. The area of the capillary is $A = \pi \cdot (0.30\,\text{mm})^2 = 0.283\,\text{mm}^2$.
 **Substitution:** $$\begin{aligned} \Delta V_\text{ethanol} &= 1.1 \cdot 10^{-3}\,\tfrac{1}{\text{K}} \\ &\cdot 1000\,\text{mm}^3 \cdot 20\,\text{K} \\ &= 22.0\,\text{mm}^3 \end{aligned}$$ and $$\begin{aligned} \Delta V_\text{bulb} &= 3 \cdot 9.0 \cdot 10^{-6}\,\tfrac{1}{\text{K}} \\ &\cdot 1000\,\text{mm}^3 \cdot 20\,\text{K} \\ &= 0.54\,\text{mm}^3 \end{aligned}$$. So
 $h = \dfrac{22.0\,\text{mm}^3 - 0.54\,\text{mm}^3}{0.283\,\text{mm}^2} = 75.9\,\text{mm}$
@@ -267,7 +326,13 @@ That is less than a fifth of the rise of the ethanol, so the scale would be dens
 **Find:** the temperature $T$ at which $\Delta l = 2.0\,\text{mm}$
 **Principle:** The measurement points lie on a line, so the change in length is directly proportional to the change in temperature: $\Delta l = k\,\Delta T$. The slope $k$ comes from the end points of the graph, and it is used to solve $\Delta T$.
 **Reading the graph:** The line starts at the grid intersection $(20\,{}^\circ\text{C};\ 0\,\text{mm})$ and ends at the intersection $(70\,{}^\circ\text{C};\ 3.0\,\text{mm})$. So $\Delta T_\text{whole} = 70\,{}^\circ\text{C} - 20\,{}^\circ\text{C} = 50\,\text{K}$ and $\Delta l_\text{whole} = 3.0\,\text{mm}$.
-**Formula:** $k = \dfrac{\Delta l_\text{whole}}{\Delta T_\text{whole}}$, $\Delta T = \dfrac{\Delta l}{k}$ and $T = 20\,{}^\circ\text{C} + \Delta T$
+**Formula:** $$\begin{aligned} \Delta l_\text{whole} &= k\,\Delta T_\text{whole} \\
+k &= \dfrac{\Delta l_\text{whole}}{\Delta T_\text{whole}} \\
+\Delta l &= k\,\Delta T \\
+\Delta T &= \dfrac{\Delta l}{k} \\
+T &= 20\,{}^\circ\text{C} + \Delta T
+\end{aligned}
+$$
 **Conversions:** None needed: all lengths are in millimetres and the temperature changes in kelvins.
 **Substitution:** $k = \dfrac{3.0\,\text{mm}}{50\,\text{K}} = 0.060\,\dfrac{\text{mm}}{\text{K}}$, so $\Delta T = \dfrac{2.0\,\text{mm}}{0.060\,\text{mm/K}} = 33.3\,\text{K}$ and $T = 20\,{}^\circ\text{C} + 33.3\,\text{K} = 53.3\,{}^\circ\text{C}$
 **Answer:** $53\,{}^\circ\text{C}$, two significant figures, like the datum $2.0\,\text{mm}$. The values are read from grid intersections, so $51.7\ldots54.9\,{}^\circ\text{C}$ is accepted.
@@ -278,7 +343,14 @@ That is less than a fifth of the rise of the ethanol, so the scale would be dens
 **Find:** a) a description of the change in sea level and the average rate of rise $v$; b) why the warming of seawater raises the sea level; c) the change in the height of the water column $\Delta h$ in millimetres; d) why the model alone does not explain or predict the rise of the sea level
 **Principle:** The average rate of rise is the change in height divided by the time in which the change took place. Water is a liquid, and the volume of a liquid grows as it warms: $\Delta V = \gamma V_0 \Delta T$. The formula fits the model of part c) because the column warms evenly and the change in temperature is small, so the coefficient $\gamma$ can be taken as constant. When the cross-sectional area does not change, the whole growth in volume shows as a growth in height.
 **Reading the graph:** The first point (the beginning of 1993, $0\,\text{mm}$) and the latest point (October 2026, $115.8\,\text{mm}$; the same value is in the box "Latest Measurement" above the graph) are read from the graph. From the beginning of 1993 to the middle of October 2026 there are $33$ years and $9.5$ months, so $\Delta t \approx 33.8\,\text{a}$ (a = year), and the change in height is $\Delta h_\text{sea} = 115.8\,\text{mm}$. The page is updated, so values read later differ from these. The method is the same.
-**Formula:** a) $v = \dfrac{\Delta h_\text{sea}}{\Delta t}$. c) $\Delta V = \gamma V_0 \Delta T$. The volume of the column is $V_0 = A h_0$ and the change in volume $\Delta V = A \Delta h$, so $A \Delta h = \gamma A h_0 \Delta T$. The area $A$ cancels, and $\Delta h = \gamma h_0 \Delta T$
+**Formula:** a) $v = \dfrac{\Delta h_\text{sea}}{\Delta t}$. c) $$\begin{aligned} \Delta V &= \gamma V_0 \Delta T \\
+V_0 &= A h_0 \\
+\Delta V &= A \Delta h \\
+A \Delta h &= \gamma A h_0 \Delta T \\
+\Delta h &= \gamma h_0 \Delta T
+\end{aligned}
+$$
+The area $A$ cancels.
 **Conversions:** The change in temperature is the same in degrees Celsius and in kelvins, so $\Delta T = 0.30\,\text{K}$. The height is in metres, so $\Delta h$ comes out in metres; finally $1\,\text{m} = 1000\,\text{mm}$.
 **Substitution:** a) $$\begin{aligned} v &= \dfrac{\Delta h_\text{sea}}{\Delta t} \\ &= \dfrac{115.8\,\text{mm}}{33.8\,\text{a}} \\ &= 3.43\,\tfrac{\text{mm}}{\text{a}} \end{aligned}$$ c) $$\begin{aligned} \Delta h &= \gamma h_0 \Delta T \\ &= 2.0 \cdot 10^{-4}\,\tfrac{1}{\text{K}} \cdot 1000\,\text{m} \\ &\cdot 0.30\,\text{K} \\ &= 0.060\,\text{m} \\ &= 60\,\text{mm} \end{aligned}$$
 **Answer:** c) $\Delta h = 60\,\text{mm}$, that is $6.0\,\text{cm}$, two significant figures, like the data $0.30\,{}^\circ\text{C}$ and $2.0 \cdot 10^{-4}\,\tfrac{1}{\text{K}}$. a) With this dated material $v \approx 3.4\,\tfrac{\text{mm}}{\text{a}}$. With values read on another day the result can differ slightly from this: the correct answer is the rate calculated correctly from your own readings, when the reading day and the values read are stated.

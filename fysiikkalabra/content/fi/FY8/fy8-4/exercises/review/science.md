@@ -1,15 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: a55f5a63698fbd03
-SCOPE: delta md-paragraphs,numbers,reflow,typography from 2d131b382d63c27b base 64d4935
+CONTENT-HASH: 196d7db3114314b7
 
 ## Blocking
 
 ## Polish
-- exercises/solutions.md (the single-photon double-slit task, line ~297) — the block uses $\tfrac{N}{t}$ as the photon rate and then $t = \tfrac{5000}{r}$ as the total time. The symbol $t$ means two things. Writing $\dot N$ or $t_\text{mittaus}$ would separate them. This clash was there before the change.
+- exercises/solutions.md (the single-photon double-slit task, line ~297) — the block uses $\tfrac{N}{t}$ as the photon rate and then $t = \tfrac{5000}{r}$ as the total time. The symbol $t$ means two things. Writing $\dot N$ or $t_\text{mittaus}$ would separate them. This clash was there before the change. (carried over; untouched by this change)
 
 ## Checked
-- Hash a55f5a63698fbd03 at the start and the end. `git diff 64d4935`: only solutions.md changed (Kaava blocks and split paragraphs). exercises.json and answers.py are unchanged.
-- Compton energy balance: $hf = hf' + E_\text{k}$ with $f = \tfrac{c}{\lambda}$ and $f' = \tfrac{c}{\lambda'}$ gives $E_\text{k} = \tfrac{hc}{\lambda} - \tfrac{hc}{\lambda'}$ and $\lambda' = \tfrac{hc}{hc/\lambda - E_\text{k}}$. Both are right.
-- Photon rate: $P = \tfrac{N}{t}\,hf$ gives $\tfrac{N}{t} = \tfrac{P\lambda}{hc}$. The detection rate $r$, the time and the photon spacing $d = \tfrac{c}{N/t}$ are unchanged and right.
-- The electron momentum by the cosine law and the share of $m_\text{e}c^2$ are unchanged.
-- The split answers (the $\sqrt{n}$ scatter, single photons with no collisions, which-path information destroying the fringes) keep every claim.
+- Delta: exercises.json, 4 task text(s): each changed line differs from the passed version only by the removed prefix "Esimerkkiaineisto: " (and the capital of the next letter), checked mechanically line by line.
+- No number, unit, symbol, table value, answer, tolerance or solution changed; the previous quantitative checks stand.
+- Data provenance: removing the badge follows the teacher's rule (no provenance badge on example or simulated data); no task now claims a real published source it lacks.
+- `reviews.py hash fy8-4 --exercises` the same at start and end.

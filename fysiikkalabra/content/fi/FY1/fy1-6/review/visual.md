@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: b21def63bfc47400
+CONTENT-HASH: 7fd2046853f3baf4
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] sim readout (sim-390, sim-1280) — "$v : t$ ei ole vielä määritelty" reads slightly cryptic before the drop starts — optional: show "$v/t$ ei määritelty" or hide the line until $t > 0$.
+(none)
 
 ## Checked
-- Delta (sim.js: the note line under the canvas removed): opened fy1-6-sim-390 and fy1-6-sim-1280. The layout survived: canvas, graph, controls, readout and the closed boxes Käyttöohje, Mallin oletukset and Laskennan selitys are intact, with no gap. The dashed v = gt line and the legend are visible, and the LaTeX labels and units are upright. The removed note is now only in the closed boxes, which fits the rule that explanations stay behind them.
-- Opened fy1-6-intro-1280 and fy1-6-fig-1-390 (hero illustration, no text, subject centred, readable at 390 px) and fy1-6-fig-4-390 (same-fall diagram, labels legible, nothing clipped).
-- Other figures and text: unchanged since the previous PASS and not reopened.
+- Delta only: prefix "Esimerkkiaineisto: " removed, first letter capitalised. Opened inquiry step title (Tutki, optional box "Kuulan nopeus kuvista"): fy1-6-stage-tutki-390-2/-3, fy1-6-lab-1280; text reads naturally, layout (cards, tables, formulas, answer fields) intact, no clipping or overflow.
+- Source diff read for the changed tasks; no numbers, units or formulas changed.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 5

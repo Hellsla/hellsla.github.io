@@ -12,7 +12,7 @@
 **Given:** weight $G = 150\,\text{N}$, lifting height $h = 1.2\,\text{m}$, slow lift
 **Find:** the work $W$ done by the lifting force in joules
 **Principle:** In a slow lift the lifting force is equal to the weight and in the direction of motion, so the force is constant over the whole distance. The work is then the product of force and lifting height.
-**Formula:** $W = F h$ and $F = G$, so $W = G h$
+**Formula:** $$\begin{aligned} W &= F h \\ F &= G \\ W &= G h \end{aligned}$$
 **Conversions:** The weight is in newtons and the height in metres, so no conversions are needed: $\text{N}\cdot\text{m} = \text{J}$.
 **Substitution:** $W = 150\,\text{N} \cdot 1.2\,\text{m} = 180\,\text{J}$
 **Answer:** $180\,\text{J}$, two significant figures like the height $1.2\,\text{m}$.
@@ -33,7 +33,7 @@
 **Find:** the total work $W$ done by the force in joules
 **Principle:** The work is the area between the $(s,F)$ graph and the $s$-axis. The force is not constant over the whole distance, so the formula $W = F s$ does not apply directly to the whole distance. The area splits into two rectangles in which the force is constant.
 **Reading the graph:** The first horizontal segment is on the grid line $F_1 = 25\,\text{N}$ and extends from $s = 0$ to $s = 6\,\text{m}$, where it drops vertically. The second segment is on the line $F_2 = 10\,\text{N}$ and extends from $s = 6\,\text{m}$ to $s = 10\,\text{m}$. The width of the second rectangle is $s_2 = 10\,\text{m} - 6\,\text{m} = 4\,\text{m}$.
-**Formula:** $W = W_1 + W_2$, so $W = F_1 s_1 + F_2 s_2$
+**Formula:** $$\begin{aligned} W &= W_1 + W_2 \\ &= F_1 s_1 + F_2 s_2 \end{aligned}$$
 **Conversions:** The forces are in newtons and the distances in metres, so no conversions are needed: $\text{N}\cdot\text{m} = \text{J}$.
 **Substitution:** $W = 25\,\text{N} \cdot 6\,\text{m} + 10\,\text{N} \cdot 4\,\text{m} = 150\,\text{J} + 40\,\text{J} = 190\,\text{J}$
 **Answer:** $190\,\text{J}$, two significant figures, because the values of the graph were read from the grid lines as whole numbers.
@@ -43,7 +43,7 @@
 **Given:** force $F = 20\,\text{N}$ (in the direction of motion), speed $v = 3.0\,\text{m/s}$, steady motion
 **Find:** the power $P$ of the pulling force in watts
 **Principle:** Power is work per unit time. The motion is steady and the force is constant and in the direction of motion, so the distance travelled in one second is $v$ and the work done in one second is $F v$.
-**Formula:** $P = \dfrac{W}{t}$ and $W = F s$, $s = v t$, so $P = \dfrac{F v t}{t} = F v$
+**Formula:** $$\begin{aligned} P &= \dfrac{W}{t} \\ W &= F s \\ s &= v t \\ P &= \dfrac{F v t}{t} \\ &= F v \end{aligned}$$
 **Conversions:** The force is in newtons and the speed in metres per second, so the product comes directly in watts: $1\,\text{N}\cdot\tfrac{\text{m}}{\text{s}} = 1\,\text{W}$.
 **Substitution:** $P = 20\,\text{N} \cdot 3.0\,\tfrac{\text{m}}{\text{s}} = 60\,\text{W}$
 **Answer:** $60\,\text{W}$, two significant figures like the speed $3.0\,\text{m/s}$.
@@ -53,7 +53,7 @@
 **Given:** work $W = 45\,\text{kJ}$, force $F = 1.5\,\text{kN}$ (in the direction of motion)
 **Find:** the displacement $s$ of the load in metres
 **Principle:** The force is in the direction of motion and constant, so the work is the product of force and distance. From this the distance can be solved when the work and the force are known.
-**Formula:** $W = F s$, so $s = \dfrac{W}{F}$
+**Formula:** $$\begin{aligned} W &= F s \\ s &= \dfrac{W}{F} \end{aligned}$$
 **Conversions:** $45\,\text{kJ} = 45\,000\,\text{J}$ and $1.5\,\text{kN} = 1500\,\text{N}$, so that the units are SI units and $\tfrac{\text{J}}{\text{N}} = \text{m}$.
 **Substitution:** $s = \dfrac{45\,000\,\text{J}}{1500\,\text{N}} = 30\,\text{m}$
 **Answer:** $30\,\text{m}$, two significant figures like the force $1.5\,\text{kN}$.
@@ -63,7 +63,7 @@
 **Given:** power $P = 1.5\,\text{kW}$, time $t = 4.0\,\text{min}$
 **Find:** the work $W$ done by the pump in kilojoules
 **Principle:** Power is work per unit time. The power of the pump stays constant, so the work is power times time.
-**Formula:** $P = \dfrac{W}{t}$, so $W = P t$
+**Formula:** $$\begin{aligned} P &= \dfrac{W}{t} \\ W &= P t \end{aligned}$$
 **Conversions:** $1.5\,\text{kW} = 1500\,\text{W}$ and $4.0\,\text{min} = 4.0 \cdot 60\,\text{s} = 240\,\text{s}$, so that the work comes out in joules. Finally $1\,\text{kJ} = 1000\,\text{J}$.
 **Substitution:** $W = 1500\,\text{W} \cdot 240\,\text{s} = 360\,000\,\text{J} = 360\,\text{kJ}$
 **Answer:** $360\,\text{kJ}$, two significant figures like the power $1.5\,\text{kW}$ and the time $4.0\,\text{min}$.
@@ -73,7 +73,7 @@
 **Given:** mass $m = 850\,\text{kg}$, lifting height $h = 30\,\text{m}$, slow lift, $g = 9.81\,\text{m/s}^2$
 **Find:** the work $W$ done by the lifting force in kilojoules
 **Principle:** In a slow lift the lifting force is equal to the weight and is constant and in the direction of motion. The work is therefore the product of weight and lifting height, and the weight is obtained from the mass.
-**Formula:** $W = F h$, $F = G = m g$, so $W = m g h$
+**Formula:** $$\begin{aligned} W &= F h \\ F &= G \\ G &= m g \\ W &= m g h \end{aligned}$$
 **Conversions:** The mass is in kilograms and the height in metres, so no conversions are needed before the calculation. Finally $1\,\text{kJ} = 1000\,\text{J}$.
 **Substitution:** $W = 850\,\text{kg} \cdot 9.81\,\tfrac{\text{m}}{\text{s}^2} \cdot 30\,\text{m} = 250\,155\,\text{J} = 250.155\,\text{kJ}$
 **Answer:** $250\,\text{kJ}$, two significant figures like the height $30\,\text{m}$.
@@ -86,7 +86,7 @@
 **Reading the graph:** The graph has a horizontal segment at the height $10\,\text{N}$ from $0\ldots 2.0\,\text{m}$ and, continuing from it, a straight segment from the height $10\,\text{N}$ to the height $30\,\text{N}$ from $2.0\ldots 6.0\,\text{m}$.
 
 The rectangle has height $10\,\text{N}$ and width $2.0\,\text{m}$. The parallel sides of the trapezium are $10\,\text{N}$ and $30\,\text{N}$, and its height (the width along the $s$-axis) is $4.0\,\text{m}$.
-**Formula:** $$W = A_\text{rectangle} + A_\text{trapezium}$$, so $W = F_1 s_1 + 0.5 \cdot (F_1 + F_2)\, s_2$
+**Formula:** $$\begin{aligned} W &= W_1 + W_2 \\ W_1 &= F_1 s_1 \\ W_2 &= 0.5 \cdot (F_1 + F_2)\, s_2 \\ W &= F_1 s_1 + 0.5 \cdot (F_1 + F_2)\, s_2 \end{aligned}$$
 **Conversions:** The forces are in newtons and the distances in metres, so no conversions are needed.
 **Substitution:** $$\begin{aligned} W &= 10\,\text{N} \cdot 2.0\,\text{m} \\ &+ \tfrac{1}{2} \cdot (10\,\text{N} + 30\,\text{N}) \cdot 4.0\,\text{m} \\ &= 20\,\text{J} + 80\,\text{J} \\ &= 100\,\text{J} \end{aligned}$$
 **Answer:** $100\,\text{J}$, two significant figures like the given values (for example $2.0\,\text{m}$).
@@ -97,7 +97,7 @@ The rectangle has height $10\,\text{N}$ and width $2.0\,\text{m}$. The parallel 
 **Find:** the average magnitude of the force with respect to distance, $F_\text{avg}$, in newtons
 **Principle:** The force changes, so the work is the area under the $(s,F)$ graph. The average force is the constant force that would do the same work over the same distance, so $W = F_\text{avg}\, s$.
 **Reading the graph:** The graph is a trapezium: a rising triangle ($0\ldots 0.50\,\text{m}$, height $40\,\text{N}$), a horizontal part as a rectangle ($0.50\ldots 1.5\,\text{m}$, height $40\,\text{N}$) and a falling triangle ($1.5\ldots 2.0\,\text{m}$, height $40\,\text{N}$). The work is the sum of these three areas.
-**Formula:** $W = \tfrac{1}{2} F s_1 + F s_2 + \tfrac{1}{2} F s_3$ and $W = F_\text{avg}\, s$, so $F_\text{avg} = \dfrac{W}{s}$
+**Formula:** $$\begin{aligned} W &= \tfrac{1}{2} F s_1 + F s_2 + \tfrac{1}{2} F s_3 \\ W &= F_\text{avg}\, s \\ F_\text{avg} &= \dfrac{W}{s} \end{aligned}$$
 **Conversions:** The forces are in newtons and the distances in metres, so no conversions are needed.
 **Substitution:** $$\begin{aligned} W &= \tfrac{1}{2} \cdot 40\,\text{N} \cdot 0.50\,\text{m} + 40\,\text{N} \cdot 1.0\,\text{m} \\ &+ \tfrac{1}{2} \cdot 40\,\text{N} \cdot 0.50\,\text{m} \\ &= 10\,\text{J} + 40\,\text{J} + 10\,\text{J} \\ &= 60\,\text{J} \end{aligned}$$; $F_\text{avg} = \dfrac{60\,\text{J}}{2.0\,\text{m}} = 30\,\text{N}$
 **Answer:** $30\,\text{N}$, two significant figures like the distance $2.0\,\text{m}$.
@@ -109,7 +109,7 @@ The trapezium formula gives the same work: $$\begin{aligned} &0.5 \cdot (2.0\,\t
 **Given:** mass $m = 2.0\,\text{kg}$, falling height $h = 1.5\,\text{m}$, number of drops $n = 20$, $g = 9.81\,\text{m/s}^2$
 **Find:** the increase in the internal energy of the water $\Delta U$ in joules
 **Principle:** Energy is conserved. As it falls, the weight loses an amount of energy equal to the lifting work $m g h$, and by assumption all of this energy is transferred through the paddle wheel to the water as internal energy. Each drop transfers the same energy, so the drops are added together.
-**Formula:** $W_1 = m g h$ and $\Delta U = n W_1$, so $\Delta U = n m g h$
+**Formula:** $$\begin{aligned} W_1 &= m g h \\ \Delta U &= n W_1 \\ &= n m g h \end{aligned}$$
 **Conversions:** The mass is in kilograms and the height in metres, so no conversions are needed. The number of drops $n = 20$ is just a number.
 **Substitution:** $W_1 = 2.0\,\text{kg} \cdot 9.81\,\tfrac{\text{m}}{\text{s}^2} \cdot 1.5\,\text{m} = 29.43\,\text{J}$; $\Delta U = 20 \cdot 29.43\,\text{J} = 588.6\,\text{J}$
 **Answer:** $590\,\text{J}$, two significant figures like the mass $2.0\,\text{kg}$ and the height $1.5\,\text{m}$.
@@ -121,7 +121,7 @@ The result is the same as lifting an object of about $60\,\text{kg}$ by a metre,
 **Given:** power of the panel $P = 180\,\text{W}$, mass of water $m = 1000\,\text{kg}$, lifting height $h = 50\,\text{m}$, $g = 9.81\,\text{m/s}^2$, all the energy goes into lifting
 **Find:** the time $t$ in minutes
 **Principle:** By assumption the energy produced by the panel is equal to the work needed to lift the water, and there are no losses. The power is constant, so the energy produced is power times time. The work of lifting is $m g h$, because the water is lifted slowly.
-**Formula:** $W = m g h$ and $W = P t$, so $t = \dfrac{m g h}{P}$
+**Formula:** $$\begin{aligned} W &= m g h \\ W &= P t \\ P t &= m g h \\ t &= \dfrac{m g h}{P} \end{aligned}$$
 **Conversions:** The mass, height and power are in SI units, so the time comes out first in seconds. Finally $1\,\text{min} = 60\,\text{s}$.
 **Substitution:** $W = 1000\,\text{kg} \cdot 9.81\,\tfrac{\text{m}}{\text{s}^2} \cdot 50\,\text{m} = 490\,500\,\text{J}$; $t = \dfrac{490\,500\,\text{J}}{180\,\text{W}} = 2725\,\text{s} = \dfrac{2725}{60}\,\text{min} = 45.42\,\text{min}$
 **Answer:** $45\,\text{min}$, two significant figures like the height $50\,\text{m}$.
@@ -140,7 +140,7 @@ The magnitude of the force does not explain it either: in a slow lift a force eq
 **Given:** force $F = 1.2\,\text{kN}$ (in the direction of motion), power $P = 1.8\,\text{kW}$, steady speed
 **Find:** the speed $v$ of the belt in metres per second
 **Principle:** The speed is steady and the force is constant and in the direction of motion, so the power is the product of force and velocity. The velocity can be solved when the power and the force are known.
-**Formula:** $P = F v$, so $v = \dfrac{P}{F}$
+**Formula:** $$\begin{aligned} P &= F v \\ v &= \dfrac{P}{F} \end{aligned}$$
 **Conversions:** $1.8\,\text{kW} = 1800\,\text{W}$ and $1.2\,\text{kN} = 1200\,\text{N}$, so that the result comes out in the unit $\tfrac{\text{W}}{\text{N}} = \tfrac{\text{m}}{\text{s}}$.
 **Substitution:** $v = \dfrac{1800\,\text{W}}{1200\,\text{N}} = 1.5\,\tfrac{\text{m}}{\text{s}}$
 **Answer:** $1.5\,\text{m/s}$, two significant figures like the given values $1.2\,\text{kN}$ and $1.8\,\text{kW}$.
@@ -162,7 +162,7 @@ The power is not the same either, because power tells how fast the work is done:
 **Reading the graph:** The points of the table are thought of as joined by straight segments in the $(s,F)$ coordinate system.
 
 At the ends of the part $0\ldots 1.0\,\text{m}$ the force is $18.0\,\text{N}$ and $17.2\,\text{N}$, of the part $1.0\ldots 2.0\,\text{m}$ $17.2\,\text{N}$ and $15.1\,\text{N}$, of the part $2.0\ldots 3.0\,\text{m}$ $15.1\,\text{N}$ and $11.0\,\text{N}$, and of the part $3.0\ldots 4.0\,\text{m}$ $11.0\,\text{N}$ and $6.0\,\text{N}$. The width of each part is $\Delta s = 1.0\,\text{m}$.
-**Formula:** $$W = \sum 0.5 \cdot (F_\text{start} + F_\text{end})\,\Delta s$$, so $W = W_1 + W_2 + W_3 + W_4$
+**Formula:** $$\begin{aligned} W_i &= 0.5 \cdot (F_\text{start} + F_\text{end})\,\Delta s \\ W &= W_1 + W_2 + W_3 + W_4 \end{aligned}$$
 **Conversions:** The forces are in newtons and the distances in metres, so no conversions are needed.
 **Substitution:**
 
@@ -176,7 +176,7 @@ $$\begin{aligned} W_1 &= 0.5 \cdot (18.0 + 17.2)\,\text{N} \\ &\quad \cdot 1.0\,
 **Principle:** At a steady pace the lifting force is equal to the student's weight, and the work is calculated only from lifting the weight to the height of the staircase: $W = m g h$.
 
 The power is this work divided by the climbing time. The average of the repeated times is used, because the random error of a single timing gets smaller in the average.
-**Formula:** $h = n\, h_1$, $W = m g h$ and $P = \dfrac{W}{t_\text{avg}}$, so $P = \dfrac{m g\, n\, h_1}{t_\text{avg}}$
+**Formula:** $$\begin{aligned} P &= \dfrac{W}{t_\text{avg}} \\ W &= m g h \\ h &= n\, h_1 \\ P &= \dfrac{m g h}{t_\text{avg}} \\ &= \dfrac{m g\, n\, h_1}{t_\text{avg}} \end{aligned}$$
 **Conversions:** All quantities are in SI units, so no conversions are needed.
 **Substitution:**
 
@@ -191,7 +191,7 @@ $$\begin{aligned} \textstyle\sum t &= 8.1\,\text{s} + 7.8\,\text{s} + 8.4\,\text
 **Principle:** The student put the number $40$ of the mass in the place of the force in the formula $W = F s$.
 
 Mass is not a force: in a slow lift the lifting force is equal to the weight $G = m g$, and it must be brought into the calculation in newtons. The work is the product of this force and the lifting height.
-**Formula:** $F = G = m g$ and $W = F h$, so $W = m g h$
+**Formula:** $$\begin{aligned} W &= F h \\ F &= G \\ G &= m g \\ W &= m g h \end{aligned}$$
 **Conversions:** The mass is in kilograms and the height in metres, so no conversions are needed. The unit of weight is the newton: $1\,\text{N} = 1\,\text{kg}\cdot\text{m/s}^2$.
 **Substitution:**
 
@@ -212,7 +212,7 @@ Because of measurement uncertainty the measured points are usually not exactly o
 On the line, at $s = 10.0\,\text{cm}$ the force is $F = 10.0\,\text{N}$.
 
 Because the force grows steadily from zero, the graph is a straight line through the origin and the area under it is a triangle; therefore the work is the area of a triangle whose base is $s$ and whose height is $F$.
-**Formula:** $W = \tfrac{1}{2} F s$ and $W = m g h$, so $h = \dfrac{W}{m g}$
+**Formula:** $$\begin{aligned} W &= \tfrac{1}{2} F s \\ W &= m g h \\ h &= \dfrac{W}{m g} \end{aligned}$$
 **Conversions:** $10.0\,\text{cm} = 0.100\,\text{m}$, so that the work comes out in joules. Finally $h$ is converted to centimetres: $1\,\text{m} = 100\,\text{cm}$.
 **Substitution:**
 
@@ -229,7 +229,7 @@ $$\begin{aligned} W &= 0.5 \cdot 10.0\,\text{N} \cdot 0.100\,\text{m} \\ &= 0.50
 Because of measurement uncertainty the measured points are usually not exactly on one line, so the velocity is read from the slope of a fitted line, not from two adjacent measured points. A line through the origin fits among the points, because time and height are counted from the start of the lifting motion.
 
 From the line $h = 6.52\,\text{m}$ is read at $t = 8.0\,\text{s}$, so the slope is $v = 6.52\,\text{m} / 8.0\,\text{s} = 0.815\,\text{m/s}$.
-**Formula:** $F = G = m g$ and $P = F v$, so $P = m g v$; in the comparison $W = P t$ and $W = m g h$
+**Formula:** $$\begin{aligned} G &= m g \\ F &= G \\ P &= F v \\ &= m g v \\ W &= P t \\ W &= m g h \end{aligned}$$
 **Conversions:** All quantities are in SI units. Finally $1\,\text{kW} = 1000\,\text{W}$.
 **Substitution:**
 
@@ -262,7 +262,7 @@ The work asked for starts from the beginning of the stretch, so it also includes
 **Given:** $V = 0.020\,\text{m}^3$, $h = 12\,\text{m}$, $g = 9.81\,\text{m/s}^2$; from the table (MAFY table *Tiheyksiä: Kiinteiden aineiden tiheyksiä*, steel) $\rho = 7.8 \cdot 10^{3}\,\text{kg/m}^3$
 **Find:** the lifting work $W$ in kilojoules
 **Principle:** The beam is lifted slowly, that is at constant speed, so the lifting force equals the weight of the beam $G = m g$. The force is in the direction of motion, so the work is $W = F s = G h$. The mass comes from the density: $m = \rho V$.
-**Formula:** $m = \rho V$ and $W = G h = m g h$, so $W = \rho V g h$
+**Formula:** $$\begin{aligned} m &= \rho V \\ G &= m g \\ W &= G h \\ &= m g h \\ &= \rho V g h \end{aligned}$$
 **Conversions:** The density is already in $\text{kg/m}^3$: $7.8 \cdot 10^{3}\,\text{kg/m}^3 = 7800\,\text{kg/m}^3$. Finally $\text{J}$ is converted to kilojoules: $1\,\text{kJ} = 1000\,\text{J}$.
 **Substitution:** $m = 7800\,\text{kg/m}^3 \cdot 0.020\,\text{m}^3 = 156\,\text{kg}$ and $W = 156\,\text{kg} \cdot 9.81\,\text{m/s}^2 \cdot 12\,\text{m} = 18\,364\,\text{J} = 18.4\,\text{kJ}$
 **Answer:** $18\,\text{kJ}$, two significant figures as in the density and the volume. The density $\rho = 7.8 \cdot 10^{3}\,\text{kg/m}^3$ is from the MAFY table *Tiheyksiä: Kiinteiden aineiden tiheyksiä*; tables differ slightly, and an answer within about $\pm 4\,\%$ is accepted.
@@ -273,7 +273,7 @@ The work asked for starts from the beginning of the stretch, so it also includes
 **Find:** the constant force $F_\text{av}$ that would do the same total work $W$ over the whole distance
 **Principle:** The work is the area between the $(s,F)$ graph and the $s$-axis. The work of a constant force is $W = F s$, so the work of the wanted constant force equals the area of the graph. Therefore the work of the graph is calculated first and then divided by the distance.
 **Reading the graph:** The first horizontal segment is on the grid line $F_1 = 25\,\text{N}$ from $s = 0$ to $s = 6\,\text{m}$. The second segment is on the line $F_2 = 10\,\text{N}$ from $s = 6\,\text{m}$ to $s = 10\,\text{m}$, so its width is $4\,\text{m}$.
-**Formula:** $W = F_1 s_1 + F_2 s_2$ and $W = F_\text{av} s$, so $F_\text{av} = \dfrac{W}{s}$
+**Formula:** $$\begin{aligned} W &= F_1 s_1 + F_2 s_2 \\ W &= F_\text{av}\, s \\ F_\text{av} &= \dfrac{W}{s} \end{aligned}$$
 **Conversions:** The forces are in newtons and the distances in metres, so no conversions are needed.
 **Substitution:** $W = 25\,\text{N} \cdot 6\,\text{m} + 10\,\text{N} \cdot 4\,\text{m} = 190\,\text{J}$ and $F_\text{av} = \dfrac{190\,\text{J}}{10\,\text{m}} = 19\,\text{N}$
 **Answer:** $19\,\text{N}$, two significant figures, because the values of the graph were read from the grid lines as whole numbers.

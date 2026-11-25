@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: ec640d55d5e51c5c
+CONTENT-HASH: 746496959811ec08
 
 ## Blocking
 (none)
@@ -8,10 +8,9 @@ CONTENT-HASH: ec640d55d5e51c5c
 (none)
 
 ## Checked
-- Round 1, delta (md-paragraphs): solutions.md only, solution paragraphs cut, words in the same order.
-- 1280 px with solutions open: fy3-16-open-exercises-1280-1.png (level 1, 16-1: Muunnokset and Sijoitus displays set apart, Vastaus and Järkevyys blocks, no clipping), fy3-16-open-exercises-L2-1280-1.png (level 2, 16-10: unit-conversion displays, "jotta watti kertaa sekunti on joule" as own paragraph, substitution rows aligned at "=", no overflow).
-- 390 px: fy3-16-example-390-1.png and fy3-16-stage-sovella-390-1.png (the stored 390 px captures show the lesson's worked-example stages with the same paragraph/display layout, not exercise solutions; layout holds, no overflow). There are no 360 px captures.
-- Language: split paragraphs read as one idea each.
+- Delta (every Kaava re-set as `X &= Y` rows; round 1 Major item 16-22 re-checked). Captures in content/fi/FY3/fy3-16/review/shots, 1280 px, solutions open.
+- L3-1280-4 (16-22): eight rows, long left side on its own row, equals signs in one column, final fraction E_yht / (c_jää ΔT_jää + s) whole, no clipping.
+- L3-1280-3 (16-21), L3-1280-9 (16-24, m=ρV chain), L3-1280-8, L3-1280-2, L2-1280-1 (16-11, `\quad` row now a clean continuation), L2-1280-2 and -3 (16-12): aligned, intact.
 - Hash same at start and end.
 
 ## Scores

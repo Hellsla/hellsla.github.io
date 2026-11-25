@@ -1,21 +1,21 @@
 VERDICT: PASS
-CONTENT-HASH: 241f39cba1ade0b1
+CONTENT-HASH: 29156fe03d1e4462
 
 ## Blocking
-(none)
 
 ## Polish
-- solutions.md:122 (L3-03) — "Tämä sopii arkikokemukseen aurinkosähköstä" is not a check. The comparison of 648 kJ per hour with 490 kJ before it already is one, so this sentence could go.
-- solutions.md:171 (L2-07) — the Mallivastaus stands before Annettu/Kysytty. Place it after Periaate, as in L2-06 and L3-04.
+- solutions.md:98 (fy3-2-L3-01): the Kaava block stops at $F_\text{ka} = W/s$. The block could end in the one final form $F_\text{ka} = \dfrac{F\,(\tfrac12 s_1 + s_2 + \tfrac12 s_3)}{s}$ (house rule "simplify to the end"). The two-stage Sijoitus is correct as it stands.
+- solutions.md:201 (fy3-2-L3-04): the block could end in $h = \dfrac{F s}{2 m g}$. The block also writes $s$ and $F$, but Annettu names them $s_\text{max}$ and $F(s_\text{max})$; one notation in both places would read better.
+- solutions.md:122 and 171 (L3-03 check sentence, L2-07 order) are carried over from the previous report.
 
 ## Checked
-- Recomputed all 18 numeric answers in one script. They agree with answers.py and exercises.json: L1-09 18,36 kJ (ρ = 7,8·10³; 7850 gives 18,48, inside 4 %); L2-05 trapezoids 55,3 J; L2-06 1861 J / 8,1 s = 229,8 W, with the range 222–239 W from the extreme times; L3-03 2725 s = 45,4 min.
-- L3-04: a least-squares slope through the origin gives 1,00 N/cm, so W = ½·10,0 N·0,100 m = 0,50 J and h = 25,5 cm. The trapezoid check from the data, 0,020 m · 25,0 N = 0,50 J, is right.
-- L3-05: the least-squares slope through the origin is 0,815 m/s, so P = 3598 W. In d), Pt = 28,78 kJ and mgh = 28,69 kJ. The constant-velocity argument stays FY3 level, as in the lesson's mgh derivation.
-- L1-05 changed check: 3,0 m/s = 10,8 km/h ≈ 11 km/h, a plausible skier's pace for 60 W. Correct.
-- L2-08: W₁ = 1,0 J, W₂ = 4,0 J and the second part 3,0 J. One correct option and one correct reason. The "true but incomplete" reasons are rightly marked wrong, and their feedback says why.
-- L1-06 and L1-08: exactly one correct option each. The distractor feedback is right (a perpendicular force does no work; power = W/t).
-- L3-02: the assumption of no losses into kinetic energy is stated in the task, and the solution uses ΔU, not "heat in the water".
-- Figure pull-steps: 25 N over 0–6 m and 10 N over 6–10 m, on grid lines. The description gives the same data without the work.
-- Scope: W = Fs, the area under (s,F), mgh with the lift force equal to the weight, and P = W/t = Fv. No E_k, no cos α. Units and significant figures are right.
-- Hash the same at the start and the end.
+- I read every changed Kaava block on disk. Each starts from a basic law ($W = Fs$, $P = W/t$, $G = mg$, $F = G$ at constant velocity, $s = vt$, $m = \rho V$, area under $(s,F)$). Each combines the laws in symbols, and its last row is what the Sijoitus evaluates.
+- L1-05: $P = Fvt/t = Fv$. The derivation is correct.
+- L2-03, L2-07, L1-09: $W = Fh$, $F = G$ and $G = mg$ give $W = mgh$ ($= \rho Vgh$). The constant-velocity condition is in each Periaate.
+- L2-04: $W = F_1s_1 + \tfrac12(F_1+F_2)s_2 = 100\,\text{J}$. L2-05: the trapezoid sum gives $55{,}3\,\text{J}$. L2-09: $190\,\text{J}/10\,\text{m} = 19\,\text{N}$. All correct.
+- L2-06: $P = mgnh_1/t_\text{ka} = 62 \cdot 9{,}81 \cdot 18 \cdot 0{,}17/8{,}1 = 229{,}8\,\text{W}$. Correct.
+- L3-01: $\tfrac12 \cdot 40 \cdot 0{,}5 + 40 \cdot 1{,}0 + \tfrac12 \cdot 40 \cdot 0{,}5 = 60\,\text{J}$, so $F_\text{ka} = 30\,\text{N}$. Correct.
+- L3-02: $\Delta U = nmgh = 588{,}6\,\text{J}$. The no-loss assumption is in the Periaate, and it speaks of internal energy, not heat.
+- L3-04: the triangle area $\tfrac12 \cdot 10{,}0 \cdot 0{,}100 = 0{,}500\,\text{J}$ gives $h = 0{,}2548\,\text{m}$. L3-05: $P = mgv = 3598\,\text{W}$, and $Pt$ against $mgh$ is $28{,}78$ against $28{,}69\,\text{kJ}$. Both correct.
+- The set stays in FY3 scope: no $E_k$, no $\cos\alpha$, no Newton's laws beyond "lifting force = weight at constant velocity".
+- exercises.json: only caption markers changed. The hash was the same at the start and the end.

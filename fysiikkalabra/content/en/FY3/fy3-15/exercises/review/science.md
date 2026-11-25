@@ -1,20 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: c56abff2c3e9e364
+CONTENT-HASH: af6e1c0f678902a1
 
 ## Blocking
 
 ## Polish
-- solutions.md fy3-15-L3-05 Reasonableness: "…only a few per cent, but the energy has not disappeared: it warms the sea" chains two colons in one sentence. Fix: start a new sentence at "The energy has not disappeared; it warms the sea." This is style only.
-- solutions.md fy3-15-L3-05 (line 215): the heading "Reading the graph" introduces a table. Fix: "Reading the table". Carried over.
-- solutions.md fy3-15-L1-05 (line 49): "all powers are given to the nearest megawatt" does not fit 75.0 MW. Fix: rest the three figures on 225 MW and 250 MW. Carried over.
-- solutions.md fy3-15-L1-09 (line 229): the row ends at 13.4 MW but the answer is 13 MW. Fix: end the row at 13 382 kW ≈ 13 MW. Carried over.
-- exercises.json fy3-15-L1-01: "kinetic energy of the water" is a C simplification (the water's head is what the turbine mainly uses). Optional fix: "energy of the flowing water". Carried over.
+- solutions.md (fy3-15-L3-04, Formula): the row $P_\text{k,CHP} = 0.560\,P_{\text{o},\text{CHP}}$ still puts a number into the symbolic chain. You could name the heat share (for example $\eta_\text{k,B}$) and give $0.560$ in the Given.
+- The earlier polish items still stand:
+  - L3-05 is headed "Reading the graph" although it reads a table.
+  - L1-05 says "nearest megawatt".
+  - L1-09's row ends at $13.4\,\text{MW}$, while the answer is $13\,\text{MW}$.
+  - L1-01 says "kinetic energy of the water".
 
 ## Checked
-- The hash was c56abff2c3e9e364 at the start and the end.
-- Delta (fy3-15-L3-05): d) now says "in practice no longer be used to produce electricity". The Reasonableness line adds that with so small a temperature difference the largest possible efficiency would be only a few per cent. This matches the Finnish version.
-- "in practice" is the correct qualifier: low-grade heat is uneconomic, not unusable in principle. The added limit gives the real reason and is consistent with the guardrail that a heat engine cannot turn all of its heat into work.
-- I recomputed the bound from the task data in one script. Outlets at 12.1 to 28.4 °C with rises of 10.6 to 10.9 K give 1 − T_c/T_h = 3.5–3.8 %, and about half that for a stream that cools as it gives off heat. "a few per cent" is therefore right as an upper limit.
-- The unchanged numbers recompute as before: ΔT_avg = 10.775 K, P_L = 1716 MW (answer 1720 MW, tolerance 2 %), P_h = 1800 MW, share 95 %, remainder 84 MW.
-- No number, symbol or answer changed. Energy conservation is still stated explicitly ("it warms the sea").
-- Scope: the limit is stated, not asked for, so the task stays within FY3 and its prerequisite chapter on the heat engine.
+- The Round 2 blocking item is fixed. The Given now says the district heating power is $0.560\,P_{\text{o},\text{CHP}}$, which agrees with the task text, the Formula row $P_\text{k,CHP} = 0.560\,P_{\text{o},\text{CHP}}$ and the Substitution ($175.0\,\text{MW}$).
+- $P_{\text{o},\text{B}}$ now consistently means the total fuel power of option B, the plant plus the boiler. The chain ends with $\Delta P_\text{o} = P_{\text{o},\text{A}} - P_{\text{o},\text{B}}$, as the Find asks.
+- Recomputed: $P_{\text{o},\text{A}} = 472.22\,\text{MW}$, $P_{\text{o},\text{CHP}} = 312.5\,\text{MW}$, $P_\text{k,CHP} = 175.0\,\text{MW}$, $P_{\text{o},\text{B}} = 340.28\,\text{MW}$ and $\Delta P_\text{o} = 131.94\,\text{MW} \to 132\,\text{MW}$. These agree with answers.py and with `answer` 132.
+- Nothing else in the set changed since the earlier PASS.
+- The hash was the same at the start and the end.

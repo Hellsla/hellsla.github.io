@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 0aa776c33031e473
+CONTENT-HASH: 771588436413fa23
 
 ## Blocking
 None.
 
 ## Polish
-- [Minor] open-exercises-L2-1280-4 — the Substitution block has a trailing full stop after "1.26 kW." inside the formula while the other rows have none; drop the stop.
+- [Minor] Formula blocks (all chapters) — the aligned Formula rows put the left sides right-aligned at "=", so short and long left sides sit in a stepped column; this is readable and consistent with the other aligned blocks, no action needed.
 
 ## Checked
-- Delta (md-paragraphs plus units set as LaTeX: solutions.md). There are no 360 px captures; the 390 px ones were used.
-- 1280 px with solutions open: fy3-12-open-exercises-L2-1280-4.png (units such as kWh, m^2, K, h render upright with a thin space; Principle, Conversions, Answer, Reasonableness as separate paragraphs; nothing clipped); fy3-12-open-tarkista-1280-2.png (checks, optional task, self-assessment row).
-- 390 px: fy3-12-stage-tarkista-390-2.png (task cards, no overflow); fy3-12-stage-sovella-390-2.png (task 5, textarea and buttons fit).
+- Delta: only the Formula step of the model solutions changed to aligned multi-row blocks (solutions.md).
+- 1280 px, solutions open: fy3-12-open-exercises-L2-1280-4 (five-row reflection block; the earlier-passed earth-flows figure was not re-judged beyond the layout).
+- Rows align at "=", fractions are in display style, subscripts and units upright, nothing clipped or overflowing, order principle then symbolic steps then asked quantity is kept, spacing to the Conversions block intact.
+- No 360/390 px capture of an opened solution; judged from 1280 px captures.
 - Hash run at start and end: unchanged.
 
 ## Scores

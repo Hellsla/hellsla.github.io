@@ -302,7 +302,7 @@
         "data",
         "reasoning"
       ],
-      "text": "Example data: students slid down the same straight slope on a sled, and the slope continues as a flat snow field. The sled started from rest at a height $h$ above the field, and the mass $m$ of the sled and the load was varied. For each run the horizontal distance $x$ from the starting point to the stopping point was measured.\n\nThe uncertainty of the reading of the distance is $\\Delta x = 1.0\\,\\text{m}$ for every reading. The uncertainties of the mass and the height are so small that they are neglected.\n\nWhich of the following conclusions does the data support on the basis of the table alone?",
+      "text": "Students slid down the same straight slope on a sled, and the slope continues as a flat snow field. The sled started from rest at a height $h$ above the field, and the mass $m$ of the sled and the load was varied. For each run the horizontal distance $x$ from the starting point to the stopping point was measured.\n\nThe uncertainty of the reading of the distance is $\\Delta x = 1.0\\,\\text{m}$ for every reading. The uncertainties of the mass and the height are so small that they are neglected.\n\nWhich of the following conclusions does the data support on the basis of the table alone?",
       "answer": "The starting height affects the distance, because doubling the height lengthened the distance by over $19\\,\\text{m}$.",
       "unit": "",
       "tolerance": 0.02,
