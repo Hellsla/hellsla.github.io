@@ -514,7 +514,7 @@ Tiedostot: `build.py` `fig_rows`, `site.css`, `check_layout.py` (tarkistus tyhj�
 fy3-8 ja fy4-3 leveyksillä 1280, 1440 ja 1920 px sekä fy1-1. Luonnoksessa Teoria-vaihe lyheni noin 8 % (fy3-8:
 4082 → 3775 px, fy4-3: 3703 → 3380 px leveydellä 1280 px).
 
-**U3 ja 8e tehty (PR #862, 2026-11-25; opettajan hyväksyntä "Ok do this" suoraan työntekijäsessiossa, kuvat `docs/audits/u3-taitto/`).**
+**U3 ja 8e tehty (PR #862, 2026-11-25; opettajan hyväksyntä "I approve the layout" suoraan työntekijäsessiossa, kuvat `docs/audits/u3-taitto/`).**
 `build.py fig_rows`: teksti rivin yläreunaan (`align-items:start`); kuvaa lyhyempi teksti ottaa seuraavat kappaleet, luettelot ja
 väliotsikot (enintään neljä) kuvan viereen (`.fig-more`, lähteessä kuvan jälkeen: puhelimella järjestys teksti, kuva, loput);
 valokuva kuvateksteineen oikealle palstalle (`fig_height` lukee koon `photos.json`ista); kaksi pientä taulukkoa (enintään 9 riviä ja

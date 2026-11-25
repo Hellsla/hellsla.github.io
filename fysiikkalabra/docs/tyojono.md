@@ -73,7 +73,7 @@ VERIFIED-riviä; historia loki §6). Jäljellä FY9 (units): malli fy9-liike teh
 vaiheekseen, energia jouleina ennen eV-muunnosta) jo ensimmäisessä versiossa. Tämä kohta jää, kunnes FY9 on tehty.
 FY9 B (lämpö, kaasut, aallot, tasavirta) tehty: kaksi kuvatehtävää kuhunkin (PR #715; loki §6 FY9 B).
 
-## 8e. Kuvien asettelu: tehty (PR #862 yhdessä kohdan 11 U3:n kanssa, opettaja 2026-11-25 "Ok do this"; loki §8e ja U3)
+## 8e. Kuvien asettelu: tehty (PR #862 yhdessä kohdan 11 U3:n kanssa, opettaja 2026-11-25 "I approve the layout"; loki §8e ja U3)
 
 ## 8g. Mallivastaukset perusperiaatteesta (opettaja 2026-11-13)
 Tehty: FY4 (#727, 2026-11-18; 5d FY4: FY4.tsv:n rivit jäivät, CI-selain näkee 4–6 px:n leikkaukset). FY7 tehty (PR #726, loki §8g FY7). FY8 tehty (PR #823, loki §8g FY8). FY1 tehty (PR #813: kaikki 8 lukua, Sovella ja koe, kolme kieltä; loki §8g FY1). FY2 tehty (PR #817: kaikki 8 lukua, Sovella ja koe, kolme kieltä; Sovella fi, en ja fi-easy, koe vain fi). FY5 tehty (PR #814: kaikki 17 lukua, Sovella ja koe, kolme kieltä; Sovella fi, en ja fi-easy, koe vain fi; loki §8g FY5). FY6 tehty (PR #815: kaikki 16 lukua, Sovella ja koe; kohta 15 fy6-5 ja kohta 20 FY6 Sovella samassa PR:ssä; loki §8g FY6). FY3 tehty (PR #849: kaikki 16 lukua, Sovella ja koe, kolme kieltä; Sovella fi, en ja fi-easy, koe vain fi; loki §8g FY3). Kurssit FY1–FY8 tehty.
@@ -111,7 +111,7 @@ Yleislinja (CLAUDE.md "General UI line"): käyttöliittymään ei lisätä tekst
 yksin, järjestyksessä U1, U2, U3, kohdan 10 PR 5:n jälkeen; ennen/jälkeen-kuvat PR:ään ja pysähdys opettajan hyväksyntään. Fysiikkaan, vastauksiin,
 toleransseihin, tallennusavaimiin ja palautustiedostoon ei kosketa. Täysi määrittely: loki §11.
 - **U2 Tehtäväkortin järjestys** (U1 #723 ja U2 #733 tehty): numero ja merkit; tilanne ja kysymys; kuva; vastauskenttä + Tarkista (täytetty päänappi) + Kirjoita ratkaisu; palaute; erotinviivan alla Vihjeet, Vastaus, Näytä ratkaisu, lukko. Ei uusia tekstejä.
-- **U3 Teorian taitto, vaihtoehto B** tehty (PR #862, opettaja 2026-11-25 "Ok do this" suoraan sessiossa, kohta 8e mukana; loki §U3).
+- **U3 Teorian taitto, vaihtoehto B** tehty (PR #862, opettaja 2026-11-25 "I approve the layout" suoraan sessiossa, kohta 8e mukana; loki §U3).
 - Ei tehdä: Aloita-riviä, "Näytä kaikki tehtävät" -toimintoa, etusivun ryhmäotsikoita, marginaalipalstaa tai keskitettyä lukupalstaa, yhden luvun julkaistua pilottia.
 
 ## 11b. FY9: adaptiivinen YO-valmentaja (opettaja 2026-11-14)
