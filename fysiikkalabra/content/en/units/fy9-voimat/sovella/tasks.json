@@ -348,7 +348,7 @@
           "hints": [
             "Which horizontal forces act on the cart? What does the equation of motion look like when you solve the acceleration as a function of the pulling force?",
             "Newton's second law: $F - F_\\mu = ma$. Solve $a$; the result is the equation of a line, from which you can read the meaning of the slope and where the line crosses the horizontal axis.",
-            "Read two points that are far apart from the line (not measured points) and calculate the slope $k = \\Delta a / \\Delta F$. Deduce the mass from it and the friction force from where the line crosses the axis."
+            "Read two points on the line that are far apart (not measured points) and calculate the slope $k = \\Delta a / \\Delta F$. Deduce the mass from it and the friction force from where the line crosses the axis."
           ],
           "answer": [
             {
@@ -562,7 +562,7 @@
           "text": "Draw the free-body diagram of the car when the car accelerates on a horizontal road. Take air resistance and rolling resistance into account.",
           "hints": [
             "Which bodies interact with the car, and which force comes from each?",
-            "The road gives the normal force, the static friction on the driving wheels and the rolling resistance; the air gives the air resistance. The car accelerates, so the net force points forwards.",
+            "The Earth gives the weight. The road gives the normal force, the static friction on the driving wheels and the rolling resistance; the air gives the air resistance. The car accelerates, so the net force points forwards.",
             "In which direction does each horizontal force point? Draw the forward force longer than the resistive forces together."
           ],
           "criteria": [
@@ -644,7 +644,7 @@
           "hints": [
             "Which force reaches its limit when the phone starts to slide? How is the angle related to the coefficient of static friction?",
             "At the limiting angle $mg\\sin\\alpha_0 = \\mu_0 mg\\cos\\alpha_0$, so $\\mu_0 = \\tan\\alpha_0$. The mean and the range describe the result and its uncertainty.",
-            "Check the text of the report: was some measurement made differently from the others? Treat it with a reason before taking the mean. Calculate the uncertainty using $\\tan\\alpha_\\text{min}$ and $\\tan\\alpha_\\text{max}$."
+            "Check the text of the report: was some measurement made differently from the others? Decide, with a justification, how to treat it before taking the mean. Calculate the uncertainty using $\\tan\\alpha_\\text{min}$ and $\\tan\\alpha_\\text{max}$."
           ],
           "answer": {
             "value": 0.4142,
@@ -853,7 +853,7 @@
           "hints": [
             "Which quantities in the equations of parts a and b depend on the mass? What happens to the mass in the equation of motion?",
             "In the model the component of the weight and the friction are proportional to the mass, so the mass cancels. Air resistance does not depend on the mass but on the speed, the size and the posture.",
-            "Write the equation of motion with air resistance and divide by the mass. How does the share of air resistance in the acceleration change when the mass grows but the air resistance stays about the same?"
+            "Write the equation of motion with air resistance and divide by the mass. How does the share of air resistance in the acceleration change when the mass grows but the air resistance grows only a little?"
           ],
           "criteria": [
             {
@@ -1197,7 +1197,7 @@
           "text": "How far does the lift travel downwards in the time interval $1.0\\ldots 8.7\\,\\text{s}$?",
           "hints": [
             "The velocity of the elevator in the different periods is known from parts a–c. What kind of $(t,v)$ graph do they give?",
-            "The distance travelled is the area under the $(t,v)$ graph, taking the magnitude of the velocity. There are three periods: uniform acceleration, constant velocity and uniform deceleration.",
+            "The distance travelled is the area under the $(t,v)$ graph, using the speed (the magnitude of the velocity). There are three periods: uniform acceleration, constant velocity and uniform deceleration.",
             "Calculate the areas of the three parts separately ($1.0\\ldots 3.0\\,\\text{s}$, $3.0\\ldots 6.0\\,\\text{s}$ and $6.0\\ldots 8.7\\,\\text{s}$) and add them together."
           ],
           "answer": {

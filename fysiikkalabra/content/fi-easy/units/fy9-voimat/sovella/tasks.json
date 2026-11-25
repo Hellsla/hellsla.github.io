@@ -21,7 +21,7 @@
           "hints": [
             "Mitkä asiat vaikuttavat veneeseen? Mihin suuntaan kukin voima osoittaa, kun vene liukuu ylös?",
             "Voimat ovat paino, tukivoima, liukukitka ja vaijerin jännitysvoima. Paino osoittaa suoraan alas. Tukivoima osoittaa kohtisuoraan luiskasta ulos. Liukukitka osoittaa liikettä vastaan.",
-            "Nopeus on vakio, joten voimien summa on nolla. Piirrä nuolet niin, että luiskan suuntaiset voimat ovat yhtä suuret vastakkain. Painon osia ei piirretä omiksi voimikseen."
+            "Nopeus on vakio, joten voimien summa on nolla. Piirrä nuolet niin, että luiskan suuntaiset voimat ovat yhtä suuret ja vastakkaiset. Painon osia ei piirretä omiksi voimikseen."
           ],
           "criteria": [
             {
@@ -96,8 +96,8 @@
           "text": "Vinssi pysähtyy, ja vene jää luiskalle. Pysyykö vene paikallaan, jos vaijeri löystyy? Luiskan kaltevuuskulma voisi olla suurempi. Kuinka suuri kulman pitäisi vähintään olla, jotta vene lähtisi levosta itsestään liukumaan takaisin veteen?",
           "hints": [
             "Kun vaijeri löystyy, mikä voima pitää venettä paikallaan? Onko sen suuruus aina sama?",
-            "Lepokitka on vain niin suuri kuin tarvitaan, enintään $\\mu_0 N$. Vene pysyy paikallaan, jos tarvittava lepokitka ei ole tätä ylärajaa suurempi.",
-            "Laske tarvittava lepokitka luiskan suunnassa, $mg\\sin 14^\\circ$. Vertaa sitä ylärajaan $\\mu_0\\,mg\\cos 14^\\circ$. Rajakulmalla ne ovat yhtä suuret, ja massa supistuu pois."
+            "Lepokitka (kitka, joka pitää kappaleen paikallaan) on vain niin suuri kuin tarvitaan, enintään $\\mu_0 N$. Vene pysyy paikallaan, jos tarvittava lepokitka ei ole tätä ylärajaa suurempi.",
+            "Laske tarvittava lepokitka luiskan suunnassa, $mg\\sin 14^\\circ$. Vertaa sitä ylärajaan $\\mu_0\\,mg\\cos 14^\\circ$. Rajakulmalla (pienimmällä kulmalla, jolla vene lähtee liukumaan) ne ovat yhtä suuret, ja massa supistuu pois."
           ],
           "answer": {
             "value": 19.29,
@@ -438,7 +438,7 @@
           "hints": [
             "Mikä voima painaa vaunua rataa vasten, kun lanka on vaakasuora? Kuinka suuri tukivoima on silloin?",
             "Pystysuunnassa $N = mg$, ja kerroin on $\\mu = \\dfrac{F_\\mu}{N}$. Lisäpunnus muuttaa kokonaismassaa. Silloin suoran kulmakerroin ja leikkauskohta muuttuvat.",
-            "Laske $N$ vaunun massasta (b-kohta) ja jaa kitkavoimalla. Lisäpunnuksen jälkeen massa on $m + 0{,}500\\,\\text{kg}$. Laske uusi $\\tfrac{1}{m'}$ ja uusi leikkauskohta $\\mu m' g$. Vertaa vanhoihin."
+            "Laske $N$ vaunun massasta (b-kohta) ja jaa kitkavoima sillä. Lisäpunnuksen jälkeen massa on $m + 0{,}500\\,\\text{kg}$. Laske uusi $\\tfrac{1}{m'}$ ja uusi leikkauskohta $\\mu m' g$. Vertaa vanhoihin."
           ],
           "answer": {
             "value": 0.0285,
@@ -562,7 +562,7 @@
           "text": "Auto kiihtyy vaakasuoralla tiellä. Piirrä auton voimakuvio. Ota huomioon ilmanvastus ja vierimisvastus.",
           "hints": [
             "Mitkä asiat ovat vuorovaikutuksessa auton kanssa? Mikä voima tulee kustakin?",
-            "Tie antaa tukivoiman, lepokitkan vetäviin pyöriin ja vierimisvastuksen. Ilma antaa ilmanvastuksen. Auto kiihtyy, joten kokonaisvoima osoittaa eteenpäin.",
+            "Maa antaa painon. Tie antaa tukivoiman, lepokitkan vetäviin pyöriin ja vierimisvastuksen. Ilma antaa ilmanvastuksen. Auto kiihtyy, joten kokonaisvoima osoittaa eteenpäin.",
             "Mihin suuntaan kukin vaakasuora voima osoittaa? Piirrä eteenpäin vievä voima pidemmäksi kuin taaksepäin osoittavat vastukset yhteensä."
           ],
           "criteria": [
@@ -853,7 +853,7 @@
           "hints": [
             "Mitkä a- ja b-kohdan yhtälöissä riippuu massasta? Mitä massalle tapahtuu liikeyhtälössä?",
             "Mallissa painon osa ja kitka ovat verrannollisia massaan, joten massa supistuu. Ilmanvastus ei riipu massasta. Se riippuu nopeudesta, koosta ja asennosta.",
-            "Kirjoita liikeyhtälö ilmanvastuksen kanssa ja jaa se massalla. Miten ilmanvastuksen osuus kiihtyvyydestä muuttuu, kun massa kasvaa mutta ilmanvastus pysyy suunnilleen samana?"
+            "Kirjoita liikeyhtälö ilmanvastuksen kanssa ja jaa se massalla. Miten ilmanvastuksen osuus kiihtyvyydestä muuttuu, kun massa kasvaa mutta ilmanvastus kasvaa vain vähän?"
           ],
           "criteria": [
             {

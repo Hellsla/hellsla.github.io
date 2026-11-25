@@ -438,7 +438,7 @@
      "hints": [
       "Mikä voima painaa vaunua rataa vasten, kun lanka on vaakasuora? Kuinka suuri tukivoima on silloin?",
       "Pystysuunnassa $N = mg$, ja kerroin on $\\mu = \\dfrac{F_\\mu}{N}$. Lisäpunnus muuttaa kokonaismassaa, ja sekä suoran kulmakerroin että leikkauskohta riippuvat massasta.",
-      "Laske $N$ vaunun massasta (b-kohta) ja jaa kitkavoimalla. Lisäpunnuksen jälkeen massa on $m + 0{,}500\\,\\text{kg}$: laske uusi $\\tfrac{1}{m'}$ ja uusi leikkauskohta $\\mu m' g$ ja vertaa vanhoihin."
+      "Laske $N$ vaunun massasta (b-kohta) ja jaa kitkavoima sillä. Lisäpunnuksen jälkeen massa on $m + 0{,}500\\,\\text{kg}$: laske uusi $\\tfrac{1}{m'}$ ja uusi leikkauskohta $\\mu m' g$ ja vertaa vanhoihin."
      ],
      "answer": {
       "value": 0.0285,
@@ -562,7 +562,7 @@
      "text": "Piirrä auton voimakuvio, kun auto kiihtyy vaakasuoralla tiellä. Ota huomioon ilmanvastus ja vierimisvastus.",
      "hints": [
       "Mitkä kappaleet ovat vuorovaikutuksessa auton kanssa, ja mikä voima tulee kustakin?",
-      "Tie antaa tukivoiman, lepokitkan vetäviin pyöriin ja vierimisvastuksen; ilma antaa ilmanvastuksen. Auto kiihtyy, joten kokonaisvoima osoittaa eteenpäin.",
+      "Maa antaa painon. Tie antaa tukivoiman, lepokitkan vetäviin pyöriin ja vierimisvastuksen; ilma antaa ilmanvastuksen. Auto kiihtyy, joten kokonaisvoima osoittaa eteenpäin.",
       "Mihin suuntaan kukin vaakasuora voima osoittaa? Piirrä eteenpäin vievä voima pidemmäksi kuin taaksepäin osoittavat vastukset yhteensä."
      ],
      "criteria": [
@@ -853,7 +853,7 @@
      "hints": [
       "Mitkä a- ja b-kohdan yhtälöissä riippuu massasta? Mitä massalle tapahtuu liikeyhtälössä?",
       "Mallissa painon komponentti ja kitka ovat verrannollisia massaan, joten massa supistuu. Ilmanvastus ei riipu massasta vaan nopeudesta, koosta ja asennosta.",
-      "Kirjoita liikeyhtälö ilmanvastuksen kanssa ja jaa massalla. Miten ilmanvastuksen osuus kiihtyvyydestä muuttuu, kun massa kasvaa ja ilmanvastus pysyy suunnilleen samana?"
+      "Kirjoita liikeyhtälö ilmanvastuksen kanssa ja jaa massalla. Miten ilmanvastuksen osuus kiihtyvyydestä muuttuu, kun massa kasvaa ja ilmanvastus kasvaa vain vähän?"
      ],
      "criteria": [
       {
