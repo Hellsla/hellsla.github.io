@@ -1,15 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 7de132967afb2fba
+CONTENT-HASH: de045e32f94a55db
 
-Delta review (work queue 11c): the new `hints` of s1–s8 in `sovella/tasks.json`, compared with the fi hints, each part's rubric, answer and `sovella/solutions.md`.
+Delta review round 2 (work queue 11c): the hints changed since round 1 (s2 c h3, s2 d h2, s3 a h3, s4 a h3, s5 b h3, s5 c h3, s6 a h2, s7 b h2), and all other hints re-read against the fi hints, each part's rubric, answer and `sovella/solutions.md`.
 
 ## Blocking
 None.
 
 ## Polish
-1. s2 d, hint 2 (en): the hint writes $W_\text{battery}$, but the rubric and solution write $W_\text{bat}$. Replacement: "The energy given by the charger is $W_\text{ch} = U_\text{ch} Q$, and the efficiency is $\eta = \dfrac{W_\text{bat}}{W_\text{ch}}$, where $W_\text{bat}$ is the energy of part a."
-2. s6 a, hint 2 (en): $E = Pt$ uses $E$, which is the emf elsewhere in the unit. Replacement: "The energy needed to heat the water is $Q = cm\Delta T$ and the energy given by the resistor is $W = Pt$. The efficiency is practically $100\,\%$, so $Pt = cm\Delta T$."
+None. Both round 1 items are fixed: s2 d, hint 2 now writes $W_\text{bat}$ as the rubric and solution do, and s6 a, hint 2 writes $W = Pt$.
 
 ## Checked
-- Each hint has the same physics as the fi hint, and its symbols match the en rubric ($U_\text{ch}$, $W_\text{ch}$, $U_\text{p}$, $I_\text{k}$, $R_\text{s}$). The exception is item 1.
-- The stated conversions use decimal points and are correct ($3.0\cdot10^{-3}\,\text{m}$, $3600\,\text{J}$, $3.6\cdot10^{6}\,\text{J}$, $0.75\cdot10^{-6}\,\text{m}^2$, $0.040\,\text{m}$, $4.00\cdot10^{-4}\,\text{m}^2$, $0.0053\,\text{A}$, $1600\,\text{Wh}$). The answers they lead to were recomputed and agree, and no hint gives a final answer.
+- s2 c, h3: terminal voltage during charging is the emf plus $R_\text{s} I$, agreeing with $U_\text{ch} = E + (R + R_\text{s})I$; no number given.
+- s3 a, h3; s5 b, h3; s5 c, h3; s7 b, h2: the same physics as the fi hints, correct and consistent with the solutions ($P_\text{max} \approx 0.09\,\text{W}$ in s5 b); no conclusion dictated.
+- s4 a, h3: $1\,\text{mm}^2 = 10^{-6}\,\text{m}^2$ is correct.
+- Symbols match the en rubric ($U_\text{ch}$, $W_\text{ch}$, $W_\text{bat}$, $R_\text{s}$, $I_\text{k}$); decimal points; no hint states a final answer.

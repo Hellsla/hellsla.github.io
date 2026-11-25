@@ -1,15 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 73714318d80c8932
+CONTENT-HASH: 97024b7e8bc1482a
 
-Delta review (work queue 11c): the new `hints` of s1–s8 in `sovella/tasks.json`, compared with the fi hints, each part's rubric, answer and `sovella/solutions.md`.
+Delta review round 2 (work queue 11c): the hints changed since round 1 (s2 c h3, s3 a h3, s3 b h1, s3 c h1, s4 a h3, s5 b h3, s5 c h3, s6 a h2, s7 b h2), and all other hints re-read against the fi hints, each part's rubric, answer and `sovella/solutions.md`.
 
 ## Blocking
 None.
 
 ## Polish
-1. s6 a, hint 2 (fi-easy): $E = Pt$ uses $E$, which in this unit means the source voltage. Replacement: "Veden lämmittämiseen tarvittava energia on $Q = cm\Delta T$. Vastuksen antama energia on $W = Pt$. Hyötysuhde on käytännössä $100\,\%$, joten $Pt = cm\Delta T$."
+None. Round 1 item 1 (s6 a, hint 2: $E = Pt$) is fixed: $W = Pt$.
 
 ## Checked
-- Each hint has the physics of the fi hint, split into shorter sentences, with nothing dropped. The s2 c addition ("Jännitehäviö on jännitteen lasku resistanssissa") is correct.
-- The symbols, formulas and conversions are the same as in fi and the rubric. All the stated conversions are correct (see the fi report), the answers they lead to were recomputed and agree, and no hint gives a final answer.
-- Decimal commas; numbers with units in LaTeX.
+- s2 c, h3: terminal voltage during charging is $E + R_\text{s} I$, same as fi and the solution.
+- s3 a, h3; s5 b, h3; s5 c, h3; s7 b, h2: the same physics as the fi hints (see the fi report), correct and consistent with the solutions; no conclusion dictated.
+- s3 b, h1: "kulmakerroin eli jyrkkyys" is a correct gloss; the slope is $-R_\text{s}$ as in hint 2.
+- s3 c, h1: the definition of oikosulku (terminals joined directly by a wire) is correct and leads to $U = 0$ as in hint 2.
+- s4 a, h3: $1\,\text{mm}^2 = 10^{-6}\,\text{m}^2$ is correct.
+- No hint states a final answer; LaTeX with decimal commas; nothing of the fi physics dropped.

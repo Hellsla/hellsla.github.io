@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 38b447f08cd0aafa
+CONTENT-HASH: b735f3d0ac92b639
 
-Checked: kaikki 30 kirjoitettavaa osaa (s1-s8) saavat kolme vihjettä järjestyksessä ohjaava kysymys, yhteys, välivaihe. Vihje 1 ei nimeä kaavaa, vihje 2 antaa yhteyden, vihje 3 jättää laskemisen tai päättelyn opiskelijalle. Lopputulosta ei kerrota. fi, fi-easy ja en sanovat saman.
+Round 2 delta review, hints only. Ladder checked across all long tasks: hint 1 a guiding question, hint 2 the relation, hint 3 an intermediate step or a reasoning prompt.
 
-Blocking
-- Ei ole.
+Blocking: none.
 
-Polish
-1. s2 c, vihje 3: "laske, kuinka paljon se on lähdejännitettä suurempi akun sisäisessä resistanssissa" on vaikeaselkoinen. Korvaus: "Napajännite on akun navoilla mitattu jännite. Latauksessa se on lähdejännite lisättynä sisäisen resistanssin jännitehäviöllä $R_\text{s} I$."
-2. s3 a, vihje 3 luettelee koko menetelmän (ei murtoviivaa, suora pisteiden väliin, jatka akselille) ja tekee rubriikin pisteet lähes ilmaisiksi. Korvaus: "Piirrä pisteet ja mieti, millaisen viivan vihjeen 2 malli antaisi. Mihin asti viiva kannattaa jatkaa ja miksi?"
-3. s5 c, vihje 3 nimeää rubriikin suunnittelukohdat ja mittarien kytkennän. Korvaus: "Mikä tekisi tuloksesta luotettavamman: pisteiden määrä ja jakauma, lukeman tarkkuus, vastuksen lämpötila? Valitse ja perustele."
-4. s5 b, vihje 3 ("Voisiko lämpeneminen selittää muutoksen?") ohjaa arviointia. Korvaus: "Onko resistanssin muutos virherajoja suurempi? Jos on, mikä sen voisi aiheuttaa? Tarkista tehon $P = UI$ avulla."
-5. s7 b, vihje 2 antaa koko syy-seuraussarjan kysymyksinä. Hyväksyttävä; tiukemmin: jätä "ja miten lämpötila vaikuttaa metallin resistanssiin" pois.
+Polish: none required.
+
+Checked:
+1. s2 c h3: terminal voltage now given as emf plus R_s I; no final value stated, work remains.
+2. s3 a/b/c h3 and s6 a h2, s7 b h2: shortened to questions; the evaluation and design parts guide the reasoning without dictating the conclusion; the rubric points are not free.
+3. s5 b h3: area conversion generalised to 1 mm^2; the answer is not given.
+4. fi-easy s3 b h1, c h1: shorter sentences, short-circuit and slope explained.
+5. All three languages say the same physics.

@@ -1,12 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 73714318d80c8932
+CONTENT-HASH: 97024b7e8bc1482a
 
-Checked: kaikki 30 kirjoitettavaa osaa (s1-s8) saavat kolme vihjettä oikeassa järjestyksessä. Lauseet ovat lyhyempiä kuin fi-versiossa ja fysiikka on sama. Lopputulosta ei kerrota.
+Round 2 delta review, hints only. Ladder checked across all long tasks: hint 1 a guiding question, hint 2 the relation, hint 3 an intermediate step or a reasoning prompt.
 
-Blocking
-- Ei ole.
+Blocking: none.
 
-Polish
-1. Samat huomiot kuin fi-raportissa: s2 c vihje 3, s3 a vihje 3, s5 b vihje 3, s5 c vihje 3 ja s7 b vihje 2 (korvaustekstit fi-raportissa, lyhyin lausein).
-2. s2 c, vihje 3, fi-easy-korvaus: "Napajännite on akun navoilla mitattu jännite. Latauksessa se on lähdejännite ja sisäisen resistanssin jännitehäviö $R_\text{s} I$ yhteensä."
-3. fi-easy ei selitä vaikeita sanoja vihjeissä (virheraja, kulmakerroin, oikosulku). Lisää s3 b vihje 2:een: "Kulmakerroin kertoo, kuinka jyrkästi suora nousee tai laskee." Lisää s3 c vihje 1:een: "Oikosulku tarkoittaa, että navat yhdistetään suoraan johdolla ilman kuormaa."
+Polish: none required.
+
+Checked:
+1. s2 c h3: terminal voltage now given as emf plus R_s I; no final value stated, work remains.
+2. s3 a/b/c h3 and s6 a h2, s7 b h2: shortened to questions; the evaluation and design parts guide the reasoning without dictating the conclusion; the rubric points are not free.
+3. s5 b h3: area conversion generalised to 1 mm^2; the answer is not given.
+4. fi-easy s3 b h1, c h1: shorter sentences, short-circuit and slope explained.
+5. All three languages say the same physics.
