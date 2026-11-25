@@ -716,7 +716,7 @@
           "text": "The group wants to improve the measurement. Suggest two improvements, one of which concerns a possible systematic error, and justify them.",
           "hints": [
             "What can give all the positions read from the video the same relative error? Where does the random scatter of the points around the line come from?",
-            "The scale factor is the ratio of a known length to its length in the image: $\\text{factor} = \\dfrac{1.00\\,\\text{m}}{\\text{length in the image}}$. What in the placing of the camera and the tape measure makes the factor wrong?",
+            "The scale factor is $c = \\dfrac{1.00\\,\\text{m}}{L}$, where $L$ is the length of the metre of tape in the image. What in the placing of the camera and the tape measure makes the factor wrong?",
             "Choose one improvement for the systematic error and one for the random scatter. For each, justify what it changes: the result or its uncertainty."
           ],
           "criteria": [

@@ -716,7 +716,7 @@
           "text": "Ryhmä haluaa parantaa mittausta. Ehdota kaksi parannusta. Toisen parannuksen pitää koskea mahdollista systemaattista virhettä. Perustele parannukset.",
           "hints": [
             "Mistä kaikki videolta luetut paikat voivat saada saman suhteellisen virheen? Mistä pisteiden satunnainen hajonta suoran ympärillä tulee?",
-            "Mittakaavakerroin kertoo, kuinka monta metriä on yhtä kuvan pituutta kohti. Se on tunnetun pituuden suhde sen kuvassa näkyvään pituuteen: $\\text{kerroin} = \\dfrac{1{,}00\\,\\text{m}}{\\text{pituus kuvassa}}$. Mitkä asiat kameran ja mittanauhan asettelussa tekevät kertoimesta virheellisen?",
+            "Mittakaavakerroin kertoo, kuinka monta metriä on yhtä kuvan pituutta kohti. Kerroin on $c = \\dfrac{1{,}00\\,\\text{m}}{L}$. Tässä $L$ on mittanauhan metrin pituus kuvassa. Mitkä asiat kameran ja mittanauhan asettelussa tekevät kertoimesta virheellisen?",
             "Valitse yksi parannus systemaattiselle virheelle ja yksi satunnaiselle hajonnalle. Perustele kummankin kohdalla, mitä se muuttaa. Muuttaako se tulosta vai sen epävarmuutta?"
           ],
           "criteria": [
