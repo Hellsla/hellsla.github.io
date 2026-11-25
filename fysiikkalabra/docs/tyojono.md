@@ -73,9 +73,7 @@ VERIFIED-riviä; historia loki §6). Jäljellä FY9 (units): malli fy9-liike teh
 vaiheekseen, energia jouleina ennen eV-muunnosta) jo ensimmäisessä versiossa. Tämä kohta jää, kunnes FY9 on tehty.
 FY9 B (lämpö, kaasut, aallot, tasavirta) tehty: kaksi kuvatehtävää kuhunkin (PR #715; loki §6 FY9 B).
 
-## 8e. Kuvien asettelu (opettaja 2026-11-13) — toteutetaan kohdan 11 U3:n osana
-Turha pystyväli kuvan vierellä, kuva ja pieni taulukko tai kaksi pientä taulukkoa vierekkäin, kuva aina selittämänsä kappaleen
-viereen, valokuva kuvateksteineen oikealle palstalle (`build.py fig_rows`, site.css, `check_layout.py`). Ennen/jälkeen-kuvat: fy3-8, fy4-3, fy1-1 (1280, 1440, 1920 px). Täysi kuvaus: loki §8e.
+## 8e. Kuvien asettelu: tehty (PR #862 yhdessä kohdan 11 U3:n kanssa, opettaja 2026-11-25 "Ok do this"; loki §8e ja U3)
 
 ## 8g. Mallivastaukset perusperiaatteesta (opettaja 2026-11-13)
 Tehty: FY4 (#727, 2026-11-18; 5d FY4: FY4.tsv:n rivit jäivät, CI-selain näkee 4–6 px:n leikkaukset). FY7 tehty (PR #726, loki §8g FY7). FY8 tehty (PR #823, loki §8g FY8). FY1 tehty (PR #813: kaikki 8 lukua, Sovella ja koe, kolme kieltä; loki §8g FY1). FY2 tehty (PR #817: kaikki 8 lukua, Sovella ja koe, kolme kieltä; Sovella fi, en ja fi-easy, koe vain fi). FY5 tehty (PR #814: kaikki 17 lukua, Sovella ja koe, kolme kieltä; Sovella fi, en ja fi-easy, koe vain fi; loki §8g FY5). FY6 tehty (PR #815: kaikki 16 lukua, Sovella ja koe; kohta 15 fy6-5 ja kohta 20 FY6 Sovella samassa PR:ssä; loki §8g FY6). FY3 tehty (PR #849: kaikki 16 lukua, Sovella ja koe, kolme kieltä; Sovella fi, en ja fi-easy, koe vain fi; loki §8g FY3). Kurssit FY1–FY8 tehty.
@@ -109,11 +107,11 @@ FY4 tehty (#844: "Nopeus (toisto)" → "Nopeus" fy4-1, fy4-12; toistuva seliteri
 FY7 tehty (PR #848): "Animaation nopeus" → "Nopeus" fy7-2, fy7-6 ja fy7-7:ssä; toistuvat seliterivit pois fy7-4, 6, 9, 10 ja 11:stä; "Käynnistä" ja fy7-5:n "Nopeus" ennallaan; raahaus vain fy7-1:ssä, jossa r- ja φ-liukusäätimet ovat näppäinvaihtoehto (koodia ei lisätty). fy7-10 `tarkistus-3`:n tehtävänanto korjattu ("veden pinnan läpi", koordinaattorin lupa, kierros 2). Jäljellä: fy7-8:n seliterivi (lesson.md:46 kuva monokromaattinen, lint ERROR; korjaus = uusi piirros, opettajan päätös) ja fy7-1:n seliterivi (ei toistu Käyttöohjeessa).
 
 ## 11. Tehtävänäkymä ja teorian taitto (opettaja 2026-11-14, UI/UX-auditointi)
-Yleislinja (CLAUDE.md "General UI line"): käyttöliittymään ei lisätä tekstiä. U4 (#561) ja U5 (#582) tehty. U1–U3 jaettuja (`templates/`, `scripts/`, `site.css`, `lang/`):
+Yleislinja (CLAUDE.md "General UI line"): käyttöliittymään ei lisätä tekstiä. U3 (#862), U4 (#561) ja U5 (#582) tehty. U1–U2 tehty (#723, #733). U1–U3 olivat jaettuja (`templates/`, `scripts/`, `site.css`, `lang/`):
 yksin, järjestyksessä U1, U2, U3, kohdan 10 PR 5:n jälkeen; ennen/jälkeen-kuvat PR:ään ja pysähdys opettajan hyväksyntään. Fysiikkaan, vastauksiin,
 toleransseihin, tallennusavaimiin ja palautustiedostoon ei kosketa. Täysi määrittely: loki §11.
 - **U2 Tehtäväkortin järjestys** (U1 #723 ja U2 #733 tehty): numero ja merkit; tilanne ja kysymys; kuva; vastauskenttä + Tarkista (täytetty päänappi) + Kirjoita ratkaisu; palaute; erotinviivan alla Vihjeet, Vastaus, Näytä ratkaisu, lukko. Ei uusia tekstejä.
-- **U3 Teorian taitto, vaihtoehto B** (kohta 8e) — Varattu: claude/11-u3-taitto (U3): 38 rem:n palsta säilyy; teksti kuvarivin yläreunaan, valokuva viereen, kaksi pientä taulukkoa vierekkäin, korkea kuva alle tai seuraava kappale viereen.
+- **U3 Teorian taitto, vaihtoehto B** tehty (PR #862, opettaja 2026-11-25 "Ok do this" suoraan sessiossa, kohta 8e mukana; loki §U3).
 - Ei tehdä: Aloita-riviä, "Näytä kaikki tehtävät" -toimintoa, etusivun ryhmäotsikoita, marginaalipalstaa tai keskitettyä lukupalstaa, yhden luvun julkaistua pilottia.
 
 ## 11b. FY9: adaptiivinen YO-valmentaja (opettaja 2026-11-14)
