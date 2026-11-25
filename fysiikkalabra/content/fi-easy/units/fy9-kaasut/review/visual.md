@@ -1,9 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 530f2f54a1637ab2
-SCOPE: delta (old-content fixes, git diff origin/main)
-Checked: fy9-kaasut (fi-easy): rendered preview page at 390 and 1280 px with every details/solution open (DOM check: no page overflow, no KaTeX error, no clipped or scrolling display formula); captures review/shots/*stage-sovella-*, *stage-exercises-*, *teacher-*, intro and stage-selita/tarkista tiles, with sample tiles opened at readable size (aallot fi sovella-1280-5 and 390-6, liike en sovella-390-9, ympyraliike fi-easy sovella-390-8, energia fi teacher-1280-1); changed numbers and units diffed against the source for decimal comma/point and \, thin space.
+CONTENT-HASH: 0ad61480ae1b2f96
 
-1. Blocking: none.
-2. Typography: changed numbers and units are LaTeX with thin space, decimal comma in fi and fi-easy, decimal point in en; aligned blocks and inline formulas fit at 390 px; no layout regressions from the changed lines.
-3. Language: changed lines read naturally and consistently with the glossary terms; no wording defect found.
-4. Polish: known drawing issues (kone-kuva W arrow, kalteva.webp, geo-kuva ray, kartta label, sahkokentta formula map E vs W) are known to the teacher, not re-judged here.
+Delta review of the new hints (fi-easy). Built preview/fi-easy/fy9-kaasut.html; opened the first card (a, closed and open) at 390 and 1280 px and the s-task b card with fractions at 390 px. Measured all 31 hint rows at both widths with every hint open: no horizontal overflow, no formula clipped or scrolled.
+
+## Blocking
+None.
+
+## Polish
+1. Closed hints stack in three rows at 390 px (the width does not fit one row); acceptable, labels are readable.
+2. Language: short sentences, no AI phrasing; "ylipaine", "kulmakerroin eli jyrkkyys" explained. No change needed.
