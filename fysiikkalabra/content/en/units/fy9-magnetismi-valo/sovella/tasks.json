@@ -18,6 +18,11 @@
           "kind": "calc",
           "points": 4,
           "text": "What is the peak value of the generator's voltage? What is its rms value?",
+          "hints": [
+            "What makes the magnetic flux through the coil change as it rotates? When is the voltage at its greatest?",
+            "The peak value of the voltage of a rotating coil is $e_0 = NBA \\cdot 2\\pi f$, and the rms value $U$ is the direct voltage that gives the same average power.",
+            "First calculate the peak value $e_0$ from the magnetic flux density $B$, the area $A$, the number of turns $N$ and the angular frequency $2\\pi f$. For a sinusoidal voltage the rms value is the peak value divided by $\\sqrt{2}$."
+          ],
           "answer": [
             {
               "name": "e0",
@@ -60,6 +65,11 @@
           "kind": "calc",
           "points": 4,
           "text": "The generator's rms voltage $400\\,\\text{V}$ is stepped up with a transformer to the line voltage. What is the ratio of the numbers of turns of the transformer's secondary and primary coils? How large are the currents on each side of the transformer?",
+          "hints": [
+            "What stays the same in an ideal transformer when the voltage increases? How does that affect the current?",
+            "The turns ratio is $\\dfrac{N_2}{N_1} = \\dfrac{U_2}{U_1}$. In an ideal transformer power is conserved, so on each side the current is $I = \\dfrac{P}{U}$.",
+            "The primary voltage is the generator's $400\\,\\text{V}$ and the secondary voltage is the line's $20.0\\,\\text{kV}$. Convert kilovolts to volts and the power $150\\,\\text{kW}$ to watts, and calculate the currents separately on each side."
+          ],
           "answer": [
             {
               "name": "ratio",
@@ -108,6 +118,11 @@
           "kind": "calc",
           "points": 4,
           "text": "What fraction of the transmitted power is converted into internal energy in the line? What would happen if the same power were transmitted along the same line directly at the generator voltage $400\\,\\text{V}$?",
+          "hints": [
+            "What current flows in the line? Where does the electrical energy go in the conductors of the line?",
+            "The power loss in the conductors of the line is $P_\\text{h} = RI^2$, where $I$ is the current in the line. The fraction of the transmitted power lost is $\\dfrac{P_\\text{h}}{P}$.",
+            "Use the high-voltage current from part b and calculate the power loss in watts. Divide it by the transmitted power $150\\,\\text{kW}$ (convert to watts) and give the fraction as a percentage. Then calculate the same loss with the current that would flow at $400\\,\\text{V}$ and consider whether the result is possible."
+          ],
           "answer": {
             "value": 0.225,
             "unit": "%",
@@ -141,6 +156,11 @@
           "kind": "word",
           "points": 3,
           "text": "A maintenance worker suggests that the direct voltage of the village's solar panels should also be connected to the same transformer, so that its voltage could also be stepped up to the line. Assess the suggestion.",
+          "hints": [
+            "By which phenomenon does a transformer change a voltage? What must happen in the iron core for a voltage to appear in the secondary coil?",
+            "The induced voltage depends on the rate of change of the magnetic flux $\\dfrac{\\Delta\\Phi}{\\Delta t}$. What is the flux that a direct voltage across the primary coil produces in the core as a function of time?",
+            "What happens in the secondary coil if the flux does not change? Consider what kind of voltage a transformer needs and how a direct voltage could be turned into one."
+          ],
           "criteria": [
             {
               "text": "Explains that the secondary voltage of a transformer is induced by the changing magnetic flux in the iron core: with direct current the flux is constant, so no voltage is induced in the secondary (except momentarily at switch-on).",
@@ -178,6 +198,11 @@
           "kind": "calc",
           "points": 4,
           "text": "What is the smallest angle of incidence at the boundary between core and cladding for the light to stay in the core? What is then the largest allowed angle between a ray of light and the axis of the fibre?",
+          "hints": [
+            "Under what condition is light totally reflected at the boundary between the core and the cladding? Which material has the greater refractive index?",
+            "For the critical angle $\\sin\\alpha_\\text{r} = \\dfrac{n_2}{n_1}$, where $n_1$ is the refractive index of the core and $n_2$ that of the cladding. The angle of incidence is measured from the normal of the boundary.",
+            "First calculate the critical angle $\\alpha_\\text{r}$. Then draw the ray, the normal of the boundary and the axis of the fibre: the normal is perpendicular to the axis, so the angle of the ray to the axis and the angle of incidence add up to $90^\\circ$."
+          ],
           "answer": [
             {
               "name": "ar",
@@ -220,6 +245,11 @@
           "kind": "calc",
           "points": 4,
           "text": "How long does a light pulse travelling along the axis of the fibre take from the mainland to the island? How much longer does a ray take whose angle to the axis of the fibre is the largest at which it still stays in the core?",
+          "hints": [
+            "At what speed does light travel in the core? How are distance, speed and time related?",
+            "The speed of light in a material is $v = \\dfrac{c}{n_1}$, and the time is $t = \\dfrac{s}{v} = \\dfrac{n_1 s}{c}$.",
+            "Convert the length of the fibre to metres: $14.0\\,\\text{km} = 14\\,000\\,\\text{m}$. Draw a right triangle in which the distance along the axis is the length of the fibre $s$ and the angle of the ray to the axis is $90^\\circ - \\alpha_\\text{r}$. How long is the path the ray travels? Calculate the time along that path."
+          ],
           "answer": [
             {
               "name": "t",
@@ -262,6 +292,11 @@
           "kind": "calc",
           "points": 4,
           "text": "How much power reaches the receiver on the island?",
+          "hints": [
+            "By how much does the power decrease in the fibre? Which parts of the route attenuate the light?",
+            "The total attenuation is $A = aL + 4 \\cdot 0.10\\,\\text{dB}$, and in decibels $A = 10\\,\\text{dB} \\cdot \\lg\\dfrac{P_0}{P}$.",
+            "First calculate the total attenuation $A$ in decibels. Then solve the received power $P$: write the equation as $\\lg\\dfrac{P_0}{P} = \\dfrac{A}{10\\,\\text{dB}}$ and remove the logarithm with a power of ten."
+          ],
           "answer": {
             "value": 0.897,
             "unit": "mW",
@@ -295,6 +330,11 @@
           "kind": "word",
           "points": 3,
           "text": "Explain why the light stays in the fibre although the fibre bends gently with the shape of the seabed, but leaks out if the fibre is bent into a sharp turn.",
+          "hints": [
+            "What happens to a ray of light at the boundary when the angle of incidence is greater than the critical angle? What happens when it is smaller?",
+            "Total internal reflection occurs when $\\alpha > \\alpha_\\text{r}$, where $\\sin\\alpha_\\text{r} = \\dfrac{n_2}{n_1}$.",
+            "Draw a ray in a gentle and in a sharp bend. How does the angle of incidence to the normal of the boundary change as the bend gets sharper? What does this mean for bending the cable?"
+          ],
           "criteria": [
             {
               "text": "Explains that in a gentle curve the angle of incidence of the ray at the boundary stays larger than the critical angle, but in a sharp bend the ray hits the boundary on the outer side of the curve more steeply, the angle of incidence falls below the critical angle and the light refracts into the cladding.",
@@ -333,6 +373,11 @@
           "kind": "graph",
           "points": 4,
           "text": "Present the magnetic flux density as a function of distance in a graph. Is the magnetic flux density inversely proportional to the distance? Justify with the data.",
+          "hints": [
+            "What kind of curve would the points form if doubling the distance halved the field? What do the numbers of the table tell you?",
+            "If $B$ is inversely proportional to the distance $r$, their product $Br$ is constant.",
+            "Plot the points with both axes starting from zero, and do not join the points with a line. Calculate the product $Br$ for every row of the table and compare the products."
+          ],
           "criteria": [
             {
               "key": "graph_axes",
@@ -356,6 +401,11 @@
           "kind": "graph",
           "points": 5,
           "text": "Present the data so that a straight line fits the points. Justify your choice and fit a straight line to the points.",
+          "hints": [
+            "Against which quantity should $B$ be plotted so that a straight line fits the points? How does the field depend on the distance according to theory?",
+            "The field of a long straight conductor is $B = \\dfrac{\\mu_0 I}{2\\pi} \\cdot \\dfrac{1}{r}$, so $B$ is linear in $\\dfrac{1}{r}$.",
+            "Convert the distances to metres and calculate $\\dfrac{1}{r}$ for every row of the table in $\\dfrac{1}{\\text{m}}$. Plot $B$ as a function of $\\dfrac{1}{r}$ and fit one line through the points. The line is not forced through the origin."
+          ],
           "criteria": [
             {
               "text": "Justifies the linearisation: the field of a long straight wire is $B = \\dfrac{\\mu_0 I}{2\\pi} \\cdot \\dfrac{1}{r}$, so $B$ is linear in the reciprocal of the distance $\\dfrac{1}{r}$, and a possible constant field only shifts the line.",
@@ -379,6 +429,11 @@
           "kind": "calc",
           "points": 6,
           "text": "Determine the vacuum permeability $\\mu_0$ from the graph. Compare the result with the table value $4\\pi \\cdot 10^{-7}\\,\\tfrac{\\text{Vs}}{\\text{Am}}$.",
+          "hints": [
+            "What quantity does the slope of the line represent when $\\dfrac{1}{r}$ is on the horizontal axis?",
+            "The slope of the line is $k = \\dfrac{\\mu_0 I}{2\\pi}$. Solve $\\mu_0$ from it in symbols.",
+            "Read the slope $k = \\dfrac{\\Delta B}{\\Delta(1/r)}$ from two points of the fitted line far apart. Convert $\\mu\\text{T}$ to tesla: $1\\,\\mu\\text{T} = 10^{-6}\\,\\text{T}$. Compare the result with the table value by calculating the percentage difference."
+          ],
           "answer": {
             "value": 1.268,
             "unit": "· 10⁻⁶ Vs/(Am)",
@@ -417,6 +472,11 @@
           "kind": "calc",
           "points": 5,
           "text": "The line does not pass through the origin. What does the constant term tell about the measurement? According to the model, what reading would the sensor show $50\\,\\text{cm}$ from the wire, and why is the result only an estimate?",
+          "hints": [
+            "What would the sensor show if the conductor carried no current? What other than the conductor can affect the reading?",
+            "The equation of the line is $B = \\dfrac{k}{r} + b$, where the constant term $b$ is where the line crosses the vertical axis.",
+            "Read $b$ from the graph and substitute $r = 0.50\\,\\text{m}$ and the slope from part c into the equation. Then consider whether $50\\,\\text{cm}$ is small compared with the length of the conductor, $2.0\\,\\text{m}$, and whether the point lies within the measured range."
+          ],
           "answer": {
             "value": 15.73,
             "unit": "µT",
@@ -470,6 +530,11 @@
           "kind": "word",
           "points": 5,
           "text": "Explain how a rainbow forms. On which edge of the arc is red, and why?",
+          "hints": [
+            "What happens to light when it enters a water drop and leaves it? What happens to different colours if the refractive index depends on the wavelength?",
+            "The dependence of the refractive index on the wavelength is called dispersion. The law of refraction is $n_1 \\sin\\alpha_1 = n_2 \\sin\\alpha_2$.",
+            "Compare the refractive indices of red and violet light: which is greater? Which colour is refracted more? Deduce at what angle from the antisolar point each colour leaves the drop, and which edge of the arc the red is on."
+          ],
           "criteria": [
             {
               "text": "Explains that the light refracts into the drop, reflects from its back surface and refracts out, and that the refractive index of water depends on the wavelength (dispersion), so the colours leave the drop in different directions.",
@@ -493,6 +558,11 @@
           "kind": "word",
           "points": 5,
           "text": "Explain how the colours of a soap bubble arise. Why does the thinnest top part of the bubble look dark just before it bursts?",
+          "hints": [
+            "A bubble is a thin film. Which surfaces does the light meet, and what happens to the reflected waves when they meet?",
+            "Waves reflected from the outer and the inner surface of the film have a path difference $2nd$, where $n$ is the refractive index of the film and $d$ its thickness. The path difference and the wavelength decide which wavelengths are reinforced.",
+            "Reflection from which surface inverts the phase of the wave? What happens to the path difference $2nd$ and to the phase difference of the waves as the thickness $d$ of the film approaches zero?"
+          ],
           "criteria": [
             {
               "text": "Explains thin-film interference: the waves reflected from the outer and inner surfaces of the film have the path difference $2nd$, and the thickness determines which wavelengths are reinforced and which are weakened; the colour is a mixture of the remaining wavelengths.",
@@ -516,6 +586,11 @@
           "kind": "word",
           "points": 5,
           "text": "Explain how a CD produces colours, and calculate at which angles red ($650\\,\\text{nm}$) and violet ($400\\,\\text{nm}$) light are seen in the first order when the light falls perpendicularly on the disc. Finally assess the guest's claim as a whole.",
+          "hints": [
+            "What do the dense tracks of a CD do to light? What happens to the waves reflected from many tracks?",
+            "The waves reinforce one another in the directions for which the grating equation $d\\sin\\theta = k\\lambda$ holds, where $d$ is the spacing of the tracks and $k$ the order.",
+            "Solve $\\sin\\theta = \\dfrac{k\\lambda}{d}$ for $k = 1$. Convert the wavelengths and the spacing to metres: $1\\,\\text{nm} = 10^{-9}\\,\\text{m}$ and $1.6\\,\\mu\\text{m} = 1.6 \\cdot 10^{-6}\\,\\text{m}$. Which colour deviates more in a grating than in a drop? Then evaluate the claim separately for each phenomenon."
+          ],
           "criteria": [
             {
               "text": "Explains that the closely spaced tracks act as a reflection grating: the waves reflected from adjacent tracks reinforce each other in the directions for which $d\\sin\\theta = k\\lambda$.",
@@ -563,6 +638,11 @@
           "kind": "calc",
           "points": 5,
           "text": "Calculate the wavelength of the laser from each maximum.",
+          "hints": [
+            "What is the line spacing of the grating? How is the angle $\\theta$ obtained from the measured distances $x$ and $L$?",
+            "The spacing is $d = \\dfrac{1\\,\\text{mm}}{600}$, the angle comes from $\\tan\\theta_k = \\dfrac{x_k}{L}$ and the wavelength from the grating equation $\\lambda = \\dfrac{d\\sin\\theta_k}{k}$.",
+            "Convert all distances to metres. Calculate the angle $\\theta_k$ from the tangent and only then its sine; do not replace the sine by the ratio $\\dfrac{x}{L}$. Calculate each order separately."
+          ],
           "answer": [
             {
               "name": "l1",
@@ -605,6 +685,11 @@
           "kind": "word",
           "points": 5,
           "text": "Assess the group's conclusions.",
+          "hints": [
+            "Where might the assumption in the group's calculation fail? When is the approximation $\\sin\\theta \\approx \\tan\\theta$ good?",
+            "For each order compare the ratio $\\dfrac{x}{L}$ used by the group with $\\sin\\theta$ calculated from the tangent. Which order has the greater error, and why?",
+            "Check the third conclusion: is $3\\lambda < d$? With the wavelength of part a calculate $\\sin\\theta_3$ and the angle $\\theta_3$, and then the distance $x_3 = L\\tan\\theta_3$. Does the maximum fit on the wall, and is it bright?"
+          ],
           "criteria": [
             {
               "text": "Shows that the mistake is in the method of calculation: the small-angle assumption gives $562\\,\\text{nm}$ from the $1$st order (about $6\\,\\%$ too much) and $692\\,\\text{nm}$ from the $2$nd order (about $30\\,\\%$ too much), because the difference grows as the angle grows.",
@@ -633,6 +718,11 @@
           "kind": "word",
           "points": 5,
           "text": "Plan how the measurement can be improved.",
+          "hints": [
+            "What is the least accurate part of the measurement? How could it be measured using two points?",
+            "How does the relative uncertainty $\\dfrac{\\Delta x}{x}$ change as $x$ grows? How do the uncertainties $\\Delta x$ and $\\Delta L$ affect the result $\\lambda = \\dfrac{d\\sin\\theta}{k}$?",
+            "How would you report the result so that it can be compared with the manufacturer's value? What else could make the measurement more reliable, and what safety rules apply when using a laser?"
+          ],
           "criteria": [
             {
               "text": "Measure the distance between the symmetric maxima $+k$ and $-k$ and halve it: measuring the gap between two points is more precise than estimating the centre of the central maximum, and the symmetry shows whether the beam is perpendicular.",
@@ -682,6 +772,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Show that the period of revolution of the proton does not depend on its speed. At what frequency must the gap voltage alternate?",
+          "hints": [
+            "Which force bends the path of the proton in the magnetic field? How does it affect the speed of the proton?",
+            "The magnetic force acts as a centripetal force: $qvB = \\dfrac{mv^2}{r}$. The period is $T = \\dfrac{2\\pi r}{v}$.",
+            "First solve the radius $r$ in symbols and substitute it into the period. Which quantity cancels? How many times must the voltage change direction during one revolution, and what frequency $f$ follows?"
+          ],
           "answer": {
             "value": 18.29,
             "unit": "MHz",
@@ -715,6 +810,11 @@
           "kind": "calc",
           "points": 4,
           "text": "What is the speed of the proton when it comes out of the cyclotron? What is then the radius of its path?",
+          "hints": [
+            "How do you get the speed of the proton from its kinetic energy? In which unit is the kinetic energy given?",
+            "The kinetic energy is $E_\\text{k} = \\tfrac12 mv^2$ and the radius of the path in the magnetic field is $r = \\dfrac{mv}{qB}$.",
+            "First convert the kinetic energy to joules: $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$ and $1\\,\\text{MeV} = 10^6\\,\\text{eV}$. Then solve the speed $v$ and only after that the radius $r$."
+          ],
           "answer": [
             {
               "name": "v",
@@ -757,6 +857,11 @@
           "kind": "calc",
           "points": 4,
           "text": "How many revolutions does the proton make in the cyclotron? How long does the acceleration last?",
+          "hints": [
+            "Does the magnetic field or the gap accelerate the proton? How much energy does the proton gain in one crossing of the gap?",
+            "In the gap the proton gains the energy $qU$, and it crosses the gap twice per revolution. The number of revolutions is $n = \\dfrac{E_\\text{k}}{2qU}$ and the acceleration time $t = nT$.",
+            "The charge of the proton is the elementary charge $e$, so the energy gained in one crossing in electronvolts is the same number as the voltage in volts. Use the period $T$ from part a."
+          ],
           "answer": [
             {
               "name": "n",
@@ -799,6 +904,11 @@
           "kind": "calc",
           "points": 3,
           "text": "What is the acceleration of the proton just before it comes out of the cyclotron? In which direction does it point?",
+          "hints": [
+            "Which quantity describes the acceleration on a circular path? In which direction do the force and the acceleration point?",
+            "In circular motion the normal acceleration is $a_\\text{n} = \\dfrac{v^2}{r}$. It also follows from the magnetic force: $a = \\dfrac{qvB}{m}$.",
+            "Use the speed and the radius of part b in SI units. In which direction does the net force point relative to the centre of the path, and what does that tell you about the direction of the acceleration?"
+          ],
           "answer": {
             "value": 4.498,
             "unit": "· 10¹⁵ m/s²",
@@ -848,6 +958,11 @@
           "kind": "calc",
           "points": 3,
           "text": "Read from the source the circumference of the LHC and how many turns the protons make per second. From these, calculate the speed of the protons and compare it with the speed of light. What can be concluded from the comparison and what cannot? Take into account the precision with which the figures of the source are given.",
+          "hints": [
+            "What information do you need to calculate the speed? Find it in the *Facts and figures* section of the CERN page.",
+            "The speed is $v = \\dfrac{s}{t}$. When the proton makes $N$ revolutions per second and the circumference is $l$, the distance travelled in a second is $s = Nl$.",
+            "Substitute the circumference in metres and the number of revolutions per second. Compare the speed with the speed of light with the quotient $\\dfrac{v}{c}$. How many significant figures do the numbers of the source have, and what can you conclude about the difference from that?"
+          ],
           "answer": {
             "value": 2.9978,
             "unit": "· 10⁸ m/s",
@@ -876,6 +991,11 @@
           "kind": "calc",
           "points": 2,
           "text": "Convert the energy of one proton, $6.8\\,\\text{TeV}$, to joules.",
+          "hints": [
+            "How is the electronvolt related to the joule? What does the prefix tera mean?",
+            "$1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$ and $1\\,\\text{TeV} = 10^{12}\\,\\text{eV}$.",
+            "First write the energy in electronvolts: $6.8 \\cdot 10^{12}\\,\\text{eV}$. Then multiply by the number that converts one electronvolt to joules."
+          ],
           "answer": {
             "value": 1.089,
             "unit": "· 10⁻⁶ J",
@@ -899,6 +1019,11 @@
           "kind": "calc",
           "points": 3,
           "text": "How much energy is stored in one proton beam?",
+          "hints": [
+            "What does the energy of the beam consist of? What do you need to know about the number of protons?",
+            "The energy of the beam is the sum of the energies of the protons, $E = NE_1$, where $N$ is the total number of protons and $E_1$ the energy of one proton from part b.",
+            "Calculate $N$ by multiplying the number of bunches by the number of protons in a bunch: $2500 \\cdot 1.6 \\cdot 10^{11}$. Then multiply by $E_1$ and give the energy in megajoules: $1\\,\\text{MJ} = 10^6\\,\\text{J}$."
+          ],
           "answer": {
             "value": 435.7,
             "unit": "MJ",
@@ -927,6 +1052,11 @@
           "kind": "calc",
           "points": 3,
           "text": "A car has a mass of $1500\\,\\text{kg}$ and a speed of $100\\,\\text{km/h}$. Calculate the kinetic energy of the car. The energy of one proton beam corresponds to the kinetic energy of how many such cars?",
+          "hints": [
+            "With which quantity do you calculate the energy of a moving car? In which unit must the speed be?",
+            "The kinetic energy is $E_\\text{k} = \\tfrac12 mv^2$. The comparison is the quotient $\\dfrac{E}{E_\\text{k}}$, where $E$ is the energy of the beam from part c.",
+            "Convert the speed from $\\text{km/h}$ to $\\text{m/s}$ by dividing by $3.6$. Calculate the kinetic energy of the car in joules and divide the energy of the beam, also in joules, by it."
+          ],
           "answer": [
             {
               "name": "Ek",
@@ -964,6 +1094,11 @@
           "kind": "word",
           "points": 4,
           "text": "The LHC has thousands of superconducting electromagnets. Find out from the source what the magnets do, to what temperature they are cooled and what accelerates the protons. Using this information and physics, explain why the magnetic field does not increase the energy of the protons and why the coils of the magnets are superconducting.",
+          "hints": [
+            "What does the CERN page say about the task of the magnets, their temperature and what accelerates the protons? Look in the *Facts and figures* section and near it.",
+            "How much work does a force do when it is perpendicular to the direction of motion? What does that tell you about the change in the kinetic energy of the proton?",
+            "A strong magnetic field needs a large current $I$. What happens in an ordinary conductor of resistance $R$ with power $P = RI^2$, and what would change if $R$ were zero?"
+          ],
           "criteria": [
             {
               "text": "Explains what the magnets do, using the source: the magnetic force is perpendicular to the velocity of the proton, so it bends the path into an arc of a circle (dipole magnets) and keeps the beam together (quadrupole magnets).",
@@ -1013,6 +1148,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Determine the refractive index of acrylic from the graph.",
+          "hints": [
+            "Which property of the line in the graph gives the refractive index? Write the law of refraction from air into acrylic.",
+            "The law of refraction is $n_1 \\sin\\alpha_1 = n_2 \\sin\\alpha_2$. In air $n_1 = 1.00$, so $\\sin\\alpha_1 = n\\sin\\alpha_2$, and $\\sin\\alpha_1$ is on the vertical axis.",
+            "Read two points of the fitted line that are far apart, not measured points. Calculate the slope as the quotient $\\dfrac{\\Delta y}{\\Delta x}$."
+          ],
           "answer": {
             "value": 1.5,
             "unit": "",
@@ -1046,6 +1186,11 @@
           "kind": "calc",
           "points": 4,
           "text": "What is the speed of light in acrylic? How long does the light take to pass through the plate when it travels perpendicular to the surface of the plate?",
+          "hints": [
+            "How does the speed of light in a material depend on the refractive index? How far does light travel through the plate when it crosses perpendicularly?",
+            "The speed of light in a material is $v = \\dfrac{c}{n}$ and the travel time $t = \\dfrac{d}{v}$.",
+            "Use the refractive index of part a. Convert the thickness of the plate to metres: $15\\,\\text{cm} = 0.15\\,\\text{m}$. Calculate the speed $v$ first and only then the time $t$."
+          ],
           "answer": [
             {
               "name": "v",
@@ -1083,6 +1228,11 @@
           "kind": "calc",
           "points": 4,
           "text": "What is the smallest angle of incidence at which total internal reflection occurs when light goes from acrylic into air?",
+          "hints": [
+            "From which material into which must light travel for total internal reflection to be possible? What is the angle of refraction at the critical angle?",
+            "At the critical angle the angle of refraction is $90^\\circ$, so $n\\sin\\alpha_\\text{r} = 1.00 \\cdot \\sin 90^\\circ$.",
+            "Solve $\\sin\\alpha_\\text{r}$ in symbols and substitute the refractive index of part a. The angle comes from the inverse function $\\arcsin$, which is $\\sin^{-1}$ on a calculator."
+          ],
           "answer": {
             "value": 41.81,
             "unit": "°",
@@ -1116,6 +1266,11 @@
           "kind": "word",
           "points": 3,
           "text": "Why should the fitted line pass through the origin? Why is the refractive index determined from the slope of the line and not from a single data point?",
+          "hints": [
+            "What happens to light when the angle of incidence is zero? What are the angles then?",
+            "What values do $\\sin\\alpha_1$ and $\\sin\\alpha_2$ take then, and through which point should the line therefore pass?",
+            "The measured points are scattered on both sides of the line. How do the quotient of a single point and the slope of the line fitted to all the data differ in how errors affect them? Does the refractive index depend on the angle of incidence?"
+          ],
           "criteria": [
             {
               "text": "Explains that when the angle of incidence is zero the light is not refracted and the angle of refraction is zero. Then $\\sin\\alpha_1 = 0$ and $\\sin\\alpha_2 = 0$, so the line must pass through the point $(0;\\ 0)$. The line in the graph passes almost through the origin, so the model $\\sin\\alpha_1 = n \\sin\\alpha_2$ fits the measurement.",
@@ -1161,6 +1316,11 @@
           "kind": "calc",
           "points": 4,
           "text": "What is the voltage induced in the coil during the interval $0$–$0.40\\,\\text{s}$ and during the interval $0.60$–$0.80\\,\\text{s}$?",
+          "hints": [
+            "What does the induced voltage depend on? What do you need to read from the graph?",
+            "By the law of induction, when the flux changes uniformly, $\\lvert e \\rvert = N\\dfrac{\\lvert\\Delta\\Phi\\rvert}{\\Delta t}$.",
+            "Read the value of the flux at the start and at the end of each interval from the break points of the graph and calculate the change $\\Delta\\Phi$. Convert $\\text{mWb}$ to $\\text{Wb}$. The length of the interval $\\Delta t$ is read from the horizontal axis."
+          ],
           "answer": [
             {
               "name": "e1",
@@ -1203,6 +1363,11 @@
           "kind": "calc",
           "points": 4,
           "text": "How much electrical energy is converted into internal energy in the coil circuit during the whole $0.80\\,\\text{s}$?",
+          "hints": [
+            "In which intervals does a current flow in the circuit, and in which does it not?",
+            "In the resistor electrical energy becomes internal energy. The power is $P = \\dfrac{e^2}{R}$ and the energy $W = P\\,\\Delta t$.",
+            "Calculate the energy separately for each interval in which the voltage is not zero, using the voltages of part a. Finally add the energies together."
+          ],
           "answer": {
             "value": 0.369,
             "unit": "J",
@@ -1236,6 +1401,11 @@
           "kind": "word",
           "points": 4,
           "text": "Explain the direction of the induced current in the different intervals. How does the value zero of the flux, at the moment when the flux changes its sign, affect the current?",
+          "hints": [
+            "What does Lenz's law say about the effect of the induced current on the change of the flux? In which interval is there no current at all?",
+            "By Lenz's law the magnetic field of the induced current opposes the change of the flux. In each interval work out whether the flux increases or decreases and in which direction it points.",
+            "Think about the moment when the flux is zero. Which property of the graph tells the rate of change of the flux $\\dfrac{\\Delta\\Phi}{\\Delta t}$, and does the voltage depend on the value of the flux or on its rate of change?"
+          ],
           "criteria": [
             {
               "text": "States that a voltage is induced only when the flux changes. During $0.40$–$0.60\\,\\text{s}$ the flux is constant, so the voltage and the current are zero.",
