@@ -1,18 +1,16 @@
-VERDICT: FAIL
-CONTENT-HASH: 82ab8ad2c35bae63
+VERDICT: PASS
+CONTENT-HASH: ba2303f7d9295a9b
 
-Delta review: only the new `hints` in `sovella/tasks.json` (s1–s8), per docs/fy9/vihjeet-review-brief.md.
+Delta review, round 2: the hint fixes of the last commit (docs/fy9/vihjeet-review-brief.md).
 
 ## Blocking
-1. (A, internal consistency) s6 b, hint 2 and s6 d, hint 3 (en): the hints name the converted energy $E_\text{h}$, but the en rubric (s6 b criterion) and solutions.md (7 times) call it $E_\text{loss}$. The symbol was copied from fi. A student who follows the hint meets a quantity that the solution and rubric never define. Replace every `E_\text{h}` with `E_\text{loss}`:
-   - s6 b, hint 2: "…The energy converted to other forms is $E_\text{loss} = \tfrac12 Mv^2 - \tfrac12 (M + m)\,v'^2$."
-   - s6 d, hint 3: "…$\Delta U = 50 \cdot 0.40 \cdot E_\text{loss}$, where $E_\text{loss}$ is the result of part b)…"
+None.
 
 ## Polish
-1. s4 c, hint 1 (en): "What happens to the input when one factor grows by a third?" mistranslates fi "tulolle" (the product). Replacement: "What happens to the product when one factor grows by a third?"
+None.
 
 ## Checked
-- Apart from the two items above, the physics agrees with fi part by part, and so do the symbols: W_other, F_avg, W_friction, W_air and h_measured all match the en solutions.
-- The hint numbers (8.33 m/s, 25.0 m/s, 0.018 m, 27.0 m, 0.43 kg, 3.0 kg, 6.5 m) match my recomputation in the fi report, which agrees with the answers.
-- No hint states a final answer.
-- Numbers are in LaTeX with a decimal point.
+- Round 1 blocking item 1 fixed: s6 b, hint 2 and s6 d, hint 3 now use $E_\text{loss}$, the symbol of the en rubric and solutions.md. No $E_\text{h}$ remains in tasks.json. The relation $\Delta U = 50 \cdot 0.40 \cdot E_\text{loss}$ still gives $\Delta T = 7.1\,\text{K}$.
+- Round 1 polish item 1 fixed: s4 c, hint 1 says "the product".
+- s5 c, hint 1: the new wording matches fi and is correct physics (between the collision and the measuring point, external forces change the velocities). It does not dictate the plan.
+- Decimal point, LaTeX; no hint states a final answer.

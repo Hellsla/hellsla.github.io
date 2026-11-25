@@ -1,8 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 3a309a1f96a276ca
+CONTENT-HASH: c59d4aa02d9158fe
 
-Delta review of the new hints, preview fi, 390 and 1280 px, closed and open. No page overflow, no clipped or scrolled formulas, closed hints sit on one row, open box readable.
+## Blocking
+- none
 
 ## Polish
-1. [Polish] s1 b, hint 3 (fi): kömpelö. Korvaa: "Alussa laskija on levossa ylhäällä, lopussa potentiaalienergian nollatasolla; kummassakin tilassa on vain yksi energialaji. Matka $s$ on vaijerin pituus."
-2. [Polish] s2 a, hint 3 (fi): "sen saman puolen vai eri puolten kummallakin" on epäselvä. Korvaa: "Ovatko muut pisteet suoran saman puolen vai eri puolilla?"
+- none
+
+## Checked
+- Round 2 delta, preview fi at 390 px, hints opened: changed hints (fi s1 b hint 3, s2 c hint 1, s3 a, s4 c, s5 c, en s6) read naturally; no overflow (scrollWidth 390), no clipped formulas. Screenshots of one changed hint per language.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

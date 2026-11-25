@@ -1,7 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: b0ece4665fb38bc2
+CONTENT-HASH: 268a65274507b034
 
-Delta review of the new hints, preview fi-easy, 390 and 1280 px, closed and open. No page overflow, no clipped or scrolled formulas, closed hints sit on one row, open box readable.
+## Blocking
+- none
 
 ## Polish
-Ei löydöksiä (hints luettu fi-easy-esikatselussa; lyhyet lauseet, kaavat eivät leikkaudu).
+- none
+
+## Checked
+- Round 2 delta, preview fi-easy at 390 px, hints opened: changed hints (fi s1 b hint 3, s2 c hint 1, s3 a, s4 c, s5 c, en s6) read naturally; no overflow (scrollWidth 390), no clipped formulas. Screenshots of one changed hint per language.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5
