@@ -3294,6 +3294,12 @@
     "count": "Näytetään {{n}}",
     "none": "Ei sisältöjä näillä valinnoilla"
   },
+  "kaavat": {
+    "title": "Kaavahakemisto",
+    "lead": "Luvuissa nimetyt kaavat opintojaksoittain, MAFY-taulukoiden nimillä. Linkki vie lukuun, jossa kaava esitetään.",
+    "in": "Luvuissa:",
+    "link": "Kaavahakemisto: luvuissa nimetyt kaavat"
+  },
   "booklets": {
     "lead": "Tulostettavat A5-vihkot: kunkin opintojakson teoria ja esimerkit yksissä kansissa. Tehtävät, simulaatiot ja malliratkaisut ovat verkossa: jokaisen luvun alussa on QR-koodi lukuun.",
     "download": "Lataa PDF",

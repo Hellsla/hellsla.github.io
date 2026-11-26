@@ -28,7 +28,7 @@ stay in their lesson folders and keep their <id>-sim.js URLs.
 """
 import hashlib, json, os, sys, re, shutil, pathlib, atexit, html as _h, markdown
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent)); from reviews import status as review_status, published_exercises, WorkTree
-import koetila, media_tips, ahjo, answers_shown, figsize, jaksot, kaavat, kilparobo, lumatutor, assigned, booklets, cardgrid, concept_cards, courses, fbdspec, figcat, guides, i18n, inquiry, investigations, local_courses, mathlayout, mixer, module_icons, practice, reading_tips, stopthink, svgids, units, tablefit, valmentaja
+import koetila, kaavahakemisto, media_tips, ahjo, answers_shown, figsize, jaksot, kaavat, kilparobo, lumatutor, assigned, booklets, cardgrid, concept_cards, courses, fbdspec, figcat, guides, i18n, inquiry, investigations, local_courses, mathlayout, mixer, module_icons, practice, reading_tips, stopthink, svgids, units, tablefit, valmentaja
 from i18n import t as T
 
 ROOT = pathlib.Path(os.environ.get("FYSIIKKALABRA_ROOT") or pathlib.Path(__file__).resolve().parents[1])   # tests build a copy
@@ -671,6 +671,7 @@ def front_chrome(html):
     return html
 
 
+FORMULA_PAGE = None   # "kaavat.html" while a language's formula index is being built (build_language sets it; K9 links)
 STUDY_ID = "nain-opiskelet"
 STUDY_PAGE = STUDY_ID + ".html"   # a page of its own (teacher 2026-11-04: Lukuvinkit only the books, Näin opiskelet only the study tips)
 
@@ -733,7 +734,9 @@ def study_guide():
             f'<div class="path-loop">{study_icon("retry")}<div><h3>{esc(g("loop_title"))}</h3><p>{esc(g("loop_text"))}</p></div></div>'
             f'<p class="path-core">{esc(g("core_text"))}</p></section>'
             f'<section class="study-sec" id="vinkit" aria-labelledby="h-learn"><h2 id="h-learn">{esc(g("learn_h"))}</h2>'
-            f'<p class="section-lead">{esc(g("learn_lead"))}</p>{items("study-tips", STUDY_TIPS, "tips")}'
+            f'<p class="section-lead">{esc(g("learn_lead"))}</p>'
+            + (f'<p class="study-more"><a href="{FORMULA_PAGE}">{esc(T("kaavat.link"))}</a></p>' if FORMULA_PAGE else "")
+            + f'{items("study-tips", STUDY_TIPS, "tips")}'
             f'<h3 class="study-sub" id="jumissa">{esc(g("help_h"))}</h3>{items("study-tips study-help", STUDY_HELP, "help")}</section>'
             f'<section class="study-sec" id="palaute" aria-labelledby="h-feedback"><h2 id="h-feedback">{esc(g("feedback_h"))}</h2>'
             f'<p class="section-lead">{esc(g("feedback_lead"))}</p>'
@@ -1684,10 +1687,26 @@ def build_language(lang):
         + '</div></div></section>')
     (out / "index.html").write_text(front_chrome(page(T("site.home_title"), home, "", "index.html", T("site.home_description"), main_class="home",
                                          full_title=f'{T("site.name")} — {T("site.subtitle")}')))
+    # Kaavahakemisto (work queue 17f PR 1, scripts/kaavahakemisto.py): the MAFY-named formulas of docs/*/kaavanimet.tsv, linked to
+    # the chapters and units this language publishes; linked from Käsitteet and Näin opiskelet (K9), not from the menu
+    kaava_pub = {}
+    for code, _ in modules:
+        kaava_pub.update({cid: (title, f"{cid}.html") for cid, title in chapter_titles(code, built_ids).items()})
+    for u, ls in unit_pub.items():
+        ul = lang if lang in ls else units.lang_of(u) if units.lang_of(u) in ls else None
+        if ul: kaava_pub[u] = (units.load(u, ul)["title"], os.path.relpath(OUTS[ul] / f"{u}.html", out).replace(os.sep, "/"))
+    kaava_titles = {c: t["title"] for c, t in modules}
+    kaava_titles.update({c: v["title"] for c, v in local.items()})
+    kaava_mods = kaavahakemisto.collect(lang, kaava_pub, kaava_titles)
+    global FORMULA_PAGE
+    FORMULA_PAGE = kaavahakemisto.PAGE if kaava_mods else None
+    if kaava_mods:
+        (out / kaavahakemisto.PAGE).write_text(page(T("kaavat.title"), kaavahakemisto.body(T, kaava_mods), f'<a href="index.html">{T("site.name")}</a> › {esc(T("kaavat.title"))}',
+                                                    kaavahakemisto.PAGE, T("kaavat.lead"), main_class="reading kaava-page"))
     # Käsitetakomo (teacher 2026-11-03, scripts/concept_cards.py): every module's cards, topics and the student's own deck
     if concept_cards.modules(concept_cards.data_lang(lang)):
         names = {c: course_text(c, curriculum[c])["title"] for c in concept_cards.modules(concept_cards.data_lang(lang))}
-        (out / concept_cards.APP).write_text(page(T("cards.app_title"), concept_cards.app_page_body(T, lang, names, {k: v for c in names for k, v in chapter_titles(c).items()}),
+        (out / concept_cards.APP).write_text(page(T("cards.app_title"), concept_cards.app_page_body(T, lang, names, {k: v for c in names for k, v in chapter_titles(c).items()}, FORMULA_PAGE),
                                              f'<a href="index.html">{T("site.name")}</a> › {T("cards.app_title")}', concept_cards.APP, T("cards.app_description"), main_class="reading kc-app-page"))
     # Lukuvinkit (teacher 2026-11-03, scripts/reading_tips.py): a reading list of physics books, linked from every header (not the footer, teacher 2026-11-04)
     rt = reading_tips.load(lang) if reading_tips.SOURCE.is_file() else None

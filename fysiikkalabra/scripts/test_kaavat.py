@@ -104,5 +104,17 @@ bare = [(f.relative_to(kaavat.ROOT).as_posix(), kaavat.rows(m.group(1))[0][1])
         for m in kaavat.FENCE.finditer(f.read_text(encoding="utf-8")) if not any(n for n, _ in kaavat.rows(m.group(1)))]
 ok(not bare, "a block with no name is display maths (```latex), never a formula table without names" + (f": {bare[:3]}" if bare else ""))
 
+import kaavahakemisto
+pub = {"fy3-4": ("Neljäs", "fy3-4.html"), "fy3-9": ("Yhdeksäs", "fy3-9.html")}
+for lang in kaavahakemisto.LANG_COLS:
+    ms = kaavahakemisto.collect(lang, pub, {"FY3": "Kolmas"})
+    ok(ms and all(m["entries"] for m in ms), f"formula index {lang}: a module with no published page is left out")
+    ok(all(l in pub.values() for m in ms for e in m["entries"] for l in e["links"]), f"formula index {lang}: only published chapters are linked")
+    ok(all(e["name"] and e["forms"] and e["name"] not in "=+" for m in ms for e in m["entries"]), f"formula index {lang}: every entry has a name and a formula")
+    ok(len({e["name"] for m in ms for e in m["entries"]}) == sum(len(m["entries"]) for m in ms) or len(ms) > 1, f"formula index {lang}: a name once per module")
+ok(kaavahakemisto.collect("fi", {}, {}) == [], "formula index: nothing published, no page")
+b = kaavahakemisto.body(lambda k, **kw: k, kaavahakemisto.collect("fi", pub, {"FY3": "Kolmas"}))
+ok('<h2 id="h-FY3"><span class="mod-code">FY3</span> Kolmas</h2>' in b and "$$" in b and 'href="fy3-4.html"' in b, "formula index: heading, display formulas and chapter links")
+
 print(f"\n{len(fails)} failure(s)")
 sys.exit(1 if fails else 0)
