@@ -465,8 +465,8 @@ with sync_playwright() as pw:
         e = st(); expect(f"{lid}: three 'Osasin' in a row take it out of the deck", bool(e) and e["tila"] == "osasin" and e["osasinPutki"] == 3, e)
         # scheduled review (work queue 17d PR 1, K7): the card comes back after 5, 10 and 20 days, one "Osasin" per step
         day = 86400000
-        days_ahead = lambda e: (e["era"] - pg.evaluate("Date.now()")) / day
-        expect(f"{lid}: a card taken out of the deck is due in 5 days (porras 0, era a local midnight)", e.get("porras") == 0 and 4 <= days_ahead(e) <= 5, e)
+        days_ahead = lambda e: (e["era"] - pg.evaluate("Date.now()")) / day   # whole local days: an hour of DST slack either side
+        expect(f"{lid}: a card taken out of the deck is due in 5 days (porras 0, era a local midnight)", e.get("porras") == 0 and 3.9 <= days_ahead(e) <= 5.1, e)
         pg.reload(); pg.wait_for_timeout(300); pg.click("details.kc-fold > summary")
         expect(f"{lid}: before the due day the card is not in the deck", pg.evaluate(f"!document.querySelector('{card}')?.classList.contains('in-deck')"))
         for step, (want, lo, hi) in enumerate([(1, 9, 10), (2, 19, 20), (None, 0, 0)]):
@@ -476,7 +476,7 @@ with sync_playwright() as pw:
             pg.click(card + " .kc-face"); pg.wait_for_timeout(500); pg.click(card + " .kc-good")
             e = st()
             if want:
-                expect(f"{lid}: step {step + 1}: one 'Osasin' moves it to porras {want}, due in {lo}-{hi} days", e["tila"] == "osasin" and e["porras"] == want and lo <= days_ahead(e) <= hi, e)
+                expect(f"{lid}: step {step + 1}: one 'Osasin' moves it to porras {want}, due in {lo}-{hi} days", e["tila"] == "osasin" and e["porras"] == want and lo - 0.1 <= days_ahead(e) <= hi + 0.1, e)
             else:
                 expect(f"{lid}: after the last step (20 days) the card stays out for good", e["tila"] == "osasin" and "porras" not in e and "era" not in e, e)
         pg.evaluate(f"(() => {{ const k = JSON.parse(localStorage.getItem('ruukkilabra:kortit')); k['{first}'] = {{tila: 'osasin', osasinPutki: 3, porras: 1, era: Date.now() - 1000, muokattu: 1}}; localStorage.setItem('ruukkilabra:kortit', JSON.stringify(k)); }})()")

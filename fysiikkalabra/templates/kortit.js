@@ -1,7 +1,8 @@
 /* Käsitetakomo concept cards (teacher 2026-11-03, scripts/concept_cards.py): one card component everywhere.
    A card flips with its button (Enter or Space, aria-expanded) to show the definition and the formula; after the flip
    "Osasin" and "Kertaa myöhemmin". The marks stay on this device only, in localStorage "ruukkilabra:kortit":
-   { [card id]: { tila: "osasin" | "kertaa", osasinPutki: n, muokattu: ms } }. "Kertaa myöhemmin" (or "Lisää
+   { [card id]: { tila: "osasin" | "kertaa", osasinPutki: n, muokattu: ms, porras?: 0-2, era?: ms } }
+   (palannut exists only in the in-memory view built by state(); it is never stored). "Kertaa myöhemmin" (or "Lisää
    kertauspakkaan") puts a card in the student's review deck (tila "kertaa"); three "Osasin" in a row take it out.
    Scheduled review (work queue 17d PR 1, teacher K7): a card taken out of the deck comes back after 5, then 10, then 20
    days. Two optional fields hold it: porras (0, 1, 2: the step whose wait is running) and era (the due day, ms at local
