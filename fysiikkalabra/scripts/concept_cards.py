@@ -278,7 +278,7 @@ def practice_section(code, T, lang):
             + data_block(T, lang, cards, {"moduuli": code}, APP) + '<script src="kortit.js"></script></section>')
 
 
-def app_page_body(T, lang, names, chapters, formula_page=None):
+def app_page_body(T, lang, names, chapters, formula_page=None, sim_page=None):
     """site/kasitteet.html: the app's screens (kortit.js) and, for a reader without JavaScript, every card as a list."""
     dl = data_lang(lang)
     files = {c: (f"kortit/{c.lower()}.json" if dl == "fi" else f"kortit/en/{c.lower()}.json") for c in modules(dl)}
@@ -293,7 +293,8 @@ def app_page_body(T, lang, names, chapters, formula_page=None):
             if cs: static += f'<h3>{esc(a["nimi"])}</h3><dl class="kc-dl">{"".join(static_card(k) for k in cs)}</dl>'
         static += "</details>"
     return (f'<header class="kc-app-head"><h1>{T("cards.app_title")}</h1><p class="lead">{T("cards.app_lead")}</p>'
-            + (f'<p class="kc-more"><a href="{formula_page}">{T("kaavat.link")}</a></p>' if formula_page else "") + '</header>'
+            + (f'<p class="kc-more"><a href="{formula_page}">{T("kaavat.link")}</a></p>' if formula_page else "")
+            + (f'<p class="kc-more"><a href="{sim_page}">{T("simulaatiot.link")}</a></p>' if sim_page else "") + '</header>'
             f'<div class="kc-app" data-files=\'{esc(json.dumps(files))}\' hidden></div>'
             f'<div class="kc-static">{static}</div>'
             + data_block(T, lang, [], {"names": names, "chapters": chapters}, APP) + '<script src="kortit.js"></script>')

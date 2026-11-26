@@ -143,10 +143,10 @@ PR 2– (sisältö; yksikkö kerrallaan, peräkkäin, fi + fi-easy + en samassa 
 Avoin päätös (opettaja): vastauksen tarkistus ja yleisen virheen palaute pitkien tehtävien laskukohtiin. Muuttaisi mallivastauksen lukkoa, tehty-laskuria ja valmentajan näyttölokia, joten vasta 11b PR 8:n jälkeen ja omana jaettuna PR:nään.
 
 ## 17. Kehitys ilman kirjautumista (opettaja 2026-11-15)
-17a PR 1 (#720) ja PR 2 (#741, manifesti ja pysyvä tallennus) sekä 17b PR 1 (#818, koko työ yhteen tiedostoon; tekstit opettaja 2026-11-23) ja kaavanimet.tsv:n rikkoutunut `\rho` huomio-sarakkeessa (fy1, #880; muissa listoissa ei vikaa, hakemistoon ei tullut lisää kaavoja) sekä 17f PR 1 (#873, kaavahakemisto; tekstit ja kuvat opettaja 2026-11-26 tässä sessiossa) tehty; webkit.org sallittu ympäristöön 2026-11-19, opettajan luvalla.
+17a PR 1 (#720) ja PR 2 (#741, manifesti ja pysyvä tallennus) sekä 17b PR 1 (#818, koko työ yhteen tiedostoon; tekstit opettaja 2026-11-23) ja kaavanimet.tsv:n rikkoutunut `\rho` huomio-sarakkeessa (fy1, #880; muissa listoissa ei vikaa, hakemistoon ei tullut lisää kaavoja) sekä 17f PR 1 (#873, kaavahakemisto; tekstit ja kuvat opettaja 2026-11-26 tässä sessiossa) sekä 17f PR 2 (#878, simulaatiogalleria; tekstit ja kuvat opettaja 2026-11-26 tässä sessiossa, "Hyväksyn sellaisinaan") tehty; webkit.org sallittu ympäristöön 2026-11-19, opettajan luvalla.
 Ohjeet ja päätökset K1–K9: `docs/audits/2026-11-15-kehitys-ilman-kirjautumista.md`. Jokainen osa oma PR, yksin; uudet käyttöliittymätekstit PR:n kuvauksessa. Tallennusavaimia, tiedostomuotoja ja korttien id:itä ei muuteta.
 Osat: 17a verkoton käyttö (service worker, manifesti, moduuli laitteelle), 17b koko työ yhteen tiedostoon, 17c yleisvirheiden tunnistus, 17d ajoitettu kertaus, 17e luokan yhteenveto, 17f hakemistot ja haku.
-Järjestys: 17a PR 1–2, 17b PR 1, 17f PR 2, 17c PR 1, 17e, 17d PR 1, sitten 17f PR 3, 17a PR 3, 17b PR 2. Osien sisältö: loki §17.
+Järjestys: 17a PR 1–2, 17b PR 1, 17c PR 1, 17e, 17d PR 1, sitten 17f PR 3, 17a PR 3, 17b PR 2. Osien sisältö: loki §17.
 
 ## 19. 45 soveltavaa aineistotehtävää FY1–FY9: tehty (loki §19)
 Kaikki 45 tehty (FY1–FY9, A1–A5). Avoin vain: opettaja avaa Tukesin kaksi linkkiä (FY6 A3, A4) selaimessa ennen yhdistämistä. Poistetaan, kun se on tehty.

@@ -3300,6 +3300,11 @@
     "in": "In chapters:",
     "link": "Formula index: the formulas named in the chapters"
   },
+  "simulaatiot": {
+    "title": "Simulations",
+    "lead": "The chapters that have a simulation, by module. A link opens the chapter's Investigate stage, where the simulation is.",
+    "link": "Simulations: the chapters that have a simulation"
+  },
   "booklets": {
     "lead": "Printable A5 booklets: the theory and worked examples of each course in one book. Tasks, simulations and model solutions are online: every chapter starts with a QR code to its page.",
     "download": "Download PDF",

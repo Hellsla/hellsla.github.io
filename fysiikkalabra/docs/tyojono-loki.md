@@ -843,3 +843,6 @@ Opettaja 2026-11-24 kohta 4. s7 (16 p) ja s8 (18 p) ylioppilaskokeen 15 pisteese
 
 ## 17f PR 1: kaavahakemisto (PR #873, opettaja hyväksyi tekstit ja kuvat 2026-11-26)
 `scripts/kaavahakemisto.py` + `build.py`: `kaavat.html` joka kielelle `docs/*/kaavanimet.tsv`-listoista (vain MAFY-nimelliset kaavat, `=`-rivit saman kaavan muotoina, `+`-rivit pois; vain kielessä julkaistut luvut ja yksiköt). Linkit Käsitteet- ja Näin opiskelet -sivuilta (K9), ei valikon kohtaa. Tekstit `lang/*.json` `kaavat`. Kuvat `docs/audits/17f-pr1/`. Huom.: `docs/fy1/kaavanimet.tsv` rivit 69–70 ovat rikki (`\rho` on tallentunut rivinvaihdoksi); hakemisto ohittaa ne, taulukkoa ei korjattu.
+
+## 17f PR 2: simulaatiogalleria (PR #878, opettaja hyväksyi tekstit ja kuvat 2026-11-26 tässä sessiossa)
+`scripts/simulaatiogalleria.py` + `build.py`: `simulaatiot.html` joka kielelle; jokainen julkaistu luku, jonka `meta.json` sanoo `"sim": true` (96 lukua FY1–FY8), omana laattanaan moduuleittain (`cardgrid.py`, ilman kuvaa), linkki `<id>.html#tutki`. Simulaatiolla ei ole omaa nimeä, joten laatassa on luvun numero ja nimi. Linkit Käsitteet- ja Näin opiskelet -sivuilta (K9), ei valikon kohtaa. Tekstit `lang/*.json` `simulaatiot`. Kuvat `docs/audits/17f-pr2/` (ennen-kuvat: sama sivu ilman uutta linkkiä).

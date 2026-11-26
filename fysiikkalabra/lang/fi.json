@@ -3300,6 +3300,11 @@
     "in": "Luvuissa:",
     "link": "Kaavahakemisto: luvuissa nimetyt kaavat"
   },
+  "simulaatiot": {
+    "title": "Simulaatiot",
+    "lead": "Luvut, joissa on simulaatio, opintojaksoittain. Linkki avaa luvun Tutki-vaiheen, jossa simulaatio on.",
+    "link": "Simulaatiot: luvut, joissa on simulaatio"
+  },
   "booklets": {
     "lead": "Tulostettavat A5-vihkot: kunkin opintojakson teoria ja esimerkit yksissä kansissa. Tehtävät, simulaatiot ja malliratkaisut ovat verkossa: jokaisen luvun alussa on QR-koodi lukuun.",
     "download": "Lataa PDF",
