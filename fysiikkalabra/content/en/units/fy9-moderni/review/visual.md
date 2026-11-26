@@ -1,9 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 49f4a055e351ee34
-SCOPE: delta (old-content fixes, git diff origin/main)
-Checked: fy9-moderni (en): rendered preview page at 390 and 1280 px with every details/solution open (DOM check: no page overflow, no KaTeX error, no clipped or scrolling display formula); captures review/shots/*stage-sovella-*, *stage-exercises-*, *teacher-*, intro and stage-selita/tarkista tiles, with sample tiles opened at readable size (aallot fi sovella-1280-5 and 390-6, liike en sovella-390-9, ympyraliike fi-easy sovella-390-8, energia fi teacher-1280-1); changed numbers and units diffed against the source for decimal comma/point and \, thin space.
+CONTENT-HASH: aa31f84b055a8af9
 
-1. Blocking: none.
-2. Typography: changed numbers and units are LaTeX with thin space, decimal comma in fi and fi-easy, decimal point in en; aligned blocks and inline formulas fit at 390 px; no layout regressions from the changed lines.
-3. Language: changed lines read naturally and consistently with the glossary terms; no wording defect found.
-4. Polish: known drawing issues (kone-kuva W arrow, kalteva.webp, geo-kuva ray, kartta label, sahkokentta formula map E vs W) are known to the teacher, not re-judged here.
+Blocking: none.
+
+Polish:
+1. Checked 35 hint rows in en at 390 and 1280 px, closed and open (Playwright): no horizontal overflow, closed hints on one row at 1280 and stacked at 390, open boxes readable, display formulas (hc/lambda, aligned redshift block, exponentials) not clipped or scrolled, units upright with thin space, decimal comma/point correct, reading order a-d intact.
+2. Typography and language of the new texts are consistent; hint 1 in a few parts holds two or three questions (optional: one question each).
