@@ -144,6 +144,7 @@ Avoin päätös (opettaja): vastauksen tarkistus ja yleisen virheen palaute pitk
 
 ## 17. Kehitys ilman kirjautumista (opettaja 2026-11-15)
 17a PR 1 (#720) ja PR 2 (#741, manifesti ja pysyvä tallennus) sekä 17b PR 1 (#818, koko työ yhteen tiedostoon; tekstit opettaja 2026-11-23) ja 17f PR 1 (#873, kaavahakemisto; tekstit ja kuvat opettaja 2026-11-26 tässä sessiossa) tehty; webkit.org sallittu ympäristöön 2026-11-19, opettajan luvalla.
+**Varattu: claude/17f-pr2-simulaatiogalleria (17f PR 2)**
 Ohjeet ja päätökset K1–K9: `docs/audits/2026-11-15-kehitys-ilman-kirjautumista.md`. Jokainen osa oma PR, yksin; uudet käyttöliittymätekstit PR:n kuvauksessa. Tallennusavaimia, tiedostomuotoja ja korttien id:itä ei muuteta.
 Osat: 17a verkoton käyttö (service worker, manifesti, moduuli laitteelle), 17b koko työ yhteen tiedostoon, 17c yleisvirheiden tunnistus, 17d ajoitettu kertaus, 17e luokan yhteenveto, 17f hakemistot ja haku.
 Järjestys: 17a PR 1–2, 17b PR 1, 17f PR 2, 17c PR 1, 17e, 17d PR 1, sitten 17f PR 3, 17a PR 3, 17b PR 2. Osien sisältö: loki §17.
