@@ -746,11 +746,11 @@
       "mistakes": [
         {
           "value": 58.75,
-          "feedback": "You multiplied by the refractive index, so the angle grew. Entering water, light bends towards the normal: $\\sin\\beta = \\tfrac{n_1 \\sin\\alpha}{n_2}$. Review this in the module FY7."
+          "feedback": "You multiplied by the refractive index, so the angle grew. Entering water, light bends towards the normal: $\\sin\\beta = \\tfrac{n_1 \\sin\\alpha}{n_2}$. Review this in the chapter [*Reflection and refraction of light*](fy7-10.html)."
         },
         {
           "value": 30.08,
-          "feedback": "You divided the angle by the refractive index. The law of refraction is about the sines of the angles, not the angles. Review this in the module FY7."
+          "feedback": "You divided the angle by the refractive index. The law of refraction is about the sines of the angles, not the angles. Review this in the chapter [*Reflection and refraction of light*](fy7-10.html)."
         }
       ],
       "solution": "**Given:** angle of incidence $\\alpha = 40.0^\\circ$, refractive index of air $n_1 = 1.00$, of water $n_2 = 1.33$\n\n**Find:** the angle of refraction $\\beta$ in degrees from the normal\n\n**Principle:** Light slows down when it passes from air into water, so it bends towards the normal at the boundary. The law of refraction connects the angles of incidence and refraction.\n\n**Formula:** $n_1 \\sin\\alpha = n_2 \\sin\\beta$, so $\\sin\\beta = \\dfrac{n_1 \\sin\\alpha}{n_2}$\n\n**Conversions:** None needed: the angles are in degrees, and refractive indices have no unit.\n\n**Substitution:** $\\sin\\beta = \\dfrac{1.00 \\cdot \\sin 40.0^\\circ}{1.33} = \\dfrac{0.64279}{1.33} = 0.48330$, so $\\beta = 28.901^\\circ$\n\n**Answer:** $\\beta \\approx 28.9^\\circ$, three significant figures like the angle of incidence and the refractive index.\n\n**Reasonableness:** The angle of refraction is smaller than the angle of incidence, because light bends towards the normal in an optically denser medium."
@@ -766,19 +766,19 @@
         {
           "text": "A voltage is induced only when the magnetic flux through the coil changes.",
           "correct": true,
-          "feedback": "Correct. By the law of induction the induced voltage is proportional to the rate of change of the magnetic flux. A magnet held still gives a constant flux, so the voltage is zero. Review this in the module FY7."
+          "feedback": "Correct. By the law of induction the induced voltage is proportional to the rate of change of the magnetic flux. A magnet held still gives a constant flux, so the voltage is zero. Review this in the chapter [*Electromagnetic induction*](fy7-5.html)."
         },
         {
           "text": "The magnet is too weak; a stronger magnet held still would induce a voltage.",
-          "feedback": "Even a strong magnet held still gives a constant flux, and no voltage is induced. What matters is the change of the flux, not its size. Review this in the module FY7."
+          "feedback": "Even a strong magnet held still gives a constant flux, and no voltage is induced. What matters is the change of the flux, not its size. Review this in the chapter [*Electromagnetic induction*](fy7-5.html)."
         },
         {
           "text": "A voltage would be induced if a current from a battery first flowed in the coil.",
-          "feedback": "Induction does not need a battery: a changing magnetic flux induces the voltage by itself. Here the flux does not change, so the voltage is zero. Review this in the module FY7."
+          "feedback": "Induction does not need a battery: a changing magnetic flux induces the voltage by itself. Here the flux does not change, so the voltage is zero. Review this in the chapter [*Electromagnetic induction*](fy7-5.html)."
         },
         {
           "text": "Inside the magnet the coil is short-circuited, so the meter cannot show a voltage.",
-          "feedback": "The magnet does not short-circuit the coil. The voltage is zero because the magnetic flux does not change. Move the magnet, and the meter needle swings. Review this in the module FY7."
+          "feedback": "The magnet does not short-circuit the coil. The voltage is zero because the magnetic flux does not change. Move the magnet, and the meter needle swings. Review this in the chapter [*Electromagnetic induction*](fy7-5.html)."
         }
       ]
     },
@@ -800,11 +800,11 @@
       "mistakes": [
         {
           "value": 30,
-          "feedback": "You used the length in centimetres. Convert: $25\\,\\text{cm} = 0.25\\,\\text{m}$. Review this in the module FY7."
+          "feedback": "You used the length in centimetres. Convert: $25\\,\\text{cm} = 0.25\\,\\text{m}$. Review this in the chapter [*Force on a current-carrying wire: the electric motor and the loudspeaker*](fy7-4.html)."
         },
         {
           "value": 0.75,
-          "feedback": "You forgot the flux density: $F = IlB$. Review this in the module FY7."
+          "feedback": "You forgot the flux density: $F = IlB$. Review this in the chapter [*Force on a current-carrying wire: the electric motor and the loudspeaker*](fy7-4.html)."
         }
       ],
       "solution": "**Given:** $l = 25\\,\\text{cm}$, $I = 3.0\\,\\text{A}$, $B = 0.40\\,\\text{T}$; the wire perpendicular to the field\n\n**Find:** the magnetic force $F$ on the wire\n\n**Principle:** A magnetic field exerts a force on the charges moving in the wire. When the wire is perpendicular to the field, the force is at its largest and proportional to the current, the length and the flux density.\n\n**Formula:** $F = IlB$\n\n**Conversions:** $25\\,\\text{cm} = 25 \\cdot 10^{-2}\\,\\text{m} = 0.25\\,\\text{m}$\n\n**Substitution:** $$\n\\begin{aligned}\nF &= 3.0\\,\\text{A} \\cdot 0.25\\,\\text{m} \\cdot 0.40\\,\\text{T} \\\\\n&= 0.30\\,\\text{N}\n\\end{aligned}\n$$\n\n**Answer:** $F \\approx 0.30\\,\\text{N}$, two significant figures like the given values.\n\n**Reasonableness:** Units: $\\text{A}\\cdot\\text{m}\\cdot\\text{T} = \\text{N}$. The force equals the weight of about $30\\,\\text{g}$, which fits a school experiment with a magnet and a current of a few amperes."

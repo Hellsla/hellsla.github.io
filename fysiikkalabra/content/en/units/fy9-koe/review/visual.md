@@ -1,13 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 4813b5d60f39361c
+CONTENT-HASH: c70087e34b3234e7
 
-Round 2, hints opened at 390 and 1280 px: no overflow, no clipped or scrolling formulas, 17 hint rows, text reads naturally.
+Delta (2026-11-26): JSON valid; 8 changed lines per language, only the closing sentence; link syntax [*Title*](fy7-N.html) and hrefs identical to the fi version; punctuation correct.
 
-## Shared issues
-- Hint box is indented wide (site.css); not blocking.
+Blocking: none.
 
-## Blocking
-none
-
-## Polish
-none
+Polish: none.
