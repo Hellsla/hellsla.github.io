@@ -99,19 +99,21 @@
       const accept = ans === 0 ? Math.max(tol, round) : Math.max(0.02 * a, tol * a, round);
       const near = ans === 0 ? 2.5 * accept : Math.max(0.05 * a, 1.25 * accept);
       const diff = Math.abs(v - ans);
-      let state;
+      let state, mistake = null;
       if (diff <= accept * (1 + 1e-9)) {
         out.textContent = msg('correct'); state = 'ok'; form.classList.add('is-ok'); input.setAttribute('aria-invalid', 'false');
       } else if (diff <= near * (1 + 1e-9)) {
         out.textContent = msg('check_near'); state = 'close'; input.setAttribute('aria-invalid', 'false');
       } else {
         input.setAttribute('aria-invalid', 'true');
-        if (Math.abs(v) > 0 && ans !== 0 && (Math.abs(v / ans) > 900 || Math.abs(ans / v) > 900)) out.textContent = msg('check_magnitude');
+        mistake = window.flMistake ? window.flMistake(v, ans, tol, form.dataset.unit, step) : null;   // virhe.js (17c PR 1): says what to check, never that the numbers are right
+        if (mistake) out.textContent = msg('check_mistake_' + mistake);
+        else if (Math.abs(v) > 0 && ans !== 0 && (Math.abs(v / ans) > 900 || Math.abs(ans / v) > 900)) out.textContent = msg('check_magnitude');
         else out.textContent = tries >= 2 ? msg('check_give_up') : msg('check_retry');
         state = 'no';
       }
       out.dataset.state = state;
-      attempt(form, 'check', state, { first: tries === 1 });
+      attempt(form, 'check', state, Object.assign({ first: tries === 1 }, mistake ? { mistake } : {}));   // mistake: a string for a general kind (virhe.js), an index for the task's own (inquiry.js)
     });
   });
 

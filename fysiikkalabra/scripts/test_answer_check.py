@@ -47,7 +47,7 @@ def main():
     forms = "".join(f'<form class="check" id="f{i}" data-answer="{a}" data-tol="{t}" data-step="{s:g}" novalidate><input type="text">'
                     f'<button>Tarkista</button><output></output></form>' for i, (a, t, s, _, _) in enumerate(CHECK))
     page = ('<!doctype html><html lang="fi"><head><meta charset="utf-8"></head><body><main>'
-            '<script type="application/json" id="fl-strings">' + json.dumps({"js": {k: k for k in ("correct", "check_near", "check_number", "check_retry", "check_give_up", "check_magnitude")}}) + '</script>'
+            '<script type="application/json" id="fl-strings">' + json.dumps({"js": {k: k for k in ("correct", "check_near", "check_number", "check_retry", "check_give_up", "check_magnitude", "check_mistake_sign", "check_mistake_magnitude", "check_mistake_time", "check_mistake_kelvin")}}) + '</script>'
             + forms + "</main></body></html>")
     with sync_playwright() as pw:
         b = launch(pw); pg = b.new_page(); errors = []
