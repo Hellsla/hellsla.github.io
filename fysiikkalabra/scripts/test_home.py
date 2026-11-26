@@ -294,6 +294,17 @@ for lang in i18n.languages():
     missing = [n for n in got_bk if not (SITE / booklets.PUBLISHED / n).is_file()]
     expect(f"{lang} {booklets.PAGE}: every listed PDF is on the site", not missing, missing)
     expect(f"{lang} {booklets.PAGE}: pages shown for every book", all(T("booklets.meta", pages=e["pages"], size="X").split("X")[0] in _h.unescape(bp) for _, _, e, _ in want_bk))
+    # Kaavahakemisto (work queue 17f PR 1, scripts/kaavahakemisto.py): kaavat.html lists only formulas with a name, each with links to
+    # pages this language publishes; Käsitteet and Näin opiskelet link it; no header or menu entry (K9)
+    kp = (out / "kaavat.html").read_text() if (out / "kaavat.html").is_file() else ""
+    expect(f"{lang}: kaavat.html exists", bool(kp))
+    kl = re.findall(r'<p class="kaava-luvut">.*?</p>', kp, re.S)
+    dead = [h for l in kl for h in re.findall(r'href="([^"#]+)"', l) if not (out / h).resolve().is_file()]
+    expect(f"{lang} kaavat.html: every formula has a chapter link and every link opens a built page", kl and all('href="' in l for l in kl) and not dead, dead[:5])
+    expect(f"{lang} kaavat.html: every formula row has a name and a formula", kp.count('class="kaava-rivi"') == kp.count("<dt>") and "$$" in kp)
+    for pg_ in ("kasitteet.html", "nain-opiskelet.html"):
+        if (out / pg_).is_file(): expect(f"{lang} {pg_}: links the formula index", 'href="kaavat.html"' in (out / pg_).read_text())
+    expect(f"{lang}: no header or menu link to kaavat.html", 'href="kaavat.html"' not in re.search(r'<header class="top">.*?</header>', kp, re.S).group(0))
 
 # Käsitetakomo (teacher 2026-11-03, scripts/concept_cards.py): the cards come to the chapter
 import concept_cards

@@ -3294,6 +3294,12 @@
     "count": "Showing {{n}}",
     "none": "Nothing matches these choices"
   },
+  "kaavat": {
+    "title": "Formula index",
+    "lead": "The formulas named in the chapters, by module, with the names of the MAFY tables. A link opens the chapter that presents the formula.",
+    "in": "In chapters:",
+    "link": "Formula index: the formulas named in the chapters"
+  },
   "booklets": {
     "lead": "Printable A5 booklets: the theory and worked examples of each course in one book. Tasks, simulations and model solutions are online: every chapter starts with a QR code to its page.",
     "download": "Download PDF",
