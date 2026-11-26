@@ -116,5 +116,13 @@ ok(kaavahakemisto.collect("fi", {}, {}) == [], "formula index: nothing published
 b = kaavahakemisto.body(lambda k, **kw: k, kaavahakemisto.collect("fi", pub, {"FY3": "Kolmas"}))
 ok('<h2 id="h-FY3"><span class="mod-code">FY3</span> Kolmas</h2>' in b and "$$" in b and 'href="fy3-4.html"' in b, "formula index: heading, display formulas and chapter links")
 
+import simulaatiogalleria
+mods_ = [("FY3", {"title": "Kolmas", "lessons": [{"id": "fy3-1", "title": "A"}, {"id": "fy3-2", "title": "B"}, {"id": "fy3-3", "title": "C"}]}), ("FY4", {"title": "Neljäs", "lessons": [{"id": "fy4-1", "title": "D"}]})]
+g = simulaatiogalleria.collect(mods_, {"fy3-1", "fy3-3", "fy4-1"}, {"fy3-3", "fy3-2", "fy4-1"})
+ok([(m["code"], m["tiles"]) for m in g] == [("FY3", [(3, "C", "fy3-3")]), ("FY4", [(1, "D", "fy4-1")])], "simulation gallery: published chapters with a simulation, numbered as in the module")
+ok(simulaatiogalleria.collect(mods_, set(), {"fy3-3"}) == [], "simulation gallery: nothing published, no page")
+b = simulaatiogalleria.body(lambda k, **kw: k, g)
+ok('href="fy3-3.html#tutki"' in b and '<h2 id="h-FY3">' in b, "simulation gallery: heading and a link to the Tutki stage")
+
 print(f"\n{len(fails)} failure(s)")
 sys.exit(1 if fails else 0)

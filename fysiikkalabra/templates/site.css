@@ -2520,3 +2520,8 @@ details .fig-row.side>.fig svg{max-width:min(100%,32rem)}
 .kaava-luvut{margin:.4rem 0 0;font-family:var(--sans);font-size:var(--fs-small);line-height:1.5;color:var(--ink-2)}
 .kaava-luvut-t{font-weight:600}
 .kc-more,.study-more{font-family:var(--sans);font-size:var(--fs-small);margin:.6rem 0 0}
+
+/* Simulaatiogalleria (work queue 17f PR 2): simulaatiot.html, chapter tiles without a picture, so no picture column */
+.sim-page ol.lessons li.ch-card.live>.ch-box{grid-template-columns:minmax(0,1fr);grid-template-areas:"num" "title";grid-template-rows:auto 1fr;padding:.75rem 1rem .9rem;overflow:visible}
+.sim-page ol.lessons li.ch-card.live>.ch-box>*{margin-inline:0}
+.sim-page ol.lessons li.ch-card.live .l-num{margin-top:0}

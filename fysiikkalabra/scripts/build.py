@@ -28,7 +28,7 @@ stay in their lesson folders and keep their <id>-sim.js URLs.
 """
 import hashlib, json, os, sys, re, shutil, pathlib, atexit, html as _h, markdown
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent)); from reviews import status as review_status, published_exercises, WorkTree
-import koetila, kaavahakemisto, media_tips, ahjo, answers_shown, figsize, jaksot, kaavat, kilparobo, lumatutor, assigned, booklets, cardgrid, concept_cards, courses, fbdspec, figcat, guides, i18n, inquiry, investigations, local_courses, mathlayout, mixer, module_icons, practice, reading_tips, stopthink, svgids, units, tablefit, valmentaja
+import koetila, kaavahakemisto, simulaatiogalleria, media_tips, ahjo, answers_shown, figsize, jaksot, kaavat, kilparobo, lumatutor, assigned, booklets, cardgrid, concept_cards, courses, fbdspec, figcat, guides, i18n, inquiry, investigations, local_courses, mathlayout, mixer, module_icons, practice, reading_tips, stopthink, svgids, units, tablefit, valmentaja
 from i18n import t as T
 
 ROOT = pathlib.Path(os.environ.get("FYSIIKKALABRA_ROOT") or pathlib.Path(__file__).resolve().parents[1])   # tests build a copy
@@ -671,6 +671,7 @@ def front_chrome(html):
     return html
 
 
+SIM_PAGE = None   # "simulaatiot.html" likewise (17f PR 2)
 FORMULA_PAGE = None   # "kaavat.html" while a language's formula index is being built (build_language sets it; K9 links)
 STUDY_ID = "nain-opiskelet"
 STUDY_PAGE = STUDY_ID + ".html"   # a page of its own (teacher 2026-11-04: Lukuvinkit only the books, Näin opiskelet only the study tips)
@@ -736,6 +737,7 @@ def study_guide():
             f'<section class="study-sec" id="vinkit" aria-labelledby="h-learn"><h2 id="h-learn">{esc(g("learn_h"))}</h2>'
             f'<p class="section-lead">{esc(g("learn_lead"))}</p>'
             + (f'<p class="study-more"><a href="{FORMULA_PAGE}">{esc(T("kaavat.link"))}</a></p>' if FORMULA_PAGE else "")
+            + (f'<p class="study-more"><a href="{SIM_PAGE}">{esc(T("simulaatiot.link"))}</a></p>' if SIM_PAGE else "")
             + f'{items("study-tips", STUDY_TIPS, "tips")}'
             f'<h3 class="study-sub" id="jumissa">{esc(g("help_h"))}</h3>{items("study-tips study-help", STUDY_HELP, "help")}</section>'
             f'<section class="study-sec" id="palaute" aria-labelledby="h-feedback"><h2 id="h-feedback">{esc(g("feedback_h"))}</h2>'
@@ -1703,10 +1705,18 @@ def build_language(lang):
     if kaava_mods:
         (out / kaavahakemisto.PAGE).write_text(page(T("kaavat.title"), kaavahakemisto.body(T, kaava_mods), f'<a href="index.html">{T("site.name")}</a> › {esc(T("kaavat.title"))}',
                                                     kaavahakemisto.PAGE, T("kaavat.lead"), main_class="reading kaava-page"))
+    # Simulaatiogalleria (work queue 17f PR 2, scripts/simulaatiogalleria.py): every published chapter with a simulation, linked to its
+    # Tutki stage; linked from Käsitteet and Näin opiskelet (K9), not from the menu
+    sim_mods = simulaatiogalleria.collect(modules, built_ids, simulaatiogalleria.sim_ids(courses.lessons()))
+    global SIM_PAGE
+    SIM_PAGE = simulaatiogalleria.PAGE if sim_mods else None
+    if sim_mods:
+        (out / simulaatiogalleria.PAGE).write_text(page(T("simulaatiot.title"), simulaatiogalleria.body(T, sim_mods), f'<a href="index.html">{T("site.name")}</a> › {esc(T("simulaatiot.title"))}',
+                                                        simulaatiogalleria.PAGE, T("simulaatiot.lead"), main_class="reading kaava-page sim-page"))
     # Käsitetakomo (teacher 2026-11-03, scripts/concept_cards.py): every module's cards, topics and the student's own deck
     if concept_cards.modules(concept_cards.data_lang(lang)):
         names = {c: course_text(c, curriculum[c])["title"] for c in concept_cards.modules(concept_cards.data_lang(lang))}
-        (out / concept_cards.APP).write_text(page(T("cards.app_title"), concept_cards.app_page_body(T, lang, names, {k: v for c in names for k, v in chapter_titles(c).items()}, FORMULA_PAGE),
+        (out / concept_cards.APP).write_text(page(T("cards.app_title"), concept_cards.app_page_body(T, lang, names, {k: v for c in names for k, v in chapter_titles(c).items()}, FORMULA_PAGE, SIM_PAGE),
                                              f'<a href="index.html">{T("site.name")}</a> › {T("cards.app_title")}', concept_cards.APP, T("cards.app_description"), main_class="reading kc-app-page"))
     # Lukuvinkit (teacher 2026-11-03, scripts/reading_tips.py): a reading list of physics books, linked from every header (not the footer, teacher 2026-11-04)
     rt = reading_tips.load(lang) if reading_tips.SOURCE.is_file() else None
