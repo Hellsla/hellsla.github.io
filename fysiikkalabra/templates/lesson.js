@@ -18,23 +18,6 @@
 (() => {
   const L10N = (() => { try { return JSON.parse(document.getElementById('fl-strings').textContent); } catch (e) { return {}; } })();
   const msg = (k, v) => { const s = (L10N.js || {})[k]; return typeof s === 'string' ? s.replace(/\{\{(\w+)\}\}/g, (m, n) => (v && n in v ? String(v[n]) : m)) : k; };   // lang/<lang>.json "js"
-  // A typed number (teacher 2026-11-10, FY6 fixes): a decimal comma or point, spaces between digit groups (10 000),
-  // a power of ten as 9,99e17, 9,99 · 10^17, 9,99×10^{17}, 9,99*10^-19 or 3,73 × 10⁻¹⁹ (teacher 2026-11-10, FY8), an optional "x =" before it and a unit
-  // after it (3 Ω, 2,5 m/s). Anything else that is not one number, such as 2/3 or 2,5,3, is NaN and never another number.
-  const parse = (s) => {
-    let t = String(s).trim().replace(/[\u00a0\u2009\u202f]/g, ' ').replace(/[−–]/g, '-');
-    t = t.replace(/^[^\d+\-.,=≈]*[=≈]\s*/, '').replace(/(\d)\s+(?=\d)/g, '$1');
-    t = t.replace(/10\s*([⁺⁻]?[⁰¹²³⁴⁵⁶⁷⁸⁹]+)/g, (m, e) => '10^' + [...e].map((c) => '⁺⁻⁰¹²³⁴⁵⁶⁷⁸⁹'.indexOf(c)).map((i) => '+-0123456789'[i]).join(''));   // 10⁻¹⁹
-    const m = t.match(/^([+-]?)()\s*10\s*\^\s*()(\{\s*[+-]?\d+\s*\}|[+-]?\d+)(.*)$/)   // 10^-3
-      || t.match(/^([+-]?)\s*(\d+(?:[.,]\d*)?|[.,]\d+)(?:\s*[eE]\s*([+-]?\d+)|\s*(?:[·⋅×xX*]|\\cdot|\\times)\s*10\s*\^\s*(\{\s*[+-]?\d+\s*\}|[+-]?\d+))?(.*)$/);
-    if (!m) return NaN;
-    const rest = m[5].trim();
-    if (rest && /^[\d.,/:*·⋅×^+\-=⁺⁻⁰¹²³⁴⁵⁶⁷⁸⁹]/.test(rest)) return NaN;   // 2/3, 2,5,3, 3^2, 2⁵, 2-1: not one number
-    const exp = m[3] !== undefined && m[3] !== '' ? Number(m[3]) : m[4] !== undefined ? Number(m[4].replace(/[{}\s]/g, '')) : 0;
-    const mant = m[2] === '' ? 1 : Number(m[2].replace(',', '.'));
-    return Number(`${m[1] === '-' ? '-' : ''}${mant}e${exp}`);
-  };
-  window.flParse = parse;
   // A real attempt (teacher 2026-11-03, "opiskelija yrittää ensin itse"): Tarkista with a number, Vastaa with a choice,
   // or a solution written in the editor (part 6). It opens what part 8 keeps locked; other scripts may listen too (the progress bar).
   // detail: id (the task: exercise li, activity or Sovella task), kind check | choice | done, state ok | close | no | done.
@@ -83,34 +66,26 @@
     document.addEventListener('fl:pad-change', () => setTimeout(draw, 0));
     window.addEventListener('storage', draw);
   })();
-  // Accepted (teacher 2026-11-03, rounding half a unit 2026-11-10): within 2 % of the model answer or half a unit in
-  // its shown last significant digit (data-step is one unit), whichever is larger, or the task's own wider tolerance; 2–5 % away is "Lähellä", not a rejection.
+  // The answer check (the rule and the number reading are in virhe.js: window.flJudge, window.flParse; work queue 17e).
   document.querySelectorAll('form.check').forEach((form) => {
     const input = form.querySelector('input'), out = form.querySelector('output');
     const ans = Number(form.dataset.answer), tol = Number(form.dataset.tol), step = Number(form.dataset.step) || 0;
     let tries = 0;
     form.addEventListener('submit', (e) => {
       e.preventDefault();
-      const v = parse(input.value);
-      if (!Number.isFinite(v)) { out.textContent = msg('check_number'); out.dataset.state = 'hint'; return; }
+      const j = window.flJudge(input.value, ans, tol, form.dataset.unit, step);   // virhe.js: the one rule of the check, also used by the grading page (17e)
+      if (!j) { out.textContent = msg('check_number'); out.dataset.state = 'hint'; return; }
       tries += 1;
-      const a = Math.abs(ans);
-      const round = step / 2;   // a correctly rounded answer is at most half a unit of its last digit away (teacher 2026-11-10)
-      const accept = ans === 0 ? Math.max(tol, round) : Math.max(0.02 * a, tol * a, round);
-      const near = ans === 0 ? 2.5 * accept : Math.max(0.05 * a, 1.25 * accept);
-      const diff = Math.abs(v - ans);
-      let state, mistake = null;
-      if (diff <= accept * (1 + 1e-9)) {
-        out.textContent = msg('correct'); state = 'ok'; form.classList.add('is-ok'); input.setAttribute('aria-invalid', 'false');
-      } else if (diff <= near * (1 + 1e-9)) {
-        out.textContent = msg('check_near'); state = 'close'; input.setAttribute('aria-invalid', 'false');
+      const { value: v, state, mistake } = j;
+      if (state === 'ok') {
+        out.textContent = msg('correct'); form.classList.add('is-ok'); input.setAttribute('aria-invalid', 'false');
+      } else if (state === 'close') {
+        out.textContent = msg('check_near'); input.setAttribute('aria-invalid', 'false');
       } else {
-        input.setAttribute('aria-invalid', 'true');
-        mistake = window.flMistake ? window.flMistake(v, ans, tol, form.dataset.unit, step) : null;   // virhe.js (17c PR 1): says what to check, never that the numbers are right
+        input.setAttribute('aria-invalid', 'true');   // mistake: says what to check, never that the numbers are right
         if (mistake) out.textContent = msg('check_mistake_' + mistake);
         else if (Math.abs(v) > 0 && ans !== 0 && (Math.abs(v / ans) > 900 || Math.abs(ans / v) > 900)) out.textContent = msg('check_magnitude');
         else out.textContent = tries >= 2 ? msg('check_give_up') : msg('check_retry');
-        state = 'no';
       }
       out.dataset.state = state;
       attempt(form, 'check', state, Object.assign({ first: tries === 1 }, mistake ? { mistake } : {}));   // mistake: a string for a general kind (virhe.js), an index for the task's own (inquiry.js)

@@ -78,6 +78,8 @@ tuonti merkitsee kaksoiskappaleet.
    - `Code.gs`: korvaa editorin valmis `Code.gs`.
    - `Tehtavat.gs`: **+ → Komentosarja**, nimi `Tehtavat`. Tiedosto on generoitu: FY3–1:n tehtävänannot
      kaavoineen ja kuvineen.
+   - `Virhe.gs`: **+ → Komentosarja**, nimi `Virhe`. Generoitu `templates/virhe.js`:stä: sama luvun tarkistussääntö kuin
+     opiskelijan sivulla, jota luokan yhteenvedon laskutehtävät käyttävät (ilman sitä yhteenvedosta puuttuu vain laskutehtävien erittely).
    - `Review.html`: **+ → HTML**, nimi `Review`.
    - `appsscript.json`: Projektin asetukset (⚙) → *Näytä appsscript.json-manifestitiedosto editorissa* →
      korvaa tiedoston sisältö.

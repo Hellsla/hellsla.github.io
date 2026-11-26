@@ -20,6 +20,7 @@ Apps Script -versio jää valmiiksi siltä varalta, että kaupunki sallii sen.
 | `apps-script/Code.gs` | tuonti, tarkistus ja arviointinäkymän palvelinfunktiot (asetukset alussa: `RL_CONFIG`) |
 | `apps-script/Review.html` | arviointinäkymä |
 | `apps-script/Tehtavat.gs` | FY3:n luvut opetusjärjestyksessä ja niiden tehtävänannot (`RL_COURSE`), **generoitu**: `python scripts/palautus_tasks.py` |
+| `apps-script/Virhe.gs` | `templates/virhe.js` Apps Scriptille (luvun tarkistussääntö ja yleisvirheiden tunnistus luokan yhteenvetoa varten), **generoitu** samalla komennolla |
 | `apps-script/appsscript.json` | manifesti: aikavyöhyke, V8 ja kolme oikeutta |
 | `arviointi-<lv>-p<periodi>.html` | paikallinen arviointisivu kuluvalle periodille, **generoitu** samalla komennolla (`palautus_tasks.py`) |
 | `paikallinen/local-backend.js` | paikallisen sivun korvikkeet Sheets-, Drive- ja google.script.run-palveluille, zipin luku, localStorage (tilat ja pisteet), IndexedDB (palautukset), CSV ja varmuuskopio |

@@ -181,3 +181,13 @@ Tietosuoja-sivun painikkeet *Tallenna kaikki työni tiedostoon* ja *Avaa kaikki 
 - Tiedostossa ei ole nimeä, yhteystietoja, ääneenluvun asetuksia, mallia eikä verkottoman käytön välimuistia.
 - Työtiedosto, jota yritetään avata tässä, hylätään viestillä (`kaikki_wrong`); kaikki-tiedosto opintojakson sivulla
   hylätään kuten mikä tahansa vieras tiedosto.
+
+## Luokan yhteenveto (17e, 2026-11-26): taulukon uusi sarake, tiedostomuodot ennallaan
+
+Tiedostomuotoja ei muutettu. Tuonti kirjaa palautusten taulukkoon (`RL Palautukset`) uuden sarakkeen *Numerovastaukset* (viimeinen):
+luvun tehtävien, joilla on tasan yksi tarkistuslomake (`Tehtavat.gs` `checks`), kirjoitetut luvut sellaisenaan, JSON `{"<tehtävä>": "6,0"}`.
+Muuta vastausten sisältöä ei tule taulukkoon. Vanha rivi ilman saraketta luetaan "ei numeroita"; rivi saa sen uudelleen tuotaessa.
+`rlClass()` (`Code.gs`) laskee näistä, pisteistä ja itsearvioista luokan yhteenvedon ilman nimiä ja sähköposteja:
+tehtävittäin palauttaneet, vastanneet, pisteiden jakauma (0 p, osa, täydet) ja keskiarvo; tavoitteittain itsearvion tasojen lukumäärät;
+laskutehtävittäin oikein, lähellä ja väärin sekä väärien yleisvirheet. Luku arvioidaan sivun omalla säännöllä (`templates/virhe.js`
+`flJudge`), joten arviointi on sama kuin opiskelijan sivulla. Valintojen jakaumaa ei tehdä: oikea vaihtoehto ei ole `Tehtavat.gs`:ssä.
