@@ -185,7 +185,7 @@
       renderTasks(ov);
       renderSummary(ov);
       renderSelf(ov);
-      call('rlClass').then(function (c) { S.cls = c; renderClass(); }, function () { S.cls = null; renderClass(); });
+      S.cls = ov.cls || null; renderClass();   // luokan yhteenveto tulee saman kutsun mukana (yksi lukukerta taulukoista)
       $('homeState').textContent = ov.students ? '' : (window.RL_LOCAL ? 'Tuo ryhmän palautukset (zip) ylhäältä: Tuo tiedosto.' : 'Ei palautuksia. RuukkiLabra → Tuo palautukset, sitten Päivitä.');
       var pb = $('problems').querySelector('tbody'); pb.textContent = '';
       ov.problems.forEach(function (p) {

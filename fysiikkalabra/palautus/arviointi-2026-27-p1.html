@@ -8533,8 +8533,18 @@ function rlImport_() {
     var byKey = {};
     rows.forEach(function (r, i) { byKey[rlText_(r[RL_C.key])] = i; });
     var counts = {}; for (var s in RL_STATUS) counts[RL_STATUS[s]] = 0;
-    var added = [], retried = 0, flagged = 0, unfinished = false, touched = {};
+    var added = [], retried = 0, flagged = 0, unfinished = false, touched = {}, backfilled = 0;
     var live = function (r) { return r[RL_C.status] !== RL_STATUS.BAD && r[RL_C.status] !== RL_STATUS.READ; };
+    // Ennen sarake Numerovastaukset -sarakkeen lisäystä (17e) tuodut hyväksytyt rivit: sarake täytetään tiedostosta kerran, muuta riviltä ei muuteta.
+    // Tyhjä solu = ei vielä luettu; luettu tiedosto saa vähintään '{}', joten rivi luetaan uudelleen vain, jos luku epäonnistui.
+    for (var bi = 0; bi < rows.length; bi++) {
+      var br = rows[bi];
+      if (br[RL_C.status] !== RL_STATUS.OK || rlText_(br[RL_C.numbers]) !== '' || !rlText_(br[RL_C.file])) continue;
+      if (Date.now() - started > 270000) { unfinished = true; break; }
+      var bp = rlProcess_({ time: br[RL_C.time], email: rlText_(br[RL_C.email]), ids: [rlText_(br[RL_C.file]).replace(/^.*[?&]id=/, '')] });
+      var bparts = (bp.parts || [bp]).filter(function (q) { return q.status === RL_STATUS.OK && q.chapter === rlText_(br[RL_C.chapter]); });
+      if (bparts.length) { br[RL_C.numbers] = rlCell_(bparts[0].numbers || '{}'); touched[bi] = true; backfilled++; }
+    }
     for (var i = 0; i < responses.length; i++) {
       var resp = responses[i], at = byKey[resp.key];
       if (at !== undefined && (at >= rows.length || rows[at][RL_C.status] !== RL_STATUS.READ)) continue;   // jo tuotu: uudelleenajo ei kirjaa toista kertaa
@@ -8579,7 +8589,7 @@ function rlImport_() {
     }
     if (added.length) sh.getRange(added[0] + 2, 1, added.length, width).setValues(added.map(function (i) { return rows[i]; }));
     SpreadsheetApp.flush();
-    return { added: added.length, counts: counts, retried: retried, flagged: flagged, unfinished: unfinished };
+    return { added: added.length, counts: counts, retried: retried, flagged: flagged, unfinished: unfinished, backfilled: backfilled };
   } finally { lock.releaseLock(); }
 }
 
@@ -8689,12 +8699,14 @@ function rlOverview() {
     var self = (c.self || []).length ? { items: c.self, students: subs.map(function (s) { return { email: s.email, levels: rlLatest_(s, c.id).self }; }) } : null;
     return { id: c.id, number: c.number, title: c.title, submissions: subs.length, tasks: tasks, self: self };
   });
+  var cls = null;
+  try { cls = rlClass_(m); } catch (e) { cls = null; }   // luokan yhteenveto ei saa kaataa muuta näkymää
   return { course: RL_COURSE.id, group: RL_CONFIG.GROUP || '', maxPoints: RL_CONFIG.MAX_POINTS, students: m.students.length, chapters: chapters, themes: RL_COURSE.themes || [],
-           summary: rlSummary_(m), problems: m.problems };
+           summary: rlSummary_(m), problems: m.problems, cls: cls };
 }
 // Numerovastaukset (17e): luvun tehtävien, joilla on yksi tarkistuslomake, kirjoitetut luvut sellaisenaan, JSON {tehtävä: teksti}.
 // Taulukkoon ei tule nimeä eikä muuta; vanha rivi ilman saraketta luetaan tyhjänä.
-function rlNumbersCell_(m) { return Object.keys(m).length ? JSON.stringify(m) : ''; }
+function rlNumbersCell_(m) { return JSON.stringify(m); }   // '{}' = tiedosto on luettu eikä siinä ole numeroita; tyhjä solu = ei vielä luettu (täydennys tuonnissa)
 function rlNumbersParse_(text) {
   var out = Object.create(null), o;
   try { o = JSON.parse(rlText_(text) || '{}'); } catch (e) { return out; }
@@ -8706,8 +8718,9 @@ function rlNumbersParse_(text) {
 // lukumäärät. Lukuväli rajataan arviointisivulla. Numero arvioidaan sivun omalla säännöllä (window.flJudge, virhe.js; Apps Scriptissä
 // Virhe.gs), joten tarkistus on sama kuin opiskelijan sivulla; ilman sitä laskutehtävien erittelyä ei tehdä.
 function rlJudge_() { return (typeof window !== 'undefined' && window.flJudge) || null; }
-function rlClass() {
-  var m = rlModel_(), judge = rlJudge_(), maxP = RL_CONFIG.MAX_POINTS;
+function rlClass() { return rlClass_(rlModel_()); }
+function rlClass_(m) {
+  var judge = rlJudge_(), maxP = RL_CONFIG.MAX_POINTS;
   var chapters = RL_COURSE.chapters.map(function (c) {
     var subs = m.students.filter(function (s) { return !!s.chapters[c.id]; });
     var tasks = c.tasks.map(function (t) {
@@ -9684,7 +9697,7 @@ function rlScoresCsv() {
       renderTasks(ov);
       renderSummary(ov);
       renderSelf(ov);
-      call('rlClass').then(function (c) { S.cls = c; renderClass(); }, function () { S.cls = null; renderClass(); });
+      S.cls = ov.cls || null; renderClass();   // luokan yhteenveto tulee saman kutsun mukana (yksi lukukerta taulukoista)
       $('homeState').textContent = ov.students ? '' : (window.RL_LOCAL ? 'Tuo ryhmän palautukset (zip) ylhäältä: Tuo tiedosto.' : 'Ei palautuksia. RuukkiLabra → Tuo palautukset, sitten Päivitä.');
       var pb = $('problems').querySelector('tbody'); pb.textContent = '';
       ov.problems.forEach(function (p) {

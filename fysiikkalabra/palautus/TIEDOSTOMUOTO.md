@@ -186,7 +186,7 @@ Tietosuoja-sivun painikkeet *Tallenna kaikki työni tiedostoon* ja *Avaa kaikki 
 
 Tiedostomuotoja ei muutettu. Tuonti kirjaa palautusten taulukkoon (`RL Palautukset`) uuden sarakkeen *Numerovastaukset* (viimeinen):
 luvun tehtävien, joilla on tasan yksi tarkistuslomake (`Tehtavat.gs` `checks`), kirjoitetut luvut sellaisenaan, JSON `{"<tehtävä>": "6,0"}`.
-Muuta vastausten sisältöä ei tule taulukkoon. Vanha rivi ilman saraketta luetaan "ei numeroita"; rivi saa sen uudelleen tuotaessa.
+Muuta vastausten sisältöä ei tule taulukkoon. Ennen saraketta tuotu hyväksytty rivi (tyhjä solu) täydennetään tiedostosta seuraavassa tuonnissa kerran (`backfilled`); luettu tiedosto saa vähintään `{}`.
 `rlClass()` (`Code.gs`) laskee näistä, pisteistä ja itsearvioista luokan yhteenvedon ilman nimiä ja sähköposteja:
 tehtävittäin palauttaneet, vastanneet, pisteiden jakauma (0 p, osa, täydet) ja keskiarvo; tavoitteittain itsearvion tasojen lukumäärät;
 laskutehtävittäin oikein, lähellä ja väärin sekä väärien yleisvirheet. Luku arvioidaan sivun omalla säännöllä (`templates/virhe.js`

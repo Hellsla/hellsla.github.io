@@ -69,6 +69,7 @@ def main():
         pg.set_content("<!doctype html><html><head>" + head + "</head><body></body></html>")
         info = pg.evaluate(SETUP)
         res = pg.evaluate("() => rlClass()")
+        expect("rlOverview carries the same summary (the page reads the sheets once)", pg.evaluate("(r) => JSON.stringify(rlOverview().cls) === JSON.stringify(r)", res))
         ch = next(c for c in res["chapters"] if c["id"] == info["chapter"])
         t1 = next(t for t in ch["tasks"] if t["id"] == info["t1"]); t2 = next(t for t in ch["tasks"] if t["id"] == info["t2"])
         expect("the rule is the lesson page's own (Virhe.gs)", res["judged"] is True and res["maxPoints"] == 1)
