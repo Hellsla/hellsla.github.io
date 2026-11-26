@@ -450,7 +450,7 @@ def numeric_html(a, md, aid):
     shown = answers_shown.shown(a.get("solution") or "", T("lesson.solution_answer_step"), a["answer"], a.get("tolerance", 0.02))
     st = answers_shown.step(shown, a["answer"]) if shown else None    # one unit in the shown answer's last digit; the check allows half of it (lesson.js part 1)
     return (f'<div class="numeric">{task_text(inline(md, a["prompt"]), pid=f"{aid}-q")}{fig_of(a)}'
-            f'<form class="check" data-answer="{a["answer"]}" data-tol="{a.get("tolerance", 0.02)}"' + (f' data-step="{st:g}"' if st else "") + f' data-mistakes=\'{mistakes}\' novalidate>'
+            f'<form class="check" data-answer="{a["answer"]}" data-tol="{a.get("tolerance", 0.02)}" data-unit="{unit}"' + (f' data-step="{st:g}"' if st else "") + f' data-mistakes=\'{mistakes}\' novalidate>'
             f'<input type="text" inputmode="decimal" autocomplete="off" enterkeyhint="done" aria-label="{esc(answer_label(a.get("unit", "")))}" aria-describedby="{esc(aid)}-q" placeholder="?">'
             + (f'<span class="unit">{unit}</span>' if unit else "") + f'<button type="submit">{T("lesson.check")}</button><output aria-live="polite"></output></form>'
             f'{hints_html([md(mathlayout.display_chains(h)) for h in a.get("hints", [])])}{sol}</div>')
