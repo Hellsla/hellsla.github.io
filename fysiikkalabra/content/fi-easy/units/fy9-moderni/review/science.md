@@ -1,18 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 2cbb79cb8976e54d
+CONTENT-HASH: 3636de61f06855aa
 
-Delta review (work queue 11c): only the new `hints` of `sovella/tasks.json` (s1–s9, 35 written parts), judged against the part's rubric, `sovella/solutions.md`, the answer and the Finnish hints. Diff `git diff origin/main -- content/fi-easy/units/fy9-moderni` (review/ ignored).
+Delta review, round 2 (work queue 11c): only the `hints` of `sovella/tasks.json`, all 105 hints of the 35 written parts (s1–s9) read and compared with the Finnish hints, each part's rubric, `sovella/solutions.md` and answer. Diff `git diff origin/main -- content/fi-easy/units/fy9-moderni` (review/ ignored). Changes since round 1 re-checked, including the new glosses.
 
 ## Blocking
 None.
 
 ## Polish
-1. s4 a, hint 3 (fi-easy): the Finnish hint ends "ja mitä se kertoo ekvivalenttiannoksesta?", which fi-easy drops; the physics stays right ("Se kertoo, kuinka haitallista säteilylaji on"). Optional: append "Mitä se kertoo ekvivalenttiannoksesta?" so the link to the rubric's $20$-fold equivalent dose is as explicit as in fi.
+1. s9 a, hint 3 (fi-easy): the Finnish hint's last sentence is missing, so the advice not to use a measured point off the line is lost. Replacement: "Valitse suoralta piste, jonka arvot voi lukea tarkasti ja joka on kaukana origosta. Lue sekä $v$ että $d$. Älä käytä mittauspistettä, joka ei ole suoralla."
+2. s1 c, hint 3 (fi-easy): "Vertaa sitä vuosiannokseen $5{,}9\,\text{mSv}$" drops "keskimääräiseen" and "osuutena" of the Finnish hint. Replacement: "Vertaa sitä keskimääräiseen vuosiannokseen $5{,}9\,\text{mSv}$: kuinka suuri osa siitä annos on?"
 
 ## Checked
-1. Every hint says the same physics as fi, with the same symbols as the fi-easy solutions ($k_\text{annos}$, $P_\text{s}$, $P_\text{l}$, $c_\text{v}$, $\eta_\text{h}$, $m_\text{h}$, $\dot{H}_\text{max}$, $E_\text{f}$, $E_\text{l}$) and the same conversions ($30{,}1 \cdot 3{,}156 \cdot 10^{7}\,\text{s}$, $235 \cdot 1{,}661 \cdot 10^{-27}\,\text{kg}$, $200\,\text{MeV} = 2{,}00 \cdot 10^{8}\,\text{eV}$, $1\,\text{Mpc} = 3{,}086 \cdot 10^{19}\,\text{km}$), all recomputed.
-2. The added explanations are correct: "eksponenttiin eli potenssin ylänumeroon" (s1 b), "absorboida eli ottaa itseensä" (s2 d), ionisation "säteily irrottaa atomeista elektroneja" (s4 c), painotuskerroin as relative harm (s4 a).
-3. No hint gives a part's final answer; word-part hints guide the reasoning the rubric credits without dictating the conclusion.
-4. Numbers with units in LaTeX, decimal comma.
-
-Hash before and after the review identical.
+1. Same models, symbols and conditions as the Finnish hints and the solutions (s1 $E = hc/\lambda$, half-life law, $H = A_m m k_\text{annos}$, $A = \lambda N$; s2 $E_3 - E_2$, $v = cz$ for small $z$, $v = H_0 d$, $1+z$; s3 $eU = hf - W$, $hf_0 = W$; s5 background subtraction and $\ln N$ line; s6 $P_\text{l} = nE_\text{f}$, $E = \Delta m c^2$, $P_\text{l} - P_\text{s} = Q/t$; s7 $Q = c_\text{v} m \Delta T$; s8 $\dot{H} = \dot{H}_0 e^{-\mu d}$, $\dot{H}_\text{max} = H_\text{max}/t$; s9 $t = 1/H_0$).
+2. The glosses are physically right: hajoamisvakio, punasiirtymä (aallonpituuden venyminen), irrotustyö (energia, joka irrottaa elektronin metallista), kulmakerroin (jyrkkyys), ionisoida (irrottaa elektroneja atomeista), radioaktiivisuus (epävakaiden ytimien ominaisuus), lauhdutin, painotuskerroin, vaimennuskerroin, eksponentti.
+3. Every stated number recomputed in the same script as the Finnish report and matches the task data ($30{,}1 \cdot 3{,}156 \cdot 10^{7}\,\text{s}$, $2{,}00 \cdot 10^{8}\,\text{eV}$, $235 \cdot 1{,}661 \cdot 10^{-27}\,\text{kg}$, $\Delta T = 80\,\text{K}$, $1{,}5\,\text{h} \cdot 220$, $1\,\text{Mpc} = 3{,}086 \cdot 10^{19}\,\text{km}$, and the rest). No hint gives a final answer. LaTeX and decimal comma throughout.
