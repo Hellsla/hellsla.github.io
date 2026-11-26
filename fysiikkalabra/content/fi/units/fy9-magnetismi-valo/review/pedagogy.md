@@ -1,9 +1,4 @@
 VERDICT: PASS
-CONTENT-HASH: 9fc26be04f2f21d9
-SCOPE: delta (old-content fixes, git diff origin/main)
+CONTENT-HASH: 601ff325f09a7007
 
-Blocking: none.
-
-1. Teacher.md: 'other eight' matches nine tasks; points line (20 + seven 15 + 12 = 137) matches tasks.json sums, identical in fi, en, fi-easy.
-2. Earlier delta lines re-read briefly: the changes touch only counts, points and notation; no misconception feedback, hint ladder or rubric criterion was weakened, and no answer is disclosed early.
-3. Polish: none.
+Round 2 delta (fi). Fixes judged: s4 a hint 1 now names the back reflection (the rainbow mechanism, without the answer); s4 c hint 3 asks which colour the grating and which the drop deviates more, a clearer comparison; s5 b hint 3 asks for the existence condition instead of stating 3λ<d, so the student must reason. Typo fixes fine. Ladder intact, no answers disclosed.

@@ -18,6 +18,11 @@
           "kind": "calc",
           "points": 5,
           "text": "Draw the free-body diagram of one ball. How large is the electric force on the balls?",
+          "hints": [
+            "Which forces act on one ball, and in which directions do they point? What does the fact that the ball is at rest tell you about the sum of the forces?",
+            "The sum of the forces is zero: the horizontal component of the force of the thread cancels the electric force $F_\\text{s}$ and the vertical component cancels the weight $mg$. When the thread makes an angle $\\alpha$ with the vertical, $\\tan\\alpha = \\dfrac{F_\\text{s}}{mg}$.",
+            "The angle follows from geometry: the ball is half the distance, $\\dfrac{r}{2}$, from the vertical and the thread has length $L$, so $\\sin\\alpha = \\dfrac{r/2}{L}$. Calculate $\\alpha$ first and then $F_\\text{s}$. Convert the mass to kilograms: $0.50\\,\\text{g} = 5.0 \\cdot 10^{-4}\\,\\text{kg}$."
+          ],
           "answer": {
             "value": 0.493,
             "unit": "mN",
@@ -56,6 +61,11 @@
           "kind": "calc",
           "points": 4,
           "text": "How large is the charge of each ball? How many electrons have moved if the balls are positive?",
+          "hints": [
+            "Which law links the electric force, the charges and the distance? What do you know about the charges of the balls relative to each other?",
+            "For two equal charges the magnitude of the Coulomb force is $F_\\text{s} = k\\dfrac{q^2}{r^2}$. The number of transferred electrons $n$ follows from the charge: $q = ne$.",
+            "Solve the charge $q$ in symbols before substituting. Convert the distance to metres and use the force of part a in newtons: $1\\,\\text{mN} = 10^{-3}\\,\\text{N}$. Have electrons been added to the balls or removed from them when the balls are positive?"
+          ],
           "answer": {
             "value": 18.74,
             "unit": "nC",
@@ -89,6 +99,11 @@
           "kind": "calc",
           "points": 3,
           "text": "One ball is touched for a moment with a third identical, uncharged ball, which is then taken away. How large would the electric force on the balls be if their distance were still $8.0\\,\\text{cm}$? Are the forces on the balls equal?",
+          "hints": [
+            "What happens to the charge when a charged ball touches an identical uncharged ball? Which quantity is conserved, and how is the charge shared between two identical balls?",
+            "Charge is conserved, and the magnitude of the Coulomb force is $F_\\text{s} = k\\dfrac{Q_1 Q_2}{r^2}$, where $Q_1$ and $Q_2$ are the charges of the balls.",
+            "Find the charge of each ball after the contact and compare the product of the charges with the original product $q^2$. The distance is the same, so the force changes in the same ratio as the product of the charges. Finally think about Newton's third law: how are the forces that the balls exert on each other related?"
+          ],
           "answer": {
             "value": 0.2465,
             "unit": "mN",
@@ -117,6 +132,11 @@
           "kind": "calc",
           "points": 3,
           "text": "The balls come to a new position of rest. How large is the distance between the centres of the balls now?",
+          "hints": [
+            "What keeps the balls in place in the new position? What is the same as in part a, and what is different now?",
+            "In equilibrium, as in part a, $\\tan\\alpha = \\dfrac{F_\\text{s}}{mg}$, but now the electric force is $F_\\text{s} = k\\dfrac{Q_1 Q_2}{r^2}$ with the charges of part c. For a small angle $\\tan\\alpha$ and $\\sin\\alpha = \\dfrac{r}{2L}$ are almost equal.",
+            "Write the force balance in symbols for the new distance $r$ and in the same way for the original distance $r_0$. Divide the equations by each other: $k$, $m$, $g$ and $L$ cancel. To what power does $r$ remain in the equation?"
+          ],
           "answer": {
             "value": 6.35,
             "unit": "cm",
@@ -164,6 +184,11 @@
           "kind": "calc",
           "points": 4,
           "text": "How large is the capacitance of the capacitor? How large is the charge on the plates?",
+          "hints": [
+            "Which dimensions of a parallel-plate capacitor and which property of the material determine how much charge it can store? How does the charge depend on the voltage?",
+            "The capacitance of a parallel-plate capacitor is $C = \\dfrac{\\varepsilon_0\\varepsilon_\\text{r}A}{d}$ and the capacitor law is $Q = CU$.",
+            "First calculate the area $A$ of a square plate and convert the distance to metres: $3.00\\,\\text{mm} = 3.00 \\cdot 10^{-3}\\,\\text{m}$. The value of $\\varepsilon_\\text{r}$ for air is in the table. Then calculate $C$ and only after that $Q$."
+          ],
           "answer": [
             {
               "name": "C",
@@ -206,6 +231,11 @@
           "kind": "calc",
           "points": 4,
           "text": "How much energy has been stored in the capacitor? Assess whether the air gap is safe from breakdown.",
+          "hints": [
+            "What does the energy of a capacitor depend on? Which quantity tells how strong the field between the plates is, and what must it be compared with?",
+            "The energy of a capacitor is $W = \\tfrac12 CU^2$ and in a uniform field $E = \\dfrac{U}{d}$. The breakdown strength of air is the value $E_\\text{max}$ in the table.",
+            "Calculate the energy with the capacitance of part a and the voltage $4.50\\,\\text{kV} = 4500\\,\\text{V}$. Calculate the strength of the field and compare it with the breakdown strength of air: what fraction of it is it? Use this to decide whether the gap is safe."
+          ],
           "answer": [
             {
               "name": "W",
@@ -248,6 +278,11 @@
           "kind": "calc",
           "points": 4,
           "text": "The capacitor is disconnected from the source, and a glass plate $3.00\\,\\text{mm}$ thick, which fills the gap completely, is pushed between the plates. How large is the voltage between the plates now? How large is the energy of the capacitor?",
+          "hints": [
+            "The capacitor is disconnected from the source. Which quantity cannot change when the charge has nowhere to go? What does the glass plate change?",
+            "The charge $Q$ of a disconnected capacitor stays the same. The glass makes the capacitance $\\varepsilon_\\text{r}$ times larger: $C' = \\varepsilon_\\text{r}C$. The voltage is $U' = \\dfrac{Q}{C'}$ and the energy is $W' = \\tfrac12 QU'$.",
+            "First calculate the new capacitance $C'$ and then the voltage $U'$ with the charge of part a. You can also find out in symbols how many times smaller $U'$ is than $U$. Finally calculate the energy and compare it with the energy of part b."
+          ],
           "answer": [
             {
               "name": "U",
@@ -290,6 +325,11 @@
           "kind": "word",
           "points": 3,
           "text": "Where has the energy of part c gone? A student says: \"The source has been disconnected, so the plates can now be touched with bare hands.\" Assess the claim.",
+          "hints": [
+            "In which direction does the field of the plates act on the glass plate when it is pushed in between? Who or what does work, and what happens to it?",
+            "Energy is not lost: the change $W' - W$ of the energy of the capacitor shows up as some other energy. For a disconnected capacitor the charge $Q$ has stayed the same, and the voltage is $U' = \\dfrac{Q}{C'}$.",
+            "Is the voltage $U'$ still large? What would happen to a hand that touches the plates? How could the capacitor be made safe before touching it?"
+          ],
           "criteria": [
             {
               "text": "Explains that the field of the plates pulls the polarising glass plate into the gap and does work on it; the energy goes to the pushing hand or into kinetic and internal energy of the glass.",
@@ -333,6 +373,11 @@
           "kind": "graph",
           "points": 4,
           "text": "Present the capacitance as a function of the distance between the plates as a graph. Use the graph to justify whether the capacitance is inversely proportional to the distance between the plates.",
+          "hints": [
+            "Which quantity is the independent and which the dependent variable, and what goes on the axes? What does inverse proportionality mean when one quantity doubles?",
+            "If $C$ is inversely proportional to the distance $d$, the product $C \\cdot d$ is constant, and when the distance doubles $C$ halves.",
+            "Plot the points and do not join them with a broken line. Choose two points whose distances are in the ratio $1 : 2$, for example $1.0\\,\\text{mm}$ and $2.0\\,\\text{mm}$, and compare the ratio of the capacitances. What value does the curve seem to approach as $d$ grows? Is it zero?"
+          ],
           "criteria": [
             {
               "key": "graph_axes",
@@ -355,6 +400,11 @@
           "kind": "graph",
           "points": 6,
           "text": "Form from the data a quantity as a function of which the graph of the capacitance is a straight line. Justify your choice. Present the graph and fit a straight line to the points.",
+          "hints": [
+            "What is the model that links the capacitance of a parallel-plate capacitor and the distance? As a function of which quantity would $C$ be a straight line?",
+            "For air $C = \\varepsilon_0\\varepsilon_\\text{r}\\dfrac{A}{d}$, that is $C = \\varepsilon_0 A \\cdot \\dfrac{1}{d}$. A straight line has the form $y = kx + b$. Which quantity is $x$ here?",
+            "Calculate the values of the new quantity for all seven measurements in the table and write its unit. Plot the points and draw a line so that there are points on both sides of it. Does the line pass through the origin?"
+          ],
           "criteria": [
             {
               "text": "Justifies the linearisation: for a parallel-plate capacitor $C = \\varepsilon_0 A \\cdot \\tfrac{1}{d}$, so $C$ is directly proportional to the quantity $\\tfrac{1}{d}$; the capacitance of the leads and the meter themselves adds a constant term.",
@@ -383,6 +433,11 @@
           "kind": "calc",
           "points": 5,
           "text": "Determine the slope of the line. Use it to determine the electric constant $\\varepsilon_0$ and compare the result with the table value $8.854 \\cdot 10^{-12}\\,\\text{F/m}$.",
+          "hints": [
+            "What does the slope of the line represent according to the model? What is its unit?",
+            "The slope is $k = \\dfrac{\\Delta C}{\\Delta x}$, where $x$ is the quantity of part b. From the model $C = \\varepsilon_0 A \\cdot \\dfrac{1}{d}$ you can see which constants the slope contains.",
+            "Read two points of the line far from each other (not measured points) and calculate the slope. Convert the unit: $1\\,\\text{pF} \\cdot \\text{mm} = 10^{-15}\\,\\text{F} \\cdot \\text{m}$. The area of a plate is $A = 0.0400\\,\\text{m}^2$. Compare the result with the table value as a relative difference."
+          ],
           "answer": {
             "value": 8.844,
             "unit": "pF/m",
@@ -421,6 +476,11 @@
           "kind": "calc",
           "points": 5,
           "text": "What is the value at which the line crosses the vertical axis, and what does it mean in this measurement? Assess at which distances the parallel-plate capacitor model no longer holds.",
+          "hints": [
+            "What is $C$ according to the line when the plates are very far apart? Should the capacitance then be zero, and what else does the meter measure?",
+            "The equation of the line is $C = kx + b$, and $b$ is the point where the line crosses the vertical axis. The model $C = \\dfrac{\\varepsilon_0 A}{d}$ requires that the gap between the plates is small compared with the size of the plate.",
+            "Read $b$ from the line or calculate it from two points of the line: $b = C - kx$. Compare the distances with the side of the plate, $200\\,\\text{mm}$, and think about where the field stops being uniform. Also consider the smallest distance $1.0\\,\\text{mm}$: how large a part of it is the uncertainty of the thickness of a spacer?"
+          ],
           "answer": {
             "value": 22.2,
             "unit": "pF",
@@ -480,6 +540,11 @@
           "kind": "word",
           "points": 5,
           "text": "A crow sits on a conductor. A student says: \"The bird is safe because its feet are dry and insulate.\" Assess the claim.",
+          "hints": [
+            "What makes current flow through a body? Which two points does a bird connect with its feet when it sits on a single conductor?",
+            "Current flows through a body only if there is a voltage between two points of the body. In a conductor the current causes a voltage drop $U = RI$ along the distance.",
+            "Estimate the voltage between the feet of the bird: take the distance between the feet as about $5\\,\\text{cm}$ and use the resistance of the conductor per kilometre. Convert the distance to kilometres: $5\\,\\text{cm} = 5 \\cdot 10^{-5}\\,\\text{km}$. Then assess whether the reasoning of the claim is correct."
+          ],
           "criteria": [
             {
               "text": "Explains that a current flows through the body only if there is a voltage, that is, a potential difference, between two points of the body.",
@@ -508,6 +573,11 @@
           "kind": "word",
           "points": 5,
           "text": "An angler casts with a carbon-fibre rod under the line. Explain why he can get an electric shock although the rod does not touch the conductor. Estimate up to what length of air gap breakdown is certain.",
+          "hints": [
+            "What is the voltage between the angler and the conductor when the angler stands on the ground? Does carbon fibre conduct electricity, and what is the potential of the tip of the rod?",
+            "In a uniform field an air gap withstands the voltage $U = E_\\text{max}d$, where $E_\\text{max}$ is the breakdown strength of air. After breakdown the current flows through the arc, the rod and the angler to the ground.",
+            "The task has two voltages: the one between the phase conductors and the voltage of a conductor relative to earth. Choose the one that is across the air gap. Solve $d$ in symbols and calculate. Finally think about whether the result is a safe distance: how do a thin conductor, moisture and dirt affect it?"
+          ],
           "criteria": [
             {
               "text": "Explains that carbon fibre conducts electricity, so the tip of the rod is almost at earth potential when the angler stands on the ground; the whole voltage between the conductor and earth is then across the air gap.",
@@ -536,6 +606,11 @@
           "kind": "word",
           "points": 5,
           "text": "A storm breaks the conductor, and it falls to the ground on the shore meadow. Why must you not go close, and how do you leave the area? Why is a cow in the meadow in greater danger than a person?",
+          "hints": [
+            "Where does the current go when the conductor is on the ground? Is the potential of the ground the same everywhere?",
+            "The ground conducts poorly, so the current causes a voltage drop $U = RI$ in the ground: the potential is highest at the point of contact and decreases with distance. The voltage between two points is the difference of their potentials.",
+            "Compare two cases: feet side by side and feet far apart near the point of contact. What does this tell you about how to leave the area? Then compare the distance between the feet of a person and of a cow, and think about the path of the current through the body when there is a voltage between the feet."
+          ],
           "criteria": [
             {
               "text": "Explains that the current spreads into the ground from the point of contact, and the potential of the ground decreases as the distance increases, so there is a voltage between different points.",
@@ -584,6 +659,11 @@
           "kind": "calc",
           "points": 5,
           "text": "Determine from the table of the report the largest power of the panel and the corresponding efficiency, when the light intensity is the one the report assumes.",
+          "hints": [
+            "Which electrical quantity tells the power of the panel at a given load? Can you find it directly in the table?",
+            "The power is $P = UI$ and the efficiency is $\\eta = \\dfrac{P}{GA}$, where $G$ is the light intensity and $A$ the area of the panel.",
+            "Calculate the power for every row of the table and find the largest. Convert the current to amperes: $210\\,\\text{mA} = 0.210\\,\\text{A}$. Convert the area to square metres: $60\\,\\text{cm}^2 = 0.0060\\,\\text{m}^2$. Use the largest power in the efficiency."
+          ],
           "answer": [
             {
               "name": "P",
@@ -631,6 +711,11 @@
           "kind": "word",
           "points": 5,
           "text": "Assess the conclusion of the report and the reliability of the measurement. Name the shortcomings of the report and justify them.",
+          "hints": [
+            "What does the power $6.10\\,\\text{V} \\cdot 0.210\\,\\text{A}$ of the report actually describe? Are these two readings measured at the same time with the same load? Compare with the powers of the table.",
+            "The power of the panel at a given load is $P = UI$ from the $U$ and $I$ measured at the same moment. The efficiency $\\eta = \\dfrac{P}{GA}$ also needs the light intensity $G$.",
+            "Go through the report point by point: what was measured, what was only assumed and how the result is given. How many significant figures does the result $21.35\\,\\%$ have when the given data are considered? Compare the corrected efficiency with the value of the manufacturer and assess the conclusion."
+          ],
           "criteria": [
             {
               "key": "error_sources",
@@ -659,6 +744,11 @@
           "kind": "word",
           "points": 5,
           "text": "Design an improved experiment that gives the efficiency of the panel reliably. Say what is measured, what is kept constant and how the result is determined.",
+          "hints": [
+            "Which quantities of the report were not measured or are uncertain? What should be measured so that the efficiency can be determined reliably?",
+            "The efficiency is $\\eta = \\dfrac{P}{GA}$. You need the electric power $P = UI$, that is the largest power of the panel, and the light intensity $G$ at the same moment.",
+            "Describe the experiment step by step: how the load is changed, what is measured, what you keep constant, how you repeat the measurement and how you find the largest power. Finally say how you estimate the uncertainty of the result."
+          ],
           "criteria": [
             {
               "text": "Measures the light intensity with an irradiance meter in the plane of the panel at the same time as the electrical quantities, and keeps the panel perpendicular to the rays of the sun.",
@@ -709,6 +799,11 @@
           "kind": "calc",
           "points": 4,
           "text": "At what speed do the ions leave the thruster? How strong is the electric field between the grids?",
+          "hints": [
+            "Which form of energy grows when an ion accelerates in an electric field? Which force does work, and where does the energy come from?",
+            "The work done by the electric field $W = QU$ becomes the kinetic energy $\\tfrac12 mv^2$ of the ion. The charge of the ion is $Q = e$. In a uniform field the voltage is $U = Ed$.",
+            "Solve the speed $v$ in symbols before substituting. Convert the voltage and the distance: $1.10\\,\\text{kV} = 1100\\,\\text{V}$ and $1.0\\,\\text{mm} = 1.0 \\cdot 10^{-3}\\,\\text{m}$. You get the strength of the field from the voltage and the distance."
+          ],
           "answer": {
             "value": 40.21,
             "unit": "km/s",
@@ -742,6 +837,11 @@
           "kind": "calc",
           "points": 4,
           "text": "How large a thrust does the ion beam give the satellite?",
+          "hints": [
+            "How does the satellite gain momentum when the ions leave it? What do you need to know about the ion beam per second?",
+            "The current gives the number of ions per second: $I = Ne$, where $N$ is the number of ions leaving per second. The force is the rate of change of momentum: $F = \\dfrac{\\Delta p}{\\Delta t}$.",
+            "First calculate the number of ions per second and with it the mass flow rate $\\dfrac{\\Delta m}{\\Delta t}$, that is the mass leaving per second. The momentum per second is the mass flow rate times the speed of the ions from part a."
+          ],
           "answer": {
             "value": 87.54,
             "unit": "mN",
@@ -775,6 +875,11 @@
           "kind": "calc",
           "points": 4,
           "text": "The thruster runs continuously for $30$ days. How much does the speed of the satellite change during this time? How much xenon is used?",
+          "hints": [
+            "Which quantity tells how fast the speed of the satellite changes? How long does the thruster run in seconds?",
+            "By Newton's second law $a = \\dfrac{F}{M}$, and the change of speed is $\\Delta v = a\\,\\Delta t$. The xenon used is the mass flow rate times the time.",
+            "Convert the time to seconds: $30 \\cdot 24 \\cdot 3600\\,\\text{s}$. Use the thrust of part b in newtons and the mass flow rate. Finally justify why the mass of the satellite can be taken as constant: compare the xenon used with the mass $650\\,\\text{kg}$."
+          ],
           "answer": [
             {
               "name": "dv",
@@ -817,6 +922,11 @@
           "kind": "word",
           "points": 3,
           "text": "Are the solar panels enough to run the thruster? Explain why the thrust of an ion thruster is small although its power is large, and why it is used anyway.",
+          "hints": [
+            "How large is the electric power of the ion beam, and what must the number be compared with? What limits the thrust when the speed is high?",
+            "The power of the beam is $P = UI$. The kinetic energy of the ions per second is $P = \\tfrac12 \\dfrac{\\Delta m}{\\Delta t}\\,v^2$ and the thrust is $F = \\dfrac{\\Delta m}{\\Delta t}\\,v$.",
+            "Calculate the power of the beam and compare it with the power of the panels. Then divide the last two equations: what does the result tell you about the thrust when the power is given and the speed is high? For what kind of task is a small thrust enough when there are weeks of time?"
+          ],
           "criteria": [
             {
               "text": "Calculates the power of the beam $$\n\\begin{aligned}\nP &= UI \\\\\n&= 1100\\,\\text{V} \\cdot 1.60\\,\\text{A} \\\\\n&\\approx 1.76\\,\\text{kW}\n\\end{aligned}\n$$, which is less than the $2.5\\,\\text{kW}$ of the panels; it is the same as the kinetic energy of the ions per second, $\\tfrac12 \\tfrac{\\Delta m}{\\Delta t} v^2$.",
@@ -862,6 +972,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Determine the strength of the electric field between the plates and state the direction of the field.",
+          "hints": [
+            "What does the graph of the potential look like in a uniform field? What does the steepness of the graph tell you about the field?",
+            "In a uniform field $U = Ed$, so the strength of the field is $E = \\dfrac{\\Delta V}{\\Delta x}$ (absolute value). The field points in the direction in which the potential decreases.",
+            "Read two points of the graph far from each other and convert the distance to metres. Look at whether the potential increases or decreases as $x$ grows, and deduce the direction of the field from that."
+          ],
           "answer": {
             "value": 5.0,
             "unit": "kV/m",
@@ -895,6 +1010,11 @@
           "kind": "calc",
           "points": 4,
           "text": "What is the acceleration of the alpha particle? In which direction does it accelerate?",
+          "hints": [
+            "Which force acts on the particle in the field, and which force can be ignored? Which law links force and acceleration?",
+            "The electric force is $F_E = QE$ and Newton's second law is $F = ma$. The charge of the alpha particle is $Q = 2e$. The force on a positive charge is in the direction of the field.",
+            "First calculate the force from the field of part a and then the acceleration. The unit of the field: $1\\,\\text{V/m} = 1\\,\\text{N/C}$. Deduce the direction from the direction of the field and the sign of the charge."
+          ],
           "answer": {
             "value": 241100000000.0,
             "unit": "m/s²",
@@ -928,6 +1048,11 @@
           "kind": "calc",
           "points": 4,
           "text": "The alpha particle is released from rest at $x = 4.0\\,\\text{cm}$. What is its speed at $x = 2.0\\,\\text{cm}$?",
+          "hints": [
+            "Which force does work when the alpha particle accelerates from rest? Which energy increases and which decreases?",
+            "By the energy principle the work done by the field $W = QU$ becomes the kinetic energy $\\tfrac12 mv^2$. Here $Q = 2e$ and $U$ is the potential difference between the starting point and the end point.",
+            "Read the potential at both points, $x = 4.0\\,\\text{cm}$ and $x = 2.0\\,\\text{cm}$, from the graph and calculate the difference. Then solve $v$ in symbols before substituting."
+          ],
           "answer": {
             "value": 98.2,
             "unit": "km/s",
@@ -961,6 +1086,11 @@
           "kind": "calc",
           "points": 3,
           "text": "The zero level is now chosen at the positive plate instead of the negative plate. What is the potential at $x = 4.0\\,\\text{cm}$ after this choice? Do the strength of the electric field and the speed in part c change?",
+          "hints": [
+            "What does the choice of the zero level change: potentials, potential differences or both? What does the graph look like when the zero level changes?",
+            "The potential $V = \\dfrac{E_\\text{p}}{Q}$ is relative to the chosen zero point, and the voltage is the difference of the potentials of two points, $U = V_A - V_B$. The field follows from $E = \\dfrac{U}{d}$ and the work from $W = QU$.",
+            "Subtract the old potential of the positive plate from each old potential and calculate the result at $x = 4.0\\,\\text{cm}$. Then check how the potential difference between $2.0\\,\\text{cm}$ and $4.0\\,\\text{cm}$ has changed."
+          ],
           "answer": {
             "value": -50.0,
             "unit": "V",
@@ -1012,6 +1142,11 @@
           "kind": "calc",
           "points": 4,
           "text": "What is the current in the circuit?",
+          "hints": [
+            "What is the same in all parts of the circuit when the LED and the resistor are in series? How is the voltage of the source shared between them?",
+            "In series the current is the same and $U = U_\\text{R} + U_\\text{D}$, where $U_\\text{R} = RI$. The voltage $U_\\text{D}$ of the LED is read from the characteristic curve.",
+            "Solve the current $I$ in symbols. In the current range $5\\ldots 30\\,\\text{mA}$ the curve is almost vertical, so you can read $U_\\text{D}$ there although the current is not yet known. Finally check that the result is in this range."
+          ],
           "answer": {
             "value": 17.27,
             "unit": "mA",
@@ -1045,6 +1180,11 @@
           "kind": "calc",
           "points": 4,
           "text": "What is the power of the resistor? What fraction of the electric power of the source becomes internal energy in the resistor?",
+          "hints": [
+            "What do you need for the power of the resistor? How is the total power of the source calculated, and how do you get the fraction from them?",
+            "The power is $P = UI$, so $P_\\text{R} = U_\\text{R}I$. The fraction is the ratio of the powers, $\\dfrac{P_\\text{R}}{P}$. Since the current is the same, what does the ratio reduce to?",
+            "Calculate the voltage of the resistor $U_\\text{R} = U - U_\\text{D}$ and use the current of part a. Finally check: the power of the LED and the power of the resistor together equal the power of the source."
+          ],
           "answer": [
             {
               "name": "P",
@@ -1087,6 +1227,11 @@
           "kind": "calc",
           "points": 3,
           "text": "The resistor is replaced by another one, and the source voltage stays the same. What is the smallest series resistor with which the current does not exceed the permitted current?",
+          "hints": [
+            "What is the largest current that is allowed? Does a small or a large resistor limit the current more?",
+            "The current is $I = \\dfrac{U - U_\\text{D}}{R}$, so the smallest allowed resistance corresponds to the largest allowed current $I_\\text{max}$.",
+            "Solve $R$ in symbols and substitute $I_\\text{max} = 30\\,\\text{mA} = 0.030\\,\\text{A}$ and the voltage of the LED from the curve. In which direction is the result rounded so that the current does not exceed the limit?"
+          ],
           "answer": {
             "value": 126.7,
             "unit": "Ω",
@@ -1115,6 +1260,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Read from the graph the voltage of the LED at the currents $5\\,\\text{mA}$ and $20\\,\\text{mA}$ and calculate the resistance $U_\\text{D}/I$ of the LED at both currents. What do the results tell about the LED and Ohm's law?",
+          "hints": [
+            "What does it mean that a component obeys Ohm's law? What do you need to read from the graph to check this?",
+            "The resistance is calculated at each point as $R = \\dfrac{U_\\text{D}}{I}$. According to Ohm's law the resistance is constant.",
+            "Read the voltage at both currents and convert the currents to amperes before dividing. Compare the results: what happens to the resistance when the current grows? From the results, conclude why a series resistor is needed with an LED."
+          ],
           "answer": [
             {
               "name": "R5",

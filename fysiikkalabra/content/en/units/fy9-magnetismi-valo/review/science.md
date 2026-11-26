@@ -1,7 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: d698c998cbb31e85
-SCOPE: delta (old-content fixes, git diff origin/main)
+CONTENT-HASH: 2cbf331629254180
 
-1. Blocking: none.
-2. Checked: unit.md now states e = vBl with v, B and the rod mutually perpendicular, the correct condition. teacher.md points 20 + 7x15 + 12 = 137 and 'muut kahdeksan' match the 9 tasks; the CERN task is named as the real-data exception.
-3. Language en: the changed numbers and wording were checked to carry the same values as fi.
+Delta review, round 2: the hint edits in `sovella/tasks.json` (diff HEAD~1), compared with fi and the solutions.
+
+## Blocking
+None.
+
+## Polish
+None.
+
+## Checked
+1. s4 a, hint 1: it now names the reflection from the back surface of the drop, the same model as fi and the solution. No answer is given.
+2. s4 c, hint 3: it now compares separately which colour the grating deviates more and which colour the drop refracts more. The physics matches fi; no colour is stated.
+3. s5 c, hint 3: "what condition must hold for a third-order maximum to exist?" leads to $3\lambda/d\le 1$, as in fi and the solution.
+No other hint changed. Hash checked at start and end.
