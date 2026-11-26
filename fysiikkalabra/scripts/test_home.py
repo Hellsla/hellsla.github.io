@@ -305,6 +305,15 @@ for lang in i18n.languages():
     for pg_ in ("kasitteet.html", "nain-opiskelet.html"):
         if (out / pg_).is_file(): expect(f"{lang} {pg_}: links the formula index", 'href="kaavat.html"' in (out / pg_).read_text())
     expect(f"{lang}: no header or menu link to kaavat.html", 'href="kaavat.html"' not in re.search(r'<header class="top">.*?</header>', kp, re.S).group(0))
+    # Simulaatiogalleria (work queue 17f PR 2): every tile opens a built chapter page at its Tutki stage, where the simulation is
+    sp = (out / "simulaatiot.html").read_text() if (out / "simulaatiot.html").is_file() else ""
+    expect(f"{lang}: simulaatiot.html exists", bool(sp))
+    tl = re.findall(r'<li class="live ch-card"[^>]*>.*?href="([^"]+)"', sp, re.S)
+    bad = [h for h in tl if not (out / h.split("#")[0]).is_file() or not h.endswith("#tutki") or 'id="sim-root"' not in (out / h.split("#")[0]).read_text()]
+    expect(f"{lang} simulaatiot.html: every tile opens a built chapter with a simulation at its Tutki stage", tl and not bad, bad[:5])
+    for pg_ in ("kasitteet.html", "nain-opiskelet.html"):
+        if (out / pg_).is_file(): expect(f"{lang} {pg_}: links the simulation gallery", 'href="simulaatiot.html"' in (out / pg_).read_text())
+    expect(f"{lang}: no header or menu link to simulaatiot.html", 'href="simulaatiot.html"' not in re.search(r'<header class="top">.*?</header>', sp, re.S).group(0))
 
 # Käsitetakomo (teacher 2026-11-03, scripts/concept_cards.py): the cards come to the chapter
 import concept_cards
