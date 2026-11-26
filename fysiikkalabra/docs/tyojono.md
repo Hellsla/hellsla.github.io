@@ -147,7 +147,8 @@ Avoin päätös (opettaja): vastauksen tarkistus ja yleisen virheen palaute pitk
 Ohjeet ja päätökset K1–K9: `docs/audits/2026-11-15-kehitys-ilman-kirjautumista.md`. Jokainen osa oma PR, yksin; uudet käyttöliittymätekstit PR:n kuvauksessa. Tallennusavaimia, tiedostomuotoja ja korttien id:itä ei muuteta.
 Osat: 17a verkoton käyttö (service worker, manifesti, moduuli laitteelle), 17b koko työ yhteen tiedostoon, 17c yleisvirheiden tunnistus, 17d ajoitettu kertaus, 17e luokan yhteenveto, 17f hakemistot ja haku.
 Järjestys: 17a PR 1–2, 17b PR 1, 17c PR 1, 17e, 17d PR 1, sitten 17f PR 3, 17a PR 3, 17b PR 2. Osien sisältö: loki §17.
-17c PR 1 (yleinen yleisvirheiden tunnistus, jaettu): tehty PR #881:ssä; neljä uutta tekstiä (fi, fi-easy, en) ja kuvat **opettaja 2026-11-26 tässä sessiossa ("Hyväksyn")**; odottaa yhdistämistä.
+17c PR 1 (yleinen yleisvirheiden tunnistus, jaettu): tehty PR #881:ssä; neljä uutta tekstiä (fi, fi-easy, en) ja kuvat **opettaja 2026-11-26 tässä sessiossa ("Hyväksyn")**; yhdistetty 2026-11-26.
+17e (luokan yhteenveto arviointisivulle, jaettu): PR #882; tekstit (fi, en) ja kuvat (360 px ja leveä) **opettaja 2026-11-26 tässä sessiossa ("hyväksyn")**; pienen ryhmän rivejä ei piiloteta (opettaja: "haluan tietää kenestä on kyse"); valintojen jakaumaa ei tehty (oikea vaihtoehto ei ole `Tehtavat.gs`:ssä eikä valinta taulukossa; mahdollinen oma PR).; odottaa yhdistämistä.
 
 ## 19. 45 soveltavaa aineistotehtävää FY1–FY9: tehty (loki §19)
 Kaikki 45 tehty (FY1–FY9, A1–A5). Avoin vain: opettaja avaa Tukesin kaksi linkkiä (FY6 A3, A4) selaimessa ennen yhdistämistä. Poistetaan, kun se on tehty.

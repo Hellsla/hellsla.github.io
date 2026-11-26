@@ -404,6 +404,15 @@ with sync_playwright() as p:
     resp_before = E("() => JSON.stringify(MOCK.sheet('Lomakevastaukset 1').data)")
     r2 = run_import()
     expect("a re-run adds nothing and changes nothing", r2.get("ok") and r2["ok"]["added"] == 0 and subs() == s, (r2, subs()))
+    # rows imported before the Numerovastaukset column (17e) get it from their file once, nothing else of the row changes
+    num_col = lambda: E("() => MOCK.sheet('RL Palautukset').data.slice(1).map((r) => r[RL_C.numbers])")
+    expect("a new row carries the numbers cell ('{}': read, no typed numbers)", num_col()[0] == "{}", num_col())
+    E("() => { MOCK.sheet('RL Palautukset').data.slice(1).forEach((r) => { r.length = RL_C.numbers; }); }")
+    r2b = run_import()
+    expect("a re-run fills the numbers cell of the accepted rows that lack it and changes nothing else", r2b.get("ok") and r2b["ok"]["added"] == 0 and r2b["ok"]["backfilled"] == 2
+           and [c or "" for c in num_col()] == ["{}", "", "{}"] and subs() == s, (r2b, num_col()))
+    r2c = run_import()
+    expect("and does not read them again", r2c["ok"]["backfilled"] == 0, r2c)
     # same id from another student
     submit(B, va, "2026-11-05T08:10:00Z")
     run_import(); s = subs()

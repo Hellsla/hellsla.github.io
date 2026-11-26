@@ -83,6 +83,18 @@
   table.fp th.theme { text-align: left; padding: 12px 2px 3px; border: 0; border-bottom: 2px solid var(--accent); font: 700 12px/1.15 system-ui, sans-serif; letter-spacing: .03em; text-transform: uppercase; color: var(--accent); background: var(--bg); }
   table.fp td.c { width: 20px; min-width: 20px; height: 20px; }
   table.fp td.c.sa-none { border: 1px solid var(--line); }
+  /* luokan yhteenveto (17e, K8): lukumäärät ilman nimiä; pinottu palkki käyttää itsearvion värejä (a–d, x) */
+  #classSec h3 { font-size: 15px; margin: 14px 0 4px; } #classSec table { max-width: 900px; } #classSec td.n, #classSec th.n { text-align: center; white-space: nowrap; }
+  .stack { display: flex; height: 22px; min-width: 150px; border: 1px solid var(--line); border-radius: 4px; overflow: hidden; background: #fff; }
+  .stack > span.sa { display: flex; align-items: center; justify-content: center; width: auto; height: auto; border-radius: 0; min-width: 0; font: 700 12px/1 system-ui, sans-serif; color: #fff; }
+  .stack > span.sa-c, .stack > span.sa-none { color: var(--ink); }
+  #classSec td.lab { max-width: 34em; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  #classSec td:first-child { white-space: nowrap; }
+  @media (max-width: 640px) {
+    #classSec th, #classSec td { padding: 6px 5px; } #classSec td { font-size: 15px; } .stack { min-width: 100px; }
+    #classGoals, #classGoals tbody, #classGoals tr, #classGoals td { display: block; width: auto; } #classGoals tr { padding: 4px 0; border-bottom: 1px solid var(--line); }
+    #classGoals td { border: 0; padding: 2px 5px; } #classSec td.lab { max-width: none; white-space: normal; }
+  }
 </style>
 </head>
 <body>
@@ -100,6 +112,18 @@
       <h2>Ryhmän sormenjälki</h2>
       <p class="muted sa-legend" id="selfLegend"></p>
       <div id="selfBox"></div>
+    </section>
+    <section id="classSec" hidden>
+      <div class="bar"><h2 class="grow">Luokan yhteenveto</h2><button type="button" id="classAll" aria-pressed="false">Näytä kaikki</button></div>
+      <h3>Tehtävittäin</h3>
+      <p class="muted sa-legend" id="classLegend"></p>
+      <div class="wide"><table id="classTasks"><thead></thead><tbody></tbody></table></div>
+      <div id="classGoalSec"><h3>Tavoitteittain</h3>
+        <p class="muted sa-legend" id="goalLegend"></p>
+        <div class="wide"><table id="classGoals"><tbody></tbody></table></div></div>
+      <div id="classNumSec"><h3>Laskutehtävittäin</h3>
+        <p class="muted sa-legend" id="numLegend"></p>
+        <div class="wide"><table id="classNums"><thead></thead><tbody></tbody></table></div></div>
     </section>
     <div class="bar"><h2 class="grow">Tehtävät</h2><label class="muted"><input type="checkbox" id="onlyOpen"> Vain arvioimattomat</label></div>
     <p class="muted" id="students" hidden></p>
@@ -137,7 +161,7 @@
 (function () {
   'use strict';
   var $ = function (id) { return document.getElementById(id); };
-  var S = { ov: null, task: null, chapter: null, entries: [], idx: 0, ver: 0, nav: false, saving: null, token: 0, cache: {}, onlyOpen: false, hide: false, open: {}, from: '', to: '', sort: { key: 'name', dir: 1 }, ready: false };
+  var S = { cls: null, classAll: false, ov: null, task: null, chapter: null, entries: [], idx: 0, ver: 0, nav: false, saving: null, token: 0, cache: {}, onlyOpen: false, hide: false, open: {}, from: '', to: '', sort: { key: 'name', dir: 1 }, ready: false };
   var call = function (name, arg) {
     return new Promise(function (ok, no) {
       var r = google.script.run.withSuccessHandler(ok).withFailureHandler(function (e) { no(e); });
@@ -161,6 +185,7 @@
       renderTasks(ov);
       renderSummary(ov);
       renderSelf(ov);
+      S.cls = ov.cls || null; renderClass();   // luokan yhteenveto tulee saman kutsun mukana (yksi lukukerta taulukoista)
       $('homeState').textContent = ov.students ? '' : (window.RL_LOCAL ? 'Tuo ryhmän palautukset (zip) ylhäältä: Tuo tiedosto.' : 'Ei palautuksia. RuukkiLabra → Tuo palautukset, sitten Päivitä.');
       var pb = $('problems').querySelector('tbody'); pb.textContent = '';
       ov.problems.forEach(function (p) {
@@ -349,7 +374,80 @@
     });
     wrap.append(t); box.append(wrap);
   }
-  ['from', 'to'].forEach(function (k) { $(k).addEventListener('change', function () { S[k] = $(k).value; if (S.ov) { renderTasks(S.ov); renderSummary(S.ov); renderSelf(S.ov); } }); });
+  ['from', 'to'].forEach(function (k) { $(k).addEventListener('change', function () { S[k] = $(k).value; if (S.ov) { renderTasks(S.ov); renderSummary(S.ov); renderSelf(S.ov); renderClass(); } }); });
+  // Luokan yhteenveto (17e, K8): lukumäärät ilman nimiä ja sähköposteja, joten sen voi näyttää luokalle. Laskenta on Code.gs:n rlClass.
+  // Tehtävät heikoimmasta (pisteiden keskiarvo pienin ensin; arvioimattomat viimeisinä), tavoitteet itsearvion väreillä, laskutehtävät
+  // sivun omalla tarkistussäännöllä (oikein, lähellä, väärin) ja väärien yleisvirheet (virhe.js).
+  var CLASS_CAP = 10, MISTAKES = [['sign', 'etumerkki'], ['magnitude', 'kertaluokka'], ['time', 'aika'], ['kelvin', 'kelvin']];
+  function legend(box, items) {
+    box.textContent = '';
+    items.forEach(function (x) { var it = el('span', 'item'); it.append(el('span', 'sa sa-' + x[0]), document.createTextNode(x[1])); box.append(it); });
+  }
+  // pinottu palkki: osat leveydeltään lukumäärän mukaan, luku osassa; kuvaus saavutettavaksi tekstiksi
+  function stack(parts, label) {
+    var total = parts.reduce(function (n, p) { return n + p[1]; }, 0);
+    if (!total) return el('span', 'muted', '–');
+    var box = el('span', 'stack'); box.setAttribute('role', 'img'); box.setAttribute('aria-label', label || parts.filter(function (p) { return p[1]; }).map(function (p) { return p[2] + ' ' + p[1]; }).join(', '));
+    parts.forEach(function (p) { if (!p[1]) return; var sp = el('span', 'sa sa-' + p[0], String(p[1])); sp.style.flex = p[1] + ' 1 0'; sp.title = p[2] + ': ' + p[1]; box.append(sp); });
+    return box;
+  }
+  function renderClass() {
+    var sec = $('classSec');
+    var chs = S.cls ? S.cls.chapters.filter(function (c) { return c.returned > 0 && inRange(c); }) : [];
+    sec.hidden = !chs.length;
+    if (!chs.length) return;
+    var maxP = S.cls.maxPoints, all = S.classAll;
+    $('classAll').textContent = all ? 'Näytä heikoimmat' : 'Näytä kaikki'; $('classAll').setAttribute('aria-pressed', String(all));
+    // tehtävittäin: heikoin ensin (keskiarvo / enimmäispisteet), arvioimattomat viimeisinä luvun ja tehtävän järjestyksessä
+    var rows = [];
+    chs.forEach(function (c) { c.tasks.forEach(function (t) { if (!t.lesson && t.answered) rows.push({ c: c, t: t, i: rows.length }); }); });   // a task nobody answered tells nothing
+    rows.sort(function (a, b) {
+      var x = a.t.avg === null ? Infinity : a.t.avg, y = b.t.avg === null ? Infinity : b.t.avg;
+      return x === y ? a.i - b.i : x - y;
+    });
+    legend($('classLegend'), [['d', '0 p'], ['c', 'osa pisteistä'], ['a', 'täydet pisteet']]);
+    var head = $('classTasks').querySelector('thead'), body = $('classTasks').querySelector('tbody'), hr = el('tr');
+    head.textContent = ''; body.textContent = '';
+    ['Tehtävä', 'Palauttaneet', 'Vastanneet', 'Pisteet', 'Keskiarvo'].forEach(function (h, k) { hr.append(el('th', k && k !== 3 ? 'n' : null, h)); });
+    head.append(hr);
+    (all ? rows : rows.slice(0, CLASS_CAP)).forEach(function (r) {
+      var tr = el('tr'), pts = el('td'); tr.setAttribute('data-task', r.t.id);
+      pts.append(stack([['d', r.t.dist.zero, '0 p'], ['c', r.t.dist.part, 'osa pisteistä'], ['a', r.t.dist.full, 'täydet pisteet']]));
+      tr.append(el('td', null, 'Tehtävä ' + r.t.number), el('td', 'n', String(r.t.returned)), el('td', 'n', String(r.t.answered)), pts,
+        el('td', 'n', r.t.avg === null ? '–' : num(r.t.avg) + ' / ' + num(maxP)));
+      body.append(tr);
+    });
+    // tavoitteittain: itsearvion tasojen lukumäärät (a–d, x ja ei vastattu), samat värit ja tekstit kuin sormenjäljessä
+    legend($('goalLegend'), ['d', 'c', 'b', 'a', 'x', 'none'].map(function (k) { return [k, SA_TEXT[k]]; }));
+    var gb = $('classGoals').querySelector('tbody'); gb.textContent = '';
+    chs.forEach(function (c) {
+      c.goals.forEach(function (g, j) {
+        var label = (window.RL_LANG === 'en' && g.label_en) || g.label, tr = el('tr'), lab = el('td', 'lab', 'Luku ' + c.number + ' · ' + (j + 1) + '. ' + label), bar = el('td');
+        lab.title = label;
+        bar.append(stack(['d', 'c', 'b', 'a', 'x', 'none'].map(function (k) { return [k, g.n[k], SA_TEXT[k]]; })));
+        tr.append(lab, bar); gb.append(tr);
+      });
+    });
+    $('classGoalSec').hidden = !gb.children.length;
+    // laskutehtävittäin: eniten vääriä ensin
+    var nrows = [];
+    chs.forEach(function (c) { c.tasks.forEach(function (t) { if (t.num) nrows.push({ c: c, t: t, i: nrows.length }); }); });
+    nrows.sort(function (a, b) { var x = a.t.num.wrong / a.t.num.answered, y = b.t.num.wrong / b.t.num.answered; return x === y ? a.i - b.i : y - x; });
+    $('classNumSec').hidden = !nrows.length;
+    if (!nrows.length) return;
+    legend($('numLegend'), [['a', 'Oikein'], ['c', 'Lähellä'], ['d', 'Väärin']]);
+    var nh = $('classNums').querySelector('thead'), nb = $('classNums').querySelector('tbody'), nr = el('tr');
+    nh.textContent = ''; nb.textContent = '';
+    ['Tehtävä', 'Vastanneet', 'Oikein · lähellä · väärin', 'Yleisvirheet'].forEach(function (h, k) { nr.append(el('th', k === 1 ? 'n' : null, h)); });
+    nh.append(nr);
+    (all ? nrows : nrows.slice(0, CLASS_CAP)).forEach(function (r) {
+      var n = r.t.num, tr = el('tr'), bar = el('td'), why = MISTAKES.filter(function (m) { return n.mistakes[m[0]]; }).map(function (m) { return m[1] + ' ' + n.mistakes[m[0]]; }).join(' · ');
+      bar.append(stack([['a', n.ok, 'Oikein'], ['c', n.close, 'Lähellä'], ['d', n.wrong, 'Väärin']]));
+      tr.append(el('td', null, r.t.lesson ? r.t.number : 'Tehtävä ' + r.t.number), el('td', 'n', String(n.answered)), bar, el('td', why ? null : 'muted', why || '–'));
+      nb.append(tr);
+    });
+  }
+  $('classAll').addEventListener('click', function () { S.classAll = !S.classAll; renderClass(); });
   $('refresh').addEventListener('click', loadHome);
   $('onlyOpen').addEventListener('change', function () { S.onlyOpen = $('onlyOpen').checked; if (S.ov) renderTasks(S.ov); });
 
