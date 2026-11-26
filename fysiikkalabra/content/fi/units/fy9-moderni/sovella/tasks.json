@@ -18,6 +18,11 @@
      "kind": "calc",
      "points": 4,
      "text": "Kirjoita cesium-137:n hajoamisen ja barium-137m:n purkautumisen yhtälöt. Kuinka suuri on gammafotonin aallonpituus?",
+     "hints": [
+      "Beeta miinus -hajoamisessa ytimen neutroni muuttuu protoniksi. Mitkä luvut ytimessä muuttuvat, mitkä pysyvät samoina, ja mitä ydin lähettää?",
+      "Kummallakin puolella nuolta massalukujen summan ja varauslukujen summan pitää olla sama. Fotonin energia ja aallonpituus liittyvät toisiinsa: $E = \\dfrac{hc}{\\lambda}$.",
+      "Muunna energia ensin jouleiksi: $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$. Ratkaise sitten aallonpituus $\\lambda$ ja muunna se pikometreiksi, $1\\,\\text{pm} = 10^{-12}\\,\\text{m}$."
+     ],
      "answer": {
       "value": 1.873,
       "unit": "pm",
@@ -46,6 +51,11 @@
      "kind": "calc",
      "points": 4,
      "text": "Kuinka suuri on samojen sienten cesium-137-pitoisuus vuonna 2026?",
+     "hints": [
+      "Mitä jokaiselle cesiumytimelle tapahtuu ajan kuluessa, ja tuleeko uusia ytimiä lisää? Montako puoliintumisaikaa vuodesta 1990 vuoteen 2026 on kulunut?",
+      "Aktiivisuus puolittuu jokaisessa puoliintumisajassa:\n$$\nA = A_0 \\left(\\tfrac{1}{2}\\right)^{t/T_{1/2}}\n$$",
+      "Aika on $t = 2026 - 1990$ vuotta, ja puoliintumisaika on samassa yksikössä, joten muunnoksia ei tarvita. Laske ensin suhde $t/T_{1/2}$ ja sijoita se eksponenttiin."
+     ],
      "answer": {
       "value": 1048,
       "unit": "Bq/kg",
@@ -79,6 +89,11 @@
      "kind": "calc",
      "points": 4,
      "text": "Sienestäjä syö vuoden 2026 aikana $5{,}0\\,\\text{kg}$ tällaisia sieniä. Kuinka suuren efektiivisen annoksen hän saa sienistä? Vertaa annosta suomalaisen keskimääräiseen vuosiannokseen.",
+     "hints": [
+      "Montako becquerelia sienestäjä syö yhteensä? Mitä annoskerroin kertoo?",
+      "Syöty aktiivisuus on pitoisuus kertaa massa, ja annos saadaan annoskertoimella:\n$$\nH = A_m \\cdot m \\cdot k_\\text{annos}\n$$",
+      "Käytä b-kohdan pitoisuutta. Laske annos sieverteinä ja muunna se millisieverteiksi, $1\\,\\text{Sv} = 1000\\,\\text{mSv}$. Vertaa sitä keskimääräiseen vuosiannokseen $5{,}9\\,\\text{mSv}$ osuutena."
+     ],
      "answer": {
       "value": 0.0681,
       "unit": "mSv",
@@ -112,6 +127,11 @@
      "kind": "calc",
      "points": 3,
      "text": "Kuinka monta cesium-137-ydintä on vuonna 2026 yhdessä kilogrammassa sieniä, ja kuinka suuri on niiden massa? Cesium-137-atomin massa on $137\\,\\text{u}$, $1\\,\\text{u} = 1{,}66 \\cdot 10^{-27}\\,\\text{kg}$.",
+     "hints": [
+      "Aktiivisuus kertoo hajoamisten määrän sekunnissa. Mikä yhteys on aktiivisuuden, hajoamisvakion ja ytimien lukumäärän välillä?",
+      "Aktiivisuus ja hajoamisvakio:\n$$\nA = \\lambda N, \\quad \\lambda = \\dfrac{\\ln 2}{T_{1/2}}\n$$\nRatkaise tästä ytimien lukumäärä $N$.",
+      "Muunna puoliintumisaika sekunneiksi: $30{,}1\\,\\text{a} = 30{,}1 \\cdot 3{,}156 \\cdot 10^{7}\\,\\text{s}$. Massa saadaan tulona $m = N\\,m_\\text{a}$, missä $m_\\text{a} = 137\\,\\text{u}$ on yhden atomin massa."
+     ],
      "answer": {
       "value": 0.327,
       "unit": "ng",
@@ -158,6 +178,11 @@
      "kind": "calc",
      "points": 4,
      "text": "Vedyn punainen viiva syntyy siirtymässä tasolta $3$ tasolle $2$. Laske tasojen avulla viivan aallonpituus.",
+     "hints": [
+      "Mitä atomi lähettää, kun elektroni siirtyy ylemmältä tasolta alemmalle? Mistä fotonin energia tulee?",
+      "Fotonin energia on tasojen energioiden erotus, $E_\\text{f} = E_3 - E_2$, ja fotonin energia ja aallonpituus liittyvät toisiinsa: $E_\\text{f} = \\dfrac{hc}{\\lambda}$.",
+      "Laske tasojen energiat ja niiden erotus elektronivoltteina. Muunna erotus jouleiksi, $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$, ennen kuin ratkaiset aallonpituuden $\\lambda$."
+     ],
      "answer": {
       "value": 656.5,
       "unit": "nm",
@@ -191,6 +216,11 @@
      "kind": "calc",
      "points": 5,
      "text": "Kuinka suurella nopeudella galaksi etääntyy meistä, ja kuinka kaukana se on?",
+     "hints": [
+      "Vertaa havaittua aallonpituutta laboratorioarvoon. Mikä suure kertoo, kuinka paljon aallonpituus on muuttunut suhteessa alkuperäiseen, ja miten se liittyy galaksin liikkeeseen?",
+      "Punasiirtymä $z$, etääntymisnopeus pienellä $z$:n arvolla ja Hubblen laki:\n$$\n\\begin{aligned}z &= \\dfrac{\\lambda - \\lambda_0}{\\lambda_0} \\\\ v &= cz \\\\ v &= H_0\\,d\\end{aligned}\n$$",
+      "Laske ensin punasiirtymä $z$ aallonpituuksien erotuksesta ja jaa se laboratorioarvolla. Käytä valon nopeutta yksikössä $\\text{km/s}$, jolloin saat nopeuden suoraan yksikössä $\\text{km/s}$. Ratkaise lopuksi etäisyys $d$."
+     ],
      "answer": [
       {
        "name": "v",
@@ -233,6 +263,11 @@
      "kind": "calc",
      "points": 3,
      "text": "Millä aallonpituudella vedyn syaani viiva näkyy galaksin spektrissä?",
+     "hints": [
+      "Mikä suure kuvaa, kuinka paljon aallonpituus on venynyt? Riippuuko se siitä, mitä spektrin viivaa katsotaan?",
+      "Punasiirtymä on $z = \\dfrac{\\lambda - \\lambda_0}{\\lambda_0}$. Käytä b-kohdan $z$:ta ja ratkaise yhtälöstä havaittu aallonpituus $\\lambda$.",
+      "Syaanin viivan laboratorioarvo on $486{,}1\\,\\text{nm}$. Aallonpituus pysyy nanometreinä, joten muunnoksia ei tarvita."
+     ],
      "answer": {
       "value": 497.6,
       "unit": "nm",
@@ -261,6 +296,11 @@
      "kind": "word",
      "points": 3,
      "text": "Selitä, miksi galaksin spektrissä vedyn viivat ovat tummia eivätkä kirkkaita.",
+     "hints": [
+      "Millainen spektri on valolla, ennen kuin se kulkee tähden uloimpien kaasukerrosten läpi? Mitä kaasukerroksessa tapahtuu valolle?",
+      "Mieti, minkä energisen fotonin vetyatomi voi absorboida. Mihin energiaan viivan paikka spektrissä liittyy (a-kohta)?",
+      "Atomi lähettää absorboimansa energian myöhemmin uudelleen. Mihin suuntiin? Vertaa, kuinka paljon valoa tulee meidän suuntaamme viivan kohdalla ja viereisillä aallonpituuksilla."
+     ],
      "criteria": [
       {
        "text": "Selittää, että tähtien kuuma pinta lähettää jatkuvan spektrin, ja tähtien uloimmat kaasukerrokset ovat sen ja havaitsijan välissä.",
@@ -304,6 +344,11 @@
      "kind": "graph",
      "points": 4,
      "text": "Esitä pysäytysjännite valon taajuuden funktiona kuvaajana.",
+     "hints": [
+      "Taulukossa on aallonpituuksia, mutta kuvaajan pitää olla taajuuden funktio. Entä viimeinen rivi: mitä pysäytysjännitteelle voi sanoa, kun virtaa ei synny?",
+      "Aallonpituudesta saadaan taajuus yhtälöllä $f = \\dfrac{c}{\\lambda}$. Pysäytysjännite $U$ on pystyakselilla ja taajuus $f$ vaaka-akselilla.",
+      "Muunna aallonpituus metreiksi, esimerkiksi $365\\,\\text{nm} = 365 \\cdot 10^{-9}\\,\\text{m}$. Valitse vaaka-akselin yksiköksi $10^{14}\\,\\text{Hz}$ ja aloita asteikko niin, että pisteet täyttävät kuvaajan."
+     ],
      "criteria": [
       {
        "key": "graph_points",
@@ -327,6 +372,11 @@
      "kind": "graph",
      "points": 5,
      "text": "Perustele, miksi pisteisiin sopii suora, ja sovita pisteisiin suora. Jatka suoraa niin, että se leikkaa molemmat akselit.",
+     "hints": [
+      "Kun valovirta juuri lakkaa, mitä nopeimman elektronin liike-energialle on tapahtunut sähkökentässä? Mikä energia on säilynyt?",
+      "Yhdistä kaksi yhtälöä: valosähköinen yhtälö, jossa fotonin energia $hf$ jakautuu irrotustyöhön $W$ ja liike-energiaan, sekä pysäytysjännitteen ehto. Minkä muotoinen funktio $U$ on taajuuden $f$ suhteen?",
+      "Piirrä suora pisteiden lomitse niin, että pisteitä on sen molemmin puolin. Jatka suoraa katkoviivana vaaka-akselin yli ja pystyakselille asti, jossa $f = 0$."
+     ],
      "criteria": [
       {
        "text": "Perustelee energian säilymisellä: nopeimman elektronin liike-energia $E_\\text{k,max}$ kuluu kokonaan sähkökentän tekemään jarruttavaan työhön, joten $eU = E_\\text{k,max}$.",
@@ -350,6 +400,11 @@
      "kind": "calc",
      "points": 6,
      "text": "Määritä kuvaajasta Planckin vakio. Vertaa tulosta arvoon $6{,}626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$.",
+     "hints": [
+      "Katso b-kohdan yhtälöä, jossa $U$ on taajuuden funktio. Mikä sen kertoimista sisältää Planckin vakion?",
+      "Suoran kulmakerroin lasketaan kahdesta suoralta luetusta pisteestä: $k = \\dfrac{\\Delta U}{\\Delta f}$. Yhdistä se b-kohdan yhtälöön ja ratkaise $h$.",
+      "Lue kaksi kaukana toisistaan olevaa pistettä sovitetulta suoralta, ei mittauspisteistä. Yksikkö: $1\\,\\text{C} \\cdot 1\\,\\text{V} \\cdot 1\\,\\text{s} = 1\\,\\text{J}\\,\\text{s}$. Laske lopuksi, kuinka monta prosenttia tulos poikkeaa vertailuarvosta."
+     ],
      "answer": {
       "value": 6.61e-34,
       "unit": "J s",
@@ -388,6 +443,11 @@
      "kind": "calc",
      "points": 5,
      "text": "Määritä kuvaajasta kaliumin irrotustyö elektronivoltteina ja rajataajuus. Selitä, miksi aallonpituudella $590\\,\\text{nm}$ valovirtaa ei synny, ja muuttuisiko tilanne, jos $590\\,\\text{nm}$:n valoa olisi kymmenen kertaa enemmän.",
+     "hints": [
+      "Mitä suoran ja pystyakselin leikkauskohta kertoo, ja mitä suoran ja vaaka-akselin leikkauskohta? Mikä on $U$ rajataajuudella?",
+      "Vakiotermi on $-\\dfrac{W}{e}$, ja rajataajuudella fotonin energia riittää juuri irrotustyöhön: $hf_0 = W$.",
+      "Laske $590\\,\\text{nm}$:n valon taajuus, $f = \\dfrac{c}{\\lambda}$, ja vertaa sitä rajataajuuteen. Mieti sitten, mitä valon intensiteetin kymmenkertaistaminen muuttaa: yhden fotonin energiaa vai fotonien määrää?"
+     ],
      "answer": [
       {
        "name": "W",
@@ -452,6 +512,11 @@
      "kind": "word",
      "points": 5,
      "text": "Arvioi väite 1. Selitä, miten radon aiheuttaa säteilyannoksen.",
+     "hints": [
+      "Pitääkö väitteen perustelu paikkansa, kun säteilylähde on kehon ulkopuolella? Miten radon pääsee ihmisen kehoon?",
+      "Mieti alfahiukkasen ominaisuuksia: massa, varaus ja se, kuinka tiheästi se ionisoi. Mihin sen energia siirtyy, kun hiukkanen pysähtyy kehon sisällä?",
+      "Annos riippuu myös säteilyn painotuskertoimesta. Mikä on alfasäteilyn painotuskerroin verrattuna gamma- ja beetasäteilyyn, ja mitä se kertoo ekvivalenttiannoksesta?"
+     ],
      "criteria": [
       {
        "text": "Toteaa, että alfasäteily ei läpäise ihoa, joten ulkoinen alfasäteily ei ole vaarallista; väitteen perustelu pitää siltä osin paikkansa.",
@@ -480,6 +545,11 @@
      "kind": "word",
      "points": 5,
      "text": "Arvioi väite 2. Kuinka suuri osa huoneessa olevista radonytimistä on mallin mukaan hajoamatta kuukauden kuluttua, ja häviääkö radon silti asunnosta?",
+     "hints": [
+      "Mikä osuus ytimistä on jäljellä, kun on kulunut tietty määrä puoliintumisaikoja? Entä koskeeko laskelma ytimiä, joita huoneeseen tulee myöhemmin?",
+      "Jäljellä oleva osuus noudattaa hajoamislakia:\n$$\n\\dfrac{N}{N_0} = \\left(\\tfrac{1}{2}\\right)^{t/T_{1/2}}\n$$",
+      "Kuukausi on noin $30\\,\\text{vrk}$ ja puoliintumisaika $3{,}8\\,\\text{vrk}$. Laske ensin, montako puoliintumisaikaa kuukaudessa on. Mieti sitten, mistä radon alun perin tulee ja miten se pääsee asuntoon."
+     ],
      "criteria": [
       {
        "key": "calculation",
@@ -508,6 +578,11 @@
      "kind": "word",
      "points": 5,
      "text": "Arvioi väite 3.",
+     "hints": [
+      "Mitä ionisoiva säteily tekee kudokselle kuvauksen aikana? Mitä tapahtuu sen jälkeen, kun röntgenlaite on sammutettu?",
+      "Erota toisistaan radioaktiivisuus (epästabiilien ytimien ominaisuus) ja säteilyn aiheuttama ionisaatio (atomien elektronit). Kumpaan röntgenfotoni vaikuttaa?",
+      "Mitä röntgenfotoni, jonka energia on noin $60\\,\\text{keV}$, voi tehdä atomille ja mitä ytimelle? Mieti sitten, milloin ihminen todella on säteilylähde, esimerkiksi isotooppitutkimuksessa."
+     ],
      "criteria": [
       {
        "text": "Selittää, että röntgensäteily on fotonisäteilyä, joka joko kulkee kudoksen läpi tai absorboituu ja ionisoi atomeja kuvauksen aikana.",
@@ -556,6 +631,11 @@
      "kind": "calc",
      "points": 5,
      "text": "Määritä puoliintumisaika aineistosta niin, että taustasäteily otetaan huomioon.",
+     "hints": [
+      "GM-putki laskee myös taustasäteilyn pulssit. Mitä jokaiselle lukemalle pitää tehdä, ennen kuin etsit puoliintumisaikaa?",
+      "Näytteen pulssimäärä noudattaa hajoamislakia, joten $\\ln N$ on ajan suora. Puoliintumisaika saadaan hajoamisvakiosta:\n$$\nN = N_0\\,e^{-\\lambda t}, \\quad T_{1/2} = \\dfrac{\\ln 2}{\\lambda}\n$$",
+      "Laske $\\ln N$ jokaiselle taustasta vähennetylle lukemalle ja piirrä pisteet $(t,\\ \\ln N)$. Suoran kulmakerroin on $-\\lambda$. Sovita suora kaikkiin pisteisiin, älä vain ensimmäiseen ja viimeiseen."
+     ],
      "answer": {
       "value": 153,
       "unit": "s",
@@ -594,6 +674,11 @@
      "kind": "word",
      "points": 5,
      "text": "Arvioi ryhmän johtopäätös.",
+     "hints": [
+      "Tarkista ryhmän päättelyn jokainen osa erikseen: puoliintumisajan lukeminen, taustan käsittely ja selitys. Mitkä niistä pitävät paikkansa?",
+      "Mieti, onko ytimellä ikää: riippuuko yhden barium-137m-ytimen hajoamistodennäköisyys siitä, kuinka kauan se on ollut olemassa?",
+      "Vertaa taustaa, $5$ pulssia $10\\,\\text{s}$:ssa, alkulukemaan $398$ ja loppulukemaan $104$. Onko tausta merkityksetön kaikilla mittaushetkillä? Mieti myös, mitä yksi pistepari kertoo satunnaisvaihtelusta."
+     ],
      "criteria": [
       {
        "text": "Toteaa, että selitys on väärä: ytimellä ei ole ikää, vaan jokaisella barium-137m-ytimellä on sama hajoamistodennäköisyys sekunnissa, joten seisominen ei muuta puoliintumisaikaa.",
@@ -622,6 +707,11 @@
      "kind": "word",
      "points": 5,
      "text": "Suunnittele, miten mittausta ja tulosten käsittelyä parannetaan.",
+     "hints": [
+      "Mikä mittauksessa ja tulosten käsittelyssä aiheutti eniten epävarmuutta tai virhettä? Miten kukin ongelma voitaisiin korjata?",
+      "Jaa parannukset kahteen ryhmään: mitä mitataan eri tavalla ja miten tulokset käsitellään. Kumpi vaikuttaa tulokseen enemmän?",
+      "Kun pulssimäärä on pieni, satunnaisvaihtelu on suhteessa suurta. Millä kahdella tavalla sen vaikutusta voi pienentää? Miten näet, kuinka suuri hajonta tuloksessa on?"
+     ],
      "criteria": [
       {
        "text": "Mittaa taustan pitkään, esimerkiksi $10\\,\\text{min}$, ennen mittausta tai sen jälkeen ja vähentää sen jokaisesta lukemasta samassa yksikössä.",
@@ -671,6 +761,11 @@
      "kind": "calc",
      "points": 4,
      "text": "Kuinka suuri on voimalan hyötysuhde, ja kuinka monta fissiota reaktorissa tapahtuu sekunnissa?",
+     "hints": [
+      "Mikä osa lämpötehosta muuttuu sähköksi? Mikä yhteys on lämpötehon ja yhden fission energian välillä, kun fissioita tapahtuu $n$ sekunnissa?",
+      "Hyötysuhde ja lämpöteho:\n$$\n\\eta = \\dfrac{P_\\text{s}}{P_\\text{l}}, \\quad P_\\text{l} = nE_\\text{f}\n$$",
+      "Muunna fission energia jouleiksi: $200\\,\\text{MeV} = 2{,}00 \\cdot 10^{8}\\,\\text{eV}$ ja $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$. Lämpöteho on $4300\\,\\text{MW} = 4300 \\cdot 10^{6}\\,\\dfrac{\\text{J}}{\\text{s}}$."
+     ],
      "answer": [
       {
        "name": "eta",
@@ -708,6 +803,11 @@
      "kind": "calc",
      "points": 4,
      "text": "Kuinka monta kilogrammaa uraani-235:tä fissioituu vuodessa? Kuinka paljon massaa muuttuu samassa ajassa energiaksi?",
+     "hints": [
+      "Kuinka monta fissiota vuodessa tapahtuu? Mikä on yhden uraani-235-atomin massa?",
+      "Fissioituneen uraanin massa on $m = n t\\,m_\\text{U}$. Energiaksi muuttuva massa saadaan yhtälöstä $E = \\Delta m\\,c^2$, ja energia on $E = P_\\text{l}\\,t$.",
+      "Muunna $m_\\text{U} = 235\\,\\text{u} = 235 \\cdot 1{,}661 \\cdot 10^{-27}\\,\\text{kg}$ ja $t = 1\\,\\text{a} = 3{,}156 \\cdot 10^{7}\\,\\text{s}$. Käytä a-kohdan fissiomäärää $n$. Vertaa lopuksi $\\Delta m$ fissioituneen uraanin massaan: kuinka suuri osa massasta muuttuu energiaksi?"
+     ],
      "answer": [
       {
        "name": "m",
@@ -750,6 +850,11 @@
      "kind": "calc",
      "points": 4,
      "text": "Kuinka monta kilogrammaa merivettä lauhduttimen läpi on pumpattava sekunnissa?",
+     "hints": [
+      "Minne lämpöteho, joka ei muutu sähköksi, päätyy? Kuinka suuri se on?",
+      "Energia säilyy, joten lauhduttimeen siirtyvä teho lämmittää merivettä:\n$$\nP_\\text{l} - P_\\text{s} = \\dfrac{Q}{t}, \\quad Q = c_\\text{v}\\,m\\,\\Delta T\n$$",
+      "Laske ensin lauhduttimeen siirtyvä teho $P_\\text{l} - P_\\text{s}$ ja muunna se watteiksi. Ratkaise sitten massavirta $\\dfrac{m}{t}$ symbolein ennen lukujen sijoittamista."
+     ],
      "answer": {
       "value": 58580,
       "unit": "kg/s",
@@ -783,6 +888,11 @@
      "kind": "calc",
      "points": 3,
      "text": "Kuinka monta tonnia kivihiiltä hiilivoimala polttaisi vuodessa, jos se tuottaisi saman sähköenergian?",
+     "hints": [
+      "Kuinka paljon sähköenergiaa voimala tuottaa vuodessa? Kuinka paljon lämpöenergiaa hiilivoimalan pitää polttaa sen tuottamiseen?",
+      "Sähköenergia on teho kertaa aika, ja hiilivoimalan hyötysuhde yhdistää sen hiilen lämpöarvoon $H$:\n$$\nE_\\text{s} = P_\\text{s}\\,t, \\quad \\eta_\\text{h} H m_\\text{h} = E_\\text{s}\n$$",
+      "Muunna $1600\\,\\text{MW} = 1600 \\cdot 10^{6}\\,\\text{W}$ ja $24\\,\\dfrac{\\text{MJ}}{\\text{kg}} = 24 \\cdot 10^{6}\\,\\dfrac{\\text{J}}{\\text{kg}}$. Muunna vastaus lopuksi kilogrammoista tonneiksi, $1\\,\\text{t} = 1000\\,\\text{kg}$."
+     ],
      "answer": {
       "value": 5260000.0,
       "unit": "t",
@@ -831,6 +941,11 @@
      "kind": "word",
      "points": 2,
      "text": "Selvitä aineistosta, miten fuusioreaktio saatiin aikaan. Kumpi aineiston energioista vapautui fuusioreaktiossa, ja mitä toinen energia tarkoittaa?",
+     "hints": [
+      "Etsi artikkelista kohta, jossa kerrotaan, miten fuusio saatiin aikaan. Mitä kahta energialukua aineistossa mainitaan ja mihin kumpikin liittyy?",
+      "Kumpi energia on syöte ja kumpi tulos? Mieti, kumman suuruus riippuu siitä, että fuusioreaktio todella tapahtuu.",
+      "Lue aineistosta kohta, joka kertoo, mitä toinen energia sisältää tai jättää pois. Kuuluuko siihen laserilaitteiston toimintaan kulunut energia?"
+     ],
      "criteria": [
       {
        "text": "Kertoo aineiston perusteella, että suurten laserien säteet kohdistettiin pisteeseen, jossa polttoaine oli, ja että fuusiossa ytimet yhdistyvät raskaammiksi ytimiksi: syntyy heliumia ja energiaa vapautuu.",
@@ -849,6 +964,11 @@
      "kind": "calc",
      "points": 3,
      "text": "Laske energioiden suhde ja erotus. Mitä ne kertovat kokeen tuloksesta?",
+     "hints": [
+      "Kumpi energioista on suurempi? Kuinka monta kertaa suurempi, ja kuinka paljon suurempi?",
+      "Energioiden suhde ja erotus, kun $E_\\text{f}$ on fuusiossa vapautunut ja $E_\\text{l}$ laserien polttoaineeseen tuoma energia:\n$$\n\\dfrac{E_\\text{f}}{E_\\text{l}}, \\quad \\Delta E = E_\\text{f} - E_\\text{l}\n$$",
+      "Molemmat energiat ovat megajouleina, joten muunnoksia ei tarvita ja suhde on yksikötön. Mieti lopuksi, minkä energiataseesta tulos kertoo."
+     ],
      "answer": [
       {
        "name": "ratio",
@@ -886,6 +1006,11 @@
      "kind": "calc",
      "points": 4,
      "text": "Tarkista artikkelin vertailu laskemalla. Kuinka suuren vesimäärän energia $3{,}15\\,\\text{MJ}$ lämmittää lämpötilasta $20\\,{}^\\circ\\text{C}$ kiehumispisteeseen $100\\,{}^\\circ\\text{C}$? Pitääkö vertailu paikkansa?",
+     "hints": [
+      "Mikä yhtälö antaa lämpömäärän, jolla vesi lämpenee? Mikä suure siinä on tuntematon?",
+      "Veden lämmittämiseen tarvittava lämpömäärä on $Q = c_\\text{v}\\,m\\,\\Delta T$. Ratkaise siitä veden massa $m$.",
+      "Muunna $3{,}15\\,\\text{MJ} = 3{,}15 \\cdot 10^{6}\\,\\text{J}$ ja $4{,}19\\,\\dfrac{\\text{kJ}}{\\text{kg}\\cdot\\text{K}} = 4190\\,\\dfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$. Lämpötilan muutos on $\\Delta T = 100\\,{}^\\circ\\text{C} - 20\\,{}^\\circ\\text{C}$. Vertaa tulosta artikkelin ”muutama kattilallinen” -arvioon."
+     ],
      "answer": {
       "value": 9.4,
       "unit": "kg",
@@ -919,6 +1044,11 @@
      "kind": "word",
      "points": 3,
      "text": "Selitä, miksi tulos ei osoita, että koko koelaitteisto olisi tuottanut enemmän energiaa kuin se kulutti. Käytä perusteluna aineistoa ja laboratorion ilmoittamaa sähköenergiaa. Arvioi myös, kuinka paljon sähköenergiaa vapautuneesta energiasta saataisiin lämpövoimalan hyötysuhteella.",
+     "hints": [
+      "Mitä kaikkea energialuvussa $2{,}05\\,\\text{MJ}$ on mukana? Minkä energian laserilaitteisto otti sähköverkosta?",
+      "Vertaa fuusiossa vapautunutta energiaa $3{,}15\\,\\text{MJ}$ verkosta otettuun energiaan $300\\,\\text{MJ}$. Mitä systeemiä kumpikin energia koskee?",
+      "Lämpövoimala muuttaa sähköksi noin kolmasosan saamastaan lämmöstä. Laske, kuinka paljon sähköä $3{,}15\\,\\text{MJ}$:sta saataisiin, ja vertaa sitä $300\\,\\text{MJ}$:iin."
+     ],
      "criteria": [
       {
        "text": "Rajaa systeemin: vertailu $3{,}15\\,\\text{MJ} > 2{,}05\\,\\text{MJ}$ koskee vain polttoainetta. Aineiston mukaan laserien toimintaan kulunut energia ei ole luvussa mukana.",
@@ -942,6 +1072,11 @@
      "kind": "word",
      "points": 3,
      "text": "Toinen verkkojulkaisu voisi otsikoida saman kokeen näin: ”Fuusiovoimala tuottaa jo enemmän energiaa kuin kuluttaa.” Otsikko on keksitty tätä tehtävää varten. Mitä otsikossa pitäisi täsmentää? Käytä esimerkkinä artikkelin omaa korjausmerkintää. Selitä myös, miksi kokeen tulos ei riko energian säilymistä.",
+     "hints": [
+      "Mitä otsikko antaa ymmärtää voimalasta ja koko laitteiston energiataseesta? Pitääkö kumpikin paikkansa kokeen perusteella?",
+      "Katso artikkelin korjausmerkintä: mitä siinä muutettiin ja miksi? Mitä sanoja tai väitettä otsikossa kannattaisi tarkentaa samasta syystä?",
+      "Energia ei synny tyhjästä. Mikä suure ytimissä muuttuu fuusiossa, ja mikä yhtälö yhdistää sen energiaan?"
+     ],
      "criteria": [
       {
        "text": "Täsmentää, että kyseessä on yksittäinen laboratoriokoe eikä voimala. Perusteluksi käy esimerkiksi, että sähköä ei tuotettu tai että aineiston mukaan sähköverkkoon kytketty fuusiovoimala on vielä vuosikymmenten päässä.",
@@ -986,6 +1121,11 @@
      "kind": "calc",
      "points": 3,
      "text": "Määritä kuvaajan avulla betonin vaimennuskerroin $\\mu$.",
+     "hints": [
+      "Lue kuvaajalta annosnopeus ilman seinää ja yksi toinen piste kaukana alkupisteestä. Miten eksponentiaalinen malli ratkaistaan tuntemattoman $\\mu$:n suhteen?",
+      "Malli on $\\dot{H} = \\dot{H}_0\\,e^{-\\mu d}$, ja $\\dot{H}_0$ on annosnopeus kohdassa $d = 0$. Ratkaise $\\mu$ ottamalla yhtälön molemmilta puolilta luonnollinen logaritmi.",
+      "Laske suhde $\\dot{H}_0 / \\dot{H}$ valitsemastasi pisteestä ennen logaritmin ottamista. Paksuus on senttimetreinä ja annosnopeudet samassa yksikössä, joten $\\mu$ saa yksikön $1/\\text{cm}$."
+     ],
      "answer": {
       "value": 0.139,
       "unit": "1/cm",
@@ -1014,6 +1154,11 @@
      "kind": "calc",
      "points": 3,
      "text": "Kuinka suuri on annosnopeus käytävässä seinän takana?",
+     "hints": [
+      "Mikä malli antaa annosnopeuden seinän paksuuden funktiona? Mitkä arvot sinulla on jo?",
+      "Käytä mallia $\\dot{H} = \\dot{H}_0\\,e^{-\\mu d}$, missä $\\dot{H}_0$ on annosnopeus ilman seinää ja $d = 18\\,\\text{cm}$.",
+      "Laske eksponentti $\\mu d$ ensin: se on yksikötön. Käytä a-kohdan vaimennuskerrointa mahdollisimman tarkasti, älä pyöristettyä arvoa."
+     ],
      "answer": {
       "value": 6.6,
       "unit": "µSv/h",
@@ -1042,6 +1187,11 @@
      "kind": "calc",
      "points": 3,
      "text": "Kuinka suuren annoksen henkilö saa käytävässä vuodessa? Ylittyykö enimmäisannos?",
+     "hints": [
+      "Kuinka monta tuntia henkilö oleskelee käytävässä vuodessa? Mikä yhteys on annosnopeuden, ajan ja annoksen välillä?",
+      "Annosnopeus on vakio, joten annos on annosnopeus kertaa oleskeluaika: $H = \\dot{H}\\,t$.",
+      "Oleskeluaika on $t = 1{,}5\\,\\text{h} \\cdot 220$. Muunna annos mikrosieverteistä millisieverteiksi, $1\\,\\text{mSv} = 1000\\,\\mu\\text{Sv}$, ja vertaa sitä enimmäisannokseen $1{,}0\\,\\text{mSv}$."
+     ],
      "answer": {
       "value": 2.18,
       "unit": "mSv",
@@ -1070,6 +1220,11 @@
      "kind": "calc",
      "points": 4,
      "text": "Kuinka paksu seinän pitää vähintään olla, jotta vuosiannos ei ylitä enimmäisannosta? Mainitse myös yksi mallin oletus, joka voi tehdä tuloksesta liian pienen, ja sen vaikutus.",
+     "hints": [
+      "Kuinka suuri annosnopeus käytävässä saa enintään olla, kun vuoden oleskeluaika tunnetaan? Miten siitä saadaan seinän paksuus?",
+      "Annosnopeuden raja on $\\dot{H}_\\text{max} = \\dfrac{H_\\text{max}}{t}$. Kirjoita ehto $\\dot{H}_0\\,e^{-\\mu d} = \\dot{H}_\\text{max}$ ja ratkaise siitä $d$.",
+      "Muunna $1{,}0\\,\\text{mSv} = 1000\\,\\mu\\text{Sv}$, jotta yksiköt täsmäävät. Mieti sitten, mitä malli jättää huomiotta ja miten se muuttaisi tulosta."
+     ],
      "answer": {
       "value": 23.6,
       "unit": "cm",
@@ -1124,6 +1279,11 @@
      "kind": "calc",
      "points": 3,
      "text": "Määritä kuvaajan avulla Hubblen vakio $H_0$.",
+     "hints": [
+      "Mikä kuvaajan suoran ominaisuus on Hubblen vakio? Missä pisteessä suora kulkee?",
+      "Hubblen lain $v = H_0\\,d$ mukaan $H_0 = \\dfrac{v}{d}$. Suoralta luettujen kahden pisteen avulla:\n$$\nH_0 = \\dfrac{v_2 - v_1}{d_2 - d_1}\n$$",
+      "Valitse suoralta ruudukon piste, jonka arvot voi lukea tarkasti ja joka on kaukana origosta. Lue sekä $v$ että $d$. Älä käytä mittauspistettä, joka ei ole suoralla."
+     ],
      "answer": {
       "value": 72,
       "unit": "km/s/Mpc",
@@ -1152,6 +1312,11 @@
      "kind": "calc",
      "points": 3,
      "text": "Kuinka kaukana uusi galaksi on?",
+     "hints": [
+      "Mikä laki yhdistää etääntymisnopeuden ja etäisyyden? Minkä a-kohdan tuloksen tarvitset?",
+      "Hubblen laki $v = H_0\\,d$, josta ratkaistaan $d = \\dfrac{v}{H_0}$.",
+      "Käytä a-kohdan Hubblen vakiota ja nopeutta $8400\\,\\text{km/s}$. Tarkista, että yksiköt $\\text{km/s}$ supistuvat ja jäljelle jää $\\text{Mpc}$."
+     ],
      "answer": {
       "value": 117,
       "unit": "Mpc",
@@ -1180,6 +1345,11 @@
      "kind": "calc",
      "points": 4,
      "text": "Arvioi, kuinka kauan sitten galaksien väliset etäisyydet olivat nollia, kun oletetaan, että etäisyydet ovat kasvaneet koko ajan samalla nopeudella. Anna vastaus vuosina.",
+     "hints": [
+      "Jos etäisyys kasvaa koko ajan samalla nopeudella, kuinka kauan siltä kuluu, että etäisyys kasvaa nollasta nykyiseen arvoonsa?",
+      "Aika on matka jaettuna nopeudella, ja Hubblen lain mukaan:\n$$\nt = \\dfrac{d}{v} = \\dfrac{1}{H_0}\n$$",
+      "Muunna $H_0$ yksikköön $1/\\text{s}$: $1\\,\\text{Mpc} = 3{,}086 \\cdot 10^{19}\\,\\text{km}$, jolloin $\\text{km}$ supistuu. Muunna aika lopuksi vuosiksi, $1\\,\\text{a} = 3{,}156 \\cdot 10^{7}\\,\\text{s}$."
+     ],
      "answer": {
       "value": 13580000000,
       "unit": "a",
@@ -1213,6 +1383,11 @@
      "kind": "word",
      "points": 3,
      "text": "Selitä, miksi havainto, että kaikki kaukaiset galaksit etääntyvät meistä, ei tarkoita, että Linnunrata olisi maailmankaikkeuden keskipiste.",
+     "hints": [
+      "Mitä kuvaajan suoruus kertoo siitä, miten nopeus riippuu etäisyydestä? Mitä havaitsisit, jos katsoisit jostakin toisesta galaksista?",
+      "Kuvittele ilmapallo, jonka pintaan on piirretty pisteitä, ja täytä sitä ilmalla. Miltä mikä tahansa piste näkee muut pisteet?",
+      "Liikkuvatko galaksit avaruuden läpi vai venyykö avaruus niiden välillä? Onko ilmapallon pinnalla keskipistettä, josta laajeneminen alkaa?"
+     ],
      "criteria": [
       {
        "text": "Selittää, että kuvaajan mukaan nopeus on suoraan verrannollinen etäisyyteen, ja sama laki havaittaisiin mistä tahansa galaksista katsoen: jokainen galaksi näkee muiden etääntyvän itsestään.",
