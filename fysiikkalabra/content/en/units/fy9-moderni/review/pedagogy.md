@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: aa31f84b055a8af9
+CONTENT-HASH: e80d32c641f41c3c
 
-Read: all 105 hints of 35 parts in en (and compared with the other two languages), each next to the part text and rubric.
+Read: all 105 hints of 35 parts in en, each next to the part text, compared with fi and fi-easy.
+Round 1 notes resolved: s9 c h2 now asks what d/v is without giving 1/H_0; s2 c h3 is an intermediate step (stretch factor 1+z); s7 d h3 asks for the share instead of stating it; single-question hint 1 applied to s1 a/b, s2 b, s7 a.
 
-Blocking: none. The ladder holds in every part; no hint states a final answer; evaluation and design parts (s4, s5 b-c, s7 a/d/e, s9 d) guide the reasoning without dictating the conclusion.
+Blocking: none. The ladder holds in all parts; no hint states a final answer; evaluation and design parts (s4, s5 b-c, s7 a/d/e, s9 d) guide reasoning without dictating the conclusion. Nothing new broken.
 
-Polish:
-1. s9 c, hint 2: "t = d/v = 1/H_0" hands over the key insight of the part (age of the universe from the Hubble constant). Stop at "The time is distance divided by speed; what is d/v according to Hubble's law?" and leave 1/H_0 to the student.
-2. s7 d, hint 3: "about a third" gives both the method and the efficiency figure. Better: "What share of the heat becomes electricity in a thermal power plant? Calculate the electricity and compare it with 300 MJ." Acceptable if the task text does not give the share.
-3. s4 a, hint 1 (earlier note): the claim is not quoted in the part but stands in the task text above (claim 1), so the reference works. Optional: "The justification of claim 1" to be explicit.
-4. Hint 1 with several questions: s1 a (three), s1 b, s2 b, s7 a. Ask one question, leave the rest to hint 2. The beta-decay and cesium cases are tolerable but heavy.
-5. s2 c, hint 3 is only a data value and a unit remark, not an intermediate step. Better: "First calculate the stretch factor 1 + z and multiply the laboratory value by it." (Check the solution uses that route.)
-6. s5 c, hints 1 and 2 overlap (what to improve / group improvements); hint 2 could name the two groups' content less abstractly.
-7. en reads naturally and matches fi, including symbols (P_e, P_th, c_w, k_dose). Small fixes: s5 a hint 2 "a straight line of time" -> "a straight line against time"; s2 d hint 2 "Which energy is the position of the line ... related to" -> "Which energy does the position of the line correspond to (part a)?"; s9 c hint 2 "from which d = v/H_0 is solved" (s9 b) -> "from which d = v/H_0 follows".
+Polish (optional):
+1. Hint 1 still has two questions in s2 a, s3 a, s4 a/b, s5 c, s7 e, s9 d; acceptable, since the second question is a sub-step of the first.
+2. s5 c, hints 1 and 2 still overlap (what to improve / group improvements); hint 2 could name the two groups less abstractly.
+3. s9 c, hint 3 reveals the route (convert H_0 to 1/s); acceptable at hint 3.
+
+Checked: hints against part text and rubric, ladder order, premature disclosure, fi-easy wording, en/fi parity.

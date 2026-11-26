@@ -1,15 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: c4456b4822b52e4e
+CONTENT-HASH: 2e764754c22f5030
 
-Read: all 105 hints of 35 parts in fi (and compared with the other two languages), each next to the part text and rubric.
+Read: all 105 hints of 35 parts in fi, each next to the part text, compared with en and fi-easy.
+Round 1 notes resolved: s9 c h2 asks what d/v is without giving 1/H_0; s2 c h3 is an intermediate step (venymiskerroin 1 + z); s7 d h3 asks for the share instead of stating it; single-question hint 1 applied to s1 a/b, s2 b, s7 a.
 
-Blocking: none. The ladder holds in every part; no hint states a final answer; evaluation and design parts (s4, s5 b-c, s7 a/d/e, s9 d) guide the reasoning without dictating the conclusion.
+Blocking: none. The ladder holds in all parts; no hint states a final answer; evaluation and design parts (s4, s5 b-c, s7 a/d/e, s9 d) guide reasoning without dictating the conclusion. Nothing new broken.
 
-Polish:
-1. s9 c, hint 2: "t = d/v = 1/H_0" hands over the key insight of the part (age of the universe from the Hubble constant). Stop at "Aika on matka jaettuna nopeudella; mikä on d/v Hubblen lain mukaan?" and leave 1/H_0 to the student.
-2. s7 d, hint 3: "about a third" gives both the method and the efficiency figure. Better: "Kuinka suuri osa lämmöstä muuttuu sähköksi lämpövoimalassa? Laske sähköenergia ja vertaa sitä 300 MJ:iin." Acceptable if the task text does not give the share.
-3. s4 a, hint 1 (earlier note): the claim is not quoted in the part but stands in the task text above (claim 1), so the reference works. Optional: "Väitteen 1 perustelu" to be explicit.
-4. Hint 1 with several questions: s1 a (three), s1 b, s2 b, s7 a. Ask one question, leave the rest to hint 2. The beta-decay and cesium cases are tolerable but heavy.
-5. s2 c, hint 3 is only a data value and a unit remark, not an intermediate step. Better: "Laske ensin venymiskerroin 1 + z ja kerro sillä laboratorioarvo." (Check the solution uses that route.)
-6. s5 c, hints 1 and 2 overlap (what to improve / group improvements); hint 2 could name the two groups' content less abstractly.
+Polish (optional):
+1. Hint 1 still has two questions in s2 a, s3 a, s4 a/b, s5 c, s7 e, s9 d; acceptable, since the second question is a sub-step of the first.
+2. s5 c, hints 1 and 2 still overlap (what to improve / group improvements); hint 2 could name the two groups less abstractly.
+3. s9 c, hint 3 reveals the route (convert H_0 to 1/s); acceptable at hint 3.
 
+Checked: hints against part text and rubric, ladder order, premature disclosure, fi-easy wording, en/fi parity.
