@@ -463,6 +463,29 @@ with sync_playwright() as pw:
         for i in range(3):    # three 'Osasin' in a row, one per visit (the card comes back first on a reload)
             pg.reload(); pg.wait_for_timeout(300); pg.click("details.kc-fold > summary"); pg.click(card + " .kc-face"); pg.wait_for_timeout(500); pg.click(card + " .kc-good")
         e = st(); expect(f"{lid}: three 'Osasin' in a row take it out of the deck", bool(e) and e["tila"] == "osasin" and e["osasinPutki"] == 3, e)
+        # scheduled review (work queue 17d PR 1, K7): the card comes back after 5, 10 and 20 days, one "Osasin" per step
+        day = 86400000
+        days_ahead = lambda e: (e["era"] - pg.evaluate("Date.now()")) / day
+        expect(f"{lid}: a card taken out of the deck is due in 5 days (porras 0, era a local midnight)", e.get("porras") == 0 and 4 <= days_ahead(e) <= 5, e)
+        pg.reload(); pg.wait_for_timeout(300); pg.click("details.kc-fold > summary")
+        expect(f"{lid}: before the due day the card is not in the deck", pg.evaluate(f"!document.querySelector('{card}')?.classList.contains('in-deck')"))
+        for step, (want, lo, hi) in enumerate([(1, 9, 10), (2, 19, 20), (None, 0, 0)]):
+            pg.evaluate(f"(() => {{ const k = JSON.parse(localStorage.getItem('ruukkilabra:kortit')); k['{first}'].era = Date.now() - 1000; localStorage.setItem('ruukkilabra:kortit', JSON.stringify(k)); }})()")
+            pg.reload(); pg.wait_for_timeout(300); pg.click("details.kc-fold > summary")
+            expect(f"{lid}: step {step + 1}: a card whose day has come is in the deck again", pg.evaluate(f"document.querySelector('{card}')?.classList.contains('in-deck')"))
+            pg.click(card + " .kc-face"); pg.wait_for_timeout(500); pg.click(card + " .kc-good")
+            e = st()
+            if want:
+                expect(f"{lid}: step {step + 1}: one 'Osasin' moves it to porras {want}, due in {lo}-{hi} days", e["tila"] == "osasin" and e["porras"] == want and lo <= days_ahead(e) <= hi, e)
+            else:
+                expect(f"{lid}: after the last step (20 days) the card stays out for good", e["tila"] == "osasin" and "porras" not in e and "era" not in e, e)
+        pg.evaluate(f"(() => {{ const k = JSON.parse(localStorage.getItem('ruukkilabra:kortit')); k['{first}'] = {{tila: 'osasin', osasinPutki: 3, porras: 1, era: Date.now() - 1000, muokattu: 1}}; localStorage.setItem('ruukkilabra:kortit', JSON.stringify(k)); }})()")
+        pg.reload(); pg.wait_for_timeout(300); pg.click("details.kc-fold > summary")
+        pg.click(card + " .kc-face"); pg.wait_for_timeout(500); pg.click(card + " .kc-again")
+        e = st(); expect(f"{lid}: 'Kertaa myöhemmin' on a returned card starts from the beginning (no porras, no era)", e["tila"] == "kertaa" and e["osasinPutki"] == 0 and "porras" not in e and "era" not in e, e)
+        pg.evaluate(f"(() => {{ const k = JSON.parse(localStorage.getItem('ruukkilabra:kortit')); k['{first}'] = {{tila: 'osasin', osasinPutki: 3, muokattu: 1}}; localStorage.setItem('ruukkilabra:kortit', JSON.stringify(k)); }})()")
+        pg.reload(); pg.wait_for_timeout(300); pg.click("details.kc-fold > summary")
+        expect(f"{lid}: a card taken out before this change (no porras) is never scheduled", pg.evaluate(f"!document.querySelector('{card}')?.classList.contains('in-deck')"))
         term = "#selita .kc-term-btn >> nth=0"
         pg.locator(term).scroll_into_view_if_needed(); pg.click(term); pg.wait_for_timeout(50)
         opened = pg.evaluate("!!document.querySelector('.kc-pop') && document.querySelector('#selita .kc-term-btn').getAttribute('aria-expanded') === 'true'")
