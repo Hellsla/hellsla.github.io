@@ -1,6 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 4813b5d60f39361c
+CONTENT-HASH: c70087e34b3234e7
 
-Blocking: none. Round 2: all hints recomputed against solutions.md (s1 c, s2 b-d with l vs L and slope k, s4 b conversion) agree; none states a final answer; fi-easy and en match fi.
+Delta (2026-11-26): only the closing sentence of testi-19…21 feedback (8 lines) became a chapter link (fy7-10, fy7-5, fy7-4). Topic and published chapter title match in every line; physics and numbers untouched.
+
+Blocking: none.
 
 Polish: none.
