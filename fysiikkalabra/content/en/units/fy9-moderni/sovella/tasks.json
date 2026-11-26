@@ -18,6 +18,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Write the equations of the decay of caesium-137 and the de-excitation of barium-137m. How large is the wavelength of the gamma photon?",
+          "hints": [
+            "In beta minus decay a neutron of the nucleus turns into a proton. Which numbers of the nucleus change and which stay the same?",
+            "On both sides of the arrow the sum of the mass numbers and the sum of the charge numbers must be equal, and from that you also see what the nucleus emits. The photon energy and the wavelength are related: $E = \\dfrac{hc}{\\lambda}$.",
+            "Convert the energy to joules first: $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$. Then solve the wavelength $\\lambda$ and convert it to picometres, $1\\,\\text{pm} = 10^{-12}\\,\\text{m}$."
+          ],
           "answer": {
             "value": 1.873,
             "unit": "pm",
@@ -46,6 +51,11 @@
           "kind": "calc",
           "points": 4,
           "text": "How large is the caesium-137 concentration of the same mushrooms in 2026?",
+          "hints": [
+            "How many half-lives have passed from 1990 to 2026?",
+            "No new nuclei appear, and the activity halves in every half-life:\n$$\nA = A_0 \\left(\\tfrac{1}{2}\\right)^{t/T_{1/2}}\n$$",
+            "The time is $t = 2026 - 1990$ years, and the half-life is in the same unit, so no conversion is needed. Calculate the ratio $t/T_{1/2}$ first and substitute it into the exponent."
+          ],
           "answer": {
             "value": 1048,
             "unit": "Bq/kg",
@@ -79,6 +89,11 @@
           "kind": "calc",
           "points": 4,
           "text": "During 2026 a mushroom picker eats $5.0\\,\\text{kg}$ of such mushrooms. How large an effective dose does the picker get from the mushrooms? Compare the dose with the average annual dose of a person in Finland.",
+          "hints": [
+            "How many becquerels does the mushroom picker eat in total?",
+            "The dose coefficient tells how large a dose one eaten becquerel causes. The activity eaten is the concentration times the mass, and the dose follows from the dose coefficient:\n$$\nH = A_m \\cdot m \\cdot k_\\text{dose}\n$$",
+            "Use the concentration of part b. Calculate the dose in sieverts and convert it to millisieverts, $1\\,\\text{Sv} = 1000\\,\\text{mSv}$. Compare it with the average annual dose $5.9\\,\\text{mSv}$ as a fraction."
+          ],
           "answer": {
             "value": 0.0681,
             "unit": "mSv",
@@ -112,6 +127,11 @@
           "kind": "calc",
           "points": 3,
           "text": "How many caesium-137 nuclei are there in one kilogram of mushrooms in 2026, and how large is their mass? The mass of a caesium-137 atom is $137\\,\\text{u}$, $1\\,\\text{u} = 1.66 \\cdot 10^{-27}\\,\\text{kg}$.",
+          "hints": [
+            "The activity tells the number of decays per second. How are the activity, the decay constant and the number of nuclei related?",
+            "The activity and the decay constant:\n$$\nA = \\lambda N, \\quad \\lambda = \\dfrac{\\ln 2}{T_{1/2}}\n$$\nSolve the number of nuclei $N$ from these.",
+            "Convert the half-life to seconds: $$\\begin{aligned}\n&30.1\\,\\text{a} \\\\\n&= 30.1 \\cdot 3.156 \\cdot 10^{7}\\,\\text{s}\n\\end{aligned}$$ The mass is the product $m = N\\,m_\\text{a}$, where $m_\\text{a} = 137\\,\\text{u}$ is the mass of one atom."
+          ],
           "answer": {
             "value": 0.327,
             "unit": "ng",
@@ -158,6 +178,11 @@
           "kind": "calc",
           "points": 4,
           "text": "The red line of hydrogen arises in the transition from level $3$ to level $2$. Calculate the wavelength of the line from the levels.",
+          "hints": [
+            "What does an atom emit when an electron moves from a higher level to a lower one? Where does the energy of the photon come from?",
+            "The energy of the photon is the difference of the energies of the levels, $E_\\text{f} = E_3 - E_2$, and the energy and the wavelength of a photon are related: $E_\\text{f} = \\dfrac{hc}{\\lambda}$.",
+            "Calculate the energies of the levels and their difference in electronvolts. Convert the difference to joules, $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$, before you solve the wavelength $\\lambda$."
+          ],
           "answer": {
             "value": 656.5,
             "unit": "nm",
@@ -191,6 +216,11 @@
           "kind": "calc",
           "points": 5,
           "text": "At what speed is the galaxy receding from us, and how far away is it?",
+          "hints": [
+            "Which quantity tells how much the observed wavelength has changed relative to the laboratory value?",
+            "The redshift $z$, the recession speed for a small $z$ and Hubble's law:\n$$\n\\begin{aligned}z &= \\dfrac{\\lambda - \\lambda_0}{\\lambda_0} \\\\ v &= cz \\\\ v &= H_0\\,d\\end{aligned}\n$$",
+            "Calculate the redshift $z$ first from the difference of the wavelengths, divided by the laboratory value. Use the speed of light in $\\text{km/s}$ so that the speed comes out in $\\text{km/s}$. Finally solve the distance $d$."
+          ],
           "answer": [
             {
               "name": "v",
@@ -233,6 +263,11 @@
           "kind": "calc",
           "points": 3,
           "text": "At what wavelength does the cyan line of hydrogen appear in the spectrum of the galaxy?",
+          "hints": [
+            "Which quantity describes how much the wavelength has stretched? Does it depend on which line of the spectrum you look at?",
+            "The redshift is $z = \\dfrac{\\lambda - \\lambda_0}{\\lambda_0}$. Use the $z$ of part b and solve the observed wavelength $\\lambda$ from the equation.",
+            "The laboratory value of the cyan line is $486.1\\,\\text{nm}$. Calculate the stretch factor $1 + z$ first and multiply the laboratory value by it."
+          ],
           "answer": {
             "value": 497.6,
             "unit": "nm",
@@ -261,6 +296,11 @@
           "kind": "word",
           "points": 3,
           "text": "Explain why the hydrogen lines in the spectrum of the galaxy are dark and not bright.",
+          "hints": [
+            "What is the spectrum of the light before it passes through the outer gas layers of a star? What happens to the light in the gas layer?",
+            "Think about which photon a hydrogen atom can absorb. Which energy is the position of the line in the spectrum related to (part a)?",
+            "The atom emits the energy it absorbed again later. In which directions? Compare how much light reaches us at the line and at the neighbouring wavelengths."
+          ],
           "criteria": [
             {
               "text": "Explains that the hot surface of the stars emits a continuous spectrum, and the outermost gas layers of the stars lie between it and the observer.",
@@ -304,6 +344,11 @@
           "kind": "graph",
           "points": 4,
           "text": "Present the stopping voltage as a function of the frequency of the light as a graph.",
+          "hints": [
+            "The table gives wavelengths, but the graph must show the frequency. What about the last row: what can you say about the stopping voltage when no current flows?",
+            "The frequency follows from the wavelength: $f = \\dfrac{c}{\\lambda}$. The stopping voltage $U$ is on the vertical axis and the frequency $f$ on the horizontal axis.",
+            "Convert the wavelength to metres, for example $365\\,\\text{nm} = 365 \\cdot 10^{-9}\\,\\text{m}$. Use $10^{14}\\,\\text{Hz}$ as the unit of the horizontal axis and choose the scale so that the points fill the graph."
+          ],
           "criteria": [
             {
               "key": "graph_points",
@@ -327,6 +372,11 @@
           "kind": "graph",
           "points": 5,
           "text": "Justify why a straight line fits the points, and fit a straight line to the points. Extend the line so that it crosses both axes.",
+          "hints": [
+            "When the photocurrent just stops, what has happened to the kinetic energy of the fastest electron in the electric field? Which energy has been conserved?",
+            "Combine two equations: the photoelectric equation, where the photon energy $hf$ is shared between the work function $W$ and the kinetic energy, and the condition of the stopping voltage. What kind of function is $U$ of the frequency $f$?",
+            "Draw the line through the points so that there are points on both sides of it. Extend the line with a dashed line across the horizontal axis and up to the vertical axis, where $f = 0$."
+          ],
           "criteria": [
             {
               "text": "Justifies with conservation of energy: the kinetic energy $E_\\text{k,max}$ of the fastest electron is used up entirely in the braking work done by the electric field, so $eU = E_\\text{k,max}$.",
@@ -350,6 +400,11 @@
           "kind": "calc",
           "points": 6,
           "text": "Determine the Planck constant from the graph. Compare the result with the value $6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$.",
+          "hints": [
+            "Look at the equation of part b, where $U$ is a function of the frequency. Which of its coefficients contains the Planck constant?",
+            "The slope of the line is calculated from two points read on the line: $k = \\dfrac{\\Delta U}{\\Delta f}$. Combine it with the equation of part b and solve $h$.",
+            "Read two points far apart on the fitted line, not from the measured points. Unit: $1\\,\\text{C} \\cdot 1\\,\\text{V} \\cdot 1\\,\\text{s} = 1\\,\\text{J}\\,\\text{s}$. Finally calculate by how many per cent the result differs from the reference value."
+          ],
           "answer": {
             "value": 6.61e-34,
             "unit": "J s",
@@ -388,6 +443,11 @@
           "kind": "calc",
           "points": 5,
           "text": "Determine from the graph the work function of potassium in electronvolts and the threshold frequency. Explain why no photocurrent arises at the wavelength $590\\,\\text{nm}$, and whether the situation would change if there were ten times more $590\\,\\text{nm}$ light.",
+          "hints": [
+            "What does the intercept of the line with the vertical axis tell, and what does its intercept with the horizontal axis tell? What is $U$ at the threshold frequency?",
+            "The constant term is $-\\dfrac{W}{e}$, and at the threshold frequency the energy of the photon is just enough for the work function: $hf_0 = W$.",
+            "Calculate the frequency of the $590\\,\\text{nm}$ light, $f = \\dfrac{c}{\\lambda}$, and compare it with the threshold frequency. Then think what ten times more intensity changes: the energy of one photon or the number of photons?"
+          ],
           "answer": [
             {
               "name": "W",
@@ -452,6 +512,11 @@
           "kind": "word",
           "points": 5,
           "text": "Assess claim 1. Explain how radon causes a radiation dose.",
+          "hints": [
+            "Is the justification of the claim correct when the radiation source is outside the body? How does radon get into the human body?",
+            "Think about the properties of an alpha particle: mass, charge and how densely it ionises. Where does its energy go when the particle stops inside the body?",
+            "The dose also depends on the radiation weighting factor. What is the weighting factor of alpha radiation compared with gamma and beta radiation, and what does it tell about the equivalent dose?"
+          ],
           "criteria": [
             {
               "text": "States that alpha radiation does not penetrate the skin, so external alpha radiation is not dangerous; that part of the claim's justification is true.",
@@ -480,6 +545,11 @@
           "kind": "word",
           "points": 5,
           "text": "Assess claim 2. According to the model, what fraction of the radon nuclei in the room is still undecayed after a month, and does the radon still disappear from the flat?",
+          "hints": [
+            "What fraction of the nuclei is left after a given number of half-lives? Does the calculation also cover nuclei that enter the room later?",
+            "The fraction left follows the law of radioactive decay:\n$$\n\\dfrac{N}{N_0} = \\left(\\tfrac{1}{2}\\right)^{t/T_{1/2}}\n$$",
+            "A month is about $30\\,\\text{d}$ and the half-life is $3.8\\,\\text{d}$. First calculate how many half-lives a month contains. Then think where the radon comes from in the first place and how it gets into the flat."
+          ],
           "criteria": [
             {
               "key": "calculation",
@@ -508,6 +578,11 @@
           "kind": "word",
           "points": 5,
           "text": "Assess claim 3.",
+          "hints": [
+            "What does ionising radiation do to tissue during the imaging? What happens after the X-ray machine has been switched off?",
+            "Separate radioactivity (a property of unstable nuclei) from the ionisation caused by radiation (the electrons of atoms). Which one does an X-ray photon affect?",
+            "What can an X-ray photon with an energy of about $60\\,\\text{keV}$ do to an atom, and what to a nucleus? Then think when a person really is a radiation source, for example in an isotope examination."
+          ],
           "criteria": [
             {
               "text": "Explains that X-rays are photon radiation that either passes through the tissue or is absorbed and ionises atoms during the imaging.",
@@ -556,6 +631,11 @@
           "kind": "calc",
           "points": 5,
           "text": "Determine the half-life from the data, taking the background radiation into account.",
+          "hints": [
+            "The GM tube also counts the pulses of the background radiation. What must you do to every reading before you look for the half-life?",
+            "The pulse count of the sample follows the law of radioactive decay, so $\\ln N$ is a straight line of time. The half-life follows from the decay constant:\n$$\nN = N_0\\,e^{-\\lambda t}, \\quad T_{1/2} = \\dfrac{\\ln 2}{\\lambda}\n$$",
+            "Calculate $\\ln N$ for every reading after the background has been subtracted and plot the points $(t,\\ \\ln N)$. The slope of the line is $-\\lambda$. Fit the line to all the points, not only to the first and the last."
+          ],
           "answer": {
             "value": 153,
             "unit": "s",
@@ -594,6 +674,11 @@
           "kind": "word",
           "points": 5,
           "text": "Assess the group's conclusion.",
+          "hints": [
+            "Check each part of the group's reasoning separately: reading the half-life, handling the background and the explanation. Which of them hold?",
+            "Think whether a nucleus has an age: does the decay probability of one barium-137m nucleus depend on how long it has existed?",
+            "Compare the background, $5$ pulses in $10\\,\\text{s}$, with the first reading $398$ and the last reading $104$. Is the background negligible at every moment of the measurement? Also think what one pair of points tells about random variation."
+          ],
           "criteria": [
             {
               "text": "States that the explanation is wrong: a nucleus has no age, but every barium-137m nucleus has the same decay probability per second, so standing does not change the half-life.",
@@ -622,6 +707,11 @@
           "kind": "word",
           "points": 5,
           "text": "Plan how the measurement and the processing of the results can be improved.",
+          "hints": [
+            "What in the measurement and in the processing of the results caused the most uncertainty or error? How could each problem be corrected?",
+            "Divide the improvements into two groups: what is measured differently and how the results are processed. Which has the larger effect on the result?",
+            "When the pulse count is small, the random variation is large in proportion. In which two ways can its effect be reduced? How can you see how large the spread of the result is?"
+          ],
           "criteria": [
             {
               "text": "Measures the background for a long time, for example $10\\,\\text{min}$, before or after the measurement and subtracts it from each reading in the same unit.",
@@ -671,6 +761,11 @@
           "kind": "calc",
           "points": 4,
           "text": "How large is the efficiency of the plant, and how many fissions happen in the reactor per second?",
+          "hints": [
+            "What part of the thermal power becomes electricity? How are the thermal power and the energy of one fission related when $n$ fissions happen per second?",
+            "The efficiency and the thermal power:\n$$\n\\eta = \\dfrac{P_\\text{e}}{P_\\text{th}}, \\quad P_\\text{th} = nE_\\text{f}\n$$",
+            "Convert the energy of a fission to joules: $200\\,\\text{MeV} = 2.00 \\cdot 10^{8}\\,\\text{eV}$ and $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$. The thermal power is $4300\\,\\text{MW} = 4300 \\cdot 10^{6}\\,\\dfrac{\\text{J}}{\\text{s}}$."
+          ],
           "answer": [
             {
               "name": "eta",
@@ -708,6 +803,11 @@
           "kind": "calc",
           "points": 4,
           "text": "How many kilograms of uranium-235 undergo fission in a year? How much mass is converted into energy in the same time?",
+          "hints": [
+            "How many fissions happen in a year? What is the mass of one uranium-235 atom?",
+            "The mass of the uranium that undergoes fission is $m = n t\\,m_\\text{U}$. The mass converted into energy follows from $E = \\Delta m\\,c^2$, and the energy is $E = P_\\text{th}\\,t$.",
+            "Convert $m_\\text{U} = 235\\,\\text{u} = 235 \\cdot 1.661 \\cdot 10^{-27}\\,\\text{kg}$ and $t = 1\\,\\text{a} = 3.156 \\cdot 10^{7}\\,\\text{s}$. Use the number of fissions per second $n$ from part a. Finally compare $\\Delta m$ with the mass of the uranium that undergoes fission: what fraction of the mass is converted into energy?"
+          ],
           "answer": [
             {
               "name": "m",
@@ -750,6 +850,11 @@
           "kind": "calc",
           "points": 4,
           "text": "How many kilograms of seawater must be pumped through the condenser per second?",
+          "hints": [
+            "Where does the thermal power that does not become electricity end up? How large is it?",
+            "Energy is conserved, so the power transferred to the condenser heats the seawater:\n$$\nP_\\text{th} - P_\\text{e} = \\dfrac{Q}{t}, \\quad Q = c_\\text{w}\\,m\\,\\Delta T\n$$",
+            "First calculate the power transferred to the condenser, $P_\\text{th} - P_\\text{e}$, and convert it to watts. Then solve the mass flow $\\dfrac{m}{t}$ in symbols before substituting numbers."
+          ],
           "answer": {
             "value": 58580,
             "unit": "kg/s",
@@ -783,6 +888,11 @@
           "kind": "calc",
           "points": 3,
           "text": "How many tonnes of hard coal would a coal power plant burn in a year if it produced the same electrical energy?",
+          "hints": [
+            "How much electrical energy does the plant produce in a year? How much thermal energy must a coal power plant burn to produce it?",
+            "The electrical energy is the power times the time, and the efficiency of the coal power plant links it to the heating value $H$ of the coal:\n$$\nE_\\text{e} = P_\\text{e}\\,t, \\quad \\eta_\\text{c} H m_\\text{c} = E_\\text{e}\n$$",
+            "Convert $1600\\,\\text{MW} = 1600 \\cdot 10^{6}\\,\\text{W}$ and $24\\,\\dfrac{\\text{MJ}}{\\text{kg}} = 24 \\cdot 10^{6}\\,\\dfrac{\\text{J}}{\\text{kg}}$. Finally convert the answer from kilograms to tonnes, $1\\,\\text{t} = 1000\\,\\text{kg}$."
+          ],
           "answer": {
             "value": 5260000.0,
             "unit": "t",
@@ -831,6 +941,11 @@
           "kind": "word",
           "points": 2,
           "text": "Find out from the source how the fusion reaction was produced. Which of the two energies in the source was released in the fusion reaction, and what does the other energy mean?",
+          "hints": [
+            "Which two energy figures does the source mention, and what does each relate to?",
+            "Which energy is the input and which is the result? Think which one depends on the fusion reaction actually taking place.",
+            "Read the passage of the source that tells what the other energy includes or leaves out. Does it include the energy used to run the laser facility?"
+          ],
           "criteria": [
             {
               "text": "Tells from the source that the beams of huge lasers were focused on the point where the fuel was, and that in fusion nuclei join into heavier nuclei: helium forms and energy is released.",
@@ -849,6 +964,11 @@
           "kind": "calc",
           "points": 3,
           "text": "Calculate the ratio and the difference of the energies. What do they tell about the result of the experiment?",
+          "hints": [
+            "Which of the energies is larger, and how do you compare them?",
+            "The ratio and the difference of the energies, when $E_\\text{f}$ is the energy released in the fusion and $E_\\text{l}$ the energy the lasers delivered to the fuel:\n$$\n\\dfrac{E_\\text{f}}{E_\\text{l}}, \\quad \\Delta E = E_\\text{f} - E_\\text{l}\n$$",
+            "Both energies are in megajoules, so no conversion is needed and the ratio has no unit. Finally think about whose energy balance the result tells about."
+          ],
           "answer": [
             {
               "name": "ratio",
@@ -886,6 +1006,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Check the article's comparison by calculation. How much water does the energy $3.15\\,\\text{MJ}$ heat from $20\\,{}^\\circ\\text{C}$ to the boiling point $100\\,{}^\\circ\\text{C}$? Does the comparison hold?",
+          "hints": [
+            "Which equation gives the heat needed to warm water? Which quantity in it is unknown?",
+            "The heat needed to warm the water is $Q = c_\\text{v}\\,m\\,\\Delta T$. Solve the mass $m$ of the water from it.",
+            "Convert $3.15\\,\\text{MJ} = 3.15 \\cdot 10^{6}\\,\\text{J}$ and $4.19\\,\\dfrac{\\text{kJ}}{\\text{kg}\\cdot\\text{K}} = 4190\\,\\dfrac{\\text{J}}{\\text{kg}\\cdot\\text{K}}$. The change in temperature is $\\Delta T = 100\\,{}^\\circ\\text{C} - 20\\,{}^\\circ\\text{C}$. Finally compare the result with the article's estimate of “a few pots”."
+          ],
           "answer": {
             "value": 9.4,
             "unit": "kg",
@@ -919,6 +1044,11 @@
           "kind": "word",
           "points": 3,
           "text": "Explain why the result does not show that the whole experimental facility produced more energy than it used. Use the source and the electrical energy reported by the laboratory to justify your answer. Estimate also how much electrical energy the released energy would give with the efficiency of a thermal power plant.",
+          "hints": [
+            "What does the energy figure $2.05\\,\\text{MJ}$ include? What energy did the laser facility take from the electrical grid?",
+            "Compare the energy released in the fusion, $3.15\\,\\text{MJ}$, with the energy taken from the grid, $300\\,\\text{MJ}$. Which system does each energy concern?",
+            "What share of the heat does a thermal power plant turn into electricity? Calculate the electrical energy and compare it with $300\\,\\text{MJ}$."
+          ],
           "criteria": [
             {
               "text": "Sets the system boundary: the comparison $3.15\\,\\text{MJ} > 2.05\\,\\text{MJ}$ concerns only the fuel. According to the source, the energy used to run the lasers is not included in the figure.",
@@ -942,6 +1072,11 @@
           "kind": "word",
           "points": 3,
           "text": "Another online outlet could give the same experiment this headline: “A fusion power plant already produces more energy than it uses.” The headline is invented for this problem. What should be made more precise in it? Use the article's own correction note as an example. Explain also why the result of the experiment does not violate conservation of energy.",
+          "hints": [
+            "What does the headline suggest about a power plant and about the energy balance of the whole facility? Do both hold on the basis of the experiment?",
+            "Look at the article's correction note: what was changed and why? Which words or claim in the headline should be made more precise for the same reason?",
+            "Energy does not appear out of nothing. Which quantity of the nuclei changes in fusion, and which equation links it to energy?"
+          ],
           "criteria": [
             {
               "text": "Makes precise that this is a single laboratory experiment and not a power plant. A fitting reason is, for example, that no electricity was produced or that according to the source a fusion power plant connected to the grid is still decades away.",
@@ -986,6 +1121,11 @@
           "kind": "calc",
           "points": 3,
           "text": "Use the graph to determine the attenuation coefficient $\\mu$ of concrete.",
+          "hints": [
+            "Read from the graph the dose rate without the wall and one other point far from the first one. How is the exponential model solved for the unknown $\\mu$?",
+            "The model is $\\dot{H} = \\dot{H}_0\\,e^{-\\mu d}$, and $\\dot{H}_0$ is the dose rate at $d = 0$. Solve $\\mu$ by taking the natural logarithm of both sides of the equation.",
+            "Calculate the ratio $\\dot{H}_0 / \\dot{H}$ for the point you chose before taking the logarithm. The thickness is in centimetres and the dose rates in the same unit, so $\\mu$ gets the unit $1/\\text{cm}$."
+          ],
           "answer": {
             "value": 0.139,
             "unit": "1/cm",
@@ -1014,6 +1154,11 @@
           "kind": "calc",
           "points": 3,
           "text": "What is the dose rate in the corridor behind the wall?",
+          "hints": [
+            "Which model gives the dose rate as a function of the wall thickness? Which values do you already have?",
+            "Use the model $\\dot{H} = \\dot{H}_0\\,e^{-\\mu d}$, where $\\dot{H}_0$ is the dose rate without the wall and $d = 18\\,\\text{cm}$.",
+            "Calculate the exponent $\\mu d$ first: it has no unit. Use the attenuation coefficient of part a as accurately as possible, not the rounded value."
+          ],
           "answer": {
             "value": 6.6,
             "unit": "µSv/h",
@@ -1042,6 +1187,11 @@
           "kind": "calc",
           "points": 3,
           "text": "What dose does the person receive in the corridor in a year? Is the maximum dose exceeded?",
+          "hints": [
+            "How many hours a year does the person spend in the corridor? How are the dose rate, the time and the dose related?",
+            "The dose rate is constant, so the dose is the dose rate times the time spent: $H = \\dot{H}\\,t$.",
+            "The time spent is $t = 1.5\\,\\text{h} \\cdot 220$. Convert the dose from microsieverts to millisieverts, $1\\,\\text{mSv} = 1000\\,\\mu\\text{Sv}$, and compare it with the maximum dose $1.0\\,\\text{mSv}$."
+          ],
           "answer": {
             "value": 2.18,
             "unit": "mSv",
@@ -1070,6 +1220,11 @@
           "kind": "calc",
           "points": 4,
           "text": "How thick must the wall be at least so that the annual dose does not exceed the maximum dose? Also name one assumption of the model that may make the result too small, and its effect.",
+          "hints": [
+            "How large may the dose rate in the corridor be at most, when the time spent in a year is known? How does the wall thickness follow from it?",
+            "The limit of the dose rate is $\\dot{H}_\\text{max} = \\dfrac{H_\\text{max}}{t}$. Write the condition $\\dot{H}_0\\,e^{-\\mu d} = \\dot{H}_\\text{max}$ and solve $d$ from it.",
+            "Convert $1.0\\,\\text{mSv} = 1000\\,\\mu\\text{Sv}$ so that the units match. Then think what the model leaves out and how it would change the result."
+          ],
           "answer": {
             "value": 23.6,
             "unit": "cm",
@@ -1124,6 +1279,11 @@
           "kind": "calc",
           "points": 3,
           "text": "Use the graph to determine the Hubble constant $H_0$.",
+          "hints": [
+            "Which property of the line in the graph is the Hubble constant? Through which point does the line pass?",
+            "According to Hubble's law $v = H_0\\,d$, $H_0 = \\dfrac{v}{d}$. With two points read on the line:\n$$\nH_0 = \\dfrac{v_2 - v_1}{d_2 - d_1}\n$$",
+            "Choose a grid point on the line whose values can be read accurately and which is far from the origin. Read both $v$ and $d$. Do not use a measured point that is not on the line."
+          ],
           "answer": {
             "value": 72,
             "unit": "km/s/Mpc",
@@ -1152,6 +1312,11 @@
           "kind": "calc",
           "points": 3,
           "text": "How far away is the new galaxy?",
+          "hints": [
+            "Which law links the recession speed and the distance? Which result of part a do you need?",
+            "Hubble's law $v = H_0\\,d$, from which $d = \\dfrac{v}{H_0}$ is solved.",
+            "Use the Hubble constant of part a and the speed $8400\\,\\text{km/s}$. Check that the units $\\text{km/s}$ cancel and $\\text{Mpc}$ is left."
+          ],
           "answer": {
             "value": 117,
             "unit": "Mpc",
@@ -1180,6 +1345,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Estimate how long ago the distances between the galaxies were zero, assuming that the distances have grown at the same rate all the time. Give the answer in years.",
+          "hints": [
+            "If the distance has grown at the same rate all the time, how long does it take for the distance to grow from zero to its present value?",
+            "The time is the distance divided by the speed. What is $\\dfrac{d}{v}$ when $v = H_0\\,d$?",
+            "Convert $H_0$ to the unit $1/\\text{s}$: $1\\,\\text{Mpc} = 3.086 \\cdot 10^{19}\\,\\text{km}$, so $\\text{km}$ cancels. Finally convert the time to years, $1\\,\\text{a} = 3.156 \\cdot 10^{7}\\,\\text{s}$."
+          ],
           "answer": {
             "value": 13580000000,
             "unit": "a",
@@ -1213,6 +1383,11 @@
           "kind": "word",
           "points": 3,
           "text": "Explain why the observation that all distant galaxies recede from us does not mean that the Milky Way is the centre of the universe.",
+          "hints": [
+            "What does the straightness of the line in the graph tell about how the speed depends on the distance? What would you observe if you looked from another galaxy?",
+            "Imagine a balloon with dots drawn on its surface, and blow air into it. How does any one dot see the other dots?",
+            "Do the galaxies move through space, or does space stretch between them? Is there a centre on the surface of the balloon from which the expansion starts?"
+          ],
           "criteria": [
             {
               "text": "Explains that according to the graph the velocity is directly proportional to the distance, and the same law would be observed from any galaxy: every galaxy sees the others receding from it.",
