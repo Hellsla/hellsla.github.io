@@ -19,8 +19,8 @@
      "points": 4,
      "text": "Kirjoita cesium-137:n hajoamisen ja barium-137m:n purkautumisen yhtälöt. Kuinka suuri on gammafotonin aallonpituus?",
      "hints": [
-      "Beeta miinus -hajoamisessa ytimen neutroni muuttuu protoniksi. Mitkä luvut ytimessä muuttuvat, mitkä pysyvät samoina, ja mitä ydin lähettää?",
-      "Kummallakin puolella nuolta massalukujen summan ja varauslukujen summan pitää olla sama. Fotonin energia ja aallonpituus liittyvät toisiinsa: $E = \\dfrac{hc}{\\lambda}$.",
+      "Beeta miinus -hajoamisessa ytimen neutroni muuttuu protoniksi. Mitkä luvut ytimessä muuttuvat ja mitkä pysyvät samoina?",
+      "Kummallakin puolella nuolta massalukujen summan ja varauslukujen summan pitää olla sama, ja siitä näet myös, mitä ydin lähettää. Fotonin energia ja aallonpituus liittyvät toisiinsa: $E = \\dfrac{hc}{\\lambda}$.",
       "Muunna energia ensin jouleiksi: $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$. Ratkaise sitten aallonpituus $\\lambda$ ja muunna se pikometreiksi, $1\\,\\text{pm} = 10^{-12}\\,\\text{m}$."
      ],
      "answer": {
@@ -52,8 +52,8 @@
      "points": 4,
      "text": "Kuinka suuri on samojen sienten cesium-137-pitoisuus vuonna 2026?",
      "hints": [
-      "Mitä jokaiselle cesiumytimelle tapahtuu ajan kuluessa, ja tuleeko uusia ytimiä lisää? Montako puoliintumisaikaa vuodesta 1990 vuoteen 2026 on kulunut?",
-      "Aktiivisuus puolittuu jokaisessa puoliintumisajassa:\n$$\nA = A_0 \\left(\\tfrac{1}{2}\\right)^{t/T_{1/2}}\n$$",
+      "Montako puoliintumisaikaa vuodesta 1990 vuoteen 2026 on kulunut?",
+      "Uusia ytimiä ei tule lisää, ja aktiivisuus puolittuu jokaisessa puoliintumisajassa:\n$$\nA = A_0 \\left(\\tfrac{1}{2}\\right)^{t/T_{1/2}}\n$$",
       "Aika on $t = 2026 - 1990$ vuotta, ja puoliintumisaika on samassa yksikössä, joten muunnoksia ei tarvita. Laske ensin suhde $t/T_{1/2}$ ja sijoita se eksponenttiin."
      ],
      "answer": {
@@ -90,8 +90,8 @@
      "points": 4,
      "text": "Sienestäjä syö vuoden 2026 aikana $5{,}0\\,\\text{kg}$ tällaisia sieniä. Kuinka suuren efektiivisen annoksen hän saa sienistä? Vertaa annosta suomalaisen keskimääräiseen vuosiannokseen.",
      "hints": [
-      "Montako becquerelia sienestäjä syö yhteensä? Mitä annoskerroin kertoo?",
-      "Syöty aktiivisuus on pitoisuus kertaa massa, ja annos saadaan annoskertoimella:\n$$\nH = A_m \\cdot m \\cdot k_\\text{annos}\n$$",
+      "Montako becquerelia sienestäjä syö yhteensä?",
+      "Annoskerroin kertoo, kuinka suuren annoksen yksi syöty becquerel aiheuttaa. Syöty aktiivisuus on pitoisuus kertaa massa, ja annos saadaan annoskertoimella:\n$$\nH = A_m \\cdot m \\cdot k_\\text{annos}\n$$",
       "Käytä b-kohdan pitoisuutta. Laske annos sieverteinä ja muunna se millisieverteiksi, $1\\,\\text{Sv} = 1000\\,\\text{mSv}$. Vertaa sitä keskimääräiseen vuosiannokseen $5{,}9\\,\\text{mSv}$ osuutena."
      ],
      "answer": {
@@ -130,7 +130,7 @@
      "hints": [
       "Aktiivisuus kertoo hajoamisten määrän sekunnissa. Mikä yhteys on aktiivisuuden, hajoamisvakion ja ytimien lukumäärän välillä?",
       "Aktiivisuus ja hajoamisvakio:\n$$\nA = \\lambda N, \\quad \\lambda = \\dfrac{\\ln 2}{T_{1/2}}\n$$\nRatkaise tästä ytimien lukumäärä $N$.",
-      "Muunna puoliintumisaika sekunneiksi: $30{,}1\\,\\text{a} = 30{,}1 \\cdot 3{,}156 \\cdot 10^{7}\\,\\text{s}$. Massa saadaan tulona $m = N\\,m_\\text{a}$, missä $m_\\text{a} = 137\\,\\text{u}$ on yhden atomin massa."
+      "Muunna puoliintumisaika sekunneiksi: $$\\begin{aligned}\n&30{,}1\\,\\text{a} \\\\\n&= 30{,}1 \\cdot 3{,}156 \\cdot 10^{7}\\,\\text{s}\n\\end{aligned}$$ Massa saadaan tulona $m = N\\,m_\\text{a}$, missä $m_\\text{a} = 137\\,\\text{u}$ on yhden atomin massa."
      ],
      "answer": {
       "value": 0.327,
@@ -217,7 +217,7 @@
      "points": 5,
      "text": "Kuinka suurella nopeudella galaksi etääntyy meistä, ja kuinka kaukana se on?",
      "hints": [
-      "Vertaa havaittua aallonpituutta laboratorioarvoon. Mikä suure kertoo, kuinka paljon aallonpituus on muuttunut suhteessa alkuperäiseen, ja miten se liittyy galaksin liikkeeseen?",
+      "Mikä suure kertoo, kuinka paljon havaittu aallonpituus on muuttunut laboratorioarvoon verrattuna?",
       "Punasiirtymä $z$, etääntymisnopeus pienellä $z$:n arvolla ja Hubblen laki:\n$$\n\\begin{aligned}z &= \\dfrac{\\lambda - \\lambda_0}{\\lambda_0} \\\\ v &= cz \\\\ v &= H_0\\,d\\end{aligned}\n$$",
       "Laske ensin punasiirtymä $z$ aallonpituuksien erotuksesta ja jaa se laboratorioarvolla. Käytä valon nopeutta yksikössä $\\text{km/s}$, jolloin saat nopeuden suoraan yksikössä $\\text{km/s}$. Ratkaise lopuksi etäisyys $d$."
      ],
@@ -266,7 +266,7 @@
      "hints": [
       "Mikä suure kuvaa, kuinka paljon aallonpituus on venynyt? Riippuuko se siitä, mitä spektrin viivaa katsotaan?",
       "Punasiirtymä on $z = \\dfrac{\\lambda - \\lambda_0}{\\lambda_0}$. Käytä b-kohdan $z$:ta ja ratkaise yhtälöstä havaittu aallonpituus $\\lambda$.",
-      "Syaanin viivan laboratorioarvo on $486{,}1\\,\\text{nm}$. Aallonpituus pysyy nanometreinä, joten muunnoksia ei tarvita."
+      "Syaanin viivan laboratorioarvo on $486{,}1\\,\\text{nm}$. Laske ensin venymiskerroin $1 + z$ ja kerro sillä laboratorioarvo."
      ],
      "answer": {
       "value": 497.6,
@@ -942,7 +942,7 @@
      "points": 2,
      "text": "Selvitä aineistosta, miten fuusioreaktio saatiin aikaan. Kumpi aineiston energioista vapautui fuusioreaktiossa, ja mitä toinen energia tarkoittaa?",
      "hints": [
-      "Etsi artikkelista kohta, jossa kerrotaan, miten fuusio saatiin aikaan. Mitä kahta energialukua aineistossa mainitaan ja mihin kumpikin liittyy?",
+      "Mitä kahta energialukua aineistossa mainitaan ja mihin kumpikin liittyy?",
       "Kumpi energia on syöte ja kumpi tulos? Mieti, kumman suuruus riippuu siitä, että fuusioreaktio todella tapahtuu.",
       "Lue aineistosta kohta, joka kertoo, mitä toinen energia sisältää tai jättää pois. Kuuluuko siihen laserilaitteiston toimintaan kulunut energia?"
      ],
@@ -965,7 +965,7 @@
      "points": 3,
      "text": "Laske energioiden suhde ja erotus. Mitä ne kertovat kokeen tuloksesta?",
      "hints": [
-      "Kumpi energioista on suurempi? Kuinka monta kertaa suurempi, ja kuinka paljon suurempi?",
+      "Kumpi energioista on suurempi, ja miten vertaat niitä toisiinsa?",
       "Energioiden suhde ja erotus, kun $E_\\text{f}$ on fuusiossa vapautunut ja $E_\\text{l}$ laserien polttoaineeseen tuoma energia:\n$$\n\\dfrac{E_\\text{f}}{E_\\text{l}}, \\quad \\Delta E = E_\\text{f} - E_\\text{l}\n$$",
       "Molemmat energiat ovat megajouleina, joten muunnoksia ei tarvita ja suhde on yksikötön. Mieti lopuksi, minkä energiataseesta tulos kertoo."
      ],
@@ -1047,7 +1047,7 @@
      "hints": [
       "Mitä kaikkea energialuvussa $2{,}05\\,\\text{MJ}$ on mukana? Minkä energian laserilaitteisto otti sähköverkosta?",
       "Vertaa fuusiossa vapautunutta energiaa $3{,}15\\,\\text{MJ}$ verkosta otettuun energiaan $300\\,\\text{MJ}$. Mitä systeemiä kumpikin energia koskee?",
-      "Lämpövoimala muuttaa sähköksi noin kolmasosan saamastaan lämmöstä. Laske, kuinka paljon sähköä $3{,}15\\,\\text{MJ}$:sta saataisiin, ja vertaa sitä $300\\,\\text{MJ}$:iin."
+      "Kuinka suuri osa lämmöstä muuttuu sähköksi lämpövoimalassa? Laske sähköenergia ja vertaa sitä $300\\,\\text{MJ}$:iin."
      ],
      "criteria": [
       {
@@ -1347,7 +1347,7 @@
      "text": "Arvioi, kuinka kauan sitten galaksien väliset etäisyydet olivat nollia, kun oletetaan, että etäisyydet ovat kasvaneet koko ajan samalla nopeudella. Anna vastaus vuosina.",
      "hints": [
       "Jos etäisyys kasvaa koko ajan samalla nopeudella, kuinka kauan siltä kuluu, että etäisyys kasvaa nollasta nykyiseen arvoonsa?",
-      "Aika on matka jaettuna nopeudella, ja Hubblen lain mukaan:\n$$\nt = \\dfrac{d}{v} = \\dfrac{1}{H_0}\n$$",
+      "Aika on matka jaettuna nopeudella. Mitä on $\\dfrac{d}{v}$, kun $v = H_0\\,d$?",
       "Muunna $H_0$ yksikköön $1/\\text{s}$: $1\\,\\text{Mpc} = 3{,}086 \\cdot 10^{19}\\,\\text{km}$, jolloin $\\text{km}$ supistuu. Muunna aika lopuksi vuosiksi, $1\\,\\text{a} = 3{,}156 \\cdot 10^{7}\\,\\text{s}$."
      ],
      "answer": {

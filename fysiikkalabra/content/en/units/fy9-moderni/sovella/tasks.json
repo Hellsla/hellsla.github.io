@@ -19,8 +19,8 @@
           "points": 4,
           "text": "Write the equations of the decay of caesium-137 and the de-excitation of barium-137m. How large is the wavelength of the gamma photon?",
           "hints": [
-            "In beta minus decay a neutron of the nucleus turns into a proton. Which numbers of the nucleus change, which stay the same, and what does the nucleus emit?",
-            "On both sides of the arrow the sum of the mass numbers and the sum of the charge numbers must be equal. The photon energy and the wavelength are related: $E = \\dfrac{hc}{\\lambda}$.",
+            "In beta minus decay a neutron of the nucleus turns into a proton. Which numbers of the nucleus change and which stay the same?",
+            "On both sides of the arrow the sum of the mass numbers and the sum of the charge numbers must be equal, and from that you also see what the nucleus emits. The photon energy and the wavelength are related: $E = \\dfrac{hc}{\\lambda}$.",
             "Convert the energy to joules first: $1\\,\\text{eV} = 1.602 \\cdot 10^{-19}\\,\\text{J}$. Then solve the wavelength $\\lambda$ and convert it to picometres, $1\\,\\text{pm} = 10^{-12}\\,\\text{m}$."
           ],
           "answer": {
@@ -52,8 +52,8 @@
           "points": 4,
           "text": "How large is the caesium-137 concentration of the same mushrooms in 2026?",
           "hints": [
-            "What happens to each caesium nucleus as time passes, and do new nuclei appear? How many half-lives have passed from 1990 to 2026?",
-            "The activity halves in every half-life:\n$$\nA = A_0 \\left(\\tfrac{1}{2}\\right)^{t/T_{1/2}}\n$$",
+            "How many half-lives have passed from 1990 to 2026?",
+            "No new nuclei appear, and the activity halves in every half-life:\n$$\nA = A_0 \\left(\\tfrac{1}{2}\\right)^{t/T_{1/2}}\n$$",
             "The time is $t = 2026 - 1990$ years, and the half-life is in the same unit, so no conversion is needed. Calculate the ratio $t/T_{1/2}$ first and substitute it into the exponent."
           ],
           "answer": {
@@ -90,8 +90,8 @@
           "points": 4,
           "text": "During 2026 a mushroom picker eats $5.0\\,\\text{kg}$ of such mushrooms. How large an effective dose does the picker get from the mushrooms? Compare the dose with the average annual dose of a person in Finland.",
           "hints": [
-            "How many becquerels does the mushroom picker eat in total? What does the dose coefficient tell?",
-            "The activity eaten is the concentration times the mass, and the dose follows from the dose coefficient:\n$$\nH = A_m \\cdot m \\cdot k_\\text{dose}\n$$",
+            "How many becquerels does the mushroom picker eat in total?",
+            "The dose coefficient tells how large a dose one eaten becquerel causes. The activity eaten is the concentration times the mass, and the dose follows from the dose coefficient:\n$$\nH = A_m \\cdot m \\cdot k_\\text{dose}\n$$",
             "Use the concentration of part b. Calculate the dose in sieverts and convert it to millisieverts, $1\\,\\text{Sv} = 1000\\,\\text{mSv}$. Compare it with the average annual dose $5.9\\,\\text{mSv}$ as a fraction."
           ],
           "answer": {
@@ -130,7 +130,7 @@
           "hints": [
             "The activity tells the number of decays per second. How are the activity, the decay constant and the number of nuclei related?",
             "The activity and the decay constant:\n$$\nA = \\lambda N, \\quad \\lambda = \\dfrac{\\ln 2}{T_{1/2}}\n$$\nSolve the number of nuclei $N$ from these.",
-            "Convert the half-life to seconds: $30.1\\,\\text{a} = 30.1 \\cdot 3.156 \\cdot 10^{7}\\,\\text{s}$. The mass is the product $m = N\\,m_\\text{a}$, where $m_\\text{a} = 137\\,\\text{u}$ is the mass of one atom."
+            "Convert the half-life to seconds: $$\\begin{aligned}\n&30.1\\,\\text{a} \\\\\n&= 30.1 \\cdot 3.156 \\cdot 10^{7}\\,\\text{s}\n\\end{aligned}$$ The mass is the product $m = N\\,m_\\text{a}$, where $m_\\text{a} = 137\\,\\text{u}$ is the mass of one atom."
           ],
           "answer": {
             "value": 0.327,
@@ -217,7 +217,7 @@
           "points": 5,
           "text": "At what speed is the galaxy receding from us, and how far away is it?",
           "hints": [
-            "Compare the observed wavelength with the laboratory value. Which quantity tells how much the wavelength has changed relative to the original, and how is it related to the motion of the galaxy?",
+            "Which quantity tells how much the observed wavelength has changed relative to the laboratory value?",
             "The redshift $z$, the recession speed for a small $z$ and Hubble's law:\n$$\n\\begin{aligned}z &= \\dfrac{\\lambda - \\lambda_0}{\\lambda_0} \\\\ v &= cz \\\\ v &= H_0\\,d\\end{aligned}\n$$",
             "Calculate the redshift $z$ first from the difference of the wavelengths, divided by the laboratory value. Use the speed of light in $\\text{km/s}$ so that the speed comes out in $\\text{km/s}$. Finally solve the distance $d$."
           ],
@@ -266,7 +266,7 @@
           "hints": [
             "Which quantity describes how much the wavelength has stretched? Does it depend on which line of the spectrum you look at?",
             "The redshift is $z = \\dfrac{\\lambda - \\lambda_0}{\\lambda_0}$. Use the $z$ of part b and solve the observed wavelength $\\lambda$ from the equation.",
-            "The laboratory value of the cyan line is $486.1\\,\\text{nm}$. The wavelength stays in nanometres, so no conversion is needed."
+            "The laboratory value of the cyan line is $486.1\\,\\text{nm}$. Calculate the stretch factor $1 + z$ first and multiply the laboratory value by it."
           ],
           "answer": {
             "value": 497.6,
@@ -942,7 +942,7 @@
           "points": 2,
           "text": "Find out from the source how the fusion reaction was produced. Which of the two energies in the source was released in the fusion reaction, and what does the other energy mean?",
           "hints": [
-            "Find the passage of the article that tells how the fusion was produced. Which two energy figures does the source mention, and what does each relate to?",
+            "Which two energy figures does the source mention, and what does each relate to?",
             "Which energy is the input and which is the result? Think which one depends on the fusion reaction actually taking place.",
             "Read the passage of the source that tells what the other energy includes or leaves out. Does it include the energy used to run the laser facility?"
           ],
@@ -965,7 +965,7 @@
           "points": 3,
           "text": "Calculate the ratio and the difference of the energies. What do they tell about the result of the experiment?",
           "hints": [
-            "Which of the energies is larger? How many times larger, and by how much?",
+            "Which of the energies is larger, and how do you compare them?",
             "The ratio and the difference of the energies, when $E_\\text{f}$ is the energy released in the fusion and $E_\\text{l}$ the energy the lasers delivered to the fuel:\n$$\n\\dfrac{E_\\text{f}}{E_\\text{l}}, \\quad \\Delta E = E_\\text{f} - E_\\text{l}\n$$",
             "Both energies are in megajoules, so no conversion is needed and the ratio has no unit. Finally think about whose energy balance the result tells about."
           ],
@@ -1047,7 +1047,7 @@
           "hints": [
             "What does the energy figure $2.05\\,\\text{MJ}$ include? What energy did the laser facility take from the electrical grid?",
             "Compare the energy released in the fusion, $3.15\\,\\text{MJ}$, with the energy taken from the grid, $300\\,\\text{MJ}$. Which system does each energy concern?",
-            "A thermal power plant turns about a third of the heat it receives into electricity. Calculate how much electricity would be obtained from $3.15\\,\\text{MJ}$ and compare it with $300\\,\\text{MJ}$."
+            "What share of the heat does a thermal power plant turn into electricity? Calculate the electrical energy and compare it with $300\\,\\text{MJ}$."
           ],
           "criteria": [
             {
@@ -1347,7 +1347,7 @@
           "text": "Estimate how long ago the distances between the galaxies were zero, assuming that the distances have grown at the same rate all the time. Give the answer in years.",
           "hints": [
             "If the distance has grown at the same rate all the time, how long does it take for the distance to grow from zero to its present value?",
-            "The time is the distance divided by the speed, and according to Hubble's law:\n$$\nt = \\dfrac{d}{v} = \\dfrac{1}{H_0}\n$$",
+            "The time is the distance divided by the speed. What is $\\dfrac{d}{v}$ when $v = H_0\\,d$?",
             "Convert $H_0$ to the unit $1/\\text{s}$: $1\\,\\text{Mpc} = 3.086 \\cdot 10^{19}\\,\\text{km}$, so $\\text{km}$ cancels. Finally convert the time to years, $1\\,\\text{a} = 3.156 \\cdot 10^{7}\\,\\text{s}$."
           ],
           "answer": {
