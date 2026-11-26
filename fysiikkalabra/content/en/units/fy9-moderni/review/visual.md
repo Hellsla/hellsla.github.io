@@ -1,8 +1,4 @@
 VERDICT: PASS
-CONTENT-HASH: aa31f84b055a8af9
+CONTENT-HASH: e80d32c641f41c3c
 
-Blocking: none.
-
-Polish:
-1. Checked 35 hint rows in en at 390 and 1280 px, closed and open (Playwright): no horizontal overflow, closed hints on one row at 1280 and stacked at 390, open boxes readable, display formulas (hc/lambda, aligned redshift block, exponentials) not clipped or scrolled, units upright with thin space, decimal comma/point correct, reading order a-d intact.
-2. Typography and language of the new texts are consistent; hint 1 in a few parts holds two or three questions (optional: one question each).
+1. No blocking findings. Hints checked open at 360, 390 and 1280 px (fi, fi-easy, en): no overflow, no clipped hint formulas; s1 a hint 2 and 3 display blocks (30,1 a = ... s) fit at 360 px; check_layout 360 OK (only pre-existing known clipped formulas in solutions).
