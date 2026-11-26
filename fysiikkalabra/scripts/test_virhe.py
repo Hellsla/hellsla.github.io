@@ -29,16 +29,17 @@ def expect(name, ok, detail=""):
 RULES = [(-12.0, 12.0, 0.02, "N", 0, "sign"), (12.0, -12.0, 0.02, "N", 0, "sign"), (-11.9, 12.0, 0.02, "N", 0, "sign"), (-10, 12.0, 0.02, "N", 0, None),
          (120, 12.0, 0.02, "N", 0, "magnitude"), (1.2, 12.0, 0.02, "N", 0, "magnitude"), (12000, 12.0, 0.02, "N", 0, "magnitude"), (0.012, 12.0, 0.02, "N", 0, "magnitude"),
          (1.2e9, 12.0, 0.02, "N", 0, "magnitude"), (-120, 12.0, 0.02, "N", 0, None), (130, 12.0, 0.02, "N", 0, None),
-         (43.2, 12.0, 0.02, "m/s", 0, "time"), (3.333, 12.0, 0.02, "m/s", 0, "time"), (720, 12.0, 0.02, "s", 0, "time"), (0.2, 12.0, 0.02, "h", 0, "time"), (43200, 12.0, 0.02, "s", 0, "time"),
+         (43.2, 12.0, 0.02, "N", 0, None), (43.2, 12.0, 0.02, "", 0, None), (43.2, 12.0, 0.02, "km/h", 0, "time"), (720, 12.0, 0.02, "W", 0, "time"), (303.5, 30.35, 0.02, "°C", 0, "kelvin"), (43.2, 12.0, 0.02, "m/s", 0, "time"), (3.333, 12.0, 0.02, "m/s", 0, "time"), (720, 12.0, 0.02, "s", 0, "time"), (0.2, 12.0, 0.02, "h", 0, "time"), (43200, 12.0, 0.02, "s", 0, "time"),
          (285.15, 12.0, 0.02, "K", 0, "kelvin"), (-261.15, 12.0, 0.02, "°C", 0, "kelvin"), (285.15, 12.0, 0.02, "m", 0, None), (300, 12.0, 0.02, "K", 0, None),
          (5, 0, 0.02, "N", 0, None), (0, 5, 0.02, "N", 0, None), (-5, 5, 0.02, "N", 0, "sign"), (float("nan"), 5, 0.02, "N", 0, None),
-         (60.2, 1.0, 0.02, "", 0.1, "time"), (7.0, 1.0, 0.02, "", 0, None), (-1.05, 1.0, 0.02, "", 0.1, "sign")]
+         (60.2, 1.0, 0.02, "s", 0.1, "time"), (7.0, 1.0, 0.02, "", 0, None), (-1.05, 1.0, 0.02, "", 0.1, "sign")]
 
 
 def main():
     page = ('<!doctype html><html lang="fi"><head><meta charset="utf-8"></head><body><main>'
             '<script type="application/json" id="fl-strings">' + json.dumps({"js": {k: k for k in ("correct", "check_near", "check_number", "check_retry", "check_give_up", "check_magnitude", "check_mistake_sign", "check_mistake_magnitude", "check_mistake_time", "check_mistake_kelvin")}}) + '</script>'
             '<form class="check" id="f" data-answer="12" data-tol="0.02" data-unit="N" novalidate><input type="text"><button>Tarkista</button><output></output></form>'
+            '<form class="check" id="h" data-answer="12" data-tol="0.02" data-unit="m/s" novalidate><input type="text"><button>Tarkista</button><output></output></form>'
             '<form class="check" id="g" data-answer="300" data-tol="0.02" data-unit="K" novalidate><input type="text"><button>Tarkista</button><output></output></form>'
             "</main></body></html>")
     virhe = (ROOT / "templates" / "virhe.js").read_text(encoding="utf-8")
@@ -71,7 +72,7 @@ def main():
                 setTimeout(() => res([f.querySelector('output').textContent, f.querySelector('output').dataset.state, seen[0] || null]), 20); })""", [sel, typed])
             return events
         for sel, typed, text, state, mist in [("#f", "-12", "check_mistake_sign", "no", "sign"), ("#f", "1200", "check_mistake_magnitude", "no", "magnitude"),
-                                              ("#f", "43,2", "check_mistake_time", "no", "time"), ("#g", "573,15", "check_mistake_kelvin", "no", "kelvin"),
+                                              ("#h", "43,2", "check_mistake_time", "no", "time"), ("#g", "573,15", "check_mistake_kelvin", "no", "kelvin"),
                                               ("#f", "12", "correct", "ok", None), ("#f", "12,5", "check_near", "close", None), ("#f", "5", "check_retry", "no", None)]:
             out, st, det = run(sel, typed)
             expect(f"page: {typed} in {sel} says {text}", out in (text, "check_give_up") if text == "check_retry" else out == text, out)
