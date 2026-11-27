@@ -216,6 +216,7 @@ Kohdan 24 "Älä muuta piirroksia" -rajaus ei koske näitä; opettaja salli muut
 - FY7 `fy7-8` lesson.md:46 kuva monokromaattinen (lint ERROR) → uusi piirros.
 - FY6 `fy6-15/luokat`: III-numero puuttuu vinoneliöstä.
 - FY4 `fy4-4/valitse_d`: kuvan toinen virhe.
+- FY4 `fy4-2` lesson.md:5 kuva monokromaattinen (currentColor, lint ERROR) → uusi piirros (opettaja 2026-11-27 "joo"); sen jälkeen fy4-2:n "Nopeus (toisto)" ja seliterivi kohdan 10 mukaisesti.
 
 ## 28. Kappaleen massa pienellä m:llä, FY9 (opettaja 2026-11-27 koordinaattorin chatissa: "massaa yleensä merkitään pieni m")
 fy9-sailymislait `sovella` (junttapaalutehtävä: järkäle $M$, paalu $m$; fi, fi-easy, en: `tasks.json`, `solutions.md`, vihjeet) → esim. $m_1$ ja $m_2$; korjataan samalla tehtävän vierivät kaavat. Tekijä tarkistaa muut FY9-yksiköt: kappaleen massa isolla $M$:llä korjataan; moolimassa $M$ (fy9-kaasut) ja taivaankappaleen massa ($M_\text{E}$ tms., fy9-ympyraliike) jäävät. Vastaukset ja luvut ennallaan. Science-katselmointi delta.
