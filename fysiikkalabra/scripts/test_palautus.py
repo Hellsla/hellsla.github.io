@@ -407,10 +407,13 @@ with sync_playwright() as p:
     # rows imported before the Numerovastaukset column (17e) get it from their file once, nothing else of the row changes
     num_col = lambda: E("() => MOCK.sheet('RL Palautukset').data.slice(1).map((r) => r[RL_C.numbers])")
     expect("a new row carries the numbers cell ('{}': read, no typed numbers)", num_col()[0] == "{}", num_col())
-    E("() => { MOCK.sheet('RL Palautukset').data.slice(1).forEach((r) => { r.length = RL_C.numbers; }); }")
+    pick_col = lambda: E("() => MOCK.sheet('RL Palautukset').data.slice(1).map((r) => r[RL_C.choices])")
+    expect("a new row carries the choices cell too (17e PR 2; '{}': read, no choices)", pick_col()[0] == "{}", pick_col())
+    E("() => { MOCK.sheet('RL Palautukset').data.slice(1).forEach((r) => { r.length = RL_C.numbers; }); }")   # an old sheet: neither the choices column nor its value
     r2b = run_import()
     expect("a re-run fills the numbers cell of the accepted rows that lack it and changes nothing else", r2b.get("ok") and r2b["ok"]["added"] == 0 and r2b["ok"]["backfilled"] == 2
            and [c or "" for c in num_col()] == ["{}", "", "{}"] and subs() == s, (r2b, num_col()))
+    expect("the choices cell is filled in the same re-run (not for the duplicate)", [c or "" for c in pick_col()] == ["{}", "", "{}"], pick_col())
     r2c = run_import()
     expect("and does not read them again", r2c["ok"]["backfilled"] == 0, r2c)
     # same id from another student
