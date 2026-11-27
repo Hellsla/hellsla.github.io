@@ -3,6 +3,9 @@
 # Written by `python scripts/reviews.py approve-text <id> [--lang <l>] --source "..."` only after the teacher has
 # explicitly approved the change; any edit made after it needs a new approval or the reviews.
 date	lang	id	file	before	after	source
+2026-11-27	fi	fy2-6	content/fi/FY2/fy2-6/inquiry.json	ad3349226dfbb6ee	23f4f5be1d49e60f	opettaja 2026-11-27 tässä sessiossa: 'muutokset sellaisinaan' (muutoslista 2026-11-27 kohta 2, PR #888)
+2026-11-27	fi-easy	fy2-6	content/fi-easy/FY2/fy2-6/inquiry.json	b86d85b7e1b6e96d	ba9fadb779cac8b9	opettaja 2026-11-27 tässä sessiossa: 'muutokset sellaisinaan' (muutoslista 2026-11-27 kohta 2, PR #888)
+2026-11-27	en	fy2-6	content/en/FY2/fy2-6/inquiry.json	c4f65b0fb6be46ba	bfd4873cd1a2c57b	opettaja 2026-11-27 tässä sessiossa: 'muutokset sellaisinaan' (muutoslista 2026-11-27 kohta 2, PR #888)
 2026-11-27	fi	fy7-5	content/fi/FY7/fy7-5/lesson.md	ccf3e13b8606b40f	5f2881689c0a0a09	Opettaja tässä sessiossa 2026-11-27: hyväksyi fi-, fi-easy- ja en-sanamuodot (työjono 29.4)
 2026-11-27	fi-easy	fy7-5	content/fi-easy/FY7/fy7-5/lesson.md	de69c3ca520ddf7e	9080eb8de187da53	Opettaja tässä sessiossa 2026-11-27: hyväksyi fi-, fi-easy- ja en-sanamuodot (työjono 29.4)
 2026-11-27	en	fy7-5	content/en/FY7/fy7-5/lesson.md	7d64bb40b8a7c2c1	b3acf81e64346017	Opettaja tässä sessiossa 2026-11-27: hyväksyi fi-, fi-easy- ja en-sanamuodot (työjono 29.4)

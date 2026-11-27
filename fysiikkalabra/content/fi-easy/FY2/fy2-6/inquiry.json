@@ -79,26 +79,26 @@
       "text": "Taulukossa on Suomen sähköntuotanto vuonna 2024 energialähteittäin. Kokonaistuotanto oli $79{,}9\\,\\text{TWh}$. Siihen kuuluu myös pieniä muita lähteitä. Ne on koottu viimeiselle riville.\n\n| Lähde | $E$ (TWh) |\n|---|---|\n| ydinvoima | $31$ |\n| tuulivoima | $20{,}2$ |\n| vesivoima | $14{,}1$ |\n| bioperäiset polttoaineet | $9{,}5$ |\n| fossiiliset polttoaineet ja turve | $3{,}4$ |\n| aurinkosähkö | $0{,}9$ |\n| muut lähteet | $0{,}8$ |",
       "question": {
         "type": "numeric",
-        "prompt": "Laske tuulivoiman keskiteho vuoden aikana, kun vuodessa on $8760\\,\\text{h}$. Vastaa gigawatteina.",
-        "answer": 2.31,
+        "prompt": "Laske tuulivoiman keskiteho vuoden aikana, kun vuonna 2024 (karkausvuosi) on $8784\\,\\text{h}$. Vastaa gigawatteina.",
+        "answer": 2.3,
         "unit": "GW",
         "tolerance": 0.02,
         "hints": [
           "Keskiteho saadaan jakamalla energia ajalla: $P = E : t$.",
           "Muuta ensin teravattitunnit kilowattitunneiksi: $1\\,\\text{TWh} = 10^{9}\\,\\text{kWh}$.",
-          "$$\n\\begin{aligned}\n&P \\\\\n&= 20{,}2 \\cdot 10^{9}\\,\\text{kWh} : 8760\\,\\text{h}\n\\end{aligned}\n$$, ja lopuksi $1\\,\\text{GW} = 10^{6}\\,\\text{kW}$."
+          "$$\n\\begin{aligned}\n&P \\\\\n&= 20{,}2 \\cdot 10^{9}\\,\\text{kWh} : 8784\\,\\text{h}\n\\end{aligned}\n$$, ja lopuksi $1\\,\\text{GW} = 10^{6}\\,\\text{kW}$."
         ],
         "mistakes": [
           {
-            "value": 2306,
-            "feedback": "Tulos on oikea megawatteina, mutta ei gigawatteina. Gigawatti on tuhat megawattia, joten $2306\\,\\text{MW} = 2{,}306 \\cdot 1000\\,\\text{MW} = 2{,}31\\,\\text{GW}$."
+            "value": 2300,
+            "feedback": "Tulos on oikea megawatteina, mutta ei gigawatteina. Gigawatti on tuhat megawattia, joten $2300\\,\\text{MW} = 2{,}30 \\cdot 1000\\,\\text{MW} = 2{,}30\\,\\text{GW}$."
           },
           {
             "value": 0.0023,
             "feedback": "Muutit teravattitunnit väärin. Oikein on $1\\,\\text{TWh} = 10^{9}\\,\\text{kWh}$, ei $10^{6}\\,\\text{kWh}$."
           }
         ],
-        "solution": "**Annettu:** energia $E = 20{,}2\\,\\text{TWh}$, aika $t = 8760\\,\\text{h}$\n\n**Kysytty:** tuulivoiman keskiteho $P$ gigawatteina\n\n**Periaate:** Keskiteho on teho, jolla tuotettaisiin sama energia tasaisesti koko vuoden ajan. Siksi $E = P t$.\n\n**Kaava:** $E = P t$, josta $P = \\dfrac{E}{t}$\n\n**Muunnokset:** $20{,}2\\,\\text{TWh} = 20{,}2 \\cdot 10^{9}\\,\\text{kWh}$, ja lopuksi kilowatit gigawateiksi: $10^{6}\\,\\text{kW} = 1\\,\\text{GW}$.\n\n**Sijoitus:** $P = 20{,}2 \\cdot 10^{9}\\,\\text{kWh} : 8760\\,\\text{h} = 2\\,305\\,936\\,\\text{kW} \\approx 2{,}31 \\cdot 10^{6}\\,\\text{kW} = 2{,}31\\,\\text{GW}$\n\n**Vastaus:** $2{,}31\\,\\text{GW}$, kolme merkitsevää numeroa kuten energiassa $20{,}2\\,\\text{TWh}$; vuoden tuntimäärä $8760\\,\\text{h}$ on tarkka luku.\n\n**Järkevyys:** Arvio: $20 \\cdot 10^{9}\\,\\text{kWh} : 9000\\,\\text{h} \\approx 2{,}2 \\cdot 10^{6}\\,\\text{kW} = 2{,}2\\,\\text{GW}$. Keskiteho on pienempi kuin tuulivoimaloiden yhteenlaskettu nimellisteho. Syy on se, että tuuli vaihtelee."
+        "solution": "**Annettu:** energia $E = 20{,}2\\,\\text{TWh}$, aika $t = 8784\\,\\text{h}$\n\n**Kysytty:** tuulivoiman keskiteho $P$ gigawatteina\n\n**Periaate:** Keskiteho on teho, jolla tuotettaisiin sama energia tasaisesti koko vuoden ajan. Siksi $E = P t$.\n\n**Kaava:** $E = P t$, josta $P = \\dfrac{E}{t}$\n\n**Muunnokset:** $20{,}2\\,\\text{TWh} = 20{,}2 \\cdot 10^{9}\\,\\text{kWh}$, ja lopuksi kilowatit gigawateiksi: $10^{6}\\,\\text{kW} = 1\\,\\text{GW}$.\n\n**Sijoitus:** $P = 20{,}2 \\cdot 10^{9}\\,\\text{kWh} : 8784\\,\\text{h} = 2\\,299\\,636\\,\\text{kW} \\approx 2{,}30 \\cdot 10^{6}\\,\\text{kW} = 2{,}30\\,\\text{GW}$\n\n**Vastaus:** $2{,}30\\,\\text{GW}$, kolme merkitsevää numeroa kuten energiassa $20{,}2\\,\\text{TWh}$; karkausvuoden 2024 tuntimäärä $8784\\,\\text{h}$ on tarkka luku.\n\n**Järkevyys:** Arvio: $20 \\cdot 10^{9}\\,\\text{kWh} : 8800\\,\\text{h} \\approx 2{,}3 \\cdot 10^{6}\\,\\text{kW} = 2{,}3\\,\\text{GW}$. Keskiteho on pienempi kuin tuulivoimaloiden yhteenlaskettu nimellisteho. Syy on se, että tuuli vaihtelee."
       }
     },
     {
