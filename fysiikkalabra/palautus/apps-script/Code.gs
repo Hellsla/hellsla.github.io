@@ -50,9 +50,9 @@ var RL_STATUS = { OK: 'Hyväksytty', DUP: 'Kaksoiskappale', CHECK: 'Tarkistettav
 var RL_DECISION = { ACCEPT: 'Hyväksy', REJECT: 'Hylkää' };
 var RL_SUB_HEAD = ['Avain', 'Palautusaika', 'Sähköposti', 'Palautustunniste', 'Tila', 'Syy', 'Opettajan päätös',
   'Vastattuja', 'Vastatut tehtävät', 'Tyhjiä', 'Tiedosto', 'Koko (t)', 'Sisällön SHA-256', 'Tuotu', 'Lomakkeen rivi', 'Luku',
-  'Tehtävien tiivisteet', 'Itsearvio', 'Eteneminen', 'Numerovastaukset'];
+  'Tehtävien tiivisteet', 'Itsearvio', 'Eteneminen', 'Numerovastaukset', 'Valinnat'];
 var RL_SCORE_HEAD = ['Avain', 'Sähköposti', 'Palautustunniste', 'Tehtävä', 'Tehtävän numero', 'Pisteet', 'Tallennettu', 'Luku'];
-var RL_C = { key: 0, time: 1, email: 2, sub: 3, status: 4, reason: 5, decision: 6, nAnswered: 7, answered: 8, nEmpty: 9, file: 10, size: 11, sha: 12, imported: 13, row: 14, chapter: 15, hashes: 16, self: 17, progress: 18, numbers: 19 };
+var RL_C = { key: 0, time: 1, email: 2, sub: 3, status: 4, reason: 5, decision: 6, nAnswered: 7, answered: 8, nEmpty: 9, file: 10, size: 11, sha: 12, imported: 13, row: 14, chapter: 15, hashes: 16, self: 17, progress: 18, numbers: 19, choices: 20 };
 var RL_S = { key: 0, email: 1, sub: 2, task: 3, number: 4, points: 5, saved: 6, chapter: 7 };
 
 /* ---------- valikko ---------- */
@@ -296,7 +296,7 @@ function rlValidate_(text, deep, work) {
   if (typeof data.submission_id !== 'string' || !/^[0-9a-f]{32}$/.test(data.submission_id)) throw rlError_('palautustunniste puuttuu tai on virheellinen');
   if (!work && (typeof data.content_sha256 !== 'string' || !/^[0-9a-f]{64}$/.test(data.content_sha256))) throw rlError_('tarkistussumma puuttuu');
   if (!Array.isArray(data.answers)) throw rlError_('vastaukset puuttuvat');
-  var tasks = rlTasks_(data.chapter), seen = Object.create(null), answered = [], empty = [], images = 0, canon = [], hashes = [], numbers = {};
+  var tasks = rlTasks_(data.chapter), seen = Object.create(null), answered = [], empty = [], images = 0, canon = [], hashes = [], numbers = {}, choices = {};
   for (var i = 0; i < data.answers.length; i++) {
     var a = data.answers[i];
     if (!a || typeof a !== 'object' || typeof a.task !== 'string') throw rlError_('vastaus ' + (i + 1) + ' on virheellinen');
@@ -325,6 +325,9 @@ function rlValidate_(text, deep, work) {
     // luokan yhteenveto (17e): tehtävän ainoa numerovastaus sellaisenaan; vain tehtävä, jossa on tasan yksi tarkistuslomake
     var nums = resp.filter(function (r) { return r.type === 'number'; });
     if (nums.length === 1 && t.checks && t.checks.length === 1) numbers[a.task] = nums[0].value;
+    // luokan yhteenveto (17e PR 2): tehtävän ainoa valinta (valinnan järjestysnumero sellaisena kuin oppilas sen näki); vain tehtävä, jossa on tasan yksi valintakohta
+    var picks = resp.filter(function (r) { return r.type === 'choice'; });
+    if (picks.length === 1 && t.choice && picks[0].option < t.choice.options.length && !(t.choice.skip_en && data.lang === 'en')) choices[a.task] = picks[0].option;
     if (a.status === 'answered') hashes.push(a.task + '=' + rlSha_(JSON.stringify(canon[canon.length - 1])).slice(0, 16));
     (a.status === 'answered' ? answered : empty).push(a.task);
   }
@@ -341,7 +344,7 @@ function rlValidate_(text, deep, work) {
   // taulukkoon vain tavoitearviot (opettaja 6.11.2026): version 2 tehtäväkohtaiset arviot ja historiat jäävät pois
   var known = rlGoalIds_(data.chapter);
   var levels = (self || []).filter(function (x) { return x.level && known[x.id]; }).map(function (x) { return { id: x.id, level: x.level }; });
-  return { data: data, chapter: data.chapter, answered: answered, empty: empty, sha: sha, hashes: hashes.join(','), self: levels, progress: progress, numbers: rlNumbersCell_(numbers) };
+  return { data: data, chapter: data.chapter, answered: answered, empty: empty, sha: sha, hashes: hashes.join(','), self: levels, progress: progress, numbers: rlNumbersCell_(numbers), choices: rlChoicesCell_(choices) };
 }
 // Eteneminen (versio 4, opettaja 7.11.2026): koko opintojakson annetut tehtävät, niistä tehdyiksi merkityt aikoineen ja
 // merkintöjen historia (1 = merkitty, 0 = merkintä poistettu). Tuntematon tehtävä, kenttä tai aika hylkää tiedoston.
@@ -429,8 +432,8 @@ function rlValidateWork_(data, deep) {
       }) };
     });
     var goals = sa.goals.filter(function (g) { return g && known[g.id]; });
-    var v = rlValidate_({ format: RL_FORMAT, version: 3, chapter: c.chapter, submission_id: data.submission_id, answers: answers, selfassessment: { goals: goals } }, deep, true);
-    parts.push({ chapter: c.chapter, answered: v.answered, empty: v.empty, sha: v.sha, hashes: v.hashes, self: v.self, numbers: v.numbers, data: v.data });
+    var v = rlValidate_({ format: RL_FORMAT, version: 3, chapter: c.chapter, submission_id: data.submission_id, lang: data.lang, answers: answers, selfassessment: { goals: goals } }, deep, true);
+    parts.push({ chapter: c.chapter, answered: v.answered, empty: v.empty, sha: v.sha, hashes: v.hashes, self: v.self, numbers: v.numbers, choices: v.choices, data: v.data });
   });
   if (images > RL_LIMITS.images * 8) throw rlError_('kuvia on liikaa (' + images + ')');
   if (!parts.length) throw rlError_('tiedostossa ei ole yhtään ratkaisua');
@@ -550,7 +553,7 @@ function rlInFolder_(file) {
 }
 // Lukee ja tarkistaa yhden palautuksen. Palauttaa { status, reason, ... }; ei kirjoita mitään.
 function rlProcess_(resp) {
-  var out = { status: RL_STATUS.BAD, reason: '', sub: '', answered: [], empty: [], size: '', sha: '', chapter: '', hashes: '', self: '', progress: '', numbers: '' };
+  var out = { status: RL_STATUS.BAD, reason: '', sub: '', answered: [], empty: [], size: '', sha: '', chapter: '', hashes: '', self: '', progress: '', numbers: '', choices: '' };
   if (!resp.time) { out.reason = 'palautusaika puuttuu'; return out; }
   if (RL_CONFIG.IDENTITY === 'name') { if (!resp.email) { out.reason = 'palauttajan nimi puuttuu tiedoston nimestä'; return out; } }
   else if (!resp.email || resp.email.indexOf('@') < 1) { out.reason = 'vahvistettu sähköpostiosoite puuttuu (ota sähköpostien kerääminen käyttöön lomakkeessa)'; return out; }
@@ -571,10 +574,10 @@ function rlProcess_(resp) {
     if (v.work) {
       out.status = RL_STATUS.OK;
       out.parts = v.parts.map(function (q) { return { status: RL_STATUS.OK, reason: '', sub: v.data.submission_id, answered: q.answered, empty: q.empty, size: out.size, sha: q.sha,
-        chapter: q.chapter, hashes: q.hashes, self: rlSelfCell_(q.self), progress: rlProgressCell_(v.progress), numbers: q.numbers }; });
+        chapter: q.chapter, hashes: q.hashes, self: rlSelfCell_(q.self), progress: rlProgressCell_(v.progress), numbers: q.numbers, choices: q.choices }; });
       return out;
     }
-    out.status = RL_STATUS.OK; out.sub = v.data.submission_id; out.answered = v.answered; out.empty = v.empty; out.sha = v.sha; out.chapter = v.chapter; out.hashes = v.hashes; out.self = rlSelfCell_(v.self); out.progress = rlProgressCell_(v.progress); out.numbers = v.numbers;
+    out.status = RL_STATUS.OK; out.sub = v.data.submission_id; out.answered = v.answered; out.empty = v.empty; out.sha = v.sha; out.chapter = v.chapter; out.hashes = v.hashes; out.self = rlSelfCell_(v.self); out.progress = rlProgressCell_(v.progress); out.numbers = v.numbers; out.choices = v.choices;
   } catch (e) { out.reason = rlUserMessage_(e); }
   return out;
 }
@@ -591,15 +594,15 @@ function rlImport_() {
     var counts = {}; for (var s in RL_STATUS) counts[RL_STATUS[s]] = 0;
     var added = [], retried = 0, flagged = 0, unfinished = false, touched = {}, backfilled = 0;
     var live = function (r) { return r[RL_C.status] !== RL_STATUS.BAD && r[RL_C.status] !== RL_STATUS.READ; };
-    // Ennen sarake Numerovastaukset -sarakkeen lisäystä (17e) tuodut hyväksytyt rivit: sarake täytetään tiedostosta kerran, muuta riviltä ei muuteta.
+    // Ennen sarakkeiden Numerovastaukset (17e) ja Valinnat (17e PR 2) lisäystä tuodut hyväksytyt rivit: sarake täytetään tiedostosta kerran, muuta riviltä ei muuteta.
     // Tyhjä solu = ei vielä luettu; luettu tiedosto saa vähintään '{}', joten rivi luetaan uudelleen vain, jos luku epäonnistui.
     for (var bi = 0; bi < rows.length; bi++) {
       var br = rows[bi];
-      if (br[RL_C.status] !== RL_STATUS.OK || rlText_(br[RL_C.numbers]) !== '' || !rlText_(br[RL_C.file])) continue;
+      if (br[RL_C.status] !== RL_STATUS.OK || (rlText_(br[RL_C.numbers]) !== '' && rlText_(br[RL_C.choices]) !== '') || !rlText_(br[RL_C.file])) continue;
       if (Date.now() - started > 270000) { unfinished = true; break; }
       var bp = rlProcess_({ time: br[RL_C.time], email: rlText_(br[RL_C.email]), ids: [rlText_(br[RL_C.file]).replace(/^.*[?&]id=/, '')] });
       var bparts = (bp.parts || [bp]).filter(function (q) { return q.status === RL_STATUS.OK && q.chapter === rlText_(br[RL_C.chapter]); });
-      if (bparts.length) { br[RL_C.numbers] = rlCell_(bparts[0].numbers || '{}'); touched[bi] = true; backfilled++; }
+      if (bparts.length) { if (rlText_(br[RL_C.numbers]) === '') br[RL_C.numbers] = rlCell_(bparts[0].numbers || '{}'); br[RL_C.choices] = rlCell_(bparts[0].choices || '{}'); touched[bi] = true; backfilled++; }
     }
     for (var i = 0; i < responses.length; i++) {
       var resp = responses[i], at = byKey[resp.key];
@@ -629,7 +632,7 @@ function rlImport_() {
         }
       }
       var row = [rkey, resp.time || '', resp.email, p.sub, p.status, reason, '', p.answered.length, p.answered.join(','), p.empty.length,
-        resp.ids.length ? 'https://drive.google.com/open?id=' + resp.ids[0] : '', p.size, p.sha, new Date(), resp.row, p.chapter, p.hashes, p.self, p.progress, p.numbers].map(rlCell_);
+        resp.ids.length ? 'https://drive.google.com/open?id=' + resp.ids[0] : '', p.size, p.sha, new Date(), resp.row, p.chapter, p.hashes, p.self, p.progress, p.numbers, p.choices].map(rlCell_);
       counts[p.status]++;
       if (at !== undefined) { row[RL_C.decision] = rows[at][RL_C.decision]; rows[at] = row; touched[at] = true; retried++; }
       else { byKey[rkey] = rows.length; rows.push(row); added.push(rows.length - 1); }
@@ -681,7 +684,7 @@ function rlModel_() {
     var s = students[email] || (students[email] = { email: email, chapters: Object.create(null), first: time.getTime(), progress: null, progressMs: -1 });
     s.first = Math.min(s.first, time.getTime());
     (s.chapters[ch.id] || (s.chapters[ch.id] = [])).push({ fileId: rlText_(r[RL_C.file]).replace(/^.*[?&]id=/, ''), sub: rlText_(r[RL_C.sub]), timeMs: time.getTime(), time: rlFmt_(time),
-      answered: rlText_(r[RL_C.answered]).split(',').filter(String), sha: rlText_(r[RL_C.sha]), hashes: rlHashes_(rlText_(r[RL_C.hashes])), self: rlSelfParse_(r[RL_C.self]), numbers: rlNumbersParse_(r[RL_C.numbers]) });
+      answered: rlText_(r[RL_C.answered]).split(',').filter(String), sha: rlText_(r[RL_C.sha]), hashes: rlHashes_(rlText_(r[RL_C.hashes])), self: rlSelfParse_(r[RL_C.self]), numbers: rlNumbersParse_(r[RL_C.numbers]), choices: rlChoicesParse_(r[RL_C.choices]) });
   });
   var list = Object.keys(students).map(function (k) { return students[k]; });
   list.forEach(function (s) { for (var c in s.chapters) s.chapters[c].sort(function (a, b) { return a.timeMs - b.timeMs; }); });
@@ -769,6 +772,20 @@ function rlNumbersParse_(text) {
   if (o && typeof o === 'object' && !Array.isArray(o)) Object.keys(o).forEach(function (k) { if (typeof o[k] === 'string' && /^[A-Za-z0-9:._\-]{1,60}$/.test(k)) out[k] = o[k]; });
   return out;
 }
+// Valinnat (17e PR 2): luvun tehtävien, joissa on yksi valintakohta, oppilaan valinta (järjestysnumero sivulla), JSON {tehtävä: numero}.
+// Oikea vaihtoehto ei ole taulukossa, vaan Tehtavat.gs:ssä (`choice.correct`). Ei nimeä eikä muuta; vanha rivi ilman saraketta luetaan tyhjänä.
+function rlChoicesCell_(m) { return JSON.stringify(m); }   // '{}' = tiedosto on luettu eikä siinä ole valintoja; tyhjä solu = ei vielä luettu
+function rlChoicesParse_(text) {
+  var out = Object.create(null), o;
+  try { o = JSON.parse(rlText_(text) || '{}'); } catch (e) { return out; }
+  if (o && typeof o === 'object' && !Array.isArray(o)) Object.keys(o).forEach(function (k) { if (typeof o[k] === 'number' && o[k] >= 0 && o[k] <= 50 && o[k] % 1 === 0 && /^[A-Za-z0-9:._\-]{1,60}$/.test(k)) out[k] = o[k]; });
+  return out;
+}
+// Valintatehtävän tunnistettava alku: tehtävänannon ensimmäinen kappale (Tehtavat.gs html, RuukkiLabran oma sisältö), ilman kuvia; muuten valinnan oma kysymys.
+function rlLead_(t) {
+  var m = /<p\b[^>]*>([\s\S]*?)<\/p>/.exec(t.html || ''), lead = m && !/<img\b/.test(m[1]) ? m[1] : '';
+  return lead && lead.length <= 700 ? lead : (t.choice.question || '');
+}
 // Luokan yhteenveto (17e, K8): lukumäärät ilman nimiä ja sähköposteja. Luvuittain tehtävät (palauttaneet, vastanneet, pisteiden
 // jakauma ja keskiarvo; laskutehtävistä oikein, lähellä ja väärin, ja väärien virhelaji), sekä tavoitteittain itsearvion tasojen
 // lukumäärät. Lukuväli rajataan arviointisivulla. Numero arvioidaan sivun omalla säännöllä (window.flJudge, virhe.js; Apps Scriptissä
@@ -783,6 +800,7 @@ function rlClass_(m) {
       var answered = 0, scored = 0, sum = 0, zero = 0, part = 0, full = 0, num = null;
       var numeric = judge && t.checks && t.checks.length === 1 ? t.checks[0] : null;
       if (numeric) num = { answered: 0, ok: 0, close: 0, wrong: 0, unread: 0, mistakes: { sign: 0, magnitude: 0, time: 0, kelvin: 0 } };
+      var pick = t.choice ? { answered: 0, n: t.choice.options.map(function () { return 0; }) } : null;   // valintojen jakauma (17e PR 2)
       subs.forEach(function (s) {
         var v = rlForTask_(s, c.id, t.id);
         if (v.answered.indexOf(t.id) < 0) return;
@@ -791,6 +809,7 @@ function rlClass_(m) {
           var p = rlTaskScore_(m, s, c.id, v, t.id).score;
           if (p !== '') { scored++; sum += p; if (p <= 0) zero++; else if (p >= maxP) full++; else part++; }
         }
+        if (pick && v.choices[t.id] !== undefined && v.choices[t.id] < pick.n.length) { pick.answered++; pick.n[v.choices[t.id]]++; }
         if (numeric && v.numbers[t.id] !== undefined) {
           var j = judge(v.numbers[t.id], numeric.answer, numeric.tol, numeric.unit, numeric.step);
           num.answered++;
@@ -803,6 +822,7 @@ function rlClass_(m) {
       var out = { id: t.id, number: t.number, level: t.level, lesson: !!t.lesson, returned: subs.length, answered: answered, scored: scored,
                   avg: scored ? rlRound_(sum / scored) : null, dist: { zero: zero, part: part, full: full } };
       if (num && num.answered) out.num = num;
+      if (pick && pick.answered) out.pick = { answered: pick.answered, n: pick.n, correct: t.choice.correct, options: t.choice.options, lead: rlLead_(t) };
       return out;
     });
     // tavoitteittain: itsearvion tasojen lukumäärät uusimmista palautuksista; ei vastattu = palauttaneet, joilla ei ole tasoa

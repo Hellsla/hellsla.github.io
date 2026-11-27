@@ -62,6 +62,9 @@
     'Keskiarvo': 'Mean', 'osa pisteistä': 'part of the points', 'täydet pisteet': 'full points', 'Oikein · lähellä · väärin': 'Correct · close · wrong',
     'Oikein': 'Correct', 'Lähellä': 'Close', 'Väärin': 'Wrong', 'Yleisvirheet': 'Common mistakes', 'etumerkki': 'sign', 'kertaluokka': 'order of magnitude',
     'aika': 'time', 'kelvin': 'kelvin',
+    // class summary: the choices (17e PR 2)
+    'Valinnat': 'Choices', 'Oikea vaihtoehto': 'Correct option', 'Väärä vaihtoehto': 'Wrong option', 'Vaihtoehto ': 'Option ',
+    ' (oikea vaihtoehto)': ' (correct option)',
     // the kinds of a lesson's tasks in their names (lang/en.json inquiry); the rest of a name is the chapter's own text
     'Pohdinta': 'Think about it', 'Ennusta': 'Predict', 'Tutki': 'Investigate', 'Käsitetehtävä': 'Concept task',
     'Laskutehtävä': 'Calculation task', 'Selitystehtävä': 'Explanation task', 'Ennuste': 'Prediction', 'Johtopäätös': 'Conclusion',

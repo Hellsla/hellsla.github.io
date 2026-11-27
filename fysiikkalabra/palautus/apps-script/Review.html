@@ -90,7 +90,15 @@
   .stack > span.sa-c, .stack > span.sa-none { color: var(--ink); }
   #classSec td.lab { max-width: 34em; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   #classSec td:first-child { white-space: nowrap; }
+  /* valintojen jakauma (17e PR 2): yksi laatikko tehtävää kohti, vaihtoehdot siinä järjestyksessä kuin oppilas ne näki; oikea tummanvihreä, väärät harmaat */
+  .pick { border: 1px solid var(--line); border-radius: 10px; background: #fff; padding: 8px 14px 6px; margin: 8px 0; max-width: 900px; }
+  .pick h4 { margin: 0 0 2px; font-size: 15px; } .pick .q { margin: 0 0 6px; color: var(--ink2); font-size: 15px; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+  .pick .opt { display: grid; grid-template-columns: minmax(0, 1fr) minmax(90px, 220px) 2.2em; gap: 4px 12px; align-items: center; padding: 3px 0; }
+  .pick .opt .t { overflow-wrap: anywhere; } .pick .opt .n { text-align: right; font-weight: 700; }
+  .pick .pbar { display: block; height: 16px; border-radius: 4px; background: #ece8dc; overflow: hidden; } .pick .pbar > span { display: block; height: 100%; background: #9a9a9a; }
+  .pick .opt.ok .pbar > span { background: #1a4d2e; } .pick .opt.ok .t { font-weight: 700; }
   @media (max-width: 640px) {
+    .pick .opt { grid-template-columns: minmax(0, 1fr) 2.2em; } .pick .opt .t { grid-column: 1 / -1; }
     #classSec th, #classSec td { padding: 6px 5px; } #classSec td { font-size: 15px; } .stack { min-width: 100px; }
     #classGoals, #classGoals tbody, #classGoals tr, #classGoals td { display: block; width: auto; } #classGoals tr { padding: 4px 0; border-bottom: 1px solid var(--line); }
     #classGoals td { border: 0; padding: 2px 5px; } #classSec td.lab { max-width: none; white-space: normal; }
@@ -124,6 +132,9 @@
       <div id="classNumSec"><h3>Laskutehtävittäin</h3>
         <p class="muted sa-legend" id="numLegend"></p>
         <div class="wide"><table id="classNums"><thead></thead><tbody></tbody></table></div></div>
+      <div id="classPickSec"><h3>Valinnat</h3>
+        <p class="muted sa-legend" id="pickLegend"></p>
+        <div id="classPicks"></div></div>
     </section>
     <div class="bar"><h2 class="grow">Tehtävät</h2><label class="muted"><input type="checkbox" id="onlyOpen"> Vain arvioimattomat</label></div>
     <p class="muted" id="students" hidden></p>
@@ -433,6 +444,7 @@
     var nrows = [];
     chs.forEach(function (c) { c.tasks.forEach(function (t) { if (t.num) nrows.push({ c: c, t: t, i: nrows.length }); }); });
     nrows.sort(function (a, b) { var x = a.t.num.wrong / a.t.num.answered, y = b.t.num.wrong / b.t.num.answered; return x === y ? a.i - b.i : y - x; });
+    renderPicks(chs, all);
     $('classNumSec').hidden = !nrows.length;
     if (!nrows.length) return;
     legend($('numLegend'), [['a', 'Oikein'], ['c', 'Lähellä'], ['d', 'Väärin']]);
@@ -445,6 +457,28 @@
       bar.append(stack([['a', n.ok, 'Oikein'], ['c', n.close, 'Lähellä'], ['d', n.wrong, 'Väärin']]));
       tr.append(el('td', null, r.t.lesson ? r.t.number : 'Tehtävä ' + r.t.number), el('td', 'n', String(n.answered)), bar, el('td', why ? null : 'muted', why || '–'));
       nb.append(tr);
+    });
+  }
+  // valinnat: vaihtoehtojen lukumäärät, oikea tummanvihreänä; heikoin ensin (oikein valinneiden osuus pienin)
+  function renderPicks(chs, all) {
+    var prow = [], box = $('classPicks'); box.textContent = '';
+    chs.forEach(function (c) { c.tasks.forEach(function (t) { if (t.pick && t.pick.correct.length) prow.push({ t: t, i: prow.length, share: t.pick.correct.reduce(function (n, k) { return n + t.pick.n[k]; }, 0) / t.pick.answered }); }); });
+    prow.sort(function (a, b) { return a.share === b.share ? a.i - b.i : a.share - b.share; });
+    $('classPickSec').hidden = !prow.length;
+    if (!prow.length) return;
+    legend($('pickLegend'), [['a', 'Oikea vaihtoehto'], ['x', 'Väärä vaihtoehto']]);
+    (all ? prow : prow.slice(0, CLASS_CAP)).forEach(function (r) {
+      var p = r.t.pick, card = el('div', 'pick'), h = el('h4', null, r.t.lesson ? r.t.number : 'Tehtävä ' + r.t.number), q = el('div', 'q'), max = Math.max.apply(null, p.n.concat(1));
+      card.setAttribute('data-task', r.t.id);
+      q.innerHTML = p.lead; card.append(h, q);   // RuukkiLabran oma, generoitu tehtävänanto (Tehtavat.gs), ei opiskelijan dataa
+      p.options.forEach(function (o, k) {
+        var row = el('div', 'opt' + (p.correct.indexOf(k) >= 0 ? ' ok' : '')), t = el('span', 't'), bar = el('span', 'pbar'), fill = el('span');
+        if (o === null) t.textContent = 'Vaihtoehto ' + (k + 1); else t.innerHTML = o;
+        fill.style.width = (p.n[k] / max * 100) + '%'; bar.append(fill); bar.setAttribute('role', 'img');
+        bar.setAttribute('aria-label', p.n[k] + (p.correct.indexOf(k) >= 0 ? ' (oikea vaihtoehto)' : ''));
+        row.append(t, bar, el('span', 'n', String(p.n[k]))); card.append(row);
+      });
+      box.append(card);
     });
   }
   $('classAll').addEventListener('click', function () { S.classAll = !S.classAll; renderClass(); });
