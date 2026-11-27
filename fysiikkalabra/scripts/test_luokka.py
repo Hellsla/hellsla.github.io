@@ -34,8 +34,8 @@ SETUP = r"""() => {
   const ch = RL_COURSE.chapters.find((c) => c.tasks.filter((t) => t.checks && t.checks.length === 1 && !t.lesson).length >= 2 && (c.self || []).length >= 2);
   const nums = ch.tasks.filter((t) => t.checks && t.checks.length === 1 && !t.lesson);
   const [T1, T2] = nums;
-  const P = ch.tasks.find((t) => t.choice && !t.lesson);   // a task with one choice (17e PR 2)
-  const pc = P.choice.correct[0], pw = (pc + 1) % P.choice.options.length;
+  const P = ch.tasks.find((t) => t.choice && !t.lesson && t.choice.correct.length === 1);   // a task with one choice and one correct option (17e PR 2)
+  const pc = P.choice.correct[0], pw = P.choice.options.findIndex((o, k) => k !== pc);
   const people = ['a', 'b', 'c', 'd', 'e'].map((k) => k + '.opiskelija@koulu.example');
   const head = RL_SUB_HEAD.slice();
   MOCK.addSheet(RL_CONFIG.SUBMISSIONS_SHEET, [head]);

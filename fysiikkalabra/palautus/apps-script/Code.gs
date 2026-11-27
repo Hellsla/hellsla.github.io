@@ -781,10 +781,11 @@ function rlChoicesParse_(text) {
   if (o && typeof o === 'object' && !Array.isArray(o)) Object.keys(o).forEach(function (k) { if (typeof o[k] === 'number' && o[k] >= 0 && o[k] <= 50 && o[k] % 1 === 0 && /^[A-Za-z0-9:._\-]{1,60}$/.test(k)) out[k] = o[k]; });
   return out;
 }
-// Valintatehtävän tunnistettava alku: tehtävänannon ensimmäinen kappale (Tehtavat.gs html, RuukkiLabran oma sisältö), ilman kuvia; muuten valinnan oma kysymys.
+// Valintatehtävän tunnistettava alku: valinnan oma kysymys, ellei se ole pelkkä "Valitse vaihtoehto."; muuten tehtävänannon ensimmäinen kappale (Tehtavat.gs html, RuukkiLabran oma sisältö), ilman kuvia.
 function rlLead_(t) {
+  if (t.choice.question) return t.choice.question;   // a lesson task's own question (an exercise's is its statement)
   var m = /<p\b[^>]*>([\s\S]*?)<\/p>/.exec(t.html || ''), lead = m && !/<img\b/.test(m[1]) ? m[1] : '';
-  return lead && lead.length <= 700 ? lead : (t.choice.question || '');
+  return lead.length <= 700 ? lead : '';
 }
 // Luokan yhteenveto (17e, K8): lukumäärät ilman nimiä ja sähköposteja. Luvuittain tehtävät (palauttaneet, vastanneet, pisteiden
 // jakauma ja keskiarvo; laskutehtävistä oikein, lähellä ja väärin, ja väärien virhelaji), sekä tavoitteittain itsearvion tasojen

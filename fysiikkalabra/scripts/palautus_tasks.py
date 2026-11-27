@@ -160,6 +160,9 @@ class Quiet(http.server.SimpleHTTPRequestHandler):
     def log_message(self, *a): pass
 
 
+JSON_FI = json.loads((ROOT / "lang/fi.json").read_text())
+
+
 def radio_orders(path):
     """{radio name: [(value, data-correct), ...]} of a built page: the options in the order that page shows them."""
     out = {}
@@ -175,13 +178,17 @@ def language_orders(pid, tasks):
     "no mistake" last only when its text matches the language's no_error) is marked: English `skip_en` (the grading view leaves English
     files out of that task), fi-easy (a file says "fi" for both) drops the task's choice."""
     fi = radio_orders(SITE / f"{pid}.html")
+    for lang in ("en", "fi-easy"):
+        if not (SITE / lang / f"{pid}.html").is_file(): sys.exit(f"{pid}: {lang}/{pid}.html is not in {SITE.name}/ (the build makes every language; the choices' order is compared)")
     en, easy = radio_orders(SITE / "en" / f"{pid}.html"), radio_orders(SITE / "fi-easy" / f"{pid}.html")
     for t in tasks:
         c = t.get("choice")
         if not c: continue
         if c["name"] not in fi or fi[c["name"]] != [(i, "1" if i in c["correct"] else "0") for i in range(len(c["options"]))]: t.pop("choice"); continue   # not the page's own list (a name used twice)
-        if c["name"] in easy and easy[c["name"]] != fi[c["name"]]: t.pop("choice"); continue
-        if c["name"] in en and en[c["name"]] != fi[c["name"]]: c["skip_en"] = True
+        if easy.get(c["name"]) != fi[c["name"]]: t.pop("choice"); continue   # a translation without the choice cannot be matched either
+        if en.get(c["name"]) != fi[c["name"]]: c["skip_en"] = True
+        generic = JSON_FI["lesson"]["choose"]   # an exercise's own question is its statement; the legend then only says "Valitse vaihtoehto."
+        if re.sub(r"<[^>]*>|\s+", " ", c["question"]).strip() == generic: c["question"] = ""
         del c["name"]
 
 
