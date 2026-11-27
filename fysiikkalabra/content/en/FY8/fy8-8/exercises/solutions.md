@@ -190,6 +190,7 @@ $$. At the end we are in thorium again, but there are four fewer neutrons than a
 **Conversions:** None are needed, because the numbers are counts.
 **Substitution:** Ra-226: $88 \to 86$ and $138 \to 136$, alpha decay. Pb-210: $82 \to 83$ and $128 \to 127$, beta minus. Na-22: $11 \to 10$ and $11 \to 12$, beta plus. I-131: $53 \to 54$ and $78 \to 77$, beta minus. Ba-137 (excited): $56 \to 56$ and $81 \to 81$, gamma decay. Sr-90: $38 \to 39$ and $52 \to 51$, beta minus.
 **Answer:** $3$. The beta minus decays are lead-210, iodine-131 and strontium-90. The result is the exact number of rows.
+**Optional c:** The numbers $Z$, $N$, $Z'$ and $N'$ alone are not enough. Electron capture also gives the same daughter nucleus, because in both the proton number decreases by one and the mass number is conserved. One would have to observe the positron emitted in the decay.
 **Reasonableness:** In every row the number of nucleons stays the same or decreases by four: $Z + N = 226 \to 222$ in the alpha decay, and in the other rows the sum does not change ($$
 \begin{aligned}
 82 + 128 &= 83 + 127 \\

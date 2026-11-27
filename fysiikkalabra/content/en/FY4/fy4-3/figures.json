@@ -21,5 +21,8 @@
  "F_n": "F_b",
  "G_v": "G_s",
  "F_o": "F_a",
- "G_m": "G_p"
+ "G_m": "G_p",
+ "Kaksi voimakuviota samasta luistelijoiden työnnöstä. Vasemmalla systeeminä on vain luistelija A, jonka ympärillä on katkoviiva. Hänen voimakuviossaan ovat paino G A, tukivoima N A ja B:n voima A:han, F B A, joka osoittaa vasemmalle. Oikealla systeeminä ovat luistelijat A ja B yhdessä, ja katkoviiva kulkee molempien ympäri. Voimakuviossa ovat vain ulkopuoliset voimat: A:n ja B:n yhteispaino ja yhteinen tukivoima. Vuorovaikutusparin voimat F A B ja F B A ovat sisäisiä, eikä niitä piirretä nuolina; niiden vektorisumma on nollavektori. Oikean puolen painon ja tukivoiman nuolet ovat yhtä pitkät. Kitka jätetään huomiotta.": "Two force diagrams of the same push between skaters. On the left the system is only skater A, with a dashed line around them. Their force diagram has the weight G A, the support force N A and B's force on A, F BA, which points left. On the right the system is skaters A and B together, and the dashed line goes around both. The force diagram has only external forces: the total weight and the total support force of A and B. The forces of the interaction pair, F AB and F BA, are internal and are not drawn as arrows; their vector sum is the zero vector. The weight and support arrows on the right are equal in length. Friction is neglected.",
+ "systeemi: A": "system: A",
+ "systeemi: A ja B": "system: A and B"
 }

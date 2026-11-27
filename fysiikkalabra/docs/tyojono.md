@@ -221,8 +221,17 @@ Kohdan 24 "Älä muuta piirroksia" -rajaus ei koske näitä; opettaja salli muut
 ## 29. Opettajan muutoslista 27.11.2026 (opettaja 2026-11-27 koordinaattorin chatissa: "ota nämä työlistalle")
 Koko lista sellaisenaan: `docs/audits/2026-11-27-muutoslista.md`. Opettajan antamat sanamuodot käytetään sellaisinaan (hyväksytty); muut uudet tekstit ja kuvat opettajalle tekijäsessiossa. Kurssi kerrallaan, kukin oma PR; fi + fi-easy + en, kun sama kohta on niissä.
 Järjestys: ensin "Korjaa ensin" 1–4, sitten 5–10.
+<<<<<<< HEAD
 - 29.1 TEHTY (PR #887, 2026-11-27): uusi tehtäväkenttä `"exact": true` 25 tehtävällä (fy7-13, fy8-3, fy8-5, fy8-8, fy8-15); fy8-8-L1-02 218 ok, 222 → opettajan vihje (en/fi-easy opettaja tekijäsessiossa "Hyväksyn molemmat"); testi `scripts/test_tarkka.py`.
 - 29.6 FY4 fy4-3 kaksi voimakuviota (uudet kuvat opettajalle). 29.8 FY6 fy6-8-L2-05 linkki ja FY10 paristotyön linkitys FY6:n teoriaan. 29.9 koko kirja: alakohdan palaute ("C-kohdan lukuarvo on oikein…", malli fy4-10-L2-06; jaettu, uusi UI-teksti on opettajan antama). 29.10 FY8 fy8-8-L2-05 jatkokysymys.
 
 ## 30. Virhe-tehtävän vaihtoehtojärjestys englanniksi (opettaja 2026-11-27 koordinaattorin chatissa: "tee nämä")
 Löydös PR #886:ssa: fy3-11, fy3-16, fy5-2, fy7-10 ja fy8-1 (en) `virhe`-tehtävän vaihtoehdot ovat eri järjestyksessä kuin suomeksi, koska englannin "no mistake" ei osu `inquiry.no_error`-sääntöön; siksi niiden en-valinnat jäävät valintojen jakaumasta pois (`skip_en`). Korjaa sääntö tai en-teksti niin, että järjestys on sama kuin fi:ssä, ja poista `skip_en`. Vanhentaa en-katselmoinnit näillä sivuilla: tekstimuutokset opettajalle tekijäsessiossa (approve-text) tai vaaditut katselmoinnit. Jaettu, jos sääntö (`inquiry.py`) muuttuu.
+=======
+- 29.1 (kiireellinen, vastaustarkistus antaa väärälle "Oikein"): fy8-8-L1-02 hyväksyy vain 218, vihje 222:lle; täsmällinen tarkistus kaikkiin kokonaislukuvastauksiin (massa- ja järjestysluku, neutronien lukumäärä, hilan kertaluku; esim. fy7-13-L1-08) kaikilla kursseilla; selainkoe 218 ok, 217/219/222 hylätään. Jos tarvitaan uusi kenttä tai tarkistimen muutos, se on jaettu.
+- 29.8 FY6 fy6-8-L2-05 linkki ja FY10 paristotyön linkitys FY6:n teoriaan. 29.9 koko kirja: alakohdan palaute ("C-kohdan lukuarvo on oikein…", malli fy4-10-L2-06; jaettu, uusi UI-teksti on opettajan antama).
+>>>>>>> origin/main
+
+## 32. Kuvalintin väärä "monochrome figure" -löydös (koordinaattori 2026-11-27, löydös PR #899)
+`scripts/lint_lesson.py` `check_figures` etsii `<image `-tagia vain SVG:n 600 ensimmäisestä merkistä; pitkä alt-teksti työntää tagin sen yli, jolloin värillinen WebP-pohjainen kuva luokitellaan yksiväriseksi (fy4-2 lesson.md:5; tarkista myös fy7-8 lesson.md:46). Korjaus: etsi `<image ` koko SVG:stä (tai ennen ensimmäistä piirroselementtiä) + testi. Jaettu (scripts/), yksin. Kohdan 27 fy4-2 ja mahdollisesti fy7-8 eivät silloin vaadi uutta piirrosta (kerrottu opettajalle).
+

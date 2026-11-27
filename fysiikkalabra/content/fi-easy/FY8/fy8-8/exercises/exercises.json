@@ -147,7 +147,7 @@
     {
       "id": "fy8-8-L2-05",
       "level": 2,
-      "text": "Taulukossa on kuuden radioaktiivisen ytimen protoniluku $Z$ ja neutroniluku $N$ ennen hajoamista. Siinä ovat myös tytärytimen luvut $Z'$ ja $N'$ hajoamisen jälkeen. Luvut ovat ytimien pääasiallisista hajoamistavoista (NNDC NuDat 3).\n\na) Päättele jokaisen rivin hajoamistapa: alfa-, beeta miinus -, beeta plus - tai gammahajoaminen.\n\nb) Laske, kuinka monessa riveistä ydin hajoaa beeta miinus -hajoamisella.\n\nKirjoita b-kohdan tulos vastauskenttään.",
+      "text": "Taulukossa on kuuden radioaktiivisen ytimen protoniluku $Z$ ja neutroniluku $N$ ennen hajoamista. Siinä ovat myös tytärytimen luvut $Z'$ ja $N'$ hajoamisen jälkeen. Luvut ovat ytimien pääasiallisista hajoamistavoista (NNDC NuDat 3).\n\na) Päättele jokaisen rivin hajoamistapa: alfa-, beeta miinus -, beeta plus - tai gammahajoaminen.\n\nb) Laske, kuinka monessa riveistä ydin hajoaa beeta miinus -hajoamisella.\n\nc) (vapaaehtoinen) Mitä pitäisi vielä havaita, jotta voisit päätellä, että hajoaminen oli juuri β⁺-hajoaminen?\n\nKirjoita b-kohdan tulos vastauskenttään.",
       "kind": [
         "data",
         "reasoning"
