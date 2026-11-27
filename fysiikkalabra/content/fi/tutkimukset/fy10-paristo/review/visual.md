@@ -1,14 +1,17 @@
-VERDICT: FAIL
+VERDICT: PASS
 CONTENT-HASH: dfb3675133290f7c
 
 ## Blocking
-- [Major] page-390-2 / page-1280-2 (#tarvitset) — visual verification incomplete: the captures (stamp dfb3675133290f7c, page 1402abd326d298e2, 2026-11-27 09:57) still show "Lähdejännite ja sisäinen resistanssi (FY6, luku tulossa)" as plain text, with no link and no "(FY6)" tag. They are still from a build where fy6-8 is not published, so the link, its tag, wrapping and spacing cannot be judged. Retake from a full build where fy6-8 is published, then re-run the visual review.
+(none)
 
 ## Polish
-- none
+(none)
 
 ## Checked
-- page-390-2 and page-1280-2 opened. The other items in the section read well at both widths: badges, FY6 tags and the TVT guide links wrap cleanly with no overflow. Only the fy6-8 item is unverified.
+- stamp.txt: hash dfb3675133290f7c, page c02f832c70e7c610 (current captures, fy6-8 present).
+- page-390-2 and page-1280-2: #tarvitset. "Lähdejännite ja sisäinen resistanssi" is a green underlined link (investigation.json target fy6-8) with the tag "(FY6)", styled like the other linked items (FY1 items). The "välttämätön" pill sits beside it. At 390 px it wraps cleanly onto two lines with the tag after the link and the description below; at 1280 px it sits on one line. Row spacing and dividers match the neighbouring items. No overflow or clipping.
+- The other FY6 items are plain text with a descriptive tag. Not a defect, because those targets are not linked.
+- Rest of the page unchanged since the last PASS.
 
 ## Scores
 illustrations 4 · typography 4 · Finnish 4 · accessibility 4
