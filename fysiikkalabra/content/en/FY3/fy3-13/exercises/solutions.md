@@ -130,7 +130,7 @@ The uncertainty is not an absolute limit, so a deviation alone does not prove an
 **Answer:** $1.86$ times, three significant figures, because the difference $11.15\,{}^\circ\text{C}$ and the uncertainty $6.00\,{}^\circ\text{C}$ are given to three figures (the result $-262.00\,{}^\circ\text{C}$ and the accepted value are given to the hundredth).
 **Reasonableness:** The deviation $11.15\,{}^\circ\text{C}$ is almost two uncertainties ($2 \cdot 6.00 = 12.0$). The uncertainty interval $-268\ldots -256\,{}^\circ\text{C}$ does not contain the accepted value $-273.15\,{}^\circ\text{C}$, so by this rule the result is not consistent with it.
 
-The ratio $1.86$ alone does not tell what causes the deviation, so a cause has to be proposed and tested.
+The ratio 1.86 alone does not tell what causes the deviation, so a cause has to be proposed and tested.
 
 **Model answer (reason and test):** One possible reason is a zero error of the thermometer: if it reads about $11\,{}^\circ\text{C}$ too high at every temperature, the whole line shifts along the temperature axis and the temperature of zero pressure comes out as about $-262\,{}^\circ\text{C}$. You can test this in the next measurement by checking the thermometer in ice water and in boiling water before the series and by comparing it with a second thermometer. If it reads about $11\,{}^\circ\text{C}$ in ice water, the explanation gains support. If it reads $0\,{}^\circ\text{C}$, the cause is elsewhere, for example an air leak or an error of the pressure gauge.
 

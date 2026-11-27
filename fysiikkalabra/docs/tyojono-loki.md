@@ -858,3 +858,4 @@ Opettaja 2026-11-24 kohta 4. s7 (16 p) ja s8 (18 p) ylioppilaskokeen 15 pisteese
 
 ## 29.3: fy3-13 teorian loppu ja L3-03 viimeinen kysymys (PR #889, opettaja hyväksyi tekstit 2026-11-27 tässä sessiossa)
 Teorian loppu opettajan sanamuodolla (fi, fi-easy, en), L3-03:n viimeinen kysymys "Ehdota yhtä mahdollista syytä…" ja malliratkaisu (nollapistevirhe + testi) kolmella kielellä; vastaus 1,86 ja kuvat ennallaan. Hyväksyntä `docs/teacher-text.tsv` (approve-text), katselmoinnit none.
+- 29.4 (2026-11-27, opettajan muutoslista kohta 4): fy7-5 teorian alku puhuu vuon muutoksesta (opettajan sanamuoto), induktiojännitteen suuruus "positiivinen tai nolla"; fi, fi-easy, en; opettaja hyväksyi sanamuodot sessiossa (approve-text), ei uusia katselmointeja.
