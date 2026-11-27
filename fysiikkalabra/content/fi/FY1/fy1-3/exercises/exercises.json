@@ -259,7 +259,7 @@
     {
       "id": "fy1-3-L2-08",
       "level": 2,
-      "text": "Oppilas ripustaa saman heilurin langan päähän ensin kevyen ja sitten raskaan kuulan ja mittaa kymmenen heilahduksen ajan käsikellolla viisi kertaa kummallakin kuulalla. Käsin otetun ajan epävarmuus on $\\Delta t = 0{,}2\\,\\text{s}$ jokaiselle tulokselle. Laskimen antamat keskiarvot ovat kevyellä kuulalla $\\bar{t}_\\text{kevyt} = 14{,}30\\,\\text{s}$ ja raskaalla kuulalla $\\bar{t}_\\text{raskas} = 14{,}36\\,\\text{s}$ (kymmenen heilahduksen aika). Mitä seuraavista päätelmistä aineisto tukee?",
+      "text": "Oppilas ripustaa saman heilurin langan päähän ensin kevyen ja sitten raskaan kuulan ja mittaa kymmenen heilahduksen ajan käsikellolla viisi kertaa kummallakin kuulalla. Käsin otetun ajan epävarmuus on $\\Delta t = 0{,}2\\,\\text{s}$ jokaiselle tulokselle. Laskimen antamat keskiarvot ovat kevyellä kuulalla $\\bar{t}_\\text{kevyt} = 14{,}30\\,\\text{s}$ ja raskaalla kuulalla $\\bar{t}_\\text{raskas} = 14{,}36\\,\\text{s}$ (kymmenen heilahduksen aika). Vertaa keskiarvojen eroa myös kummankin sarjan sisäiseen hajontaan eli siihen, kuinka paljon sarjan tulokset vaihtelevat. Mitä seuraavista päätelmistä aineisto tukee?",
       "kind": [
         "data",
         "reasoning"
@@ -310,7 +310,7 @@
         {
           "text": "Aineisto ei osoita kuulan massan vaikuttavan heilahdusaikaan, koska keskiarvojen ero on pienempi kuin käsin otetun ajan epävarmuus.",
           "correct": true,
-          "feedback": "Oikein: ero $0{,}06\\,\\text{s}$ jää epävarmuuden $0{,}2\\,\\text{s}$ sisään, joten eroa ei voida osoittaa. Se ei kuitenkaan todista, että ajat ovat yhtä suuret, vaan ainoastaan sen, ettei tämä mittaus erota niitä."
+          "feedback": "Oikein: ero $0{,}06\\,\\text{s}$ jää epävarmuuden $0{,}2\\,\\text{s}$ sisään, joten eroa ei voida osoittaa. Myös sarjojen sisäinen hajonta ($0{,}4\\,\\text{s}$ ja $0{,}3\\,\\text{s}$) on yli viisinkertainen eroon verrattuna. Se ei kuitenkaan todista, että ajat ovat yhtä suuret, vaan ainoastaan sen, ettei tämä mittaus erota niitä."
         },
         {
           "text": "Kuulan massa ei vaikuta heilahdusaikaan, koska keskiarvot ovat melkein samat.",
