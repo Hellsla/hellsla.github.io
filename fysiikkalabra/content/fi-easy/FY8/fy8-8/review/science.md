@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 078bd63ebe7f0cb3
+CONTENT-HASH: b1b882276359b0a5
+SCOPE: delta teacher-figure,wording from b1b882276359b0a5 base b3ee786
 
 ## Blocking
-Ei.
 
 ## Polish
-Ei.
+- inquiry.json:294 — the Järkevyys line says "$4$ beeta miinus -hajoamista, ja kumpikin kasvattaa": "kumpikin" means one of two, but there are four decays — write "jokainen". This is wording only; the physics is right.
 
 ## Checked
-batch delta review, kierros 2: kaikki kolme pysahdy-laatikkoa (kaikki uusia mainiin nähden) ja niiden konteksti tarkistettu; luvut laskettu uudelleen omalla skriptillä. ${}^{23}_{11}$Na: $N = 12$; C-14 $\beta^-$: $Z = 7$, $A = 14$, N-14; U-238 $\alpha$: $A = 234$, $Z = 90$ (Th-234). Kaikki oikein, siirretyt laatikot sopivat sijaintiinsa.
-
-## Vanhan sisällön löydökset
-Ei.
+- inquiry.json:274, task `siirto`: `"exact": true` suits it. The answer is a count of decays (an integer), and it is unchanged at 7.
+- Recomputed: n_alpha = (235 - 207)/4 = 7. Beta-minus count = 82 - 78 = 4. The U-238 series: 8 alpha and 6 beta, which is correct.
+- Mistake values 28, 10 and 5 are each different from 7, and their feedback is correct.
+- Teacher-approved figures and pictures are carried as approved, with no physics change in the diff.
