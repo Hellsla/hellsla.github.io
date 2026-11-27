@@ -852,3 +852,6 @@ Opettaja 2026-11-24 kohta 4. s7 (16 p) ja s8 (18 p) ylioppilaskokeen 15 pisteese
 
 ## 17e: luokan yhteenveto (PR #882, opettaja hyväksyi tekstit ja kuvat 2026-11-26 tässä sessiossa)
 `Code.gs` `rlClass_` (tulee `rlOverview`-kutsun mukana, `cls`): luvuittain tehtävittäin palauttaneet, vastanneet, pisteiden jakauma ja keskiarvo; tavoitteittain itsearvion tasojen lukumäärät; laskutehtävittäin oikein/lähellä/väärin ja yleisvirheet (17c). Ei nimiä. Luvun arvio sivun omalla säännöllä: `flParse` ja `flJudge` siirretty `virhe.js`:ään (`lesson.js` käyttää niitä), `Virhe.gs` generoidaan `palautus_tasks.py`:llä. Taulukkoon uusi sarake *Numerovastaukset* (JSON, tehtävät joilla yksi tarkistuslomake; `Tehtavat.gs` `checks`); vanhat rivit täydennetään seuraavassa tuonnissa. Tekstit `Review.html` ja `kieli-en.js`. Testit `test_luokka.py`, `test_palautus.py`. Kuvat `docs/audits/17e/`. Ei tehty: valintojen jakauma; pienen ryhmän piilotus (opettaja: ei tarvita).
+
+## 29.2: fy2-6 aineistotehtävä karkausvuoden tunneilla (PR #888)
+`data-fi` (fi, fi-easy, en) ja `lesson-answers.py`: 20 200 GWh : 8 784 h = 2,30 GW (oli 8 760 h, 2,31 GW), sama kuin L2-08. Tiedekatselmoinnin delta PASS (`content/fi/FY2/fy2-6/review/science-delta.md`); luvun muut 8 760 h -kohdat eivät koske vuotta 2024. Polish: tiivistelmän "vuoden tuntimäärä 8760 h" voisi olla "tavallisen vuoden".
