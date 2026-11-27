@@ -150,7 +150,7 @@
       "id": "fy6-8-L2-05",
       "level": 2,
       "core": true,
-      "text": "The terminal voltage of a battery was measured at six different load currents (example data). Draw the $(I, U)$ graph from the measured points and fit a straight line to the points. The points are not exactly on a line, because every measurement has a small uncertainty.\n\na) Read the source voltage of the battery from the line.\n\nb) Determine the internal resistance of the battery from the slope of the line and estimate how much the slope can vary when the line is fitted in different ways.\n\nThe answer box takes the result of part b).",
+      "text": "The terminal voltage of a battery was measured at six different load currents (example data). Draw the $(I, U)$ graph from the measured points and fit a straight line to the points. The points are not exactly on a line, because every measurement has a small uncertainty.\n\na) Read the source voltage of the battery from the line.\n\nb) Determine the internal resistance of the battery from the slope of the line and estimate how much the slope can vary when the line is fitted in different ways.\n\nThe answer box takes the result of part b).\n\n[Measure the load curve of your own battery](fy10-paristo.html)",
       "kind": [
         "data",
         "graph"

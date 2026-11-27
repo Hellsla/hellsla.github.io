@@ -25,3 +25,6 @@ date	lang	id	file	before	after	source
 2026-11-27	en	fy1-3	content/en/FY1/fy1-3/exercises/exercises.json	c9c650a6d88b9d2a	db4795497181dbaf	Opettaja tässä sessiossa 2026-11-27: hyväksyi fi-, fi-easy- ja en-sanamuodot (työjono 29.5)
 2026-11-27	en	fy1-3	content/en/FY1/fy1-3/exercises/solutions.md	4df41600d7f69af6	6260f0f9719c4a7f	Opettaja tässä sessiossa 2026-11-27: hyväksyi fi-, fi-easy- ja en-sanamuodot (työjono 29.5)
 2026-11-27	en	fy3-13	content/en/FY3/fy3-13/exercises/solutions.md	5daa0788c13a3717	8c0c8f412494814d	Opettaja hyväksyi en L3-03 malliratkaisun $1.86$ → 1.86 -muutoksen tässä tekijäsessiossa 2026-11-27: 'Hyväksyn tekstit', työjono 29.3
+2026-11-27	fi	fy6-8	content/fi/FY6/fy6-8/exercises/exercises.json	5b7250ac4fee124d	5e487b1bbc5b6390	opettaja 2026-11-27 tekijäsessiossa 29.8: Hyväksyn
+2026-11-27	fi-easy	fy6-8	content/fi-easy/FY6/fy6-8/exercises/exercises.json	f13ad1cb46efc5d5	c9daf969cb9e02c0	opettaja 2026-11-27 tekijäsessiossa 29.8: Hyväksyn
+2026-11-27	en	fy6-8	content/en/FY6/fy6-8/exercises/exercises.json	41db3a7d3756e4b0	3e9a979463f6a039	opettaja 2026-11-27 tekijäsessiossa 29.8: Hyväksyn
