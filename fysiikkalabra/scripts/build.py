@@ -28,7 +28,7 @@ stay in their lesson folders and keep their <id>-sim.js URLs.
 """
 import hashlib, json, os, sys, re, shutil, pathlib, atexit, html as _h, markdown
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent)); from reviews import status as review_status, published_exercises, WorkTree
-import koetila, kaavahakemisto, simulaatiogalleria, media_tips, ahjo, answers_shown, figsize, jaksot, kaavat, kilparobo, lumatutor, assigned, booklets, cardgrid, concept_cards, courses, fbdspec, figcat, guides, i18n, inquiry, investigations, local_courses, mathlayout, mixer, module_icons, practice, reading_tips, stopthink, svgids, units, tablefit, valmentaja
+import koetila, kaavahakemisto, simulaatiogalleria, media_tips, ahjo, answers_shown, figsize, jaksot, kaavat, kilparobo, lumatutor, assigned, booklets, cardgrid, concept_cards, courses, fbdspec, figcat, guides, i18n, inquiry, investigations, local_courses, mathlayout, mixer, module_icons, practice, reading_tips, stopthink, subpart, svgids, units, tablefit, valmentaja
 from i18n import t as T
 
 ROOT = pathlib.Path(os.environ.get("FYSIIKKALABRA_ROOT") or pathlib.Path(__file__).resolve().parents[1])   # tests build a copy
@@ -892,7 +892,7 @@ def exercise_html(e, solution_html, read=None, core=False, num=None, level=None)
     if numeric:
         unit = esc(e.get("unit", ""))
         st = answers_shown.step(ans.strip("$"), e["answer"]) if ans.startswith("$") else None   # one unit in the shown answer's last digit; the check allows half of it
-        check = (f'<form class="check" data-answer="{e["answer"]}" data-tol="{e.get("tolerance", 0.02)}" data-unit="{unit}"' + (f' data-step="{st:g}"' if st else "") + (' data-exact="1"' if e.get("exact") else "")
+        check = (f'<form class="check" data-answer="{e["answer"]}" data-tol="{e.get("tolerance", 0.02)}" data-unit="{unit}"' + (f' data-step="{st:g}"' if st else "") + (' data-exact="1"' if e.get("exact") else "") + subpart.attrs(e["text"])
                  + (f" data-mistakes='{esc(json.dumps(e['mistakes'], ensure_ascii=False))}'" if e.get("mistakes") else "") + ' novalidate>'
                  f'<input type="text" inputmode="decimal" autocomplete="off" enterkeyhint="done" aria-label="{esc(inquiry.answer_label(e.get("unit", "")))}" aria-describedby="{esc(e["id"])}-q" placeholder="?">'
                  + (f'<span class="unit">{unit}</span>' if unit else "")

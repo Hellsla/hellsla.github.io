@@ -67,6 +67,15 @@
     window.addEventListener('storage', draw);
   })();
   // The answer check (the rule and the number reading are in virhe.js: window.flJudge, window.flParse; work queue 17e).
+  // A multi-part task whose box checks one part (data-part, data-compare from scripts/subpart.py; work queue 29.9): the
+  // feedback names the part that was accepted and sends the student to the model solution for the parts without a check.
+  const partFeedback = (form) => {
+    if (!form.dataset.part || !form.dataset.compare) return '';
+    const cmp = form.dataset.compare.split(',').map((x) => x.split(':')), head = msg('correct_part', { part: form.dataset.part.toUpperCase() });
+    if (cmp.length === 1) return head + ' ' + msg('compare_' + cmp[0][1], { part: cmp[0][0] });
+    const l = cmp.map((x) => x[0]), list = l.length > 1 ? l.slice(0, -1).join(', ') + msg('list_and') + l[l.length - 1] : l[0];
+    return head + ' ' + msg('compare_parts', { parts: list });
+  };
   document.querySelectorAll('form.check').forEach((form) => {
     const input = form.querySelector('input'), out = form.querySelector('output');
     const ans = Number(form.dataset.answer), tol = Number(form.dataset.tol), step = Number(form.dataset.step) || 0, exact = form.dataset.exact === '1';
@@ -78,7 +87,7 @@
       tries += 1;
       const { value: v, state, mistake } = j;
       if (state === 'ok') {
-        out.textContent = msg('correct'); form.classList.add('is-ok'); input.setAttribute('aria-invalid', 'false');
+        out.textContent = partFeedback(form) || msg('correct'); form.classList.add('is-ok'); input.setAttribute('aria-invalid', 'false');
       } else if (state === 'close') {
         out.textContent = msg('check_near'); input.setAttribute('aria-invalid', 'false');
       } else {

@@ -187,6 +187,7 @@ $$. Lopussa ydin on taas torium, mutta neutroneja on neljä vähemmän kuin alus
 **Muunnokset:** Ei tarvita, koska luvut ovat kappalemääriä.
 **Sijoitus:** Ra-226: $88 \to 86$ ja $138 \to 136$, alfahajoaminen. Pb-210: $82 \to 83$ ja $128 \to 127$, beeta miinus. Na-22: $11 \to 10$ ja $11 \to 12$, beeta plus. I-131: $53 \to 54$ ja $78 \to 77$, beeta miinus. Ba-137 (viritetty): $56 \to 56$ ja $81 \to 81$, gammahajoaminen. Sr-90: $38 \to 39$ ja $52 \to 51$, beeta miinus.
 **Vastaus:** $3$. Beeta miinus -hajoamisia ovat lyijy-210, jodi-131 ja strontium-90. Tulos on rivien tarkka lukumäärä.
+**Vapaaehtoinen c:** Pelkät luvut $Z$, $N$, $Z'$ ja $N'$ eivät riitä. Myös elektronisieppaus antaa saman tytärytimen: kummassakin protoniluku pienenee yhdellä ja massaluku pysyy samana. Pitäisi havaita hajoamisessa lähtenyt positroni.
 **Järkevyys:** Jokaisella rivillä nukleonien määrä pysyy samana tai pienenee neljällä. Alfahajoamisessa $Z + N = 226 \to 222$. Muissa riveissä summa ei muutu ($$
 \begin{aligned}
 82 + 128 &= 83 + 127 \\

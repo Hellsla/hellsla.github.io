@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 7e9e937a3dfb410f
+CONTENT-HASH: dfb3675133290f7c
 
 ## Blocking
 
@@ -23,3 +23,7 @@ None.
 ## Delta 4 (2026-10-31)
 
 - Tool wording now names Graphical Analysis Pro (teacher 2026-10-31) and the tvt-taulukkolaskenta link reads *Taulukko ja lasketut sarakkeet*; no physics changed; grammar checked.
+
+## Delta 5 (round 1)
+
+- The lähdejännite and sisäinen resistanssi prerequisite now links to FY6 chapter fy6-8, which defines both: the right chapter, order (after current/voltage and Ohm) kept. The why text matches the on-page "Teoriaa lyhyesti" section. Polish: the why could name the two quantities (E and r) explicitly.
