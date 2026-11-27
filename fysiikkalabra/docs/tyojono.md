@@ -228,5 +228,5 @@ Löydös PR #886:ssa: fy3-11, fy3-16, fy5-2, fy7-10 ja fy8-1 (en) `virhe`-tehtä
 
 ## 32. Kuvalintin väärä "monochrome figure" -löydös (koordinaattori 2026-11-27, löydös PR #899)
 `scripts/lint_lesson.py` `check_figures` etsii `<image `-tagia vain SVG:n 600 ensimmäisestä merkistä; pitkä alt-teksti työntää tagin sen yli, jolloin värillinen WebP-pohjainen kuva luokitellaan yksiväriseksi (fy4-2 lesson.md:5; tarkista myös fy7-8 lesson.md:46). Korjaus: etsi `<image ` koko SVG:stä (tai ennen ensimmäistä piirroselementtiä) + testi. Jaettu (scripts/), yksin. Kohdan 27 fy4-2 ja mahdollisesti fy7-8 eivät silloin vaadi uutta piirrosta (kerrottu opettajalle).
-TEHTY (PR odottaa yhdistämistä, 2026-11-27): `check_figures` etsii `<image ` koko SVG:stä; testi `scripts/test_lint_figures.py` (CI). Kosketti 24 sivua, kaikki vääriä positiivisia (WebP-pohjaiset kuvat).
+TEHTY (PR #901, odottaa yhdistämistä, 2026-11-27): `check_figures` etsii `<image ` koko SVG:stä; testi `scripts/test_lint_figures.py` (CI). Kosketti 24 sivua, kaikki vääriä positiivisia (WebP-pohjaiset kuvat).
 

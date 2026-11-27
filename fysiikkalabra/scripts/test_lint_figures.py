@@ -26,4 +26,8 @@ assert WEBP.index("<image ") > 600
 assert not mono(WEBP), "WebP base with a long alt must not be monochrome"
 assert not mono(SHORT)
 assert mono(PLAIN) and mono(LONG_PLAIN), "a currentColor-only SVG is monochrome"
+FAKE = f'<svg viewBox="0 0 600 400" aria-label="kuva <image x"><title>{ALT} <image </title><line stroke="currentColor"/></svg>'
+assert mono(FAKE), "the text <image inside an attribute or title is not an image"
+MIXED = '<svg viewBox="0 0 600 400"><image href="pics/FY4/x.webp"/><line stroke="currentColor"/></svg>'
+assert not mono(MIXED), "a picture base with an overlay is a coloured figure"
 print("test_lint_figures: ok")
