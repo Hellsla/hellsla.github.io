@@ -1,15 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: ac689ba1a6a22e54
+CONTENT-HASH: 3dd68982403477e9
 SCOPE: delta md-paragraphs,numbers,reflow,typography from 007cd121579068a3 base 64d4935
 
 ## Blocking
 (none)
 
 ## Polish
-- fy8-8-L2-05, L2-07, L3-03: the Kaava line is a list of relations rather than a chain; acceptable for conservation-law and calibration tasks, no change needed.
+(none)
 
 ## Checked
-- Read every Kaava step of the set from solutions.md: basic law first, derived formula after, symbolic simplification to the end; the Sijoitus rows use the last symbolic form.
-- Photon-energy tasks (L1-04, L2-01, L3-02, L3-05) build E = hf, c = fλ, then λ = hc/E; nuclear-number tasks start from A = A' + 4, Z = Z' + 2 conservation, which is the basic law there.
-- Numbers, answers and tolerances unchanged; the rows are short aligned chains, fine on a phone.
-- Principle explained before the formula; the diagram order and levels (1, 2, 3) are as passed earlier.
+- "exact": true is on whole-number answers only (nucleon, proton and neutron counts, alpha and beta counts); each is a count where 2 % tolerance or "Lähellä" would be misleading (143 vs 142 or 144 would have passed before). Pedagogically right.
+- fy8-8-L1-02: 222 is the real misconception (parent mass number, nothing subtracted). The feedback "Kuinka monta nukleonia emoytimestä poistuu alfahiukkasen mukana?" is a guiding question, does not state 218, and points to the step the student skipped. Finnish is correct and uses the glossary term nukleoni.
+- The task text is unchanged: situation first, question last, given in the lesson's notation.
+- Solutions, levels and figure use are untouched since the PASS.

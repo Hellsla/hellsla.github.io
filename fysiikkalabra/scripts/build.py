@@ -890,7 +890,8 @@ def exercise_html(e, solution_html, read=None, core=False, num=None, level=None)
     if numeric:
         unit = esc(e.get("unit", ""))
         st = answers_shown.step(ans.strip("$"), e["answer"]) if ans.startswith("$") else None   # one unit in the shown answer's last digit; the check allows half of it
-        check = (f'<form class="check" data-answer="{e["answer"]}" data-tol="{e.get("tolerance", 0.02)}" data-unit="{unit}"' + (f' data-step="{st:g}"' if st else "") + ' novalidate>'
+        check = (f'<form class="check" data-answer="{e["answer"]}" data-tol="{e.get("tolerance", 0.02)}" data-unit="{unit}"' + (f' data-step="{st:g}"' if st else "") + (' data-exact="1"' if e.get("exact") else "")
+                 + (f" data-mistakes='{esc(json.dumps(e['mistakes'], ensure_ascii=False))}'" if e.get("mistakes") else "") + ' novalidate>'
                  f'<input type="text" inputmode="decimal" autocomplete="off" enterkeyhint="done" aria-label="{esc(inquiry.answer_label(e.get("unit", "")))}" aria-describedby="{esc(e["id"])}-q" placeholder="?">'
                  + (f'<span class="unit">{unit}</span>' if unit else "")
                  + f'<button type="submit">{T("lesson.check")}</button><output aria-live="polite"></output></form>')

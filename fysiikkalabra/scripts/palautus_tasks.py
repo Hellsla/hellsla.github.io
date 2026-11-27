@@ -114,7 +114,7 @@ EXTRACT = r"""(id) => {
     const d = t.parentElement.closest('details.opt'), sum = d && d.querySelector(':scope > summary');
     return sum ? [...sum.childNodes].filter((n) => !(n.classList && n.classList.contains('opt-tag'))).map((n) => n.textContent).join('').trim() : t.id; };
   // the typed-number checks of a task (work queue 17e): the grading page judges a student's number with the page's own rule (templates/virhe.js)
-  const checksOf = (el) => { const c = [...el.querySelectorAll('form.check')].map((f) => ({ answer: Number(f.dataset.answer), tol: Number(f.dataset.tol), unit: f.dataset.unit || '', step: Number(f.dataset.step) || 0 }));
+  const checksOf = (el) => { const c = [...el.querySelectorAll('form.check')].map((f) => ({ answer: Number(f.dataset.answer), tol: Number(f.dataset.tol), unit: f.dataset.unit || '', step: Number(f.dataset.step) || 0, exact: f.dataset.exact === '1' }));
     return c.length ? { checks: c } : {}; };
   // the one choice of a task (work queue 17e PR 2): its question, its options in the order the page shows them (an option that is a picture
   // has null: the grading page says "Vaihtoehto N") and which are correct, so the grading page counts the students' choices; a task with
