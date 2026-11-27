@@ -13,7 +13,7 @@ tehdyt kurssit ja opit ovat `docs/tyojono-loki.md`:ssä ("loki §N"), kirjatut p
 
 ## 0. Päivitystyön tehostaminen (opettaja 2026-11-17: "Laita kaikki seuraavaksi työjonoon")
 
-Tehdään ennen uusia kurssikohtaisia läpikäyntejä. Tehty: 0a (`scripts/round.py`, #670), 0b (ohjetiedostot, #673), 0c (esitystapaluokka, #677; loki §0c), 0e (ulkoasun delta vain suomeksi, kun muutos on kielineutraali; sääntöteksti odottaa opettajan hyväksyntää, PR draft; loki §0e), 0d (CI:n selain pilvi-istuntoihin; ei ympäristömuutosta, `ci_env.py` käynnistää Dockerin itse; `round.py` tarkistaa matalan kloonin ja riippuvuudet).
+Tehdään ennen uusia kurssikohtaisia läpikäyntejä. Tehty: 0a (`scripts/round.py`, #670), 0b (ohjetiedostot, #673), 0c (esitystapaluokka, #677; loki §0c), 0e (ulkoasun delta vain suomeksi, kun muutos on kielineutraali; #683, opettaja hyväksyi 2026-11-17 "approve 0e" ja vahvisti 2026-11-27 koordinaattorin chatissa "hyväksyn"; loki §0e), 0d (CI:n selain pilvi-istuntoihin; ei ympäristömuutosta, `ci_env.py` käynnistää Dockerin itse; `round.py` tarkistaa matalan kloonin ja riippuvuudet).
 Osat 0e ja 0g muuttavat jaettuja tiedostoja: ne tehdään yksin, yksi kerrallaan, tässä järjestyksessä, ja yhdistetään
 ennen sisältö-PR:iä. Jokainen osa raportoi PR:ssä, mitä se säästi (vuorot, tokenit, yhdistykset, katselmoinnit ennen ja jälkeen).
 
@@ -42,7 +42,7 @@ katselmoitu sisältö, ja yhdistäminen on opettajan julkaisupäätös. Toteutus
 Tehty ja poistettu jonosta: 8q (#690), 8r (#694), kuvan .side-arvio (#775); kohta 22 (#751); kohta 8 (virhekäsityslaatikot #713, sisältö kaikilla kursseilla FY1–FY8, tarkistettu 2026-11-23); kohta 8f (animaatiot FY3 #757, FY4 #761). Muut opettajan päätökset 2026-11-23: fy7-5-simulaation Nopeus-valikon nimi ennallaan; hellsla.github.io:n sitemap.xml:stä poistettu ruukkilab.fi-osoitteet (ruukkilab.fi:llä oma sivukartta).
 
 ## 4. FY10:n tutkimusten ja TVT-ohjeiden korjaukset (opettaja 2026-11-13)
-Taulukko-otsakkeet 390 px tehty (#731). Auditointi tehty (#536), Major-korjaukset ja sisältöosa tehty (#549, #645; loki §4). Erä 1 (jaetut komponentit) tehty (PR #709: apulinkit, listojen numerointi, laskurivit listoissa, tyhjät taulukkorivit, 28×28-kaappaukset; loki §4). Jäljellä, opettajan päätettävä: Minor-erä ja yhteinen kuvasääntö (nimiöt vähintään noin 12 px 390 px:ssä,
+Taulukko-otsakkeet 390 px tehty (#731). Auditointi tehty (#536), Major-korjaukset ja sisältöosa tehty (#549, #645; loki §4). Erä 1 (jaetut komponentit) tehty (PR #709: apulinkit, listojen numerointi, laskurivit listoissa, tyhjät taulukkorivit, 28×28-kaappaukset; loki §4). **Kuvasääntö: opettaja 2026-11-27 koordinaattorin chatissa: nimiöille riittää 11 px kaikilla kursseilla (kuten FY10, 2026-11-23).** Jäljellä, opettajan päätettävä: Minor-erä (aiempi ehdotus: nimiöt vähintään noin 12 px 390 px:ssä,
 mallikuvaajan akseleilla suure ja yksikkö, kaaviokuvan kuvateksti sanoo sen kaaviokuvaksi, malliksi merkitty luonnoskuvaaja).
 Kuviin ei kosketa: opettaja piirtää ne itse.
 Kuvasääntöraportti tehty (`docs/audits/2026-11-23-fy10-kuvasaanto.md`, PR #819); opettajan päätökset (2026-11-23 koordinaattorin chatissa): nimiöt 11 px ja yli kelpaavat; yksikköä ei vaadita mallikuvaajan akselille; kuvateksti riittää malli- ja kaaviokuvamerkinnäksi, puuttuvat sanat lisätty 5 kuvan kuvatekstiin (PR #819); liikemaara/model: science-löydös (`docs/audits/2026-11-23-fy10-liikemaara-science-loydos.md`) korjattu (vastakkaisen törmäyksen ehto poikkeaman suuntaan, investigation.md ja teacher.md) ja kuvateksti merkitsee mallin (Mallikuvaaja / mallin mukaan; kuvaa ei muutettu); katselmoinnit PASS (opettaja 2026-11-23). **Myöhempi kohta:** alle 11 px:n nimiöt (24 kuvaa, raportin kohta 1; pienin hyppy/model 9,2 px) jätetty ennalleen; uusi piirros vaatii opettajan hyväksynnän.
@@ -55,7 +55,7 @@ kyllä), ja korjataanko vanha lista jaetulla komponentilla vai sivu kerrallaan; 
 
 ## 5c. ElevenLabs-ääneenluku FY1 ja FY2 (opettaja 2026-11-15)
 Ei tekijää: #598 suljettu yhdistämättä. Ääni Oskari - Finnish; mp3-tiedostot repoon Hellsla/ruukkilabra-audio, päärepossa vain manifestit. FY1:n luvut fy1-1…fy1-8
-äänitetty; FY2 odottaa opettajan päätöstä. Sääntö: `CLAUDE.md` "Parts specified…", `docs/decisions/oppituntisivun-osat.md`. Tarkka toimeksianto: loki §5c.
+äänitetty; FY2: **opettaja 2026-11-27 koordinaattorin chatissa: ei nyt** (ääneenlukua ei tehdä FY2:lle toistaiseksi). Sääntö: `CLAUDE.md` "Parts specified…", `docs/decisions/oppituntisivun-osat.md`. Tarkka toimeksianto: loki §5c.
 
 ## 5d. Leikkautuvat kaavat omalle rivilleen (opettaja 2026-11-15)
 Tehty kaikille kursseille FY1–FY9 (loki §5d: kurssikohtaiset luvut, opit ja listalle jääneet rivit). Jäljellä vain
@@ -182,7 +182,7 @@ Jokainen kohta tehdään omana työnään saman kurssin keskeneräisen PR:n jäl
 - 11 U2: opettaja 2026-11-18 klo 22.00: toimintarivin järjestys Kirjoita ratkaisu → vastauskenttä → Tarkista ("ensin kirjoitetaan ratkaisu, vasta sitten tarkistetaan"); uudet kuvat opettajalle ennen yhdistämistä. **Kuvat hyväksytty: opettaja 2026-11-19 aamulla ("kaikki ok").** Lisäys (opettaja 2026-11-19 klo 07.15, kuvakaappaus): monivalintatehtävissä Kirjoita ratkaisu ja Vastaa samalle riville (Kirjoita ratkaisu ensin); uudet kuvat opettajalle. **Lisäyksen kuvat hyväksytty: opettaja 2026-11-19 klo 12.4x ("hyväksyn kuvat").**
 - Podcastit-sivun (fi) muu kieli -laatikon teksti (opettaja 2026-11-18 klo 19.00, "käy"): lead "Haluatko kuulla fysiikkaa myös englanniksi?"; text "Tutustu englanninkielisiin fysiikan podcasteihin, dokumentteihin ja opetusvideoihin. Tutut ilmiöt avautuvat uudesta näkökulmasta, ja samalla opit fysiikan sanastoa englanniksi."; link ennallaan.
 - Opettajan päätökset 2026-11-19 aamulla (koordinaattorin chatissa, "Kaikki ok"): FY3 FY3 fy3-8 sanamuoto ja fy3-11:n 480 kW:n tehtävän ratkaisun perustelu (loppunolla on merkitsevä, ei pyöristysohjetta; P7-sääntöä ei muutettu) tehty (FY3-paketti); jaetut yksi kerrallaan: header 72 rem → CI-tarkistus site/-sivujen poistolle → 0g PR 2; rinnalla 5d FY2 (37) ja FY3 (23) riviä.
-- Kirjavinkkien Finna-tietuelinkit ja podcastien YouTube-linkit odottavat: Finna estää koneellisen haun (Cloudflare), YouTube-linkki vaatisi jaetun muutoksen (`media_tips.py`) ja opettajan päätöksen.
+- Kirjavinkkien Finna-tietuelinkit ja podcastien YouTube-linkit: **opettaja 2026-11-27 koordinaattorin chatissa: "muutetaan"**. YouTube-linkit omana jaettuna PR:nään (`media_tips.py`); Finna estää koneellisen haun (Cloudflare), joten Finna-tietueiden osoitteet tarkistetaan selaimessa tai opettaja toimittaa ne.
 - Pysähdy ja mieti FY7 (#779): **opettaja 2026-11-21 klo 16.4x ("hyväksyn", koordinaattorin suositus 1)**: fy7-1:lle neljäs, rajattu katselmointikierros (tiede en/fi/fi-easy delta ja pedagogia delta), vain tähän lukuun; PASS, yhdistetty.
 - Pysähdy ja mieti FY8 (#783): **opettaja 2026-11-22 klo 03.2x ("Hyväksyn suosituksesi", koordinaattorin suositus 1)**: fy8-4:lle, fy8-15:lle ja fy8-16:lle neljäs, rajattu katselmointikierros (tiede ja pedagogia delta, kaikki kielet; visual delta vanhentuneen tilan vuoksi), vain näihin lukuihin; PASS.
 - Mahdollinen myöhempi sisältötyö: FY3/5/6:n käsin jaetut Pysähdy-ketjut (fy3-4, fy5-3, fy5-9, fy6-4, fy6-6…8, fy6-11…16) yhdeksi ketjuksi `mathlayout.display_chains`in (#782) varaan; sanamuoto muuttuu, joten katselmointi.
@@ -207,3 +207,10 @@ jälkeen; rakenna sivusto vihkojen jälkeen (Vihkot-sivu).
 
 ## 25. Yksilöllinen oppimispolku, pilotti FY1 (opettaja 2026-11-20 klo 17.5x "laita se vikaksi"; jonon viimeinen, vihkojen jälkeen)
 Versio 1 kokonaan selaimessa: luvun alussa 3–5 kysymyksen lähtötesti tyypillisistä virhekäsityksistä, jonka perusteella sivu suosittelee polun (kertaa ensin / ydintehtävät / haasteet); väärä vastaus ohjaa esimerkkiin tai simulaatioon; osaamiskartta oppilaan selaimeen. Ei palvelinta, ei tunnuksia, ei oppilastietojen keruuta (fysiikkalabra/CLAUDE.md "Never"). Suunnitelma tehdään ensin Claude-projektissa, ja opettaja hyväksyy sen ennen toteutusta; uusi käyttöliittymäteksti vaatii opettajan luvan. Versio 2 (opettajanäkymä, palvelin, kirjautuminen, tietosuoja) on erillinen hanke, joka vaatisi "Never"-säännön muuttamista opettajan päätöksellä.
+
+## 27. Piirrosten uudelleenpiirto (opettaja 2026-11-27 koordinaattorin chatissa: "muutetaan kuva")
+Kohdan 24 "Älä muuta piirroksia" -rajaus ei koske näitä; opettaja salli muutoksen. Tehdään `/figure-fixes`-komennolla kurssi kerrallaan, ennen ja jälkeen -kuvat opettajalle tekijäsessiossa; ei muita piirroksia.
+- FY5 `fy5-10/types` 2 nimiötä ja `fy5-14/pitkittainen` 1 nimiö ("harvennus" → "harventuma"; `docs/audits/fy5-harventuma/`).
+- FY7 `fy7-8` lesson.md:46 kuva monokromaattinen (lint ERROR) → uusi piirros.
+- FY6 `fy6-15/luokat`: III-numero puuttuu vinoneliöstä.
+- FY4 `fy4-4/valitse_d`: kuvan toinen virhe.
