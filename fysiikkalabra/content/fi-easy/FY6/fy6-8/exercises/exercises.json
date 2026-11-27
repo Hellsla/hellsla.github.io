@@ -150,7 +150,7 @@
       "id": "fy6-8-L2-05",
       "level": 2,
       "core": true,
-      "text": "Pariston napajännite mitattiin kuudella eri kuormitusvirralla (esimerkkiaineisto). Piirrä mittauspisteistä $(I, U)$-kuvaaja ja sovita pisteisiin suora. Pisteet eivät ole täsmälleen suoralla, koska jokaisessa mittauksessa on pieni epävarmuus.\n\na) Lue suoralta pariston lähdejännite.\n\nb) Määritä suoran kulmakertoimesta pariston sisäinen resistanssi. Arvioi myös, kuinka paljon kulmakerroin voi vaihdella, kun suora sovitetaan eri tavoin.\n\nVastauslaatikkoon tulee b)-kohdan tulos.",
+      "text": "Pariston napajännite mitattiin kuudella eri kuormitusvirralla (esimerkkiaineisto). Piirrä mittauspisteistä $(I, U)$-kuvaaja ja sovita pisteisiin suora. Pisteet eivät ole täsmälleen suoralla, koska jokaisessa mittauksessa on pieni epävarmuus.\n\na) Lue suoralta pariston lähdejännite.\n\nb) Määritä suoran kulmakertoimesta pariston sisäinen resistanssi. Arvioi myös, kuinka paljon kulmakerroin voi vaihdella, kun suora sovitetaan eri tavoin.\n\nVastauslaatikkoon tulee b)-kohdan tulos.\n\n[Mittaa oman pariston kuormituskäyrä](fy10-paristo.html)",
       "kind": [
         "data",
         "graph"
