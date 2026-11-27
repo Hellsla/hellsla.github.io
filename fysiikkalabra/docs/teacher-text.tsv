@@ -3,6 +3,15 @@
 # Written by `python scripts/reviews.py approve-text <id> [--lang <l>] --source "..."` only after the teacher has
 # explicitly approved the change; any edit made after it needs a new approval or the reviews.
 date	lang	id	file	before	after	source
+2026-11-27	fi	fy3-13	content/fi/FY3/fy3-13/lesson.md	ec80e674ff7ab1c3	e0f01a29da53ec60	Opettaja hyväksyi tekstit (fi, fi-easy, en) tässä tekijäsessiossa 2026-11-27: 'Hyväksyn tekstit', työjono 29.3
+2026-11-27	fi	fy3-13	content/fi/FY3/fy3-13/exercises/exercises.json	98dfd096f9a9d370	8fd0aa9307ef8342	Opettaja hyväksyi tekstit (fi, fi-easy, en) tässä tekijäsessiossa 2026-11-27: 'Hyväksyn tekstit', työjono 29.3
+2026-11-27	fi	fy3-13	content/fi/FY3/fy3-13/exercises/solutions.md	0d6e11ad58b0f675	a911e3c043577e38	Opettaja hyväksyi tekstit (fi, fi-easy, en) tässä tekijäsessiossa 2026-11-27: 'Hyväksyn tekstit', työjono 29.3
+2026-11-27	fi-easy	fy3-13	content/fi-easy/FY3/fy3-13/lesson.md	fe9f7fc422890247	17b7e457f22bdfdd	Opettaja hyväksyi tekstit (fi, fi-easy, en) tässä tekijäsessiossa 2026-11-27: 'Hyväksyn tekstit', työjono 29.3
+2026-11-27	fi-easy	fy3-13	content/fi-easy/FY3/fy3-13/exercises/exercises.json	15d78b037c676f31	98ab3a3a414b1ef1	Opettaja hyväksyi tekstit (fi, fi-easy, en) tässä tekijäsessiossa 2026-11-27: 'Hyväksyn tekstit', työjono 29.3
+2026-11-27	fi-easy	fy3-13	content/fi-easy/FY3/fy3-13/exercises/solutions.md	8b30dcf6ccb75b12	2d8ebcd2e8ffedb8	Opettaja hyväksyi tekstit (fi, fi-easy, en) tässä tekijäsessiossa 2026-11-27: 'Hyväksyn tekstit', työjono 29.3
+2026-11-27	en	fy3-13	content/en/FY3/fy3-13/lesson.md	b77b2bb6974f13b1	1e326f3eced61863	Opettaja hyväksyi tekstit (fi, fi-easy, en) tässä tekijäsessiossa 2026-11-27: 'Hyväksyn tekstit', työjono 29.3
+2026-11-27	en	fy3-13	content/en/FY3/fy3-13/exercises/exercises.json	ffe836ceea00be6d	37a243b09d9cf8c0	Opettaja hyväksyi tekstit (fi, fi-easy, en) tässä tekijäsessiossa 2026-11-27: 'Hyväksyn tekstit', työjono 29.3
+2026-11-27	en	fy3-13	content/en/FY3/fy3-13/exercises/solutions.md	5daa0788c13a3717	062aab8f5d2c0d58	Opettaja hyväksyi tekstit (fi, fi-easy, en) tässä tekijäsessiossa 2026-11-27: 'Hyväksyn tekstit', työjono 29.3
 2026-11-27	fi	fy2-6	content/fi/FY2/fy2-6/inquiry.json	ad3349226dfbb6ee	23f4f5be1d49e60f	opettaja 2026-11-27 tässä sessiossa: 'muutokset sellaisinaan' (muutoslista 2026-11-27 kohta 2, PR #888)
 2026-11-27	fi-easy	fy2-6	content/fi-easy/FY2/fy2-6/inquiry.json	b86d85b7e1b6e96d	ba9fadb779cac8b9	opettaja 2026-11-27 tässä sessiossa: 'muutokset sellaisinaan' (muutoslista 2026-11-27 kohta 2, PR #888)
 2026-11-27	en	fy2-6	content/en/FY2/fy2-6/inquiry.json	c4f65b0fb6be46ba	bfd4873cd1a2c57b	opettaja 2026-11-27 tässä sessiossa: 'muutokset sellaisinaan' (muutoslista 2026-11-27 kohta 2, PR #888)
@@ -15,3 +24,4 @@ date	lang	id	file	before	after	source
 2026-11-27	fi-easy	fy1-3	content/fi-easy/FY1/fy1-3/exercises/solutions.md	71fc1f1384335fcc	0b2467e9fcfaab9c	Opettaja tässä sessiossa 2026-11-27: hyväksyi fi-, fi-easy- ja en-sanamuodot (työjono 29.5)
 2026-11-27	en	fy1-3	content/en/FY1/fy1-3/exercises/exercises.json	c9c650a6d88b9d2a	db4795497181dbaf	Opettaja tässä sessiossa 2026-11-27: hyväksyi fi-, fi-easy- ja en-sanamuodot (työjono 29.5)
 2026-11-27	en	fy1-3	content/en/FY1/fy1-3/exercises/solutions.md	4df41600d7f69af6	6260f0f9719c4a7f	Opettaja tässä sessiossa 2026-11-27: hyväksyi fi-, fi-easy- ja en-sanamuodot (työjono 29.5)
+2026-11-27	en	fy3-13	content/en/FY3/fy3-13/exercises/solutions.md	5daa0788c13a3717	8c0c8f412494814d	Opettaja hyväksyi en L3-03 malliratkaisun $1.86$ → 1.86 -muutoksen tässä tekijäsessiossa 2026-11-27: 'Hyväksyn tekstit', työjono 29.3
