@@ -222,7 +222,7 @@ Kohdan 24 "Älä muuta piirroksia" -rajaus ei koske näitä; opettaja salli muut
 Koko lista sellaisenaan: `docs/audits/2026-11-27-muutoslista.md`. Opettajan antamat sanamuodot käytetään sellaisinaan (hyväksytty); muut uudet tekstit ja kuvat opettajalle tekijäsessiossa. Kurssi kerrallaan, kukin oma PR; fi + fi-easy + en, kun sama kohta on niissä.
 Järjestys: ensin "Korjaa ensin" 1–4, sitten 5–10.
 - 29.1 TEHTY (PR #887, 2026-11-27): uusi tehtäväkenttä `"exact": true` 25 tehtävällä (fy7-13, fy8-3, fy8-5, fy8-8, fy8-15); fy8-8-L1-02 218 ok, 222 → opettajan vihje (en/fi-easy opettaja tekijäsessiossa "Hyväksyn molemmat"); testi `scripts/test_tarkka.py`.
-- 29.8 FY6 fy6-8-L2-05 linkki ja FY10 paristotyön linkitys FY6:n teoriaan. 29.9 koko kirja: alakohdan palaute ("C-kohdan lukuarvo on oikein…", malli fy4-10-L2-06; jaettu, uusi UI-teksti on opettajan antama).
+- 29.9 koko kirja: alakohdan palaute ("C-kohdan lukuarvo on oikein…", malli fy4-10-L2-06; jaettu, uusi UI-teksti on opettajan antama).
 
 ## 30. Virhe-tehtävän vaihtoehtojärjestys englanniksi (opettaja 2026-11-27 koordinaattorin chatissa: "tee nämä")
 Löydös PR #886:ssa: fy3-11, fy3-16, fy5-2, fy7-10 ja fy8-1 (en) `virhe`-tehtävän vaihtoehdot ovat eri järjestyksessä kuin suomeksi, koska englannin "no mistake" ei osu `inquiry.no_error`-sääntöön; siksi niiden en-valinnat jäävät valintojen jakaumasta pois (`skip_en`). Korjaa sääntö tai en-teksti niin, että järjestys on sama kuin fi:ssä, ja poista `skip_en`. Vanhentaa en-katselmoinnit näillä sivuilla: tekstimuutokset opettajalle tekijäsessiossa (approve-text) tai vaaditut katselmoinnit. Jaettu, jos sääntö (`inquiry.py`) muuttuu.
