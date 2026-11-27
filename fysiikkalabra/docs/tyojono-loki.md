@@ -868,3 +868,6 @@ Teorian loppu opettajan sanamuodolla (fi, fi-easy, en), L3-03:n viimeinen kysymy
 =======
 - 29.5 (2026-11-27, opettajan muutoslista kohta 5): fy1-3-L2-08 pyytää vertaamaan keskiarvojen eroa sarjojen sisäiseen hajontaan (laadullinen vertailu, lukiotasolle sopivampi kuin erotuksen epävarmuuden arvio); kysymys aineiston riittävyydestä ja vastausarvo ennallaan; fi, fi-easy, en; opettaja hyväksyi sanamuodot sessiossa (approve-text), reviews.py carry fy1-3 (teksti ja --exercises) kaikille kielille.
 >>>>>>> origin/main
+
+## 29.8 FY6 fy6-8-L2-05 → FY10 paristotyö (PR #895, 2026-11-27)
+FY6:n tehtävän lopussa linkki "Mittaa oman pariston kuormituskäyrä" (fi, fi-easy; en "Measure the load curve of your own battery", HTML-linkkinä, koska tehtäväteksti ei renderöi Markdownia); opettaja hyväksyi tekstit tekijäsessiossa (`docs/teacher-text.tsv`, carry kaikilla kielillä). `fy10-paristo`: esitieto "Lähdejännite ja sisäinen resistanssi" linkittyy lukuun fy6-8 (`target`). Tutkimuksilla ei ole teacher-text-carrya, joten tutkimuksen kolme delta-katselmointia ajettiin (visual kolmella kierroksella: kuvat piti ottaa `build.py --all` -buildista + `screenshot.py --no-build`, muuten fy6-8 näkyi "luku tulossa").
