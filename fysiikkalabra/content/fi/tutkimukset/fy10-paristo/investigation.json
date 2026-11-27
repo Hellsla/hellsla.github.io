@@ -55,8 +55,7 @@
     {
       "kind": "physics",
       "level": "essential",
-      "text": "Lähdejännite ja sisäinen resistanssi",
-      "missing": "FY6: Akut, lähdejännite ja sisäinen resistanssi",
+      "target": "fy6-8",
       "why": "Tutkimuksessa määritettävät suureet; lyhyt selitys on tällä sivulla kohdassa Teoriaa lyhyesti."
     },
     {
