@@ -1,12 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 57544ac197c30d1e
+CONTENT-HASH: 94ec7083fba52991
 
 ## Blocking
-None.
+(none)
 
 ## Polish
-None.
+(none)
 
 ## Checked
-- Task texts begin naturally without the prefix (capital letter correct, sentence grammatical); the task still states what the table or data is and no task now names its method; levels and answers unchanged.
-- Delta limited to removing the prefix "Esimerkkiaineisto: "; no number, symbol, data or question changed.
+- All five flagged answers are whole counts (electrons in a shell or subshell, outer-shell electrons, orbitals, atom electrons) with unit kpl; exact:true is right, since a near integer is a wrong count and the old 2 % band (e.g. 49 or 51 for 50) would have accepted it.
+- Task texts and solutions unchanged.

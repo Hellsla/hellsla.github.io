@@ -92,7 +92,8 @@
       ],
       "answer": 4,
       "unit": "",
-      "tolerance": 0.02
+      "tolerance": 0.02,
+      "exact": true
     },
     {
       "id": "fy7-13-L1-09",
@@ -114,7 +115,8 @@
       "text": "Sinisen laserin valo, jonka aallonpituus on $450\\,\\text{nm}$, osuu kohtisuoraan hilaan, jossa on $600$ viivaa millimetrillä. Hilan takana on niin leveä varjostin, että kaikki syntyvät maksimit osuvat siihen. Kuinka monta valopistettä varjostimella näkyy?",
       "answer": 7,
       "unit": "",
-      "tolerance": 0.02
+      "tolerance": 0.02,
+      "exact": true
     },
     {
       "id": "fy7-13-L2-02",

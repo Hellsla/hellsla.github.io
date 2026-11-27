@@ -271,6 +271,7 @@
       "answer": 7,
       "unit": "",
       "tolerance": 0.02,
+      "exact": true,
       "hints": [
         "Mikä hajoamislaji muuttaa massalukua, ja kuinka paljon?",
         "Beeta miinus -hajoaminen ei muuta massalukua. Koko massaluvun muutos tulee siis alfahajoamisista, ja jokainen muuttaa sitä $4$.",

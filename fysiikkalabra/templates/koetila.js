@@ -69,7 +69,7 @@
       if (unit) box.append(unit);
       f.replaceWith(box);
     });
-    card.querySelectorAll('[data-correct], [data-points], [data-answer], [data-mistakes], [data-tol], [data-reveal]').forEach((n) => ['data-correct', 'data-points', 'data-answer', 'data-mistakes', 'data-tol', 'data-reveal'].forEach((a) => n.removeAttribute(a)));
+    card.querySelectorAll('[data-correct], [data-points], [data-answer], [data-mistakes], [data-tol], [data-exact], [data-reveal]').forEach((n) => ['data-correct', 'data-points', 'data-answer', 'data-mistakes', 'data-tol', 'data-exact', 'data-reveal'].forEach((a) => n.removeAttribute(a)));
     card.querySelectorAll('.numeric output, .interpret output').forEach((n) => n.remove());
   };
 
