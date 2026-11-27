@@ -1,6 +1,6 @@
 VERDICT: PASS
 CONTENT-HASH: b223f2546625e0bc
-SCOPE: delta numbers,wording from b223f2546625e0bc base 29052af
+SCOPE: delta numbers,wording from 4fb09e1c40a5d733 base 29052af
 
 ## Blocking
 (none)

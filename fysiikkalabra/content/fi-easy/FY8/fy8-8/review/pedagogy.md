@@ -1,6 +1,6 @@
 VERDICT: PASS
 CONTENT-HASH: b1b882276359b0a5
-SCOPE: delta teacher-figure,wording from b1b882276359b0a5 base b3ee786
+SCOPE: delta teacher-figure,wording from 078bd63ebe7f0cb3 base b3ee786
 
 ## Blocking
 (none)
