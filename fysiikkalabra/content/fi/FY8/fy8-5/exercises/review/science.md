@@ -1,13 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 57544ac197c30d1e
+CONTENT-HASH: 94ec7083fba52991
 
 ## Blocking
 
 ## Polish
-- exercises/solutions.md (the orbital-boundary counting tasks) — the new probability symbol $P$ ($P_\text{ulko}$, $P = p_{90} - p_{50}$) adds a second name for what the data calls $p$. Writing $k = (1 - p)N$ straight from "the expected count is the probability times $N$" would need no new symbol. (carried over; untouched by this change)
 
 ## Checked
-- Delta: exercises.json, 3 task text(s): each changed line differs from the passed version only by the removed prefix "Esimerkkiaineisto: " (and the capital of the next letter), checked mechanically line by line.
-- No number, unit, symbol, table value, answer, tolerance or solution changed; the previous quantitative checks stand.
-- Data provenance: removing the badge follows the teacher's rule (no provenance badge on example or simulated data); no task now claims a real published source it lacks.
-- `reviews.py hash fy8-5 --exercises` the same at start and end.
+- Delta: `exact: true` on L1-01, L1-08, L2-02, L3-01 and L3-02 (unit kpl).
+- I recomputed all five. 2n² = 50 for n = 5. A 4f subshell holds 2·7 = 14. Argon's outer shell holds 3s² 3p⁶ = 8. L3-02: 3p half full gives 2 + 2 + 6 + 2 + 3 = 15.
+- L3-01: 97,3 nm gives 12,74 eV, so n = 3,99 → 4, and n² = 16 orbitals. The data's rounding gives a non-integer n, but the answer is an orbital count, which is exactly an integer.
+- Every answer is a count of electrons or orbitals, never a measured or rounded quantity, so an exact check is right.
+- `exact` changes only how the answer check compares; answers, units, tolerances, texts and solutions are unchanged.
+- The hash was 94ec7083fba52991 at the start and at the end.

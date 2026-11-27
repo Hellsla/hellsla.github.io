@@ -1,14 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 8790a6a6454470cf
+CONTENT-HASH: 8acc38b619a83b3b
+SCOPE: delta teacher-figure,wording from 8790a6a6454470cf base b3ee786
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] shots fy8-8-theory-1280-2: in the three-panel decay figure the label `excited state *` runs over the dashed panel divider (old figure, not part of this diff).
-
-## Vanhan sisällön löydökset
-- fy8-8-theory-1280-2 gamma figure: label crossing a dashed divider (old figure).
+(none)
 
 ## Checked
-round 2 delta, new Stop and think boxes: opened fy8-8-theory-1280-2, fy8-8-stage-selita-390-1 (closed boxes sit in the reading column, green bar, label, question with LaTeX numbers and units, Answer toggle, no clipping at 1280 or 390 px, placed after the paragraph they test); answers read in lesson.md: full sentences, decimal point, units and numbers in LaTeX, colon division, `\cdot`. Boxes' open answer state is not in the captures, judged from source.
+Delta: opened fig-1, fig-3, fig-5, fig-6 at 390 px and intro-1280 (hero). The teacher-approved figures render clean (no clipping, LaTeX labels, force/velocity/photon colours distinct); the `exact` data flag has no visible change.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

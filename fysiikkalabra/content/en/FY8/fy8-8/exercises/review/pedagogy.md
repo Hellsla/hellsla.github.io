@@ -1,6 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 893f7af3e4ffe409
-SCOPE: delta md-paragraphs,numbers,reflow,typography,wording from ed910063ab2fcfbb base 64d4935
+CONTENT-HASH: 35f1b69fc746a82a
+SCOPE: delta numbers,wording from 893f7af3e4ffe409 base 29052af
 
 ## Blocking
 (none)
@@ -9,8 +9,5 @@ SCOPE: delta md-paragraphs,numbers,reflow,typography,wording from ed910063ab2fcf
 (none)
 
 ## Checked
-- Delta: the Kaava step of the solutions now runs basic law, then derived formula, then symbolic simplification, and the substitution uses the last symbolic form, as CLAUDE.md "Start from the basic principle and derive" asks.
-- Each chain ends in the same formula as before the change, so the substitution rows, answers and tolerances still follow from it.
-- Each Kaava step is a short aligned chain (one relation per step), a student who could not solve the task can follow it.
-- Paragraph splitting in Principle, Reading the graph and Model answer keeps one idea per paragraph and drops no reason or step.
-- Level mix, task wording and figures are untouched by the change.
+- Delta: "exact": true on whole-number tasks (nucleon, proton, neutron and decay counts) is right: a near miss such as 217 must not count as correct.
+- fy8-8-L1-02 mistake 222 (parent mass number, alpha not subtracted): the feedback is a guiding question that repairs the error without giving 218.

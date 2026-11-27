@@ -39,7 +39,8 @@
       "text": "A helium-4 nucleus contains two protons ($uud$) and two neutrons ($udd$). How many $u$ quarks are there in the nucleus?",
       "answer": 6,
       "unit": "",
-      "tolerance": 0.02
+      "tolerance": 0.02,
+      "exact": true
     },
     {
       "id": "fy8-15-L1-06",
@@ -174,7 +175,8 @@
       "text": "How many $d$ quarks are there in the carbon-12 nucleus ${}^{12}_{6}\\text{C}$?",
       "answer": 18,
       "unit": "",
-      "tolerance": 0.02
+      "tolerance": 0.02,
+      "exact": true
     },
     {
       "id": "fy8-15-L2-02",

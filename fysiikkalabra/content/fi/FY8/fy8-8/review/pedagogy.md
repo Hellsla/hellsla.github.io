@@ -1,15 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 3459addd97328536
+CONTENT-HASH: 56761a24521da28c
 
 ## Blocking
-(ei)
+(none)
 
 ## Polish
-- Kolmas laatikko ($\alpha$-hajoaminen): tulos on kaavassa $A-4$, $Z-2$ suoraan yllä; hyvä tarkistus, mutta pyydä lisäksi tyttärytimen nimi.
-- Toinen laatikko: tekstissä sanotaan jo, että neutroni muuttuu protoniksi; kysy ensin, miksi massaluku ei muutu.
-
-## Vanhan sisällön löydökset
-(ei)
+(none)
 
 ## Checked
-batch delta review round 2: laatikoiden vastattavuus, jaksotus.
+- "siirto" (alpha count 7) is a whole-number count; exact:true is right, since 7 is the only correct count and a near value would be a wrong reasoning. Hints, the 28 mistake feedback and the task are unchanged and still repair the misconception.
+- Figure changes are teacher-approved pictures; nothing else changed.
