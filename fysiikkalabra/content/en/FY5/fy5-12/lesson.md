@@ -54,6 +54,13 @@ In a ripple tank the water is almost at rest on a nodal line, although the waves
 On a nodal line a crest of one wave always arrives at the same time as a trough of the other. When the waves are equal in size, the sum of the displacements is almost zero all the time.
 ```
 
+On a nodal line the waves do not always cancel completely. Compare two points where the waves arrive in opposite phase:
+
+- Amplitudes $3\,\text{mm}$ and $3\,\text{mm}$: the combined amplitude is $3\,\text{mm} - 3\,\text{mm} = 0\,\text{mm}$. The point is a node.
+- Amplitudes $3\,\text{mm}$ and $2\,\text{mm}$: the combined amplitude is $3\,\text{mm} - 2\,\text{mm} = 1\,\text{mm}$. The point still vibrates.
+
+The waves cancel completely only when they arrive in opposite phase and their amplitudes are equal.
+
 ## Formula: The condition for constructive and destructive interference
 Whether the interference at point P is constructive or destructive depends on how much farther one wave has travelled than the other. The **path difference** is the difference of the sources' distances from point P:
 ```latex
