@@ -214,6 +214,8 @@ jobs:
         run: python scripts/test_answer_check.py
       - name: general common-mistake recognition of a wrong number (templates/virhe.js, work queue 17c PR 1)
         run: python scripts/test_virhe.py
+      - name: whole-number answers are checked exactly (mass number, atomic number, neutrons, grating order; work queue 29.1)
+        run: python scripts/test_tarkka.py
   checks-3:   # carried reviews, the course and language pipelines, answer positions, the built site, LaTeX
     runs-on: ubuntu-latest
     container: { image: "mcr.microsoft.com/playwright/python:v1.65.0-noble", options: "--ipc=host" }   # Chromium and its system packages preinstalled (see the header)

@@ -812,7 +812,7 @@ function rlClass_(m) {
         }
         if (pick && v.choices[t.id] !== undefined && v.choices[t.id] < pick.n.length) { pick.answered++; pick.n[v.choices[t.id]]++; }
         if (numeric && v.numbers[t.id] !== undefined) {
-          var j = judge(v.numbers[t.id], numeric.answer, numeric.tol, numeric.unit, numeric.step);
+          var j = judge(v.numbers[t.id], numeric.answer, numeric.tol, numeric.unit, numeric.step, numeric.exact);
           num.answered++;
           if (!j) num.unread++;
           else if (j.state === 'ok') num.ok++;

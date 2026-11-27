@@ -1,14 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 078bd63ebe7f0cb3
+CONTENT-HASH: b1b882276359b0a5
+SCOPE: delta teacher-figure,wording from 078bd63ebe7f0cb3 base b3ee786
 
 ## Blocking
-- (ei)
+(none)
 
 ## Polish
-- Laatikot ovat sovelluksia heti perässä olevasta säännöstä; vastaukset perustelevat. Laatikko 3 on kaavan suora sijoitus.
-
-## Vanhan sisällön löydökset
-- Ei muita.
+(none)
 
 ## Checked
-batch delta review round 2: kolme uutta Pysähdy ja mieti -laatikkoa luettuna edeltävän tekstin kanssa (kaikki ok).
+- Delta: siirto carries "exact": true, a data flag only; answer, hints and wording unchanged, so the task, its feedback and the prediction-evidence order are as approved.

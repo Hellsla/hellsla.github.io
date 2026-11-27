@@ -6,7 +6,8 @@
       "text": "The nucleus of uranium-235, the fuel of a nuclear power plant, is ${}^{235}_{92}\\text{U}$. How many neutrons are there in the nucleus?",
       "answer": 143,
       "unit": "",
-      "tolerance": 0.02
+      "tolerance": 0.02,
+      "exact": true
     },
     {
       "id": "fy8-8-L1-02",
@@ -14,7 +15,14 @@
       "text": "Radon-222 ${}^{222}_{86}\\text{Rn}$ in indoor air decays by alpha decay. What is the mass number of the daughter nucleus that is formed?",
       "answer": 218,
       "unit": "",
-      "tolerance": 0.02
+      "tolerance": 0.02,
+      "exact": true,
+      "mistakes": [
+        {
+          "value": 222,
+          "feedback": "How many nucleons leave the parent nucleus with the alpha particle?"
+        }
+      ]
     },
     {
       "id": "fy8-8-L1-03",
@@ -23,7 +31,8 @@
       "text": "Carbon-14 ${}^{14}_{6}\\text{C}$ decays by beta minus decay. What is the atomic number of the daughter nucleus that is formed?",
       "answer": 7,
       "unit": "",
-      "tolerance": 0.02
+      "tolerance": 0.02,
+      "exact": true
     },
     {
       "id": "fy8-8-L1-04",
@@ -39,7 +48,8 @@
       "text": "Fluorine-18 ${}^{18}_{9}\\text{F}$, used in PET imaging, decays by beta plus decay. How many neutrons are there in the daughter nucleus?",
       "answer": 10,
       "unit": "",
-      "tolerance": 0.02
+      "tolerance": 0.02,
+      "exact": true
     },
     {
       "id": "fy8-8-L1-06",
@@ -81,7 +91,8 @@
       ],
       "answer": 136,
       "unit": "",
-      "tolerance": 0.02
+      "tolerance": 0.02,
+      "exact": true
     },
     {
       "id": "fy8-8-L1-08",
@@ -93,7 +104,8 @@
       ],
       "answer": 28,
       "unit": "",
-      "tolerance": 0.02
+      "tolerance": 0.02,
+      "exact": true
     }
   ],
   "level2": [
@@ -112,7 +124,8 @@
       "text": "Bismuth-214 ${}^{214}_{83}\\text{Bi}$ of the uranium series decays by beta minus decay, and the nucleus that is formed immediately decays by alpha decay. What is the atomic number of the nucleus formed after these two decays?",
       "answer": 82,
       "unit": "",
-      "tolerance": 0.02
+      "tolerance": 0.02,
+      "exact": true
     },
     {
       "id": "fy8-8-L2-03",
@@ -128,7 +141,8 @@
       "text": "Thorium-232 ${}^{232}_{90}\\text{Th}$ decays by alpha decay, and the nucleus that is formed decays twice in a row by beta minus decay. How many neutrons are there in the nucleus formed after these three decays?",
       "answer": 138,
       "unit": "",
-      "tolerance": 0.02
+      "tolerance": 0.02,
+      "exact": true
     },
     {
       "id": "fy8-8-L2-05",
@@ -141,6 +155,7 @@
       "answer": 3,
       "unit": "",
       "tolerance": 0.02,
+      "exact": true,
       "data": {
         "caption": "Proton and neutron numbers of the nucleus before decay ($Z$, $N$) and after it ($Z'$, $N'$)",
         "columns": [
@@ -206,7 +221,8 @@
       ],
       "answer": 144,
       "unit": "",
-      "tolerance": 0.02
+      "tolerance": 0.02,
+      "exact": true
     },
     {
       "id": "fy8-8-L2-07",
@@ -308,7 +324,8 @@
       "text": "Thorium-232 ${}^{232}_{90}\\text{Th}$ decays in nature as a series that ends in stable lead-208, ${}^{208}_{82}\\text{Pb}$. The series has only alpha and beta minus decays. How many beta minus decays are there in the series?",
       "answer": 4,
       "unit": "",
-      "tolerance": 0.02
+      "tolerance": 0.02,
+      "exact": true
     },
     {
       "id": "fy8-8-L3-02",
@@ -324,7 +341,8 @@
       "text": "An unknown nucleus X decays first by beta minus decay and the nucleus that is formed then by alpha decay. The end result is radon-222 ${}^{222}_{86}\\text{Rn}$. What is the atomic number of the nucleus X?",
       "answer": 87,
       "unit": "",
-      "tolerance": 0.02
+      "tolerance": 0.02,
+      "exact": true
     },
     {
       "id": "fy8-8-L3-04",
@@ -338,6 +356,7 @@
       "answer": 4,
       "unit": "",
       "tolerance": 0.02,
+      "exact": true,
       "data": {
         "caption": "Members of the uranium series in order",
         "columns": [

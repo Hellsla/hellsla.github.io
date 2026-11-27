@@ -1,5 +1,6 @@
 VERDICT: PASS
-CONTENT-HASH: 8790a6a6454470cf
+CONTENT-HASH: 8acc38b619a83b3b
+SCOPE: delta teacher-figure,wording from 8790a6a6454470cf base b3ee786
 
 ## Blocking
 
@@ -7,4 +8,7 @@ CONTENT-HASH: 8790a6a6454470cf
 None.
 
 ## Checked
-batch delta review, round 2: C-14 beta minus gives Z = 7, A = 14, N-14, correct and placed right after the beta-decay paragraph. The U-238 alpha box moved after the general decay equations; 238 - 4 = 234 and 92 - 2 = 90 (Th-234) are right.
+- inquiry.json:274, task `siirto`: `"exact": true` suits it. The answer is a count of decays, so it must be an integer and no rounding applies. The answer of 7 is unchanged.
+- Recomputed: n_alpha = (235 - 207)/4 = 7. Beta-minus count = 82 - (92 - 14) = 4. The U-238 check: (238 - 206)/4 = 8 alpha and 6 beta, as the solution says.
+- Mistake values 28 (change in A), 10 (change in Z) and 5 (change in Z divided by 2) are all different from 7, and each one's feedback names the right error.
+- Teacher-approved figures and pictures are carried as approved, with no physics change in the diff.
