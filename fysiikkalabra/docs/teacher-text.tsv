@@ -18,6 +18,22 @@ date	lang	id	file	before	after	source
 2026-11-27	fi	fy7-5	content/fi/FY7/fy7-5/lesson.md	ccf3e13b8606b40f	5f2881689c0a0a09	Opettaja tässä sessiossa 2026-11-27: hyväksyi fi-, fi-easy- ja en-sanamuodot (työjono 29.4)
 2026-11-27	fi-easy	fy7-5	content/fi-easy/FY7/fy7-5/lesson.md	de69c3ca520ddf7e	9080eb8de187da53	Opettaja tässä sessiossa 2026-11-27: hyväksyi fi-, fi-easy- ja en-sanamuodot (työjono 29.4)
 2026-11-27	en	fy7-5	content/en/FY7/fy7-5/lesson.md	7d64bb40b8a7c2c1	b3acf81e64346017	Opettaja tässä sessiossa 2026-11-27: hyväksyi fi-, fi-easy- ja en-sanamuodot (työjono 29.4)
+2026-11-27	fi	fy4-3	content/fi/FY4/fy4-3/lesson.md	c8d96b8d05a9ff69	0922192826b58925	opettaja 2026-11-27 tässä sessiossa (kysely: Hyväksyn): fy4-3 systeemit-kuva ja teksti, 29.6
+2026-11-27	en	fy4-3	content/en/FY4/fy4-3/figures.json	8819e3300fcb5944	76d854ad1a265a84	opettaja 2026-11-27 tässä sessiossa (kysely: Hyväksyn): fy4-3 systeemit-kuva ja teksti, 29.6
+2026-11-27	en	fy4-3	content/en/FY4/fy4-3/lesson.md	34602e844e7a52ba	aa86b94d3c51fbd2	opettaja 2026-11-27 tässä sessiossa (kysely: Hyväksyn): fy4-3 systeemit-kuva ja teksti, 29.6
+2026-11-27	fi-easy	fy4-3	content/fi-easy/FY4/fy4-3/figures.json	39fa17b12b7f8e6a	29e4478fdb361139	opettaja 2026-11-27 tässä sessiossa (kysely: Hyväksyn): fy4-3 systeemit-kuva ja teksti, 29.6
+2026-11-27	fi-easy	fy4-3	content/fi-easy/FY4/fy4-3/lesson.md	ddfc5e86df8c77f0	83a80d5f87d97edd	opettaja 2026-11-27 tässä sessiossa (kysely: Hyväksyn): fy4-3 systeemit-kuva ja teksti, 29.6
+2026-11-27	fi	fy4-3	content/fi/FY4/fy4-3/lesson.md	c8d96b8d05a9ff69	3b7ff578acbb855c	opettaja 2026-11-27 tässä sessiossa (kysely: Hyväksyn, versio 2 katselmointikorjausten jälkeen): fy4-3 systeemit, 29.6
+2026-11-27	en	fy4-3	content/en/FY4/fy4-3/figures.json	8819e3300fcb5944	3a9cc30bb208bdfd	opettaja 2026-11-27 tässä sessiossa (kysely: Hyväksyn, versio 2 katselmointikorjausten jälkeen): fy4-3 systeemit, 29.6
+2026-11-27	en	fy4-3	content/en/FY4/fy4-3/lesson.md	34602e844e7a52ba	b28c7acd72c0ae81	opettaja 2026-11-27 tässä sessiossa (kysely: Hyväksyn, versio 2 katselmointikorjausten jälkeen): fy4-3 systeemit, 29.6
+2026-11-27	fi-easy	fy4-3	content/fi-easy/FY4/fy4-3/figures.json	39fa17b12b7f8e6a	22a372f7589970d6	opettaja 2026-11-27 tässä sessiossa (kysely: Hyväksyn, versio 2 katselmointikorjausten jälkeen): fy4-3 systeemit, 29.6
+2026-11-27	fi-easy	fy4-3	content/fi-easy/FY4/fy4-3/lesson.md	ddfc5e86df8c77f0	33687ca95fe9cbfe	opettaja 2026-11-27 tässä sessiossa (kysely: Hyväksyn, versio 2 katselmointikorjausten jälkeen): fy4-3 systeemit, 29.6
+2026-11-27	en	fy4-3	content/en/FY4/fy4-3/lesson.md	34602e844e7a52ba	be6e01d89ea82f1a	opettaja 2026-11-27 tässä sessiossa (kysely: Hyväksyn, versio 3): fy4-3 systeemit, 29.6
+2026-11-27	fi-easy	fy4-3	content/fi-easy/FY4/fy4-3/lesson.md	ddfc5e86df8c77f0	1658eb32f082f7a9	opettaja 2026-11-27 tässä sessiossa (kysely: Hyväksyn, versio 3): fy4-3 systeemit, 29.6
+2026-11-27	fi	fy4-3	content/fi/FY4/fy4-3/lesson.md	c8d96b8d05a9ff69	91aa13ac0a82de6a	opettaja 2026-11-27 tässä sessiossa (kysely: Hyväksyn, sanamuoto v4): fy4-3 systeemit, 29.6
+2026-11-27	en	fy4-3	content/en/FY4/fy4-3/lesson.md	be6e01d89ea82f1a	e2f6b6bb26c6cff9	opettaja 2026-11-27 tässä sessiossa (kysely: Hyväksyn, sanamuoto v4): fy4-3 systeemit, 29.6
+2026-11-27	fi-easy	fy4-3	content/fi-easy/FY4/fy4-3/lesson.md	ddfc5e86df8c77f0	3d622b1581036540	opettaja 2026-11-27 tässä sessiossa (kysely: Hyväksyn, sanamuoto v4): fy4-3 systeemit, 29.6
+2026-11-27	fi	fy4-3	content/fi/FY4/fy4-3/lesson.md	3b7ff578acbb855c	91aa13ac0a82de6a	opettaja 2026-11-27 tässä sessiossa (kysely: Hyväksyn, sanamuoto v4, koko muutos mainiin nähden): fy4-3 systeemit, 29.6
 2026-11-27	fi	fy1-3	content/fi/FY1/fy1-3/exercises/exercises.json	5553855560a203f4	98c0c8e858843d64	Opettaja tässä sessiossa 2026-11-27: hyväksyi fi-, fi-easy- ja en-sanamuodot (työjono 29.5)
 2026-11-27	fi	fy1-3	content/fi/FY1/fy1-3/exercises/solutions.md	498e6c47e6f0eca3	2f5793ae43181468	Opettaja tässä sessiossa 2026-11-27: hyväksyi fi-, fi-easy- ja en-sanamuodot (työjono 29.5)
 2026-11-27	fi-easy	fy1-3	content/fi-easy/FY1/fy1-3/exercises/exercises.json	64e825974895901d	fbefc79a406340c4	Opettaja tässä sessiossa 2026-11-27: hyväksyi fi-, fi-easy- ja en-sanamuodot (työjono 29.5)
@@ -25,12 +41,18 @@ date	lang	id	file	before	after	source
 2026-11-27	en	fy1-3	content/en/FY1/fy1-3/exercises/exercises.json	c9c650a6d88b9d2a	db4795497181dbaf	Opettaja tässä sessiossa 2026-11-27: hyväksyi fi-, fi-easy- ja en-sanamuodot (työjono 29.5)
 2026-11-27	en	fy1-3	content/en/FY1/fy1-3/exercises/solutions.md	4df41600d7f69af6	6260f0f9719c4a7f	Opettaja tässä sessiossa 2026-11-27: hyväksyi fi-, fi-easy- ja en-sanamuodot (työjono 29.5)
 2026-11-27	en	fy3-13	content/en/FY3/fy3-13/exercises/solutions.md	5daa0788c13a3717	8c0c8f412494814d	Opettaja hyväksyi en L3-03 malliratkaisun $1.86$ → 1.86 -muutoksen tässä tekijäsessiossa 2026-11-27: 'Hyväksyn tekstit', työjono 29.3
+2026-11-27	fi	fy6-8	content/fi/FY6/fy6-8/exercises/exercises.json	5b7250ac4fee124d	5e487b1bbc5b6390	opettaja 2026-11-27 tekijäsessiossa 29.8: Hyväksyn
+2026-11-27	fi-easy	fy6-8	content/fi-easy/FY6/fy6-8/exercises/exercises.json	f13ad1cb46efc5d5	c9daf969cb9e02c0	opettaja 2026-11-27 tekijäsessiossa 29.8: Hyväksyn
+2026-11-27	en	fy6-8	content/en/FY6/fy6-8/exercises/exercises.json	41db3a7d3756e4b0	3e9a979463f6a039	opettaja 2026-11-27 tekijäsessiossa 29.8: Hyväksyn
 2026-11-27	fi	fy5-12	content/fi/FY5/fy5-12/lesson.md	620b2da89b081463	0e1a81523da4bd7f	opettaja 2026-11-27 tässä sessiossa: Hyväksyn (solmuesimerkki, 29.7)
 2026-11-27	fi-easy	fy5-12	content/fi-easy/FY5/fy5-12/lesson.md	f556000c502ba65e	970d72b3dabae78e	opettaja 2026-11-27 tässä sessiossa: Hyväksyn (solmuesimerkki, 29.7)
 2026-11-27	en	fy5-12	content/en/FY5/fy5-12/lesson.md	c439b8dd5961cd8b	1fa56487fd59a83a	opettaja 2026-11-27 tässä sessiossa: Hyväksyn (solmuesimerkki, 29.7)
 2026-11-27	fi	fy5-12	content/fi/FY5/fy5-12/lesson.md	9c7fc03c35691b88	0e1a81523da4bd7f	opettaja 2026-11-27 tässä sessiossa: Hyväksyn (solmuesimerkki, 29.7); pohja 705e1b3 sisältää jo aiemmin hyväksytyt kuvat
 2026-11-27	fi-easy	fy5-12	content/fi-easy/FY5/fy5-12/lesson.md	caa5a00065735923	970d72b3dabae78e	opettaja 2026-11-27 tässä sessiossa: Hyväksyn (solmuesimerkki, 29.7); pohja 705e1b3 sisältää jo aiemmin hyväksytyt kuvat
 2026-11-27	en	fy5-12	content/en/FY5/fy5-12/lesson.md	62ca1a7525052e24	1fa56487fd59a83a	opettaja 2026-11-27 tässä sessiossa: Hyväksyn (solmuesimerkki, 29.7); pohja 705e1b3 sisältää jo aiemmin hyväksytyt kuvat
+2026-11-27	fi	fy6-8	content/fi/FY6/fy6-8/exercises/exercises.json	5b7250ac4fee124d	83a7e0bdfbef4662	opettaja 2026-11-27 tekijäsessiossa 29.8: Hyväksyn (linkin HTML-muoto; fi, fi-easy ja en -teksti vahvistettu kysymyksillä)
+2026-11-27	fi-easy	fy6-8	content/fi-easy/FY6/fy6-8/exercises/exercises.json	f13ad1cb46efc5d5	305fbab8319602a2	opettaja 2026-11-27 tekijäsessiossa 29.8: Hyväksyn (linkin HTML-muoto; fi, fi-easy ja en -teksti vahvistettu kysymyksillä)
+2026-11-27	en	fy6-8	content/en/FY6/fy6-8/exercises/exercises.json	41db3a7d3756e4b0	a6f478ca22f65dd3	opettaja 2026-11-27 tekijäsessiossa 29.8: Hyväksyn (linkin HTML-muoto; fi, fi-easy ja en -teksti vahvistettu kysymyksillä)
 2026-11-27	fi	fy8-8	content/fi/FY8/fy8-8/exercises/exercises.json	7a2217993333ae49	73ae37e08787b9cf	Opettaja 2026-11-27 tässä sessiossa (AskUserQuestion): hyväksyn fy8-8-L2-05 c-kohdan ja malliratkaisun lisäyksen (fi)
 2026-11-27	fi	fy8-8	content/fi/FY8/fy8-8/exercises/solutions.md	01dd661e091a6561	d7130d37f95b356d	Opettaja 2026-11-27 tässä sessiossa (AskUserQuestion): hyväksyn fy8-8-L2-05 c-kohdan ja malliratkaisun lisäyksen (fi)
 2026-11-27	fi-easy	fy8-8	content/fi-easy/FY8/fy8-8/exercises/exercises.json	c43e2788cb0b198d	50c993ed208f0f73	Opettaja 2026-11-27 tässä sessiossa (AskUserQuestion): hyväksyn fy8-8-L2-05 c-kohdan ja malliratkaisun lisäyksen (fi-easy)
