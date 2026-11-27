@@ -102,7 +102,9 @@ missä $\theta_{0,\text{max}}$ on suurempi (vähemmän negatiivinen) ja $\theta_
 <foreignObject x="204" y="76" width="200" height="36"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:left">$\text{ekstrapolointi}$</div></foreignObject><line x1="264" y1="114" x2="264" y2="184" stroke="#1f2933" stroke-width="1.5"/><foreignObject x="300" y="6" width="152" height="36"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:right">$\text{mittausalue}$</div></foreignObject><path d="M462,48 V32 H574 V48" fill="none" stroke="#1f2933" stroke-width="2"/>
 </svg>
 
-Kuva on piirretty mittakaavassa. Ääriviivat kulkevat lähellä toisiaan mittausalueella mutta eroavat ekstrapoloitaessa, joten epävarmuus kasvaa jatkettaessa. Epävarmuutta pienentävät tarkempi painemittari, useampi mittauspiste ja leveämpi mittausalue. Kun tulos tunnetaan, kelvinasteikon nollapiste asetetaan siihen: lämpötila kelvineinä on $T = \theta - \theta_0$.
+Kuva on piirretty mittakaavassa. Ääriviivat kulkevat lähellä toisiaan mittausalueella mutta eroavat ekstrapoloitaessa, joten epävarmuus kasvaa jatkettaessa. Epävarmuutta pienentävät tarkempi painemittari, useampi mittauspiste ja leveämpi mittausalue.
+
+Suoran ja lämpötila-akselin leikkauskohta antaa kokeellisen arvion absoluuttiselle nollapisteelle. Tässä kokeessa arvio on $(-276 \pm 18)\,{}^\circ\text{C}$. Asteikkojen täsmällinen yhteys on $0\,\text{K} = -273{,}15\,{}^\circ\text{C}$. Tämä arvo osuu kokeen epävarmuusvälille.
 
 ```pysahdy
 Ääriviivat eroavat toisistaan, kun suoraa jatketaan. Mitä se tarkoittaa lämpötilan $\theta_0$ epävarmuudelle?
