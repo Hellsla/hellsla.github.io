@@ -46,10 +46,14 @@
   // The answer check of a typed number, one rule for the lesson page and the grading page (work queue 17e): the text as typed ->
   // null when it is not one number, else { value, state: 'ok' | 'close' | 'no', mistake } (mistake only for 'no', as flMistake).
   // Accepted: within 2 % of the model answer or half a unit in its shown last significant digit (step is one unit), whichever is larger,
-  // or the task's own wider tolerance; 2-5 % away is 'close' (Lähellä), not a rejection (teacher 2026-11-03, 2026-11-10).
-  window.flJudge = (text, answer, tol, unit, step) => {
+  // or the task's own wider tolerance (an exact task: only the answer itself); 2-5 % away is 'close' (Lähellä), not a rejection (teacher 2026-11-03, 2026-11-10).
+  // `exact` (a task's "exact": true, teacher 2026-11-27, work queue 29.1): a count or an index that is only right when it is the
+  // number itself (a mass number, an atomic number, a number of neutrons, the order of a maximum): only the answer is accepted,
+  // no 2 % band, no half unit, no "Lähellä"; a wrong value gets the task's own feedback (data-mistakes) or the general rules.
+  window.flJudge = (text, answer, tol, unit, step, exact) => {
     const v = window.flParse(text), ans = Number(answer), t = Number(tol), st = Number(step) || 0;
     if (!Number.isFinite(v) || !Number.isFinite(ans)) return null;
+    if (exact) return Math.abs(v - ans) <= 1e-9 * Math.max(1, Math.abs(ans)) ? { value: v, state: 'ok', mistake: null } : { value: v, state: 'no', mistake: window.flMistake(v, ans, 0, unit, 0) };
     const a = Math.abs(ans), round = st / 2;
     const accept = ans === 0 ? Math.max(t, round) : Math.max(0.02 * a, t * a, round);
     const near = ans === 0 ? 2.5 * accept : Math.max(0.05 * a, 1.25 * accept);

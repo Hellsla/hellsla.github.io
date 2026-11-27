@@ -40,6 +40,9 @@ CHECK = [(2.8995, 0.03, 1, "3", "ok"), (2.8995, 0.03, 1, "2", "no"), (2.8995, 0.
          (9.99e17, 0.02, 1e15, "9,99e17", "ok"), (9.99e17, 0.02, 1e15, "9,99 · 10^17", "ok"), (9.99e17, 0.02, 1e15, "9,0e17", "no"), (3.73e-19, 0.02, 1e-21, "3,73 × 10⁻¹⁹", "ok"),
          (100, 0.02, 1, "100", "ok"), (100, 0.02, 1, "102", "ok"), (100, 0.02, 1, "104", "close"), (100, 0.02, 1, "110", "no"),
          (2.8995, 0.03, 1, "2/3", "hint")]
+# data-exact (work queue 29.1): (answer, typed, expected state): only the answer itself is accepted, never "close"
+EXACT = [(218, "218", "ok"), (218, "218,0", "ok"), (218, "217", "no"), (218, "219", "no"), (218, "222", "no"), (218, "214", "no"), (218, "210", "no"),
+         (143, "142", "no"), (143, "145", "no"), (4, "4", "ok"), (4, "3", "no"), (4, "5", "no"), (4, "4,1", "no"), (-1, "-1", "ok"), (-1, "1", "no")]
 
 
 def main():
@@ -47,6 +50,8 @@ def main():
     virhe = (ROOT / "templates" / "virhe.js").read_text(encoding="utf-8")   # the number reading and the check's rule (work queue 17e)
     forms = "".join(f'<form class="check" id="f{i}" data-answer="{a}" data-tol="{t}" data-step="{s:g}" novalidate><input type="text">'
                     f'<button>Tarkista</button><output></output></form>' for i, (a, t, s, _, _) in enumerate(CHECK))
+    forms += "".join(f'<form class="check" id="e{i}" data-answer="{a}" data-tol="0.02" data-step="1" data-exact="1" novalidate><input type="text">'
+                     f'<button>Tarkista</button><output></output></form>' for i, (a, _, _) in enumerate(EXACT))
     page = ('<!doctype html><html lang="fi"><head><meta charset="utf-8"></head><body><main>'
             '<script type="application/json" id="fl-strings">' + json.dumps({"js": {k: k for k in ("correct", "check_near", "check_number", "check_retry", "check_give_up", "check_magnitude", "check_mistake_sign", "check_mistake_magnitude", "check_mistake_time", "check_mistake_kelvin")}}) + '</script>'
             + forms + "</main></body></html>")
@@ -66,6 +71,10 @@ def main():
             pg.fill(f"#f{i} input", typed); pg.click(f"#f{i} button")
             got = pg.eval_on_selector(f"#f{i} output", "(o) => o.dataset.state")
             expect(f"answer {a:g} (tol {t:g}, step {s:g}): {typed!r} is {want}", got == want, f"got {got}")
+        for i, (a, typed, want) in enumerate(EXACT):
+            pg.fill(f"#e{i} input", typed); pg.click(f"#e{i} button")
+            got = pg.eval_on_selector(f"#e{i} output", "(o) => o.dataset.state")
+            expect(f"exact answer {a}: {typed!r} is {want}", got == want, f"got {got}")
         b.close()
     print("ok" if not fails else f"{fails} failure(s)")
     sys.exit(1 if fails else 0)

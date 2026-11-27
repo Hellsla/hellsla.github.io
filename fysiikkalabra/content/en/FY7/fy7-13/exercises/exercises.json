@@ -92,7 +92,8 @@
       ],
       "answer": 4,
       "unit": "",
-      "tolerance": 0.02
+      "tolerance": 0.02,
+      "exact": true
     },
     {
       "id": "fy7-13-L1-09",
@@ -114,7 +115,8 @@
       "text": "Light from a blue laser, with a wavelength of $450\\,\\text{nm}$, hits perpendicularly a grating with $600$ lines per millimetre. Behind the grating there is a screen so wide that all the maxima that form hit it. How many dots of light are seen on the screen?",
       "answer": 7,
       "unit": "",
-      "tolerance": 0.02
+      "tolerance": 0.02,
+      "exact": true
     },
     {
       "id": "fy7-13-L2-02",

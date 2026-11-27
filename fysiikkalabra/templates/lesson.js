@@ -69,11 +69,11 @@
   // The answer check (the rule and the number reading are in virhe.js: window.flJudge, window.flParse; work queue 17e).
   document.querySelectorAll('form.check').forEach((form) => {
     const input = form.querySelector('input'), out = form.querySelector('output');
-    const ans = Number(form.dataset.answer), tol = Number(form.dataset.tol), step = Number(form.dataset.step) || 0;
+    const ans = Number(form.dataset.answer), tol = Number(form.dataset.tol), step = Number(form.dataset.step) || 0, exact = form.dataset.exact === '1';
     let tries = 0;
     form.addEventListener('submit', (e) => {
       e.preventDefault();
-      const j = window.flJudge(input.value, ans, tol, form.dataset.unit, step);   // virhe.js: the one rule of the check, also used by the grading page (17e)
+      const j = window.flJudge(input.value, ans, tol, form.dataset.unit, step, exact);   // virhe.js: the one rule of the check, also used by the grading page (17e)
       if (!j) { out.textContent = msg('check_number'); out.dataset.state = 'hint'; return; }
       tries += 1;
       const { value: v, state, mistake } = j;

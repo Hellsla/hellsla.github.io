@@ -384,11 +384,11 @@
   });
 
   // 4. numeric tasks: common-mistake feedback
-  document.querySelectorAll('.act-numeric form.check, .exp-question form.check, .interpret form.check').forEach((form) => {
+  document.querySelectorAll('.act-numeric form.check, .exp-question form.check, .interpret form.check, #exercises form.check').forEach((form) => {
     let mistakes = [];
     try { mistakes = JSON.parse(form.dataset.mistakes || '[]'); } catch (e) { mistakes = []; }
     if (!mistakes.length) return;
-    const input = form.querySelector('input'), out = form.querySelector('output'), tol = Number(form.dataset.tol);
+    const input = form.querySelector('input'), out = form.querySelector('output'), tol = form.dataset.exact === '1' ? 0 : Number(form.dataset.tol);   // an exact task's feedback value is matched exactly
     form.addEventListener('submit', () => {
       const v = window.flParse ? window.flParse(input.value) : NaN;   // the same reading as the answer check (lesson.js part 1)
       if (!Number.isFinite(v) || out.dataset.state === 'ok' || out.dataset.state === 'close') return;

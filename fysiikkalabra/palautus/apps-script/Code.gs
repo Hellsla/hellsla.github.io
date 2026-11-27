@@ -792,7 +792,7 @@ function rlClass_(m) {
           if (p !== '') { scored++; sum += p; if (p <= 0) zero++; else if (p >= maxP) full++; else part++; }
         }
         if (numeric && v.numbers[t.id] !== undefined) {
-          var j = judge(v.numbers[t.id], numeric.answer, numeric.tol, numeric.unit, numeric.step);
+          var j = judge(v.numbers[t.id], numeric.answer, numeric.tol, numeric.unit, numeric.step, numeric.exact);
           num.answered++;
           if (!j) num.unread++;
           else if (j.state === 'ok') num.ok++;
