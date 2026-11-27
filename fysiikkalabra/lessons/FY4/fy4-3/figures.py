@@ -265,15 +265,15 @@ def systeemit():
             "ympärillä on katkoviiva. Hänen voimakuviossaan ovat paino G A, tukivoima N A ja B:n voima A:han, F B A, joka osoittaa "
             "vasemmalle. Oikealla systeeminä ovat luistelijat A ja B yhdessä, ja katkoviiva kulkee molempien ympäri. Voimakuviossa "
             "ovat vain ulkopuoliset voimat: A:n ja B:n yhteispaino ja yhteinen tukivoima. Vuorovaikutusparin voimat F A B ja F B A ovat sisäisiä, "
-            "eikä niitä piirretä nuolina; niiden vektorisumma on nollavektori.")
+            "eikä niitä piirretä nuolina; niiden vektorisumma on nollavektori. Oikean puolen painon ja tukivoiman nuolet ovat yhtä pitkät. Kitka jätetään huomiotta.")
     f.rect(8, 160, 284, 14, grad(f, "fy43y-ice1", GLASS, COLD_LIGHT), None); f.rect(308, 160, 284, 14, grad(f, "fy43y-ice2", GLASS, COLD_LIGHT), None)
     f.line(300, 20, 300, 450, RULE, 1.5, "6 6")
     f.tex(150, 22, r"\text{systeemi: A}", "middle", MUTED); f.tex(450, 22, r"\text{systeemi: A ja B}", "middle", MUTED)
     for x0 in (0, 300):                                         # the same situation twice
-        skater(f, x0 + 112, 160, 0.4, 1, COLD, hand=(x0 + 142, 100))
-        skater(f, x0 + 196, 160, 0.3, -1, HOT, hand=(x0 + 170, 100))
-        f.tex(x0 + 80, 90, r"\text{A}", "middle"); f.tex(x0 + 212, 80, r"\text{B}", "middle")
-    f.add(f'<rect x="60" y="44" width="96" height="120" rx="14" fill="none" stroke="{INK}" stroke-width="2.5" stroke-dasharray="8 6"/>')
+        skater(f, x0 + 112, 160, 0.4, 1, COLD, hand=(x0 + 138, 100))
+        skater(f, x0 + 190, 160, 0.3, -1, HOT, hand=(x0 + 150, 100))
+        f.tex(x0 + 80, 90, r"\text{A}", "middle"); f.tex(x0 + 206, 80, r"\text{B}", "middle")
+    f.add(f'<rect x="60" y="44" width="86" height="120" rx="14" fill="none" stroke="{INK}" stroke-width="2.5" stroke-dasharray="8 6"/>')
     f.add(f'<rect x="352" y="44" width="200" height="120" rx="14" fill="none" stroke="{INK}" stroke-width="2.5" stroke-dasharray="8 6"/>')
     f.line(8, 192, 592, 192, RULE, 1.5, "6 6")
     s = 1.2
@@ -283,13 +283,13 @@ def systeemit():
     a.force("N_A", (0, SK["GA"]), (ax + 16, ay + ah / 2), "normal", surface=0, tex=r"\overline{N}_A", lab=(26, 4))
     a.force("F_BA", (-SK["F"], 0), (ax + aw / 2, ay - 14), "applied", push=True, tex=r"\overline{F}_{BA}", lab=(6, -22))
     a.draw()
-    bx, by, bw, bh = 450, 330, 110, 70
-    b = FBD(f, 0.6, body=(bx, by, bw, bh), a_dir=(0, 0))      # the sum of the two weights is long: a smaller scale
+    bx, by, bw, bh = 450, 310, 110, 70
+    b = FBD(f, 0.76, body=(bx, by, bw, bh), a_dir=(0, 0))      # the sum of the two weights is long: a smaller scale
     G = SK["GA"] + SK["GB"]
-    b.force("G", (0, -G), (bx, by), "gravity", tex=r"\overline{G}_A+\overline{G}_B", lab=(-52, -6))
-    b.force("N", (0, G), (bx + 20, by + bh / 2), "normal", surface=0, tex=r"\overline{N}_A+\overline{N}_B", lab=(74, -4))
+    b.force("G", (0, -G), (bx, by), "gravity", tex=r"\overline{G}_A+\overline{G}_B", lab=(-62, -2))
+    b.force("N", (0, G), (bx + 20, by + bh / 2), "normal", surface=0, tex=r"\overline{N}_A+\overline{N}_B", lab=(74, 12))
     b.draw()
-    f.tex(bx, 232, r"\overline{F}_{AB}+\overline{F}_{BA}=\overline{0}", "middle", MUTED, size=20)
+    f.tex(bx, 220, r"\overline{F}_{AB}+\overline{F}_{BA}=\overline{0}", "middle", MUTED, size=20)
     return f.svg()
 
 
