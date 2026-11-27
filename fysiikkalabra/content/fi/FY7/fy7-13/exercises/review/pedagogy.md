@@ -1,6 +1,5 @@
 VERDICT: PASS
 CONTENT-HASH: bc53e2d35d35e80e
-SCOPE: delta exact flags (L1-08, L2-01) from b01ed154ea75eb18
 
 ## Blocking
 (none)

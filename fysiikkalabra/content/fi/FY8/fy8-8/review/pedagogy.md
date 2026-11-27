@@ -1,6 +1,5 @@
 VERDICT: PASS
 CONTENT-HASH: 56761a24521da28c
-SCOPE: delta, exact flag on inquiry task "siirto" from 3459addd97328536
 
 ## Blocking
 (none)

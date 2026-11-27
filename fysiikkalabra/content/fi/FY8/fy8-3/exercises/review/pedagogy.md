@@ -1,6 +1,6 @@
 VERDICT: PASS
 CONTENT-HASH: 4e625853c2c4f21a
-SCOPE: delta exact flags (L2-02, L3-01)
+SCOPE: delta md-paragraphs,numbers,typography from 44f3a0f5513f3d73 base 64d4935
 
 ## Blocking
 (none)

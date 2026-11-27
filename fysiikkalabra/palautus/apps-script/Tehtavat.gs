@@ -21,7 +21,8 @@ var RL_COURSE = {
        "answer": 39,
        "tol": 0.02,
        "unit": "N",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -36,7 +37,8 @@ var RL_COURSE = {
        "answer": 6,
        "tol": 0.02,
        "unit": "cm",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -51,7 +53,8 @@ var RL_COURSE = {
        "answer": 49,
        "tol": 0.02,
        "unit": "N",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -66,7 +69,8 @@ var RL_COURSE = {
        "answer": 7,
        "tol": 0.03,
        "unit": "N",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -81,7 +85,8 @@ var RL_COURSE = {
        "answer": 62,
        "tol": 0.02,
        "unit": "N",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -110,7 +115,8 @@ var RL_COURSE = {
        "answer": 670,
        "tol": 0.02,
        "unit": "N",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -132,7 +138,8 @@ var RL_COURSE = {
        "answer": 316.2,
        "tol": 0.04,
        "unit": "N",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -147,7 +154,8 @@ var RL_COURSE = {
        "answer": 5,
        "tol": 0.02,
        "unit": "kg",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -162,7 +170,8 @@ var RL_COURSE = {
        "answer": 0.59,
        "tol": 0.02,
        "unit": "N",
-       "step": 0.01
+       "step": 0.01,
+       "exact": false
       }
      ]
     },
@@ -177,7 +186,8 @@ var RL_COURSE = {
        "answer": 1190,
        "tol": 0.02,
        "unit": "N",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -192,7 +202,8 @@ var RL_COURSE = {
        "answer": 5.9,
        "tol": 0.02,
        "unit": "N",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -207,7 +218,8 @@ var RL_COURSE = {
        "answer": 9.8,
        "tol": 0.03,
        "unit": "m/s²",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -222,7 +234,8 @@ var RL_COURSE = {
        "answer": 3.7,
        "tol": 0.03,
        "unit": "m/s²",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -237,7 +250,8 @@ var RL_COURSE = {
        "answer": 0.5,
        "tol": 0.02,
        "unit": "kg",
-       "step": 0.01
+       "step": 0.01,
+       "exact": false
       }
      ]
     },
@@ -252,7 +266,8 @@ var RL_COURSE = {
        "answer": 60,
        "tol": 0.03,
        "unit": "N",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -267,7 +282,8 @@ var RL_COURSE = {
        "answer": 6.8,
        "tol": 0.02,
        "unit": "N",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -282,7 +298,8 @@ var RL_COURSE = {
        "answer": 133,
        "tol": 0.02,
        "unit": "kg",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -297,7 +314,8 @@ var RL_COURSE = {
        "answer": 69,
        "tol": 0.02,
        "unit": "kg",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -312,7 +330,8 @@ var RL_COURSE = {
        "answer": 3.6,
        "tol": 0.04,
        "unit": "m/s²",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -327,7 +346,8 @@ var RL_COURSE = {
        "answer": 682,
        "tol": 0.02,
        "unit": "kg",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -415,7 +435,8 @@ var RL_COURSE = {
        "answer": 72.7,
        "tol": 0.02,
        "unit": "N",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -447,7 +468,8 @@ var RL_COURSE = {
        "answer": 8.8,
        "tol": 0.02,
        "unit": "m/s²",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -495,7 +517,8 @@ var RL_COURSE = {
        "answer": 2,
        "tol": 0.02,
        "unit": "kJ",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -510,7 +533,8 @@ var RL_COURSE = {
        "answer": 180,
        "tol": 0.02,
        "unit": "J",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -525,7 +549,8 @@ var RL_COURSE = {
        "answer": 3,
        "tol": 0.02,
        "unit": "kW",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -540,7 +565,8 @@ var RL_COURSE = {
        "answer": 190,
        "tol": 0.02,
        "unit": "J",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -555,7 +581,8 @@ var RL_COURSE = {
        "answer": 60,
        "tol": 0.02,
        "unit": "W",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -577,7 +604,8 @@ var RL_COURSE = {
        "answer": 1.5,
        "tol": 0.02,
        "unit": "m/s",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -599,7 +627,8 @@ var RL_COURSE = {
        "answer": 18.4,
        "tol": 0.04,
        "unit": "kJ",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -614,7 +643,8 @@ var RL_COURSE = {
        "answer": 30,
        "tol": 0.02,
        "unit": "m",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -629,7 +659,8 @@ var RL_COURSE = {
        "answer": 360,
        "tol": 0.02,
        "unit": "kJ",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -644,7 +675,8 @@ var RL_COURSE = {
        "answer": 250,
        "tol": 0.02,
        "unit": "kJ",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -659,7 +691,8 @@ var RL_COURSE = {
        "answer": 100,
        "tol": 0.02,
        "unit": "J",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -674,7 +707,8 @@ var RL_COURSE = {
        "answer": 55,
        "tol": 0.02,
        "unit": "J",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -689,7 +723,8 @@ var RL_COURSE = {
        "answer": 230,
        "tol": 0.02,
        "unit": "W",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -704,7 +739,8 @@ var RL_COURSE = {
        "answer": 590,
        "tol": 0.02,
        "unit": "J",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -726,7 +762,8 @@ var RL_COURSE = {
        "answer": 19,
        "tol": 0.03,
        "unit": "N",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -741,7 +778,8 @@ var RL_COURSE = {
        "answer": 30,
        "tol": 0.02,
        "unit": "N",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -756,7 +794,8 @@ var RL_COURSE = {
        "answer": 590,
        "tol": 0.02,
        "unit": "J",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -771,7 +810,8 @@ var RL_COURSE = {
        "answer": 45,
        "tol": 0.02,
        "unit": "min",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -786,7 +826,8 @@ var RL_COURSE = {
        "answer": 25,
        "tol": 0.03,
        "unit": "cm",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -801,7 +842,8 @@ var RL_COURSE = {
        "answer": 3.6,
        "tol": 0.03,
        "unit": "kW",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -897,7 +939,8 @@ var RL_COURSE = {
        "answer": 240,
        "tol": 0.02,
        "unit": "W",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -929,7 +972,8 @@ var RL_COURSE = {
        "answer": 180,
        "tol": 0.02,
        "unit": "J",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -977,7 +1021,8 @@ var RL_COURSE = {
        "answer": 294,
        "tol": 0.02,
        "unit": "K",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -992,7 +1037,8 @@ var RL_COURSE = {
        "answer": 77,
        "tol": 0.02,
        "unit": "°C",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -1007,7 +1053,8 @@ var RL_COURSE = {
        "answer": -196,
        "tol": 0.02,
        "unit": "°C",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -1022,7 +1069,8 @@ var RL_COURSE = {
        "answer": 25,
        "tol": 0.02,
        "unit": "K",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -1037,7 +1085,8 @@ var RL_COURSE = {
        "answer": -270,
        "tol": 0.02,
        "unit": "°C",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -1059,7 +1108,8 @@ var RL_COURSE = {
        "answer": 255,
        "tol": 0.02,
        "unit": "K",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -1088,7 +1138,8 @@ var RL_COURSE = {
        "answer": 77.15,
        "tol": 0.04,
        "unit": "K",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -1103,7 +1154,8 @@ var RL_COURSE = {
        "answer": 60,
        "tol": 0.02,
        "unit": "°C",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -1118,7 +1170,8 @@ var RL_COURSE = {
        "answer": 102,
        "tol": 0.02,
        "unit": "kPa",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -1133,7 +1186,8 @@ var RL_COURSE = {
        "answer": 47.5,
        "tol": 0.08,
        "unit": "kPa",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -1148,7 +1202,8 @@ var RL_COURSE = {
        "answer": 4,
        "tol": 0.02,
        "unit": "kertaa",
-       "step": 0.01
+       "step": 0.01,
+       "exact": false
       }
      ]
     },
@@ -1163,7 +1218,8 @@ var RL_COURSE = {
        "answer": 1.5,
        "tol": 0.03,
        "unit": "K",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -1178,7 +1234,8 @@ var RL_COURSE = {
        "answer": 1.7,
        "tol": 0.03,
        "unit": "kertaa",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -1193,7 +1250,8 @@ var RL_COURSE = {
        "answer": 40,
        "tol": 0.02,
        "unit": "s",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -1208,7 +1266,8 @@ var RL_COURSE = {
        "answer": 90.9,
        "tol": 0.08,
        "unit": "°C",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -1223,7 +1282,8 @@ var RL_COURSE = {
        "answer": 321,
        "tol": 0.02,
        "unit": "kPa",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -1238,7 +1298,8 @@ var RL_COURSE = {
        "answer": 127,
        "tol": 0.02,
        "unit": "°C",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -1253,7 +1314,8 @@ var RL_COURSE = {
        "answer": -127,
        "tol": 0.02,
        "unit": "°C",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -1268,7 +1330,8 @@ var RL_COURSE = {
        "answer": 0.6,
        "tol": 0.1,
        "unit": "K",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -1283,7 +1346,8 @@ var RL_COURSE = {
        "answer": 145,
        "tol": 0.02,
        "unit": "°C",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -1371,7 +1435,8 @@ var RL_COURSE = {
        "answer": 122,
        "tol": 0.02,
        "unit": "kPa",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -1403,7 +1468,8 @@ var RL_COURSE = {
        "answer": -273,
        "tol": 0.02,
        "unit": "°C",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -1451,7 +1517,8 @@ var RL_COURSE = {
        "answer": -272,
        "tol": 0.02,
        "unit": "°C",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -1466,7 +1533,8 @@ var RL_COURSE = {
        "answer": 0.367,
        "tol": 0.02,
        "unit": "kPa/°C",
-       "step": 0.001
+       "step": 0.001,
+       "exact": false
       }
      ]
     },
@@ -1481,7 +1549,8 @@ var RL_COURSE = {
        "answer": 5.25,
        "tol": 0.02,
        "unit": "°C",
-       "step": 0.01
+       "step": 0.01,
+       "exact": false
       }
      ]
     },
@@ -1496,7 +1565,8 @@ var RL_COURSE = {
        "answer": 13,
        "tol": 0.02,
        "unit": "°C",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -1511,7 +1581,8 @@ var RL_COURSE = {
        "answer": 0.89,
        "tol": 0.02,
        "unit": "%",
-       "step": 0.01
+       "step": 0.01,
+       "exact": false
       }
      ]
     },
@@ -1533,7 +1604,8 @@ var RL_COURSE = {
        "answer": 77.4,
        "tol": 0.02,
        "unit": "K",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -1555,7 +1627,8 @@ var RL_COURSE = {
        "answer": -273.15,
        "tol": 0.04,
        "unit": "°C",
-       "step": 0.01
+       "step": 0.01,
+       "exact": false
       }
      ]
     },
@@ -1570,7 +1643,8 @@ var RL_COURSE = {
        "answer": -256,
        "tol": 0.02,
        "unit": "°C",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -1585,7 +1659,8 @@ var RL_COURSE = {
        "answer": 14,
        "tol": 0.03,
        "unit": "°C",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -1600,7 +1675,8 @@ var RL_COURSE = {
        "answer": -270,
        "tol": 0.02,
        "unit": "°C",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -1615,7 +1691,8 @@ var RL_COURSE = {
        "answer": 18,
        "tol": 0.02,
        "unit": "%",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -1630,7 +1707,8 @@ var RL_COURSE = {
        "answer": -274,
        "tol": 0.02,
        "unit": "°C",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -1645,7 +1723,8 @@ var RL_COURSE = {
        "answer": -302,
        "tol": 0.02,
        "unit": "°C",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -1660,7 +1739,8 @@ var RL_COURSE = {
        "answer": -370,
        "tol": 0.02,
        "unit": "°C",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -1682,7 +1762,8 @@ var RL_COURSE = {
        "answer": -272.727,
        "tol": 0.05,
        "unit": "°C",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -1697,7 +1778,8 @@ var RL_COURSE = {
        "answer": 54.884,
        "tol": 0.05,
        "unit": "kPa",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -1712,7 +1794,8 @@ var RL_COURSE = {
        "answer": 20.3,
        "tol": 0.03,
        "unit": "°C",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -1727,7 +1810,8 @@ var RL_COURSE = {
        "answer": 28.2,
        "tol": 0.02,
        "unit": "kPa",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -1742,7 +1826,8 @@ var RL_COURSE = {
        "answer": 1.86,
        "tol": 0.02,
        "unit": "kertaa",
-       "step": 0.01
+       "step": 0.01,
+       "exact": false
       }
      ]
     },
@@ -1757,7 +1842,8 @@ var RL_COURSE = {
        "answer": 10.7,
        "tol": 0.03,
        "unit": "°C",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -1772,7 +1858,8 @@ var RL_COURSE = {
        "answer": -17.5,
        "tol": 0.03,
        "unit": "°C",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -1820,7 +1907,8 @@ var RL_COURSE = {
        "answer": -276,
        "tol": 0.02,
        "unit": "°C",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -1844,7 +1932,8 @@ var RL_COURSE = {
        "answer": 18.1,
        "tol": 0.03,
        "unit": "°C",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -1884,7 +1973,8 @@ var RL_COURSE = {
        "answer": -277,
        "tol": 0.02,
        "unit": "°C",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -1916,7 +2006,8 @@ var RL_COURSE = {
        "answer": -283,
        "tol": 0.02,
        "unit": "°C",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -1964,7 +2055,8 @@ var RL_COURSE = {
        "answer": 2400,
        "tol": 0.02,
        "unit": "Pa",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -1979,7 +2071,8 @@ var RL_COURSE = {
        "answer": 930,
        "tol": 0.02,
        "unit": "kPa",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -1994,7 +2087,8 @@ var RL_COURSE = {
        "answer": 275,
        "tol": 0.02,
        "unit": "kPa",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -2009,7 +2103,8 @@ var RL_COURSE = {
        "answer": 300,
        "tol": 0.02,
        "unit": "kPa",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -2024,7 +2119,8 @@ var RL_COURSE = {
        "answer": 4400,
        "tol": 0.02,
        "unit": "Pa",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -2046,7 +2142,8 @@ var RL_COURSE = {
        "answer": 390,
        "tol": 0.02,
        "unit": "kPa",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -2075,7 +2172,8 @@ var RL_COURSE = {
        "answer": 351.2,
        "tol": 0.04,
        "unit": "kPa",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -2090,7 +2188,8 @@ var RL_COURSE = {
        "answer": 4,
        "tol": 0.02,
        "unit": "MPa",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -2105,7 +2204,8 @@ var RL_COURSE = {
        "answer": 35.7,
        "tol": 0.02,
        "unit": "m",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -2120,7 +2220,8 @@ var RL_COURSE = {
        "answer": 6,
        "tol": 0.04,
        "unit": "m",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -2135,7 +2236,8 @@ var RL_COURSE = {
        "answer": 3.2,
        "tol": 0.02,
        "unit": "kN",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -2150,7 +2252,8 @@ var RL_COURSE = {
        "answer": 99.7,
        "tol": 0.02,
        "unit": "kPa",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -2165,7 +2268,8 @@ var RL_COURSE = {
        "answer": 2.94,
        "tol": 0.02,
        "unit": "kPa",
-       "step": 0.01
+       "step": 0.01,
+       "exact": false
       }
      ]
     },
@@ -2180,7 +2284,8 @@ var RL_COURSE = {
        "answer": 1.42,
        "tol": 0.02,
        "unit": "kPa",
-       "step": 0.01
+       "step": 0.01,
+       "exact": false
       }
      ]
     },
@@ -2195,7 +2300,8 @@ var RL_COURSE = {
        "answer": 1529,
        "tol": 0.04,
        "unit": "kg/m³",
-       "step": 100
+       "step": 100,
+       "exact": false
       }
      ]
     },
@@ -2210,7 +2316,8 @@ var RL_COURSE = {
        "answer": 0.14,
        "tol": 0.02,
        "unit": "m²",
-       "step": 0.01
+       "step": 0.01,
+       "exact": false
       }
      ]
     },
@@ -2225,7 +2332,8 @@ var RL_COURSE = {
        "answer": 9.8,
        "tol": 0.02,
        "unit": "kN",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -2240,7 +2348,8 @@ var RL_COURSE = {
        "answer": 19,
        "tol": 0.02,
        "unit": "kPa",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -2255,7 +2364,8 @@ var RL_COURSE = {
        "answer": 0.12,
        "tol": 0.04,
        "unit": "kPa",
-       "step": 0.01
+       "step": 0.01,
+       "exact": false
       }
      ]
     },
@@ -2270,7 +2380,8 @@ var RL_COURSE = {
        "answer": 858,
        "tol": 0.02,
        "unit": "kN",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -2318,7 +2429,8 @@ var RL_COURSE = {
        "answer": 9.81,
        "tol": 0.02,
        "unit": "kPa",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -2366,7 +2478,8 @@ var RL_COURSE = {
        "answer": 0.757,
        "tol": 0.02,
        "unit": "m",
-       "step": 0.001
+       "step": 0.001,
+       "exact": false
       }
      ]
     },
@@ -2398,7 +2511,8 @@ var RL_COURSE = {
        "answer": 890,
        "tol": 0.02,
        "unit": "kg/m³",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -2446,7 +2560,8 @@ var RL_COURSE = {
        "answer": 570,
        "tol": 0.02,
        "unit": "J",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -2461,7 +2576,8 @@ var RL_COURSE = {
        "answer": -8.4,
        "tol": 0.02,
        "unit": "kJ",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -2476,7 +2592,8 @@ var RL_COURSE = {
        "answer": 250,
        "tol": 0.02,
        "unit": "J",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -2491,7 +2608,8 @@ var RL_COURSE = {
        "answer": -500,
        "tol": 0.02,
        "unit": "J",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -2506,7 +2624,8 @@ var RL_COURSE = {
        "answer": -70,
        "tol": 0.02,
        "unit": "J",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -2535,7 +2654,8 @@ var RL_COURSE = {
        "answer": 36,
        "tol": 0.02,
        "unit": "kJ",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -2557,7 +2677,8 @@ var RL_COURSE = {
        "answer": 11.3736,
        "tol": 0.04,
        "unit": "kJ",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -2572,7 +2693,8 @@ var RL_COURSE = {
        "answer": -15,
        "tol": 0.03,
        "unit": "J",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -2587,7 +2709,8 @@ var RL_COURSE = {
        "answer": 160,
        "tol": 0.02,
        "unit": "kJ",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -2602,7 +2725,8 @@ var RL_COURSE = {
        "answer": 800,
        "tol": 0.02,
        "unit": "J",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -2617,7 +2741,8 @@ var RL_COURSE = {
        "answer": 40,
        "tol": 0.02,
        "unit": "s",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -2632,7 +2757,8 @@ var RL_COURSE = {
        "answer": -90,
        "tol": 0.02,
        "unit": "J",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -2647,7 +2773,8 @@ var RL_COURSE = {
        "answer": 20,
        "tol": 0.02,
        "unit": "J",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -2662,7 +2789,8 @@ var RL_COURSE = {
        "answer": 50.4,
        "tol": 0.02,
        "unit": "J",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -2677,7 +2805,8 @@ var RL_COURSE = {
        "answer": 60,
        "tol": 0.03,
        "unit": "J",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -2692,7 +2821,8 @@ var RL_COURSE = {
        "answer": -18,
        "tol": 0.02,
        "unit": "J",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -2707,7 +2837,8 @@ var RL_COURSE = {
        "answer": 1.7,
        "tol": 0.02,
        "unit": "m",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -2722,7 +2853,8 @@ var RL_COURSE = {
        "answer": 310,
        "tol": 0.02,
        "unit": "J",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -2737,7 +2869,8 @@ var RL_COURSE = {
        "answer": 18.7,
        "tol": 0.03,
        "unit": "J",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -2752,7 +2885,8 @@ var RL_COURSE = {
        "answer": 34.8,
        "tol": 0.02,
        "unit": "kJ",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -2832,7 +2966,8 @@ var RL_COURSE = {
        "answer": 5.4,
        "tol": 0.02,
        "unit": "J",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -2864,7 +2999,8 @@ var RL_COURSE = {
        "answer": 30,
        "tol": 0.02,
        "unit": "J",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -2912,7 +3048,8 @@ var RL_COURSE = {
        "answer": 0.63,
        "tol": 0.02,
        "unit": "MJ",
-       "step": 0.01
+       "step": 0.01,
+       "exact": false
       }
      ]
     },
@@ -2927,7 +3064,8 @@ var RL_COURSE = {
        "answer": 210,
        "tol": 0.02,
        "unit": "kJ",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -2942,7 +3080,8 @@ var RL_COURSE = {
        "answer": 720,
        "tol": 0.02,
        "unit": "kJ",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -2957,7 +3096,8 @@ var RL_COURSE = {
        "answer": -35,
        "tol": 0.02,
        "unit": "MJ",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -2972,7 +3112,8 @@ var RL_COURSE = {
        "answer": 19,
        "tol": 0.02,
        "unit": "kJ",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -2994,7 +3135,8 @@ var RL_COURSE = {
        "answer": 78,
        "tol": 0.02,
        "unit": "K",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -3009,7 +3151,8 @@ var RL_COURSE = {
        "answer": 32,
        "tol": 0.02,
        "unit": "kJ",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -3024,7 +3167,8 @@ var RL_COURSE = {
        "answer": 57.344,
        "tol": 0.04,
        "unit": "kJ",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -3039,7 +3183,8 @@ var RL_COURSE = {
        "answer": 78,
        "tol": 0.02,
        "unit": "°C",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -3054,7 +3199,8 @@ var RL_COURSE = {
        "answer": 900,
        "tol": 0.03,
        "unit": "J/(kg·K)",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -3069,7 +3215,8 @@ var RL_COURSE = {
        "answer": 54,
        "tol": 0.02,
        "unit": "°C",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -3084,7 +3231,8 @@ var RL_COURSE = {
        "answer": 27,
        "tol": 0.02,
        "unit": "°C",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -3099,7 +3247,8 @@ var RL_COURSE = {
        "answer": 4100,
        "tol": 0.03,
        "unit": "J/(kg·K)",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -3114,7 +3263,8 @@ var RL_COURSE = {
        "answer": 2100,
        "tol": 0.03,
        "unit": "J/(kg·K)",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -3129,7 +3279,8 @@ var RL_COURSE = {
        "answer": 23,
        "tol": 0.02,
        "unit": "°C",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -3151,7 +3302,8 @@ var RL_COURSE = {
        "answer": 69.3,
        "tol": 0.03,
        "unit": "kJ",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -3166,7 +3318,8 @@ var RL_COURSE = {
        "answer": 170,
        "tol": 0.02,
        "unit": "kJ",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -3181,7 +3334,8 @@ var RL_COURSE = {
        "answer": 12,
        "tol": 0.02,
        "unit": "kg",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -3196,7 +3350,8 @@ var RL_COURSE = {
        "answer": 3.6,
        "tol": 0.02,
        "unit": "K",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -3211,7 +3366,8 @@ var RL_COURSE = {
        "answer": 3.3,
        "tol": 0.02,
        "unit": "m³",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -3226,7 +3382,8 @@ var RL_COURSE = {
        "answer": 81,
        "tol": 0.04,
        "unit": "W",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -3241,7 +3398,8 @@ var RL_COURSE = {
        "answer": 0.6,
        "tol": 0.03,
        "unit": "W/K",
-       "step": 0.01
+       "step": 0.01,
+       "exact": false
       }
      ]
     },
@@ -3321,7 +3479,8 @@ var RL_COURSE = {
        "answer": 29.1,
        "tol": 0.02,
        "unit": "kg",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -3353,7 +3512,8 @@ var RL_COURSE = {
        "answer": 891,
        "tol": 0.02,
        "unit": "J/(kg·K)",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -3401,7 +3561,8 @@ var RL_COURSE = {
        "answer": 401,
        "tol": 0.02,
        "unit": "kJ",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -3416,7 +3577,8 @@ var RL_COURSE = {
        "answer": 0.9,
        "tol": 0.02,
        "unit": "MJ",
-       "step": 0.01
+       "step": 0.01,
+       "exact": false
       }
      ]
     },
@@ -3431,7 +3593,8 @@ var RL_COURSE = {
        "answer": 15,
        "tol": 0.02,
        "unit": "MJ",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -3446,7 +3609,8 @@ var RL_COURSE = {
        "answer": 68,
        "tol": 0.02,
        "unit": "kJ",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -3461,7 +3625,8 @@ var RL_COURSE = {
        "answer": 333,
        "tol": 0.03,
        "unit": "kJ/kg",
-       "step": 10
+       "step": 10,
+       "exact": false
       }
      ]
     },
@@ -3490,7 +3655,8 @@ var RL_COURSE = {
        "answer": 0.602,
        "tol": 0.02,
        "unit": "kg",
-       "step": 0.001
+       "step": 0.001,
+       "exact": false
       }
      ]
     },
@@ -3505,7 +3671,8 @@ var RL_COURSE = {
        "answer": 4.2,
        "tol": 0.04,
        "unit": "kJ",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -3520,7 +3687,8 @@ var RL_COURSE = {
        "answer": 9.4,
        "tol": 0.02,
        "unit": "min",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -3535,7 +3703,8 @@ var RL_COURSE = {
        "answer": 280,
        "tol": 0.02,
        "unit": "kJ",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -3550,7 +3719,8 @@ var RL_COURSE = {
        "answer": 36,
        "tol": 0.02,
        "unit": "kg",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -3565,7 +3735,8 @@ var RL_COURSE = {
        "answer": 0.94,
        "tol": 0.02,
        "unit": "MJ",
-       "step": 0.01
+       "step": 0.01,
+       "exact": false
       }
      ]
     },
@@ -3580,7 +3751,8 @@ var RL_COURSE = {
        "answer": 334,
        "tol": 0.05,
        "unit": "kJ/kg",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -3595,7 +3767,8 @@ var RL_COURSE = {
        "answer": 0.4,
        "tol": 0.02,
        "unit": "kg",
-       "step": 0.01
+       "step": 0.01,
+       "exact": false
       }
      ]
     },
@@ -3610,7 +3783,8 @@ var RL_COURSE = {
        "answer": 14.4,
        "tol": 0.04,
        "unit": "K",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -3632,7 +3806,8 @@ var RL_COURSE = {
        "answer": 2083.3,
        "tol": 0.03,
        "unit": "J/(kg·K)",
-       "step": 100
+       "step": 100,
+       "exact": false
       }
      ]
     },
@@ -3647,7 +3822,8 @@ var RL_COURSE = {
        "answer": 67,
        "tol": 0.02,
        "unit": "kJ",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -3662,7 +3838,8 @@ var RL_COURSE = {
        "answer": 9.7,
        "tol": 0.02,
        "unit": "°C",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -3677,7 +3854,8 @@ var RL_COURSE = {
        "answer": 27,
        "tol": 0.02,
        "unit": "K",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -3692,7 +3870,8 @@ var RL_COURSE = {
        "answer": 2.26,
        "tol": 0.02,
        "unit": "MJ/kg",
-       "step": 0.01
+       "step": 0.01,
+       "exact": false
       }
      ]
     },
@@ -3707,7 +3886,8 @@ var RL_COURSE = {
        "answer": 20,
        "tol": 0.08,
        "unit": "kJ",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -3722,7 +3902,8 @@ var RL_COURSE = {
        "answer": 23.5,
        "tol": 0.02,
        "unit": "g",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -3810,7 +3991,8 @@ var RL_COURSE = {
        "answer": 188,
        "tol": 0.02,
        "unit": "W",
-       "step": 10
+       "step": 10,
+       "exact": false
       }
      ]
     },
@@ -3842,7 +4024,8 @@ var RL_COURSE = {
        "answer": 0.597,
        "tol": 0.02,
        "unit": "kg",
-       "step": 0.001
+       "step": 0.001,
+       "exact": false
       }
      ]
     },
@@ -3890,7 +4073,8 @@ var RL_COURSE = {
        "answer": 17,
        "tol": 0.02,
        "unit": "kJ",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -3905,7 +4089,8 @@ var RL_COURSE = {
        "answer": 84,
        "tol": 0.02,
        "unit": "kJ",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -3920,7 +4105,8 @@ var RL_COURSE = {
        "answer": 60,
        "tol": 0.02,
        "unit": "g",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -3935,7 +4121,8 @@ var RL_COURSE = {
        "answer": 180,
        "tol": 0.02,
        "unit": "g",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -3950,7 +4137,8 @@ var RL_COURSE = {
        "answer": 5,
        "tol": 0.02,
        "unit": "kJ",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -3972,7 +4160,8 @@ var RL_COURSE = {
        "answer": 21,
        "tol": 0.02,
        "unit": "kJ",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -3994,7 +4183,8 @@ var RL_COURSE = {
        "answer": 26.64,
        "tol": 0.04,
        "unit": "kJ",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -4009,7 +4199,8 @@ var RL_COURSE = {
        "answer": 14,
        "tol": 0.02,
        "unit": "°C",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -4024,7 +4215,8 @@ var RL_COURSE = {
        "answer": 68,
        "tol": 0.02,
        "unit": "g",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -4039,7 +4231,8 @@ var RL_COURSE = {
        "answer": 180,
        "tol": 0.02,
        "unit": "s",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -4054,7 +4247,8 @@ var RL_COURSE = {
        "answer": 333,
        "tol": 0.02,
        "unit": "kJ/kg",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -4069,7 +4263,8 @@ var RL_COURSE = {
        "answer": 338,
        "tol": 0.04,
        "unit": "kJ/kg",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -4084,7 +4279,8 @@ var RL_COURSE = {
        "answer": 61,
        "tol": 0.02,
        "unit": "g",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -4113,7 +4309,8 @@ var RL_COURSE = {
        "answer": 40,
        "tol": 0.02,
        "unit": "kJ",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -4128,7 +4325,8 @@ var RL_COURSE = {
        "answer": 234,
        "tol": 0.02,
        "unit": "g",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -4143,7 +4341,8 @@ var RL_COURSE = {
        "answer": 281,
        "tol": 0.02,
        "unit": "g",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -4158,7 +4357,8 @@ var RL_COURSE = {
        "answer": -3.5,
        "tol": 0.02,
        "unit": "°C",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -4173,7 +4373,8 @@ var RL_COURSE = {
        "answer": 335,
        "tol": 0.02,
        "unit": "kJ/kg",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -4188,7 +4389,8 @@ var RL_COURSE = {
        "answer": 29,
        "tol": 0.02,
        "unit": "°C",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -4228,7 +4430,8 @@ var RL_COURSE = {
        "answer": 26.6,
        "tol": 0.05,
        "unit": "°C",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -4252,7 +4455,8 @@ var RL_COURSE = {
        "answer": 12.6,
        "tol": 0.05,
        "unit": "g",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -4284,7 +4488,8 @@ var RL_COURSE = {
        "answer": 39.9,
        "tol": 0.02,
        "unit": "g",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -4316,7 +4521,8 @@ var RL_COURSE = {
        "answer": 40,
        "tol": 0.02,
        "unit": "°C",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -4364,7 +4570,8 @@ var RL_COURSE = {
        "answer": 2.9,
        "tol": 0.02,
        "unit": "mm",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -4379,7 +4586,8 @@ var RL_COURSE = {
        "answer": -52,
        "tol": 0.02,
        "unit": "mm",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -4394,7 +4602,8 @@ var RL_COURSE = {
        "answer": 0.85,
        "tol": 0.02,
        "unit": "mm",
-       "step": 0.01
+       "step": 0.01,
+       "exact": false
       }
      ]
     },
@@ -4409,7 +4618,8 @@ var RL_COURSE = {
        "answer": 0.84,
        "tol": 0.02,
        "unit": "l",
-       "step": 0.01
+       "step": 0.01,
+       "exact": false
       }
      ]
     },
@@ -4424,7 +4634,8 @@ var RL_COURSE = {
        "answer": 0.34,
        "tol": 0.02,
        "unit": "mm",
-       "step": 0.01
+       "step": 0.01,
+       "exact": false
       }
      ]
     },
@@ -4453,7 +4664,8 @@ var RL_COURSE = {
        "answer": 2.3,
        "tol": 0.02,
        "unit": "mm",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -4468,7 +4680,8 @@ var RL_COURSE = {
        "answer": 15,
        "tol": 0.04,
        "unit": "mm",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -4483,7 +4696,8 @@ var RL_COURSE = {
        "answer": 52,
        "tol": 0.02,
        "unit": "m",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -4498,7 +4712,8 @@ var RL_COURSE = {
        "answer": 3,
        "tol": 0.02,
        "unit": "cm³",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -4513,7 +4728,8 @@ var RL_COURSE = {
        "answer": 36,
        "tol": 0.02,
        "unit": "°C",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -4528,7 +4744,8 @@ var RL_COURSE = {
        "answer": 12,
        "tol": 0.03,
        "unit": "10⁻⁶ 1/K",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -4543,7 +4760,8 @@ var RL_COURSE = {
        "answer": 45,
        "tol": 0.04,
        "unit": "10⁻⁶ 1/K",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -4558,7 +4776,8 @@ var RL_COURSE = {
        "answer": 22.9,
        "tol": 0.03,
        "unit": "10⁻⁶ 1/K",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -4573,7 +4792,8 @@ var RL_COURSE = {
        "answer": 10.4,
        "tol": 0.03,
        "unit": "m",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -4595,7 +4815,8 @@ var RL_COURSE = {
        "answer": 53.3,
        "tol": 0.03,
        "unit": "°C",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -4610,7 +4831,8 @@ var RL_COURSE = {
        "answer": 60,
        "tol": 0.03,
        "unit": "mm",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -4625,7 +4847,8 @@ var RL_COURSE = {
        "answer": 120,
        "tol": 0.02,
        "unit": "°C",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -4640,7 +4863,8 @@ var RL_COURSE = {
        "answer": 20,
        "tol": 0.02,
        "unit": "µm",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -4655,7 +4879,8 @@ var RL_COURSE = {
        "answer": 460,
        "tol": 0.02,
        "unit": "cm³",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -4670,7 +4895,8 @@ var RL_COURSE = {
        "answer": 13.2,
        "tol": 0.03,
        "unit": "mm",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -4685,7 +4911,8 @@ var RL_COURSE = {
        "answer": 75.9,
        "tol": 0.03,
        "unit": "mm",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -4781,7 +5008,8 @@ var RL_COURSE = {
        "answer": 44,
        "tol": 0.03,
        "unit": "mm",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -4813,7 +5041,8 @@ var RL_COURSE = {
        "answer": 23,
        "tol": 0.02,
        "unit": "10⁻⁶ 1/K",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -4861,7 +5090,8 @@ var RL_COURSE = {
        "answer": 67.3,
        "tol": 0.02,
        "unit": "kPa",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -4876,7 +5106,8 @@ var RL_COURSE = {
        "answer": 13.7,
        "tol": 0.02,
        "unit": "l",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -4891,7 +5122,8 @@ var RL_COURSE = {
        "answer": 80,
        "tol": 0.03,
        "unit": "kPa",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -4906,7 +5138,8 @@ var RL_COURSE = {
        "answer": 2.6,
        "tol": 0.02,
        "unit": "l",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -4921,7 +5154,8 @@ var RL_COURSE = {
        "answer": 87.3,
        "tol": 0.02,
        "unit": "kPa",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -4943,7 +5177,8 @@ var RL_COURSE = {
        "answer": 0.63,
        "tol": 0.02,
        "unit": "l",
-       "step": 0.01
+       "step": 0.01,
+       "exact": false
       }
      ]
     },
@@ -4965,7 +5200,8 @@ var RL_COURSE = {
        "answer": 2.9,
        "tol": 0.04,
        "unit": "l",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -4980,7 +5216,8 @@ var RL_COURSE = {
        "answer": 2,
        "tol": 0.02,
        "unit": "m³",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -4995,7 +5232,8 @@ var RL_COURSE = {
        "answer": 90,
        "tol": 0.02,
        "unit": "°C",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -5010,7 +5248,8 @@ var RL_COURSE = {
        "answer": 2,
        "tol": 0.05,
        "unit": "J",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -5025,7 +5264,8 @@ var RL_COURSE = {
        "answer": 890,
        "tol": 0.02,
        "unit": "m³",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -5040,7 +5280,8 @@ var RL_COURSE = {
        "answer": 127,
        "tol": 0.02,
        "unit": "kPa",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -5055,7 +5296,8 @@ var RL_COURSE = {
        "answer": 2,
        "tol": 0.1,
        "unit": "ml",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -5070,7 +5312,8 @@ var RL_COURSE = {
        "answer": -276,
        "tol": 0.03,
        "unit": "°C",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -5092,7 +5335,8 @@ var RL_COURSE = {
        "answer": 149,
        "tol": 0.02,
        "unit": "kPa",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -5107,7 +5351,8 @@ var RL_COURSE = {
        "answer": 1.5,
        "tol": 0.02,
        "unit": "",
-       "step": 0.01
+       "step": 0.01,
+       "exact": false
       }
      ]
     },
@@ -5122,7 +5367,8 @@ var RL_COURSE = {
        "answer": 5.9,
        "tol": 0.02,
        "unit": "cm³",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -5137,7 +5383,8 @@ var RL_COURSE = {
        "answer": 202,
        "tol": 0.02,
        "unit": "kPa",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -5152,7 +5399,8 @@ var RL_COURSE = {
        "answer": 29.9,
        "tol": 0.02,
        "unit": "cm",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -5167,7 +5415,8 @@ var RL_COURSE = {
        "answer": 76,
        "tol": 0.03,
        "unit": "°C",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -5182,7 +5431,8 @@ var RL_COURSE = {
        "answer": 30,
        "tol": 0.05,
        "unit": "m",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -5278,7 +5528,8 @@ var RL_COURSE = {
        "answer": 1.07,
        "tol": 0.02,
        "unit": "l",
-       "step": 0.01
+       "step": 0.01,
+       "exact": false
       }
      ]
     },
@@ -5310,7 +5561,8 @@ var RL_COURSE = {
        "answer": 120,
        "tol": 0.02,
        "unit": "kPa",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -5358,7 +5610,8 @@ var RL_COURSE = {
        "answer": 10.9,
        "tol": 0.02,
        "unit": "mol",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -5373,7 +5626,8 @@ var RL_COURSE = {
        "answer": 158,
        "tol": 0.02,
        "unit": "kPa",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -5388,7 +5642,8 @@ var RL_COURSE = {
        "answer": 0.00896,
        "tol": 0.02,
        "unit": "m³",
-       "step": 1e-05
+       "step": 1e-05,
+       "exact": false
       }
      ]
     },
@@ -5403,7 +5658,8 @@ var RL_COURSE = {
        "answer": 324,
        "tol": 0.02,
        "unit": "K",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -5418,7 +5674,8 @@ var RL_COURSE = {
        "answer": 9.7,
        "tol": 0.02,
        "unit": "mol",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -5440,7 +5697,8 @@ var RL_COURSE = {
        "answer": 2.3,
        "tol": 0.02,
        "unit": "l",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -5462,7 +5720,8 @@ var RL_COURSE = {
        "answer": 3.05,
        "tol": 0.04,
        "unit": "MPa",
-       "step": 0.01
+       "step": 0.01,
+       "exact": false
       }
      ]
     },
@@ -5477,7 +5736,8 @@ var RL_COURSE = {
        "answer": 180,
        "tol": 0.02,
        "unit": "bar",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -5492,7 +5752,8 @@ var RL_COURSE = {
        "answer": 27.9,
        "tol": 0.02,
        "unit": "g/mol",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -5507,7 +5768,8 @@ var RL_COURSE = {
        "answer": 555,
        "tol": 0.02,
        "unit": "°C",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -5522,7 +5784,8 @@ var RL_COURSE = {
        "answer": 0.024,
        "tol": 0.03,
        "unit": "mol",
-       "step": 0.001
+       "step": 0.001,
+       "exact": false
       }
      ]
     },
@@ -5537,7 +5800,8 @@ var RL_COURSE = {
        "answer": 5.5,
        "tol": 0.03,
        "unit": "%",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -5552,7 +5816,8 @@ var RL_COURSE = {
        "answer": 4.95,
        "tol": 0.04,
        "unit": "mmol",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -5581,7 +5846,8 @@ var RL_COURSE = {
        "answer": 1.67,
        "tol": 0.03,
        "unit": "kertaa",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -5596,7 +5862,8 @@ var RL_COURSE = {
        "answer": 1.3,
        "tol": 0.02,
        "unit": "· 10²²",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -5611,7 +5878,8 @@ var RL_COURSE = {
        "answer": 11,
        "tol": 0.02,
        "unit": "mm",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -5626,7 +5894,8 @@ var RL_COURSE = {
        "answer": 0.72,
        "tol": 0.02,
        "unit": "kg",
-       "step": 0.01
+       "step": 0.01,
+       "exact": false
       }
      ]
     },
@@ -5641,7 +5910,8 @@ var RL_COURSE = {
        "answer": 28,
        "tol": 0.03,
        "unit": "g",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -5656,7 +5926,8 @@ var RL_COURSE = {
        "answer": 7.4,
        "tol": 0.02,
        "unit": "m³",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -5688,7 +5959,8 @@ var RL_COURSE = {
        "answer": 0.2075,
        "tol": 0.02,
        "unit": "mol",
-       "step": 0.01
+       "step": 0.01,
+       "exact": false
       }
      ]
     },
@@ -5728,7 +6000,8 @@ var RL_COURSE = {
        "answer": 50,
        "tol": 0.1,
        "unit": "",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -5752,7 +6025,8 @@ var RL_COURSE = {
        "answer": 8.3,
        "tol": 0.02,
        "unit": "J/(mol·K)",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -5792,7 +6066,8 @@ var RL_COURSE = {
        "answer": 2640,
        "tol": 0.02,
        "unit": "kg",
-       "step": 10
+       "step": 10,
+       "exact": false
       }
      ]
     },
@@ -5824,7 +6099,8 @@ var RL_COURSE = {
        "answer": 3,
        "tol": 0.02,
        "unit": "",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -5872,7 +6148,8 @@ var RL_COURSE = {
        "answer": 12,
        "tol": 0.02,
        "unit": "kJ",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -5887,7 +6164,8 @@ var RL_COURSE = {
        "answer": 172,
        "tol": 0.02,
        "unit": "J",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -5902,7 +6180,8 @@ var RL_COURSE = {
        "answer": 37.2,
        "tol": 0.02,
        "unit": "%",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -5917,7 +6196,8 @@ var RL_COURSE = {
        "answer": 750,
        "tol": 0.02,
        "unit": "J",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -5932,7 +6212,8 @@ var RL_COURSE = {
        "answer": 21.7,
        "tol": 0.02,
        "unit": "%",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -5961,7 +6242,8 @@ var RL_COURSE = {
        "answer": 3.25,
        "tol": 0.02,
        "unit": "",
-       "step": 0.01
+       "step": 0.01,
+       "exact": false
       }
      ]
     },
@@ -5976,7 +6258,8 @@ var RL_COURSE = {
        "answer": 200,
        "tol": 0.04,
        "unit": "J",
-       "step": 10
+       "step": 10,
+       "exact": false
       }
      ]
     },
@@ -5991,7 +6274,8 @@ var RL_COURSE = {
        "answer": 41,
        "tol": 0.02,
        "unit": "%",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -6006,7 +6290,8 @@ var RL_COURSE = {
        "answer": 9,
        "tol": 0.02,
        "unit": "%",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -6021,7 +6306,8 @@ var RL_COURSE = {
        "answer": 500,
        "tol": 0.02,
        "unit": "J",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -6036,7 +6322,8 @@ var RL_COURSE = {
        "answer": 720,
        "tol": 0.02,
        "unit": "kW",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -6051,7 +6338,8 @@ var RL_COURSE = {
        "answer": 31.4,
        "tol": 0.02,
        "unit": "%",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -6073,7 +6361,8 @@ var RL_COURSE = {
        "answer": 20.9,
        "tol": 0.02,
        "unit": "kWh",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -6095,7 +6384,8 @@ var RL_COURSE = {
        "answer": 0.6,
        "tol": 0.02,
        "unit": "m",
-       "step": 0.01
+       "step": 0.01,
+       "exact": false
       }
      ]
     },
@@ -6110,7 +6400,8 @@ var RL_COURSE = {
        "answer": 7.5,
        "tol": 0.02,
        "unit": "kWh",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -6125,7 +6416,8 @@ var RL_COURSE = {
        "answer": 120,
        "tol": 0.02,
        "unit": "MW",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -6140,7 +6432,8 @@ var RL_COURSE = {
        "answer": 9.6,
        "tol": 0.02,
        "unit": "MWh",
-       "step": 0.01
+       "step": 0.01,
+       "exact": false
       }
      ]
     },
@@ -6155,7 +6448,8 @@ var RL_COURSE = {
        "answer": 12,
        "tol": 0.02,
        "unit": "kW",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -6170,7 +6464,8 @@ var RL_COURSE = {
        "answer": 2.74,
        "tol": 0.02,
        "unit": "",
-       "step": 0.01
+       "step": 0.01,
+       "exact": false
       }
      ]
     },
@@ -6185,7 +6480,8 @@ var RL_COURSE = {
        "answer": 0.74,
        "tol": 0.02,
        "unit": "kJ",
-       "step": 0.01
+       "step": 0.01,
+       "exact": false
       }
      ]
     },
@@ -6225,7 +6521,8 @@ var RL_COURSE = {
        "answer": 400,
        "tol": 0.02,
        "unit": "J",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -6273,7 +6570,8 @@ var RL_COURSE = {
        "answer": 800,
        "tol": 0.02,
        "unit": "MW",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -6289,7 +6587,8 @@ var RL_COURSE = {
        "answer": 22.5,
        "tol": 0.03,
        "unit": "MW",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -6321,7 +6620,8 @@ var RL_COURSE = {
        "answer": 450,
        "tol": 0.02,
        "unit": "J",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -6369,7 +6669,8 @@ var RL_COURSE = {
        "answer": 90.2,
        "tol": 0.02,
        "unit": "%",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -6384,7 +6685,8 @@ var RL_COURSE = {
        "answer": 42,
        "tol": 0.02,
        "unit": "%",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -6399,7 +6701,8 @@ var RL_COURSE = {
        "answer": 4.2,
        "tol": 0.02,
        "unit": "kW",
-       "step": 0.01
+       "step": 0.01,
+       "exact": false
       }
      ]
     },
@@ -6414,7 +6717,8 @@ var RL_COURSE = {
        "answer": 200,
        "tol": 0.02,
        "unit": "MW",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -6429,7 +6733,8 @@ var RL_COURSE = {
        "answer": 90,
        "tol": 0.02,
        "unit": "%",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -6451,7 +6756,8 @@ var RL_COURSE = {
        "answer": 34,
        "tol": 0.02,
        "unit": "%",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -6466,7 +6772,8 @@ var RL_COURSE = {
        "answer": 12,
        "tol": 0.02,
        "unit": "GWh",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -6481,7 +6788,8 @@ var RL_COURSE = {
        "answer": 13.3824,
        "tol": 0.04,
        "unit": "MW",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -6496,7 +6804,8 @@ var RL_COURSE = {
        "answer": 109,
        "tol": 0.02,
        "unit": "MW",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -6511,7 +6820,8 @@ var RL_COURSE = {
        "answer": 43.1,
        "tol": 0.02,
        "unit": "%",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -6526,7 +6836,8 @@ var RL_COURSE = {
        "answer": 167,
        "tol": 0.02,
        "unit": "t",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -6541,7 +6852,8 @@ var RL_COURSE = {
        "answer": 7.16,
        "tol": 0.02,
        "unit": "t/s",
-       "step": 0.01
+       "step": 0.01,
+       "exact": false
       }
      ]
     },
@@ -6556,7 +6868,8 @@ var RL_COURSE = {
        "answer": 90,
        "tol": 0.02,
        "unit": "%",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -6571,7 +6884,8 @@ var RL_COURSE = {
        "answer": 1560,
        "tol": 0.02,
        "unit": "MW",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -6586,7 +6900,8 @@ var RL_COURSE = {
        "answer": 36.6,
        "tol": 0.02,
        "unit": "%",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -6608,7 +6923,8 @@ var RL_COURSE = {
        "answer": 42.857,
        "tol": 0.03,
        "unit": "%",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -6623,7 +6939,8 @@ var RL_COURSE = {
        "answer": 206,
        "tol": 0.02,
        "unit": "MW",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -6638,7 +6955,8 @@ var RL_COURSE = {
        "answer": 13.6,
        "tol": 0.02,
        "unit": "kt",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -6653,7 +6971,8 @@ var RL_COURSE = {
        "answer": 87.7,
        "tol": 0.02,
        "unit": "kWh",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -6668,7 +6987,8 @@ var RL_COURSE = {
        "answer": 132,
        "tol": 0.03,
        "unit": "MW",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -6683,7 +7003,8 @@ var RL_COURSE = {
        "answer": 1716,
        "tol": 0.02,
        "unit": "MW",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -6723,7 +7044,8 @@ var RL_COURSE = {
        "answer": 248,
        "tol": 0.02,
        "unit": "MW",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -6739,7 +7061,8 @@ var RL_COURSE = {
        "answer": 48,
        "tol": 0.02,
        "unit": "MW",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -6755,7 +7078,8 @@ var RL_COURSE = {
        "answer": 130,
        "tol": 0.02,
        "unit": "MW",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -6803,7 +7127,8 @@ var RL_COURSE = {
        "answer": 8.64,
        "tol": 0.03,
        "unit": "MW",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -6835,7 +7160,8 @@ var RL_COURSE = {
        "answer": 216,
        "tol": 0.02,
        "unit": "MW",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -6883,7 +7209,8 @@ var RL_COURSE = {
        "answer": 432,
        "tol": 0.02,
        "unit": "W",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -6898,7 +7225,8 @@ var RL_COURSE = {
        "answer": 1.2,
        "tol": 0.02,
        "unit": "W/(m²·K)",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -6913,7 +7241,8 @@ var RL_COURSE = {
        "answer": 30,
        "tol": 0.02,
        "unit": "K",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -6928,7 +7257,8 @@ var RL_COURSE = {
        "answer": 49,
        "tol": 0.02,
        "unit": "kWh",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -6943,7 +7273,8 @@ var RL_COURSE = {
        "answer": 239,
        "tol": 0.02,
        "unit": "W/m²",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -6979,7 +7310,8 @@ var RL_COURSE = {
        "answer": 210,
        "tol": 0.04,
        "unit": "W",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -6994,7 +7326,8 @@ var RL_COURSE = {
        "answer": -20,
        "tol": 0.02,
        "unit": "°C",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -7009,7 +7342,8 @@ var RL_COURSE = {
        "answer": 149,
        "tol": 0.02,
        "unit": "€",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -7024,7 +7358,8 @@ var RL_COURSE = {
        "answer": 212,
        "tol": 0.02,
        "unit": "kWh",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -7039,7 +7374,8 @@ var RL_COURSE = {
        "answer": 3.4,
        "tol": 0.02,
        "unit": "W/m²",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -7054,7 +7390,8 @@ var RL_COURSE = {
        "answer": 7,
        "tol": 0.03,
        "unit": "W",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -7069,7 +7406,8 @@ var RL_COURSE = {
        "answer": 57.6,
        "tol": 0.02,
        "unit": "W",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -7084,7 +7422,8 @@ var RL_COURSE = {
        "answer": 0.35,
        "tol": 0.04,
        "unit": "W/(m²·K)",
-       "step": 0.01
+       "step": 0.01,
+       "exact": false
       }
      ]
     },
@@ -7106,7 +7445,8 @@ var RL_COURSE = {
        "answer": 52.02,
        "tol": 0.02,
        "unit": "PW",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -7121,7 +7461,8 @@ var RL_COURSE = {
        "answer": 20,
        "tol": 0.02,
        "unit": "K",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -7136,7 +7477,8 @@ var RL_COURSE = {
        "answer": 0.139,
        "tol": 0.02,
        "unit": "K",
-       "step": 0.01
+       "step": 0.01,
+       "exact": false
       }
      ]
     },
@@ -7151,7 +7493,8 @@ var RL_COURSE = {
        "answer": 984,
        "tol": 0.02,
        "unit": "kWh",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -7166,7 +7509,8 @@ var RL_COURSE = {
        "answer": 0.34,
        "tol": 0.03,
        "unit": "W/m²",
-       "step": 0.01
+       "step": 0.01,
+       "exact": false
       }
      ]
     },
@@ -7181,7 +7525,8 @@ var RL_COURSE = {
        "answer": 16.3,
        "tol": 0.05,
        "unit": "°C",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -7221,7 +7566,8 @@ var RL_COURSE = {
        "answer": 150,
        "tol": 0.02,
        "unit": "W/m²",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -7245,7 +7591,8 @@ var RL_COURSE = {
        "answer": 3,
        "tol": 0.02,
        "unit": "K",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -7285,7 +7632,8 @@ var RL_COURSE = {
        "answer": 0.461,
        "tol": 0.02,
        "unit": "kWh",
-       "step": 0.01
+       "step": 0.01,
+       "exact": false
       }
      ]
     },
@@ -7317,7 +7665,8 @@ var RL_COURSE = {
        "answer": 140,
        "tol": 0.02,
        "unit": "W/m²",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -7365,7 +7714,8 @@ var RL_COURSE = {
        "answer": 4.5,
        "tol": 0.02,
        "unit": "MJ",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -7380,7 +7730,8 @@ var RL_COURSE = {
        "answer": 450,
        "tol": 0.02,
        "unit": "kJ",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -7395,7 +7746,8 @@ var RL_COURSE = {
        "answer": 27,
        "tol": 0.02,
        "unit": "W",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -7410,7 +7762,8 @@ var RL_COURSE = {
        "answer": 250,
        "tol": 0.02,
        "unit": "kJ",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -7425,7 +7778,8 @@ var RL_COURSE = {
        "answer": 14,
        "tol": 0.02,
        "unit": "kW",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -7454,7 +7808,8 @@ var RL_COURSE = {
        "answer": 250,
        "tol": 0.02,
        "unit": "s",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -7469,7 +7824,8 @@ var RL_COURSE = {
        "answer": 678,
        "tol": 0.04,
        "unit": "kJ",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -7484,7 +7840,8 @@ var RL_COURSE = {
        "answer": 1.7,
        "tol": 0.07,
        "unit": "kg",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -7499,7 +7856,8 @@ var RL_COURSE = {
        "answer": 650,
        "tol": 0.02,
        "unit": "kJ",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -7514,7 +7872,8 @@ var RL_COURSE = {
        "answer": 0.86,
        "tol": 0.02,
        "unit": "kg/s",
-       "step": 0.01
+       "step": 0.01,
+       "exact": false
       }
      ]
     },
@@ -7529,7 +7888,8 @@ var RL_COURSE = {
        "answer": 91,
        "tol": 0.02,
        "unit": "g",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -7544,7 +7904,8 @@ var RL_COURSE = {
        "answer": 76,
        "tol": 0.02,
        "unit": "%",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -7559,7 +7920,8 @@ var RL_COURSE = {
        "answer": 139,
        "tol": 0.05,
        "unit": "W/K",
-       "step": 10
+       "step": 10,
+       "exact": false
       }
      ]
     },
@@ -7574,7 +7936,8 @@ var RL_COURSE = {
        "answer": 2.9,
        "tol": 0.02,
        "unit": "h",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -7596,7 +7959,8 @@ var RL_COURSE = {
        "answer": 900,
        "tol": 0.04,
        "unit": "J/(kg·K)",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -7611,7 +7975,8 @@ var RL_COURSE = {
        "answer": 2.4444,
        "tol": 0.03,
        "unit": "h",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -7626,7 +7991,8 @@ var RL_COURSE = {
        "answer": 26,
        "tol": 0.02,
        "unit": "K",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -7641,7 +8007,8 @@ var RL_COURSE = {
        "answer": 8.1,
        "tol": 0.02,
        "unit": "°C",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -7656,7 +8023,8 @@ var RL_COURSE = {
        "answer": 1.6,
        "tol": 0.07,
        "unit": "kg",
-       "step": 0.1
+       "step": 0.1,
+       "exact": false
       }
      ]
     },
@@ -7671,7 +8039,8 @@ var RL_COURSE = {
        "answer": 480,
        "tol": 0.03,
        "unit": "€",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -7686,7 +8055,8 @@ var RL_COURSE = {
        "answer": 590,
        "tol": 0.03,
        "unit": "kW",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -7726,7 +8096,8 @@ var RL_COURSE = {
        "answer": 333,
        "tol": 0.04,
        "unit": "kJ",
-       "step": 10
+       "step": 10,
+       "exact": false
       }
      ]
     },
@@ -7758,7 +8129,8 @@ var RL_COURSE = {
        "answer": 86,
        "tol": 0.02,
        "unit": "%",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -7790,7 +8162,8 @@ var RL_COURSE = {
        "answer": 65,
        "tol": 0.02,
        "unit": "s",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },
@@ -7822,7 +8195,8 @@ var RL_COURSE = {
        "answer": 210,
        "tol": 0.02,
        "unit": "kJ",
-       "step": 1
+       "step": 1,
+       "exact": false
       }
      ]
     },

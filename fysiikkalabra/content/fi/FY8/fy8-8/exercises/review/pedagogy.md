@@ -1,6 +1,6 @@
 VERDICT: PASS
 CONTENT-HASH: 3dd68982403477e9
-SCOPE: delta exact flags + one task-specific mistake, from ac689ba1a6a22e54
+SCOPE: delta md-paragraphs,numbers,reflow,typography from 007cd121579068a3 base 64d4935
 
 ## Blocking
 (none)
