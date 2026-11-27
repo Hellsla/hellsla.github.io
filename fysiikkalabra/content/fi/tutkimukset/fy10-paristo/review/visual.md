@@ -1,23 +1,14 @@
-VERDICT: PASS
-CONTENT-HASH: 74002d642422d790
+VERDICT: FAIL
+CONTENT-HASH: dfb3675133290f7c
 
 ## Blocking
-(none)
+- [Major] #tarvitset, "Lähdejännite ja sisäinen resistanssi" (page-390-2, page-1280-2, preview/fy10-paristo.html) — visual verification incomplete: the changed item renders as plain text "Lähdejännite ja sisäinen resistanssi (FY6, luku tulossa)" with no link. The build took the `not_published` fallback ("luku tulossa") for target fy6-8, so the link, its styling and its wrapping could not be judged at 390 or 1280 px — the change under review is not visible — recapture with fy6-8 resolving as published (or confirm in the build that the link will render once fy6-8 is on the site), then re-review. If the fallback is the intended pre-publication look, the item also reads as unfinished to a student: "luku tulossa" for a chapter that exists.
 
 ## Polish
-- [Minor] fig 7 (curve), 390 px — labels $I_\text{k}$, $\Delta I$, $\Delta U$, $E$ render at about 10 px in the phone capture (330 px wide figure) — enlarge the label font or the figure's viewBox scale so they match the other figures.
-- [Minor] fig 7 — a schematic with no numeric ticks; the aria-label says it is the model line but not that it is schematic, not measured data — add "kaavamainen, ei mittaustulos" to the description.
-- [Minor] Mittaa, example table (390 px) — empty three-row table with tiny header; low contrast of the empty cells — give the empty rows a visible height or border.
-- [Minor] fig 5 (circuit) — labels "säädettävä vastus" and "suojavastus" are small and grey on a phone; the variable-resistor arrow touches the label's side — add 10 px of room.
-- [Minor] fig 3 (model) — "kuorma" label sits tight against the figure's right edge (under 12 px margin) — move the load or the label left.
+- (none; the rest of the section is unchanged: the other items, tags, spacing and the 390/1280 layout match the earlier PASS, no overflow seen)
 
 ## Checked
-- contact-1; top-1280 (opening, hero); fig-1, fig-3, fig-5, fig-7 at 390 px.
-- page-1280-4 (theory, model figure, formula, display equation); page-390-9 (graph, uncertainty box).
-- The other page parts were triaged on the contact sheet only; contact-2, contact-3 and the open-ennusta capture were not opened.
-- The hero shows an unconnected lab bench (consistent with its description), flat style, no text.
-- Maths renders cleanly (no red source), \cdot and decimal commas not at issue, $\bar{x} \pm \Delta x$ and $R_\text{s}$ upright subscripts fine.
-- Finnish read in full: fluent, one voice (sinä), consistent terms (lähdejännite, napajännite, sisäinen resistanssi, oikosulkuvirta). No plain number-with-unit found.
+- page-390-1, page-390-2, page-1280-1, page-1280-2 (opening, #tarvitset at both widths). Other widths/captures not opened; diff is limited to this one item.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations 4 · typography 4 · Finnish 4 · accessibility 4
