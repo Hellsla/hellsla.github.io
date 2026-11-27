@@ -215,8 +215,8 @@ Kohdan 24 "Älä muuta piirroksia" -rajaus ei koske näitä; opettaja salli muut
 - FY5 `fy5-10/types` 2 nimiötä ja `fy5-14/pitkittainen` 1 nimiö ("harvennus" → "harventuma"; `docs/audits/fy5-harventuma/`).
 - FY7 `fy7-8` lesson.md:46 kuva monokromaattinen (lint ERROR) → uusi piirros.
 - FY6 `fy6-15/luokat`: III-numero puuttuu vinoneliöstä.
-- FY4 `fy4-4/valitse_d`: kuvan toinen virhe.
-- FY4 `fy4-2` lesson.md:5 kuva monokromaattinen (currentColor, lint ERROR) → uusi piirros (opettaja 2026-11-27 "joo"); sen jälkeen fy4-2:n "Nopeus (toisto)" ja seliterivi kohdan 10 mukaisesti.
+- FY4 `fy4-4/valitse_d`: kuvan toinen virhe. **Varattu: claude/27-fy4-valitse-d**
+- FY4 `fy4-2` **Varattu: claude/27-fy4-valitse-d** (tekijä: kuva on värillinen WebP, lint-varoitus on väärä positiivinen, ks. PR) lesson.md:5 kuva monokromaattinen (currentColor, lint ERROR) → uusi piirros (opettaja 2026-11-27 "joo"); sen jälkeen fy4-2:n "Nopeus (toisto)" ja seliterivi kohdan 10 mukaisesti.
 
 ## 29. Opettajan muutoslista 27.11.2026 (opettaja 2026-11-27 koordinaattorin chatissa: "ota nämä työlistalle")
 Koko lista sellaisenaan: `docs/audits/2026-11-27-muutoslista.md`. Opettajan antamat sanamuodot käytetään sellaisinaan (hyväksytty); muut uudet tekstit ja kuvat opettajalle tekijäsessiossa. Kurssi kerrallaan, kukin oma PR; fi + fi-easy + en, kun sama kohta on niissä.
