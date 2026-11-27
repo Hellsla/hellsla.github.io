@@ -190,4 +190,15 @@ Muuta vastausten sisältöä ei tule taulukkoon. Ennen saraketta tuotu hyväksyt
 `rlClass()` (`Code.gs`) laskee näistä, pisteistä ja itsearvioista luokan yhteenvedon ilman nimiä ja sähköposteja:
 tehtävittäin palauttaneet, vastanneet, pisteiden jakauma (0 p, osa, täydet) ja keskiarvo; tavoitteittain itsearvion tasojen lukumäärät;
 laskutehtävittäin oikein, lähellä ja väärin sekä väärien yleisvirheet. Luku arvioidaan sivun omalla säännöllä (`templates/virhe.js`
-`flJudge`), joten arviointi on sama kuin opiskelijan sivulla. Valintojen jakaumaa ei tehdä: oikea vaihtoehto ei ole `Tehtavat.gs`:ssä.
+`flJudge`), joten arviointi on sama kuin opiskelijan sivulla. Valintojen jakauma tehtiin erikseen, ks. alla.
+
+## Valintojen jakauma (17e PR 2, 2026-11-27): taulukon uusi sarake, tiedostomuodot ennallaan
+
+Tiedostomuotoja ei muutettu: oppilaan valinta on jo version 3 vastauksessa `{ "type": "choice", "option": <n> }` (`option` = vaihtoehdon järjestysnumero
+sivulla siinä järjestyksessä, jossa oppilas sen näki). Tuonti kirjaa palautusten taulukkoon (`RL Palautukset`) uuden sarakkeen *Valinnat* (viimeinen, `Numerovastaukset`-sarakkeen jälkeen):
+luvun tehtävien, joilla on tasan yksi valintakohta (`Tehtavat.gs` `choice`) ja tasan yksi `choice`-vastaus, valinnan numero, JSON `{"<tehtävä>": 2}`. Muuta vastausten sisältöä ei tule taulukkoon.
+Sarake lisätään otsikkoriville automaattisesti; ennen saraketta tuotu hyväksytty rivi (tyhjä solu) täydennetään tiedostosta seuraavassa tuonnissa kerran (`backfilled`, kuten numerot); luettu tiedosto saa vähintään `{}`.
+- Oikea vaihtoehto ja vaihtoehtojen tekstit ovat `Tehtavat.gs`:ssä (`palautus_tasks.py` lukee ne rakennetusta sivusta): `choice: { question, options: [HTML tai null kuvavaihtoehdolle], correct: [numero…], skip_en? }`.
+  Tehtävä, jossa on kaksi valintakohtaa (tehtävä ja sen perustelu), jää pois, koska tiedosto ei kerro, kumpaan valinta kuului.
+- Järjestysnumero on kielineutraali vain, jos vaihtoehdot ovat samassa järjestyksessä jokaisella kielellä. `palautus_tasks.py` vertaa suomen, englannin ja selkosuomen sivuja: jos englannin järjestys poikkeaa (viisi sivua: fy3-11, fy3-16, fy5-2, fy7-10, fy8-1, `virhe`-tehtävä, jossa "ei virhettä" -vaihtoehto ei englanniksi osu `no_error`-sääntöön), tehtävälle tulee `skip_en` ja englanninkielisen tiedoston (`lang: "en"`) valintaa ei lasketa; jos selkosuomen järjestys poikkeaa, tehtävä jää kokonaan pois.
+- `rlClass()` laskee jakauman (`pick`: vastanneet, lukumäärät vaihtoehdoittain, oikeat, vaihtoehdot, tehtävän alku) ilman nimiä ja sähköposteja; arviointisivun osio *Valinnat* näyttää heikoimmat ensin (oikein valinneiden osuus pienin).

@@ -116,6 +116,20 @@ EXTRACT = r"""(id) => {
   // the typed-number checks of a task (work queue 17e): the grading page judges a student's number with the page's own rule (templates/virhe.js)
   const checksOf = (el) => { const c = [...el.querySelectorAll('form.check')].map((f) => ({ answer: Number(f.dataset.answer), tol: Number(f.dataset.tol), unit: f.dataset.unit || '', step: Number(f.dataset.step) || 0, exact: f.dataset.exact === '1' }));
     return c.length ? { checks: c } : {}; };
+  // the one choice of a task (work queue 17e PR 2): its question, its options in the order the page shows them (an option that is a picture
+  // has null: the grading page says "Vaihtoehto N") and which are correct, so the grading page counts the students' choices; a task with
+  // two choice parts (an exercise with its reason) is left out, because a file does not say which part a choice answered
+  const choiceOf = (el) => {
+    const fs = [...el.querySelectorAll('fieldset.choice')];
+    if (fs.length !== 1) return {};
+    const radios = [...fs[0].querySelectorAll('input[type=radio]')];
+    if (radios.length < 2 || radios.some((r, i) => Number(r.value) !== i)) return {};
+    const html = (node) => { const c = document.createElement('div'); [...node.childNodes].forEach((n) => c.append(n.cloneNode(true)));
+      c.querySelectorAll('.feedback, .visually-hidden').forEach((e) => e.remove()); strip(c); return c.innerHTML.replace(/\s+/g, ' ').trim(); };
+    const options = radios.map((r) => { const sp = r.closest('label').querySelector('span'); return sp.querySelector('svg, img, .fig, figure') ? null : html(sp); });
+    const lg = fs[0].querySelector('legend');
+    return { choice: { name: radios[0].name, question: lg ? html(lg) : '', options, correct: radios.map((r, i) => (r.dataset.correct === '1' ? i : -1)).filter((i) => i >= 0) } };
+  };
   return lis.map((li) => {
     if (!li.closest('#exercises')) {
       li.querySelectorAll('.fig, figure').forEach((f) => f.removeAttribute('data-rl-fig'));
@@ -125,7 +139,7 @@ EXTRACT = r"""(id) => {
       c.querySelectorAll('h3, .sa-rate, .exp-pred, .exp-table, .exp-status, .exp-controls, .exp-buttons, .practice-hint, .hints, .model, .crit-result, ul.criteria, .lock-note, .act-core, .pending, .revise, .my-predictions, textarea, select, .tf-opts, .ord-right, .copy-notes, .explain-status, .drew').forEach((e) => e.remove());
       c.querySelectorAll('legend').forEach((l) => { const q = document.createElement('p'); q.innerHTML = l.innerHTML; l.replaceWith(q); });   // a lesson choice's question is its legend
       strip(c);
-      return { id: window.flSubmissionTaskId(li), dom: li.id, number: [stageOf(li), nameOf(li)].filter(Boolean).join(': '), level: 0, lesson: true, html: c.innerHTML.replace(/\s+/g, ' ').trim(), answer: '', ...checksOf(li) };
+      return { id: window.flSubmissionTaskId(li), dom: li.id, number: [stageOf(li), nameOf(li)].filter(Boolean).join(': '), level: 0, lesson: true, html: c.innerHTML.replace(/\s+/g, ' ').trim(), answer: '', ...checksOf(li), ...choiceOf(li) };
     }
     const answer = li.matches('li') ? li.querySelector(':scope > details.answer > :not(summary)') : null;
     const ans = answer ? answer.cloneNode(true) : (li.matches('li') ? null : reviewAnswer(li));
@@ -137,13 +151,45 @@ EXTRACT = r"""(id) => {
     c.querySelectorAll('[data-rl-fig]').forEach((f) => { const i = f.getAttribute('data-rl-fig'); const img = document.createElement('img'); const lab = f.querySelector('[aria-label]'); img.setAttribute('alt', lab ? lab.getAttribute('aria-label') : ''); img.setAttribute('src', 'FIG:' + i); img.className = 'fig'; f.replaceWith(img); });
     strip(c); if (ans) strip(ans);
     return { id: li.id, number: li.dataset.num || '', level: Number(li.dataset.level) || 0,
-             html: c.innerHTML.replace(/\s+/g, ' ').trim(), answer: ans ? ans.innerHTML.replace(/\s+/g, ' ').trim() : '', ...checksOf(li) };
+             html: c.innerHTML.replace(/\s+/g, ' ').trim(), answer: ans ? ans.innerHTML.replace(/\s+/g, ' ').trim() : '', ...checksOf(li), ...choiceOf(li) };
   });
 }"""
 
 
 class Quiet(http.server.SimpleHTTPRequestHandler):
     def log_message(self, *a): pass
+
+
+JSON_FI = json.loads((ROOT / "lang/fi.json").read_text())
+
+
+def radio_orders(path):
+    """{radio name: [(value, data-correct), ...]} of a built page: the options in the order that page shows them."""
+    out = {}
+    if path.is_file():
+        for name, value, ok in re.findall(r'<input type="radio" name="([^"]+)" value="(\d+)" data-correct="([01])"', path.read_text()):
+            out.setdefault(name, []).append((int(value), ok))
+    return out
+
+
+def language_orders(pid, tasks):
+    """The file's choice is the option's place on the page, so the same place must mean the same option in every language (17e PR 2).
+    The choice's name is taken off the Finnish page; a translation whose options stand in another order (inquiry.choice_order puts
+    "no mistake" last only when its text matches the language's no_error) is marked: English `skip_en` (the grading view leaves English
+    files out of that task), fi-easy (a file says "fi" for both) drops the task's choice."""
+    fi = radio_orders(SITE / f"{pid}.html")
+    for lang in ("en", "fi-easy"):
+        if not (SITE / lang / f"{pid}.html").is_file(): sys.exit(f"{pid}: {lang}/{pid}.html is not in {SITE.name}/ (the build makes every language; the choices' order is compared)")
+    en, easy = radio_orders(SITE / "en" / f"{pid}.html"), radio_orders(SITE / "fi-easy" / f"{pid}.html")
+    for t in tasks:
+        c = t.get("choice")
+        if not c: continue
+        if c["name"] not in fi or fi[c["name"]] != [(i, "1" if i in c["correct"] else "0") for i in range(len(c["options"]))]: t.pop("choice"); continue   # not the page's own list (a name used twice)
+        if easy.get(c["name"]) != fi[c["name"]]: t.pop("choice"); continue   # a translation without the choice cannot be matched either
+        if en.get(c["name"]) != fi[c["name"]]: c["skip_en"] = True
+        generic = JSON_FI["lesson"]["choose"]   # an exercise's own question is its statement; the legend then only says "Valitse vaihtoehto."
+        if re.sub(r"<[^>]*>|\s+", " ", c["question"]).strip() == generic: c["question"] = ""
+        del c["name"]
 
 
 def collect(course):
@@ -176,6 +222,7 @@ def collect(course):
                     png = base64.b64encode(pg.locator(f'[id="{dom}"] [data-rl-fig="{i}"]').screenshot(type="png", animations="disabled")).decode()
                     t["html"] = t["html"].replace(f'src="FIG:{i}"', f'src="data:image/png;base64,{png}"')
                 if "FIG:" in t["html"]: sys.exit(f"{pid} {t['id']}: a figure was not drawn for the grading view")
+            language_orders(pid, tasks)
             title = pg.evaluate("(() => { const h = document.querySelector('main h1').cloneNode(true); h.querySelectorAll('.katex').forEach((k) => { const a = k.querySelector('annotation'); k.replaceWith(a ? a.textContent : k.textContent); }); return h.textContent; })()").strip()
             eyebrow = pg.evaluate("(() => { const e = document.querySelector('.ch-no'); return e ? e.textContent : ''; })()")
             m = re.search(r"Luku\s+(\d+(?:\.\d+)?)", eyebrow)   # "Luku 4", a FY9 review lesson "Luku 2.1"
