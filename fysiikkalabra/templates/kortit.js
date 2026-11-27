@@ -1,8 +1,14 @@
 /* Käsitetakomo concept cards (teacher 2026-11-03, scripts/concept_cards.py): one card component everywhere.
    A card flips with its button (Enter or Space, aria-expanded) to show the definition and the formula; after the flip
    "Osasin" and "Kertaa myöhemmin". The marks stay on this device only, in localStorage "ruukkilabra:kortit":
-   { [card id]: { tila: "osasin" | "kertaa", osasinPutki: n, muokattu: ms } }. "Kertaa myöhemmin" (or "Lisää
+   { [card id]: { tila: "osasin" | "kertaa", osasinPutki: n, muokattu: ms, porras?: 0-2, era?: ms } }
+   (palannut exists only in the in-memory view built by state(); it is never stored). "Kertaa myöhemmin" (or "Lisää
    kertauspakkaan") puts a card in the student's review deck (tila "kertaa"); three "Osasin" in a row take it out.
+   Scheduled review (work queue 17d PR 1, teacher K7): a card taken out of the deck comes back after 5, then 10, then 20
+   days. Two optional fields hold it: porras (0, 1, 2: the step whose wait is running) and era (the due day, ms at local
+   midnight). The due day is worked out when the deck is read; there is no timer. A card whose era has passed is read as
+   in the deck again ("palannut"): one "Osasin" moves it to the next step (after 20 days it stays out), "Kertaa myöhemmin"
+   starts from the beginning. A card taken out before this change has no porras and is never scheduled.
    Nothing is sent anywhere. Each .kc-data element (written by the build) holds the cards and the texts of one place:
      .kc-section   a lesson, the end of Esimerkit: the chapter's cards two at a time (row()), and in
                    Teoriatiivistelmä the popovers of bold terms (strong[data-kortti]) and the chips after the summary list
@@ -24,16 +30,32 @@
   };
   const save = (s) => { try { localStorage.setItem(KEY, JSON.stringify(s)); storeOk = true; } catch (e) { storeOk = false; } };
   const memory = {};               // when the browser refuses storage, the marks last while the page is open
-  const state = () => Object.assign({}, memory, load());
+  const DAYS = [5, 10, 20];
+  const dayStart = (n) => { const d = new Date(); return new Date(d.getFullYear(), d.getMonth(), d.getDate() + n).getTime(); };
+  const isDue = (e) => !!e && e.tila === 'osasin' && Number.isInteger(e.porras) && e.porras >= 0 && e.porras < DAYS.length
+    && typeof e.era === 'number' && e.era <= Date.now();
+  const state = () => {
+    const s = Object.assign({}, memory, load());
+    Object.keys(s).forEach((k) => { if (isDue(s[k])) s[k] = Object.assign({}, s[k], { tila: 'kertaa', osasinPutki: 0, palannut: true }); });
+    return s;
+  };
   const put = (id, e) => { e.muokattu = Date.now(); memory[id] = e; const s = load(); s[id] = e; save(s); };
   const inDeck = (id) => (state()[id] || {}).tila === 'kertaa';
   /** "Osasin" (true) or "Kertaa myöhemmin" (false); returns what happened: 'good' (n left), 'done', 'removed', 'again' */
   const mark = (id, knew) => {
     const old = state()[id] || { tila: null, osasinPutki: 0 };
     if (!knew) { put(id, { tila: 'kertaa', osasinPutki: 0 }); return { what: 'again' }; }
+    if (old.palannut) {   // a returned card: one "Osasin" is the next step; after the last one it stays out
+      const next = old.porras + 1;
+      put(id, next < DAYS.length ? { tila: 'osasin', osasinPutki: STREAK, porras: next, era: dayStart(DAYS[next]) } : { tila: 'osasin', osasinPutki: STREAK });
+      return { what: 'done' };
+    }
     const n = (old.osasinPutki || 0) + 1;
     if (old.tila === 'kertaa' && n < STREAK) { put(id, { tila: 'kertaa', osasinPutki: n }); return { what: 'good', left: STREAK - n }; }
-    put(id, { tila: 'osasin', osasinPutki: n });
+    const e = { tila: 'osasin', osasinPutki: n };
+    if (old.tila === 'kertaa') { e.porras = 0; e.era = dayStart(DAYS[0]); }                      // just taken out: back in 5 days
+    else if (old.porras != null && old.era != null) { e.porras = old.porras; e.era = old.era; }   // already waiting: keep the day
+    put(id, e);
     return { what: old.tila === 'kertaa' ? 'removed' : 'done' };
   };
   const addToDeck = (id) => { const old = state()[id] || {}; if (old.tila !== 'kertaa') put(id, { tila: 'kertaa', osasinPutki: 0 }); };
