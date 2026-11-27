@@ -223,3 +223,6 @@ Koko lista sellaisenaan: `docs/audits/2026-11-27-muutoslista.md`. Opettajan anta
 Järjestys: ensin "Korjaa ensin" 1–4, sitten 5–10.
 - 29.1 (kiireellinen, vastaustarkistus antaa väärälle "Oikein"): fy8-8-L1-02 hyväksyy vain 218, vihje 222:lle; täsmällinen tarkistus kaikkiin kokonaislukuvastauksiin (massa- ja järjestysluku, neutronien lukumäärä, hilan kertaluku; esim. fy7-13-L1-08) kaikilla kursseilla; selainkoe 218 ok, 217/219/222 hylätään. Jos tarvitaan uusi kenttä tai tarkistimen muutos, se on jaettu.
 - 29.6 FY4 fy4-3 kaksi voimakuviota (uudet kuvat opettajalle). 29.7 FY5 fy5-12 solmuesimerkki. 29.8 FY6 fy6-8-L2-05 linkki ja FY10 paristotyön linkitys FY6:n teoriaan. 29.9 koko kirja: alakohdan palaute ("C-kohdan lukuarvo on oikein…", malli fy4-10-L2-06; jaettu, uusi UI-teksti on opettajan antama). 29.10 FY8 fy8-8-L2-05 jatkokysymys.
+
+## 31. Esitykset-sivu: Ruukkilabran kehitystyön organisointi (opettaja 2026-11-27 sessiossa: "add this ruukkilabra.fi/esitykset page")
+**Varattu: ccr-b02142e7-anoksj** — itsenäinen sivu `assets/shared/esitykset/` → ruukkilab.fi/esitykset, kuten /prosessi (kohta 23): ei linkkiä muilta sivuilta, `noindex`. Yhteisiä tiedostoja yksi rivi kussakin: `scripts/build.py`, `scripts/deploy_site.py`, `scripts/test_offline.py`.
