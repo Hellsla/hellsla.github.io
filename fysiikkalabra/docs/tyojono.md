@@ -215,8 +215,8 @@ Kohdan 24 "Älä muuta piirroksia" -rajaus ei koske näitä; opettaja salli muut
 - FY5 `fy5-10/types` 2 nimiötä ja `fy5-14/pitkittainen` 1 nimiö ("harvennus" → "harventuma"; `docs/audits/fy5-harventuma/`).
 - FY7 `fy7-8` lesson.md:46 kuva monokromaattinen (lint ERROR) → uusi piirros.
 - FY6 `fy6-15/luokat`: III-numero puuttuu vinoneliöstä.
-- FY4 `fy4-4/valitse_d`: kuvan toinen virhe. **Varattu: claude/27-fy4-valitse-d**
-- FY4 `fy4-2` **Varattu: claude/27-fy4-valitse-d** (tekijä: kuva on värillinen WebP, lint-varoitus on väärä positiivinen, ks. PR) lesson.md:5 kuva monokromaattinen (currentColor, lint ERROR) → uusi piirros (opettaja 2026-11-27 "joo"); sen jälkeen fy4-2:n "Nopeus (toisto)" ja seliterivi kohdan 10 mukaisesti.
+- FY4 `fy4-4/valitse_d`: kuvan toinen virhe. **Tehty 2026-11-27 (PR #899; opettaja 2026-11-27 "Hyväksyn"; T pidemmäksi, F:n ja G:n summa alle T:n; `docs/audits/fy4-valitse-d/`).**
+- FY4 `fy4-2` **Ei piirretä uudelleen (2026-11-27, PR #899):** kuva on jo värillinen WebP; lintin "monochrome"-varoitus on väärä positiivinen (`scripts/lint_lesson.py:211` etsii `<image`-tagia vain SVG:n 600 ensimmäisestä merkistä, pitkä alt-teksti työntää sen yli; WARN, ei ERROR) → lintin korjaus omana jaettuna PR:nään, opettajalle tiedoksi lesson.md:5 kuva monokromaattinen (currentColor, lint ERROR) → uusi piirros (opettaja 2026-11-27 "joo"); sen jälkeen fy4-2:n "Nopeus (toisto)" ja seliterivi kohdan 10 mukaisesti.
 
 ## 29. Opettajan muutoslista 27.11.2026 (opettaja 2026-11-27 koordinaattorin chatissa: "ota nämä työlistalle")
 Koko lista sellaisenaan: `docs/audits/2026-11-27-muutoslista.md`. Opettajan antamat sanamuodot käytetään sellaisinaan (hyväksytty); muut uudet tekstit ja kuvat opettajalle tekijäsessiossa. Kurssi kerrallaan, kukin oma PR; fi + fi-easy + en, kun sama kohta on niissä.
