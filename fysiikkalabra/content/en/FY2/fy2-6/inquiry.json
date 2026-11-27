@@ -79,26 +79,26 @@
       "text": "The table shows electricity production in Finland in 2024 by energy source. Total production was $79.9\\,\\text{TWh}$. It also includes small other sources, which are collected on the last row.\n\n| Source | $E$ (TWh) |\n|---|---|\n| nuclear power | $31$ |\n| wind power | $20.2$ |\n| hydropower | $14.1$ |\n| biofuels | $9.5$ |\n| fossil fuels and peat | $3.4$ |\n| solar power | $0.9$ |\n| other sources | $0.8$ |",
       "question": {
         "type": "numeric",
-        "prompt": "Calculate the average power of wind power over the year, when a year has $8760\\,\\text{h}$. Give the answer in gigawatts.",
-        "answer": 2.31,
+        "prompt": "Calculate the average power of wind power over the year, when the year 2024 (a leap year) has $8784\\,\\text{h}$. Give the answer in gigawatts.",
+        "answer": 2.3,
         "unit": "GW",
         "tolerance": 0.02,
         "hints": [
           "The average power is found by dividing the energy by time: $P = E : t$.",
           "First convert terawatt-hours to kilowatt-hours: $1\\,\\text{TWh} = 10^{9}\\,\\text{kWh}$.",
-          "$$\n\\begin{aligned}\n&P \\\\\n&= 20.2 \\cdot 10^{9}\\,\\text{kWh} : 8760\\,\\text{h}\n\\end{aligned}\n$$, and finally $1\\,\\text{GW} = 10^{6}\\,\\text{kW}$."
+          "$$\n\\begin{aligned}\n&P \\\\\n&= 20.2 \\cdot 10^{9}\\,\\text{kWh} : 8784\\,\\text{h}\n\\end{aligned}\n$$, and finally $1\\,\\text{GW} = 10^{6}\\,\\text{kW}$."
         ],
         "mistakes": [
           {
-            "value": 2306,
-            "feedback": "The result is correct in megawatts but not in gigawatts. A gigawatt is a thousand megawatts, so $2306\\,\\text{MW} = 2.306 \\cdot 1000\\,\\text{MW} = 2.31\\,\\text{GW}$."
+            "value": 2300,
+            "feedback": "The result is correct in megawatts but not in gigawatts. A gigawatt is a thousand megawatts, so $2300\\,\\text{MW} = 2.30 \\cdot 1000\\,\\text{MW} = 2.30\\,\\text{GW}$."
           },
           {
             "value": 0.0023,
             "feedback": "You converted terawatt-hours incorrectly: $1\\,\\text{TWh} = 10^{9}\\,\\text{kWh}$, not $10^{6}\\,\\text{kWh}$."
           }
         ],
-        "solution": "**Given:** energy $E = 20.2\\,\\text{TWh}$, time $t = 8760\\,\\text{h}$\n\n**Find:** the average power $P$ of wind power in gigawatts\n\n**Principle:** The average power is the power at which the same energy would be produced steadily over the whole year, so $E = P t$.\n\n**Formula:** $E = P t$, so $P = \\dfrac{E}{t}$\n\n**Conversions:** $20.2\\,\\text{TWh} = 20.2 \\cdot 10^{9}\\,\\text{kWh}$, and finally kilowatts to gigawatts: $10^{6}\\,\\text{kW} = 1\\,\\text{GW}$.\n\n**Substitution:** $P = 20.2 \\cdot 10^{9}\\,\\text{kWh} : 8760\\,\\text{h} = 2\\,305\\,936\\,\\text{kW} \\approx 2.31 \\cdot 10^{6}\\,\\text{kW} = 2.31\\,\\text{GW}$\n\n**Answer:** $2.31\\,\\text{GW}$, three significant figures like the energy $20.2\\,\\text{TWh}$; the number of hours in a year, $8760\\,\\text{h}$, is an exact number.\n\n**Reasonableness:** Estimate: $20 \\cdot 10^{9}\\,\\text{kWh} : 9000\\,\\text{h} \\approx 2.2 \\cdot 10^{6}\\,\\text{kW} = 2.2\\,\\text{GW}$. The average power is smaller than the combined rated power of the wind turbines, because the wind varies."
+        "solution": "**Given:** energy $E = 20.2\\,\\text{TWh}$, time $t = 8784\\,\\text{h}$\n\n**Find:** the average power $P$ of wind power in gigawatts\n\n**Principle:** The average power is the power at which the same energy would be produced steadily over the whole year, so $E = P t$.\n\n**Formula:** $E = P t$, so $P = \\dfrac{E}{t}$\n\n**Conversions:** $20.2\\,\\text{TWh} = 20.2 \\cdot 10^{9}\\,\\text{kWh}$, and finally kilowatts to gigawatts: $10^{6}\\,\\text{kW} = 1\\,\\text{GW}$.\n\n**Substitution:** $P = 20.2 \\cdot 10^{9}\\,\\text{kWh} : 8784\\,\\text{h} = 2\\,299\\,636\\,\\text{kW} \\approx 2.30 \\cdot 10^{6}\\,\\text{kW} = 2.30\\,\\text{GW}$\n\n**Answer:** $2.30\\,\\text{GW}$, three significant figures like the energy $20.2\\,\\text{TWh}$; the number of hours in the leap year 2024, $8784\\,\\text{h}$, is an exact number.\n\n**Reasonableness:** Estimate: $20 \\cdot 10^{9}\\,\\text{kWh} : 8800\\,\\text{h} \\approx 2.3 \\cdot 10^{6}\\,\\text{kW} = 2.3\\,\\text{GW}$. The average power is smaller than the combined rated power of the wind turbines, because the wind varies."
       }
     },
     {
