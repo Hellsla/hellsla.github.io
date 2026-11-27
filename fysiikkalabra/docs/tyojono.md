@@ -212,10 +212,10 @@ Versio 1 kokonaan selaimessa: luvun alussa 3–5 kysymyksen lähtötesti tyypill
 
 ## 27. Piirrosten uudelleenpiirto (opettaja 2026-11-27 koordinaattorin chatissa: "muutetaan kuva")
 Kohdan 24 "Älä muuta piirroksia" -rajaus ei koske näitä; opettaja salli muutoksen. Tehdään `/figure-fixes`-komennolla kurssi kerrallaan, ennen ja jälkeen -kuvat opettajalle tekijäsessiossa; ei muita piirroksia.
-- FY7 `fy7-8` lesson.md:46 kuva monokromaattinen (lint ERROR) → uusi piirros.
+- FY7 `fy7-8` lesson.md:46: kohdan 32 korjauksen jälkeen ei monochrome-löydöstä (WebP-pohjainen kuva) → ei uutta piirrosta.
 - FY6 `fy6-15/luokat`: III-numero puuttuu vinoneliöstä.
 - FY4 `fy4-4/valitse_d`: kuvan toinen virhe.
-- FY4 `fy4-2` lesson.md:5 kuva monokromaattinen (currentColor, lint ERROR) → uusi piirros (opettaja 2026-11-27 "joo"); sen jälkeen fy4-2:n "Nopeus (toisto)" ja seliterivi kohdan 10 mukaisesti.
+- FY4 `fy4-2` lesson.md:5: kohdan 32 korjauksen jälkeen ei monochrome-löydöstä (WebP-pohjainen kuva) → ei uutta piirrosta; fy4-2:n "Nopeus (toisto)" ja seliterivi kohdan 10 mukaisesti.
 
 ## 29. Opettajan muutoslista 27.11.2026 (opettaja 2026-11-27 koordinaattorin chatissa: "ota nämä työlistalle")
 Koko lista sellaisenaan: `docs/audits/2026-11-27-muutoslista.md`. Opettajan antamat sanamuodot käytetään sellaisinaan (hyväksytty); muut uudet tekstit ja kuvat opettajalle tekijäsessiossa. Kurssi kerrallaan, kukin oma PR; fi + fi-easy + en, kun sama kohta on niissä.
@@ -227,6 +227,6 @@ Järjestys: ensin "Korjaa ensin" 1–4, sitten 5–10.
 Löydös PR #886:ssa: fy3-11, fy3-16, fy5-2, fy7-10 ja fy8-1 (en) `virhe`-tehtävän vaihtoehdot ovat eri järjestyksessä kuin suomeksi, koska englannin "no mistake" ei osu `inquiry.no_error`-sääntöön; siksi niiden en-valinnat jäävät valintojen jakaumasta pois (`skip_en`). Korjaa sääntö tai en-teksti niin, että järjestys on sama kuin fi:ssä, ja poista `skip_en`. Vanhentaa en-katselmoinnit näillä sivuilla: tekstimuutokset opettajalle tekijäsessiossa (approve-text) tai vaaditut katselmoinnit. Jaettu, jos sääntö (`inquiry.py`) muuttuu.
 
 ## 32. Kuvalintin väärä "monochrome figure" -löydös (koordinaattori 2026-11-27, löydös PR #899)
-Varattu: claude/32-lint-monochrome-image
 `scripts/lint_lesson.py` `check_figures` etsii `<image `-tagia vain SVG:n 600 ensimmäisestä merkistä; pitkä alt-teksti työntää tagin sen yli, jolloin värillinen WebP-pohjainen kuva luokitellaan yksiväriseksi (fy4-2 lesson.md:5; tarkista myös fy7-8 lesson.md:46). Korjaus: etsi `<image ` koko SVG:stä (tai ennen ensimmäistä piirroselementtiä) + testi. Jaettu (scripts/), yksin. Kohdan 27 fy4-2 ja mahdollisesti fy7-8 eivät silloin vaadi uutta piirrosta (kerrottu opettajalle).
+TEHTY (PR odottaa yhdistämistä, 2026-11-27): `check_figures` etsii `<image ` koko SVG:stä; testi `scripts/test_lint_figures.py` (CI). Kosketti 24 sivua, kaikki vääriä positiivisia (WebP-pohjaiset kuvat).
 
