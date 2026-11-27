@@ -1,20 +1,33 @@
-VERDICT: FAIL
-CONTENT-HASH: 1d3421f168ddc7be
+VERDICT: PASS
+CONTENT-HASH: e9bfb56e0d27391c
 
 ## Blocking
-- lesson.md:173, 387 (summary), glossary "voima ja vastavoima" — B (missing condition) — These say force and reaction "eivät koskaan kumoa toisiaan". The new subsection (line 176) says that for the system A+B their vector sum is $\overline{0}$, so the two chapters contradict each other. Fix: state the condition, e.g. "kun tarkastellaan toista kappaletta kerrallaan, ne eivät kumoa toisiaan (ne vaikuttavat eri kappaleisiin); kahden kappaleen systeemissä ne ovat sisäisiä ja summa on nolla". Same wording in line 173, the summary, and the en and fi-easy versions.
-- lesson.md:176 — B (causality) — "Siksi ne eivät kuulu systeemin voimakuvioon" gives the zero sum as the reason. The real reason is that they are internal forces: they are not exerted by anything outside the system, and they do not change the motion of the system as a whole. The zero sum follows from that. Fix: "Koska ne ovat sisäisiä, ne eivät kuulu systeemin voimakuvioon; niiden summa on nolla."
+None.
 
 ## Polish
-- lesson.md:176 and the "systeemit" figure — the claim that A+B has only vertical external forces holds only if friction is neglected (the "luistelijat" figure says so, the new one does not). Add "kitka jätetään huomiotta" to the text or the aria-label.
-- lesson.md:176 — add one sentence that ice friction is the reason the net external force is zero, so A and B together stay at rest while A and B separately accelerate in opposite directions. That shows why the choice of system matters.
-- "systeemit" figure — the arrows $\overline{N}_A+\overline{N}_B$ and $\overline{G}_A+\overline{G}_B$ are drawn equal (85 px each) and the A-only diagram is right (108 px each). The figure is correct; the N arrow tip extends past the top of the body, as in the other figures.
+- Lint (not science): lesson.md:68 has a 20 px figure label (the "systeemit" sum label `F_AB + F_BA = 0`), which fails the lint (needs 24 px or more). The visual reviewer and developer should fix it. It is not a physics issue.
+- Optional, class C: the Kaava section says "vuorovaikutusparin voimat eivät kumoa toisiaan", and the new subsection says their sum is zero for the system A+B. The subsection's "Vasta nyt voimat kuuluvat samaan systeemiin" already separates the two readings, so there is no contradiction. One clause could say that this sum does not stop either skater from accelerating, because each skater's motion depends only on the forces on that skater.
 
 ## Checked
-- Third-law pair $\overline{F}_{AB}=-\overline{F}_{BA}$ and directions in the "systeemit" figure: B pushes A to the left, which is right. A-only diagram: G, N, F_BA (no extra forces); A+B diagram: only external forces; the arrow lengths agree with the equilibrium.
-- Recomputed in one script: friction distances 1,125, 2,25, 4,5 and 9,0 m (answer 9,0 m, mistakes 2,25, 4,5, 5,625 are all wrong values); push force 110 N; the aircraft 2·48 = 96 kN; the trailer 420 + 260 = 680 N. All agree with the lesson.
-- Sim: model is constant friction, no air resistance, and N = G; the keys s, tl, vl exist; no-friction run gives 12 m, 4,0 s, 3,0 m/s; the box rests with no friction; v is blue and not drawn in the force diagram.
-- Both predictions have exactly one correct option and the feedback of each wrong one repairs the misconception. The experiment varies only the surface (v0 locked), and the conclusion's model answer agrees with the theory.
-- Curling (example I): no forward force, friction backwards, not to scale and said so. Weight/normal-force pair in the common misconception and in check-2 is correct.
-- Worked example (symbolic first, 7 stages) and the last paragraph about speed-dependent drag are correct. The exit ticket and check-1/3 are correct. The lint's physics warnings are not an issue.
-- Not judged: the en and fi-easy texts (not in the packet) and the exercises.
+Round 2: the revised subsection "Kaksi tapaa rajata systeemi" and figure "systeemit" were checked in fi, en and fi-easy. The three versions agree.
+- Round-1 findings are fixed.
+  - The internal-force reason comes first: the pair forces are internal, so the diagram of a system shows only external forces.
+  - The sum $\overline{F}_{AB}+\overline{F}_{BA}=\overline{0}$ is tied to the pair belonging to one system.
+  - The text states "Kitka jätetään huomiotta".
+- Figure "systeemit":
+  - Left (system A): $\overline{G}_A$ and $\overline{N}_A$ are equal, and $\overline{F}_{BA}$ points left. A accelerates left, which is consistent.
+  - Right (system A+B): only the external forces $\overline{G}_A+\overline{G}_B$ and $\overline{N}_A+\overline{N}_B$ are drawn, with equal arrows. The net external force is zero, so the system's centre of mass stays at rest. This agrees with the skaters starting from rest.
+  - The pair forces are not drawn as arrows. This is correct, because internal forces do not belong in the diagram.
+  - The force diagrams show the right forces, with no velocity or acceleration drawn as a force.
+- Third-law pairs: the support force pairs with the book's push on the table, and the weight pairs with the book's pull on the Earth. Both are correct in check-2, in the common-misconception box and in the lamp model answer.
+- Recomputed from the task data:
+  - Sliding distances: $s = v_0^2 m/(2F_\mu)$ gives $1{,}125$, $2{,}25$ and $4{,}5\,\text{m}$.
+  - $F_\mu s = 45\,\text{N}\cdot\text{m}$, so $F_\mu = 5{,}0\,\text{N}$ gives $9{,}0\,\text{m}$ (exp-1 answer correct).
+  - Hand force $m a + F_\mu = 90\,\text{N} + F_\mu$, which gives $110\,\text{N}$ on wood.
+  - Sliding times $0{,}75$, $1{,}5$ and $3{,}0\,\text{s}$; frictionless run $4{,}0\,\text{s}$ at $3{,}0\,\text{m/s}$.
+  - Worked example: $F_\text{v} = 2\cdot 48 = 96\,\text{kN}$.
+  - Trailer task: $420+260 = 680\,\text{N}$, and all three mistake values (160, 420, 0) are really wrong.
+- Predictions: each has exactly one correct option, and the feedback on the wrong options is right.
+- The sim implements the stated model. It states its limits: constant friction, no air resistance, and a frictionless surface as a thought experiment. `simState` holds `s`, `tl` and `vl` at $v_0 = 3{,}0\,\text{m/s}$.
+- Scope: stays within FY4 Newton 1 and 3; the full force diagram comes later.
+- Class C only: Newton's first law is given without stating "inertial frame". This is acceptable at this level.
