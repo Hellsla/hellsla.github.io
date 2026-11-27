@@ -217,3 +217,10 @@ Kohdan 24 "Älä muuta piirroksia" -rajaus ei koske näitä; opettaja salli muut
 - FY6 `fy6-15/luokat`: III-numero puuttuu vinoneliöstä.
 - FY4 `fy4-4/valitse_d`: kuvan toinen virhe.
 - FY4 `fy4-2` lesson.md:5 kuva monokromaattinen (currentColor, lint ERROR) → uusi piirros (opettaja 2026-11-27 "joo"); sen jälkeen fy4-2:n "Nopeus (toisto)" ja seliterivi kohdan 10 mukaisesti.
+
+## 29. Opettajan muutoslista 27.11.2026 (opettaja 2026-11-27 koordinaattorin chatissa: "ota nämä työlistalle")
+Koko lista sellaisenaan: `docs/audits/2026-11-27-muutoslista.md`. Opettajan antamat sanamuodot käytetään sellaisinaan (hyväksytty); muut uudet tekstit ja kuvat opettajalle tekijäsessiossa. Kurssi kerrallaan, kukin oma PR; fi + fi-easy + en, kun sama kohta on niissä.
+Järjestys: ensin "Korjaa ensin" 1–4, sitten 5–10.
+- 29.1 (kiireellinen, vastaustarkistus antaa väärälle "Oikein"): fy8-8-L1-02 hyväksyy vain 218, vihje 222:lle; täsmällinen tarkistus kaikkiin kokonaislukuvastauksiin (massa- ja järjestysluku, neutronien lukumäärä, hilan kertaluku; esim. fy7-13-L1-08) kaikilla kursseilla; selainkoe 218 ok, 217/219/222 hylätään. Jos tarvitaan uusi kenttä tai tarkistimen muutos, se on jaettu.
+- 29.2 FY2 fy2-6 aineistotehtävä 8 784 h → 2,30 GW. 29.3 FY3 fy3-13 teorian loppu ja L3-03 viimeinen kysymys. 29.4 FY7 fy7-5 magneettivuo-muotoilu ja "suuruus on aina positiivinen".
+- 29.5 FY1 fy1-3-L2-08. 29.6 FY4 fy4-3 kaksi voimakuviota (uudet kuvat opettajalle). 29.7 FY5 fy5-12 solmuesimerkki. 29.8 FY6 fy6-8-L2-05 linkki ja FY10 paristotyön linkitys FY6:n teoriaan. 29.9 koko kirja: alakohdan palaute ("C-kohdan lukuarvo on oikein…", malli fy4-10-L2-06; jaettu, uusi UI-teksti on opettajan antama). 29.10 FY8 fy8-8-L2-05 jatkokysymys.
