@@ -214,7 +214,7 @@ Versio 1 kokonaan selaimessa: luvun alussa 3–5 kysymyksen lähtötesti tyypill
 Kohdan 24 "Älä muuta piirroksia" -rajaus ei koske näitä; opettaja salli muutoksen. Tehdään `/figure-fixes`-komennolla kurssi kerrallaan, ennen ja jälkeen -kuvat opettajalle tekijäsessiossa; ei muita piirroksia.
 - FY5 `fy5-10/types` 2 nimiötä ja `fy5-14/pitkittainen` 1 nimiö ("harvennus" → "harventuma"; `docs/audits/fy5-harventuma/`).
 - FY7 `fy7-8` lesson.md:46 kuva monokromaattinen (lint ERROR) → uusi piirros.
-- FY6 `fy6-15/luokat`: III-numero puuttuu vinoneliöstä.
+- **Varattu: claude/27-fy6-luokat** — FY6 `fy6-15/luokat`: III-numero puuttuu vinoneliöstä.
 - FY4 `fy4-4/valitse_d`: kuvan toinen virhe.
 - FY4 `fy4-2` lesson.md:5 kuva monokromaattinen (currentColor, lint ERROR) → uusi piirros (opettaja 2026-11-27 "joo"); sen jälkeen fy4-2:n "Nopeus (toisto)" ja seliterivi kohdan 10 mukaisesti.
 
