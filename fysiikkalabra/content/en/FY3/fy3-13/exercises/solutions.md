@@ -120,17 +120,19 @@ At the temperature $67\,\text{K}$ the line would give a pressure of $$\begin{ali
 
 ## fy3-13-L3-03
 **Given:** group A's result $\theta_0 = -262.00\,{}^\circ\text{C}$ and uncertainty $\Delta\theta_0 = 6.00\,{}^\circ\text{C}$; the accepted value $\theta_\text{acc} = -273.15\,{}^\circ\text{C}$
-**Find:** the ratio $n$ of the deviation to the uncertainty (how many times $\Delta\theta_0$ fits between the result and the accepted value) and the reason for the disagreement
+**Find:** the ratio $n$ of the deviation to the uncertainty (how many times $\Delta\theta_0$ fits between the result and the accepted value) and one possible reason for the deviation, with a way to test it in the next measurement
 **Principle:** In this chapter a result is considered consistent with the accepted value if the value lies in the uncertainty interval $\theta_0 \pm \Delta\theta_0$, that is, when the deviation is at most one uncertainty. The ratio $n$ tells you how many times larger the deviation is than the uncertainty.
 
-The uncertainty is not an absolute limit, so a deviation alone does not prove an error, but the larger $n$ is, the more likely it is that the measurement has a systematic error or that the uncertainty was estimated too small.
+The uncertainty is not an absolute limit, so a deviation alone does not prove an error. The ratio does not tell you the cause of the deviation either: a cause is a proposal, and it has to be tested with a new measurement.
 **Formula:** $n = \dfrac{|\theta_0 - \theta_\text{acc}|}{\Delta\theta_0}$
 **Conversions:** All temperatures are in degrees Celsius, and temperature differences are the same in kelvins. The ratio $n$ is dimensionless, so no conversions are needed.
 **Substitution:** $n = \dfrac{|-262.00\,{}^\circ\text{C} - (-273.15\,{}^\circ\text{C})|}{6.00\,{}^\circ\text{C}} = \dfrac{11.15\,{}^\circ\text{C}}{6.00\,{}^\circ\text{C}} = 1.858$
 **Answer:** $1.86$ times, three significant figures, because the difference $11.15\,{}^\circ\text{C}$ and the uncertainty $6.00\,{}^\circ\text{C}$ are given to three figures (the result $-262.00\,{}^\circ\text{C}$ and the accepted value are given to the hundredth).
 **Reasonableness:** The deviation $11.15\,{}^\circ\text{C}$ is almost two uncertainties ($2 \cdot 6.00 = 12.0$). The uncertainty interval $-268\ldots -256\,{}^\circ\text{C}$ does not contain the accepted value $-273.15\,{}^\circ\text{C}$, so by this rule the result is not consistent with it.
 
-The cause may be a systematic error, for example an imprecise thermometer, an air leak or a change in the volume of the flask, or an uncertainty that was estimated too small.
+The ratio $1.86$ alone does not tell what causes the deviation, so a cause has to be proposed and tested.
+
+**Model answer (reason and test):** One possible reason is a zero error of the thermometer: if it reads about $11\,{}^\circ\text{C}$ too high at every temperature, the whole line shifts along the temperature axis and the temperature of zero pressure comes out as about $-262\,{}^\circ\text{C}$. You can test this in the next measurement by checking the thermometer in ice water and in boiling water before the series and by comparing it with a second thermometer. If it reads about $11\,{}^\circ\text{C}$ in ice water, the explanation gains support. If it reads $0\,{}^\circ\text{C}$, the cause is elsewhere, for example an air leak or an error of the pressure gauge.
 
 Check: $1.858 \cdot 6.00\,{}^\circ\text{C} = 11.15\,{}^\circ\text{C}$.
 

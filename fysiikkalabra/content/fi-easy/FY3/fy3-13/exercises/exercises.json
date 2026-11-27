@@ -380,7 +380,7 @@
     {
       "id": "fy3-13-L3-03",
       "level": 3,
-      "text": "Ryhmän A mittauksen tulos on $\\theta_0 = -262{,}00 \\pm 6{,}00\\,{}^\\circ\\text{C}$. Hyväksytty arvo on $-273{,}15\\,{}^\\circ\\text{C}$. Kuinka monta kertaa epävarmuus $\\Delta\\theta_0$ mahtuu tuloksen ja hyväksytyn arvon väliin? Päättele, mistä syystä tulos ei ole sopusoinnussa hyväksytyn arvon kanssa.",
+      "text": "Ryhmän A mittauksen tulos on $\\theta_0 = -262{,}00 \\pm 6{,}00\\,{}^\\circ\\text{C}$. Hyväksytty arvo on $-273{,}15\\,{}^\\circ\\text{C}$. Kuinka monta kertaa epävarmuus $\\Delta\\theta_0$ mahtuu tuloksen ja hyväksytyn arvon väliin? Ehdota yhtä mahdollista syytä poikkeamalle. Miten voisit seuraavassa mittauksessa testata selitystäsi?",
       "answer": 1.86,
       "unit": "kertaa",
       "tolerance": 0.02
