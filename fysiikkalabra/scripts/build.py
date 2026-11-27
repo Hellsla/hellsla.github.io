@@ -64,6 +64,8 @@ if (ROOT / "assets/shared/laskuri").is_dir():                 # the school's sta
     shutil.copytree(ROOT / "assets/shared/laskuri", SITE / "laskuri", dirs_exist_ok=True)
 if (ROOT / "assets/shared/prosessi").is_dir():                # the process page, ruukkilab.fi/prosessi (teacher 2026-11-19, work queue 23); no link from other pages
     shutil.copytree(ROOT / "assets/shared/prosessi", SITE / "prosessi", dirs_exist_ok=True)
+if (ROOT / "assets/shared/esitykset").is_dir():               # the presentations, ruukkilab.fi/esitykset (teacher 2026-11-27, work queue 31); standalone like prosessi, no link from other pages
+    shutil.copytree(ROOT / "assets/shared/esitykset", SITE / "esitykset", dirs_exist_ok=True)
 if (ROOT / "assets/shared/brand").is_dir():                   # the Ruukkilabra logos and favicon (scripts/brand_logos.py); test copies may leave them out
     shutil.copytree(ROOT / "assets/shared/brand", SITE / "brand", dirs_exist_ok=True)
 if (ROOT / "assets/units").is_dir():                          # the local courses' unit components (scripts/units.py)
