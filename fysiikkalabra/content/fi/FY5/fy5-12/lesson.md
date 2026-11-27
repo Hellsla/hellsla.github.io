@@ -54,6 +54,13 @@ Aaltoaltaassa vesi on lähes levossa solmuviivalla, vaikka kummankin lähteen aa
 Solmuviivalla toisen aallon harja saapuu aina yhtä aikaa toisen aallon pohjan kanssa. Kun aallot ovat yhtä suuret, poikkeamien summa on koko ajan lähes nolla.
 ```
 
+Solmuviivalla aallot eivät kumoa toisiaan aina täysin. Vertaa kahta pistettä, joihin aallot saapuvat vastakkaisvaiheisina:
+
+- Amplitudit $3\,\text{mm}$ ja $3\,\text{mm}$: yhteisamplitudi on $3\,\text{mm} - 3\,\text{mm} = 0\,\text{mm}$. Piste on solmu.
+- Amplitudit $3\,\text{mm}$ ja $2\,\text{mm}$: yhteisamplitudi on $3\,\text{mm} - 2\,\text{mm} = 1\,\text{mm}$. Piste värähtelee edelleen.
+
+Aallot kumoavat toisensa kokonaan vain, kun ne saapuvat vastakkaisvaiheisina ja niiden amplitudit ovat yhtä suuret.
+
 ## Kaava: Vahvistavan ja heikentävän interferenssin ehto
 Se, kumpaa interferenssi pisteessä P on, riippuu siitä, kuinka paljon pidemmän matkan toinen aalto on kulkenut. **Matkaero** on lähteiden etäisyyksien erotus pisteestä P:
 ```latex
