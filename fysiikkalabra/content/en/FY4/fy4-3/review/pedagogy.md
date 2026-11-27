@@ -1,21 +1,23 @@
-VERDICT: PASS
-CONTENT-HASH: fd4f31b681b40a8c
+VERDICT: FAIL
+CONTENT-HASH: 9b120b28b5a1ba41
 
 ## Blocking
-(none)
+- lesson.md:148 (en, "Two ways to choose the system") — the subsection says "Only now do the forces belong to the same system ... their vector sum is zero", right after the paragraph above it and the Common misconception box, which teach that a force and its reaction force "do not cancel each other". A 17-year-old will read this as a contradiction, or take away "the pair cancels". The wording "Only now do the forces belong to the same system" is also wrong: the pair always belongs to one interaction. Fix: say that the pair still acts on different objects and cancels nothing on either skater; the zero sum is only a bookkeeping fact for the whole system and explains why the internal forces do not change how the system's centre moves. Replace the sentence with, for example, "The two forces still act on different objects; for the system as a whole they are internal and add up to zero, so they cannot change the motion of the system as a whole." Mark the earlier "do not cancel" sentence as "on either object".
 
 ## Polish
-- lesson.md:111-115 (Stop and think 1, "Which bodies act on the ball during the flight?") — the answer names air resistance, but the paragraph just read never introduces it. It speaks of contact forces and of weight "at a distance", and the air appears only in the next subsection. A student can still reach "the Earth, not the hand", but "the air" comes from outside knowledge. Fix: add "the air" to the paragraph's list of contact examples, or end the question with "(think of the air as well)".
-- lesson.md:130-134 (Stop and think 2, shopping cart) — answerable from the preceding paragraph (bicycle, friction and air resistance). It nearly repeats the bicycle example, so it checks recall, not transfer. Fix: move it to something the paragraph does not state, such as "Why does a hockey puck slide further than a cart?"
-- lesson.md:136-151 (Stop and think 3, ball and foot) — the paragraph states the reaction force in general terms (skater B acts on A), and the foot-ball case is a one-step transfer. Good. The tug-of-war photo sits in the first-law subsection, though it illustrates the third-law pair (caption only mentions leaning). Fix: move the photo into Action and reaction, or caption it with the first-law point.
+- lesson.md:148 — one idea in the paragraph is the choice of system, the other the zero sum; split into two short paragraphs. It also never says when the student should choose which system (they will need it in the chapters on the second law and on collisions); add one sentence.
+- Figure systeemit — the label "F_AB + F_BA = 0" sits above the right-hand diagram like a force. It is not an arrow, but a student can read it as one. Setting it apart (or in a note) would help; the dashed system outline is the only legend, so say in the caption what it marks.
+- Figure systeemit at 390 px — labels are small but legible; the description does not give the answer away and matches the figure.
+- Wide layout (1280 px): a tall empty gap sits under the luistelijat figure before the Falcon photo; place the photo beside the paragraph on its right.
+- No task practises the system choice (the new subsection has no check or prediction); acceptable for one subsection, but one Tarkista option on it would test the new idea.
 
 ## Checked
-- The change is three Stop and think prompts, one per ### subsection (Force is an interaction, Motion continues without a force, Action and reaction). Each question is separate from the paragraph above it and comes before its answer.
-- Each Answer is a closed box inside the question card: the question reads as a prompt and the answer appears only on opening (capture #27, 390 px).
-- Question 1 is answerable from the paragraph, apart from air resistance (see Polish). Question 2 is answerable from the paragraph above it, and the model answer matches the text. Question 3 is answerable from the skater paragraph plus its reversal.
-- The answers repair the usual misconceptions: "the thrower's hand still pushes", "a force of motion", "only the ball acts".
-- Each question is short, so the workload stays within one lesson. Each answer is one or two sentences.
-- Learning path, activities and checks are unchanged since the round-1 PASS. The prediction, investigation, interpret task and checks are intact, and there is no premature disclosure because the Stop and think blocks sit in the Teoria stage, after the predictions.
-- The unchanged parts hold: the force diagram plan (identify; the draw task check-3, whose model answer names both reaction forces), the staged example and the exit ticket.
-- Captures opened: fy4-3-stage-selita-390-2.png (#27). I did not open the others; the round-1 check covered the page form, and the diff does not touch it.
-- Hash at start: fd4f31b681b40a8c. At end: fd4f31b681b40a8c (unchanged).
+- Learning path and prerequisite (fy4-1): fits; slot goals met, except the contradiction above.
+- Predictions (frictionless box, carts) can be refuted by exp-1 and the sensor graph; no premature disclosure.
+- Each wrong option's feedback repairs its misconception; explain criteria are observable.
+- Worked example staged in seven steps, diagram before equation; the velocity is correctly marked unused.
+- fbd plan "identify" practised; check-3 is a draw task with a model figure; the curling stone (example I) is covered.
+- Exit ticket tests the first and third laws.
+- Figures legible in 390 px captures; hero fits the Miksi question.
+- English wording otherwise clear; glossary terms used consistently.
+- Workload fits one lesson.
