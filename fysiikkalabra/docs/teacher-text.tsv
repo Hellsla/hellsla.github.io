@@ -1,0 +1,8 @@
+# Text changes the teacher read and approved (teacher 2026-11-13, work queue 8k; scripts/reviews.py "a text change the teacher approved").
+# One row per approved change of a file: the hashes of the text before and after, and the source of the approval.
+# Written by `python scripts/reviews.py approve-text <id> [--lang <l>] --source "..."` only after the teacher has
+# explicitly approved the change; any edit made after it needs a new approval or the reviews.
+date	lang	id	file	before	after	source
+2026-11-27	fi	fy2-6	content/fi/FY2/fy2-6/inquiry.json	ad3349226dfbb6ee	23f4f5be1d49e60f	opettaja 2026-11-27 tässä sessiossa: 'muutokset sellaisinaan' (muutoslista 2026-11-27 kohta 2, PR #888)
+2026-11-27	fi-easy	fy2-6	content/fi-easy/FY2/fy2-6/inquiry.json	b86d85b7e1b6e96d	ba9fadb779cac8b9	opettaja 2026-11-27 tässä sessiossa: 'muutokset sellaisinaan' (muutoslista 2026-11-27 kohta 2, PR #888)
+2026-11-27	en	fy2-6	content/en/FY2/fy2-6/inquiry.json	c4f65b0fb6be46ba	bfd4873cd1a2c57b	opettaja 2026-11-27 tässä sessiossa: 'muutokset sellaisinaan' (muutoslista 2026-11-27 kohta 2, PR #888)
