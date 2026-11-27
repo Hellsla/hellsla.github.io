@@ -147,7 +147,7 @@
     {
       "id": "fy8-8-L2-05",
       "level": 2,
-      "text": "The table gives the proton number $Z$ and the neutron number $N$ of six radioactive nuclei before decay, and the numbers $Z'$ and $N'$ of the daughter nucleus after decay. The numbers are from the main decay modes of the nuclei (NNDC NuDat 3).\n\na) Deduce the decay mode of each row: alpha, beta minus, beta plus or gamma decay.\n\nb) Calculate in how many of the rows the nucleus decays by beta minus decay.\n\nThe result of part b) is entered in the answer field.",
+      "text": "The table gives the proton number $Z$ and the neutron number $N$ of six radioactive nuclei before decay, and the numbers $Z'$ and $N'$ of the daughter nucleus after decay. The numbers are from the main decay modes of the nuclei (NNDC NuDat 3).\n\na) Deduce the decay mode of each row: alpha, beta minus, beta plus or gamma decay.\n\nb) Calculate in how many of the rows the nucleus decays by beta minus decay.\n\nc) (optional) What else would have to be observed to conclude that this decay was specifically a β⁺ decay?\n\nThe result of part b) is entered in the answer field.",
       "kind": [
         "data",
         "reasoning"
