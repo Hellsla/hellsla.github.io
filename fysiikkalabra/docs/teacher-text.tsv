@@ -1,0 +1,14 @@
+# Text changes the teacher read and approved (teacher 2026-11-13, work queue 8k; scripts/reviews.py "a text change the teacher approved").
+# One row per approved change of a file: the hashes of the text before and after, and the source of the approval.
+# Written by `python scripts/reviews.py approve-text <id> [--lang <l>] --source "..."` only after the teacher has
+# explicitly approved the change; any edit made after it needs a new approval or the reviews.
+date	lang	id	file	before	after	source
+2026-11-27	fi	fy3-13	content/fi/FY3/fy3-13/lesson.md	ec80e674ff7ab1c3	e0f01a29da53ec60	Opettaja hyväksyi tekstit (fi, fi-easy, en) tässä tekijäsessiossa 2026-11-27: 'Hyväksyn tekstit', työjono 29.3
+2026-11-27	fi	fy3-13	content/fi/FY3/fy3-13/exercises/exercises.json	98dfd096f9a9d370	8fd0aa9307ef8342	Opettaja hyväksyi tekstit (fi, fi-easy, en) tässä tekijäsessiossa 2026-11-27: 'Hyväksyn tekstit', työjono 29.3
+2026-11-27	fi	fy3-13	content/fi/FY3/fy3-13/exercises/solutions.md	0d6e11ad58b0f675	a911e3c043577e38	Opettaja hyväksyi tekstit (fi, fi-easy, en) tässä tekijäsessiossa 2026-11-27: 'Hyväksyn tekstit', työjono 29.3
+2026-11-27	fi-easy	fy3-13	content/fi-easy/FY3/fy3-13/lesson.md	fe9f7fc422890247	17b7e457f22bdfdd	Opettaja hyväksyi tekstit (fi, fi-easy, en) tässä tekijäsessiossa 2026-11-27: 'Hyväksyn tekstit', työjono 29.3
+2026-11-27	fi-easy	fy3-13	content/fi-easy/FY3/fy3-13/exercises/exercises.json	15d78b037c676f31	98ab3a3a414b1ef1	Opettaja hyväksyi tekstit (fi, fi-easy, en) tässä tekijäsessiossa 2026-11-27: 'Hyväksyn tekstit', työjono 29.3
+2026-11-27	fi-easy	fy3-13	content/fi-easy/FY3/fy3-13/exercises/solutions.md	8b30dcf6ccb75b12	2d8ebcd2e8ffedb8	Opettaja hyväksyi tekstit (fi, fi-easy, en) tässä tekijäsessiossa 2026-11-27: 'Hyväksyn tekstit', työjono 29.3
+2026-11-27	en	fy3-13	content/en/FY3/fy3-13/lesson.md	b77b2bb6974f13b1	1e326f3eced61863	Opettaja hyväksyi tekstit (fi, fi-easy, en) tässä tekijäsessiossa 2026-11-27: 'Hyväksyn tekstit', työjono 29.3
+2026-11-27	en	fy3-13	content/en/FY3/fy3-13/exercises/exercises.json	ffe836ceea00be6d	37a243b09d9cf8c0	Opettaja hyväksyi tekstit (fi, fi-easy, en) tässä tekijäsessiossa 2026-11-27: 'Hyväksyn tekstit', työjono 29.3
+2026-11-27	en	fy3-13	content/en/FY3/fy3-13/exercises/solutions.md	5daa0788c13a3717	062aab8f5d2c0d58	Opettaja hyväksyi tekstit (fi, fi-easy, en) tässä tekijäsessiossa 2026-11-27: 'Hyväksyn tekstit', työjono 29.3
