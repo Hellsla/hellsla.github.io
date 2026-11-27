@@ -151,7 +151,7 @@ Järjestys: 17a PR 1–2, 17b PR 1, 17c PR 1, 17e PR 1, 17d PR 1, 17e PR 2, sitt
 17c PR 1 (yleinen yleisvirheiden tunnistus, jaettu): tehty PR #881:ssä; neljä uutta tekstiä (fi, fi-easy, en) ja kuvat **opettaja 2026-11-26 tässä sessiossa ("Hyväksyn")**; yhdistetty 2026-11-26.
 17e PR 1 (luokan yhteenveto arviointisivulle, jaettu) tehty: PR #882 yhdistetty 2026-11-26; tekstit ja kuvat opettaja tekijäsessiossa ("hyväksyn"); pienen ryhmän rivejä ei piiloteta ("haluan tietää kenestä on kyse").
 17e PR 2 (valintojen jakauma luokan yhteenvetoon, jaettu): **opettaja 2026-11-26 koordinaattorin chatissa: "yes"** (tehdään omana PR:nään). Vaatii oikean vaihtoehdon `Tehtavat.gs`:ään ja oppilaan valinnan olemassa olevaan palautustaulukkoon; ei uutta keruukanavaa, ei kirjautumista. Uudet tekstit ja kuvat opettajalle tekijäsessiossa. 17d PR 1:n jälkeen.
-17d PR 1 (ajoitettu kertaus, jaettu, `kortit.js`): PR #883; ei uusia käyttöliittymätekstejä; kuvat (360 px ja leveä) **opettaja 2026-11-26 tässä sessiossa ("Hyväksyn kuvat")**; odottaa yhdistämistä. Kortit palaavat pakkaan 5, 10 ja 20 vrk:n päästä (`porras`, `era`); ennen muutosta poistuneita ei ajoiteta.
+17d PR 1 (ajoitettu kertaus, jaettu, `kortit.js`) tehty: PR #883 yhdistetty 2026-11-27; ei uusia käyttöliittymätekstejä; kuvat (360 px ja leveä) **opettaja 2026-11-26 tässä sessiossa ("Hyväksyn kuvat")**. Kortit palaavat pakkaan 5, 10 ja 20 vrk:n päästä (`porras`, `era`); ennen muutosta poistuneita ei ajoiteta.
 
 ## 19. 45 soveltavaa aineistotehtävää FY1–FY9: tehty (loki §19)
 Kaikki 45 tehty (FY1–FY9, A1–A5). Avoin vain: opettaja avaa Tukesin kaksi linkkiä (FY6 A3, A4) selaimessa ennen yhdistämistä. Poistetaan, kun se on tehty.
