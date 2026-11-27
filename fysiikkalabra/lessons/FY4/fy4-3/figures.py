@@ -287,9 +287,9 @@ def systeemit():
     b = FBD(f, 0.76, body=(bx, by, bw, bh), a_dir=(0, 0))      # the sum of the two weights is long: a smaller scale
     G = SK["GA"] + SK["GB"]
     b.force("G", (0, -G), (bx, by), "gravity", tex=r"\overline{G}_A+\overline{G}_B", lab=(-62, -2))
-    b.force("N", (0, G), (bx + 20, by + bh / 2), "normal", surface=0, tex=r"\overline{N}_A+\overline{N}_B", lab=(74, 12))
+    b.force("N", (0, G), (bx + 20, by + bh / 2), "normal", surface=0, tex=r"\overline{N}_A+\overline{N}_B", lab=(78, 22))
     b.draw()
-    f.tex(bx, 220, r"\overline{F}_{AB}+\overline{F}_{BA}=\overline{0}", "middle", MUTED, size=20)
+    f.tex(bx, 214, r"\overline{F}_{AB}+\overline{F}_{BA}=\overline{0}", "middle", MUTED)
     return f.svg()
 
 

@@ -139,8 +139,8 @@ Saman työnnön voi katsoa kahdella tavalla. Systeemi tarkoittaa sitä kappalett
   <foreignObject x="340.5" y="401.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{G}_A+\overline{G}_B$</div></foreignObject>
   <line x1="470" y1="345" x2="470" y2="254" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
   <path d="M470,237 L478,255 L462,255 Z" fill="#c92a2a" stroke-linejoin="round"/>
-  <foreignObject x="496.5" y="234.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{N}_A+\overline{N}_B$</div></foreignObject>
-  <foreignObject x="383.5" y="208" width="133" height="24" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:20px;color:#6b7480">$\overline{F}_{AB}+\overline{F}_{BA}=\overline{0}$</div></foreignObject>
+  <foreignObject x="500.5" y="244.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{N}_A+\overline{N}_B$</div></foreignObject>
+  <foreignObject x="371" y="199.5" width="158" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\overline{F}_{AB}+\overline{F}_{BA}=\overline{0}$</div></foreignObject>
 </svg>
 
 ```pysahdy
