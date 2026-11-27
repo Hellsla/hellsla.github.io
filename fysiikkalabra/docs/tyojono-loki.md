@@ -863,4 +863,8 @@ Opettaja 2026-11-24 kohta 4. s7 (16 p) ja s8 (18 p) ylioppilaskokeen 15 pisteese
 Teorian loppu opettajan sanamuodolla (fi, fi-easy, en), L3-03:n viimeinen kysymys "Ehdota yhtä mahdollista syytä…" ja malliratkaisu (nollapistevirhe + testi) kolmella kielellä; vastaus 1,86 ja kuvat ennallaan. Hyväksyntä `docs/teacher-text.tsv` (approve-text), katselmoinnit none.
 - 29.4 (2026-11-27, opettajan muutoslista kohta 4): fy7-5 teorian alku puhuu vuon muutoksesta (opettajan sanamuoto), induktiojännitteen suuruus "positiivinen tai nolla"; fi, fi-easy, en; opettaja hyväksyi sanamuodot sessiossa (approve-text), ei uusia katselmointeja.
 
+<<<<<<< HEAD
+- 29.7 (2026-11-27, opettajan muutoslista kohta 7, PR #894): fy5-12:n teoriaan solmuviivan määritelmän viereen vertailu: amplitudit 3 mm ja 3 mm → yhteisamplitudi 0 mm (solmu), 3 mm ja 2 mm → 1 mm (värähtelee edelleen); fi, fi-easy, en. Opettaja hyväksyi tekstit tässä sessiossa ("Hyväksyn"); `approve-text` (pohja 705e1b3, koska aiemmat kuvat jo teacher-figure) ja `carry`, katselmoinnit none. Kuvat ennallaan.
+=======
 - 29.5 (2026-11-27, opettajan muutoslista kohta 5): fy1-3-L2-08 pyytää vertaamaan keskiarvojen eroa sarjojen sisäiseen hajontaan (laadullinen vertailu, lukiotasolle sopivampi kuin erotuksen epävarmuuden arvio); kysymys aineiston riittävyydestä ja vastausarvo ennallaan; fi, fi-easy, en; opettaja hyväksyi sanamuodot sessiossa (approve-text), reviews.py carry fy1-3 (teksti ja --exercises) kaikille kielille.
+>>>>>>> origin/main
