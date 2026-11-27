@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 57544ac197c30d1e
+CONTENT-HASH: 94ec7083fba52991
 
 ## Blocking
 (none)
@@ -8,8 +8,9 @@ CONTENT-HASH: 57544ac197c30d1e
 (none)
 
 ## Checked
-- Delta only: prefix "Esimerkkiaineisto: " removed, first letter capitalised. Opened fy8-5-open-exercises-L2-1280-6 (L2-05/06 area); text reads naturally, layout (cards, tables, formulas, answer fields) intact, no clipping or overflow.
-- Source diff read for the changed tasks; no numbers, units or formulas changed.
+- Delta: five exact flags (answers 50, 14, 8, 16, 15 kpl) read from source.
+- No rendered change: the "exact": true flag is data only; the layout checks (360-1280 px) are green in the packet.
+- Exercise captures are not present on disk for this packet (no review/shots); judged from the diff, since nothing visible changed.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 5
