@@ -75,6 +75,7 @@ Laitteen kilvessä on sen **suojausluokan** merkki. Suojausluokan I laitteessa o
   <foreignObject x="430" y="165.5" width="140" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{luokka III}$</div></foreignObject>
   <foreignObject x="405" y="201.5" width="190" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{suojajännite}$</div></foreignObject>
   <foreignObject x="405" y="241.5" width="190" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{akkuporakone}$</div></foreignObject>
+  <foreignObject x="462" y="88.5" width="60" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{III}$</div></foreignObject>
 </svg>
 
 ### Vikavirtasuoja suojaa ihmistä
