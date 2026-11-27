@@ -60,7 +60,88 @@ When skater A pushes skater B, both start to glide away from each other. B does 
 
 <figure class="unit-photo"><img src="pics/fy4/falcon9-crew9-launch.webp" alt="A white rocket rises vertically on a bright flame and a trail of smoke. Around the launch pad there are large white clouds of steam and lattice towers."><figcaption>A Falcon 9 rocket lifts off in Florida in September 2024. The rocket pushes the exhaust gases downwards, and the gases push the rocket upwards with a force of equal magnitude. The rocket does not need air or ground to push against.</figcaption></figure>
 
-An adult and a child receive an equally large force from each other, although the adult is much heavier. The child still starts moving with a greater speed, because the same force changes the motion of the smaller mass more; we return to this in the chapter *Newton's second law*. The most important point is that a force and its reaction force act on **different objects**. That is why they never cancel each other, and why they are not drawn in the force diagram of the same object.
+An adult and a child receive an equally large force from each other, although the adult is much heavier. The child still starts moving with a greater speed, because the same force changes the motion of the smaller mass more; we return to this in the chapter *Newton's second law*. The most important point is that a force and its reaction force act on **different objects**. That is why they do not cancel each other in the force diagram of either object, and why they are not drawn in the force diagram of the same object.
+
+### Two ways to choose the system
+The same push can be looked at in two ways. If the system is only skater A, the push from B is an external force $\overline{F}_{BA}$ on A, and it is drawn in A's force diagram. If the system is A and B together, the forces of the interaction pair, $\overline{F}_{AB}$ and $\overline{F}_{BA}$, are internal forces of the system. That is why the forces of the interaction pair are not drawn in the system's force diagram, which shows only the external forces. The forces still act on different objects, so they cancel nothing on either skater. For the whole system they are equal in magnitude and opposite in direction, so their vector sum is $\overline{F}_{AB}+\overline{F}_{BA}=\overline{0}$. Friction is neglected.
+
+<svg data-fig="systeemit" viewBox="0 0 600 470" role="img" aria-label="Two force diagrams of the same push between skaters. On the left the system is only skater A, with a dashed line around them. Their force diagram has the weight G A, the support force N A and B&#x27;s force on A, F BA, which points left. On the right the system is skaters A and B together, and the dashed line goes around both. The force diagram has only external forces: the total weight and the total support force of A and B. The forces of the interaction pair, F AB and F BA, are internal and are not drawn as arrows; their vector sum is the zero vector. The weight and support arrows on the right are equal in length. Friction is neglected." style="max-width:100%;font-size:24px">
+  <defs><linearGradient id="fy43y-ice1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#eef5f9"/><stop offset="1" stop-color="#d0e6fb"/></linearGradient><linearGradient id="fy43y-ice2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#eef5f9"/><stop offset="1" stop-color="#d0e6fb"/></linearGradient></defs>
+  <rect x="8" y="160" width="284" height="14" fill="url(#fy43y-ice1)"/>
+  <rect x="308" y="160" width="284" height="14" fill="url(#fy43y-ice2)"/>
+  <line x1="300" y1="20" x2="300" y2="450" stroke="#c9c2b2" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 6"/>
+  <foreignObject x="96" y="7.5" width="108" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{system: A}$</div></foreignObject>
+  <foreignObject x="371" y="7.5" width="158" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{system: A and B}$</div></foreignObject>
+  <path d="M112,123 L106.5,157" fill="none" stroke="#1f2933" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M103,157.5 h10.5" fill="none" stroke="#1f2933" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+  <line x1="101" y1="160" x2="116" y2="160" stroke="#8a96a3" stroke-width="2" stroke-linecap="round"/>
+  <path d="M112,123 L117,157" fill="none" stroke="#1f2933" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M113.5,157.5 h10.5" fill="none" stroke="#1f2933" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+  <line x1="111" y1="160" x2="126.5" y2="160" stroke="#8a96a3" stroke-width="2" stroke-linecap="round"/>
+  <path d="M103,125.5 Q110.5,84 122.5,91 L121.5,125.5 Z" fill="#1971c2" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M116,93.5 L138,100" fill="none" stroke="#1971c2" stroke-width="6.4" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="138" cy="100" r="3.6" fill="#f1dfb5" stroke="#1f2933" stroke-width="1.5"/>
+  <circle cx="118.5" cy="75" r="9.6" fill="#f1dfb5" stroke="#1f2933" stroke-width="2"/>
+  <path d="M108.5,76 Q109,63 118.5,64 Q128,63 128.5,76 Z" fill="#1971c2" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M190,132.5 L194,157.5" fill="none" stroke="#1f2933" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M196.5,158 h-8" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <line x1="198.5" y1="160" x2="187" y2="160" stroke="#8a96a3" stroke-width="2" stroke-linecap="round"/>
+  <path d="M190,132.5 L186.5,157.5" fill="none" stroke="#1f2933" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M189,158 h-8" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <line x1="190.5" y1="160" x2="179" y2="160" stroke="#8a96a3" stroke-width="2" stroke-linecap="round"/>
+  <path d="M196.5,134 Q191,103 182,108.5 L183,134 Z" fill="#c92a2a" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M187,110 L150,100" fill="none" stroke="#c92a2a" stroke-width="4.8" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="150" cy="100" r="2.7" fill="#f1dfb5" stroke="#1f2933" stroke-width="1.5"/>
+  <circle cx="185" cy="96.5" r="7.2" fill="#f1dfb5" stroke="#1f2933" stroke-width="2"/>
+  <path d="M177.5,97 Q178,87.5 185,88 Q192.5,87.5 192.5,97 Z" fill="#c92a2a" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <foreignObject x="70" y="75.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{A}$</div></foreignObject>
+  <foreignObject x="196" y="65.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{B}$</div></foreignObject>
+  <path d="M412,123 L406.5,157" fill="none" stroke="#1f2933" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M403,157.5 h10.5" fill="none" stroke="#1f2933" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+  <line x1="401" y1="160" x2="416" y2="160" stroke="#8a96a3" stroke-width="2" stroke-linecap="round"/>
+  <path d="M412,123 L417,157" fill="none" stroke="#1f2933" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M413.5,157.5 h10.5" fill="none" stroke="#1f2933" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+  <line x1="411" y1="160" x2="426.5" y2="160" stroke="#8a96a3" stroke-width="2" stroke-linecap="round"/>
+  <path d="M403,125.5 Q410.5,84 422.5,91 L421.5,125.5 Z" fill="#1971c2" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M416,93.5 L438,100" fill="none" stroke="#1971c2" stroke-width="6.4" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="438" cy="100" r="3.6" fill="#f1dfb5" stroke="#1f2933" stroke-width="1.5"/>
+  <circle cx="418.5" cy="75" r="9.6" fill="#f1dfb5" stroke="#1f2933" stroke-width="2"/>
+  <path d="M408.5,76 Q409,63 418.5,64 Q428,63 428.5,76 Z" fill="#1971c2" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M490,132.5 L494,157.5" fill="none" stroke="#1f2933" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M496.5,158 h-8" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <line x1="498.5" y1="160" x2="487" y2="160" stroke="#8a96a3" stroke-width="2" stroke-linecap="round"/>
+  <path d="M490,132.5 L486.5,157.5" fill="none" stroke="#1f2933" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M489,158 h-8" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <line x1="490.5" y1="160" x2="479" y2="160" stroke="#8a96a3" stroke-width="2" stroke-linecap="round"/>
+  <path d="M496.5,134 Q491,103 482,108.5 L483,134 Z" fill="#c92a2a" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M487,110 L450,100" fill="none" stroke="#c92a2a" stroke-width="4.8" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="450" cy="100" r="2.7" fill="#f1dfb5" stroke="#1f2933" stroke-width="1.5"/>
+  <circle cx="485" cy="96.5" r="7.2" fill="#f1dfb5" stroke="#1f2933" stroke-width="2"/>
+  <path d="M477.5,97 Q478,87.5 485,88 Q492.5,87.5 492.5,97 Z" fill="#c92a2a" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <foreignObject x="370" y="75.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{A}$</div></foreignObject>
+  <foreignObject x="496" y="65.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{B}$</div></foreignObject>
+  <rect x="60" y="44" width="86" height="120" rx="14" fill="none" stroke="#1f2933" stroke-width="2.5" stroke-dasharray="8 6"/>
+  <rect x="352" y="44" width="200" height="120" rx="14" fill="none" stroke="#1f2933" stroke-width="2.5" stroke-dasharray="8 6"/>
+  <line x1="8" y1="192" x2="592" y2="192" stroke="#c9c2b2" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 6"/>
+  <rect x="115" y="300" width="70" height="60" fill="#f6f1e6" stroke="#1f2933" stroke-width="2.5"/>
+  <line x1="150" y1="330" x2="150" y2="421" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M150,438 L142,420 L158,420 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="99.5" y="417.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{G}_A$</div></foreignObject>
+  <line x1="166" y1="360" x2="166" y2="269" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M166,252 L174,270 L158,270 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="169.5" y="241.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{N}_A$</div></foreignObject>
+  <line x1="242.5" y1="316" x2="202" y2="316" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M185,316 L203,308 L203,324 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="219.5" y="279.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{F}_{BA}$</div></foreignObject>
+  <rect x="395" y="275" width="110" height="70" fill="#f6f1e6" stroke="#1f2933" stroke-width="2.5"/>
+  <line x1="450" y1="310" x2="450" y2="401" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M450,418 L442,400 L458,400 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="340.5" y="401.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{G}_A+\overline{G}_B$</div></foreignObject>
+  <line x1="470" y1="345" x2="470" y2="254" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M470,237 L478,255 L462,255 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="500.5" y="244.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{N}_A+\overline{N}_B$</div></foreignObject>
+  <foreignObject x="371" y="199.5" width="158" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\overline{F}_{AB}+\overline{F}_{BA}=\overline{0}$</div></foreignObject>
+</svg>
 
 ```pysahdy
 You kick a ball with your foot. What force acts on your foot when it hits the ball?
@@ -187,4 +268,4 @@ Many people think that a force must act on a moving object in the direction of m
 - A force describes the interaction of two objects. Every force has a cause, another object, and the unit of force is the newton.
 - Newton's first law: if the net force is zero, the object stays at rest or moves in a straight line at constant velocity.
 - A force is needed to change motion, not to keep it going. In everyday life motion slows down because of friction and air resistance.
-- Newton's third law: $\overline{F}_{AB} = -\overline{F}_{BA}$. A force and its reaction force are equally large, opposite in direction and of the same kind, and they act on different objects, so they do not cancel each other.
+- Newton's third law: $\overline{F}_{AB} = -\overline{F}_{BA}$. A force and its reaction force are equally large, opposite in direction and of the same kind, and they act on different objects, so they do not cancel each other in the force diagram of either object.

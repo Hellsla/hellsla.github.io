@@ -60,7 +60,88 @@ Kun luistelija A työntää luistelijaa B, kumpikin lähtee liukumaan poispäin 
 
 <figure class="unit-photo"><img src="pics/fy4/falcon9-crew9-launch.webp" alt="Valkoinen raketti nousee pystysuoraan kirkkaan liekin ja savuvanan varassa. Laukaisualustan ympärillä on suuria valkoisia höyrypilviä ja ristikkomastoja."><figcaption>Falcon 9 -raketti nousee Floridassa syyskuussa 2024. Raketti työntää palamiskaasuja alaspäin, ja kaasut työntävät rakettia ylöspäin yhtä suurella voimalla. Raketti ei tarvitse ilmaa eikä maata, jota vasten työntää.</figcaption></figure>
 
-Aikuinen ja lapsi saavat toisiltaan yhtä suuren voiman, vaikka aikuinen on paljon raskaampi. Lapsi lähtee silti liikkeelle suuremmalla nopeudella, koska pienemmän massan liiketila muuttuu samasta voimasta enemmän; tähän palataan luvussa *Newtonin toinen laki*. Tärkeintä on, että voima ja vastavoima vaikuttavat **eri kappaleisiin**. Siksi ne eivät koskaan kumoa toisiaan, eikä niitä piirretä saman kappaleen voimakuvioon.
+Aikuinen ja lapsi saavat toisiltaan yhtä suuren voiman, vaikka aikuinen on paljon raskaampi. Lapsi lähtee silti liikkeelle suuremmalla nopeudella, koska pienemmän massan liiketila muuttuu samasta voimasta enemmän; tähän palataan luvussa *Newtonin toinen laki*. Tärkeintä on, että voima ja vastavoima vaikuttavat **eri kappaleisiin**. Siksi ne eivät kumoa toisiaan kummankaan kappaleen voimakuviossa, eikä niitä piirretä saman kappaleen voimakuvioon.
+
+### Kaksi tapaa rajata systeemi
+Saman työnnön voi tarkastella kahdella tavalla. Jos systeeminä on vain luistelija A, B:n työntö on A:han kohdistuva ulkoinen voima $\overline{F}_{BA}$, ja se piirretään A:n voimakuvioon. Jos systeeminä ovat A ja B yhdessä, vuorovaikutusparin voimat $\overline{F}_{AB}$ ja $\overline{F}_{BA}$ ovat systeemin sisäisiä voimia. Siksi vuorovaikutusparin voimia ei piirretä systeemin voimakuvioon, jossa on vain ulkopuoliset voimat. Voimat vaikuttavat edelleen eri kappaleisiin, eivätkä ne kumoa mitään kummankaan luistelijan kohdalla. Koko systeemin kannalta ne ovat yhtä suuret ja vastakkaissuuntaiset, joten niiden vektorisumma on $\overline{F}_{AB}+\overline{F}_{BA}=\overline{0}$. Kitka jätetään huomiotta.
+
+<svg data-fig="systeemit" viewBox="0 0 600 470" role="img" aria-label="Kaksi voimakuviota samasta luistelijoiden työnnöstä. Vasemmalla systeeminä on vain luistelija A, jonka ympärillä on katkoviiva. Hänen voimakuviossaan ovat paino G A, tukivoima N A ja B:n voima A:han, F B A, joka osoittaa vasemmalle. Oikealla systeeminä ovat luistelijat A ja B yhdessä, ja katkoviiva kulkee molempien ympäri. Voimakuviossa ovat vain ulkopuoliset voimat: A:n ja B:n yhteispaino ja yhteinen tukivoima. Vuorovaikutusparin voimat F A B ja F B A ovat sisäisiä, eikä niitä piirretä nuolina; niiden vektorisumma on nollavektori. Oikean puolen painon ja tukivoiman nuolet ovat yhtä pitkät. Kitka jätetään huomiotta." style="max-width:100%;font-size:24px">
+  <defs><linearGradient id="fy43y-ice1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#eef5f9"/><stop offset="1" stop-color="#d0e6fb"/></linearGradient><linearGradient id="fy43y-ice2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#eef5f9"/><stop offset="1" stop-color="#d0e6fb"/></linearGradient></defs>
+  <rect x="8" y="160" width="284" height="14" fill="url(#fy43y-ice1)"/>
+  <rect x="308" y="160" width="284" height="14" fill="url(#fy43y-ice2)"/>
+  <line x1="300" y1="20" x2="300" y2="450" stroke="#c9c2b2" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 6"/>
+  <foreignObject x="83.5" y="7.5" width="133" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{systeemi: A}$</div></foreignObject>
+  <foreignObject x="365" y="7.5" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{systeemi: A ja B}$</div></foreignObject>
+  <path d="M112,123 L106.5,157" fill="none" stroke="#1f2933" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M103,157.5 h10.5" fill="none" stroke="#1f2933" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+  <line x1="101" y1="160" x2="116" y2="160" stroke="#8a96a3" stroke-width="2" stroke-linecap="round"/>
+  <path d="M112,123 L117,157" fill="none" stroke="#1f2933" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M113.5,157.5 h10.5" fill="none" stroke="#1f2933" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+  <line x1="111" y1="160" x2="126.5" y2="160" stroke="#8a96a3" stroke-width="2" stroke-linecap="round"/>
+  <path d="M103,125.5 Q110.5,84 122.5,91 L121.5,125.5 Z" fill="#1971c2" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M116,93.5 L138,100" fill="none" stroke="#1971c2" stroke-width="6.4" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="138" cy="100" r="3.6" fill="#f1dfb5" stroke="#1f2933" stroke-width="1.5"/>
+  <circle cx="118.5" cy="75" r="9.6" fill="#f1dfb5" stroke="#1f2933" stroke-width="2"/>
+  <path d="M108.5,76 Q109,63 118.5,64 Q128,63 128.5,76 Z" fill="#1971c2" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M190,132.5 L194,157.5" fill="none" stroke="#1f2933" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M196.5,158 h-8" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <line x1="198.5" y1="160" x2="187" y2="160" stroke="#8a96a3" stroke-width="2" stroke-linecap="round"/>
+  <path d="M190,132.5 L186.5,157.5" fill="none" stroke="#1f2933" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M189,158 h-8" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <line x1="190.5" y1="160" x2="179" y2="160" stroke="#8a96a3" stroke-width="2" stroke-linecap="round"/>
+  <path d="M196.5,134 Q191,103 182,108.5 L183,134 Z" fill="#c92a2a" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M187,110 L150,100" fill="none" stroke="#c92a2a" stroke-width="4.8" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="150" cy="100" r="2.7" fill="#f1dfb5" stroke="#1f2933" stroke-width="1.5"/>
+  <circle cx="185" cy="96.5" r="7.2" fill="#f1dfb5" stroke="#1f2933" stroke-width="2"/>
+  <path d="M177.5,97 Q178,87.5 185,88 Q192.5,87.5 192.5,97 Z" fill="#c92a2a" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <foreignObject x="70" y="75.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{A}$</div></foreignObject>
+  <foreignObject x="196" y="65.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{B}$</div></foreignObject>
+  <path d="M412,123 L406.5,157" fill="none" stroke="#1f2933" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M403,157.5 h10.5" fill="none" stroke="#1f2933" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+  <line x1="401" y1="160" x2="416" y2="160" stroke="#8a96a3" stroke-width="2" stroke-linecap="round"/>
+  <path d="M412,123 L417,157" fill="none" stroke="#1f2933" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M413.5,157.5 h10.5" fill="none" stroke="#1f2933" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+  <line x1="411" y1="160" x2="426.5" y2="160" stroke="#8a96a3" stroke-width="2" stroke-linecap="round"/>
+  <path d="M403,125.5 Q410.5,84 422.5,91 L421.5,125.5 Z" fill="#1971c2" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M416,93.5 L438,100" fill="none" stroke="#1971c2" stroke-width="6.4" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="438" cy="100" r="3.6" fill="#f1dfb5" stroke="#1f2933" stroke-width="1.5"/>
+  <circle cx="418.5" cy="75" r="9.6" fill="#f1dfb5" stroke="#1f2933" stroke-width="2"/>
+  <path d="M408.5,76 Q409,63 418.5,64 Q428,63 428.5,76 Z" fill="#1971c2" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M490,132.5 L494,157.5" fill="none" stroke="#1f2933" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M496.5,158 h-8" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <line x1="498.5" y1="160" x2="487" y2="160" stroke="#8a96a3" stroke-width="2" stroke-linecap="round"/>
+  <path d="M490,132.5 L486.5,157.5" fill="none" stroke="#1f2933" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M489,158 h-8" fill="none" stroke="#1f2933" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  <line x1="490.5" y1="160" x2="479" y2="160" stroke="#8a96a3" stroke-width="2" stroke-linecap="round"/>
+  <path d="M496.5,134 Q491,103 482,108.5 L483,134 Z" fill="#c92a2a" stroke="#1f2933" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M487,110 L450,100" fill="none" stroke="#c92a2a" stroke-width="4.8" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="450" cy="100" r="2.7" fill="#f1dfb5" stroke="#1f2933" stroke-width="1.5"/>
+  <circle cx="485" cy="96.5" r="7.2" fill="#f1dfb5" stroke="#1f2933" stroke-width="2"/>
+  <path d="M477.5,97 Q478,87.5 485,88 Q492.5,87.5 492.5,97 Z" fill="#c92a2a" stroke="#1f2933" stroke-width="2" stroke-linejoin="round"/>
+  <foreignObject x="370" y="75.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{A}$</div></foreignObject>
+  <foreignObject x="496" y="65.5" width="20" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px">$\text{B}$</div></foreignObject>
+  <rect x="60" y="44" width="86" height="120" rx="14" fill="none" stroke="#1f2933" stroke-width="2.5" stroke-dasharray="8 6"/>
+  <rect x="352" y="44" width="200" height="120" rx="14" fill="none" stroke="#1f2933" stroke-width="2.5" stroke-dasharray="8 6"/>
+  <line x1="8" y1="192" x2="592" y2="192" stroke="#c9c2b2" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="6 6"/>
+  <rect x="115" y="300" width="70" height="60" fill="#f6f1e6" stroke="#1f2933" stroke-width="2.5"/>
+  <line x1="150" y1="330" x2="150" y2="421" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M150,438 L142,420 L158,420 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="99.5" y="417.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{G}_A$</div></foreignObject>
+  <line x1="166" y1="360" x2="166" y2="269" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M166,252 L174,270 L158,270 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="169.5" y="241.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{N}_A$</div></foreignObject>
+  <line x1="242.5" y1="316" x2="202" y2="316" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M185,316 L203,308 L203,324 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="219.5" y="279.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{F}_{BA}$</div></foreignObject>
+  <rect x="395" y="275" width="110" height="70" fill="#f6f1e6" stroke="#1f2933" stroke-width="2.5"/>
+  <line x1="450" y1="310" x2="450" y2="401" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M450,418 L442,400 L458,400 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="340.5" y="401.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{G}_A+\overline{G}_B$</div></foreignObject>
+  <line x1="470" y1="345" x2="470" y2="254" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M470,237 L478,255 L462,255 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="500.5" y="244.5" width="95" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{N}_A+\overline{N}_B$</div></foreignObject>
+  <foreignObject x="371" y="199.5" width="158" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\overline{F}_{AB}+\overline{F}_{BA}=\overline{0}$</div></foreignObject>
+</svg>
 
 ```pysahdy
 Potkaiset palloa jalallasi. Mikä voima vaikuttaa jalkaasi, kun jalka osuu palloon?
@@ -193,4 +274,4 @@ Moni ajattelee, että liikkuvaan kappaleeseen täytyy vaikuttaa voima liikkeen s
 - Voima kuvaa kahden kappaleen vuorovaikutusta. Jokaisella voimalla on aiheuttaja, toinen kappale, ja voiman yksikkö on newton.
 - Newtonin ensimmäinen laki: jos kokonaisvoima on nolla, kappale pysyy levossa tai liikkuu suoraviivaisesti tasaisella nopeudella.
 - Voimaa tarvitaan liikkeen muuttamiseen, ei sen ylläpitämiseen. Liike hidastuu arjessa kitkan ja ilmanvastuksen takia.
-- Newtonin kolmas laki: $\overline{F}_{AB} = -\overline{F}_{BA}$. Voima ja vastavoima ovat yhtä suuret, vastakkaissuuntaiset ja samaa lajia, ja ne vaikuttavat eri kappaleisiin, joten ne eivät kumoa toisiaan.
+- Newtonin kolmas laki: $\overline{F}_{AB} = -\overline{F}_{BA}$. Voima ja vastavoima ovat yhtä suuret, vastakkaissuuntaiset ja samaa lajia, ja ne vaikuttavat eri kappaleisiin, joten ne eivät kumoa toisiaan kummankaan kappaleen voimakuviossa.
