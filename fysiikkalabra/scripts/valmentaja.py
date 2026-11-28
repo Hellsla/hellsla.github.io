@@ -26,7 +26,7 @@ not exist, a diagnostic task without its unit, and a minikoe whose points or min
 """
 import json, re, sys, pathlib
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
-import courses, i18n, practice, units
+import courses, i18n, lahtotaso, practice, units
 from courses import ROOT
 
 COURSE = "FY9"
@@ -81,6 +81,7 @@ def _short_tasks(uid, lang, items):
     """[task] of the unit's short tasks in page order, with the stage they sit in (the long tasks go in after sovella)."""
     inq = json.loads((units.folder(uid, lang) / "inquiry.json").read_text(encoding="utf-8"))
     out = []
+    diag = lahtotaso.plan(uid, inq["activities"])   # the diagnostic's tasks are named "FY1 · 1/3 · Virheen laji" (33.2)
     for a in inq["activities"]:
         if a["type"] not in SHORT: continue
         q = a.get("question") or {}
@@ -91,7 +92,7 @@ def _short_tasks(uid, lang, items):
         n_opt = len(a["choices"]) if kind == "choice" else len(a.get("mistakes", [])) if kind == "numeric" else len(q.get("choices", [])) or len(q.get("mistakes", []))
         t = {"id": key, "unit": it.get("unit", uid), "kind": kind, "stage": a["stage"], "check": check,
              "comp": it.get("competencies", TYPE_COMP[kind]), "min": it.get("minutes", TYPE_MIN[kind]),
-             "href": f"{uid}.html#{a['id']}", "part": "I", "title": a.get("title") or a["id"],
+             "href": f"{uid}.html#{a['id']}", "part": "I", "title": lahtotaso.label(diag[a["id"]]) if a["id"] in diag else a.get("title") or a["id"],
              "review": sorted(_activity_links(a), key=_lesson_key)}
         if n_opt: t["options"] = n_opt
         if it.get("followups"): t["followups"] = it["followups"]
