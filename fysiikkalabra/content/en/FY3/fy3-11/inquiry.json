@@ -313,7 +313,7 @@
           "feedback": "The heat is transferred to the gas, so $Q = +600\\,\\text{J}$. The gas gives up energy as work, not as heat; that is why the work done on the gas is negative, $W = -p\\,\\Delta V$, and $\\Delta U = Q - p\\,\\Delta V$."
         },
         {
-          "text": "There is no mistake in the calculation.",
+          "text": "There is no error in the calculation.",
           "feedback": "In experiment 1 the internal energy always grew less than the heat supplied, because the gas did work. The internal energy of a gas that does work cannot grow more than the heat supplied, $600\\,\\text{J}$: $\\Delta U = Q - p\\,\\Delta V$."
         }
       ],

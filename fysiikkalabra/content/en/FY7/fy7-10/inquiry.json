@@ -347,7 +347,7 @@
           "feedback": "The refractive indices are the right way round: the light comes from air, so $n_1 = 1.00$ and $n_2 = 1.33$. The error is in the angle: $30^\\circ$ was measured from the surface, and the angle of incidence measured from the normal is $60^\\circ$."
         },
         {
-          "text": "There is no error, because the angle of incidence can be measured from the surface or from the normal.",
+          "text": "There is no error in the calculation, because the angle of incidence can be measured from the surface or from the normal.",
           "feedback": "The direction in which the angle is measured matters. The law of refraction $n_1 \\sin\\alpha_1 = n_2 \\sin\\alpha_2$ holds only for angles measured from the normal. The angle of incidence is $60^\\circ$, and the angle of refraction $40.6^\\circ$."
         }
       ],
