@@ -1,0 +1,11 @@
+{
+  "id": "tvt-abitti2",
+  "title": "The physics exam in Abitti 2",
+  "description": "Get to know the programs, the answering and the practice of the Abitti 2 exam system, so that you know where the tools are during the exam.",
+  "learn": [
+    "recognise which programs the Abitti 2 exam system has and what they can be used for",
+    "save and return your answers and practise with the tools of the exam"
+  ],
+  "kind": "ohjelma",
+  "order": 10
+}
