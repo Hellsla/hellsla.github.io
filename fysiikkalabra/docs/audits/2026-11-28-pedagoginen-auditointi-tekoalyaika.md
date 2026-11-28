@@ -2,11 +2,11 @@
 
 Opettajan kaksi toimeksiantoa 2026-11-28: (A) "Kolme pedagogista kehityskohdetta tekoälyn aikakaudella" (Leung, BNU
 28.11.2026) ja (B) "Dialogic Education" (Wegerif, BNU). Kumpikin pyytää ensin nykytilan auditoinnin ja kieltää
-muutokset muutosten vuoksi. Tämä raportti on se auditointi, muutoslista ja FY4:n ja FY6:n pilottiehdotus.
+muutokset muutosten vuoksi. Tämä raportti on se auditointi, muutoslista ja FY4:n ja FY6:n pilottiehdotus. Raportti on pelkkä pohdinta:
+sivustoon, sisältöön tai työjonoon ei ole tehty muutoksia.
 
 **Menetelmä ja sen rajat.** Luvut on laskettu koneellisesti suomenkielisestä lähteestä (`content/fi/FY*/`: 113 lukua,
-2 612 tehtävää, 2 203 tutkimuspolun aktiviteettia, `itsearvio/fi.json`, `lang/fi.json`); laskentaskripti on PR:n
-kuvauksessa. Laadullisesti luettu kokonaan vain fy4-3, fy4-4, fy6-1 ja fy6-4 sekä Näin opiskelet -sivu. FY9:n yksiköt,
+2 612 tehtävää, 2 203 tutkimuspolun aktiviteettia, `itsearvio/fi.json`, `lang/fi.json`); kertaluonteisella skriptillä. Laadullisesti luettu kokonaan vain fy4-3, fy4-4, fy6-1 ja fy6-4 sekä Näin opiskelet -sivu. FY9:n yksiköt,
 FY10, FY14 ja Ahjo on katsottu vain rakenteen tasolla: niiden lukukohtainen arvio puuttuu. Vihjeiden laatua ei ole
 arvioitu luku luvulta, vain otoksesta.
 
@@ -18,7 +18,7 @@ tehtävämäärän kasvua ei tarvita. Todellisia aukkoja on viisi, ja ne ovat pi
 
 | # | Aukko | Laajuus | Tila |
 |---|---|---|---|
-| 1 | Näin opiskelet -sivulla ei ollut mitään tekoälyn käytöstä | 1 sivu, 3 kieltä | **Tehty tässä PR:ssä**, tekstit opettajan hyväksyttävänä |
+| 1 | Näin opiskelet -sivulla ei ole mitään tekoälyn käytöstä | 1 sivu, 3 kieltä | Ehdotus |
 | 2 | Itsearvion loppuväittämistä 107/384 alkaa "Ymmärrän / Tiedän / Hahmotan": ne eivät nimeä näyttöä | FY1–FY9 | Ehdotus, pilotti FY4 + FY6 (29 väittämää) |
 | 3 | Parin kanssa tehtävä perustelu on yhdessä luvussa (fy2-8), vaikka kenttä `pair` on valmiina | 112 lukua ilman | Ehdotus, pilotti 2 lukua |
 | 4 | "Palaa ennusteisiisi" kysyy muutosta, mutta ei näyttöä, joka muutti käsityksen | 112 lukua, sanamuoto | Ehdotus, pilotti 4 lukua |
@@ -51,11 +51,11 @@ teoria ja laki (FY1). Nämä kannattaa tarkistaa käsin ennen kuin niistä kirjo
 
 ## 3. Aukot ja ehdotukset
 
-### 3.1 Tekoälyohje Näin opiskelet -sivulle (tehty)
-Sivulla ei ollut sanaakaan tekoälystä. Lisätty "Kun tehtävä ei etene" -listan alle samalla komponentilla ja olemassa
-olevilla kuvakkeilla viiden kohdan lista **Jos käytät tekoälyä** (fi, fi-easy, en): toimeksiannon A viisi periaatetta
-sellaisinaan. Ei linkkiä mihinkään palveluun, ei uutta komponenttia. Kuvat: `docs/audits/2026-11-28-tekoalyohje/`.
-Tekstit ovat uutta käyttöliittymätekstiä ja tarvitsevat opettajan hyväksynnän ennen yhdistämistä.
+### 3.1 Tekoälyohje Näin opiskelet -sivulle
+Sivulla ei ole sanaakaan tekoälystä. Ehdotus: "Kun tehtävä ei etene" -listan alle samalla komponentilla ja olemassa
+olevilla kuvakkeilla viiden kohdan lista (esim. otsikolla **Jos käytät tekoälyä**; fi, fi-easy, en): toimeksiannon A
+viisi periaatetta sellaisinaan. Ei linkkiä mihinkään palveluun, ei uutta komponenttia. Tekstit olisivat uutta
+käyttöliittymätekstiä ja tarvitsevat opettajan hyväksynnän. Mitään ei ole toteutettu.
 
 ### 3.2 Itsearvion väittämät näytön kautta
 "Ymmärrän, miksi sähkövirta ei kulu lampussa" ei erota malliratkaisun ymmärtämistä itsenäisestä osaamisesta: opiskelija

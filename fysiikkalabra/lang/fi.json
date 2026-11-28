@@ -335,20 +335,9 @@
     "big_pos": "{{i}} / {{n}}",
     "check_number": "Kirjoita luku, esimerkiksi 9,81.",
     "correct": "Oikein.",
-    "correct_part": "{{part}}-kohdan lukuarvo on oikein.",
-    "compare_reason": "Vertaa vielä {{part}}-kohdan perusteluasi malliratkaisuun.",
-    "compare_graph": "Vertaa vielä {{part}}-kohdan kuvaajaasi malliratkaisuun.",
-    "compare_drawing": "Vertaa vielä {{part}}-kohdan piirrostasi malliratkaisuun.",
-    "compare_other": "Vertaa vielä {{part}}-kohtaa malliratkaisuun.",
-    "compare_parts": "Vertaa vielä kohtia {{parts}} malliratkaisuun.",
-    "list_and": " ja ",
     "not_quite": "Ei aivan.",
     "check_close": "Lähellä. Tarkista pyöristys ja yksikkö.",
     "check_magnitude": "Suuruusluokka on väärä. Tarkista yksikkö.",
-    "check_mistake_sign": "Tarkista etumerkki ja suunta.",
-    "check_mistake_magnitude": "Tarkista yksikkömuunnokset ja etuliitteet.",
-    "check_mistake_time": "Tarkista ajan yksikkö: sekunti, minuutti vai tunti.",
-    "check_mistake_kelvin": "Tarkista kelvinit ja celsiusasteet.",
     "check_give_up": "Ei vielä. Vastaus ja ratkaisu löytyvät alta.",
     "check_retry": "Ei aivan. Yritä uudelleen.",
     "pad_write": "Kirjoita ratkaisu",
@@ -2215,6 +2204,7 @@
       "pituus": "Johdinta kentässä",
       "pituus_lyhyt": "2,5 cm",
       "pituus_pitka": "5,0 cm",
+      "selite": "Violetti nuoli on virta, vihreät viivat magneettikenttä ja punainen voima johtimeen.",
       "sivukuva": "$\\text{Sivukuva}$",
       "ylakuva": "$\\text{Yläkuva}$",
       "lukemat": "<strong>Vaa'an lukema $m = {{m}}\\,\\text{g}$</strong><br>$I = {{I}}\\,\\text{A}$, $\\alpha = {{a}}^\\circ$, $l = {{l}}\\,\\text{cm}$"
@@ -2277,7 +2267,7 @@
       "ulos": "paperista ulos",
       "sisaan": "paperiin sisään",
       "sahko": "Sähkökenttä $E = {{E}}\\,\\text{kV/m}$",
-      "nopeus": "Nopeus",
+      "nopeus": "Animaation nopeus",
       "hidas": "hidas",
       "normaali": "normaali",
       "nopea": "nopea",
@@ -2302,10 +2292,11 @@
       "kappale": "Kappale",
       "magneetti": "neodyymimagneetti",
       "teras": "magnetoimaton teräskappale",
-      "nopeus": "Nopeus",
+      "nopeus": "Animaation nopeus",
       "hidas": "hidas",
       "normaali": "normaali",
       "nopea": "nopea",
+      "selite": "Violetit renkaat ovat pyörrevirtoja, punaiset nuolet kappaleeseen vaikuttavia voimia.",
       "odota": "Paina Pudota.",
       "matkalla": "Kappale putoaa.",
       "perilla": "Kappale on pudonnut putken läpi.",
@@ -2323,7 +2314,7 @@
       "kierrokset": "Kierroksia $N$",
       "kentta": "Magneettikenttä $B = {{B}}\\,\\text{T}$",
       "taajuus": "Pyörimistaajuus $f = {{f}}\\,\\text{Hz}$",
-      "nopeus": "Nopeus",
+      "nopeus": "Animaation nopeus",
       "hidas": "hidas",
       "normaali": "normaali",
       "nopea": "nopea",
@@ -2364,6 +2355,7 @@
       "alue": "Aallonpituusalue",
       "alue_lyhyt": "lyhyet aallonpituudet",
       "alue_pitka": "pitkät aallonpituudet",
+      "selite": "Värikaista on näkyvä valo, katkoviiva osoittaa spektrin huipun aallonpituuden.",
       "lukemat": "<strong>Huippu $\\lambda_\\text{max} = {{l}}\\,\\text{nm}$</strong>, {{a}}<br>$T = {{T}}\\,\\text{K}$ eli $t = {{t}}\\,{}^\\circ\\text{C}$<br>Näkyvän valon osuus säteilytehosta: {{o}}<br>Hehkun väri: {{v}}",
       "huippu_uv": "ultraviolettialueella",
       "huippu_nakyva": "näkyvän valon alueella",
@@ -2388,6 +2380,7 @@
       "lasi": "lasi",
       "timantti": "timantti",
       "tulokulma": "Tulokulma $\\alpha_1 = {{a}}^\\circ$",
+      "selite": "Katkoviiva on rajapinnan normaali; kulmat mitataan siitä.",
       "lukemat": "<strong>$\\alpha_1 = {{a1}}^\\circ$, $\\beta = {{b}}^\\circ$, $\\alpha_2 = {{a2}}^\\circ$</strong><br>$\\sin\\alpha_1 = {{s1}}$, $\\sin\\alpha_2 = {{s2}}$<br>Heijastuva osuus $R = {{R}}\\,\\%$",
       "lukemat_tir": "<strong>$\\alpha_1 = {{a1}}^\\circ$, $\\beta = {{b}}^\\circ$: ei taittunutta sädettä</strong><br>$n_1 \\sin\\alpha_1 = {{p}}$ on suurempi kuin $n_2 = {{n2}}$, joten kaikki valo heijastuu.<br>Heijastuva osuus $R = 100\\,\\%$"
     },
@@ -2407,6 +2400,7 @@
       "kruunu": "kruunulasi",
       "flint": "flinttilasi",
       "vesi": "vesi (ontto prisma)",
+      "selite": "Katkoviivat ovat pintojen normaalit ja tulevan säteen jatke.",
       "kuva_alt": "Pimennetty huone, jossa kapea valkoisen valon kimppu osuu lasiprismaan, hajoaa väreiksi ja osuu oikealla olevaan valkoiseen varjostimeen.",
       "lukemat": "<strong>Poikkeamakulmat: punainen $\\delta_\\text{p} = {{dp}}^\\circ$, violetti $\\delta_\\text{v} = {{dv}}^\\circ$</strong><br>Ero $\\Delta\\delta = {{dd}}^\\circ$<br>Taitekertoimet $n_\\text{p} = {{np}}$ ($656\\,\\text{nm}$), $n_\\text{v} = {{nv}}$ ($405\\,\\text{nm}$)",
       "lukemat_tir": "<strong>Osa väreistä ei pääse ulos prisman toisesta pinnasta, vaan heijastuu takaisin lasiin.</strong><br>Ulos pääsee {{k}} väriä seitsemästä.<br>Taitekertoimet $n_\\text{p} = {{np}}$ ($656\\,\\text{nm}$), $n_\\text{v} = {{nv}}$ ($405\\,\\text{nm}$)"
@@ -3195,67 +3189,7 @@
     "step_tulkinta": "Tehtävän tulkinta",
     "steps_h": "Vaikeat vaiheet",
     "mistakes_h": "Toistuvat virheet",
-    "mistakes_n": "Osui {n} kertaa",
-    "mini_h": "Minikokeet ja harjoituskoe",
-    "mini_item": "{min} min · {pts} p",
-    "mini_exam": "Harjoituskoe",
-    "path_h": "Kertauspolku",
-    "path_len": "Kesto",
-    "path_14": "14 vrk",
-    "path_28": "28 vrk",
-    "path_exam": "Koepäivä",
-    "path_per": "Harjoituspäiviä viikossa",
-    "path_min": "Minuutteja päivässä",
-    "path_mins": "{n} min",
-    "path_save": "Tallenna polku",
-    "path_del": "Poista polku",
-    "path_today": "Tänään",
-    "path_over": "Polku on päättynyt.",
-    "path_note": "Polku pysyy vain tällä laitteella. Se ei lähetä ilmoituksia eikä sähköposteja.",
-    "path_chapters": "luvut {list}",
-    "path_done": "Tehty",
-    "path_all": "Näytä koko polku",
-    "path_one": "Näytä vain tämä viikko"
-  },
-  "koetila": {
-    "eyebrow": "FY9 · Koetila",
-    "mini_lead": "Aikaa {{minutes}} min, pisteitä enintään {{points}} p. Vihjeet, palautteet ja mallivastaukset aukeavat, kun lopetat kokeen.",
-    "nojs": "Koetila tarvitsee JavaScriptin. Ilman sitä sivu ei ole koetilassa, eikä vihjeitä tai mallivastauksia ole lukittu.",
-    "panel_lead": "Koetila: aikaraja, ei vihjeitä eikä mallivastauksia ennen kuin lopetat kokeen.",
-    "title_osa1": "Minikoe 30 min: Osa I",
-    "title_aihe": "Minikoe 30 min: {{name}}",
-    "title_osa2": "Minikoe 60 min: Osa II",
-    "title_aineisto": "Minikoe 60 min: aineisto",
-    "choose_rule": "Valitse {{n}} tehtävää {{m}}:stä ennen kuin vastaat.",
-    "answer_rule": "Vastaa {{n}} kohtaan {{m}}:stä: valitse ne ennen kuin vastaat.",
-    "start": "Aloita koe",
-    "start_task": "Aloita tämä",
-    "choose": "Valitse tämä",
-    "chosen": "Valittu",
-    "pause": "Tauko",
-    "resume": "Jatka",
-    "end": "Lopeta koe",
-    "end_confirm": "Lopetetaanko koe? Vihjeet ja mallivastaukset aukeavat, eikä vastauksia voi enää muuttaa.",
-    "left": "{t} jäljellä",
-    "over": "Aika loppui",
-    "ended_user": "Koe päättyi.",
-    "ended_time": "Aika loppui.",
-    "warn": "Aikaa jäljellä {n} min",
-    "result_h": "Tulos",
-    "points": "Pisteet {got} / {max}",
-    "time_h": "Ajankäyttö",
-    "planned": "Suunniteltu",
-    "used": "Käytetty",
-    "unchosen": "Ei valittu",
-    "not_answered": "Ei vastausta",
-    "again": "Tee uudelleen",
-    "again_confirm": "Aloitetaanko koe alusta? Tämän kokeen tulos poistuu tästä selaimesta.",
-    "nostore": "Koetila ei toimi tässä selaimessa, koska se ei tallenna tietoja (esimerkiksi yksityinen ikkuna).",
-    "min": "{n} min",
-    "res_ok": "Oikein",
-    "res_close": "Lähellä",
-    "res_no": "Väärin",
-    "res_self": "Omat pisteesi"
+    "mistakes_n": "Osui {n} kertaa"
   },
   "mixer": {
     "title": "YO-sekoitin",
@@ -3305,17 +3239,6 @@
     "count": "Näytetään {{n}}",
     "none": "Ei sisältöjä näillä valinnoilla"
   },
-  "kaavat": {
-    "title": "Kaavahakemisto",
-    "lead": "Luvuissa nimetyt kaavat opintojaksoittain, MAFY-taulukoiden nimillä. Linkki vie lukuun, jossa kaava esitetään.",
-    "in": "Luvuissa:",
-    "link": "Kaavahakemisto: luvuissa nimetyt kaavat"
-  },
-  "simulaatiot": {
-    "title": "Simulaatiot",
-    "lead": "Luvut, joissa on simulaatio, opintojaksoittain. Linkki avaa luvun Tutki-vaiheen, jossa simulaatio on.",
-    "link": "Simulaatiot: luvut, joissa on simulaatio"
-  },
   "booklets": {
     "lead": "Tulostettavat A5-vihkot: kunkin opintojakson teoria ja esimerkit yksissä kansissa. Tehtävät, simulaatiot ja malliratkaisut ovat verkossa: jokaisen luvun alussa on QR-koodi lukuun.",
     "download": "Lataa PDF",
@@ -3351,7 +3274,7 @@
     "shot_opettaja-arviointi": "Arviointi tehtävä kerrallaan: tehtävänanto, opiskelijan vastaus ja pisteet 0–1 nuolinäppäimillä."
   },
   "guide": {
-    "_about": "Näin opiskelet -sivu nain-opiskelet.html (teacher 2026-11-08, renewed 2026-11-17): build.py study_guide. steps[] are the six steps of the path diagram (icons and badges in build.py STUDY_STEPS: the numbers are the chapter stage bar's, step 5 covers its 5 and 6); tips[], help[] and ai[] follow STUDY_TIPS, STUDY_HELP and STUDY_AI (ai: the teacher's five principles for studying with AI tools, 2026-11-28); fb_* is the teacher's feedback text, sa_* the self-assessment the chapters have.",
+    "_about": "Näin opiskelet -sivu nain-opiskelet.html (teacher 2026-11-08, renewed 2026-11-17): build.py study_guide. steps[] are the six steps of the path diagram (icons and badges in build.py STUDY_STEPS: the numbers are the chapter stage bar's, step 5 covers its 5 and 6); tips[] and help[] follow STUDY_TIPS and STUDY_HELP; fb_* is the teacher's feedback text, sa_* the self-assessment the chapters have.",
     "title": "Näin opit fysiikkaa",
     "lead": "Fysiikkaa oppii kokeilemalla, pohtimalla, laskemalla ja keskustelemalla. Kaikkea ei tarvitse ymmärtää heti. Tärkeintä on yrittää itse, tarkistaa ja yrittää uudelleen.",
     "description": "Näin opit fysiikkaa Ruukkilabrassa: luvun kuusi vaihetta, tehokkaat opiskelutavat, avun pyytäminen sekä palautteen ja itsearvioinnin hyödyntäminen.",
@@ -3440,29 +3363,6 @@
       {
         "title": "Pyydä apua tarkasti",
         "text": "Kerro, mitä pitää selvittää, mitä olet jo yrittänyt ja mihin kohtaan jäit jumiin. Silloin apua on helppo antaa. Apua saa kysyä heti."
-      }
-    ],
-    "ai_h": "Jos käytät tekoälyä",
-    "ai": [
-      {
-        "title": "Yritä ensin itse",
-        "text": "Piirrä kuva, kirjaa annetut tiedot ja kokeile ratkaista tehtävä, ennen kuin kysyt tekoälyltä. Vasta oma yritys näyttää, mihin kohtaan tarvitset apua."
-      },
-      {
-        "title": "Pyydä vihje, älä valmista ratkaisua",
-        "text": "Kerro, mitä olet jo tehnyt, ja pyydä seuraavaa askelta tai ohjaavaa kysymystä. Jatka sen jälkeen ratkaisua itse."
-      },
-      {
-        "title": "Arvioi vastaus fysiikan tiedoillasi",
-        "text": "Tekoäly voi olla väärässä, vaikka vastaus kuulostaa varmalta. Tarkista periaate, yksiköt ja suuruusluokka, ja vertaa vastausta teoriaan ja malliratkaisuun."
-      },
-      {
-        "title": "Kirjoita perustelut omin sanoin",
-        "text": "Älä kopioi tekoälyn tekstiä. Jos et osaa selittää jotakin vaihetta itse, et ole vielä oppinut sitä."
-      },
-      {
-        "title": "Varmista, että osaat ilman tekoälyä",
-        "text": "Ratkaise lopuksi vastaava tehtävä kokonaan itse. Kokeessa käytössäsi on vain oma osaamisesi."
       }
     ],
     "feedback_h": "Näin hyödynnät palautetta ja arvioit osaamistasi",

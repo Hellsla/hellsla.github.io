@@ -28,7 +28,7 @@ stay in their lesson folders and keep their <id>-sim.js URLs.
 """
 import hashlib, json, os, sys, re, shutil, pathlib, atexit, html as _h, markdown
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent)); from reviews import status as review_status, published_exercises, WorkTree
-import koetila, kaavahakemisto, simulaatiogalleria, media_tips, ahjo, answers_shown, figsize, jaksot, kaavat, kilparobo, lumatutor, assigned, booklets, cardgrid, concept_cards, courses, fbdspec, figcat, guides, i18n, inquiry, investigations, local_courses, mathlayout, mixer, module_icons, practice, reading_tips, stopthink, subpart, svgids, units, tablefit, valmentaja
+import media_tips, ahjo, answers_shown, figsize, jaksot, kaavat, kilparobo, lumatutor, assigned, booklets, cardgrid, concept_cards, courses, fbdspec, figcat, guides, i18n, inquiry, investigations, local_courses, mathlayout, mixer, module_icons, practice, reading_tips, stopthink, svgids, units, tablefit, valmentaja
 from i18n import t as T
 
 ROOT = pathlib.Path(os.environ.get("FYSIIKKALABRA_ROOT") or pathlib.Path(__file__).resolve().parents[1])   # tests build a copy
@@ -47,7 +47,7 @@ if SITE.name == "site.tmp":
 else:
     SITE.mkdir(exist_ok=True)                         # preview/ is shared by agents building at the same time, so it is never wiped
 TPL = ROOT / "templates"
-for f in ("site.css", "lesson.js", "sim-embed.js", "inquiry.js", "selfassess.js", "investigation.js", "invfilter.js", "padstore.js", "palautus.js", "readaloud.js", "kortit.js", "tehty.js", "omaarvio.js", "valmentaja.js", "koetila.js", "jatka.js", "mediafilter.js", "ahjo.js", "lumatutor.js", "offline.js", "kaikki.js", "virhe.js"): shutil.copy(TPL / f, SITE / f)
+for f in ("site.css", "lesson.js", "sim-embed.js", "inquiry.js", "selfassess.js", "investigation.js", "invfilter.js", "padstore.js", "palautus.js", "readaloud.js", "kortit.js", "tehty.js", "omaarvio.js", "valmentaja.js", "jatka.js", "mediafilter.js", "ahjo.js", "lumatutor.js", "offline.js", "kaikki.js"): shutil.copy(TPL / f, SITE / f)
 card_files = concept_cards.publish(SITE)   # site/kortit/<module>.json, read by Käsitetakomo (scripts/concept_cards.py)
 # p5 + KaTeX, no CDN needed. The read-aloud model and onnxruntime-web are not part of the site (teacher 2026-11-04,
 # UI fix 3): they are in the repository Hellsla/ruukkilabra-models, copied into the published site's models/ folder
@@ -442,63 +442,23 @@ def named_sections(html):
     return re.sub(r"<h2>(.*?)</h2>", sub, html)
 
 
-TBL = r"<table>(?:(?!</?table>).)*</table>"
-PAIR = r'<div class="tbl-pair">(?:(?!</?div>).)*</div>'
-PHOTO_FIG = r'<figure class="unit-photo"><img src="(?:pics/[a-z0-9]+|shared/pics)/[^"]+"[^>]*>(?:<figcaption>.*?</figcaption>)?</figure>'
-FIG = re.compile(rf"(<p>(?:(?!</?p>|<svg).)*</p>|{TBL}|{PAIR}|<ul>(?:(?!<ul>).)*?</ul>|<ol>(?:(?!<ol>).)*?</ol>)\s*(<p><svg\b.*?</svg></p>|{PHOTO_FIG})", re.S)
-PULL = re.compile(r'\s*(<p>(?:(?!</?p>|<svg).)*</p>|<h3[^>]*>.*?</h3>|<ul>(?:(?!<ul>).)*?</ul>|<ol>(?:(?!<ol>).)*?</ol>)(?!\s*(?:<p><svg|<figure class="unit-photo"))', re.S)
-SMALL_TABLES = re.compile(rf"({TBL})\s*({TBL})", re.S)
-
-
-def table_pairs(html):
-    """Two small tables in a row (at most 9 rows and 3 columns each; fy3-8 α and γ) are one .tbl-pair: side by side
-    when the column has room for both, one under the other on a phone (teacher 2026-11-13, work queue 8e)."""
-    def small(t): return t.count("<tr") <= 9 and len(re.findall(r"<t[hd]\b", t.split("</tr>")[0])) <= 3
-    def pair(m):
-        return f'<div class="tbl-pair">{m.group(1)}{m.group(2)}</div>' if small(m.group(1)) and small(m.group(2)) else m.group(0)
-    return SMALL_TABLES.sub(pair, html)
+FIG = re.compile(r"(<p>(?:(?!</?p>|<svg).)*</p>|<table>(?:(?!</?table>).)*</table>|<ul>(?:(?!<ul>).)*?</ul>|<ol>(?:(?!<ol>).)*?</ol>)\s*<p>(<svg\b.*?</svg>)</p>", re.S)
 
 
 def fig_rows(html):
-    """A figure or photograph with the paragraph, table or list it explains (NOTES.md §3 puts it right after that
-    block), as one unit: the text first, then its figure (teacher 2026-10-27, "kuvien sijoittelu"). On a wide screen
-    the two stand side by side, the text at the top of the row, when they are about as tall as each other (fig_side).
-    A figure clearly taller than its text takes the paragraphs that follow it into the text column (up to three)
-    until the two are about as tall; if the text is still far shorter, the figure stands under it. A figure under a
-    long text stands under it too. A photograph with its caption stands in the right column the same way (teacher
-    2026-11-13 and 2026-11-14, work queue 8e and 11 U3). After the unit the text runs on in the reading column.
-    On a phone and in print the figure is always under its text."""
-    html = table_pairs(html)
-    out, pos = [], 0
-    while True:
-        m = FIG.search(html, pos)
-        if not m: break
-        out.append(html[pos:m.start()])
-        text, fig, end = m.group(1), m.group(2), m.end()
+    """A figure with the paragraph, table or list it explains (NOTES.md §3 puts it right after that block), as one
+    unit: the text first, then its figure (teacher 2026-10-27, "kuvien sijoittelu"). On a wide screen the two stand
+    side by side only when they are about as tall as each other (fig_side), so neither column is left with a long
+    empty stretch; otherwise the figure stands under its text in the reading column. After the unit the text runs on
+    in the reading column. On a phone and in print the figure is always under its text."""
+    def row(m):
         # inside a closed box (details) site.css always stacks the unit (a grid there squeezed the text, fy3-6, fy7-14),
         # so the class says what is rendered: only a unit outside every box may be .side (fy5-9, fy5-12, 2026-11-20)
-        before = "".join(out)
+        before = html[:m.start()]
         in_box = before.count("<details") > before.count("</details>")
-        # the steps of the worked example run in a narrower column under their problem (site.css .example; a grid there gave 298 px to the text): the unit stands stacked
-        in_box = in_box or re.search(rf"<h2[^>]*>{re.escape(T('sections.Esimerkki'))}</h2>(?:(?!<h2).)*\Z", before, flags=re.S) is not None
-        side = False
-        if not in_box:
-            h, more = fig_height(fig), ""
-            for _ in range(4):
-                if h and text_height(text + more) / h >= 0.6: break
-                nxt = PULL.match(html, end)
-                if not nxt: break
-                more, end = more + nxt.group(1), nxt.end()
-            side = fig_side(text + more, fig)
-            if not side:
-                more, end = "", m.end()
-        else: more = ""
-        # the paragraphs a tall figure takes in stand after the figure in the source (fig-more), so a phone reads text, figure, more
-        out.append(f'<div class="fig-row {"side" if side else "stack"}"><div class="fig-text">{text}</div><div class="fig">{fig}</div>'
-                   + (f'<div class="fig-more">{more}</div>' if more else "") + '</div>')
-        pos = end
-    out.append(html[pos:])
-    return "".join(out)
+        side = not in_box and fig_side(m.group(1), m.group(2))
+        return f'<div class="fig-row {"side" if side else "stack"}"><div class="fig-text">{m.group(1)}</div><div class="fig">{m.group(2)}</div></div>'
+    return FIG.sub(row, html)
 
 
 SIDE_FIG = 26 * 16          # px: the figure column of a side-by-side unit (site.css .fig-row.side)
@@ -507,32 +467,18 @@ LINE, CHARS = 18 * 1.6, 72  # px per line and characters per line of the 38rem t
 
 def text_height(html):
     """About how tall a block of text is in the reading column: its characters over the line length, maths counted
-    by a third of its source, a table row 42 px, a list item a little extra for its spacing, a heading its line and
-    its space. Two tables side by side are as tall as the taller one."""
-    maths = sum(len(re.sub(r"\\[a-zA-Z]+|[{}\\_^$]", "", x)) * 3 for x in re.findall(r"\$[^$]*\$", html))   # a formula as long as it prints (commands and braces take no room), /3 below: it also takes less than the same number of letters
+    by a third of its source, a table row 42 px, a list item a little extra for its spacing."""
+    maths = sum(len(x) for x in re.findall(r"\$[^$]*\$", html))
     plain = re.sub(r"<[^>]+>", " ", re.sub(r"\$[^$]*\$", "", html))
-    rows = max((t.count("<tr") for t in re.findall(TBL, html, flags=re.S)), default=0) if "tbl-pair" in html else html.count("<tr")
-    return ((len(" ".join(plain.split())) + maths / 3) / CHARS * LINE + rows * 42 + html.count("<li") * LINE * 0.4
-            + html.count("<h3") * 40 + html.count("<p>") * 0.4 * LINE + html.count("$$") // 2 * 50)
+    return (len(" ".join(plain.split())) + maths / 3) / CHARS * LINE + html.count("<tr") * 42 + html.count("<li") * LINE * 0.4
 
 
-def fig_height(fig):
-    """The height of a figure in the 26 rem figure column: an SVG from its viewBox, a photograph from the size in
-    photos.json with its caption (about 55 characters a line) and credit."""
-    if fig.startswith("<figure"):
-        ref = re.search(r'src="([^"]+)"', fig).group(1)
-        c = photo_credits(ref)
-        cap = re.sub(r"<[^>]+>", "", (re.search(r"<figcaption>(.*?)</figcaption>", fig, flags=re.S) or [0, ""])[1])
-        return min(224, 384 * c["height"] / c["width"]) + (len(cap) / 42 + 2) * 21   # site.css figure.unit-photo: image at most 14 rem tall, 20 rem wide caption
-    vb = re.search(r'viewBox="[\d.\s-]*?([\d.]+)\s+([\d.]+)"', fig)
-    return SIDE_FIG * float(vb.group(2)) / float(vb.group(1)) + 24 if vb else 0   # + the figure's frame (padding, border, the animation button)
-
-
-def fig_side(text_html, fig):
-    """Side by side only when the text and the figure are of a similar height (0.55 to 1.3 times, measured against pages at 1280 and 1920 px; a photograph with its
-    caption may be taller, 0.5: its caption belongs under it and a column of text beside it is enough)."""
-    h = fig_height(fig)
-    return bool(h) and (0.5 if fig.startswith("<figure") else 0.55) <= text_height(text_html) / h <= 1.3
+def fig_side(text_html, svg):
+    """Side by side only when the text and the figure are of a similar height (0.6 to 1.5 times)."""
+    vb = re.search(r'viewBox="[\d.\s-]*?([\d.]+)\s+([\d.]+)"', svg)
+    if not vb: return False
+    fig_h = SIDE_FIG * float(vb.group(2)) / float(vb.group(1))
+    return 0.6 <= text_height(text_html) / fig_h <= 1.5
 
 
 PHOTO = re.compile(r'<figure class="unit-photo( wide)?"><img src="((?:pics/[a-z0-9]+|shared/pics)/[^"]+)"([^>]*)>(?:<figcaption>(.*?)</figcaption>)?</figure>', re.S)
@@ -671,8 +617,6 @@ def front_chrome(html):
     return html
 
 
-SIM_PAGE = None   # "simulaatiot.html" likewise (17f PR 2)
-FORMULA_PAGE = None   # "kaavat.html" while a language's formula index is being built (build_language sets it; K9 links)
 STUDY_ID = "nain-opiskelet"
 STUDY_PAGE = STUDY_ID + ".html"   # a page of its own (teacher 2026-11-04: Lukuvinkit only the books, Näin opiskelet only the study tips)
 
@@ -704,7 +648,6 @@ STUDY_ICONS = {
 STUDY_STEPS = [("herata", "1"), ("ennusta", "2"), ("tutki", "3"), ("selita", "4"), ("sovella", "5–6"), ("tarkista", "7")]
 STUDY_TIPS = ["recall", "spaced", "mix", "fade", "explain", "errors", "graph", "draw"]   # lang guide.tips in this order
 STUDY_HELP = ["draw", "theory", "talk", "together"]                                       # lang guide.help in this order
-STUDY_AI = ["draw", "hint", "errors", "explain", "fade"]                                  # lang guide.ai in this order (teacher 2026-11-28)
 STUDY_FEEDBACK = ["hint", "errors", "retry", "graph"]                                     # lang guide.feedback in this order
 
 
@@ -717,9 +660,8 @@ def study_guide():
     """Näin opit fysiikkaa, nain-opiskelet.html (teacher 2026-11-08, renewed 2026-11-17: "Näin opiskelet -sivun pedagoginen
     ja visuaalinen kehittäminen"): three parts. 1 Näin Ruukkilabrassa opiskellaan: the six steps as one diagram (an <ol>
     of six steps with line icons and arrows, 3 x 2 on a wide column, 2 x 3 on a phone) and the feedback loop under it; the
-    chapter's stage numbers are the badges. 2 Näin opit tehokkaammin: eight study tips, a short help list (problem
-    solving together, asking for help) and five principles for studying with AI tools (teacher 2026-11-28: try first, ask
-    for hints, judge the answer, own words, manage without). 3 Näin hyödynnät palautetta ja arvioit osaamistasi: the teacher's feedback (written
+    chapter's stage numbers are the badges. 2 Näin opit tehokkaammin: eight study tips and a short help list (problem
+    solving together, asking for help). 3 Näin hyödynnät palautetta ja arvioit osaamistasi: the teacher's feedback (written
     so that it holds for any teacher) and the self-assessment the chapters have. No promise of a step or a feature the
     chapters lack (lesson.html, inquiry stages)."""
     g = lambda k: T("guide." + k)
@@ -737,12 +679,8 @@ def study_guide():
             f'<div class="path-loop">{study_icon("retry")}<div><h3>{esc(g("loop_title"))}</h3><p>{esc(g("loop_text"))}</p></div></div>'
             f'<p class="path-core">{esc(g("core_text"))}</p></section>'
             f'<section class="study-sec" id="vinkit" aria-labelledby="h-learn"><h2 id="h-learn">{esc(g("learn_h"))}</h2>'
-            f'<p class="section-lead">{esc(g("learn_lead"))}</p>'
-            + (f'<p class="study-more"><a href="{FORMULA_PAGE}">{esc(T("kaavat.link"))}</a></p>' if FORMULA_PAGE else "")
-            + (f'<p class="study-more"><a href="{SIM_PAGE}">{esc(T("simulaatiot.link"))}</a></p>' if SIM_PAGE else "")
-            + f'{items("study-tips", STUDY_TIPS, "tips")}'
-            f'<h3 class="study-sub" id="jumissa">{esc(g("help_h"))}</h3>{items("study-tips study-help", STUDY_HELP, "help")}'
-            f'<h3 class="study-sub" id="tekoaly">{esc(g("ai_h"))}</h3>{items("study-tips study-help", STUDY_AI, "ai")}</section>'
+            f'<p class="section-lead">{esc(g("learn_lead"))}</p>{items("study-tips", STUDY_TIPS, "tips")}'
+            f'<h3 class="study-sub" id="jumissa">{esc(g("help_h"))}</h3>{items("study-tips study-help", STUDY_HELP, "help")}</section>'
             f'<section class="study-sec" id="palaute" aria-labelledby="h-feedback"><h2 id="h-feedback">{esc(g("feedback_h"))}</h2>'
             f'<p class="section-lead">{esc(g("feedback_lead"))}</p>'
             f'<div class="study-two"><div><h3>{esc(g("fb_h"))}</h3><p>{esc(g("fb_text"))}</p>'
@@ -893,8 +831,7 @@ def exercise_html(e, solution_html, read=None, core=False, num=None, level=None)
     if numeric:
         unit = esc(e.get("unit", ""))
         st = answers_shown.step(ans.strip("$"), e["answer"]) if ans.startswith("$") else None   # one unit in the shown answer's last digit; the check allows half of it
-        check = (f'<form class="check" data-answer="{e["answer"]}" data-tol="{e.get("tolerance", 0.02)}" data-unit="{unit}"' + (f' data-step="{st:g}"' if st else "") + (' data-exact="1"' if e.get("exact") else "") + subpart.attrs(e["text"])
-                 + (f" data-mistakes='{esc(json.dumps(e['mistakes'], ensure_ascii=False))}'" if e.get("mistakes") else "") + ' novalidate>'
+        check = (f'<form class="check" data-answer="{e["answer"]}" data-tol="{e.get("tolerance", 0.02)}"' + (f' data-step="{st:g}"' if st else "") + ' novalidate>'
                  f'<input type="text" inputmode="decimal" autocomplete="off" enterkeyhint="done" aria-label="{esc(inquiry.answer_label(e.get("unit", "")))}" aria-describedby="{esc(e["id"])}-q" placeholder="?">'
                  + (f'<span class="unit">{unit}</span>' if unit else "")
                  + f'<button type="submit">{T("lesson.check")}</button><output aria-live="polite"></output></form>')
@@ -949,7 +886,6 @@ def copy_pics(who, texts):
     for ref in courses.pic_refs_in(texts):
         if not courses.pic_source(ref).is_file(): sys.exit(f"{who}: picture {ref} not found (expected assets/{ref})")
         (SITE / ref).parent.mkdir(parents=True, exist_ok=True); shutil.copy(courses.pic_source(ref), SITE / ref); assets.append(ref)
-UNIT_PAGES = {}  # {(language, unit id): the unit page's html before rebase()}, for the minikoe pages (scripts/koetila.py)
 expected = []  # pages every language must have written
 removed = []   # lessons on the live site that this build leaves out
 
@@ -1231,8 +1167,6 @@ def build_units(lang, out, unit_pub):
         if not tasks_html:
             for key in ("check_practice", "further_practice"):   # a unit without tasks has no exercises section: point to the theory summary only
                 body = body.replace(T(f"inquiry.{key}"), re.sub(r'(,| and)[^<]*<a href="#exercises">[^<]*</a>', "", T(f"inquiry.{key}")))
-        kspec = koetila.exam_spec(valmentaja.build(lang, unit_pub)) if uid == koetila.EXAM_UNIT else None   # the practice exam's optional exam mode (11b PR 6)
-        if kspec: body = body.replace('<section class="stage"', koetila.start_panel(T, kspec) + '<section class="stage"', 1)
         tail = units.tail_html(uid, lang, T, md, teacher=bool(only or build_all))   # sources and teacher notes: previews only
         if "id=\"sources\"" in tail: toc += f'<a href="#sources" class="toc-end"><span class="toc-label">{T("units.sources")}</span></a>'
         cdir = ROOT / "assets" / "units" / code.lower()
@@ -1252,13 +1186,12 @@ def build_units(lang, out, unit_pub):
         html = (texts(tpl).replace("{{title}}", esc(d["title"])).replace("{{course}}", code).replace("{{notice}}", notice_html)
                 .replace("{{strings}}", block + head).replace("{{back_to_course}}", esc(T("site.back_to_course", course=code)))
                 .replace("{{toc}}", toc).replace("{{main}}", f'<article id="teoria" class="inquiry unit unit-{d["kind"]}" data-course="{code.lower()}">{body}{units.course_nav(uid, lang, T, published)}{tail}</article>' + embedded)   # Previous / Next before the credits (teacher 2026-11-06)
-                .replace("{{scripts}}", f'<script src="inquiry.js"></script>' + ('<script src="selfassess.js"></script>' if tasks_html else "") + ('<script src="koetila.js"></script>' if kspec else "")
+                .replace("{{scripts}}", f'<script src="inquiry.js"></script>' + ('<script src="selfassess.js"></script>' if tasks_html else "")
                          + (f'<script src="units/{code.lower()}/units.js"></script>' if cdir.is_dir() else "")
                          + (f'<script src="valmentaja.js" data-t="{valmentaja.unit_json(T)}"></script>' if code == "FY9" else "")   # the evidence log of the FY9 coach (work queue 11b PR 3; invisible)
                          + (submission_script(lang, uid) if tasks_html else ""))
                 .replace("{{description}}", esc(d["description"])).replace("{{url}}", URL + f"{uid}.html")
                 .replace("{{languages}}", languages_nav(f"{uid}.html") if len(unit_pub[uid]) > 1 else ""))   # a unit in one language has none
-        UNIT_PAGES[(lang, uid)] = html                   # before rebase: the minikoe pages cut their cards out of it (scripts/koetila.py)
         (out / f"{uid}.html").write_text(rebase(html))
         print("built", uid, f"({st['state']})")
 
@@ -1636,25 +1569,9 @@ def build_language(lang):
         cindex = valmentaja.build(lang, unit_pub)
         if cindex["units"]:
             crumb = f' › <a href="{mcode}.html">{mcode}</a>' if mcode in local else ""
-            chapters = {n: c["title"] for n, c in enumerate((local.get(mcode) or local_courses.load()[mcode])["chapters"], 1)}
-            (out / valmentaja.PAGE).write_text(page(T("coach.title"), valmentaja.page_body(T, cindex, f"{mcode}.html", lang, koetila.mini_titles(T, cindex, chapters)),
+            (out / valmentaja.PAGE).write_text(page(T("coach.title"), valmentaja.page_body(T, cindex, f"{mcode}.html", lang),
                                                     f'<a href="index.html">{T("site.name")}</a>{crumb} › {T("coach.title")}', valmentaja.PAGE, T("coach.description"), main_class="reading coach-page"))
             mixer_built.append(valmentaja.PAGE)
-            by_id = {t["id"]: t for t in cindex["tasks"]}
-            pages = {u: UNIT_PAGES[(lang, u)] for u in {x["id"] for x in cindex["units"]} if (lang, u) in UNIT_PAGES}
-            for m in cindex["minikokeet"]:           # the minikoe pages (scripts/koetila.py, 11b PR 6): the fixed sets, cut out of the unit pages above
-                made = koetila.page_body(T, m, by_id, pages, chapters)
-                if not made: continue
-                kname, ktitle = koetila.page_name(m["id"]), koetila.title_of(T, m, chapters)
-                crumb = f' › <a href="{mcode}.html">{mcode}</a>' if mcode in local else ""
-                (out / kname).write_text(rebase(texts(tpl).replace("{{title}}", esc(ktitle)).replace("{{course}}", mcode).replace("{{notice}}", "")
-                    .replace("{{strings}}", strings_block(None)).replace("{{back_to_course}}", esc(T("site.back_to_course", course=mcode)))
-                    .replace("{{toc}}", made[1]).replace("{{main}}", f'<article id="teoria" class="inquiry practice exam kt-page">{made[0]}</article>')
-                    .replace("{{scripts}}", '<script src="inquiry.js"></script><script src="selfassess.js"></script><script src="koetila.js"></script>'
-                             f'<script src="valmentaja.js" data-t="{valmentaja.unit_json(T)}"></script>')
-                    .replace("{{description}}", esc(T("koetila.mini_lead", minutes=m["minutes"], points=m["points"]))).replace("{{url}}", URL + kname)
-                    .replace("{{languages}}", "")))
-                mixer_built.append(kname)
     if lang in valmentaja.languages():           # the FY9 task index (scripts/valmentaja.py, work queue 11b PR 2): data for a later page, no page of its own
         vf = valmentaja.write(lang, out, unit_pub)
         if vf: expected.append((out.relative_to(SITE) / vf).as_posix())
@@ -1693,34 +1610,10 @@ def build_language(lang):
         + '</div></div></section>')
     (out / "index.html").write_text(front_chrome(page(T("site.home_title"), home, "", "index.html", T("site.home_description"), main_class="home",
                                          full_title=f'{T("site.name")} — {T("site.subtitle")}')))
-    # Kaavahakemisto (work queue 17f PR 1, scripts/kaavahakemisto.py): the MAFY-named formulas of docs/*/kaavanimet.tsv, linked to
-    # the chapters and units this language publishes; linked from Käsitteet and Näin opiskelet (K9), not from the menu
-    kaava_pub = {}
-    for code, _ in modules:
-        kaava_pub.update({cid: (title, f"{cid}.html") for cid, title in chapter_titles(code, built_ids).items()})
-    for u, ls in unit_pub.items():
-        ul = lang if lang in ls else units.lang_of(u) if units.lang_of(u) in ls else None
-        if ul: kaava_pub[u] = (units.load(u, ul)["title"], os.path.relpath(OUTS[ul] / f"{u}.html", out).replace(os.sep, "/"))
-    kaava_titles = {c: t["title"] for c, t in modules}
-    kaava_titles.update({c: v["title"] for c, v in local.items()})
-    kaava_mods = kaavahakemisto.collect(lang, kaava_pub, kaava_titles)
-    global FORMULA_PAGE
-    FORMULA_PAGE = kaavahakemisto.PAGE if kaava_mods else None
-    if kaava_mods:
-        (out / kaavahakemisto.PAGE).write_text(page(T("kaavat.title"), kaavahakemisto.body(T, kaava_mods), f'<a href="index.html">{T("site.name")}</a> › {esc(T("kaavat.title"))}',
-                                                    kaavahakemisto.PAGE, T("kaavat.lead"), main_class="reading kaava-page"))
-    # Simulaatiogalleria (work queue 17f PR 2, scripts/simulaatiogalleria.py): every published chapter with a simulation, linked to its
-    # Tutki stage; linked from Käsitteet and Näin opiskelet (K9), not from the menu
-    sim_mods = simulaatiogalleria.collect(modules, built_ids, simulaatiogalleria.sim_ids(courses.lessons()))
-    global SIM_PAGE
-    SIM_PAGE = simulaatiogalleria.PAGE if sim_mods else None
-    if sim_mods:
-        (out / simulaatiogalleria.PAGE).write_text(page(T("simulaatiot.title"), simulaatiogalleria.body(T, sim_mods), f'<a href="index.html">{T("site.name")}</a> › {esc(T("simulaatiot.title"))}',
-                                                        simulaatiogalleria.PAGE, T("simulaatiot.lead"), main_class="reading kaava-page sim-page"))
     # Käsitetakomo (teacher 2026-11-03, scripts/concept_cards.py): every module's cards, topics and the student's own deck
     if concept_cards.modules(concept_cards.data_lang(lang)):
         names = {c: course_text(c, curriculum[c])["title"] for c in concept_cards.modules(concept_cards.data_lang(lang))}
-        (out / concept_cards.APP).write_text(page(T("cards.app_title"), concept_cards.app_page_body(T, lang, names, {k: v for c in names for k, v in chapter_titles(c).items()}, FORMULA_PAGE, SIM_PAGE),
+        (out / concept_cards.APP).write_text(page(T("cards.app_title"), concept_cards.app_page_body(T, lang, names, {k: v for c in names for k, v in chapter_titles(c).items()}),
                                              f'<a href="index.html">{T("site.name")}</a> › {T("cards.app_title")}', concept_cards.APP, T("cards.app_description"), main_class="reading kc-app-page"))
     # Lukuvinkit (teacher 2026-11-03, scripts/reading_tips.py): a reading list of physics books, linked from every header (not the footer, teacher 2026-11-04)
     rt = reading_tips.load(lang) if reading_tips.SOURCE.is_file() else None
@@ -1850,7 +1743,7 @@ link_languages()
 i18n.set_lang(i18n.SOURCE)
 # Cache busting (teacher 2026-11-03: a page fetched just after a deploy showed new HTML with yesterday's cached site.css):
 # every link to a shared stylesheet or script carries ?v=<first 8 hex of its SHA-256>, so a changed file is a new URL.
-SHARED = ("site.css", "lesson.js", "sim-embed.js", "inquiry.js", "selfassess.js", "investigation.js", "invfilter.js", "padstore.js", "palautus.js", "readaloud.js", "kortit.js", "tehty.js", "omaarvio.js", "valmentaja.js", "koetila.js", "jatka.js", "ahjo.js", "lumatutor.js", "offline.js", "kaikki.js", "virhe.js")
+SHARED = ("site.css", "lesson.js", "sim-embed.js", "inquiry.js", "selfassess.js", "investigation.js", "invfilter.js", "padstore.js", "palautus.js", "readaloud.js", "kortit.js", "tehty.js", "omaarvio.js", "valmentaja.js", "jatka.js", "ahjo.js", "lumatutor.js", "offline.js", "kaikki.js")
 _ver = {f: hashlib.sha256((SITE / f).read_bytes()).hexdigest()[:8] for f in SHARED if (SITE / f).is_file()}
 # Service worker (work queue 17a PR 1): site/sw.js at the root covers the language folders too. Its text carries the hash of the shared
 # files, so a new release is a new worker. FL_SW_KILL=1 publishes the self-removing worker instead (docs/audits/2026-11-15-kehitys-ilman-kirjautumista.md).
@@ -1867,7 +1760,7 @@ for _page in SITE.rglob("*.html"):
     if 'class="kc-item"' in _new: _new = tablefit.kc_items(_new, re.search(r'<html[^>]*\blang="fi\b', _new[:400]) is not None)   # the card list without scripts (work queue 8d)
     if _new != _old: _page.write_text(_new)
 if SITE.name == "site.tmp":                      # check the render, then swap it in; the old site comes back if the swap fails
-    expected += ["site.css", "lesson.js", "sim-embed.js", "inquiry.js", "selfassess.js", "investigation.js", "invfilter.js", "padstore.js", "palautus.js", "readaloud.js", "kortit.js", "tehty.js", "omaarvio.js", "valmentaja.js", "koetila.js", "jatka.js", "ahjo.js", "lumatutor.js", "offline.js", "kaikki.js", "virhe.js", "sw.js"] + [("" if l == i18n.SOURCE else l + "/") + "manifest.webmanifest" for l in LANGS] + card_files + assets
+    expected += ["site.css", "lesson.js", "sim-embed.js", "inquiry.js", "selfassess.js", "investigation.js", "invfilter.js", "padstore.js", "palautus.js", "readaloud.js", "kortit.js", "tehty.js", "omaarvio.js", "valmentaja.js", "jatka.js", "ahjo.js", "lumatutor.js", "offline.js", "kaikki.js", "sw.js"] + [("" if l == i18n.SOURCE else l + "/") + "manifest.webmanifest" for l in LANGS] + card_files + assets
     broken = [n for n in expected if not (SITE / n).is_file() or (SITE / n).stat().st_size == 0]
     if broken or not (SITE / "vendor").is_dir(): sys.exit(f"build check failed, site/ left unchanged: missing or empty {broken or ['vendor/']}")
     old = ROOT / "site.old"

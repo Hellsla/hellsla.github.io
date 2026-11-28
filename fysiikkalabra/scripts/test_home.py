@@ -160,11 +160,8 @@ for lang in i18n.languages():
            and nums == ["1", "2", "3", "4", "5–6", "7"] and len(stages) == 7, nums)
     expect(f"{lang}: the feedback loop sits under the path; the path is not repeated as a text list",
            'class="path-loop"' in main_sp and main_sp.find('class="path-loop"') > main_sp.find('class="study-path"') and 'study-steps' not in main_sp and 'stuck-map' not in main_sp)
-    ai = re.search(r'<h3 class="study-sub" id="tekoaly">[^<]+</h3><ul class="study-tips study-help">(.*?)</ul>', main_sp, re.S)
-    expect(f"{lang}: five principles for studying with AI tools under the help list (teacher 2026-11-28), no link to any AI service",
-           bool(ai) and ai.group(1).count('<li><svg class="study-icon"') == 5 and "<a " not in ai.group(1) and main_sp.find('id="tekoaly"') > main_sp.find('id="jumissa"'))
-    expect(f"{lang}: eight study tips, four help items and five AI principles, then feedback and self-assessment side by side, and the link to the front page's module list",
-           main_sp.split('class="study-tips"', 1)[-1].count('<li><svg class="study-icon"') == 17 and 'class="study-two"' in main_sp and '<a class="study-cta" href="index.html#moduulit">' in main_sp)
+    expect(f"{lang}: eight study tips and four help items, then feedback and self-assessment side by side, and the link to the front page's module list",
+           main_sp.split('class="study-tips"', 1)[-1].count('<li><svg class="study-icon"') == 12 and 'class="study-two"' in main_sp and '<a class="study-cta" href="index.html#moduulit">' in main_sp)
     expect(f"{lang}: the page promises no weekly points or login: feedback is 'may', no scoring system (teacher 2026-11-17)",
            'viikoittai' not in main_sp.lower() and 'weekly' not in main_sp.lower())
     expect(f"{lang}: every page's header links Näin opiskelet; on its own page it is marked current (teacher 2026-11-08)",
@@ -297,26 +294,6 @@ for lang in i18n.languages():
     missing = [n for n in got_bk if not (SITE / booklets.PUBLISHED / n).is_file()]
     expect(f"{lang} {booklets.PAGE}: every listed PDF is on the site", not missing, missing)
     expect(f"{lang} {booklets.PAGE}: pages shown for every book", all(T("booklets.meta", pages=e["pages"], size="X").split("X")[0] in _h.unescape(bp) for _, _, e, _ in want_bk))
-    # Kaavahakemisto (work queue 17f PR 1, scripts/kaavahakemisto.py): kaavat.html lists only formulas with a name, each with links to
-    # pages this language publishes; Käsitteet and Näin opiskelet link it; no header or menu entry (K9)
-    kp = (out / "kaavat.html").read_text() if (out / "kaavat.html").is_file() else ""
-    expect(f"{lang}: kaavat.html exists", bool(kp))
-    kl = re.findall(r'<p class="kaava-luvut">.*?</p>', kp, re.S)
-    dead = [h for l in kl for h in re.findall(r'href="([^"#]+)"', l) if not (out / h).resolve().is_file()]
-    expect(f"{lang} kaavat.html: every formula has a chapter link and every link opens a built page", kl and all('href="' in l for l in kl) and not dead, dead[:5])
-    expect(f"{lang} kaavat.html: every formula row has a name and a formula", kp.count('class="kaava-rivi"') == kp.count("<dt>") and "$$" in kp)
-    for pg_ in ("kasitteet.html", "nain-opiskelet.html"):
-        if (out / pg_).is_file(): expect(f"{lang} {pg_}: links the formula index", 'href="kaavat.html"' in (out / pg_).read_text())
-    expect(f"{lang}: no header or menu link to kaavat.html", 'href="kaavat.html"' not in re.search(r'<header class="top">.*?</header>', kp, re.S).group(0))
-    # Simulaatiogalleria (work queue 17f PR 2): every tile opens a built chapter page at its Tutki stage, where the simulation is
-    sp = (out / "simulaatiot.html").read_text() if (out / "simulaatiot.html").is_file() else ""
-    expect(f"{lang}: simulaatiot.html exists", bool(sp))
-    tl = re.findall(r'<li class="live ch-card"[^>]*>.*?href="([^"]+)"', sp, re.S)
-    bad = [h for h in tl if not (out / h.split("#")[0]).is_file() or not h.endswith("#tutki") or 'id="sim-root"' not in (out / h.split("#")[0]).read_text()]
-    expect(f"{lang} simulaatiot.html: every tile opens a built chapter with a simulation at its Tutki stage", tl and not bad, bad[:5])
-    for pg_ in ("kasitteet.html", "nain-opiskelet.html"):
-        if (out / pg_).is_file(): expect(f"{lang} {pg_}: links the simulation gallery", 'href="simulaatiot.html"' in (out / pg_).read_text())
-    expect(f"{lang}: no header or menu link to simulaatiot.html", 'href="simulaatiot.html"' not in re.search(r'<header class="top">.*?</header>', sp, re.S).group(0))
 
 # Käsitetakomo (teacher 2026-11-03, scripts/concept_cards.py): the cards come to the chapter
 import concept_cards
@@ -466,29 +443,6 @@ with sync_playwright() as pw:
         for i in range(3):    # three 'Osasin' in a row, one per visit (the card comes back first on a reload)
             pg.reload(); pg.wait_for_timeout(300); pg.click("details.kc-fold > summary"); pg.click(card + " .kc-face"); pg.wait_for_timeout(500); pg.click(card + " .kc-good")
         e = st(); expect(f"{lid}: three 'Osasin' in a row take it out of the deck", bool(e) and e["tila"] == "osasin" and e["osasinPutki"] == 3, e)
-        # scheduled review (work queue 17d PR 1, K7): the card comes back after 5, 10 and 20 days, one "Osasin" per step
-        day = 86400000
-        days_ahead = lambda e: (e["era"] - pg.evaluate("Date.now()")) / day   # whole local days: an hour of DST slack either side
-        expect(f"{lid}: a card taken out of the deck is due in 5 days (porras 0, era a local midnight)", e.get("porras") == 0 and 3.9 <= days_ahead(e) <= 5.1, e)
-        pg.reload(); pg.wait_for_timeout(300); pg.click("details.kc-fold > summary")
-        expect(f"{lid}: before the due day the card is not in the deck", pg.evaluate(f"!document.querySelector('{card}')?.classList.contains('in-deck')"))
-        for step, (want, lo, hi) in enumerate([(1, 9, 10), (2, 19, 20), (None, 0, 0)]):
-            pg.evaluate(f"(() => {{ const k = JSON.parse(localStorage.getItem('ruukkilabra:kortit')); k['{first}'].era = Date.now() - 1000; localStorage.setItem('ruukkilabra:kortit', JSON.stringify(k)); }})()")
-            pg.reload(); pg.wait_for_timeout(300); pg.click("details.kc-fold > summary")
-            expect(f"{lid}: step {step + 1}: a card whose day has come is in the deck again", pg.evaluate(f"document.querySelector('{card}')?.classList.contains('in-deck')"))
-            pg.click(card + " .kc-face"); pg.wait_for_timeout(500); pg.click(card + " .kc-good")
-            e = st()
-            if want:
-                expect(f"{lid}: step {step + 1}: one 'Osasin' moves it to porras {want}, due in {lo}-{hi} days", e["tila"] == "osasin" and e["porras"] == want and lo - 0.1 <= days_ahead(e) <= hi + 0.1, e)
-            else:
-                expect(f"{lid}: after the last step (20 days) the card stays out for good", e["tila"] == "osasin" and "porras" not in e and "era" not in e, e)
-        pg.evaluate(f"(() => {{ const k = JSON.parse(localStorage.getItem('ruukkilabra:kortit')); k['{first}'] = {{tila: 'osasin', osasinPutki: 3, porras: 1, era: Date.now() - 1000, muokattu: 1}}; localStorage.setItem('ruukkilabra:kortit', JSON.stringify(k)); }})()")
-        pg.reload(); pg.wait_for_timeout(300); pg.click("details.kc-fold > summary")
-        pg.click(card + " .kc-face"); pg.wait_for_timeout(500); pg.click(card + " .kc-again")
-        e = st(); expect(f"{lid}: 'Kertaa myöhemmin' on a returned card starts from the beginning (no porras, no era)", e["tila"] == "kertaa" and e["osasinPutki"] == 0 and "porras" not in e and "era" not in e, e)
-        pg.evaluate(f"(() => {{ const k = JSON.parse(localStorage.getItem('ruukkilabra:kortit')); k['{first}'] = {{tila: 'osasin', osasinPutki: 3, muokattu: 1}}; localStorage.setItem('ruukkilabra:kortit', JSON.stringify(k)); }})()")
-        pg.reload(); pg.wait_for_timeout(300); pg.click("details.kc-fold > summary")
-        expect(f"{lid}: a card taken out before this change (no porras) is never scheduled", pg.evaluate(f"!document.querySelector('{card}')?.classList.contains('in-deck')"))
         term = "#selita .kc-term-btn >> nth=0"
         pg.locator(term).scroll_into_view_if_needed(); pg.click(term); pg.wait_for_timeout(50)
         opened = pg.evaluate("!!document.querySelector('.kc-pop') && document.querySelector('#selita .kc-term-btn').getAttribute('aria-expanded') === 'true'")
