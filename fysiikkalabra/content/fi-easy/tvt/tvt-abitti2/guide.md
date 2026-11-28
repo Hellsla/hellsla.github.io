@@ -2,40 +2,40 @@ Ylioppilaskokeen koejärjestelmä on Abitti 2. Siinä on omat ohjelmat, joilla v
 
 ## Mihin tarvitset tätä
 
-Fysiikan kokeessa kuvaaja, taulukko tai pitkä lasku tehdään koneella. Vastaus kirjoitetaan koejärjestelmän vastauskenttään eli kenttään, johon vastaus kirjoitetaan. Koetilassa ei ehdi opetella työkaluja, joten tutustu niihin etukäteen. Ohje on koottu YTL:n ja Abitin omista sivuista. Lähteet ja lukupäivä ovat ohjeen lopussa. Ohje ei korvaa niitä, koska koejärjestelmä päivittyy eli muuttuu uudemmaksi.
+Fysiikan kokeessa kuvaaja, taulukko tai pitkä lasku tehdään koneella. Vastaus kirjoitetaan koejärjestelmän vastauskenttään eli kenttään, johon vastaus kirjoitetaan. Koetilassa ei ehdi opetella työkaluja, joten tutustu niihin etukäteen. Ohje on koottu YTL:n ja Abitin omista sivuista. Lähteet ja lukupäivä ovat ohjeen lopussa. Ohje ei korvaa YTL:n ja Abitin sivuja, koska koejärjestelmä päivittyy eli muuttuu uudemmaksi.
 
 ## Työvaiheet
 
-1. **Tarkista, mikä koejärjestelmä on käytössä.** YTL kertoo, että Abitti 2 otetaan käyttöön ylioppilaskokeissa syksyn 2026 tutkinnosta alkaen. YTL kertoo myös, että 16.4.2026 alkaen Abitti 2 on ainoa koejärjestelmä, jolla harjoitellaan (YTL, päivitetty 14.8.2026). Harjoituskokeiden ohjeet saat omalta lukioltasi.
+1. **Tarkista, mikä koejärjestelmä on käytössä.** YTL kertoo, että Abitti 2 on otettu käyttöön ylioppilaskokeissa syksyn 2026 tutkinnosta alkaen. YTL kertoo myös, että 16.4.2026 alkaen Abitti 2 on ainoa koejärjestelmä, jolla harjoitellaan (YTL, päivitetty 14.8.2026). Harjoituskokeiden ohjeet saat omalta lukioltasi.
 
 2. **Katso, mitä ohjelmia koejärjestelmässä on.** Ohjelmat löytyvät koeympäristön sovellusvalikosta. Alla ovat fysiikan kannalta tärkeimmät ohjelmat YTL:n luettelosta (päivitetty 27.11.2026). Koejärjestelmän käyttö ei vaadi ohjelmien ostamista eikä lisenssin hyväksymistä.
 
-    | Ohjelma | Mihin YTL sen luettelee |
+    | Ohjelma | Käyttö |
     |---|---|
     | Collabora Calc | taulukkolaskenta |
     | Collabora Writer, Draw ja Impress | tekstinkäsittely, vektorigrafiikka ja esitys |
     | GeoGebra Math Apps Bundle | symbolinen laskenta |
-    | Vernier Graphical Analysis Pro | mittausdatan analysointi (koulu asentaa omalla koodillaan) |
+    | Vernier Graphical Analysis Pro | mittausdatan analysointi (koulu voi asentaa omalla koodillaan) |
     | Abicus | funktiolaskin |
     | Draw.io, Klecks | kuvankäsittely |
-    | Mafy-taulukot, MAOL digitaulukot | matematiikan, fysiikan ja kemian taulukkosovellukset (koulu asentaa omalla koodillaan) |
+    | Mafy-taulukot, MAOL digitaulukot | taulukot (koulu voi asentaa omalla koodillaan) |
     | PDF.js | PDF-lukija |
 
     Luettelossa ovat myös muun muassa Abicode, Ketcher ja TI ExamCalc. YTL kertoo, että kokeessa riittää hallita yksi ohjelma kutakin tarkoitusta varten. Valitse siis yksi ohjelma ja opettele se kunnolla. Kaikkia ei tarvitse osata.
 
-3. **Kysy koulultasi, mitkä ohjelmat ovat mukana harjoittelussa.** Koulu asentaa osan ohjelmista omalla koodillaan. Kysy, onko Graphical Analysis Pro ja taulukot (Mafy tai MAOL) asennettu. Kokeile niitä harjoituskokeessa.
+3. **Kysy koulultasi, mitkä ohjelmat ovat mukana harjoittelussa.** Koulu voi asentaa osan ohjelmista omalla asennuskoodillaan. Kysy, onko Graphical Analysis Pro ja taulukot (Mafy tai MAOL) asennettu. Kokeile niitä harjoituskokeessa.
 
 4. **Kirjoita vastaus kysymyksen vastauskenttään.** YTL ohjeistaa vastaamaan suoraan kysymysten vieressä oleviin vastauskenttiin. Koejärjestelmä tallentaa vastauskentässä olevat vastauksesi automaattisesti.
 
-5. **Tallenna ohjelmilla tekemäsi tiedostot itse.** Tallenna ohjelmilla tekemäsi tiedostot säännöllisesti, jotta ne varmuuskopioidaan palvelimelle. Tämä koskee tiedostoja, joita teet ohjelmilla, kuten kuvaajaa tai taulukkoa.
+5. **Tallenna ohjelmilla tekemäsi tiedostot, kuten kuvaaja tai taulukko, itse.** Tallenna ohjelmilla tekemäsi tiedostot säännöllisesti, jotta ne varmuuskopioidaan palvelimelle.
 
-6. **Liitä kuvakaappaus vastaukseen avotehtävässä.** Abitti kertoo, että oheisohjelmasta voi liittää kuvakaappauksia osaksi koevastausta avotehtävissä. Liittämisen vaiheet ovat koejärjestelmän omissa ohjeissa. Ne löytyvät YTL:n oheisohjelmasivun linkistä *Koejärjestelmän ohjeet*.
+6. **Liitä kuvakaappaus vastaukseen avotehtävässä.** Abitti kertoo, että oheisohjelmasta voi liittää kuvakaappauksia osaksi koevastausta avotehtävissä. Liittämisen vaiheet ovat koejärjestelmän omissa ohjeissa. Ne löytyvät YTL:n oheisohjelmasivun linkistä *Koejärjestelmän ohjeet*. Tämä ohje ei kuvaa niitä (ks. kohta *Mitä tämä ohje ei vielä kerro*).
 
 7. **Tarkista vastauksesi, ennen kuin päätät kokeen.** Voit selata kokeen loppuun ja valita **Siirry tarkastelemaan vastauksiasi**. Sieltä pääset takaisin muokkaamaan. Kun painat **Päätä koe**, et pääse enää palaamaan kokeen muokkaukseen.
 
 ## Näin harjoittelet aineistominikokeen työkaluilla
 
-FY9-kurssin 60 minuutin aineistominikoe kannattaa tehdä niillä työkaluilla, jotka ovat myös kokeessa. Käytä taulukkolaskentaa ja GeoGebraa omalla koneellasi tai koulun harjoituskoeympäristöä, jos koulu tarjoaa sellaisen. Tee kuvaaja ohjelmalla ja tarkista, että akseleilla ovat suureet ja yksiköt. Kuvaajan tekemisen ohjeet ovat ohjeissa [[ohje:tvt-kuvaaja|Mittauspisteiden kuvaaja]], [[ohje:tvt-suoran-sovitus|Suoran sovittaminen mittauspisteisiin]] ja [[ohje:tvt-taulukkolaskenta|Laskettu sarake ja taulukko]]. Ne kuvaavat koulun Graphical Analysis Proa. Sen Abitti 2:n versio on YTL:n luettelossa, mutta tässä ei ole verrattu niitä toisiinsa.
+FY9-kurssin aineistominikoe ($60\,\text{min}$) kannattaa tehdä niillä työkaluilla, jotka ovat myös kokeessa. Käytä taulukkolaskentaa ja GeoGebraa omalla koneellasi tai koulun harjoituskoeympäristöä, jos koulu tarjoaa sellaisen. Tee kuvaaja ohjelmalla ja tarkista, että akseleilla ovat suureet ja yksiköt. Kuvaajan tekemisen ohjeet ovat ohjeissa [[ohje:tvt-kuvaaja|Mittauspisteiden kuvaaja]], [[ohje:tvt-suoran-sovitus|Suoran sovittaminen mittauspisteisiin]] ja [[ohje:tvt-taulukkolaskenta|Taulukko ja lasketut sarakkeet]]. Ne kuvaavat koulun Graphical Analysis Proa. Sen Abitti 2:n versio on YTL:n luettelossa, mutta tässä ei ole verrattu niitä toisiinsa.
 
 ## Yleisiä virheitä
 
