@@ -408,7 +408,7 @@ def rubric_html(task, md, parts=None, lead=None):
                     for tag, lid in task.get("links", {}).items())
     mx = total(task)
     return (f'<div class="rubric" data-id="{tid}" data-max="{mx}"><p class="rubric-lead">{lead or T("practice.rubric_lead")}</p>{rows}'
-            f'<p class="rubric-total" aria-live="polite">{T("js.rubric_partial", got=0, max=mx, left=sum(len(p["criteria"]) for p in task["parts"]))}</p>'
+            f'<p class="rubric-total" aria-live="polite">{T("js.rubric_start", max=mx)}</p>'
             f'<p class="rubric-note">{T("practice.rubric_note")}</p>'
             + (f'<div class="rubric-more" hidden><p>{T("practice.practise_more")}</p><ul>{links}</ul></div>' if links else "") + '</div>')
 
