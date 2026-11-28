@@ -244,7 +244,7 @@
           "feedback": "Line 4 is correct with the result of line 3: the sum of the support forces equals the sum of the weights, $200\\,\\text{N}$. If you think the line is wrong, you may think that the weight of the can is left out of the sum of the forces because the can is outside support B."
         },
         {
-          "text": "The calculation has no error",
+          "text": "There is no error in the calculation",
           "feedback": "The calculation has an error on line 2: the lever arm of the weight of the can has been measured from support B, although the reference point is A. The lever arms of all forces are measured about the same chosen point, so the lever arm of the can is $3.0\\,\\text{m}$."
         }
       ]
