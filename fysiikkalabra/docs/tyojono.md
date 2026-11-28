@@ -223,9 +223,6 @@ Järjestys: ensin "Korjaa ensin" 1–4, sitten 5–10.
 - 29.1 TEHTY (PR #887, 2026-11-27): uusi tehtäväkenttä `"exact": true` 25 tehtävällä (fy7-13, fy8-3, fy8-5, fy8-8, fy8-15); fy8-8-L1-02 218 ok, 222 → opettajan vihje (en/fi-easy opettaja tekijäsessiossa "Hyväksyn molemmat"); testi `scripts/test_tarkka.py`.
 - 29.9 TEHTY (PR #898, 2026-11-27): alakohdan palaute (`scripts/subpart.py`, `build.py` `data-part`/`data-compare`, `templates/lesson.js` `partFeedback`, lang `js` `correct_part`/`compare_*`); fy4-10-L2-06: "C-kohdan lukuarvo on oikein. Vertaa vielä b-kohdan perusteluasi malliratkaisuun."; uudet fi-easy- ja en-tekstit ja kuvakaappaukset (`docs/audits/2026-11-27-29-9/`) opettaja tekijäsessiossa "Hyväksyn"; testi `scripts/test_subpart.py`.
 
-## 30. Virhe-tehtävän vaihtoehtojärjestys englanniksi (opettaja 2026-11-27 koordinaattorin chatissa: "tee nämä")
-Löydös PR #886:ssa: fy3-11, fy3-16, fy5-2, fy7-10 ja fy8-1 (en) `virhe`-tehtävän vaihtoehdot ovat eri järjestyksessä kuin suomeksi, koska englannin "no mistake" ei osu `inquiry.no_error`-sääntöön; siksi niiden en-valinnat jäävät valintojen jakaumasta pois (`skip_en`). Korjaa sääntö tai en-teksti niin, että järjestys on sama kuin fi:ssä, ja poista `skip_en`. Vanhentaa en-katselmoinnit näillä sivuilla: tekstimuutokset opettajalle tekijäsessiossa (approve-text) tai vaaditut katselmoinnit. Jaettu, jos sääntö (`inquiry.py`) muuttuu.
-
 ## 32. Kuvalintin väärä "monochrome figure" -löydös (koordinaattori 2026-11-27, löydös PR #899)
 `scripts/lint_lesson.py` `check_figures` etsii `<image `-tagia vain SVG:n 600 ensimmäisestä merkistä; pitkä alt-teksti työntää tagin sen yli, jolloin värillinen WebP-pohjainen kuva luokitellaan yksiväriseksi (fy4-2 lesson.md:5; tarkista myös fy7-8 lesson.md:46). Korjaus: etsi `<image ` koko SVG:stä (tai ennen ensimmäistä piirroselementtiä) + testi. Jaettu (scripts/), yksin. Kohdan 27 fy4-2 ja mahdollisesti fy7-8 eivät silloin vaadi uutta piirrosta (kerrottu opettajalle).
 TEHTY (PR #901, odottaa yhdistämistä, 2026-11-27): `check_figures` etsii `<image ` koko SVG:stä; testi `scripts/test_lint_figures.py` (CI). Kosketti 24 sivua, kaikki vääriä positiivisia (WebP-pohjaiset kuvat).
@@ -246,9 +243,6 @@ A = pysyvä hyväksyntä (käännökset hyväksytystä suomesta, tarkistuslöyd�
 
 ## 35. Tekoälyohje Näin opiskelet -sivulle (opettaja 2026-11-28 koordinaattorin chatissa: "Lisää 1 ja 2 jonoon")
 Lähde: pedagoginen auditointi, kohta 3.1 (`docs/audits/2026-11-28-pedagoginen-auditointi-tekoalyaika.md`; opettaja 2026-11-28 "Yhdistetään": raportti arkistoon tässä PR:ssä, PR #906 suljettu; raportin muut ehdotukset 3.3–3.5 eivät ole jonossa). Viiden kohdan lista "Kun tehtävä ei etene" -listan alle samalla komponentilla (`study-tips study-help`) ja olemassa olevilla kuvakkeilla; fi, fi-easy, en. Periaatteet: yritä ensin itse; pyydä vihje, älä valmista ratkaisua; arvioi vastaus fysiikan tiedoilla; kirjoita perustelut omin sanoin; varmista, että osaat ilman tekoälyä. Jaettu (`lang/*.json`, `scripts/build.py` `study_guide`, `scripts/test_home.py`): yksin, kohdan 33 jälkeen. Uudet suomenkieliset tekstit opettajalle (tekijäsessio tai B); käännökset A1.
-
-## 36. Itsearvion loppuväittämät teoiksi, pilotti FY4 ja FY6 (opettaja 2026-11-28 koordinaattorin chatissa: "Lisää 1 ja 2 jonoon")
-Lähde: sama auditointi, kohta 3.2. `itsearvio/`-väittämät, jotka alkavat "Ymmärrän / Tiedän / Hahmotan" (FY4 12, FY6 17), muotoon, joka nimeää teon ("Ymmärrän, miksi sähkövirta ei kulu lampussa." → "Osaan selittää omin sanoin, miksi sähkövirta ei kulu lampussa."). Asteikko, käyttöliittymä ja tunnisteet `tavoite-N` ennallaan; palautustiedoston vaikutus tarkistetaan. Nykyiset väittämät opettaja hyväksyi 2026-11-06, joten uudet suomenkieliset sanamuodot opettajalle (tekijäsessio tai B); käännökset A1.
 
 Tekijäraja (opettaja 2026-11-28 koordinaattorin chatissa: "Add more workers"): yli kolme tekijää sallittu; jaetut muutokset edelleen yksin (sääntö 3).
 
