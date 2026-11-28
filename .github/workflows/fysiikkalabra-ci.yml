@@ -118,6 +118,8 @@ jobs:
         run: python scripts/check_solutions.py --all
       - name: known physics errors are not taught as fact again (docs/physics-guardrails.md, teacher 2026-10-28)
         run: python scripts/test_physics_phrases.py
+      - name: the lint's monochrome-figure check skips a figure with a picture as its base, however long its alt text (work queue 32)
+        run: python scripts/test_lint_figures.py
       - name: every vector is written with an overline in texts, figures, simulations and interface strings (rule 14, teacher 2026-10-29)
         run: python scripts/test_notation.py
       - name: learning goals complete their heading "Tällä tunnilla opit" / "you will learn to" (teacher 2026-10-29)

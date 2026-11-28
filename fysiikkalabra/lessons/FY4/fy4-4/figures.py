@@ -279,7 +279,7 @@ def _lower(name, Tk, desc, wrong=None, extra=False):
 def valitse_a(): return _lower("a", 1.3, LOWER + " Nuoli T on pidempi kuin nuoli G.")
 def valitse_b(): return _lower("b", 1.0, LOWER + " Nuolet T ja G ovat yhtä pitkät.", wrong="T = G although the crate slows down (accelerates up)")
 def valitse_c(): return _lower("c", 0.7, LOWER + " Nuoli T on lyhyempi kuin nuoli G.", wrong="T < G: the net force points down, with the velocity, so the crate would speed up")
-def valitse_d(): return _lower("d", 1.3, LOWER + " Nuoli T on pidempi kuin nuoli G, ja laatikon kyljestä lähtee lisäksi punainen nuoli F alas.",
+def valitse_d(): return _lower("d", 1.8, LOWER + " Nuoli T on pidempi kuin nuolet G ja F yhteensä, ja laatikon kyljestä lähtee lisäksi punainen nuoli F alas, puolet nuolen G pituudesta.",
                                wrong="an invented force F along the motion: nothing exerts it", extra=True)
 
 
