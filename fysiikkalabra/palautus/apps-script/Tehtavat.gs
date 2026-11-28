@@ -8077,8 +8077,7 @@ var RL_COURSE = {
       ],
       "correct": [
        0
-      ],
-      "skip_en": true
+      ]
      }
     },
     {
@@ -10013,8 +10012,7 @@ var RL_COURSE = {
       ],
       "correct": [
        0
-      ],
-      "skip_en": true
+      ]
      }
     },
     {
