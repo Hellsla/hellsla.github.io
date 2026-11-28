@@ -212,20 +212,21 @@ Versio 1 kokonaan selaimessa: luvun alussa 3–5 kysymyksen lähtötesti tyypill
 
 ## 27. Piirrosten uudelleenpiirto (opettaja 2026-11-27 koordinaattorin chatissa: "muutetaan kuva")
 Kohdan 24 "Älä muuta piirroksia" -rajaus ei koske näitä; opettaja salli muutoksen. Tehdään `/figure-fixes`-komennolla kurssi kerrallaan, ennen ja jälkeen -kuvat opettajalle tekijäsessiossa; ei muita piirroksia.
-- FY7 `fy7-8` lesson.md:46 kuva monokromaattinen (lint ERROR) → uusi piirros.
+- FY7 `fy7-8` lesson.md:46: kohdan 32 korjauksen jälkeen ei monochrome-löydöstä (WebP-pohjainen kuva) → ei uutta piirrosta.
 - FY6 `fy6-15/luokat`: III-numero puuttuu vinoneliöstä.
 - FY4 `fy4-4/valitse_d`: kuvan toinen virhe. **Tehty 2026-11-27 (PR #899; opettaja 2026-11-27 "Hyväksyn"; T pidemmäksi, F:n ja G:n summa alle T:n; `docs/audits/fy4-valitse-d/`).**
-- FY4 `fy4-2` **Ei piirretä uudelleen (2026-11-27, PR #899):** kuva on jo värillinen WebP; lintin "monochrome"-varoitus on väärä positiivinen (`scripts/lint_lesson.py:211` etsii `<image`-tagia vain SVG:n 600 ensimmäisestä merkistä, pitkä alt-teksti työntää sen yli; WARN, ei ERROR) → lintin korjaus omana jaettuna PR:nään, opettajalle tiedoksi lesson.md:5 kuva monokromaattinen (currentColor, lint ERROR) → uusi piirros (opettaja 2026-11-27 "joo"); sen jälkeen fy4-2:n "Nopeus (toisto)" ja seliterivi kohdan 10 mukaisesti.
+- FY4 `fy4-2` lesson.md:5: kohdan 32 korjauksen jälkeen ei monochrome-löydöstä (WebP-pohjainen kuva) → ei uutta piirrosta; fy4-2:n "Nopeus (toisto)" ja seliterivi kohdan 10 mukaisesti.
 
 ## 29. Opettajan muutoslista 27.11.2026 (opettaja 2026-11-27 koordinaattorin chatissa: "ota nämä työlistalle")
 Koko lista sellaisenaan: `docs/audits/2026-11-27-muutoslista.md`. Opettajan antamat sanamuodot käytetään sellaisinaan (hyväksytty); muut uudet tekstit ja kuvat opettajalle tekijäsessiossa. Kurssi kerrallaan, kukin oma PR; fi + fi-easy + en, kun sama kohta on niissä.
 Järjestys: ensin "Korjaa ensin" 1–4, sitten 5–10.
 - 29.1 TEHTY (PR #887, 2026-11-27): uusi tehtäväkenttä `"exact": true` 25 tehtävällä (fy7-13, fy8-3, fy8-5, fy8-8, fy8-15); fy8-8-L1-02 218 ok, 222 → opettajan vihje (en/fi-easy opettaja tekijäsessiossa "Hyväksyn molemmat"); testi `scripts/test_tarkka.py`.
-- 29.9 koko kirja: alakohdan palaute ("C-kohdan lukuarvo on oikein…", malli fy4-10-L2-06; jaettu, uusi UI-teksti on opettajan antama).
+- 29.9 TEHTY (PR #898, 2026-11-27): alakohdan palaute (`scripts/subpart.py`, `build.py` `data-part`/`data-compare`, `templates/lesson.js` `partFeedback`, lang `js` `correct_part`/`compare_*`); fy4-10-L2-06: "C-kohdan lukuarvo on oikein. Vertaa vielä b-kohdan perusteluasi malliratkaisuun."; uudet fi-easy- ja en-tekstit ja kuvakaappaukset (`docs/audits/2026-11-27-29-9/`) opettaja tekijäsessiossa "Hyväksyn"; testi `scripts/test_subpart.py`.
 
 ## 30. Virhe-tehtävän vaihtoehtojärjestys englanniksi (opettaja 2026-11-27 koordinaattorin chatissa: "tee nämä")
 Löydös PR #886:ssa: fy3-11, fy3-16, fy5-2, fy7-10 ja fy8-1 (en) `virhe`-tehtävän vaihtoehdot ovat eri järjestyksessä kuin suomeksi, koska englannin "no mistake" ei osu `inquiry.no_error`-sääntöön; siksi niiden en-valinnat jäävät valintojen jakaumasta pois (`skip_en`). Korjaa sääntö tai en-teksti niin, että järjestys on sama kuin fi:ssä, ja poista `skip_en`. Vanhentaa en-katselmoinnit näillä sivuilla: tekstimuutokset opettajalle tekijäsessiossa (approve-text) tai vaaditut katselmoinnit. Jaettu, jos sääntö (`inquiry.py`) muuttuu.
 
 ## 32. Kuvalintin väärä "monochrome figure" -löydös (koordinaattori 2026-11-27, löydös PR #899)
 `scripts/lint_lesson.py` `check_figures` etsii `<image `-tagia vain SVG:n 600 ensimmäisestä merkistä; pitkä alt-teksti työntää tagin sen yli, jolloin värillinen WebP-pohjainen kuva luokitellaan yksiväriseksi (fy4-2 lesson.md:5; tarkista myös fy7-8 lesson.md:46). Korjaus: etsi `<image ` koko SVG:stä (tai ennen ensimmäistä piirroselementtiä) + testi. Jaettu (scripts/), yksin. Kohdan 27 fy4-2 ja mahdollisesti fy7-8 eivät silloin vaadi uutta piirrosta (kerrottu opettajalle).
+TEHTY (PR #901, odottaa yhdistämistä, 2026-11-27): `check_figures` etsii `<image ` koko SVG:stä; testi `scripts/test_lint_figures.py` (CI). Kosketti 24 sivua, kaikki vääriä positiivisia (WebP-pohjaiset kuvat).
 
