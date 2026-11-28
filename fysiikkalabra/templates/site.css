@@ -2559,3 +2559,8 @@ details .fig-row.side>.fig svg{max-width:min(100%,32rem)}
 .lt-sum-list a{display:inline-flex;align-items:center;min-height:44px}
 .lt-mod details.opt>summary{scroll-margin-top:5rem}
 @media print{.lt-actions{display:none}}
+/* Oikotiet at the start of a FY9 unit (work queue 33.3, scripts/oikotiet.py): links to the unit's own parts, shaped like the course page's routes. */
+.unit-short{display:flex;flex-wrap:wrap;gap:.5rem .6rem;margin:.9rem 0 0}
+.unit-short a{display:inline-flex;align-items:center;min-height:44px;padding:0 1rem;border:1px solid var(--accent-deep);border-radius:999px;background:var(--surface);color:var(--accent-deep);font:600 var(--fs-ui) var(--sans);text-decoration:none}
+.unit-short a:hover{background:var(--accent-soft)}
+@media print{.unit-short{display:none}}

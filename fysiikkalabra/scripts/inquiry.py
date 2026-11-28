@@ -14,7 +14,7 @@ import hashlib, html as _h, json, pathlib, random, re, sys
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from i18n import t as T
 import answers_shown, mathlayout
-import courses, objectives, lahtotaso
+import courses, objectives, lahtotaso, oikotiet
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 VERSION = 1
@@ -586,7 +586,7 @@ def chapter_href(title):
     return None
 
 
-def intro_html(intro, inquiry, n_opt, md):
+def intro_html(intro, inquiry, n_opt, md, shortcuts=""):
     """The opening (teacher 2026-10-27): the title and the Miksi question first, across the reading column; under them
     the chapter's illustration and "Tällä tunnilla opit" (2–3 goals) side by side, both starting at the same height and
     about as tall (.intro-row); then "Pohjatiedot" as a list (.intro-more; the core path note moved to Näin opiskelet, teacher 2026-11-13). One
@@ -602,7 +602,7 @@ def intro_html(intro, inquiry, n_opt, md):
     more = f'<div class="prior"><h2 class="intro-h">{T("inquiry.prior")}</h2><ul>' + "".join(prior_html(x, md) for x in prior) + "</ul></div>" if prior else ""
     row = (f'<div class="intro-row' + ("" if media else " no-media") + '">' + (f'<div class="intro-media">{media}</div>' if media else "")
            + f'<aside class="intro-aside">{aside}</aside></div>')
-    return f'<div class="intro"><div class="intro-head">{head}</div>{row}' + (f'<div class="intro-more">{more}</div>' if more else "") + '</div>'
+    return f'<div class="intro"><div class="intro-head">{head}{shortcuts}</div>{row}' + (f'<div class="intro-more">{more}</div>' if more else "") + '</div>'
 
 
 KEY_CONCEPTS = (3, 5)    # how many "Luvun tärkeät käsitteet" a Selkeä suomi lesson shows (teacher 2026-11-03)
@@ -861,7 +861,7 @@ def render(folder, inquiry, parts, md):
         by_stage["selita"].append({"id": "theory-rest", "type": "theory", "stage": "selita", "sections": leftover})
     elif leftover:                                     # append to the last required theory activity in Teoriatiivistelmä,
         last = required[-1]; last["sections"] = list(last["sections"]) + leftover   # never into a closed optional box
-    body = [intro_html(parts["intro"], inquiry, sum(1 for a in acts if a.get("optional")), md) + parts.get("concepts", "")]
+    body = [intro_html(parts["intro"], inquiry, sum(1 for a in acts if a.get("optional")), md, oikotiet.html(esc, oikotiet.items(T, folder, acts, by_stage))) + parts.get("concepts", "")]   # the FY9 shortcuts (33.3)
 
     shown = task_titles(lid, by_stage, md)
     diag = lahtotaso.plan(lid, by_stage["sovella"])   # the diagnostic's modules and names (33.2)
