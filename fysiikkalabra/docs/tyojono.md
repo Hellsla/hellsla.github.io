@@ -242,3 +242,7 @@ Lopuksi: ensikäynti, palaava opiskelija, kesken jätetty testi, itsearvioinnin 
 
 ## 34. Hyväksyntä koordinaattorin kautta (opettaja 2026-11-28 koordinaattorin chatissa: "Hyväksyn A ja B")
 A = pysyvä hyväksyntä (käännökset hyväksytystä suomesta, tarkistuslöydöksen vuoksi korjattu kuva ilman sisältö- tai nimiömuutosta, kirjanpito); B = koottu hyväksyntä koordinaattorin chatissa, kirjattuna sanatarkasti. Säännöt: `docs/hyvaksynnat.md`; juuren `CLAUDE.md` sääntö 5, `fysiikkalabra/CLAUDE.md` (teacher-text, teacher-figure) ja `/figure-fixes` viittaavat siihen. TEHTY tässä PR:ssä; yhdistetään ennen muita.
+
+## 38. Pedagoginen viitekehys tekijöille (opettaja 2026-11-28 koordinaattorin chatissa: "Add theoretical framework")
+Opettajan tarkennukset koordinaattorin kysymykseen: paikka "Internal doc for authors"; lähteistä "Yes, checked sources". Tehtävä: `docs/pedagogiikka.md` (suomeksi), sisäinen dokumentti tekijöille ja katselmoijille: mihin pedagogiseen tutkimukseen talon säännöt nojaavat. Jokainen lähde tarkistetaan verkosta ennen kirjaamista (tekijät, vuosi, nimi, julkaisija/lehti, DOI); varmistamattomat vain "tarkistamatta"-listaan. Ei muutu sivusto, sääntötiedostot, skriptit, `.claude/` eikä review-paketit; ei approve-text-kirjausta, opettaja hyväksyy PR:ssä koordinaattorin kautta.
+Varattu: claude/38-pedagogiikka
