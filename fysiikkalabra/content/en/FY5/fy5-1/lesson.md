@@ -13,13 +13,30 @@ A force can change the motion of a body, but it can also rotate the body. When a
 A door is easy to open by pushing at the handle, which is far from the hinges. If the same force pushes close to the hinge, the door turns much less easily. If the door is pushed at its edge in the direction of the door towards the hinge, the door does not turn at all, even though the force is equally large. The three forces $\overline{F}_1$, $\overline{F}_2$ and $\overline{F}_3$ in the figure are therefore equally large, but their turning effects about the hinge are completely different.
 
 <svg data-fig="ovi" viewBox="0 0 600 330" role="img" aria-label="A door seen from above. On the left is a wall and a hinge, from which the door extends to the right as a horizontal board. Three equally long red force arrows: F1 at the handle perpendicular to the door, F2 near the hinge, also perpendicular, and F3 at the end of the door along the door towards the hinge. A dashed arc shows the direction in which the door opens. Schematic figure, not to scale." style="max-width:100%;font-size:24px">
-  <image href="pics/fy5/fy5-1-ovi.webp" x="0" y="-1.2" width="600" height="341.2" preserveAspectRatio="none"/>
+  <defs><linearGradient id="fy51-ovi-wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e3dccb"/><stop offset="1" stop-color="#c9c2b2"/></linearGradient><linearGradient id="fy51-ovi-wood" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f1dfb5"/><stop offset="1" stop-color="#d9b26a"/></linearGradient></defs>
+  <rect x="24" y="200" width="40" height="110" fill="url(#fy51-ovi-wall)" stroke="#1f2933" stroke-width="2"/>
+  <line x1="26" y1="214" x2="62" y2="204" stroke="#6b7480" stroke-width="1.2" stroke-linecap="butt"/>
+  <line x1="26" y1="234" x2="62" y2="224" stroke="#6b7480" stroke-width="1.2" stroke-linecap="butt"/>
+  <line x1="26" y1="254" x2="62" y2="244" stroke="#6b7480" stroke-width="1.2" stroke-linecap="butt"/>
+  <line x1="26" y1="274" x2="62" y2="264" stroke="#6b7480" stroke-width="1.2" stroke-linecap="butt"/>
+  <line x1="26" y1="294" x2="62" y2="284" stroke="#6b7480" stroke-width="1.2" stroke-linecap="butt"/>
   <foreignObject x="15" y="167.5" width="58" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{wall}$</div></foreignObject>
+  <path d="M484,250 A400,400 0 0 0 449.5,87.5" fill="none" stroke="#6b7480" stroke-width="1.5" stroke-linejoin="round" stroke-dasharray="7 6"/>
+  <rect x="84" y="242" width="400" height="16" rx="2" fill="url(#fy51-ovi-wood)" stroke="#a97a35" stroke-width="2.5"/>
+  <line x1="84" y1="250" x2="490" y2="250" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="7 6"/>
+  <circle cx="84" cy="250" r="11" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
   <foreignObject x="75" y="275.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{hinge}$</div></foreignObject>
-  <foreignObject x="423.5" y="275.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{handle}$</div></foreignObject>
-  <foreignObject x="403" y="141.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#c92a2a">$\overline{F}_1$</div></foreignObject>
+  <rect x="399" y="258" width="26" height="12" rx="3" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
+  <foreignObject x="370.5" y="275.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{handle}$</div></foreignObject>
+  <line x1="412" y1="242" x2="412" y2="167" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M412,150 L420,168 L404,168 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="350" y="141.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#c92a2a">$\overline{F}_1$</div></foreignObject>
+  <line x1="150" y1="242" x2="150" y2="167" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M150,150 L158,168 L142,168 Z" fill="#c92a2a" stroke-linejoin="round"/>
   <foreignObject x="167" y="141.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#c92a2a">$\overline{F}_2$</div></foreignObject>
-  <foreignObject x="547.5" y="207.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{F}_3$</div></foreignObject>
+  <line x1="582" y1="250" x2="507" y2="250" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M490,250 L508,242 L508,258 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="513.5" y="207.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{F}_3$</div></foreignObject>
   <foreignObject x="215" y="15.5" width="170" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{seen from above}$</div></foreignObject>
 </svg>
 

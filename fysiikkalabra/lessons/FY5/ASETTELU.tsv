@@ -1,7 +1,6 @@
 kuvan tunniste	tyyppi	tiedosto	x	y	leveys	korkeus	merkintöjen siirrot (järjestysnumero: dx, dy)	ilman taustaa (merkintöjen järjestysnumerot)
 fy5-1/hero	illustration	fy5-1-hero.webp						
 fy5-1/kulma	diagram	fy5-1-kulma.webp	0	0	600	347.5		
-fy5-1/ovi	diagram	fy5-1-ovi.webp	0	-1.2	600	341.2		
 fy5-1/ruutu	diagram	fy5-1-ruutu.webp	0	0	600	367.5		
 fy5-1/suunta	diagram	fy5-1-suunta.webp	1.2	1.2	597	330.8		
 fy5-1/varsi	diagram	fy5-1-varsi.webp	1.2	0	597	349.5		

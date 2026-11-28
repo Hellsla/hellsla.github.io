@@ -13,13 +13,30 @@ Voima voi muuttaa kappaleen liikettä, mutta se voi myös kiertää kappaletta. 
 Ovea on helppo avata työntämällä kahvasta, joka on kaukana saranoista. Jos samansuuruisella voimalla työnnetään läheltä saranaa, ovi kääntyy paljon vaikeammin. Jos taas työnnetään oven päästä oven suuntaisesti kohti saranaa, ovi ei käänny lainkaan, vaikka voima on yhtä suuri. Kuvan kolme voimaa $\overline{F}_1$, $\overline{F}_2$ ja $\overline{F}_3$ ovat siis yhtä suuria, mutta niiden vääntövaikutukset saranan suhteen ovat aivan erilaiset.
 
 <svg data-fig="ovi" viewBox="0 0 600 330" role="img" aria-label="Ovi ylhäältä katsottuna. Vasemmalla seinä ja sarana, josta ovi lähtee vaakasuorana lautana oikealle. Kolme yhtä pitkää punaista voimanuolta: F1 kahvan kohdalla kohtisuoraan ovea vastaan, F2 lähellä saranaa samoin kohtisuoraan ja F3 oven päässä oven suuntaisesti kohti saranaa. Katkoviivainen kaari näyttää, mihin suuntaan ovi aukeaa. Kaavakuva, ei mittakaavassa." style="max-width:100%;font-size:24px">
-  <image href="pics/fy5/fy5-1-ovi.webp" x="0" y="-1.2" width="600" height="341.2" preserveAspectRatio="none"/>
+  <defs><linearGradient id="fy51-ovi-wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e3dccb"/><stop offset="1" stop-color="#c9c2b2"/></linearGradient><linearGradient id="fy51-ovi-wood" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f1dfb5"/><stop offset="1" stop-color="#d9b26a"/></linearGradient></defs>
+  <rect x="24" y="200" width="40" height="110" fill="url(#fy51-ovi-wall)" stroke="#1f2933" stroke-width="2"/>
+  <line x1="26" y1="214" x2="62" y2="204" stroke="#6b7480" stroke-width="1.2" stroke-linecap="butt"/>
+  <line x1="26" y1="234" x2="62" y2="224" stroke="#6b7480" stroke-width="1.2" stroke-linecap="butt"/>
+  <line x1="26" y1="254" x2="62" y2="244" stroke="#6b7480" stroke-width="1.2" stroke-linecap="butt"/>
+  <line x1="26" y1="274" x2="62" y2="264" stroke="#6b7480" stroke-width="1.2" stroke-linecap="butt"/>
+  <line x1="26" y1="294" x2="62" y2="284" stroke="#6b7480" stroke-width="1.2" stroke-linecap="butt"/>
   <foreignObject x="9" y="167.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{seinä}$</div></foreignObject>
+  <path d="M484,250 A400,400 0 0 0 449.5,87.5" fill="none" stroke="#6b7480" stroke-width="1.5" stroke-linejoin="round" stroke-dasharray="7 6"/>
+  <rect x="84" y="242" width="400" height="16" rx="2" fill="url(#fy51-ovi-wood)" stroke="#a97a35" stroke-width="2.5"/>
+  <line x1="84" y1="250" x2="490" y2="250" stroke="#6b7480" stroke-width="1.5" stroke-linecap="butt" stroke-dasharray="7 6"/>
+  <circle cx="84" cy="250" r="11" fill="#6c757d" stroke="#1f2933" stroke-width="2.5"/>
   <foreignObject x="68.5" y="275.5" width="83" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{sarana}$</div></foreignObject>
-  <foreignObject x="430" y="275.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{kahva}$</div></foreignObject>
-  <foreignObject x="403" y="141.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#c92a2a">$\overline{F}_1$</div></foreignObject>
+  <rect x="399" y="258" width="26" height="12" rx="3" fill="#6c757d" stroke="#1f2933" stroke-width="2"/>
+  <foreignObject x="377" y="275.5" width="70" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{kahva}$</div></foreignObject>
+  <line x1="412" y1="242" x2="412" y2="167" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M412,150 L420,168 L404,168 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="350" y="141.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-end;height:100%;font-size:24px;color:#c92a2a">$\overline{F}_1$</div></foreignObject>
+  <line x1="150" y1="242" x2="150" y2="167" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M150,150 L158,168 L142,168 Z" fill="#c92a2a" stroke-linejoin="round"/>
   <foreignObject x="167" y="141.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:flex-start;height:100%;font-size:24px;color:#c92a2a">$\overline{F}_2$</div></foreignObject>
-  <foreignObject x="547.5" y="207.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{F}_3$</div></foreignObject>
+  <line x1="582" y1="250" x2="507" y2="250" stroke="#c92a2a" stroke-width="4" stroke-linecap="butt"/>
+  <path d="M490,250 L508,242 L508,258 Z" fill="#c92a2a" stroke-linejoin="round"/>
+  <foreignObject x="513.5" y="207.5" width="45" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#c92a2a">$\overline{F}_3$</div></foreignObject>
   <foreignObject x="183.5" y="15.5" width="233" height="29" overflow="visible"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#6b7480">$\text{ylhäältä katsottuna}$</div></foreignObject>
 </svg>
 

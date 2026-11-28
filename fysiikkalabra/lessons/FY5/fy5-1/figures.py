@@ -70,17 +70,19 @@ def door_hinge_view():
     for k in range(5): f.line(26, 214 + k * 20, 62, 204 + k * 20, MUTED, 1.2)
     f.tex(44, 182, r"\text{seinä}", "middle", MUTED)
     hinge = (84, 250)
-    f.path(f"M{n(hinge[0] + 440)},{hinge[1]} A440,440 0 0 0 {n(hinge[0] + 440 * math.cos(math.radians(24)))},{n(hinge[1] - 440 * math.sin(math.radians(24)))}",
+    D = 400                                                          # the door's length: F3 and its tip fit inside the 600 wide frame
+    f.path(f"M{n(hinge[0] + D)},{hinge[1]} A{D},{D} 0 0 0 {n(hinge[0] + D * math.cos(math.radians(24)))},{n(hinge[1] - D * math.sin(math.radians(24)))}",
            "none", MUTED, 1.5, 'stroke-dasharray="7 6"')
-    f.rect(hinge[0], 242, 440, 16, grad(f, "fy51-ovi-wood", SAND_LIGHT, SAND), GRAIN, 2.5, rx=2)
+    f.rect(hinge[0], 242, D, 16, grad(f, "fy51-ovi-wood", SAND_LIGHT, SAND), GRAIN, 2.5, rx=2)
+    dashed(f, (hinge[0], 250), (hinge[0] + D + 6, 250))               # F3's line of action: it runs through the hinge
     f.circle(hinge[0], hinge[1], 11, IRON, INK, 2.5)
     f.tex(hinge[0] + 26, 290, r"\text{sarana}", "middle", MUTED)
-    f.rect(452, 258, 26, 12, IRON, INK, 2, rx=3)
-    f.tex(465, 290, r"\text{kahva}", "middle", MUTED)
+    f.rect(399, 258, 26, 12, IRON, INK, 2, rx=3)
+    f.tex(412, 290, r"\text{kahva}", "middle", MUTED)
     L = 92
-    force(f, (465, 242), (465, 242 - L)); f.tex(448, 156, r"\overline{F}_1", "end", FORCE)
+    force(f, (412, 242), (412, 242 - L)); f.tex(395, 156, r"\overline{F}_1", "end", FORCE)
     force(f, (150, 242), (150, 242 - L)); f.tex(167, 156, r"\overline{F}_2", "start", FORCE)
-    force(f, (524 + 6 + L, 250), (530, 250)); f.tex(570, 222, r"\overline{F}_3", "middle", FORCE)
+    force(f, (hinge[0] + D + 6 + L, 250), (hinge[0] + D + 6, 250)); f.tex(hinge[0] + D + 6 + L / 2, 222, r"\overline{F}_3", "middle", FORCE)
     f.tex(300, 30, r"\text{ylhäältä katsottuna}", "middle", MUTED)
     return f.svg()
 
