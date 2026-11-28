@@ -1,6 +1,6 @@
 VERDICT: PASS
 CONTENT-HASH: fbca9cb4cd8dd561
-SCOPE: delta from the previous PASS; only `"exact": true` added to 2 integer-count answers in exercises.json
+SCOPE: delta teacher-figure,wording from b164528853e92d1a base 146d1b7
 
 ## Blocking
 
