@@ -1,0 +1,771 @@
+<!doctype html>
+<html lang="fi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f7f3ec"><meta name="robots" content="noindex">
+<meta name="description" content="Animoitu esitys siitä, miten Ruukkilabran kehitystyö on organisoitu: opettaja, tekoälyagentit, työjono, tarkistukset ja julkaisu.">
+<title>Ruukkilabra | Kehitystyön organisointi</title>
+<link rel="icon" href="../brand/ruukkilabra-32.png">
+<style>
+@font-face{font-family:"Fraunces";font-weight:100 900;font-display:swap;src:url(../vendor/fonts/fraunces-latin-wght-normal.woff2) format("woff2")}
+@font-face{font-family:"Plus Jakarta Sans";font-weight:200 800;font-display:swap;src:url(../vendor/fonts/plus-jakarta-sans-latin-wght-normal.woff2) format("woff2")}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0}
+[hidden]{display:none!important}
+.back{font-size:14px;color:var(--accent);margin:0}
+.back a{color:inherit}
+/* Layout: one stage. A brand row, an animated scene, a caption that follows the animation, and step controls. Ruukkilabra's cream, deep green and sage. */
+:root{
+  --bg:#f7f3ec; --surface:#fffdf8; --tint:#efeadd; --soft:#ecf5ee; --sage:#dde8d4;
+  --ink:#14171e; --ink2:#474c5b; --line:#d9d0bb; --accent:#1a4d2e; --on-accent:#f7f3ec;
+  --ok:#1a6b3c; --bad:#b3311f;
+  --serif:"Fraunces","Iowan Old Style",Georgia,serif;
+  --sans:"Plus Jakarta Sans",system-ui,-apple-system,sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#101a14; --surface:#18271d; --tint:#213328; --soft:#1c3024; --sage:#274031;
+    --ink:#e9efe6; --ink2:#a9b8ab; --line:#34503d; --accent:#86cfa0; --on-accent:#0f1a13;
+    --ok:#86cfa0; --bad:#f39483; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#101a14; --surface:#18271d; --tint:#213328; --soft:#1c3024; --sage:#274031;
+  --ink:#e9efe6; --ink2:#a9b8ab; --line:#34503d; --accent:#86cfa0; --on-accent:#0f1a13;
+  --ok:#86cfa0; --bad:#f39483; color-scheme:dark;
+}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.5}
+.wrap{max-width:1080px;margin:0 auto;padding-block:20px 32px;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));
+  display:flex;flex-direction:column;gap:14px}
+.brand{display:flex;align-items:center;gap:12px}
+.brand svg{width:44px;height:44px;flex:none}
+.brand b{font-family:var(--serif);font-size:22px;font-weight:600;color:var(--accent)}
+.brand span{color:var(--ink2);font-size:14px}
+.stage{background:var(--surface);border:1px solid var(--line);border-radius:16px;overflow-x:auto}
+.stage svg{display:block;width:100%;min-width:680px;height:auto;max-height:max(320px,58vh)}
+.cap{min-height:7.2em;display:flex;flex-direction:column;gap:4px}
+.cap h1{font-family:var(--serif);font-weight:600;font-size:clamp(24px,3.4vw,34px);line-height:1.15;margin:0;color:var(--accent);text-wrap:balance}
+.cap p{margin:0;font-size:clamp(17px,2vw,21px);max-width:60ch}
+.ctl{display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+button{font:600 15px var(--sans);color:var(--ink);background:var(--surface);border:1.5px solid var(--accent);border-radius:999px;
+  min-height:44px;padding:0 18px;cursor:pointer}
+button.pri{background:var(--accent);color:var(--on-accent)}
+button:disabled{opacity:.4;cursor:default}
+button.wait{animation:nudge 1.5s ease-in-out infinite}
+@keyframes nudge{50%{box-shadow:0 0 0 7px color-mix(in srgb,var(--accent) 22%,transparent)}}
+button:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.dots{display:flex;gap:6px;margin-left:auto}
+.dots button{min-height:44px;width:30px;padding:0;border:0;background:none;display:grid;place-items:center}
+.dots i{display:block;width:12px;height:12px;border-radius:50%;border:2px solid var(--accent)}
+.dots button[aria-current="true"] i{background:var(--accent)}
+.hint{color:var(--ink2);font-size:13px;margin:0}
+.srcs{border-top:1px solid var(--line);padding-top:12px;color:var(--ink2);font-size:14px}
+.srcs h2{font:600 15px var(--sans);color:var(--ink);margin:0 0 6px}
+.srcs ul{margin:0;padding-left:18px;max-width:80ch}
+.srcs li{margin:5px 0}
+.srcs a{color:var(--accent)}
+
+svg text{font-family:var(--sans);fill:var(--ink)}
+.t{font-size:18px;font-weight:700}
+.s{font-size:14px;fill:var(--ink2)}
+.n{font-size:14px;font-weight:700;fill:var(--accent)}
+.big{font-family:var(--serif);font-size:30px;font-weight:600;fill:var(--accent)}
+.box{fill:var(--surface);stroke:var(--accent);stroke-width:3}
+.prog{fill:var(--tint);stroke:var(--ink);stroke-width:2}
+.person{fill:var(--accent)}
+.pt{fill:var(--on-accent)}
+.ps{fill:var(--on-accent);opacity:.85}
+.chip{fill:var(--soft);stroke:var(--accent);stroke-width:2}
+.wire{stroke:var(--line);stroke-width:2.5;fill:none}
+.ringc{stroke:var(--accent);stroke-width:2.5}
+.f1{fill:var(--soft)} .f2{fill:var(--surface)}
+.core{fill:var(--accent)}
+.scene{display:none}
+.scene.cur{display:block}
+.scbg{fill:var(--surface)}
+.instant *{transition:none!important;animation:none!important}
+.crumb{margin:0;font-size:14px;color:var(--ink2);min-height:1.5em}
+.crumb b{color:var(--accent);font-weight:700}
+.a{opacity:0;transition:opacity .5s ease,transform .6s cubic-bezier(.3,.9,.3,1)}
+.a.on{opacity:1}
+.ring{transform-box:fill-box;transform-origin:center;transform:scale(.72)}
+.ring.on{transform:scale(1)}
+.rise{transform:translateY(14px)} .rise.on{transform:translateY(0)}
+.tok{opacity:0;transition:transform .85s cubic-bezier(.5,0,.2,1),opacity .35s}
+.tok.on{opacity:1}
+.tok rect{fill:var(--surface);stroke:var(--accent);stroke-width:3}
+.tok path{stroke:var(--accent);stroke-width:2.5;fill:none}
+.tok circle{fill:var(--accent)}
+.shake .in{animation:shake .5s 1}
+@keyframes shake{20%{transform:translateX(-5px)}40%{transform:translateX(5px)}60%{transform:translateX(-4px)}80%{transform:translateX(3px)}}
+.mk{font-size:28px;font-weight:700}
+.mk.ok{fill:var(--ok)} .mk.bad{fill:var(--bad)}
+.mk.ok,.mk.bad{transform-box:fill-box;transform-origin:center;animation:pop .45s cubic-bezier(.3,1.7,.5,1) both}
+@keyframes pop{from{transform:scale(.2);opacity:0}}
+.cap p.in{animation:capin .4s ease both}
+@keyframes capin{from{opacity:0;transform:translateY(6px)}}
+.wire.a,.a>.wire{stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset .8s ease .15s,opacity .3s}
+.wire.a.on,.a.on>.wire{stroke-dashoffset:0}
+.pulse{fill:var(--accent)}
+.box,.prog{transition:stroke-width .3s,fill .3s}
+.box.act,.prog.act{stroke-width:6;fill:var(--soft)}
+.glow{stroke:var(--accent);stroke-width:5;fill:none;opacity:0;transition:opacity .5s}
+.glow.on{opacity:1}
+.spin{fill:none;stroke:var(--accent);stroke-width:3.5;stroke-dasharray:44 30;transform-box:fill-box;transform-origin:center;opacity:0}
+.busy .spin{opacity:1;animation:spin 1s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.mainl{stroke:var(--ink);stroke-width:4;fill:none}
+.cd{fill:var(--accent)} .cd.red{fill:var(--bad)}
+.m16{font-size:16px}
+.pill rect{fill:var(--accent)} .pill text{fill:var(--on-accent);font-size:15px;font-weight:600}
+.tile{fill:var(--surface);stroke:var(--line);stroke-width:2;transition:stroke .3s,fill .3s}
+.tile.on{stroke:var(--accent);fill:var(--soft)}
+.bub rect{fill:var(--sage)} .bub path{fill:var(--sage)}
+@media (prefers-reduced-motion: reduce){
+  .a,.tok,.glow,.tile{transition:none}
+  .shake .in,.busy .spin,.mk.ok,.mk.bad,.cap p.in{animation:none}
+  .wire.a,.a>.wire{transition:none}
+  .pulse{display:none}
+  button.wait{animation:none}
+}
+</style>
+</head><body>
+<div class="wrap">
+  <p class="back"><a href="index.html">← <span class="L" lang="en">Presentations</span><span class="L" lang="fi" hidden>Esitykset</span></a></p>
+  <div class="brand"><svg viewBox="95 105 1058 1058" aria-hidden="true">
+  
+  
+  <defs>
+    <clipPath id="spectrum-edge">
+      <path d="M691 385 1098 261 C1122 253 1149 268 1149 294 L1149 556 C1149 587 1133 605 1106 603 L773 501 Z"/>
+    </clipPath>
+  </defs>
+  
+  <g id="valoviuhka" clip-path="url(#spectrum-edge)">
+    <path d="M726 410 1151 320 1151 614 760 513 Z" fill="#1A4B2E"/>
+    <path id="oranssi" d="M686 384 1151 254 1151 321 720 402 Z" fill="#D76A10"/>
+    <path id="keltainen" d="M720 402 1151 321 1151 393 738 421 Z" fill="#FFC914"/>
+    <path id="kellanvihrea" d="M738 421 1151 393 1151 472 754 444 Z" fill="#B5D92D"/>
+    <path id="vihrea" d="M754 444 1151 472 1151 531 771 466 Z" fill="#44AF4D"/>
+    <path id="tumma-vihrea" d="M771 466 1151 531 1151 607 787 507 Z" fill="#1A4B2E"/>
+  </g>
+  
+  <path id="tuleva-sade" d="M113 573 420 477" fill="none" stroke="#1A4B2E" stroke-width="33" stroke-linecap="round"/>
+  
+  <path id="prisma" d="M560 209 C572 184 601 184 614 209 L855 616 C869 639 853 657 829 657 H345 C323 657 311 636 325 615 Z M588 249 378 615 H798 Z" fill="#1A4B2E" fill-rule="evenodd"/>
+  
+  <path id="ahjo" d="M190 680 H1058 C1076 680 1087 693 1087 708 C1087 758 1040 813 985 852 C941 885 919 912 919 963 V1057 C919 1072 906 1082 892 1082 H777 C762 1082 751 1071 751 1057 V937 C751 863 691 803 619 803 C545 803 487 864 487 939 V1057 C487 1072 476 1082 461 1082 H349 C333 1082 325 1071 325 1057 V961 C325 915 307 885 262 852 C204 810 161 758 161 708 C161 693 173 680 190 680 Z" fill="#1A4B2E"/>
+  
+  <path id="kupariovi" d="M511 1082 V945 C511 879 558 830 620 830 C683 830 729 880 729 945 V1082 Z" fill="#B85F2A"/>
+</svg><div><b>Ruukkilabra</b><br><span class="L" lang="en">How the development work is organised: roles, the queue, agents and checks</span><span class="L" lang="fi" hidden>Kehitystyön organisointi: roolit, työjono, agentit ja tarkistukset</span></div></div>
+
+  <p class="crumb" id="crumb"></p>
+  <div class="stage">
+  <svg id="sv" viewBox="0 0 960 540" role="img" aria-label="Animaatio: Ruukkilabran kehitystyön organisointi. Sisältö on luettavissa kuvan alla olevasta tekstistä.">
+    <defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="var(--line)"/></marker></defs>
+
+    <!-- 0 whole -->
+    <g class="scene" data-i="0">
+      <g class="a" data-k="1"><path class="wire" d="M200 222H316" marker-end="url(#ah)"/><text class="s" x="258" y="212" text-anchor="middle">rules, permission</text><circle class="pulse" r="5"><animateMotion dur="2.2s" begin="0s" repeatCount="indefinite" path="M200 222H308"/></circle>
+        <path class="wire" d="M320 290H204" marker-end="url(#ah)"/><text class="s" x="262" y="312" text-anchor="middle">previews</text><circle class="pulse" r="5"><animateMotion dur="2.2s" begin="1.1s" repeatCount="indefinite" path="M320 290H212"/></circle></g>
+      <g class="a" data-k="2"><path class="wire" d="M610 192H716" marker-end="url(#ah)"/><text class="s" x="663" y="182" text-anchor="middle">pull requests</text><circle class="pulse" r="5"><animateMotion dur="2.2s" begin="0.5s" repeatCount="indefinite" path="M610 192H708"/></circle></g>
+      <g class="a" data-k="3"><path class="wire" d="M825 234V296" marker-end="url(#ah)"/><text class="s" x="813" y="270" text-anchor="end">CI builds the site</text><circle class="pulse" r="5"><animateMotion dur="2.2s" begin="1.6s" repeatCount="indefinite" path="M825 234V288"/></circle></g>
+      <g class="a rise" data-k="0"><rect class="person" x="30" y="200" width="170" height="100" rx="14"/><text class="t pt" x="115" y="246" text-anchor="middle">Teacher</text><text class="s ps" x="115" y="269" text-anchor="middle">approves and decides</text></g>
+      <g class="a rise" data-k="1"><rect class="box" x="320" y="150" width="290" height="200" rx="14"/><text class="t" x="465" y="186" text-anchor="middle">Development work</text><text class="s" x="465" y="208" text-anchor="middle">AI agents</text>
+        <path class="wire" d="M465 262L365 288M465 262V288M465 262L565 288"/>
+        <rect class="chip" x="420" y="228" width="90" height="34" rx="8"/><rect class="chip" x="325" y="290" width="80" height="34" rx="8"/><rect class="chip" x="425" y="290" width="80" height="34" rx="8"/><rect class="chip" x="525" y="290" width="80" height="34" rx="8"/></g>
+      <g class="a rise" data-k="2"><rect class="prog" x="720" y="150" width="210" height="84" rx="4"/><text class="t" x="825" y="188" text-anchor="middle">main</text><text class="s" x="825" y="211" text-anchor="middle">the one shared version</text></g>
+      <g class="a rise" data-k="4"><text class="t" x="480" y="452" text-anchor="middle">113 chapters in 3 language versions · 8 courses</text><text class="s" x="480" y="478" text-anchor="middle">measured: median 2 rounds per chapter (records of 93 chapters)</text></g>
+      <g class="a rise" data-k="3"><rect class="prog" x="720" y="300" width="210" height="84" rx="4"/><text class="t" x="825" y="338" text-anchor="middle">ruukkilab.fi</text><text class="s" x="825" y="361" text-anchor="middle">students</text></g>
+    </g>
+
+    <!-- 1 queue -->
+    <g class="scene" data-i="1">
+      <rect class="prog" x="40" y="50" width="330" height="440" rx="4"/><text class="t" x="60" y="86">tyojono.md</text><text class="s" x="60" y="108">the only list of open work</text>
+      <g class="a" id="qr0"><rect class="tile" x="60" y="130" width="290" height="72" rx="10"/><text class="t" x="76" y="160">FY5: harventuma</text><text class="s a" id="q-tag" x="76" y="184">Varattu: claude/fy5-harventuma</text></g>
+      <g class="a" id="qr1"><rect class="tile" x="60" y="216" width="290" height="72" rx="10"/><text class="t" x="76" y="258">FY9: vihjeportaat</text></g>
+      <g class="a" id="qr2"><rect class="tile" x="60" y="302" width="290" height="72" rx="10"/><text class="t" x="76" y="344">Kuvatehtävät FY9</text></g>
+      <g class="a" id="qr3"><rect class="tile" x="60" y="388" width="290" height="72" rx="10"/><text class="t" x="76" y="430">Vihkot FY1–FY8</text></g>
+      <path class="wire a" id="q-wire" d="M350 166H436" marker-end="url(#ah)"/>
+      <g class="a rise" id="q-card"><rect class="box" x="440" y="50" width="480" height="440" rx="14"/><text class="t" x="466" y="92">Draft pull request</text></g>
+      <g class="a" id="ql0"><text class="m16" x="466" y="160">First commit marks the item reserved</text><text class="mk" x="896" y="166" text-anchor="end"></text></g>
+      <g class="a" id="ql1"><text class="m16" x="466" y="226">Work done, three reviews pass</text><text class="mk" x="896" y="232" text-anchor="end"></text></g>
+      <g class="a" id="ql2"><text class="m16" x="466" y="292">CI is green</text><text class="mk" x="896" y="298" text-anchor="end"></text></g>
+      <g class="a" id="ql3"><text class="m16" x="466" y="358">Teacher’s permission recorded in the queue</text><text class="mk" x="896" y="364" text-anchor="end"></text></g>
+      <g class="a" id="ql4"><text class="m16" x="466" y="424">Coordinator merges; the item leaves the queue</text><text class="mk" x="896" y="430" text-anchor="end"></text></g>
+    </g>
+
+    <!-- 5 main -->
+    <g class="scene" data-i="5">
+      <path class="mainl" d="M60 190H900"/><text class="t" x="60" y="166">main</text>
+      <circle class="a cd" id="c0" cx="170" cy="190" r="10"/><circle class="a cd" id="c1" cx="300" cy="190" r="10"/>
+      <path class="wire a" id="br" d="M300 190C350 190 360 100 420 100"/>
+      <g class="a rise" id="prb"><rect class="box" x="424" y="62" width="210" height="76" rx="14"/><text class="t" x="529" y="96" text-anchor="middle">Pull request</text><text class="s" x="529" y="118" text-anchor="middle">CI: changed pages</text></g>
+      <text class="mk" id="m-pr" x="630" y="52" text-anchor="end"></text>
+      <path class="wire a" id="mg" d="M634 100C700 100 690 190 740 190"/>
+      <circle class="a cd" id="md" cx="740" cy="190" r="10"/><text class="mk" id="m-main" x="740" y="168" text-anchor="middle"></text>
+      <circle class="a cd" id="fx" cx="840" cy="190" r="10"/><text class="mk" id="m-fx" x="840" y="168" text-anchor="middle"></text>
+      <rect class="prog" x="60" y="290" width="250" height="84" rx="4"/><text class="t" x="185" y="328" text-anchor="middle">Run on main</text><text class="s" x="185" y="351" text-anchor="middle">after every merge</text>
+      <rect class="prog" x="355" y="290" width="250" height="84" rx="4"/><text class="t" x="480" y="328" text-anchor="middle">Weekly run</text><text class="s" x="480" y="351" text-anchor="middle">the whole site</text>
+      <rect class="prog" x="650" y="290" width="250" height="84" rx="4"/><text class="t" x="775" y="328" text-anchor="middle">Site build</text><text class="s" x="775" y="351" text-anchor="middle">out: to ruukkilab.fi</text>
+      <rect class="glow" id="g-main" x="644" y="284" width="262" height="96" rx="8"/>
+      <text class="big a rise" id="ban" x="480" y="448" text-anchor="middle">A red main comes first</text>
+      <text class="t a rise" id="ban2" x="480" y="486" text-anchor="middle">Nothing else is merged before the fix</text>
+    </g>
+
+    <!-- 2 harness -->
+    <g class="scene" data-i="2">
+      <circle class="a ring" data-k="6" cx="300" cy="270" r="246" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-dasharray="9 7"/>
+      <circle class="a ring ringc f1" data-k="5" cx="300" cy="270" r="230"/>
+      <circle class="a ring ringc f2" data-k="4" cx="300" cy="270" r="194"/>
+      <circle class="a ring ringc f1" data-k="3" cx="300" cy="270" r="158"/>
+      <circle class="a ring ringc f2" data-k="2" cx="300" cy="270" r="122"/>
+      <circle class="a ring ringc f1" data-k="1" cx="300" cy="270" r="86"/>
+      <circle class="a ring core" data-k="0" cx="300" cy="270" r="48"/>
+      <text class="t a pt" data-k="0" x="300" y="276" text-anchor="middle">model</text>
+      <text class="s a" data-k="1" x="300" y="208" text-anchor="middle">tools</text>
+      <text class="s a" data-k="2" x="300" y="172" text-anchor="middle">memory</text>
+      <text class="s a" data-k="3" x="300" y="136" text-anchor="middle">limits</text>
+      <text class="s a" data-k="4" x="300" y="100" text-anchor="middle">checks</text>
+      <text class="s a" data-k="5" x="300" y="64" text-anchor="middle">record</text>
+      <g id="defs"></g>
+    </g>
+
+    <!-- 3 one chapter -->
+    <g class="scene" data-i="3">
+      <path class="wire" d="M190 265H246" marker-end="url(#ah)"/>
+      <path class="wire" d="M420 265L486 148" marker-end="url(#ah)"/><path class="wire" d="M420 265H486" marker-end="url(#ah)"/><path class="wire" d="M420 265L486 392" marker-end="url(#ah)"/>
+      <path class="wire" d="M690 145L756 248" marker-end="url(#ah)"/><path class="wire" d="M690 270H756" marker-end="url(#ah)"/><path class="wire" d="M690 395L756 288" marker-end="url(#ah)"/>
+      <rect class="box" x="40" y="220" width="150" height="90" rx="14"/><text class="t" x="115" y="262" text-anchor="middle">Writer</text><text class="s" x="115" y="284" text-anchor="middle">agent</text>
+      <rect class="prog" x="250" y="220" width="170" height="90" rx="4"/><text class="t" x="335" y="262" text-anchor="middle">Automatic checks</text><text class="s" x="335" y="284" text-anchor="middle">a program</text>
+      <rect class="box" x="490" y="110" width="200" height="70" rx="14"/><text class="t" x="590" y="143" text-anchor="middle">Science reviewer</text><text class="s" x="590" y="164" text-anchor="middle">is the physics right?</text>
+      <rect class="box" x="490" y="235" width="200" height="70" rx="14"/><text class="t" x="590" y="268" text-anchor="middle">Pedagogy reviewer</text><text class="s" x="590" y="289" text-anchor="middle">can a student learn it?</text>
+      <rect class="box" x="490" y="360" width="200" height="70" rx="14"/><text class="t" x="590" y="393" text-anchor="middle">Visual reviewer</text><text class="s" x="590" y="414" text-anchor="middle">figures, maths, Finnish</text>
+      <rect class="prog" x="760" y="225" width="150" height="85" rx="4"/><text class="t" x="835" y="264" text-anchor="middle">Pull request</text><text class="s" x="835" y="286" text-anchor="middle">out: to coordinator</text>
+      <text class="mk" id="m-c" x="416" y="210" text-anchor="end"></text>
+      <text class="mk" id="m-r1" x="686" y="100" text-anchor="end"></text>
+      <text class="mk" id="m-r2" x="686" y="225" text-anchor="end"></text>
+      <text class="mk" id="m-r3" x="686" y="350" text-anchor="end"></text>
+      <text class="mk" id="m-t" x="906" y="215" text-anchor="end"></text>
+      <g class="tok" id="d1"><g class="in"><rect width="34" height="44" rx="4"/><path d="M8 12H26M8 21H26M8 30H20"/></g></g>
+      <g class="tok" id="d2"><g class="in"><rect width="34" height="44" rx="4"/><path d="M8 12H26M8 21H26M8 30H20"/></g></g>
+      <g class="tok" id="d3"><g class="in"><rect width="34" height="44" rx="4"/><path d="M8 12H26M8 21H26M8 30H20"/></g></g>
+    </g>
+
+    <!-- 6 rule -->
+    <g class="scene" data-i="6">
+      <path class="wire" d="M8 150H286" marker-end="url(#ah)"/><path class="wire" d="M470 150H536" marker-end="url(#ah)"/><path class="wire" d="M640 195V300" marker-end="url(#ah)"/>
+      <text class="s" x="24" y="138">from the teacher</text>
+      <rect class="prog" x="290" y="110" width="180" height="80" rx="4"/><text class="t" x="380" y="147" text-anchor="middle">House rules</text><text class="s a" id="r-date" x="380" y="169" text-anchor="middle">added 29 Oct 2026</text>
+      <rect class="prog" x="540" y="110" width="200" height="80" rx="4"/><text class="t" x="640" y="147" text-anchor="middle">Check program</text><text class="s a" id="r-prog" x="640" y="169" text-anchor="middle">reads every text and figure</text>
+      <g id="tiles"></g>
+      <g class="tok pill" id="pill"><rect width="230" height="38" rx="19"/><text x="115" y="25" text-anchor="middle">“Vectors get an overline”</text></g>
+    </g>
+
+    <!-- 4 many chapters -->
+    <g class="scene" data-i="4">
+      <path class="wire" d="M8 270H286" marker-end="url(#ah)"/><text class="s" x="20" y="258">from the teacher</text>
+      <path class="wire" d="M470 270L596 128" marker-end="url(#ah)"/><path class="wire" d="M470 270H596" marker-end="url(#ah)"/><path class="wire" d="M470 270L596 412" marker-end="url(#ah)"/>
+      <path class="wire" d="M380 310V528" marker-end="url(#ah)"/>
+      
+      <rect class="prog" x="310" y="80" width="140" height="70" rx="4"/><text class="t" x="380" y="108" text-anchor="middle">Work queue</text>
+      <rect class="box" x="290" y="230" width="180" height="80" rx="14"/><text class="t" x="380" y="267" text-anchor="middle">Coordinator</text><text class="s" x="380" y="289" text-anchor="middle">writes no content</text>
+      <path class="wire" d="M380 150V226" marker-end="url(#ah)"/>
+      <g id="wk0"><rect class="box" x="600" y="92" width="200" height="72" rx="14"/><text class="t" x="620" y="124">Worker · FY3</text><text class="s" x="620" y="146">one chapter</text><circle class="spin" cx="770" cy="144" r="11"/><text class="mk" x="784" y="154" text-anchor="end"></text></g>
+      <g id="wk1"><rect class="box" x="600" y="234" width="200" height="72" rx="14"/><text class="t" x="620" y="266">Worker · FY5</text><text class="s" x="620" y="288">one chapter</text><circle class="spin" cx="770" cy="286" r="11"/><text class="mk" x="784" y="296" text-anchor="end"></text></g>
+      <g id="wk2"><rect class="box" x="600" y="376" width="200" height="72" rx="14"/><text class="t" x="620" y="408">Worker · FY8</text><text class="s" x="620" y="430">one chapter</text><circle class="spin" cx="770" cy="428" r="11"/><text class="mk" x="784" y="438" text-anchor="end"></text></g>
+      <text class="t" id="pub" x="396" y="470">merged into main: 0</text>
+      <g class="a bub" id="bub"><rect x="20" y="176" width="170" height="44" rx="14"/><path d="M80 220l10 16 12-16z"/><text class="t" x="105" y="205" text-anchor="middle">“You may merge”</text></g>
+      <g class="tok" id="q0"><circle r="9"/></g><g class="tok" id="q1"><circle r="9"/></g><g class="tok" id="q2"><circle r="9"/></g>
+      <g class="tok" id="e0"><g class="in"><rect width="26" height="34" rx="4"/><path d="M6 10H20M6 17H20M6 24H15"/></g></g>
+      <g class="tok" id="e1"><g class="in"><rect width="26" height="34" rx="4"/><path d="M6 10H20M6 17H20M6 24H15"/></g></g>
+      <g class="tok" id="e2"><g class="in"><rect width="26" height="34" rx="4"/><path d="M6 10H20M6 17H20M6 24H15"/></g></g>
+    </g>
+
+    <!-- 7 skills -->
+    <g class="scene" data-i="7">
+      <rect class="prog" x="40" y="50" width="300" height="440" rx="4"/><text class="t" x="60" y="86">CLAUDE.md</text><text class="s" x="60" y="108">read in every session</text>
+      <g class="a" data-r="1"><rect class="tile" x="60" y="140" width="260" height="60" rx="10"/><text class="t" x="76" y="177">Never push to main</text></g><g class="a" data-r="1"><rect class="tile" x="60" y="214" width="260" height="60" rx="10"/><text class="t" x="76" y="251">Notation and units</text></g><g class="a" data-r="1"><rect class="tile" x="60" y="288" width="260" height="60" rx="10"/><text class="t" x="76" y="325">Publication rule</text></g>
+      <text class="s a" id="sk-note" x="60" y="392">hard rules stay here</text>
+      <g class="a" id="sk-pill"><rect class="person" x="420" y="56" width="500" height="50" rx="25"/><text class="t pt" id="sk-task" x="670" y="88" text-anchor="middle"></text></g>
+      <g class="a rise" id="sk0"><rect class="tile" x="420" y="140" width="240" height="110" rx="12"/><text class="t" x="440" y="188">Force diagrams</text><text class="s" x="440" y="214">drawing and checking</text></g><g class="a rise" id="sk1"><rect class="tile" x="680" y="140" width="240" height="110" rx="12"/><text class="t" x="700" y="188">Concept cards</text><text class="s" x="700" y="214">authoring guide</text></g><g class="a rise" id="sk2"><rect class="tile" x="420" y="270" width="240" height="110" rx="12"/><text class="t" x="440" y="318">CI triage</text><text class="s" x="440" y="344">when main is red</text></g><g class="a rise" id="sk3"><rect class="tile" x="680" y="270" width="240" height="110" rx="12"/><text class="t" x="700" y="318">Coordinator duties</text><text class="s" x="700" y="344">workers, merge order</text></g>
+      <text class="t a rise" id="sk-p1" x="670" y="440" text-anchor="middle">A proposal: not yet in the repository</text>
+      <text class="s a rise" id="sk-p2" x="670" y="466" text-anchor="middle">today: seven slash commands and one general design skill</text>
+    </g>
+
+    <!-- 9 teacher -->
+    <g class="scene" data-i="9">
+      <g class="a rise" data-k="0"><rect class="box" x="110" y="30" width="500" height="74" rx="14"/><text class="t" x="134" y="62">Plans</text><text class="s" x="134" y="84">what is done and in which order</text><path class="wire" d="M610 67H946" marker-end="url(#ah)"/><text class="s" x="781" y="57" text-anchor="middle">to the queue</text></g>
+      <g class="a rise" data-k="1"><rect class="box" x="110" y="122" width="500" height="74" rx="14"/><text class="t" x="134" y="154">Approves figures and content</text><text class="s" x="134" y="176">before anything new is published</text><path class="wire" d="M610 159H946" marker-end="url(#ah)"/><text class="s" x="781" y="149" text-anchor="middle">to the agents</text></g>
+      <g class="a rise" data-k="2"><rect class="box" x="110" y="214" width="500" height="74" rx="14"/><text class="t" x="134" y="246">Reads the preview</text><text class="s" x="134" y="268">the finished pages of a change</text><path class="wire" d="M952 251H616" marker-end="url(#ah)"/><text class="s" x="781" y="241" text-anchor="middle">from the agents</text></g>
+      <g class="a rise" data-k="3"><rect class="box" x="110" y="306" width="500" height="74" rx="14"/><text class="t" x="134" y="338">Gives permission</text><text class="s" x="134" y="360">“You may merge”, recorded in the queue</text><path class="wire" d="M610 343H946" marker-end="url(#ah)"/><text class="s" x="781" y="333" text-anchor="middle">to the coordinator</text></g>
+      <g class="a rise" data-k="4"><rect class="box" x="110" y="398" width="500" height="74" rx="14"/><text class="t" x="134" y="430">Remarks</text><text class="s" x="134" y="452">a remark becomes a rule for every agent</text><path class="wire" d="M610 435H946" marker-end="url(#ah)"/><text class="s" x="781" y="425" text-anchor="middle">to the rules</text></g>
+      <text class="t a rise" id="te-foot" x="480" y="512" text-anchor="middle">Agents write the pages, run the checks and do the rounds in between.</text>
+    </g>
+
+    <!-- 8 limits -->
+    <g class="scene" data-i="8">
+      <g class="a rise"><rect class="box" x="30" y="90" width="280" height="200" rx="14"/><text class="t" x="54" y="130">Shared blind spots</text>
+        <text class="s" x="54" y="160">The three reviewers are the same</text><text class="s" x="54" y="182">family of language model. They</text><text class="s" x="54" y="204">read independently, but they</text><text class="s" x="54" y="226">can miss the same thing.</text></g>
+      <g class="a rise"><rect class="box" x="340" y="90" width="280" height="200" rx="14"/><text class="t" x="364" y="130">Scoped browser tests</text>
+        <text class="s" x="364" y="160">A pull request tests only the</text><text class="s" x="364" y="182">pages it can change. A page can</text><text class="s" x="364" y="204">stay broken until the weekly</text><text class="s" x="364" y="226">run tests the whole site.</text></g>
+      <g class="a rise"><rect class="box" x="650" y="90" width="280" height="200" rx="14"/><text class="t" x="674" y="130">The backlog grows</text>
+        <text class="s" x="674" y="160">New exercises are written faster</text><text class="s" x="674" y="182">than they are reviewed. Nothing</text><text class="s" x="674" y="204">unreviewed is shown, but the</text><text class="s" x="674" y="226">queue of reviews gets longer.</text></g>
+      <text class="big a rise" x="480" y="390" text-anchor="middle">The harness makes the agents’ work checkable.</text>
+      <text class="t a rise" x="480" y="432" text-anchor="middle">What is published is always the teacher’s decision.</text>
+    </g>
+  </svg>
+  </div>
+
+  <div class="cap"><h1 id="capT"></h1><p id="capP" aria-live="polite"></p></div>
+
+  <div class="ctl">
+    <button id="prev" type="button">Back</button>
+    <button id="replay" type="button">Replay</button>
+    <button id="next" class="pri" type="button">Next</button>
+    <button id="all" type="button" aria-pressed="false">Play all</button>
+    <button id="lang" type="button">Suomeksi</button>
+    <div class="dots" id="dots"></div>
+  </div>
+  <p class="hint L" lang="en">Next, the right arrow or space moves one step; each scene zooms into one box of the picture before it. The run in scene 5 is an example. The queue items, the numbers and the red test run are real.</p>
+  <p class="hint L" lang="fi" hidden>Seuraava, oikea nuoli tai välilyönti vie yhden askeleen eteenpäin; jokainen kohtaus zoomaa edellisen kuvan yhteen laatikkoon. Kohtauksen 5 kulku on esimerkki. Jonon työt, luvut ja punainen testiajo ovat todellisia.</p>
+  <div class="srcs">
+    <h2 class="L" lang="en">Sources</h2><h2 class="L" lang="fi" hidden>Lähteet</h2>
+    <ul>
+      <li>Liu, J. (2026). <i>Engineering and Governing the Agent Harness: A Technology and Policy Framework for the Runtime Layer of Agentic AI</i>. UNU Macau Technology Report No. 1. United Nations University Institute in Macau.
+        <span class="L" lang="en">The harness and its rings.</span><span class="L" lang="fi" hidden>Valjaat ja niiden kehät.</span>
+        <a href="https://unu.edu/publication/engineering-and-governing-agent-harness-technology-and-policy-framework-runtime-layer">unu.edu</a></li>
+      <li>Schluntz, E. &amp; Zhang, B. (2024). <i>Building effective agents</i>. Anthropic.
+        <span class="L" lang="en">The difference between a fixed workflow and an agent.</span><span class="L" lang="fi" hidden>Kiinteän työnkulun ja agentin ero.</span>
+        <a href="https://www.anthropic.com/engineering/building-effective-agents">anthropic.com</a></li>
+      <li>Ng, A. (2024). <i>Translation Agent: Agentic translation using reflection workflow</i>. GitHub.
+        <span class="L" lang="en">The write, review, improve loop.</span><span class="L" lang="fi" hidden>Kirjoita, katselmoi, paranna -kierros.</span>
+        <a href="https://github.com/andrewyng/translation-agent">github.com</a></li>
+      <li>Ji, Y. (2025). <i>Context Engineering for AI Agents: Lessons from Building Manus</i>. Manus.
+        <span class="L" lang="en">Files as an agent’s memory.</span><span class="L" lang="fi" hidden>Tiedostot agentin muistina.</span>
+        <a href="https://manus.im/blog/Context-Engineering-for-AI-Agents-Lessons-from-Building-Manus">manus.im</a></li>
+      <li>Greshake, K., Abdelnabi, S., Mishra, S., Endres, C., Holz, T. &amp; Fritz, M. (2023). <i>Not what you’ve signed up for: Compromising Real-World LLM-Integrated Applications with Indirect Prompt Injection</i>. arXiv:2302.12173.
+        <span class="L" lang="en">Why a message an agent reads is data and never an approval.</span><span class="L" lang="fi" hidden>Miksi agentin lukema viesti on tietoa eikä koskaan hyväksyntä.</span>
+        <a href="https://arxiv.org/abs/2302.12173">arxiv.org</a></li>
+      <li>Li et al. (2026). <i>SkillsBench</i>. arXiv:2602.12670.
+        <span class="L" lang="en">Skills files in the harness.</span><span class="L" lang="fi" hidden>Taitotiedostot valjaissa.</span>
+        <a href="https://arxiv.org/abs/2602.12670">arxiv.org</a></li>
+      <li>Liu, J. (2026). <i>Agentic AI: Agents That Act, Agents That Simulate</i>. <span class="L" lang="en">Workshop, UNU Macau AI Conference, 26 November 2026. The vocabulary used here.</span><span class="L" lang="fi" hidden>Työpaja, UNU Macau AI Conference, 26.11.2026. Tässä käytetyt käsitteet.</span></li>
+    </ul>
+  </div>
+</div>
+
+<script>
+(function(){
+  var NS='http://www.w3.org/2000/svg';
+  var sv=document.getElementById('sv'), capT=document.getElementById('capT'), capP=document.getElementById('capP');
+  var $=function(s){return sv.querySelector(s)};
+  function el(tag,attrs,text){var e=document.createElementNS(NS,tag);for(var k in attrs)e.setAttribute(k,attrs[k]);if(text!=null)e.textContent=text;return e}
+  var fast=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // scene 0: stage chips
+  var stages=[['Pohdinta','phenomenon'],['Ennusta','predict'],['Tutki','explore'],['Teoria','the law'],['Esimerkit','examples'],['Tehtävät','three levels'],['Testaa ja','exit task']];
+  var chips=el('g',{});
+  stages.forEach(function(s,i){var x=24+i*132,g=el('g',{'class':'a rise'});
+    g.appendChild(el('rect',{'class':'chip',x:x,y:170,width:120,height:150,rx:14}));
+    g.appendChild(el('text',{'class':'n',x:x+16,y:204},String(i+1)));
+    g.appendChild(el('text',{'class':'t',x:x+16,y:238},s[0]));
+    if(i===6)g.appendChild(el('text',{'class':'t',x:x+16,y:260},'arvioi'));
+    g.appendChild(el('text',{'class':'s',x:x+16,y:i===6?288:268},s[1]));
+    chips.appendChild(g)});
+
+  // scene 1: harness definitions
+  var parts=[['Model','one writes, a stronger one checks the physics'],['Tools','programs that check, build, take screenshots'],['Memory','files: work queue, house rules, notes'],['Limits','may run checks and save work, not publish'],['Checks','units, full solutions, layout on a phone'],['Record','every round, review and cost is saved'],['Boundary','cannot publish: permission comes from outside']];
+  var defs=$('#defs');
+  parts.forEach(function(p,i){var y=96+i*62,g=el('g',{'class':'a rise','data-k':i});
+    g.appendChild(el('text',{'class':'t',x:590,y:y},p[0]));
+    g.appendChild(el('text',{'class':'s',x:590,y:y+22},p[1]));defs.appendChild(g)});
+
+  // scene 3: chapter tiles
+  var tiles=$('#tiles');
+  for(var i=0;i<8;i++){var x=40+i*112,g=el('g',{});
+    g.appendChild(el('rect',{'class':'tile',x:x,y:330,width:96,height:64,rx:10}));
+    g.appendChild(el('text',{'class':'t',x:x+14,y:369},'FY'+(i+1)));
+    g.appendChild(el('text',{'class':'mk',x:x+86,y:372,'text-anchor':'end'}));tiles.appendChild(g)}
+  tiles.appendChild(el('text',{'class':'s a',id:'t-cap',x:480,y:430,'text-anchor':'middle'},'every chapter of every course, old and new, on every change'));
+
+
+  var FI={'phenomenon':'ilmiö','predict':'ennuste','explore':'tutkimus','the law':'laki','examples':'vaiheittain','three levels':'kolme tasoa','exit task':'itsearviointi',
+  'A complete model solution for every task':'Jokaisessa tehtävässä täydellinen malliratkaisu','No AI answering on the page':'Sivulla ei vastaa tekoäly','No logins, no tracking':'Ei kirjautumista, ei seurantaa',
+  'model':'malli','tools':'työkalut','memory':'muisti','limits':'rajat','checks':'tarkistukset','record':'loki',
+  'Model':'Malli','Tools':'Työkalut','Memory':'Muisti','Limits':'Rajat','Checks':'Tarkistukset','Record':'Loki','Teacher':'Opettaja',
+  'one writes, a stronger one checks the physics':'yksi kirjoittaa, vahvempi tarkistaa fysiikan','programs that check, build, take screenshots':'ohjelmia: tarkistus, koonti, kuvakaappaukset','files: work queue, house rules, notes':'tiedostot: työjono, säännöt, muistiinpanot','may run checks and save work, not publish':'saa ajaa tarkistuksia ja tallentaa, ei julkaista','units, full solutions, layout on a phone':'yksiköt, ratkaisut, asettelu puhelimella','every round, review and cost is saved':'jokainen kierros, katselmointi ja kulu tallessa','nothing reaches students without approval':'mikään ei päädy opiskelijoille ilman lupaa',
+  'Writer':'Kirjoittaja','agent':'agentti','Automatic checks':'Tarkistukset','a program':'ohjelma',
+  'Science reviewer':'Fysiikka','is the physics right?':'katselmoija: onko oikein?','Pedagogy reviewer':'Pedagogiikka','can a student learn it?':'katselmoija: voiko oppia?','Visual reviewer':'Ulkoasu ja kieli','figures, maths, Finnish':'katselmoija: kuvat, kaavat',
+  'reads, decides':'lukee, päättää','students':'opiskelijat',
+  'notices something':'huomaa jotakin','House rules':'Säännöt','added 29 Oct 2026':'lisätty 29.10.2026','Check program':'Tarkistusohjelma','reads every text and figure':'lukee tekstit ja kuvat','“Vectors get an overline”':'”Vektoreille yläviiva”','every chapter of every course, old and new, on every change':'jokainen luku jokaisesta moduulista, vanhat ja uudet, joka muutoksessa',
+  'approves':'hyväksyy','Work queue':'Työjono','Coordinator':'Koordinaattori','writes no content':'ei kirjoita sisältöä','Worker · FY3':'Työagentti · FY3','Worker · FY5':'Työagentti · FY5','Worker · FY8':'Työagentti · FY8','one chapter':'yksi luku','merged into main: ':'yhdistetty: ','“You may merge”':'”Saat yhdistää”',
+  'Shared blind spots':'Yhteiset sokeat pisteet','The three reviewers are the same':'Kolme katselmoijaa ovat samaa','family of language model. They':'kielimalliperhettä. Ne lukevat','read independently, but they':'erikseen, mutta sama virhe voi','can miss the same thing.':'jäädä kaikilta huomaamatta.',
+  'Translations':'Käännökset','The English and easy-Finnish':'Englannin ja selkeän suomen','versions are checked by agents':'versiot tarkistavat agentit ja','and programs. No person reads':'ohjelmat. Kukaan ihminen ei','them all.':'lue niitä kaikkia.',
+  'The classroom':'Luokkahuone','The checks show a page is':'Tarkistukset osoittavat, että','consistent and complete. Whether':'sivu on ehjä ja täydellinen.','it teaches well is for teachers':'Opettaako se hyvin, selviää','and students to find out.':'vasta opetuksessa.',
+  'The harness makes the agents’ work checkable.':'Valjaat tekevät agenttien työstä tarkistettavaa.','It does not replace professional judgement about physics or teaching.':'Ne eivät korvaa ammattilaisen harkintaa fysiikasta tai opettamisesta.',
+  'What students get':'Mitä opiskelija saa','An agent is a language model inside a harness':'Agentti on kielimalli valjaissa','A teacher’s remark becomes a rule':'Opettajan huomiosta tulee sääntö','Many chapters at once':'Monta lukua yhtä aikaa','What this does not solve':'Mitä tämä ei ratkaise',
+  'Every chapter takes the student through the same seven stages, inquiry first.':'Jokainen luku kulkee samat seitsemän vaihetta, tutkiminen edellä.',
+  'The student opens an ordinary website. The agents work behind it, before anything is published.':'Opiskelija avaa tavallisen verkkosivun. Agentit työskentelevät sen takana, ennen kuin mitään julkaistaan.',
+  'A language model on its own answers once and stops.':'Kielimalli yksinään vastaa kerran ja pysähtyy.',
+  'Tools let it act: run a check, build a page, take a screenshot.':'Työkaluilla se voi toimia: ajaa tarkistuksen, koota sivun, ottaa kuvakaappauksen.',
+  'Memory is files. An agent forgets everything when its session ends.':'Muisti on tiedostoja. Agentti unohtaa kaiken, kun sen istunto päättyy.',
+  'Limits are technical. Its permissions do not let it publish.':'Rajat ovat teknisiä. Sen oikeudet eivät riitä julkaisemiseen.',
+  'Automatic checks run on everything it produces.':'Automaattiset tarkistukset ajetaan kaikelle, mitä se tuottaa.',
+  'Every round, review and its cost is recorded with the change.':'Jokainen kierros, katselmointi ja sen kulu tallentuu muutoksen mukana.',
+  'The teacher is the outer boundary. Together, the rings are the harness.':'Opettaja on uloin raja. Yhdessä nämä kehät ovat valjaat (harness).',
+  'A writer agent drafts the chapter: text, figures, a simulation, exercises with full solutions.':'Kirjoittaja-agentti laatii luvun: tekstin, kuvat, simulaation ja tehtävät täysine ratkaisuineen.',
+  'A program checks it. One formula is cut off on a phone screen.':'Ohjelma tarkistaa sen. Yksi kaava leikkautuu puhelimen näytöllä.',
+  'Back to the writer, which fixes it. No person is needed for this.':'Takaisin kirjoittajalle, joka korjaa sen. Tähän ei tarvita ihmistä.',
+  'The checks pass.':'Tarkistukset menevät läpi.',
+  'Three reviewer agents read it independently. None sees another’s notes.':'Kolme katselmoija-agenttia lukee luvun toisistaan riippumatta. Kukaan ei näe toisen muistiinpanoja.',
+  'Physics passes. Presentation passes. The pedagogy reviewer finds a step a first-time learner cannot follow.':'Fysiikka hyväksytään. Ulkoasu hyväksytään. Pedagogiikan katselmoija löytää vaiheen, jota ensikertalainen ei pysty seuraamaan.',
+  'The writer fixes that step.':'Kirjoittaja korjaa sen vaiheen.',
+  'Checked again. Only the pedagogy reviewer re-reads; the other two passes still hold.':'Tarkistetaan uudelleen. Vain pedagogiikan katselmoija lukee uudestaan; kaksi muuta hyväksyntää pätevät yhä.',
+  'All three pass. The teacher reads a preview of the finished pages.':'Kaikki kolme hyväksyvät. Opettaja lukee valmiiden sivujen esikatselun.',
+  'The teacher allows the merge.':'Opettaja antaa luvan yhdistää.',
+  'Only now is the chapter built into ruukkilab.fi.':'Vasta nyt luku kootaan osaksi ruukkilab.fi-sivustoa.',
+  'The teacher reads a chapter and notices vectors written three different ways.':'Opettaja lukee lukua ja huomaa, että vektorit on merkitty kolmella eri tavalla.',
+  'The remark is written into the house rules that every writer and reviewer agent reads.':'Huomio kirjataan sääntöihin, jotka jokainen kirjoittaja- ja katselmoija-agentti lukee.',
+  'Where a program can test it, the rule becomes a check.':'Kun ohjelma pystyy testaamaan säännön, siitä tehdään tarkistus.',
+  'From then on the check runs on every chapter.':'Siitä lähtien tarkistus ajetaan jokaiselle luvulle.',
+  'A correction made once holds for every later chapter. The teacher decides how pages must be written.':'Kerran tehty korjaus pätee jokaisessa myöhemmässä luvussa. Opettaja päättää, miten sivut kirjoitetaan.',
+  'The queue is one shared file. A coordinator agent takes three items from it.':'Työjono on yksi yhteinen tiedosto. Koordinaattoriagentti ottaa siitä kolme työtä.',
+  'It starts one worker per item, each on a different course so they never edit the same files.':'Se käynnistää yhden työagentin työtä kohti, jokaisen eri moduuliin, jotta ne eivät muokkaa samoja tiedostoja.',
+  'Each worker runs the whole write, review, improve loop on its own.':'Jokainen työagentti ajaa koko kirjoita, katselmoi, paranna -kierroksen itse.',
+  'Finished chapters come back as previews. A message from another agent is information, never approval.':'Valmiit luvut palaavat esikatseluina. Toisen agentin viesti on tietoa, ei koskaan hyväksyntä.',
+  'Approval comes only from the teacher.':'Hyväksyntä tulee vain opettajalta.',
+  'The coordinator merges the work into main.':'Koordinaattori yhdistää työt yhteiseen versioon.',
+  'Three things the harness does not settle.':'Kolme asiaa, joita valjaat eivät ratkaise.',
+  'The teacher’s own reading is the check on all three, above all for new physics.':'Opettajan oma lukeminen on näiden kaikkien tarkistus, etenkin uudessa fysiikassa.',
+  'Who does what':'Kuka tekee mitä','The queue steers the work':'Työjono ohjaa työtä','One job: write, review, improve':'Yksi työ: kirjoita, katselmoi, paranna','Parallel work':'Rinnakkainen työ','Merging and main':'Yhdistäminen yhteiseen versioon',
+  'approves and decides':'hyväksyy ja päättää','one long session':'yksi pitkä istunto','Worker':'Työagentti','1 item · 1 branch · 1 PR':'1 työ · 1 haara · 1 PR','Developer':'Kehittäjä','writes and fixes':'kirjoittaa ja korjaa','Science':'Fysiikka','Pedagogy':'Pedagogiikka','Visual and language':'Ulkoasu ja kieli','reviewer':'katselmoija',
+  'the only list of open work':'ainoa lista avoimesta työstä','FY4 · chapter':'FY4 · luku','FY6 · chapter':'FY6 · luku','FY8 · exercises':'FY8 · tehtävät','Shared script':'Yhteinen skripti','Reserved: claude/lesson-…':'Varattu: claude/lesson-…','Draft pull request':'Muutosehdotus (luonnos)',
+  'First commit marks the item reserved':'Ensimmäinen tallennus varaa työn','Work done, three reviews pass':'Työ tehty, kolme katselmointia läpi','CI is green':'Automaattinen testiajo on vihreä','Teacher’s permission recorded in the queue':'Opettajan lupa kirjattu jonoon','Coordinator merges; the item leaves the queue':'Koordinaattori yhdistää; työ poistuu jonosta',
+  'CI: changed pages':'testiajo: muuttuneet sivut','Run on main':'Uusi testiajo','after every merge':'jokaisen yhdistämisen jälkeen','Weekly run':'Viikkoajo','the whole site':'koko sivusto','built from the run on main':'kootaan mainin ajosta','A red main comes first':'Punainen yhteinen versio ensin','Nothing else is merged before the fix':'Muuta ei yhdistetä ennen korjausta',
+  'Scoped browser tests':'Rajattu selaintestaus','A pull request tests only the':'Muutosehdotus testaa vain sivut,','pages it can change. A page can':'joita se voi muuttaa. Sivu voi','stay broken until the weekly':'olla rikki, kunnes viikkoajo','run tests the whole site.':'testaa koko sivuston.',
+  'The backlog grows':'Jono kasvaa','New exercises are written faster':'Uusia tehtäviä syntyy nopeammin','than they are reviewed. Nothing':'kuin niitä katselmoidaan.','unreviewed is shown, but the':'Katselmoimatonta ei näytetä,','queue of reviews gets longer.':'mutta jono pitenee.',
+  'What is published is always the teacher’s decision.':'Julkaisusta päättää aina opettaja.',
+  'The teacher approves content and figures and decides what is published.':'Opettaja hyväksyy sisällön ja kuvat ja päättää, mitä julkaistaan.',
+  'One coordinator keeps the queue, starts the workers and proposes the merge order. It writes no content.':'Yksi koordinaattori pitää jonoa, käynnistää työagentit ja ehdottaa yhdistämisjärjestyksen. Se ei kirjoita sisältöä.',
+  'A worker does one queue item: one branch, one pull request. When it is merged, the session ends.':'Työagentti tekee yhden jonon työn: yksi haara, yksi pull request. Kun se on yhdistetty, istunto päättyy.',
+  'The worker does not write either. It directs four sub-agents: a developer writes, three reviewers judge.':'Työagenttikaan ei kirjoita itse. Se ohjaa neljää aliagenttia: kehittäjä kirjoittaa, kolme katselmoijaa arvioi.',
+  'All open work is in one file. No other list holds open work.':'Kaikki avoin työ on yhdessä tiedostossa. Muuta listaa ei ole.',
+  'A branch is invisible to other sessions, so an item is taken by opening a draft pull request.':'Agentin työkopio (haara) ei näy muille, joten työ varataan avaamalla luonnos muutosehdotuksesta.',
+  'The work happens on the branch. Reviews and checks are recorded in the pull request.':'Työ tehdään työkopiossa. Katselmoinnit ja tarkistukset kirjautuvat muutosehdotukseen.',
+  'The teacher’s permission is recorded in the queue. Nothing is merged without it.':'Opettajan lupa kirjataan jonoon. Ilman sitä mitään ei yhdistetä.',
+  'The coordinator merges. The same pull request removes the item from the queue.':'Koordinaattori yhdistää. Sama muutosehdotus poistaa työn jonosta.',
+  'A pull request’s CI tests in a browser only the pages the change can alter.':'Muutosehdotuksen automaattinen testiajo (CI) testaa selaimessa vain sivut, joita muutos voi muuttaa.',
+  'The green pull request is merged.':'Vihreä muutosehdotus yhdistetään.',
+  'After the merge, main is tested again against a different base. It can test pages the pull request’s run did not.':'Yhdistämisen jälkeen yhteinen versio testataan uudelleen eri vertailukohtaa vasten. Ajo voi testata sivuja, joita muutosehdotuksen ajo ei testannut.',
+  'If main is red, fixing it is the next job. Nothing else is merged before the fix.':'Jos yhteinen versio on punainen, sen korjaus on seuraava työ. Mitään muuta ei yhdistetä ennen sitä.',
+  'After the fix the site is built from the run on main. The whole site is tested in the weekly run.':'Korjauksen jälkeen sivusto kootaan tästä ajosta. Koko sivusto testataan viikkoajossa.',
+  'Normally at most three workers run at a time, unless the teacher raises the limit. A change to shared files runs alone and is merged first.':'Tavallisesti enintään kolme työagenttia kerrallaan, ellei opettaja nosta rajaa. Yhteisiin tiedostoihin koskeva muutos ajetaan yksin ja yhdistetään ensin.',
+  'The known gaps are written down in the project’s quality map, so every new session starts from them.':'Tunnetut aukot on kirjattu projektin laatukarttaan, joten jokainen uusi istunto lähtee niistä.',
+  'Skills: instructions only when needed':'Taidot: ohjeet vain tarvittaessa','read in every session':'luetaan joka istunnossa','Never push to main':'Ei ohi katselmoinnin','Notation and units':'Merkinnät ja yksiköt','Publication rule':'Julkaisusääntö','hard rules stay here':'ehdottomat säännöt pysyvät täällä',
+  'Force diagrams':'Voimakuviot','drawing and checking':'piirto ja tarkistus','Concept cards':'Käsitekortit','authoring guide':'kirjoitusohje','CI triage':'Testivian selvitys','when main is red':'kun testiajo on punainen','Coordinator duties':'Koordinointi','workers, merge order':'työagentit, yhdistämisjärjestys',
+  'A proposal: not yet in the repository':'Ehdotus: ei vielä repositoriossa','today: seven slash commands and one general design skill':'nyt: seitsemän komentoa ja yksi yleinen suunnittelutaito',
+  'Task: draw a force diagram':'Tehtävä: piirrä voimakuvio','Task: main is red':'Tehtävä: testiajo on punainen',
+  'Every session reads the rule file, whatever its task. It is long, and most of it is needed only sometimes.':'Jokainen istunto lukee sääntötiedoston tehtävästä riippumatta. Se on pitkä, ja suurinta osaa tarvitaan vain joskus.',
+  'A skill is a package of instructions that an agent loads only when the task matches it.':'Taito (skill) on ohjepaketti, jonka agentti lataa vain, kun tehtävä vastaa sitä.',
+  'A task about a force diagram loads the force diagram skill. The other three stay closed.':'Voimakuviotehtävä lataa voimakuviotaidon. Kolme muuta pysyvät kiinni.',
+  'A red main loads the CI triage skill instead.':'Punainen testiajo lataa sen sijaan testivian selvityksen.',
+  'Hard rules stay in the rule file and in check programs. A skill can be skipped, so nothing that must always hold goes there.':'Ehdottomat säännöt pysyvät sääntötiedostossa ja tarkistusohjelmissa. Taito voi jäädä lataamatta, joten sinne ei laiteta mitään, minkä on aina pädettävä.',
+  'These four are a proposal. Today the project has seven slash commands, which already work this way.':'Nämä neljä ovat ehdotus. Nyt projektissa on seitsemän komentoa, jotka toimivat jo näin.',
+  'Whole':'Kokonaisuus','Queue':'Työjono','One agent':'Yksi agentti','One job':'Yksi työ','Merging':'Yhdistäminen','Rules':'Säännöt','Skills':'Taidot','Limits':'Rajat',
+  'The whole picture':'Kokonaisuus','The development work: a coordinator and workers':'Kehitystyö: koordinaattori ja työagentit','Development work':'Kehitystyö','AI agents':'tekoälyagentit','rules, permission':'säännöt, luvat','previews':'esikatselut','pull requests':'ehdotukset','CI builds the site':'testiajo kokoaa sivuston','the one shared version':'git: main','Instructions':'Ohjeet',
+  'A teacher sets the rules and decides what is published.':'Opettaja asettaa säännöt ja päättää, mitä julkaistaan.',
+  'The development work itself is done by AI agents. The teacher gets previews back.':'Itse kehitystyön tekevät tekoälyagentit. Opettaja saa takaisin esikatselut.',
+  'Finished work goes as pull requests into main, the one shared version of everything.':'Valmis työ menee muutosehdotuksina (pull request) yhteiseen versioon (main).',
+  'The site students use is built from main. Next we zoom into each box.':'Opiskelijoiden sivusto kootaan mainista. Seuraavaksi zoomataan laatikko kerrallaan.',
+  'from the teacher':'opettajalta','out: to coordinator':'koordinaattorille','Site build':'Sivuston koonti','out: to ruukkilab.fi':'ulos: ruukkilab.fi','Boundary':'Ulkoraja','cannot publish: permission comes from outside':'ei voi julkaista: lupa tulee ulkopuolelta',
+  'The outer boundary: an agent cannot publish. Together, the rings are the harness, and every agent works inside the same one.':'Uloin raja: agentti ei voi julkaista. Yhdessä nämä kehät ovat valjaat (harness), ja jokainen agentti toimii samoissa valjaissa.',
+  'All three pass. The worker updates its draft pull request with the results.':'Kaikki kolme hyväksyvät. Työagentti päivittää muutosehdotuksensa tuloksilla.',
+  'The pull request goes out to the coordinator. What happens to it is one level up.':'Muutosehdotus lähtee koordinaattorille. Sen jatko on yhtä tasoa ylempänä.',
+  'The teacher’s work':'Opettajan työ','Plans':'Suunnittelee','what is done and in which order':'mitä tehdään ja missä järjestyksessä','to the queue':'työjonoon','Approves figures and content':'Hyväksyy kuvat ja sisällön','before anything new is published':'ennen kuin uutta julkaistaan','to the agents':'agenteille','Reads the preview':'Lukee esikatselun','the finished pages of a change':'muutoksen valmiit sivut','from the agents':'agenteilta','Gives permission':'Antaa luvan','“You may merge”, recorded in the queue':'”Saat yhdistää”, kirjataan jonoon','to the coordinator':'koordinaattorille','Remarks':'Huomauttaa','a remark becomes a rule for every agent':'huomiosta tulee sääntö kaikille agenteille','to the rules':'sääntöihin','Agents write the pages, run the checks and do the rounds in between.':'Sivujen kirjoitus, tarkistukset ja välikierrokset ovat agenttien työtä.','The teacher decides what is worked on. The decisions are written into the queue with their date.':'Opettaja päättää, mitä tehdään. Päätökset kirjataan työjonoon päivämäärineen.','Figures and material content changes need the teacher’s approval. Automatic review never replaces it.':'Kuvat ja olennaiset sisältömuutokset tarvitsevat opettajan hyväksynnän. Automaattinen katselmointi ei korvaa sitä.','Every change comes back as a preview of the pages it alters.':'Jokainen muutos palaa esikatseluna sivuista, joita se muuttaa.','Merging is the publication decision. Nothing is merged without the permission recorded in the queue.':'Yhdistäminen on julkaisupäätös. Mitään ei yhdistetä ilman jonoon kirjattua lupaa.','A remark made once is turned into a rule or a check, so it holds for every later chapter.':'Kerran annettu huomio muutetaan säännöksi tai tarkistukseksi, joten se pätee kaikissa myöhemmissä luvuissa.','Everything else is done by the agents. That is the next box.':'Kaiken muun tekevät agentit. Se on seuraava laatikko.','113 chapters in 3 language versions · 8 courses':'113 lukua kolmena kieliversiona · 8 moduulia','measured: median 2 rounds per chapter (records of 93 chapters)':'mitattu: mediaani 2 kierrosta lukua kohti (93 luvun kirjanpito)','In numbers, from the project’s own records. Next we zoom into each box.':'Lukuina, projektin omasta kirjanpidosta. Seuraavaksi zoomataan laatikko kerrallaan.','The site students use is built from main.':'Opiskelijoiden sivusto kootaan yhteisestä versiosta.','All open work is in one file. These four are real items from the queue in November 2026.':'Kaikki avoin työ on yhdessä tiedostossa. Nämä neljä ovat todellisia töitä jonosta marraskuulta 2026.','A program checks it. A real case: in the chapter Teho the check found 13 formulas cut off on a 360 px phone screen.':'Ohjelma tarkistaa sen. Todellinen tapaus: luvussa Teho tarkistus löysi 13 kaavaa, jotka leikkautuivat 360 px:n puhelinnäytöllä.','This is normal: of the 93 chapters with records, 76 needed more than one round.':'Tämä on tavallista: kirjanpidon 93 luvusta 76 on tarvinnut useamman kuin yhden kierroksen.','This happened on 13 November 2026: change #528 was green, but the run after the merge failed on the English version of chapter 1 at phone width. Change #534 fixed it.':'Näin kävi 13.11.2026: muutos #528 oli vihreä, mutta yhdistämisen jälkeinen ajo kaatui luvun 1 englanninkieliseen versioon puhelimen leveydellä. Muutos #534 korjasi sen.','main':'Yhteinen versio','Pull request':'Muutosehdotus',
+  'Back':'Takaisin','Replay':'Toista uudelleen','Next':'Seuraava','Play all':'Toista kaikki','Stop':'Pysäytä','Scene ':'Kohtaus '};
+  var EN={'The site students use is built from main.':'The site students use is built from the shared version.','pull requests':'proposals','CI builds the site':'the test run builds the site','main':'Shared version','the one shared version':'git: main','Finished work goes as pull requests into main, the one shared version of everything.':'Finished work goes as change proposals (pull requests) into the shared version (main).','merged into main: ':'merged: ','The coordinator merges the work into main.':'The coordinator merges the work into the shared version.','Draft pull request':'Change proposal (draft)','First commit marks the item reserved':'The first save marks the item reserved','CI is green':'The automatic test run is green','A branch is invisible to other sessions, so an item is taken by opening a draft pull request.':'An agent’s working copy (branch) is invisible to the others, so an item is taken by opening a draft change proposal.','The work happens on the branch. Reviews and checks are recorded in the pull request.':'The work happens in the working copy. Reviews and checks are recorded in the change proposal.','The coordinator merges. The same pull request removes the item from the queue.':'The coordinator merges. The same change proposal removes the item from the queue.','CI: changed pages':'test run: changed pages','Pull request':'Proposal','Run on main':'New test run','A red main comes first':'A red shared version comes first','Merging and main':'Merging into the shared version','A pull request’s CI tests in a browser only the pages the change can alter.':'A change proposal’s automatic test run (CI) tests in a browser only the pages the change can alter.','The green pull request is merged.':'The green change proposal is merged.','After the merge, main is tested again against a different base. It can test pages the pull request’s run did not.':'After the merge, the shared version is tested again against a different base. That run can test pages the proposal’s run did not.','If main is red, fixing it is the next job. Nothing else is merged before the fix.':'If the shared version is red, fixing it is the next job. Nothing else is merged before the fix.','After the fix the site is built from the run on main. The whole site is tested in the weekly run.':'After the fix the site is built from that run. The whole site is tested in the weekly run.','Never push to main':'Never past review','Task: main is red':'Task: the test run is red','when main is red':'when a test run is red','CI triage':'Test-failure triage','A red main loads the CI triage skill instead.':'A red test run loads the test-failure triage skill instead.','A pull request tests only the':'A change proposal tests only the','All three pass. The worker updates its draft pull request with the results.':'All three pass. The worker updates its draft change proposal with the results.','The pull request goes out to the coordinator. What happens to it is one level up.':'The change proposal goes out to the coordinator. What happens to it is one level up.'};
+  var lang='fi';   // the site's language; English only when chosen or when the browser asks for it
+  try{var sv0=localStorage.getItem('rl-lang');if(sv0==='fi'||sv0==='en')lang=sv0;else if((navigator.language||'').slice(0,2)==='en')lang='en'}catch(e){if((navigator.language||'').slice(0,2)==='en')lang='en'}
+  function T(s){return lang==='fi'?(FI[s]!=null?FI[s]:s):(EN[s]!=null?EN[s]:s)}
+  var titles=['The whole picture','The queue steers the work','An agent is a language model inside a harness','One job: write, review, improve','The development work: a coordinator and workers','Merging and main','A teacher’s remark becomes a rule','Skills: instructions only when needed','What this does not solve','The teacher’s work'];
+  var run=0, cur=0, auto=false, CANCEL={};
+  // zoom tree: narrative order, each scene's parent, and the box in the parent it zooms into
+  var order=[0,9,4,1,3,2,6,7,5,8];
+  var parent={0:null,9:0,4:0,1:4,3:4,2:3,6:2,7:2,5:0,8:0};
+  var anchor={9:[30,200,170,100],4:[320,150,290,200],1:[310,80,140,70],3:[600,234,200,72],2:[40,220,150,90],6:[585,326,300,48],7:[585,202,300,48],5:[720,150,210,84],8:[0,0,960,540]};
+  var short=['Whole','Queue','One agent','One job','Development work','main','Checks','Instructions','Limits','Teacher'];
+  sv.querySelectorAll('.wire').forEach(function(w){w.setAttribute('pathLength','1')});
+  var shown=null, zooming=false;
+  sv.querySelectorAll('.scene').forEach(function(g){g.insertBefore(el('rect',{'class':'scbg',x:0,y:0,width:960,height:540}),g.firstChild)});
+
+  function api(my,quiet){
+    var a={
+      w:function(ms){if(quiet)return Promise.resolve();if(!auto&&ms>=1700)return hold(my);return new Promise(function(res,rej){setTimeout(function(){my===run?res():rej(CANCEL)},fast?0:ms)})},
+      quiet:quiet,say:function(t){if(quiet)return;said=true;capP.textContent=T(t);capP.classList.remove('in');capP.getBoundingClientRect();capP.classList.add('in')},
+      on:function(e){e.classList.add('on')}, off:function(e){e.classList.remove('on')},
+      place:function(e,p){e.style.transition='none';e.style.transform='translate('+p[0]+'px,'+p[1]+'px)';e.getBoundingClientRect();e.style.transition=''},
+      move:function(e,p){e.style.transform='translate('+p[0]+'px,'+p[1]+'px)'},
+      mark:function(e,k){e.textContent=k==='ok'?'✓':k==='bad'?'✗':'';e.setAttribute('class','mk'+(k?' '+k:''))},
+      shake:function(e){e.classList.remove('shake');e.getBoundingClientRect();e.classList.add('shake')}
+    };return a}
+
+  function reset(i){
+    var g=sv.querySelector('.scene[data-i="'+i+'"]');
+    g.querySelectorAll('.on').forEach(function(e){e.classList.remove('on')});
+    g.querySelectorAll('.mk').forEach(function(e){e.textContent='';e.setAttribute('class','mk')});
+    g.querySelectorAll('.busy').forEach(function(e){e.classList.remove('busy')});
+    g.querySelectorAll('.shake').forEach(function(e){e.classList.remove('shake')});
+    g.querySelectorAll('.red').forEach(function(e){e.classList.remove('red')});g.querySelectorAll('.act').forEach(function(e){e.classList.remove('act')});
+    var pub=g.querySelector('#pub');if(pub)pub.textContent=T('merged into main: ')+'0';
+  }
+
+  var old=[
+    async function(a){
+      a.say('Every chapter takes the student through the same seven stages, inquiry first.');
+      var c=chips.children;for(var i=0;i<c.length;i++){a.on(c[i]);await a.w(380)}
+      await a.w(700);
+      var f=sv.querySelectorAll('.scene[data-i="0"] > text');
+      a.say('The student opens an ordinary website. The agents work behind it, before anything is published.');
+      for(var j=0;j<f.length;j++){a.on(f[j]);await a.w(600)}
+    },
+    async function(a){
+      var say=['A language model on its own answers once and stops.',
+        'Tools let it act: run a check, build a page, take a screenshot.',
+        'Memory is files. An agent forgets everything when its session ends.',
+        'Limits are technical. Its permissions do not let it publish.',
+        'Automatic checks run on everything it produces.',
+        'Every round, review and its cost is recorded with the change.',
+        'The outer boundary: an agent cannot publish. Together, the rings are the harness, and every agent works inside the same one.'];
+      for(var k=0;k<7;k++){
+        sv.querySelectorAll('.scene[data-i="2"] [data-k="'+k+'"]').forEach(a.on);
+        a.say(say[k]);await a.w(k===0?1900:1700)}
+    },
+    async function(a){
+      var d1=$('#d1'),d2=$('#d2'),d3=$('#d3');
+      var P={w:[98,168],c:[318,168],r1:[573,58],r2:[573,183],r3:[573,308],t:[818,173],s:[818,348]};
+      var N={};[['w',40,220],['c',250,220],['r1',490,110],['r2',490,235],['r3',490,360],['t',760,225]].forEach(function(n){N[n[0]]=sv.querySelector('.scene[data-i="3"] rect[x="'+n[1]+'"][y="'+n[2]+'"]')});
+      var mv=a.move;a.move=function(e,p){mv(e,p);if(a.quiet||fast)return;for(var k in P)if(P[k]===p&&N[k])(function(r){setTimeout(function(){r.classList.add('act');setTimeout(function(){r.classList.remove('act')},1500)},700)})(N[k])};
+      var mc=$('#m-c'),m1=$('#m-r1'),m2=$('#m-r2'),m3=$('#m-r3'),mt=$('#m-t');
+      a.place(d1,P.w);a.place(d2,P.c);a.place(d3,P.c);a.on(d1);
+      a.say('A writer agent drafts the chapter: text, figures, a simulation, exercises with full solutions.');await a.w(2200);
+      a.move(d1,P.c);await a.w(1000);a.mark(mc,'bad');a.shake(d1);
+      a.say('A program checks it. A real case: in the chapter Teho the check found 13 formulas cut off on a 360 px phone screen.');await a.w(2200);
+      a.move(d1,P.w);a.mark(mc,'');
+      a.say('Back to the writer, which fixes it. No person is needed for this.');await a.w(2100);
+      a.move(d1,P.c);await a.w(1000);a.mark(mc,'ok');a.say('The checks pass.');await a.w(1200);
+      a.on(d2);a.on(d3);a.move(d1,P.r1);a.move(d2,P.r2);a.move(d3,P.r3);
+      a.say('Three reviewer agents read it independently. None sees another’s notes.');await a.w(2300);
+      a.mark(m1,'ok');await a.w(500);a.mark(m2,'bad');a.shake(d2);await a.w(500);a.mark(m3,'ok');
+      a.say('Physics passes. Presentation passes. The pedagogy reviewer finds a step a first-time learner cannot follow.');await a.w(3200);
+      a.say('This is normal: of the 93 chapters with records, 76 needed more than one round.');await a.w(2800);
+      a.off(d1);a.off(d3);a.move(d2,P.w);a.mark(m2,'');
+      a.say('The writer fixes that step.');await a.w(1900);
+      a.move(d2,P.c);await a.w(1000);
+      a.say('Checked again. Only the pedagogy reviewer re-reads; the other two passes still hold.');
+      a.move(d2,P.r2);await a.w(1500);a.mark(m2,'ok');await a.w(1700);
+      a.move(d2,P.t);a.say('All three pass. The worker updates its draft pull request with the results.');await a.w(2300);
+      a.mark(mt,'ok');a.say('The pull request goes out to the coordinator. What happens to it is one level up.');await a.w(1200);
+    },
+    async function(a){
+      var pill=$('#pill');a.place(pill,[15,56]);a.on(pill);
+      a.say('The teacher reads a chapter and notices vectors written three different ways.');await a.w(2300);
+      a.move(pill,[265,56]);await a.w(900);a.on($('#r-date'));
+      a.say('The remark is written into the house rules that every writer and reviewer agent reads.');await a.w(2500);
+      a.move(pill,[525,56]);await a.w(900);a.on($('#r-prog'));
+      a.say('Where a program can test it, the rule becomes a check.');await a.w(2000);
+      a.on($('#t-cap'));a.say('From then on the check runs on every chapter.');
+      var t=tiles.querySelectorAll('g');
+      for(var i=0;i<t.length;i++){a.on(t[i].querySelector('.tile'));a.mark(t[i].querySelector('.mk'),'ok');await a.w(230)}
+      await a.w(900);
+      a.say('A correction made once holds for every later chapter. The teacher decides how pages must be written.');
+    },
+    async function(a){
+      var Q=[[350,128],[380,128],[410,128]],C=[380,214],W=[[584,128],[584,270],[584,412]];
+      var q=[$('#q0'),$('#q1'),$('#q2')],e=[$('#e0'),$('#e1'),$('#e2')],wk=[$('#wk0'),$('#wk1'),$('#wk2')];
+      for(var i=0;i<3;i++){a.place(q[i],Q[i]);a.on(q[i]);a.place(e[i],[560,W[i][1]-17])}
+      a.say('The queue is one shared file. A coordinator agent takes three items from it.');await a.w(2200);
+      for(i=0;i<3;i++)a.move(q[i],C);await a.w(1000);
+      for(i=0;i<3;i++)a.move(q[i],W[i]);
+      a.say('It starts one worker per item, each on a different course so they never edit the same files.');await a.w(1200);
+      for(i=0;i<3;i++){a.off(q[i]);wk[i].classList.add('busy')}
+      await a.w(1600);a.say('Each worker runs the whole write, review, improve loop on its own.');await a.w(2600);
+      a.say('Normally at most three workers run at a time, unless the teacher raises the limit. A change to shared files runs alone and is merged first.');await a.w(3200);
+      for(i=0;i<3;i++){wk[i].classList.remove('busy');a.mark(wk[i].querySelector('.mk'),'ok');a.on(e[i]);await a.w(350)}
+      for(i=0;i<3;i++)a.move(e[i],[480+i*6,238+i*8]);
+      a.say('Finished chapters come back as previews. A message from another agent is information, never approval.');await a.w(3000);
+      a.on($('#bub'));a.say('Approval comes only from the teacher.');await a.w(2000);
+      var pub=$('#pub');
+      for(i=0;i<3;i++){a.move(e[i],[367,476]);await a.w(500);a.off(e[i]);pub.textContent=T('merged into main: ')+(i+1);await a.w(350)}
+      a.say('The coordinator merges the work into main.');
+    },
+    async function(a){
+      var g=sv.querySelectorAll('.scene[data-i="8"] > .a');
+      a.say('Three things the harness does not settle.');
+      for(var i=0;i<3;i++){a.on(g[i]);await a.w(900)}
+      await a.w(1200);a.say('The known gaps are written down in the project’s quality map, so every new session starts from them.');
+      a.on(g[3]);await a.w(900);a.on(g[4]);
+    }
+  ];
+
+  async function sRoles(a){
+    var say=['A teacher sets the rules and decides what is published.',
+      'The development work itself is done by AI agents. The teacher gets previews back.',
+      'Finished work goes as pull requests into main, the one shared version of everything.',
+      'The site students use is built from main.',
+      'In numbers, from the project’s own records. Next we zoom into each box.'];
+    for(var k=0;k<5;k++){sv.querySelectorAll('.scene[data-i="0"] [data-k="'+k+'"]').forEach(a.on);a.say(say[k]);await a.w(k===4?1500:2600)}
+  }
+  async function sQueue(a){
+    var r=[$('#qr0'),$('#qr1'),$('#qr2'),$('#qr3')],l=[$('#ql0'),$('#ql1'),$('#ql2'),$('#ql3'),$('#ql4')];
+    function tick(e){a.on(e);a.mark(e.querySelector('.mk'),'ok')}
+    a.say('All open work is in one file. These four are real items from the queue in November 2026.');
+    for(var i=0;i<4;i++){a.on(r[i]);await a.w(320)}
+    await a.w(1700);
+    a.say('A branch is invisible to other sessions, so an item is taken by opening a draft pull request.');
+    a.on($('#q-tag'));r[0].querySelector('.tile').classList.add('on');a.on($('#q-wire'));a.on($('#q-card'));await a.w(900);tick(l[0]);await a.w(2400);
+    a.say('The work happens on the branch. Reviews and checks are recorded in the pull request.');
+    tick(l[1]);await a.w(1100);tick(l[2]);await a.w(2000);
+    a.say('The teacher’s permission is recorded in the queue. Nothing is merged without it.');tick(l[3]);await a.w(2600);
+    a.say('The coordinator merges. The same pull request removes the item from the queue.');tick(l[4]);await a.w(900);
+    a.off(r[0]);a.off($('#q-wire'));
+  }
+  async function sMain(a){
+    a.on($('#c0'));a.on($('#c1'));await a.w(500);
+    a.say('A pull request’s CI tests in a browser only the pages the change can alter.');
+    a.on($('#br'));a.on($('#prb'));await a.w(1600);a.mark($('#m-pr'),'ok');await a.w(1500);
+    a.say('The green pull request is merged.');a.on($('#mg'));a.on($('#md'));await a.w(1800);
+    a.say('After the merge, main is tested again against a different base. It can test pages the pull request’s run did not.');
+    await a.w(1500);a.mark($('#m-main'),'bad');$('#md').classList.add('red');await a.w(2600);
+    a.say('This happened on 13 November 2026: change #528 was green, but the run after the merge failed on the English version of chapter 1 at phone width. Change #534 fixed it.');await a.w(3400);
+    a.say('If main is red, fixing it is the next job. Nothing else is merged before the fix.');a.on($('#ban'));a.on($('#ban2'));await a.w(3000);
+    a.on($('#fx'));a.mark($('#m-fx'),'ok');
+    a.say('After the fix the site is built from the run on main. The whole site is tested in the weekly run.');a.on($('#g-main'));
+  }
+
+  async function sSkills(a){
+    var task=$('#sk-task'),c=[$('#sk0'),$('#sk1'),$('#sk2'),$('#sk3')];
+    function load(i){c.forEach(function(g,k){g.querySelector('.tile').classList.toggle('on',k===i)})}
+    task.textContent='';
+    a.say('Every session reads the rule file, whatever its task. It is long, and most of it is needed only sometimes.');
+    var r=sv.querySelectorAll('.scene[data-i="7"] [data-r]');for(var i=0;i<r.length;i++){a.on(r[i]);await a.w(350)}
+    await a.w(2200);
+    a.say('A skill is a package of instructions that an agent loads only when the task matches it.');
+    for(i=0;i<4;i++){a.on(c[i]);await a.w(300)}
+    await a.w(2300);
+    task.textContent=T('Task: draw a force diagram');a.on($('#sk-pill'));await a.w(900);load(0);
+    a.say('A task about a force diagram loads the force diagram skill. The other three stay closed.');await a.w(3000);
+    task.textContent=T('Task: main is red');await a.w(900);load(2);
+    a.say('A red main loads the CI triage skill instead.');await a.w(2600);
+    a.on($('#sk-note'));
+    a.say('Hard rules stay in the rule file and in check programs. A skill can be skipped, so nothing that must always hold goes there.');await a.w(3400);
+    a.on($('#sk-p1'));a.on($('#sk-p2'));
+    a.say('These four are a proposal. Today the project has seven slash commands, which already work this way.');
+  }
+  async function sTeacher(a){
+    var say=['The teacher decides what is worked on. The decisions are written into the queue with their date.',
+      'Figures and material content changes need the teacher’s approval. Automatic review never replaces it.',
+      'Every change comes back as a preview of the pages it alters.',
+      'Merging is the publication decision. Nothing is merged without the permission recorded in the queue.',
+      'A remark made once is turned into a rule or a check, so it holds for every later chapter.'];
+    for(var k=0;k<5;k++){sv.querySelectorAll('.scene[data-i="9"] [data-k="'+k+'"]').forEach(a.on);a.say(say[k]);await a.w(2600)}
+    a.on($('#te-foot'));a.say('Everything else is done by the agents. That is the next box.');
+  }
+  var scenes=[sRoles,sQueue,old[1],old[2],old[4],sMain,old[3],sSkills,old[5],sTeacher];
+
+  var dots=document.getElementById('dots'),prev=document.getElementById('prev'),next=document.getElementById('next'),allB=document.getElementById('all');
+  titles.forEach(function(t,i){var b=document.createElement('button');b.type='button';b.setAttribute('aria-label','Scene '+(i+1)+': '+t);b.appendChild(document.createElement('i'));
+    b.addEventListener('click',function(){setAuto(false);go(i)});dots.appendChild(b)});
+
+  function setAuto(v){auto=v;allB.setAttribute('aria-pressed',String(v));allB.textContent=T(v?'Stop':'Play all')}
+  function G(id){return sv.querySelector('.scene[data-i="'+id+'"]')}
+  function show(id,on){G(id).classList.toggle('cur',on)}
+  function settle(id){reset(id);sv.classList.add('instant');return scenes[id](api(-1,true)).then(function(){sv.getBoundingClientRect();sv.classList.remove('instant')})}
+  function fit(r){var w=Math.max(r[2],r[3]*16/9),hh=w*9/16,x=r[0]+r[2]/2-w/2,y=r[1]+r[3]/2-hh/2;
+    return {x:Math.max(0,Math.min(960-w,x)),y:Math.max(0,Math.min(540-hh,y)),w:w,h:hh}}
+  function tween(ms,f){return new Promise(function(res){var t0=null;function step(ts){if(t0===null)t0=ts;var t=Math.min(1,(ts-t0)/ms);f(t);if(t<1)requestAnimationFrame(step);else res()}requestAnimationFrame(step)})}
+  function pause(ms){return new Promise(function(r){setTimeout(r,ms)})}
+  async function zoom(P,C,inward,sp,cue){
+    var r=anchor[C],R=fit(r),gp=G(P),gc=G(C),full=R.w>=959,ring=null;
+    if(inward)reset(C);
+    show(P,true);show(C,true);gc.parentNode.appendChild(gc);
+    gc.setAttribute('transform','translate('+R.x+' '+R.y+') scale('+(R.w/960)+')');
+    gc.style.opacity=inward?0:1;
+    if(!fast){
+      if(inward&&!full&&cue){var f=el('rect',{'class':'glow',x:r[0]-6,y:r[1]-6,width:r[2]+12,height:r[3]+12,rx:10});gp.appendChild(f);f.getBoundingClientRect();f.classList.add('on');await pause(520);var ring=f}
+      var fx=full?0:R.x/(1-R.w/960),fy=full?0:R.y/(1-R.h/540);
+      await tween(sp*(full?600:650+260*Math.log(960/R.w)/Math.LN2),function(t){
+        var u=inward?t:1-t,e=u<.5?2*u*u:1-Math.pow(-2*u+2,2)/2,w=960*Math.pow(R.w/960,e);
+        if(!full)sv.setAttribute('viewBox',(fx*(1-w/960))+' '+(fy*(1-w/960))+' '+w+' '+(w*9/16));
+        gc.style.opacity=Math.max(0,Math.min(1,(e-(full?0:.3))/(full?1:.5)));
+      });
+    }
+    if(ring&&ring.parentNode)ring.parentNode.removeChild(ring);
+    sv.setAttribute('viewBox','0 0 960 540');gc.removeAttribute('transform');gc.style.opacity='';
+    show(inward?P:C,false);
+  }
+  async function travel(from,to){
+    if(from===null){show(to,true);return}
+    if(from===to)return;
+    var up=[],x=to;while(x!==null){up.push(x);x=parent[x]}
+    var a=from,outs=[];while(up.indexOf(a)<0){outs.push(a);a=parent[a]}
+    var ins=up.slice(0,up.indexOf(a)).reverse(),k;
+    var sp=outs.length+ins.length>1?.6:1;
+    for(k=0;k<outs.length;k++){await settle(parent[outs[k]]);await zoom(parent[outs[k]],outs[k],false,sp,false)}
+    for(k=0;k<ins.length;k++){await settle(parent[ins[k]]);await zoom(parent[ins[k]],ins[k],true,sp,k===ins.length-1)}
+  }
+  function crumbs(id){var c=[],x=id;while(x!==null){c.unshift(x);x=parent[x]}
+    var el2=document.getElementById('crumb');el2.textContent='';
+    c.forEach(function(s,k){if(k)el2.appendChild(document.createTextNode('  ›  '));var n=document.createElement(k===c.length-1?'b':'span');n.textContent=T(short[s]);el2.appendChild(n)})}
+  var stage=document.querySelector('.stage'),holdRes=null,pendingPress=false,said=true;
+  function setState(s){stage.setAttribute('data-state',s);next.classList.toggle('wait',s==='hold');next.disabled=s==='done'&&cur===order.length-1}
+  function hold(my){return new Promise(function(res,rej){
+    if(pendingPress){pendingPress=false;said=false;res();return}
+    setState('hold');holdRes=function(ok){holdRes=null;setState('run');if(ok)res();else rej(CANCEL)}})}
+  function advance(){
+    if(zooming)return;
+    if(auto){setAuto(false);go(cur+1);return}
+    if(holdRes){said=false;holdRes(true)}
+    else if(stage.getAttribute('data-state')==='done'){if(cur<order.length-1)go(cur+1)}
+    else pendingPress=true;
+  }
+  function go(i){
+    if(zooming)return;
+    if(holdRes)holdRes(false);
+    pendingPress=false;said=true;
+    cur=Math.max(0,Math.min(order.length-1,i));var my=++run,id=order[cur];
+    dots.querySelectorAll('button').forEach(function(b,k){b.setAttribute('aria-current',String(k===cur))});
+    prev.disabled=cur===0;setState('run');
+    capT.textContent=T(titles[id]);capP.textContent='';crumbs(id);
+    zooming=true;
+    travel(shown,id).then(function(){
+      shown=id;zooming=false;reset(id);var a=api(my);
+      return a.w(60).then(function(){return scenes[id](a)}).then(function(){if(auto)return a.w(2200)}).then(function(){
+        if(auto){if(cur<order.length-1)go(cur+1);else{setAuto(false);setState('done')}}
+        else if(!said&&cur<order.length-1)go(cur+1);
+        else setState('done');
+      });
+    }).catch(function(e){if(e!==CANCEL){zooming=false;throw e}});
+  }
+  prev.addEventListener('click',function(){setAuto(false);go(cur-1)});
+  next.addEventListener('click',advance);
+  document.getElementById('replay').addEventListener('click',function(){go(cur)});
+  allB.addEventListener('click',function(){if(auto){setAuto(false)}else{setAuto(true);go(cur===scenes.length-1?0:cur)}});
+  document.addEventListener('keydown',function(ev){
+    if(ev.target&&ev.target.tagName==='BUTTON'&&(ev.key===' '||ev.key==='Enter'))return;
+    if(ev.key==='ArrowRight'||ev.key===' '){ev.preventDefault();advance()}else if(ev.key==='ArrowLeft'){setAuto(false);go(cur-1)}});
+  sv.querySelectorAll('text').forEach(function(t){if(!t.classList.contains('mk')&&t.id!=='pub'&&t.id!=='sk-task')t.setAttribute('data-en',t.textContent)});
+  var langB=document.getElementById('lang'),replayB=document.getElementById('replay');
+  function applyLang(){
+    document.documentElement.lang=lang;
+    sv.querySelectorAll('[data-en]').forEach(function(t){t.textContent=T(t.getAttribute('data-en'))});
+    document.querySelectorAll('.L').forEach(function(e){e.hidden=e.getAttribute('lang')!==lang});
+    prev.textContent=T('Back');next.textContent=T('Next');replayB.textContent=T('Replay');allB.textContent=T(auto?'Stop':'Play all');
+    langB.textContent=lang==='fi'?'In English':'Suomeksi';
+    dots.querySelectorAll('button').forEach(function(b,k){b.setAttribute('aria-label',T('Scene ')+(k+1)+': '+T(titles[order[k]]))});
+  }
+  langB.addEventListener('click',function(){lang=lang==='fi'?'en':'fi';try{localStorage.setItem('rl-lang',lang)}catch(e){}applyLang();go(cur)});
+  applyLang();
+  go(0);
+})();
+</script>
+</body></html>
