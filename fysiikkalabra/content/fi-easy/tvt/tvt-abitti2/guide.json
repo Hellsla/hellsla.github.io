@@ -1,0 +1,11 @@
+{
+  "id": "tvt-abitti2",
+  "title": "Fysiikan koe Abitti 2:ssa",
+  "description": "Tutustu Abitti 2 -koejärjestelmän ohjelmiin, vastaamiseen ja harjoitteluun, niin tiedät kokeessa, mistä työkalut löytyvät.",
+  "learn": [
+    "tunnistamaan, mitä ohjelmia Abitti 2 -koejärjestelmässä on ja mihin niitä voi käyttää",
+    "tallentamaan vastauksesi ja päättämään koe ja harjoittelemaan kokeen työkaluilla"
+  ],
+  "kind": "ohjelma",
+  "order": 10
+}
