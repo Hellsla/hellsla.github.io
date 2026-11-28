@@ -1,18 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: 39f7d7b31a4f79c6
-SCOPE: delta numbers from 39773138f0ef70fd base 4b05399
+CONTENT-HASH: d13c797269e79827
 
 ## Blocking
-(none)
 
 ## Polish
 (none)
 
 ## Checked
-- delta, en (8g: the Kaava step of the model solutions as aligned blocks, one equation per row). The packet's 390 px captures did not exist for the exercise solutions, so I rebuilt preview/en/fy8-3.html and took my own 390 px captures (all details open) of the Formula blocks: the three to four tallest per set, opened and read.
-- Measured at 360 and 390 px with every solution open: no clipped or overflowing KaTeX in any solution step, no page-level horizontal overflow, no red KaTeX source.
-- Equals signs align in one column, left sides right-aligned, fractions in display size, subscripts legible, prose and blocks interleave correctly; the changed rows sit in their cards.
-- Hash re-run at the end: unchanged.
+- Delta: only the `exact` flag was added (no visible text, figure or formula change).
+- Opened fy8-3-stage-exercises-390-1: tasks 3-2 and 3-6 at 390 px: fractions in E_n legible, options as whole rows, input and unit (eV) aligned, nothing clipped.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 5 · accessibility 5
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5
