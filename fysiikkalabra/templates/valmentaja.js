@@ -478,19 +478,24 @@
   const reason = (r) => (r.key === 'stale' ? fmt(T.why_stale, { n: r.days }) : T['why_' + r.key] || '');
   const SYMBOL = { none: '○', few: '◔', practise: '▲', growing: '◑', strong: '●', strongdue: '●' };
 
-  if (row) {
-    const st = readSet(), d = data(), p = readPath(), mine = p ? path(index, d, p, today(), { goal: st.goal, courses: st.courses }).days.find((x) => x.date === today()) : null;
-    if (mine && mine.items.length) {   // a practice day of the student's own path: its tasks and minutes
-      const go = el('a', 'resume-go', T.go); go.href = row.dataset.href || 'FY9-valmentaja.html';
-      const n = mine.items.length;
-      row.replaceChildren(go, el('p', 'resume-text', fmt(n === 1 ? T.row_one : T.row_n, { n, m: mine.minutes })));
-      row.hidden = false;
-      return;
-    }
+  if (row) {   // the start block of the course page (33.1): the main button and the line under it
+    const main = document.getElementById('fy9-main'), st = readSet(), d = data(), p = readPath();
+    const coach = row.dataset.href || 'FY9-valmentaja.html';
+    const mine = p ? path(index, d, p, today(), { goal: st.goal, courses: st.courses }).days.find((x) => x.date === today()) : null;
+    let live = null;   // an exam in progress on this device (its clock is running: koetila.js)
+    try { const o = JSON.parse(localStorage.getItem('ruukkilabra:fy9-koetila')); if (o && o.exams) live = miniOrder(index, st.goal).find((m) => o.exams[m.id] && o.exams[m.id].state === 'run') || null; } catch (e) { /* none */ }
     const res = recommend(index, d, today(), { goal: st.goal, courses: st.courses });
-    if (res.diag || !res.recs.length) return;
-    const n = res.recs.length, go = el('a', 'resume-go', T.go); go.href = row.dataset.href || 'FY9-valmentaja.html';
-    row.replaceChildren(go, el('p', 'resume-text', fmt(n === 1 ? T.row_one : T.row_n, { n, m: Math.round(minutes(res.recs) / 5) * 5 || minutes(res.recs) })));
+    const items = mine ? mine.items : [], pick = items.find((x) => x.task);
+    const first = pick ? pick.task : !res.diag && res.recs.length ? res.recs[0].task : null;
+    if (!live && !first) return;   // a first visit: the diagnostic stays the main button
+    let n = 0, m = 0;
+    if (items.length) { n = items.length; m = mine.minutes; } else if (!res.diag && res.recs.length) { n = res.recs.length; m = Math.round(minutes(res.recs) / 5) * 5 || minutes(res.recs); }
+    const nodes = [];
+    if (live) { main.href = live.href; nodes.push(el('span', 'fy9-next-task', live.kind === 'exam' ? T.mini_exam : fmt(T.mini_item, { min: live.minutes, pts: live.points }))); }
+    else { main.href = first.href; nodes.push(el('span', 'fy9-next-task', named(first)), el('span', 'fy9-next-where', where(first) + ' · ' + fmt(T.min, { n: first.min }))); }
+    main.textContent = T.resume;
+    if (n) { const a = el('a', 'fy9-next-day', fmt(n === 1 ? T.row_one : T.row_n, { n, m })); a.href = coach; nodes.push(a); }
+    row.replaceChildren(...nodes);
     row.hidden = false;
     return;
   }
@@ -554,6 +559,7 @@
     miniBox.querySelector('.coach-mini-body').replaceChildren(ol);
   };
   render(); showMini();
+  if (miniBox && location.hash === '#coach-mini') { miniBox.open = true; miniBox.scrollIntoView(); }
 
   // the two settings (PR 4b): saved the moment they change, on this device only
   const set = document.getElementById('coach-set');
@@ -732,4 +738,89 @@
     };
     showClear();
   }
+})();
+
+/* (g) the Lähtötasotesti on fy9-koe.html (work queue 33.2): the 24 diagnostic tasks as one test, a closed box per module. Behaviour only; the markup and its
+   texts come from scripts/lahtotaso.py, the answers stay where they were (the page's own keys, the coach's log). What a task is answered with is read from the
+   coach's log (the first attempt, ruukkilabra:fy9-valmentaja) and from fl:attempt in this visit: no new key.
+   On arrival the first module that is not finished is open with its first unanswered task; a task answered gets "Seuraava tehtävä" (and, answered wrong,
+   "Kertaa tämä asia" with the page of the feedback's own link); a module with its three tasks answered shows what to revise and where to go on. */
+(() => {
+  const sec = document.getElementById('lahtotasotesti');
+  if (!sec) return;
+  const SEL = '.activity[id^="testi-"]:not(#testi-ohje)';   // the 24 tasks, not the instruction above them
+  const mods = [...sec.querySelectorAll('details.lt-mod')];
+  const cards = [...sec.querySelectorAll(SEL)];
+  const box = (card) => card.closest('details.opt');
+  const mod = (card) => card.closest('details.lt-mod');
+  const result = new Map();   // card id -> 'ok' | 'close' | 'no' (the first attempt)
+  const V = window.flValmentaja;
+  const d = V && V.read ? V.read() : null;
+  if (d && Array.isArray(d.log)) for (const r of d.log) if (r[2] === 'a' && r[4] === 1 && typeof r[1] === 'string' && r[1].startsWith('fy9-koe#testi-')) result.set(r[1].slice(8), r[3]);
+  const link = (card) => { const b = box(card); if (b && b.dataset.review) return { href: b.dataset.review, text: b.dataset.reviewT || b.dataset.review }; return find(card); };
+  const find = (card) => { const a = [...card.querySelectorAll('a[href]')].find((x) => /^[\w-]+\.html(#.*)?$/.test(x.getAttribute('href'))); return a ? { href: a.getAttribute('href'), text: a.textContent.trim() } : null; };
+  const state = (card) => result.get(card.id) || null;
+  const mk = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; };
+  const unanswered = (m) => [...m.querySelectorAll(SEL)].find((c) => !state(c));
+  const go = (card) => {   // open the module and the task, close the one before it, bring the task into view
+    const m = mod(card), b = box(card);
+    mods.forEach((x) => { if (x !== m) x.open = false; });
+    m.open = true;
+    cards.forEach((c) => { if (c !== card && box(c)) box(c).open = false; });
+    if (b) b.open = true;
+    (b ? b.querySelector('summary') : card).scrollIntoView({ block: 'start' });
+    if (b) b.querySelector('summary').focus({ preventScroll: true });
+  };
+  const refresh = () => {
+    for (const m of mods) {
+      const mine = [...m.querySelectorAll(SEL)], done = mine.filter(state);
+      m.querySelector('.lt-count').textContent = done.length + '/' + mine.length;
+      const sum = m.querySelector('.lt-sum'), last = mine[mine.length - 1];
+      for (const c of mine) {
+        const st = state(c); let act = c.querySelector(':scope > .lt-actions');
+        if (!st) { if (act) act.remove(); continue; }
+        if (!act) { act = mk('p', 'lt-actions'); c.append(act); }
+        const nextCard = cards[cards.indexOf(c) + 1];
+        const wantNext = c !== last && nextCard;
+        const l = st === 'no' ? link(c) : null;
+        act.replaceChildren();
+        if (l) { const a = mk('a', 'lt-revise', sec.dataset.revise); a.href = l.href; act.append(a); }
+        if (wantNext) { const b = mk('button', 'lt-next', sec.dataset.next); b.type = 'button'; b.addEventListener('click', () => go(nextCard)); act.append(b); }
+        if (!act.childNodes.length) act.remove();
+      }
+      sum.replaceChildren(); sum.hidden = done.length < mine.length;
+      if (done.length < mine.length) continue;
+      const seen = new Set(), wrong = mine.filter((c) => state(c) === 'no').map((c) => link(c)).filter((x) => x && !seen.has(x.href) && seen.add(x.href));
+      if (wrong.length) {
+        sum.append(mk('p', 'lt-sum-h', sec.dataset.review));
+        const ul = mk('ul', 'lt-sum-list');
+        for (const w of wrong) { const li = mk('li'), a = mk('a', '', w.text); a.href = w.href; li.append(a); ul.append(li); }
+        sum.append(ul);
+      }
+      const nextMod = mods[mods.indexOf(m) + 1], tgt = nextMod && unanswered(nextMod);
+      const row = mk('p', 'lt-actions');
+      if (tgt) { const b = mk('button', 'lt-next', sec.dataset.next); b.type = 'button'; b.addEventListener('click', () => go(tgt)); row.append(b); }
+      else { const a = mk('a', 'lt-revise', sec.dataset.coachT); a.href = sec.dataset.coach; row.append(a); }
+      sum.append(row);
+    }
+  };
+  document.addEventListener('fl:attempt', (e) => {
+    const det = e.detail || {};
+    if (!/^testi-\d+$/.test(det.id || '') || !(det.state === 'ok' || det.state === 'close' || det.state === 'no')) return;
+    if (!result.has(det.id)) result.set(det.id, det.state);
+    setTimeout(refresh, 20);   // after the page has written its feedback (the link is read from it)
+  });
+  refresh();
+  // arriving (a link or a change of the address): the first module not finished, with its first task open (a link to one task, #testi-N, opens that one)
+  const arrive = (target) => {
+    if (!target) return;
+    const card = target.closest && target.closest(SEL);
+    if (card) { mod(card).open = true; if (box(card)) box(card).open = true; return; }
+    if (target !== sec && !sec.contains(target)) return;
+    const m = mods.find((x) => unanswered(x)) || mods[0], c = m && (unanswered(m) || m.querySelector(SEL));
+    if (m && c) { m.open = true; if (box(c)) box(c).open = true; }
+  };
+  const hashTarget = () => (location.hash.length > 1 ? document.getElementById(decodeURIComponent(location.hash.slice(1))) : null);
+  arrive(hashTarget());
+  window.addEventListener('hashchange', () => arrive(hashTarget()));
 })();

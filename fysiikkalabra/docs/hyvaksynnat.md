@@ -37,4 +37,80 @@ needs a new approval.
 
 ## Kirjaukset
 
-(empty)
+### B 2026-11-28 klo 05.0x (Suomen aikaa), koordinaattorin chat
+
+Lista, jonka koordinaattori näytti (PR #907 kohta 36: vanha → uusi; PR #903 kohta 33.1):
+
+| # | luku | tunniste | vanha | uusi |
+|---|---|---|---|---|
+| 1 | fy4-2 | tavoite-1 | Ymmärrän, mitä kiihtyvyyden etumerkki kertoo. | Osaan selittää omin sanoin, mitä kiihtyvyyden etumerkki kertoo. |
+| 2 | fy4-3 | tavoite-1 | Ymmärrän, miksi liike jatkuu ilman eteenpäin vievää voimaa. | Osaan selittää Newtonin ensimmäisellä lailla, miksi liike jatkuu ilman eteenpäin vievää voimaa. |
+| 3 | fy4-4 | tavoite-1 | Ymmärrän, miten kiihtyvyys riippuu kokonaisvoimasta ja massasta. | Osaan ennustaa, miten kiihtyvyys muuttuu, kun kokonaisvoima tai massa muuttuu. |
+| 4 | fy4-7 | tavoite-2 | Ymmärrän, miksi liike-energia kasvaa nopeuden neliössä. | Osaan selittää omin sanoin, miksi liike-energia kasvaa nopeuden neliössä. |
+| 5 | fy4-8 | tavoite-1 | Ymmärrän, milloin mekaaninen energia säilyy ja mihin se muuttuu. | Osaan päätellä tilanteesta, milloin mekaaninen energia säilyy ja mihin se muuttuu. |
+| 6 | fy4-9 | tavoite-3 | Ymmärrän, miksi pidempi pysähtymisaika pienentää voimaa. | Osaan selittää omin sanoin, miksi pidempi pysähtymisaika pienentää voimaa. |
+| 7 | fy4-10 | tavoite-1 | Ymmärrän, miksi kokonaisliikemäärä säilyy törmäyksessä. | Osaan selittää omin sanoin, miksi kokonaisliikemäärä säilyy törmäyksessä. |
+| 8 | fy4-11 | tavoite-3 | Ymmärrän, miksi turvavyö ja turvatyyny suojaavat. | Osaan selittää omin sanoin, miksi turvavyö ja turvatyyny suojaavat. |
+| 9 | fy4-12 | tavoite-3 | Ymmärrän, miten nopeudet vaikuttavat kohtaamiseen. | Osaan ennustaa, miten nopeudet vaikuttavat kohtaamiseen. |
+| 10 | fy4-13 | tavoite-3 | Ymmärrän, miksi jännitysvoima ei ole riippuvan kappaleen paino. | Osaan selittää omin sanoin, miksi jännitysvoima ei ole riippuvan kappaleen paino. |
+| 11 | fy4-14 | tavoite-1 | Ymmärrän, miksi putoava kappale saavuttaa rajanopeuden. | Osaan selittää omin sanoin, miksi putoava kappale saavuttaa rajanopeuden. |
+| 12 | fy4-15 | tavoite-1 | Ymmärrän, miten vesi- ja tuulivoimala tuottavat sähköä. | Osaan selittää omin sanoin, miten vesi- ja tuulivoimala tuottavat sähköä. |
+| 13 | fy6-1 | tavoite-1 | Ymmärrän, miksi sähkövirta ei kulu lampussa. | Osaan selittää omin sanoin, miksi sähkövirta ei kulu lampussa. |
+| 14 | fy6-2 | tavoite-3 | Ymmärrän, miten väärä kytkentä muuttaa piiriä. | Osaan ennustaa, miten väärä kytkentä muuttaa piiriä. |
+| 15 | fy6-3 | tavoite-3 | Ymmärrän, miten johtimen mitat vaikuttavat sen resistanssiin. | Osaan ennustaa, miten johtimen mitat vaikuttavat sen resistanssiin. |
+| 16 | fy6-4 | tavoite-1 | Ymmärrän, miten virta ja jännite jakautuvat sarja- ja rinnankytkennässä. | Osaan ennustaa, miten virta ja jännite jakautuvat, kun kytkentää muutetaan. |
+| 17 | fy6-5 | tavoite-3 | Ymmärrän, miksi lähteen jännite jakautuu silmukan vastuksille. | Osaan selittää omin sanoin, miksi lähteen jännite jakautuu silmukan vastuksille. |
+| 18 | fy6-6 | tavoite-3 | Ymmärrän, miksi vastuksen lämpötila tasaantuu. | Osaan selittää omin sanoin, miksi vastuksen lämpötila tasaantuu. |
+| 19 | fy6-7 | tavoite-3 | Ymmärrän, miksi kulutuksen ratkaisee energia eikä teho. | Osaan selittää omin sanoin, miksi kulutuksen ratkaisee energia eikä teho. |
+| 20 | fy6-8 | tavoite-1 | Ymmärrän, miksi pariston napajännite pienenee virran kasvaessa. | Osaan selittää omin sanoin, miksi pariston napajännite pienenee virran kasvaessa. |
+| 21 | fy6-8 | tavoite-3 | Tiedän, miksi oikosulku on vaarallinen. | Osaan perustella, miksi oikosulku on vaarallinen. |
+| 22 | fy6-9 | tavoite-3 | Ymmärrän, miksi latausvirta pienenee akun täyttyessä. | Osaan selittää omin sanoin, miksi latausvirta pienenee akun täyttyessä. |
+| 23 | fy6-10 | tavoite-1 | Ymmärrän varautumisen ja influenssin varauksen siirtymisenä. | Osaan kuvata varautumisen ja influenssin varauksen siirtymisenä. |
+| 24 | fy6-11 | tavoite-2 | Ymmärrän, miksi levyjen välinen kenttä on homogeeninen. | Osaan selittää omin sanoin, miksi levyjen välinen kenttä on homogeeninen. |
+| 25 | fy6-12 | tavoite-2 | Ymmärrän, miksi positiivinen ja negatiivinen varaus liikkuvat kentässä eri suuntiin. | Osaan selittää omin sanoin, miksi positiivinen ja negatiivinen varaus liikkuvat kentässä eri suuntiin. |
+| 26 | fy6-13 | tavoite-2 | Ymmärrän, miten eriste muuttaa kondensaattorin ominaisuuksia. | Osaan ennustaa, miten eriste muuttaa kondensaattorin ominaisuuksia. |
+| 27 | fy6-14 | tavoite-1 | Ymmärrän diodin päästö- ja estosuunnan. | Osaan päätellä, mihin suuntaan diodi päästää virran ja mihin se estää sen. |
+| 28 | fy6-15 | tavoite-3 | Tiedän, miten maadoitus ja vikavirtasuoja suojaavat. | Osaan selittää omin sanoin, miten maadoitus ja vikavirtasuoja suojaavat. |
+| 29 | fy6-16 | tavoite-3 | Ymmärrän, miksi löystynyt liitos kuumenee. | Osaan selittää omin sanoin, miksi löystynyt liitos kuumenee. |
+| 30 | FY9 | koevalinta | Harjoituskoe | Kuuden tunnin harjoituskoe (en "Six-hour practice exam") |
+
+Opettajan vastaus sanatarkasti (kysymykseen, mitä "Vahvistan" koskee): "Hyväksyn 1–30".
+Lähde kirjauksiin: `Koottu hyväksyntä B 2026-11-28 1–30, docs/hyvaksynnat.md`. Kohdat 1–29: PR #907; kohta 30: PR #903. Tarkistus: kirjattava suomenkielinen teksti on merkki merkiltä taulukon uusi-sarakkeen mukainen (näissä teksteissä ei sisältötiivistettä).
+
+### B 2026-11-28 klo 08.3x (Suomen aikaa), koordinaattorin chat
+
+Lista, jonka koordinaattori näytti (PR #910, kohta 33.2 lähtötasotesti):
+
+| # | luku | tunniste | vanha | uusi |
+|---|---|---|---|---|
+| 31 | FY9 | lähtötasotestin moduuliyhteenvedon otsikko | (uusi) | Kertaa nämä (en "Revise these") |
+
+Opettajan vastaus sanatarkasti: "Hyväksyn 31".
+Lähde kirjauksiin: `Koottu hyväksyntä B 2026-11-28 31, docs/hyvaksynnat.md`. Kohta 31: PR #910. Tarkistus: kirjattava suomenkielinen teksti on merkki merkiltä "Kertaa nämä".
+
+### B 2026-11-28 klo 15.0x (Suomen aikaa), koordinaattorin chat
+
+Lista, jonka koordinaattori näytti (PR #904, kohta 33.5; kuvat ennen ja jälkeen tekijäsessiossa session_018S3zFvgUJzojjHKRAQ53k9):
+
+| # | luku | tunniste | vanha | uusi |
+|---|---|---|---|---|
+| 32 | fy5-1 | kuva `fy51-ovi` (kaikki kielet) | rasterikuva `assets/pics/fy5/fy5-1-ovi.webp`, jossa F₃-nuoli on lyhyempi | vektoripiirros `lessons/FY5/fy5-1/figures.py`: F₁, F₂ ja F₃ yhtä pitkiä, F₃:n vaikutussuora saranan kautta; rasterikuva ja sen ASETTELU-rivi pois; kuvan aria-kuvaus vastaa piirrosta |
+
+Opettajan vastaus sanatarkasti (kysymykseen, mitä "I approve" koskee): valinta "FY5 door figure #904" (kuvaus: "Approve the redrawn figure and vector replacing the raster image. Note: you haven't seen the pictures here; recorded as B.").
+Lähde kirjauksiin: `Koottu hyväksyntä B 2026-11-28 32, docs/hyvaksynnat.md`. Hyväksytty versio: PR #904:n kärki `5a09d8c4042a64b754c45fe221f3396f6b380466`; tekijä laskee `reviews.figure_hash(fy5-1)` tästä commitista ja kirjaa vain, jos piirros ei ole muuttunut sen jälkeen.
+
+### B 2026-11-28 klo 17.3x (Suomen aikaa), koordinaattorin chat
+
+Lista, jonka koordinaattori näytti (PR #917, kohta 35, Näin opiskelet -sivu; kuvakaappaus 390 px chatissa):
+
+| # | luku | tunniste | vanha | uusi |
+|---|---|---|---|---|
+| 33 | Näin opiskelet | otsikko (h3) | (uusi) | Jos käytät tekoälyä |
+| 34 | Näin opiskelet | kohta 1 | (uusi) | **Yritä ensin itse** – Aloita tehtävästä itse, vaikka et pääsisi loppuun. Kun tiedät, mihin jäit, osaat kysyä tarkasti. |
+| 35 | Näin opiskelet | kohta 2 | (uusi) | **Pyydä vihje, älä valmista ratkaisua** – Kysy seuraavaa askelta tai selitystä käsitteestä. Valmis ratkaisu vie sinulta juuri sen ajattelun, jota harjoittelet. |
+| 36 | Näin opiskelet | kohta 3 | (uusi) | **Arvioi vastaus fysiikan tiedoilla** – Tekoäly voi erehtyä ja kuulostaa silti varmalta. Tarkista yksiköt, suuruusluokka ja suunta sekä se, sopiiko vastaus kuvaan ja teoriaan. |
+| 37 | Näin opiskelet | kohta 4 | (uusi) | **Kirjoita perustelut omin sanoin** – Älä kopioi selitystä. Kirjoita itse, miksi valitsit periaatteen ja miten vastaus seuraa siitä. Silloin huomaat, mikä on vielä epäselvää. |
+| 38 | Näin opiskelet | kohta 5 | (uusi) | **Varmista, että osaat ilman tekoälyä** – Ratkaise samanlainen tehtävä myöhemmin ilman apua. Kokeessa et voi kysyä keneltäkään. |
+
+Opettajan vastaus sanatarkasti: "hyväksyn 33–38".
+Lähde kirjauksiin: `Koottu hyväksyntä B 2026-11-28 33–38, docs/hyvaksynnat.md`. Kohdat 33–38: PR #917. Tarkistus: suomenkieliset tekstit merkki merkiltä uusi-sarakkeen mukaiset (lihavointi on otsikko-osa, "–" erottaa selityksen); fi-easy ja en kuuluvat A1:een.
