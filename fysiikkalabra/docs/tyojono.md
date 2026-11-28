@@ -213,7 +213,6 @@ Versio 1 kokonaan selaimessa: luvun alussa 3–5 kysymyksen lähtötesti tyypill
 ## 27. Piirrosten uudelleenpiirto (opettaja 2026-11-27 koordinaattorin chatissa: "muutetaan kuva")
 Kohdan 24 "Älä muuta piirroksia" -rajaus ei koske näitä; opettaja salli muutoksen. Tehdään `/figure-fixes`-komennolla kurssi kerrallaan, ennen ja jälkeen -kuvat opettajalle tekijäsessiossa; ei muita piirroksia.
 - FY7 `fy7-8` lesson.md:46: kohdan 32 korjauksen jälkeen ei monochrome-löydöstä (WebP-pohjainen kuva) → ei uutta piirrosta.
-- FY6 `fy6-15/luokat`: III-numero puuttuu vinoneliöstä.
 - FY4 `fy4-4/valitse_d`: kuvan toinen virhe. **Tehty 2026-11-27 (PR #899; opettaja 2026-11-27 "Hyväksyn"; T pidemmäksi, F:n ja G:n summa alle T:n; `docs/audits/fy4-valitse-d/`).**
 - FY4 `fy4-2` lesson.md:5: kohdan 32 korjauksen jälkeen ei monochrome-löydöstä (WebP-pohjainen kuva) → ei uutta piirrosta; fy4-2:n "Nopeus (toisto)" ja seliterivi kohdan 10 mukaisesti.
 
