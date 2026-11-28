@@ -239,3 +239,6 @@ Toimeksianto sellaisenaan: `docs/audits/2026-11-28-fy9-opiskelijanakyma.md`. Ope
 - 33.4 Arvioimaton vs. 0 p itsearvioinnissa ("Pisteytä oma vastauksesi · enintään 15 p", valitut pisteet ja arvioitujen kohtien määrä, tietoinen 0 = arvioitu). Jaettu.
 - 33.5 FY5 momenttiluvun ovikuva: F₁, F₂, F₃ yhtä pitkiksi, F₃:n vaikutussuora saranan kautta; tavallinen ja suurennettu kuva. Kuva opettajalle tekijäsessiossa.
 Lopuksi: ensikäynti, palaava opiskelija, kesken jätetty testi, itsearvioinnin nolla; tietokone, 360–390 px, näppäimistö; en ja fi-easy päivitetty; lyhyt raportti.
+
+## 34. Hyväksyntä koordinaattorin kautta (opettaja 2026-11-28 koordinaattorin chatissa: "Hyväksyn A ja B")
+A = pysyvä hyväksyntä (käännökset hyväksytystä suomesta, tarkistuslöydöksen vuoksi korjattu kuva ilman sisältö- tai nimiömuutosta, kirjanpito); B = koottu hyväksyntä koordinaattorin chatissa, kirjattuna sanatarkasti. Säännöt: `docs/hyvaksynnat.md`; juuren `CLAUDE.md` sääntö 5, `fysiikkalabra/CLAUDE.md` (teacher-text, teacher-figure) ja `/figure-fixes` viittaavat siihen. TEHTY tässä PR:ssä; yhdistetään ennen muita.
