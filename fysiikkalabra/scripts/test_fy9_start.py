@@ -61,9 +61,9 @@ with sync_playwright() as pw:
                 with p.expect_navigation(): p.keyboard.press("Enter")
                 expect(f"{tag}: Enter opens the diagnostic", "fy9-koe.html" in p.url, p.url)
             if w == 360:   # a returning student: one real attempt of the diagnostic (a wrong answer), then the course page again
-                p.goto(BASE + pre + "fy9-koe.html#testi-ohje")
+                p.goto(BASE + pre + "fy9-koe.html#testi-ohje"); p.wait_for_timeout(400)   # arriving opens the first module and its first task (33.2)
                 d = p.locator("details.opt:has(#testi-1)")
-                d.locator("summary").first.click(); d.locator("input[type=radio]").nth(0).check(); d.locator("button.commit").click()
+                d.locator("input[type=radio]").nth(0).check(); d.locator("button.commit").click()
                 p.goto(BASE + pre + "FY9.html")
                 main = p.locator("#fy9-main"); line = p.locator("#fy9-coach-row")
                 expect(f"{tag}: returning: '{T['resume']}' to the coach's next task, which the line names", main.inner_text().strip() == T["resume"] and "fy9-koe.html#testi-" in main.get_attribute("href")
