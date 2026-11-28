@@ -3456,6 +3456,29 @@
         "text": "Kerro, mitä pitää selvittää. Kerro, mitä olet jo yrittänyt. Kerro, mihin jäit jumiin. Silloin apua on helppo antaa. Apua saa kysyä heti."
       }
     ],
+    "ai_h": "Jos käytät tekoälyä",
+    "ai": [
+      {
+        "title": "Yritä ensin itse",
+        "text": "Aloita tehtävä itse. Se ei haittaa, vaikka et pääse loppuun. Kun tiedät, mihin jäit, osaat kysyä tarkasti."
+      },
+      {
+        "title": "Pyydä vihje, älä valmista ratkaisua",
+        "text": "Kysy seuraava askel. Tai pyydä selitys käsitteestä. Valmis ratkaisu vie sinulta juuri sen ajattelun, jota harjoittelet."
+      },
+      {
+        "title": "Arvioi vastaus fysiikan tiedoilla",
+        "text": "Tekoäly voi erehtyä, vaikka se kuulostaa varmalta. Tarkista yksiköt, suuruusluokka ja suunta. Tarkista myös, sopiiko vastaus kuvaan ja teoriaan."
+      },
+      {
+        "title": "Kirjoita perustelut omin sanoin",
+        "text": "Älä kopioi selitystä. Kirjoita itse, miksi valitsit periaatteen. Kirjoita myös, miten vastaus seuraa siitä. Silloin huomaat, mikä on vielä epäselvää."
+      },
+      {
+        "title": "Varmista, että osaat ilman tekoälyä",
+        "text": "Ratkaise myöhemmin samanlainen tehtävä ilman apua. Kokeessa et voi kysyä keneltäkään."
+      }
+    ],
     "feedback_h": "Näin hyödynnät palautetta ja arvioit osaamistasi",
     "feedback_lead": "Palaute ja itsearvio kertovat, mitä kannattaa tehdä seuraavaksi.",
     "fb_h": "Hyödynnä palautetta",

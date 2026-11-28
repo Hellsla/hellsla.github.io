@@ -3456,6 +3456,29 @@
         "text": "Say what you need to find, what you have already tried and where you got stuck. Then it is easy to help you. You can ask for help right away."
       }
     ],
+    "ai_h": "If you use AI",
+    "ai": [
+      {
+        "title": "Try it yourself first",
+        "text": "Start the task on your own, even if you do not finish. When you know where you got stuck, you can ask precisely."
+      },
+      {
+        "title": "Ask for a hint, not a finished solution",
+        "text": "Ask for the next step or an explanation of a concept. A finished solution takes away exactly the thinking you are practising."
+      },
+      {
+        "title": "Judge the answer with your physics",
+        "text": "AI can be wrong and still sound sure. Check the units, the order of magnitude and the direction, and whether the answer fits the diagram and the theory."
+      },
+      {
+        "title": "Write your reasoning in your own words",
+        "text": "Do not copy an explanation. Write yourself why you chose the principle and how the answer follows from it. Then you notice what is still unclear."
+      },
+      {
+        "title": "Make sure you can do it without AI",
+        "text": "Later, solve a similar task without help. In an exam you cannot ask anyone."
+      }
+    ],
     "feedback_h": "How to use feedback and assess what you know",
     "feedback_lead": "Feedback and self-assessment tell you what to do next.",
     "fb_h": "Make use of feedback",

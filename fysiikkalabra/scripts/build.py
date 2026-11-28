@@ -706,6 +706,7 @@ STUDY_ICONS = {
 STUDY_STEPS = [("herata", "1"), ("ennusta", "2"), ("tutki", "3"), ("selita", "4"), ("sovella", "5–6"), ("tarkista", "7")]
 STUDY_TIPS = ["recall", "spaced", "mix", "fade", "explain", "errors", "graph", "draw"]   # lang guide.tips in this order
 STUDY_HELP = ["draw", "theory", "talk", "together"]                                       # lang guide.help in this order
+STUDY_AI = ["draw", "hint", "graph", "explain", "recall"]                                   # lang guide.ai in this order
 STUDY_FEEDBACK = ["hint", "errors", "retry", "graph"]                                     # lang guide.feedback in this order
 
 
@@ -741,7 +742,8 @@ def study_guide():
             + (f'<p class="study-more"><a href="{FORMULA_PAGE}">{esc(T("kaavat.link"))}</a></p>' if FORMULA_PAGE else "")
             + (f'<p class="study-more"><a href="{SIM_PAGE}">{esc(T("simulaatiot.link"))}</a></p>' if SIM_PAGE else "")
             + f'{items("study-tips", STUDY_TIPS, "tips")}'
-            f'<h3 class="study-sub" id="jumissa">{esc(g("help_h"))}</h3>{items("study-tips study-help", STUDY_HELP, "help")}</section>'
+            f'<h3 class="study-sub" id="jumissa">{esc(g("help_h"))}</h3>{items("study-tips study-help", STUDY_HELP, "help")}'
+            f'<h3 class="study-sub" id="tekoaly">{esc(g("ai_h"))}</h3>{items("study-tips study-help", STUDY_AI, "ai")}</section>'
             f'<section class="study-sec" id="palaute" aria-labelledby="h-feedback"><h2 id="h-feedback">{esc(g("feedback_h"))}</h2>'
             f'<p class="section-lead">{esc(g("feedback_lead"))}</p>'
             f'<div class="study-two"><div><h3>{esc(g("fb_h"))}</h3><p>{esc(g("fb_text"))}</p>'
