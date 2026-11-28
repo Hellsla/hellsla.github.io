@@ -233,19 +233,12 @@ TEHTY (PR #901, odottaa yhdistämistä, 2026-11-27): `check_figures` etsii `<ima
 ## 33. FY09-ylioppilaskertauksen opiskelijanäkymä (opettaja 2026-11-28 koordinaattorin chatissa)
 Toimeksianto sellaisenaan: `docs/audits/2026-11-28-fy9-opiskelijanakyma.md`. Opettajan antamat suomenkieliset painike- ja otsikkotekstit ("Tee lähtötasotesti", "Jatka kertausta", "Kertaa aihetta", "Valitse yo-tyylinen tehtävä", "Tee minikoe", "Tietoa opintojaksosta", "Lähtötasotesti", "Kertaa tämä asia", "Seuraava tehtävä", "Testaa lähtötasosi", "Kertaa teoria", "Ratkaise yo-tyylinen tehtävä", "Pisteytä oma vastauksesi · enintään N p") on hyväksytty; muut uudet tekstit sekä fi-easy- ja en-käännökset hyväksytään tekijäsessiossa. Rajaus: opiskelijan näkymä; ei seurantaa, kirjautumista eikä tietojen keruuta; tallennus vain tämän laitteen avaimiin (valmentajan nykyiset avaimet, ei uusia ilman perustelua).
 - 33.0 Läpikäynti opiskelijana (etusivu → lähtötasotesti, aihekohtainen kertaus, YO-sekoitin, minikoe; yksi oikea ja yksi väärä vastaus; palautteen jälkeinen askel; palaava opiskelija), lyhyet havainnot opettajalle ennen muutoksia.
-<<<<<<< HEAD
 - 33.1 **Varattu: claude/33-fy9-opiskelijanakyma** FY09-etusivu: pääpainike (Tee lähtötasotesti / Jatka kertausta + mitä jatketaan, Valmentajan suositus), kolme muuta reittiä, Tietoa opintojaksosta -kohta; puhelimella pääpainike ennen esittelytekstiä. Jaettu. **Toteutettu PR #903:ssa.** Hyväksyntä: opettajan antamat fi-tekstit (Tee lähtötasotesti, Jatka kertausta, Kertaa aihetta, Valitse yo-tyylinen tehtävä, Tee minikoe, Tietoa opintojaksosta); en-käännökset (Take the starting-level test, Continue revising, Revise a topic, Choose an exam-style task, Take a mini exam, About the course) ja fi-easy: Pysyvä hyväksyntä A1, docs/hyvaksynnat.md (opettaja 2026-11-28). **Odottaa opettajan sanaa:** uusi teksti "Kuuden tunnin harjoituskoe" / en "Six-hour practice exam" (ei A:n piirissä, ei kirjausta B:ssä).
-=======
-- 33.1 FY09-etusivu: pääpainike (Tee lähtötasotesti / Jatka kertausta + mitä jatketaan, Valmentajan suositus), kolme muuta reittiä, Tietoa opintojaksosta -kohta; puhelimella pääpainike ennen esittelytekstiä. Jaettu.
->>>>>>> origin/main
 - 33.2 Lähtötasotesti: nimi koko reitillä, 24 tehtävää moduuleittain "FY1 · 1/3 · …", ensimmäinen tehtävä auki, moduulin valinta, "Kertaa tämä asia" perustelun viereen ja "Seuraava tehtävä", moduulin loppuyhteenveto, jatkuu päivityksen jälkeen. Jaettu.
 - 33.3 Kertaustuntien oikotiet (malli "Liike kuvaajina"), muihin FY9-yksiköihin; harjoituskokeessa omat nimet. Jaettu.
 - 33.4 Arvioimaton vs. 0 p itsearvioinnissa ("Pisteytä oma vastauksesi · enintään 15 p", valitut pisteet ja arvioitujen kohtien määrä, tietoinen 0 = arvioitu). Jaettu.
 - 33.5 FY5 momenttiluvun ovikuva: F₁, F₂, F₃ yhtä pitkiksi, F₃:n vaikutussuora saranan kautta; tavallinen ja suurennettu kuva. Kuva opettajalle tekijäsessiossa.
 Lopuksi: ensikäynti, palaava opiskelija, kesken jätetty testi, itsearvioinnin nolla; tietokone, 360–390 px, näppäimistö; en ja fi-easy päivitetty; lyhyt raportti.
-<<<<<<< HEAD
-=======
 
 ## 34. Hyväksyntä koordinaattorin kautta (opettaja 2026-11-28 koordinaattorin chatissa: "Hyväksyn A ja B")
 A = pysyvä hyväksyntä (käännökset hyväksytystä suomesta, tarkistuslöydöksen vuoksi korjattu kuva ilman sisältö- tai nimiömuutosta, kirjanpito); B = koottu hyväksyntä koordinaattorin chatissa, kirjattuna sanatarkasti. Säännöt: `docs/hyvaksynnat.md`; juuren `CLAUDE.md` sääntö 5, `fysiikkalabra/CLAUDE.md` (teacher-text, teacher-figure) ja `/figure-fixes` viittaavat siihen. TEHTY tässä PR:ssä; yhdistetään ennen muita.
->>>>>>> origin/main
