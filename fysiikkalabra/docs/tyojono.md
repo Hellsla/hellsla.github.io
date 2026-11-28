@@ -223,6 +223,7 @@ Järjestys: ensin "Korjaa ensin" 1–4, sitten 5–10.
 - 29.9 TEHTY (PR #898, 2026-11-27): alakohdan palaute (`scripts/subpart.py`, `build.py` `data-part`/`data-compare`, `templates/lesson.js` `partFeedback`, lang `js` `correct_part`/`compare_*`); fy4-10-L2-06: "C-kohdan lukuarvo on oikein. Vertaa vielä b-kohdan perusteluasi malliratkaisuun."; uudet fi-easy- ja en-tekstit ja kuvakaappaukset (`docs/audits/2026-11-27-29-9/`) opettaja tekijäsessiossa "Hyväksyn"; testi `scripts/test_subpart.py`.
 
 ## 30. Virhe-tehtävän vaihtoehtojärjestys englanniksi (opettaja 2026-11-27 koordinaattorin chatissa: "tee nämä")
+Varattu: claude/30-virhe-en-jarjestys (PR avattu 2026-11-28; vain en-tekstit, ei jaettua muutosta).
 Löydös PR #886:ssa: fy3-11, fy3-16, fy5-2, fy7-10 ja fy8-1 (en) `virhe`-tehtävän vaihtoehdot ovat eri järjestyksessä kuin suomeksi, koska englannin "no mistake" ei osu `inquiry.no_error`-sääntöön; siksi niiden en-valinnat jäävät valintojen jakaumasta pois (`skip_en`). Korjaa sääntö tai en-teksti niin, että järjestys on sama kuin fi:ssä, ja poista `skip_en`. Vanhentaa en-katselmoinnit näillä sivuilla: tekstimuutokset opettajalle tekijäsessiossa (approve-text) tai vaaditut katselmoinnit. Jaettu, jos sääntö (`inquiry.py`) muuttuu.
 
 ## 32. Kuvalintin väärä "monochrome figure" -löydös (koordinaattori 2026-11-27, löydös PR #899)
