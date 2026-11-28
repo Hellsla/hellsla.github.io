@@ -1,0 +1,154 @@
+<title>Oppimispolku FY1, luonnos</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+<style>
+/* VOICE everyday: a study page for 16–19-year-olds, in Ruukkilabra's own look
+   IDEA the real chapter top: one quiet line opens an optional readiness check; the chapter's own stages stay untouched
+   PICTURE the chapter page as a student meets it, with the check opened and answered, and the course map under it
+   COLOUR Ruukkilabra paper #f7f3ec, ink #14171e, forest #1a4d2e; coach state colours on the map; designer notes in a pale blue margin
+   TYPE Fraunces + Plus Jakarta Sans (the site's own)
+   LAYOUT laptop: page column left, design notes right; map full width below; phone: notes fold under each part */
+:root{color-scheme:light dark;--bg:light-dark(#f7f3ec,#15171c);--tint:light-dark(#efeadd,#1d2027);--surface:light-dark(#fff,#20242c);--ink:light-dark(#14171e,#ecebe6);--ink2:light-dark(#474c5b,#b6b8c0);--line:light-dark(#e3dccb,#343844);--acc:light-dark(#1a4d2e,#7fc79a);--accsoft:light-dark(#ecf5ee,#1d3226);--note:light-dark(#eaf0fb,#1b2333);--noteink:light-dark(#1f3a6b,#a9c1ee);--s0:light-dark(#e9e5da,#2a2e36);--s1:light-dark(#f6d9a8,#5a4520);--s2:light-dark(#cfe3c2,#2d4a30);--s3:light-dark(#1a4d2e,#7fc79a)}
+:root[data-theme=light]{color-scheme:light}:root[data-theme=dark]{color-scheme:dark}
+*{box-sizing:border-box;min-width:0}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 "Plus Jakarta Sans",system-ui,sans-serif;overflow-x:clip}
+.band{padding-block:clamp(22px,3vw,40px);padding-left:max(5vw,16px,env(safe-area-inset-left,0px));padding-right:max(5vw,16px,env(safe-area-inset-right,0px))}
+.wrap{max-width:1180px;margin:0 auto}
+.top{font-size:14px;color:var(--ink2);margin:0 0 16px;max-width:70ch}
+.row{display:grid;grid-template-columns:minmax(0,38rem) minmax(0,1fr);gap:28px;align-items:start;margin-bottom:22px}
+.n{background:var(--note);color:var(--noteink);border-radius:10px;padding:12px 14px;font-size:14px;line-height:1.5}
+.n b{display:block;margin-bottom:2px}
+.crumb{font-size:14px;color:var(--ink2)}
+h1{font:650 clamp(30px,4vw,40px)/1.08 Fraunces,Georgia,serif;letter-spacing:-.02em;margin:2px 0 12px}
+.learn{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.learn p{margin:0 0 4px;font-weight:600}
+.learn ul{margin:0;padding-left:20px}
+details.chk{border:1px solid var(--line);border-radius:12px;background:var(--surface)}
+details.chk>summary{cursor:pointer;list-style:none;display:flex;gap:10px;align-items:center;min-height:48px;padding:8px 16px;font-weight:600;color:var(--acc)}
+details.chk>summary::-webkit-details-marker{display:none}
+details.chk>summary::before{content:"";width:8px;height:8px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(-45deg);transition:transform .15s}
+details.chk[open]>summary::before{transform:rotate(45deg)}
+details.chk>summary span{color:var(--ink2);font-weight:500;font-size:14px}
+.inner{padding:0 16px 16px}
+.q{border-top:1px solid var(--line);padding:12px 0}
+.qt{font-weight:600;margin:0 0 8px;font-size:17px}
+.opts{display:grid;gap:6px;grid-template-columns:repeat(2,minmax(0,1fr))}
+.opt{display:flex;gap:10px;align-items:center;font:inherit;font-size:16px;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:8px 12px;min-height:44px;cursor:pointer;text-align:left}
+.opt:hover{border-color:var(--acc)}
+.opt:focus-visible,.pick:focus-visible,.seg button:focus-visible{outline:3px solid var(--acc);outline-offset:2px}
+.opt .dot{flex:none;width:18px;height:18px;border-radius:50%;border:2px solid var(--ink2)}
+.opt[aria-pressed=true]{border-color:var(--acc);background:var(--accsoft)}
+.opt[aria-pressed=true] .dot{border-color:var(--acc);background:radial-gradient(var(--acc) 45%,transparent 50%)}
+.sug{border-top:1px solid var(--line);padding-top:12px;margin-top:4px}
+.sug p{margin:0 0 10px}
+.picks{display:flex;flex-wrap:wrap;gap:8px}
+.pick{font:inherit;font-size:15px;font-weight:600;min-height:44px;padding:0 16px;border-radius:999px;border:1px solid var(--acc);background:transparent;color:var(--acc);cursor:pointer}
+.pick.rec{background:var(--acc);color:var(--bg)}
+.muted{color:var(--ink2);font-size:15px}
+.stage{border:1px solid var(--line);border-radius:12px;padding:14px 16px;background:var(--surface)}
+.stage h2{font:650 22px/1.2 Fraunces,Georgia,serif;margin:0 0 6px}
+.stage p{margin:0;color:var(--ink2)}
+h2.sec{font:650 26px/1.2 Fraunces,Georgia,serif;margin:0 0 4px}
+.seg{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 14px}
+.seg button{font:inherit;font-size:15px;min-height:44px;padding:0 14px;border-radius:10px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer}
+.seg button[aria-pressed=true]{border-color:var(--acc);background:var(--accsoft);font-weight:600}
+.map{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.cell{border-radius:12px;padding:12px;min-height:96px;display:flex;flex-direction:column;justify-content:space-between;border:1px solid var(--line)}
+.cell .t{font-weight:600;font-size:15px;line-height:1.3}
+.cell .s{font-size:14px;font-weight:600}
+.cell.cur{outline:3px solid var(--acc);outline-offset:2px}
+.legend{display:flex;flex-wrap:wrap;gap:8px 16px;font-size:14px;color:var(--ink2);margin-top:12px}
+.legend i{display:inline-block;width:14px;height:14px;border-radius:4px;margin-right:6px;vertical-align:-2px;border:1px solid var(--line)}
+.changes{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.changes h3{font-size:16px;margin:0 0 4px}
+.changes p{margin:0;font-size:15px;color:var(--ink2)}
+@media(max-width:900px){.row{grid-template-columns:minmax(0,1fr);gap:10px}.map{grid-template-columns:repeat(2,minmax(0,1fr))}.changes{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:520px){.opts{grid-template-columns:minmax(0,1fr)}}
+</style>
+
+<div class="band"><div class="wrap">
+  <p class="top">Luonnos 2 työjonon kohdasta 25, luvun fy1-6 yläosa sellaisena kuin opiskelija sen näkisi. Siniset laatikot ovat selitteitä sinulle, eivät osa sivua. Kaikki tekstit ovat ehdotuksia. Vastaukset jäävät opiskelijan selaimeen.</p>
+
+  <div class="row">
+    <div>
+      <div class="crumb">FY1 › Luku 6</div>
+      <h1>Putoamiskiihtyvyys</h1>
+      <div class="learn"><p>Tällä tunnilla opit</p><ul><li>laskemaan putoavan kappaleen nopeuden</li><li>lukemaan kiihtyvyyden (t, v)-kuvaajasta</li></ul></div>
+    </div>
+    <div class="n"><b>Luvun alku ennallaan</b>Otsikko ja "Tällä tunnilla opit" pysyvät kuten nyt. Uutta on vain yksi rivi niiden alla.</div>
+  </div>
+
+  <div class="row">
+    <details class="chk" id="chk" open>
+      <summary>Tarkista lähtötasosi <span>· 3 kysymystä · 2 min</span></summary>
+      <div class="inner" id="inner"></div>
+    </details>
+    <div class="n"><b>Yksi suljettu rivi, valinnainen</b>Kysymykset ovat uusia ja kysyvät aiempien lukujen taitoja, joita tämä luku tarvitsee (tasainen liike, kulmakerroin, yksikkömuunnos). Luvun omia ennusteita ja tarkistuksia ei käytetä, joten mitään ei paljastu etukäteen. Oikein- tai väärin-palautetta ei näytetä, vain ehdotus siitä, mistä aloittaa.</div>
+  </div>
+
+  <div class="row">
+    <div class="stage"><h2>1 Pohdinta</h2><p>Luvun nykyinen Pohdinta alkaa tästä. Luku jatkuu kuten nyt: Ennusta, Tutki, Teoria, Esimerkit, Tehtävät, Testaa ja arvioi.</p></div>
+    <div class="n"><b>Tutkimuspolku koskematon</b>Ennusteet tehdään edelleen ennen näyttöä. Ehdotus vain vie aloituskohtaan, eikä mikään vaihe lukitu.</div>
+  </div>
+</div></div>
+
+<div class="band" style="background:var(--tint)"><div class="wrap">
+  <div class="row" style="margin-bottom:10px">
+    <div><h2 class="sec">Osaamiskartta FY1</h2><p class="muted" style="margin:0">Kurssisivulla. Luvun tila muuttuu vain luvun lopun tarkistuksista (Testaa ja arvioi), ei lähtötasotestistä.</p></div>
+    <div class="n"><b>Kokeile</b>Valitse alta, miten luvun 6 tarkistukset menivät. Lähtötasotestin vastaukset eivät muuta karttaa.</div>
+  </div>
+  <div class="seg" role="group" aria-label="Luvun 6 tarkistukset (kokeilu)" id="seg"></div>
+  <div class="map" id="map"></div>
+  <div class="legend" id="legend"></div>
+</div></div>
+
+<div class="band"><div class="wrap">
+  <h2 class="sec" style="font-size:22px;margin-bottom:10px">Mitä muuttui ensimmäisestä luonnoksesta</h2>
+  <div class="changes">
+    <div><h3>Ei paljasta vastauksia</h3><p>Lähtötestin kysymykset ovat uusia ja kysyvät pohjataitoja. Luvun ennusteet ja tarkistukset pysyvät ennallaan.</p></div>
+    <div><h3>Ehdotus, ei ohjaus</h3><p>Testi antaa yhden ehdotuksen, ja kaikki kolme aloituskohtaa ovat aina valittavissa. Kolme kysymystä ei riitä luotettavaan luokitteluun.</p></div>
+    <div><h3>Kartta vasta näytöstä</h3><p>Lähtötesti ei koskaan merkitse lukua heikoksi. Kartan tila tulee luvun lopun tarkistuksista samoilla tilasanoilla kuin FY9-valmentajassa.</p></div>
+    <div><h3>Vähemmän tekstiä</h3><p>Yksi suljettu rivi luvun alussa ja yksi lause ehdotukseksi. Erillistä polkupaneelia ei ole.</p></div>
+  </div>
+</div></div>
+
+<script>
+{
+const Q=[
+ {t:"Pyöräilijä ajaa tasaisella nopeudella 6,0 m/s. Kuinka pitkän matkan hän kulkee 5,0 sekunnissa?",o:["1,2 m","11 m","30 m","6,0 m"],c:2,ch:"Tasainen liike"},
+ {t:"Mitä (t, s)-kuvaajan kulmakerroin kertoo tasaisessa liikkeessä?",o:["Kuljetun matkan","Nopeuden","Ajan","Ei mitään"],c:1,ch:"Graafinen esitys"},
+ {t:"Paljonko on 54 km/h yksikössä m/s?",o:["5,4 m/s","15 m/s","54 m/s","194 m/s"],c:1,ch:"Suureet ja yksiköt"}];
+let A=[2,0,1];
+const inner=document.getElementById('inner');
+function sug(){
+ const done=A.filter(a=>a!==null).length;
+ if(done<Q.length)return `<div class="sug"><p class="muted">Vastaa kaikkiin, niin saat ehdotuksen. Voit myös aloittaa suoraan Pohdinnasta.</p></div>`;
+ const wrong=A.map((a,i)=>a!==Q[i].c?i:-1).filter(i=>i>=0);
+ let txt,rec;
+ if(wrong.length===0){txt="Pohjataidot näyttävät olevan kunnossa. Ehdotus: aloita Pohdinnasta tavalliseen tapaan.";rec=1}
+ else{txt=`Ehdotus: kertaa ensin luku <b>${wrong.map(i=>Q[i].ch).join('</b> ja <b>')}</b>, sitten aloita Pohdinnasta.`;rec=0}
+ const P=["Kertaa ensin","Aloita Pohdinnasta","Suoraan tehtäviin"];
+ return `<div class="sug"><p>${txt}</p><div class="picks">${P.map((p,i)=>`<button type="button" class="pick${i===rec?' rec':''}">${p}</button>`).join('')}</div></div>`;
+}
+function renderQ(){
+ inner.innerHTML=Q.map((q,i)=>`<div class="q"><p class="qt">${i+1}. ${q.t}</p><div class="opts" role="group" aria-label="Kysymys ${i+1}">${q.o.map((o,j)=>`<button type="button" class="opt" data-q="${i}" data-o="${j}" aria-pressed="${A[i]===j}"><span class="dot"></span><span>${o}</span></button>`).join('')}</div></div>`).join('')+sug();
+}
+inner.addEventListener('click',e=>{const b=e.target.closest('.opt');if(!b)return;const i=+b.dataset.q,j=+b.dataset.o;A[i]=A[i]===j?null:j;renderQ();inner.querySelector(`.opt[data-q="${i}"][data-o="${j}"]`)?.focus()});
+renderQ();
+
+const STATES=[["Ei vielä näyttöä","var(--s0)","var(--ink2)"],["Harjoittele","var(--s1)","var(--ink)"],["Kehittyy","var(--s2)","var(--ink)"],["Vahva","var(--s3)","var(--bg)"]];
+const CH=[["Fysiikka tieteenä",3],["Suureet ja yksiköt",3],["Mittaaminen",2],["Graafinen esitys",2],["Tasainen liike",1],["Putoamiskiihtyvyys",-1],["Tiheys",0],["Oma tutkimus",0]];
+const OPTS=[["Ei tehty",0],["1/3 oikein",1],["2/3 oikein",2],["3/3 oikein",3]];
+let cur=0;
+const seg=document.getElementById('seg');
+function renderMap(){
+ seg.innerHTML=OPTS.map((o,i)=>`<button type="button" data-i="${i}" aria-pressed="${cur===i}">${o[0]}</button>`).join('');
+ document.getElementById('map').innerHTML=CH.map((c,i)=>{const s=c[1]<0?OPTS[cur][1]:c[1];const [w,bg,fg]=STATES[s];return `<div class="cell${c[1]<0?' cur':''}" style="background:${bg};color:${fg}"><span class="t">${i+1}. ${c[0]}</span><span class="s">${w}</span></div>`}).join('');
+ document.getElementById('legend').innerHTML=STATES.map(s=>`<span><i style="background:${s[1]}"></i>${s[0]}</span>`).join('')+'<span>Kehystetty: luku 6</span>';
+}
+seg.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;cur=+b.dataset.i;renderMap();seg.querySelector(`[data-i="${cur}"]`)?.focus()});
+renderMap();
+}
+</script>
