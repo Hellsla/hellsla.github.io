@@ -241,10 +241,6 @@ Lopuksi: ensikäynti, palaava opiskelija, kesken jätetty testi, itsearvioinnin 
 ## 34. Hyväksyntä koordinaattorin kautta (opettaja 2026-11-28 koordinaattorin chatissa: "Hyväksyn A ja B")
 A = pysyvä hyväksyntä (käännökset hyväksytystä suomesta, tarkistuslöydöksen vuoksi korjattu kuva ilman sisältö- tai nimiömuutosta, kirjanpito); B = koottu hyväksyntä koordinaattorin chatissa, kirjattuna sanatarkasti. Säännöt: `docs/hyvaksynnat.md`; juuren `CLAUDE.md` sääntö 5, `fysiikkalabra/CLAUDE.md` (teacher-text, teacher-figure) ja `/figure-fixes` viittaavat siihen. TEHTY tässä PR:ssä; yhdistetään ennen muita.
 
-## 35. Tekoälyohje Näin opiskelet -sivulle (opettaja 2026-11-28 koordinaattorin chatissa: "Lisää 1 ja 2 jonoon")
-**Varattu: claude/35-tekoalyohje**
-Lähde: pedagoginen auditointi, kohta 3.1 (`docs/audits/2026-11-28-pedagoginen-auditointi-tekoalyaika.md`; opettaja 2026-11-28 "Yhdistetään": raportti arkistoon tässä PR:ssä, PR #906 suljettu; raportin muut ehdotukset 3.3–3.5 eivät ole jonossa). Viiden kohdan lista "Kun tehtävä ei etene" -listan alle samalla komponentilla (`study-tips study-help`) ja olemassa olevilla kuvakkeilla; fi, fi-easy, en. Periaatteet: yritä ensin itse; pyydä vihje, älä valmista ratkaisua; arvioi vastaus fysiikan tiedoilla; kirjoita perustelut omin sanoin; varmista, että osaat ilman tekoälyä. Jaettu (`lang/*.json`, `scripts/build.py` `study_guide`, `scripts/test_home.py`): yksin, kohdan 33 jälkeen. Uudet suomenkieliset tekstit opettajalle (tekijäsessio tai B); käännökset A1.
-
 Tekijäraja (opettaja 2026-11-28 koordinaattorin chatissa: "Add more workers"): yli kolme tekijää sallittu; jaetut muutokset edelleen yksin (sääntö 3).
 
 ## 37. Pedagogiset ratkaisut toiselle opettajalle, Opettajalle-sivu (opettaja 2026-11-28 koordinaattorin chatissa: "Lisää opettajalle sivulle")
