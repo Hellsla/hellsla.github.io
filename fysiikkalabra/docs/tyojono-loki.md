@@ -874,3 +874,6 @@ FY6:n tehtävän lopussa linkki "Mittaa oman pariston kuormituskäyrä" (fi, fi-
 
 ## 27 FY6 fy6-15/luokat (PR #900, 2026-11-27)
 Suojausluokan III vinoneliöön lisätty nimiö `III` (`figures.py` `luokat`, nimiö 9; `ASETTELU.tsv` siirto `{"9": [-8, 7]}`; WebP ennallaan; en ja fi-easy `figures.json` "III": "III"). Alt-teksti jo mainitsi numeron, ei muutosta. Kuva **opettaja 2026-11-27 tässä sessiossa ("Hyväksyn")**, kirjattu `teacher-figures.tsv`, carry fi, en ja fi-easy. Kuvat `docs/audits/fy6-15-luokat-360.png` ja `-1280.png`.
+
+## §31 Esitykset-sivu (#896, opettaja 2026-11-27 sessiossa: "add this ruukkilabra.fi/esitykset page")
+Itsenäinen sivu `assets/shared/esitykset/` → ruukkilab.fi/esitykset, samalla mallilla kuin /prosessi (§23): `noindex`, ei linkkiä muilta sivuilta, fontit sivuston omasta `vendor/fonts`-kansiosta, ei pyyntöjä kolmansille osapuolille. `index.html` listaa esitykset; ensimmäinen on `kehitystyon-organisointi.html` (zoomattava animaatio suomeksi ja englanniksi, askel kerrallaan tai "Toista kaikki"). Yhteisiin tiedostoihin yksi rivi kuhunkin: `build.py` kopioi kansion, `deploy_site.py` ja `test_offline.py` eivät pidä sitä kieliversiona. Esityksen luvut (113 lukua, kirjanpidon mediaanit) ovat 27.11.2026 tilanteesta eivätkä päivity itsestään; kohtauksen "Ohjeet" neljä taitoa ovat ehdotus, eivät repositoriossa.
