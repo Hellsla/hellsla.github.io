@@ -156,17 +156,20 @@ def head_icon(code, c):
     return svg.replace("<svg ", '<svg class="mod-head-icon mod-head-plain" aria-hidden="true" focusable="false" ', 1)
 
 
-def head(code, c, T):
+def head(code, c, T, start=""):
     """The course page's title block: icon, name, line, notes and description (also Kilparobotiikka's start page)."""
     status = c["status"]
     import module_icons
-    return (f'<div class="mod-head">{head_icon(code, c)}<div><span class="eyebrow">{label(code) + " · " if label(code) else ""}{T("site.local_course_kind")}</span><h1>{esc(c["title"])}</h1></div></div>'
-           f'<p class="lead">{esc(c["subtitle"])}</p>'
-           + (f'<p class="notice local-kind" role="note">{T("site.local_distinct", school=esc(c["school"]))}</p>' if c.get("kind_note", True) else "")
+    top = f'<div class="mod-head">{head_icon(code, c)}<div><span class="eyebrow">{label(code) + " · " if label(code) else ""}{T("site.local_course_kind")}</span><h1>{esc(c["title"])}</h1></div></div>' \
+          f'<p class="lead">{esc(c["subtitle"])}</p>'
+    rest = ((f'<p class="notice local-kind" role="note">{T("site.local_distinct", school=esc(c["school"]))}</p>' if c.get("kind_note", True) else "")
            + (f'<p class="notice local-status" role="note"><strong>{T("site.local_status_" + status)}.</strong> {T("site.local_status_note_" + status)}</p>' if status != "ready" else "")
            + (f'<p class="local-authors">{T("units.authors")}: {esc(", ".join(c["authors"][:-1]) + " " + T("units.and") + " " + c["authors"][-1] if len(c["authors"]) > 1 else c["authors"][0])}</p>' if c.get("authors") else "")
            + (f'<p class="notice local-language" role="note">{T("units.language_note_" + c["language"])}</p>' if c.get("language") and c["language"] != T.lang and T.lang not in c.get("translations", []) else "")
            + f'<p class="local-desc">{esc(c["description"])}</p>')
+    if start:   # FY9 (33.1): the way in comes first; description, scope and status sit in one closed box
+        rest = f'<details class="fy9-about" id="fy9-about"><summary>{T("coach.about")}</summary>{rest}</details>'
+    return top + start + rest
 
 
 def photos_html(c, T, heading=True):
@@ -201,7 +204,7 @@ def quotes_html(c, T, heading=True):
 def page_body(code, c, T, chapters, published, investigations=(), guides_html="", course_units=(), coach=("", "")):
     """The course landing page. chapters: lesson id -> (module code, title) in this language; published: the page
     names this language built. Planned parts say so, and a chapter not published here is named without a link."""
-    out = head(code, c, T) + coach[0] + photos_html(c, T) + quotes_html(c, T)   # coach: the FY9 coach's row under the heading and its tile (scripts/valmentaja.py)
+    out = head(code, c, T, coach[0] if c.get("coach") else "") + ("" if c.get("coach") else coach[0]) + photos_html(c, T) + quotes_html(c, T)   # coach: the FY9 coach's row under the heading and its tile (scripts/valmentaja.py)
     if c.get("chapters"):                # the course's chapters and their units (scripts/units.py) as cards (scripts/cardgrid.py,
         import cardgrid, units           # teacher 2026-11-04): a section per chapter with its question, a card per unit with
         hrefs = {u: (ul, href) for u, ul, href in course_units}   # its opening illustration and question; a unit still coming is dashed

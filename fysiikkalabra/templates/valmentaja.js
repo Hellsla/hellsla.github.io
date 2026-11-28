@@ -478,19 +478,24 @@
   const reason = (r) => (r.key === 'stale' ? fmt(T.why_stale, { n: r.days }) : T['why_' + r.key] || '');
   const SYMBOL = { none: '○', few: '◔', practise: '▲', growing: '◑', strong: '●', strongdue: '●' };
 
-  if (row) {
-    const st = readSet(), d = data(), p = readPath(), mine = p ? path(index, d, p, today(), { goal: st.goal, courses: st.courses }).days.find((x) => x.date === today()) : null;
-    if (mine && mine.items.length) {   // a practice day of the student's own path: its tasks and minutes
-      const go = el('a', 'resume-go', T.go); go.href = row.dataset.href || 'FY9-valmentaja.html';
-      const n = mine.items.length;
-      row.replaceChildren(go, el('p', 'resume-text', fmt(n === 1 ? T.row_one : T.row_n, { n, m: mine.minutes })));
-      row.hidden = false;
-      return;
-    }
+  if (row) {   // the start block of the course page (33.1): the main button and the line under it
+    const main = document.getElementById('fy9-main'), st = readSet(), d = data(), p = readPath();
+    const coach = row.dataset.href || 'FY9-valmentaja.html';
+    const mine = p ? path(index, d, p, today(), { goal: st.goal, courses: st.courses }).days.find((x) => x.date === today()) : null;
+    let live = null;   // an exam in progress on this device (its clock is running: koetila.js)
+    try { const o = JSON.parse(localStorage.getItem('ruukkilabra:fy9-koetila')); if (o && o.exams) live = miniOrder(index, st.goal).find((m) => o.exams[m.id] && o.exams[m.id].state === 'run') || null; } catch (e) { /* none */ }
     const res = recommend(index, d, today(), { goal: st.goal, courses: st.courses });
-    if (res.diag || !res.recs.length) return;
-    const n = res.recs.length, go = el('a', 'resume-go', T.go); go.href = row.dataset.href || 'FY9-valmentaja.html';
-    row.replaceChildren(go, el('p', 'resume-text', fmt(n === 1 ? T.row_one : T.row_n, { n, m: Math.round(minutes(res.recs) / 5) * 5 || minutes(res.recs) })));
+    const items = mine ? mine.items : [], pick = items.find((x) => x.task);
+    const first = pick ? pick.task : !res.diag && res.recs.length ? res.recs[0].task : null;
+    if (!live && !first) return;   // a first visit: the diagnostic stays the main button
+    let n = 0, m = 0;
+    if (items.length) { n = items.length; m = mine.minutes; } else if (!res.diag && res.recs.length) { n = res.recs.length; m = Math.round(minutes(res.recs) / 5) * 5 || minutes(res.recs); }
+    const nodes = [];
+    if (live) { main.href = live.href; nodes.push(el('span', 'fy9-next-task', live.kind === 'exam' ? T.mini_exam : fmt(T.mini_item, { min: live.minutes, pts: live.points }))); }
+    else { main.href = first.href; nodes.push(el('span', 'fy9-next-task', named(first)), el('span', 'fy9-next-where', where(first) + ' · ' + fmt(T.min, { n: first.min }))); }
+    main.textContent = T.resume;
+    if (n) { const a = el('a', 'fy9-next-day', fmt(n === 1 ? T.row_one : T.row_n, { n, m })); a.href = coach; nodes.push(a); }
+    row.replaceChildren(...nodes);
     row.hidden = false;
     return;
   }
@@ -554,6 +559,7 @@
     miniBox.querySelector('.coach-mini-body').replaceChildren(ol);
   };
   render(); showMini();
+  if (miniBox && location.hash === '#coach-mini') { miniBox.open = true; miniBox.scrollIntoView(); }
 
   // the two settings (PR 4b): saved the moment they change, on this device only
   const set = document.getElementById('coach-set');
