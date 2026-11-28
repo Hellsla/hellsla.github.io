@@ -1,11 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: da32a3af6a2cd795
+CONTENT-HASH: 7e979be5267ff1a4
+SCOPE: delta from the previous PASS; only `"exact": true` added to 5 integer-count answers in exercises.json
 
 ## Blocking
-None.
 
 ## Polish
-None.
 
 ## Checked
-Delta round 1. The diff only removes the prefix "Example data: " from the task texts and capitalises the first letter. Numbers, symbols, figures, answers and feedback are unchanged. Each sentence still reads naturally and states its situation. The tasks still give the data the student needs, and no answer is disclosed. The change removes a label that interrupted the problem statement, so it helps the exercise levels and keeps the workload unchanged. Nothing outside the changed text is touched.
+- Delta only: `"exact": true` added to answers that are whole counts (orders, dots, electrons, orbitals, levels, transitions); no text, number, unit, tolerance or solution changed.
+- Each flagged answer is a count or an index that cannot sensibly be rounded, so the exact check fits the task and does not make it harder to read.
+- No effect on the learning path, levels, figures, Finnish wording or phone layout; the earlier PASS stands.
+- Language checked: en. Hash 7e979be5267ff1a4 at start and end.

@@ -1,14 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 138e75b7962aa4db
-SCOPE: delta md-paragraphs,numbers,typography from dcbb4a54776d9f88 base 64d4935
+CONTENT-HASH: 4181c86351493eee
+SCOPE: delta from the previous PASS; only `"exact": true` added to 2 integer-count answers in exercises.json
 
 ## Blocking
-- none
 
 ## Polish
-- solutions.md fy8-3-L3-01 Kaava — only a formula line; add the basic law rows for consistency with the neighbours.
 
 ## Checked
-- 8g diff: the Kaava step now lists the basic laws first (E = hf, c = f\lambda), then the derived formula, symbolic until Sijoitus; each Kaava block is an aligned list, one equation per row (the packet diff shows it flattened). A student can follow the derivation; numbers, answers and levels unchanged.
-- The added closing sentences in model answers and the split Vastaus/Sijoitus paragraphs close gaps in the explanations and read clearly.
-- Method: delta text in packet plus the aligned Kaava blocks read in solutions.md; no captures needed.
+- Delta only: `"exact": true` added to answers that are whole counts (orders, dots, electrons, orbitals, levels, transitions); no text, number, unit, tolerance or solution changed.
+- Each flagged answer is a count or an index that cannot sensibly be rounded, so the exact check fits the task and does not make it harder to read.
+- No effect on the learning path, levels, figures, Finnish wording or phone layout; the earlier PASS stands.
+- Language checked: fi-easy. Hash 4181c86351493eee at start and end.

@@ -1,14 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: b164528853e92d1a
+CONTENT-HASH: fbca9cb4cd8dd561
+SCOPE: delta from the previous PASS; only `"exact": true` added to 2 integer-count answers in exercises.json
 
 ## Blocking
 
 ## Polish
-- solutions.md (Formula rows with d sin θ = kλ then k < d/λ) — the step from d sin θ = kλ to k < d/λ (sin θ < 1) is not stated in the Formula rows; add "sin θ < 1" in the Principle.
 
 ## Checked
-- Delta only: every changed Formula step runs basic law, derived formula, simplification, then substitution as aligned rows.
-- Symbols stay consistent between Formula and Substitution (d, θ, x, L, k, λ_r, λ_g, x_v, x_r).
-- No Finnish subscripts or words in the formulas; the subscripts (r, g, v, max, avg, st, error) are English.
-- Substitution of the split L3 tasks matches the changed Formula.
-- Language checked: en. Hash b164528853e92d1a at start and end.
+- Delta only: `"exact": true` added to answers that are whole counts (orders, dots, electrons, orbitals, levels, transitions); no text, number, unit, tolerance or solution changed.
+- Each flagged answer is a count or an index that cannot sensibly be rounded, so the exact check fits the task and does not make it harder to read.
+- No effect on the learning path, levels, figures, Finnish wording or phone layout; the earlier PASS stands.
+- Language checked: en. Hash fbca9cb4cd8dd561 at start and end.

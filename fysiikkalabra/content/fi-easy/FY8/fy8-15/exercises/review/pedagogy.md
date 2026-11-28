@@ -1,16 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: a2afeaaa3712cf73
-SCOPE: delta md-paragraphs,numbers,reflow,typography from d6490d7f746bd076 base 64d4935
+CONTENT-HASH: c72f01073d73c864
+SCOPE: delta from the previous PASS; only `"exact": true` added to 2 integer-count answers in exercises.json
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-
-- Delta (work queue 8g): only the Kaava step of the model solutions changed; numbers, answers and tolerances are untouched.
-- Each Kaava now starts from the basic law (or the stated starting equation) and moves to the derived formula in symbols; the step is followable by a student who could not solve the task.
-- Symbolic simplification ends before the Sijoitus step; the Sijoitus rows use the last symbolic form.
-- Spot-checked the derived chains on disk (aligned blocks, one equation per row, each row following from the previous): no algebra or sign error found.
-- The remaining solution parts (Annettu, Kysytty, Periaate, Muunnokset, Vastaus, Järkevyys) and exercise levels are unchanged and still pass.
-- Hash matches the packet at start and end.
+- Delta only: `"exact": true` added to answers that are whole counts (orders, dots, electrons, orbitals, levels, transitions); no text, number, unit, tolerance or solution changed.
+- Each flagged answer is a count or an index that cannot sensibly be rounded, so the exact check fits the task and does not make it harder to read.
+- No effect on the learning path, levels, figures, Finnish wording or phone layout; the earlier PASS stands.
+- Language checked: fi-easy. Hash c72f01073d73c864 at start and end.
