@@ -242,3 +242,11 @@ Lopuksi: ensikäynti, palaava opiskelija, kesken jätetty testi, itsearvioinnin 
 
 ## 34. Hyväksyntä koordinaattorin kautta (opettaja 2026-11-28 koordinaattorin chatissa: "Hyväksyn A ja B")
 A = pysyvä hyväksyntä (käännökset hyväksytystä suomesta, tarkistuslöydöksen vuoksi korjattu kuva ilman sisältö- tai nimiömuutosta, kirjanpito); B = koottu hyväksyntä koordinaattorin chatissa, kirjattuna sanatarkasti. Säännöt: `docs/hyvaksynnat.md`; juuren `CLAUDE.md` sääntö 5, `fysiikkalabra/CLAUDE.md` (teacher-text, teacher-figure) ja `/figure-fixes` viittaavat siihen. TEHTY tässä PR:ssä; yhdistetään ennen muita.
+
+## 35. Tekoälyohje Näin opiskelet -sivulle (opettaja 2026-11-28 koordinaattorin chatissa: "Lisää 1 ja 2 jonoon")
+Lähde: pedagoginen auditointi, kohta 3.1 (PR #906, `docs/audits/2026-11-28-pedagoginen-auditointi-tekoalyaika.md`). Viiden kohdan lista "Kun tehtävä ei etene" -listan alle samalla komponentilla (`study-tips study-help`) ja olemassa olevilla kuvakkeilla; fi, fi-easy, en. Periaatteet: yritä ensin itse; pyydä vihje, älä valmista ratkaisua; arvioi vastaus fysiikan tiedoilla; kirjoita perustelut omin sanoin; varmista, että osaat ilman tekoälyä. Jaettu (`lang/*.json`, `scripts/build.py` `study_guide`, `scripts/test_home.py`): yksin, kohdan 33 jälkeen. Uudet suomenkieliset tekstit opettajalle (tekijäsessio tai B); käännökset A1.
+
+## 36. Itsearvion loppuväittämät teoiksi, pilotti FY4 ja FY6 (opettaja 2026-11-28 koordinaattorin chatissa: "Lisää 1 ja 2 jonoon")
+Lähde: sama auditointi, kohta 3.2. `itsearvio/`-väittämät, jotka alkavat "Ymmärrän / Tiedän / Hahmotan" (FY4 12, FY6 17), muotoon, joka nimeää teon ("Ymmärrän, miksi sähkövirta ei kulu lampussa." → "Osaan selittää omin sanoin, miksi sähkövirta ei kulu lampussa."). Asteikko, käyttöliittymä ja tunnisteet `tavoite-N` ennallaan; palautustiedoston vaikutus tarkistetaan. Nykyiset väittämät opettaja hyväksyi 2026-11-06, joten uudet suomenkieliset sanamuodot opettajalle (tekijäsessio tai B); käännökset A1.
+
+Tekijäraja (opettaja 2026-11-28 koordinaattorin chatissa: "Add more workers"): yli kolme tekijää sallittu; jaetut muutokset edelleen yksin (sääntö 3).
