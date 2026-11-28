@@ -1,13 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: a2afeaaa3712cf73
-SCOPE: delta md-paragraphs,numbers,reflow,typography from d6490d7f746bd076 base 64d4935
+CONTENT-HASH: c72f01073d73c864
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-- Hash a2afeaaa3712cf73 (`reviews.py hash fy8-15 --exercises --lang fi-easy`) at the start and the end.
-- `git diff origin/main`: only solutions.md changed, and only two `**Kaava:**` lines (L1-04 and the wavelength task). Answers, answers.py, tolerances and the Sijoitus steps are unchanged.
-- L1-04 annihilation: the block starts from energy conservation $E_\text{alku} = E_\text{loppu}$ with $E_\text{alku} = 2m_ec^2$ and $E_\text{loppu} = 2E_\gamma$, which gives $E_\gamma = m_ec^2$. This is valid because the givens state that the pair is at rest. The Periaate explains the equal photon energies through momentum conservation.
-- Photon wavelength: the block starts from $E = hf$ and $c = \lambda f$ and gives $\lambda = hc/E$. These are the basic laws first, and the result is the same as before.
+- Delta: `"exact": true` added to fy8-15-L1-05 and fy8-15-L2-01; no text, number, unit, solution or answers.py line changed.
+- Both answers are whole-number quark counts, so exact matching is right: helium-4 $2 \cdot 2 + 2 \cdot 1 = 6$ u quarks (protons $uud$, neutrons $udd$, both given in the task); carbon-12 $6 \cdot 1 + 6 \cdot 2 = 18$ d quarks (recomputed by script, agrees with answers.py).
+- L2-01 gives only ${}^{12}_{6}\text{C}$; the proton and neutron quark content it needs is the lesson's model, as in the passed version.
+- No other exercise was touched.
+- Hash c72f01073d73c864 at the start and at the end.
