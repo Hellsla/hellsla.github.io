@@ -2321,7 +2321,20 @@ main.home>.resume{margin:0 0 1rem}
 @media print{.resume,.ch-state{display:none!important}}
 /* FY9 coach (work queue 11b PR 4, templates/valmentaja.js): the page FY9-valmentaja.html and the row on the course page. One column; a state is a
    word and a mark, never colour alone. */
-.coach-row .resume-text{font-weight:600}
+.fy9-start{display:flex;flex-direction:column;align-items:flex-start;gap:.7rem;margin:1.1rem 0 1.4rem}
+.fy9-main{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 1.6rem;border-radius:999px;background:var(--accent-deep);color:#fff;font:700 1.15rem/1.2 var(--sans);text-decoration:none}
+.fy9-main:hover{background:var(--accent)}
+.fy9-next{margin:0;display:flex;flex-wrap:wrap;gap:.1rem .7rem;align-items:baseline;font-size:var(--fs-ui);line-height:1.4}
+.fy9-next[hidden]{display:none}
+.fy9-next-task{font-weight:700}
+.fy9-next-where{color:var(--ink-2)}
+.fy9-next-day{display:inline-flex;align-items:center;min-height:44px}
+.fy9-routes{display:flex;flex-wrap:wrap;gap:.5rem .6rem}
+.fy9-routes a{display:inline-flex;align-items:center;min-height:44px;padding:0 1rem;border:1px solid var(--accent-deep);border-radius:999px;color:var(--accent-deep);font:600 var(--fs-ui) var(--sans);text-decoration:none;background:var(--surface)}
+.fy9-routes a:hover{background:var(--accent-soft)}
+.fy9-about{margin:0 0 1.2rem}
+.fy9-about>summary{display:inline-flex;align-items:center;min-height:44px;cursor:pointer;font:600 var(--fs-ui) var(--sans);color:var(--accent-deep)}
+@media print{.fy9-start{display:none}}
 .coach-recs{list-style:none;margin:.6rem 0 0;padding:0;display:grid;gap:.7rem}
 .coach-rec{display:grid;grid-template-columns:1fr auto;gap:.15rem .8rem;padding:.8rem 1rem;background:var(--surface);border:1px solid var(--line);border-radius:12px}
 .coach-task{grid-column:1;display:flex;align-items:center;min-height:44px;font:700 var(--fs-body)/1.35 var(--sans);color:var(--accent-deep);overflow-wrap:anywhere}
