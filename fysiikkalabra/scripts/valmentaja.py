@@ -185,7 +185,7 @@ def languages():
 
 # ---- the pages (work queue 11b PR 4; plan 6.1-6.2): the coach page and the row and tile on the course page ---------------
 PAGE = "FY9-valmentaja.html"
-UI_KEYS = ("diag", "min", "why_stale", "why_wrong", "why_new", "why_more", "basis", "own", "note", "row_one", "row_n", "go", "clear", "clear_confirm", "nostore", "goal_h", "goal_lead", "goal_none", "goal_LE", "goal_MC", "goal_BA", "courses_h", "courses_lead", "courses_none", "set_note", "steps_h", "mistakes_h", "mistakes_n", "mini_item", "mini_exam") + ("path_h", "path_len", "path_14", "path_28", "path_exam", "path_per", "path_min", "path_mins", "path_save", "path_del", "path_today", "path_over", "path_note", "path_chapters", "path_done", "path_all", "path_one")
+UI_KEYS = ("diag", "min", "why_stale", "why_wrong", "why_new", "why_more", "basis", "own", "note", "row_one", "row_n", "go", "resume", "clear", "clear_confirm", "nostore", "goal_h", "goal_lead", "goal_none", "goal_LE", "goal_MC", "goal_BA", "courses_h", "courses_lead", "courses_none", "set_note", "steps_h", "mistakes_h", "mistakes_n", "mini_item", "mini_exam") + ("path_h", "path_len", "path_14", "path_28", "path_exam", "path_per", "path_min", "path_mins", "path_save", "path_del", "path_today", "path_over", "path_note", "path_chapters", "path_done", "path_all", "path_one")
 STATES = ("none", "few", "practise", "growing", "strong", "strongdue")
 
 
@@ -269,8 +269,15 @@ def mistakes_script(lang, index):
 
 
 def row_html(T, index):
-    """The row under the course page's heading: hidden until this browser holds evidence (plan 6.1); the script fills it."""
-    return (f'<div class="resume coach-row" id="fy9-coach-row" data-href="{PAGE}" data-t="{ui_json(T)}" hidden></div>'
+    """The start block under the course page's heading (33.1): the main button (the diagnostic until this browser holds evidence, then the
+    coach's next task or an exam in progress; the script fills the line under it), and the three other ways to practise."""
+    return (f'<section class="fy9-start" id="fy9-start">'
+            f'<a class="fy9-main" id="fy9-main" href="fy9-koe.html#testi-ohje">{T("coach.start")}</a>'
+            f'<p class="fy9-next" id="fy9-coach-row" data-href="{PAGE}" data-t="{ui_json(T)}" hidden></p>'
+            f'<nav class="fy9-routes" aria-label="{T("coach.title")}">'
+            f'<a href="#chapters">{T("coach.route_topic")}</a>'
+            f'<a href="yo-sekoitin.html">{T("coach.route_yo")}</a>'
+            f'<a href="{PAGE}#coach-mini">{T("coach.route_mini")}</a></nav></section>'
             + index_script(index) + '<script src="valmentaja.js"></script>')
 
 

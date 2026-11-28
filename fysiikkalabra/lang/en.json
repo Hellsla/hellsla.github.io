@@ -3198,7 +3198,7 @@
     "mistakes_n": "Happened {n} times",
     "mini_h": "Mini exams and the practice exam",
     "mini_item": "{min} min · {pts} p",
-    "mini_exam": "Practice exam",
+    "mini_exam": "Six-hour practice exam",
     "path_h": "Revision path",
     "path_len": "Length",
     "path_14": "14 days",
@@ -3215,7 +3215,13 @@
     "path_chapters": "chapters {list}",
     "path_done": "Done",
     "path_all": "Show the whole path",
-    "path_one": "Show this week only"
+    "path_one": "Show this week only",
+    "start": "Take the starting-level test",
+    "resume": "Continue revising",
+    "route_topic": "Revise a topic",
+    "route_yo": "Choose an exam-style task",
+    "route_mini": "Take a mini exam",
+    "about": "About the course"
   },
   "koetila": {
     "eyebrow": "FY9 · Exam mode",
