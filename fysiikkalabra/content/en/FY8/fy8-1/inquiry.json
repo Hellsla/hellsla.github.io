@@ -342,7 +342,7 @@
           "feedback": "The Planck constant is $6.626 \\cdot 10^{-34}\\,\\text{J}\\,\\text{s}$, a very small number, because the energy of a single photon is small. The mistake is that the wavelength has not been converted to metres."
         },
         {
-          "text": "There is no mistake in the calculation; photons are so small that their energy is of this order of magnitude.",
+          "text": "There is no error in the calculation; photons are so small that their energy is of this order of magnitude.",
           "feedback": "The energy of a photon of visible light is about $3 \\cdot 10^{-19}$–$5 \\cdot 10^{-19}\\,\\text{J}$, not $10^{-28}\\,\\text{J}$. In the calculation the wavelength has been left in nanometres, although $h$ and $c$ contain the metre: $500\\,\\text{nm} = 500 \\cdot 10^{-9}\\,\\text{m}$."
         }
       ]

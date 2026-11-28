@@ -253,7 +253,7 @@
           "feedback": "For the water you have to calculate the energy given out, $cm\\Delta T$. This is the energy that the melting of the ice is compared with, so both energies are needed."
         },
         {
-          "text": "There is no mistake in the calculation, because the temperature of the mixture is always between the initial temperatures.",
+          "text": "There is no error in the calculation, because the temperature of the mixture is always between the initial temperatures.",
           "feedback": "The result is indeed between the initial temperatures, but a weighted average assumes that all the substance is liquid. Melting the ice needs energy that the 25-degree water here cannot supply."
         }
       ],
