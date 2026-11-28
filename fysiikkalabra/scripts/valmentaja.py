@@ -26,7 +26,7 @@ not exist, a diagnostic task without its unit, and a minikoe whose points or min
 """
 import json, re, sys, pathlib
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
-import courses, i18n, practice, units
+import courses, i18n, lahtotaso, practice, units
 from courses import ROOT
 
 COURSE = "FY9"
@@ -81,6 +81,7 @@ def _short_tasks(uid, lang, items):
     """[task] of the unit's short tasks in page order, with the stage they sit in (the long tasks go in after sovella)."""
     inq = json.loads((units.folder(uid, lang) / "inquiry.json").read_text(encoding="utf-8"))
     out = []
+    diag = lahtotaso.plan(uid, inq["activities"])   # the diagnostic's tasks are named "FY1 · 1/3 · Virheen laji" (33.2)
     for a in inq["activities"]:
         if a["type"] not in SHORT: continue
         q = a.get("question") or {}
@@ -91,7 +92,7 @@ def _short_tasks(uid, lang, items):
         n_opt = len(a["choices"]) if kind == "choice" else len(a.get("mistakes", [])) if kind == "numeric" else len(q.get("choices", [])) or len(q.get("mistakes", []))
         t = {"id": key, "unit": it.get("unit", uid), "kind": kind, "stage": a["stage"], "check": check,
              "comp": it.get("competencies", TYPE_COMP[kind]), "min": it.get("minutes", TYPE_MIN[kind]),
-             "href": f"{uid}.html#{a['id']}", "part": "I", "title": a.get("title") or a["id"],
+             "href": f"{uid}.html#{a['id']}", "part": "I", "title": lahtotaso.label(diag[a["id"]]) if a["id"] in diag else a.get("title") or a["id"],
              "review": sorted(_activity_links(a), key=_lesson_key)}
         if n_opt: t["options"] = n_opt
         if it.get("followups"): t["followups"] = it["followups"]
@@ -185,7 +186,7 @@ def languages():
 
 # ---- the pages (work queue 11b PR 4; plan 6.1-6.2): the coach page and the row and tile on the course page ---------------
 PAGE = "FY9-valmentaja.html"
-UI_KEYS = ("diag", "min", "why_stale", "why_wrong", "why_new", "why_more", "basis", "own", "note", "row_one", "row_n", "go", "clear", "clear_confirm", "nostore", "goal_h", "goal_lead", "goal_none", "goal_LE", "goal_MC", "goal_BA", "courses_h", "courses_lead", "courses_none", "set_note", "steps_h", "mistakes_h", "mistakes_n", "mini_item", "mini_exam") + ("path_h", "path_len", "path_14", "path_28", "path_exam", "path_per", "path_min", "path_mins", "path_save", "path_del", "path_today", "path_over", "path_note", "path_chapters", "path_done", "path_all", "path_one")
+UI_KEYS = ("diag", "min", "why_stale", "why_wrong", "why_new", "why_more", "basis", "own", "note", "row_one", "row_n", "go", "resume", "clear", "clear_confirm", "nostore", "goal_h", "goal_lead", "goal_none", "goal_LE", "goal_MC", "goal_BA", "courses_h", "courses_lead", "courses_none", "set_note", "steps_h", "mistakes_h", "mistakes_n", "mini_item", "mini_exam") + ("path_h", "path_len", "path_14", "path_28", "path_exam", "path_per", "path_min", "path_mins", "path_save", "path_del", "path_today", "path_over", "path_note", "path_chapters", "path_done", "path_all", "path_one")
 STATES = ("none", "few", "practise", "growing", "strong", "strongdue")
 
 
@@ -269,8 +270,15 @@ def mistakes_script(lang, index):
 
 
 def row_html(T, index):
-    """The row under the course page's heading: hidden until this browser holds evidence (plan 6.1); the script fills it."""
-    return (f'<div class="resume coach-row" id="fy9-coach-row" data-href="{PAGE}" data-t="{ui_json(T)}" hidden></div>'
+    """The start block under the course page's heading (33.1): the main button (the diagnostic until this browser holds evidence, then the
+    coach's next task or an exam in progress; the script fills the line under it), and the three other ways to practise."""
+    return (f'<section class="fy9-start" id="fy9-start">'
+            f'<a class="fy9-main" id="fy9-main" href="fy9-koe.html#testi-ohje">{T("coach.start")}</a>'
+            f'<p class="fy9-next" id="fy9-coach-row" data-href="{PAGE}" data-t="{ui_json(T)}" hidden></p>'
+            f'<nav class="fy9-routes" aria-label="{T("coach.title")}">'
+            f'<a href="#chapters">{T("coach.route_topic")}</a>'
+            f'<a href="yo-sekoitin.html">{T("coach.route_yo")}</a>'
+            f'<a href="{PAGE}#coach-mini">{T("coach.route_mini")}</a></nav></section>'
             + index_script(index) + '<script src="valmentaja.js"></script>')
 
 
