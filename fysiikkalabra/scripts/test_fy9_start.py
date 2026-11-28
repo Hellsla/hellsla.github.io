@@ -64,6 +64,7 @@ with sync_playwright() as pw:
                 p.goto(BASE + pre + "fy9-koe.html#testi-ohje")
                 d = p.locator("details.opt:has(#testi-1)")
                 d.locator("summary").first.click(); d.locator("input[type=radio]").nth(0).check(); d.locator("button.commit").click()
+                p.wait_for_function("(k) => { try { return /fy9-koe#testi-/.test(localStorage.getItem(k) || ''); } catch (e) { return false; } }", arg="ruukkilabra:fy9-valmentaja")   # the page logs a moment after the click: leave it only then
                 p.goto(BASE + pre + "FY9.html")
                 main = p.locator("#fy9-main"); line = p.locator("#fy9-coach-row")
                 expect(f"{tag}: returning: '{T['resume']}' to the coach's next task, which the line names", main.inner_text().strip() == T["resume"] and "fy9-koe.html#testi-" in main.get_attribute("href")
@@ -74,6 +75,7 @@ with sync_playwright() as pw:
                 p.goto(BASE + pre + "FY9.html")
                 expect(f"{tag}: an exam in progress: '{T['resume']}' leads to that exam", p.locator("#fy9-main").get_attribute("href") == "fy9-minikoe-m30-osa1-1.html", p.locator("#fy9-main").get_attribute("href"))
                 p.locator(".fy9-routes a").nth(2).click()
+                p.wait_for_url(re.compile(r"FY9-valmentaja\.html")); p.wait_for_function("() => { const m = document.getElementById('coach-mini'); return m && m.open && m.querySelectorAll('.coach-min').length > 0; }")   # the click navigates: wait for the page and its list
                 expect(f"{tag}: Tee minikoe opens the exam choice, open, with a 30 and a 60 minute set", "FY9-valmentaja.html" in p.url and p.evaluate("document.getElementById('coach-mini').open")
                        and p.locator("#coach-mini .coach-min").filter(has_text=re.compile(r"^30")).count() > 0 and p.locator("#coach-mini .coach-min").filter(has_text=re.compile(r"^60")).count() > 0)
                 expect(f"{tag}: the six-hour practice exam has its own name", p.locator("#coach-mini a.coach-task", has_text=T["mini_exam"]).count() == 1)
