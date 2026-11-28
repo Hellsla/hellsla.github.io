@@ -3198,7 +3198,7 @@
     "mistakes_n": "Virhe tuli {n} kertaa",
     "mini_h": "Minikokeet ja harjoituskoe",
     "mini_item": "{min} min · {pts} p",
-    "mini_exam": "Harjoituskoe",
+    "mini_exam": "Kuuden tunnin harjoituskoe",
     "path_h": "Kertauspolku",
     "path_len": "Kesto",
     "path_14": "14 päivää",
@@ -3215,7 +3215,13 @@
     "path_chapters": "luvut {list}",
     "path_done": "Tehty",
     "path_all": "Näytä koko polku",
-    "path_one": "Näytä vain tämä viikko"
+    "path_one": "Näytä vain tämä viikko",
+    "start": "Tee lähtötasotesti",
+    "resume": "Jatka kertausta",
+    "route_topic": "Kertaa aihetta",
+    "route_yo": "Valitse yo-tyylinen tehtävä",
+    "route_mini": "Tee minikoe",
+    "about": "Tietoa opintojaksosta"
   },
   "koetila": {
     "eyebrow": "FY9 · Koetila",
