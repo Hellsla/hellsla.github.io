@@ -87,3 +87,14 @@ Lista, jonka koordinaattori näytti (PR #910, kohta 33.2 lähtötasotesti):
 
 Opettajan vastaus sanatarkasti: "Hyväksyn 31".
 Lähde kirjauksiin: `Koottu hyväksyntä B 2026-11-28 31, docs/hyvaksynnat.md`. Kohta 31: PR #910. Tarkistus: kirjattava suomenkielinen teksti on merkki merkiltä "Kertaa nämä".
+
+### B 2026-11-28 klo 15.0x (Suomen aikaa), koordinaattorin chat
+
+Lista, jonka koordinaattori näytti (PR #904, kohta 33.5; kuvat ennen ja jälkeen tekijäsessiossa session_018S3zFvgUJzojjHKRAQ53k9):
+
+| # | luku | tunniste | vanha | uusi |
+|---|---|---|---|---|
+| 32 | fy5-1 | kuva `fy51-ovi` (kaikki kielet) | rasterikuva `assets/pics/fy5/fy5-1-ovi.webp`, jossa F₃-nuoli on lyhyempi | vektoripiirros `lessons/FY5/fy5-1/figures.py`: F₁, F₂ ja F₃ yhtä pitkiä, F₃:n vaikutussuora saranan kautta; rasterikuva ja sen ASETTELU-rivi pois; kuvan aria-kuvaus vastaa piirrosta |
+
+Opettajan vastaus sanatarkasti (kysymykseen, mitä "I approve" koskee): valinta "FY5 door figure #904" (kuvaus: "Approve the redrawn figure and vector replacing the raster image. Note: you haven't seen the pictures here; recorded as B.").
+Lähde kirjauksiin: `Koottu hyväksyntä B 2026-11-28 32, docs/hyvaksynnat.md`. Hyväksytty versio: PR #904:n kärki `5a09d8c4042a64b754c45fe221f3396f6b380466`; tekijä laskee `reviews.figure_hash(fy5-1)` tästä commitista ja kirjaa vain, jos piirros ei ole muuttunut sen jälkeen.
