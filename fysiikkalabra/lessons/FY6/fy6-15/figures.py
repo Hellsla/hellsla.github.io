@@ -229,7 +229,8 @@ def luokat():
             "sisäkkäistä neliötä; kaksoiseristys, esimerkiksi hiustenkuivaaja. Oikealla luokka III: vinoneliö, jonka sisällä "
             "on roomalainen numero kolme; suojajännite, esimerkiksi akkuporakone.")
     xs = (100, 300, 500)
-    sym_class1(f, xs[0], 96); sym_class2(f, xs[1], 96); sym_class3(f, xs[2], 96)
+    sym_class1(f, xs[0], 96); sym_class2(f, xs[1], 96)
+    f.path(f"M{xs[2]},46 L{xs[2] + 50},96 L{xs[2]},146 L{xs[2] - 50},96 Z", WHITE, INK, 4)
     rows = [(r"\text{luokka I}", r"\text{maadoitus}", r"\text{pesukone}"),
             (r"\text{luokka II}", r"\text{kaksoiseristys}", r"\text{hiustenkuivaaja}"),
             (r"\text{luokka III}", r"\text{suojajännite}", r"\text{akkuporakone}")]
@@ -237,6 +238,7 @@ def luokat():
         f.tex(x, 180, a, "middle", w=140)
         f.tex(x, 216, b, "middle", w=190)
         f.tex(x, 256, c, "middle", MUTED, w=190)
+    f.tex(xs[2], 96, r"\text{III}", "middle", w=60)   # the numeral inside the diamond (work queue 27)
     return f.svg()
 
 
