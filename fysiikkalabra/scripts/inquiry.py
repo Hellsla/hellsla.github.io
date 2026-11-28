@@ -14,7 +14,7 @@ import hashlib, html as _h, json, pathlib, random, re, sys
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from i18n import t as T
 import answers_shown, mathlayout
-import courses, objectives
+import courses, objectives, lahtotaso, oikotiet
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 VERSION = 1
@@ -586,7 +586,7 @@ def chapter_href(title):
     return None
 
 
-def intro_html(intro, inquiry, n_opt, md):
+def intro_html(intro, inquiry, n_opt, md, shortcuts=""):
     """The opening (teacher 2026-10-27): the title and the Miksi question first, across the reading column; under them
     the chapter's illustration and "Tällä tunnilla opit" (2–3 goals) side by side, both starting at the same height and
     about as tall (.intro-row); then "Pohjatiedot" as a list (.intro-more; the core path note moved to Näin opiskelet, teacher 2026-11-13). One
@@ -602,7 +602,7 @@ def intro_html(intro, inquiry, n_opt, md):
     more = f'<div class="prior"><h2 class="intro-h">{T("inquiry.prior")}</h2><ul>' + "".join(prior_html(x, md) for x in prior) + "</ul></div>" if prior else ""
     row = (f'<div class="intro-row' + ("" if media else " no-media") + '">' + (f'<div class="intro-media">{media}</div>' if media else "")
            + f'<aside class="intro-aside">{aside}</aside></div>')
-    return f'<div class="intro"><div class="intro-head">{head}</div>{row}' + (f'<div class="intro-more">{more}</div>' if more else "") + '</div>'
+    return f'<div class="intro"><div class="intro-head">{head}{shortcuts}</div>{row}' + (f'<div class="intro-more">{more}</div>' if more else "") + '</div>'
 
 
 KEY_CONCEPTS = (3, 5)    # how many "Luvun tärkeät käsitteet" a Selkeä suomi lesson shows (teacher 2026-11-03)
@@ -694,6 +694,7 @@ def task_titles(lid, by_stage, md):
     for a in by_stage["sovella"] if any(map(is_worked, by_stage["sovella"])) else ():   # a unit's tasks without a worked example (FY9) stay tasks
         t = a["type"]
         worked = is_worked(a)
+        if lahtotaso.is_task(lid, a): continue   # the diagnostic's tasks are numbered by lahtotaso.py, not as examples (33.2)
         if not (worked or t in CARD_TYPES or (t == "theory" and a.get("title"))): continue
         n += 1
         name = inline(md, example_name(lid)) if worked else esc(re.sub(r"^(?:Valinnainen|Optional)\s*:\s*", "", a.get("title") or T(f"inquiry.optional_{t}")))
@@ -860,9 +861,10 @@ def render(folder, inquiry, parts, md):
         by_stage["selita"].append({"id": "theory-rest", "type": "theory", "stage": "selita", "sections": leftover})
     elif leftover:                                     # append to the last required theory activity in Teoriatiivistelmä,
         last = required[-1]; last["sections"] = list(last["sections"]) + leftover   # never into a closed optional box
-    body = [intro_html(parts["intro"], inquiry, sum(1 for a in acts if a.get("optional")), md) + parts.get("concepts", "")]
+    body = [intro_html(parts["intro"], inquiry, sum(1 for a in acts if a.get("optional")), md, oikotiet.html(esc, oikotiet.items(T, folder, acts, by_stage))) + parts.get("concepts", "")]   # the FY9 shortcuts (33.3)
 
     shown = task_titles(lid, by_stage, md)
+    diag = lahtotaso.plan(lid, by_stage["sovella"])   # the diagnostic's modules and names (33.2)
 
     def act(a):
         t, aid = a["type"], a["id"]
@@ -916,8 +918,10 @@ def render(folder, inquiry, parts, md):
         hints += sa
         if a.get("optional") or a.get("fold") or t == "reflect":   # a closed box, named, that a student may open or leave; "fold": a
             name = shown.get(aid) or esc(a.get("title") or T(f"inquiry.optional_{t}"))   # required part opened later (its own tag, e.g. "Lesson 2");
+            if aid in diag: name = esc(diag[aid][3])    # "Virheen laji", tagged "FY1 · 1/3" (33.2)
             name = name[:1].upper() + name[1:]          # Palaa ennusteisiisi: closed until opened, required or not (teacher 2026-11-06)
             tag = esc(a["fold"]) if a.get("fold") else T("inquiry.optional") if a.get("optional") else ""
+            if aid in diag: tag = esc(f"{diag[aid][0]} · {diag[aid][1]}/{diag[aid][2]}")
             kind = extension_kind(a.get("title")) if a.get("optional") else None   # "Syventävä: …", "Lisätiedoksi: …" name the box's kind instead of Valinnainen (teacher 2026-11-07)
             if kind:
                 tag, name = esc(kind), re.sub(rf"(^|:\s*){re.escape(esc(kind))}\s*:\s*(\S)", lambda m: m.group(1) + m.group(2).upper(), name, count=1)
@@ -931,7 +935,18 @@ def render(folder, inquiry, parts, md):
         """The activities one under another in the reading column. Tasks never sit side by side: a card grows when
         its feedback, hints, solution or model answer opens, and beside it the other column would be left with a
         tall empty space and the next task pushed far down (teacher 2026-10-27, "avautuvat kortit")."""
-        return "".join(act(a) for a in items)
+        if not any(lahtotaso.in_test(lid, a) for a in items): return "".join(act(a) for a in items)
+        out, intro, cards = [], "", []
+        for a in items:                       # the diagnostic (33.2): its instruction and 24 tasks become one test, grouped by module
+            if not lahtotaso.in_test(lid, a):
+                out.append(act(a)); continue
+            if a["id"] == lahtotaso.INTRO: intro = act(a)
+            else:
+                rv = diag[a["id"]][4]    # the page its feedback sends to, kept on the box for the script (a wrong number has no link in its feedback)
+                cards.append((diag[a["id"]][0], act(a).replace('<details class="opt', (f'<details data-review="{esc(rv[1])}" data-review-t="{esc(rv[0])}" ' if rv else "<details ") + 'class="opt', 1)))
+            if not any(lahtotaso.in_test(lid, b) for b in items[items.index(a) + 1:]):
+                out.append(lahtotaso.wrap(T, esc, intro, cards))
+        return "".join(out)
 
     toc, n, last = [], 0, None
     cards_at = next((s for s in ("sovella", "tarkista", "selita") if by_stage[s]), None) if parts.get("cards") else None

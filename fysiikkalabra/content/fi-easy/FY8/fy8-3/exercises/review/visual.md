@@ -1,16 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 138e75b7962aa4db
-SCOPE: delta numbers from 8a8435873663fd5b base 4b05399
+CONTENT-HASH: 4181c86351493eee
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] solutions captures — the open-solution captures exist only at 1280 px (664 px column); the new Kaava rows are short (under ~30 characters, one equation per row), so no clipping is expected at 360–390 px, and check_layout covers it. A 390 px open-solution capture would let this be seen.
-- [Minor] Kaava aligned blocks — rows of the form `E &= hf` / `c &= f\lambda` align at "=" so symbols sit right-aligned and look slightly staggered; acceptable, consistent with the other solutions.
+(none)
 
 ## Checked
-- Delta (solutions.md, Kaava step re-set as aligned LaTeX blocks): fy8-3-open-exercises-L3-1280-3 (aligned Sijoitus rows, fractions, Järkevyys)
-- Source of every changed Kaava block read: one equation per row, words outside maths, units and decimal comma unchanged, no red KaTeX source seen. The flattened Kaava lines in the packet diff are a diff artefact: the file holds proper aligned blocks.
+- Delta: the diff only adds `exact: true` to integer-answer tasks; no wording, figure or formula changed.
+- Opened fy8-3-open-exercises-L2-1280-1 (task 3-10, L2-02) (a changed task with its answer box, opened Vastaus and Näytä ratkaisu): layout, KaTeX, units and decimal commas intact, nothing clipped.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 5 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5
