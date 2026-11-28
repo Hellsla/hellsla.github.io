@@ -229,3 +229,9 @@ Löydös PR #886:ssa: fy3-11, fy3-16, fy5-2, fy7-10 ja fy8-1 (en) `virhe`-tehtä
 `scripts/lint_lesson.py` `check_figures` etsii `<image `-tagia vain SVG:n 600 ensimmäisestä merkistä; pitkä alt-teksti työntää tagin sen yli, jolloin värillinen WebP-pohjainen kuva luokitellaan yksiväriseksi (fy4-2 lesson.md:5; tarkista myös fy7-8 lesson.md:46). Korjaus: etsi `<image ` koko SVG:stä (tai ennen ensimmäistä piirroselementtiä) + testi. Jaettu (scripts/), yksin. Kohdan 27 fy4-2 ja mahdollisesti fy7-8 eivät silloin vaadi uutta piirrosta (kerrottu opettajalle).
 TEHTY (PR #901, odottaa yhdistämistä, 2026-11-27): `check_figures` etsii `<image ` koko SVG:stä; testi `scripts/test_lint_figures.py` (CI). Kosketti 24 sivua, kaikki vääriä positiivisia (WebP-pohjaiset kuvat).
 
+
+## 35. Pedagogiset kehityskohteet tekoälyn aikakaudella ja dialogisuus (opettaja 2026-11-28, kaksi toimeksiantoa)
+Auditointi, muutoslista ja pilottiehdotus: `docs/audits/2026-11-28-pedagoginen-auditointi-tekoalyaika.md`. Tulos: lähes kaikki toteutuu jo jokaisessa luvussa; uusia osioita tai nimiöitä ei ehdoteta.
+- 35.1 Näin opiskelet: "Jos käytät tekoälyä" (viisi periaatetta, fi, fi-easy, en; jaettu `lang/`, `scripts/build.py`): tehty auditoinnin PR:ssä, **tekstit ja kuvat (`docs/audits/2026-11-28-tekoalyohje/`) odottavat opettajan hyväksyntää**.
+- 35.2 Pilotti FY4 ja 35.3 pilotti FY6 (raportin luku 5; kurssi kerrallaan, oma PR, `/exercises` ja `/lesson`): **odottaa opettajan päätöstä**: (a) muutetaanko itsearvion "Ymmärrän …" -väittämät näytön kautta (107 kpl, pilotissa 29), (b) parikehote `pair`-kentällä, (c) Palaa ennusteisiisi -tarkennus, (d) 2–3 `error`-tehtävää tekoälyn ratkaisun tai kahden selityksen arvioinniksi.
+- Ei tehdä ilman eri päätöstä: vihjeet koko tehtäväpankkiin, lukukohtaiset tekoälykehotteet, FY9/FY10/FY14/Ahjo-auditointi (raportin luvut 3.6 ja 4).

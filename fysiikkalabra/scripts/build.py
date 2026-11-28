@@ -704,6 +704,7 @@ STUDY_ICONS = {
 STUDY_STEPS = [("herata", "1"), ("ennusta", "2"), ("tutki", "3"), ("selita", "4"), ("sovella", "5–6"), ("tarkista", "7")]
 STUDY_TIPS = ["recall", "spaced", "mix", "fade", "explain", "errors", "graph", "draw"]   # lang guide.tips in this order
 STUDY_HELP = ["draw", "theory", "talk", "together"]                                       # lang guide.help in this order
+STUDY_AI = ["draw", "hint", "errors", "explain", "fade"]                                  # lang guide.ai in this order (teacher 2026-11-28)
 STUDY_FEEDBACK = ["hint", "errors", "retry", "graph"]                                     # lang guide.feedback in this order
 
 
@@ -716,8 +717,9 @@ def study_guide():
     """Näin opit fysiikkaa, nain-opiskelet.html (teacher 2026-11-08, renewed 2026-11-17: "Näin opiskelet -sivun pedagoginen
     ja visuaalinen kehittäminen"): three parts. 1 Näin Ruukkilabrassa opiskellaan: the six steps as one diagram (an <ol>
     of six steps with line icons and arrows, 3 x 2 on a wide column, 2 x 3 on a phone) and the feedback loop under it; the
-    chapter's stage numbers are the badges. 2 Näin opit tehokkaammin: eight study tips and a short help list (problem
-    solving together, asking for help). 3 Näin hyödynnät palautetta ja arvioit osaamistasi: the teacher's feedback (written
+    chapter's stage numbers are the badges. 2 Näin opit tehokkaammin: eight study tips, a short help list (problem
+    solving together, asking for help) and five principles for studying with AI tools (teacher 2026-11-28: try first, ask
+    for hints, judge the answer, own words, manage without). 3 Näin hyödynnät palautetta ja arvioit osaamistasi: the teacher's feedback (written
     so that it holds for any teacher) and the self-assessment the chapters have. No promise of a step or a feature the
     chapters lack (lesson.html, inquiry stages)."""
     g = lambda k: T("guide." + k)
@@ -739,7 +741,8 @@ def study_guide():
             + (f'<p class="study-more"><a href="{FORMULA_PAGE}">{esc(T("kaavat.link"))}</a></p>' if FORMULA_PAGE else "")
             + (f'<p class="study-more"><a href="{SIM_PAGE}">{esc(T("simulaatiot.link"))}</a></p>' if SIM_PAGE else "")
             + f'{items("study-tips", STUDY_TIPS, "tips")}'
-            f'<h3 class="study-sub" id="jumissa">{esc(g("help_h"))}</h3>{items("study-tips study-help", STUDY_HELP, "help")}</section>'
+            f'<h3 class="study-sub" id="jumissa">{esc(g("help_h"))}</h3>{items("study-tips study-help", STUDY_HELP, "help")}'
+            f'<h3 class="study-sub" id="tekoaly">{esc(g("ai_h"))}</h3>{items("study-tips study-help", STUDY_AI, "ai")}</section>'
             f'<section class="study-sec" id="palaute" aria-labelledby="h-feedback"><h2 id="h-feedback">{esc(g("feedback_h"))}</h2>'
             f'<p class="section-lead">{esc(g("feedback_lead"))}</p>'
             f'<div class="study-two"><div><h3>{esc(g("fb_h"))}</h3><p>{esc(g("fb_text"))}</p>'

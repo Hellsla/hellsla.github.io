@@ -160,8 +160,11 @@ for lang in i18n.languages():
            and nums == ["1", "2", "3", "4", "5–6", "7"] and len(stages) == 7, nums)
     expect(f"{lang}: the feedback loop sits under the path; the path is not repeated as a text list",
            'class="path-loop"' in main_sp and main_sp.find('class="path-loop"') > main_sp.find('class="study-path"') and 'study-steps' not in main_sp and 'stuck-map' not in main_sp)
-    expect(f"{lang}: eight study tips and four help items, then feedback and self-assessment side by side, and the link to the front page's module list",
-           main_sp.split('class="study-tips"', 1)[-1].count('<li><svg class="study-icon"') == 12 and 'class="study-two"' in main_sp and '<a class="study-cta" href="index.html#moduulit">' in main_sp)
+    ai = re.search(r'<h3 class="study-sub" id="tekoaly">[^<]+</h3><ul class="study-tips study-help">(.*?)</ul>', main_sp, re.S)
+    expect(f"{lang}: five principles for studying with AI tools under the help list (teacher 2026-11-28), no link to any AI service",
+           bool(ai) and ai.group(1).count('<li><svg class="study-icon"') == 5 and "<a " not in ai.group(1) and main_sp.find('id="tekoaly"') > main_sp.find('id="jumissa"'))
+    expect(f"{lang}: eight study tips, four help items and five AI principles, then feedback and self-assessment side by side, and the link to the front page's module list",
+           main_sp.split('class="study-tips"', 1)[-1].count('<li><svg class="study-icon"') == 17 and 'class="study-two"' in main_sp and '<a class="study-cta" href="index.html#moduulit">' in main_sp)
     expect(f"{lang}: the page promises no weekly points or login: feedback is 'may', no scoring system (teacher 2026-11-17)",
            'viikoittai' not in main_sp.lower() and 'weekly' not in main_sp.lower())
     expect(f"{lang}: every page's header links Näin opiskelet; on its own page it is marked current (teacher 2026-11-08)",

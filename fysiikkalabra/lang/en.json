@@ -3351,7 +3351,7 @@
     "shot_opettaja-arviointi": "Grading one task at a time: the task, the student's answer and the points 0–1 with the arrow keys."
   },
   "guide": {
-    "_about": "Näin opiskelet -sivu nain-opiskelet.html (teacher 2026-11-08, renewed 2026-11-17): build.py study_guide. steps[] are the six steps of the path diagram (icons and badges in build.py STUDY_STEPS: the numbers are the chapter stage bar's, step 5 covers its 5 and 6); tips[] and help[] follow STUDY_TIPS and STUDY_HELP; fb_* is the teacher's feedback text, sa_* the self-assessment the chapters have.",
+    "_about": "Näin opiskelet -sivu nain-opiskelet.html (teacher 2026-11-08, renewed 2026-11-17): build.py study_guide. steps[] are the six steps of the path diagram (icons and badges in build.py STUDY_STEPS: the numbers are the chapter stage bar's, step 5 covers its 5 and 6); tips[], help[] and ai[] follow STUDY_TIPS, STUDY_HELP and STUDY_AI (ai: the teacher's five principles for studying with AI tools, 2026-11-28); fb_* is the teacher's feedback text, sa_* the self-assessment the chapters have.",
     "title": "How to learn physics",
     "lead": "You learn physics by experimenting, thinking, calculating and talking things through. You don't need to understand everything straight away. What matters most is to try for yourself, check, and try again.",
     "description": "How to learn physics with Ruukkilabra: the six steps of a chapter, effective study habits, asking for help, and using feedback and self-assessment.",
@@ -3440,6 +3440,29 @@
       {
         "title": "Ask for help precisely",
         "text": "Say what you need to find, what you have already tried and where you got stuck. Then it is easy to help you. You can ask for help right away."
+      }
+    ],
+    "ai_h": "If you use AI",
+    "ai": [
+      {
+        "title": "Try it yourself first",
+        "text": "Draw a diagram, write down what is given and attempt the problem before you ask an AI tool. Only your own attempt shows where you need help."
+      },
+      {
+        "title": "Ask for a hint, not a finished solution",
+        "text": "Say what you have already done and ask for the next step or a guiding question. Then continue the solution yourself."
+      },
+      {
+        "title": "Judge the answer with your physics",
+        "text": "An AI tool can be wrong even when its answer sounds certain. Check the principle, the units and the order of magnitude, and compare the answer with the theory and the model solution."
+      },
+      {
+        "title": "Write the reasoning in your own words",
+        "text": "Don't copy the AI's text. If you cannot explain a step yourself, you have not learned it yet."
+      },
+      {
+        "title": "Make sure you can do it without AI",
+        "text": "Finish by solving a similar problem entirely on your own. In an exam you have only what you know yourself."
       }
     ],
     "feedback_h": "How to use feedback and assess what you know",

@@ -3351,7 +3351,7 @@
     "shot_opettaja-arviointi": "Arviointi tehtävä kerrallaan: tehtävänanto, opiskelijan vastaus ja pisteet 0–1 nuolinäppäimillä."
   },
   "guide": {
-    "_about": "Näin opiskelet -sivu nain-opiskelet.html (teacher 2026-11-08, renewed 2026-11-17): build.py study_guide. steps[] are the six steps of the path diagram (icons and badges in build.py STUDY_STEPS: the numbers are the chapter stage bar's, step 5 covers its 5 and 6); tips[] and help[] follow STUDY_TIPS and STUDY_HELP; fb_* is the teacher's feedback text, sa_* the self-assessment the chapters have.",
+    "_about": "Näin opiskelet -sivu nain-opiskelet.html (teacher 2026-11-08, renewed 2026-11-17): build.py study_guide. steps[] are the six steps of the path diagram (icons and badges in build.py STUDY_STEPS: the numbers are the chapter stage bar's, step 5 covers its 5 and 6); tips[], help[] and ai[] follow STUDY_TIPS, STUDY_HELP and STUDY_AI (ai: the teacher's five principles for studying with AI tools, 2026-11-28); fb_* is the teacher's feedback text, sa_* the self-assessment the chapters have.",
     "title": "Näin opit fysiikkaa",
     "lead": "Fysiikkaa opit, kun kokeilet, mietit, lasket ja keskustelet. Kaikkea ei tarvitse ymmärtää heti. Tärkeintä on, että yrität itse, tarkistat ja yrität uudelleen.",
     "description": "Näin opit fysiikkaa Ruukkilabrassa: luvun kuusi vaihetta, hyvät opiskelutavat, avun pyytäminen sekä palautteen ja itsearvioinnin käyttö.",
@@ -3440,6 +3440,29 @@
       {
         "title": "Pyydä apua tarkasti",
         "text": "Kerro, mitä pitää selvittää. Kerro, mitä olet jo yrittänyt. Kerro, mihin jäit jumiin. Silloin apua on helppo antaa. Apua saa kysyä heti."
+      }
+    ],
+    "ai_h": "Jos käytät tekoälyä",
+    "ai": [
+      {
+        "title": "Yritä ensin itse",
+        "text": "Piirrä kuva ja kirjoita, mitä tiedät. Yritä ratkaista tehtävä, ennen kuin kysyt tekoälyltä. Silloin näet, missä kohdassa tarvitset apua."
+      },
+      {
+        "title": "Pyydä vihje, älä valmista ratkaisua",
+        "text": "Kerro, mitä olet jo tehnyt. Pyydä seuraava askel tai kysymys, joka auttaa eteenpäin. Jatka sitten itse."
+      },
+      {
+        "title": "Arvioi vastaus fysiikan tiedoillasi",
+        "text": "Tekoäly voi olla väärässä, vaikka vastaus kuulostaa varmalta. Tarkista periaate, yksiköt ja suuruusluokka. Vertaa vastausta teoriaan ja malliratkaisuun."
+      },
+      {
+        "title": "Kirjoita perustelut omin sanoin",
+        "text": "Älä kopioi tekoälyn tekstiä. Jos et osaa selittää jotakin vaihetta itse, et ole vielä oppinut sitä."
+      },
+      {
+        "title": "Varmista, että osaat ilman tekoälyä",
+        "text": "Ratkaise lopuksi samanlainen tehtävä kokonaan itse. Kokeessa käytät vain omaa osaamistasi."
       }
     ],
     "feedback_h": "Näin hyödynnät palautetta ja arvioit osaamistasi",
