@@ -76,3 +76,14 @@ Lista, jonka koordinaattori näytti (PR #907 kohta 36: vanha → uusi; PR #903 k
 
 Opettajan vastaus sanatarkasti (kysymykseen, mitä "Vahvistan" koskee): "Hyväksyn 1–30".
 Lähde kirjauksiin: `Koottu hyväksyntä B 2026-11-28 1–30, docs/hyvaksynnat.md`. Kohdat 1–29: PR #907; kohta 30: PR #903. Tarkistus: kirjattava suomenkielinen teksti on merkki merkiltä taulukon uusi-sarakkeen mukainen (näissä teksteissä ei sisältötiivistettä).
+
+### B 2026-11-28 klo 08.3x (Suomen aikaa), koordinaattorin chat
+
+Lista, jonka koordinaattori näytti (PR #910, kohta 33.2 lähtötasotesti):
+
+| # | luku | tunniste | vanha | uusi |
+|---|---|---|---|---|
+| 31 | FY9 | lähtötasotestin moduuliyhteenvedon otsikko | (uusi) | Kertaa nämä (en "Revise these") |
+
+Opettajan vastaus sanatarkasti: "Hyväksyn 31".
+Lähde kirjauksiin: `Koottu hyväksyntä B 2026-11-28 31, docs/hyvaksynnat.md`. Kohta 31: PR #910. Tarkistus: kirjattava suomenkielinen teksti on merkki merkiltä "Kertaa nämä".
