@@ -428,6 +428,7 @@
     "reflect_not_answered": "Et ole vielä vastannut: <a href=\"{{href}}\">mene ennusteeseen</a>.",
     "rubric_total": "Itsearvioidut pisteet: {{got}} / {{max}}",
     "rubric_partial": "Itsearvioidut pisteet: {{got}} / {{max}} ({{left}} kohtaa arvioimatta)",
+    "rubric_start": "Pisteytä oma vastauksesi · enintään {{max}} p",
     "criteria_all": "Vastauksessasi on kaikki mallivastauksen tärkeät kohdat.",
     "criteria_missing": "Lisää vastaukseesi nämä asiat. Vertaa sitten uudelleen:",
     "zoom_open": "Näytä kuva isona",

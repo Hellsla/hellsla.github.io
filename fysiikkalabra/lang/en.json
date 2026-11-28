@@ -428,6 +428,7 @@
     "reflect_not_answered": "You have not answered yet: <a href=\"{{href}}\">go to the prediction</a>.",
     "rubric_total": "Self-assessed points: {{got}} / {{max}}",
     "rubric_partial": "Self-assessed points: {{got}} / {{max}} ({{left}} items not assessed)",
+    "rubric_start": "Score your own answer · at most {{max}} p",
     "criteria_all": "Your answer contains all the key points of the model answer.",
     "criteria_missing": "Add these points to your answer and compare again:",
     "zoom_open": "Enlarge the figure",

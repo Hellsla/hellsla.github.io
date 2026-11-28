@@ -430,6 +430,7 @@
     "reflect_not_answered": "Et ole vielä vastannut: <a href=\"{{href}}\">siirry ennusteeseen</a>.",
     "rubric_total": "Itsearvioidut pisteet: {{got}} / {{max}}",
     "rubric_partial": "Itsearvioidut pisteet: {{got}} / {{max}} ({{left}} kohtaa arvioimatta)",
+    "rubric_start": "Pisteytä oma vastauksesi · enintään {{max}} p",
     "zoom_open": "Suurenna kuva",
     "anim_play": "Käynnistä animaatio",
     "anim_pause": "Pysäytä animaatio",

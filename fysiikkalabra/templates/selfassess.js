@@ -38,7 +38,8 @@
         // the student's own points, for the FY9 coach's evidence log (valmentaja.js, work queue 11b PR 3): complete when every criterion has its points
         rubric.dispatchEvent(new CustomEvent('fl:rubric', { bubbles: true, detail: { id: rubric.dataset.id, kind: 'rubric', got, max, crit: crits.map((c, i) => (i in state ? state[i] : null)), complete: left === 0 } }));
       }
-      total.textContent = left ? msg('rubric_partial', { got, max, left }) : msg('rubric_total', { got, max });
+      // nothing assessed yet: no points are shown (a 0 / 15 would look like a score); a 0 the student chose is an assessed item and counts as one (33.4)
+      total.textContent = left === crits.length ? msg('rubric_start', { max }) : left ? msg('rubric_partial', { got, max, left }) : msg('rubric_total', { got, max });
       if (!more) return;
       let any = false;
       more.querySelectorAll('li[data-tag]').forEach((li) => { li.hidden = !weak.has(li.dataset.tag); any = any || !li.hidden; });
