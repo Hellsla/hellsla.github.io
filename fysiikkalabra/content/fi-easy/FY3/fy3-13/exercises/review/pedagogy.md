@@ -1,15 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: ed43d45a98e99e92
-
+CONTENT-HASH: b64b19c74c737ff7
 ## Blocking
 (none)
-
 ## Polish
 (none)
-
 ## Checked
-- Delta judged in context: the prefix "Esimerkkiaineisto:" removed from task texts; every sentence still begins correctly with a capital letter and the situation stays first, the question last.
-- L2-08 multiple choice and the L3 data tasks keep their situation and question; no loss of meaning.
-- No numbers, symbols, answers or levels changed; the data and figures the tasks need are unchanged.
-- Solutions.md changed only in presentation; steps and model answers are unchanged.
-- Finnish: grammar and reading level unchanged and fine for fi-easy.
+- Delta: Kaava rows derive theta_0 = -p0/k and the line through two points in steps; one added sentence names p_a and p_b.
+- No numbers, answers or levels changed.
+- Finnish unchanged in the diff apart from sentence splits; short sentences, fits a phone.

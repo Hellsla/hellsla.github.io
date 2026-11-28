@@ -1,10 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: eed93700cddfc321
+CONTENT-HASH: 7fd2046853f3baf4
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] none.
+(none)
 
 ## Checked
-- batch delta review: opened fy1-6-stage-selita-390-1 (Pysähdy block after the g paragraph renders cleanly, units upright, closed Vastaus); other blocks from source; figures unchanged.
+- Delta only: prefix "Esimerkkiaineisto: " removed, first letter capitalised. Opened inquiry step title (Tutki, optional box "Kuulan nopeus kuvista"): fy1-6-stage-tutki-390-2/-3, fy1-6-lab-1280; text reads naturally, layout (cards, tables, formulas, answer fields) intact, no clipping or overflow.
+- Source diff read for the changed tasks; no numbers, units or formulas changed.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

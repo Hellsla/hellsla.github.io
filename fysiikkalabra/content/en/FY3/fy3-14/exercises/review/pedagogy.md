@@ -1,13 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 9745f4b7769d51ad
-
+CONTENT-HASH: a734d296f9991e3e
 ## Blocking
-None.
-
+(none)
 ## Polish
-1. L2-09: 'Kaikki jää ei sula.' states the outcome the student could find by comparison; acceptable, but could be left for the solution.
-
+- solutions.md fy3-14-L2-04, Substitution — "The expression in the square brackets is ..." refers to brackets that no longer exist now that $K$ is a row of the Formula step. Write "The quantity $K$ is ...".
+- solutions.md fy3-14-L2-04 and the ice-and-water tasks — $K$ and $N$ are auxiliary names with no introduction, and $K$ looks like the kelvin symbol. Add "where $K$ is a shorthand for ..." or use another letter (e.g. $X$).
 ## Checked
-- Round 2 delta judged in context (round-1 findings addressed).
-- L1-09 new situation (ice block on a windowsill, heat taken from surroundings) differs from the drink context of the worked example and L1-01; MAFY lookup still required. L2-09 asks the extra heat to melt the rest: three bar values, two subtractions, answer 40 kJ; the explanation that the water cannot supply it (already at 0 °C) is sound; 2/3 check is correct.
-- Both solutions staged, principle explained; 4 % tolerance on L1-09 covers 333 vs 334 kJ/kg.
+- The round 1 array numerators are gone: the long numerators are now named quantities ($K$, $N$) and the last row is a short fraction, so no bracket is split across rows.
+- $K = m_\text{w}(T_\text{w} - T) - m_\text{i}T$ and $s m_\text{i} = c_\text{w}K$ are algebraically right; the second task's $N$ includes $-c_\text{i}m_\text{i}\Delta T_\text{i}$ correctly.
+- In the ice-and-water task each balance term is on its own row ($Q_\text{released}$, $Q_\text{absorbed}$), then $N$ collects the known terms, then $T = N/(c_\text{i}(m_\text{i}+m_\text{w}))$.
+- Rows start from the basic balance, symbolic to the end; no number, unit or data changed.
+- Judged from the diff and solutions.md on disk; captures not opened.

@@ -1,15 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: 8c2fdbff3af2f488
-
+CONTENT-HASH: ccb612016d41f41b
 ## Blocking
 (none)
-
 ## Polish
 (none)
-
 ## Checked
-- Delta judged in context: the prefix "Esimerkkiaineisto:" removed from task texts; every sentence still begins correctly with a capital letter and the situation stays first, the question last.
-- Tables remain introduced by the first sentence (Taulukossa on ..., Ryhmä mittasi ...).
-- No numbers, symbols, answers or levels changed; the data and figures the tasks need are unchanged.
-- Solutions.md changed only in presentation; steps and model answers are unchanged.
-- Finnish: grammar and reading level unchanged and fine for fi-easy.
+- Delta: L3-04 Vastaus a) now reads "g_min = 13,2 mm (alaraja pyöristetään ylöspäin: vähintään 14 mm)"; the earlier rounding-sentence mismatch is resolved.
+- b) g_max = 18 mm, Mallivastaus c) and the Järkevyys block (13,2 / 4,8 / 25,2 mm) remain consistent.
+- Hash unchanged at start and end.

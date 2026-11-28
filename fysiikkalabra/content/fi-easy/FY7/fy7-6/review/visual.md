@@ -1,11 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 8c7bc4d586454d92
+CONTENT-HASH: cb88a832c037b5d1
 
 ## Blocking
 (none)
 
 ## Polish
-(none)
+- [Minor] sim legend: the removed note "Violetit renkaat ovat pyörrevirtoja. Punaiset nuolet ovat voimia" is gone. The start-state canvas shows no rings or arrows, so nothing is lost there; fig 3 labels its own vectors. Check that the running canvas still labels the rings and forces (not seen running).
+- [Minor] fig-3-390: the leader line from \overline{B}_ind passes close to the magnet; legible, a shorter leader would be tidier.
 
 ## Checked
-- batch delta review (round 2): fy7-6 (fi-easy) built page, every "Pysähdy ja mieti" block rendered with the answer open and photographed at 360 px (examined for the long chains) and measured at 360 and 1280 px: label, question, Vastaus summary, KaTeX (no red source, no clipped formula, no overflow), decimal comma, units, answer chains laid out as rows; check_layout.py clean at 360/390/1280. The round 1 clip in fy7-1 block 3 is fixed by the shared component. Listed older captures not reopened (unchanged old content). Vanhan sisällön löydökset: none.
+- Delta: sim label "Animaation nopeus" -> "Nopeus", removed note, five teacher-approved pictures.
+- Opened sim-390, sim-1280, lab-1280, top-390 (hero), fig-1-390 to fig-5-390. No clipping or overflow; labels LaTeX; project colours kept.
+- Not reopened: exercise and stage captures (#8-#33, #39-#74), untouched by the diff.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

@@ -1,14 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 8790a6a6454470cf
+CONTENT-HASH: 8acc38b619a83b3b
+SCOPE: delta teacher-figure,wording from 8790a6a6454470cf base b3ee786
 
 ## Blocking
-- None
+(none)
 
 ## Polish
-- Boxes are all direct applications of rules stated just above (N = A - Z, beta minus, alpha). Appropriate as checks; each answer has the reason.
-
-## Vanhan sisällön löydökset
-- None
+(none)
 
 ## Checked
-batch delta review (round 2, new pysahdy boxes): 3 boxes judged: 1 N=A-Z, 2 beta minus (Z+1, N-14), 3 alpha (234, 90).
+- Delta: siirto carries "exact": true, a data flag only; answer, hints and wording unchanged, so the task, its feedback and the prediction-evidence order are as approved.

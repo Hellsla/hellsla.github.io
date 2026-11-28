@@ -302,7 +302,7 @@
     "data",
     "reasoning"
    ],
-   "text": "Esimerkkiaineisto: oppilaat laskivat pulkalla samaa suoraa rinnettä, joka jatkuu tasaisena lumikenttänä. Pulkka lähti levosta korkeudelta $h$ kentän yläpuolelta, ja pulkan ja kuorman massaa $m$ vaihdeltiin. Joka laskusta mitattiin vaakasuora matka $x$ lähtökohdasta pysähtymiskohtaan.\n\nMatkan lukeman epävarmuus on $\\Delta x = 1{,}0\\,\\text{m}$ jokaiselle lukemalle. Massan ja korkeuden epävarmuudet ovat niin pienet, että ne jätetään huomiotta.\n\nMinkä seuraavista päätelmistä aineisto tukee pelkän taulukon perusteella?",
+   "text": "Oppilaat laskivat pulkalla samaa suoraa rinnettä, joka jatkuu tasaisena lumikenttänä. Pulkka lähti levosta korkeudelta $h$ kentän yläpuolelta, ja pulkan ja kuorman massaa $m$ vaihdeltiin. Joka laskusta mitattiin vaakasuora matka $x$ lähtökohdasta pysähtymiskohtaan.\n\nMatkan lukeman epävarmuus on $\\Delta x = 1{,}0\\,\\text{m}$ jokaiselle lukemalle. Massan ja korkeuden epävarmuudet ovat niin pienet, että ne jätetään huomiotta.\n\nMinkä seuraavista päätelmistä aineisto tukee pelkän taulukon perusteella?",
    "answer": "Lähtökorkeus vaikuttaa matkaan, koska korkeuden kaksinkertaistus pidensi matkaa yli $19\\,\\text{m}$.",
    "unit": "",
    "tolerance": 0.02,

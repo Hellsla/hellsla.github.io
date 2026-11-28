@@ -2,7 +2,7 @@
 **Annettu:** $V_1 = 30{,}0\,\text{ml}$, $p_1 = 101\,\text{kPa}$, $V_2 = 45{,}0\,\text{ml}$, lämpötila vakio, ilmaa ei pääse ruiskuun eikä sieltä pois
 **Kysytty:** ilman paine $p_2$ kilopascaleina
 **Periaate:** Ilman lämpötila ja ainemäärä pysyvät samoina, joten kyseessä on isoterminen tilanmuutos ja Boylen laki pätee: paine on kääntäen verrannollinen tilavuuteen eli tulo $pV$ pysyy vakiona.
-**Kaava:** $p_1 V_1 = p_2 V_2$, josta $p_2 = \dfrac{p_1 V_1}{V_2}$
+**Kaava:** $$\begin{aligned} p_1 V_1 &= p_2 V_2 \\ p_2 &= \dfrac{p_1 V_1}{V_2} \end{aligned}$$
 **Muunnokset:** Yksikköjä ei tarvitse muuntaa: tilavuudet ovat molemmat millilitroina, joten $\text{ml}$ supistuu pois, ja paine saadaan samassa yksikössä kuin $p_1$.
 **Sijoitus:** $p_2 = \dfrac{101\,\text{kPa} \cdot 30{,}0\,\text{ml}}{45{,}0\,\text{ml}} = 67{,}333\,\text{kPa}$
 **Vastaus:** $p_2 \approx 67{,}3\,\text{kPa}$, kolme merkitsevää numeroa. Kaikki kolme lähtötietoa ($101\,\text{kPa}$, $30{,}0\,\text{ml}$ ja $45{,}0\,\text{ml}$) ovat kolmen numeron arvoja, joten mikään ei rajoita tulosta kolmatta numeroa pidemmälle.
@@ -12,7 +12,7 @@
 **Annettu:** $V_1 = 24{,}0\,\textsf{l}$, $p_1 = 160{,}0\,\text{kPa}$, $p_2 = 280{,}0\,\text{kPa}$ (kokonaispaineita), lämpötila vakio, säiliön ilma on suljettu
 **Kysytty:** ilman tilavuus $V_2$ litroina
 **Periaate:** Säiliön yläosan ilma on suljettu ja sen lämpötila pysyy samana, joten ilman tilavuus ja paine noudattavat Boylen lakia. Nouseva vesi puristaa ilmaa kokoon ja nostaa sen painetta.
-**Kaava:** $p_1 V_1 = p_2 V_2$, josta $V_2 = \dfrac{p_1 V_1}{p_2}$
+**Kaava:** $$\begin{aligned} p_1 V_1 &= p_2 V_2 \\ V_2 &= \dfrac{p_1 V_1}{p_2} \end{aligned}$$
 **Muunnokset:** Yksikköjä ei tarvitse muuntaa: kilopascalit supistuvat osamäärässä, ja tilavuus tulee suoraan litroina.
 **Sijoitus:** $V_2 = \dfrac{160{,}0\,\text{kPa} \cdot 24{,}0\,\textsf{l}}{280{,}0\,\text{kPa}} = 13{,}714\,\textsf{l}$
 **Vastaus:** $V_2 \approx 13{,}7\,\textsf{l}$, kolme merkitsevää numeroa. Rajoittava tieto on tilavuus $24{,}0\,\textsf{l}$ (kolme numeroa); paineet $160{,}0\,\text{kPa}$ ja $280{,}0\,\text{kPa}$ on annettu neljällä numerolla, joten ne eivät rajoita.
@@ -23,7 +23,7 @@
 **Kysytty:** ilman paine $p_2$ kilopascaleina
 **Periaate:** Ilman määrä ja lämpötila pysyvät samoina, joten ilma noudattaa Boylen lakia: tulo $pV$ on vakio. Siksi painetta ei lueta pisteiden väliin vedetyltä janalta, sillä $(V, p)$-kuvaaja on kaari eikä suora.
 **Kuvaajan lukeminen:** Valitaan piste, joka on tarkasti ruudukon risteyksessä: $(20\,\text{ml};\ 100\,\text{kPa})$. Myös piste $(40\,\text{ml};\ 50\,\text{kPa})$ antaa saman tulon $pV = 2000\,\text{kPa}\cdot\text{ml}$, mikä tukee sitä, että lämpötila pysyi samana.
-**Kaava:** $p_1 V_1 = p_2 V_2$, josta $p_2 = \dfrac{p_1 V_1}{V_2}$
+**Kaava:** $$\begin{aligned} p_1 V_1 &= p_2 V_2 \\ p_2 &= \dfrac{p_1 V_1}{V_2} \end{aligned}$$
 **Muunnokset:** Ei tarvita: millilitrat supistuvat osamäärässä, ja paine saadaan kilopascaleina.
 **Sijoitus:** $p_2 = \dfrac{100\,\text{kPa} \cdot 20\,\text{ml}}{25\,\text{ml}} = 80\,\text{kPa}$
 **Vastaus:** $p_2 = 80\,\text{kPa}$, kaksi merkitsevää numeroa kuten tilavuudessa $25\,\text{ml}$ ja kuvaajalta luetussa tilavuudessa $20\,\text{ml}$.
@@ -33,7 +33,7 @@
 **Annettu:** $V_1 = 3{,}0\,\textsf{l}$, $\theta_1 = 22\,{}^\circ\text{C}$, $\theta_2 = -18\,{}^\circ\text{C}$, paine vakio
 **Kysytty:** ilman tilavuus $V_2$ litroina
 **Periaate:** Paine ja ilman määrä pysyvät samoina, joten tilanmuutos on isobaarinen ja tilavuus on suoraan verrannollinen kelvinlämpötilaan: $V/T$ pysyy vakiona. Verrannollisuus pätee vain absoluuttiselle lämpötilalle.
-**Kaava:** $\dfrac{V_1}{T_1} = \dfrac{V_2}{T_2}$, josta $V_2 = \dfrac{V_1 T_2}{T_1}$
+**Kaava:** $$\begin{aligned} \dfrac{V_1}{T_1} &= \dfrac{V_2}{T_2} \\ V_2 &= \dfrac{V_1 T_2}{T_1} \end{aligned}$$
 **Muunnokset:** Lämpötilat kelvineinä: $T_1 = (22 + 273{,}15)\,\text{K} = 295{,}15\,\text{K}$ ja $T_2 = (-18 + 273{,}15)\,\text{K} = 255{,}15\,\text{K}$.
 **Sijoitus:** $V_2 = \dfrac{3{,}0\,\textsf{l} \cdot 255{,}15\,\text{K}}{295{,}15\,\text{K}} = 2{,}5934\,\textsf{l}$
 **Vastaus:** $V_2 \approx 2{,}6\,\textsf{l}$, kaksi merkitsevää numeroa. Rajoittava tieto on tilavuus $3{,}0\,\textsf{l}$; kelvinlämpötilat $295\,\text{K}$ ja $255\,\text{K}$ (kokonaisasteista) ovat kolmen numeron arvoja eivätkä rajoita.
@@ -43,7 +43,7 @@
 **Annettu:** $p_1 = 101\,\text{kPa}$, $\theta_1 = 22\,{}^\circ\text{C}$, $\theta_2 = -18\,{}^\circ\text{C}$, tilavuus vakio
 **Kysytty:** ilman paine $p_2$ kilopascaleina
 **Periaate:** Kansi on tiivis ja pakastimen tilavuus ei muutu, joten ilman määrä ja tilavuus pysyvät samoina. Tilanmuutos on isokoorinen, ja paine on suoraan verrannollinen kelvinlämpötilaan: $p/T$ pysyy vakiona.
-**Kaava:** $\dfrac{p_1}{T_1} = \dfrac{p_2}{T_2}$, josta $p_2 = \dfrac{p_1 T_2}{T_1}$
+**Kaava:** $$\begin{aligned} \dfrac{p_1}{T_1} &= \dfrac{p_2}{T_2} \\ p_2 &= \dfrac{p_1 T_2}{T_1} \end{aligned}$$
 **Muunnokset:** Lämpötilat kelvineinä: $T_1 = (22 + 273{,}15)\,\text{K} = 295{,}15\,\text{K}$ ja $T_2 = (-18 + 273{,}15)\,\text{K} = 255{,}15\,\text{K}$.
 **Sijoitus:** $p_2 = \dfrac{101\,\text{kPa} \cdot 255{,}15\,\text{K}}{295{,}15\,\text{K}} = 87{,}312\,\text{kPa}$
 **Vastaus:** $p_2 \approx 87{,}3\,\text{kPa}$, kolme merkitsevää numeroa. Paine $101\,\text{kPa}$ ja kelvinlämpötilat $295\,\text{K}$ ja $255\,\text{K}$ (kokonaisasteista $22\,{}^\circ\text{C}$ ja $-18\,{}^\circ\text{C}$) ovat kaikki kolmen numeron arvoja.
@@ -53,7 +53,7 @@
 **Annettu:** $V_1 = 6{,}8\,\textsf{l}$, $p_1 = 300{,}0\,\text{bar}$, $p_2 = 101\,\text{kPa}$, $1\,\text{bar} = 100\,\text{kPa}$, lämpötila vakio
 **Kysytty:** ilman tilavuus $V_2$ ulkoilman paineessa kuutiometreinä
 **Periaate:** Ilman määrä ja lämpötila pysyvät samoina, kun ilma lasketaan ulos, joten Boylen laki pätee (tehtävä käskee olettaa sen päteväksi myös suurella paineella). Ilma laajenee, kunnes sen paine on sama kuin ilmanpaine.
-**Kaava:** $p_1 V_1 = p_2 V_2$, josta $V_2 = \dfrac{p_1 V_1}{p_2}$
+**Kaava:** $$\begin{aligned} p_1 V_1 &= p_2 V_2 \\ V_2 &= \dfrac{p_1 V_1}{p_2} \end{aligned}$$
 **Muunnokset:** Paineet samaan yksikköön: $p_1 = 300{,}0\,\text{bar} = 300{,}0 \cdot 100\,\text{kPa} = 30\,000\,\text{kPa}$ (kerroin $100\,\text{kPa/bar}$ on määritelmä eikä rajoita). Tulos tulee litroina, ja $1\,\text{m}^3 = 1000\,\textsf{l}$.
 **Sijoitus:** $V_2 = \dfrac{30\,000\,\text{kPa} \cdot 6{,}8\,\textsf{l}}{101\,\text{kPa}} = 2019{,}8\,\textsf{l} = 2{,}0198\,\text{m}^3$
 **Vastaus:** $V_2 \approx 2{,}0\,\text{m}^3$, kaksi merkitsevää numeroa. Rajoittava tieto on tilavuus $6{,}8\,\textsf{l}$ (kaksi numeroa); paine $300{,}0\,\text{bar}$ on neljän ja $101\,\text{kPa}$ kolmen numeron arvo, joten kumpikaan ei rajoita.
@@ -63,7 +63,7 @@
 **Annettu:** $\theta_1 = 20\,{}^\circ\text{C}$, $p_1 = 101\,\text{kPa}$, $p_2 = 125\,\text{kPa}$, tilavuus vakio
 **Kysytty:** lämpötila $\theta_2$ celsiusasteina, kun korkki ponnahtaa
 **Periaate:** Pullo on suljettu ja sen tilavuus pysyy samana, joten ilman määrä ja tilavuus ovat vakioita. Tilanmuutos on isokoorinen, ja paine on suoraan verrannollinen kelvinlämpötilaan: $p/T$ pysyy vakiona.
-**Kaava:** $\dfrac{p_1}{T_1} = \dfrac{p_2}{T_2}$, josta $T_2 = \dfrac{T_1 p_2}{p_1}$ ja $\theta_2 = T_2 - 273{,}15\,\text{K}$ celsiusasteina
+**Kaava:** $$\begin{aligned} \dfrac{p_1}{T_1} &= \dfrac{p_2}{T_2} \\ T_2 &= \dfrac{T_1 p_2}{p_1} \\ \theta_2 &= T_2 - 273{,}15\,\text{K} \end{aligned}$$
 **Muunnokset:** $T_1 = (20 + 273{,}15)\,\text{K} = 293{,}15\,\text{K}$. Lopuksi kelvinit takaisin celsiusasteiksi vähentämällä $273{,}15$. Paineita ei tarvitse muuntaa, koska ne ovat samassa yksikössä.
 **Sijoitus:** $T_2 = \dfrac{293{,}15\,\text{K} \cdot 125\,\text{kPa}}{101\,\text{kPa}} = 362{,}81\,\text{K}$, joten $\theta_2 = (362{,}81 - 273{,}15)\,{}^\circ\text{C} = 89{,}66\,{}^\circ\text{C}$
 **Vastaus:** $\theta_2 \approx 90\,{}^\circ\text{C}$, kokonaisina celsiusasteina. Kelvinlämpötila $T_2 = 362{,}8\,\text{K} \approx 363\,\text{K}$ on kolmen numeron arvo, sillä paineet $101\,\text{kPa}$ ja $125\,\text{kPa}$ sekä $T_1 = 293\,\text{K}$ (kokonaisasteesta $20\,{}^\circ\text{C}$) ovat kolmen numeron arvoja. Kun vähennetään $273{,}15\,\text{K}$, lämpötilan tarkkuus on yksiköt, joten tulos annetaan täysinä asteina: $90\,{}^\circ\text{C}$.
@@ -88,7 +88,7 @@ Kulmakerroin luetaan suoralta eikä yksittäisestä mittauspisteestä, koska jok
 **Annettu:** $V_1 = 2800\,\text{m}^3$, $\theta_1 = 10\,{}^\circ\text{C}$, $\theta_2 = 100\,{}^\circ\text{C}$, paine vakio
 **Kysytty:** alkuperäisen ilman tilavuus $V_2$ lämpötilassa $100\,{}^\circ\text{C}$ ja kuoresta ulos työntyvä tilavuus $\Delta V$ kuutiometreinä
 **Periaate:** Kuoren alaosa on auki, joten paine pysyy ulkoilman paineena. Kun sama ilmamäärä lämpenee vakiopaineessa, tilavuus on suoraan verrannollinen kelvinlämpötilaan. Kuoren tilavuus on vakio $V_1$, joten ylimääräinen ilma työntyy aukosta ulos.
-**Kaava:** $\dfrac{V_1}{T_1} = \dfrac{V_2}{T_2}$, josta $V_2 = \dfrac{V_1 T_2}{T_1}$ ja ulos työntyvä tilavuus $\Delta V = V_2 - V_1$
+**Kaava:** $$\begin{aligned} \dfrac{V_1}{T_1} &= \dfrac{V_2}{T_2} \\ V_2 &= \dfrac{V_1 T_2}{T_1} \\ \Delta V &= V_2 - V_1 \end{aligned}$$
 **Muunnokset:** Lämpötilat kelvineinä: $T_1 = (10 + 273{,}15)\,\text{K} = 283{,}15\,\text{K}$ ja $T_2 = (100 + 273{,}15)\,\text{K} = 373{,}15\,\text{K}$.
 **Sijoitus:** $V_2 = \dfrac{2800\,\text{m}^3 \cdot 373{,}15\,\text{K}}{283{,}15\,\text{K}} = 3690{,}0\,\text{m}^3$, joten $\Delta V = 3690{,}0\,\text{m}^3 - 2800\,\text{m}^3 = 890{,}0\,\text{m}^3$
 **Vastaus:** $\Delta V \approx 890\,\text{m}^3$, kaksi merkitsevää numeroa. Rajoittava tieto on lämpötilaero $\Delta T = 100\,{}^\circ\text{C} - 10\,{}^\circ\text{C} = 90\,\text{K}$, joka on kokonaisasteiden erotuksena kahden numeron arvo; tilavuus $2800\,\text{m}^3$ on vähintään kahden numeron arvo eikä rajoita. Kun $\Delta V = V_1 (T_2 - T_1)/T_1$ lasketaan suoraan erotuksesta, kelvinlämpötila $T_1 = 283\,\text{K}$ on kolmen numeron arvo ja tulos on $890\,\text{m}^3$.
@@ -98,7 +98,7 @@ Kulmakerroin luetaan suoralta eikä yksittäisestä mittauspisteestä, koska jok
 **Annettu:** $h = 20{,}0\,\text{m}$, $V_1 = 2{,}0\,\text{cm}^3$, $p_0 = 101\,\text{kPa}$, $\rho = 1000\,\tfrac{\text{kg}}{\text{m}^3}$, $g = 9{,}81\,\tfrac{\text{m}}{\text{s}^2}$, lämpötila vakio, ilma ei liukene veteen
 **Kysytty:** kuplan tilavuus $V_2$ pinnalla kuutiosenttimetreinä
 **Periaate:** Syvällä kuplaan kohdistuu ilmanpaineen lisäksi veden hydrostaattinen paine. Nouseva kupla on tasapainossa ympäröivän veden kanssa, joten sen paine on aina ympäristön paine. Lämpötila ja ilman määrä pysyvät samoina, joten Boylen laki pätee.
-**Kaava:** $p_1 = p_0 + \rho g h$ ja $p_1 V_1 = p_0 V_2$, josta $V_2 = \dfrac{p_1 V_1}{p_0} = \dfrac{(p_0 + \rho g h) V_1}{p_0}$
+**Kaava:** $$\begin{aligned} p_1 &= p_0 + \rho g h \\ p_1 V_1 &= p_0 V_2 \\ V_2 &= \dfrac{p_1 V_1}{p_0} \end{aligned}$$
 **Muunnokset:** Hydrostaattinen paine pascaleina: $\rho g h = 196\,200\,\text{Pa} = 196{,}2\,\text{kPa}$, koska $1\,\text{kPa} = 1000\,\text{Pa}$. Tilavuudet ovat samassa yksikössä, joten niitä ei tarvitse muuntaa.
 **Sijoitus:** $$\begin{aligned} p_1 &= 101\,\text{kPa} \\ &+ 1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} \cdot 20{,}0\,\text{m} \\ &= 101\,\text{kPa} + 196{,}2\,\text{kPa} \\ &= 297{,}2\,\text{kPa} \end{aligned}$$. $V_2 = \dfrac{297{,}2\,\text{kPa} \cdot 2{,}0\,\text{cm}^3}{101\,\text{kPa}} = 5{,}885\,\text{cm}^3$
 **Vastaus:** $V_2 \approx 5{,}9\,\text{cm}^3$, kaksi merkitsevää numeroa. Rajoittava tieto on kuplan tilavuus $2{,}0\,\text{cm}^3$ (kaksi numeroa); syvyys $20{,}0\,\text{m}$ ja ilmanpaine $101\,\text{kPa}$ ovat kolmen numeron arvoja, ja veden tiheys $1000\,\tfrac{\text{kg}}{\text{m}^3}$ on tunnettu taulukkoarvo, joka ei rajoita.
@@ -110,7 +110,7 @@ Keuhkot eivät veny niin paljon, vaan keuhkokudos voi vaurioitua jo paljon piene
 **Annettu:** ylipaine $\Delta p_1 = 250{,}0\,\text{kPa}$, $p_0 = 101\,\text{kPa}$, $\theta_1 = 20\,{}^\circ\text{C}$, $\theta_2 = -20\,{}^\circ\text{C}$, tilavuus vakio, ilmaa ei pääse ulos
 **Kysytty:** mittarin lukema eli ylipaine $\Delta p_2$ pakkasaamuna kilopascaleina
 **Periaate:** Renkaan tilavuus ja ilman määrä pysyvät samoina, joten paine on suoraan verrannollinen kelvinlämpötilaan. Verrannollisuus koskee kokonaispainetta, ei mittarin ylipainetta: ylipaine on kokonaispaine miinus ilmanpaine, ja renkaassa on ilmaa vielä silloinkin, kun mittari näyttää nollaa.
-**Kaava:** $p = \Delta p + p_0$ ja $\dfrac{p_1}{T_1} = \dfrac{p_2}{T_2}$, josta $p_2 = \dfrac{p_1 T_2}{T_1}$ ja $\Delta p_2 = p_2 - p_0$
+**Kaava:** $$\begin{aligned} p_1 &= \Delta p_1 + p_0 \\ \dfrac{p_1}{T_1} &= \dfrac{p_2}{T_2} \\ p_2 &= \dfrac{p_1 T_2}{T_1} \\ \Delta p_2 &= p_2 - p_0 \end{aligned}$$
 **Muunnokset:** Kokonaispaine $p_1 = 250{,}0\,\text{kPa} + 101\,\text{kPa} = 351\,\text{kPa}$ (summan tarkkuus on yksiköt, koska $101\,\text{kPa}$ on annettu yksiköiden tarkkuudella). Lämpötilat kelvineinä: $T_1 = (20 + 273{,}15)\,\text{K} = 293{,}15\,\text{K}$ ja $T_2 = (-20 + 273{,}15)\,\text{K} = 253{,}15\,\text{K}$.
 **Sijoitus:** $p_2 = \dfrac{351\,\text{kPa} \cdot 253{,}15\,\text{K}}{293{,}15\,\text{K}} = 303{,}11\,\text{kPa}$, joten $\Delta p_2 = 303{,}11\,\text{kPa} - 101\,\text{kPa} = 202{,}11\,\text{kPa}$
 **Vastaus:** $\Delta p_2 \approx 202\,\text{kPa}$, kolme merkitsevää numeroa. Ilmanpaine $101\,\text{kPa}$ on annettu yksiköiden tarkkuudella, joten sekä kokonaispaine $351\,\text{kPa}$ että $p_2 = 303\,\text{kPa}$ tunnetaan yksiköiden tarkkuudella (kolme numeroa); myös $T_1 = 293\,\text{K}$ ja $T_2 = 253\,\text{K}$ ovat kolmen numeron arvoja. Erotus $303 - 101$ säilyttää yksiköt, joten $202\,\text{kPa}$ on kolmen numeron arvo.
@@ -120,7 +120,7 @@ Keuhkot eivät veny niin paljon, vaan keuhkokudos voi vaurioitua jo paljon piene
 **Annettu:** sylinterin pituus $L_1 = 40{,}0\,\text{cm}$, alkupaine $p_1 = p_0 = 101\,\text{kPa}$, renkaan ylipaine $\Delta p = 300{,}0\,\text{kPa}$, poikkipinta-ala vakio, lämpötila vakio
 **Kysytty:** männän liikkuma matka $s$ senttimetreinä, ennen kuin venttiili aukeaa
 **Periaate:** Venttiili on kiinni, joten sylinterin ilma on suljettu ja sen lämpötila pysyy samana: Boylen laki pätee. Venttiili aukeaa vasta, kun sylinterin paine on yhtä suuri kuin renkaan kokonaispaine $p_0 + \Delta p$. Sylinterin poikkipinta-ala on vakio, joten tilavuus on verrannollinen ilmapatsaan pituuteen.
-**Kaava:** $p_2 = p_0 + \Delta p$ ja $p_1 A L_1 = p_2 A L_2$, josta $L_2 = \dfrac{p_1 L_1}{p_2}$ ja matka $s = L_1 - L_2$
+**Kaava:** $$\begin{aligned} p_2 &= p_0 + \Delta p \\ p_1 A L_1 &= p_2 A L_2 \\ L_2 &= \dfrac{p_1 L_1}{p_2} \\ s &= L_1 - L_2 \end{aligned}$$
 **Muunnokset:** Renkaan kokonaispaine saadaan lisäämällä ilmanpaine ylipaineeseen: $p_2 = 300{,}0\,\text{kPa} + 101\,\text{kPa} = 401\,\text{kPa}$. Muita muunnoksia ei tarvita, koska $A$ ja kilopascalit supistuvat ja pituudet ovat senttimetreinä.
 **Sijoitus:** $L_2 = \dfrac{101\,\text{kPa} \cdot 40{,}0\,\text{cm}}{401\,\text{kPa}} = 10{,}075\,\text{cm}$, joten $s = 40{,}0\,\text{cm} - 10{,}075\,\text{cm} = 29{,}925\,\text{cm}$
 **Vastaus:** $s \approx 29{,}9\,\text{cm}$, kolme merkitsevää numeroa. Erotuksessa $40{,}0\,\text{cm} - 10{,}1\,\text{cm}$ desimaalit määrää pituus $40{,}0\,\text{cm}$ (kymmenesosasenttimetri), joten tulos $29{,}9\,\text{cm}$ on kolmen numeron arvo; paineet $101\,\text{kPa}$ ja $401\,\text{kPa}$ ovat myös kolmen numeron arvoja.
@@ -138,7 +138,7 @@ Nouseva kuvaaja on väärä, koska ilmaa on koko ajan yhtä paljon ja tilavuuden
 **Annettu:** $V_1 = 1{,}50\,\textsf{l}$, $p_1 = 101\,\text{kPa}$, $p_2 = 240\,\text{kPa}$, lämpötila vakio, ilmaa ei pääse pois
 **Kysytty:** ilman tilavuus $V_2$ litroina
 **Periaate:** Ilman määrä ja lämpötila pysyvät samoina, joten Boylen laki pätee: paine on kääntäen verrannollinen tilavuuteen ja tulo $pV$ pysyy vakiona.
-**Kaava:** $p_1 V_1 = p_2 V_2$, josta $V_2 = \dfrac{p_1 V_1}{p_2}$
+**Kaava:** $$\begin{aligned} p_1 V_1 &= p_2 V_2 \\ V_2 &= \dfrac{p_1 V_1}{p_2} \end{aligned}$$
 **Muunnokset:** Yksikköjä ei tarvitse muuntaa: kilopascalit supistuvat osamäärässä, ja tilavuus tulee suoraan litroina.
 **Sijoitus:** $V_2 = \dfrac{101\,\text{kPa} \cdot 1{,}50\,\textsf{l}}{240\,\text{kPa}} = 0{,}6312\,\textsf{l}$
 **Vastaus:** $V_2 \approx 0{,}63\,\textsf{l}$, kaksi merkitsevää numeroa kuten paineessa $240\,\text{kPa}$.
@@ -159,7 +159,7 @@ Väite lämpötilan noususta on väärä, koska pisteet piirrettiin $(1/V,\,p)$-
 **Mallivastaus a):** Astiassa A suhde $p/T$ on $0{,}3404$; $0{,}3398$; $0{,}3404$; $0{,}3392\,\tfrac{\text{kPa}}{\text{K}}$, joten se on vakio noin $0{,}3\,\%$:n tarkkuudella. Astiassa B suhde $V/T$ on $0{,}0501$; $0{,}0501$; $0{,}0498$; $0{,}0498\,\tfrac{\text{ml}}{\text{K}}$, joten sekin on vakio mittausepävarmuuden rajoissa.
 
 Astia A esittää siis isokoorista ja astia B isobaarista tilanmuutosta. Pieni vaihtelu johtuu mittausten satunnaisesta vaihtelusta. Celsiusasteilla astian A suhde on $p/\theta = 4{,}99$; $2{,}66$; $1{,}89$; $1{,}50\,\tfrac{\text{kPa}}{{}^\circ\text{C}}$. Nämä pienenevät rajusti, joten paine ei ole verrannollinen celsiuslämpötilaan vaan kelvinlämpötilaan.
-**Kaava:** $\dfrac{p}{T} = k$, joten $p = kT$
+**Kaava:** $$\begin{aligned} \dfrac{p}{T} &= k \\ p &= kT \end{aligned}$$
 **Muunnokset:** $T = \theta + 273{,}15\,\text{K}$, joten $T_{100} = (100 + 273{,}15)\,\text{K} = 373{,}15\,\text{K}$. Kerroin $k$ on astian A neljän suhteen keskiarvo.
 **Sijoitus:** Suhteiden summa on $1{,}3598\,\tfrac{\text{kPa}}{\text{K}}$, joten $k = 0{,}33995\,\tfrac{\text{kPa}}{\text{K}}$.
 
@@ -180,7 +180,7 @@ p &= kT \\
 **Mallivastaus a):** Tulot ovat $pV = 2000$; $2180$; $2250$; $2284\,\text{kPa}\cdot\text{ml}$. Ne kasvavat tilavuuden mukana, koska ilmaa on todellisuudessa aina $V_\text{h}$ enemmän kuin asteikolta luetaan. Kun $V$ on pieni, tämä lisätilavuus on suuri osa kokonaistilavuudesta ja tulo $pV$ jää todellista pienemmäksi.
 
 Kun $V$ on suuri, osuus on pienempi ja tulo on lähempänä todellista arvoa. Virhe on systemaattinen: se on joka mittauksessa samaa suuntaa ja sama tilavuus, joten se ei vaihtele satunnaisesti. Mittausten toistaminen ei poistaisi sitä; se korjataan ottamalla letkun tilavuus huomioon.
-**Kaava:** $p_1 (V_1 + V_\text{h}) = p_4 (V_4 + V_\text{h})$, josta $V_\text{h} = \dfrac{p_4 V_4 - p_1 V_1}{p_1 - p_4}$
+**Kaava:** $$\begin{aligned} p_1 (V_1 + V_\text{h}) &= p_4 (V_4 + V_\text{h}) \\ p_1 V_1 + p_1 V_\text{h} &= p_4 V_4 + p_4 V_\text{h} \\ p_1 V_\text{h} - p_4 V_\text{h} &= p_4 V_4 - p_1 V_1 \\ V_\text{h}\,(p_1 - p_4) &= p_4 V_4 - p_1 V_1 \\ V_\text{h} &= \dfrac{p_4 V_4 - p_1 V_1}{p_1 - p_4} \end{aligned}$$
 **Muunnokset:** Ei tarvita: kilopascalit ja millilitrat ovat samoja yhtälön molemmilla puolilla, ja tulos tulee millilitroina.
 **Sijoitus:** Tulot ovat $p_4 V_4 = 57{,}1\,\text{kPa} \cdot 40{,}0\,\text{ml} = 2284\,\text{kPa}\cdot\text{ml}$ ja $p_1 V_1 = 200\,\text{kPa} \cdot 10{,}0\,\text{ml} = 2000\,\text{kPa}\cdot\text{ml}$. Paine-ero on $p_1 - p_4 = 142{,}9\,\text{kPa}$.
 
@@ -202,7 +202,7 @@ V_\text{h} &= \dfrac{284\,\text{kPa}\cdot\text{ml}}{142{,}9\,\text{kPa}} \\
 Ekstrapolointi ulottuu noin $276\,\text{K}$ mitatun alueen alapuolelle, vaikka mittausväli on vain $80\,\text{K}$, joten pienikin virhe kulmakertoimessa muuttaa tulosta paljon.
 
 Jatke on mallin ennuste: todellinen kaasu tiivistyy nesteeksi jo paljon korkeammassa lämpötilassa, jolloin paine ei enää ole verrannollinen kelvinlämpötilaan eikä suoran jatke pidä paikkaansa.
-**Kaava:** Suoran kulmakerroin $k = \dfrac{p_2 - p_1}{\theta_2 - \theta_1}$ ja suora $p = p_1 + k(\theta - \theta_1)$. Ehdosta $p = 0$ saadaan $\theta_0 = \theta_1 - \dfrac{p_1}{k}$.
+**Kaava:** $$\begin{aligned} k &= \dfrac{p_2 - p_1}{\theta_2 - \theta_1} \\ p &= p_1 + k(\theta - \theta_1) \\ 0 &= p_1 + k(\theta_0 - \theta_1) \\ \theta_0 &= \theta_1 - \dfrac{p_1}{k} \end{aligned}$$
 **Muunnokset:** Ei tarvita: lämpötilaero on sama celsiusasteina ja kelvineinä, ja tulos halutaan celsiusasteina.
 **Sijoitus:** Kulmakerroin
 
@@ -230,7 +230,7 @@ $$\begin{aligned}
 **Mallivastaus b):** Nopeassa puristuksessa kaasun lämpötila nousee, koska osa työstä jää kaasun energiaksi: hiukkasten keskimääräinen liike-energia kasvaa. Lämpimämmän kaasun hiukkaset törmäävät seinämiin tiheämmin ja voimakkaammin, joten paine on suurempi kuin vakiolämpötilassa. Boylen laki edellyttää vakiolämpötilaa, joten se ei kuvaa tätä tilannetta.
 
 Kun mäntä pidetään paikallaan, tilavuus on vakio ja ilma luovuttaa energiaa ympäristöön, kunnes lämpötila on taas $20{,}0\,{}^\circ\text{C}$. Paine laskee silloin takaisin arvoon, jonka Boylen laki antaa, eli noin $404\,\text{kPa}$.
-**Kaava:** Vaihe 1 (isoterminen): $p_1 V_1 = p' V_2$, josta $p' = \dfrac{p_1 V_1}{V_2}$. Vaihe 2 (isokoorinen): $\dfrac{p'}{T_1} = \dfrac{p_2}{T_2}$, josta $T_2 = \dfrac{T_1 p_2}{p'}$ ja $\theta_2 = T_2 - 273{,}15\,\text{K}$ celsiusasteina.
+**Kaava:** $$\begin{aligned} p_1 V_1 &= p' V_2 \\ p' &= \dfrac{p_1 V_1}{V_2} \\ \dfrac{p'}{T_1} &= \dfrac{p_2}{T_2} \\ T_2 &= \dfrac{T_1 p_2}{p'} \\ \theta_2 &= T_2 - 273{,}15\,\text{K} \end{aligned}$$
 **Muunnokset:** $T_1 = (20{,}0 + 273{,}15)\,\text{K} = 293{,}15\,\text{K}$. Lopuksi kelvinit takaisin celsiusasteiksi vähentämällä $273{,}15$. Paineita ja tilavuuksia ei tarvitse muuntaa, koska ne supistuvat.
 **Sijoitus:** Isoterminen puristus antaa paineen
 
@@ -256,7 +256,7 @@ joten $\theta_2 = (349{,}0 - 273{,}15)\,{}^\circ\text{C} = 75{,}9\,{}^\circ\text
 **Periaate:** Syvyydessä $h$ keuhkoihin kohdistuu ilmanpaineen lisäksi veden hydrostaattinen paine, $p = p_0 + \rho g h$. Keuhkojen paine on sama kuin ympäristön paine. Ilman lämpötila ja määrä pysyvät samoina, joten Boylen laki pätee, jos tulo $pV$ on vakio.
 **Kuvaajan lukeminen:** Jokaisen taulukon syvyyden paine lasketaan kaavalla $p = p_0 + \rho g h$ ja kerrotaan tilavuudella. Tulojen keskiarvo $pV$ kertoo Boylen lain vakion, ja sillä lasketaan paine, jolla $V = 1{,}5\,\textsf{l}$.
 **Mallivastaus a):** Paineet ovat $101$; $150$; $199$ ja $297\,\text{kPa}$, ja tulot $pV = 606$; $600$; $597$ ja $594\,\text{kPa}\cdot\textsf{l}$. Tulot pienenevät tasaisesti, mutta poikkeavat toisistaan alle $2\,\%$, mikä on mittausepävarmuuden rajoissa, joten keuhkojen ilma noudattaa Boylen lakia.
-**Kaava:** $p = p_0 + \rho g h$ ja $p V = \text{vakio}$. Rajalla $p_\text{raja} = \dfrac{pV}{V_\text{raja}}$, ja syvyys on $h = \dfrac{p_\text{raja} - p_0}{\rho g}$.
+**Kaava:** $$\begin{aligned} p &= p_0 + \rho g h \\ pV &= \text{vakio} \\ p_\text{raja} V_\text{raja} &= pV \\ p_\text{raja} &= \dfrac{pV}{V_\text{raja}} \\ p_\text{raja} &= p_0 + \rho g h \\ h &= \dfrac{p_\text{raja} - p_0}{\rho g} \end{aligned}$$
 **Muunnokset:** $\rho g = 1000\,\tfrac{\text{kg}}{\text{m}^3} \cdot 9{,}81\,\tfrac{\text{m}}{\text{s}^2} = 9810\,\tfrac{\text{Pa}}{\text{m}} = 9{,}81\,\tfrac{\text{kPa}}{\text{m}}$. Tulot $pV$ lasketaan yksikössä $\text{kPa}\cdot\textsf{l}$, joten $V_\text{raja}$ jää litroiksi ja tulos tulee kilopascaleina.
 **Sijoitus:** Tulojen summa on $2397\,\text{kPa}\cdot\textsf{l}$, joten $pV = 599{,}25\,\text{kPa}\cdot\textsf{l}$.
 
@@ -293,7 +293,7 @@ Kuvaaja B kulkee pisteiden $(40\,\text{ml};\ 100\,\text{kPa})$, $(20\,\text{ml};
 **Annettu:** $V_1 = 2{,}0\,\textsf{l}$, $p_1 = 101\,\text{kPa}$, lämpötila vakio, ilmaa ei pääse pois; taulukosta (MAFY-taulukko, ilmanpaine, tiheys ja lämpötila eri korkeuksilla, korkeus $3000\,\text{m}$) $p_2 = 70\,100\,\text{Pa}$
 **Kysytty:** ilman tilavuus $V_2$ litroina
 **Periaate:** Ilman määrä ja lämpötila pysyvät samoina, joten Boylen laki pätee: tulo $pV$ pysyy vakiona. Todellisuudessa lämpötila laskee korkeuden mukana, mutta tehtävässä se oletetaan vakioksi.
-**Kaava:** $p_1 V_1 = p_2 V_2$, josta $V_2 = \dfrac{p_1 V_1}{p_2}$
+**Kaava:** $$\begin{aligned} p_1 V_1 &= p_2 V_2 \\ V_2 &= \dfrac{p_1 V_1}{p_2} \end{aligned}$$
 **Muunnokset:** $70\,100\,\text{Pa} = 70{,}1\,\text{kPa}$, koska $1\,\text{kPa} = 1000\,\text{Pa}$. Tilavuus pysyy litroissa, koska paineyksiköt supistuvat.
 **Sijoitus:** $V_2 = \dfrac{101\,\text{kPa} \cdot 2{,}0\,\textsf{l}}{70{,}1\,\text{kPa}} = 2{,}882\,\textsf{l}$
 **Vastaus:** $V_2 \approx 2{,}9\,\textsf{l}$, kaksi merkitsevää numeroa kuten tilavuudessa $2{,}0\,\textsf{l}$. Paine $70\,100\,\text{Pa}$ on MAFY-taulukosta (ilmanpaine, tiheys ja lämpötila eri korkeuksilla); vastaus hyväksytään noin $\pm 4\,\%$ tarkkuudella.
@@ -304,7 +304,7 @@ Kuvaaja B kulkee pisteiden $(40\,\text{ml};\ 100\,\text{kPa})$, $(20\,\text{ml};
 **Kysytty:** ilman paine $p_2$ kilopascaleina, kun $\theta_2 = 100\,{}^\circ\text{C}$
 **Periaate:** Astia on suljettu ja jäykkä, joten tilavuus ja ilman määrä pysyvät samoina. Tilanmuutos on isokoorinen: paine on suoraan verrannollinen kelvinlämpötilaan, $p_1/T_1 = p_2/T_2$.
 **Kuvaajan lukeminen:** Kuvaajan pisteet ovat ruudukon risteyksissä. Pisteestä, jonka vaaka-arvo on $T_1 = 300\,\text{K}$, luetaan pystyakselilta paine $p_1 = 120\,\text{kPa}$. Muut pisteet, esimerkiksi $(200\,\text{K};\ 80\,\text{kPa})$ ja $(350\,\text{K};\ 140\,\text{kPa})$, antavat saman suhteen $p/T = 0{,}40\,\text{kPa/K}$, joten ne ovat samalla origon kautta kulkevalla suoralla.
-**Kaava:** $\dfrac{p_1}{T_1} = \dfrac{p_2}{T_2}$, josta $p_2 = p_1 \cdot \dfrac{T_2}{T_1}$
+**Kaava:** $$\begin{aligned} \dfrac{p_1}{T_1} &= \dfrac{p_2}{T_2} \\ p_2 &= p_1 \cdot \dfrac{T_2}{T_1} \end{aligned}$$
 **Muunnokset:** $T_2 = 100 + 273{,}15\,\text{K} = 373{,}15\,\text{K}$, koska suhteessa tarvitaan kelvinlämpötila. Painetta ei tarvitse muuntaa, koska yksiköt supistuvat.
 **Sijoitus:** $p_2 = 120\,\text{kPa} \cdot \dfrac{373{,}15\,\text{K}}{300\,\text{K}} = 149{,}26\,\text{kPa}$
 **Vastaus:** $p_2 \approx 149\,\text{kPa}$, kolme merkitsevää numeroa kuten luetussa paineessa $120\,\text{kPa}$. Kuvaajan lukeminen on arvio, joten vastaus hyväksytään $\pm 2\,\%$ tarkkuudella.
@@ -333,7 +333,7 @@ Saman näkee suhteista $p/T$, jotka ovat riveittäin $4{,}18$; $3{,}91$; $3{,}90
 Eniten poikkeaa ensimmäinen piste, joka on $51\,\text{kPa}$ suoran yläpuolella, kun muut ovat enintään $19\,\text{kPa}$:n päässä siitä. Se on yksi lukema heilahtelevasta mittarista. Selvästi poikkeava mittaustulos tarkistetaan ja mittaus voidaan tarvittaessa toistaa. Tulosta ei poisteta pelkästään siksi, että se poikkeaa muista.
 
 Vakio $k$ riippuu hiukkasmäärästä ja tilavuudesta, joten oma arvosi voi olla toinen, mutta riippuvuuden muoto on sama.
-**Kaava:** $p = kT$, joten ennuste on $p_\text{enn} = kT_\text{enn}$ ja painesuhde $\dfrac{p_2}{p_1} = \dfrac{kT_2}{kT_1} = \dfrac{T_2}{T_1}$
+**Kaava:** $$\begin{aligned} p &= kT \\ p_\text{enn} &= kT_\text{enn} \\ \dfrac{p_2}{p_1} &= \dfrac{kT_2}{kT_1} \\ &= \dfrac{T_2}{T_1} \end{aligned}$$
 **Muunnokset:** Ei tarvita: lämpötilat ovat jo kelvineinä ja paineet kilopascaleina. Celsiusasteina suhdetta ei voisi laskea.
 **Sijoitus:** Kohdan c) ennuste esimerkkimittauksen mallilla:
 

@@ -57,7 +57,10 @@
 **Annettu:** kupari, $m = 0{,}50\,\text{kg}$, $Q = 15\,\text{kJ}$; taulukosta $c = 385\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$
 **Kysytty:** lämpötilan nousu $\Delta T$ kelvineinä
 **Periaate:** Pannu lämpenee eikä sen olomuoto muutu, ja lämpöä ei siirry ympäristöön, joten koko lämpömäärä $Q$ nostaa pannun lämpötilaa. Kaavassa $Q = c m \Delta T$ tuntematon on $\Delta T$.
-**Kaava:** $Q = c m \Delta T$, joten $\Delta T = \dfrac{Q}{c m}$
+**Kaava:** $$\begin{aligned} Q &= c m \Delta T \\
+\Delta T &= \dfrac{Q}{c m}
+\end{aligned}
+$$
 **Muunnokset:** $15\,\text{kJ} = 15 \cdot 1000\,\text{J} = 15\,000\,\text{J}$.
 **Sijoitus:** $\Delta T = \dfrac{15\,000\,\text{J}}{385\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0{,}50\,\text{kg}} = 77{,}9\,\text{K}$
 **Vastaus:** $78\,\text{K}$, kaksi merkitsevää numeroa kuten massassa $0{,}50\,\text{kg}$ ja lämpömäärässä $15\,\text{kJ}$.
@@ -77,7 +80,16 @@
 **Annettu:** kuuma vesi $m_1 = 160\,\text{g}$, $T_1 = 95\,{}^\circ\text{C}$; kylmä vesi $m_2 = 40\,\text{g}$, $T_2 = 8{,}0\,{}^\circ\text{C}$; molemmat vettä, ei lämpöhäviöitä
 **Kysytty:** tasapainolämpötila $T$
 **Periaate:** Energia säilyy: kun lämpöä ei siirry mukiin eikä ilmaan, kuuman veden luovuttama lämpömäärä on yhtä suuri kuin kylmän veden vastaanottama. Lopussa molemmilla on sama lämpötila $T$.
-**Kaava:** $c m_1 (T_1 - T) = c m_2 (T - T_2)$. Sama $c$ supistuu pois, ja $T$ ratkeaa: $T = \dfrac{m_1 T_1 + m_2 T_2}{m_1 + m_2}$
+**Kaava:** $$\begin{aligned} Q_\text{luov} &= Q_\text{vast} \\
+Q &= c m \Delta T \\
+c m_1 (T_1 - T) &= c m_2 (T - T_2) \\
+m_1 (T_1 - T) &= m_2 (T - T_2) \\
+m_1 T_1 - m_1 T &= m_2 T \\
+&\quad - m_2 T_2 \\
+m_1 T_1 + m_2 T_2 &= (m_1 + m_2) T \\
+T &= \dfrac{\begin{array}{c} m_1 T_1 \\ + m_2 T_2 \end{array}}{m_1 + m_2}
+\end{aligned}
+$$
 **Muunnokset:** Grammoja ei tarvitse muuntaa kilogrammoiksi, koska massa on sekä osoittajassa että nimittäjässä ja yksikkö supistuu. Lämpötilat voi sijoittaa celsiusasteina: tasapainoyhtälössä on vain lämpötilaeroja, ja ratkaistussa kaavassa painojen summa on nimittäjässä, joten asteikon siirto siirtää myös tulosta saman verran.
 **Sijoitus:** $T = \dfrac{160\,\text{g} \cdot 95\,{}^\circ\text{C} + 40\,\text{g} \cdot 8{,}0\,{}^\circ\text{C}}{160\,\text{g} + 40\,\text{g}} = \dfrac{15\,200 + 320}{200}\,{}^\circ\text{C} = 77{,}6\,{}^\circ\text{C}$
 **Vastaus:** $78\,{}^\circ\text{C}$, kaksi merkitsevää numeroa kuten lämpötilassa $95\,{}^\circ\text{C}$ ja massassa $40\,\text{g}$.
@@ -88,7 +100,13 @@
 **Kysytty:** metallin ominaislämpökapasiteetti $c$
 **Periaate:** Energia säilyy: kun kaikki lämmittimen energia siirtyy kappaleeseen, lämmittimen ajassa $t$ antama energia $Pt$ on yhtä suuri kuin kappaleen lämmittämiseen tarvittava lämpömäärä $cm\Delta T$. Kuvaajasta saadaan aika ja lämpötilan muutos.
 **Kuvaajan lukeminen:** Suora alkaa ruudukon risteyksestä $(0\,\text{s};\ 20\,{}^\circ\text{C})$ ja päättyy risteykseen $(180\,\text{s};\ 60\,{}^\circ\text{C})$. Lämmitysaika on siis $t = 180\,\text{s} - 0\,\text{s} = 180\,\text{s}$ ja lämpötilan muutos $\Delta T = 60\,{}^\circ\text{C} - 20\,{}^\circ\text{C} = 40\,\text{K}$.
-**Kaava:** $Pt = cm\Delta T$, josta $c = \dfrac{Pt}{m\Delta T}$
+**Kaava:** $$\begin{aligned} E &= P t \\
+Q &= c m \Delta T \\
+E &= Q \\
+P t &= c m \Delta T \\
+c &= \dfrac{P t}{m \Delta T}
+\end{aligned}
+$$
 **Muunnokset:** Ei tarvita: $1\,\text{W} \cdot 1\,\text{s} = 1\,\text{J}$. Lämpötilojen erotus celsiusasteina on sama kuin kelvineinä.
 **Sijoitus:** $c = \dfrac{100\,\text{W} \cdot 180\,\text{s}}{0{,}50\,\text{kg} \cdot 40\,\text{K}} = \dfrac{18\,000\,\text{J}}{20\,\text{kg}\cdot\text{K}} = 900\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$
 **Vastaus:** $900\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$, kaksi merkitsevää numeroa kuten massassa $0{,}50\,\text{kg}$. Kuvaajan arvot luetaan tarkasti ruudukosta, joten hyväksytään $870\ldots930\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$.
@@ -98,7 +116,12 @@
 **Annettu:** vesi $m = 80\,\text{kg}$, $T_\text{alku} = 9{,}0\,{}^\circ\text{C}$, $Q = 15\,\text{MJ}$; taulukosta $c = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$; ei lämpöhäviöitä
 **Kysytty:** loppulämpötila $T_\text{loppu}$
 **Periaate:** Kaikki vastuksen luovuttama lämpö siirtyy veteen ja kasvattaa sen sisäenergiaa, ja vesi lämpenee kiehumatta, joten $Q = c m \Delta T$. Ensin ratkaistaan lämpötilan muutos, sitten se lisätään alkulämpötilaan.
-**Kaava:** $\Delta T = \dfrac{Q}{c m}$, joten $T_\text{loppu} = T_\text{alku} + \dfrac{Q}{c m}$
+**Kaava:** $$\begin{aligned} Q &= c m \Delta T \\
+\Delta T &= \dfrac{Q}{c m} \\
+T_\text{loppu} &= T_\text{alku} + \Delta T \\
+&= T_\text{alku} + \dfrac{Q}{c m}
+\end{aligned}
+$$
 **Muunnokset:** $Q = 15\,\text{MJ} = 15 \cdot 10^6\,\text{J} = 15\,000\,000\,\text{J}$. Kelvineinä saatu muutos lisätään suoraan celsiuslukemaan, koska asteikkojen askel on sama.
 **Sijoitus:** $\Delta T = \dfrac{15\,000\,000\,\text{J}}{4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 80\,\text{kg}} = 44{,}75\,\text{K}$, joten $T_\text{loppu} = 9{,}0\,{}^\circ\text{C} + 44{,}75\,{}^\circ\text{C} = 53{,}75\,{}^\circ\text{C}$
 **Vastaus:** $54\,{}^\circ\text{C}$, kaksi merkitsevää numeroa kuten lämpömäärässä $15\,\text{MJ}$ ja massassa $80\,\text{kg}$.
@@ -108,7 +131,15 @@
 **Annettu:** alumiini $m_1 = 0{,}25\,\text{kg}$, $T_1 = 95\,{}^\circ\text{C}$; vesi $m_2 = 0{,}40\,\text{kg}$, $T_2 = 18\,{}^\circ\text{C}$; taulukosta $c_1 = 900\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$, $c_2 = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$; ei lämpöhäviöitä
 **Kysytty:** yhteinen loppulämpötila $T$
 **Periaate:** Energia säilyy: kauhan luovuttama lämpömäärä on yhtä suuri kuin veden vastaanottama, ja lopussa molemmilla on sama lämpötila. Aineet ovat eri, joten ominaislämpökapasiteetit eivät supistu.
-**Kaava:** $$\begin{aligned} &c_1 m_1 (T_1 - T) \\ &= c_2 m_2 (T - T_2) \end{aligned}$$, josta $T = \dfrac{c_1 m_1 T_1 + c_2 m_2 T_2}{c_1 m_1 + c_2 m_2}$
+**Kaava:** $$\begin{aligned} Q_\text{luov} &= Q_\text{vast} \\
+Q &= c m \Delta T \\
+c_1 m_1 (T_1 - T) &= c_2 m_2 (T - T_2) \\
+c_1 m_1 T_1 - c_1 m_1 T &= c_2 m_2 T \\
+&\quad - c_2 m_2 T_2 \\
+c_1 m_1 T_1 + c_2 m_2 T_2 &= (c_1 m_1 + c_2 m_2) T \\
+T &= \dfrac{\begin{array}{c} c_1 m_1 T_1 \\ + c_2 m_2 T_2 \end{array}}{c_1 m_1 + c_2 m_2}
+\end{aligned}
+$$
 **Muunnokset:** Massat ovat jo kilogrammoina. Lämpötilat voi sijoittaa celsiusasteina: tasapainoyhtälössä on vain lämpötilaeroja, ja ratkaistussa kaavassa painojen summa on nimittäjässä, joten asteikon siirto siirtää myös tulosta saman verran.
 **Sijoitus:** $c_1 m_1 = 900\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0{,}25\,\text{kg} = 225\,\tfrac{\text{J}}{\text{K}}$ ja $c_2 m_2 = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0{,}40\,\text{kg} = 1676\,\tfrac{\text{J}}{\text{K}}$, joten $T = \dfrac{225\,\tfrac{\text{J}}{\text{K}} \cdot 95\,{}^\circ\text{C} + 1676\,\tfrac{\text{J}}{\text{K}} \cdot 18\,{}^\circ\text{C}}{1901\,\tfrac{\text{J}}{\text{K}}} = 27{,}11\,{}^\circ\text{C}$
 **Vastaus:** $27\,{}^\circ\text{C}$, kaksi merkitsevää numeroa kuten massoissa.
@@ -119,7 +150,14 @@
 **Kysytty:** nesteen ominaislämpökapasiteetti $c$ yksikössä $\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$
 **Periaate:** Vakioteholla nesteeseen siirtyvä lämpömäärä on $Q = P t$. Kun olomuoto ei muutu, $Q = c m \Delta T$, joten $P t = c m \Delta T$.
 **Kuvaajan lukeminen:** Pisteet ovat suoran lomassa: suora antaa ajalla $120\,\text{s}$ arvon $25{,}8\,{}^\circ\text{C}$ ja ajalla $240\,\text{s}$ arvon $31{,}6\,{}^\circ\text{C}$, kuten taulukossa. Suoran päät antavat lämpötilan muutoksen $\Delta T = 34{,}5\,{}^\circ\text{C} - 20{,}0\,{}^\circ\text{C} = 14{,}5\,\text{K}$ ajassa $\Delta t = 300\,\text{s}$, joten kulmakerroin on $\dfrac{\Delta T}{\Delta t} = \dfrac{14{,}5\,\text{K}}{300\,\text{s}} = 0{,}0483\,\tfrac{\text{K}}{\text{s}}$.
-**Kaava:** $P t = c m \Delta T$, joten $c = \dfrac{P}{m} \cdot \dfrac{\Delta t}{\Delta T}$
+**Kaava:** $$\begin{aligned} E &= P \Delta t \\
+Q &= c m \Delta T \\
+Q &= E \\
+c m \Delta T &= P \Delta t \\
+c &= \dfrac{P \Delta t}{m \Delta T} \\
+&= \dfrac{P}{m} \cdot \dfrac{\Delta t}{\Delta T}
+\end{aligned}
+$$
 **Muunnokset:** Teho $100\,\text{W} = 100\,\tfrac{\text{J}}{\text{s}}$ ja aika sekunteina ovat SI-yksiköissä, joten muunnoksia ei tarvita. Lämpötilan muutos on sama celsiusasteina ja kelvineinä.
 **Sijoitus:** $c = \dfrac{100\,\tfrac{\text{J}}{\text{s}}}{0{,}50\,\text{kg} \cdot 0{,}0483\,\tfrac{\text{K}}{\text{s}}} = 4138\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$
 **Vastaus:** $4100\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$, kaksi merkitsevää numeroa kuten massassa $0{,}50\,\text{kg}$.
@@ -134,7 +172,12 @@ c) Lämpöhäviöitä voi pienentää kalorimetrin eristyksellä ja kannella: si
 **Kysytty:** a) kumpi neste on vettä; b) öljyn ominaislämpökapasiteetti $c_\text{ö}$
 **Periaate:** Sama teho samassa ajassa antaa kummallekin nesteelle saman lämpömäärän $Q$, ja massat ovat samat. Koska $Q = c m \Delta T$, tulo $c\,\Delta T$ on kummallakin sama, joten suuremman $c$:n neste lämpenee vähemmän.
 **Kuvaajan lukeminen:** Taulukon lämpötilat nousevat tasaisesti: neste A lämpenee noin $4{,}5\,\text{K}$ ja neste B noin $2{,}3\,\text{K}$ jokaisessa $30\,\text{s}$:n välissä. Siksi koko ajan $120\,\text{s}$ muutokset ovat $\Delta T_\text{A} = 38{,}1\,{}^\circ\text{C} - 20{,}0\,{}^\circ\text{C} = 18{,}1\,\text{K}$ ja $\Delta T_\text{B} = 29{,}0\,{}^\circ\text{C} - 20{,}0\,{}^\circ\text{C} = 9{,}0\,\text{K}$. Neste B lämpenee hitaammin, joten B on vettä ja A öljyä.
-**Kaava:** $c_\text{ö}\, m\, \Delta T_\text{A} = c_\text{v}\, m\, \Delta T_\text{B}$, joten $c_\text{ö} = c_\text{v} \cdot \dfrac{\Delta T_\text{B}}{\Delta T_\text{A}}$
+**Kaava:** $$\begin{aligned} Q_\text{ö} &= Q_\text{v} \\
+Q &= c m \Delta T \\
+c_\text{ö} m \Delta T_\text{A} &= c_\text{v} m \Delta T_\text{B} \\
+c_\text{ö} &= c_\text{v} \cdot \dfrac{\Delta T_\text{B}}{\Delta T_\text{A}}
+\end{aligned}
+$$
 **Muunnokset:** Massa $m$ ja lämpömäärä $Q$ supistuvat pois, joten muunnoksia ei tarvita. Lämpötilan muutos on sama celsiusasteina ja kelvineinä.
 **Sijoitus:** $c_\text{ö} = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot \dfrac{9{,}0\,\text{K}}{18{,}1\,\text{K}} = 2083\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$
 **Vastaus:** $2100\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$, kaksi merkitsevää numeroa kuten massassa $0{,}40\,\text{kg}$ ja muutoksessa $9{,}0\,\text{K}$.
@@ -144,7 +187,15 @@ c) Lämpöhäviöitä voi pienentää kalorimetrin eristyksellä ja kannella: si
 **Annettu:** vesi $m_\text{v} = 0{,}50\,\text{kg}$, $T_\text{v} = 20\,{}^\circ\text{C}$; kupari $m_\text{k} = 0{,}20\,\text{kg}$, $T_\text{k} = 100\,{}^\circ\text{C}$; taulukosta $c_\text{v} = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ ja $c_\text{k} = 385\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$; ei lämpöhäviöitä
 **Kysytty:** a) oppilaan virhe; b) tasapainolämpötila $T$
 **Periaate:** Eristetyssä astiassa kuparin luovuttama lämpömäärä on yhtä suuri kuin veden vastaanottama. Oppilaan keskiarvo olisi oikein vain, jos kappaleiden lämpökapasiteetit $c m$ olisivat yhtä suuret. Nyt veden lämpökapasiteetti on moninkertainen kuparin kapasiteettiin verrattuna, joten tasapainolämpötila on lähellä veden alkulämpötilaa, ei puolivälissä.
-**Kaava:** $$\begin{aligned} &c_\text{k} m_\text{k} (T_\text{k} - T) \\ &= c_\text{v} m_\text{v} (T - T_\text{v}) \end{aligned}$$, joten $T = \dfrac{c_\text{k} m_\text{k} T_\text{k} + c_\text{v} m_\text{v} T_\text{v}}{c_\text{k} m_\text{k} + c_\text{v} m_\text{v}}$
+**Kaava:** $$\begin{aligned} Q_\text{luov} &= Q_\text{vast} \\
+Q &= c m \Delta T \\
+c_\text{k} m_\text{k} (T_\text{k} - T) &= c_\text{v} m_\text{v} (T - T_\text{v}) \\
+c_\text{k} m_\text{k} T_\text{k} - c_\text{k} m_\text{k} T &= c_\text{v} m_\text{v} T \\
+&\quad - c_\text{v} m_\text{v} T_\text{v} \\
+c_\text{k} m_\text{k} T_\text{k} + c_\text{v} m_\text{v} T_\text{v} &= (c_\text{k} m_\text{k} + c_\text{v} m_\text{v}) T \\
+T &= \dfrac{\begin{array}{c} c_\text{k} m_\text{k} T_\text{k} \\ + c_\text{v} m_\text{v} T_\text{v} \end{array}}{c_\text{k} m_\text{k} + c_\text{v} m_\text{v}}
+\end{aligned}
+$$
 **Muunnokset:** Lämpökapasiteetit ovat $c_\text{k} m_\text{k} = 385\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0{,}20\,\text{kg} = 77\,\tfrac{\text{J}}{\text{K}}$ ja $c_\text{v} m_\text{v} = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0{,}50\,\text{kg} = 2095\,\tfrac{\text{J}}{\text{K}}$. Lämpötilat voi sijoittaa celsiusasteina, koska tulos on painotettu keskiarvo.
 **Sijoitus:** Osoittaja on $77\,\tfrac{\text{J}}{\text{K}} \cdot 100\,{}^\circ\text{C} + 2095\,\tfrac{\text{J}}{\text{K}} \cdot 20\,{}^\circ\text{C} = 49\,600\,\text{J}$ ja nimittäjä $77\,\tfrac{\text{J}}{\text{K}} + 2095\,\tfrac{\text{J}}{\text{K}} = 2172\,\tfrac{\text{J}}{\text{K}}$, joten $T = \dfrac{49\,600\,\text{J}}{2172\,\tfrac{\text{J}}{\text{K}}} = 22{,}84\,{}^\circ\text{C}$
 **Vastaus:** $23\,{}^\circ\text{C}$, kaksi merkitsevää numeroa kuten massassa $0{,}20\,\text{kg}$ ja lämpötilassa $20\,{}^\circ\text{C}$.
@@ -169,7 +220,12 @@ Tarkistus: levy jäähtyy, joten sen sisäenergia pienenee eikä se voi samalla 
 **Annettu:** vesi $m_\text{v} = 20\,\text{kg}$, $T_\text{v} = 10\,{}^\circ\text{C}$, tavoite $T = 40\,{}^\circ\text{C}$, $c_\text{v} = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$; kivet $T_\text{k} = 300\,{}^\circ\text{C}$, $c_\text{k} = 800\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$; ei häviöitä eikä höyrystymistä
 **Kysytty:** kivien massa $m_\text{k}$
 **Periaate:** Energia säilyy: kivien luovuttama lämpömäärä on yhtä suuri kuin veden vastaanottama. Tasapainossa kivet ja vesi ovat samassa lämpötilassa, joten kivet jäähtyvät $40\,{}^\circ\text{C}$:seen asti, eivät $0\,{}^\circ\text{C}$:seen.
-**Kaava:** $$\begin{aligned} &c_\text{k} m_\text{k} (T_\text{k} - T) \\ &= c_\text{v} m_\text{v} (T - T_\text{v}) \end{aligned}$$, josta $m_\text{k} = \dfrac{c_\text{v} m_\text{v} (T - T_\text{v})}{c_\text{k} (T_\text{k} - T)}$
+**Kaava:** $$\begin{aligned} Q_\text{luov} &= Q_\text{vast} \\
+Q &= c m \Delta T \\
+c_\text{k} m_\text{k} (T_\text{k} - T) &= c_\text{v} m_\text{v} (T - T_\text{v}) \\
+m_\text{k} &= \dfrac{c_\text{v} m_\text{v} (T - T_\text{v})}{c_\text{k} (T_\text{k} - T)}
+\end{aligned}
+$$
 **Muunnokset:** Lämpötilaerot ovat samat kelvineinä: $T - T_\text{v} = 30\,\text{K}$ ja $T_\text{k} - T = 260\,\text{K}$. Muut suureet ovat SI-yksiköissä.
 **Sijoitus:** $m_\text{k} = \dfrac{4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 20\,\text{kg} \cdot 30\,\text{K}}{800\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 260\,\text{K}} = \dfrac{2\,514\,000\,\text{J}}{208\,000\,\tfrac{\text{J}}{\text{kg}}} = 12{,}09\,\text{kg}$
 **Vastaus:** $12\,\text{kg}$, kaksi merkitsevää numeroa kuten massassa $20\,\text{kg}$.
@@ -179,7 +235,12 @@ Tarkistus: levy jäähtyy, joten sen sisäenergia pienenee eikä se voi samalla 
 **Annettu:** $A = 2000\,\text{m}^2$, $h = 1{,}2\,\text{m}$, energia $18\,\text{MJ}$ jokaista neliömetriä kohti, $1000\,\text{kg}$ vettä kuutiometrissä; taulukosta $c = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$
 **Kysytty:** lämpötilan nousu $\Delta T$
 **Periaate:** Energia jää veteen ja vesi sekoittuu tasaisesti, joten $Q = c m \Delta T$. Riittää tarkastella yhden neliömetrin alla olevaa vesipatsasta, koska energia on annettu neliömetriä kohti.
-**Kaava:** $\Delta T = \dfrac{Q}{c m}$, missä yhden neliömetrin vesipatsaan massa on $m = \rho\, h \cdot 1\,\text{m}^2$
+**Kaava:** $$\begin{aligned} Q &= c m \Delta T \\
+\Delta T &= \dfrac{Q}{c m} \\
+m &= \rho V \\
+V &= h \cdot 1\,\text{m}^2
+\end{aligned}
+$$
 **Muunnokset:** $Q = 18\,\text{MJ} = 18\,000\,000\,\text{J}$. Neliömetrin alla on $1{,}2\,\text{m} \cdot 1\,\text{m}^2 = 1{,}2\,\text{m}^3$ vettä, eli $m = 1{,}2\,\text{m}^3 \cdot 1000\,\tfrac{\text{kg}}{\text{m}^3} = 1200\,\text{kg}$.
 **Sijoitus:** $\Delta T = \dfrac{18\,000\,000\,\text{J}}{4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 1200\,\text{kg}} = 3{,}58\,\text{K}$
 **Vastaus:** $3{,}6\,\text{K}$, kaksi merkitsevää numeroa kuten energiassa $18\,\text{MJ}$ ja syvyydessä $1{,}2\,\text{m}$.
@@ -189,7 +250,13 @@ Tarkistus: levy jäähtyy, joten sen sisäenergia pienenee eikä se voi samalla 
 **Annettu:** vesi $V_\text{v} = 1{,}0\,\text{m}^3$, $m_\text{v} = 1000\,\text{kg}$, $c_\text{v} = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$; hiekka $1600\,\text{kg}$ kuutiometrissä, $c_\text{h} = 800\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$; kummallakin $20\,{}^\circ\text{C}$–$70\,{}^\circ\text{C}$
 **Kysytty:** hiekan tilavuus $V_\text{h}$, johon varastoituu yhtä paljon energiaa kuin vesivarastoon
 **Periaate:** Kun varastoon siirtyy lämpömäärä $Q = c m \Delta T$, sen sisäenergia kasvaa saman verran, ja jäähtyessään se luovuttaa saman energian. Kun $Q$ ja $\Delta T$ ovat samat, lämpökapasiteetit $c m$ ovat samat. Tilavuus saadaan massasta tiheyden avulla.
-**Kaava:** $c_\text{h} m_\text{h} = c_\text{v} m_\text{v}$, joten $m_\text{h} = \dfrac{c_\text{v} m_\text{v}}{c_\text{h}}$ ja $V_\text{h} = \dfrac{m_\text{h}}{\rho_\text{h}}$
+**Kaava:** $$\begin{aligned} Q_\text{h} &= Q_\text{v} \\
+c_\text{h} m_\text{h} \Delta T &= c_\text{v} m_\text{v} \Delta T \qquad (Q = c m \Delta T) \\
+m_\text{h} &= \dfrac{c_\text{v} m_\text{v}}{c_\text{h}} \\
+\rho_\text{h} &= \dfrac{m_\text{h}}{V_\text{h}} \\
+V_\text{h} &= \dfrac{m_\text{h}}{\rho_\text{h}}
+\end{aligned}
+$$
 **Muunnokset:** Hiekan tiheys on $\rho_\text{h} = 1600\,\tfrac{\text{kg}}{\text{m}^3}$. Lämpötila-alue $\Delta T = 50\,\text{K}$ supistuu pois, joten sitä ei tarvita.
 **Sijoitus:** $m_\text{h} = \dfrac{4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 1000\,\text{kg}}{800\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}} = 5237{,}5\,\text{kg}$, joten $V_\text{h} = \dfrac{5237{,}5\,\text{kg}}{1600\,\tfrac{\text{kg}}{\text{m}^3}} = 3{,}27\,\text{m}^3$
 **Vastaus:** $3{,}3\,\text{m}^3$, kaksi merkitsevää numeroa kuten tilavuudessa $1{,}0\,\text{m}^3$.
@@ -200,7 +267,15 @@ Tarkistus: levy jäähtyy, joten sen sisäenergia pienenee eikä se voi samalla 
 **Kysytty:** a) $c$ ensimmäisestä minuutista; b) kuvaajan kaartumisen syy; c) keskimääräinen lämpöhäviön teho $P_\text{häviö}$ välillä $480\text{–}600\,\text{s}$ watteina
 **Periaate:** Vastuksen antama energia on $P t$. Se jakautuu veden lämpenemiseen $c m \Delta T$ ja lämpöhäviöön ympäristöön, joten $P t = c m \Delta T + P_\text{häviö} t$. Kun häviöt ovat mitättömiä, koko energia lämmittää vettä.
 **Kuvaajan lukeminen:** Ensimmäisessä minuutissa lämpötila nousee $25{,}6\,{}^\circ\text{C} - 20{,}0\,{}^\circ\text{C} = 5{,}6\,\text{K}$. Välillä $480\text{–}600\,\text{s}$ nousu on $63{,}6\,{}^\circ\text{C} - 56{,}8\,{}^\circ\text{C} = 6{,}8\,\text{K}$ ajassa $120\,\text{s}$.
-**Kaava:** a) $c = \dfrac{P t}{m \Delta T}$; c) $P_\text{häviö} = P - \dfrac{c m \Delta T}{t}$
+**Kaava:** $$\begin{aligned} E &= P t \\
+Q &= c m \Delta T \\
+E &= Q \\
+c &= \dfrac{P t}{m \Delta T} \qquad \text{a)} \\
+E_\text{häviö} &= P_\text{häviö} t \\
+E &= Q + E_\text{häviö} \\
+P_\text{häviö} &= P - \dfrac{c m \Delta T}{t} \qquad \text{c)}
+\end{aligned}
+$$
 **Muunnokset:** Ajat ovat sekunteina ja lämpötilan muutokset kelvineinä, joten muunnoksia ei tarvita.
 **Sijoitus:**
 

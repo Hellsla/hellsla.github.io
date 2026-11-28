@@ -1,6 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: f719262d2793f4c5
-SCOPE: delta wording from c6cf825435b84022 base 6153818
+CONTENT-HASH: 953b72bdbe61f2f5
 
 ## Blocking
 (none)
@@ -9,8 +8,9 @@ SCOPE: delta wording from c6cf825435b84022 base 6153818
 (none)
 
 ## Checked
-- Delta: only the Answer line of L2-04 in solutions.md. Vastaus-rivi: syy johtaa, lause sujuva ja yksiselitteinen; termit (merkitsevä numero) oikein; LaTeX-yksiköt kunnossa.
-- Opened content/en/FY3/fy3-11/review/shots/fy3-11-open-exercises-L2-1280-4.png and -5.png, -6.png (layout around the change intact). No phone capture of the solution opened; the change is plain prose, no new formula row.
+- Delta (Kaava step of model solutions re-set as aligned blocks, solutions.md only). Opened at 1280 px with every solution open: fy3-11-open-exercises-L2-1280-1 (13-11, four-row Kaava).
+- Kaava blocks read as aligned rows, equals signs in one column, short rows, no clipping, no horizontal overflow; surrounding steps (Muunnokset, Sijoitus, Vastaus, Järkevyys) intact. No quad continuations or array breaks in this set. check_layout at 360/390 is clean per packet.
+- Hash same at start and end.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations 5 · typography 5 · Finnish 5 · accessibility 4

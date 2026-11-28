@@ -1,14 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: aeaefa09d8b665ad
-Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
+CONTENT-HASH: c70087e34b3234e7
 
-## Blocking
-- (none)
+Delta (2026-11-26): the closing sentence of testi-19…21 feedback now names and links the chapter instead of the course code. Clear and natural; link targets fit each distractor's topic.
 
-## Polish
-- (none)
+Blocking: none.
 
-## Checked
-- inquiry.json efficiency check: the correct option and three feedbacks now say internal energy; the wrong options stay wrong; each feedback still repairs its own misconception (disappears, stored, flows back) and the correct option is not given away by wording more than before.
-- solutions.md c) and d) Principle sentences: read well, physics correct (resistive forces -> internal energy; rest of food energy -> internal energy in the muscles).
-- Grep for remaining "becomes heat / into heat": none.
+Polish:
+1. testi-20 'Oikein.'/'Correct.' line: 'Lue lisää luvussa' / 'Read more in the chapter' would suit a right answer better. Not applied (teacher: change no other text).

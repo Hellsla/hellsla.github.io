@@ -56,6 +56,15 @@
     'Tarvitsen vielä harjoitusta': 'I still need practice', 'En ole vielä harjoitellut': 'I have not practised this yet',
     'osaan niin hyvin, että voisin opettaa kaverille': 'I know this so well that I could teach it to a friend',
     'tarvitsen vielä harjoitusta': 'I still need practice', 'Annetut tehty': 'Assigned done',
+    // Review.html: class summary (work queue 17e)
+    'Luokan yhteenveto': 'Class summary', 'Näytä kaikki': 'Show all', 'Näytä heikoimmat': 'Show the weakest', 'Tehtävittäin': 'By task',
+    'Tavoitteittain': 'By goal', 'Laskutehtävittäin': 'By calculation task', 'Palauttaneet': 'Returned', 'Vastanneet': 'Answered',
+    'Keskiarvo': 'Mean', 'osa pisteistä': 'part of the points', 'täydet pisteet': 'full points', 'Oikein · lähellä · väärin': 'Correct · close · wrong',
+    'Oikein': 'Correct', 'Lähellä': 'Close', 'Väärin': 'Wrong', 'Yleisvirheet': 'Common mistakes', 'etumerkki': 'sign', 'kertaluokka': 'order of magnitude',
+    'aika': 'time', 'kelvin': 'kelvin',
+    // class summary: the choices (17e PR 2)
+    'Valinnat': 'Choices', 'Oikea vaihtoehto': 'Correct option', 'Väärä vaihtoehto': 'Wrong option', 'Vaihtoehto ': 'Option ',
+    ' (oikea vaihtoehto)': ' (correct option)',
     // the kinds of a lesson's tasks in their names (lang/en.json inquiry); the rest of a name is the chapter's own text
     'Pohdinta': 'Think about it', 'Ennusta': 'Predict', 'Tutki': 'Investigate', 'Käsitetehtävä': 'Concept task',
     'Laskutehtävä': 'Calculation task', 'Selitystehtävä': 'Explanation task', 'Ennuste': 'Prediction', 'Johtopäätös': 'Conclusion',

@@ -2,7 +2,13 @@
 **Given:** efficiency of the turbine $\eta_1 = 92.0\,\% = 0.920$, efficiency of the generator $\eta_2 = 98.0\,\% = 0.980$
 **Find:** the efficiency $\eta$ of the whole plant as a percentage
 **Principle:** The plant is a chain in which the output power of the turbine is the input power of the generator. Each step lets through only part of the energy coming into it, so the efficiency of the chain is the product of the efficiencies of the steps.
-**Formula:** $P_1 = \eta_1 P_\text{o}$ and $P_2 = \eta_2 P_1$, so $\eta = \dfrac{P_2}{P_\text{o}} = \eta_1 \eta_2$
+**Formula:** $$\begin{aligned} P_1 &= \eta_1 P_\text{o} \\
+P_2 &= \eta_2 P_1 \\
+\eta &= \dfrac{P_2}{P_\text{o}} \\
+&= \dfrac{\eta_2 \eta_1 P_\text{o}}{P_\text{o}} \\
+&= \eta_1 \eta_2
+\end{aligned}
+$$
 **Conversions:** The efficiencies are fractions of a whole: $92.0\,\% = 0.920$ and $98.0\,\% = 0.980$. At the end the result is multiplied by a hundred to give a percentage.
 **Substitution:** $\eta = 0.920 \cdot 0.980 = 0.9016 = 90.16\,\%$
 **Answer:** $90.2\,\%$, three significant figures like the given efficiencies $92.0\,\%$ and $98.0\,\%$.
@@ -29,7 +35,12 @@ Part of the energy taken by the rotor turns into internal energy in friction and
 **Principle:** The power of the radiation hitting the panel is the intensity times the area, and the efficiency tells what fraction of it turns into electricity.
 
 The rest is reflected or turns into internal energy of the panel, which is transferred to the surroundings as heat, so the electric power is the $\eta$ fraction of the input power $P_\text{o} = IA$, the power of the radiation hitting the panel.
-**Formula:** $P = \eta P_\text{o} = \eta I A$
+**Formula:** $$\begin{aligned} P_\text{o} &= I A \\
+\eta &= \dfrac{P}{P_\text{o}} \\
+P &= \eta P_\text{o} \\
+&= \eta I A
+\end{aligned}
+$$
 **Conversions:** The units go along with the numbers: $\tfrac{\text{kW}}{\text{m}^2} \cdot \text{m}^2 = \text{kW}$, so the result comes directly in kilowatts and no conversions are needed.
 
 **Substitution:** $P = 0.210 \cdot 1.00\,\tfrac{\text{kW}}{\text{m}^2} \cdot 20.0\,\text{m}^2 = 0.210 \cdot 20.0\,\text{kW} = 4.20\,\text{kW}$
@@ -45,7 +56,11 @@ The rest is reflected or turns into internal energy of the panel, which is trans
 The electric power $P_3$ is a little below the line $150\,\text{MW}$, about $140\,\text{MW}$; it is not needed for the answer. The decrease of power step by step is $P_\text{o} - P_1 = 50\,\text{MW}$ in the boiler, $P_1 - P_2 = 200\,\text{MW}$ in the steam cycle and $P_2 - P_3 = 10\,\text{MW}$ in the generator and transformer.
 
 The biggest drop is between the bars $P_1$ and $P_2$, that is in the steam cycle.
-**Formula:** $P_\text{h} = P_\text{o} - P_\text{a}$, where $P_\text{o}$ is the input power coming into the step and $P_\text{a}$ the output power leaving it; in the steam cycle $P_\text{o} = P_1$ and $P_\text{a} = P_2$, so $P_\text{h} = P_1 - P_2$
+**Formula:** $$\begin{aligned} P_\text{o} &= P_\text{a} + P_\text{h} \\
+P_\text{h} &= P_\text{o} - P_\text{a} \\
+&= P_1 - P_2
+\end{aligned}
+$$ Here $P_\text{o}$ is the input power coming into the step and $P_\text{a}$ the output power leaving it; in the steam cycle $P_\text{o} = P_1$ and $P_\text{a} = P_2$.
 **Conversions:** Not needed: all powers are in megawatts.
 
 **Substitution:** $P_\text{h} = 350\,\text{MW} - 150\,\text{MW} = 200\,\text{MW}$
@@ -93,7 +108,13 @@ The turbine does not convert a larger share of the heat into electricity either:
 **Given:** fuel power $P_\text{o} = 300\,\text{MW}$, efficiency of the boiler $\eta_1 = 0.880$, of the steam cycle $\eta_2 = 0.420$ and of the generator $\eta_3 = 0.980$
 **Find:** the electric power $P_3$ of the plant in megawatts
 **Principle:** The steps are in series, and the output power of each is the input power of the next. Each step keeps only the $\eta$ fraction of its power, so the electric power is the fuel power multiplied by all three efficiencies.
-**Formula:** $P_1 = \eta_1 P_\text{o}$, $P_2 = \eta_2 P_1$ and $P_3 = \eta_3 P_2$, so $P_3 = \eta_1 \eta_2 \eta_3 P_\text{o}$
+**Formula:** $$\begin{aligned} P_1 &= \eta_1 P_\text{o} \\
+P_2 &= \eta_2 P_1 \\
+P_3 &= \eta_3 P_2 \\
+&= \eta_3 \eta_2 \eta_1 P_\text{o} \\
+&= \eta_1 \eta_2 \eta_3 P_\text{o}
+\end{aligned}
+$$
 **Conversions:** The efficiencies are dimensionless and the power is already in megawatts, so no conversions are needed.
 **Substitution:** $P_3 = 0.880 \cdot 0.420 \cdot 0.980 \cdot 300\,\text{MW} = 0.362208 \cdot 300\,\text{MW} = 108.6624\,\text{MW}$
 **Answer:** $109\,\text{MW}$, three significant figures, because the efficiencies $0.880$, $0.420$ and $0.980$ have three figures and the fuel power $300\,\text{MW}$ is given to the nearest megawatt.
@@ -103,7 +124,10 @@ The turbine does not convert a larger share of the heat into electricity either:
 **Given:** efficiency of the whole chain $\eta = 0.380$, of the boiler $\eta_1 = 0.900$ and of the generator $\eta_3 = 0.980$
 **Find:** the efficiency $\eta_2$ of the steam cycle as a percentage
 **Principle:** The chain is the product of three steps in series, so the efficiency of the whole chain is the product of the efficiencies of the steps. When two steps and the whole are known, the missing step is found by division.
-**Formula:** $\eta = \eta_1 \eta_2 \eta_3$, so $\eta_2 = \dfrac{\eta}{\eta_1 \eta_3}$
+**Formula:** $$\begin{aligned} \eta &= \eta_1 \eta_2 \eta_3 \\
+\eta_2 &= \dfrac{\eta}{\eta_1 \eta_3}
+\end{aligned}
+$$
 **Conversions:** The efficiencies are dimensionless numbers, so no unit conversions are needed. At the end the result is multiplied by a hundred to give a percentage.
 **Substitution:** $\eta_2 = \dfrac{0.380}{0.900 \cdot 0.980} = \dfrac{0.380}{0.882} = 0.43084 = 43.08\,\%$
 **Answer:** $43.1\,\%$, three significant figures, because all three efficiencies, $0.380$, $0.900$ and $0.980$, have three figures.
@@ -115,7 +139,12 @@ It is a little greater than the usual efficiency of a whole condensing power pla
 **Given:** electric power $P_\text{s} = 150\,\text{MW}$, efficiency $\eta = 0.360$, heat of combustion $H = 9.00\,\tfrac{\text{MJ}}{\text{kg}}$, time $t = 1\,\text{h}$
 **Find:** the mass $m$ of wood chips burned in an hour, in tonnes
 **Principle:** Energy is conserved: the chemical energy of the fuel is either electricity or waste heat. The efficiency connects the electric power to the fuel power, and the fuel power is the heat of combustion times the mass flow, because the heat of combustion tells the energy per unit mass.
-**Formula:** $P_\text{o} = \dfrac{P_\text{s}}{\eta}$ and $P_\text{o} = \dfrac{H m}{t}$, so $m = \dfrac{P_\text{s}\, t}{\eta H}$
+**Formula:** $$\begin{aligned} P_\text{s} &= \eta P_\text{o} \\
+P_\text{o} &= \dfrac{H m}{t} \\
+P_\text{s} &= \dfrac{\eta H m}{t} \\
+m &= \dfrac{P_\text{s}\, t}{\eta H}
+\end{aligned}
+$$
 **Conversions:** $150\,\text{MW} = 150 \cdot 10^6\,\text{W}$, $9.00\,\tfrac{\text{MJ}}{\text{kg}} = 9.00 \cdot 10^6\,\tfrac{\text{J}}{\text{kg}}$ and $1\,\text{h} = 3600\,\text{s}$. At the end $1\,\text{t} = 1000\,\text{kg}$.
 **Substitution:** $m = \dfrac{150 \cdot 10^6\,\text{W} \cdot 3600\,\text{s}}{0.360 \cdot 9.00 \cdot 10^6\,\tfrac{\text{J}}{\text{kg}}} = 1.66667 \cdot 10^5\,\text{kg} = 166.67\,\text{t}$
 **Answer:** $167\,\text{t}$, three significant figures, because the efficiency $0.360$ and the heat of combustion $9.00\,\tfrac{\text{MJ}}{\text{kg}}$ have three figures and the electric power $150\,\text{MW}$ is given to the nearest megawatt; the hour is exact ($3600\,\text{s}$) and does not limit the precision.
@@ -125,7 +154,13 @@ It is a little greater than the usual efficiency of a whole condensing power pla
 **Given:** heat power transferred to the condenser $P_\text{L} = 270\,\text{MW}$, rise in the temperature of the water $\Delta T = 9.00\,\text{K}$ and the given specific heat capacity $c = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$
 **Find:** the water flow $q_m = m/t$ through the condenser in tonnes per second
 **Principle:** The heat released by the condenser is transferred entirely to the cooling water when there are no other losses. The water only warms up and does not vaporise, so $Q = c m \Delta T$ applies to the quantity of heat; dividing by time gives the power.
-**Formula:** $P_\text{L} = \dfrac{Q}{t} = c\, q_m \Delta T$, so $q_m = \dfrac{P_\text{L}}{c\, \Delta T}$
+**Formula:** $$\begin{aligned} Q &= c m \Delta T \\
+P_\text{L} &= \dfrac{Q}{t} \\
+&= c\,\dfrac{m}{t}\,\Delta T \\
+&= c\, q_m \Delta T \\
+q_m &= \dfrac{P_\text{L}}{c\, \Delta T}
+\end{aligned}
+$$
 **Conversions:** $270\,\text{MW} = 270 \cdot 10^6\,\text{W}$ and $1\,\text{W} = 1\,\tfrac{\text{J}}{\text{s}}$. The change in temperature $9.00\,\text{K}$ is the same in kelvins and in degrees Celsius. At the end $1\,\text{t} = 1000\,\text{kg}$.
 **Substitution:** $q_m = \dfrac{270 \cdot 10^6\,\text{W}}{4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 9.00\,\text{K}} = 7159.9\,\tfrac{\text{kg}}{\text{s}} = 7.1599\,\tfrac{\text{t}}{\text{s}}$
 **Answer:** $7.16\,\tfrac{\text{t}}{\text{s}}$, three significant figures, because the change in temperature $9.00\,\text{K}$ and the specific heat capacity $4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ have three figures and the power $270\,\text{MW}$ is given to the nearest megawatt.
@@ -149,7 +184,11 @@ Electricity and heat are still not equally valuable, even though they are added 
 **Given:** from the table, the nuclear power plant $P_\text{o} = 2400\,\text{MW}$ and $P_\text{s} = 840\,\text{MW}$, the coal power plant $1200\,\text{MW}$ and $432\,\text{MW}$, the bio power plant $350\,\text{MW}$ and $112\,\text{MW}$
 **Find:** the largest waste heat power $P_\text{h}$ in megawatts
 **Principle:** In a condensing power plant only electricity is put to use, and energy is conserved, so the fuel or reactor power is either electricity or waste heat: $P_\text{o} = P_\text{s} + P_\text{h}$. Efficiency is a ratio, but the waste heat power also depends on the size of the plant.
-**Formula:** $\eta = \dfrac{P_\text{s}}{P_\text{o}}$ and $P_\text{h} = P_\text{o} - P_\text{s}$
+**Formula:** $$\begin{aligned} \eta &= \dfrac{P_\text{s}}{P_\text{o}} \\
+P_\text{o} &= P_\text{s} + P_\text{h} \\
+P_\text{h} &= P_\text{o} - P_\text{s}
+\end{aligned}
+$$
 **Conversions:** All powers are in megawatts, so no conversions are needed.
 **Substitution:** Nuclear power plant: $\eta = \tfrac{840\,\text{MW}}{2400\,\text{MW}} = 0.350$ and $P_\text{h} = 2400\,\text{MW} - 840\,\text{MW} = 1560\,\text{MW}$. Coal power plant: $\eta = \tfrac{432}{1200} = 0.360$ and $P_\text{h} = 1200\,\text{MW} - 432\,\text{MW} = 768\,\text{MW}$. Bio power plant: $\eta = \tfrac{112}{350} = 0.320$ and $P_\text{h} = 350\,\text{MW} - 112\,\text{MW} = 238\,\text{MW}$.
 **Answer:** $1560\,\text{MW}$ (nuclear power plant), three significant figures like the electric powers.
@@ -161,7 +200,14 @@ The largest waste heat power belongs to the nuclear power plant, even though its
 **Given:** $\eta_1 = 0.920$ (boiler), $\eta_2 = 0.410$ (steam cycle) and $\eta_3 = 0.970$ (generator); the student's result $230\,\%$
 **Find:** the correct efficiency $\eta$ of the plant as a percentage and an explanation of the error
 **Principle:** The steps are in a row, and each step lets through only its efficiency's share of the power coming into it. When $P_1 = \eta_1 P_\text{o}$, $P_2 = \eta_2 P_1$ and $P_3 = \eta_3 P_2$, the efficiency of the chain is $\eta = \dfrac{P_3}{P_\text{o}} = \eta_1\,\eta_2\,\eta_3$, that is the efficiencies are multiplied.
-**Formula:** $\eta = \eta_1\,\eta_2\,\eta_3$
+**Formula:** $$\begin{aligned} P_1 &= \eta_1 P_\text{o} \\
+P_2 &= \eta_2 P_1 \\
+P_3 &= \eta_3 P_2 \\
+\eta &= \dfrac{P_3}{P_\text{o}} \\
+&= \dfrac{\eta_3 \eta_2 \eta_1 P_\text{o}}{P_\text{o}} \\
+&= \eta_1\,\eta_2\,\eta_3
+\end{aligned}
+$$
 **Conversions:** The efficiencies are dimensionless numbers, so no conversions are needed. At the end the result is multiplied by one hundred to get a percentage.
 **Substitution:** $\eta = 0.920 \cdot 0.410 \cdot 0.970 = 0.3659 = 36.6\,\%$
 **Answer:** $36.6\,\%$, three significant figures like the given efficiencies.
@@ -201,7 +247,11 @@ The other options come from errors: $0.5\,\text{MW}$ when the density is not use
 **Given:** $P_\text{o} = 600\,\text{MW}$. Electricity only: $P_\text{s,0} = 240\,\text{MW}$. Full combined production: $P_\text{s,full} = 180\,\text{MW}$ and $P_\text{k,full} = 348\,\text{MW}$. Now the district heating power is $P_\text{k} = 200\,\text{MW}$.
 **Find:** the electric power $P_\text{s}$ in megawatts and the overall efficiency $\eta_\text{tot}$
 **Principle:** According to the problem the electric power decreases linearly as the district heating power increases, so the two extreme modes define a straight line. District heating is taken in an intermediate mode, so the electric power is read from that line. The overall efficiency is the combined power of electricity and district heating divided by the fuel power.
-**Formula:** $P_\text{s} = P_\text{s,0} - k P_\text{k}$, where $k = \dfrac{P_\text{s,0} - P_\text{s,full}}{P_\text{k,full}}$, and $\eta_\text{tot} = \dfrac{P_\text{s} + P_\text{k}}{P_\text{o}}$
+**Formula:** $$\begin{aligned} k &= \dfrac{P_\text{s,0} - P_\text{s,full}}{P_\text{k,full}} \\
+P_\text{s} &= P_\text{s,0} - k P_\text{k} \\
+\eta_\text{tot} &= \dfrac{P_\text{s} + P_\text{k}}{P_\text{o}}
+\end{aligned}
+$$
 **Conversions:** All powers are in megawatts and $k$ is a dimensionless number, so no conversions are needed.
 **Substitution:** $k = \dfrac{240\,\text{MW} - 180\,\text{MW}}{348\,\text{MW}} = 0.17241$ and $P_\text{s} = 240\,\text{MW} - 0.17241 \cdot 200\,\text{MW} = 205.517\,\text{MW}$. Then $\eta_\text{tot} = \dfrac{205.517\,\text{MW} + 200\,\text{MW}}{600\,\text{MW}} = 0.67586 = 67.6\,\%$.
 **Answer:** $P_\text{s} = 206\,\text{MW}$ and $\eta_\text{tot} = 67.6\,\%$, three significant figures, that is megawatt precision, because all powers are given to the nearest megawatt: the difference $240 - 180 = 60\,\text{MW}$ has that precision, and the subtracted $0.172 \cdot 200 \approx 34\,\text{MW}$ is to the nearest unit.
@@ -213,7 +263,12 @@ For every megawatt of district heating $\tfrac{60}{348} = 0.17\,\text{MW}$ of el
 **Given:** electrical energy $E = 36.0\,\text{GWh}$, efficiency $\eta = 0.380$ and heat of combustion of coal $H = 25.0\,\tfrac{\text{MJ}}{\text{kg}}$; given $1\,\text{GWh} = 3.60 \cdot 10^{12}\,\text{J}$
 **Find:** the mass $m$ of coal burned in a year, in kilotonnes
 **Principle:** Energy is conserved: the chemical energy $Q_1$ of the coal turns into electricity with efficiency $\eta$, and the rest is transferred to the surroundings as waste heat. The denominator of the efficiency is the bought fuel, and the energy of the fuel is the heat of combustion times the mass.
-**Formula:** $E = \eta Q_1$ and $Q_1 = H m$, so $m = \dfrac{E}{\eta H}$
+**Formula:** $$\begin{aligned} E &= \eta Q_1 \\
+Q_1 &= H m \\
+E &= \eta H m \\
+m &= \dfrac{E}{\eta H}
+\end{aligned}
+$$
 **Conversions:** $E = 36.0 \cdot 3.60 \cdot 10^{12}\,\text{J} = 1.296 \cdot 10^{14}\,\text{J}$ and $H = 25.0 \cdot 10^6\,\tfrac{\text{J}}{\text{kg}}$. At the end $1\,\text{kt} = 10^6\,\text{kg}$.
 **Substitution:** $m = \dfrac{1.296 \cdot 10^{14}\,\text{J}}{0.380 \cdot 25.0 \cdot 10^6\,\tfrac{\text{J}}{\text{kg}}} = 1.3642 \cdot 10^7\,\text{kg} = 13.642\,\text{kt}$
 **Answer:** $13.6\,\text{kt}$, three significant figures, because the electrical energy $36.0\,\text{GWh}$, the efficiency $0.380$, the heat of combustion $25.0\,\tfrac{\text{MJ}}{\text{kg}}$ and the conversion factor $3.60 \cdot 10^{12}\,\text{J}/\text{GWh}$ all have three figures.
@@ -230,7 +285,12 @@ The efficiency of a wind farm only tells what fraction of the kinetic energy of 
 
 The electricity is produced from fuel in a chain where each step lets through only part of the energy, so the fuel is found by dividing the electricity by the efficiency of the chain.
 
-**Formula:** $\varepsilon = \dfrac{Q_1}{W}$, so $W = \dfrac{Q_1}{\varepsilon}$, and $E_\text{fuel} = \dfrac{W}{\eta_\text{transm}\, \eta_\text{plant}}$, thus $E_\text{fuel} = \dfrac{Q_1}{\eta_\text{transm}\, \eta_\text{plant}\, \varepsilon}$. In a heat pump $Q_1$ is the heat given indoors and $W$ the electric energy the pump uses.
+**Formula:** $$\begin{aligned} \varepsilon &= \dfrac{Q_1}{W} \\
+W &= \dfrac{Q_1}{\varepsilon} \\
+E_\text{fuel} &= \dfrac{W}{\eta_\text{transm}\, \eta_\text{plant}} \\
+&= \dfrac{Q_1}{\eta_\text{transm}\, \eta_\text{plant}\, \varepsilon}
+\end{aligned}
+$$ In a heat pump $Q_1$ is the heat given indoors and $W$ the electric energy the pump uses.
 
 **Conversions:** All energies are in kilowatt-hours and the factors are dimensionless, so no conversions are needed.
 **Substitution:** $E_\text{fuel} = \dfrac{100\,\text{kWh}}{0.950 \cdot 0.400 \cdot 3.00} = \dfrac{100\,\text{kWh}}{1.14} = 87.719\,\text{kWh}$
@@ -240,13 +300,20 @@ The electricity is produced from fuel in a chain where each step lets through on
 Direct electric heating is the worst, because over $60\,\%$ of the energy of the fuel has already been wasted in producing the electricity.
 
 ## fy3-15-L3-04
-**Given:** electricity need $P_\text{s} = 100\,\text{MW}$ and district heating need $P_\text{k} = 200\,\text{MW}$. A: efficiency of the condensing power plant $\eta_\text{s,A} = 0.400$ and of the heating boiler $\eta_\text{boiler} = 0.900$. B: electrical efficiency of the combined heat and power plant $\eta_\text{s,B} = 0.320$ and district heating power $0.560\,P_{\text{o},\text{B}}$; the missing heat is produced in a similar heating boiler ($\eta_\text{boiler} = 0.900$)
+**Given:** electricity need $P_\text{s} = 100\,\text{MW}$ and district heating need $P_\text{k} = 200\,\text{MW}$. A: efficiency of the condensing power plant $\eta_\text{s,A} = 0.400$ and of the heating boiler $\eta_\text{boiler} = 0.900$. B: electrical efficiency of the combined heat and power plant $\eta_\text{s,B} = 0.320$ and district heating power $0.560\,P_{\text{o},\text{CHP}}$; the missing heat is produced in a similar heating boiler ($\eta_\text{boiler} = 0.900$)
 **Find:** the difference of the fuel powers $P_{\text{o},\text{A}} - P_{\text{o},\text{B}}$ in megawatts
 **Principle:** The fuel power is found by dividing the useful power by the efficiency. In option A electricity and heat are produced separately, so the fuel powers are added.
 
 In option B the plant is sized according to the electricity need, and the district heating it produces is subtracted from the heat need; the heat that is left is produced in a boiler.
 
-**Formula:** A: $P_{\text{o},\text{A}} = \dfrac{P_\text{s}}{\eta_\text{s,A}} + \dfrac{P_\text{k}}{\eta_\text{boiler}}$. B: $P_{\text{o},\text{CHP}} = \dfrac{P_\text{s}}{\eta_\text{s,B}}$, $P_\text{k,CHP} = 0.560\,P_{\text{o},\text{CHP}}$ and $P_{\text{o},\text{B}} = P_{\text{o},\text{CHP}} + \dfrac{P_\text{k} - P_\text{k,CHP}}{\eta_\text{boiler}}$. The difference is $P_{\text{o},\text{A}} - P_{\text{o},\text{B}}$.
+**Formula:** $$\begin{aligned} P_\text{o} &= \dfrac{P_\text{useful}}{\eta} \\
+P_{\text{o},\text{A}} &= \dfrac{P_\text{s}}{\eta_\text{s,A}} + \dfrac{P_\text{k}}{\eta_\text{boiler}} \\
+P_{\text{o},\text{CHP}} &= \dfrac{P_\text{s}}{\eta_\text{s,B}} \\
+P_\text{k,CHP} &= 0.560\,P_{\text{o},\text{CHP}} \\
+P_{\text{o},\text{B}} &= P_{\text{o},\text{CHP}} + \dfrac{P_\text{k} - P_\text{k,CHP}}{\eta_\text{boiler}} \\
+\Delta P_\text{o} &= P_{\text{o},\text{A}} - P_{\text{o},\text{B}}
+\end{aligned}
+$$
 **Conversions:** All powers are in megawatts and the efficiencies are dimensionless numbers, so no conversions are needed.
 **Substitution:** A: $P_{\text{o},\text{A}} = \dfrac{100\,\text{MW}}{0.400} + \dfrac{200\,\text{MW}}{0.900} = 250\,\text{MW} + 222.22\,\text{MW} = 472.22\,\text{MW}$. B: $P_{\text{o},\text{CHP}} = \dfrac{100\,\text{MW}}{0.320} = 312.5\,\text{MW}$ and $P_\text{k,CHP} = 0.560 \cdot 312.5\,\text{MW} = 175.0\,\text{MW}$.
 
@@ -259,7 +326,12 @@ The boiler has to produce $$\begin{aligned} &200\,\text{MW} - 175.0\,\text{MW} \
 **Find:** the heat power $P_\text{L}$ transferred to the condenser in megawatts
 **Principle:** The heat of the condenser warms the cooling water, and the quantity of heat is $Q = cm\,\Delta T$ as long as the water stays liquid. Power is the quantity of heat per unit of time, so $P_\text{L} = c\,q_m\,\Delta T$. The rise in temperature varies slightly from month to month, so the average is used.
 **Reading the graph:** From the table the rise $\Delta T = T_\text{out} - T_\text{in}$ is calculated for each month: January $10.9\,\text{K}$, April $10.7\,\text{K}$, July $10.6\,\text{K}$ and September $10.9\,\text{K}$. A temperature difference is the same on the Celsius and Kelvin scales.
-**Formula:** $\Delta T_\text{avg} = \dfrac{\Sigma\,\Delta T}{4}$ and $P_\text{L} = c\,q_m\,\Delta T_\text{avg}$
+**Formula:** $$\begin{aligned} \Delta T_\text{avg} &= \dfrac{\Sigma\,\Delta T}{4} \\
+Q &= c m \Delta T_\text{avg} \\
+P_\text{L} &= \dfrac{Q}{t} \\
+&= c\,q_m\,\Delta T_\text{avg}
+\end{aligned}
+$$
 **Conversions:** $q_m = 38.0\,\text{t/s} = 38\,000\,\text{kg/s}$. The result is converted from watts to megawatts, $1\,\text{MW} = 10^6\,\text{W}$.
 **Substitution:** The sum of the rises is $$\begin{aligned} &10.9 + 10.7 + 10.6 + 10.9 \\ &= 43.1\,\text{K} \end{aligned}$$, so $\Delta T_\text{avg} = 10.775\,\text{K}$. Then
 $$\begin{aligned} P_\text{L} &= 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 38\,000\,\tfrac{\text{kg}}{\text{s}} \cdot 10.775\,\text{K} \\ &= 1.7156 \cdot 10^{9}\,\text{W} \\ &= 1716\,\text{MW} \end{aligned}$$
@@ -274,7 +346,12 @@ In July the water leaves at a temperature of $28.4\,{}^\circ\text{C}$, so the se
 **Given:** mass flow of the water $q_m = 80\,\text{kg/s}$, rise in temperature $\Delta T = 40\,\text{K}$; from the table (MAFY table, specific heat capacities, liquids, water) $c = 4.182\,\text{kJ/(kg}\cdot\text{K)}$
 **Find:** the district heating power $P_\text{k}$ in megawatts
 **Principle:** The heat transferred to the water of the network is $Q = cm\Delta T$. When a mass $m$ of water flows steadily in time $t$, the heating power is $P = Q/t = c\,(m/t)\,\Delta T$, that is, $P_\text{k} = c\,q_m\,\Delta T$.
-**Formula:** $P_\text{k} = c\,q_m\,\Delta T$
+**Formula:** $$\begin{aligned} Q &= c m \Delta T \\
+P_\text{k} &= \dfrac{Q}{t} \\
+&= c\,\dfrac{m}{t}\,\Delta T \\
+&= c\,q_m\,\Delta T
+\end{aligned}
+$$
 **Conversions:** $\dfrac{\text{kJ}}{\text{kg}\cdot\text{K}} \cdot \dfrac{\text{kg}}{\text{s}} \cdot \text{K} = \dfrac{\text{kJ}}{\text{s}} = \text{kW}$ and $1\,\text{MW} = 1000\,\text{kW}$
 **Substitution:** $P_\text{k} = 4.182\,\dfrac{\text{kJ}}{\text{kg}\cdot\text{K}} \cdot 80\,\dfrac{\text{kg}}{\text{s}} \cdot 40\,\text{K} = 13\,382\,\text{kW} = 13.4\,\text{MW}$
 **Answer:** $P_\text{k} \approx 13\,\text{MW}$, two significant figures as in the data $80\,\text{kg/s}$ and $40\,\text{K}$. The value $c = 4.182\,\text{kJ/(kg}\cdot\text{K)}$ is from the MAFY table (specific heat capacities, liquids, water, $20\,{}^\circ\text{C}$); for hot water the difference is small, and an answer within about $\pm 4\,\%$ is accepted.

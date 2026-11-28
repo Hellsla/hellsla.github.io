@@ -46,7 +46,6 @@ new p5((p) => {
     selSp.selected('1');                                                          // pace only; every quantity follows simulated time
     const scrub = () => { running = false; u = 0; n = Math.max(1, Math.min(NMAX, Math.round(Number(sN.value())))); };
     sN.elt.addEventListener('input', scrub); sN.elt.addEventListener('change', scrub);
-    p.createP(__('legenda')).parent('sim-root').class('note');
     p.textFont('Arial');
     restart();
     // adapter for guided investigations (sim-embed.js): the page may set, lock and reset these parameters

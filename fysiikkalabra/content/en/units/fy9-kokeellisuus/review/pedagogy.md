@@ -1,6 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: fdd8c394b0cb9c64
-SCOPE: delta (old-content fixes, git diff origin/main)
+CONTENT-HASH: 886b665ccf8c816c
+
+Round 2 (final delta). The changed hints were judged: the polish items of round 1 are applied. The tilt hint no longer gives the equation and asks which forces balance. The task 6 d hint now asks the direction first, then the percentage. The task 7 b hint accepts the slope or the ratios. The clause "N = mg" in task 6 c is dropped. The ladder (question, idea, step) holds and no hint gives the answer. The unit and sign fixes are correct. The English matches the Finnish physics.
+
+Blocking
+None.
+
+Polish
+None.
 
 Checked
-1. The task-count text (eight tasks) matches tasks.json. The fi, en and fi-easy versions carry the same changes with the same meaning.
+Changed hints in tasks.json against round 1 polish items; ladder; no giveaway; language.

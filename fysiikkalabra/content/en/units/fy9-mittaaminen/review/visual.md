@@ -1,17 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 3e94f6a46e4cf227
+CONTENT-HASH: 74db1531ca3d16e8
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- [Minor] unit.md "The big picture" — "Processing measurement data often proceeds from the measurement results and their uncertainties to a graph, where needed to fitting a model and interpreting it, and finally to the result…" is ungrammatical ("where needed to fitting") — "…to a graph and, where needed, to fitting a model and interpreting it, and finally to the result with its uncertainty."
-- [Minor] unit.md, linearisation paragraph — the paragraph before the third stop-think box is a dense 100-word block; acceptable, but one sentence per relationship (motion, gas, liquid) could be a short list.
+- [Minor] Open-box indent at 390 px: known shared point, not repeated as blocking.
 
 ## Checked
-- Captures opened: top-390, selita-390-1..4 (recognition chart, formulas, all three Stop and think boxes, anatomy and linearisation figures), selita-1280-2 (two boxes, formula table, anatomy figure start). Captures current for hash 3e94f6a46e4cf227.
-- Stop and think boxes (aside.stop-think): green left rule, small-caps label, question, openable "Answer" with a disclosure triangle, on both 390 and 1280. Maths ($\bar{x}$, $\Delta x$, $k=\tfrac{a}{2}$, $a=2k$) is rendered, not clipped. Reading width stays within the column and there is no horizontal overflow. The boxes sit after the paragraph they test and do not push figures apart. The answers are closed by default (shown open in the "every box open" captures).
-- English text is fluent apart from the one sentence above. Units and symbols are in LaTeX. Not opened: exercises/sovella/tarkista captures (judged only via the packet's deterministic checks, no changes there in scope).
+- Round 2 delta (s1 a/d, s2 c/d, s3 a/b, s4 b, s5 c hints) wording and formulas read in the diff.
+- Rendered preview of en at 390 and 1280 px with hints opened (fi, fi-easy, en captures viewed): KaTeX fractions, units and subscripts render, no clipping or horizontal overflow (scrollWidth equals viewport).
+- Round 2 rewrites are clearer: k is now the ratio, subscripts are m_punnus/m_weight, the extra c is dropped, hints no longer give the axis answer away.
 
 ## Scores
-illustrations 4 · typography 5 · English 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

@@ -1,14 +1,9 @@
 VERDICT: PASS
-CONTENT-HASH: c8d1c7be46b19133
-Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
+CONTENT-HASH: 0ea15d967852cfef
 
-## Blocking
-- (none)
+Delta (2026-11-26): the closing sentence of testi-19…21 feedback now names and links the chapter instead of the course code. Clear and natural; link targets fit each distractor's topic.
 
-## Polish
-- (none)
+Blocking: none.
 
-## Checked
-- inquiry.json "6. Hyötysuhde": read the prompt with the changed correct option and the three changed feedbacks. The correct option still answers the question, is not longer or more telling than the distractors, and the distractors stay wrong for the same misconceptions; each feedback still repairs its misconception ("Niiden summa" refers clearly to valo and sisäenergia).
-- sovella/solutions.md, two Periaate lines (vastusvoimat, lihakset): sentences read well and agree with the rest of the solution.
-- Searched the unit for remaining "lämmöksi": none. No task added in fi-easy.
+Polish:
+1. testi-20 'Oikein.'/'Correct.' line: 'Lue lisää luvussa' / 'Read more in the chapter' would suit a right answer better. Not applied (teacher: change no other text).

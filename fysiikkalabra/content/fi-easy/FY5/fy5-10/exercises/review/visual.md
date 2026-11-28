@@ -1,17 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 23a62c16c4efc8c8
-none
+CONTENT-HASH: bb45c42f25faf991
 
 ## Blocking
+(none)
 
 ## Polish
-- [Minor] solutions.md 10-9 Kaava: the first row "v = (x2-x1)/Δt" is not a basic equation of its own; acceptable.
+(none)
 
 ## Checked
-- Delta round 1: Kaava steps of solutions.md rewritten as aligned symbolic chains.
-- Opened open-exercises-1280-2 (10-3), -4 (10-5), -5, -6 (10-8, unchanged Kaava), -7, -8, -9 (10-10) in fi-easy.
-- Kaava boxes: rows aligned at `=`, fractions in display size, no clipping or overflow, spacing between steps even, Sijoitus/Vastaus/Järkevyys unchanged.
-- Not opened: 390 px captures, the five-row 10-6 and 10-9 cards (same component, same aligned block).
+- Delta round 1: the diff only removes the prefix "Esimerkkiaineisto: " and capitalises the next word; no numbers, symbols, formulas or figures changed.
+- Opened (content/fi-easy/FY5/fy5-10/review/shots/): fy5-10-open-exercises-L3-1280-5 (task 10-22, now opening with "12,0 m pitkää narua …"), -6 (its solution).
+- A sentence that starts with a LaTeX quantity reads fine and the table, answer field and solution layout are intact. The rope task (second changed text) was read in the diff only: "Pitkä köysi koostuu …".
+- Hash re-run at the end: unchanged.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 4 · accessibility 5
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

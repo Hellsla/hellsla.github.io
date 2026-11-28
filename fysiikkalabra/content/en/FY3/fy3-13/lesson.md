@@ -102,7 +102,9 @@ where $\theta_{0,\text{max}}$ is the larger (less negative) and $\theta_{0,\text
 <foreignObject x="204" y="76" width="200" height="36"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:left">$\text{extrapolation}$</div></foreignObject><line x1="264" y1="114" x2="264" y2="184" stroke="#1f2933" stroke-width="1.5"/><foreignObject x="240" y="6" width="212" height="36"><div xmlns="http://www.w3.org/1999/xhtml" class="fig-tex" style="text-align:right">$\text{measurement range}$</div></foreignObject><path d="M462,48 V32 H574 V48" fill="none" stroke="#1f2933" stroke-width="2"/>
 </svg>
 
-The picture is drawn to scale. The limit lines run close to each other in the measurement range but move apart when you extrapolate, so the uncertainty grows as you extend the line. A more precise pressure gauge, more measurement points and a wider measurement range reduce the uncertainty. Once the result is known, the zero of the kelvin scale is placed there: the temperature in kelvins is $T = \theta - \theta_0$.
+The picture is drawn to scale. The limit lines run close to each other in the measurement range but move apart when you extrapolate, so the uncertainty grows as you extend the line. A more precise pressure gauge, more measurement points and a wider measurement range reduce the uncertainty.
+
+The intersection of the line with the temperature axis gives an experimental estimate of absolute zero. In this experiment the estimate is $(-276 \pm 18)\,{}^\circ\text{C}$. The exact relation between the scales is $0\,\text{K} = -273.15\,{}^\circ\text{C}$. This value falls within the uncertainty interval of the experiment.
 
 ```pysahdy
 The limit lines move apart when the line is extended. What does this mean for the uncertainty of $\theta_0$?

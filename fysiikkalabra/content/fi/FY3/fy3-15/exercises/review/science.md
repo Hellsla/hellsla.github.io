@@ -1,15 +1,13 @@
 VERDICT: PASS
-CONTENT-HASH: 3982956434865159
+CONTENT-HASH: b8da362cb104dafe
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-- The hash was 3982956434865159 at the start and the end.
-- Delta (fy3-15-L3-05): in d) of the exercises.json text, "ei voi enää tuottaa sähköä" became "ei voi enää käytännössä tuottaa sähköä". The Järkevyys line of solutions.md now adds that at so small a temperature difference the largest possible efficiency is only a few percent.
-- "käytännössä" is the correct qualifier. Low-grade heat is not unusable in principle; it is only uneconomic, and the round-1 wording claimed too much. The added limit names the real reason, which agrees with the guardrail that a heat engine cannot turn all of its heat into work.
-- I recomputed the bound from the task's own data in one script. The monthly outlet temperatures 12,1 / 14,2 / 28,4 / 23,2 °C and rises of 10,9 / 10,7 / 10,6 / 10,9 K give 1 − T_c/T_h = 3,5–3,8 %. For a stream that cools as it gives off heat the bound is about half that. "muutama prosentti" is therefore right as an upper limit.
-- The same script gives the unchanged numbers again: ΔT_ka = 10,775 K, P_L = 4190 · 38 000 · 10,775 W = 1716 MW (answer 1720 MW, answers.py 1716, tolerance 2 %), P_h = 1800 MW, share 95 %, remainder 84 MW.
-- The sentence keeps energy conservation explicit: the energy "ei ole kadonnut vaan lämmittää merta". No number, symbol or answer changed.
-- Scope: the limit is stated as a fact in the reasonableness check. The student is not asked to compute it, so the task stays within FY3 and its prerequisite chapter on the heat engine.
+- The diff changes only the Annettu of fy3-15-L3-04 (solutions.md:267). The CHP district heat is now $0{,}560\,P_{\text{o},\text{CHP}}$, the same symbol as in the Kaava row $P_\text{k,CHP} = 0{,}560\,P_{\text{o},\text{CHP}}$. My earlier Polish item is resolved: one symbol means one quantity, and $P_{\text{o},\text{B}}$ is option B's total only.
+- I recomputed with my own formulas: $P_{\text{o},\text{A}} = 100/0{,}400 + 200/0{,}900 = 472{,}22\,\text{MW}$ and $P_{\text{o},\text{CHP}} = 312{,}5\,\text{MW}$. The CHP heat is $175{,}0\,\text{MW}$ and the boiler's fuel $27{,}78\,\text{MW}$, so $P_{\text{o},\text{B}} = 340{,}28\,\text{MW}$. The difference is $131{,}94 \approx 132\,\text{MW}$ and the saving 27,9 % ≈ 28 %. answers.py line 37 matches.
+- The symbolic chain, the Sijoitus and the Järkevyys (total efficiency 0,880, 275 MW useful, option A 0,635) are unchanged and consistent with the new Annettu.
+- No other line changed. My earlier checks still hold.
+- The hash was the same at the start and the end.

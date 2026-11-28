@@ -746,11 +746,11 @@
       "mistakes": [
         {
           "value": 58.75,
-          "feedback": "Kerroit taitekertoimella, ja kulma kasvoi. Kun valo tulee veteen, se taittuu normaalia kohti: $\\sin\\beta = \\tfrac{n_1 \\sin\\alpha}{n_2}$. Kertaa tämä moduulissa FY7."
+          "feedback": "Kerroit taitekertoimella, ja kulma kasvoi. Kun valo tulee veteen, se taittuu normaalia kohti: $\\sin\\beta = \\tfrac{n_1 \\sin\\alpha}{n_2}$. Kertaa luvussa [*Valon heijastuminen ja taittuminen*](fy7-10.html)."
         },
         {
           "value": 30.08,
-          "feedback": "Jaoit kulman taitekertoimella. Taittumislaki koskee kulmien sinejä. Se ei koske kulmia. Kertaa tämä moduulissa FY7."
+          "feedback": "Jaoit kulman taitekertoimella. Taittumislaki koskee kulmien sinejä. Se ei koske kulmia. Kertaa luvussa [*Valon heijastuminen ja taittuminen*](fy7-10.html)."
         }
       ],
       "solution": "**Annettu:** tulokulma $\\alpha = 40{,}0^\\circ$, ilman taitekerroin $n_1 = 1{,}00$, veden taitekerroin $n_2 = 1{,}33$\n\n**Kysytty:** taitekulma $\\beta$ asteina normaaliin nähden\n\n**Periaate:** Valo hidastuu, kun se siirtyy ilmasta veteen. Siksi se taittuu rajapinnassa normaalia kohti. Taittumislaki kertoo, miten tulokulma ja taitekulma liittyvät toisiinsa.\n\n**Kaava:** $n_1 \\sin\\alpha = n_2 \\sin\\beta$, josta $\\sin\\beta = \\dfrac{n_1 \\sin\\alpha}{n_2}$\n\n**Muunnokset:** Muunnoksia ei tarvita: kulmat ovat asteina, eikä taitekertoimilla ole yksikköä.\n\n**Sijoitus:** $\\sin\\beta = \\dfrac{1{,}00 \\cdot \\sin 40{,}0^\\circ}{1{,}33} = \\dfrac{0{,}64279}{1{,}33} = 0{,}48330$, joten $\\beta = 28{,}901^\\circ$\n\n**Vastaus:** $\\beta \\approx 28{,}9^\\circ$. Vastauksessa on kolme merkitsevää numeroa, kuten tulokulmassa ja taitekertoimessa.\n\n**Järkevyys:** Taitekulma on pienempi kuin tulokulma. Se sopii, koska valo taittuu optisesti tiheämmässä aineessa normaalia kohti."
@@ -766,19 +766,19 @@
         {
           "text": "Jännite syntyy vain, kun käämin läpi kulkeva magneettivuo muuttuu.",
           "correct": true,
-          "feedback": "Oikein. Jännite indusoituu eli syntyy käämiin. Induktiolain mukaan indusoitunut jännite on verrannollinen siihen, kuinka nopeasti magneettivuo muuttuu. Paikallaan oleva magneetti antaa vakiovuon. Siksi jännite on nolla. Kertaa tämä moduulissa FY7."
+          "feedback": "Oikein. Jännite indusoituu eli syntyy käämiin. Induktiolain mukaan indusoitunut jännite on verrannollinen siihen, kuinka nopeasti magneettivuo muuttuu. Paikallaan oleva magneetti antaa vakiovuon. Siksi jännite on nolla. Kertaa luvussa [*Sähkömagneettinen induktio*](fy7-5.html)."
         },
         {
           "text": "Magneetti on liian heikko. Vahvempi paikallaan oleva magneetti indusoisi jännitteen.",
-          "feedback": "Vahvakin magneetti antaa paikallaan vakiovuon. Silloin jännitettä ei indusoidu. Ratkaisevaa on vuon muutos. Vuon suuruus ei ole ratkaisevaa. Kertaa tämä moduulissa FY7."
+          "feedback": "Vahvakin magneetti antaa paikallaan vakiovuon. Silloin jännitettä ei indusoidu. Ratkaisevaa on vuon muutos. Vuon suuruus ei ole ratkaisevaa. Kertaa luvussa [*Sähkömagneettinen induktio*](fy7-5.html)."
         },
         {
           "text": "Jännite indusoituisi, jos käämissä kulkisi ensin virta paristosta.",
-          "feedback": "Induktio ei tarvitse paristoa. Muuttuva magneettivuo indusoi jännitteen itse. Tässä vuo ei muutu. Siksi jännite on nolla. Kertaa tämä moduulissa FY7."
+          "feedback": "Induktio ei tarvitse paristoa. Muuttuva magneettivuo indusoi jännitteen itse. Tässä vuo ei muutu. Siksi jännite on nolla. Kertaa luvussa [*Sähkömagneettinen induktio*](fy7-5.html)."
         },
         {
           "text": "Käämi on magneetin sisällä oikosulussa, joten mittari ei voi näyttää jännitettä.",
-          "feedback": "Magneetti ei oikosulje käämiä. Jännite on nolla, koska magneettivuo ei muutu. Liikuta magneettia. Silloin mittari näyttää jännitettä. Kertaa tämä moduulissa FY7."
+          "feedback": "Magneetti ei oikosulje käämiä. Jännite on nolla, koska magneettivuo ei muutu. Liikuta magneettia. Silloin mittari näyttää jännitettä. Kertaa luvussa [*Sähkömagneettinen induktio*](fy7-5.html)."
         }
       ]
     },
@@ -800,11 +800,11 @@
       "mistakes": [
         {
           "value": 30,
-          "feedback": "Käytit pituutta senttimetreinä. Muunna: $25\\,\\text{cm} = 0{,}25\\,\\text{m}$. Kertaa tämä moduulissa FY7."
+          "feedback": "Käytit pituutta senttimetreinä. Muunna: $25\\,\\text{cm} = 0{,}25\\,\\text{m}$. Kertaa luvussa [*Voima virtajohtimeen: sähkömoottori ja kaiutin*](fy7-4.html)."
         },
         {
           "value": 0.75,
-          "feedback": "Unohdit vuon tiheyden: $F = IlB$. Kertaa tämä moduulissa FY7."
+          "feedback": "Unohdit vuon tiheyden: $F = IlB$. Kertaa luvussa [*Voima virtajohtimeen: sähkömoottori ja kaiutin*](fy7-4.html)."
         }
       ],
       "solution": "**Annettu:** $l = 25\\,\\text{cm}$, $I = 3{,}0\\,\\text{A}$, $B = 0{,}40\\,\\text{T}$; johdin on kohtisuorassa kenttää vastaan\n\n**Kysytty:** johtimeen vaikuttava magneettinen voima $F$\n\n**Periaate:** Magneettikenttä kohdistaa voiman varauksiin, jotka liikkuvat johtimessa. Kun johdin on kohtisuorassa kenttää vastaan, voima on suurin. Silloin voima on verrannollinen virtaan, pituuteen ja vuon tiheyteen.\n\n**Kaava:** $F = IlB$\n\n**Muunnokset:** $25\\,\\text{cm} = 25 \\cdot 10^{-2}\\,\\text{m} = 0{,}25\\,\\text{m}$\n\n**Sijoitus:** $$\n\\begin{aligned}\nF &= 3{,}0\\,\\text{A} \\cdot 0{,}25\\,\\text{m} \\cdot 0{,}40\\,\\text{T} \\\\\n&= 0{,}30\\,\\text{N}\n\\end{aligned}\n$$\n\n**Vastaus:** $F \\approx 0{,}30\\,\\text{N}$. Vastauksessa on kaksi merkitsevää numeroa, kuten lähtöarvoissa.\n\n**Järkevyys:** Yksiköt: $\\text{A}\\cdot\\text{m}\\cdot\\text{T} = \\text{N}$. Voima on yhtä suuri kuin noin $30\\,\\text{g}$:n paino. Se sopii koulun kokeeseen, jossa on magneetti ja muutaman ampeerin virta."

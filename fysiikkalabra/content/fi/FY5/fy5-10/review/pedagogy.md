@@ -1,23 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 3f85c11d16edeafb
+CONTENT-HASH: 7fc0a31977d821a4
 
-Scope: only the three new "Pysähdy ja mieti" blocks (teacher's note 2026-11-20), language: fi.
+Delta review, language: fi. Lesson text and inquiry feedback. Change: "harvennus" to "harventuma" (plural "harventumia"), wording only.
 
 ## Blocking
 None.
 
 ## Polish
-- Block 1 (frequency of a point 1 m from the hand): answerable from the sentence just above ("jokainen kohta värähtelee samalla taajuudella kuin käsi"); good placement after the pulse/periodic-wave paragraph. Does not touch the later predictions (speed and wavelength).
-- Block 2 (coil spring direction): answerable from the paragraph and figure above; the answer repeats the paragraph, it does not pre-empt Koe 1 (which asks for measured displacement of P). Acceptable.
-- Block 3 (v = lambda/T, 0,50 m and 0,25 s): clean numbers, one step, directly after the formula; differs from the worked example (pulse s/t then f) and from Ennuste 2, so nothing later is given away. The answer shows the symbolic form before the numbers.
-- Wording and language: clear, units in LaTeX, decimal comma (point in en). fi-easy answers split into short sentences as required.
-- Optional: block 3 could ask a follow-up-free variant of "the period is" but not needed.
+- The "types" figure (lesson.md lines 35-36, figures.py, and fi-easy figures.json key "harvennus") still labels the rarefactions "harvennus", while the text now says "harventumat". The labels are inside teacher-approved figures, so I did not treat it as blocking, but the term differs between figure and paragraph. Change the labels to "harventuma" when the figures are next opened for approval.
 
 ## Checked
-Physics of all three answers; that each is answerable from the preceding paragraph; placement (after the paragraph or figure it tests, none after the later experiments); nothing given away from Ennuste 1-2, Koe 1-3 or the conclusion; layout checks at 360/390/768/1280 px passed in the packet (no dedicated capture of an opened block exists; I did not open the preview).
-
-## Vanhan sisällön löydökset
-- Ydinajatus, first paragraph: about 190 words, over the 120-word guide.
-- Packet lesson.md ends with a stray closing code fence after the "scene" figure (check it is only a packet artefact).
-- "scene" figure (stadium wave) sits after Tiivistelmä, apart from any paragraph it explains.
-- Ennuste 1 feedback refers to "kokeessa jousessa", wording works only after the experiment (box reopened later; acceptable).
+- Each changed sentence reads correctly: "harventumia", "harventumat", "harventumassa" (fi-easy) are the right case forms and match the glossary (pitkittäinen aalto: tihentymiä ja harventumia).
+- Nothing else in the diff (figure and picture lines are approval notes only); no number, symbol or answer changed.
+- Correct options and feedback are still consistent: the correct answer text matches the option text in exercises.json and solutions.md.
+- Hash at start and end equal.

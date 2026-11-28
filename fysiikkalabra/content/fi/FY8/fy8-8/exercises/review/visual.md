@@ -1,17 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: ac689ba1a6a22e54
-SCOPE: delta numbers,reflow from 4f919a3a538a032a base 4b05399
+CONTENT-HASH: 3dd68982403477e9
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] No 390/360 px capture of an opened exercise solution (only 1280 px exist); phone width rests on `check_layout.py` 360/390 passing.
+(none)
 
 ## Checked
-- Delta: solutions.md Kaava steps of 8-4, 8-9, 8-11, 8-12 (L2/L3 items) and 8-23, 8-24 re-set as lead sentence plus aligned block.
-- Opened contact sheets #49-#60 and #73-#75, and full-size L2-1280-3 (8-11). Lead sentence, then block f = c/lambda, E = hf = hc/lambda, then the asked ratio as its own block; equals signs aligned, display fractions, upright units, decimal comma; nothing clipped, blocks inside the solution cards.
-- 8-23 block (E_A, E_B, E_C rows, lambda = c/f = hc/E_C) reads cleanly.
+- Delta: exercises.json: exact flags, plus fy8-8-L1-02 feedback for the wrong value 222 read from source: "Kuinka monta nukleonia emoytimestä poistuu alfahiukkasen mukana?" is correct, natural Finnish, a guiding question that does not give the answer, no number or unit needing LaTeX.
+- No rendered change: the "exact": true flag is data only; the layout checks (360-1280 px) are green in the packet.
+- Exercise captures are not present on disk for this packet (no review/shots); judged from the diff, since nothing visible changed.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

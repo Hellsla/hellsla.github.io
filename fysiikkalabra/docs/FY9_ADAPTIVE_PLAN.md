@@ -160,7 +160,9 @@ competencies.json ──────┘    (check, build)                    │
 4. **Pienet lisäykset olemassa olevaan** (jaettuja, eivät muuta käytöstä): `fl:attempt`-tapahtuman `detail`iin
    `first` (ensimmäinen yritys), `mistake` (osuneen `mistakes`-rivin indeksi) ja `choice` (valitun vaihtoehdon indeksi);
    `selfassess.js` lähettää `fl:rubric {id, got, max, crit}`. Tapahtuman nykyiset kentät ja kaikki tallennusavaimet
-   pysyvät ennallaan.
+   pysyvät ennallaan. Muoto `mistake`-kentälle (17c PR 1, 2026-11-26): kokonaisluku = tehtäväkohtaisen `mistakes`-rivin
+   indeksi, merkkijono (`sign`, `magnitude`, `time`, `kelvin`) = yleinen tunnistus (`templates/virhe.js`); valmentaja
+   lukee vain kokonaisluvut.
 5. **Tallennus**: yksi uusi avain **`ruukkilabra:fy9-valmentaja`**. Nimi on valittu niin, että nykyinen työtiedosto
    (`palautus.js` `KEY_RE`, joka poimii `…:fy9-…`) ottaa sen mukaan ilman muutosta: vienti ja tuonti toimivat heti, ja
    testi varmistaa sen. Mitään vanhaa avainta ei kirjoiteta uudelleen eikä muunneta.

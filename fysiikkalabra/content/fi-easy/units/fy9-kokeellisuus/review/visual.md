@@ -1,9 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: a7053b7857211354
-SCOPE: delta (old-content fixes, git diff origin/main)
-Checked: fy9-kokeellisuus (fi-easy): rendered preview page at 390 and 1280 px with every details/solution open (DOM check: no page overflow, no KaTeX error, no clipped or scrolling display formula); captures review/shots/*stage-sovella-*, *stage-exercises-*, *teacher-*, intro and stage-selita/tarkista tiles, with sample tiles opened at readable size (aallot fi sovella-1280-5 and 390-6, liike en sovella-390-9, ympyraliike fi-easy sovella-390-8, energia fi teacher-1280-1); changed numbers and units diffed against the source for decimal comma/point and \, thin space.
+CONTENT-HASH: 67c4c38be19a1232
 
-1. Blocking: none.
-2. Typography: changed numbers and units are LaTeX with thin space, decimal comma in fi and fi-easy, decimal point in en; aligned blocks and inline formulas fit at 390 px; no layout regressions from the changed lines.
-3. Language: changed lines read naturally and consistently with the glossary terms; no wording defect found.
-4. Polish: known drawing issues (kone-kuva W arrow, kalteva.webp, geo-kuva ray, kartta label, sahkokentta formula map E vs W) are known to the teacher, not re-judged here.
+## Blocking
+none
+
+## Polish
+none
+
+## Checked
+Round 2 delta: the changed hints in sovella/tasks.json (fi-easy) read for language and typography (units, \text{J/(kg}\cdot\text{K)}, decimal comma/point, thin spaces, colons in ratios); build rebuilt without errors. Round 1 polish items confirmed applied; the 390/1280 px layout from round 1 is unchanged because only hint text changed and the formulas are shorter or equal in length.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

@@ -18,6 +18,11 @@
           "kind": "calc",
           "points": 5,
           "text": "Piirrä trailerin ja veneen voimakuvio. Kuinka suuri on pystysuora voima, jolla kytkin vaikuttaa vetoaisaan? Mikä on aisapaino?",
+          "hints": [
+            "Minkä pisteen ympäri traileri ja vene voisivat kiertyä? Minkä voiman momentti on silloin nolla?",
+            "Kun mikään ei liiku, momenttien summa on nolla. Yhteen suuntaan kiertävät momentit ovat yhtä suuret kuin toiseen suuntaan kiertävät. Momentti on voima kertaa varsi: $M = Fd$. Varsi on etäisyys pyörimispisteestä voiman suoraan.",
+            "Valitse pyörimispisteeksi trailerin akseli. Kytkimen voiman varsi on $3{,}25\\,\\text{m}$. Painojen varret ovat painopisteiden etäisyydet akselista. Kirjoita yhtälö ensin symbolein. Aisapaino on voima jaettuna luvulla $g$."
+          ],
           "answer": [
             {
               "name": "F",
@@ -65,6 +70,11 @@
           "kind": "calc",
           "points": 3,
           "text": "Kuinka suurella voimalla maa vaikuttaa trailerin pyöriin?",
+          "hints": [
+            "Mitkä pystysuorat voimat vaikuttavat trailerin ja veneen yhdessä? Mikä on niiden summa, kun mikään ei liiku?",
+            "Pystysuunnassa voimien summa on nolla, $\\Sigma F = 0$: ylös vievät voimat ovat yhtä suuret kuin alas vievät.",
+            "Painot yhteensä ovat $(m_\\text{t} + m_\\text{v})g$. Vähennä siitä a-kohdan kytkimen voima. Saat molempien pyörien yhteisen voiman $N$."
+          ],
           "answer": {
             "value": 5.392,
             "unit": "kN",
@@ -93,6 +103,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Venettä voi siirtää trailerin päällä eteenpäin. Kuinka paljon venettä on siirrettävä, jotta aisapaino on $60\\,\\text{kg}$?",
+          "hints": [
+            "Mikä muuttuu, kun venettä siirretään eteenpäin? Mikä pysyy samana? Minkä voiman varsi muuttuu?",
+            "Kirjoita momenttiehto akselin suhteen kuten a-kohdassa. Veneen painopisteen etäisyys on nyt $0{,}12\\,\\text{m} + \\Delta x$. Kytkimen voima on tavoitteen aisapaino kertaa $g$.",
+            "Luku $g$ supistuu yhtälöstä. Ratkaise $\\Delta x$ ensin symbolein ja sijoita vasta sitten. Muunna lopuksi vastaus senttimetreiksi."
+          ],
           "answer": {
             "value": 11.09,
             "unit": "cm",
@@ -126,6 +141,11 @@
           "kind": "word",
           "points": 3,
           "text": "Mökkimatkaa varten veneen perään lastataan $30\\,\\text{kg}$ polttoainetta ja varusteita. Kuorma on $1{,}40\\,\\text{m}$ akselin takana. Miten aisapaino muuttuu a-kohdan tilanteesta? Miksi liian pieni tai negatiivinen aisapaino on vaarallinen?",
+          "hints": [
+            "Kummalla puolella akselia lisäkuorma on? Mihin suuntaan se kiertää kokonaisuutta verrattuna veneen ja trailerin painoihin?",
+            "Akselin takana oleva paino kiertää toiseen suuntaan kuin akselin edessä olevat painot. Momenttiehdossa sen momentti pienentää kytkimen voimaa.",
+            "Laske kuorman momentti akselin suhteen: massa kertaa $g$ kertaa varsi. Jaa se kytkimen varrella. Saat aisapainon muutoksen. Mieti lopuksi: mitä kytkimen pitäisi tehdä, jos aisapaino olisi pienempi kuin nolla?"
+          ],
           "criteria": [
             {
               "text": "Perustelee momenttiehdolla, että akselin takana oleva kuorma pienentää aisapainoa: $30\\,\\text{kg} \\cdot 1{,}40\\,\\text{m} : 3{,}25\\,\\text{m} \\approx 13\\,\\text{kg}$. Aisapaino on silloin noin $32\\,\\text{kg}$.",
@@ -164,6 +184,11 @@
           "kind": "calc",
           "points": 5,
           "text": "Kuinka suuri on satelliitin ratanopeus? Kuinka pitkä on sen kiertoaika minuutteina?",
+          "hints": [
+            "Mikä voima antaa satelliitille kiihtyvyyden kohti Maan keskipistettä? Mikä on radan säde?",
+            "Gravitaatio on satelliitin ainoa voima. Se antaa normaalikiihtyvyyden: $\\gamma\\dfrac{Mm}{r^2} = m\\dfrac{v^2}{r}$. Kiertoaika on $T = \\dfrac{2\\pi r}{v}$.",
+            "Radan säde on Maan säde plus radan korkeus. Satelliitin massa $m$ supistuu pois. Ratkaise $v$ ensin symbolein. Muunna kilometrit metreiksi ennen sijoitusta. Muunna kiertoaika lopuksi sekunneista minuuteiksi."
+          ],
           "answer": [
             {
               "name": "v",
@@ -211,6 +236,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Kuinka suuri gravitaatiovoima satelliittiin vaikuttaa radalla? Kuinka monta prosenttia se on satelliitin painosta maanpinnalla?",
+          "hints": [
+            "Minkä lain mukaan Maa vetää satelliittia? Mikä etäisyys siihen sijoitetaan?",
+            "Gravitaatiovoima on $F = \\gamma\\dfrac{Mm}{r^2}$. Paino maanpinnalla on $G = mg$.",
+            "Etäisyys mitataan Maan keskipisteestä, ei pelkästä korkeudesta. Prosenttiosuus saadaan jakamalla radan voima painolla $mg$."
+          ],
           "answer": {
             "value": 31.5,
             "unit": "kN",
@@ -244,6 +274,11 @@
           "kind": "calc",
           "points": 3,
           "text": "Satelliitin radan taso pysyy avaruudessa lähes paikallaan. Maa pyörii sen alla. Kuinka monta astetta Maa kiertyy sinä aikana, kun satelliitti tekee yhden kierroksen? Kuinka pitkän matkan päiväntasaajalla oleva kohta siirtyy samassa ajassa?",
+          "hints": [
+            "Kuinka suuri osa Maan pyörähdysajasta kuluu satelliitin yhteen kierrokseen?",
+            "Maa pyörii tasaisesti. Kiertymä on osuus $\\dfrac{T}{T_\\text{Maa}}$ koko kierroksesta $360^\\circ$. Päiväntasaajan kohdan matka on sama osuus Maan ympärysmitasta $2\\pi R$.",
+            "Muunna molemmat ajat sekunneiksi ennen jakamista. Käytä a-kohdan kiertoaikaa ja Maan pyörähdysaikaa $23\\,\\text{h}\\;56\\,\\text{min}$."
+          ],
           "answer": [
             {
               "name": "deg",
@@ -281,6 +316,11 @@
           "kind": "word",
           "points": 3,
           "text": "Opiskelija ehdottaa: ”Siirretään sääsatelliitti geostationaariselle radalle, niin se näkee Suomen koko ajan.” Geostationaarinen rata on $35\\,800\\,\\text{km}$:n korkeudella päiväntasaajan yläpuolella. Arvioi, miksi tarkkoihin mittauksiin pohjoisilta alueilta käytetään silti rataa, joka kulkee napojen yli.",
+          "hints": [
+            "Mikä on opiskelijan ehdotuksen hyvä puoli? Mitä ehdotus ei ota huomioon, kun mitataan tarkasti pohjoisia alueita?",
+            "Vertaa kahta rataa kahdella asialla: etäisyys mitattavaan kohteeseen (näkyvätkö pienet yksityiskohdat) ja radan taso (näkyykö napa-alue).",
+            "Laske, kuinka monta kertaa kauempana geostationaarinen rata on kuin $830\\,\\text{km}$. Mieti, miltä kulmalta Suomi näkyy satelliitista, joka on päiväntasaajan tasossa."
+          ],
           "criteria": [
             {
               "text": "Perustelee etäisyydellä: geostationaarinen rata on yli $40$ kertaa kauempana kuin $830\\,\\text{km}$. Siksi samalla laitteella yksityiskohdat näkyvät paljon epätarkempina.",
@@ -324,6 +364,11 @@
           "kind": "graph",
           "points": 4,
           "text": "Piirrä kuvaaja: langan voima kierrosajan funktiona. Perustele, miksi pisteisiin ei sovi suora.",
+          "hints": [
+            "Mikä on yhden kierroksen aika, kun mitattiin kymmenen kierroksen aika? Millaisen jonon pisteet muodostavat, kun piirrät ne?",
+            "Langan voima antaa kärrylle normaalikiihtyvyyden: $F = m\\dfrac{v^2}{r}$. Nopeus on $v = \\dfrac{2\\pi r}{T}$. Miten $F$ riippuu ajasta $T$ näiden mukaan?",
+            "Laske taulukkoon yhden kierroksen aika $T = \\dfrac{10T}{10}$ ja piirrä pisteet. Tarkista, muuttuuko voima yhtä paljon, kun aika kasvaa aina saman verran."
+          ],
           "criteria": [
             {
               "key": "graph_axes",
@@ -346,6 +391,11 @@
           "kind": "graph",
           "points": 6,
           "text": "Kärryn massa ja etäisyys akselista pysyvät samoina. Muodosta aineistosta suure, jonka funktiona langan voiman kuvaaja on suora. Perustele valintasi. Piirrä kuvaaja ja sovita pisteisiin suora.",
+          "hints": [
+            "Minkä suureen funktiona voiman kuvaajan pitäisi olla suora? Mitä yhteyttä käytät sen löytämiseen?",
+            "Sijoita $v = \\dfrac{2\\pi r}{T}$ yhtälöön $F = m\\dfrac{v^2}{r}$. Katso, minkä suureen kerrannainen $F$ on, kun $m$ ja $r$ pysyvät samoina.",
+            "Laske taulukkoon jokaiselle riville tämä suure yksikköineen. Piirrä pisteet ja sovita suora. Mieti, mihin suoran pitäisi mallin mukaan kulkea."
+          ],
           "criteria": [
             {
               "text": "Perustelee linearisoinnin eli sen, miten kuvaajasta tehdään suora: $F = m\\tfrac{v^2}{r}$ ja $v = \\tfrac{2\\pi r}{T}$ antavat $F = 4\\pi^2 mr \\cdot \\tfrac{1}{T^2}$. Siksi $F$ on suoraan verrannollinen suureeseen $\\tfrac{1}{T^2}$.",
@@ -374,6 +424,11 @@
           "kind": "calc",
           "points": 5,
           "text": "Määritä suoran kulmakerroin. Määritä sen avulla kärryn massa. Vertaa tulosta punnittuun massaan.",
+          "hints": [
+            "Mitä suoran kulmakerroin kertoo, kun tiedät, mitä akseleilla on?",
+            "Mallin mukaan $F = k\\cdot\\dfrac{1}{T^2}$ ja $k = 4\\pi^2 mr$. Kulmakerroin on $k = \\dfrac{\\Delta F}{\\Delta(1/T^2)}$.",
+            "Lue kaksi pistettä sovitetulta suoralta. Pisteiden pitää olla kaukana toisistaan. Älä käytä mittauspisteitä. Laske $k$ yksikköineen. Ratkaise $m$ ensin symbolein. Vertaa tulosta punnittuun massaan $0{,}200\\,\\text{kg}$."
+          ],
           "answer": {
             "value": 0.1976,
             "unit": "kg",
@@ -412,6 +467,11 @@
           "kind": "calc",
           "points": 5,
           "text": "Valmistajan mukaan lanka kestää enintään $8{,}0\\,\\text{N}$:n voiman. Mikä on lyhin kierrosaika, jolla alustaa saa pyörittää tällä kärryllä ja tällä etäisyydellä? Arvioi, kuinka luotettava ennuste on.",
+          "hints": [
+            "Mikä on suurin voima, jonka lanka kestää? Mikä kierrosaika vastaa sitä suoran mukaan?",
+            "Suoralla $F = k\\cdot\\dfrac{1}{T^2}$. Voima saa olla enintään suurin sallittu, eli $F \\le F_\\text{max}$. Mitä se tarkoittaa kierrosajalle $T$?",
+            "Lyhin kierrosaika vastaa suurinta sallittua voimaa. Ratkaise $T$ symbolein. Vertaa sitten suureen $\\dfrac{1}{T^2}$ arvoa mitattuihin arvoihin: onko arvo niiden sisällä vai niiden ulkopuolella? Mikä on käsin mitatun ajan epävarmuus?"
+          ],
           "answer": {
             "value": 0.4937,
             "unit": "s",
@@ -471,6 +531,11 @@
           "kind": "word",
           "points": 5,
           "text": "Artikkelissa lukee: ”Nykyisillä asemilla astronautit leijuvat, koska $400\\,\\text{km}$:n korkeudella ei enää ole painovoimaa.” Arvioi väite.",
+          "hints": [
+            "Mikä voima pitää aseman radallaan $400\\,\\text{km}$:n korkeudella? Onko se siellä?",
+            "Gravitaatiokentän voimakkuus korkeudella on $\\gamma\\dfrac{M}{(R + h)^2}$. Maanpinnalla se on $g$. Painottomuus tarkoittaa, että lattia ei tue astronauttia. Mieti, mitä se vaatii asemalta ja astronautilta.",
+            "Laske kentän voimakkuus etäisyydellä $R + h$ ja vertaa maanpinnan arvoon. Selitä sitten, mikä kiihtyvyys on astronautilla ja mikä asemalla. Mitä se kertoo tukivoimasta?"
+          ],
           "criteria": [
             {
               "text": "Laskee tai arvioi gravitaatiokentän voimakkuuden $400\\,\\text{km}$:n korkeudella: $\\gamma\\tfrac{M}{(R + h)^2} \\approx 8{,}7\\,\\text{m/s}^2$. Se on lähes $90\\,\\%$ maanpinnan arvosta.",
@@ -499,6 +564,11 @@
           "kind": "word",
           "points": 5,
           "text": "Astronautti seisoo pyörivän renkaan lattialla. Selitä, miksi hän tuntee olevansa painava. Mihin suuntaan hänelle on ”alas”? Arvioi kierrosaika, jolla lattia painaa astronauttia yhtä suurella voimalla kuin Maan pinta.",
+          "hints": [
+            "Mihin suuntaan astronautin kokonaisvoiman täytyy osoittaa, kun hän kulkee renkaan mukana ympyrärataa? Mikä voima sen antaa?",
+            "Lattian tukivoima antaa normaalikiihtyvyyden: $N = m\\dfrac{v^2}{r}$. Jotta paino tuntuisi samalta kuin Maan pinnalla, tukivoiman pitää olla $N = mg$.",
+            "Yhdistä ehdot: $\\dfrac{v^2}{r} = g$ ja $v = \\dfrac{2\\pi r}{T}$. Massa supistuu. Ratkaise $T$ ensin symbolein. Mieti myös, mihin suuntaan lattia on astronautin jalkoihin nähden."
+          ],
           "criteria": [
             {
               "text": "Selittää, että astronautti kulkee ympyrärataa renkaan mukana. Siksi astronauttiin vaikuttavan kokonaisvoiman on osoitettava renkaan keskipisteeseen. Tämän voiman antaa lattian tukivoima $N = m\\tfrac{v^2}{r}$.",
@@ -522,6 +592,11 @@
           "kind": "word",
           "points": 5,
           "text": "Astronautti pitää avainta kädessään ja päästää siitä irti. Kuvaa ja selitä, miten avain liikkuu, kun sitä katsotaan aseman ulkopuolelta. Kuvaa myös, miltä avaimen liike näyttää astronautista.",
+          "hints": [
+            "Mikä voima vaikuttaa avaimeen, kun astronautti päästää siitä irti? Mitä Newtonin ensimmäinen laki sanoo?",
+            "Jos mikään voima ei vaikuta, kappale liikkuu suoraan ja tasaisella nopeudella. Avaimen nopeus irtoamishetkellä on radan tangentin suuntainen.",
+            "Kuvaa liike ensin aseman ulkopuolelta: mihin avain etenee? Mihin lattia samalla liikkuu? Mieti sitten, mitä astronautti näkee, kun hän pyörii lattian mukana."
+          ],
           "criteria": [
             {
               "text": "Selittää, että avaimeen ei vaikuta voimaa, kun se on irronnut (Maan gravitaatio jätetään huomiotta). Siksi avain jatkaa suoraan sillä nopeudella, joka sillä oli irtoamishetkellä. Se liikkuu radan tangentin suuntaan.",
@@ -566,6 +641,11 @@
           "kind": "calc",
           "points": 5,
           "text": "Laske kiven massa raportin mittauksista. Vertaa tulosta keittiövaa'an lukemaan.",
+          "hints": [
+            "Mitkä painot vaikuttavat metrimittaan? Missä kohdassa mitan oma paino vaikuttaa suhteessa tukiterään?",
+            "Momenttiehto terän suhteen: punnuksen momentti on yhtä suuri kuin kiven ja metrimitan momenttien summa, jos ne kiertävät mittaa samaan suuntaan. Tasapaksun mitan paino vaikuttaa sen keskikohdassa.",
+            "Laske metrimitan painopisteen etäisyys terästä. Katso, kummalla puolella terää painopiste on. Mitan massa on $120\\,\\text{g}$. Ratkaise $m_\\text{k}$ ensin symbolein. Vertaa tulosta vaa'an lukemaan."
+          ],
           "answer": {
             "value": 114.3,
             "unit": "g",
@@ -604,6 +684,11 @@
           "kind": "word",
           "points": 5,
           "text": "Arvioi raportin johtopäätöstä ja mittauksen luotettavuutta. Johtopäätös on raportin lopussa oleva päätelmä. Nimeä raportin puutteet ja perustele ne.",
+          "hints": [
+            "Selittääkö tukiterän kitka näin suuren eron? Mitä raportin laskusta puuttuu?",
+            "Tarkista, ovatko kaikki momentit mukana momenttiehdossa. Mieti, vaikuttaako kitka vain yhteen suuntaan vai molempiin.",
+            "Arvioi myös, kuinka tarkasti tasapainokohdan voi lukea. Jos se vaihtelee $\\pm 0{,}5\\,\\text{cm}$, kuinka paljon massa muuttuu? Montako numeroa tuloksessa on järkevää ilmoittaa? Montako mittausta tehtiin?"
+          ],
           "criteria": [
             {
               "key": "error_sources",
@@ -632,6 +717,11 @@
           "kind": "word",
           "points": 5,
           "text": "Suunnittele parempi koe samoilla välineillä. Kokeen pitää antaa kiven massa luotettavasti. Kerro, mitä mitataan, mitä pidetään vakiona ja miten tulos määritetään.",
+          "hints": [
+            "Mikä raportin koejärjestelyssä teki laskusta virheellisen? Miten sen voisi poistaa tai ottaa huomioon?",
+            "Momenttiehto antaa muodon $m_\\text{p} d_\\text{p} = m_\\text{k} d_\\text{k} + \\dots$. Muuta vain yhtä etäisyyttä ja pidä muut samoina. Silloin kuvaaja voi olla suora.",
+            "Kirjoita, mitä muutat, mitä pidät samana ja mitä mittaat joka kerta. Kerro, miten kuvaajasta saadaan massa. Kerro myös, miten arvioit epävarmuuden."
+          ],
           "criteria": [
             {
               "text": "Poistaa metrimitan painon momentin tai ottaa sen huomioon. Tuki asetetaan mitan painopisteeseen $50{,}0\\,\\text{cm}$, tai mitan paino otetaan mukaan momenttiehtoon.",
@@ -681,6 +771,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Kuinka suuri on vaunun nopeus silmukan pohjalla?",
+          "hints": [
+            "Mihin energia muuttuu, kun vaunu laskee mäen alas ja osa energiasta muuttuu sisäenergiaksi?",
+            "Liike-energia pohjalla on $88\\,\\%$ alun potentiaalienergiasta: $\\tfrac12 mv^2 = 0{,}88\\,mgh$.",
+            "Massa supistuu pois. Ratkaise $v$ ensin symbolein. Korkeus $h$ on mäen huipun korkeus silmukan pohjan yläpuolella."
+          ],
           "answer": {
             "value": 22.76,
             "unit": "m/s",
@@ -714,6 +809,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Kuinka suurella voimalla istuin painaa matkustajaa silmukan pohjalla? Kuinka moninkertainen voima on matkustajan painoon verrattuna?",
+          "hints": [
+            "Mitkä voimat vaikuttavat matkustajaan silmukan pohjalla? Mihin suuntaan kokonaisvoiman täytyy osoittaa?",
+            "Kokonaisvoima osoittaa ylös kohti ympyrän keskipistettä: $N - mg = m\\dfrac{v_\\text{p}^2}{r}$. Tässä $v_\\text{p}$ on a-kohdan nopeus.",
+            "Ratkaise $N$ ensin symbolein ja sijoita sitten a-kohdan nopeus. Moninkertaisuus saadaan jakamalla $N$ painolla $mg$."
+          ],
           "answer": {
             "value": 3696,
             "unit": "N",
@@ -747,6 +847,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Kuinka suuri on vaunun nopeus silmukan huipulla? Painaako istuin matkustajaa huipulla? Jos painaa, kuinka suurella voimalla?",
+          "hints": [
+            "Mikä energia muuttuu, kun vaunu nousee pohjalta huipulle? Mitkä voimat vaikuttavat matkustajaan huipulla?",
+            "Silmukassa häviöt jätetään pois: $\\tfrac12 mv_\\text{p}^2 = \\tfrac12 mv_\\text{h}^2 + mg\\cdot 2r$. Huipulla kokonaisvoima osoittaa alas: $N + mg = m\\dfrac{v_\\text{h}^2}{r}$.",
+            "Ratkaise ensin $v_\\text{h}$. Sijoita se sitten liikeyhtälöön. Huippu on pohjan yläpuolella korkeudella $2r$. Mitä $N$:n etumerkki kertoo siitä, painaako istuin matkustajaa?"
+          ],
           "answer": [
             {
               "name": "v",
@@ -789,6 +894,11 @@
           "kind": "word",
           "points": 3,
           "text": "Nykyaikaiset silmukat eivät ole ympyröitä. Niiden kaarevuussäde on huipulla pieni ja alaosassa suuri. Kaarevuussäde kertoo, kuinka jyrkästi rata kaartuu: pieni säde tarkoittaa jyrkkää kaarta. Selitä tulostesi avulla, miksi tällainen muoto on parempi matkustajalle.",
+          "hints": [
+            "Mitä aiemmat tulokset kertovat istuimen voimasta alhaalla ja nopeudesta ylhäällä? Mitä pitäisi muuttaa kummassakin kohdassa?",
+            "Normaalikiihtyvyys $a_\\text{n} = \\dfrac{v^2}{r}$ riippuu säteestä. Huipulla matkustaja pysyy istuimessa, kun $\\dfrac{v^2}{r} \\ge g$.",
+            "Mieti, mitä istuimen voimalle $N$ tapahtuu pohjalla, kun säde kasvaa ja nopeus pysyy samana. Mieti myös, mitä huipun ehdolle tapahtuu, kun säde pienenee."
+          ],
           "criteria": [
             {
               "text": "Selittää alaosan: suurempi kaarevuussäde pienentää normaalikiihtyvyyttä $\\tfrac{v^2}{r}$. Siksi myös istuimen voima pienenee. Ympyrämallissa voima oli yli kuusinkertainen painoon verrattuna.",
@@ -833,6 +943,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Millä korkeudella asema kiertää Maata aineiston mukaan? Sopiiko mallin korkeus $400\\,\\text{km}$ aineistoon? Laske aseman ratanopeus mallin avulla.",
+          "hints": [
+            "Mitä NASAn sivulta kannattaa lukea? Mihin mallin lukuun sitä verrataan?",
+            "Ympyräradalla nopeus on $v = \\dfrac{2\\pi r}{T}$. Tässä $r = R + h$ on radan säde Maan keskipisteestä.",
+            "Muunna säde metreiksi ja kiertoaika sekunneiksi ennen sijoitusta. Vertaa aineiston korkeutta mallin $400\\,\\text{km}$:iin."
+          ],
           "answer": {
             "value": 7.707,
             "unit": "km/s",
@@ -866,6 +981,11 @@
           "kind": "calc",
           "points": 3,
           "text": "Laske aseman normaalikiihtyvyys. Kuinka monta prosenttia se on putoamiskiihtyvyydestä maanpinnalla?",
+          "hints": [
+            "Mikä kiihtyvyys osoittaa ympyräliikkeessä kohti keskipistettä? Miten se riippuu nopeudesta ja säteestä?",
+            "Normaalikiihtyvyys on $a_\\text{n} = \\dfrac{v^2}{r} = \\dfrac{4\\pi^2 r}{T^2}$.",
+            "Käytä a-kohdan sädettä $r$. Vertaa tulosta putoamiskiihtyvyyteen $g = 9{,}81\\,\\text{m/s}^2$ jakamalla."
+          ],
           "answer": {
             "value": 8.773,
             "unit": "m/s^2",
@@ -894,6 +1014,11 @@
           "kind": "word",
           "points": 3,
           "text": "Astronautti leijuu aseman sisällä. Hän ei koske seiniin eikä lattiaan. Mikä voima antaa hänelle b-kohdan normaalikiihtyvyyden? Selitä liikeyhtälön avulla, miksi hän on painoton, vaikka Maan gravitaatio vaikuttaa häneen.",
+          "hints": [
+            "Mikä on ainoa voima, joka vaikuttaa leijuvaan astronauttiin? Mihin se osoittaa?",
+            "Jos lattia tukisi astronauttia, liikeyhtälö olisi $G - N = ma_\\text{n}$. Mitä $N$ on, kun gravitaatio yksin antaa kiihtyvyyden $a_\\text{n}$?",
+            "Vertaa astronautin ja aseman kiihtyvyyksiä. Kerro, mitä painottomuus tarkoittaa tukivoiman ja gravitaation kannalta. Vertaa gravitaation voimakkuutta b-kohdan tulokseen."
+          ],
           "criteria": [
             {
               "text": "Toteaa, että astronautti kiertää samaa rataa samalla nopeudella kuin asema. Maan gravitaatiovoima on ainoa voima, joka vaikuttaa häneen. Se osoittaa radan keskipisteeseen ja antaa normaalikiihtyvyyden: $G = ma_\\text{n}$.",
@@ -917,6 +1042,11 @@
           "kind": "calc",
           "points": 3,
           "text": "Kuinka paljon sähköenergiaa aseman aurinkopaneelit voivat tuottaa vuodessa aineiston mukaan? Laske keskimääräinen sähköteho, joka vastaa tätä energiaa.",
+          "hints": [
+            "Mikä luku NASAn sivulla kertoo energian vuodessa? Miten teho ja energia liittyvät toisiinsa?",
+            "Keskimääräinen teho on energia jaettuna ajalla: $P = \\dfrac{E}{t}$.",
+            "Käytä aikaa tunteina, $t = 365 \\cdot 24\\,\\text{h}$, ja energiaa kilowattitunteina. Silloin tulos tulee suoraan kilowatteina."
+          ],
           "answer": {
             "value": 83.9,
             "unit": "kW",
@@ -945,6 +1075,11 @@
           "kind": "word",
           "points": 2,
           "text": "Asemalla on aurinkopaneelien lisäksi akkuja. Selitä aseman radan ja kiertoajan avulla, miksi akkuja tarvitaan. Miksi d-kohdan keskimääräinen teho ei yksin kerro, riittääkö sähkö joka hetki?",
+          "hints": [
+            "Mitä asemalle tapahtuu joka kierroksella suhteessa Aurinkoon? Kuinka usein?",
+            "Aseman kiertoaika on $92\\,\\text{min}$. Mieti, kuinka suuri osa kierroksesta kuluu Maan varjossa. Mitä paneelit silloin tuottavat?",
+            "Keskiteho lasketaan koko vuoden energiasta. Mieti, kuinka suuri tuotanto on varjossa ja valossa verrattuna keskiarvoon. Mitä laitteet tarvitsevat joka hetki?"
+          ],
           "criteria": [
             {
               "text": "Selittää, että asema kulkee Maan varjon läpi noin $92\\,\\text{min}$:n välein eli lähes joka kierroksella. Varjossa paneelit eivät tuota sähköä. Laitteet tarvitsevat sähköä kuitenkin koko ajan.",
@@ -984,6 +1119,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Määritä kaarteen säde kuvaajan avulla.",
+          "hints": [
+            "Mitkä pisteet voit lukea kuvaajalta tarkasti apuviivojen avulla?",
+            "Ympyräradalla normaalikiihtyvyys on $a_\\text{n} = \\dfrac{v^2}{r}$.",
+            "Ratkaise $r$ ensin symbolein. Sijoita yksi yhteen kuuluva pari $(v, a_\\text{n})$, jonka luit kuvaajalta. Kirjoita myös yksiköt."
+          ],
           "answer": {
             "value": 75.0,
             "unit": "m",
@@ -1017,6 +1157,11 @@
           "kind": "calc",
           "points": 3,
           "text": "Piirrä auton voimakuvio. Kuinka suuri kitkavoima tarvitaan, kun auto ajaa kaarteen nopeudella $15\\,\\text{m/s}$?",
+          "hints": [
+            "Mikä voima kääntää auton kaarteessa? Mihin suuntaan se osoittaa? Mitä piirrät voimakuvioon?",
+            "Vaakasuunnassa kitka on ainoa voima, joten $\\Sigma F = ma_\\text{n}$.",
+            "Kitka on renkaiden lepokitkaa, koska renkaat eivät liu'u. Keskipakoisvoimaa ei piirretä. Käytä a-kohdassa luettua normaalikiihtyvyyttä."
+          ],
           "answer": {
             "value": 3.6,
             "unit": "kN",
@@ -1045,6 +1190,11 @@
           "kind": "calc",
           "points": 5,
           "text": "Kuinka suurella nopeudella auto voi enintään ajaa kaarteen märällä tiellä liukumatta? Anna vastaus myös yksikössä $\\text{km/h}$.",
+          "hints": [
+            "Mikä rajoittaa kitkavoiman suuruutta? Mikä on sen suurin arvo?",
+            "Lepokitka on enintään $F_\\text{max} = \\mu_0 N$. Pystysuunnassa $N = mg$. Rajatilanteessa kitka antaa normaalikiihtyvyyden.",
+            "Kirjoita liikeyhtälö rajatilanteessa. Massa supistuu pois. Ratkaise $v$ ensin symbolein. Muunna lopuksi yksikköön $\\text{km/h}$: $1\\,\\text{m/s} = 3{,}6\\,\\text{km/h}$."
+          ],
           "answer": {
             "value": 19.18,
             "unit": "m/s",
@@ -1083,6 +1233,11 @@
           "kind": "word",
           "points": 3,
           "text": "Auto kuormataan matkustajilla ja tavaroilla, ja sen massa on $1500\\,\\text{kg}$. Miten kuorma vaikuttaa kaarteen suurimpaan nopeuteen märällä tiellä? Muuttuuko kuvaaja? Perustele laskemalla.",
+          "hints": [
+            "Mitkä suureet ovat rajatilanteen yhtälössä? Mitkä niistä riippuvat massasta?",
+            "Rajatilanteessa $\\mu_0 mg = \\dfrac{mv^2}{r}$. Vertaa tarvittavaa kitkaa ja suurinta mahdollista kitkaa uudella massalla.",
+            "Laske nopeudella $15\\,\\text{m/s}$ tarvittava kitka $ma_\\text{n}$. Laske myös suurin mahdollinen kitka $\\mu_0 mg$ massalla $1500\\,\\text{kg}$. Tarkista, onko massa mukana kuvaajan yhtälössä $a_\\text{n} = \\dfrac{v^2}{r}$."
+          ],
           "criteria": [
             {
               "text": "Perustelee, että massa supistuu liikeyhtälöstä $\\mu_0 mg = \\dfrac{mv^2}{r}$, joten suurin nopeus $$\n\\begin{aligned}\n\\sqrt{\\mu_0 g r} &\\approx 19\\,\\text{m/s}\n\\end{aligned}\n$$ ei muutu.",
@@ -1128,6 +1283,11 @@
           "kind": "calc",
           "points": 6,
           "text": "Piirrä tangon ja kyltin voimakuvio. Kuinka suuri voima vaijerissa on?",
+          "hints": [
+            "Minkä pisteen suhteen momenttiehto kannattaa kirjoittaa, jotta tuntematon saranan voima ei tule mukaan?",
+            "Voiman momentti on voima kertaa kohtisuora varsi. Vaijerin voiman kohtisuora osa tankoon nähden on $T\\sin\\theta$.",
+            "Kyltin paino vaikuttaa tangon päässä. Tangon oma paino vaikuttaa sen keskellä. Kirjoita momenttiehto saranan suhteen symbolein. Tangon pituus supistuu. Pituuden ja kulman arvot luetaan kuvasta."
+          ],
           "answer": {
             "value": 382.6,
             "unit": "N",
@@ -1171,6 +1331,11 @@
           "kind": "calc",
           "points": 5,
           "text": "Kuinka suuri on saranan tankoon kohdistama voima?",
+          "hints": [
+            "Mitä voimia tankoon vaikuttaa? Mitä niistä jo tiedät? Mitkä osat saranan voimalla on?",
+            "Kun mikään ei liiku, voimien summa on nolla erikseen vaaka- ja pystysuunnassa. Saranan voimalla on vaakaosa $H$ ja pystyosa $V$.",
+            "Laske $H$ ja $V$ a-kohdan voiman $T$ osien avulla. Yhdistä ne suuruudeksi $\\sqrt{H^2 + V^2}$. Voit tarkistaa $V$:n momenttiehdolla kyltin päästä."
+          ],
           "answer": {
             "value": 331.7,
             "unit": "N",
@@ -1209,6 +1374,11 @@
           "kind": "calc",
           "points": 3,
           "text": "Vaijeri kestää enintään $600\\,\\text{N}$:n voiman. Kuinka suuri on suurin kyltin massa, jota vaijeri vielä pitää?",
+          "hints": [
+            "Mikä ehto määrää suurimman massan? Kuinka suuri voima vaijerissa on silloin?",
+            "Käytä samaa momenttiehtoa kuin a-kohdassa. Nyt tuntematon on $m_\\text{s}$. Vaijerin voima on $T = T_\\text{max}$.",
+            "Ratkaise $m_\\text{s}$ ensin symbolein. Tangon paino vaikuttaa sen keskellä. Sen varsi on puolet tangon pituudesta."
+          ],
           "answer": {
             "value": 29.08,
             "unit": "kg",
@@ -1237,6 +1407,11 @@
           "kind": "word",
           "points": 3,
           "text": "Vaijeri kiinnitetään seinään korkeammalle niin, että vaijerin ja tangon välinen kulma on $45^\\circ$. Miten vaijerin voima muuttuu a-kohdasta? Perustele laskemalla ja selitä, miksi muutos on tämän suuntainen.",
+          "hints": [
+            "Mikä osa vaijerin voimasta kantaa painoa pystysuunnassa? Mihin kulma vaikuttaa?",
+            "Momenttiehto saranan suhteen antaa vaijerin voiman pystyosalle $T\\sin\\theta$ ehdon, joka riippuu painoista. Mitä tapahtuu $T$:lle, kun $\\theta$ kasvaa?",
+            "Laske uusi $T$ symbolein. Pystyosa $T\\sin\\theta$ on sama kuin a-kohdassa. Vertaa tulosta a-kohtaan. Mieti, mikä osa voimasta kantaa painoa ja mikä vetää tankoa kohti seinää."
+          ],
           "criteria": [
             {
               "text": "Perustelee momenttiehdolla: vaijerin voiman pystykomponentti $T\\sin\\theta \\approx 191\\,\\text{N}$ ei riipu kulmasta, joten suuremmalla kulmalla koko voima $T$ on pienempi.",

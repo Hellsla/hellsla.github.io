@@ -1,16 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 0cb24339a7f174f5
+CONTENT-HASH: 41092b6a79bcf791
 
 ## Blocking
 None.
 
 ## Polish
-- [Minor] open-exercises-1280-3 (11-3) — the Reading the graph block repeats a formula on its own line right after a short paragraph; fine, but the "Formula" row is the only place the page is tall. No action needed.
+- [Minor] Formula blocks (all chapters) — the aligned Formula rows put the left sides right-aligned at "=", so short and long left sides sit in a stepped column; this is readable and consistent with the other aligned blocks, no action needed.
 
 ## Checked
-- Delta (md-paragraphs: solutions.md, words unchanged). There are no 360 px captures; the 390 px ones were used.
-- 1280 px with solutions open: fy3-9-open-exercises-1280-3.png (11-3: Given, Find, Principle, Reading the graph, Formula as separate paragraphs, even spacing, equations aligned); fy3-9-open-tarkista-1280-2.png (hints open, formulas intact, no clipping).
-- 390 px: fy3-9-stage-exercises-390.png (level list only, solutions closed); fy3-9-stage-tarkista-390-2.png (task cards, no overflow). The changed solution paragraphs were judged from the 1280 px captures.
+- Delta: only the Formula step of the model solutions changed to aligned multi-row blocks (solutions.md).
+- 1280 px, solutions open: fy3-9-open-exercises-1280-3 and -L3-5 (isothermal and cylinder formulas, 2-row and aligned blocks).
+- Rows align at "=", fractions are in display style, subscripts and units upright, nothing clipped or overflowing, order principle then symbolic steps then asked quantity is kept, spacing to the Conversions block intact.
+- No 360/390 px capture of an opened solution; judged from 1280 px captures.
 - Hash run at start and end: unchanged.
 
 ## Scores

@@ -259,7 +259,7 @@
     {
       "id": "fy1-3-L2-08",
       "level": 2,
-      "text": "A student hangs first a light ball and then a heavy ball at the end of the string of the same pendulum, and measures the time of ten swings with a hand-held stopwatch five times with each ball. The uncertainty of a hand-timed measurement is $\\Delta t = 0.2\\,\\text{s}$ for each result. The averages given by the calculator are $\\bar{t}_\\text{light} = 14.30\\,\\text{s}$ for the light ball and $\\bar{t}_\\text{heavy} = 14.36\\,\\text{s}$ for the heavy ball (the time of ten swings). Which of the following conclusions do the data support?",
+      "text": "A student hangs first a light ball and then a heavy ball at the end of the string of the same pendulum, and measures the time of ten swings with a hand-held stopwatch five times with each ball. The uncertainty of a hand-timed measurement is $\\Delta t = 0.2\\,\\text{s}$ for each result. The averages given by the calculator are $\\bar{t}_\\text{light} = 14.30\\,\\text{s}$ for the light ball and $\\bar{t}_\\text{heavy} = 14.36\\,\\text{s}$ for the heavy ball (the time of ten swings). Also compare the difference of the averages with the spread within each series, that is, how much the results of a series vary. Which of the following conclusions do the data support?",
       "kind": [
         "data",
         "reasoning"
@@ -310,7 +310,7 @@
         {
           "text": "The data do not show that the mass of the ball affects the swing time, because the difference of the averages is smaller than the uncertainty of the hand-timed measurement.",
           "correct": true,
-          "feedback": "Correct: the difference $0.06\\,\\text{s}$ is within the uncertainty $0.2\\,\\text{s}$, so a difference cannot be shown. However, this does not prove that the times are equal, only that this measurement does not tell them apart."
+          "feedback": "Correct: the difference $0.06\\,\\text{s}$ is within the uncertainty $0.2\\,\\text{s}$, so a difference cannot be shown. The spread within each series ($0.4\\,\\text{s}$ and $0.3\\,\\text{s}$) is also more than five times the difference. However, this does not prove that the times are equal, only that this measurement does not tell them apart."
         },
         {
           "text": "The mass of the ball does not affect the swing time, because the averages are almost the same.",

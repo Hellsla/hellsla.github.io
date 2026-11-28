@@ -1,18 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: ed7c603eed0d5918
+CONTENT-HASH: 224e52aa680148ae
 
 ## Blocking
 - none
 
 ## Polish
-- [Minor] block 1 (spectrum, fundamental) — the block stands before the "FFT" subsection that explains peaks in a spectrum; it is answerable from the harmonic-series paragraph and its figure just above, so it works, but the word spectrum is only explained next. Optional: move it after the FFT paragraph.
-- [Minor] block 1 answer — asks for the pitch but the answer gives the rule, not the value; optionally add "250 Hz".
-
-## Vanhan sisällön löydökset
-- none
+- [Minor] fig-4 (data-fig="pitkittainen") — the drawn label still says "harvennus" while text, summary and alt text now say "harventuma"; teacher-approved as-is, redraw queued. Redraw the label as "harventuma".
 
 ## Checked
-- theory-1280 captures 2 and 3 of this language: all three "Pysähdy ja mieti" blocks closed (label, question with LaTeX numbers and units, Vastaus row), placement after the figure/formula paragraph they follow, neighbouring figures and layout intact. Opened answers at 360 px not seen in a capture; the layout check at 360 and 390 px is green in the packet.
+- fig-4-390 and theory-1280-1 (changed paragraph beside the figure, layout intact, text wraps normally); fig-1-390 and intro-1280 (hero, learn box, prior knowledge) for the changed hero/doppler pictures. Summary-list edit is a word swap in the same list item; not separately captured. Delta judged from changed text plus surrounding page.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 4

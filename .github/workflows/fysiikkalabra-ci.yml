@@ -118,6 +118,8 @@ jobs:
         run: python scripts/check_solutions.py --all
       - name: known physics errors are not taught as fact again (docs/physics-guardrails.md, teacher 2026-10-28)
         run: python scripts/test_physics_phrases.py
+      - name: the lint's monochrome-figure check skips a figure with a picture as its base, however long its alt text (work queue 32)
+        run: python scripts/test_lint_figures.py
       - name: every vector is written with an overline in texts, figures, simulations and interface strings (rule 14, teacher 2026-10-29)
         run: python scripts/test_notation.py
       - name: learning goals complete their heading "Tällä tunnilla opit" / "you will learn to" (teacher 2026-10-29)
@@ -127,7 +129,7 @@ jobs:
       - name: Sovella itsenäisesti tasks (points, criteria, competencies, links, solutions, answers, translations) and their tests (teacher 2026-10-28)
         run: python scripts/practice.py check && python scripts/test_practice.py
       - name: the FY9 coach's task index (kertaus/FY9.json against the units, the index's fields and parity, minikoe budgets; work queue 11b PR 2)
-        run: python scripts/valmentaja.py check && python scripts/test_valmentaja.py
+        run: python scripts/valmentaja.py check && python scripts/koetila.py check && python scripts/test_valmentaja.py
       - name: experimental investigations (metadata, prerequisites, F/E levels, working-mode blocks, help links, figures; teacher 2026-10-30)
         run: python scripts/investigations.py check
       - name: TVT-ohjeet (fields, links to and from investigations, figures; teacher 2026-10-31)
@@ -183,7 +185,9 @@ jobs:
       - name: the solution editor under every exercise (Abitti's Digabi editor, loaded on the first click; copy for L'Math; teacher 2026-11-01)
         run: python scripts/test_writepad.py
       - name: submission and grading trial, FY3-1 (Lataa ratkaisut, Apps Script import and grading view against a mock; teacher 2026-11-05)
-        run: python scripts/palautus_tasks.py --check && python scripts/test_palautus.py && python scripts/test_tehty.py && python scripts/test_koko.py && python scripts/test_kaikki.py && python scripts/test_valmentaja_log.py && python scripts/test_valmentaja_coach.py
+        run: python scripts/palautus_tasks.py --check && python scripts/test_palautus.py && python scripts/test_luokka.py && python scripts/test_tehty.py && python scripts/test_koko.py && python scripts/test_kaikki.py && python scripts/test_valmentaja_log.py && python scripts/test_valmentaja_coach.py && python scripts/test_valmentaja_steps.py && python scripts/test_valmentaja_polku.py && python scripts/test_koetila.py
+      - name: the FY9 exam mode's pages (the minikoe pages and the practice exam, closed, started and ended; work queue 11b PR 6; ci_scope.py leaves them out of the page plan)
+        run: python scripts/check_layout.py fy9-minikoe-m30-osa1-1 fy9-minikoe-m30-aihe-1 fy9-minikoe-m60-osa2-1 fy9-minikoe-m60-aineisto-1 fy9-harjoituskoe --width 360 --site && python scripts/check_layout.py fy9-minikoe-m30-osa1-1 fy9-minikoe-m30-aihe-1 fy9-minikoe-m60-osa2-1 fy9-minikoe-m60-aineisto-1 fy9-harjoituskoe --width 1280 --site
       - name: offline use (service worker, visited pages, KaTeX, simulation and answer check without a network; newest page wins; old caches removed; emergency switch; work queue 17a PR 1)
         run: python scripts/test_offline.py
       - name: read aloud on every lesson page (browser voice, formulas as words, the sentence and word highlighted; teacher 2026-11-03)
@@ -197,6 +201,8 @@ jobs:
         run: python scripts/test_round.py
       - name: the clipped-formula check of check_layout.py on the findings of fy8-1 and fy8-2 (work queue 5b, teacher 2026-11-15)
         run: python scripts/test_check_layout.py
+      - name: a long formula in a long task's hint scrolls in the box and never widens the page (11c, 2026-11-25)
+        run: python scripts/test_hint_formula.py
       - name: a figure beside its text never squeezes the text (fy3-6, fy7-14 at 1280 px, 2026-11-18)
         run: python scripts/test_fig_row.py
       - name: named formulas (```kaavat, FY9's names from mafytaulukot.fi) and the carry over approved formula names (teacher 2026-11-12)
@@ -208,6 +214,10 @@ jobs:
       - run: python scripts/test_inquiry.py
       - name: the answer check reads typed numbers and accepts half a unit in the shown last digit (templates/lesson.js part 1, teacher 2026-11-10)
         run: python scripts/test_answer_check.py
+      - name: general common-mistake recognition of a wrong number (templates/virhe.js, work queue 17c PR 1)
+        run: python scripts/test_virhe.py
+      - name: whole-number answers are checked exactly (mass number, atomic number, neutrons, grating order; work queue 29.1)
+        run: python scripts/test_tarkka.py
   checks-3:   # carried reviews, the course and language pipelines, answer positions, the built site, LaTeX
     runs-on: ubuntu-latest
     container: { image: "mcr.microsoft.com/playwright/python:v1.65.0-noble", options: "--ipc=host" }   # Chromium and its system packages preinstalled (see the header)

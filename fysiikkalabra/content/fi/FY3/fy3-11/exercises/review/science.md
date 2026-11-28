@@ -1,16 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: f719262d2793f4c5
-SCOPE: delta wording from c6cf825435b84022 base 6153818
+CONTENT-HASH: 953b72bdbe61f2f5
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
+- exercises/solutions.md:282–287 (fy3-11-L3-05, Kaava) — the new row $\Delta U = Q - W$ is right with this task's $W = p\,\Delta V$ (the gas's work, as Kysytty and Periaate define it), but the lesson's first law is $\Delta U = Q + W$ with $W$ the work done on the gas. Write the gas's work $W_\text{k} = p\,\Delta V$ as fy3-11-L1-09 does, so that $\Delta U = Q - W_\text{k}$ cannot be read as a second form of the first law.
+- The packet's diff shows these multi-line aligned blocks with their line breaks dropped (e.g. "W = F s F = pA …"); the file on disk is correct. Reviewed from `git diff ffa4ad2d81` on disk.
 
 ## Checked
-- Diff since base 6153818: only the Answer line of L2-04 in solutions.md changed; numbers, units and the answer 720 kW are identical.
-- New wording gives the reason first: the trailing zero of 480 kW is significant (three figures), 40.0 % has three figures, so the answer has three significant figures. This matches house rule P7 (a rated value's trailing zeros are significant unless the task says otherwise; "480 kW: three"); the task text gives 480 kW as the engine's rated mechanical power with no other statement.
-- Recomputed: P_o = 480 kW / 0.400 = 1200 kW, P_waste = 1200 kW - 480 kW = 720 kW; three figures is right for a quotient of two three-figure values.
-- The reasoning is the same as the passed version, only reordered; no new claim, no physics change.
-- Hash same at start and end.
+- Steam engine: $W = Fs$, $F = pA$, $\Delta V = As$ → $W = p\,\Delta V$; 12,0 kJ.
+- Boiler + engine: $\eta = W/Q_1$, $W = Pt$, $Q_1 = mH$ → $\eta = Pt/(mH)$; 9,0 % recomputed.
+- Expanding air: $\Delta U = Q + W$, $W = -p\,\Delta V$ (work on the gas, as the lesson) → $\Delta U = Q - p\,\Delta V$; 500 J.
+- Engine waste heat: $P_\text{o} = P_\text{a}/\eta$, $P_\text{o} = P_\text{a} + P_\text{hukka}$; 1200 kW and 720 kW.
+- Separate vs combined production: $P = P_\text{a}/\eta$ per plant, $\Delta P = P_\text{s}/\eta_\text{lauh} + P_\text{kl}/\eta_\text{k} - P_\text{pa}$; 120 MW.
+- Heat pump saving: $W = Q_1/\varepsilon$, $Q_1 = W + Q_2$ → $\Delta E = Q_2 = Q_1(1 - 1/\varepsilon)$; 9,60 MWh. The pump's COP is called lämpökerroin, not hyötysuhde (guardrail).
+- Car: $W = \eta Q_1$, $Q_1 = mH$, $m = \rho V$, $t = s/v$ → $P = \eta\rho VH/t$; $5{,}418\cdot10^7\,\text{J}/4500\,\text{s} = 12{,}0\,\text{kW}$.
+- COP from powers ($t$ cancels): 3,25; engine $\eta = P/(q_mH)$; four-day $Q_2 = Q_1 - W = 20{,}9\,\text{kWh}$; seasonal $\varepsilon_\text{kausi} = \Sigma Q/\Sigma W$ (not a mean of ratios) right.
+- Piston: $\Delta s = (V_2 - V_1)/A = 0{,}60\,\text{m}$; L3-05: $Q = 1040\,\text{J}$, $W = 300\,\text{J}$, $\Delta U = 740\,\text{J}$. Last task: $Q_1 = \varepsilon W$, $Q_2 = (\varepsilon - 1)W$.
+- Muunnokset, Sijoitus and answers unchanged against the previous PASS. Hash the same at start and end.

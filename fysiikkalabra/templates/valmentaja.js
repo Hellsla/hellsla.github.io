@@ -14,9 +14,9 @@
      first    1 the first attempt at the task (the only one that counts as evidence, plan 5.1), 0 a later one
      hints    how many hints of the task had been opened on this page when the attempt was made
      mistake  the number of the option picked (a wrong choice) or of the common mistake matched (a number), else null
-     mode     "p" practice ("k", exam mode, comes with its own pull request)
+     mode     "p" practice · "k" exam mode (koetila.js, PR 6: the attempts and self-assessments made when an exam is checked at its end)
    No name, no device id, no text the student wrote, nothing sent anywhere: this file has no network call (scripts/test_valmentaja_log.py
-   checks it). Other keys of this log (cells, steps, plan, exams) belong to later pull requests and are kept as they are.
+   checks it). Other keys of this log (cells, steps, plan) belong to later pull requests and are kept as they are; "exams" (PR 6) holds one summary row per ended exam.
    Keeping it works without storage (a private window, a full or blocked store): the page is as before. The key name matches the
    module's work file (padstore.js work(): "…:fy9-…"), so Tallenna työ tiedostoon and Avaa tallennettu työ carry it. */
 (() => {
@@ -47,7 +47,9 @@
     }
     canStore = false; return false;
   };
-  const taskKey = (id) => (LONG.test(id) ? id : unit + '#' + id);
+  const ko = () => window.flKoetila || null;   // the exam mode (koetila.js, PR 6): a minikoe page holds cards of many units, and an attempt checked at the end of an exam is logged with the mode k
+  const taskKey = (id) => { const k = ko() && ko().key(id); return k || (LONG.test(id) ? id : unit + '#' + id); };
+  const modeOf = (id, kind) => (ko() ? ko().mode(id, kind) : 'p');
   const now = () => new Date().toISOString().slice(0, 16) + 'Z';
   // hints opened on this page, per task (a toggle does not bubble, so it is heard in the capture phase)
   const hints = new Map();
@@ -72,12 +74,12 @@
     setTimeout(() => {   // a moment later: inquiry.js has then said which common mistake the number was (detail.mistake)
       const k = taskKey(det.id), d = read();
       if (det.kind === 'done') {   // a written solution, done: no result, only that it was made (once)
-        if (d && !d.log.some((r) => r[1] === k && r[2] === 's' && r[3] === null)) log([now(), k, 's', null, firstOf(d, k, 's') ? 1 : 0, opened(det.id), null, 'p']);
+        if (d && !d.log.some((r) => r[1] === k && r[2] === 's' && r[3] === null)) log([now(), k, 's', null, firstOf(d, k, 's') ? 1 : 0, opened(det.id), null, modeOf(det.id)]);
         return;
       }
       if (det.state !== 'ok' && det.state !== 'close' && det.state !== 'no') return;
       const miss = det.kind === 'choice' ? (det.state === 'no' && Number.isInteger(det.choice) ? det.choice : null) : (Number.isInteger(det.mistake) ? det.mistake : null);
-      log([now(), k, 'a', det.state, firstOf(d, k, 'a') ? 1 : 0, opened(det.id), miss, 'p']);
+      log([now(), k, 'a', det.state, firstOf(d, k, 'a') ? 1 : 0, opened(det.id), miss, modeOf(det.id)]);
     }, 0);
   });
   document.addEventListener('fl:rubric', (e) => {
@@ -85,9 +87,46 @@
     const det = e.detail || {}; if (!det.id || !det.complete || !(det.max > 0)) return;
     const k = taskKey(det.id), d = read();
     const result = Math.round(100 * Math.max(0, Math.min(1, det.got / det.max))) / 100;
-    log([now(), k, 's', result, firstOf(d, k, 's') ? 1 : 0, opened(det.id), null, 'p'], true);   // changing the points revises the same assessment
+    log([now(), k, 's', result, firstOf(d, k, 's') ? 1 : 0, opened(det.id), null, modeOf(det.id, 'rubric')], true);   // changing the points revises the same assessment
   });
-  window.flValmentaja = { KEY, unit, read, write, canStore: () => canStore };
+  // "Mikä vaihe oli vaikein?" (PR 5, plan 6.3): once a number task's solution or a long task's model answer is open, an optional row of chips from a fixed
+  // list; a chip pressed again is taken back. Kept in the same key as steps { "<task key>": ["sijoitus", ...] }, on this device only, never
+  // in the teacher's view (palautus_tasks.py takes every details out of a task). The row is made when the solution first opens, so the page is as
+  // before until then; where nothing can be stored (read gives null) there is no row.
+  const SCRIPT = document.currentScript;
+  const STEPS = ['tulkinta', 'annettu', 'periaate', 'kaava', 'muunnokset', 'sijoitus', 'vastaus', 'jarkevyys', 'kuvaaja'];
+  const stepsOf = (d, k) => (d && d.steps && typeof d.steps === 'object' && Array.isArray(d.steps[k]) ? d.steps[k].filter((x) => STEPS.includes(x)) : []);
+  const setStep = (k, id, on) => {
+    const d = read(); if (!d) return false;
+    const steps = d.steps && typeof d.steps === 'object' && !Array.isArray(d.steps) ? d.steps : {};
+    const mine = new Set(stepsOf({ steps }, k)); on ? mine.add(id) : mine.delete(id);
+    if (mine.size) steps[k] = STEPS.filter((x) => mine.has(x)); else delete steps[k];
+    if (Object.keys(steps).length) d.steps = steps; else delete d.steps;
+    return write(d);
+  };
+  let UI = null; try { UI = JSON.parse(SCRIPT && SCRIPT.dataset.t || 'null'); } catch (e) { UI = null; }
+  if (UI && UI.steps) document.addEventListener('toggle', (e) => {
+    const box = e.target;
+    if (!unit || !box || !box.matches || !box.open || box.querySelector('.hardstep')) return;
+    if (!box.matches('details.solution') && !box.matches('.practice-task > details.reveal')) return;
+    const task = box.closest(TASK); if (!task || !task.id || !read()) return;
+    const k = taskKey(task.id), row = document.createElement('div'), q = document.createElement('p'), chips = document.createElement('div');
+    row.className = 'hardstep'; row.setAttribute('role', 'group'); q.className = 'hardstep-q'; q.id = 'hs-' + task.id; q.textContent = UI.q;
+    row.setAttribute('aria-labelledby', q.id); chips.className = 'hardstep-chips';
+    for (const id of STEPS) {
+      const b = document.createElement('button'), on = stepsOf(read(), k).includes(id);
+      b.type = 'button'; b.className = 'hardstep-chip'; b.dataset.step = id; b.textContent = UI.steps[id] || id; b.setAttribute('aria-pressed', on ? 'true' : 'false');
+      b.addEventListener('click', () => {
+        const want = b.getAttribute('aria-pressed') !== 'true';
+        if (setStep(k, id, want)) b.setAttribute('aria-pressed', want ? 'true' : 'false');
+      });
+      chips.append(b);
+    }
+    row.append(q, chips);
+    const into = box.querySelector(':scope > .reveal-body') || box, rub = into.querySelector(':scope > .rubric');   // a long task: before the points the student gives, after the solution
+    rub ? into.insertBefore(row, rub) : into.append(row);
+  }, true);
+  window.flValmentaja = { KEY, unit, read, write, canStore: () => canStore, stepsOf, STEPS };
 })();
 
 /* (e) the goal and the courses taken (work queue 11b PR 4b, P13): the student's own two settings under the key ruukkilabra:fy9-tavoite
@@ -247,7 +286,7 @@
     return true;
   };
   // the settings (PR 4b): read leniently, written only by the student's own choice
-  const SET_KEY = 'ruukkilabra:fy9-tavoite', GOALS = ['LE', 'MC', 'BA'], CORE = ['concept', 'math', 'graph'];
+  const EXAM_KEY = 'ruukkilabra:fy9-koetila', SET_KEY = 'ruukkilabra:fy9-tavoite', GOALS = ['LE', 'MC', 'BA'], CORE = ['concept', 'math', 'graph'];
   const readSet = () => {
     try {
       const o = JSON.parse(localStorage.getItem(SET_KEY));
@@ -273,12 +312,157 @@
   const fits = (goal, t) => (goal === 'BA' ? t.check === 'auto' && t.kind !== 'long' : goal === 'LE' ? ['long', 'explain', 'interpret'].includes(t.kind) : false);
   const LIMIT_OF = { BA: { long: 0 }, MC: { long: 2, short: 2 }, LE: { plain: 1 } };
   const klass = (t) => [t.kind === 'long' ? 'long' : 'short', t.kind === 'choice' || t.kind === 'numeric' ? 'plain' : ''];
-  window.flCoach = { cells, recommend, compact, evidence, today, COMPS, readSet, writeSet, within, SET_KEY, GOALS };
+  // the mistakes that came back (PR 5, plan 6.2.3): a wrong option or a common mistake counts when the same one was hit at least twice, in any attempt;
+  // options that the side file groups as one misconception (index.misconceptions, "<task>/<number>") count together. [{task, n, mistake, grp}] most
+  // often first, a tie by the latest hit; the page shows the existing feedback of that option, nothing new
+  const repeated = (log, index) => {
+    const by = new Map(index.tasks.map((t) => [t.id, t])), grp = new Map();
+    for (const [name, g] of Object.entries(index.misconceptions || {})) for (const it of (g && g.items) || []) grp.set(it, name);
+    const hit = new Map();
+    log.forEach((r, i) => {
+      if (!Number.isInteger(r[6]) || !by.has(r[1])) return;
+      const pair = r[1] + '/' + r[6], key = grp.get(pair) || pair, h = hit.get(key) || { n: 0 };
+      h.n++; h.last = i; h.task = r[1]; h.mistake = r[6]; hit.set(key, h);
+    });
+    return [...hit.values()].filter((h) => h.n >= 2).sort((a, b) => b.n - a.n || b.last - a.last);
+  };
+  // the steps the student marked as the hardest, in the order of the list: [[step, [task id, ...]], ...] (a task the index no longer knows is left out)
+  const hardSteps = (d, index) => {
+    const known = new Set(index.tasks.map((t) => t.id)), s = d && d.steps && typeof d.steps === 'object' ? d.steps : {};
+    return V.STEPS.map((id) => [id, Object.keys(s).filter((k) => known.has(k) && Array.isArray(s[k]) && s[k].includes(id))]).filter((x) => x[1].length);
+  };
+  // the minikokeet and the practice exam in the order the goal suggests (PR 6, P8, P13): B-A the 30 minute sets first, L-E the 60 minute sets
+  // and the practice exam earlier; no goal and M-C the plain order. A pure function of the index and the goal; it hides and locks nothing.
+  const MINI_ORDER = { BA: ['osa1', 'aihe', 'osa2', 'aineisto', 'exam'], MC: ['osa1', 'osa2', 'aihe', 'aineisto', 'exam'], LE: ['osa2', 'aineisto', 'exam', 'osa1', 'aihe'] };
+  const miniOrder = (index, goal) => {
+    const order = MINI_ORDER[goal] || MINI_ORDER.MC;
+    const items = (index.minikokeet || []).map((m) => ({ id: m.id, kind: m.kind, minutes: m.minutes, points: m.points, href: 'fy9-minikoe-' + m.id + '.html' }));
+    const ex = (index.koetila || {})['fy9-harjoituskoe'];
+    if (ex && index.units.some((u) => u.id === 'fy9-harjoituskoe')) items.push({ id: 'fy9-harjoituskoe', kind: 'exam', minutes: ex.minutes, points: ex.points, href: 'fy9-harjoituskoe.html' });
+    return items.map((x, i) => [x, i]).sort((a, b) => order.indexOf(a[0].kind) - order.indexOf(b[0].kind) || a[1] - b[1]).map((x) => x[0]);
+  };
+  // ---- (f) the revision path (PR 7, plan 5.5 and 6.2.4): 14 or 28 days (or up to an exam day), 3-7 days a week, 20/40/60 minutes a day ----
+  // The student's own setting, one key on this device: { v: 1, start: "YYYY-MM-DD", days: 14 | 28 | null, exam: "YYYY-MM-DD" | null, per: 3..7, min: 20 | 40 | 60 }.
+  // path() is a pure function of the setting, the log, the index and the day; nothing is stored of the path itself, so a day that was missed
+  // piles up nothing: the days left are filled from what is still untouched. All dates are calendar days counted in whole days (UTC arithmetic
+  // on the date, never on hours), so a leap day and the change of the clock to summer or winter time cannot move a day.
+  const PATH_KEY = 'ruukkilabra:fy9-polku', PER = [3, 4, 5, 6, 7], MINS = [20, 40, 60], LENGTHS = [14, 28], DIAG = 'fy9-koe', DIAG_MIN = 30, NOT_LESSON = ['fy9-koe', 'fy9-harjoituskoe'], EXAM_MIN = 7, EXAM_MAX = 120;
+  const isDay = (x) => typeof x === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(x) && str(num(x)) === x;
+  const validPath = (o) => !!o && o.v === 1 && isDay(o.start) && PER.includes(o.per) && MINS.includes(o.min)
+    && (o.exam ? (o.days == null && isDay(o.exam) && num(o.exam) - num(o.start) >= EXAM_MIN && num(o.exam) - num(o.start) <= EXAM_MAX) : LENGTHS.includes(o.days));
+  const readPath = () => {
+    try { const o = JSON.parse(localStorage.getItem(PATH_KEY)); if (validPath(o)) return { v: 1, start: o.start, days: o.exam ? null : o.days, exam: o.exam || null, per: o.per, min: o.min }; } catch (e) { /* none or damaged: no path */ }
+    return null;
+  };
+  const writePath = (o) => {
+    try { if (!o) localStorage.removeItem(PATH_KEY); else if (validPath(o)) localStorage.setItem(PATH_KEY, JSON.stringify(o)); else return false; return true; } catch (e) { return false; }
+  };
+  const pathEnd = (p) => (p.exam ? num(p.exam) - 1 : num(p.start) + p.days - 1);   // the last day of the path (an exam path ends the day before the exam)
+  // the practice days as day numbers: in each week of seven days from the start, `per` days spread evenly (3: day 1, 3, 5; 5: 1, 2, 3, 5, 6; 7: all)
+  const trainDays = (p) => {
+    const s = num(p.start), e = pathEnd(p), off = Array.from({ length: p.per }, (_, i) => Math.floor(i * 7 / p.per)), out = [];
+    for (let n = s; n <= e; n++) if (off.includes((n - s) % 7)) out.push(n);
+    return out;
+  };
+  // the minikokeet that suit the day (not longer than the minutes, and of a course taken when courses are ticked), in the order the goal suggests
+  const miniFor = (index, idx, goal, minutes) => {
+    const have = new Set(idx.tasks.map((t) => t.id)), byId = new Map((index.minikokeet || []).map((m) => [m.id, m]));
+    return miniOrder(index, goal).filter((m) => {
+      if (m.kind === 'exam' || m.minutes > minutes) return false;
+      const src = byId.get(m.id), ids = src ? (src.short || []).concat(src.long || []) : [];
+      return !ids.length || ids.filter((i) => have.has(i)).length * 2 >= ids.length;
+    });
+  };
+  const path = (index, d, p, todayStr, opts) => {
+    opts = opts || {};
+    const goal = GOALS.includes(opts.goal) ? opts.goal : null, t0 = num(todayStr), B = p.min, e = pathEnd(p), lastWeek = e - 6;
+    const idx = within(index, opts.courses), none = { days: [], ended: t0 > e, end: str(e), start: p.start };
+    // what the path knows is the log up to the end of yesterday: today's own list stays as it was when the day began
+    const past = (d.log || []).filter((r) => { const x = dayOf(r[0]); return x && num(x) < t0; });
+    const touched = new Set(past.map((r) => r[1])), synth = past.slice();
+    const planned = new Map();
+    const mark = (n, t) => { planned.set(t.id, n); synth.push([str(n) + 'T10:00Z', t.id, 'a', 'ok', 0, 0, null, 'p']); };   // a planned task counts as touched for the days after it, never as evidence
+    const days = trainDays(p).filter((n) => n >= t0);
+    if (!days.length) return none;
+    const cs = cells(past, idx, todayStr, d.cells);
+    const needOf = (c, comp) => (c.W === 0 ? 0.6 : goal && sufficient(goal, comp) && c.W >= 2 && c.M >= 0.5 ? 0 : 1 - c.M);
+    // the unit's need: the mean over its cells that have evidence; a unit with none is "the rest", in the order of the course
+    const unitNeed = (u) => { const v = []; for (const c of COMPS) { const k = cs[u.id + '|' + c]; if (k && k.W > 0) v.push(needOf(k, c)); } return v.length ? v.reduce((x, y) => x + y, 0) / v.length : null; };
+    const lessons = idx.units.filter((u) => !NOT_LESSON.includes(u.id)).map((u, i) => ({ u, i, need: unitNeed(u) }));
+    const weak = lessons.filter((x) => x.need !== null && x.need >= 0.2).sort((a, b) => b.need - a.need || a.i - b.i), rest = lessons.filter((x) => !weak.includes(x));
+    const order = weak.concat(rest).map((x) => x.u);
+    const fit = (t) => t.min <= B;
+    // the diagnostic: the diagnostic's own short tasks not yet done, up to 30 minutes in all (the minutes of those already done count)
+    const isDiag = (t) => t.id.startsWith(DIAG + '#') && t.check === 'auto';
+    let diagLeft = DIAG_MIN - idx.tasks.filter((t) => isDiag(t) && touched.has(t.id)).reduce((a, t) => a + t.min, 0);
+    const queue = [];
+    for (const t of idx.tasks) if (isDiag(t) && !touched.has(t.id) && fit(t) && t.min <= diagLeft) { queue.push({ task: t, diag: true }); diagLeft -= t.min; }
+    const lessonDays = days.filter((n) => n < lastWeek);
+    const open = order.filter((u) => idx.tasks.some((t) => t.unit === u.id && !touched.has(t.id) && !t.id.startsWith(DIAG + '#') && fit(t)));
+    const capacity = lessonDays.length * B - queue.reduce((a, q) => a + q.task.min, 0);
+    const quota = Math.max(10, Math.floor(Math.max(0, capacity) / Math.max(1, open.length) / 5) * 5);
+    for (const u of open) {
+      const mine = idx.tasks.map((t, i) => ({ t, i })).filter((x) => x.t.unit === u.id && !touched.has(x.t.id) && !x.t.id.startsWith(DIAG + '#') && fit(x.t));
+      const want = (x) => Math.max(0, ...compsOf(x.t).map((c) => (cs[u.id + '|' + c] ? needOf(cs[u.id + '|' + c], c) : 0)));
+      mine.sort((a, b) => (goal && fits(goal, b.t) ? 1 : 0) - (goal && fits(goal, a.t) ? 1 : 0) || want(b) - want(a) || a.i - b.i);
+      const got = [];
+      let sum = 0;
+      for (const x of mine) {
+        if (sum + x.t.min > quota) continue;
+        if (goal === 'BA' && x.t.kind === 'long' && mine.some((y) => y.t.kind !== 'long')) continue;   // B-A: no long task while short ones are left
+        got.push(x); sum += x.t.min;
+      }
+      got.sort((a, b) => (a.t.kind === 'long') - (b.t.kind === 'long') || mine.indexOf(a) - mine.indexOf(b));   // the short tasks first, a long one last
+      for (const x of got) queue.push({ task: x.t });
+    }
+    const minis = miniFor(index, idx, goal, B);
+    const rq = idx.tasks.filter((t) => !t.id.startsWith(DIAG + '#') && fit(t)).sort((a, b) => order.findIndex((u) => u.id === a.unit) - order.findIndex((u) => u.id === b.unit));
+    // a day of revisions: the tasks the recommendations would give (due cells first, weakest cells), one after another while the minutes allow
+    const review = (n, left, items) => {
+      for (let round = 0; round < 4 && left >= 2; round++) {
+        const res = recommend(idx, { log: synth, cells: d.cells }, str(n), { goal, courses: [], budget: left });
+        let added = 0;
+        for (const r of res.recs) if (!(goal === 'BA' && r.task.kind === 'long') && r.task.min <= left && !items.some((x) => x.task && x.task.id === r.task.id)) { items.push({ task: r.task, why: r.reason.key }); mark(n, r.task); left -= r.task.min; added++; }
+        if (!added) break;
+      }
+      for (const t of rq) { if (left < 2) break; if (!(goal === 'BA' && t.kind === 'long') && t.min <= left && !touched.has(t.id) && !synth.some((r) => r[1] === t.id) && !items.some((x) => x.task && x.task.id === t.id)) { items.push({ task: t }); mark(n, t); left -= t.min; } }   // nothing to revise yet: the tasks of the course in order
+      for (const t of rq) {   // the course is used up: what was done at least three days ago is done again, the chapters in the order of the path
+        if (left < 2) break;
+        const was = planned.get(t.id);
+        if (!(goal === 'BA' && t.kind === 'long') && t.min <= left && (was === undefined || n - was >= 3) && !items.some((x) => x.task && x.task.id === t.id)) { items.push({ task: t }); mark(n, t); left -= t.min; }
+      }
+      return left;
+    };
+    const out = []; let miniAt = 0, lastIdx = 0;
+    for (const n of days) {
+      const items = []; let left = B;
+      if (n >= lastWeek) {
+        // the last week: revisions and minikokeet only (a minikoe on the first and the third practice day when it fits the minutes)
+        if (lastIdx % 2 === 0 && lastIdx < 4 && miniAt < minis.length) { const m = minis[miniAt++]; items.push({ mini: m }); left -= m.minutes; }
+        lastIdx++;
+        left = review(n, left, items);
+      } else {
+        // the first task that still fits the minutes left, the diagnostic's first; a task that does not fit waits for a longer day (the day is never left half empty for it)
+        const takeFrom = (diag) => { for (let i = queue.findIndex((q) => !!q.diag === diag && q.task.min <= left); i >= 0; i = queue.findIndex((q) => !!q.diag === diag && q.task.min <= left)) { const q = queue.splice(i, 1)[0]; if (synth.some((r) => r[1] === q.task.id)) continue; items.push(q); left -= q.task.min; mark(n, q.task); } };
+        takeFrom(true);
+        if (!queue.some((q) => q.diag)) {
+          const due = recommend(idx, { log: synth, cells: d.cells }, str(n), { goal, courses: [], budget: Math.floor(left / 2) }).recs.find((r) => r.reason.key === 'stale');   // a revisit that has come due goes first
+          if (due && due.task.min <= left) { items.push({ task: due.task, why: 'stale' }); left -= due.task.min; mark(n, due.task); }
+          takeFrom(false);
+        }
+        if (left >= 2 && !queue.some((q) => q.task.min <= left)) left = review(n, left, items);   // the lessons are through, or what is left is longer than the day has minutes left: revisions fill it
+      }
+      out.push({ date: str(n), n, items, minutes: B - left, last: n >= lastWeek });
+    }
+    return { days: out, ended: false, end: str(e), start: p.start };
+  };
+  window.flCoach = { cells, recommend, compact, evidence, today, COMPS, readSet, writeSet, within, SET_KEY, GOALS, repeated, hardSteps, miniOrder, path, readPath, writePath, trainDays, pathEnd, PATH_KEY, validPath };
 
   // ---- (d) the views ----
   const el = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; };
   const fmt = (s, v) => String(s || '').replace(/\{(\w+)\}/g, (m, k) => (v && k in v ? v[k] : m));
   const json = (id) => { const e = document.getElementById(id); try { return e ? JSON.parse(e.textContent) : null; } catch (x) { return null; } };
+  const json2 = (t) => { try { return JSON.parse(t); } catch (x) { return null; } };
   const index = json('fy9-index');
   const page = document.getElementById('fy9-coach'), row = document.getElementById('fy9-coach-row');
   if (!index || !Array.isArray(index.tasks) || !(page || row)) return;
@@ -286,12 +470,24 @@
   const data = () => V.read() || { v: 1, log: [] };
   const rank = (d) => { const e = evidence(d.log, index); return e.length || Object.keys(d.cells || {}).length; };
   const minutes = (recs) => recs.reduce((s, r) => s + (r.task.min || 0), 0);
+  // a title the same in several chapters ("1. Käsite") gets the chapter's name in front of it (PR 7c)
+  const spread = new Map();
+  for (const t of index.tasks) { if (!spread.has(t.title)) spread.set(t.title, new Set()); spread.get(t.title).add(t.unit); }
+  const named = (t) => { const u = index.units.find((x) => x.id === t.unit); return u && spread.get(t.title).size >= 3 ? u.title + ': ' + t.title : t.title; };
   const where = (t) => { const u = index.units.find((x) => x.id === t.unit); return u ? (u.n ? fmt(T.chapter, { n: u.n }) + ' ' : '') + u.title : ''; };
   const reason = (r) => (r.key === 'stale' ? fmt(T.why_stale, { n: r.days }) : T['why_' + r.key] || '');
   const SYMBOL = { none: '○', few: '◔', practise: '▲', growing: '◑', strong: '●', strongdue: '●' };
 
   if (row) {
-    const st = readSet(), d = data(), res = recommend(index, d, today(), { goal: st.goal, courses: st.courses });
+    const st = readSet(), d = data(), p = readPath(), mine = p ? path(index, d, p, today(), { goal: st.goal, courses: st.courses }).days.find((x) => x.date === today()) : null;
+    if (mine && mine.items.length) {   // a practice day of the student's own path: its tasks and minutes
+      const go = el('a', 'resume-go', T.go); go.href = row.dataset.href || 'FY9-valmentaja.html';
+      const n = mine.items.length;
+      row.replaceChildren(go, el('p', 'resume-text', fmt(n === 1 ? T.row_one : T.row_n, { n, m: mine.minutes })));
+      row.hidden = false;
+      return;
+    }
+    const res = recommend(index, d, today(), { goal: st.goal, courses: st.courses });
     if (res.diag || !res.recs.length) return;
     const n = res.recs.length, go = el('a', 'resume-go', T.go); go.href = row.dataset.href || 'FY9-valmentaja.html';
     row.replaceChildren(go, el('p', 'resume-text', fmt(n === 1 ? T.row_one : T.row_n, { n, m: Math.round(minutes(res.recs) / 5) * 5 || minutes(res.recs) })));
@@ -308,11 +504,11 @@
     const res = recommend(index, d, t, { goal: st.goal, courses: st.courses });
     if (next) {
       if (res.diag) {
-        const a = el('a', 'coach-go', T.diag); a.href = page.dataset.diag || 'fy9-koe.html'; next.replaceChildren(a);
+        const a = el('a', 'coach-go', T.diag); a.href = page.dataset.diag || 'fy9-koe.html#testi-ohje'; next.replaceChildren(a);
       } else {
         const ol = el('ol', 'coach-recs');
         for (const r of res.recs) {
-          const li = el('li', 'coach-rec'), a = el('a', 'coach-task', r.task.title); a.href = r.task.href;
+          const li = el('li', 'coach-rec'), a = el('a', 'coach-task', named(r.task)); a.href = r.task.href;
           li.append(a, el('span', 'coach-where', where(r.task)), el('span', 'coach-min', fmt(T.min, { n: r.task.min })), el('span', 'coach-why', reason(r.reason)));
           ol.append(li);
         }
@@ -346,12 +542,23 @@
       areas.hidden = false;
     }
   };
-  render();
+  const miniBox = document.getElementById('coach-mini');
+  const showMini = () => {   // the minikokeet and the practice exam, in the order the goal suggests; closed until opened
+    if (!miniBox) return;
+    const names = json2(miniBox.dataset.mini) || {}, ol = el('ol', 'coach-minilist');
+    for (const m of miniOrder(index, st.goal)) {
+      const li = el('li', 'coach-mini-item'), a = el('a', 'coach-task', m.kind === 'exam' ? T.mini_exam : names[m.id] || m.id); a.href = m.href;
+      li.append(a, el('span', 'coach-min', fmt(T.mini_item, { min: m.minutes, pts: m.points })));
+      ol.append(li);
+    }
+    miniBox.querySelector('.coach-mini-body').replaceChildren(ol);
+  };
+  render(); showMini();
 
   // the two settings (PR 4b): saved the moment they change, on this device only
   const set = document.getElementById('coach-set');
   if (set) {
-    const save = () => { const ok = writeSet(st); if (!ok) note.hidden = false; render(); showClear(); };
+    const save = () => { const ok = writeSet(st); if (!ok) note.hidden = false; render(); showMini(); showClear(); showPath(); };
     const goals = el('fieldset', 'coach-opts'), gl = el('legend', '', T.goal_lead);
     goals.append(gl);
     for (const g of [''].concat(GOALS)) {
@@ -373,20 +580,151 @@
     set.hidden = false;
   }
 
-  const keep = document.getElementById('coach-data');
   let showClear = () => {};
+  // the revision path (PR 7): three choices, then the days of this week as a list; changeable and removable, kept on this device only
+  const pathBox = document.getElementById('coach-path');
+  let showPath = () => {};
+  if (pathBox) {
+    const body = pathBox.querySelector('.coach-path-body'), lang = document.documentElement.lang || 'fi';
+    const radios = (name, legend, opts, cur) => {
+      const f = el('fieldset', 'coach-opts'); f.append(el('legend', '', legend));
+      const row = el('div', 'coach-optrow');
+      for (const [v, label] of opts) {
+        const lab = el('label', 'coach-opt'), r = el('input'); r.type = 'radio'; r.name = name; r.value = String(v); r.checked = String(cur) === String(v);
+        lab.append(r, el('span', '', label)); row.append(lab);
+      }
+      f.append(row); return f;
+    };
+    showPath = () => {
+      const p = readPath(), cur = p || { days: 14, exam: null, per: 5, min: 40 };
+      const form = el('form', 'coach-pathform'), t0 = today();
+      const len = radios('path-len', T.path_len, [[14, T.path_14], [28, T.path_28], ['exam', T.path_exam]], cur.exam ? 'exam' : cur.days);
+      const dl = el('label', 'coach-date'), date = el('input'); date.type = 'date'; date.value = cur.exam || '';
+      date.min = str(num(t0) + EXAM_MIN); date.max = str(num(t0) + EXAM_MAX); date.setAttribute('aria-label', T.path_exam);
+      dl.append(date); len.append(dl);
+      const showDate = () => { dl.hidden = (form.querySelector('input[name="path-len"]:checked') || {}).value !== 'exam'; };   // the date of the exam is asked only when the exam day is the choice
+      len.addEventListener('change', showDate);
+      const per = radios('path-per', T.path_per, PER.map((n) => [n, String(n)]), cur.per), min = radios('path-min', T.path_min, MINS.map((n) => [n, fmt(T.path_mins, { n })]), cur.min);
+      const save = el('button', 'coach-save', T.path_save); save.type = 'submit';
+      const warn = el('p', 'notice', T.nostore); warn.hidden = true;
+      const acts = el('div', 'coach-pathacts', null); acts.append(save);
+      if (p) { const del = el('button', 'coach-pathdel', T.path_del); del.type = 'button'; del.addEventListener('click', () => { writePath(null); showPath(); }); acts.append(del); }
+      form.append(len, per, min, acts, warn);
+      showDate();
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const v = (n) => (form.querySelector('input[name="' + n + '"]:checked') || {}).value, mode = v('path-len');
+        const next = { v: 1, start: t0, days: mode === 'exam' ? null : Number(mode), exam: mode === 'exam' ? date.value || null : null, per: Number(v('path-per')), min: Number(v('path-min')) };
+        if (p && p.days === next.days && p.exam === next.exam) next.start = p.start;   // a change of the days or the minutes keeps the start; a new length starts today
+        if (!validPath(next)) { date.setCustomValidity(' '); date.reportValidity(); date.setCustomValidity(''); return; }
+        if (!writePath(next)) { warn.hidden = false; return; }
+        showPath();
+      });
+      const parts = [form];
+      if (p) {
+        const res = path(index, d, p, t0, { goal: st.goal, courses: st.courses }), names = json2(miniBox && miniBox.dataset.mini) || {};
+        const horizon = num(t0) + 7, week = res.days.filter((x) => x.n < horizon), wk = week.length ? week : res.days.slice(0, 1);
+        if (!res.days.length) parts.push(el('p', 'coach-note', T.path_over));
+        else {
+          const doneOn = (date) => new Set((d.log || []).filter((r) => dayOf(r[0]) === date).map((r) => r[1]));   // what the log already holds for that day: nothing new is stored
+          const dayItem = (x) => {
+            const li = el('li', 'coach-pathday'), det = el('details'), sum = el('summary'), done = doneOn(x.date);
+            const chapters = []; for (const it of x.items) { const u = it.task && index.units.find((y) => y.id === it.task.unit); if (u && u.n && !chapters.includes(u.n)) chapters.push(u.n); }
+            sum.append(el('strong', '', new Date(x.n * DAY).toLocaleDateString(lang, { weekday: 'short', day: 'numeric', month: 'numeric', timeZone: 'UTC' })));
+            if (x.date === t0) sum.append(el('span', 'coach-today', T.path_today));
+            sum.append(el('span', 'coach-min', fmt(T.min, { n: x.minutes })));
+            if (chapters.length) sum.append(el('span', 'coach-chapters', chapters.length === 1 ? fmt(T.chapter, { n: chapters[0] }) : fmt(T.path_chapters, { list: chapters.join(', ') })));
+            det.append(sum); det.open = x.date === t0;
+            const ul = el('ul', 'coach-pathitems'), groups = new Map();
+            for (const it of x.items) {
+              const key = it.task ? it.task.unit : '';
+              if (!groups.has(key)) groups.set(key, []);
+              groups.get(key).push(it);
+            }
+            for (const [unitId, its] of groups) {
+              const g = el('li', 'coach-pathgroup'), u = index.units.find((y) => y.id === unitId), gl = el('ul', 'coach-pathtasks');
+              if (its[0].task && u) g.append(el('p', 'coach-where', (u.n ? fmt(T.chapter, { n: u.n }) + ' ' : '') + u.title));
+              for (const it of its) {
+                const q = el('li');
+                if (it.mini) { const a = el('a', 'coach-task', it.mini.kind === 'exam' ? T.mini_exam : names[it.mini.id] || it.mini.id); a.href = it.mini.href; q.append(a, el('span', 'coach-min', fmt(T.mini_item, { min: it.mini.minutes, pts: it.mini.points }))); }
+                else {
+                  const a = el('a', 'coach-task', named(it.task)); a.href = it.task.href; q.append(a, el('span', 'coach-min', fmt(T.min, { n: it.task.min })));
+                  if (done.has(it.task.id)) q.append(el('span', 'coach-done', T.path_done));
+                }
+                gl.append(q);
+              }
+              g.append(gl); ul.append(g);
+            }
+            det.append(ul); li.append(det); return li;
+          };
+          const ol = el('ol', 'coach-pathdays'), all = el('button', 'coach-pathall', T.path_all);
+          all.type = 'button'; all.setAttribute('aria-expanded', 'false');
+          const fill = (xs, open) => { ol.replaceChildren(...xs.map(dayItem)); if (open) for (const dt of ol.querySelectorAll('details')) dt.open = true; };
+          fill(wk, false);
+          if (res.days.length > wk.length || wk.length > 1) {
+            all.addEventListener('click', () => {
+              const on = all.getAttribute('aria-expanded') !== 'true';
+              all.setAttribute('aria-expanded', String(on)); all.textContent = on ? T.path_one : T.path_all;
+              fill(on ? res.days : wk, on);
+            });
+            parts.push(all);
+          }
+          parts.push(ol);
+        }
+      }
+      parts.push(el('p', 'coach-note', T.path_note));
+      body.replaceChildren(...parts);
+      showClear();
+    };
+    showPath();
+  }
+
+  // the hard steps and the repeated mistakes: shown only when there is something, and only what the student did or chose; the feedback is the page's own
+  const taskOf = (id) => index.tasks.find((x) => x.id === id);
+  const stepBox = document.getElementById('coach-steps');
+  if (stepBox) {
+    const hs = hardSteps(d, index);
+    if (hs.length) {
+      const ul = el('ul', 'coach-steplist');
+      for (const [id, ids] of hs) {
+        const li = el('li'), names = el('span', 'coach-step', (T.steps || {})[id] || id);
+        li.append(names, document.createTextNode(': '));
+        ids.forEach((tid, i) => { const t = taskOf(tid), a = el('a', '', t.title); a.href = t.href; if (i) li.append(document.createTextNode(', ')); li.append(a); });
+        ul.append(li);
+      }
+      stepBox.querySelector('.coach-steps-body').replaceChildren(ul);
+      stepBox.hidden = false;
+    }
+  }
+  const missBox = document.getElementById('coach-mistakes');
+  if (missBox) {
+    const feedback = json('fy9-mistakes') || {}, plain = (x) => String(x).replace(/\[([^\]]*)\]\([^)]*\)/g, '$1').replace(/\*/g, '');
+    const list = repeated(d.log, index).filter((h) => feedback[h.task] && feedback[h.task][h.mistake]);
+    if (list.length) {
+      const ul = el('ul', 'coach-misslist');
+      for (const h of list) {
+        const t = taskOf(h.task), li = el('li'), a = el('a', 'coach-task', t.title); a.href = t.href;
+        li.append(a, el('span', 'coach-where', where(t)), el('span', 'coach-min', fmt(T.mistakes_n, { n: h.n })), el('p', 'coach-feedback', plain(feedback[h.task][h.mistake])));
+        ul.append(li);
+      }
+      missBox.querySelector('.coach-mistakes-body').replaceChildren(ul);
+      missBox.hidden = false;
+    }
+  }
+
+  const keep = document.getElementById('coach-data');
   if (keep) {
     let store = true;
     try { localStorage.getItem(V.KEY); } catch (e) { store = false; }   // anything under our keys, a damaged log too, can be cleared; no storage at all is said
     if (!store) keep.append(el('p', 'notice', T.nostore));
-    const has = () => { try { return localStorage.getItem(V.KEY) !== null || localStorage.getItem(SET_KEY) !== null; } catch (e) { return false; } };
+    const has = () => { try { return localStorage.getItem(V.KEY) !== null || localStorage.getItem(SET_KEY) !== null || localStorage.getItem(EXAM_KEY) !== null || localStorage.getItem(PATH_KEY) !== null; } catch (e) { return false; } };
     let b = null;
     showClear = () => {
       if (!b && has()) {
         b = el('button', 'coach-clear', T.clear); b.type = 'button';
         b.addEventListener('click', () => {
           if (!window.confirm(T.clear_confirm)) return;
-          try { localStorage.removeItem(V.KEY); localStorage.removeItem(SET_KEY); } catch (e) { /* no storage */ }
+          try { localStorage.removeItem(V.KEY); localStorage.removeItem(SET_KEY); localStorage.removeItem(EXAM_KEY); localStorage.removeItem(PATH_KEY); } catch (e) { /* no storage */ }
           location.reload();
         });
         keep.append(b);

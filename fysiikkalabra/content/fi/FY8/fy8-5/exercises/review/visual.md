@@ -1,16 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: 5a2a6d8880fe81c5
-SCOPE: delta numbers,reflow,teacher-figure from 67b4799bb076bead base b3ee786
+CONTENT-HASH: 94ec7083fba52991
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- none
+(none)
 
 ## Checked
-- Delta (8g, Kaava step of solutions.md only). Rendered every Kaava block of the exercise solutions at 390 px (own Playwright capture, `?ratkaisut=1`, all boxes open; the packet's shots are 1280 px only): no clipping, scrollWidth 390, equals signs aligned in one column, one equation per row, symbols and units unchanged. Also contact captures of the 1280 px open-exercises set from screenshot.py.
-- Figures fy8-5/nodes and fy8-5/string and the two webp pictures are listed as teacher-approved and unchanged; not re-judged.
+- Delta: five exact flags (answers 50, 14, 8, 16, 15 kpl) read from source.
+- No rendered change: the "exact": true flag is data only; the layout checks (360-1280 px) are green in the packet.
+- Exercise captures are not present on disk for this packet (no review/shots); judged from the diff, since nothing visible changed.
 
 ## Scores
-illustrations 5 · typography  · Finnish 5 · accessibility 5
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

@@ -1,18 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 7411b0bebaf66c44
-SCOPE: delta caption-label,numbers,teacher-figure,typography,wording from 174b2fc6cc3a5092 base b65e579
+CONTENT-HASH: bbbe38eac621ebce
 
 ## Blocking
-- none
+(none)
 
 ## Polish
-- [Minor] solutions.md 5-L3-04 (three-source task), Sijoitus — the first chain "$12\,\text{V}\cdot 30\,\Omega + \dots = 630\,\text{V}\,\Omega$" starts with a bare numeric expression; the lead "Osoittaja on" names it, but "$I_2 D$" or "$U_1 R_3 + U_2 R_1 =$" as its first row would follow the house rule.
-- [Minor] solutions.md divider task (lamp branch), Kaava — the display block ends in a comma and "missä $R_\text{h}$ …" follows outside it; the comma sits inside the last row ("$V_\text{kaksi}$,"). Move the clause into a plain sentence before the block.
-- [Minor] solutions.md 5-L3-04 Kaava — nine to eleven rows, long but each on its own row and legible; fine.
+(none)
 
 ## Checked
-- fy6-5-open-exercises-L3-1280-4 (lamp divider Kaava and Sijoitus), L3-1280-6 (new three-source Kaava with the added elimination rows, Sijoitus chains, power rows; re-captured at the current hash), L3-1280-8 (Kuormittamaton / Kuormitettu / Ratkaistaan blocks). Other changed Kaava blocks judged from the diff text; all render as aligned `=` columns, no red KaTeX, nothing clipped.
-- Two changed branch pictures are teacher-approved; not restyled.
+- Delta round 1: the diff only removes the prefix "Esimerkkiaineisto: " and capitalises the next word; no numbers, symbols, formulas or figures changed.
+- Opened (content/fi-easy/FY6/fy6-5/review/shots/): fy6-5-open-exercises-L2-1280-5 (task 5-13, now "Kolme vastusta, …"), -6 (its solution).
+- Both changed texts read correctly with a capital first letter; the series-circuit text ("Sarjapiirissä …") was read in the diff only. Table and solution layout intact.
+- Hash re-run at the end: unchanged.
 
 ## Scores
-illustrations 5 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

@@ -1,10 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: 5aa0d3f2a0381b2a
-SCOPE: delta (rubric points rescaled, git diff origin/main)
+CONTENT-HASH: b735f3d0ac92b639
+
+Round 2 delta review, hints only. Ladder checked across all long tasks: hint 1 a guiding question, hint 2 the relation, hint 3 an intermediate step or a reasoning prompt.
 
 Blocking: none.
 
-1. Checked: s7 a-d (3,3,5,4) and s8 a-d (4,4,3,4) sum to 15 each; the part points equal the sum of the remaining criteria in tasks.json. Effort matches points (multi-step parts 4-5, single-step 3).
-2. Checked: no criterion left that a student cannot score; the removed units_precision lines were only the sig-fig/unit restatement, and the other criteria (formula, substitution with units, result, reasonableness) still cover units. Other tasks keep their units_precision (14 remain).
-3. Checked: teacher.md (5aa0d3f2a0381b2a0 + seven x 15 = 125) reads clearly and matches the points; the old "16 and 18 points" sentence is gone. Precision is still named as a criterion, which holds for the other tasks.
-4. Polish: none.
+Polish: none required.
+
+Checked:
+1. s2 c h3: terminal voltage now given as emf plus R_s I; no final value stated, work remains.
+2. s3 a/b/c h3 and s6 a h2, s7 b h2: shortened to questions; the evaluation and design parts guide the reasoning without dictating the conclusion; the rubric points are not free.
+3. s5 b h3: area conversion generalised to 1 mm^2; the answer is not given.
+4. fi-easy s3 b h1, c h1: shorter sentences, short-circuit and slope explained.
+5. All three languages say the same physics.

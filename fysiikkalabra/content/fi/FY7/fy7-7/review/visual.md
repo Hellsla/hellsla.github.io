@@ -1,9 +1,15 @@
 VERDICT: PASS
-CONTENT-HASH: f3d1ca0e045604dc
+CONTENT-HASH: ca309097b118a6c4
+
 ## Blocking
 
 ## Polish
-
+- [Minor] fy7-7-sim-1280 — the speed select at 1280 px has no visible label beside it (the 390 px layout shows "Nopeus"); the select reads "normaali" only — check that the label is present in the wide layout too (a11y label is not measured here).
 
 ## Checked
-batch delta review, round 2: rendered the lesson at 390 px, opened every Pysähdy ja mieti answer and looked at the captures (label, question, answer, chain rows inside the aside, no katex-error, no horizontal overflow, aside width 358 px); ran check_layout.py at 360 px (fi, en, fi-easy) and fy7-1 also at 390 px: OK; read the diff for notation (decimal comma, units upright, `\cdot`, colon division) and Finnish wording. Old content not judged (scope note 2026-11-20); no Vanhan sisällön löydökset.
+- Delta review (sim.js speed label "Animaation nopeus" -> "Nopeus"; picture files and lesson.md under teacher-figure approval).
+- Opened fy7-7-sim-390 (label "Nopeus" fits, controls on two rows, readouts and graphs intact, no clipping), fy7-7-sim-1280 (controls and graphs intact), fy7-7-intro-1280 (hero picture, goals, prior knowledge), fy7-7-fig-1-390 (hero), fy7-7-fig-2-390 (generator diagram, labels legible), fy7-7-theory-1280-1 (theory text, figures beside paragraphs, Pysähdy ja mieti, maths rendered, no katex errors).
+- Did not reopen the exercise and solution captures: untouched by the diff and the deterministic layout checks are clean at 360–1280 px.
+
+## Scores
+illustrations 4 · typography 5 · Finnish 4 · accessibility 4

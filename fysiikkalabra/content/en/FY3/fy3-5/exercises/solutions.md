@@ -53,7 +53,7 @@
 **Find:** the quantity of heat $Q$ transferred into the air, with its sign
 **Principle:** Energy is conserved, so $\Delta U = Q + W$. The force changes along the distance, so the work is not calculated as the product $Fs$ but as the area between the $(s,F)$ graph and the horizontal axis. The piston is part of the surroundings, which do work on the air, so $W$ is positive. The heat is found as the difference between the change in internal energy and the work.
 **Reading the graph:** The line starts at the grid intersection $(0\,\text{m};\ 200\,\text{N})$ and ends at the intersection $(0.20\,\text{m};\ 400\,\text{N})$. The area is a trapezoid whose parallel sides are $F_1 = 200\,\text{N}$ and $F_2 = 400\,\text{N}$ and whose height is $s = 0.20\,\text{m}$.
-**Formula:** $W = \dfrac{F_1 + F_2}{2}\, s$ and $\Delta U = Q + W$, so $Q = \Delta U - W$
+**Formula:** $$\begin{aligned} \Delta U &= Q + W \\ W &= \dfrac{F_1 + F_2}{2}\, s \\ Q &= \Delta U - W \end{aligned}$$
 **Conversions:** None needed: the force is in newtons and the distance in metres, so $1\,\text{N}\cdot\text{m} = 1\,\text{J}$.
 **Substitution:** $W = \dfrac{200\,\text{N} + 400\,\text{N}}{2} \cdot 0.20\,\text{m} = 300\,\text{N} \cdot 0.20\,\text{m} = 60\,\text{J}$, so $Q = 45\,\text{J} - 60\,\text{J} = -15\,\text{J}$
 **Answer:** $-15\,\text{J}$, two significant figures, like the data $0.20\,\text{m}$ and $45\,\text{J}$. The values of the graph are read accurately from the grid, so $-14.5\ldots-15.5\,\text{J}$ is accepted.
@@ -63,7 +63,7 @@
 **Given:** the system is the water; power of the heating element $P = 2.0\,\text{kW}$, time $t = 90\,\text{s}$, heat transferred through the casing to the surroundings $20\,\text{kJ}$; no work is done, so $W = 0$
 **Find:** the increase in internal energy of the water $\Delta U$ in kilojoules
 **Principle:** Energy is conserved, so $\Delta U = Q + W$. The heating element transfers energy to the water as heat, and part of it escapes. The net heat transferred to the water is the energy coming in minus the energy going out, and since the water does not expand and no work is done on it, $W = 0$.
-**Formula:** energy transferred by the heating element $Q_\text{in} = Pt$, net heat $Q = Pt - Q_\text{out}$ and $\Delta U = Q + W$, so $\Delta U = Pt - Q_\text{out}$
+**Formula:** $$\begin{aligned} \Delta U &= Q + W \\ W &= 0 \\ Q_\text{in} &= Pt \\ Q &= Q_\text{in} - Q_\text{out} \\ \Delta U &= Pt - Q_\text{out} \end{aligned}$$
 **Conversions:** $P = 2.0\,\text{kW} = 2000\,\text{W}$, so that $Pt$ comes out in joules. Finally $1\,\text{kJ} = 1000\,\text{J}$.
 **Substitution:** $Pt = 2000\,\text{W} \cdot 90\,\text{s} = 180\,000\,\text{J} = 180\,\text{kJ}$. So $\Delta U = 180\,\text{kJ} - 20\,\text{kJ} + 0 = 160\,\text{kJ}$
 **Answer:** $160\,\text{kJ}$, two significant figures: the difference $180\,\text{kJ} - 20\,\text{kJ}$ is known to within ten kilojoules, because the heat $20\,\text{kJ}$ is given only that precisely.
@@ -73,7 +73,7 @@
 **Given:** the system is the steam; $W = -2.0\,\text{kJ}$ (the steam does work), $\Delta U = -1.2\,\text{kJ}$
 **Find:** the quantity of heat $Q$ transferred into the steam, in joules
 **Principle:** Energy is conserved, so $\Delta U = Q + W$. The change in internal energy and the work are known, so the heat is found as their difference. The steam expands and does work, so $W$ is negative.
-**Formula:** $\Delta U = Q + W$, so $Q = \Delta U - W$
+**Formula:** $$\begin{aligned} \Delta U &= Q + W \\ Q &= \Delta U - W \end{aligned}$$
 **Conversions:** The answer is wanted in joules: $\Delta U = -1.2\,\text{kJ} = -1200\,\text{J}$ and $W = -2.0\,\text{kJ} = -2000\,\text{J}$.
 **Substitution:** $Q = -1200\,\text{J} - (-2000\,\text{J}) = 800\,\text{J}$
 **Answer:** $800\,\text{J} = 0.8\,\text{kJ}$; the difference is known to within a hundred joules, like the data, so one significant figure.
@@ -83,7 +83,7 @@
 **Given:** the system is the smoothie; power of the blade $P = 250\,\text{W}$, $Q = +2.0\,\text{kJ}$ (heat is transferred into the smoothie), $\Delta U = +12\,\text{kJ}$
 **Find:** the blending time $t$
 **Principle:** Energy is conserved, so $\Delta U = Q + W$. Part of the increase in internal energy comes as heat and the rest as work done by the blade. The work of the blade is the product of power and time, because the power is constant: $W = Pt$.
-**Formula:** $\Delta U = Q + W$, so $W = \Delta U - Q$. Since $P = \dfrac{W}{t}$, we get $t = \dfrac{W}{P} = \dfrac{\Delta U - Q}{P}$
+**Formula:** $$\begin{aligned} \Delta U &= Q + W \\ W &= \Delta U - Q \\ P &= \dfrac{W}{t} \\ t &= \dfrac{W}{P} \\ &= \dfrac{\Delta U - Q}{P} \end{aligned}$$
 **Conversions:** Energies from kilojoules to joules, so that the result comes out in seconds: $1\,\text{kJ} = 1000\,\text{J}$, so $\Delta U = 12\,000\,\text{J}$ and $Q = 2000\,\text{J}$. The unit of power is $1\,\text{W} = 1\,\tfrac{\text{J}}{\text{s}}$.
 **Substitution:** $W = 12\,\text{kJ} - 2.0\,\text{kJ} = 10\,\text{kJ} = 10\,000\,\text{J}$. So $t = \dfrac{10\,000\,\text{J}}{250\,\text{W}} = 40\,\text{s}$
 **Answer:** $40\,\text{s}$, two significant figures, because the work $W = 12\,\text{kJ} - 2.0\,\text{kJ} = 10\,\text{kJ}$ is known to a precision of $1\,\text{kJ}$ (the internal energy $12\,\text{kJ}$ is given in whole kilojoules).
@@ -93,7 +93,7 @@
 **Given:** the system is the air in the pump (the amount does not change); $F = 120\,\text{N}$, $s = 0.15\,\text{m}$, the temperature stays constant
 **Find:** the quantity of heat $Q$ transferred into the air, with its sign, and why $\Delta U$ does not change
 **Principle:** Energy is conserved, so $\Delta U = Q + W$. According to the problem, the temperature stays constant and the amount of air does not change, so the kinetic energy of the particles and their number are unchanged, and because the air can be treated as an ideal gas, its internal energy does not change: $\Delta U = 0$. Then the energy brought in by the work must be transferred out as heat: $Q = -W$.
-**Formula:** $W = Fs$ and $\Delta U = Q + W = 0$, so $Q = -W = -Fs$
+**Formula:** $$\begin{aligned} \Delta U &= Q + W = 0 \\ W &= Fs \\ Q &= -W \\ &= -Fs \end{aligned}$$
 **Conversions:** None needed: the force is in newtons and the distance in metres, so the product is in joules.
 **Substitution:** $W = 120\,\text{N} \cdot 0.15\,\text{m} = 18\,\text{J}$ (work is done on the air, so $W > 0$). So $Q = -18\,\text{J}$
 **Answer:** $-18\,\text{J}$, two significant figures, like the data $0.15\,\text{m}$ and $120\,\text{N}$.
@@ -103,7 +103,7 @@
 **Given:** the system is the water; mass of the weight $m = 5.0\,\text{kg}$, number of descents $n = 12$, $\Delta U = 1.0\,\text{kJ}$, $g = 9.81\,\text{m/s}^2$, insulated container
 **Find:** the height $h$ of one descent
 **Principle:** Energy is conserved, so $\Delta U = Q + W$. The container is insulated, so no heat is transferred and $Q = 0$. The weight descends at a constant speed, so the rope pulls it with a force $F = G = mg$, and when it descends a height $h$ the rope and the paddle wheel do work $W_1 = Fh = mgh$ on the water. Then $\Delta U = W$.
-**Formula:** work of one descent $W_1 = mgh$, so $\Delta U = nmgh$ and $h = \dfrac{\Delta U}{nmg}$
+**Formula:** $$\begin{aligned} \Delta U &= Q + W \\ Q &= 0 \\ W_1 &= Fh = mgh \\ W &= nW_1 \\ \Delta U &= nmgh \\ h &= \dfrac{\Delta U}{nmg} \end{aligned}$$
 **Conversions:** $\Delta U = 1.0\,\text{kJ} = 1000\,\text{J}$. Finally $1\,\text{J} = 1\,\text{N}\cdot\text{m}$ and $1\,\text{N} = 1\,\tfrac{\text{kg}\cdot\text{m}}{\text{s}^2}$, so the unit of the quotient is the metre.
 **Substitution:** $h = \dfrac{1000\,\text{J}}{12 \cdot 5.0\,\text{kg} \cdot 9.81\,\text{m/s}^2} = \dfrac{1000\,\text{J}}{588.6\,\text{N}} = 1.6989\,\text{m}$
 **Answer:** $1.7\,\text{m}$, two significant figures, like the mass $5.0\,\text{kg}$ and the energy $1.0\,\text{kJ}$.
@@ -113,7 +113,7 @@
 **Given:** the system is the gas; way A: $Q_\text{A} = +400\,\text{J}$, $W_\text{A} = -150\,\text{J}$ (the gas does work); way B: $W_\text{B} = -60\,\text{J}$; same initial and final temperature, same amount of gas
 **Find:** the quantity of heat $Q_\text{B}$, and why $\Delta U$ is the same in both ways
 **Principle:** Energy is conserved, so $\Delta U = Q + W$ for both ways. According to the problem, the temperature and the amount of gas are the same in the initial and final states, so the kinetic energy of the particles is the same, and because the energy of the interactions is negligible in an ideal gas, the internal energy is the same too. So $\Delta U$ is the same in both ways, even though the heat and work differ: they depend on the path, while the internal energy depends only on the initial and final states.
-**Formula:** $\Delta U_\text{A} = Q_\text{A} + W_\text{A}$ and $\Delta U_\text{B} = \Delta U_\text{A}$, so $Q_\text{B} = \Delta U_\text{A} - W_\text{B} = Q_\text{A} + W_\text{A} - W_\text{B}$
+**Formula:** $$\begin{aligned} \Delta U_\text{A} &= Q_\text{A} + W_\text{A} \\ \Delta U_\text{B} &= Q_\text{B} + W_\text{B} \\ \Delta U_\text{B} &= \Delta U_\text{A} \\ Q_\text{B} &= \Delta U_\text{A} - W_\text{B} \\ &= Q_\text{A} + W_\text{A} - W_\text{B} \end{aligned}$$
 **Conversions:** None needed: all energies are given in joules.
 **Substitution:** $\Delta U_\text{A} = 400\,\text{J} + (-150\,\text{J}) = 250\,\text{J}$. So $Q_\text{B} = 250\,\text{J} - (-60\,\text{J}) = 310\,\text{J}$
 **Answer:** $310\,\text{J}$; in the addition the result is as precise as the data, which are given in whole joules.
@@ -133,7 +133,7 @@
 **Given:** the system is the water; power $P = 0.80\,\text{kW}$, time $t = 45\,\text{s}$, no heat escapes to the surroundings, $W = 0$
 **Find:** the increase in internal energy of the water $\Delta U$ in kilojoules
 **Principle:** Energy is conserved, so $\Delta U = Q + W$. The heater transfers energy to the water as heat at a steady power, so the quantity of heat transferred to the water is the product of power and time. No work is done, so $W = 0$.
-**Formula:** $Q = Pt$ and $\Delta U = Q + W$, so $\Delta U = Pt$
+**Formula:** $$\begin{aligned} \Delta U &= Q + W \\ W &= 0 \\ Q &= Pt \\ \Delta U &= Pt \end{aligned}$$
 **Conversions:** $P = 0.80\,\text{kW} = 800\,\text{W}$, so that $Pt$ comes out in joules. Finally $1\,\text{kJ} = 1000\,\text{J}$.
 **Substitution:** $\Delta U = 800\,\text{W} \cdot 45\,\text{s} = 36\,000\,\text{J} = 36\,\text{kJ}$
 **Answer:** $36\,\text{kJ}$, two significant figures, like the data $0.80\,\text{kW}$ and $45\,\text{s}$.
@@ -163,7 +163,7 @@
 **Given:** the system is the block and the table; number of pulls $n = 20$, distance per pull $s = 0.600\,\text{m}$, forces $4.1\,\text{N}$, $4.3\,\text{N}$, $4.2\,\text{N}$, $4.0\,\text{N}$ and $4.4\,\text{N}$; $Q = 0$
 **Find:** the increase in internal energy $\Delta U$ during 20 pulls, and why the real increase is smaller
 **Principle:** Energy is conserved, so $\Delta U = Q + W$. By assumption $Q = 0$, so $\Delta U = W$. The pulling force does work $W = Fs$ on the system, and friction changes it into internal energy. The measurements vary slightly, so the mean is used as the pulling force.
-**Formula:** $F_\text{mean} = \dfrac{\text{sum of the measurements}}{5}$, the work of one pull $W_1 = F_\text{mean}\, s$ and for all the pulls $\Delta U = nW_1$
+**Formula:** $$\begin{aligned} \Delta U &= Q + W \\ Q &= 0 \\ F_\text{mean} &= \dfrac{\text{sum of the measurements}}{5} \\ W_1 &= F_\text{mean}\, s \\ W &= nW_1 \\ \Delta U &= W = nF_\text{mean}\, s \end{aligned}$$
 **Conversions:** None needed: the force is in newtons and the distance in metres, so the product is in joules.
 **Substitution:** The sum of the measurements is $$\begin{aligned} &4.1\,\text{N} + 4.3\,\text{N} + 4.2\,\text{N} \\ &+ 4.0\,\text{N} + 4.4\,\text{N} \\ &= 21.0\,\text{N} \end{aligned}$$, so $F_\text{mean} = \dfrac{21.0\,\text{N}}{5} = 4.20\,\text{N}$. The work of one pull is $W_1 = 4.20\,\text{N} \cdot 0.600\,\text{m} = 2.52\,\text{J}$, so $\Delta U = 20 \cdot 2.52\,\text{J} = 50.4\,\text{J}$
 **Answer:** $50\,\text{J}$ (calculated $50.4\,\text{J}$), two significant figures, because the force measurements are given to two significant figures and they vary by about $\pm 0.2\,\text{N}$ ($\approx 5\,\%$). The real increase is probably slightly smaller, because the warmed block and table transfer some heat to the air, so $Q < 0$ and $\Delta U = Q + W < W$.
@@ -174,7 +174,7 @@
 **Find:** a) the work $W$ with the trapezoid rule, b) the increase in internal energy $\Delta U$ in the quick compression, c) the quantity of heat $Q$ in the slow compression and an explanation
 **Principle:** Energy is conserved, so $\Delta U = Q + W$. The force changes along the distance, so the work is the area under the $(s,F)$ graph, which the trapezoid rule estimates. The piston does work on the air, so $W > 0$. In the quick compression there is no time for heat to be transferred, so $\Delta U = W$. In the slow compression the temperature and the amount of air stay the same, and because the air can be treated as an ideal gas, $\Delta U = 0$ and $Q = -W$.
 **Reading the graph:** The table has five intervals, each of width $h = 0.04\,\text{m}$. The forces at the ends of the intervals are $50$, $62$, $78$, $98$, $125$ and $160\,\text{N}$. The area of each interval is a trapezoid whose parallel sides are the forces at the ends of the interval.
-**Formula:** trapezoid rule: the work is the sum of the areas $h\,\dfrac{F_i + F_{i+1}}{2}$ of all the intervals, where $F_i$ and $F_{i+1}$ are the forces at the ends of the interval. Also $\Delta U_\text{quick} = Q + W = W$ and $Q_\text{slow} = -W_\text{slow}$
+**Formula:** $$\begin{aligned} \Delta U_\text{quick} &= Q + W = W \\ W &= \sum_i h\,\dfrac{F_i + F_{i+1}}{2} \\ \Delta U_\text{slow} &= Q_\text{slow} + W_\text{slow} = 0 \\ Q_\text{slow} &= -W_\text{slow} \end{aligned}$$
 **Conversions:** None needed: the force is in newtons and the distance in metres, so $1\,\text{N}\cdot\text{m} = 1\,\text{J}$.
 **Substitution:** Each force has two adjacent intervals around it, except at the ends; that is why half of each end force is taken. The sum is $$\begin{aligned} &25\,\text{N} + 62\,\text{N} + 78\,\text{N} \\ &+ 98\,\text{N} + 125\,\text{N} + 80\,\text{N} \\ &= 468\,\text{N} \end{aligned}$$. So $W = 0.04\,\text{m} \cdot 468\,\text{N} = 18.72\,\text{J}$, and $\Delta U = 0 + 18.72\,\text{J} = 18.72\,\text{J}$. In part c) $Q = -14.0\,\text{J}$.
 **Answer:** a) $W \approx 18.7\,\text{J}$. b) $\Delta U \approx 18.7\,\text{J}$, three significant figures. c) $Q = -14.0\,\text{J}$. In the quick compression there is no time for heat to be transferred out, so all the work stays as internal energy of the air and the temperature rises. In the slow compression the same energy is transferred as heat through the walls of the cylinder to the surroundings, so the internal energy and the temperature stay the same.
@@ -185,7 +185,7 @@
 **Find:** a) the mean power $P$, b) the quantity of heat $Q_\text{out}$ transferred from the water to the surroundings at the moment $120\,\text{s}$ and its percentage, c) an explanation using conservation of energy
 **Principle:** Energy is conserved, so $\Delta U = Q + W$. The water is not stirred and no work is done on it, so $W = 0$. The warming of the heating element and of the body of the kettle themselves is assumed to be negligible, so the net heat transferred to the water is the energy transferred by the heating element minus the heat escaping to the surroundings: $Q = E_\text{v} - Q_\text{out}$. So $\Delta U = E_\text{v} - Q_\text{out}$ and $Q_\text{out} = E_\text{v} - \Delta U$. Power is energy divided by time: $P = \dfrac{E_\text{v}}{t}$.
 **Reading the graph:** In the last row $t = 120\,\text{s}$, $E_\text{v} = 239.9\,\text{kJ}$ and $\Delta U = 205.1\,\text{kJ}$. In the first row both are zero.
-**Formula:** $P = \dfrac{E_\text{v}}{t}$, $Q_\text{out} = E_\text{v} - \Delta U$ and the share $= \dfrac{Q_\text{out}}{E_\text{v}} \cdot 100\,\%$
+**Formula:** $$\begin{aligned} \Delta U &= Q + W \\ W &= 0 \\ Q &= E_\text{v} - Q_\text{out} \\ Q_\text{out} &= E_\text{v} - \Delta U \\ P &= \dfrac{E_\text{v}}{t} \\ \text{share} &= \dfrac{Q_\text{out}}{E_\text{v}} \cdot 100\,\% \end{aligned}$$
 **Conversions:** $E_\text{v} = 239.9\,\text{kJ} = 239\,900\,\text{J}$, so that the power comes out in watts; $1\,\text{kW} = 1000\,\text{W}$.
 **Substitution:** a) $P = \dfrac{239\,900\,\text{J}}{120\,\text{s}} = 1999\,\text{W} \approx 2.00\,\text{kW}$. b) $Q_\text{out} = 239.9\,\text{kJ} - 205.1\,\text{kJ} = 34.8\,\text{kJ}$ and the share is $\dfrac{34.8\,\text{kJ}}{239.9\,\text{kJ}} \cdot 100\,\% = 14.5\,\%$
 **Answer:** $Q_\text{out} = 34.8\,\text{kJ}$ (part b), three significant figures, like the values of the table, that is, about $14.5\,\%$ of the energy of the heating element.
@@ -216,7 +216,7 @@ Statement 3 is false: $60\,\text{J}$ is work, and the heat is zero. Statement 4 
 **Given:** quantity of heat $Q = 2.0\,\text{kcal}$ and work $W = 3.0\,\text{kJ}$; from the table (MAFY table, unit conversions, energy/work, calorie) $1\,\text{cal} = 4.1868\,\text{J}$
 **Find:** the change in internal energy $\Delta U$ in kilojoules
 **Principle:** Energy is conserved, so $\Delta U = Q + W$. Heat is transferred into the system and the surroundings do work on it, so both $Q$ and $W$ are positive. The terms must be in the same unit, so the calories are converted to joules first.
-**Formula:** $\Delta U = Q + W$ and $Q = N \cdot 4.1868\,\text{J}$, where $N$ is the number of calories
+**Formula:** $$\begin{aligned} \Delta U &= Q + W \\ Q &= N \cdot 4.1868\,\text{J} \end{aligned}$$, where $N$ is the number of calories
 **Conversions:** $2.0\,\text{kcal} = 2000\,\text{cal}$ and $1\,\text{kJ} = 1000\,\text{J}$.
 **Substitution:** $Q = 2000 \cdot 4.1868\,\text{J} = 8373.6\,\text{J} = 8.3736\,\text{kJ}$, so $\Delta U = 8.3736\,\text{kJ} + 3.0\,\text{kJ} = 11.3736\,\text{kJ} \approx 11\,\text{kJ}$
 **Answer:** $11\,\text{kJ}$, two significant figures, like the data $2.0\,\text{kcal}$ and $3.0\,\text{kJ}$. The value $4.1868\,\text{J}$ of the calorie is from the MAFY table; the values of different tables differ slightly, and the answer is accepted within about $\pm 4\,\%$.
@@ -227,7 +227,7 @@ Statement 3 is false: $60\,\text{J}$ is work, and the heat is zero. Statement 4 
 **Find:** the increase in the internal energy of the air, $\Delta U$
 **Principle:** Energy is conserved, so $\Delta U = Q + W$. No heat is transferred, so $\Delta U = W$. The force changes along the distance, so the work is the area between the $(s,F)$ graph and the horizontal axis. The piston is part of the surroundings, which do work on the air, so $W$ is positive.
 **Reading the graph:** The line starts at the grid intersection $(0\,\text{m};\ 200\,\text{N})$ and ends at the intersection $(0.20\,\text{m};\ 400\,\text{N})$. The area is a trapezoid whose parallel sides are $F_1 = 200\,\text{N}$ and $F_2 = 400\,\text{N}$ and whose height is $s = 0.20\,\text{m}$.
-**Formula:** $W = \dfrac{F_1 + F_2}{2}\, s$ and $\Delta U = Q + W = W$
+**Formula:** $$\begin{aligned} \Delta U &= Q + W \\ Q &= 0 \\ W &= \dfrac{F_1 + F_2}{2}\, s \\ \Delta U &= W \end{aligned}$$
 **Conversions:** None needed: the force is in newtons and the distance in metres, so $1\,\text{N}\cdot\text{m} = 1\,\text{J}$.
 **Substitution:** $W = \dfrac{200\,\text{N} + 400\,\text{N}}{2} \cdot 0.20\,\text{m} = 300\,\text{N} \cdot 0.20\,\text{m} = 60\,\text{J}$, so $\Delta U = 0 + 60\,\text{J} = 60\,\text{J}$
 **Answer:** $60\,\text{J}$, two significant figures, like the data $0.20\,\text{m}$. The values of the graph are read accurately from the grid, so $58.2\ldots61.8\,\text{J}$ is accepted.

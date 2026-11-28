@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: cdb5bffd5c73d8e5
+CONTENT-HASH: c0491df37fb81267
 
 ## Blocking
 - none
@@ -8,4 +8,7 @@ CONTENT-HASH: cdb5bffd5c73d8e5
 - none
 
 ## Checked
-batch delta review: contact sheets (page 2 of fy1-1, fy1-2, fy1-4, fy1-6; the added "Stop and think" boxes render as a tinted box with a closed Answer disclosure, readable at 390 px, maths rendered, no clipping, layout around them intact); other lessons judged from the diff plus the same shared component, the figures unchanged.
+- Delta (removal of the prefix "Example data: "): opened stage-tutki-390-3 (the renamed step 'The speed of a ball from video frames' as a closed optional box, title reads well) and stage-sovella-390-2 (surrounding layout). Layout, maths and tables intact, nothing clipped; the edited sentences read naturally without the prefix.
+
+## Scores
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

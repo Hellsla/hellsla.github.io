@@ -1,5 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: 46f47205766eba0c
+CONTENT-HASH: bdcb6b144c13c1bb
 
 ## Blocking
 (none)
@@ -8,10 +8,10 @@ CONTENT-HASH: 46f47205766eba0c
 (none)
 
 ## Checked
-- Round 1, delta (md-paragraphs): solutions.md only, solution paragraphs cut, words in the same order.
-- 1280 px with solutions open: fy3-14-open-exercises-1280-1.png (level 1, 9-1: paragraph breaks between answer, reasoning and Järkevyys inside the card, display aligned at "=", no clipping), fy3-14-open-exercises-L2-1280-1.png (level 2, 9-10: Kaava and Sijoitus paragraphs with displays, punctuation after display stays on its row, units thin-spaced).
-- 390 px: fy3-14-example-390-1.png and fy3-14-stage-sovella-390-1.png (the stored 390 px captures show the lesson's worked-example stages with the same paragraph/display layout, not exercise solutions; layout holds, no overflow). There are no 360 px captures.
-- Language: split paragraphs read as one idea each.
+- Delta (every Kaava re-set as `X &= Y` rows; round 1 Major items 9-13, 9-21, 9-22 re-checked). Captures in content/fi/FY3/fy3-14/review/shots, 1280 px, solutions open.
+- L2-1280-4 (9-13): six aligned rows, new symbol K, final fraction c_v K / m_j whole, equals signs in one column, no clipping.
+- L3-1280-4/-5 (9-21 and 9-22): all Kaava rows aligned, N defined as its own row, fraction N/(c_j(m_j+m_v)) intact, no stacked array numerators.
+- L3-1280-9 (9-23, eight rows), L3-1280-1/-2 (9-19, 9-20), L2-1280-5/-7 and L3-1280-8 (neighbouring tasks and the energy-bars figure beside 9-18): layout intact.
 - Hash same at start and end.
 
 ## Scores

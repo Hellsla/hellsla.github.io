@@ -1,12 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: f719262d2793f4c5
-SCOPE: delta wording from c6cf825435b84022 base 6153818
+CONTENT-HASH: 953b72bdbe61f2f5
 
 ## Blocking
-(none)
+None.
 
 ## Polish
-(none)
+None.
 
 ## Checked
-L2-04 Answer line only: the reason now leads (final zero of 480 kW is significant, so three figures; 40.0 % also three; therefore three significant figures). A 16-19-year-old can follow it; numbers, units and answer 720 kW unchanged. 
+- Each Kaava step now starts from the basic equation(s) or law and reaches the solved symbolic form that Sijoitus uses; no combined formula opens a derivation.
+- The derivation steps are consistent with the quantities named in Sijoitus; answers, units and Sijoitus unchanged.
+- Added paragraph breaks and moved remarks in long model answers help reading and change no content.
+- Aligned blocks are short enough for a phone.

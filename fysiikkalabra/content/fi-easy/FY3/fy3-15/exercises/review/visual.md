@@ -1,17 +1,18 @@
 VERDICT: PASS
-CONTENT-HASH: 1e38ee2436397cdd
+CONTENT-HASH: a14dcf70d249d4ff
+Mode: delta
 
 ## Blocking
-- none
+None.
 
 ## Polish
-- [Minor] fy3-15-L3-05 Järkevyys — the new paragraph "Sen energiasta noin 38 %…" has an ambiguous "Sen"; write "Polttoaineen energiasta noin $38\,\%$…".
+None.
 
 ## Checked
-- Delta (paragraph breaks in solutions, words unchanged). No 360 px captures exist; 390 px used.
-- fy3-15-open-exercises-L3-1280-5.png: opened solution, givens and sanity check as separate paragraphs, no clipping.
-- fy3-15-open-tarkista-1280-2.png: task card with opened hints, reading column held.
-- fy3-15-example-390-2.png and fy3-15-stage-selita-390-3.png: phone layout of split paragraphs intact.
+- Delta: L3-04 Annettu now reads "kaukolämpöteho $0{,}560\,P_{\text{o},\text{CHP}}$" (was $P_{\text{o},\text{B}}$).
+- Opened at 1280 px, solutions open: fy3-15-open-exercises-L3-1280-6 (Annettu, Kysytty, Kaava, Sijoitus).
+- Judged: the subscript CHP now matches the Kaava rows (P_o,CHP, P_k,CHP) and the Sijoitus; P_o,B stays the total, as in Kysytty. Notation consistent, formulas legible, rows aligned at "=", nothing clipped.
+- No 360/390 px open-solution captures exist for exercises.
 
 ## Scores
-illustrations 4 · typography 4 · Finnish 4 · accessibility 4
+illustrations 5 · typography 5 · Finnish 4 · accessibility 4

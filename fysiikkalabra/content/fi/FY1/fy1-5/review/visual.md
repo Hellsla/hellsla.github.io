@@ -1,14 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 1523636504cab4b6
+CONTENT-HASH: 1814c2be4d581b22
 
 ## Blocking
+(none) The round-1 Major is fixed: the pace select is labelled "Toistonopeus" (sim-390, sim-1280), distinct from the "Nopeus $v$" slider. The howto text also says "*Toistonopeus* muuttaa vain toiston tahtia", so the two controls can no longer be confused.
 
 ## Polish
+- [Minor] sim.js line 6 comment — the code comment still says "Toistonopeus" correctly; no action needed. Nothing else to report.
 
 ## Checked
-- fy1-5-open-exit-1280.png (#43): the changed exit-ticket answer. The chain is now s = s₀ + vt, matching the glossary entry for tasainen liike and the chapter's formula. It renders as aligned rows with a quantity-first row, thin spaces and \cdot. The quantities with units are inline LaTeX, the arrow in (3 m → 6 m) is clean, there is no red KaTeX source, nothing is clipped, and the answer sits inside its card.
-- Diff touches only exit-ticket.json (symbol x to s, s0 for x0). Figures and layout elsewhere are unchanged; the deterministic layout checks at 360/390/768/1280 are ok.
-- The previous Minor (x versus s symbol mismatch with the glossary) is resolved by this change.
+- fy1-5-sim-390.png and fy1-5-sim-1280.png: the controls, labels and readouts are clean and nothing is clipped. The removed note line leaves no gap, and the usage information is still in Käyttöohje.
+- The howto text in inquiry.json read as source.
+- I did not reopen the hero and motion images or the other captures. In round 1 they passed, and this round's diff only removes the note line.
+- The deterministic layout checks at 360/390/768/1280 px are ok.
 
 ## Scores
-illustrations 5 · typography 5 · Finnish 5 · accessibility 5
+illustrations 5 · typography 5 · Finnish 4 · accessibility 5

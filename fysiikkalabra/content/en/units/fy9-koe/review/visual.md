@@ -1,13 +1,8 @@
 VERDICT: PASS
-CONTENT-HASH: 2fb2712dc782cb16
+CONTENT-HASH: c70087e34b3234e7
 
-## Blocking
-(none)
+Delta (2026-11-26): JSON valid; 8 changed lines per language, only the closing sentence; link syntax [*Title*](fy7-N.html) and hrefs identical to the fi version; punctuation correct.
 
-## Polish
-(none)
+Blocking: none.
 
-## Checked
-- Diff origin/main...HEAD for unit.md and inquiry.json (en): only paragraph breaks. In unit.md the worked example's "Given and find" paragraph is split so the question stands alone; in inquiry.json two model-answer fields (kettle-efficiency marking comment, helmet answer) are split at a sentence boundary. Words, maths and figures are identical.
-- Contact sheets contact-6.png (#61-#72: model solutions, marking, self-assessment, exit ticket) and contact-9.png (#97-#108: example boxes with staged solutions) in review/shots/, at contact-sheet resolution only. The split paragraphs sit as short paragraphs inside the cards; no clipping, overlap or overflow, and the stage layout survived.
-- The earlier Sovella visual report (sovella/review/visual.md, PASS) read as evidence. I did not open individual 390 px captures, so fine type size is not judged.
+Polish: none.

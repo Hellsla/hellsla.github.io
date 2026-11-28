@@ -2,7 +2,12 @@
 **Annettu:** höyryn paine pysyy vakiona, $p = 480{,}0\,\text{kPa}$, tilavuuden muutos $\Delta V = 0{,}0250\,\text{m}^3$
 **Kysytty:** höyryn mäntään tekemä työ $W$ kilojouleina
 **Periaate:** Paine pysyy vakiona, joten höyryn mäntään kohdistama voima $F = pA$ on koko liikkeen ajan sama ja työ on voima kertaa matka. Koska tilavuuden muutos on männän pinta-ala kertaa matka, $\Delta V = A s$, työ on paine kertaa tilavuuden muutos.
-**Kaava:** $W = F s = pA s$, joten $W = p\,\Delta V$
+**Kaava:** $$\begin{aligned} W &= F s \\
+F &= pA \\
+\Delta V &= A s \\
+W &= pAs = p\,\Delta V
+\end{aligned}
+$$
 **Muunnokset:** $480{,}0\,\text{kPa} = 480\,000\,\text{Pa}$. Tilavuus on jo kuutiometreinä, joten $\text{Pa} \cdot \text{m}^3 = \text{J}$ ilman lisämuunnosta. Lopuksi $1\,\text{kJ} = 1000\,\text{J}$.
 **Sijoitus:** $W = 480\,000\,\text{Pa} \cdot 0{,}0250\,\text{m}^3 = 12\,000\,\text{J} = 12{,}0\,\text{kJ}$
 **Vastaus:** $12{,}0\,\text{kJ}$, kolme merkitsevää numeroa. Molemmat tiedot, paine $480{,}0\,\text{kPa}$ ja tilavuuden muutos $0{,}0250\,\text{m}^3$, on annettu vähintään kolmella numerolla.
@@ -63,7 +68,12 @@
 **Annettu:** polttopuun massa $m = 120\,\text{kg}$ tunnissa, lämpöarvo $H = 15\,\tfrac{\text{MJ}}{\text{kg}}$, höyrykoneen teho $P = 45\,\text{kW}$, aika $t = 1\,\text{h}$
 **Kysytty:** kattilan ja höyrykoneen yhteinen hyötysuhde $\eta$ prosentteina
 **Periaate:** Koko laitos on lämpövoimakone: polttopuun palamisessa vapautuu lämpö $Q_1$ ja kone tekee työn $W$. Hyötysuhde on työn osuus tästä lämmöstä, ja molemmat lasketaan samalta tunnilta.
-**Kaava:** $Q_1 = mH$ ja $W = Pt$, joten $\eta = \dfrac{W}{Q_1} = \dfrac{Pt}{mH}$
+**Kaava:** $$\begin{aligned} \eta &= \dfrac{W}{Q_1} \\
+W &= Pt \\
+Q_1 &= mH \\
+\eta &= \dfrac{Pt}{mH}
+\end{aligned}
+$$
 **Muunnokset:** $45\,\text{kW} = 45\,000\,\text{W}$, $1\,\text{h} = 3600\,\text{s}$ ja $15\,\tfrac{\text{MJ}}{\text{kg}} = 15 \cdot 10^6\,\tfrac{\text{J}}{\text{kg}}$, jotta kumpikin energia tulee jouleina.
 **Sijoitus:** $\eta = \dfrac{45\,000\,\text{W} \cdot 3600\,\text{s}}{120\,\text{kg} \cdot 15 \cdot 10^6\,\tfrac{\text{J}}{\text{kg}}} = \dfrac{1{,}62 \cdot 10^8\,\text{J}}{1{,}8 \cdot 10^9\,\text{J}} = 0{,}090 = 9{,}0\,\%$
 **Vastaus:** $9{,}0\,\%$, kaksi merkitsevää numeroa. Rajoittavat tiedot ovat teho $45\,\text{kW}$ ja lämpöarvo $15\,\tfrac{\text{MJ}}{\text{kg}}$ (kumpikin kaksi numeroa); massa $120\,\text{kg}$ on vähintään kahden numeron arvo eikä rajoita, ja $3600\,\text{s/h}$ on määritelmä.
@@ -73,7 +83,11 @@
 **Annettu:** ilmaan siirtyvä lämpö $Q = 700{,}0\,\text{J}$, paine pysyy $p = 125\,\text{kPa}$, tilavuuden kasvu $\Delta V = 1{,}60\,\textsf{l}$
 **Kysytty:** sisäenergian muutos $\Delta U$ jouleina etumerkkeineen
 **Periaate:** Energia säilyy, joten ilmaan tuleva lämpö jakautuu sisäenergian muutokseksi ja ilman tekemäksi työksi: ensimmäinen pääsääntö $\Delta U = Q + W$, jossa $W$ on ilmaan tehty työ. Mäntä liikkuu kevyesti, joten paine pysyy vakiona. Ilma laajenee ja tekee työn $p\,\Delta V$, joten siihen tehty työ on $W = -p\,\Delta V$.
-**Kaava:** $W = -p\,\Delta V$, joten $\Delta U = Q + W = Q - p\,\Delta V$
+**Kaava:** $$\begin{aligned} \Delta U &= Q + W \\
+W &= -p\,\Delta V \\
+\Delta U &= Q - p\,\Delta V
+\end{aligned}
+$$
 **Muunnokset:** $125\,\text{kPa} = 125\,000\,\text{Pa}$ ja $1{,}60\,\textsf{l} = 0{,}00160\,\text{m}^3$, jolloin $\text{Pa} \cdot \text{m}^3 = \text{J}$.
 **Sijoitus:** $$\begin{aligned} \Delta U &= 700{,}0\,\text{J} \\ &- 125\,000\,\text{Pa} \cdot 0{,}00160\,\text{m}^3 \\ &= 700{,}0\,\text{J} - 200\,\text{J} \\ &= 500\,\text{J} \end{aligned}$$
 **Vastaus:** $+500\,\text{J}$ eli sisäenergia kasvaa, kolme merkitsevää numeroa. Rajoittava tieto on ilman tekemä työ $p\,\Delta V = 200\,\text{J}$, jolla on kolme numeroa ja joulen tarkkuus, koska paine $125\,\text{kPa}$ ja tilavuuden muutos $1{,}60\,\textsf{l}$ on annettu kolmella numerolla. Erotuksessa $700{,}0 - 200$ desimaalit määrää epätarkempi luku, joten tulos tunnetaan joulen tarkkuudella.
@@ -83,7 +97,12 @@
 **Annettu:** mekaaninen teho $P_\text{a} = 480\,\text{kW}$, hyötysuhde $\eta = 40{,}0\,\% = 0{,}400$
 **Kysytty:** hukkalämmön teho $P_\text{hukka}$ kilowatteina
 **Periaate:** Moottori on lämpövoimakone, ja energia säilyy: polttoaineen teho jakautuu mekaaniseen tehoon ja hukkalämpöön, joka siirtyy ympäristöön. Hyötysuhde yhdistää mekaanisen tehon polttoaineen tehoon, joten polttoaineteho lasketaan ensin.
-**Kaava:** $\eta = \dfrac{P_\text{a}}{P_\text{o}}$, joten $P_\text{o} = \dfrac{P_\text{a}}{\eta}$ ja $P_\text{hukka} = P_\text{o} - P_\text{a}$
+**Kaava:** $$\begin{aligned} \eta &= \dfrac{P_\text{a}}{P_\text{o}} \\
+P_\text{o} &= \dfrac{P_\text{a}}{\eta} \\
+P_\text{o} &= P_\text{a} + P_\text{hukka} \\
+P_\text{hukka} &= P_\text{o} - P_\text{a}
+\end{aligned}
+$$
 **Muunnokset:** Hyötysuhde $40{,}0\,\% = \tfrac{40{,}0}{100} = 0{,}400$. Tehot ovat jo kilowatteina, joten muuta muunnosta ei tarvita.
 **Sijoitus:** $P_\text{o} = \dfrac{480\,\text{kW}}{0{,}400} = 1200\,\text{kW}$, joten $P_\text{hukka} = 1200\,\text{kW} - 480\,\text{kW} = 720\,\text{kW}$
 **Vastaus:** $720\,\text{kW}$. Mekaanisen tehon $480\,\text{kW}$ loppunolla on merkitsevä, joten se on kolmen numeron arvo, ja hyötysuhde $40{,}0\,\%$ on myös kolmen numeron arvo. Siksi vastaus annetaan kolmella merkitsevällä numerolla.
@@ -93,7 +112,14 @@
 **Annettu:** yhteistuotannossa polttoaineteho $P_\text{pa} = 320\,\text{MW}$, sähköteho $P_\text{s} = 96\,\text{MW}$, kaukolämpöteho $P_\text{kl} = 180\,\text{MW}$; erillistuotannossa lauhdevoimalan hyötysuhde $\eta_\text{lauh} = 0{,}400$ ja lämpökeskuksen $\eta_\text{k} = 0{,}900$
 **Kysytty:** erillistuotannon polttoaineen lisätarve $\Delta P$ megawatteina sekä perustelu hyötysuhteiden erolle
 **Periaate:** Samat sähkö- ja lämpötehot tuotetaan kahdessa erillisessä laitoksessa, ja kummankin polttoaineteho saadaan hyötysuhteesta $\eta = \tfrac{P_\text{a}}{P_\text{o}}$, missä $P_\text{a}$ on laitoksen hyötyteho ja $P_\text{o}$ sen polttoaineteho: $P_\text{o} = \tfrac{P_\text{a}}{\eta}$. Vertailu on oikeudenmukainen, koska hyödyksi tulevat tehot ovat molemmissa tapauksissa samat.
-**Kaava:** $P_\text{lauh} = \dfrac{P_\text{s}}{\eta_\text{lauh}}$ ja $P_\text{lk} = \dfrac{P_\text{kl}}{\eta_\text{k}}$, joten $\Delta P = \dfrac{P_\text{s}}{\eta_\text{lauh}} + \dfrac{P_\text{kl}}{\eta_\text{k}} - P_\text{pa}$
+**Kaava:** $$\begin{aligned} \eta_\text{lauh} &= \dfrac{P_\text{s}}{P_\text{lauh}} \\
+\eta_\text{k} &= \dfrac{P_\text{kl}}{P_\text{lk}} \\
+P_\text{lauh} &= \dfrac{P_\text{s}}{\eta_\text{lauh}} \\
+P_\text{lk} &= \dfrac{P_\text{kl}}{\eta_\text{k}} \\
+\Delta P &= P_\text{lauh} + P_\text{lk} - P_\text{pa} \\
+&= \dfrac{P_\text{s}}{\eta_\text{lauh}} + \dfrac{P_\text{kl}}{\eta_\text{k}} - P_\text{pa}
+\end{aligned}
+$$
 **Muunnokset:** Hyötysuhteet $40{,}0\,\% = 0{,}400$ ja $90{,}0\,\% = 0{,}900$. Kaikki tehot ovat megawatteina, joten muuta muunnosta ei tarvita.
 **Sijoitus:** $$\begin{aligned} \Delta P &= \dfrac{96\,\text{MW}}{0{,}400} + \dfrac{180\,\text{MW}}{0{,}900} \\ &- 320\,\text{MW} \\ &= 240\,\text{MW} + 200\,\text{MW} \\ &- 320\,\text{MW} \\ &= 120\,\text{MW} \end{aligned}$$
 **Vastaus:** $120\,\text{MW}$, kaksi merkitsevää numeroa. Rajoittava tieto on sähköteho $96\,\text{MW}$ (kaksi numeroa): se määrää lauhdevoimalan polttoainetehon $240\,\text{MW}$ kymmenien megawattien tarkkuudelle, ja erotus $440\,\text{MW} - 320\,\text{MW}$ säilyttää tämän tarkkuuden. Hyötysuhteet $40{,}0\,\%$ ja $90{,}0\,\%$ ovat kolmen numeron arvoja eivätkä rajoita.
@@ -103,7 +129,15 @@
 **Annettu:** vuotuinen lämmöntarve $Q_1 = 16{,}0\,\text{MWh}$, lämpöpumpun lämpökerroin $\varepsilon = 2{,}50$, nykyinen lämmitys suora sähkölämmitys
 **Kysytty:** säästetty sähköenergia $\Delta E$ ja ulkoilmasta otettu lämpö $Q_2$ megawattitunteina sekä perustelu, miksi pumppu ei ole ikiliikkuja
 **Periaate:** Lämpökerroin kertoo, kuinka monta kertaa niin paljon lämpöä pumppu luovuttaa kuin se käyttää sähköä. Suoran sähkölämmityksen vastukset muuttavat käytännössä kaiken sähköenergian sisäenergiaksi, joka siirtyy lämpönä huoneeseen, joten se tarvitsee sähköä saman verran kuin lämpöä. Energia säilyy: taloon tuleva lämpö on pumpun sähkö ja ulkoilmasta otettu lämpö yhteensä.
-**Kaava:** $\varepsilon = \dfrac{Q_1}{W}$, joten $W = \dfrac{Q_1}{\varepsilon}$. Säästö on $\Delta E = Q_1 - W$ ja energian säilymisestä $Q_2 = Q_1 - W$, eli $\Delta E = Q_2 = Q_1 - \dfrac{Q_1}{\varepsilon}$.
+**Kaava:** $$\begin{aligned} \varepsilon &= \dfrac{Q_1}{W} \\
+W &= \dfrac{Q_1}{\varepsilon} \\
+Q_1 &= W + Q_2 \\
+Q_2 &= Q_1 - W \\
+\Delta E &= Q_1 - W = Q_2 \\
+&= Q_1 - \dfrac{Q_1}{\varepsilon} \\
+&= Q_1\left(1 - \dfrac{1}{\varepsilon}\right)
+\end{aligned}
+$$
 **Muunnokset:** Kaikki energiat ovat megawattitunteina ja lämpökerroin on yksikötön, joten muunnoksia ei tarvita.
 **Sijoitus:** $W = \dfrac{16{,}0\,\text{MWh}}{2{,}50} = 6{,}40\,\text{MWh}$, joten $\Delta E = Q_2 = 16{,}0\,\text{MWh} - 6{,}40\,\text{MWh} = 9{,}60\,\text{MWh}$, eli suoraan $\Delta E = Q_1\left(1 - \dfrac{1}{\varepsilon}\right) = 16{,}0\,\text{MWh} \cdot 0{,}600 = 9{,}60\,\text{MWh}$
 **Vastaus:** $9{,}60\,\text{MWh}$ sekä säästettyä sähköä että ulkoilmasta otettua lämpöä, kolme merkitsevää numeroa. Pumpun sähkö $6{,}40\,\text{MWh}$ on laskettu lämmöntarpeesta $16{,}0\,\text{MWh}$ eikä ole erillinen mittaus, joten erotussääntöä ei käytetä. Tulos on tulo $Q_1\left(1 - \tfrac{1}{\varepsilon}\right)$, ja sen numerot rajoittavat lämmöntarve $16{,}0\,\text{MWh}$ ja lämpökerroin $2{,}50$ (kumpikin kolme numeroa).
@@ -113,7 +147,15 @@
 **Annettu:** polttoaineen tilavuus $V = 6{,}00\,\textsf{l}$ matkalla $s = 100\,\text{km}$ (kulutuksen vertailumatka), nopeus $v = 80{,}0\,\tfrac{\text{km}}{\text{h}}$; bensiinin tiheys $\rho = 0{,}750\,\tfrac{\text{kg}}{\textsf{l}}$ ja lämpöarvo $H = 43{,}0\,\tfrac{\text{MJ}}{\text{kg}}$; hyötysuhde $\eta = 28{,}0\,\% = 0{,}280$
 **Kysytty:** moottorin keskimääräinen mekaaninen teho $P$ kilowatteina sekä perustelut energian kulkeutumiselle ja sähköauton pienemmälle tarpeelle
 **Periaate:** Moottori on lämpövoimakone: bensiinin palaessa vapautuva energia $Q_1$ jakautuu työhön $W = \eta Q_1$ ja hukkalämpöön, joka siirtyy ympäristöön. Teho on työ jaettuna matkaan kuluneella ajalla, ja nopeus on tasainen, joten teho on vakio.
-**Kaava:** $Q_1 = \rho V H$ ja $t = \dfrac{s}{v}$, joten $P = \dfrac{W}{t} = \dfrac{\eta \rho V H}{t}$
+**Kaava:** $$\begin{aligned} \eta &= \dfrac{W}{Q_1} \\
+W &= \eta Q_1 \\
+Q_1 &= mH \\
+m &= \rho V \\
+t &= \dfrac{s}{v} \\
+P &= \dfrac{W}{t} \\
+&= \dfrac{\eta \rho V H}{t}
+\end{aligned}
+$$
 **Muunnokset:** $t = \dfrac{100\,\text{km}}{80{,}0\,\text{km/h}} = 1{,}25\,\text{h} = 4500\,\text{s}$ ja $43{,}0\,\tfrac{\text{MJ}}{\text{kg}} = 43{,}0 \cdot 10^6\,\tfrac{\text{J}}{\text{kg}}$. Lopuksi $1\,\text{kW} = 1000\,\text{W}$.
 **Sijoitus:** Polttoaineen energiasta saatava työ on $$\begin{aligned} W &= 0{,}280 \cdot 0{,}750\,\tfrac{\text{kg}}{\textsf{l}} \\ &\cdot 6{,}00\,\textsf{l} \cdot 43{,}0 \cdot 10^6\,\tfrac{\text{J}}{\text{kg}} \\ &= 5{,}418 \cdot 10^7\,\text{J} \end{aligned}$$, joten
 
@@ -136,7 +178,12 @@ $$\begin{aligned} P &= \dfrac{5{,}418 \cdot 10^7\,\text{J}}{4500\,\text{s}} \\ &
 **Annettu:** pumpun sähköteho $P_\text{s} = 1{,}20\,\text{kW}$, lämmityspiiriin luovutettu lämpöteho $P_1 = 3{,}90\,\text{kW}$
 **Kysytty:** lämpökerroin $\varepsilon$
 **Periaate:** Lämpökerroin kertoo, kuinka moninkertaisen lämmön pumppu luovuttaa sisälle käyttämäänsä sähköenergiaan verrattuna. Se voidaan laskea myös tehoista, koska molemmat tehot ovat energiaa samassa ajassa.
-**Kaava:** $\varepsilon = \dfrac{Q_1}{W}$, joten tehoista $\varepsilon = \dfrac{P_1}{P_\text{s}}$
+**Kaava:** $$\begin{aligned} \varepsilon &= \dfrac{Q_1}{W} \\
+Q_1 &= P_1 \,t \\
+W &= P_\text{s}\,t \\
+\varepsilon &= \dfrac{P_1\,t}{P_\text{s}\,t} = \dfrac{P_1}{P_\text{s}}
+\end{aligned}
+$$
 **Muunnokset:** Molemmat tehot ovat kilowatteina, joten yksikkö supistuu eikä muunnosta tarvita. Lämpökertoimella ei ole yksikköä.
 **Sijoitus:** $\varepsilon = \dfrac{3{,}90\,\text{kW}}{1{,}20\,\text{kW}} = 3{,}25$
 **Vastaus:** $\varepsilon = 3{,}25$, kolme merkitsevää numeroa, koska molemmat tehot on annettu kolmella numerolla.
@@ -146,7 +193,11 @@ $$\begin{aligned} P &= \dfrac{5{,}418 \cdot 10^7\,\text{J}}{4500\,\text{s}} \\ &
 **Annettu:** polttoaineen lämpöarvo $H = 43\,\text{MJ/kg}$. Teho ja kulutus: $20{,}0\,\text{kW}$ ja $7{,}9\,\text{kg/h}$; $40{,}0\,\text{kW}$ ja $11{,}6\,\text{kg/h}$; $60{,}0\,\text{kW}$ ja $16{,}0\,\text{kg/h}$; $80{,}0\,\text{kW}$ ja $22{,}5\,\text{kg/h}$
 **Kysytty:** moottorin suurin hyötysuhde $\eta$ prosentteina
 **Periaate:** Moottori on lämpövoimakone, ja sen hyötysuhde on mekaanisen tehon osuus polttoaineen palamisessa vapautuvasta tehosta. Polttoaineteho on kulutus kertaa lämpöarvo. Hyötysuhde lasketaan jokaiselle kuormalle erikseen, ja suurin valitaan.
-**Kaava:** $P_1 = q_m H$ ja $\eta = \dfrac{P}{P_1} = \dfrac{P}{q_m H}$
+**Kaava:** $$\begin{aligned} \eta &= \dfrac{P}{P_1} \\
+P_1 &= q_m H \\
+\eta &= \dfrac{P}{q_m H}
+\end{aligned}
+$$
 **Muunnokset:** $43\,\text{MJ/kg} = 43 \cdot 10^6\,\text{J/kg}$ ja $1\,\text{h} = 3600\,\text{s}$, joten esimerkiksi $16{,}0\,\text{kg/h} = \tfrac{16{,}0}{3600}\,\text{kg/s} = 4{,}444 \cdot 10^{-3}\,\text{kg/s}$. Teho $60{,}0\,\text{kW} = 60\,000\,\text{W}$.
 **Sijoitus:** Kuormilla $60{,}0\,\text{kW}$:
 ```latex
@@ -170,7 +221,10 @@ Muilla kuormilla samalla tavalla: $20{,}0\,\text{kW}$ antaa $21{,}2\,\%$, $40{,}
 **Annettu:** taulukon neljän vuorokauden sähköenergiat $W$: $2{,}1$, $3{,}0$, $4{,}2$ ja $3{,}6\,\text{kWh}$, sekä sisälle luovutetut lämmöt $Q_1$: $6{,}4$, $8{,}1$, $10{,}0$ ja $9{,}3\,\text{kWh}$
 **Kysytty:** ulkoilmasta otettu lämpö $Q_2$ yhteensä neljässä vuorokaudessa
 **Periaate:** Lämpöpumppu ei tuota energiaa. Sisälle luovutettu lämpö on ulkoilmasta otetun lämmön ja pumpun käyttämän sähköenergian summa, ja tämä pätee myös usean vuorokauden summille.
-**Kaava:** $Q_2 = Q_1 - W$
+**Kaava:** $$\begin{aligned} Q_1 &= Q_2 + W \\
+Q_2 &= Q_1 - W
+\end{aligned}
+$$
 **Muunnokset:** Kaikki energiat on annettu kilowattitunteina, joten muunnoksia ei tarvita.
 **Sijoitus:** Summat ovat $W = 2{,}1 + 3{,}0 + 4{,}2 + 3{,}6 = 12{,}9\,\text{kWh}$ ja $Q_1 = 6{,}4 + 8{,}1 + 10{,}0 + 9{,}3 = 33{,}8\,\text{kWh}$. Siis
 ```latex
@@ -186,7 +240,12 @@ Q_2 &= 33{,}8\,\text{kWh} - 12{,}9\,\text{kWh} \\
 **Annettu:** kuukausittaiset lämmöntarpeet $Q$ ja lämpökertoimet $\varepsilon$ taulukosta: marraskuu $1{,}8\,\text{MWh}$ ja $3{,}4$; joulukuu $2{,}6\,\text{MWh}$ ja $2{,}9$; tammikuu $4{,}0\,\text{MWh}$ ja $2{,}4$; helmikuu $3{,}1\,\text{MWh}$ ja $2{,}6$; maaliskuu $2{,}2\,\text{MWh}$ ja $3{,}1$
 **Kysytty:** a) kuukausittaiset sähköenergiat ja niiden summa, b) kauden lämpökerroin $\varepsilon_\text{kausi}$ (vastauslaatikkoon), c) miksi keskiarvoa ei käytetä, ja sähkön säästö suoraan sähkölämmitykseen verrattuna
 **Periaate:** Lämpökerroin on $\varepsilon = Q_1/W$, ja nyt sisälle luovutettu lämpö on lämmöntarve, $Q_1 = Q$, joten kunkin kuukauden sähköenergia on $W = Q/\varepsilon$. Koko kauden lämpökerroin määritellään samalla tavalla koko kauden energioista: kauden luovutettu lämpö jaettuna kauden sähköenergialla. Suoran sähkölämmityksen sähkönkulutus on yhtä suuri kuin lämmöntarve.
-**Kaava:** $W = \dfrac{Q}{\varepsilon}$ ja $\varepsilon_\text{kausi} = \dfrac{\sum Q}{\sum W}$
+**Kaava:** $$\begin{aligned} \varepsilon &= \dfrac{Q_1}{W} \\
+Q_1 &= Q \\
+W &= \dfrac{Q}{\varepsilon} \\
+\varepsilon_\text{kausi} &= \dfrac{\sum Q}{\sum W}
+\end{aligned}
+$$
 **Muunnokset:** Kaikki energiat ovat megawattitunteina, joten muunnoksia ei tarvita. Lämpökertoimella ei ole yksikköä.
 **Sijoitus:** a) Kuukausittain:
 ```latex
@@ -220,7 +279,13 @@ Lämpökerroin on pienin kylmimpänä kuukautena, koska lämpöä on vaikeampi s
 **Kysytty:** a) lämpö $Q$ ja kaasun työ $W$, b) sisäenergian muutos $\Delta U$ kilojouleina (vastauslaatikkoon), c) työksi muuttunut osuus ja perustelu, miksi yksittäinen laajeneminen ei ole lämpövoimakone
 **Periaate:** Vastuksen energia siirtyy ilmaan lämpönä, $Q = Pt$. Paine on vakio, joten ilman tekemä työ on $W = p\,\Delta V$, ja tilavuuden muutos saadaan männän siirtymästä: $\Delta V = A\,\Delta h$. Energia säilyy: ensimmäisen pääsäännön mukaan sisäenergia muuttuu lämmön ja ilmaan tehdyn työn verran. Laajenevaan ilmaan tehty työ on $-p\,\Delta V$, joten $\Delta U = Q - p\,\Delta V$.
 **Kuvaajan lukeminen:** Taulukosta männän korkeus kasvaa arvosta $h_1 = 10{,}0\,\text{cm}$ arvoon $h_2 = 22{,}0\,\text{cm}$, joten $\Delta h = 12{,}0\,\text{cm}$. Korkeus kasvaa joka sekunti likimain saman verran ($3{,}0\,\text{cm/s}$). Paine on annettu vakioksi, ja tasainen nousu sopii vakiotehoiseen lämmitykseen.
-**Kaava:** $Q = Pt$, $\Delta V = A\,\Delta h$, $W = p\,\Delta V$ ja $\Delta U = Q - p\,\Delta V$
+**Kaava:** $$\begin{aligned} Q &= Pt \\
+\Delta V &= A\,\Delta h \\
+W &= p\,\Delta V \\
+\Delta U &= Q - W \\
+&= Q - p\,\Delta V
+\end{aligned}
+$$
 **Muunnokset:** $A = 200\,\text{cm}^2 = 200 \cdot 10^{-4}\,\text{m}^2 = 0{,}0200\,\text{m}^2$, $\Delta h = 12{,}0\,\text{cm} = 0{,}120\,\text{m}$ ja $p = 125\,\text{kPa} = 125\,000\,\text{Pa}$.
 **Sijoitus:** a)
 ```latex
@@ -274,7 +339,12 @@ Koneet tekevät saman työn, mutta se ei tee hyötysuhteesta samaa: koneen A $10
 **Kysytty:** männän siirtymä $\Delta s$ metreinä
 **Periaate:** Sylinterin poikkipinta-ala on vakio, joten kaasun tilavuus on $V = A s$ ja tilavuuden muutos $\Delta V = A\,\Delta s$. Mäntä siirtyy sitä pidemmän matkan, mitä enemmän tilavuus kasvaa.
 **Kuvaajan lukeminen:** Paine on vakio, joten kuvaaja on vaakasuora jana. Sen alkupää on kohdassa $V_1 = 1{,}0\,\textsf{l}$ ja loppupää kohdassa $V_2 = 4{,}0\,\textsf{l}$. Paineen arvoa ei tarvita, vain tilavuuden muutos $\Delta V = V_2 - V_1$.
-**Kaava:** $\Delta V = V_2 - V_1$ ja $\Delta V = A\,\Delta s$, josta $\Delta s = \dfrac{V_2 - V_1}{A}$
+**Kaava:** $$\begin{aligned} \Delta V &= V_2 - V_1 \\
+\Delta V &= A\,\Delta s \\
+\Delta s &= \dfrac{\Delta V}{A} \\
+&= \dfrac{V_2 - V_1}{A}
+\end{aligned}
+$$
 **Muunnokset:** $V_2 - V_1 = 4{,}0\,\textsf{l} - 1{,}0\,\textsf{l} = 3{,}0\,\textsf{l} = 3{,}0 \cdot 0{,}001\,\text{m}^3 = 0{,}0030\,\text{m}^3$ ja $A = 50\,\text{cm}^2 = 50 \cdot 0{,}0001\,\text{m}^2 = 0{,}0050\,\text{m}^2$.
 **Sijoitus:** $\Delta s = \dfrac{0{,}0030\,\text{m}^3}{0{,}0050\,\text{m}^2} = 0{,}60\,\text{m}$
 **Vastaus:** $\Delta s \approx 0{,}60\,\text{m}$, kaksi merkitsevää numeroa kuten luetuissa tilavuuksissa ja pinta-alassa.
@@ -286,7 +356,13 @@ Koneet tekevät saman työn, mutta se ei tee hyötysuhteesta samaa: koneen A $10
 Tehtävästä: lämpökerroin $\varepsilon = 4{,}0$ ja pumpun käyttämä sähköenergia $W = 2{,}5\,\text{kWh}$
 **Kysytty:** a) mitä lämpökerroin tarkoittaa ja miten se eroaa hyötysuhteesta, b) huoneeseen siirtyvä lämpö $Q_1$ ja ympäristöstä otettu lämpö $Q_2$ kilowattitunteina ($Q_2$ vastauskenttään), c) lämpötilojen vaikutus lämpökertoimeen, d) arvio väitteestä
 **Periaate:** Energia säilyy. Lämpöpumppu ei tuota energiaa vaan siirtää sitä: huoneeseen luovutettu lämpö on ympäristöstä otetun lämmön ja pumpun käyttämän sähköenergian summa. Lämpökerroin kertoo, kuinka moninkertainen huoneeseen luovutettu lämpö on pumpun käyttämään sähköenergiaan verrattuna. Tehtävässä tunnetaan $\varepsilon$ ja $W$, joten nämä kaksi yhtälöä riittävät.
-**Kaava:** $Q_1 = Q_2 + W$ ja $\varepsilon = \dfrac{Q_1}{W}$, joista $Q_1 = \varepsilon W$ ja $Q_2 = Q_1 - W = (\varepsilon - 1)\,W$
+**Kaava:** $$\begin{aligned} Q_1 &= Q_2 + W \\
+\varepsilon &= \dfrac{Q_1}{W} \\
+Q_1 &= \varepsilon W \\
+Q_2 &= Q_1 - W \\
+&= (\varepsilon - 1)\,W
+\end{aligned}
+$$
 **Muunnokset:** Sähköenergia on annettu ja lämmöt kysytään kilowattitunteina, joten muunnoksia ei tarvita. Lämpökertoimella ei ole yksikköä.
 **Sijoitus:** a) Aineiston mukaan lämpökerroin kertoo, paljonko pumppu tuottaa lämpöä suhteessa käyttämäänsä sähköenergiaan, eli $\varepsilon = Q_1/W$. Hyötysuhde taas on hyödyksi saadun energian osuus kaikesta laitteen ottamasta energiasta. Hyötysuhde on enintään $100\,\%$.
 

@@ -1,15 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 825040ba89ccd2d0
-
+CONTENT-HASH: b3173cb95ad51c48
 ## Blocking
 (none)
-
 ## Polish
 (none)
-
 ## Checked
-- Delta judged in context: the prefix "Esimerkkiaineisto:" removed from task texts; every sentence still begins correctly with a capital letter and the situation stays first, the question last.
-- L2-08 error task: the question line is intact and the final-option rule is kept.
-- No numbers, symbols, answers or levels changed; the data and figures the tasks need are unchanged.
-- Solutions.md changed only in presentation; steps and model answers are unchanged.
-- Finnish: grammar and reading level unchanged and fine for fi-easy.
+- Delta: every Kaava row starts from pV = nRT (or the stated basic law) and solves step by step; this matches the house rule of deriving first.
+- Rows with several quantities (L3 argon, leak share) are readable one equation per row.
+- No numbers, answers or levels changed.
+- Finnish unchanged in the diff apart from sentence splits; short sentences, fits a phone.

@@ -1,8 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: f4131ce8a7b012d5
-SCOPE: delta (old-content fixes, git diff origin/main)
+CONTENT-HASH: 9c23ec6ec989bf25
 
-1. Blocking: none.
-2. Checked: the Doppler symbols are now v_L (source) and v_H (listener) as in unit.md, in the inquiry feedback, hints, mistake and solution, in s2 c and its rubric. Recomputed: train v_L = 340*84/1040 = 27.46 m/s (99 km/h), f0 = 517 Hz; bat echo 30.0*(346/334) = 31.08 kHz; the step v_H = v_L is stated before it is used.
-3. Checked: s7 c model answer and rubric now follow the task's stated assumption (loudness difference ignored), so complete cancellation at P is correct; lambda = 343.4/343 = 1.001 m, delta s/lambda = 0.50.
-4. Language fi-easy: the changed numbers and wording were checked to carry the same values as fi.
+Delta review round 2 (work queue 11c): the hint fixes of commit a0849c11 after round 1, judged against each part's rubric, answer and `sovella/solutions.md`; the other hints are unchanged since the round-1 check of all 31 parts.
+
+## Blocking
+None.
+
+## Polish
+None.
+
+## Checked
+- s1 a hint 1 adds the antinode definition (where the string moves the most: correct), s3 b hint 2, s5 c hint 1 and s7 c hint 3 reworded as in fi; same physics as fi, no answer given.
+- s4 c recomputed: $n = (100 - 85)/3 = 5$, $t = 8\,\text{h}/2^5 = 15\,\text{min}$; the hint states only the relation, not the result.

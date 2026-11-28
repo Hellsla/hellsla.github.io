@@ -1,12 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: d664f2efd876fc3d
-
+CONTENT-HASH: 9aedda62aa253b0d
 ## Blocking
 (none)
-
 ## Polish
-- figures.json en entry for Joule's figure belongs to the lesson, not the set; nothing to judge here.
-
+(none)
 ## Checked
-- Delta: the reasonableness note of the sled-power task now ties the 60 W to a sled pulled at 3.0 m/s ≈ 11 km/h (10.8 checked), more concrete than the earlier 'brisk walking'.
-- No number, answer or step changed; the added translation strings do not touch the exercises.
+- Delta: only the Formula step of model solutions changed, plus paragraph splits in Principle/Model answer; no number, unit, answer or task text changed.
+- Formula rows now start from the basic equation and derive the asked quantity symbolically, one equation per row, as the house rule asks; the packet diff shows them flattened onto one line, the files hold aligned blocks.
+- Where the asked quantity is already alone, the row says so (no empty rearrangement step).
+- Each Formula row leads to the symbolic form that the Substitution step uses; nothing skipped.
+- Judged from the diff and solutions.md on disk; captures not opened.

@@ -18,6 +18,11 @@
      "kind": "calc",
      "points": 4,
      "text": "Kuinka suuri on generaattorin jännitteen huippuarvo? Kuinka suuri on sen tehollinen arvo?",
+     "hints": [
+       "Mikä saa käämin läpi kulkevan magneettivuon muuttumaan, kun käämi pyörii? Milloin jännite on suurimmillaan?",
+       "Pyörivän käämin jännitteen huippuarvo on $e_0 = NBA \\cdot 2\\pi f$, ja tehollinen arvo $U$ on se tasajännite, joka antaa saman keskimääräisen tehon.",
+       "Laske ensin huippuarvo $e_0$ magneettivuon tiheydestä $B$, pinta-alasta $A$, kierrosten määrästä $N$ ja kulmataajuudesta $2\\pi f$. Sinimuotoisella jännitteellä tehollinen arvo saadaan jakamalla huippuarvo luvulla $\\sqrt{2}$."
+     ],
      "answer": [
       {
        "name": "e0",
@@ -60,6 +65,11 @@
      "kind": "calc",
      "points": 4,
      "text": "Generaattorin tehollinen jännite $400\\,\\text{V}$ nostetaan muuntajalla linjan jännitteeksi. Mikä on muuntajan toisio- ja ensiökäämin kierrosten lukumäärien suhde? Kuinka suuret virrat kulkevat muuntajan kummallakin puolella?",
+     "hints": [
+       "Mikä suure pysyy samana ideaalisessa muuntajassa, kun jännite kasvaa? Miten se vaikuttaa virtaan?",
+       "Kierrosten suhde on $\\dfrac{N_2}{N_1} = \\dfrac{U_2}{U_1}$. Ideaalisessa muuntajassa teho säilyy, joten virta on kummallakin puolella $I = \\dfrac{P}{U}$.",
+       "Ensiöpuolen jännite on generaattorin $400\\,\\text{V}$ ja toisiopuolen linjan jännite $20{,}0\\,\\text{kV}$. Muunna kilovoltit voltteiksi ja teho $150\\,\\text{kW}$ watteiksi, ja laske virrat erikseen kummallakin puolella."
+     ],
      "answer": [
       {
        "name": "ratio",
@@ -108,6 +118,11 @@
      "kind": "calc",
      "points": 4,
      "text": "Kuinka suuri osa siirrettävästä tehosta muuttuu linjassa sisäenergiaksi? Mitä tapahtuisi, jos sama teho yritettäisiin siirtää samaa linjaa pitkin suoraan generaattorin jännitteellä $400\\,\\text{V}$?",
+     "hints": [
+       "Mikä virta kulkee linjassa? Mihin sähköenergia linjan johtimissa muuttuu?",
+       "Linjan johtimien häviöteho on $P_\\text{h} = RI^2$, missä $I$ on linjan virta. Siirretystä tehosta häviää osuus $\\dfrac{P_\\text{h}}{P}$.",
+       "Käytä virtana korkeajännitepuolen virtaa b-kohdasta ja laske häviöteho watteina. Jaa se siirrettävällä teholla $150\\,\\text{kW}$ (muunna watteiksi) ja ilmoita osuus prosentteina. Laske sitten sama häviöteho virralla, joka kulkisi jännitteellä $400\\,\\text{V}$, ja mieti, onko tulos mahdollinen."
+     ],
      "answer": {
       "value": 0.225,
       "unit": "%",
@@ -141,6 +156,11 @@
      "kind": "word",
      "points": 3,
      "text": "Huoltomies ehdottaa, että samaan muuntajaan kytkettäisiin myös kylän aurinkopaneelien tasajännite, jotta senkin jännite saataisiin nostettua linjaan. Arvioi ehdotus.",
+     "hints": [
+       "Millä ilmiöllä muuntaja muuttaa jännitettä? Mitä rautasydämessä pitää tapahtua, jotta toisiokäämiin syntyy jännite?",
+       "Induktiojännite riippuu magneettivuon muutosnopeudesta $\\dfrac{\\Delta\\Phi}{\\Delta t}$. Millainen on ensiökäämin rautasydämeen synnyttämä vuo ajan funktiona, kun ensiökäämiin kytketään tasajännite?",
+       "Mitä toisiokäämissä tapahtuu, jos vuo ei muutu? Mieti, millaista jännitettä muuntaja tarvitsee, ja miten tasajännitteestä voisi saada sellaista."
+     ],
      "criteria": [
       {
        "text": "Selittää, että muuntajan toisiojännite syntyy induktiolla rautasydämen muuttuvasta magneettivuosta: tasavirralla vuo on vakio, joten toisioon ei synny jännitettä (paitsi hetkellisesti kytkettäessä).",
@@ -178,6 +198,11 @@
      "kind": "calc",
      "points": 4,
      "text": "Kuinka suuri tulokulma ytimen ja kuoren rajapinnassa vähintään tarvitaan, jotta valo pysyy ytimessä? Kuinka suuri kulma valonsäteen ja kuidun akselin välillä saa silloin enintään olla?",
+     "hints": [
+       "Millä ehdolla valo heijastuu kokonaan ytimen ja kuoren rajapinnasta? Kummalla aineella on suurempi taitekerroin?",
+       "Rajakulmalle pätee $\\sin\\alpha_\\text{r} = \\dfrac{n_2}{n_1}$, missä $n_1$ on ytimen ja $n_2$ kuoren taitekerroin. Tulokulma mitataan rajapinnan normaalista.",
+       "Laske ensin rajakulma $\\alpha_\\text{r}$. Piirrä sitten säde, rajapinnan normaali ja kuidun akseli: normaali on kohtisuorassa akseliin nähden, joten säteen kulman akseliin ja tulokulman summa on $90^\\circ$."
+     ],
      "answer": [
       {
        "name": "ar",
@@ -220,6 +245,11 @@
      "kind": "calc",
      "points": 4,
      "text": "Kuinka kauan valopulssi kulkee kuidun akselin suuntaisesti mantereelta saareen? Kuinka paljon kauemmin kulkee säde, jonka kulma kuidun akseliin on suurin mahdollinen, jolla se vielä pysyy ytimessä?",
+     "hints": [
+       "Millä nopeudella valo etenee ytimessä? Miten matka, nopeus ja aika liittyvät toisiinsa?",
+       "Valon nopeus aineessa on $v = \\dfrac{c}{n_1}$, ja aika on $t = \\dfrac{s}{v} = \\dfrac{n_1 s}{c}$.",
+       "Muunna kuidun pituus metreiksi: $14{,}0\\,\\text{km} = 14\\,000\\,\\text{m}$. Piirrä suorakulmainen kolmio, jossa akselin suuntainen matka on kuidun pituus $s$ ja säteen kulma akseliin on $90^\\circ - \\alpha_\\text{r}$. Mieti, kuinka pitkä on säteen kulkema reitti, ja laske aika sillä."
+     ],
      "answer": [
       {
        "name": "t",
@@ -262,6 +292,11 @@
      "kind": "calc",
      "points": 4,
      "text": "Kuinka suuri teho saapuu saaren vastaanottimeen?",
+     "hints": [
+       "Kuinka paljon teho pienenee kuidussa? Mitkä kaikki osat vaimentavat valoa?",
+       "Kokonaisvaimennus on $A = aL + 4 \\cdot 0{,}10\\,\\text{dB}$, ja desibeleinä $A = 10\\,\\text{dB} \\cdot \\lg\\dfrac{P_0}{P}$.",
+       "Laske ensin kokonaisvaimennus $A$ desibeleinä. Ratkaise sitten vastaanotettu teho $P$: kirjoita yhtälö muotoon $\\lg\\dfrac{P_0}{P} = \\dfrac{A}{10\\,\\text{dB}}$ ja poista logaritmi kymmenpotenssilla."
+     ],
      "answer": {
       "value": 0.897,
       "unit": "mW",
@@ -295,6 +330,11 @@
      "kind": "word",
      "points": 3,
      "text": "Selitä, miksi valo pysyy kuidussa, vaikka kuitu kaartuu loivasti merenpohjan muotojen mukaan, mutta vuotaa ulos, jos kuitu taitetaan jyrkälle mutkalle.",
+     "hints": [
+       "Mitä valonsäteelle tapahtuu rajapinnassa, kun tulokulma on suurempi kuin rajakulma? Entä kun se on pienempi?",
+       "Kokonaisheijastus tapahtuu, kun $\\alpha > \\alpha_\\text{r}$, missä $\\sin\\alpha_\\text{r} = \\dfrac{n_2}{n_1}$.",
+       "Piirrä säde loivassa ja jyrkässä mutkassa. Miten tulokulma rajapinnan normaaliin nähden muuttuu, kun mutka jyrkkenee? Mitä se merkitsee kaapelin taivuttamiselle?"
+     ],
      "criteria": [
       {
        "text": "Selittää, että loivassa kaaressa säteen tulokulma rajapinnassa pysyy rajakulmaa suurempana, mutta jyrkässä mutkassa säde osuu ulkokaaren rajapintaan jyrkemmin, tulokulma pienenee alle rajakulman ja valo taittuu kuoreen.",
@@ -333,6 +373,11 @@
      "kind": "graph",
      "points": 4,
      "text": "Esitä magneettivuon tiheys etäisyyden funktiona kuvaajana. Onko magneettivuon tiheys kääntäen verrannollinen etäisyyteen? Perustele aineiston avulla.",
+     "hints": [
+       "Millaisen käyrän pisteet muodostaisivat, jos kaksinkertainen etäisyys puolittaisi kentän? Mitä taulukon luvut kertovat?",
+       "Jos $B$ on kääntäen verrannollinen etäisyyteen $r$, niiden tulo $Br$ on vakio.",
+       "Piirrä pisteet kuvaajaan niin, että akselit alkavat nollasta, äläkä yhdistä pisteitä viivalla. Laske tulo $Br$ taulukon jokaiselle riville ja vertaa tuloja toisiinsa."
+     ],
      "criteria": [
       {
        "key": "graph_axes",
@@ -356,6 +401,11 @@
      "kind": "graph",
      "points": 5,
      "text": "Esitä aineisto niin, että pisteisiin sopii suora. Perustele valintasi ja sovita pisteisiin suora.",
+     "hints": [
+       "Mitä suuretta vasten $B$ pitäisi piirtää, jotta pisteisiin sopisi suora? Miten kenttä riippuu etäisyydestä teorian mukaan?",
+       "Pitkän suoran johtimen kenttä on $B = \\dfrac{\\mu_0 I}{2\\pi} \\cdot \\dfrac{1}{r}$, joten $B$ on lineaarinen suureen $\\dfrac{1}{r}$ suhteen.",
+       "Muunna etäisyydet metreiksi ja laske $\\dfrac{1}{r}$ jokaiselle taulukon riville yksikössä $\\dfrac{1}{\\text{m}}$. Piirrä $B$ suureen $\\dfrac{1}{r}$ funktiona ja sovita yksi suora pisteiden lomitse. Suoraa ei pakoteta origon kautta."
+     ],
      "criteria": [
       {
        "text": "Perustelee linearisoinnin: pitkän suoran johtimen kenttä on $B = \\dfrac{\\mu_0 I}{2\\pi} \\cdot \\dfrac{1}{r}$, joten $B$ on lineaarinen etäisyyden käänteisluvun $\\dfrac{1}{r}$ suhteen, ja mahdollinen vakiokenttä vain siirtää suoraa.",
@@ -379,6 +429,11 @@
      "kind": "calc",
      "points": 6,
      "text": "Määritä kuvaajasta tyhjiön permeabiliteetti $\\mu_0$. Vertaa tulosta taulukkoarvoon $4\\pi \\cdot 10^{-7}\\,\\tfrac{\\text{Vs}}{\\text{Am}}$.",
+     "hints": [
+       "Mitä suuretta suoran kulmakerroin kuvaa, kun vaaka-akselilla on $\\dfrac{1}{r}$?",
+       "Suoran kulmakerroin on $k = \\dfrac{\\mu_0 I}{2\\pi}$. Ratkaise siitä $\\mu_0$ symbolein.",
+       "Lue kulmakerroin $k = \\dfrac{\\Delta B}{\\Delta(1/r)}$ kahdesta kaukana toisistaan olevasta sovitetun suoran pisteestä. Muunna $\\mu\\text{T}$ teslaksi: $1\\,\\mu\\text{T} = 10^{-6}\\,\\text{T}$. Vertaa tulosta taulukkoarvoon laskemalla prosenttiero."
+     ],
      "answer": {
       "value": 1.268,
       "unit": "· 10⁻⁶ Vs/(Am)",
@@ -417,6 +472,11 @@
      "kind": "calc",
      "points": 5,
      "text": "Suora ei kulje origon kautta. Mitä vakiotermi kertoo mittauksesta? Kuinka suuren lukeman anturi näyttäisi mallin mukaan $50\\,\\text{cm}$:n päässä johtimesta, ja miksi tulos on vain arvio?",
+     "hints": [
+       "Mitä anturi näyttäisi, jos johtimessa ei kulkisi virtaa? Mikä muu kuin johdin voi vaikuttaa lukemaan?",
+       "Suoran yhtälö on $B = \\dfrac{k}{r} + b$, jossa vakiotermi $b$ on suoran ja pystyakselin leikkauskohta.",
+       "Lue $b$ kuvaajalta ja sijoita yhtälöön $r = 0{,}50\\,\\text{m}$ ja c-kohdan kulmakerroin. Pohdi sitten, onko $50\\,\\text{cm}$ pieni johtimen pituuteen $2{,}0\\,\\text{m}$ verrattuna ja kuuluuko piste mitattuun väliin."
+     ],
      "answer": {
       "value": 15.73,
       "unit": "µT",
@@ -470,6 +530,11 @@
      "kind": "word",
      "points": 5,
      "text": "Selitä, miten sateenkaari syntyy. Kummalla reunalla kaarta punainen on, ja miksi?",
+     "hints": [
+       "Mitä valolle tapahtuu, kun se tulee vesipisaraan, heijastuu sen takapinnasta ja lähtee pois? Mitä tapahtuu eri väreille, jos taitekerroin riippuu aallonpituudesta?",
+       "Ilmiötä, jossa taitekerroin riippuu aallonpituudesta, kutsutaan dispersioksi. Taittumislaki on $n_1 \\sin\\alpha_1 = n_2 \\sin\\alpha_2$.",
+       "Vertaa punaisen ja violetin taitekertoimia: kummalla on suurempi? Kumpi väri taittuu enemmän? Päättele siitä, kummassa kulmassa vastapisteeseen nähden kumpikin väri tulee pisarasta ja kummalla reunalla punainen on."
+     ],
      "criteria": [
       {
        "text": "Selittää, että valo taittuu pisaraan, heijastuu sen takapinnasta ja taittuu ulos, ja että veden taitekerroin riippuu aallonpituudesta (dispersio), joten värit lähtevät pisarasta eri suuntiin.",
@@ -493,6 +558,11 @@
      "kind": "word",
      "points": 5,
      "text": "Selitä, miten saippuakuplan värit syntyvät. Miksi kuplan ohuin yläosa näyttää juuri ennen puhkeamista tummalta?",
+     "hints": [
+       "Kupla on ohut kalvo. Mihin pintoihin valo osuu, ja mitä heijastuneille aalloille tapahtuu, kun ne kohtaavat?",
+       "Kalvon ulko- ja sisäpinnasta heijastuneilla aalloilla on matkaero $2nd$, missä $n$ on kalvon taitekerroin ja $d$ sen paksuus. Matkaero ja aallonpituus ratkaisevat, mitkä aallonpituudet vahvistuvat.",
+       "Kumman pinnan heijastus kääntää aallon vaiheen? Mitä matkaerolle $2nd$ ja aaltojen vaihe-erolle tapahtuu, kun kalvon paksuus $d$ lähestyy nollaa?"
+     ],
      "criteria": [
       {
        "text": "Selittää ohuen kalvon interferenssin: kalvon ulko- ja sisäpinnasta heijastuneilla aalloilla on matkaero $2nd$, ja paksuudesta riippuu, mitkä aallonpituudet vahvistuvat ja mitkä heikkenevät; väri on jäljelle jäävien aallonpituuksien sekoitus.",
@@ -516,6 +586,11 @@
      "kind": "word",
      "points": 5,
      "text": "Selitä, miten CD-levy synnyttää värit, ja laske, missä kulmissa punainen ($650\\,\\text{nm}$) ja violetti ($400\\,\\text{nm}$) valo näkyvät ensimmäisessä kertaluvussa, kun valo tulee kohtisuoraan levyyn. Arvioi lopuksi juhlavieraan väite kokonaisuutena.",
+     "hints": [
+       "Mitä CD-levyn tiheät urat tekevät valolle? Mitä tapahtuu monesta urasta heijastuneille aalloille?",
+       "Vahvistuminen tapahtuu suunnissa, joille pätee hilayhtälö $d\\sin\\theta = k\\lambda$, missä $d$ on urien väli ja $k$ kertaluku.",
+       "Ratkaise $\\sin\\theta = \\dfrac{k\\lambda}{d}$, kun $k = 1$. Muunna aallonpituudet ja urien väli metreiksi: $1\\,\\text{nm} = 10^{-9}\\,\\text{m}$ ja $1{,}6\\,\\mu\\text{m} = 1{,}6 \\cdot 10^{-6}\\,\\text{m}$. Vertaa, kumpi väri poikkeaa hilassa enemmän ja kumpi taittuu pisarassa enemmän, ja arvioi sitten väite jokaisen ilmiön kohdalla erikseen."
+     ],
      "criteria": [
       {
        "text": "Selittää, että tiheät urat toimivat heijastushilana: vierekkäisistä urista heijastuneet aallot vahvistavat toisiaan suunnissa, joille $d\\sin\\theta = k\\lambda$.",
@@ -563,6 +638,11 @@
      "kind": "calc",
      "points": 5,
      "text": "Laske laserin aallonpituus kummastakin maksimista.",
+     "hints": [
+       "Mikä on hilan viivaväli? Miten kulma $\\theta$ saadaan mitatuista etäisyyksistä $x$ ja $L$?",
+       "Viivaväli on $d = \\dfrac{1\\,\\text{mm}}{600}$, kulma saadaan yhtälöstä $\\tan\\theta_k = \\dfrac{x_k}{L}$ ja aallonpituus hilayhtälöstä $\\lambda = \\dfrac{d\\sin\\theta_k}{k}$.",
+       "Muunna kaikki etäisyydet metreiksi. Laske kulma $\\theta_k$ tangentista ja vasta sitten sen sini; älä korvaa sinia suhteella $\\dfrac{x}{L}$. Laske kumpikin kertaluku erikseen."
+     ],
      "answer": [
       {
        "name": "l1",
@@ -605,6 +685,11 @@
      "kind": "word",
      "points": 5,
      "text": "Arvioi ryhmän johtopäätökset.",
+     "hints": [
+       "Missä ryhmän laskussa oletus voi pettää? Milloin approksimaatio $\\sin\\theta \\approx \\tan\\theta$ on hyvä?",
+       "Vertaa ryhmän käyttämää suhdetta $\\dfrac{x}{L}$ tangentista laskettuun $\\sin\\theta$:aan kummallekin kertaluvulle. Kumman kertaluvun virhe on suurempi, ja miksi?",
+       "Tarkista kolmas johtopäätös: mikä ehto kolmannen kertaluvun maksimin olemassaololle pätee? Laske a-kohdan aallonpituudella $\\sin\\theta_3$ ja kulma $\\theta_3$, ja sen jälkeen etäisyys $x_3 = L\\tan\\theta_3$. Mahtuuko maksimi seinälle, ja onko se kirkas?"
+     ],
      "criteria": [
       {
        "text": "Osoittaa, että virhe on laskutavassa: pienen kulman oletus antaa $1$. kertaluvusta $562\\,\\text{nm}$ (noin $6\\,\\%$ liikaa) ja $2$. kertaluvusta $692\\,\\text{nm}$ (noin $30\\,\\%$ liikaa), koska ero kasvaa kulman kasvaessa.",
@@ -633,6 +718,11 @@
      "kind": "word",
      "points": 5,
      "text": "Suunnittele, miten mittausta parannetaan.",
+     "hints": [
+       "Mikä mittauksessa on epätarkinta? Miten sen voisi mitata kahden pisteen avulla?",
+       "Miten suhteellinen epävarmuus $\\dfrac{\\Delta x}{x}$ muuttuu, kun $x$ kasvaa? Miten epävarmuudet $\\Delta x$ ja $\\Delta L$ vaikuttavat tulokseen $\\lambda = \\dfrac{d\\sin\\theta}{k}$?",
+       "Miten ilmoittaisit tuloksen, jotta sitä voi verrata valmistajan arvoon? Mitä muuta voit tehdä mittauksen luotettavuuden parantamiseksi, ja mitä turvallisuutta laserin kanssa pitää noudattaa?"
+     ],
      "criteria": [
       {
        "text": "Mitataan symmetristen maksimien $+k$ ja $-k$ välinen etäisyys ja puolitetaan se: kahden pisteen välin mittaaminen on tarkempaa kuin keskimaksimin keskikohdan arvioiminen, ja symmetria kertoo, onko säde kohtisuorassa.",
@@ -682,6 +772,11 @@
      "kind": "calc",
      "points": 4,
      "text": "Osoita, että protonin kierrosaika ei riipu sen vauhdista. Millä taajuudella raon jännitteen on vaihdeltava?",
+     "hints": [
+       "Mikä voima kaareuttaa protonin radan magneettikentässä? Miten se vaikuttaa protonin vauhtiin?",
+       "Magneettinen voima toimii keskeisvoimana: $qvB = \\dfrac{mv^2}{r}$. Kierrosaika on $T = \\dfrac{2\\pi r}{v}$.",
+       "Ratkaise ensin säde $r$ symbolein ja sijoita se kierrosaikaan. Mikä suure supistuu pois? Montako kertaa jännitteen on vaihdettava suuntaa yhden kierroksen aikana, ja mikä on siitä seuraava taajuus $f$?"
+     ],
      "answer": {
       "value": 18.29,
       "unit": "MHz",
@@ -715,6 +810,11 @@
      "kind": "calc",
      "points": 4,
      "text": "Kuinka suuri on protonin vauhti, kun se tulee ulos syklotronista? Kuinka suuri on silloin radan säde?",
+     "hints": [
+       "Mistä saat protonin vauhdin, kun tiedät sen liike-energian? Missä yksikössä liike-energia on annettu?",
+       "Liike-energia on $E_\\text{k} = \\tfrac12 mv^2$, ja radan säde magneettikentässä on $r = \\dfrac{mv}{qB}$.",
+       "Muunna ensin liike-energia jouleiksi: $1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$ ja $1\\,\\text{MeV} = 10^6\\,\\text{eV}$. Ratkaise sitten vauhti $v$ ja vasta sen jälkeen säde $r$."
+     ],
      "answer": [
       {
        "name": "v",
@@ -757,6 +857,11 @@
      "kind": "calc",
      "points": 4,
      "text": "Kuinka monta kierrosta protoni tekee syklotronissa? Kuinka kauan kiihdytys kestää?",
+     "hints": [
+       "Kiihdyttääkö protonia magneettikenttä vai rako? Kuinka paljon energiaa protoni saa yhdellä raon ylityksellä?",
+       "Raossa protoni saa energian $qU$, ja se ylittää raon kaksi kertaa kierroksessa. Kierrosten määrä on $n = \\dfrac{E_\\text{k}}{2qU}$ ja kiihdytysaika $t = nT$.",
+       "Protonin varaus on alkeisvaraus $e$, joten yhdellä ylityksellä saatu energia on elektronivoltteina sama luku kuin jännite voltteina. Käytä kierrosaikaa $T$ a-kohdasta."
+     ],
      "answer": [
       {
        "name": "n",
@@ -799,6 +904,11 @@
      "kind": "calc",
      "points": 3,
      "text": "Kuinka suuri on protonin kiihtyvyys juuri ennen kuin se tulee ulos syklotronista? Mihin suuntaan se osoittaa?",
+     "hints": [
+       "Mikä suure kuvaa kiihtyvyyttä ympyräradalla? Mihin suuntaan voima ja kiihtyvyys osoittavat?",
+       "Ympyräliikkeessä normaalikiihtyvyys on $a_\\text{n} = \\dfrac{v^2}{r}$. Se saadaan myös magneettisesta voimasta: $a = \\dfrac{qvB}{m}$.",
+       "Käytä b-kohdan vauhtia ja sädettä SI-yksiköissä. Mihin suuntaan nettovoima osoittaa suhteessa radan keskipisteeseen, ja mitä se kertoo kiihtyvyyden suunnasta?"
+     ],
      "answer": {
       "value": 4.498,
       "unit": "· 10¹⁵ m/s²",
@@ -848,6 +958,11 @@
      "kind": "calc",
      "points": 3,
      "text": "Lue aineistosta LHC:n kehän pituus ja se, kuinka monta kierrosta protonit kiertävät sekunnissa. Laske näistä protonien vauhti ja vertaa sitä valon nopeuteen. Mitä vertailusta voi päätellä ja mitä ei? Ota huomioon, millä tarkkuudella aineiston luvut on annettu.",
+     "hints": [
+       "Mitä tietoja tarvitset vauhdin laskemiseen? Etsi ne CERNin sivun kohdasta *Facts and figures*.",
+       "Vauhti on $v = \\dfrac{s}{t}$. Kun protoni kiertää $N$ kierrosta sekunnissa ja kehän pituus on $l$, kuljettu matka sekunnissa on $s = Nl$.",
+       "Sijoita kehän pituus metreinä ja kierrosten määrä sekunnissa. Vertaa vauhtia valon nopeuteen osamäärällä $\\dfrac{v}{c}$. Kuinka monta merkitsevää numeroa aineiston luvuissa on, ja mitä sen perusteella voi päätellä erosta?"
+     ],
      "answer": {
       "value": 2.9978,
       "unit": "· 10⁸ m/s",
@@ -876,6 +991,11 @@
      "kind": "calc",
      "points": 2,
      "text": "Muunna yhden protonin energia $6{,}8\\,\\text{TeV}$ jouleiksi.",
+     "hints": [
+       "Miten elektronivoltti liittyy jouleen? Mitä etuliite tera tarkoittaa?",
+       "$1\\,\\text{eV} = 1{,}602 \\cdot 10^{-19}\\,\\text{J}$ ja $1\\,\\text{TeV} = 10^{12}\\,\\text{eV}$.",
+       "Kirjoita energia ensin elektronivoltteina: $6{,}8 \\cdot 10^{12}\\,\\text{eV}$. Kerro se sitten luvulla, joka muuntaa yhden elektronivoltin jouleiksi."
+     ],
      "answer": {
       "value": 1.089,
       "unit": "· 10⁻⁶ J",
@@ -899,6 +1019,11 @@
      "kind": "calc",
      "points": 3,
      "text": "Kuinka suuri energia on varastoitunut yhteen protonisuihkuun?",
+     "hints": [
+       "Mistä suihkun energia koostuu? Mitä tarvitset tietää protonien määrästä?",
+       "Suihkun energia on protonien energioiden summa $E = NE_1$, missä $N$ on protonien kokonaismäärä ja $E_1$ yhden protonin energia b-kohdasta.",
+       "Laske $N$ kertomalla kimppujen määrä kimpun protonimäärällä: $2500 \\cdot 1{,}6 \\cdot 10^{11}$. Kerro sitten $E_1$:llä ja ilmoita energia megajouleina: $1\\,\\text{MJ} = 10^6\\,\\text{J}$."
+     ],
      "answer": {
       "value": 435.7,
       "unit": "MJ",
@@ -927,6 +1052,11 @@
      "kind": "calc",
      "points": 3,
      "text": "Henkilöauton massa on $1500\\,\\text{kg}$ ja nopeus $100\\,\\text{km/h}$. Laske auton liike-energia. Kuinka monen tällaisen auton liike-energiaa yhden protonisuihkun energia vastaa?",
+     "hints": [
+       "Millä suureella liikkuvan auton energia lasketaan? Missä yksikössä nopeuden pitää olla?",
+       "Liike-energia on $E_\\text{k} = \\tfrac12 mv^2$. Vertailu tehdään osamäärällä $\\dfrac{E}{E_\\text{k}}$, missä $E$ on suihkun energia c-kohdasta.",
+       "Muunna nopeus yksiköstä $\\text{km/h}$ yksikköön $\\text{m/s}$ jakamalla luvulla $3{,}6$. Laske auton liike-energia jouleina ja jaa sillä suihkun energia, myös jouleina."
+     ],
      "answer": [
       {
        "name": "Ek",
@@ -964,6 +1094,11 @@
      "kind": "word",
      "points": 4,
      "text": "LHC:ssä on tuhansia suprajohtavia sähkömagneetteja. Selvitä aineistosta, mikä tehtävä magneeteilla on, mihin lämpötilaan ne jäähdytetään ja mikä kiihdyttää protonit. Selitä näiden tietojen ja fysiikan avulla, miksi magneettikenttä ei lisää protonien energiaa ja miksi magneettien käämit ovat suprajohtavia.",
+     "hints": [
+       "Mitä CERNin sivu kertoo magneettien tehtävästä, lämpötilasta ja protonien kiihdyttämisestä? Etsi vastaukset kohdasta *Facts and figures* ja sen lähellä olevista kohdista.",
+       "Kuinka suuren työn tekee voima, joka on kohtisuorassa liikesuuntaan nähden? Mitä se kertoo protonin liike-energian muutoksesta?",
+       "Vahva magneettikenttä vaatii suuren virran $I$. Mitä tapahtuu tavallisessa johtimessa, jonka resistanssi on $R$ ja teho $P = RI^2$, ja mikä muuttuisi, jos $R$ olisi nolla?"
+     ],
      "criteria": [
       {
        "text": "Selittää magneettien tehtävän aineiston avulla: magneettinen voima on kohtisuorassa protonin nopeutta vastaan, joten se kaartaa radan ympyrän kaareksi (dipolimagneetit) ja pitää suihkun koossa (kvadrupolimagneetit).",
@@ -1013,6 +1148,11 @@
      "kind": "calc",
      "points": 4,
      "text": "Määritä akryylin taitekerroin kuvaajan avulla.",
+     "hints": [
+       "Mikä kuvaajan suoran ominaisuus kertoo taitekertoimen? Kirjoita taittumislaki ilmasta akryyliin.",
+       "Taittumislaki on $n_1 \\sin\\alpha_1 = n_2 \\sin\\alpha_2$. Ilmassa $n_1 = 1{,}00$, joten $\\sin\\alpha_1 = n\\sin\\alpha_2$, ja pystyakselilla on $\\sin\\alpha_1$.",
+       "Lue sovitetulta suoralta kaksi kaukana toisistaan olevaa pistettä, äläkä käytä mittauspisteitä. Laske kulmakerroin osamäärällä $\\dfrac{\\Delta y}{\\Delta x}$."
+     ],
      "answer": {
       "value": 1.5,
       "unit": "",
@@ -1046,6 +1186,11 @@
      "kind": "calc",
      "points": 4,
      "text": "Kuinka suuri on valon nopeus akryylissä? Kuinka kauan valolta kuluu levyn läpi, kun se kulkee levyn pintaa vastaan kohtisuoraan?",
+     "hints": [
+       "Miten valon nopeus aineessa riippuu taitekertoimesta? Kuinka pitkän matkan valo kulkee levyn läpi kohtisuorassa?",
+       "Valon nopeus aineessa on $v = \\dfrac{c}{n}$ ja kulkuaika $t = \\dfrac{d}{v}$.",
+       "Käytä a-kohdan taitekerrointa. Muunna levyn paksuus metreiksi: $15\\,\\text{cm} = 0{,}15\\,\\text{m}$. Laske ensin nopeus $v$ ja vasta sitten aika $t$."
+     ],
      "answer": [
       {
        "name": "v",
@@ -1083,6 +1228,11 @@
      "kind": "calc",
      "points": 4,
      "text": "Kuinka suuri on pienin tulokulma, jolla valo heijastuu kokonaan, kun se tulee akryylistä ilmaan?",
+     "hints": [
+       "Kummasta aineesta kumpaan valon täytyy kulkea, jotta kokonaisheijastus on mahdollinen? Mikä on taittokulma rajakulmassa?",
+       "Rajakulmassa taittokulma on $90^\\circ$, joten $n\\sin\\alpha_\\text{r} = 1{,}00 \\cdot \\sin 90^\\circ$.",
+       "Ratkaise $\\sin\\alpha_\\text{r}$ symbolein ja sijoita a-kohdan taitekerroin. Kulma saadaan käänteisfunktiolla $\\arcsin$, laskimessa $\\sin^{-1}$."
+     ],
      "answer": {
       "value": 41.81,
       "unit": "°",
@@ -1116,6 +1266,11 @@
      "kind": "word",
      "points": 3,
      "text": "Miksi sovitetun suoran pitäisi kulkea origon kautta? Miksi taitekerroin määritetään suoran kulmakertoimesta eikä yhdestä mittauspisteestä?",
+     "hints": [
+       "Mitä valolle tapahtuu, kun tulokulma on nolla? Mitkä ovat silloin kulmat?",
+       "Mitkä arvot $\\sin\\alpha_1$ ja $\\sin\\alpha_2$ saavat silloin, ja minkä pisteen kautta suoran pitäisi siksi kulkea?",
+       "Mittauspisteet ovat suoran molemmin puolin hajallaan. Miten yksittäisen pisteen osamäärä ja koko aineistoon sovitetun suoran kulmakerroin eroavat virheiden vaikutuksen kannalta? Riippuuko taitekerroin tulokulmasta?"
+     ],
      "criteria": [
       {
        "text": "Selittää, että kun tulokulma on nolla, valo ei taitu ja taitekulma on nolla. Silloin $\\sin\\alpha_1 = 0$ ja $\\sin\\alpha_2 = 0$, joten suoran pitää kulkea pisteen $(0;\\ 0)$ kautta. Kuvaajan suora kulkee lähes origon kautta, joten malli $\\sin\\alpha_1 = n \\sin\\alpha_2$ sopii mittaukseen.",
@@ -1161,6 +1316,11 @@
      "kind": "calc",
      "points": 4,
      "text": "Kuinka suuri on käämiin indusoituva jännite aikavälillä $0$–$0{,}40\\,\\text{s}$ ja kuinka suuri aikavälillä $0{,}60$–$0{,}80\\,\\text{s}$?",
+     "hints": [
+       "Mistä induktiojännite riippuu? Mitä sinun pitää lukea kuvaajasta?",
+       "Induktiolain mukaan vuon muuttuessa tasaisesti $\\lvert e \\rvert = N\\dfrac{\\lvert\\Delta\\Phi\\rvert}{\\Delta t}$.",
+       "Lue vuon arvo kummankin aikavälin alussa ja lopussa kuvaajan taitepisteistä ja laske muutos $\\Delta\\Phi$. Muunna $\\text{mWb}$ yksiköksi $\\text{Wb}$. Aikavälin pituus $\\Delta t$ luetaan vaaka-akselilta."
+     ],
      "answer": [
       {
        "name": "e1",
@@ -1203,6 +1363,11 @@
      "kind": "calc",
      "points": 4,
      "text": "Kuinka paljon sähköenergiaa muuttuu käämipiirissä sisäenergiaksi koko $0{,}80\\,\\text{s}$:n aikana?",
+     "hints": [
+       "Millä aikaväleillä virtapiirissä kulkee virta ja millä ei?",
+       "Sähköenergia muuttuu vastuksessa sisäenergiaksi. Teho on $P = \\dfrac{e^2}{R}$ ja energia $W = P\\,\\Delta t$.",
+       "Laske energia erikseen jokaiselle aikavälille, jolla jännite ei ole nolla, käyttäen a-kohdan jännitteitä. Laske lopuksi energiat yhteen."
+     ],
      "answer": {
       "value": 0.369,
       "unit": "J",
@@ -1236,6 +1401,11 @@
      "kind": "word",
      "points": 4,
      "text": "Selitä, millainen on induktiovirran suunta eri aikaväleillä. Kuinka vuon arvo nolla hetkellä, jolloin vuo vaihtaa etumerkkiä, vaikuttaa virtaan?",
+     "hints": [
+       "Mitä Lenzin laki sanoo induktiovirran vaikutuksesta vuon muutokseen? Millä aikavälillä virtaa ei ole lainkaan?",
+       "Lenzin lain mukaan induktiovirran oma magneettikenttä vastustaa vuon muutosta. Selvitä jokaisella aikavälillä, kasvaako vai pieneneekö vuo ja mihin suuntaan se osoittaa.",
+       "Mieti hetkeä, jolla vuo on nolla. Mikä kuvaajan ominaisuus kertoo vuon muutosnopeuden $\\dfrac{\\Delta\\Phi}{\\Delta t}$, ja riippuuko jännite vuon arvosta vai sen muutosnopeudesta?"
+     ],
      "criteria": [
       {
        "text": "Toteaa, että induktiojännite syntyy vain, kun vuo muuttuu. Aikavälillä $0{,}40$–$0{,}60\\,\\text{s}$ vuo on vakio, joten jännite ja virta ovat nolla.",

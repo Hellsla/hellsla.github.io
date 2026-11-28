@@ -7,7 +7,8 @@
       "text": "Extension task.\n\nIn heavy elements the electrons are in shells farther and farther out. What is the greatest number of electrons that fit in the shell $n = 5$?",
       "answer": 50,
       "unit": "electrons",
-      "tolerance": 0.02
+      "tolerance": 0.02,
+      "exact": true
     },
     {
       "id": "fy8-5-L1-02",
@@ -113,7 +114,8 @@
       ],
       "answer": 14,
       "unit": "electrons",
-      "tolerance": 0.02
+      "tolerance": 0.02,
+      "exact": true
     },
     {
       "id": "fy8-5-L1-09",
@@ -163,7 +165,8 @@
       "text": "Extension task.\n\nAn argon atom has $18$ electrons, and in the ground state they fill the orbitals in the order $1\\text{s}$, $2\\text{s}$, $2\\text{p}$, $3\\text{s}$, $3\\text{p}$. How many electrons are in the outermost shell of argon?",
       "answer": 8,
       "unit": "electrons",
-      "tolerance": 0.02
+      "tolerance": 0.02,
+      "exact": true
     },
     {
       "id": "fy8-5-L2-03",
@@ -184,7 +187,7 @@
     {
       "id": "fy8-5-L2-05",
       "level": 2,
-      "text": "Example data: the distance of the $1\\text{s}$ electron of a hydrogen atom from the nucleus is measured $N = 400$ times in a simulation. The table gives the number of measurements $k$ in each class, when the width of a class is $0.05\\,\\text{nm}$.\n\na) Which distance class is the most common?\n\nb) What share of the measurements land at a distance of less than $0.10\\,\\text{nm}$? Give the share as a percentage.\n\nc) Is the data consistent with the radius of the $90\\,\\%$ boundary of the $1\\text{s}$ orbital being $0.14\\,\\text{nm}$? Justify with numbers.\n\nEnter the result of part b) in the answer box.",
+      "text": "The distance of the $1\\text{s}$ electron of a hydrogen atom from the nucleus is measured $N = 400$ times in a simulation. The table gives the number of measurements $k$ in each class, when the width of a class is $0.05\\,\\text{nm}$.\n\na) Which distance class is the most common?\n\nb) What share of the measurements land at a distance of less than $0.10\\,\\text{nm}$? Give the share as a percentage.\n\nc) Is the data consistent with the radius of the $90\\,\\%$ boundary of the $1\\text{s}$ orbital being $0.14\\,\\text{nm}$? Justify with numbers.\n\nEnter the result of part b) in the answer box.",
       "kind": [
         "data",
         "reasoning"
@@ -230,7 +233,7 @@
       "id": "fy8-5-L2-06",
       "level": 2,
       "core": true,
-      "text": "The figure shows the first three standing waves of a string fixed at both ends. Example data: the length of the string is $L = 0.80\\,\\text{m}$ and the speed of the wave in the string is $v = 64\\,\\text{m/s}$.\n\na) What is the wavelength $\\lambda$ of each state in the figure?\n\nb) Calculate the frequency $f$ of each state.\n\nc) Using the frequencies you calculated, justify why a state with more nodes corresponds to a higher frequency, and say what this tells about the states of the electron in an atom.\n\nEnter in the answer box the result of part b) for the state that has two nodes.",
+      "text": "The figure shows the first three standing waves of a string fixed at both ends. The length of the string is $L = 0.80\\,\\text{m}$ and the speed of the wave in the string is $v = 64\\,\\text{m/s}$.\n\na) What is the wavelength $\\lambda$ of each state in the figure?\n\nb) Calculate the frequency $f$ of each state.\n\nc) Using the frequencies you calculated, justify why a state with more nodes corresponds to a higher frequency, and say what this tells about the states of the electron in an atom.\n\nEnter in the answer box the result of part b) for the state that has two nodes.",
       "kind": [
         "graph",
         "concept"
@@ -307,7 +310,8 @@
       "text": "Extension task.\n\nAn ultraviolet photon with a wavelength of $97.3\\,\\text{nm}$ hits a hydrogen atom in the ground state, and the atom absorbs it. How many orbitals does the shell to which the electron moves have?",
       "answer": 16,
       "unit": "orbitals",
-      "tolerance": 0.02
+      "tolerance": 0.02,
+      "exact": true
     },
     {
       "id": "fy8-5-L3-02",
@@ -316,7 +320,8 @@
       "text": "Extension task.\n\nIn light atoms, the electrons fill the orbitals in the ground state in the order $1\\text{s}$, $2\\text{s}$, $2\\text{p}$, $3\\text{s}$, $3\\text{p}$, and at most two electrons fit in each orbital. In an atom of a certain element the $3\\text{p}$ subshell is exactly half full. How many electrons does the atom have?",
       "answer": 15,
       "unit": "electrons",
-      "tolerance": 0.02
+      "tolerance": 0.02,
+      "exact": true
     },
     {
       "id": "fy8-5-L3-03",
@@ -329,7 +334,7 @@
     {
       "id": "fy8-5-L3-04",
       "level": 3,
-      "text": "Example data: the visible lines of the emission spectrum of hydrogen gas arise when the electron of an atom moves from a higher shell to the shell $n = 2$. The table gives the wavelengths $\\lambda$ of four lines.\n\nThe energy levels of the hydrogen atom are $E_n = -\\tfrac{13.6\\,\\text{eV}}{n^2}$, but the starting shells of the lines are not known.\n\na) Calculate the energy $E_\\text{f}$ of the photon of each line in electronvolts.\n\nb) For each line, deduce the number $n$ of the starting shell by solving it from the equation $E_\\text{f} = E_n - E_2$. Justify why the results must be integers.\n\nc) Draw a graph with $\\tfrac{1}{4} - \\tfrac{1}{n^2}$ on the horizontal axis and $E_\\text{f}$ on the vertical axis, and fit a straight line to the points. Determine the slope of the line and say what it expresses.\n\nd) Predict the wavelength of the next line, the transition starting from the shell $n = 7$.\n\nEnter the slope of part c) in the answer box in electronvolts.",
+      "text": "The visible lines of the emission spectrum of hydrogen gas arise when the electron of an atom moves from a higher shell to the shell $n = 2$. The table gives the wavelengths $\\lambda$ of four lines.\n\nThe energy levels of the hydrogen atom are $E_n = -\\tfrac{13.6\\,\\text{eV}}{n^2}$, but the starting shells of the lines are not known.\n\na) Calculate the energy $E_\\text{f}$ of the photon of each line in electronvolts.\n\nb) For each line, deduce the number $n$ of the starting shell by solving it from the equation $E_\\text{f} = E_n - E_2$. Justify why the results must be integers.\n\nc) Draw a graph with $\\tfrac{1}{4} - \\tfrac{1}{n^2}$ on the horizontal axis and $E_\\text{f}$ on the vertical axis, and fit a straight line to the points. Determine the slope of the line and say what it expresses.\n\nd) Predict the wavelength of the next line, the transition starting from the shell $n = 7$.\n\nEnter the slope of part c) in the answer box in electronvolts.",
       "kind": [
         "data",
         "graph",

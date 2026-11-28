@@ -79,7 +79,6 @@ new p5((p) => {
     const l2 = p.createElement('label').parent(controls); lI = p.createSpan('').parent(l2); slI = p.createSlider(20, 80, 50, 1).parent(l2);
     const l3 = p.createElement('label').parent(controls); p.createSpan(__('aine')).parent(l3); sel = p.createSelect().parent(l3);
     sel.option(__('kruunu'), 'kruunu'); sel.option(__('flint'), 'flint'); sel.option(__('vesi'), 'vesi'); sel.selected('kruunu');
-    p.createP(__('selite')).parent('sim-root').class('note');
     p.textFont('Arial');
     if (window.defineSimAdapter) window.defineSimAdapter({
       params: { A: { input: slA.elt, unit: '°' }, a1: { input: slI.elt, unit: '°' }, aine: { input: sel.elt, unit: '' } },

@@ -1,17 +1,17 @@
 VERDICT: PASS
-CONTENT-HASH: 73a1712daba2b351
-SCOPE: delta numbers,reflow from d75b4048e0db7028 base 4b05399
+CONTENT-HASH: d647d5b2f8ebc0f5
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] Kaava rows: the block now stacks every step, incl. the repeated "E = hf, f = c/lambda" opener; acceptable, no change asked.
+(none)
 
 ## Checked
-- Delta (solutions.md, Kaava step re-set as aligned blocks). Source read; rendered the built fi-easy page at 390 px with every solution open and opened the three tallest Kaava blocks (own captures; the packet has no phone-width solution shots) plus lesson-level capture open-exercises-1280.
-- Result: one equation per row, equals signs aligned, fractions and subscripts legible, no clipping, scrollWidth 390, no KaTeX element beyond the viewport; the rest of the solution (Sijoitus, Vastaus, Järkevyys) unchanged.
-- Other captures not opened.
+- Delta round 1: the diff only removes the prefix "Esimerkkiaineisto: " and capitalises the next word; no numbers, symbols, formulas or figures changed.
+- Opened (content/fi-easy/FY8/fy8-7/review/shots/): fy8-7-open-exercises-L2-1280-5 (task 7-15, "Lisätietotehtävä." then "Samasta puolijohteesta …").
+- The tag line stays as its own paragraph and the new capital works. The other three changed texts were read in the diff only.
+- Hash re-run at the end: unchanged.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 5

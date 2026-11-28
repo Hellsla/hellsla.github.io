@@ -1,16 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 5a2a6d8880fe81c5
-SCOPE: delta md-paragraphs,numbers,reflow,teacher-figure,typography from 599e18e38085bad0 base 64d4935
+CONTENT-HASH: 94ec7083fba52991
 
 ## Blocking
 (none)
 
 ## Polish
-- fy8-5 Balmer-graph task — the control paragraph "Tarkistuksena …" now precedes Kaava; it belongs in Kuvaajan lukeminen (it is), but a short lead "Tarkistus:" would make that plain.
-- Earlier polish (656 nm and 1,89 eV unexplained in Järkevyys) is not part of this diff; check it was applied.
+(none)
 
 ## Checked
-- Kaava steps for orbital counts, probability regions (P = p90 - p50, k = PN) and the standing-wave task now state the definition before the product; hc/λ chains start with E_f = hf and c = fλ.
-- Added paragraphs (sphere surface does not fit, cloud does not mean smeared electron, alkali ionisation trend and screening) answer the misconception each task targets.
-- Answers and numbers unchanged.
-- Method: delta; diff and Kaava blocks on disk read.
+- All five flagged answers are whole counts (electrons in a shell or subshell, outer-shell electrons, orbitals, atom electrons) with unit kpl; exact:true is right, since a near integer is a wrong count and the old 2 % band (e.g. 49 or 51 for 50) would have accepted it.
+- Task texts and solutions unchanged.

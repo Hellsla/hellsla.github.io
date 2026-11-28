@@ -1,18 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 815f454d8557aa79
+CONTENT-HASH: 09aa7395019efc50
+
 ## Blocking
-(none)
+None.
+
 ## Polish
-- tasks.json fy3-k7 b — one 4 p part asks three things (annual heat, heat-pump electricity, resistance heating) and answers only two values; a student can lose track of the third — split the resistance-heating question into its own short part or add it to the answer list.
-- tasks.json fy3-k4 d — a word part that also asks for a numeric estimate (about 250 kJ) with only a criterion text, no answer value; fine for the rubric, but say "arvioi" with the three steps named in the model answer so the points are findable.
-- tasks.json fy3-k1 f — option order puts the correct answer last and "ei voi päätellä tilavuuksista" in the middle; harmless, but vary the position of correct options (b, d, c, a, d, a, b, c, a, d is fine, f/d both last).
+- k7 b Kaava: $Q_\text{iv}$ and $Q_1$ are used without being named in Annettu/Kysytty (ilmanvaihto ja käyttövesi; taloon annettu lämpö). One short naming would help a student learning from the solution.
+- k7 e Kaava: $Q_1$ is again unnamed there; the three lines (pumppu, öljykattila, päästö) are clear but "päästökerroin" in the last row could be a symbol with its unit.
+- k2 b: Sijoitus ends at $-273\,{}^\circ\text{C}$ and Vastaus says "noin $-270$"; the rounding reason is given, but a one-clause bridge ("pyöristetään kahteen merkitsevään") would remove the jump.
+- k6 c Kaava: $k$ is introduced as the slope after $P = cm\,\Delta T/\Delta t$; fine, but naming $k$ before its use in the Kuvaajan lukeminen step would read more smoothly.
+
 ## Checked
-- Structure follows exam-guidelines: Osa 1 ten two-point choices over the whole course, Osa 2 four 15 p tasks (choose two), Osa 3 two tasks (choose one), 70 p maximum, 120 min; workload fits one exam.
-- Osa 1 tests understanding: graph reading (work from F(s), heating curve), predictions (hole in a heated plate, isochoric pressure about 7 %), order of magnitude (10 m of water), ranking by c; distractors are real errors (kg for N, 1,54 = m/g, constant or mean force, "kylmää siirtyy", ΔU = 0 when Q = 0, ozone).
-- Osa 2 meets the spread: graph from data (k2), explanation parts, measurement uncertainty (k2 d, k4 c), the course's main model (pV = nRT, k3); any two tasks still meet the core.
-- Osa 3 two tasks differ in kind: experimental data and error evaluation (k6) versus a societal and economic judgment with numbers (k7); the first part of each is accessible, difficulty comes from connecting chapters, not arithmetic.
-- No part names the method: "Määritä absoluuttisen nollapisteen lämpötila", "Määritä jään ominaissulamislämpö", "Laske ilman paine ja ainemäärä" do not give the formula; k3 a gives the pressure principle in words, acceptable for a 15 p opening part.
-- Rubrics: criteria sum per part, shared keys with task-specific detail, error propagation noted once in the intro; irrelevant equations earn nothing.
-- Answers consistent with answers.py (e.g. k2 fit -273 °C, k3 130 kPa and 0,0535 mol, k6 316 kJ/kg versus 333 table, 5 % low with named error directions).
-- Scope: stays inside FY3 (G = mg, W = Fs, no Newton's laws, no E_k or E_p); k6 a's molecular-energy explanation fits fy3-7.
-- Judged from the packet alone; solutions skimmed (k5 d, k6 and k7 shown in full structure), figures by description.
+- Changed part only: the Kaava step of every model answer in fy3-k2 to fy3-k7 (k1 has single Perustelu steps, unchanged in form).
+- Each Kaava now starts from the basic law and derives the working form before any number: k2 b (slope, line, zero condition, $\theta_0$), k3 a-c ($G=mg$, $p=p_0+G/A$, $pV=nRT$; $W=Fs$, $F=pA$), k4 a-c ($Q_1,Q_2,Q_3$ summed; $\eta = E_\text{hyöty}/E$, $E=m_\text{k}H$), k5 c-d (hydrostatic balance solved symbolically for $h_\text{max}$), k6 c-d ($P=Q/\Delta t$, $Q=cm\Delta T$; $Q=P\Delta t=sm$), k7 a, b, d, e ($P_i=U_iA_i\Delta T$, parallel sum; $\varepsilon=Q_1/W$, $\eta$ definitions). This matches the teacher's rule (basic principle, then derive, never open with the combined formula).
+- Symbolic simplification runs to the end before the Sijoitus step; one equation per row, equals signs aligned.
+- Kaava does not disclose the task's answer or model beyond what the solution should show; no step skips a stage a student could not follow.
+- Single-formula Kaava steps (k3 d, k5 a) are a basic law ($\Delta U = Q - W$, $\Delta l=\alpha l_0\Delta T$), so no derivation is missing.
+- Numbers in Sijoitus match answers.py output and the rubric details; practice.py check OK.
+- Unchanged parts (task levels, workload, variety, rubric fairness) not re-judged in this delta.

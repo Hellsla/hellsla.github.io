@@ -80,7 +80,7 @@ The warmer the water is compared with the air, the more heat is conducted and ra
 So the power is determined from the start of the graph, not from the average rise over the whole measurement.
 **Reading the graph:** A tangent is drawn to the curve at $0\,\text{min}$. It passes through the points $(0\,\text{min};\ 20.0\,{}^\circ\text{C})$ and $(10\,\text{min};\ 28.5\,{}^\circ\text{C})$, so the initial rate of warming is $\dfrac{\Delta T}{\Delta t} = \dfrac{8.5\,\text{K}}{10\,\text{min}} = 0.85\,\text{K/min}$.
 
-**Formula:** $P = \dfrac{Q}{\Delta t} = cm \cdot \dfrac{\Delta T}{\Delta t}$
+**Formula:** $$\begin{aligned} Q &= P\Delta t \\ Q &= cm\Delta T \\ P\Delta t &= cm\Delta T \\ P &= cm \cdot \dfrac{\Delta T}{\Delta t} \end{aligned}$$
 **Conversions:** $0.85\,\text{K/min} = 0.85\,\text{K} : 60\,\text{s} = 0.014\,17\,\text{K/s}$. A change in temperature is the same in degrees Celsius and in kelvins.
 **Substitution:** $$\begin{aligned} P &= 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 4.00\,\text{kg} \cdot 0.014\,17\,\text{K/s} \\ &= 237\,\text{W} \end{aligned}$$
 **Answer:** $P \approx 240\,\text{W}$, two significant figures, because the slope of the tangent is read from the graph to about two figures.
@@ -90,7 +90,7 @@ So the power is determined from the start of the graph, not from the average ris
 **Given:** power received by the water $P \approx 237\,\text{W}$, radiation power per area $800\,\text{W/m}^2$ and area $A = 0.50\,\text{m}^2$
 **Find:** the efficiency $\eta$ of the collector at the start of the measurement, when there are no losses yet
 **Principle:** Efficiency is the ratio of useful power to incoming power. The useful power is the power from part b that the water receives at the start before losses, and the incoming power is the power of the radiation hitting the surface of the collector.
-**Formula:** $P_\text{o} = 800\,\text{W/m}^2 \cdot A$ and $\eta = \dfrac{P_\text{a}}{P_\text{o}}$, where the output power $P_\text{a} = P$ is the power the water gets and the input power $P_\text{o}$ the power of the radiation reaching the collector
+**Formula:** $$\begin{aligned} P_\text{o} &= 800\,\text{W/m}^2 \cdot A \\ \eta &= \dfrac{P_\text{a}}{P_\text{o}} \\ P_\text{a} &= P \\ \eta &= \dfrac{P}{800\,\text{W/m}^2 \cdot A} \end{aligned}$$
 **Conversions:** Not needed, the powers are in watts.
 **Substitution:** $P_\text{o} = 800\,\text{W/m}^2 \cdot 0.50\,\text{m}^2 = 400\,\text{W}$ and $\eta = \dfrac{237\,\text{W}}{400\,\text{W}} = 0.59$
 **Answer:** $\eta \approx 0.59$, that is, about $60\,\%$, two significant figures as in the power from part b.
@@ -104,7 +104,7 @@ So the power is determined from the start of the graph, not from the average ris
 As the water warms up, the loss grows, so a smaller and smaller part of the power received from the Sun is left for the water and the temperature rises more and more slowly. The power received from the Sun stays the same, so the loss is the difference between it and the power left for the water.
 
 **Reading the graph:** The slope at $50\,\text{min}$ is read from the line through the points at $40\,\text{min}$ and $60\,\text{min}$, which is almost parallel to the tangent of the curve: $\dfrac{54.7\,{}^\circ\text{C} - 46.2\,{}^\circ\text{C}}{20\,\text{min}} = 0.425\,\text{K/min}$.
-**Formula:** $P_\text{water} = cm \cdot \dfrac{\Delta T}{\Delta t}$ and $P_\text{loss} = P - P_\text{water}$
+**Formula:** $$\begin{aligned} Q &= cm\Delta T \\ P_\text{water} &= \dfrac{Q}{\Delta t} \\ &= cm \cdot \dfrac{\Delta T}{\Delta t} \\ P &= P_\text{water} + P_\text{loss} \\ P_\text{loss} &= P - P_\text{water} \end{aligned}$$
 **Conversions:** $0.425\,\text{K/min} = 0.425\,\text{K} : 60\,\text{s} = 0.007\,08\,\text{K/s}$
 **Substitution:** $$\begin{aligned} P_\text{water} &= 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 4.00\,\text{kg} \\ &\cdot 0.007\,08\,\text{K/s} \\ &= 119\,\text{W} \end{aligned}$$ and $P_\text{loss} = 237\,\text{W} - 119\,\text{W} = 118\,\text{W}$
 **Answer:** $P_\text{loss} \approx 120\,\text{W}$, two significant figures, because both slopes are read from the graph.
@@ -135,7 +135,7 @@ If it continued at the same rate, the loss would grow equal to the power receive
 **Principle:** Water boils at the temperature that corresponds to the total pressure acting on the surface of the water. When the valve lets steam out, the total pressure in the cooker is the outside air pressure and the gauge pressure of the valve together.
 
 The air has already left, so under the lid there is only water vapour and the whole pressure is the pressure of the vapour. The table gives the boiling temperature only at intervals of $5\,{}^\circ\text{C}$, so a value in between is interpolated between the two nearest rows, assuming that the temperature changes evenly between them.
-**Formula:** $p = p_0 + \Delta p$ and $T = T_1 + (T_2 - T_1) \cdot \dfrac{p - p_1}{p_2 - p_1}$
+**Formula:** $$\begin{aligned} p &= p_0 + \Delta p \\ \dfrac{T - T_1}{T_2 - T_1} &= \dfrac{p - p_1}{p_2 - p_1} \\ T &= T_1 + (T_2 - T_1) \cdot \dfrac{p - p_1}{p_2 - p_1} \end{aligned}$$
 **Conversions:** Not needed, all pressures are in kilopascals.
 
 **Substitution:** $p = 101\,\text{kPa} + 80\,\text{kPa} = 181\,\text{kPa}$, which is between the rows $169.2\,\text{kPa}$ and $198.7\,\text{kPa}$. $T = 115\,{}^\circ\text{C} + 5\,{}^\circ\text{C} \cdot \dfrac{11.8\,\text{kPa}}{29.5\,\text{kPa}} = 115\,{}^\circ\text{C} + 2.0\,{}^\circ\text{C} = 117\,{}^\circ\text{C}$
@@ -161,7 +161,7 @@ Because the water is $17\,{}^\circ\text{C}$ hotter than in an open pot, the temp
 
 The mass of the water and the potatoes is not needed: it only determines how long the water lasts.
 
-**Formula:** $\eta P t = rm$, so $m = \dfrac{\eta P t}{r}$
+**Formula:** $$\begin{aligned} E &= Pt \\ E_\text{useful} &= \eta E \\ Q &= rm \\ E_\text{useful} &= Q \\ \eta P t &= rm \\ m &= \dfrac{\eta P t}{r} \end{aligned}$$
 **Conversions:** $t = 20\,\text{min} = 20 \cdot 60\,\text{s} = 1200\,\text{s}$ and $r = 2260\,\text{kJ/kg} = 2.26 \cdot 10^6\,\text{J/kg}$
 **Substitution:** $\eta P t = 0.80 \cdot 300\,\text{W} \cdot 1200\,\text{s} = 288\,000\,\text{J}$ and $m = \dfrac{288\,000\,\text{J}}{2.26 \cdot 10^6\,\text{J/kg}} = 0.127\,\text{kg}$
 **Answer:** $m \approx 0.13\,\text{kg}$, two significant figures as in the fraction $0.80$ and the time $20\,\text{min}$.
@@ -174,11 +174,11 @@ The mass of the water and the potatoes is not needed: it only determines how lon
 
 Energy is conserved: the energy needed for the vaporisation comes from the cooling of the water itself. The part that vaporises is small, so the whole mass $m$ can be used as the mass of the cooling water.
 
-**Formula:** $c m \Delta T = r m_\text{v}$, so $\dfrac{m_\text{v}}{m} = \dfrac{c \Delta T}{r}$
+**Formula:** $$\begin{aligned} Q_\text{released} &= Q_\text{received} \\ Q_\text{released} &= c m \Delta T \\ Q_\text{received} &= r m_\text{v} \\ c m \Delta T &= r m_\text{v} \\ \dfrac{m_\text{v}}{m} &= \dfrac{c \Delta T}{r} \end{aligned}$$
 **Conversions:** $\Delta T = 117\,{}^\circ\text{C} - 100\,{}^\circ\text{C} = 17\,\text{K}$ and $r = 2.26 \cdot 10^6\,\text{J/kg}$
 **Substitution:** $\dfrac{m_\text{v}}{m} = \dfrac{4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 17\,\text{K}}{2.26 \cdot 10^6\,\text{J/kg}} = 0.031$
 **Answer:** about $3\,\%$ of the water vaporises in an instant. One significant figure is enough, because the heat of the potatoes and the cooker was left out of the calculation. They also cool down and vaporise more water, so the real fraction is slightly larger.
-**Reasonableness:** After part c there is about $1.4\,\text{kg}$ of water, and about $40\,\text{g}$ of it vaporises. That is about $2.4\,\text{mol}$, and as an ideal gas at $100\,{}^\circ\text{C}$ and a pressure of $101\,\text{kPa}$ it takes up a volume of $V = \dfrac{nRT}{p} \approx 70\,\text{l}$.
+**Reasonableness:** After part c there is about $1.4\,\text{kg}$ of water, and about $40\,\text{g}$ of it vaporises. That is about $2.4\,\text{mol}$, and as an ideal gas at $100\,{}^\circ\text{C}$ and a pressure of $101\,\text{kPa}$ it takes up a volume of $V = \dfrac{nRT}{p} \approx 70\,\textsf{l}$.
 
 Tens of litres of hot steam and boiling splashes are released at once, and steam burns worse as it condenses than water at the same temperature. So a pressure cooker may be opened only after the pressure has dropped.
 
@@ -200,7 +200,7 @@ Tens of litres of hot steam and boiling splashes are released at once, and steam
 **Principle:** The amount of air in the bubble stays the same. The bubble is small, so it is always at the temperature of the surrounding water, and its pressure is the pressure of the water at that depth: atmospheric pressure and hydrostatic pressure together.
 
 From the equation of state of an ideal gas $pV = nRT$ it follows that when $n$ is constant, $\dfrac{pV}{T}$ stays the same. Both pressure and temperature change, so neither can be left out.
-**Formula:** $p_1 = p_0 + \rho g h$ and $\dfrac{p_1 V_1}{T_1} = \dfrac{p_2 V_2}{T_2}$, so $V_2 = V_1 \cdot \dfrac{p_1}{p_2} \cdot \dfrac{T_2}{T_1}$, where at the surface $p_2 = p_0$
+**Formula:** $$\begin{aligned} p_1 &= p_0 + \rho g h \\ p_2 &= p_0 \\ pV &= nRT \\ \dfrac{p_1 V_1}{T_1} &= \dfrac{p_2 V_2}{T_2} \\ V_2 &= V_1 \cdot \dfrac{p_1}{p_2} \cdot \dfrac{T_2}{T_1} \end{aligned}$$
 **Conversions:** $p_0 = 101\,\text{kPa} = 101\,000\,\text{Pa}$, $T_1 = (6.0 + 273.15)\,\text{K} = 279.15\,\text{K}$ and $T_2 = (20.0 + 273.15)\,\text{K} = 293.15\,\text{K}$.
 
 The volume can stay in cubic centimetres, because the equation has a ratio of volumes.
@@ -209,27 +209,27 @@ The volume can stay in cubic centimetres, because the equation has a ratio of vo
 **Reasonableness:** The pressure falls by a factor of about $2.5$ as the bubble rises, so the volume grows to about $2.5$ times, and the warming increases it by about $5\,\%$ more. The growth of bubbles as they rise can also be seen in diving videos.
 
 ### b)
-**Given:** lungs full of air, $V_1 = 6.0\,\text{l}$, at pressure $p_1 = 248\,\text{kPa}$ and pressure at the surface $p_2 = 101\,\text{kPa}$
+**Given:** lungs full of air, $V_1 = 6.0\,\textsf{l}$, at pressure $p_1 = 248\,\text{kPa}$ and pressure at the surface $p_2 = 101\,\text{kPa}$
 **Find:** the volume of the air at the surface and why rising while holding your breath is dangerous
 **Principle:** The amount of air stays the same when you hold your breath. The air in the lungs is at body temperature, about $37\,{}^\circ\text{C}$, regardless of depth and the temperature of the water. So the temperature stays constant, and the volume changes according to Boyle's law.
 **Formula:** $p_1 V_1 = p_2 V_2$, so $V_2 = V_1 \cdot \dfrac{p_1}{p_2}$
 **Conversions:** Not needed, the units cancel in the ratio of the pressures.
-**Substitution:** $V_2 = 6.0\,\text{l} \cdot \dfrac{248\,\text{kPa}}{101\,\text{kPa}} = 14.7\,\text{l}$
-**Answer:** The air would expand to about $15\,\text{l}$ (two significant figures as in $6.0\,\text{l}$). The lungs can hold only the $6.0\,\text{l}$ given in the problem, so the trapped air would stretch them and could tear the lung tissue.
+**Substitution:** $V_2 = 6.0\,\textsf{l} \cdot \dfrac{248\,\text{kPa}}{101\,\text{kPa}} = 14.7\,\textsf{l}$
+**Answer:** The air would expand to about $15\,\textsf{l}$ (two significant figures as in $6.0\,\textsf{l}$). The lungs can hold only the $6.0\,\textsf{l}$ given in the problem, so the trapped air would stretch them and could tear the lung tissue.
 
 While rising, you must never hold your breath: you breathe normally throughout the ascent, so that the expanding air can escape from the lungs.
 **Reasonableness:** The volume grows in the same ratio as the bubble in part a, except for the share due to warming: the temperature of the lungs does not change.
 
 ### c)
-**Given:** volume of the tank $V_\text{tank} = 12.0\,\text{l}$, gauge readings $200\,\text{bar}$ and $50\,\text{bar}$ of gauge pressure, consumption $q = 20\,\text{l/min}$ at the pressure of the depth $p = 248\,\text{kPa}$
+**Given:** volume of the tank $V_\text{tank} = 12.0\,\textsf{l}$, gauge readings $200\,\text{bar}$ and $50\,\text{bar}$ of gauge pressure, consumption $q = 20\,\text{l/min}$ at the pressure of the depth $p = 248\,\text{kPa}$
 **Find:** the time $t$ the diver can stay at a depth of $15.0\,\text{m}$
 **Principle:** According to the problem, the temperature of the air is the same in the tank and in the lungs (part d) estimates the effect of warming), so the amount of air is proportional to the product of pressure and volume (Boyle's law).
 
 The air used from the tank takes up, at the pressure of the depth, the volume that is breathed. The gauge shows gauge pressure. However, the difference of the total pressures is the same as the difference of the gauge pressures, because the atmospheric pressure cancels.
 
-**Formula:** $\Delta p_\text{tank} V_\text{tank} = p V$, so $V = \dfrac{\Delta p_\text{tank} V_\text{tank}}{p}$, and $t = \dfrac{V}{q}$
+**Formula:** $$\begin{aligned} p_1 V_\text{tank} &= n_1 RT \\ p_2 V_\text{tank} &= n_2 RT \\ \Delta p_\text{tank} &= p_1 - p_2 \\ \Delta n &= n_1 - n_2 \\ \Delta p_\text{tank} V_\text{tank} &= \Delta n\,RT \\ pV &= \Delta n\,RT \\ V &= \dfrac{\Delta p_\text{tank} V_\text{tank}}{p} \\ t &= \dfrac{V}{q} \end{aligned}$$
 **Conversions:** $\Delta p_\text{tank} = 200\,\text{bar} - 50\,\text{bar} = 150\,\text{bar} = 150 \cdot 100\,\text{kPa} = 15\,000\,\text{kPa}$. The volumes can stay in litres.
-**Substitution:** $V = \dfrac{15\,000\,\text{kPa} \cdot 12.0\,\text{l}}{248\,\text{kPa}} = 725\,\text{l}$ and $t = \dfrac{725\,\text{l}}{20\,\text{l/min}} = 36\,\text{min}$
+**Substitution:** $V = \dfrac{15\,000\,\text{kPa} \cdot 12.0\,\textsf{l}}{248\,\text{kPa}} = 725\,\textsf{l}$ and $t = \dfrac{725\,\textsf{l}}{20\,\text{l/min}} = 36\,\text{min}$
 **Answer:** $t \approx 36\,\text{min}$, two significant figures as in the consumption $20\,\text{l/min}$.
 **Reasonableness:** At the surface the same air would last $2.5$ times longer, about $89\,\text{min}$, because each breath takes $2.5$ times the amount of air at depth. A dive of about half an hour matches ordinary recreational dives.
 

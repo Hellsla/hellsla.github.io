@@ -1,20 +1,20 @@
 VERDICT: PASS
-CONTENT-HASH: 25b3b9bd9015b47f
+CONTENT-HASH: e33eeabe0760019d
 
 ## Blocking
 
 ## Polish
-- inquiry.json exp-2 solution (Annettu) — it reads the n = 40 mean as $2{,}70\,\text{s}$. The model gives $2{,}6995\,\text{s}$, and the readout shows three decimals, so the student's table may show $2{,}699$ or $2{,}700$. Either is inside the tolerance, but the solution could say "noin $2{,}70\,\text{s}$" — optional.
-- lesson.md Esimerkki, Sijoitus — the intermediate $\bar{t} = 3{,}1817\,\text{s}$ is labelled with "=". "$\approx$" would be more exact — optional.
+- lessons/FY1/fy1-3/lesson-answers.py:38 — `inq-ice-corrected` (62,3 °C − 1,5 °C = 60,8 °C) computes a number that no lesson or inquiry text uses — delete it, or add the correction step to the ice-water data task if it was meant to be there.
+- content/fi/FY1/fy1-3/inquiry.json:283,291 — exp-3 gives the smaller half-range as $0{,}0850\,\text{s}$, but the readout shows three decimals (0,085), and the solution itself says the second digit is already uncertain — write $0{,}085\,\text{s}$ in the hint and the solution.
+- content/fi/FY1/fy1-3/inquiry.json:291 — exp-3 says "Hajonta on suoraan verrannollinen satunnaisvirheen suuruuteen". In the model this holds only before the readings are rounded to 0,01 s (the answer's own Järkevyys step says so) — add "mallissa ennen pyöristystä".
 
 ## Checked
-- Round 2 blocker fixed in fi, en and fi-easy: check-2 answer "$2\,\%$, one significant figure like the error estimate $0{,}05\,\text{s}$". This matches the rounding rule (lesson.md Kaava, Tiivistelmä) and the worked example. Tolerance 0.1 accepts a typed 2. The mistake values 4.2, 0.05 and 0.021 stay outside it.
-- Recomputed in one python call, using my own model of the sim. exp-1: n = 1 gives a difference of $-0{,}22\,\text{s}$, n = 40 gives $-0{,}0005\,\text{s}$, and the half range is about $0{,}25$–$0{,}26\,\text{s}$. exp-2: n = 40 gives $0{,}2995\,\text{s}$. exp-3: $0{,}525/0{,}085 = 6{,}18$, inside 6.2 ± 0.03. siirto: $5{,}44\,\text{g}$, and the mistakes 5.6, 27.2, 4.8 and 28 are distinct. Worked example: $19{,}09\,\text{s}$, $3{,}18\,\text{s}$, $0{,}12\,\text{s}$, $3{,}8\,\%$. Exit ticket: $19{,}9\,\text{g}$, and $1{,}99\,\% \to 2\,\%$. Ice data: mean $1{,}5$, half range $0{,}1$. The hook times match the sim series. lesson-answers.py agrees with all of these.
-- Gross-error item: the half range goes from $0{,}09\,\text{s}$ to $0{,}62\,\text{s}$ and the mean shifts by about $0{,}2\,\text{s}$, both correct. Outlier handling follows the guardrail wording: check the result, leave it out only for a found cause, and write the cause down.
-- The sim.js reading $t_i = T + \Delta t_\text{sys} + \Delta t_\text{sat} g_i$, rounded to $0{,}01\,\text{s}$, is the same model as the "Mallin oletukset" box and lesson-answers.py. Each experiment locks the right parameters and varies only one.
-- Figures are drawn to scale. error-types: means $2{,}41\,\text{s}$ and $2{,}59\,\text{s}$. example-plot: the dots, the mean $3{,}18\,\text{s}$ and the bar $\pm 0{,}12\,\text{s}$ match the data. range-half: the mean marker is at the mean of the dots.
-- Terms follow the guardrails: mittausvirhe (with its sign) vs mittausepävarmuus (positive, not a hard limit) vs resoluutio. Half the range is called an estimate of the scatter and a cautious estimate for the mean, never the uncertainty of the mean. Repetition reduces only random error. Scale reading uses the half-division wording with the total-uncertainty caveat.
-- check-c2: the right option ($\sim 0{,}2\,\text{s}$, from reaction time) is the only correct one. Each distractor's feedback says why it is wrong.
-- data, check-1 and virhe: exactly one correct option each. The systematic-error reasoning (shown only by comparing with a reference) is consistent across the theory, the conclusion model answer, check-3 and the exit ticket.
-- Captions: the LIGO sensitivity (far below the size of a nucleus) and the caliper (fractions of a millimetre) are correct.
-- Content hash 25b3b9bd9015b47f, the same at the start and at the end.
+- Recomputed every number in one script from the task data and the sim's G series. All match lesson-answers.py: exp-1 at n = 1/5/40 gives ero −0,22 / +0,076 / −0,0005 s and puoli 0 / 0,25 / 0,26 s; exp-2 at n = 40 gives mean 2,6995 s, ero 0,2995 s; exp-3 ratio 6,18 → 6,2; coin 5,44 g and the mistakes 5,6 / 27,2 / 4,8 / 28,0; check-2 2,08 % (mistake 4,2 %); worked example 19,09 s, 3,1817 s, 0,12 s, 3,77 % → 3,8 %; exit ticket 19,9 g and 1,99 % → 2 %; ice data mean 1,5 °C and ratio 15.
+- The karkea feedback numbers are right: the mean shifts by +0,19 s, the half-range goes from 0,09 s to 0,62 s, and 3,07 s is 0,05 s below the next result.
+- With the tolerances read as relative (docs/inquiry.md), the listed mistakes fall outside the accepted range, and the rounded answers (2 %, 6,2) fall inside it.
+- Definitions follow the guardrails: mittausvirhe has a sign; epävarmuus is positive and not a hard limit; resoluutio is kept apart from epävarmuus; the half-range is a simple estimate of scatter and a conservative bound for the mean, not called the uncertainty of the mean; the outlier rule uses the guardrail wording. The correction $x = x_\text{lukema} - \Delta x_\text{sys}$ is consistent with the sign of the error.
+- The figures that say "mittakaavassa" are to scale. error-types: means 2,406 s and 2,592 s at x = 208,5 and 342,5 (about 715 px/s). example-plot: dots at their values, and the bar covers 3,06–3,30 s.
+- The zero-scale figure is right: 48,7 g − 1,2 g = 47,5 g.
+- sim.js implements the stated model $t_i = T + \Delta t_\text{sys} + \Delta t_\text{sat} g_i$, rounded to 0,01 s, with a fixed series (sd 0,96, so "tyypillinen poikkeama" is fair). simState gives mean, puoli and vir. The experiments lock the right parameters (exp-1/2: sat and sys; exp-3: n and sys), and the reset defaults match.
+- Each prediction, experiment, data task, mistake-spotting item and check has exactly one correct option, and each distractor's feedback is right.
+- Theory, summary, model answers and exit ticket agree with each other. Scope stays within FY1 (measurement and how reliable it is).

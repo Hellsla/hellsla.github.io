@@ -685,6 +685,9 @@ with sync_playwright() as pw:
     check("every hint in view and unlocked", hints.count() >= 2 and all(hints.nth(k).is_visible() and hints.nth(k).get_attribute("data-locked") is None for k in range(hints.count())))
     hints.nth(1).locator("summary").click(); pg.wait_for_timeout(80); check("a later hint opens without the first (teacher 2026-11-04)", hints.nth(1).evaluate("(d) => d.open"))
     n2 = pg.locator("#check-2"); i2 = n2.locator("form.check input"); o2 = n2.locator("form.check output")
+    i2.fill("240"); n2.locator("form.check button").click(); check("a task's own mistake wins over the general one (17c)", "Laskit" in o2.inner_text(), o2.inner_text())
+    i2.fill("1800"); n2.locator("form.check button").click(); check("a general mistake names what to check (17c: order of magnitude)", "etuliitteet" in o2.inner_text(), o2.inner_text())
+    i2.fill("-180"); n2.locator("form.check button").click(); check("a general mistake names what to check (17c: sign)", "etumerkki" in o2.inner_text(), o2.inner_text())
     i2.fill("100"); n2.locator("form.check button").click(); i2.fill("100"); n2.locator("form.check button").click()
     check("second wrong try points to the solution", "Ei vielä" in o2.inner_text() or "Vastaus" in o2.inner_text(), o2.inner_text())
 

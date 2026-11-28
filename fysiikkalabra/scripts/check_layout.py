@@ -26,9 +26,13 @@ In each state it reports:
              shorter one (a card that grows beside a short one; a figure beside a much longer text). The simulation
              and the worked example's problem are sticky beside their column and are not counted.
   small      reading text under 17 px (a phone never gets smaller text) or a control under 40 px tall
+  figgap     a figure unit beside its text (.fig-row.side): the text or the figure does not start at the unit's top, or one column
+             ends over 190 px above the other (230 px beside a photograph: its caption stands under it) (work queue 8e, 11 U3)
   datafig    a small table beside a figure (.data-fig): stacked although both fit, overlapping, its caption wrapped to a
              narrow column, or an empty strip at the table's right edge (work queue 22, teacher 2026-11-19)
   heading    a stage heading hidden under the sticky navigation after following its link (closed state only)
+A page with the exam mode (the minikoe pages, the practice exam) is checked in two more states, "exam" (started, two tasks chosen, the clock
+bar at the foot of the window) and "exam-ended-*" (ended: the result, then the three states above).
 Each finding names where it is (work queue 5, 2026-11-16): the nearest block with an id (the task "#fy8-1-L2-08", the
 stage "#teoria"), the open box, the solution step and the element ("at #fy8-1-L2-08 > details.solution > step
 "Substitution" > div.eq-chain"); a page wider than the window names the deepest element past its edge. For CI's
@@ -224,17 +228,27 @@ JS = """() => {
   const cards = [...document.querySelectorAll('main .activity, main details.opt')].filter((e) => V(e) && !e.closest('.lab-side, details.opt .activity') && !e.parentElement.closest('.activity'));
   for (let i = 1; i < cards.length; i++) if (R(cards[i]).top < R(cards[i - 1]).top - 1)
     out.push({at: W(cards[i]), what: 'order', over: Math.round(R(cards[i - 1]).top - R(cards[i]).top), text: `${name(cards[i])} shows above ${name(cards[i - 1])}`});
-  // gap: a row of two columns where one is far taller than the other (the empty area beside a grown card)
+  // gap (a .fig-row.side has its own check below, figgap: its text may stand in two grid rows): a row of two columns where one is far taller than the other (the empty area beside a grown card)
   for (const g of document.querySelectorAll('main *')) {
     const cs = getComputedStyle(g);
-    if (cs.display !== 'grid' || !V(g) || g.matches('.lab, .example, ul.choices, .prior ul')) continue;
+    if (cs.display !== 'grid' || !V(g) || g.matches('.lab, .example, ul.choices, .prior ul, .fig-row.side')) continue;
     if (cs.gridTemplateColumns.trim().split(/\\s+/).length < 2) continue;
     const rows = {};
     for (const c of g.children) { if (!V(c) || getComputedStyle(c).position === 'sticky') continue; const k = Math.round(R(c).top); (rows[k] = rows[k] || []).push(R(c).height); }
     for (const hs of Object.values(rows)) if (hs.length > 1) {
       const hi = Math.max(...hs), lo = Math.min(...hs);
-      if (hi - lo > 240 * K && lo < 0.55 * hi) out.push({at: W(g), what: 'gap', over: Math.round(hi - lo), text: `${name(g)}: ${Math.round(hi - lo)} px empty beside the shorter column`});
+      if (hi - lo > 240 * K && lo < 0.55 * hi) out.push({at: W(g), what: 'gap', over: Math.round(hi - lo), text: `${name(g)}: ${Math.round(hi - lo)} px empty beside the shorter column (${hs.map(Math.round).join("/")})`});
     }
+  }
+  // figgap (work queue 8e, 11 U3): in a figure unit beside its text the text starts at the row's top (it is never centred
+  // between empty stretches) and neither column ends far above the other: at most 190 px (the figure's own margin
+  // counted) of empty column under the shorter one
+  for (const r of document.querySelectorAll('main .fig-row.side')) {
+    if (!V(r) || getComputedStyle(r).display !== 'grid') continue;
+    const t = r.querySelector(':scope > .fig-text'), f = r.querySelector(':scope > .fig'), mo = r.querySelector(':scope > .fig-more'), rr = R(r);
+    const tb = R(mo || t).bottom, fb = R(f).bottom, tt = R(t).top - rr.top, ft = R(f).top - rr.top;
+    if (tt > 2 * K || ft > 2 * K) out.push({at: W(r), what: 'figgap', over: Math.round(Math.max(tt, ft)), text: `${name(r)}: ${Math.round(Math.max(tt, ft))} px empty above ${tt > ft ? 'the text' : 'the figure'} at the top of the unit`});
+    if (Math.abs(tb - fb) > (f.querySelector('figure.unit-photo') ? 230 : 190) * K) out.push({at: W(r), what: 'figgap', over: Math.round(Math.abs(tb - fb)), text: `${name(r)} "${t.textContent.trim().slice(0, 25)}" (${Math.round(R(t).height)}/${Math.round(R(f).height)}): ${Math.round(Math.abs(tb - fb))} px empty under the ${tb < fb ? 'text' : 'figure'} beside the ${tb < fb ? 'figure' : 'text'}`});
   }
   // datafig: a small table and a figure of one task (.data-fig, work queue 22) sit side by side when both fit and stacked when
   // they do not; the table's caption is one row and the table has no empty strip at its right edge
@@ -260,6 +274,18 @@ JS = """() => {
     if (!V(c) || c.closest('#sim-root') || c.matches('.kc-term-btn')) continue;   // a concept term inside a sentence is an inline target (WCAG 2.5.8 exception)
     if (R(c).height < 39.5) { out.push({at: W(c), what: 'small', over: Math.round(40 - R(c).height), text: `control ${Math.round(R(c).height)} px tall: "${c.textContent.trim().slice(0, 40)}"`}); break; }
   }
+  // speed-label: the name of a simulation's playback-speed choice is shown, never clipped to a 1 px box (work queue 10, 2026-11-25:
+  // fy4-1 and fy4-3 at 1280 px)
+  for (const l of document.querySelectorAll('#sim-root .sim-speed')) {
+    const sp = l.querySelector(':scope > span');
+    if (sp && V(l) && R(sp).width < 8) out.push({at: W(l), what: 'small', over: Math.round(8 - R(sp).width), text: `${name(l)}: the speed choice's name is ${Math.round(R(sp).width)} px wide`});
+  }
+  // hint-indent: an open hint of a long task's part (ol.parts) fills the part's text column on a phone; it is not pushed in
+  // another 1.2rem (11c PR 2, fy9-liike at 390 px)
+  if (window.innerWidth <= 600) for (const d of document.querySelectorAll('ol.parts > li > .hints details[open] > div')) {
+    const t = d.closest('li').children[1];
+    if (V(d) && t && R(d).left - R(t).left > 2 * K) { out.push({at: W(d), what: 'column', over: Math.round(R(d).left - R(t).left), text: `${name(d)}: the hint box starts ${Math.round(R(d).left - R(t).left)} px in from the part's text`}); break; }
+  }
   return out;
 }"""
 
@@ -283,6 +309,9 @@ HEADINGS = """async () => { const V = (e) => e.checkVisibility(), out = [], nav 
   }
   window.scrollTo(0, 0); return out; }"""
 
+# which picture files of figures drawn on one load (read by the "svg-image" check; a reload of the page, as the exam mode does, loses it: run it again)
+FIGIMG = """Promise.all([...document.querySelectorAll('main svg image')].map((i) => new Promise((ok) => { const m = new Image(); m.onload = () => ok([i.getAttribute('href'), m.naturalWidth]); m.onerror = () => ok([i.getAttribute('href'), 0]); m.src = new URL(i.getAttribute('href'), document.baseURI).href; }))).then((r) => { window.__figimg = Object.fromEntries(r); return true; })"""
+
 bad = 0
 with sync_playwright() as pw:
     b = launch(pw)
@@ -293,13 +322,26 @@ with sync_playwright() as pw:
         page = b.new_page(viewport={"width": width, "height": 800})
         page.goto(page_file.as_uri())
         page.evaluate("document.fonts.ready.then(() => true)")   # measure with the page's own fonts, not a fallback
-        page.evaluate("""Promise.all([...document.querySelectorAll('main svg image')].map((i) => new Promise((ok) => { const m = new Image(); m.onload = () => ok([i.getAttribute('href'), m.naturalWidth]); m.onerror = () => ok([i.getAttribute('href'), 0]); m.src = new URL(i.getAttribute('href'), document.baseURI).href; }))).then((r) => { window.__figimg = Object.fromEntries(r); return true; })""")   # which picture files of figures drawn on one (scripts/figimage.py) load: the "svg-image" check
+        page.evaluate("Promise.all([...document.images].map((i) => { i.loading = 'eager'; return i.complete ? 0 : new Promise((ok) => { i.onload = i.onerror = ok; }); }))")   # a lazy photograph is measured at its real size, not as an empty box
+        page.evaluate(FIGIMG)   # which picture files of figures drawn on one (scripts/figimage.py) load: the "svg-image" check
         page.wait_for_timeout(400)
         found = [dict(f, state="closed") for f in page.evaluate(HEADINGS)]
         for state, js in OPEN.items():
             page.evaluate(js); page.wait_for_timeout(150 if state != "closed" else 0)
             if state != "closed": page.evaluate("document.querySelectorAll('.katex-display').length")   # (opened maths is already rendered by auto-render)
             found += [dict(f, state=state) for f in page.evaluate(JS)]
+        if page.locator("#koetila .kt-go").count():   # an exam-mode page (templates/koetila.js, work queue 11b PR 6): the same checks while the exam runs and once it has ended
+            page.on("dialog", lambda d: d.accept())
+            page.click("#koetila .kt-go"); page.wait_for_selector(".kt-bar", timeout=8000); page.wait_for_timeout(700)
+            page.evaluate("document.fonts.ready.then(() => true)"); page.evaluate(FIGIMG)
+            for pick in page.locator(".kt-pick").all()[:2]:   # a task chosen shows its whole body beside an unchosen one
+                if pick.is_enabled(): pick.click()
+            page.wait_for_timeout(200)
+            found += [dict(f, state="exam") for f in page.evaluate(JS)]
+            page.click(".kt-end"); page.wait_for_selector(".kt-result", timeout=10000); page.wait_for_timeout(3500); page.evaluate(FIGIMG)
+            for state, js in OPEN.items():
+                page.evaluate(js); page.wait_for_timeout(700 if state != "closed" else 0)   # (a picture inside a box that has just opened loads lazily)
+                found += [dict(f, state="exam-ended-" + state) for f in page.evaluate(JS)]
         page.close()
         uniq = []
         key = page_file.relative_to(OUT).with_suffix("").as_posix()

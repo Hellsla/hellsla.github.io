@@ -64,7 +64,7 @@ fy6-14/hero	illustration	fy6-14-hero.webp
 fy6-14/suunnat	diagram	fy6-14-suunnat.webp	0	0	600	362.5		
 fy6-15/askel	diagram	fy6-15-askel.webp	0	0	600	351.2		[0, 1, 2]
 fy6-15/hero	illustration	fy6-15-hero.webp						
-fy6-15/luokat	diagram	fy6-15-luokat.webp	15.6	6	576.9	299.3		
+fy6-15/luokat	diagram	fy6-15-luokat.webp	15.6	6	576.9	299.3	{"9": [-8, 7]}	
 fy6-15/maadoitus	diagram	fy6-15-maadoitus.webp	0	0	600	388.8		
 fy6-15/merkki-1	illustration	fy6-15-merkki-1.webp						
 fy6-15/merkki-2	illustration	fy6-15-merkki-2.webp						

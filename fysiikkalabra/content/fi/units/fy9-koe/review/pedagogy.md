@@ -1,14 +1,10 @@
 VERDICT: PASS
-CONTENT-HASH: d5c67a8d91360d3c
-Delta review, work queue items 18 and 19 (2026-11-16), against the version previously passed.
+CONTENT-HASH: 4ee92e3c158fc60b
 
-## Blocking
-- (none)
+Round 2, hints only. Blocking: none.
 
-## Polish
-- (none)
+Polish:
+1. s2 b hint 3 (fi): "so that there are points on both sides" is slightly procedural but leaves the choice of y to the student; acceptable.
+2. s3 c hint 3 (fi): leads close to the latent-heat idea; still leaves the conclusion to the student; acceptable.
 
-## Checked
-- inquiry.json testi-6 (Hyötysuhde): read the prompt and all four options with feedback. The correct option "Se muuttuu lampun ja ympäristön sisäenergiaksi; energiaa ei katoa." is still the same length class as the distractors and no more of a give-away than before; the three distractor feedbacks still repair their own misconception (häviää / varastoituu / palaa verkkoon) and read naturally; the correct feedback's "loput lämmittää lamppua ja huonetta" ties sisäenergia to the everyday observation.
-- sovella/solutions.md, two Periaate sentences (vastusvoimat → sisäenergiaksi; lihaksissa sisäenergiaksi): clear, consistent with the unit; formulas and numbers untouched.
-- Item 19: this unit's diff holds no added task.
+Checked: ladder (guiding question, relation, step) holds in all parts; no hint states a final answer or the rubric points; evaluation and design parts (s1 e, s3 a, s4 a, s4 d) guide reasoning without dictating a conclusion; round-1 fixes (l vs L, no origin, nollataso, lämpöteho, hajonta, s4 a, s3 d) present and fi-easy keeps the physics with shorter sentences.

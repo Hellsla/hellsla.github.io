@@ -6,7 +6,8 @@
       "text": "Ydinvoimalan polttoaineen uraani-235:n ydin on ${}^{235}_{92}\\text{U}$. Kuinka monta neutronia ytimessä on?",
       "answer": 143,
       "unit": "",
-      "tolerance": 0.02
+      "tolerance": 0.02,
+      "exact": true
     },
     {
       "id": "fy8-8-L1-02",
@@ -14,7 +15,14 @@
       "text": "Sisäilman radon-222 ${}^{222}_{86}\\text{Rn}$ hajoaa alfahajoamisella. Mikä on syntyvän tytärytimen massaluku?",
       "answer": 218,
       "unit": "",
-      "tolerance": 0.02
+      "tolerance": 0.02,
+      "exact": true,
+      "mistakes": [
+        {
+          "value": 222,
+          "feedback": "Kuinka monta nukleonia emoytimestä poistuu alfahiukkasen mukana?"
+        }
+      ]
     },
     {
       "id": "fy8-8-L1-03",
@@ -23,7 +31,8 @@
       "text": "Hiili-14 ${}^{14}_{6}\\text{C}$ hajoaa beeta miinus -hajoamisella. Mikä on syntyvän tytärytimen järjestysluku?",
       "answer": 7,
       "unit": "",
-      "tolerance": 0.02
+      "tolerance": 0.02,
+      "exact": true
     },
     {
       "id": "fy8-8-L1-04",
@@ -39,7 +48,8 @@
       "text": "PET-kuvauksessa käytetty fluori-18 ${}^{18}_{9}\\text{F}$ hajoaa beeta plus -hajoamisella. Kuinka monta neutronia tytärytimessä on?",
       "answer": 10,
       "unit": "",
-      "tolerance": 0.02
+      "tolerance": 0.02,
+      "exact": true
     },
     {
       "id": "fy8-8-L1-06",
@@ -81,7 +91,8 @@
       ],
       "answer": 136,
       "unit": "",
-      "tolerance": 0.02
+      "tolerance": 0.02,
+      "exact": true
     },
     {
       "id": "fy8-8-L1-08",
@@ -93,7 +104,8 @@
       ],
       "answer": 28,
       "unit": "",
-      "tolerance": 0.02
+      "tolerance": 0.02,
+      "exact": true
     }
   ],
   "level2": [
@@ -112,7 +124,8 @@
       "text": "Uraanisarjan vismutti-214 ${}^{214}_{83}\\text{Bi}$ hajoaa beeta miinus -hajoamisella, ja syntyvä ydin hajoaa heti alfahajoamisella. Mikä on näiden kahden hajoamisen jälkeen syntyvän ytimen järjestysluku?",
       "answer": 82,
       "unit": "",
-      "tolerance": 0.02
+      "tolerance": 0.02,
+      "exact": true
     },
     {
       "id": "fy8-8-L2-03",
@@ -128,12 +141,13 @@
       "text": "Torium-232 ${}^{232}_{90}\\text{Th}$ hajoaa alfahajoamisella, ja syntyvä ydin hajoaa kaksi kertaa peräkkäin beeta miinus -hajoamisella. Kuinka monta neutronia on näiden kolmen hajoamisen jälkeen syntyvässä ytimessä?",
       "answer": 138,
       "unit": "",
-      "tolerance": 0.02
+      "tolerance": 0.02,
+      "exact": true
     },
     {
       "id": "fy8-8-L2-05",
       "level": 2,
-      "text": "Taulukossa on kuuden radioaktiivisen ytimen protoniluku $Z$ ja neutroniluku $N$ ennen hajoamista sekä tytärytimen luvut $Z'$ ja $N'$ hajoamisen jälkeen. Luvut ovat ytimien pääasiallisista hajoamistavoista (NNDC NuDat 3).\n\na) Päättele jokaisen rivin hajoamistapa: alfa-, beeta miinus -, beeta plus - tai gammahajoaminen.\n\nb) Laske, kuinka monessa riveistä ydin hajoaa beeta miinus -hajoamisella.\n\nB-kohdan tulos kirjoitetaan vastauskenttään.",
+      "text": "Taulukossa on kuuden radioaktiivisen ytimen protoniluku $Z$ ja neutroniluku $N$ ennen hajoamista sekä tytärytimen luvut $Z'$ ja $N'$ hajoamisen jälkeen. Luvut ovat ytimien pääasiallisista hajoamistavoista (NNDC NuDat 3).\n\na) Päättele jokaisen rivin hajoamistapa: alfa-, beeta miinus -, beeta plus - tai gammahajoaminen.\n\nb) Laske, kuinka monessa riveistä ydin hajoaa beeta miinus -hajoamisella.\n\nc) (vapaaehtoinen) Mitä pitäisi lisäksi havaita, jotta voisit päätellä juuri tämän hajoamisen olleen β⁺-hajoaminen?\n\nB-kohdan tulos kirjoitetaan vastauskenttään.",
       "kind": [
         "data",
         "reasoning"
@@ -141,6 +155,7 @@
       "answer": 3,
       "unit": "",
       "tolerance": 0.02,
+      "exact": true,
       "data": {
         "caption": "Ytimen protoni- ja neutroniluvut ennen hajoamista ($Z$, $N$) ja sen jälkeen ($Z'$, $N'$)",
         "columns": [
@@ -206,7 +221,8 @@
       ],
       "answer": 144,
       "unit": "",
-      "tolerance": 0.02
+      "tolerance": 0.02,
+      "exact": true
     },
     {
       "id": "fy8-8-L2-07",
@@ -308,7 +324,8 @@
       "text": "Torium-232 ${}^{232}_{90}\\text{Th}$ hajoaa luonnossa sarjana, joka päättyy pysyvään lyijy-208:aan ${}^{208}_{82}\\text{Pb}$. Sarjassa on vain alfa- ja beeta miinus -hajoamisia. Kuinka monta beeta miinus -hajoamista sarjassa on?",
       "answer": 4,
       "unit": "",
-      "tolerance": 0.02
+      "tolerance": 0.02,
+      "exact": true
     },
     {
       "id": "fy8-8-L3-02",
@@ -324,7 +341,8 @@
       "text": "Tuntematon ydin X hajoaa ensin beeta miinus -hajoamisella ja syntyvä ydin sitten alfahajoamisella. Lopputulos on radon-222 ${}^{222}_{86}\\text{Rn}$. Mikä on ytimen X järjestysluku?",
       "answer": 87,
       "unit": "",
-      "tolerance": 0.02
+      "tolerance": 0.02,
+      "exact": true
     },
     {
       "id": "fy8-8-L3-04",
@@ -338,6 +356,7 @@
       "answer": 4,
       "unit": "",
       "tolerance": 0.02,
+      "exact": true,
       "data": {
         "caption": "Uraanisarjan jäseniä järjestyksessä",
         "columns": [

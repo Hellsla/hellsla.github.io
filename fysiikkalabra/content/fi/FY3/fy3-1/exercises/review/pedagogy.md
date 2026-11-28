@@ -1,9 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: fbc2796c4aef5550
+CONTENT-HASH: c1c4d31ab8d2e60a
 ## Blocking
 (none)
 ## Polish
 (none)
 ## Checked
-- Delta: L1-02 Järkevyys / Reasonableness now says 'venymä newtonia kohti' / 'extension per newton' instead of spring constant; the term is not taught in FY3 (force-meter extension is proportional to force), and the ratio 2,0 cm / 4,0 N = 0,50 cm/N and 0,50 · 12 = 6,0 are unchanged and correct. Clearer for the student.
-- Judged from the diff text; captures not opened.
+- Delta: L3-04 Kaava note "(c = x/F)" replaces "jousen vakio". Read in context at solutions.md: x = cF with F = mg gives x/m = c g, so the proportion is consistent and the term problem is fixed.
+- c is defined by the quantities the lesson teaches (venymä per voima, jousen kalibrointi), so no new term appears.
+- Kaava, Sijoitus (ratio of x/m values) and answer (Mars, 3,6 m/s²) unchanged and consistent.
+- Judged from the solutions text; captures not opened.

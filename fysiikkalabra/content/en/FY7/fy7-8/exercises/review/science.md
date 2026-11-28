@@ -1,14 +1,14 @@
 VERDICT: PASS
-CONTENT-HASH: c6b17c0a5ccb80ab
+CONTENT-HASH: 2d5871271805ce79
+SCOPE: delta numbers,reflow from c6b17c0a5ccb80ab base c48271b
 
 ## Blocking
 
 ## Polish
 
 ## Checked
-- Delta round 1 (work queue 8g, Formula step rewritten as basic law, derived formula, symbolic simplification): hash identical at start and end.
-- 21 Formula steps re-derived ($U_1/U_2 = N_1/N_2$, $P_1 = P_2$, $P_\text{h} = RP^2/U^2$, $R = 0.010\,U^2/P$, $P_2/P_1 = U_2^2/U_1^2$, three-phase $P_\text{h} = 3RI^2 = RP^2/(U^2\cos^2\varphi)$): algebra correct; L3-08's derivation moved from Principle into Formula, as in Finnish.
-- English against Finnish by script: every Formula step's LaTeX is identical to the Finnish `**Kaava:**` once the subscripts are translated (only `text{}` labels differ, e.g. käämi/coil, ka/AVG, raja/limit); no Finnish subscript is left in the English set.
-- Every number in every solution section is the same multiset as in the Finnish one (decimal comma normalised); exercises.json ids, numeric answers, tolerances and figures unchanged and equal to Finnish.
-- The other changed lines are paragraph splits only: removed and added text identical after whitespace normalisation.
-- Substitutions, answers and rounding unchanged from the version passed, so the earlier recomputation stands.
+- Delta round 1 (Formula steps simplified symbolically to the end): hash `2d5871271805ce79` identical at start and end.
+- L3-04 Formula: $E = P_\text{h} t = R P^2 t / U^2$ and saving $= R P^2 t\,(1/U_\text{A}^2 - 1/U_\text{B}^2)\cdot\text{price}$ re-derived; algebra correct, and the starting laws $P = UI$, $P_\text{h} = RI^2$ still come before the combined form.
+- L3-04 recomputed by script from the closed form: $R = 6.0\,\Omega$, $E_\text{A} = 43\,438\,\text{MWh}$, $E_\text{B} = 13\,140\,\text{MWh}$, saving $1.515 \cdot 10^{6}\,\text{€}$, the same as the substitution chain.
+- L2-09 Formula: $R = P_\text{h}/I^2 = 0.030\,P/(P/U)^2 = 0.030\,U^2/P$ correct; $0.030 \cdot (200 \cdot 10^{3})^2 / (200 \cdot 10^{6}) = 6.0\,\Omega$ matches the answer and the curve in `loss-graph-curve` (which is drawn with $R = 6.0\,\Omega$).
+- Substitution, answer, rounding, exercises.json and answers.py unchanged; the earlier recomputation stands.

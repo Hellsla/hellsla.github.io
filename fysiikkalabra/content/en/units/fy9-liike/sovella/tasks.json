@@ -18,6 +18,11 @@
           "kind": "calc",
           "points": 4,
           "text": "How long does the car's acceleration on the lane last?",
+          "hints": [
+            "The acceleration is not known yet. Which three quantities are known, and which relation ties them to the time without the acceleration?",
+            "In uniformly accelerated motion the displacement is the area of the trapezium under the $(t,v)$ graph: $\\Delta x = \\dfrac{v_0 + v}{2}\\,t$.",
+            "Convert the velocities first: $54\\,\\text{km/h} = 15\\,\\text{m/s}$ and $108\\,\\text{km/h} = 30\\,\\text{m/s}$. Then solve the equation for the time $t$."
+          ],
           "answer": {
             "value": 12.0,
             "unit": "s",
@@ -51,6 +56,11 @@
           "kind": "calc",
           "points": 3,
           "text": "How large is the car's acceleration?",
+          "hints": [
+            "The change in velocity and the time it took are now known. How is acceleration defined from them?",
+            "Acceleration is the change in velocity divided by the time: $a = \\dfrac{\\Delta v}{\\Delta t}$. In uniformly accelerated motion it is the same all the time.",
+            "The change in velocity is $\\Delta v = 30\\,\\text{m/s} - 15\\,\\text{m/s}$, and the time $\\Delta t$ is the result of part a."
+          ],
           "answer": {
             "value": 1.25,
             "unit": "m/s²",
@@ -79,6 +89,11 @@
           "kind": "calc",
           "points": 5,
           "text": "Does the lorry draw level with the car during the acceleration? How small is the distance between the lorry and the car at its smallest?",
+          "hints": [
+            "At first the lorry is faster than the car, but the car accelerates. At which moment does the gap stop shrinking?",
+            "Write both positions in the same coordinate system, with the origin at the start of the lane: $x_\\text{A} = v_0\\,t + \\tfrac{1}{2}\\,a\\,t^2$ and $x_\\text{R} = -40\\,\\text{m} + v_\\text{R}\\,t$.",
+            "The gap is smallest when the velocities are equal: $v_0 + a\\,t = v_\\text{R}$, where $v_\\text{R} = 81\\,\\text{km/h} = 22.5\\,\\text{m/s}$. Calculate the difference $x_\\text{A} - x_\\text{R}$ at that moment."
+          ],
           "answer": {
             "value": 17.5,
             "unit": "m",
@@ -112,6 +127,11 @@
           "kind": "word",
           "points": 3,
           "text": "Another driver accelerates uniformly on the same lane over the whole length of the lane, but only to $72\\,\\text{km/h}$. Explain with graphs why the lorry then catches up with this car, and why it is worth accelerating to the speed of the traffic on an acceleration lane.",
+          "hints": [
+            "Compare the car's greatest velocity with the lorry's velocity. Which vehicle is faster for the whole length of the lane?",
+            "Draw both $(t,v)$ graphs in the same coordinate system. The distance travelled is the area under the graph: whose area grows faster?",
+            "Calculate how long the acceleration now takes: $\\Delta x = \\dfrac{v_0 + v}{2}\\,t$, where $v = 72\\,\\text{km/h} = 20\\,\\text{m/s}$. Then calculate how far the lorry travels in the same time."
+          ],
           "criteria": [
             {
               "text": "Explains that the car is slower than the lorry for the whole lane ($72\\,\\text{km/h} < 81\\,\\text{km/h}$), so in the $(t,v)$ graph the area of the lorry's rectangle grows faster than the car's area, and justifies this quantitatively: the acceleration lasts about $15.4\\,\\text{s}$ and the car's average velocity is $17.5\\,\\text{m/s}$, so the lorry travels on average about $5\\,\\text{m/s}$ faster and makes up about $77\\,\\text{m}$, more than the gap of $40\\,\\text{m}$.",
@@ -149,6 +169,11 @@
           "kind": "calc",
           "points": 4,
           "text": "How high above the floor does the thrown ball rise?",
+          "hints": [
+            "What is the ball's velocity at the top of its path? And its acceleration?",
+            "Choose upwards as the positive direction. Then the velocity is $v = v_0 - g\\,t$ and the position $y = y_0 + v_0\\,t - \\tfrac{1}{2}\\,g\\,t^2$.",
+            "At the top $v = 0$, so the time of rise is $t_\\text{l} = \\dfrac{v_0}{g}$. Substitute it into the equation of position and remember the starting height $y_0 = 1.5\\,\\text{m}$."
+          ],
           "answer": {
             "value": 8.84,
             "unit": "m",
@@ -182,6 +207,11 @@
           "kind": "calc",
           "points": 5,
           "text": "When and at what height do the balls pass each other?",
+          "hints": [
+            "What can be said about the heights of the balls at the moment they pass each other?",
+            "Write the height of each ball as a function of time in the same coordinate system and set the heights equal: $y_\\text{A}(t) = y_\\text{B}(t)$.",
+            "The equation is $y_{0\\text{A}} + v_0\\,t - \\tfrac{1}{2}\\,g\\,t^2 = y_{0\\text{B}} - \\tfrac{1}{2}\\,g\\,t^2$. The same term is on both sides, so it cancels. You get the height by substituting the time into either equation of position."
+          ],
           "answer": [
             {
               "name": "t",
@@ -224,6 +254,11 @@
           "kind": "word",
           "points": 3,
           "text": "Explain why the moment of passing does not depend on the acceleration of free fall. Would the balls pass each other at the same moment on the Moon?",
+          "hints": [
+            "Look at the equation of part b. Which term cancelled, and why is it the same for both balls?",
+            "Both balls have the same acceleration. How does the difference of their velocities then change as time passes?",
+            "The passing moment depends only on the initial gap and on the difference of the initial velocities. Consider separately whether the passing height changes when each ball falls less in the same time."
+          ],
           "criteria": [
             {
               "text": "Explains that both balls have the same acceleration, so the difference of their velocities stays $12.0\\,\\text{m/s}$ all the time and the distance of $7.5\\,\\text{m}$ between them decreases uniformly.",
@@ -242,6 +277,11 @@
           "kind": "calc",
           "points": 3,
           "text": "What are the velocities of the balls at the moment of passing?",
+          "hints": [
+            "Which ball is moving up at the passing moment and which is moving down? How does the direction show in the answer?",
+            "With upwards positive, the velocity is $v = v_0 - g\\,t$. For the dropped ball $v_0 = 0$.",
+            "Substitute the passing moment of part b into both velocity equations. The velocity of the dropped ball comes out negative, because it is moving down."
+          ],
           "answer": [
             {
               "name": "vA",
@@ -298,6 +338,11 @@
           "kind": "graph",
           "points": 6,
           "text": "Present the train's velocity as a function of time as a graph, and fit a suitable model to the points.",
+          "hints": [
+            "Look at the table before you draw. Does the velocity change in the same way all the time?",
+            "The data has two phases: at first the velocity stays almost the same, then it decreases steadily. Each phase needs its own line.",
+            "Fit the falling line to the braking points only, so that points are left on both sides of the line. Extend the time axis at least to $50\\,\\text{s}$, because the line is extended in part c."
+          ],
           "criteria": [
             {
               "key": "graph_axes",
@@ -325,6 +370,11 @@
           "kind": "calc",
           "points": 5,
           "text": "Determine the train's acceleration during the braking. Give the answer in $\\text{m/s}^2$.",
+          "hints": [
+            "Which property of a $(t,v)$ graph gives the acceleration?",
+            "The acceleration is the slope of the braking line: $a = \\dfrac{\\Delta v}{\\Delta t}$. Read two points far apart from the fitted line, not from the table.",
+            "The slope comes out in $\\text{km/h}$ per second. Convert the change in velocity to $\\text{m/s}$ by dividing by $3.6$, and interpret the sign of the result."
+          ],
           "answer": {
             "value": -0.645,
             "unit": "m/s²",
@@ -363,6 +413,11 @@
           "kind": "calc",
           "points": 5,
           "text": "Use the graph to estimate when the train stops and how far it travels from the beginning of the braking until it stops.",
+          "hints": [
+            "Where on the graph do you see when the braking starts and when the velocity is zero?",
+            "The braking starts where the two lines cross. The train stops where the extended braking line crosses the time axis. The distance is the area between the $(t,v)$ graph and the time axis.",
+            "The area is a triangle: $\\Delta x = \\tfrac{1}{2}\\,v_0\\,\\Delta t$. Convert the initial velocity to $\\text{m/s}$ before calculating."
+          ],
           "answer": {
             "value": 481,
             "unit": "m",
@@ -396,6 +451,11 @@
           "kind": "word",
           "points": 4,
           "text": "The passenger concludes that the train stopped exactly at the distance of part c from the beginning of the braking. Assess how reliable the conclusion is.",
+          "hints": [
+            "Up to which moment do the measurements reach, and up to which moment was the model used?",
+            "The stopping moment was found by extending the line beyond the measured range. What does the model assume about the braking after $40\\,\\text{s}$?",
+            "Draw the steepest and the gentlest line that fit the points and see how much the stopping moment and the distance change. Compare the change with the passenger's word \"exactly\"."
+          ],
           "criteria": [
             {
               "key": "assumptions",
@@ -441,6 +501,11 @@
           "kind": "word",
           "points": 5,
           "text": "Assess the first opinion. Justify your answer with a $(t,x)$ or $(t,v)$ graph.",
+          "hints": [
+            "How is average velocity defined? What is it on a $(t,x)$ graph?",
+            "Suppose the velocity were at most $80\\,\\text{km/h}$ for the whole section. How large can the area under the $(t,v)$ graph then be at most?",
+            "If the area is at most $80\\,\\text{km/h}$ times the time, the average velocity is at most $80\\,\\text{km/h}$. What follows if the average velocity is greater than that? Consider also whether the reasoning holds the other way round."
+          ],
           "criteria": [
             {
               "text": "Explains that the average speed is the displacement divided by the time, that is, in the $(t,x)$ graph the slope of the line through the points of the beginning and the end of the section.",
@@ -464,6 +529,11 @@
           "kind": "calc",
           "points": 5,
           "text": "Assess the second opinion by calculating the driver's average speed on the section.",
+          "hints": [
+            "Did the driver drive at each velocity for the same length of time?",
+            "Average velocity is the whole displacement divided by the whole time: $v_\\text{ka} = \\dfrac{\\Delta x}{t_1 + t_2}$. The mean of the velocities is not the same thing.",
+            "Calculate the time of each part separately: $t_1 = \\dfrac{\\Delta x_1}{v_1}$ and $t_2 = \\dfrac{\\Delta x_2}{v_2}$."
+          ],
           "answer": {
             "value": 81.8,
             "unit": "km/h",
@@ -497,6 +567,11 @@
           "kind": "word",
           "points": 5,
           "text": "Assess the third opinion. How large is the uncertainty of the average speed on the $3.0\\,\\text{km}$ section and on a $100\\,\\text{m}$ section when the car is driving at $80\\,\\text{km/h}$?",
+          "hints": [
+            "How long is the car on each section when it drives at $80\\,\\text{km/h}$?",
+            "Each camera records the moment to within $0.5\\,\\text{s}$, so the uncertainty of the travel time is about $1\\,\\text{s}$. Compare it with the travel time.",
+            "The relative uncertainty of the time is approximately the relative uncertainty of the average velocity as well. On the long section the travel time is $135\\,\\text{s}$ and on the short one $4.5\\,\\text{s}$."
+          ],
           "criteria": [
             {
               "key": "uncertainty",
@@ -542,6 +617,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Show how the group got the acceleration, and estimate how much the result can change because of the uncertainty of the timing.",
+          "hints": [
+            "The group measured only a distance and a time. Which assumption did it need to get an acceleration from them?",
+            "For a body that starts from rest and accelerates uniformly $x = \\tfrac{1}{2}\\,a\\,t^2$, so $a = \\dfrac{2x}{t^2}$.",
+            "Calculate the acceleration with the times $1.4\\,\\text{s}$ and $1.8\\,\\text{s}$ as well. The range of these results shows how much the result can change."
+          ],
           "answer": {
             "value": 0.9375,
             "unit": "m/s²",
@@ -570,6 +650,11 @@
           "kind": "word",
           "points": 5,
           "text": "Assess the group's conclusion. Name the main weaknesses of the measurement.",
+          "hints": [
+            "What does the formula $a = \\dfrac{2x}{t^2}$ assume about the motion? Can a number obtained with it prove that same assumption?",
+            "The group has one $(t,x)$ point. The graphs of how many different motions can pass through the origin and one point?",
+            "Go through the measurement step by step: the start, starting and stopping the timing, reading the passing point and the number of repeats. At which steps does error arise?"
+          ],
           "criteria": [
             {
               "text": "Notices that the reasoning is circular: the formula $a = \\dfrac{2x}{t^2}$ assumes a uniform acceleration, so a number obtained with it cannot show that the motion is uniformly accelerated. A single $(t,x)$ point fits any accelerated motion.",
@@ -593,6 +678,11 @@
           "kind": "word",
           "points": 6,
           "text": "Plan an experiment that can reliably find out whether the cart's motion is uniformly accelerated and determine its acceleration.",
+          "hints": [
+            "What must be seen of uniformly accelerated motion to tell it apart from other accelerated motion?",
+            "You need the cart's position or velocity at many moments. In uniformly accelerated motion the $(t,v)$ points fall on a line and the $(t,x)$ points on a second-degree curve.",
+            "Write three things in the plan: the equipment you use to measure many points, the graph and fit you make and where you read the acceleration, and how you repeat the measurement and which things you keep the same."
+          ],
           "criteria": [
             {
               "text": "Measures the cart's position at many moments, for example by video analysis (known frame rate, scale in the plane of the track) or with light gates at different points.",
@@ -638,6 +728,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Use the fit to determine the ball's acceleration of free fall.",
+          "hints": [
+            "Which familiar equation can the fitted polynomial $y = A\\,t^2 + B\\,t + C$ be compared with?",
+            "The position in uniformly accelerated motion along a line is $y = y_0 + v_0\\,t + \\tfrac{1}{2}\\,a\\,t^2$. Compare the coefficients term by term.",
+            "The second-degree term gives $A = \\tfrac{1}{2}\\,a$. Consider also what $B \\approx 0$ tells and what the minus sign means."
+          ],
           "answer": {
             "value": 8.88,
             "unit": "m/s²",
@@ -666,6 +761,11 @@
           "kind": "calc",
           "points": 4,
           "text": "How large is the uncertainty of the result based on the fit? Does the result agree with the table value $9.81\\,\\text{m/s}^2$?",
+          "hints": [
+            "The acceleration was calculated from the coefficient $A$. How does the uncertainty of the coefficient pass on to the acceleration?",
+            "Because $a = 2A$, the uncertainty doubles as well: $\\Delta a = 2\\,\\Delta A$.",
+            "Compare the difference between the result and the table value $9.81\\,\\text{m/s}^2$ with the uncertainty. How many times does the uncertainty fit into the difference?"
+          ],
           "answer": {
             "value": 0.1,
             "unit": "m/s²",
@@ -694,6 +794,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Explain what causes the systematic error and in which direction it changes the result, and correct the result.",
+          "hints": [
+            "In which plane was the scale set, and in which plane did the ball move?",
+            "An object further from the camera looks smaller in the picture. The real distance is the distance measured from the picture multiplied by the ratio of the distances from the camera.",
+            "The ratio of the distances is $3.30 : 3.00$. Every distance the ball travels, and therefore the acceleration too, is multiplied by this ratio."
+          ],
           "answer": {
             "value": 9.77,
             "unit": "m/s²",
@@ -722,6 +827,11 @@
           "kind": "word",
           "points": 3,
           "text": "The student's partner suggests calculating the acceleration from the first and the last point only, with the formula $a = \\dfrac{2\\,\\Delta y}{t^2}$. Assess the suggestion.",
+          "hints": [
+            "How many measured points does each method use?",
+            "Consider what a random error in one point does to the result in each method, and which method also gives an uncertainty.",
+            "Try the suggestion with the first and the last point of the table: $a = \\dfrac{2\\,\\Delta y}{t^2}$. Compare the result with the result of the fit and consider whether either method corrects the scale error."
+          ],
           "criteria": [
             {
               "text": "Explains that the fit uses all the points, so the random error of a single point has less effect, and the fit also gives the uncertainty and shows whether the model fits.",
@@ -760,6 +870,11 @@
           "kind": "calc",
           "points": 3,
           "text": "Determine the velocity of the cart in the first phase of the motion.",
+          "hints": [
+            "Which property of a $(t,x)$ graph gives the velocity?",
+            "In uniform motion the velocity is the slope of the line of the $(t,x)$ graph: $v = \\dfrac{\\Delta x}{\\Delta t}$.",
+            "Read from the first line two points that are far apart and fall on crossings of the grid, for example the first and the last point of the line."
+          ],
           "answer": {
             "value": 3.0,
             "unit": "m/s",
@@ -788,6 +903,11 @@
           "kind": "calc",
           "points": 3,
           "text": "What is the velocity of the cart at the moment $8\\,\\text{s}$? In which direction is the cart moving then?",
+          "hints": [
+            "Which phase of the motion does the moment $8\\,\\text{s}$ belong to?",
+            "The velocity is the slope of that phase's line: $v = \\dfrac{\\Delta x}{\\Delta t}$. The slope of a falling line is negative.",
+            "Read the first and the last point of the third phase's line. A negative velocity means that the position $x$ decreases."
+          ],
           "answer": {
             "value": -2.0,
             "unit": "m/s",
@@ -816,6 +936,11 @@
           "kind": "calc",
           "points": 4,
           "text": "The cart is at the position $x = 12\\,\\text{m}$ twice. Determine both moments.",
+          "hints": [
+            "In which phases does the graph pass the value $x = 12\\,\\text{m}$? Draw a horizontal line at this height on the graph.",
+            "In each phase the position is $x = x_0 + v\\,(t - t_0)$, where $t_0$ is the moment the phase starts and $x_0$ the position at that moment.",
+            "Solve $t = t_0 + \\dfrac{x - x_0}{v}$ separately for the first and the third phase. Use each phase's own velocity with its sign."
+          ],
           "answer": [
             {
               "name": "t1",
@@ -858,6 +983,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Calculate the average velocity of the cart over the whole time shown in the graph. Why does the average velocity differ from the average speed, and which of them is greater?",
+          "hints": [
+            "What is the difference between displacement and distance travelled when the cart turns back?",
+            "The average velocity is $v_\\text{ka} = \\dfrac{\\Delta x}{\\Delta t}$, where $\\Delta x$ is the change of position from the first moment to the last. In average speed the numerator is the distance travelled.",
+            "Read the position at the start and at the end from the graph for the displacement. Calculate the distance travelled phase by phase and compare the two."
+          ],
           "answer": {
             "value": 0.4,
             "unit": "m/s",
@@ -906,6 +1036,11 @@
           "kind": "calc",
           "points": 4,
           "text": "Determine the velocities of the walkers, with their signs.",
+          "hints": [
+            "Whose position increases and whose decreases? How does that show in the sign of the velocity?",
+            "In uniform motion the velocity is the slope of the line of the $(t,x)$ graph: $v = \\dfrac{\\Delta x}{\\Delta t}$.",
+            "Read the end points of both lines at $0\\,\\text{s}$ and $8\\,\\text{s}$. Always calculate the change of position as final position minus initial position."
+          ],
           "answer": [
             {
               "name": "vA",
@@ -948,6 +1083,11 @@
           "kind": "calc",
           "points": 5,
           "text": "Write the positions of the walkers as functions of time and calculate when the walkers meet.",
+          "hints": [
+            "What can be said about the positions of A and B at the moment they meet?",
+            "In uniform motion the position is $x = x_0 + v\\,t$. Write the equation for each of them and set the positions equal: $x_\\text{A} = x_\\text{B}$.",
+            "Read the initial positions from the graph at $0\\,\\text{s}$. Move the terms that contain the time $t$ to the same side and take $t$ out as a common factor. Remember the sign of B's velocity."
+          ],
           "answer": {
             "value": 4.0,
             "unit": "s",
@@ -981,6 +1121,11 @@
           "kind": "calc",
           "points": 2,
           "text": "Where do the walkers meet?",
+          "hints": [
+            "You already know the moment of meeting. Where do you get the position at that moment?",
+            "Substitute the moment of meeting into A's equation of position $x_\\text{A} = x_{0\\text{A}} + v_\\text{A}\\,t$.",
+            "Check the result by substituting the same moment into B's equation. The position must be the same."
+          ],
           "answer": {
             "value": 12.0,
             "unit": "m",
@@ -1004,6 +1149,11 @@
           "kind": "word",
           "points": 4,
           "text": "Suppose that the magnitude of B's velocity were $1.0\\,\\text{m/s}$ and B started from the same initial position as before. A's motion does not change. How would the moment and the place of the meeting change? Justify by calculation and by using the line in the graph.",
+          "hints": [
+            "How does B's line change on the graph when the magnitude of B's velocity decreases but the initial position stays the same?",
+            "A gentler line crosses A's line at a different point. The condition for meeting is still $x_\\text{A} = x_\\text{B}$, now with B's velocity $-1.0\\,\\text{m/s}$.",
+            "The gap of $16\\,\\text{m}$ now shrinks at $3.0\\,\\text{m/s}$. Calculate the moment of meeting and substitute it into A's equation."
+          ],
           "criteria": [
             {
               "text": "Justifies with the graph: B's line becomes gentler because the magnitude of B's velocity decreases, so it crosses A's line later and higher than the original line.",

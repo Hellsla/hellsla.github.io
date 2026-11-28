@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: cdb5bffd5c73d8e5
+CONTENT-HASH: c0491df37fb81267
 
 ## Blocking
 
 ## Polish
-- The feather check opens with "In free fall all objects have the same g"; "Without air resistance" would match the lesson's own condition more exactly (C, not blocking).
 
 ## Checked
-batch delta review: three new checks (29.4 -> 39.2 m/s after 4 s; feather vs hammer caused by air; 5.0 m/s + g*2.0 s = 24.6 -> 25 m/s, two figures from the data, no air resistance stated); recomputed.
+- Delta only: a script compared each removed and added line of the diff. Each pair differs only by the removed prefix and the capitalised first letter. No number, symbol, unit, table or figure changed, and the label does not appear again.
+- The investigation step's text still says "(simulated example data, not a real experiment)", and the step keeps `source: simulated`, so the provenance of the data is still stated (guardrail: measured vs simulated).
+- Answers, solutions and answers.py are untouched, so the previous recomputation still holds. Hash recomputed at the start and the end, same value.

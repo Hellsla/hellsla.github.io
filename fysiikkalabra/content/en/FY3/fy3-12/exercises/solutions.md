@@ -12,7 +12,7 @@
 **Given:** $P = 96\,\text{W}$, $A = 2.0\,\text{m}^2$, $T_\text{in} = 21\,{}^\circ\text{C}$, $T_\text{out} = -19\,{}^\circ\text{C}$
 **Find:** the U-value $U$ of the door, in $\tfrac{\text{W}}{\text{m}^2\cdot\text{K}}$
 **Principle:** The door conducts heat out steadily when the temperatures stay constant, so the measured power is proportional to the area and the temperature difference. The constant of proportionality is exactly the U-value, and you get it by dividing the power by the area and the difference.
-**Formula:** $P = UA\Delta T$, so $U = \dfrac{P}{A\Delta T}$
+**Formula:** $$\begin{aligned} P &= UA\Delta T \\ U &= \dfrac{P}{A\Delta T} \end{aligned}$$
 **Conversions:** The temperature difference is the same in kelvins and in degrees Celsius: $\Delta T = 21\,{}^\circ\text{C} - (-19\,{}^\circ\text{C}) = 40\,\text{K}$. No other conversions are needed, because the power is in watts and the area in square metres.
 **Substitution:** $U = \dfrac{96\,\text{W}}{2.0\,\text{m}^2 \cdot 40\,\text{K}} = \dfrac{96\,\text{W}}{80\,\text{m}^2\cdot\text{K}} = 1.2\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}}$
 **Answer:** $1.2\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}}$, two significant figures. The limiting data are the power $96\,\text{W}$, the area $2.0\,\text{m}^2$ and the difference of whole degrees $\Delta T = 40\,\text{K}$, all with two figures.
@@ -22,7 +22,7 @@
 **Given:** $A = 28\,\text{m}^2$, $U = 0.25\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}}$, $P = 210\,\text{W}$
 **Find:** the difference $\Delta T$ between the indoor and outdoor temperature, in kelvins
 **Principle:** The power conducted through the wall is proportional to the temperature difference when the area and the U-value of the wall do not change. So from a known power you can work out how large the temperature difference across the wall is.
-**Formula:** $P = UA\Delta T$, so $\Delta T = \dfrac{P}{UA}$
+**Formula:** $$\begin{aligned} P &= UA\Delta T \\ \Delta T &= \dfrac{P}{UA} \end{aligned}$$
 **Conversions:** No conversions are needed: the power is in watts, the area in square metres and $U$ in $\tfrac{\text{W}}{\text{m}^2\cdot\text{K}}$, so the result comes out directly in kelvins. A temperature difference in kelvins is the same as in degrees Celsius.
 **Substitution:** $\Delta T = \dfrac{210\,\text{W}}{0.25\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}} \cdot 28\,\text{m}^2} = \dfrac{210\,\text{W}}{7.0\,\tfrac{\text{W}}{\text{K}}} = 30\,\text{K}$
 **Answer:** $30\,\text{K}$, two significant figures. The limiting data are the power $210\,\text{W}$, the U-value $0.25$ and the area $28\,\text{m}^2$, all with at least two figures, so the result $30\,\text{K}$ is a two-figure value.
@@ -43,7 +43,7 @@
 **Find:** the power per square metre leaving into space as thermal radiation $P_\text{rad}$
 **Principle:** The temperature stays constant, so the Earth is in energy balance: the power it absorbs is equal to the thermal radiation leaving into space. The reflected radiation does not warm the Earth, so the absorbed part is the incoming power minus the reflected power.
 **Reading the graph:** The left arrow of the figure gives the incoming power $P_\text{in} = 341\,\tfrac{\text{W}}{\text{m}^2}$ and the arrow between the Sun and the Earth that points up and to the left the reflected power $P_\text{refl} = 102\,\tfrac{\text{W}}{\text{m}^2}$. The dashed arrow on the right, whose value is a question mark and which is labelled "heat radiation", is the thermal radiation asked for.
-**Formula:** $P_\text{abs} = P_\text{in} - P_\text{refl}$ and in balance $P_\text{rad} = P_\text{abs}$
+**Formula:** $$\begin{aligned} P_\text{rad} &= P_\text{abs} \\ P_\text{abs} &= P_\text{in} - P_\text{refl} \\ P_\text{rad} &= P_\text{in} - P_\text{refl} \end{aligned}$$
 **Conversions:** Not needed: all the powers are in the unit $\tfrac{\text{W}}{\text{m}^2}$.
 **Substitution:** $P_\text{rad} = 341\,\tfrac{\text{W}}{\text{m}^2} - 102\,\tfrac{\text{W}}{\text{m}^2} = 239\,\tfrac{\text{W}}{\text{m}^2}$
 **Answer:** $239\,\tfrac{\text{W}}{\text{m}^2}$, three significant figures, because the values read, $341$ and $102$, are given in whole watts per square metre and the difference is known with the same precision.
@@ -53,7 +53,7 @@
 **Given:** walls $A_\text{s} = 70\,\text{m}^2$, $U_\text{s} = 0.50\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}}$; roof $A_\text{y} = 50.0\,\text{m}^2$, $U_\text{y} = 0.30\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}}$; power of the radiators $P = 2.0\,\text{kW}$; $T_\text{in} = 20\,{}^\circ\text{C}$
 **Find:** the lowest outdoor temperature $T_\text{out}$ at which the radiators are enough
 **Principle:** The walls and the roof conduct heat in parallel, so their powers are added. The indoor temperature stays constant when the power of the radiators is equal to the conducted power. The lowest outdoor temperature corresponds to the situation in which the radiators work at full power.
-**Formula:** $P = (U_\text{s} A_\text{s} + U_\text{y} A_\text{y})(T_\text{in} - T_\text{out})$, so $T_\text{out} = T_\text{in} - \dfrac{P}{U_\text{s} A_\text{s} + U_\text{y} A_\text{y}}$
+**Formula:** $$\begin{aligned} P &= P_\text{s} + P_\text{y} \\ &= (U_\text{s} A_\text{s} + U_\text{y} A_\text{y})(T_\text{in} - T_\text{out}) \\ T_\text{out} &= T_\text{in} - \dfrac{P}{U_\text{s} A_\text{s} + U_\text{y} A_\text{y}} \end{aligned}$$
 **Conversions:** The power is converted to watts: $2.0\,\text{kW} = 2000\,\text{W}$. The temperature difference is the same in kelvins and in degrees Celsius, so the outdoor temperature can be calculated directly in degrees Celsius.
 **Substitution:** $$\begin{aligned} &U_\text{s} A_\text{s} + U_\text{y} A_\text{y} \\ &= 0.50 \cdot 70\,\tfrac{\text{W}}{\text{K}} + 0.30 \cdot 50.0\,\tfrac{\text{W}}{\text{K}} \\ &= 50\,\tfrac{\text{W}}{\text{K}} \end{aligned}$$. $T_\text{out} = 20\,{}^\circ\text{C} - \dfrac{2000\,\text{W}}{50\,\tfrac{\text{W}}{\text{K}}} = 20\,{}^\circ\text{C} - 40\,\text{K} = -20\,{}^\circ\text{C}$
 **Answer:** $-20\,{}^\circ\text{C}$, two significant figures. The limiting data are the power $2.0\,\text{kW}$ and the conduction coefficient $50\,\tfrac{\text{W}}{\text{K}}$ (the sum $35 + 15.0$ keeps two figures, because the wall term $0.50 \cdot 70$ is a two-figure value), so $\Delta T = 40\,\text{K}$ and $T = 20\,{}^\circ\text{C} - 40\,\text{K} = -20\,{}^\circ\text{C}$ in whole degrees.
@@ -63,7 +63,7 @@
 **Given:** $A = 130\,\text{m}^2$, $U = 0.090\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}}$, $\Delta T = 21\,\text{K}$, $t = 230\,\text{days}$, price $h = 0.11\,\tfrac{\text{€}}{\text{kWh}}$
 **Find:** the cost $H$ of the escaping heat in euros over the heating season
 **Principle:** The temperature difference stays constant on average, so the conducted power is constant and the energy is the power multiplied by the time. The cost is the amount of energy multiplied by the unit price.
-**Formula:** $P = UA\Delta T$, $E = Pt$ and $H = hE$, so $H = hUA\Delta T\,t$
+**Formula:** $$\begin{aligned} P &= UA\Delta T \\ E &= Pt \\ H &= hE \\ &= hPt \\ &= hUA\Delta T\,t \end{aligned}$$
 **Conversions:** The price is per kilowatt-hour, so the power is converted to kilowatts and the time to hours: $t = 230 \cdot 24\,\text{h} = 5520\,\text{h}$, and $P$ in watts is divided by a thousand.
 **Substitution:** $P = 0.090\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}} \cdot 130\,\text{m}^2 \cdot 21\,\text{K} = 245.7\,\text{W} = 0.2457\,\text{kW}$. $E = 0.2457\,\text{kW} \cdot 5520\,\text{h} = 1356.264\,\text{kWh}$. $H = 0.11\,\tfrac{\text{€}}{\text{kWh}} \cdot 1356.264\,\text{kWh} \approx 149.2\,\text{€}$
 **Answer:** $150\,\text{€}$, two significant figures. The limiting data are the U-value $0.090$, the price $0.11\,\tfrac{\text{€}}{\text{kWh}}$ and the temperature difference $21\,\text{K}$, all with two figures, so the calculator result $149.2\,\text{€}$ is rounded.
@@ -73,7 +73,7 @@
 **Given:** old $U_\text{v} = 2.8\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}}$, new $U_\text{u} = 0.80\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}}$, $A = 14\,\text{m}^2$, $T_\text{in} = 21\,{}^\circ\text{C}$, $T_\text{out} = -24\,{}^\circ\text{C}$, $t = 7\,\text{days}$
 **Find:** the energy $E$ saved in a week, in kilowatt-hours
 **Principle:** Through each type of window the power $UA\Delta T$ is conducted, with the same area and the same temperature difference, when the temperatures stay constant. The saving is the difference of the loss powers multiplied by the time.
-**Formula:** $\Delta P = U_\text{v} A\Delta T - U_\text{u} A\Delta T$, so $E = \Delta P\,t = (U_\text{v} - U_\text{u})A\Delta T\,t$
+**Formula:** $$\begin{aligned} P_\text{v} &= U_\text{v} A\Delta T \\ P_\text{u} &= U_\text{u} A\Delta T \\ \Delta P &= P_\text{v} - P_\text{u} \\ &= (U_\text{v} - U_\text{u})A\Delta T \\ E &= \Delta P\,t \\ &= (U_\text{v} - U_\text{u})A\Delta T\,t \end{aligned}$$
 **Conversions:** The temperature difference is the same in kelvins: $\Delta T = 21\,{}^\circ\text{C} - (-24\,{}^\circ\text{C}) = 45\,\text{K}$. The time is $t = 7 \cdot 24\,\text{h} = 168\,\text{h}$, and the power is converted to kilowatts.
 **Substitution:** $$\begin{aligned} \Delta P &= (2.8 - 0.80)\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}} \\ &\cdot 14\,\text{m}^2 \cdot 45\,\text{K} \\ &= 1260\,\text{W} \\ &= 1.26\,\text{kW} \end{aligned}$$. $E = 1.26\,\text{kW} \cdot 168\,\text{h} = 211.68\,\text{kWh}$
 **Answer:** $210\,\text{kWh}$, two significant figures. The limiting data are the difference of the U-values $2.8 - 0.80 = 2.0$ (the difference has the decimals of the less precise number $2.8$, so two figures), the area $14\,\text{m}^2$ and the temperature difference $45\,\text{K}$, all with two figures; the time $7\,\text{days} = 168\,\text{h}$ is exact.
@@ -83,7 +83,7 @@
 **Given:** $P_\text{in} = 340\,\tfrac{\text{W}}{\text{m}^2}$, $r_1 = 30.0\,\% = 0.300$, $r_2 = 29.0\,\% = 0.290$
 **Find:** the increase in the absorbed power per square metre $\Delta P_\text{abs}$ and its comparison with the current imbalance $1.0\,\tfrac{\text{W}}{\text{m}^2}$
 **Principle:** The incoming power divides into a reflected and an absorbed part, and only the absorbed part warms the Earth. When the reflected fraction decreases and the power of the Sun stays the same, the absorbed power increases.
-**Formula:** $P_\text{abs} = (1 - r)P_\text{in}$, so $$\begin{aligned} \Delta P_\text{abs} &= (1 - r_2)P_\text{in} - (1 - r_1)P_\text{in} \\ &= (r_1 - r_2)P_\text{in} \end{aligned}$$
+**Formula:** $$\begin{aligned} P_\text{refl} &= rP_\text{in} \\ P_\text{abs} &= P_\text{in} - P_\text{refl} \\ &= (1 - r)P_\text{in} \\ \Delta P_\text{abs} &= (1 - r_2)P_\text{in} - (1 - r_1)P_\text{in} \\ &= (r_1 - r_2)P_\text{in} \end{aligned}$$
 **Conversions:** The percentages are converted to decimal numbers: $30.0\,\% = 0.300$ and $29.0\,\% = 0.290$. The power stays in the unit $\tfrac{\text{W}}{\text{m}^2}$.
 **Substitution:** $\Delta P_\text{abs} = (0.300 - 0.290) \cdot 340\,\tfrac{\text{W}}{\text{m}^2} = 0.010 \cdot 340\,\tfrac{\text{W}}{\text{m}^2} = 3.4\,\tfrac{\text{W}}{\text{m}^2}$
 **Answer:** $3.4\,\tfrac{\text{W}}{\text{m}^2}$, two significant figures. There are two limiting data: the difference $0.300 - 0.290 = 0.010$ (two figures, because the percentages are given to a tenth of a percent) and the incoming power $340\,\tfrac{\text{W}}{\text{m}^2}$ (at least two figures).
@@ -95,7 +95,7 @@ If the percentages had been given only as whole numbers, the difference $30 - 29
 **Given:** $m = 0.60\,\text{kg}$, $P = 1.4\,\text{W}$, $t = 10.0\,\text{h}$; from the table $c = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ (coffee like water)
 **Find:** the cooling of the coffee $\Delta T$ in kelvins, and an explanation of which ways of heat transfer the vacuum and the shiny surfaces prevent and through which route heat still escapes
 **Principle:** The coffee loses only as much heat as escapes from the flask, so energy is conserved: the decrease in the internal energy of the coffee is equal to the escaping energy $Pt$. The coffee only cools and its phase does not change, so use $Q = cm\Delta T$.
-**Formula:** $cm\Delta T = Pt$, so $\Delta T = \dfrac{Pt}{cm}$
+**Formula:** $$\begin{aligned} Q &= cm\Delta T \\ Q &= Pt \\ cm\Delta T &= Pt \\ \Delta T &= \dfrac{Pt}{cm} \end{aligned}$$
 **Conversions:** The time is converted to seconds, because the power is in watts, that is, joules per second: $t = 10.0 \cdot 3600\,\text{s} = 36\,000\,\text{s}$. The mass is already in kilograms.
 **Substitution:** $\Delta T = \dfrac{1.4\,\text{W} \cdot 36\,000\,\text{s}}{4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0.60\,\text{kg}} = \dfrac{50\,400\,\text{J}}{2514\,\tfrac{\text{J}}{\text{K}}} \approx 20.05\,\text{K}$
 **Answer:** $20\,\text{K}$, two significant figures. The limiting data are the mass $0.60\,\text{kg}$ and the power $1.4\,\text{W}$ (both with two figures); the time $10.0\,\text{h}$ and the specific heat capacity $4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$ are three-figure values.
@@ -109,7 +109,7 @@ Heat escapes mainly by conduction through the neck and the stopper of the flask.
 **Given:** $I = 1.0\,\tfrac{\text{W}}{\text{m}^2}$, $A = 5.1 \cdot 10^{14}\,\text{m}^2$, $t_\text{v} = 365\,\text{days}$, share of the oceans $f = 0.90$, $m = 2.6 \cdot 10^{20}\,\text{kg}$, $c = 4.0 \cdot 10^{3}\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$, time $10\,\text{years}$
 **Find:** the energy accumulating in a year $E_\text{v}$ and the warming of the ocean layer $\Delta T$ in ten years, and an explanation of why a large mass of water slows down the warming
 **Principle:** The extra power is constant, so the energy is the power times the time. The seawater only warms and its phase does not change, so the energy stored in it is $Q = cm\Delta T$.
-**Formula:** $E_\text{v} = IAt_\text{v}$ and $cm\Delta T = 10fE_\text{v}$, so $\Delta T = \dfrac{10fIAt_\text{v}}{cm}$
+**Formula:** $$\begin{aligned} E_\text{v} &= IAt_\text{v} \\ Q &= cm\Delta T \\ Q &= 10fE_\text{v} \\ cm\Delta T &= 10fIAt_\text{v} \\ \Delta T &= \dfrac{10fIAt_\text{v}}{cm} \end{aligned}$$
 **Conversions:** A year in seconds: $t_\text{v} = 365 \cdot 24 \cdot 3600\,\text{s} = 3.1536 \cdot 10^{7}\,\text{s}$. Ten years is the factor $10$ in the formula, and the percentage is $90\,\% = 0.90$.
 **Substitution:** $$\begin{aligned} E_\text{v} &= 1.0\,\tfrac{\text{W}}{\text{m}^2} \cdot 5.1 \cdot 10^{14}\,\text{m}^2 \\ &\cdot 3.1536 \cdot 10^{7}\,\text{s} \\ &\approx 1.608 \cdot 10^{22}\,\text{J} \end{aligned}$$. $\Delta T = \dfrac{10 \cdot 0.90 \cdot 1.608 \cdot 10^{22}\,\text{J}}{4.0 \cdot 10^{3}\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 2.6 \cdot 10^{20}\,\text{kg}} = \dfrac{1.447 \cdot 10^{23}\,\text{J}}{1.04 \cdot 10^{24}\,\tfrac{\text{J}}{\text{K}}} \approx 0.139\,\text{K}$
 **Answer:** $E_\text{v} = 1.6 \cdot 10^{22}\,\text{J}$ and $\Delta T = 0.14\,\text{K}$, two significant figures. The limiting data are the power $1.0\,\tfrac{\text{W}}{\text{m}^2}$, the area $5.1 \cdot 10^{14}\,\text{m}^2$, the mass $2.6 \cdot 10^{20}\,\text{kg}$ and the specific heat capacity $4.0 \cdot 10^{3}\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$, all with two figures; the calculator result $0.139\,\text{K}$ is rounded.
@@ -121,7 +121,7 @@ A large mass of water slows down the warming, because a large heat capacity $cm$
 **Given:** coefficient of performance $\varepsilon = 2.8$, $U_1 = 0.35\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}}$, $U_2 = 0.10\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}}$, $A = 100\,\text{m}^2$, $\Delta T = 19\,\text{K}$, $t = 5800\,\text{h}$
 **Find:** the electrical energy $W$ saved by the extra insulation, in kilowatt-hours, and a justification of why insulation is worthwhile with a heat pump
 **Principle:** Insulation reduces the heat conducted through the roof, and the heat pump has to deliver less heat indoors. The coefficient of performance tells you that the pump delivers heat $\varepsilon$ times the electrical energy it uses, so the electricity is the heat divided by $\varepsilon$.
-**Formula:** $Q = (U_1 - U_2)A\Delta T\,t$ and $W = \dfrac{Q}{\varepsilon}$, so $W = \dfrac{(U_1 - U_2)A\Delta T\,t}{\varepsilon}$
+**Formula:** $$\begin{aligned} P_1 &= U_1 A\Delta T \\ P_2 &= U_2 A\Delta T \\ Q &= (P_1 - P_2)t \\ &= (U_1 - U_2)A\Delta T\,t \\ \varepsilon &= \dfrac{Q}{W} \\ W &= \dfrac{Q}{\varepsilon} \\ &= \dfrac{(U_1 - U_2)A\Delta T\,t}{\varepsilon} \end{aligned}$$
 **Conversions:** The time is already in hours and the result is wanted in kilowatt-hours, so the power $\text{W}$ is converted to kilowatts by dividing by a thousand: $\text{Wh} / 1000 = \text{kWh}$.
 **Substitution:** $$\begin{aligned} Q &= (0.35 - 0.10)\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}} \\ &\cdot 100\,\text{m}^2 \cdot 19\,\text{K} \cdot 5800\,\text{h} \\ &= 475\,\text{W} \cdot 5800\,\text{h} \\ &= 2\,755\,000\,\text{Wh} \\ &= 2755\,\text{kWh} \end{aligned}$$. $W = \dfrac{2755\,\text{kWh}}{2.8} \approx 983.9\,\text{kWh}$
 **Answer:** $980\,\text{kWh}$, two significant figures.
@@ -168,7 +168,7 @@ Heat is conducted also through a solid wall, and insulation only reduces the pow
 **Given:** $m = 0.25\,\text{kg}$, $c = 4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}}$, initial temperature $80.0\,{}^\circ\text{C}$; from the table at the time $t = 10\,\text{min}$, $T_\text{A} = 69.0\,{}^\circ\text{C}$ (open) and $T_\text{B} = 73.0\,{}^\circ\text{C}$ (lid)
 **Find:** the mean thermal power $P_\text{lid}$, in watts, that the lid prevents from escaping during the first $10\,\text{min}$
 **Principle:** The decrease in the internal energy of the water is equal to the heat transferred to the surroundings when the phase does not change: $Q = cm\Delta T$. The cups and the room are alike, so the extra cooling of the open cup is due to the lack of a lid. Power is heat divided by time.
-**Formula:** $\Delta T_\text{diff} = T_\text{B} - T_\text{A}$, $Q = cm\Delta T_\text{diff}$ and $P_\text{lid} = \dfrac{Q}{t} = \dfrac{cm\,(T_\text{B} - T_\text{A})}{t}$
+**Formula:** $$\begin{aligned} \Delta T_\text{diff} &= T_\text{B} - T_\text{A} \\ Q &= cm\Delta T_\text{diff} \\ P_\text{lid} &= \dfrac{Q}{t} \\ &= \dfrac{cm\,(T_\text{B} - T_\text{A})}{t} \end{aligned}$$
 **Conversions:** The time is converted to seconds: $10\,\text{min} = 10 \cdot 60\,\text{s} = 600\,\text{s}$. A temperature difference is the same in kelvins and in degrees Celsius.
 **Substitution:** $T_\text{B} - T_\text{A} = 73.0\,{}^\circ\text{C} - 69.0\,{}^\circ\text{C} = 4.0\,\text{K}$. $P_\text{lid} = \dfrac{4190\,\tfrac{\text{J}}{\text{kg}\cdot\text{K}} \cdot 0.25\,\text{kg} \cdot 4.0\,\text{K}}{600\,\text{s}} = \dfrac{4190\,\text{J}}{600\,\text{s}} = 6.98\,\text{W}$
 **Answer:** $7.0\,\text{W}$, two significant figures. The limiting datum is the temperature difference $4.0\,\text{K}$, which is a two-figure value.
@@ -185,7 +185,7 @@ According to the table, the temperature of cup B falls from $80.0\,{}^\circ\text
 **Given:** $A = 1.6\,\text{m}^2$, $U = 1.0\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}}$, $T_\text{in} = 21\,{}^\circ\text{C}$, $T_\text{out} = -15\,{}^\circ\text{C}$; the student's result $\Delta T = 6\,\text{K}$ and $P = 9.6\,\text{W}$
 **Find:** the student's error and the correct thermal power $P$ in watts
 **Principle:** The power conducted through a window is $P = UA\Delta T$, and $\Delta T$ is the difference between the indoor and the outdoor temperature. When it is frosty outside, the outdoor temperature is negative, and subtracting it increases the difference, because subtracting $-15$ is the same as adding $15$.
-**Formula:** $\Delta T = T_\text{in} - T_\text{out}$ and $P = UA\Delta T = UA\,(T_\text{in} - T_\text{out})$
+**Formula:** $$\begin{aligned} \Delta T &= T_\text{in} - T_\text{out} \\ P &= UA\Delta T \\ &= UA\,(T_\text{in} - T_\text{out}) \end{aligned}$$
 **Conversions:** A temperature difference is the same in degrees Celsius and in kelvins, so no conversions are needed: $\Delta T = 21\,{}^\circ\text{C} - (-15\,{}^\circ\text{C}) = 36\,\text{K}$. The other units are already $\text{m}^2$ and $\tfrac{\text{W}}{\text{m}^2\cdot\text{K}}$.
 **Substitution:** $P = 1.0\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}} \cdot 1.6\,\text{m}^2 \cdot 36\,\text{K} = 57.6\,\text{W}$
 **Answer:** $58\,\text{W}$, two significant figures. The limiting data are $U = 1.0$, $A = 1.6\,\text{m}^2$ and the difference of whole degrees $\Delta T = 36\,\text{K}$.
@@ -201,7 +201,7 @@ The error can be noticed with rounded numbers: the temperature difference betwee
 **Reading the graph:** In real series of measurements the data points are usually not exactly on the same line because of measurement uncertainty, so individual points deviate from the line because of the variation in the measurements.
 
 The line is drawn between the points, and the slope is read from two points of the line, not from two neighbouring data points: $(0\,\text{K};\ 0\,\text{W})$ and $(50.0\,\text{K};\ 8.75\,\text{W})$.
-**Formula:** $k = \dfrac{\Delta P}{\Delta(\Delta T)}$, $k = UA$, so $U = \dfrac{k}{A}$
+**Formula:** $$\begin{aligned} P &= UA\Delta T \\ k &= \dfrac{\Delta P}{\Delta(\Delta T)} \\ &= UA \\ U &= \dfrac{k}{A} \end{aligned}$$
 **Conversions:** Not needed: the power is in watts, the temperature difference in kelvins and the area in square metres.
 **Substitution:** $k = \dfrac{8.75\,\text{W} - 0\,\text{W}}{50.0\,\text{K} - 0\,\text{K}} = 0.175\,\tfrac{\text{W}}{\text{K}}$. $U = \dfrac{0.175\,\tfrac{\text{W}}{\text{K}}}{0.50\,\text{m}^2} = 0.35\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}}$
 **Answer:** $0.35\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}}$, two significant figures, like the area $0.50\,\text{m}^2$.
@@ -216,7 +216,7 @@ Otherwise the panel would store or release energy, and the measured power would 
 **Given:** from the table $A_{1980} = 7.5 \cdot 10^{6}\,\text{km}^2$ and $A_{2020} = 3.9 \cdot 10^{6}\,\text{km}^2$; radiation power $I = 90\,\tfrac{\text{W}}{\text{m}^2}$, albedos $a_\text{ice} = 0.60$ and $a_\text{sea} = 0.06$, area of the Earth $A_\text{Earth} = 5.1 \cdot 10^{14}\,\text{m}^2$, energy imbalance $1.0\,\tfrac{\text{W}}{\text{m}^2}$
 **Find:** the increase in absorbed power caused by the loss of ice, per area of the Earth, $\Delta P_\text{Earth}$, in the unit $\tfrac{\text{W}}{\text{m}^2}$
 **Principle:** A surface absorbs the share $1 - a$ of the incoming radiation, because the albedo $a$ is reflected. When ice is replaced by open sea, the same area absorbs a larger share of the same radiation, so the absorbed power increases. The increase is divided by the area of the Earth so that it can be compared with the energy imbalance.
-**Formula:** $\Delta A = A_{1980} - A_{2020}$ and $$\begin{aligned} &\Delta P \\ &= I\,\Delta A\,\bigl[(1 - a_\text{sea}) - (1 - a_\text{ice})\bigr] \\ &= I\,\Delta A\,(a_\text{ice} - a_\text{sea}) \end{aligned}$$, so $\Delta P_\text{Earth} = \dfrac{\Delta P}{A_\text{Earth}}$
+**Formula:** $$\begin{aligned} \Delta A &= A_{1980} - A_{2020} \\ P_\text{ice} &= (1 - a_\text{ice})I\,\Delta A \\ P_\text{sea} &= (1 - a_\text{sea})I\,\Delta A \\ \Delta P &= P_\text{sea} - P_\text{ice} \\ &= I\,\Delta A\,(a_\text{ice} - a_\text{sea}) \\ \Delta P_\text{Earth} &= \dfrac{\Delta P}{A_\text{Earth}} \end{aligned}$$
 **Conversions:** The area is converted to square metres: $1\,\text{km}^2 = 10^{6}\,\text{m}^2$, so $\Delta A = 3.6 \cdot 10^{6}\,\text{km}^2 = 3.6 \cdot 10^{6} \cdot 10^{6}\,\text{m}^2 = 3.6 \cdot 10^{12}\,\text{m}^2$.
 **Substitution:** $\Delta A = 7.5 \cdot 10^{6}\,\text{km}^2 - 3.9 \cdot 10^{6}\,\text{km}^2 = 3.6 \cdot 10^{6}\,\text{km}^2$. $$\begin{aligned} \Delta P &= 90\,\tfrac{\text{W}}{\text{m}^2} \cdot 3.6 \cdot 10^{12}\,\text{m}^2 \\ &\cdot (0.60 - 0.06) \\ &= 1.7496 \cdot 10^{14}\,\text{W} \end{aligned}$$. $\Delta P_\text{Earth} = \dfrac{1.7496 \cdot 10^{14}\,\text{W}}{5.1 \cdot 10^{14}\,\text{m}^2} = 0.343\,\tfrac{\text{W}}{\text{m}^2}$
 **Answer:** $0.34\,\tfrac{\text{W}}{\text{m}^2}$, two significant figures, because the radiation power $90\,\tfrac{\text{W}}{\text{m}^2}$ and the difference of the albedos $0.54$ are two-figure values. It is about a third of the energy imbalance $1.0\,\tfrac{\text{W}}{\text{m}^2}$, because $0.34 / 1.0 \approx 0.3$.
@@ -235,7 +235,7 @@ The biggest simplification is that the loss of the September minimum is calculat
 **Given:** $P_\text{abs} = 239\,\tfrac{\text{W}}{\text{m}^2}$, the share absorbed by the atmosphere $f = 0.80$, the remaining $1 - f = 0.20$ goes straight into space; the atmosphere radiates half upwards and half downwards; the points $(T, P)$ of the table
 **Find:** the power $S$ radiated by the surface and the temperature $T$ of the surface in degrees Celsius
 **Principle:** In energy balance the incoming and outgoing powers are equal. At the top of the atmosphere the power leaving into space must be $239\,\tfrac{\text{W}}{\text{m}^2}$, because the power absorbed from the Sun is the same. In addition to the Sun, the surface receives the power radiated downwards by the atmosphere, and the greenhouse effect raises the temperature.
-**Formula:** At the top $239\,\tfrac{\text{W}}{\text{m}^2} = (1 - f)\,S + \tfrac{fS}{2}$, so $S = \dfrac{239\,\text{W/m}^2}{1 - f/2}$. Check at the surface: $S = 239\,\tfrac{\text{W}}{\text{m}^2} + \tfrac{fS}{2}$. The temperature is interpolated between the points $(T_1, P_1)$ and $(T_2, P_2)$ of the table: $T = T_1 + \dfrac{S - P_1}{P_2 - P_1}\,(T_2 - T_1)$
+**Formula:** $$\begin{aligned} P_\text{abs} &= (1 - f)S + \dfrac{fS}{2} \\ &= \left(1 - \dfrac{f}{2}\right)S \\ S &= \dfrac{P_\text{abs}}{1 - f/2} \end{aligned}$$. Check at the surface: $S = 239\,\tfrac{\text{W}}{\text{m}^2} + \tfrac{fS}{2}$. The temperature is interpolated between the points $(T_1, P_1)$ and $(T_2, P_2)$ of the table: $T = T_1 + \dfrac{S - P_1}{P_2 - P_1}\,(T_2 - T_1)$
 **Conversions:** A temperature in kelvins is converted to degrees Celsius by subtracting $273.15$: $T_\text{C} = T - 273.15\,\text{K}$.
 **Substitution:** $S = \dfrac{239\,\tfrac{\text{W}}{\text{m}^2}}{1 - 0.40} = 398.3\,\tfrac{\text{W}}{\text{m}^2}$. Check: $239 + 0.40 \cdot 398.3 = 398.3\,\tfrac{\text{W}}{\text{m}^2}$. The value $398.3$ is between the points $288\,\text{K}$ ($390$) and $303\,\text{K}$ ($478$) of the table: $T = 288\,\text{K} + \dfrac{398.3 - 390}{478 - 390} \cdot 15\,\text{K} = 289.4\,\text{K}$. $T_\text{C} = 289.4\,\text{K} - 273.15\,\text{K} = 16.3\,{}^\circ\text{C}$
 **Answer:** $16\,{}^\circ\text{C}$ (calculated $16.3\,{}^\circ\text{C}$), two significant figures, because linear interpolation on a curved table limits the result to an accuracy of about $\pm 0.5\,\text{K}$.
@@ -269,7 +269,7 @@ The results are given with two significant figures, because the U-values are giv
 **Given:** $A = 10\,\text{m}^2$, $d = 0.20\,\text{m}$, $T_\text{in} = 20\,{}^\circ\text{C}$, $T_\text{out} = -10\,{}^\circ\text{C}$, $U = \dfrac{\lambda}{d}$; from the table (MAFY table, thermal conductivities: solids, wood (pine)) $\lambda = 0.14\,\tfrac{\text{W}}{\text{m}\cdot\text{K}}$
 **Find:** the thermal power $P$ conducted through the wall, in watts
 **Principle:** Heat is conducted from warm to cold, and the power is directly proportional to the area and the temperature difference. The U-value describes the conduction through the wall by the formula $U = \lambda / d$ given in the task.
-**Formula:** $P = UA\,\Delta T$ and $U = \dfrac{\lambda}{d}$, so $P = \dfrac{\lambda}{d}\,A\,\Delta T$
+**Formula:** $$\begin{aligned} U &= \dfrac{\lambda}{d} \\ P &= UA\,\Delta T \\ &= \dfrac{\lambda}{d}\,A\,\Delta T \end{aligned}$$
 **Conversions:** The temperature difference is the same in degrees Celsius and in kelvins: $$\begin{aligned} \Delta T &= 20\,{}^\circ\text{C} - (-10\,{}^\circ\text{C}) \\ &= 30\,\text{K} \end{aligned}$$. No other conversions are needed.
 **Substitution:** $U = \dfrac{0.14\,\tfrac{\text{W}}{\text{m}\cdot\text{K}}}{0.20\,\text{m}} = 0.70\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}}$ and $P = 0.70\,\tfrac{\text{W}}{\text{m}^2\cdot\text{K}} \cdot 10\,\text{m}^2 \cdot 30\,\text{K} = 210\,\text{W}$
 **Answer:** $P \approx 210\,\text{W}$, two significant figures, as in $\lambda = 0.14$. The thermal conductivity is from the MAFY table (thermal conductivities: solids); the answer is accepted within about $\pm 4\,\%$.

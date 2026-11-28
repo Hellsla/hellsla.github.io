@@ -961,7 +961,10 @@ details.level>ol>li:last-child,.core-card>ol>li:last-child{border-bottom:0}
 .fig.fbd{margin:.6rem 0 1rem}.fig.fbd svg{max-width:min(100%,24rem)}   /* a drawn force diagram in a solution step (scripts/fbdspec.py) */
 .fig-row{max-width:var(--measure);margin:0 0 .5rem}
 .fig-row.stack .fig svg{max-width:min(100%,32rem)}
-.fig-row .fig-text>:first-child{margin-top:0}.fig-row .fig-text>:last-child{margin-bottom:0}
+.tbl-pair{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,15rem),1fr));column-gap:1rem;align-items:start;max-width:var(--measure)}   /* two small tables side by side when there is room (work queue 8e) */
+.tbl-pair>table{width:100%;margin:1rem 0}
+.fig-row .fig-text>.tbl-pair{margin:0}.fig-row .fig-text>.tbl-pair>table{margin:0}
+.fig-row .fig-text>:first-child,.fig-row .fig-more>:first-child{margin-top:0}.fig-row .fig-text>:last-child{margin-bottom:0}
 
 /* ---- wide content (main at least 60rem): a text track and a margin track ----
    inquiry.js reads --wide on .lab to know that the simulation sits beside the experiments. */
@@ -999,7 +1002,7 @@ details.level>ol>li:last-child,.core-card>ol>li:last-child{border-bottom:0}
   .lab-side.sim-card2 #sim-root .controls>label:has(select):not(.sim-speed){order:1;flex:1 0 100%!important;flex-direction:row;align-items:center;gap:.6rem}
   .lab-side.sim-card2 #sim-root .controls>label:has(select):not(.sim-speed) select{flex:1 1 auto}
   .lab-side.sim-card2 #sim-root .controls>.sim-speed{flex:0 0 auto!important;margin-inline-start:auto}   /* !important: FY3 sketches set a box's flex inline */
-  .lab-side.sim-card2 #sim-root .controls>.sim-speed>span{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap!important}   /* named by the select's aria-label; no row of its own */
+  .lab-side.sim-card2 #sim-root .controls>.sim-speed{flex-direction:row;align-items:center;gap:.5rem}.lab-side.sim-card2 #sim-root .controls>.sim-speed>span{position:static;width:auto;height:auto;overflow:visible;clip-path:none;white-space:nowrap!important}   /* the pace keeps its visible name, on the row beside the select (it was clipped to 1 px at 1280; work queue 10, 2026-11-25) */
   .lab-side.sim-card2 .sim-lead{display:none}   /* on a short laptop screen the picture shrinks so the controls stay in view */
 }
 /* a phone (work queue 10, PR 4; pilot approved by the teacher 2026-11-16, PR 4b every simulation): the simulation's
@@ -1014,8 +1017,13 @@ details.level>ol>li:last-child,.core-card>ol>li:last-child{border-bottom:0}
 @container content (min-width:62.5rem){
   /* a figure beside the paragraph it explains, when the two are about as tall (build.py fig_side); the text after the
      unit runs on in the reading column */
-  .fig-row.side{display:grid;grid-template-columns:minmax(0,var(--measure)) minmax(0,26rem);column-gap:var(--gap);align-items:center;max-width:none;margin:0 0 1.25rem}
-  .fig-row.side>.fig{margin:0}
+  .fig-row.side{display:grid;grid-template-columns:minmax(0,var(--measure)) minmax(0,26rem);column-gap:var(--gap);align-items:start;max-width:none;margin:0 0 1.25rem}   /* text at the top of the row, never centred: a centred text left a gap above and below it (work queue 8e) */
+  .fig-row.side>.fig{margin:0;grid-column:2;grid-row:1 / span 2}
+  .fig-row.side>.fig-text,.fig-row.side>.fig-more{grid-column:1;min-width:0}
+  .fig-row.side>.fig-text{grid-row:1}.fig-row.side>.fig-more{grid-row:2}
+  .fig-row.side:has(>.fig-more){row-gap:1rem}   /* the paragraphs a tall figure takes in stand under the text, beside the figure */
+  .fig-row.side>.fig-more>:first-child{margin-top:0}.fig-row.side>.fig-more>:last-child{margin-bottom:0}
+  .fig-row.side>.fig>figure.unit-photo{float:none;margin:0;max-width:100%}   /* a photograph with its caption in the figure column */
   .fig-row.side>.fig-text>:last-child{margin-bottom:0}
 }
 
@@ -1035,7 +1043,10 @@ fieldset.crit{margin:0;padding:0;border:0;min-width:0}
 .practice-task>h2 .pts{margin-left:auto;font:600 var(--fs-ui) var(--sans);color:var(--ink-2);white-space:nowrap}
 .practice-task .situation table{margin:.6rem 0 1rem}.practice-task .situation blockquote{margin:.8rem 0;padding:.6rem 1rem;border-left:3px solid var(--line);background:var(--bg);border-radius:0 8px 8px 0;font-size:var(--fs-inner)}
 ol.parts{list-style:none;margin:1rem 0;padding:0;border-top:1px solid var(--line-2)}
-ol.parts>li{display:grid;grid-template-columns:1.8rem 1fr auto;gap:.2rem .5rem;padding:.6rem 0;border-bottom:1px solid var(--line-2)}
+ol.parts>li{display:grid;grid-template-columns:1.8rem minmax(0,1fr) auto;gap:.2rem .5rem;padding:.6rem 0;border-bottom:1px solid var(--line-2)}
+ol.parts>li>.hints{min-width:0;grid-column:2/-1;display:flex;flex-wrap:wrap;gap:0 1.2rem;margin:.1rem 0 0}   /* a part's hints under its text, closed ones on one row (work queue 11c) */
+@media (max-width:600px){ol.parts>li>.hints details>div{margin-left:0}}   /* the box fills its column; the 1.2rem of .hints details>div (line 910) overrode the phone rule above it (11c PR 2, 390 px) */
+ol.parts>li>.hints details{margin:0;min-width:0;max-width:100%}ol.parts>li>.hints details[open]{flex:1 1 100%}ol.parts>li>.hints summary{display:inline-flex;align-items:center;min-height:40px;cursor:pointer}
 .part-id{font-weight:700}.pts{font:600 var(--fs-small) var(--sans);color:var(--ink-2);white-space:nowrap}
 details.reveal{margin:1rem 0 0;border-top:1px solid var(--line)}
 details.reveal>summary{min-height:52px;flex-wrap:wrap;gap:.1rem .6rem;font:700 var(--fs-ui) var(--sans);color:var(--accent-deep)}
@@ -2337,6 +2348,19 @@ main.home>.resume{margin:0 0 1rem}
 .s-strong .coach-mark,.s-strongdue .coach-mark{color:var(--accent-deep)}
 .s-practise .coach-word{text-decoration:underline;text-decoration-thickness:2px}
 .coach-note{margin:.8rem 0 0;color:var(--ink-2);font-size:var(--fs-small)}
+.hardstep{margin:1rem 0;padding-top:.8rem;border-top:1px solid var(--line-2)}
+.hardstep-q{margin:0 0 .4rem;font:600 var(--fs-ui) var(--sans);color:var(--ink-2)}
+.hardstep-chips{display:flex;flex-wrap:wrap;gap:.5rem}
+.hardstep-chip{display:inline-flex;align-items:center;gap:.4rem;min-height:44px;padding:0 1rem;border:1px solid var(--line);border-radius:999px;background:var(--surface);color:var(--ink);font:500 var(--fs-ui) var(--sans);cursor:pointer}
+.hardstep-chip:hover{border-color:var(--accent-deep)}
+.hardstep-chip[aria-pressed="true"]{background:var(--accent-deep);border-color:var(--accent-deep);color:#fff;font-weight:700}
+.hardstep-chip[aria-pressed="true"]::before{content:"✓"}
+.coach-steplist,.coach-misslist{list-style:none;margin:.5rem 0 0;padding:0;display:grid;gap:.7rem}
+.coach-steplist li{font-size:var(--fs-ui);line-height:1.5}
+.coach-steplist a{display:inline-flex;align-items:center;min-height:40px}
+.coach-step{font-weight:700}
+.coach-misslist li{display:grid;grid-template-columns:1fr auto;gap:.15rem .8rem;padding:.8rem 1rem;background:var(--surface);border:1px solid var(--line);border-radius:12px}
+.coach-feedback{grid-column:1/-1;margin:.2rem 0 0;font-size:var(--fs-ui);line-height:1.5}
 .coach-set{margin:1.4rem 0 0}
 .coach-set[hidden]{display:none}
 .coach-set>summary{font:700 var(--fs-h3) var(--sans);cursor:pointer;min-height:44px;display:flex;align-items:center}
@@ -2348,7 +2372,8 @@ main.home>.resume{margin:0 0 1rem}
 .coach-course-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(7rem,1fr));gap:0 .8rem}
 .coach-data{margin:1.6rem 0 0}
 .coach-clear{min-height:44px;padding:0 1rem;border:1px solid var(--ink-2);border-radius:999px;background:transparent;color:var(--ink-2);font:600 var(--fs-ui) var(--sans);cursor:pointer}
-.coach-clear:hover{color:var(--ink)}
+.coach-clear:hover,.coach-pathdel:hover{color:var(--ink)}
+.coach-pathdel{min-height:44px;padding:0 1rem;border:1px solid var(--ink-2);border-radius:999px;background:transparent;color:var(--ink-2);font:600 var(--fs-ui) var(--sans);cursor:pointer}
 @media print{.coach-row,.coach-clear{display:none!important}}
 
 /* The theory's two heading levels apart, and one text face in the lesson (design audit 2026-11-10, problem 6;
@@ -2426,3 +2451,77 @@ details.theory-box{}details.theory-box>.box-body{padding:.9rem .2rem .6rem}detai
 details .fig-row.side{display:block;max-width:var(--measure);margin:0 0 .5rem}
 details .fig-row.side>.fig{margin:1.25rem 0 1.75rem}
 details .fig-row.side>.fig svg{max-width:min(100%,32rem)}
+/* FY9 exam mode (work queue 11b PR 6, templates/koetila.js): the bar with the clock under the thumb at the bottom of the window, the row of a task, the
+   result. The clock is plain text (no animation, no live region); a task that is not chosen is dimmed and cannot be answered, never hidden. */
+.koetila-panel{margin:1rem 0;padding:.8rem 1rem;border:1px solid var(--line);border-radius:var(--card-radius);background:var(--surface);max-width:calc(var(--measure) + 3rem)}
+.koetila .kt-lead{margin:0 0 .6rem}
+.kt-go,.kt-end,.kt-pause,.kt-pick,.kt-task-start,.kt-again{min-height:44px;padding:0 1.1rem;border-radius:999px;border:2px solid var(--accent-deep);background:var(--accent-deep);color:#fff;font:700 var(--fs-ui) var(--sans);cursor:pointer}
+.kt-pause,.kt-pick,.kt-task-start,.kt-again{background:transparent;color:var(--accent-deep)}
+.kt-pick[aria-pressed="true"],.kt-task-start[aria-pressed="true"]{background:var(--accent-soft)}
+.kt-pick[aria-pressed="true"]::before,.kt-task-start[aria-pressed="true"]::before{content:"\2713\00a0"}
+.koetila button:disabled{opacity:.55;cursor:default}
+.koetila button:focus-visible,.kt-bar button:focus-visible{outline:3px solid var(--accent-deep);outline-offset:2px}
+.kt-bar{position:fixed;left:0;right:0;bottom:0;z-index:40;display:flex;flex-wrap:wrap;align-items:center;gap:.5rem .8rem;padding:.55rem max(1rem,env(safe-area-inset-left));padding-bottom:max(.55rem,env(safe-area-inset-bottom));background:var(--surface);border-top:2px solid var(--accent-deep)}
+.kt-time{margin-right:auto;font:700 1.15rem var(--sans);font-variant-numeric:tabular-nums}
+.kt-on body{padding-bottom:5.5rem}
+.kt-nostore{margin:1rem 0}
+.kt-row{display:flex;flex-wrap:wrap;gap:.5rem;margin:.3rem 0 .8rem}
+.kt-current{outline:2px solid var(--accent-deep);outline-offset:3px}
+.kt-off{opacity:.7}
+.kt-tag{margin-left:.4rem;padding:.1rem .5rem;border:1px solid var(--ink-2);border-radius:999px;font:600 var(--fs-small) var(--sans);color:var(--ink-2);white-space:nowrap}
+.kt-num{display:flex;align-items:center;gap:.5rem;margin:.6rem 0}
+.kt-num input{min-height:44px;max-width:12rem}
+.kt-rules{margin:.4rem 0 0;padding-left:1.2rem}
+.kt-result{margin:1rem 0;padding:1rem 1.1rem;border:1px solid var(--line);border-radius:var(--card-radius);background:var(--surface);max-width:calc(var(--measure) + 3rem)}
+.kt-result h2{margin:0 0 .4rem;font-size:1.25rem}
+.kt-points{font-weight:700;margin:.2rem 0 .8rem}
+.kt-table{width:100%;border-collapse:collapse;margin:.4rem 0 1rem;font-size:var(--fs-ui)}
+.kt-table th,.kt-table td{padding:.4rem .5rem;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+.kt-table td{white-space:nowrap}.kt-table th a{overflow-wrap:anywhere}.kt-c-task{width:60%}
+.kt-table .kt-skip{color:var(--ink-2)}
+.kt-sub{color:var(--ink-2);font-weight:400}
+.kt-page .kt-task-start{margin-right:0}
+.coach-optrow{display:flex;flex-wrap:wrap;gap:0 1.2rem}
+.coach-date{display:block;margin:.2rem 0 0}
+.coach-date[hidden]{display:none}
+.coach-date input{min-height:44px;max-width:12rem;font-size:var(--fs-ui)}
+.coach-pathform{margin:.4rem 0 0}
+.coach-pathacts{display:flex;flex-wrap:wrap;gap:.6rem;margin:1rem 0 0}
+.coach-save{min-height:44px;padding:0 1.2rem;border:1px solid var(--accent-deep);border-radius:999px;background:var(--accent-deep);color:#fff;font:700 var(--fs-ui) var(--sans);cursor:pointer}
+.coach-pathdays{list-style:none;margin:1.2rem 0 0;padding:0;display:grid;gap:.8rem}
+.coach-pathday{padding:.8rem 1rem;background:var(--surface);border:1px solid var(--line);border-radius:12px}
+.coach-pathdate{display:flex;flex-wrap:wrap;gap:.2rem .8rem;align-items:baseline;margin:0 0 .4rem;font-size:var(--fs-ui)}
+.coach-today{font-weight:700;color:var(--accent-deep)}
+.coach-pathitems{list-style:none;margin:0;padding:0;display:grid;gap:.4rem}
+.coach-pathitems li{display:grid;gap:.1rem;font-size:var(--fs-ui)}
+.coach-pathitems .coach-min,.coach-pathdate .coach-min{grid-column:auto;grid-row:auto}
+.coach-pathitems a{display:inline-flex;align-items:center;min-height:40px}
+.coach-minilist{list-style:none;margin:.6rem 0 0;padding:0;display:grid;gap:.5rem}
+.coach-mini-item{display:grid;gap:.1rem}
+@media print{.kt-bar,.kt-row,.koetila-panel{display:none!important}}
+/* PR 7c: the revision path's days are closed cards but today's; tasks grouped under their chapter; a done mark */
+.coach-pathday details{margin:0}
+.coach-pathday summary{display:flex;flex-wrap:wrap;gap:.2rem .8rem;align-items:baseline;min-height:40px;padding:.4rem 0;font-size:var(--fs-ui);cursor:pointer}
+.coach-pathday summary .coach-chapters{color:var(--ink-2)}
+.coach-pathgroup{display:grid;gap:.1rem}
+.coach-pathgroup>.coach-where{margin:.3rem 0 0;font-weight:600;color:var(--ink)}
+.coach-pathtasks{list-style:none;margin:0;padding:0 0 0 .8rem;display:grid;gap:.2rem}
+.coach-pathtasks li{display:flex;flex-wrap:wrap;gap:.1rem .8rem;align-items:center;font-size:var(--fs-ui)}
+.coach-done{font-weight:600;color:var(--accent-deep)}
+.coach-done::before{content:"✓ ";speak:never}
+.coach-pathall{display:inline-flex;align-items:center;min-height:40px;margin:1rem 0 0;padding:.4rem 1rem;border:1px solid var(--line);border-radius:999px;background:var(--surface);color:var(--ink);font:600 var(--fs-ui) var(--sans);cursor:pointer}
+
+/* Kaavahakemisto (work queue 17f PR 1): kaavat.html, the MAFY-named formulas by module in the .kaavat table */
+.kaava-nav ul{display:flex;flex-wrap:wrap;gap:.4rem;list-style:none;margin:1rem 0;padding:0}
+.kaava-nav a{display:inline-flex;align-items:center;min-height:2.5rem;padding:0 .8rem;border:1px solid var(--line);border-radius:999px;background:var(--surface);font-family:var(--sans);font-size:var(--fs-small);font-weight:700;text-decoration:none}
+.kaava-moduuli{margin:2rem 0}
+.kaava-moduuli h2{scroll-margin-top:5rem}
+.kaava-page .kaavat dd .katex-display{margin:.2rem 0}
+.kaava-luvut{margin:.4rem 0 0;font-family:var(--sans);font-size:var(--fs-small);line-height:1.5;color:var(--ink-2)}
+.kaava-luvut-t{font-weight:600}
+.kc-more,.study-more{font-family:var(--sans);font-size:var(--fs-small);margin:.6rem 0 0}
+
+/* Simulaatiogalleria (work queue 17f PR 2): simulaatiot.html, chapter tiles without a picture, so no picture column */
+.sim-page ol.lessons li.ch-card.live>.ch-box{grid-template-columns:minmax(0,1fr);grid-template-areas:"num" "title";grid-template-rows:auto 1fr;padding:.75rem 1rem .9rem;overflow:visible}
+.sim-page ol.lessons li.ch-card.live>.ch-box>*{margin-inline:0}
+.sim-page ol.lessons li.ch-card.live .l-num{margin-top:0}

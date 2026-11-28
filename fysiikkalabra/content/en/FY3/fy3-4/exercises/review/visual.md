@@ -1,6 +1,5 @@
 VERDICT: PASS
-CONTENT-HASH: b279262bb025de34
-SCOPE: delta wording from 6e46a118823eff8e base 64d4935
+CONTENT-HASH: 6df7b6af9a2bf282
 
 ## Blocking
 - none
@@ -9,8 +8,10 @@ SCOPE: delta wording from 6e46a118823eff8e base 64d4935
 - none
 
 ## Checked
-- Delta: fy3-4-open-exercises-L3-1280-1.png opened at readable size (task card with answer row, solution and substitution rows intact, no clipping); contact-sheet layout not changed by a shorter task text. Task texts read from the diff.
-- Captures current for this hash (stamp.txt). Changed text is one removed prefix or clause, no numbers, symbols or figures touched; the edited sentences open directly with the situation and end with the question as before.
+- Delta: Formula step of model solutions re-set as aligned multi-row blocks (numbers, signs, units unchanged). Captures current for this hash (stamp.txt).
+- 1280 px, every solution open: fy3-4-open-exercises-1280-5; L3-1280-3.
+- Formula blocks render as KaTeX aligned rows: equals signs in one column, one step per row, nothing shrunk, clipped or overflowing; substitution, answer and reasonableness blocks intact below.
+- No solution-open 390 px capture exists; the 360/390 layout check is in the packet's deterministic scope.
 
 ## Scores
 illustrations 5 · typography 5 · Finnish 5 · accessibility 5

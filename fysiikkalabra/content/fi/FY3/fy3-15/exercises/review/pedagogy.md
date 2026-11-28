@@ -1,10 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 3982956434865159
+CONTENT-HASH: b8da362cb104dafe
 ## Blocking
 (none)
 ## Polish
 (none)
 ## Checked
-- Delta: L3-05 d now says the condenser heat cannot "in practice" (käytännössä) be used for electricity; the solution adds that with an ~11 K difference the largest possible efficiency is only a few per cent. Correct (about 11/300) and a fair hedge, replacing an absolute claim.
-- Reasoning in the solution is brief but understandable at this level; the colon plus "but" sentence is slightly run-on (Polish only).
-- Judged from the diff and the previous PASS; captures not opened.
+- Delta: L3-04 Annettu now writes the district-heat power as 0,560 P_o,CHP; the subscript matches the Kaava and Sijoitus notation, so the student can follow the chain.
+- Kysytty still names P_o,A − P_o,B while the Annettu uses the label CHP for plant B; "B: yhteistuotantolaitos" binds the two, so no confusion.
+- Answer (132 MW) and Järkevyys unchanged and consistent.
+- Judged from the solutions text; captures not opened.

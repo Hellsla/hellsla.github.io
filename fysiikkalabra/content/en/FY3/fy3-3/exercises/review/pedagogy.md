@@ -1,11 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: caaf5649b68d4b50
-
+CONTENT-HASH: 1044d5e0eb32dd28
 ## Blocking
 (none)
-
 ## Polish
 (none)
-
 ## Checked
-- Delta: the model answer of the closed-system task now says the temperature of a closed system is 'not necessarily' constant; physically correct (it was an absolute claim) and the task is unchanged.
+- Delta: only the Formula step of model solutions changed, plus paragraph splits in Principle/Model answer; no number, unit, answer or task text changed.
+- Formula rows now start from the basic equation and derive the asked quantity symbolically, one equation per row, as the house rule asks; the packet diff shows them flattened onto one line, the files hold aligned blocks.
+- Where the asked quantity is already alone, the row says so (no empty rearrangement step).
+- Each Formula row leads to the symbolic form that the Substitution step uses; nothing skipped.
+- Judged from the diff and solutions.md on disk; captures not opened.

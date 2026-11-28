@@ -271,6 +271,7 @@
       "answer": 7,
       "unit": "",
       "tolerance": 0.02,
+      "exact": true,
       "hints": [
         "Which kind of decay changes the mass number, and by how much?",
         "Beta minus decay does not change the mass number, so the whole change in the mass number comes from alpha decays, each by $4$.",

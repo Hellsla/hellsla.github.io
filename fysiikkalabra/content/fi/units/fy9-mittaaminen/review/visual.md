@@ -1,19 +1,16 @@
 VERDICT: PASS
-CONTENT-HASH: c66703f1d31a22ae
+CONTENT-HASH: 7a3b9bcc0537b512
 
 ## Blocking
 (none)
 
 ## Polish
-- [Minor] aside.stop-think (all three) — the green tinted box with a thick left rule is a new coloured box; NOTES §8 says "no new coloured boxes". It is the intended device and reads well, so only note it (teacher's word decides). Keep to three per unit.
-- [Minor] aside.stop-think at 390 px — the box text is about 24 px narrower than the body text (padding plus rule), giving 4–5 short lines per question. Acceptable; trim the left padding slightly if the component is next touched.
-- [Minor] unit.md, "Linearisointi" figure — the t² axis ticks (3, 6, 9) sit close to each other at 390 px; legible, but cramped. Optional.
+- [Minor] Open-box indent at 390 px: known shared point, not repeated as blocking.
 
 ## Checked
-- selita-390-1..4 (theory at 390 px): kartta figure, all three "Pysähdy ja mieti" boxes (label, question, "Vastaus" disclosure, the math $(t^2, s)$, $k = \tfrac{a}{2}$, $\Delta x$, $\Delta y$ inside the box), anatomia and linearisointi figures, formula blocks, lists. Nothing clipped, no overflow.
-- selita-1280-2 (theory at 1280 px): two of the boxes within the 38 rem column, aligned with the body text; formula block, kaavat block.
-- intro-390 (opening, hero, Tällä tunnilla opit, Pohjatiedot).
-- The captures show every box open, so the closed state of the "Vastaus" disclosure was not looked at. The sovella, tehtävät, tarkista and teacher captures and the sovella solution graphs were not opened, because the scope was the new boxes and the theory page. The 360 px width was not captured; check_layout covers it.
+- Round 2 delta (s1 a/d, s2 c/d, s3 a/b, s4 b, s5 c hints) wording and formulas read in the diff.
+- Rendered preview of fi at 390 and 1280 px with hints opened (fi, fi-easy, en captures viewed): KaTeX fractions, units and subscripts render, no clipping or horizontal overflow (scrollWidth equals viewport).
+- Round 2 rewrites are clearer: k is now the ratio, subscripts are m_punnus/m_weight, the extra c is dropped, hints no longer give the axis answer away.
 
 ## Scores
-illustrations 4 · typography 5 · Finnish 5 · accessibility 4
+illustrations 5 · typography 5 · Finnish 5 · accessibility 5

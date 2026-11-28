@@ -1,16 +1,11 @@
 VERDICT: PASS
-CONTENT-HASH: 23a62c16c4efc8c8
-none
+CONTENT-HASH: bb45c42f25faf991
 
 ## Blocking
-(none)
 
 ## Polish
-(none)
 
 ## Checked
-- Every changed Kaava now starts from the basic equation (v = fλ, v = λ/T, v = Δx/Δt, t = d/v) and is solved symbolically to the final expression before Sijoitus.
-- Algebra verified: rail task Δt = d(1/v_i − 1/v_t) gives d = Δt/(1/v_i − 1/v_t); the interface task gives λ_v = v_v λ_i / v_i; the wave-crest task gives f = (x2 − x1)/(λΔt); the stadium wave gives t = sΔt/Δx.
-- Sijoitus lines, answers and tolerances unchanged.
-- The aligned display blocks are short, one step per line, and should stay readable at 360 px (the longest has five lines).
-- L1-06 and L1-07 model answers split into two paragraphs: the correct claim first, then the distractor rebuttals; easier to read, no content change.
+- Capitalisation and sentence grammar after the change are correct in every edited task (e.g. fy8-5 mid-text removal reads "Kielen pituus on ...").
+- Diff only removes the prefix "Esimerkkiaineisto: " and capitalises the next word; no numbers, data, criteria or answers changed.
+- The tasks still open with the situation and end with the question; the data is plainly given, so the prefix label was redundant.

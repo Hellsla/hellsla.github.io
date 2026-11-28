@@ -1,19 +1,19 @@
 VERDICT: PASS
-CONTENT-HASH: ed7c603eed0d5918
+CONTENT-HASH: 224e52aa680148ae
 
 ## Blocking
 
 ## Polish
-- content/fi-easy/FY5/fy5-14/lesson.md:571 — (unchanged from round 1, unchanged block) the Doppler answer gives a reason only for the front. Possible fix: "Takana lähde liikkuu rintamista poispäin, joten ne ovat kauempana toisistaan."
+- content/fi-easy/FY5/fy5-14/lesson.md:223 — the "pitkittainen" figure's label still reads $\text{harvennus}$ (figures.json:5 maps "harvennus" to "harvennus"), but the text, its alt text and the summary now say "harventuma". The physics is the same, but an S2 reader meets two words for one concept. Fix: relabel `\text{harventuma}` in lessons/FY5/fy5-14/figures.py:67 and in figures.json (the figure needs the teacher's approval again).
+- content/fi-easy/FY5/fy5-14/lesson.md:571 — (unchanged from the last round) the Doppler answer gives a reason only for the front.
 
 ## Checked
-- Scope: only the changed pysahdy block (round 2, work queue 20); the beat and Doppler blocks are unchanged since my PASS.
-- Physics recomputed: 500 = 2·250 and 750 = 3·250, a harmonic series with f_1 = 250 Hz, which is both the lowest peak and the peak spacing.
-- The two questions (the fundamental, and what pitch depends on) are both answered, and correctly: pitch depends on the fundamental, and the other peaks are overtones. This matches the paragraph just above and the glossary.
-- "Perustaajuus on alin huippu" is said for this data and is consistent with the FFT section's "yleensä myös alimman piikin taajuus" (C).
-- Answerable from the paragraph just read; spectra and peaks were met earlier in the Tutki activity "Lue FFT-spektri".
-- Nothing given away: the Tutki spectrum task (200 Hz series) comes before Teoria and uses other numbers. No 250 Hz spectrum task appears in the exit ticket or the exercises.
-- Deterministic layout checks at 360 px and the other widths are ok (packet).
+- Scope: the diff only, at lesson.md:12 and :531, plus the alt text of the "pitkittainen" figure (lesson.md:14, figures.json:3). No numbers, symbols or formulas changed.
+- Definition: a harventuma is the low-pressure region between compressions (p < p0). This is correct and matches the glossary term "ääni".
+- Inflection: harventuma / harventumat / harventumia is used in the same way in the text, the alt text and the summary.
+- The fi-easy text says the same as the Finnish version.
+- Cross-chapter: fy5-10 was also moved to "harventuma" in the same change.
+- Hash run at the start and at the end: 224e52aa680148ae, unchanged.
 
 ## Vanhan sisällön löydökset
 - none

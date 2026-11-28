@@ -219,7 +219,7 @@
             "feedback": "Correct. With random error the deviations would vary in both directions by chance. When they form a pattern (up at the ends, down in the middle), the relationship is curved and the linear model does not fit."
           },
           {
-            "text": "It does not fit, because no line passes through all the points, even if the measurements were accurate.",
+            "text": "It does not fit, because no line passes through all the points.",
             "feedback": "In measured data a line does not usually pass through all the points, because there is random error in measurements. Whether the line fits depends on whether the deviations are random or form a pattern."
           },
           {

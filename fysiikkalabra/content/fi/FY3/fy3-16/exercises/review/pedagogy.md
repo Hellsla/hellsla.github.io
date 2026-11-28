@@ -1,15 +1,12 @@
 VERDICT: PASS
-CONTENT-HASH: 5f49adfd0e5ee772
+CONTENT-HASH: 746496959811ec08
 ## Blocking
 (none)
 ## Polish
-- exercises.json L3-03 (tolerance 0.07) — the accepted band 1,49–1,71 kg now also takes 1,5 from a student who left out both the drinks and the warming of the freezer ice (486 kJ / 334 kJ/kg = 1,46 → 1,5), and 1,6–1,7 from one who left out only the ice warming (1,605; 1,6 was accepted before too). Unavoidable once the rounded-down value is accepted (teacher 2026-11-15); the solution shows all three energy terms, so no fix needed unless the teacher wants the check narrower.
-- exercises.json L2-01, L3-03 — a rounded-down answer gets a plain "correct" although the task says to round up; the solution's answer line explains why 1,7 / 1,6 is the safe value, so the student who opens it is repaired. A feedback note for the lower value would be nicer if the schema allows it.
+- solutions.md L3-03 Kaava — E_yht is introduced without a word; add "$E_\text{yht}$ on jäälle siirtyvä kokonaisenergia" after the block. The Sijoitus rows name the parts, so this is only for the reader of the symbols.
 ## Checked
-- Delta: tolerance 0,04 → 0,07 on L2-01 (answer 1,7; exact 1,617) and L3-03 (answer 1,6; exact 1,511); nothing else in the diff.
-- Tolerance is relative in the page check (max of 2 %, tolerance × answer, half a last-digit unit): L2-01 accepts 1,581–1,819, so 1,6, 1,62 and 1,7 pass; L3-03 accepts 1,488–1,712, so 1,5, 1,51 and 1,6 pass. Matches the teacher's decision; the earlier Polish (unrounded value rejected) is thereby closed.
-- Both exact values recomputed from the task data (540 kJ / 334 kJ/kg; 536,3 kJ / 355 kJ/kg).
-- L2-01: no plausible wrong method lands in the widened band.
-- Task texts still ask to round up and the model answers and solutions still round up with the reason given (solutions.md lines 58, 125–126); text, check and solution do not contradict each other.
-- Levels, contexts, solutions and language unchanged since the previous PASS; captures not opened (no visible change).
-- Hash identical at start and end.
+- Delta: the array-numerator fraction is replaced by the named quantity E_yht, laid out one equation per row.
+- Algebra read from the file: Q_vastaanotettu = m(c_jää ΔT_jää + s), Q_luovutettu = UAΔT t + c m_j ΔT_j, hence m = E_yht/(c_jää ΔT_jää + s). It is consistent with Sijoitus (486 000 J + 50 280 J over 355 000 J/kg = 1,511 kg).
+- The chain starts from Q_vastaanotettu = Q_luovutettu, then P = UAΔT and E = Pt, and simplifies symbolically to the end.
+- The answer 1,6 kg is rounded up (an "at least" value) and explained.
+- Judged from the solutions text; captures not opened.
